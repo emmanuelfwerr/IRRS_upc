@@ -1,0 +1,19 @@
+Voice assistants record sound and can overhear conversations. Thus, a consent management mechanism
+is desirable such that users can express their wish to be recorded or not. Consent management can
+be implemented using speaker recognition; users that do not give consent enrol their voice and all
+further recordings of these users is subsequently not processed. Building speaker recognition
+based consent management is challenging due to the dynamic nature of the problem, required scalability
+for large number of speakers, and need for fast speaker recognition with high accuracy. This paper
+describes a speaker recognition based consent management system addressing the aforementioned
+challenges. A fully supervised batch contrastive learning is applied to learn the underlying speaker
+equivariance inductive bias during the training on the set of speakers noting recording dissent.
+Speakers that do not provide consent are grouped in buckets which are trained continuously. The
+embeddings are contrastively learned for speakers in their buckets during training and act later
+as a replay buffer for classification. The buckets are progressively registered during training
+and a novel multi-strided random sampling of the contrastive embedding replay buffer is proposed.
+Buckets are contrastively trained for a few steps only in each iteration and replayed for classification
+progressively leading to fast convergence. An algorithm for fast and dynamic registration and
+removal of speakers in buckets is described. The evaluation results show that the proposed approach
+provides the desired fast and dynamic solution for consent management and outperforms existing
+approaches in terms of convergence speed and adaptive capabilities as well as verification performance
+during inference. 

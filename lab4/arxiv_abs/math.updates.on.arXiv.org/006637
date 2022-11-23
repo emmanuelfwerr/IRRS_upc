@@ -1,0 +1,19 @@
+We study the problem of average-reward Markov decision processes (AMDPs) and develop novel first-order
+methods with strong theoretical guarantees for both policy evaluation and optimization. Existing
+on-policy evaluation methods suffer from sub-optimal convergence rates as well as failure in handling
+insufficiently random policies, e.g., deterministic policies, for lack of exploration. To remedy
+these issues, we develop a novel variance-reduced temporal difference (VRTD) method with linear
+function approximation for randomized policies along with optimal convergence guarantees, and
+an exploratory variance-reduced temporal difference (EVRTD) method for insufficiently random
+policies with comparable convergence guarantees. We further establish linear convergence rate
+on the bias of policy evaluation, which is essential for improving the overall sample complexity
+of policy optimization. On the other hand, compared with intensive research interest in finite
+sample analysis of policy gradient methods for discounted MDPs, existing studies on policy gradient
+methods for AMDPs mostly focus on regret bounds under restrictive assumptions on the underlying
+Markov processes (see, e.g., Abbasi-Yadkori et al., 2019), and they often lack guarantees on the
+overall sample complexities. Towards this end, we develop an average-reward variant of the stochastic
+policy mirror descent (SPMD) (Lan, 2022). We establish the first $\widetilde{\mathcal{O}}(\epsilon^{-2})$
+sample complexity for solving AMDPs with policy gradient method under both the generative model
+(with unichain assumption) and Markovian noise model (with ergodic assumption). This bound can
+be further improved to $\widetilde{\mathcal{O}}(\epsilon^{-1})$ for solving regularized AMDPs.
+Our theoretical advantages are corroborated by numerical experiments. 

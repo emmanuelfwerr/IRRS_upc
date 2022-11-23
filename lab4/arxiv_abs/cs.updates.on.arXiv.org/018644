@@ -1,0 +1,19 @@
+We look at a specific aspect of model interpretability: models often need to be constrained in size
+for them to be considered interpretable, e.g., a decision tree of depth 5 is easier to interpret than
+one of depth 50. But smaller models also tend to have high bias. This suggests a trade-off between
+interpretability and accuracy. We propose a model agnostic technique to minimize this trade-off.
+Our strategy is to first learn an oracle, a highly accurate probabilistic model on the training data.
+The uncertainty in the oracle's predictions are used to learn a sampling distribution for the training
+data. The interpretable model is then trained on a data sample obtained using this distribution,
+leading often to significantly greater accuracy. We formulate the sampling strategy as an optimization
+problem. Our solution1 possesses the following key favorable properties: (1) it uses a fixed number
+of seven optimization variables, irrespective of the dimensionality of the data (2) it is model
+agnostic - in that both the interpretable model and the oracle may belong to arbitrary model families
+(3) it has a flexible notion of model size, and can accommodate vector sizes (4) it is a framework,
+enabling it to benefit from progress in the area of optimization. We also present the following interesting
+observations: (a) In general, the optimal training distribution at small model sizes is different
+from the test distribution; (b) This effect exists even when the interpretable model and the oracle
+are from highly disparate model families: we show this on a text classification task, by using a Gated
+Recurrent Unit network as an oracle to improve the sequence classification accuracy of a Decision
+Tree that uses character n-grams; (c) Our technique may be used to identify an optimal training sample
+of a given sample size, for a model. 

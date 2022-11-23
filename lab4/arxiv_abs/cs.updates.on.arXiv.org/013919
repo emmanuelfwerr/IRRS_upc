@@ -1,0 +1,20 @@
+The training of neural networks using different deep learning frameworks may lead to drastically
+differing accuracy levels despite the use of the same neural network architecture and identical
+training hyperparameters such as learning rate and choice of optimization algorithms. Currently,
+our ability to build standardized deep learning models is limited by the availability of a suite
+of neural network and corresponding training hyperparameter benchmarks that expose differences
+between existing deep learning frameworks. In this paper, we present a living dataset of models
+and hyperparameters, called CrossedWires, that exposes semantic differences between two popular
+deep learning frameworks: PyTorch and Tensorflow. The CrossedWires dataset currently consists
+of models trained on CIFAR10 images using three different computer vision architectures: VGG16,
+ResNet50 and DenseNet121 across a large hyperparameter space. Using hyperparameter optimization,
+each of the three models was trained on 400 sets of hyperparameters suggested by the HyperSpace search
+algorithm. The CrossedWires dataset includes PyTorch and Tensforflow models with test accuracies
+as different as 0.681 on syntactically equivalent models and identical hyperparameter choices.
+The 340 GB dataset and benchmarks presented here include the performance statistics, training
+curves, and model weights for all 1200 hyperparameter choices, resulting in 2400 total models.
+The CrossedWires dataset provides an opportunity to study semantic differences between syntactically
+equivalent models across popular deep learning frameworks. Further, the insights obtained from
+this study can enable the development of algorithms and tools that improve reliability and reproducibility
+of deep learning frameworks. The dataset is freely available at https://github.com/maxzvyagin/crossedwires
+through a Python API and direct download link. 

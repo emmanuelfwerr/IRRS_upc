@@ -1,0 +1,19 @@
+Very High Energy (VHE) gamma rays and charged cosmic rays (CCRs) provide an observational window
+into the acceleration mechanisms of extreme astrophysical environments. One of the major challenges
+at Imaging Air Cherenkov Telescopes (IACTs) designed to look for VHE gamma rays, is the separation
+of air showers initiated by CCRs which form a background to gamma ray searches. Two other less well
+studied problems at IACTs are a) the classification of different primary nuclei among the CCR events
+and b) identification of anomalous events initiated by Beyond Standard Model particles that could
+give rise to shower signatures which differ from the standard images of either gamma rays or CCR showers.
+The problems of categorizing the primary particle that initiates a shower image, or the problem
+of tagging anomalous shower events in a model independent way, are problems that are well suited
+to a machine learning (ML) approach. Traditional studies that have explored gamma ray/CCR separation
+have used a multivariate analysis based on derived shower properties, which contains significantly
+reduced information about the shower. In our work, we address the problems outlined above by using
+ML architectures trained on full simulated shower images, as opposed to training on just a few derived
+shower properties. We illustrate the techniques of binary and multi-category classification
+using convolutional neural networks, and we also pioneer the use of autoencoders for anomaly detection
+at VHE gamma ray experiments. As a case study, we apply our techniques to the H.E.S.S. experiment.
+However, the real strength of the techniques that we broach here in the context of VHE gamma ray observatories,
+is that these methods can be applied broadly to any other IACT, such as the upcoming Cherenkov Telescope
+Array (CTA), or can even be suitably adapted to CCR experiments. 

@@ -1,0 +1,20 @@
+Multi-channel video-language retrieval require models to understand information from different
+modalities (e.g. video+question, video+speech) and real-world knowledge to correctly link a
+video with a textual response or query. Fortunately, multimodal contrastive models have been shown
+to be highly effective at aligning entities in images/videos and text, e.g., CLIP; text contrastive
+models have been extensively studied recently for their strong ability of producing discriminative
+sentence embeddings, e.g., SimCSE. Their abilities are exactly needed by multi-channel video-language
+retrieval. However, it is not clear how to quickly adapt these two lines of models to multi-channel
+video-language retrieval-style tasks. In this paper, we identify a principled model design space
+with two axes: how to represent videos and how to fuse video and text information. Based on categorization
+of recent methods, we investigate the options of representing videos using continuous feature
+vectors or discrete text tokens; for the fusion method, we explore a multimodal transformer or a
+pretrained contrastive text model. We extensively evaluate the four combinations on five video-language
+datasets. We surprisingly find that discrete text tokens coupled with a pretrained contrastive
+text model yields the best performance. This combination can even outperform state-of-the-art
+on the iVQA dataset without the additional training on millions of video-language data. Further
+analysis shows that this is because representing videos as text tokens captures the key visual information
+with text tokens that are naturally aligned with text models and the text models obtained rich knowledge
+during contrastive pretraining process. All the empirical analysis we obtain for the four variants
+establishes a solid foundation for future research on leveraging the rich knowledge of pretrained
+contrastive models. 

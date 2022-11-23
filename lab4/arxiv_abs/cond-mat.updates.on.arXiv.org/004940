@@ -1,0 +1,20 @@
+Microstructures are attracting academic and industrial interests with the rapid development
+of additive manufacturing. The numerical homogenization method has been well studied for analyzing
+mechanical behaviors of microstructures; however, it is too time-consuming to be applied to online
+computing or applications requiring high-frequency calling, e.g., topology optimization. Data-driven
+homogenization methods emerge as a more efficient choice but limit the microstructures into a cubic
+shape, which are infeasible to the periodic microstructures with a more general shape, e.g., parallelepiped.
+This paper introduces a fine-designed 3D convolutional neural network (CNN) for fast homogenization
+of parallel-shaped microstructures, named PH-Net. Superior to existing data-driven methods,
+PH-Net predicts the local displacements of microstructures under specified macroscope strains
+instead of direct homogeneous material, motivating us to present a label-free loss function based
+on minimal potential energy. For dataset construction, we introduce a shape-material transformation
+and voxel-material tensor to encode microstructure type,base material and boundary shape together
+as the input of PH-Net, such that it is CNN-friendly and enhances PH-Net on generalization in terms
+of microstructure type, base material, and boundary shape. PH-Net predicts homogenized properties
+with hundreds of acceleration compared to the numerical homogenization method and even supports
+online computing. Moreover, it does not require a labeled dataset and thus is much faster than current
+deep learning methods in training processing. Benefiting from predicting local displacement,
+PH-Net provides both homogeneous material properties and microscopic mechanical properties,
+e.g., strain and stress distribution, yield strength, etc. We design a group of physical experiments
+and verify the prediction accuracy of PH-Net. 

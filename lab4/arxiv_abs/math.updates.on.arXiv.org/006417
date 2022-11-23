@@ -1,0 +1,20 @@
+In this paper, we propose and analyze a set of fully non-stationary Anderson acceleration algorithms
+with dynamic window sizes and optimized damping. Although Anderson acceleration (AA) has been
+used for decades to speed up nonlinear solvers in many applications, most authors are simply using
+and analyzing the stationary version of Anderson acceleration (sAA) with fixed window size and
+a constant damping factor. The behavior and potential of the non-stationary version of Anderson
+acceleration methods remain an open question. Since most efficient linear solvers use composable
+algorithmic components. Similar ideas can be used for AA to solve nonlinear systems. Thus in the
+present work, to develop non-stationary Anderson acceleration algorithms, we first propose two
+systematic ways to dynamically alternate the window size $m$ by composition. One simple way to package
+sAA(m) with sAA(n) in each iteration is applying sAA(m) and sAA(n) separately and then average their
+results. It is an additive composite combination. The other more important way is the multiplicative
+composite combination, which means we apply sAA(m) in the outer loop and apply sAA(n) in the inner
+loop. By doing this, significant gains can be achieved. Secondly, to make AA to be a fully non-stationary
+algorithm, we need to combine these strategies with our recent work on the non-stationary Anderson
+acceleration algorithm with optimized damping (AAoptD), which is another important direction
+of producing non-stationary AA and nice performance gains have been observed. Moreover, we also
+investigate the rate of convergence of these non-stationary AA methods under suitable assumptions.
+Finally, our numerical results show that some of these proposed non-stationary Anderson acceleration
+algorithms converge faster than the stationary sAA method and they may significantly reduce the
+storage and time to find the solution in many cases. 

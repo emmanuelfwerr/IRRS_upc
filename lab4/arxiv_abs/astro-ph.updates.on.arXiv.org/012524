@@ -1,0 +1,19 @@
+Automating classification of galaxy components is important for understanding the formation
+and evolution of galaxies. Traditionally, only the larger galaxy structures such as the spiral
+arms, bulge, and disc are classified. Here we use machine learning (ML) pixel-by-pixel classification
+to automatically classify all galaxy components within digital imagery of massive spiral galaxy
+UGC 2885. Galaxy components include young stellar population, old stellar population, dust lanes,
+galaxy center, outer disc, and celestial background. We test three ML models: maximum likelihood
+classifier (MLC), random forest (RF), and support vector machine (SVM). We use high-resolution
+Hubble Space Telescope (HST) digital imagery along with textural features derived from HST imagery,
+band ratios derived from HST imagery, and distance layers. Textural features are typically used
+in remote sensing studies and are useful for identifying patterns within digital imagery. We run
+ML classification models with different combinations of HST digital imagery, textural features,
+band ratios, and distance layers to determine the most useful information for galaxy component
+classification. Textural features and distance layers are most useful for galaxy component identification,
+with the SVM and RF models performing the best. The MLC model performs worse overall but has comparable
+performance to SVM and RF in some circumstances. Overall, the models are best at classifying the
+most spectrally unique galaxy components including the galaxy center, outer disc, and celestial
+background. The most confusion occurs between the young stellar population, old stellar population,
+and dust lanes. We suggest further experimentation with textural features for astronomical research
+on small-scale galactic structures. 

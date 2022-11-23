@@ -1,0 +1,19 @@
+In this paper, we study the estimation performance of empirical $\ell_2$ risk minimization (ERM)
+in noisy (standard) phase retrieval (NPR) given by $y_k = |\alpha_k^*x_0|^2+\eta_k$, or noisy
+generalized phase retrieval (NGPR) formulated as $y_k = x_0^*A_kx_0 + \eta_k$, where $x_0\in\mathbb{K}^d$
+is the desired signal, $n$ is the sample size, $\eta= (\eta_1,...,\eta_n)^\top$ is the noise vector.
+We establish new error bounds under different noise patterns, and our proofs are valid for both $\mathbb{K}=\mathbb{R}$
+and $\mathbb{K}=\mathbb{C}$. In NPR under arbitrary noise vector $\eta$, we derive a new error
+bound $O\big(\|\eta\|_\infty\sqrt{\frac{d}{n}} + \frac{|\mathbf{1}^\top\eta|}{n}\big)$,
+which is tighter than the currently known one $O\big(\frac{\|\eta\|}{\sqrt{n}}\big)$ in many
+cases. In NGPR, we show $O\big(\|\eta\|\frac{\sqrt{d}}{n}\big)$ for arbitrary $\eta$. In both
+problems, the bounds for arbitrary noise immediately give rise to $\tilde{O}(\sqrt{\frac{d}{n}})$
+for sub-Gaussian or sub-exponential random noise, with some conventional but inessential assumptions
+(e.g., independent or zero-mean condition) removed or weakened. In addition, we make a first attempt
+to ERM under heavy-tailed random noise assumed to have bounded $l$-th moment. To achieve a trade-off
+between bias and variance, we truncate the responses and propose a corresponding robust ERM estimator,
+which is shown to possess the guarantee $\tilde{O}\big(\big[\sqrt{\frac{d}{n}}\big]^{1-1/l}\big)$
+in both NPR, NGPR. All the error bounds straightforwardly extend to the more general problems of
+rank-$r$ matrix recovery, and these results deliver a conclusion that the full-rank frame $\{A_k\}_{k=1}^n$
+in NGPR is more robust to biased noise than the rank-1 frame $\{\alpha_k\alpha_k^*\}_{k=1}^n$
+in NPR. Extensive experimental results are presented to illustrate our theoretical findings.

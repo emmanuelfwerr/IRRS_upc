@@ -1,0 +1,19 @@
+From ecology to atmospheric sciences, many academic disciplines deal with data characterized
+by intricate spatio-temporal complexities, the modeling of which often requires specialized
+approaches. Generative models of these data are of particular interest, as they enable a range of
+impactful downstream applications like simulation or creating synthetic training data. Recent
+work has highlighted the potential of generative adversarial nets (GANs) for generating spatio-temporal
+data. A new GAN algorithm COT-GAN, inspired by the theory of causal optimal transport (COT), was
+proposed in an attempt to better tackle this challenge. However, the task of learning more complex
+spatio-temporal patterns requires additional knowledge of their specific data structures. In
+this study, we propose a novel loss objective combined with COT-GAN based on an autoregressive embedding
+to reinforce the learning of spatio-temporal dynamics. We devise SPATE (spatio-temporal association),
+a new metric measuring spatio-temporal autocorrelation by using the deviance of observations
+from their expected values. We compute SPATE for real and synthetic data samples and use it to compute
+an embedding loss that considers space-time interactions, nudging the GAN to learn outputs that
+are faithful to the observed dynamics. We test this new objective on a diverse set of complex spatio-temporal
+patterns: turbulent flows, log-Gaussian Cox processes and global weather data. We show that our
+novel embedding loss improves performance without any changes to the architecture of the COT-GAN
+backbone, highlighting our model's increased capacity for capturing autoregressive structures.
+We also contextualize our work with respect to recent advances in physics-informed deep learning
+and interdisciplinary work connecting neural networks with geographic and geophysical sciences.

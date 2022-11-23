@@ -1,0 +1,19 @@
+User preference learning is generally a hard problem. Individual preferences are typically unknown
+even to users themselves, while the space of choices is infinite. Here we study user preference learning
+from information-theoretic perspective. We model preference learning as a system with two interacting
+sub-systems, one representing a user with his/her preferences and another one representing an
+agent that has to learn these preferences. The user with his/her behaviour is modeled by a parametric
+preference function. To efficiently learn the preferences and reduce search space quickly, we
+propose the agent that interacts with the user to collect the most informative data for learning.
+The agent presents two proposals to the user for evaluation, and the user rates them based on his/her
+preference function. We show that the optimum agent strategy for data collection and preference
+learning is a result of maximin optimization of the normalized weighted Kullback-Leibler (KL)
+divergence between true and agent-assigned predictive user response distributions. The resulting
+value of KL-divergence, which we also call remaining system uncertainty (RSU), provides an efficient
+performance metric in the absence of the ground truth. This metric characterises how well the agent
+can predict user and, thus, the quality of the underlying learned user (preference) model. Our proposed
+agent comprises sequential mechanisms for user model inference and proposal generation. To infer
+the user model (preference function), Bayesian approximate inference is used in the agent. The
+data collection strategy is to generate proposals, responses to which help resolving uncertainty
+associated with prediction of the user responses the most. The efficiency of our approach is validated
+by numerical simulations. 

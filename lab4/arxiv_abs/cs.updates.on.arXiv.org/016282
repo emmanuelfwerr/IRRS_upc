@@ -1,0 +1,20 @@
+In electricity markets, retailers or brokers want to maximize profits by allocating tariff profiles
+to end consumers. One of the objectives of such demand response management is to incentivize the
+consumers to adjust their consumption so that the overall electricity procurement in the wholesale
+markets is minimized, e.g. it is desirable that consumers consume less during peak hours when cost
+of procurement for brokers from wholesale markets are high. We consider a greedy solution to maximize
+the overall profit for brokers by optimal tariff profile allocation. This in-turn requires forecasting
+electricity consumption for each user for all tariff profiles. This forecasting problem is challenging
+compared to standard forecasting problems due to following reasons: i. the number of possible combinations
+of hourly tariffs is high and retailers may not have considered all combinations in the past resulting
+in a biased set of tariff profiles tried in the past, ii. the profiles allocated in the past to each
+user is typically based on certain policy. These reasons violate the standard i.i.d. assumptions,
+as there is a need to evaluate new tariff profiles on existing customers and historical data is biased
+by the policies used in the past for tariff allocation. In this work, we consider several scenarios
+for forecasting and optimization under these conditions. We leverage the underlying structure
+of how consumers respond to variable tariff rates by comparing tariffs across hours and shifting
+loads, and propose suitable inductive biases in the design of deep neural network based architectures
+for forecasting under such scenarios. More specifically, we leverage attention mechanisms and
+permutation equivariant networks that allow desirable processing of tariff profiles to learn
+tariff representations that are insensitive to the biases in the data and still representative
+of the task. 

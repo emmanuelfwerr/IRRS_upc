@@ -1,0 +1,19 @@
+5G/B5G is envisioned to support various services with the assistance of network slices, each slice
+instance asks for adequate resources to provide the pre-negotiated service quality to its subscribers.
+Slice Admission Control (SAC) algorithm is a necessity for Slice Providers (SPs) to guarantee the
+QoS and QoE of each admitted request with limited resources. In that circumstance, the priority
+concern of services and the fairness of resource allocation arise as meaningful topics for researchers.
+The former originates from the innate characteristics of various services supported by 5G networks,
+and the latter matters because slices are instantiated on shared physical equipment. However,
+the two issues are mainly investigated separately in the literature or do not receive sufficient
+research simultaneously. In this work, we study the SAC problem in 5G/B5G networks, aiming at enhancing
+the fairness degree on the premise of satisfying the necessary priority requirements. We first
+reinterpret priority as a higher cumulative service acceptance ratio (CSAR), and adopt the uniformity
+of adjacent CSAR gaps to reflect the fairness. Based on these adjustments, the SAC problem is formulated
+as a non-linear and non-convex multi-objective optimization. Thus, we propose a heuristic algorithm
+called Prioritized Slice Admission Control Considering Fairness (PSACCF) to solve it. It introduces
+the resource efficiency of services to amend priority violations, then promotes fairness by setting
+the target CSARs for each service type and pushing their actual CSARs toward. Numerous simulations
+are carried out to compare the performance of PSACCF with two existing algorithms, termed MHPF and
+AHPF. Results show that our algorithm can achieve a nearly identical priority indicator to the comparisons,
+as well as at least a 33.6% improvement in fairness degree and a higher minimum average resource utilization.

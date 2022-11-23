@@ -1,0 +1,19 @@
+Data confidentiality is becoming a significant concern, especially in the cloud computing era.
+Memory access patterns have been demonstrated to leak critical information such as security keys
+and a program's spatial and temporal information. This information leak poses an even more significant
+privacy challenge in machine learning models with embedding tables. Embedding tables are routinely
+used to learn categorical features from training data. Even knowing the locations of the embedding
+table entries accessed, not the data within the embedding table, will compromise categorical input
+data to the model. Embedding entries are privacy-sensitive since they disclose valuable properties
+about the user. Oblivious RAM (ORAM), and its enhanced variants such as PathORAM have emerged as
+viable solutions to hide leakage from memory access streams. In this work, we present LAORAM, an
+ORAM framework explicitly designed to protect user privacy during embedding table training. LAORAM
+exploits the unique property of training, the training samples used in the future are known beforehand.
+LAORAM preprocesses the training samples to identify the memory blocks which are accessed together
+in the near future. The system tries to assign these blocks to as few paths as possible within the PathORAM
+infrastructure. LAORAM does this operation by combining multiple blocks accessed together as
+superblocks. To further increase performance, LAORAM uses a fat-tree structure for PathORAM reducing
+the number of background evictions required, which improves the stash usage. We have evaluated
+LAORAM using both a recommendation model (DLRM) and a NLP model (XLM-R) embedding table configurations.
+LAORAM performs 5 times faster than PathORAM on a recommendation dataset (Kaggle) and 5.4x faster
+on a NLP dataset (XNLI), while guaranteeing the same security guarantees as the original PathORAM.

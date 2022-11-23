@@ -1,0 +1,19 @@
+The optimal design of magnetic devices becomes intractable using current computational methods
+when the number of design parameters is high. The emerging physics-informed deep learning framework
+has the potential to alleviate this curse of dimensionality. The objective of this paper is to investigate
+the ability of physics-informed neural networks to learn the magnetic field response as a function
+of design parameters in the context of a two-dimensional (2-D) magnetostatic problem. Our approach
+is as follows. We derive the variational principle for 2-D parametric magnetostatic problems,
+and prove the existence and uniqueness of the solution that satisfies the equations of the governing
+physics, i.e., Maxwell's equations. We use a deep neural network (DNN) to represent the magnetic
+field as a function of space and a total of ten parameters that describe geometric features and operating
+point conditions. We train the DNN by minimizing the physics-informed loss function using a variant
+of stochastic gradient descent. Subsequently, we conduct systematic numerical studies using
+a parametric EI-core electromagnet problem. In these studies, we vary the DNN architecture trying
+more than one hundred different possibilities. For each study, we evaluate the accuracy of the DNN
+by comparing its predictions to those of finite element analysis. In an exhaustive non-parametric
+study, we observe that sufficiently parameterized dense networks result in relative errors of
+less than 1%. Residual connections always improve relative errors for the same number of training
+iterations. Also, we observe that Fourier encoding features aligned with the device geometry do
+improve the rate of convergence, albeit higher-order harmonics are not necessary. Finally, we
+demonstrate our approach on a ten-dimensional problem with parameterized geometry. 

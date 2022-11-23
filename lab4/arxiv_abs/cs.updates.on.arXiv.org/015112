@@ -1,0 +1,19 @@
+Artificial neural networks have successfully tackled a large variety of problems by training extremely
+deep networks via back-propagation. A direct application of back-propagation to spiking neural
+networks contains biologically implausible components, like the weight transport problem or
+separate inference and learning phases. Various methods address different components individually,
+but a complete solution remains intangible. Here, we take an alternate approach that avoids back-propagation
+and its associated issues entirely. Recent work in deep learning proposed independently training
+each layer of a network via the information bottleneck (IB). Subsequent studies noted that this
+layer-wise approach circumvents error propagation across layers, leading to a biologically plausible
+paradigm. Unfortunately, the IB is computed using a batch of samples. The prior work addresses this
+with a weight update that only uses two samples (the current and previous sample). Our work takes
+a different approach by decomposing the weight update into a local and global component. The local
+component is Hebbian and only depends on the current sample. The global component computes a layer-wise
+modulatory signal that depends on a batch of samples. We show that this modulatory signal can be learned
+by an auxiliary circuit with working memory (WM) like a reservoir. Thus, we can use batch sizes greater
+than two, and the batch size determines the required capacity of the WM. To the best of our knowledge,
+our rule is the first biologically plausible mechanism to directly couple synaptic updates with
+a WM of the task. We evaluate our rule on synthetic datasets and image classification datasets like
+MNIST, and we explore the effect of the WM capacity on learning performance. We hope our work is a first-step
+towards understanding the mechanistic role of memory in learning. 

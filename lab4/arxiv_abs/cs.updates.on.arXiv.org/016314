@@ -1,0 +1,19 @@
+Person re-identification is a key challenge for surveillance across multiple sensors. Prompted
+by the advent of powerful deep learning models for visual recognition, and inexpensive RGB-D cameras
+and sensor-rich mobile robotic platforms, e.g. self-driving vehicles, we investigate the relatively
+unexplored problem of cross-modal re-identification of persons between RGB (color) and depth
+images. The considerable divergence in data distributions across different sensor modalities
+introduces additional challenges to the typical difficulties like distinct viewpoints, occlusions,
+and pose and illumination variation. While some work has investigated re-identification across
+RGB and infrared, we take inspiration from successes in transfer learning from RGB to depth in object
+detection tasks. Our main contribution is a novel method for cross-modal distillation for robust
+person re-identification, which learns a shared feature representation space of person's appearance
+in both RGB and depth images. In addition, we propose a cross-modal attention mechanism where the
+gating signal from one modality can dynamically activate the most discriminant CNN filters of the
+other modality. The proposed distillation method is compared to conventional and deep learning
+approaches proposed for other cross-domain re-identification tasks. Results obtained on the
+public BIWI and RobotPKU datasets indicate that the proposed method can significantly outperform
+the state-of-the-art approaches by up to 16.1% in mean Average Precision (mAP), demonstrating
+the benefit of the distillation paradigm. The experimental results also indicate that using cross-modal
+attention allows to improve recognition accuracy considerably with respect to the proposed distillation
+method and relevant state-of-the-art approaches. 

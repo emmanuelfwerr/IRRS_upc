@@ -1,0 +1,20 @@
+Every computer system -- from schedulers in clouds (e.g. Amazon) to computer networks to operating
+systems -- performs resource allocation across system users. The defacto allocation policies
+are max-min fairness (MMF) for single resources and dominant resource fairness (DRF) for multiple
+resources which guarantee properties like incentive compatibility, envy-freeness, and Pareto
+efficiency, assuming user demands are static (time-independent). However, in real-world systems,
+user demands are dynamic, i.e. time-dependant. As a result, there is now a fundamental mismatch
+between the goals of computer systems and the properties enabled by classic resource allocation
+policies. We aim to bridge this mismatch. When demands are dynamic, instant-by-instant MMF can
+be extremely unfair over longer periods of time, i.e. lead to unbalanced user allocations as previous
+allocations have no effect in the present. We consider a natural generalization of MMF and DRF for
+multiple resources and users with dynamic demands: this algorithm ensures that user allocations
+are as max-min fair as possible up to any time instant, given past allocations. This dynamic mechanism
+remains Pareto optimal and envy-free, but not incentive compatible. However, our results show
+that the possible increase in utility by misreporting is bounded and, since this can lead to significant
+decrease in overall useful allocation, this suggests that it is not a useful strategy. Our main result
+is to show that our dynamic DRF algorithm is $(1+\rho)$-incentive compatible, where $\rho$ quantifies
+the relative importance of a resource for different users; we show that this factor is tight even
+with only two resources. We also present a $3/2$ upper bound and a $\sqrt 2$ lower bound for incentive
+compatibility when there is only one resource. We also offer extensions for the case when users are
+weighted to prioritize them differently. 

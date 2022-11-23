@@ -1,0 +1,20 @@
+We present three methodological improvements of the "SCK CEN approach" for Bayesian inference
+of the radionuclide inventory in radioactive waste drums, from radiological measurements. First
+we resort to the Dirichlet distribution for the prior distribution of the isotopic vector. The Dirichlet
+distribution possesses the attractive property that the elements of its vector samples sum up to
+1. Second, we demonstrate that such Dirichlet priors can be incorporated within an hierarchical
+modeling of the prior uncertainty in the isotopic vector, when prior information about isotopic
+composition is available. Our used Bayesian hierarchical modeling framework makes use of this
+available information but also acknowledges its uncertainty by letting to a controlled extent
+the information content of the indirect measurement data (i.e., gamma and neutron counts) shape
+the actual prior distribution of the isotopic vector. Third, we propose to regularize the Bayesian
+inversion by using Gaussian process (GP) prior modeling when inferring 1D spatially-distributed
+quantities. As of uncertainty in the efficiencies, we keep using the same stylized drum modeling
+approach as proposed in our previous work to account for the source distribution uncertainty across
+the vertical direction of the drum. A series of synthetic tests followed by application to a real
+waste drum show that combining hierarchical modeling of the prior isotopic composition uncertainty
+together with GP prior modeling of the vertical Pu profile across the drum works well. We also find
+that our GP prior can handles both cases with and without spatial correlation. The computational
+times involved by our proposed approach are on the order of a few hours, say about 2, to provide uncertainty
+estimates for all variables of interest in the considered inverse problem. This warrants further
+investigations to speed up the inference. 

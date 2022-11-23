@@ -1,0 +1,19 @@
+Image harmonization task aims at harmonizing different composite foreground regions according
+to specific background image. Previous methods would rather focus on improving the reconstruction
+ability of the generator by some internal enhancements such as attention, adaptive normalization
+and light adjustment, $etc.$. However, they pay less attention to discriminating the foreground
+and background appearance features within a restricted generator, which becomes a new challenge
+in image harmonization task. In this paper, we propose a novel image harmonization framework with
+external style fusion and region-wise contrastive learning scheme. For the external style fusion,
+we leverage the external background appearance from the encoder as the style reference to generate
+harmonized foreground in the decoder. This approach enhances the harmonization ability of the
+decoder by external background guidance. Moreover, for the contrastive learning scheme, we design
+a region-wise contrastive loss function for image harmonization task. Specifically, we first
+introduce a straight-forward samples generation method that selects negative samples from the
+output harmonized foreground region and selects positive samples from the ground-truth background
+region. Our method attempts to bring together corresponding positive and negative samples by maximizing
+the mutual information between the foreground and background styles, which desirably makes our
+harmonization network more robust to discriminate the foreground and background style features
+when harmonizing composite images. Extensive experiments on the benchmark datasets show that
+our method can achieve a clear improvement in harmonization quality and demonstrate the good generalization
+capability in real-scenario applications. 

@@ -1,0 +1,19 @@
+Neutrino cross-section measurements are often presented as unfolded binned distributions in
+``true'' variables. The ill-posedness of the unfolding problem can lead to results with strong
+anti-correlations and fluctuations between bins, which make comparisons to theoretical models
+in plots difficult. To alleviate this problem, one can introduce regularisation terms in the unfolding
+procedure. These suppress potential anti-correlations in the result, at the cost of introducing
+some bias towards the expected shape of the result, like the smoothness of bin-to-bin differences.
+Using simple linear algebra, it is possible to regularise any result that is presented as a central
+value and a covariance matrix. This ``post-hoc'' regularisation is generally much faster than
+repeating the unfolding method with different regularisation terms. The method also yields a regularisation
+matrix $A$ which connects the regularised to the unregularised result, and can be used to retain
+the full statistical power of the unregularised result when publishing a nicer looking regularised
+result. When doing this, the bias of the regularisation can be understood as a data visualisation
+problem rather than a statistical one. The strength of the regularisation can be chosen by minimising
+the difference between the implicitly uncorrelated distribution shown in the plots and the actual
+distribution described by the unregularised central value and covariance. The Wasserstein distance
+is a suitable measure for that difference. Aside from minimising the difference between the shown
+and the actual result, additional information can be provided by showing the local log-likelihood
+gradient of the models shown in the plots. This adds more information about where the model is ``pulled''
+by the data than just comparing the bin values to the data's central values. 

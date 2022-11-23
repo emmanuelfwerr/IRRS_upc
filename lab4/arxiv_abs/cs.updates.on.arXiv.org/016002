@@ -1,0 +1,20 @@
+Extracting main content from web pages provides primary informative blocks that remove a web page's
+minor areas like navigation menu, ads, and site templates. The main content extraction has various
+applications: information retrieval, search engine optimization, and browser reader mode. We
+assessed the existing four main content extraction methods (Readability.js, Chrome DOM Distiller,
+Web2Text, and Boilernet) with the web pages of two English datasets from global websites of 2017
+and 2020 and seven non-English datasets by languages of 2020. Its result showed that performance
+was lower by up to 40% in non-English datasets than in English datasets. Thus, this paper proposes
+a multilingual main content extraction method using visual features: the elements' positions,
+size, and distances from three centers. These centers were derived from the browser window, web
+document, and the first browsing area. We propose this first browsing area, which is the top side
+of a web document for simulating situations where a user first encountered a web page. Because web
+page authors placed their main contents in the central area for the web page's usability, we can assume
+the center of this area is close to the main content. Our grid-centering-expanding (GCE) method
+suggests the three centroids as hypothetical user foci. Traversing the DOM tree from each of the
+leaf nodes closest to these centroids, our method inspects which the ancestor node can be the main
+content candidate. Finally, it extracts the main content by selecting the best among the three main
+content candidates. Our method performed 14% better than the existing method on average in Longest
+Common Subsequence F1 score. In particular, it improved performance by up to 25% in the English dataset
+and 16% in the non-English dataset. Therefore, our method showed the visual and basic HTML features
+are effective in extracting the main content. 

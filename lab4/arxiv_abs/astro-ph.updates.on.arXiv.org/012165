@@ -1,0 +1,20 @@
+(abridged) Mass loss is a key parameter in the evolution of massive stars, with discrepancies between
+theory and observations and with unknown importance of the episodic mass loss. To address this we
+need increased numbers of classified sources stars spanning a range of metallicity environments.
+We aim to remedy the situation by applying machine learning techniques to recently available extensive
+photometric catalogs. We used IR/Spitzer and optical/Pan-STARRS, with Gaia astrometric information,
+to compile a large catalog of known massive stars in M31 and M33, which were grouped in Blue, Red, Yellow,
+B[e] supergiants, Luminous Blue Variables, Wolf-Rayet, and background galaxies. Due to the high
+imbalance, we implemented synthetic data generation to populate the underrepresented classes
+and improve separation by undersampling the majority class. We built an ensemble classifier using
+color indices. The probabilities from Support Vector Classification, Random Forests, and Multi-layer
+Perceptron were combined for the final classification. The overall weighted balanced accuracy
+is ~83%, recovering Red supergiants at ~94%, Blue/Yellow/B[e] supergiants and background galaxies
+at ~50-80%, Wolf-Rayets at ~45%, and Luminous Blue Variables at ~30%, mainly due to their small sample
+sizes. The mixing of spectral types (no strict boundaries in their color indices) complicates the
+classification. Independent application to IC 1613, WLM, and Sextans A galaxies resulted in an
+overall lower accuracy of ~70%, attributed to metallicity and extinction effects. The missing
+data imputation was explored using simple replacement with mean values and an iterative imputor,
+which proved more capable. We also found that r-i and y-[3.6] were the most important features. Our
+method, although limited by the sampling of the feature space, is efficient in classifying sources
+with missing data and at lower metallicitites. 

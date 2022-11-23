@@ -1,0 +1,20 @@
+Purpose: To develop and evaluate a free-breathing respiratory motion compensated 4D (3D+respiration)
+$T_2$-weighted turbo spin echo sequence with application to radiology and MR-guided radiotherapy.
+Methods: k-space data are continuously acquired using a rewound Cartesian acquisition with spiral
+profile ordering (rCASPR) to provide matching contrast to the conventional linear phase encode
+ordering and to sort data into multiple respiratory phases. Low-resolution respiratory-correlated
+4D images were reconstructed with compressed sensing and used to estimate non-rigid deformation
+vector fields, which were subsequently used for a motion compensated image reconstruction. rCASPR
+sampling was compared to linear and CASPR sampling in terms of point-spread-function (PSF) and
+image contrast with in silico, phantom and in vivo experiments. Reconstruction parameters for
+low-resolution 4D-MRI (spatial resolution and temporal regularization) were determined using
+a grid search. The proposed motion compensated rCASPR was evaluated in eight healthy volunteers
+and compared to free-breathing scans with linear sampling. Image quality was compared based on
+visual inspection and quantitatively by means of the gradient entropy. Results: rCASPR provided
+a superior PSF (similar in ky and narrower in kz) and showed no considerable differences in images
+contrast compared to linear sampling. The optimal 4D-MRI reconstruction parameters were spatial
+resolution=$4.5 mm^3$ and $\lambda_t=10^{-4}$. The groupwise average gradient entropy was 22.31
+for linear, 22.20 for rCASPR, 22.14 for soft-gated rCASPR and 22.02 for motion compensated rCASPR.
+Conclusion: The proposed motion compensated rCASPR enables high quality free-breathing T2-TSE
+with minimal changes in image contrast and scan time. The proposed method therefore enables direct
+transfer of clinically used 3D TSE sequences to free-breathing. 

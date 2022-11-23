@@ -1,0 +1,20 @@
+We develop a new four-phase tumor growth model with angiogenesis, derived from a diffuse-interface
+mixture model composed by a viable, a necrotic, a liquid and an angiogenetic component, coupled
+with two massless chemicals representing a perfectly diluted nutrient and an angiogenetic factor.
+This model is derived from variational principles complying with the second law of thermodynamics
+in isothermal situations, starting from biological constitutive assumptions on the tumor cells
+adhesion properties and on the infiltrative mechanics of tumor-induced vasculature in the tumor
+tissues, and takes the form of a coupled degenerate Cahn-Hilliard Keller-Segel system for the mixture
+components with reaction diffusion equations for the chemicals. The model is informed by neuroimaging
+data, which give informations about the patient-specific brain geometry and tissues microstructure,
+the distribution of the different tumor components, the white matter fiber orientations and the
+vasculature density. We describe specific and robust preprocessing steps to extract quantitative
+informations from the neuroimaging data and to construct a computational platform to solve the
+model on a patient-specific basis. We introduce a finite element approximation of the model which
+preserve the qualitative properties of the continuous solutions. Finally, we show simulation
+results for the patient-specific tumor evolution of a patient affected by GlioBlastoma Multiforme,
+considering two different test cases before surgery, corresponding to situations with high or
+low nutrient supply inside the tumor, and a test case after surgery. We show that our model correctly
+predicts the overall extension of the tumor distribution and the intensity of the angiogenetic
+process, paving the way for assisting the clinicians in properly assessing the therapy outcomes
+and in designing optimal patient-specific therapeutic schedules. 

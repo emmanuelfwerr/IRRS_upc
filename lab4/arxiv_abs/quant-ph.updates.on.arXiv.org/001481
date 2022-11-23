@@ -1,0 +1,18 @@
+Matrix scaling is a simple to state, yet widely applicable linear-algebraic problem: the goal is
+to scale the rows and columns of a given non-negative matrix such that the rescaled matrix has prescribed
+row and column sums. Motivated by recent results on first-order quantum algorithms for matrix scaling,
+we investigate the possibilities for quantum speedups for classical second-order algorithms,
+which comprise the state-of-the-art in the classical setting. We first show that there can be essentially
+no quantum speedup in terms of the input size in the high-precision regime: any quantum algorithm
+that solves the matrix scaling problem for $n \times n$ matrices with at most $m$ non-zero entries
+and with $\ell_2$-error $\varepsilon=\widetilde\Theta(1/m)$ must make $\widetilde\Omega(m)$
+queries to the matrix, even when the success probability is exponentially small in $n$. Additionally,
+we show that for $\varepsilon\in[1/n,1/2]$, any quantum algorithm capable of producing $\frac{\varepsilon}{100}$-$\ell_1$-approximations
+of the row-sum vector of a (dense) normalized matrix uses $\Omega(n/\varepsilon)$ queries, and
+that there exists a constant $\varepsilon_0>0$ for which this problem takes $\Omega(n^{1.5})$
+queries. To complement these results we give improved quantum algorithms in the low-precision
+regime: with quantum graph sparsification and amplitude estimation, a box-constrained Newton
+method can be sped up in the large-$\varepsilon$ regime, and outperforms previous quantum algorithms.
+For entrywise-positive matrices, we find an $\varepsilon$-$\ell_1$-scaling in time $\widetilde
+O(n^{1.5}/\varepsilon^2)$, whereas the best previously known bounds were $\widetilde O(n^2\mathrm{polylog}(1/\varepsilon))$
+(classical) and $\widetilde O(n^{1.5}/\varepsilon^3)$ (quantum). 

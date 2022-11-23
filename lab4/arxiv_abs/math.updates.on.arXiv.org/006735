@@ -1,0 +1,18 @@
+We revisit the well-studied problem of estimating the Shannon entropy of a probability distribution,
+now given access to a probability-revealing conditional sampling oracle. In this model, the oracle
+takes as input the representation of a set $S$ and returns a sample from the distribution obtained
+by conditioning on $S$, together with the probability of that sample in the distribution. Our work
+is motivated by applications of such algorithms in Quantitative Information Flow analysis (QIF)
+in programming-language-based security. Here, information-theoretic quantities capture the
+effort required on the part of an adversary to obtain access to confidential information. These
+applications demand accurate measurements when the entropy is small. Existing algorithms that
+do not use conditional samples require a number of queries that scale inversely with the entropy,
+which is unacceptable in this regime, and indeed, a lower bound by Batu et al.(STOC 2002) established
+that no algorithm using only sampling and evaluation oracles can obtain acceptable performance.
+On the other hand, prior work in the conditional sampling model by Chakraborty et al.(SICOMP 2016)
+only obtained a high-order polynomial query complexity, $\mathcal{O}(\frac{m^7}{\epsilon^8}\log\frac{1}{\delta})$
+queries, to obtain additive $\epsilon$-approximations on a domain of size $\mathcal{O}(2^m)$.
+We obtain multiplicative $(1+\epsilon)$-approximations using only $\mathcal{O}(\frac{m}{\epsilon^2}\log\frac{1}{\delta})$
+queries to the probability-revealing conditional sampling oracle. Indeed, moreover, we obtain
+small, explicit constants, and demonstrate that our algorithm obtains a substantial improvement
+in practice over the previous state-of-the-art methods used for entropy estimation in QIF. 

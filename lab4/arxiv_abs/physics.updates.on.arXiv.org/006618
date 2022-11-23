@@ -1,0 +1,19 @@
+Uncertainty quantification (UQ) of subsurface two-phase flow usually requires numerous executions
+of forward simulations under varying conditions. In this work, a novel coupled theory-guided neural
+network (TgNN) based surrogate model is built to facilitate computation efficiency under the premise
+of satisfactory accuracy. The core notion of this proposed method is to bridge two separate blocks
+on top of an overall network. They underlie the TgNN model in a coupled form, which reflects the coupling
+nature of pressure and water saturation in the two-phase flow equation. The TgNN model not only relies
+on labeled data, but also incorporates underlying scientific theory and experiential rules (e.g.,
+governing equations, stochastic parameter fields, boundary and initial conditions, well conditions,
+and expert knowledge) as additional components into the loss function. The performance of the TgNN-based
+surrogate model for two-phase flow problems is tested by different numbers of labeled data and collocation
+points, as well as the existence of data noise. The proposed TgNN-based surrogate model offers an
+effective way to solve the coupled nonlinear two-phase flow problem and demonstrates good accuracy
+and strong robustness when compared with the purely data-driven surrogate model. By combining
+the accurate TgNN-based surrogate model with the Monte Carlo method, UQ tasks can be performed at
+a minimum cost to evaluate statistical quantities. Since the heterogeneity of the random fields
+strongly impacts the results of the surrogate model, corresponding variance and correlation length
+are added to the input of the neural network to maintain its predictive capacity. The results show
+that the TgNN-based surrogate model achieves satisfactory accuracy, stability, and efficiency
+in UQ problems of subsurface two-phase flow. 

@@ -1,0 +1,19 @@
+Is it possible to convert classical cryptographic reductions into post-quantum ones? It is customary
+to argue that while this is problematic in the interactive setting, non-interactive reductions
+do carry over. However, when considering quantum auxiliary input, this conversion results in a
+non-constructive post-quantum reduction that requires duplicating the quantum auxiliary input,
+which is in general inefficient or even impossible. This violates the win-win premise of provable
+cryptography: an attack against a cryptographic primitive should lead to an algorithmic advantage.
+We initiate the study of constructive quantum reductions and present positive and negative results
+for converting large classes of classical reductions to the post-quantum setting in a constructive
+manner. We show that any non-interactive non-adaptive reduction from assumptions with a polynomial
+solution space (such as decision assumptions) can be made post-quantum constructive. In contrast,
+assumptions with super-polynomial solution space (such as general search assumptions) cannot
+be generally converted. Along the way, we make several additional contributions: 1. We put forth
+a framework for reductions (or general interaction) with stateful solvers for a computational
+problem, that may change their internal state between consecutive calls. We show that such solvers
+can still be utilized. This framework and our results are meaningful even in the classical setting.
+2. A consequence of our negative result is that quantum auxiliary input that is useful against a problem
+with a super-polynomial solution space cannot be generically ``restored'' post-measurement.
+This shows that the novel rewinding technique of Chiesa et al. (FOCS 2021) is tight in the sense that
+it cannot be extended beyond a polynomial measurement space. 

@@ -1,0 +1,19 @@
+The constant potential molecular dynamics simulation method proposed by Siepmann and Sprik and
+reformulated later by Reed (SR-CPM) has been widely employed to investigate the metallic electrolyte/electrode
+interfaces, especially for conducting nanochannels with complex connectivity, *e.g.*, carbide-derived
+carbon or graphene-assembled membrane. This work makes substantial extensions of this seminal
+SR-CPM approach. First, we introduce two numerical techniques to determine electrode atom charges
+with an order of magnitude improvement in computational efficiency compared with those widely
+employed methods. The first numerical technique dramatically accelerates the to calculation
+of the Ewald interaction matrix $\mathbf{E}$, which takes advantage of the existing highly optimised
+electrostatic codes. The second technique introduces a new preconditioning technique in the conjugate
+gradient method to considerably increase the computational efficiency of a linear equation system
+that determines electrode atomic charges. Our improved SR-CPM implemented in the LAMMPS package
+can handle extra-large systems, *e.g.*, over 8.1 million electrode atoms. Second, after demonstrating
+the importance of the electroneutrality constraint, we propose a two-step method to enforce electroneutrality
+in the following post-treatment step, applicable for matrix and iterative techniques. Third,
+we propose a solid theoretical analysis for the adjustable parameter $\alpha_i$ (namely the atomic
+Hubbard-U $U_i^0$), which is arbitrarily selected in many SR-CPM simulation practices. We proposed
+that the optimised $\alpha_i$ or $U_i^0$ should compensate for the electrical potential/energy
+discrepancy between the discrete atomistic model and the continuum limit. The analytical and optimal
+${\alpha}_i^0$ values are derived for a series of 2D materials. 

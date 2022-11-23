@@ -1,0 +1,19 @@
+Neural operators have recently become popular tools for designing solution maps between function
+spaces in the form of neural networks. Differently from classical scientific machine learning
+approaches that learn parameters of a known partial differential equation (PDE) for a single instance
+of the input parameters at a fixed resolution, neural operators approximate the solution map of
+a family of PDEs. Despite their success, the uses of neural operators are so far restricted to relatively
+shallow neural networks and confined to learning hidden governing laws. In this work, we propose
+a novel nonlocal neural operator, which we refer to as nonlocal kernel network (NKN), that is resolution
+independent, characterized by deep neural networks, and capable of handling a variety of tasks
+such as learning governing equations and classifying images. Our NKN stems from the interpretation
+of the neural network as a discrete nonlocal diffusion reaction equation that, in the limit of infinite
+layers, is equivalent to a parabolic nonlocal equation, whose stability is analyzed via nonlocal
+vector calculus. The resemblance with integral forms of neural operators allows NKNs to capture
+long-range dependencies in the feature space, while the continuous treatment of node-to-node
+interactions makes NKNs resolution independent. The resemblance with neural ODEs, reinterpreted
+in a nonlocal sense, and the stable network dynamics between layers allow for generalization of
+NKN's optimal parameters from shallow to deep networks. This fact enables the use of shallow-to-deep
+initialization techniques. Our tests show that NKNs outperform baseline methods in both learning
+governing equations and image classification tasks and generalize well to different resolutions
+and depths. 

@@ -1,0 +1,18 @@
+Monitoring medical data, e.g., Electrocardiogram (ECG) signals, is a common application of Internet
+of Things (IoT) devices. Compression methods are often applied on the massive amounts of sensor
+data generated prior to sending it to the Cloud to reduce the storage and delivery costs. A lossy compression
+provides high compression gain (CG), but may reduce the performance of an ECG application (downstream
+task) due to information loss. Previous works on ECG monitoring focus either on optimizing the signal
+reconstruction or the task's performance. Instead, we advocate a self-adapting lossy compression
+solution that enables configuring a desired performance level on the downstream tasks while maintaining
+an optimized CG that reduces Cloud costs. We propose Dynamic-Deep, a task-aware compression geared
+for IoT-Cloud architectures. Our compressor is trained to optimize the CG while maintaining the
+performance requirement of the downstream tasks chosen out of a wide range. In deployment, the IoT
+edge device adapts the compression and sends an optimized representation for each data segment,
+accounting for the downstream task's desired performance without relying on feedback from the
+Cloud. We conduct an extensive evaluation of our approach on common ECG datasets using two popular
+ECG applications, which includes heart rate (HR) arrhythmia classification. We demonstrate that
+Dynamic-Deep can be configured to improve HR classification F1-score in a wide range of requirements.
+One of which is tuned to improve the F1-score by 3 and increases CG by up to 83% compared to the previous
+state-of-the-art (autoencoder-based) compressor. Analyzing Dynamic-Deep on the Google Cloud
+Platform, we observe a 97% reduction in cloud costs compared to a no compression solution. 

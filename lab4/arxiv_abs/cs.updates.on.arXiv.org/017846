@@ -1,0 +1,19 @@
+Directed evolution is a versatile technique in protein engineering that mimics the process of natural
+selection by iteratively alternating between mutagenesis and screening in order to search for
+sequences that optimize a given property of interest, such as catalytic activity and binding affinity
+to a specified target. However, the space of possible proteins is too large to search exhaustively
+in the laboratory, and functional proteins are scarce in the vast sequence space. Machine learning
+(ML) approaches can accelerate directed evolution by learning to map protein sequences to functions
+without building a detailed model of the underlying physics, chemistry and biological pathways.
+Despite the great potentials held by these ML methods, they encounter severe challenges in identifying
+the most suitable sequences for a targeted function. These failures can be attributed to the common
+practice of adopting a high-dimensional feature representation for protein sequences and inefficient
+search methods. To address these issues, we propose an efficient, experimental design-oriented
+closed-loop optimization framework for protein directed evolution, termed ODBO, which employs
+a combination of novel low-dimensional protein encoding strategy and Bayesian optimization enhanced
+with search space prescreening via outlier detection. We further design an initial sample selection
+strategy to minimize the number of experimental samples for training ML models. We conduct and report
+four protein directed evolution experiments that substantiate the capability of the proposed
+framework for finding of the variants with properties of interest. We expect the ODBO framework
+to greatly reduce the experimental cost and time cost of directed evolution, and can be further generalized
+as a powerful tool for adaptive experimental design in a broader context. 

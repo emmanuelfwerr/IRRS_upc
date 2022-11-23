@@ -1,0 +1,20 @@
+As a means to extract biomarkers from medical imaging, radiomics has attracted increased attention
+from researchers. However, reproducibility and performance of radiomics in low dose CT scans are
+still poor, mostly due to noise. Deep learning generative models can be used to denoise these images
+and in turn improve radiomics' reproducibility and performance. However, most generative models
+are trained on paired data, which can be difficult or impossible to collect. In this article, we investigate
+the possibility of denoising low dose CTs using cycle generative adversarial networks (GANs) to
+improve radiomics reproducibility and performance based on unpaired datasets. Two cycle GANs
+were trained: 1) from paired data, by simulating low dose CTs (i.e., introducing noise) from high
+dose CTs; and 2) from unpaired real low dose CTs. To accelerate convergence, during GAN training,
+a slice-paired training strategy was introduced. The trained GANs were applied to three scenarios:
+1) improving radiomics reproducibility in simulated low dose CT images and 2) same-day repeat low
+dose CTs (RIDER dataset) and 3) improving radiomics performance in survival prediction. Cycle
+GAN results were compared with a conditional GAN (CGAN) and an encoder-decoder network (EDN) trained
+on simulated paired data.The cycle GAN trained on simulated data improved concordance correlation
+coefficients (CCC) of radiomic features from 0.87 to 0.93 on simulated noise CT and from 0.89 to 0.92
+on RIDER dataset, as well improving the AUC of survival prediction from 0.52 to 0.59. The cycle GAN
+trained on real data increased the CCCs of features in RIDER to 0.95 and the AUC of survival prediction
+to 0.58. The results show that cycle GANs trained on both simulated and real data can improve radiomics'
+reproducibility and performance in low dose CT and achieve similar results compared to CGANs and
+EDNs. 

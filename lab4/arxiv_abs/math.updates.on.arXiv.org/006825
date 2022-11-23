@@ -1,0 +1,20 @@
+There is a recent literature on large-width properties of Gaussian neural networks (NNs), i.e.
+NNs whose weights are distributed according to Gaussian distributions. Two popular problems are:
+i) the study of the large-width behaviour of NNs, which provided a characterization of the infinitely
+wide limit of a rescaled NN in terms of a Gaussian process; ii) the study of the training dynamics of
+NNs, which set forth a large-width equivalence between training the rescaled NN and performing
+a kernel regression with a deterministic kernel referred to as the neural tangent kernel (NTK).
+In this paper, we consider these problems for $\alpha$-Stable NNs, which generalize Gaussian NNs
+by assuming that the NN's weights are distributed as $\alpha$-Stable distributions with $\alpha\in(0,2]$,
+i.e. distributions with heavy tails. For shallow $\alpha$-Stable NNs with a ReLU activation function,
+we show that if the NN's width goes to infinity then a rescaled NN converges weakly to an $\alpha$-Stable
+process, i.e. a stochastic process with $\alpha$-Stable finite-dimensional distributions.
+As a novelty with respect to the Gaussian setting, in the $\alpha$-Stable setting the choice of the
+activation function affects the scaling of the NN, namely: to achieve the infinitely wide $\alpha$-Stable
+process, the ReLU function requires an additional logarithmic scaling with respect to sub-linear
+functions. Then, our main contribution is the NTK analysis of shallow $\alpha$-Stable ReLU-NNs,
+which leads to a large-width equivalence between training a rescaled NN and performing a kernel
+regression with an $(\alpha/2)$-Stable random kernel. The randomness of such a kernel is a novelty
+with respect to the Gaussian setting, namely: in the $\alpha$-Stable setting the randomness of
+the NN at initialization does not vanish in the NTK analysis, thus inducing a distribution for the
+kernel of the underlying kernel regression. 

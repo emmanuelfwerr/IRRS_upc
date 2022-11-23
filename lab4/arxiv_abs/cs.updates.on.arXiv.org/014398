@@ -1,0 +1,19 @@
+Security function outsourcing has witnessed both research and deployment in the recent years.
+While most existing services take a straight-forward approach of cloud hosting, on-path transit
+networks (such as ISPs) are increasingly more interested in offering outsourced security services
+to end users. Recent proposals (such as SafeBricks and mbTLS) have made it possible to outsource
+sensitive security applications to untrusted, arbitrary networks, rendering on-path security
+function outsourcing more promising than ever. However, to provide on-path security function
+outsourcing, there is one crucial component that is still missing -- a practical end-to-end network
+protocol. Thus, the discovery and orchestration of multiple capable and willing transit networks
+for user-requested security functions have only been assumed in many studies without any practical
+solutions. In this work, we propose Opsec, an end-to-end security-outsourcing protocol that fills
+this gap and brings us closer to the vision of on-path security function outsourcing. Opsec automatically
+discovers one or more transit ISPs between a client and a server, and requests user-specified security
+functions efficiently. When designing Opsec, we prioritize the practicality and applicability
+of this new end-to-end protocol in the current Internet. Our proof-of-concept implementation
+of Opsec for web sessions shows that an end user can easily start a new web session with a few clicks
+of a browser plug-in, to specify a series of security functions of her choice. We show that it is possible
+to implement such a new end-to-end service model in the current Internet for the majority of the web
+services without any major changes to the standard protocols (e.g., TCP, TLS, HTTP) and the existing
+network infrastructure (e.g., ISP's routing primitives). 

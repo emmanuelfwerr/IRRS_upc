@@ -1,0 +1,19 @@
+Online selection of optimal waveforms for target tracking with active sensors has long been a problem
+of interest. Many conventional solutions utilize an estimation-theoretic interpretation, in
+which a waveform-specific Cram\'{e}r-Rao lower bound on measurement error is used to select the
+optimal waveform for each tracking step. However, this approach is only valid in the high SNR regime,
+and requires a rather restrictive set of assumptions regarding the target motion and measurement
+models. Further, due to computational concerns, many traditional approaches are limited to near-term,
+or myopic, optimization, even though radar scenes exhibit strong temporal correlation. More recently,
+reinforcement learning has been proposed for waveform selection, in which the problem is framed
+as a Markov decision process (MDP), allowing for long-term planning. However, a major limitation
+of reinforcement learning is that the memory length of the underlying Markov process is often unknown
+for realistic target and channel dynamics, and a more general framework is desirable. This work
+develops a universal sequential waveform selection scheme which asymptotically achieves Bellman
+optimality in any radar scene which can be modeled as a $U^{\text{th}}$ order Markov process for
+a finite, but unknown, integer $U$. Our approach is based on well-established tools from the field
+of universal source coding, where a stationary source is parsed into variable length phrases in
+order to build a context-tree, which is used as a probabalistic model for the scene's behavior. We
+show that an algorithm based on a multi-alphabet version of the Context-Tree Weighting (CTW) method
+can be used to optimally solve a broad class of waveform-agile tracking problems while making minimal
+assumptions about the environment's behavior. 

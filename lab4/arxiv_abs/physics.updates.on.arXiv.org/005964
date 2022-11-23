@@ -1,0 +1,20 @@
+Proton computed tomography (CT) is similar to x-ray CT but relies on protons rather than photons
+to form an image. In its most common operation mode, the measured quantity is the amount of energy
+that a proton has lost while traversing the imaged object from which a relative stopping power map
+can be obtained via tomographic reconstruction. To this end, a calorimeter which measures the energy
+deposited by protons downstream of the scanned object has been studied or implemented as energy
+detector in several proton CT prototypes. An alternative method is to measure the proton's residual
+velocity and thus its kinetic energy via the time of flight (TOF) between at least two sensor planes.
+In this work, we study the precision, i.e. image noise, which can be expected from TOF proton CT systems.
+We rely on physics models on the one hand and statistical models of the relevant uncertainties on
+the other to derive closed form expressions for the noise in projection images. The TOF measurement
+error scales with the distance between the TOF sensor planes and is reported as velocity error in
+ps/m. We use variance reconstruction to obtain noise maps of a water cylinder phantom given the scanner
+characteristics and additionally reconstruct noise maps for a calorimeter-based proton CT system
+as reference. We find that TOF proton CT with 30 ps/m velocity error reaches similar image noise as
+a calorimeter-based proton CT system with 1% energy error (1 sigma error). A TOF proton CT system
+with a 50 ps/m velocity error produces slightly less noise than a 2% calorimeter system. Noise in
+a reconstructed TOF proton CT image is spatially inhomogeneous with a marked increase towards the
+object periphery. This systematic study of image noise in TOF proton CT can serve as a guide for future
+developments of this alternative solution for estimating the residual energy of protons after
+the scanned object. 

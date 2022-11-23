@@ -1,0 +1,18 @@
+In this paper, we show that the constant-dimensional Weisfeiler-Leman algorithm for groups (Brachter
+& Schweitzer, LICS 2020) can be fruitfully used to improve parallel complexity upper bounds on both
+isomorphism testing and canonization for several families of groups. In particular, we show: -
+Groups with an Abelian normal Hall subgroup whose complement is O(1)-generated are identified
+by constant-dimensional Weisfeiler-Leman using only a constant number of rounds. This places
+isomorphism testing for this family of groups into $\textsf{L}$ and canonization into $\textsf{SAC}^{2}$;
+the previous upper bound for isomorphism testing was $\textsf{P}$ (Qiao, Sarma, & Tang, STACS 2011).
+- We use the individualize-and-refine paradigm to obtain a $\textsf{quasiAC}^{1}$ isomorphism
+test for groups without Abelian normal subgroups, previously only known to be in $\mathsf{P}$ (Babai,
+Codenotti, & Qiao, ICALP 2012). - We extend a result of Brachter & Schweitzer (arXiv, 2021) on direct
+products of groups to the parallel setting. Namely, we also show that Weisfeiler-Leman can compute
+canonical forms of direct products in parallel, provided it can identify each of the indecomposable
+direct factors in parallel. They previously showed the analogous result for $\mathsf{P}$. We finally
+consider the count-free Weisfeiler-Leman algorithm, where we show that count-free WL is unable
+to even distinguish Abelian groups in polynomial-time. Nonetheless, we use count-free WL in tandem
+with bounded non-determinism and limited counting to obtain a new upper bound of $\beta_{1}\textsf{MAC}^{0}(\textsf{FOLL})$
+for isomorphism testing of Abelian groups. This improves upon the previous $\textsf{TC}^{0}(\textsf{FOLL})$
+upper bound due to Chattopadhyay, Tor\'an, & Wagner (ACM Trans. Comput. Theory, 2013). 

@@ -1,0 +1,20 @@
+Logistic regression is one of the most fundamental methods for modeling the probability of a binary
+outcome based on a collection of covariates. However, the classical formulation of logistic regression
+relies on the independent sampling assumption, which is often violated when the outcomes interact
+through an underlying network structure. This necessitates the development of models that can
+simultaneously handle both the network peer-effect (arising from neighborhood interactions)
+and the effect of high-dimensional covariates. In this paper, we develop a framework for incorporating
+such dependencies in a high-dimensional logistic regression model by introducing a quadratic
+interaction term, as in the Ising model, designed to capture pairwise interactions from the underlying
+network. The resulting model can also be viewed as an Ising model, where the node-dependent external
+fields linearly encode the high-dimensional covariates. We propose a penalized maximum pseudo-likelihood
+method for estimating the network peer-effect and the effect of the covariates, which, in addition
+to handling the high-dimensionality of the parameters, conveniently avoids the computational
+intractability of the maximum likelihood approach. Consequently, our method is computationally
+efficient and, under various standard regularity conditions, our estimate attains the classical
+high-dimensional rate of consistency. In particular, our results imply that even under network
+dependence it is possible to consistently estimate the model parameters at the same rate as in classical
+logistic regression, when the true parameter is sparse and the underlying network is not too dense.
+As a consequence of the general results, we derive the rates of consistency of our estimator for various
+natural graph ensembles, such as bounded degree graphs, sparse Erd\H{o}s-R\'{e}nyi random graphs,
+and stochastic block models. 

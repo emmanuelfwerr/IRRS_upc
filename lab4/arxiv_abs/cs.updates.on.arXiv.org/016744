@@ -1,0 +1,18 @@
+Interval scheduling is a basic problem in the theory of algorithms and a classical task in combinatorial
+optimization. We develop a set of techniques for partitioning and grouping jobs based on their starting
+and ending times, that enable us to view an instance of interval scheduling on many jobs as a union
+of multiple interval scheduling instances, each containing only a few jobs. Instantiating these
+techniques in dynamic and local settings of computation leads to several new results. For $(1+\varepsilon)$-approximation
+of job scheduling of $n$ jobs on a single machine, we obtain a fully dynamic algorithm with $O(\frac{\log{n}}{\varepsilon})$
+update and $O(\log{n})$ query worst-case time. Further, we design a local computation algorithm
+that uses only $O(\frac{\log{n}}{\varepsilon})$ queries. Our techniques are also applicable
+in a setting where jobs have rewards/weights. For this case we obtain a fully dynamic algorithm whose
+worst-case update and query time has only polynomial dependence on $1/\varepsilon$, which is an
+exponential improvement over the result of Henzinger et al. [SoCG, 2020]. We extend our approaches
+for interval scheduling on a single machine to the setting with $M$ machines. In one method of extension,
+we achieve similar approximation factors at the expense of a slower update time in the dynamic setting.
+In our other method of extension, we provide a general framework for reducing the task of interval
+scheduling on $M$ machines to that of interval scheduling on a single machine without any slow-down.
+In the unweighted case this reduction approach incurs an additional multiplicative approximation
+factor of $2 - 1/M$ in expectation, while in the weighted case this incurs a multiplicative approximation
+factor of $e$ in expectation. 

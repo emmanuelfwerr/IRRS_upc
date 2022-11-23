@@ -1,0 +1,19 @@
+With increasing memory demands for datacenter applications and the emergence of coherent interfaces
+like CXL that enable main memory expansion, we are about to observe a wide adoption of tiered-memory
+subsystems in hyperscalers. In such systems, main memory can constitute different memory technologies
+with varied performance characteristics. In this paper, we characterize the memory usage of a wide
+range of datacenter applications across the server fleet of a hyperscaler (Meta) to get insights
+into an application's memory access patterns and performance on a tiered memory system. Our characterizations
+show that datacenter applications can benefit from tiered memory systems as there exist opportunities
+for offloading colder pages to slower memory tiers. Without efficient memory management, however,
+such systems can significantly degrade performance. We propose a novel OS-level application-transparent
+page placement mechanism (TPP) for efficient memory management. TPP employs a lightweight mechanism
+to identify and place hot and cold pages to appropriate memory tiers. It enables page allocation
+to work independently from page reclamation logic that is, otherwise, tightly coupled in today's
+Linux kernel. As a result, the local memory tier has memory headroom for new allocations. At the same
+time, TPP can promptly promote performance-critical hot pages trapped in the slow memory tiers
+to the fast tier node. Both promotion and demotion mechanisms work transparently without any prior
+knowledge of an application's memory access behavior. We evaluate TPP with diverse workloads that
+consume significant portions of DRAM on Meta's server fleet and are sensitive to memory subsystem
+performance. TPP's efficient page placement improves Linux's performance by up to 18%. TPP outperforms
+NUMA balancing and AutoTiering, state-of-the-art solutions for tiered memory, by 10-17%. 

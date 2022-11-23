@@ -1,0 +1,20 @@
+Solar shading design should be done for the desired Indoor Environmental Quality (IEQ) in the early
+design stages. This field can be very challenging and time-consuming also requires experts, sophisticated
+software, and a large amount of money. The primary purpose of this research is to design a simple tool
+to study various models of solar shadings and make decisions easier and faster in the early stages.
+Database generation methods, artificial intelligence, and optimization have been used to achieve
+this goal. This tool includes two main parts of 1. predicting the performance of the user-selected
+model along with proposing effective parameters and 2. proposing optimal pre-prepared models
+to the user. In this regard, initially, a side-lit shoebox model with variable parameters was modeled
+parametrically, and five common solar shading models with their variables were applied to the space.
+For each solar shadings and the state without shading, metrics related to daylight and glare, view,
+and initial costs were simulated. The database generated in this research includes 87912 alternatives
+and six calculated metrics introduced to optimized machine learning models, including neural
+network, random Forrest, support vector regression, and k nearest neighbor. According to the results,
+the most accurate and fastest estimation model was Random Forrest, with an r2_score of 0.967 to 1.
+Then, sensitivity analysis was performed to identify the most influential parameters for each
+shading model and the state without it. This analysis distinguished the most effective parameters,
+including window orientation, WWR, room width, length, and shading depth. Finally, by optimizing
+the estimation function of machine learning models with the NSGA II algorithm, about 7300 optimal
+models were identified. The developed tool can evaluate various design alternatives in less than
+a few seconds for each. 

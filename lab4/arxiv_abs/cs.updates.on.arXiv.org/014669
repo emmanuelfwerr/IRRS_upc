@@ -1,0 +1,20 @@
+Pervasive computing promotes the installation of connected devices in our living spaces in order
+to provide services. Two major developments have gained significant momentum recently: an advanced
+use of edge resources and the integration of machine learning techniques for engineering applications.
+This evolution raises major challenges, in particular related to the appropriate distribution
+of computing elements along an edge-to-cloud continuum. About this, Federated Learning has been
+recently proposed for distributed model training in the edge. The principle of this approach is
+to aggregate models learned on distributed clients in order to obtain a new, more general model.
+The resulting model is then redistributed to clients for further training. To date, the most popular
+federated learning algorithm uses coordinate-wise averaging of the model parameters for aggregation.
+However, it has been shown that this method is not adapted in heterogeneous environments where data
+is not identically and independently distributed (non-iid). This corresponds directly to some
+pervasive computing scenarios where heterogeneity of devices and users challenges machine learning
+with the double objective of generalization and personalization. In this paper, we propose a novel
+aggregation algorithm, termed FedDist, which is able to modify its model architecture (here, deep
+neural network) by identifying dissimilarities between specific neurons amongst the clients.
+This permits to account for clients' specificity without impairing generalization. Furthermore,
+we define a complete method to evaluate federated learning in a realistic way taking generalization
+and personalization into account. Using this method, FedDist is extensively tested and compared
+with three state-of-the-art federated learning algorithms on the pervasive domain of Human Activity
+Recognition with smartphones. 

@@ -1,0 +1,19 @@
+We study the performance -- and specifically the rate at which the error probability converges to
+zero -- of Machine Learning (ML) classification techniques. Leveraging the theory of large deviations,
+we provide the mathematical conditions for a ML classifier to exhibit error probabilities that
+vanish exponentially, say $\sim \exp\left(-n\,I + o(n) \right)$, where $n$ is the number of informative
+observations available for testing (or another relevant parameter, such as the size of the target
+in an image) and $I$ is the error rate. Such conditions depend on the Fenchel-Legendre transform
+of the cumulant-generating function of the Data-Driven Decision Function (D3F, i.e., what is thresholded
+before the final binary decision is made) learned in the training phase. As such, the D3F and, consequently,
+the related error rate $I$, depend on the given training set, which is assumed of finite size. Interestingly,
+these conditions can be verified and tested numerically exploiting the available dataset, or a
+synthetic dataset, generated according to the available information on the underlying statistical
+model. In other words, the classification error probability convergence to zero and its rate can
+be computed on a portion of the dataset available for training. Coherently with the large deviations
+theory, we can also establish the convergence, for $n$ large enough, of the normalized D3F statistic
+to a Gaussian distribution. This property is exploited to set a desired asymptotic false alarm probability,
+which empirically turns out to be accurate even for quite realistic values of $n$. Furthermore,
+approximate error probability curves $\sim \zeta_n \exp\left(-n\,I \right)$ are provided, thanks
+to the refined asymptotic derivation (often referred to as exact asymptotics), where $\zeta_n$
+represents the most representative sub-exponential terms of the error probabilities. 

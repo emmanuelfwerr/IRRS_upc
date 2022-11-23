@@ -1,0 +1,19 @@
+CBCT-based online adaptive radiotherapy (ART) calls for accurate auto-segmentation models to
+reduce the time cost for physicians to edit contours, since the patient is immobilized on the treatment
+table waiting for treatment to start. However, auto-segmentation of CBCT images is a difficult
+task, majorly due to low image quality and lack of true labels for training a deep learning (DL) model.
+Meanwhile CBCT auto-segmentation in ART is a unique task compared to other segmentation problems,
+where manual contours on planning CT (pCT) are available. To make use of this prior knowledge, we
+propose to combine deformable image registration (DIR) and direct segmentation (DS) on CBCT for
+head and neck patients. First, we use deformed pCT contours derived from multiple DIR methods between
+pCT and CBCT as pseudo labels for training. Second, we use deformed pCT contours as bounding box to
+constrain the region of interest for DS. Meanwhile deformed pCT contours are used as pseudo labels
+for training, but are generated from different DIR algorithms from bounding box. Third, we fine-tune
+the model with bounding box on true labels. We found that DS on CBCT trained with pseudo labels and
+without utilizing any prior knowledge has very poor segmentation performance compared to DIR-only
+segmentation. However, adding deformed pCT contours as bounding box in the DS network can dramatically
+improve segmentation performance, comparable to DIR-only segmentation. The DS model with bounding
+box can be further improved by fine-tuning it with some real labels. Experiments showed that 7 out
+of 19 structures have at least 0.2 dice similarity coefficient increase compared to DIR-only segmentation.
+Utilizing deformed pCT contours as pseudo labels for training and as bounding box for shape and location
+feature extraction in a DS model is a good way to combine DIR and DS. 

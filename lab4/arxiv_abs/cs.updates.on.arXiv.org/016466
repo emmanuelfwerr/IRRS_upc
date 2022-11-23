@@ -1,0 +1,19 @@
+The main theme of this paper is using $k$-dimensional generalizations of the combinatorial Boolean
+Matrix Multiplication (BMM) hypothesis and the closely-related Online Matrix Vector Multiplication
+(OMv) hypothesis to prove new tight conditional lower bounds for dynamic problems. The combinatorial
+$k$-Clique hypothesis, which is a standard hypothesis in the literature, naturally generalizes
+the combinatorial BMM hypothesis. In this paper, we prove tight lower bounds for several dynamic
+problems under the combinatorial $k$-Clique hypothesis. For instance, we show that: * The Dynamic
+Range Mode problem has no combinatorial algorithms with $\mathrm{poly}(n)$ pre-processing time,
+$O(n^{2/3-\epsilon})$ update time and $O(n^{2/3-\epsilon})$ query time for any $\epsilon > 0$,
+matching the known upper bounds for this problem. Previous lower bounds only ruled out algorithms
+with $O(n^{1/2-\epsilon})$ update and query time under the OMv hypothesis. Other examples include
+tight combinatorial lower bounds for Dynamic Subgraph Connectivity, Dynamic 2D Orthogonal Range
+Color Counting, Dynamic 2-Pattern Document Retrieval, and Dynamic Range Mode in higher dimensions.
+Furthermore, we propose the OuMv$_k$ hypothesis as a natural generalization of the OMv hypothesis.
+Under this hypothesis, we prove tight lower bounds for various dynamic problems. For instance,
+we show that: * The Dynamic Skyline Points Counting problem in $(2k-1)$-dimensional space has no
+algorithm with $\mathrm{poly}(n)$ pre-processing time and $O(n^{1-1/k-\epsilon})$ update
+and query time for $\epsilon > 0$, even if the updates are semi-online. Other examples include tight
+conditional lower bounds for (semi-online) Dynamic Klee's measure for unit cubes, and high-dimensional
+generalizations of Erickson's problem and Langerman's problem. 

@@ -1,0 +1,19 @@
+Approximate message passing (AMP) is a low-cost iterative parameter-estimation technique for
+certain high-dimensional linear systems with non-Gaussian distributions. AMP only applies to
+independent identically distributed (IID) transform matrices, but may become unreliable (e.g.,
+perform poorly or even diverge) for other matrix ensembles, especially for ill-conditioned ones.
+To solve this issue, orthogonal/vector AMP (OAMP/VAMP) was proposed for general right-unitarily-invariant
+matrices. However, the Bayes-optimal OAMP/VAMP (BO-OAMP/VAMP) requires a high-complexity linear
+minimum mean square error (MMSE) estimator. This prevents OAMP/VAMP from being used in large-scale
+systems. To address the drawbacks of AMP and BO-OAMP/VAMP, this paper offers a memory AMP (MAMP)
+framework based on the orthogonality principle, which ensures that estimation errors in MAMP are
+asymptotically IID Gaussian. To realize the required orthogonality for MAMP, we provide an orthogonalization
+procedure for the local memory estimators. In addition, we propose a Bayes-optimal MAMP (BO-MAMP),
+in which a long-memory matched filter is used for interference suppression. The complexity of BO-MAMP
+is comparable to AMP. To asymptotically characterize the performance of BO-MAMP, a state evolution
+is derived. The relaxation parameters and damping vector in BO-MAMP are optimized based on state
+evolution. Most crucially, the state evolution of the optimized BO-MAMP converges to the same fixed
+point as that of the high-complexity BO-OAMP/VAMP for all right-unitarily-invariant matrices,
+and achieves the Bayes optimal MSE predicted by the replica method if its state evolution has a unique
+fixed point. Finally, simulations are provided to verify the theoretical results' validity and
+accuracy. 

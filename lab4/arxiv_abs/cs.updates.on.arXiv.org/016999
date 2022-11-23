@@ -1,0 +1,20 @@
+Synthetic aperture sonar (SAS) systems produce high-resolution images of the seabed environment.
+Moreover, deep learning has demonstrated superior ability in finding robust features for automating
+imagery analysis. However, the success of deep learning is conditioned on having lots of labeled
+training data, but obtaining generous pixel-level annotations of SAS imagery is often practically
+infeasible. This challenge has thus far limited the adoption of deep learning methods for SAS segmentation.
+Algorithms exist to segment SAS imagery in an unsupervised manner, but they lack the benefit of state-of-the-art
+learning methods and the results present significant room for improvement. In view of the above,
+we propose a new iterative algorithm for unsupervised SAS image segmentation combining superpixel
+formation, deep learning, and traditional clustering methods. We call our method Iterative Deep
+Unsupervised Segmentation (IDUS). IDUS is an unsupervised learning framework that can be divided
+into four main steps: 1) A deep network estimates class assignments. 2) Low-level image features
+from the deep network are clustered into superpixels. 3) Superpixels are clustered into class assignments
+(which we call pseudo-labels) using $k$-means. 4) Resulting pseudo-labels are used for loss backpropagation
+of the deep network prediction. These four steps are performed iteratively until convergence.
+A comparison of IDUS to current state-of-the-art methods on a realistic benchmark dataset for SAS
+image segmentation demonstrates the benefits of our proposal even as the IDUS incurs a much lower
+computational burden during inference (actual labeling of a test image). Finally, we also develop
+a semi-supervised (SS) extension of IDUS called IDSS and demonstrate experimentally that it can
+further enhance performance while outperforming supervised alternatives that exploit the same
+labeled training imagery. 

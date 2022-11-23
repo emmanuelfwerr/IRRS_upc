@@ -1,0 +1,19 @@
+Electrical neuromodulation as a palliative treatment has been increasingly used in epilepsy.
+However, most current neuromodulations implement pre-determined actuation strategies and lack
+self-adaptive patterns for adjusting stimulation strategies. In this work, rooted in optimal
+control theory, we propose a novel framework for real-time closed-loop electrical neuromodulation
+in epilepsy, which combines i) a deep Koopman operator based dynamical model to predict the temporal
+evolution of epileptic EEG with an approximated finite-dimensional linear dynamics and ii) a model
+predictive control (MPC) modular to design optimal seizure suppression strategies. It is termed
+Koopman-MPC framework. The Koopman operator based linear dynamical model is embedded in the latent
+state space of the autoencoder neural network, in which we can approximate and update the Koopman
+operator online. The linear dynamical property of the Koopman operator ensures the convexity of
+the optimization problem for subsequent MPC control. The predictive capability of the deep Koopman
+operator model is tested with both synthetic and real epileptic EEG data. The results demonstrate
+that the deep Koopman operator based model can map nonlinear neural dynamics into finite-dimensional
+linear dynamics with higher performance in predicting the seizure dynamics, compared with a 10-order
+autoregressive model (AR) model and a recurrent neural network (RNN). Moreover, compared with
+the RNN-MPC framework, the Koopman-MPC framework can better suppress seizure dynamics with less
+time consumption (only 0.035s), enabling real-time updates of epilepsy control strategies. Our
+Koopman-MPC framework opens a new window for model-based closed-loop neuromodulation and sheds
+light on nonlinear neurodynamics and feedback control policies. 

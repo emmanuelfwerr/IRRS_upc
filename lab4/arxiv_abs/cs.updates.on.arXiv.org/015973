@@ -1,0 +1,20 @@
+Public clouds are one of the most thriving technologies of the past decade. Major applications over
+public clouds require world-wide distribution and large amounts of data exchange between their
+distributed servers. To that end, major cloud providers have invested tens of billions of dollars
+in building world-wide inter-region networking infrastructure that can support high performance
+communication into, out of, and across public cloud geographic regions. In this paper, we lay the
+foundation for a comprehensive study and real time monitoring of various characteristic of networking
+within and between public clouds. We start by presenting CloudCast, a world-wide and expandable
+measurements and analysis system, currently (January 2019)collecting data from three major public
+clouds (AWS, GCPand Azure), 59 regions, 1184 intra-cloud and 2238 cross-cloud links (each link
+represents a direct connection between a pair of regions), amounting to a total of 3422 continuously
+monitored links and providing active measurements every minute.CloudCast is composed of measurement
+agents automatically installed in each public cloud region, centralized control, measurement
+data base, analysis engine and visualization tools. Then we turn to analyze the latency measurement
+data collected over almost a year . Our analysis yields surprising results. First, each public cloud
+exhibits a unique set of link latency behaviors along time. Second, using a novel, fair evaluation
+methodology, termed similar links, we compare the three clouds. Third, we prove that more than 50%
+of all links do not provide the optimal RTT through the methodology of triangles. Triangles also
+provide a framework to get around bottlenecks, benefiting not only the majority (53%-70%) of the
+cross-cloud links by 30% to 70%, but also a significant portion (29%-45%) of intra-cloud links by
+14%-33%. 

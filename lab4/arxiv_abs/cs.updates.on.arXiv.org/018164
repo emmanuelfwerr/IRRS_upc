@@ -1,0 +1,19 @@
+During the design process of an autonomous underwater vehicle (AUV), the pressure vessel has a critical
+role. The pressure vessel contains dry electronics, power sources, and other sensors that can not
+be flooded. A traditional design approach for a pressure vessel design involves running multiple
+Finite Element Analysis (FEA) based simulations and optimizing the design to find the best suitable
+design which meets the requirement. Running these FEAs are computationally very costly for any
+optimization process and it becomes difficult to run even hundreds of evaluation. In such a case,
+a better approach is the surrogate design with the goal of replacing FEA-based prediction with some
+learning-based regressor. Once the surrogate is trained for a class of problem, then the learned
+response surface can be used to analyze the stress effect without running the FEA for that class of
+problem. The challenge of creating a surrogate for a class of problems is data generation. Since
+the process is computationally costly, it is not possible to densely sample the design space and
+the learning response surface on sparse data set becomes difficult. During experimentation, we
+observed that a Deep Learning-based surrogate outperforms other regression models on such sparse
+data. In the present work, we are utilizing the Deep Learning-based model to replace the costly finite
+element analysis-based simulation process. By creating the surrogate we speed up the prediction
+on the other design much faster than direct Finite element Analysis. We also compared our DL-based
+surrogate with other classical Machine Learning (ML) based regression models( random forest and
+Gradient Boost regressor). We observed on the sparser data, the DL-based surrogate performs much
+better than other regression models. 

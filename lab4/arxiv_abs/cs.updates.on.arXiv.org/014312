@@ -1,0 +1,20 @@
+Localization is one of the most important problems in various fields such as robotics and wireless
+communications. For instance, Unmanned Aerial Vehicles (UAVs) require the information of the
+position precisely for an adequate control strategy. This problem is handled very efficiently
+with integrated GPS units for outdoor applications. However, indoor applications require special
+treatment due to the unavailability of GPS signals. Another aspect of mobile robots such as UAVs
+is that there is constant wireless communication between the mobile robot and a computational unit.
+This communication is mainly done for obtaining telemetry information or computation of control
+actions directly. The responsible integrated units for this transmission are commercial wireless
+communication chipsets. These units on the receiver side are responsible for getting rid of the
+diverse effects of the communication channel with various mathematical techniques. These techniques
+mainly require the Channel State Information (CSI) of the current channel to compensate the channel
+itself. After the compensation, the chipset has nothing to do with CSI. However, the locations of
+both the transmitter and receiver have a direct impact on CSI. Even though CSI contains such rich
+information about the environment, the accessibility of these data is blocked by the commercial
+wireless chipsets since they are manufactured to provide only the processed information data bits
+to the user. However, with the IEEE 802.11n standardization, certain chipsets provide access to
+CSI. Therefore, CSI data became processible and integrable to localization schemes. In this project,
+a test environment was constructed for the localization task. Two routers with proper chipsets
+were assigned as transmitter and receiver. They were operationalized for the CSI data collection.
+Lastly, these data were processed with various deep learning models. 

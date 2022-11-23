@@ -1,0 +1,20 @@
+In this work, we consider the task of faithfully simulating a quantum measurement, acting on a joint
+bipartite quantum state, in a distributed manner. In the distributed setup, the constituent sub-systems
+of the joint quantum state are measured by two agents, Alice and Bob. A third agent, Charlie receives
+the measurement outcomes sent by Alice and Bob. Charlie uses local and pairwise shared randomness
+to compute a bivariate function of the measurement outcomes. The objective of three agents is to
+faithfully simulate the given distributed quantum measurement acting on the given quantum state
+while minimizing the communication and shared randomness rates. We demonstrate a new achievable
+information-theoretic rate-region that exploits the bivariate function using random structured
+POVMs based on asymptotically good algebraic codes. The algebraic structure of these codes is matched
+to that of the bivariate function that models the action of Charlie. The conventional approach for
+this class of problems has been to reconstruct individual measurement outcomes corresponding
+to Alice and Bob, at Charlie, and then compute the bivariate function, achieved using mutually independent
+approximating POVMs based on random unstructured codes. In the present approach, using algebraic
+structured POVMs, the computation is performed on the fly, thus obviating the need to reconstruct
+individual measurement outcomes at Charlie. Using this, we show that a strictly larger rate region
+can be achieved. One of the challenges in analyzing these structured POVMs is that they exhibit only
+pairwise independence and induce only uniform single-letter distributions. To address this,
+we use nesting of algebraic codes and develop a covering lemma applicable to pairwise-independent
+POVM ensembles. Combining these techniques, we provide a multi-party distributed faithful simulation
+and function computation protocol. 

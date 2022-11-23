@@ -1,0 +1,19 @@
+We propose and study a new multilevel method for the numerical approximation of a Gibbs distribution
+$\pi$ on R d , based on (over-damped) Langevin diffusions. This method both inspired by [PP18] and
+[GMS + 20] relies on a multilevel occupation measure, i.e. on an appropriate combination of R occupation
+measures of (constant-step) discretized schemes of the Langevin diffusion with respective steps
+$\gamma$r = $\gamma$02 --r , r = 0,. .. , R. For a given diffusion, we first state a result under general
+assumptions which guarantees an $\epsilon$-approximation (in a L 2-sense) with a cost proportional
+to $\epsilon$ --2 (i.e. proportional to a Monte-Carlo method without bias) or $\epsilon$ --2 | log
+$\epsilon$| 3 under less contractive assumptions. This general result is then applied to over-damped
+Langevin diffusions in a strongly convex setting, with a study of the dependence in the dimension
+d and in the spectrum of the Hessian matrix D 2 U of the potential U : R d $\rightarrow$ R involved in the
+Gibbs distribution. This leads to strategies with cost in O(d$\epsilon$ --2 log 3 (d$\epsilon$
+--2)) and in O(d$\epsilon$ --2) under an additional condition on the third derivatives of U. In particular,
+in our last main result, we show that, up to universal constants, an appropriate choice of the diffusion
+coefficient and of the parameters of the procedure leads to a cost controlled by ($\lambda$ U $\lor$1)
+2 $\lambda$ 3 U d$\epsilon$ --2 (where$\lambda$U and $\lambda$ U respectively denote the supremum
+and the infimum of the largest and lowest eigenvalue of D 2 U). In our numerical illustrations, we
+show that our theoretical bounds are confirmed in practice and finally propose an opening to some
+theoretical or numerical strategies in order to increase the robustness of the procedure when the
+largest and smallest eigenvalues of D 2 U are respectively too large or too small. 

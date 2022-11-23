@@ -1,0 +1,20 @@
+Image fusion is a technique to integrate information from multiple source images with complementary
+information to improve the richness of a single image. Due to insufficient task-specific training
+data and corresponding ground truth, most existing end-to-end image fusion methods easily fall
+into overfitting or tedious parameter optimization processes. Two-stage methods avoid the need
+of large amount of task-specific training data by training encoder-decoder network on large natural
+image datasets and utilizing the extracted features for fusion, but the domain gap between natural
+images and different fusion tasks results in limited performance. In this study, we design a novel
+encoder-decoder based image fusion framework and propose a destruction-reconstruction based
+self-supervised training scheme to encourage the network to learn task-specific features. Specifically,
+we propose three destruction-reconstruction self-supervised auxiliary tasks for multi-modal
+image fusion, multi-exposure image fusion and multi-focus image fusion based on pixel intensity
+non-linear transformation, brightness transformation and noise transformation, respectively.
+In order to encourage different fusion tasks to promote each other and increase the generalizability
+of the trained network, we integrate the three self-supervised auxiliary tasks by randomly choosing
+one of them to destroy a natural image in model training. In addition, we design a new encoder that
+combines CNN and Transformer for feature extraction, so that the trained model can exploit both
+local and global information. Extensive experiments on multi-modal image fusion, multi-exposure
+image fusion and multi-focus image fusion tasks demonstrate that our proposed method achieves
+the state-of-the-art performance in both subjective and objective evaluations. The code will
+be publicly available soon. 

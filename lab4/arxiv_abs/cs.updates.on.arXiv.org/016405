@@ -1,0 +1,19 @@
+Principal-Agent (PA) problems describe a broad class of economic relationships characterized
+by misaligned incentives and asymmetric information. The Principal's problem is to find optimal
+incentives given the available information, e.g., a manager setting optimal wages for its employees.
+Whereas the Principal is often assumed rational, comparatively little is known about solutions
+when the Principal is boundedly rational, especially in the sequential setting, with multiple
+Agents, and with multiple information channels. Here, we develop RIRL, a deep reinforcement learning
+framework that solves such complex PA problems with a rationally inattentive Principal. Such a
+Principal incurs a cost for paying attention to information, which can model forms of bounded rationality.
+We use RIRL to analyze rich economic phenomena in manager-employee relationships. In the single-step
+setting, 1) RIRL yields wages that are consistent with theoretical predictions; and 2) non-zero
+attention costs lead to simpler but less profitable wage structures, and increased Agent welfare.
+In a sequential setting with multiple Agents, RIRL shows opposing consequences of the Principal's
+inattention to different information channels: 1) inattention to Agents' outputs closes wage
+gaps based on ability differences; and 2) inattention to Agents' efforts induces a social dilemma
+dynamic in which Agents work harder, but essentially for free. Moreover, RIRL reveals non-trivial
+relationships between the Principal's inattention and Agent types, e.g., if Agents are prone to
+sub-optimal effort choices, payment schedules are more sensitive to the Principal's attention
+cost. As such, RIRL can reveal novel economic relationships and enables progress towards understanding
+the effects of bounded rationality in dynamic settings. 

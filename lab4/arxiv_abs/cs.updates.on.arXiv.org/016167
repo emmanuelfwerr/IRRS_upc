@@ -1,0 +1,20 @@
+Machine learning (ML) models have been deployed for high-stakes applications. Due to class imbalance
+in the sensitive attribute observed in the datasets, ML models are unfair on minority subgroups
+identified by a sensitive attribute, such as race and sex. In-processing fairness algorithms ensure
+model predictions are independent of sensitive attribute. Furthermore, ML models are vulnerable
+to attribute inference attacks where an adversary can identify the values of sensitive attribute
+by exploiting their distinguishable model predictions. Despite privacy and fairness being important
+pillars of trustworthy ML, the privacy risk introduced by fairness algorithms with respect to attribute
+leakage has not been studied. We identify attribute inference attacks as an effective measure for
+auditing blackbox fairness algorithms to enable model builder to account for privacy and fairness
+in the model design. We proposed Dikaios, a privacy auditing tool for fairness algorithms for model
+builders which leveraged a new effective attribute inference attack that account for the class
+imbalance in sensitive attributes through an adaptive prediction threshold. We evaluated Dikaios
+to perform a privacy audit of two in-processing fairness algorithms over five datasets. We show
+that our attribute inference attacks with adaptive prediction threshold significantly outperform
+prior attacks. We highlighted the limitations of in-processing fairness algorithms to ensure
+indistinguishable predictions across different values of sensitive attributes. Indeed, the
+attribute privacy risk of these in-processing fairness schemes is highly variable according to
+the proportion of the sensitive attributes in the dataset. This unpredictable effect of fairness
+mechanisms on the attribute privacy risk is an important limitation on their utilization which
+has to be accounted by the model builder. 

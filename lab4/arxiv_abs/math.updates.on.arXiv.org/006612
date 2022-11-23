@@ -1,0 +1,19 @@
+Given an undirected graph $G$, a conflict-free coloring CFON* (resp. CFCN*) is an assignment of
+colors to a subset of the vertices of the graph, such that for every vertex there exists a color that
+is assigned to exactly one vertex in its open neighborhood (resp. closed neighborhood). The conflict-free
+coloring problem asks to find the minimum number of colors required for such a CFON* (resp. CFCN*)
+coloring, called the conflict-free chromatic number, denoted by $\chi^*_{ON}(G)$ (resp. $\chi^*_{CN}(G)$).
+The decision versions of the problems are NP-complete in general. In this paper, we show the following
+results on the conflict-free coloring problem under open and closed neighborhood settings. Both
+versions of the problem are fixed-parameter tractable parameterized by the combined parameters
+clique width and the solution size. We also show the existence of graphs that have bounded clique
+width and unbounded conflict-free chromatic numbers (on both versions). We show that $\chi^*_{CN}(G)\leq
+3$, for a distance hereditary graph $G$. On the contrary, we show the existence of a distance hereditary
+graph that has an unbounded $\chi^*_{ON}(G)$. On the positive side, we show that block graphs and
+cographs (which are subclasses of distance hereditary graphs) have bounds of three and two respectively
+for $\chi^*_{ON}(G)$, and show that both problems are polynomial time solvable on block graphs
+and cographs. We show that $\chi^*_{ON}(G)\leq 3$, for an interval graph $G$, improving the bound
+by Reddy (2018) and also prove that the above bound is tight. Moreover, we give upper bounds for $\chi^*_{ON}(G)$
+on unit square and unit disk graphs and show NP-completeness results. For split graphs, we show that
+the CFON* problem is NP-complete and the CFCN* problem is polynomial time solvable. We study the
+problems on Kneser graphs and give upper and lower bounds. 

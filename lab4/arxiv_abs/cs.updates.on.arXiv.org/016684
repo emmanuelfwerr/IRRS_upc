@@ -1,0 +1,19 @@
+Real-time semantic segmentation, which aims to achieve high segmentation accuracy at real-time
+inference speed, has received substantial attention over the past few years. However, many state-of-the-art
+real-time semantic segmentation methods tend to sacrifice some spatial details or contextual
+information for fast inference, thus leading to degradation in segmentation quality. In this paper,
+we propose a novel Deep Multi-branch Aggregation Network (called DMA-Net) based on the encoder-decoder
+structure to perform real-time semantic segmentation in street scenes. Specifically, we first
+adopt ResNet-18 as the encoder to efficiently generate various levels of feature maps from different
+stages of convolutions. Then, we develop a Multi-branch Aggregation Network (MAN) as the decoder
+to effectively aggregate different levels of feature maps and capture the multi-scale information.
+In MAN, a lattice enhanced residual block is designed to enhance feature representations of the
+network by taking advantage of the lattice structure. Meanwhile, a feature transformation block
+is introduced to explicitly transform the feature map from the neighboring branch before feature
+aggregation. Moreover, a global context block is used to exploit the global contextual information.
+These key components are tightly combined and jointly optimized in a unified network. Extensive
+experimental results on the challenging Cityscapes and CamVid datasets demonstrate that our proposed
+DMA-Net respectively obtains 77.0% and 73.6% mean Intersection over Union (mIoU) at the inference
+speed of 46.7 FPS and 119.8 FPS by only using a single NVIDIA GTX 1080Ti GPU. This shows that DMA-Net
+provides a good tradeoff between segmentation quality and speed for semantic segmentation in street
+scenes. 

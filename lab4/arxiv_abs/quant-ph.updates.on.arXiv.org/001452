@@ -1,0 +1,19 @@
+We introduce the problem of unitarization. Unitarization is the problem of taking $k$ input quantum
+circuits that produce orthogonal states from the all $0$ state, and create an output circuit implementing
+a unitary with its first $k$ columns as those states. That is, the output circuit takes the $k$th computational
+basis state to the state prepared by the $k$th input circuit. We allow the output circuit to use ancilla
+qubits initialized to $0$. But ancilla qubits must always be returned to $0$ for any input. The input
+circuits may use ancilla qubits, but we are only guaranteed the they return ancilla qubits to $0$
+on the all $0$ input. The unitarization problem seems hard if the output states are neither orthogonal
+to or in the span of the computational basis states that need to map to them. In this work, we approximately
+solve this problem in the case where input circuits are given as black box oracles by probably finding
+an approximate basis for our states. This method may be more interesting than the application. This
+technique is a sort of quantum analogue of Gram-Schmidt orthogonalization for quantum states.
+Specifically, we find an approximate basis in polynomial time for the following parameters. Take
+any natural $n$, $k = O\left(\frac{\ln(n)}{\ln(\ln(n))}\right)$, and $\epsilon = 2^{-O(\sqrt{\ln(n)})}$.
+Take any $k$ input quantum states, $(|\psi_i \rangle)_{i\in [k]}$, on polynomial in $n$ qubits
+prepared by quantum oracles, $(V_i)_{i \in [k]}$ (that we can control call and control invert).
+Then there is a quantum circuit with polynomial size in $n$ with access to the oracles $(V_i)_{i \in
+[k]}$ that with at least $1 - \epsilon$ probability, computes at most $k$ circuits with size polynomial
+in $n$ and oracle access to $(V_i)_{i \in [k]}$ that $\epsilon$ approximately computes an $\epsilon$
+approximate orthonormal basis for $(|\psi_i \rangle)_{i\in [k]}$. 

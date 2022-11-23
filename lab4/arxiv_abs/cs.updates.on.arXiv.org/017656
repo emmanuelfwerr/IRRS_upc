@@ -1,0 +1,19 @@
+With the advent of multi-core systems, GPUs and FPGAs, loop parallelization has become a promising
+way to speed-up program execution. In order to stay up with time, various performance-oriented
+programming languages provide a multitude of constructs to allow programmers to write parallelizable
+loops. Correspondingly, researchers have developed techniques to automatically parallelize
+loops that do not carry dependences across iterations, and/or call pure functions. However, in
+managed languages with platform-independent runtimes such as Java, it is practically infeasible
+to perform complex dependence analysis during JIT compilation. In this paper, we propose AutoTornado,
+a first of its kind static+JIT loop parallelizer for Java programs that parallelizes loops for heterogeneous
+architectures using TornadoVM (a Graal-based VM that supports insertion of @Parallel constructs
+for loop parallelization). AutoTornado performs sophisticated dependence and purity analysis
+of Java programs statically, in the Soot framework, to generate constraints encoding conditions
+under which a given loop can be parallelized. The generated constraints are then fed to the Z3 theorem
+prover (which we have integrated with Soot) to annotate canonical for loops that can be parallelized
+using the @Parallel construct. We have also added runtime support in TornadoVM to use static analysis
+results for loop parallelization. Our evaluation over several standard parallelization kernels
+shows that AutoTornado correctly parallelizes 61.3% of manually parallelizable loops, with an
+efficient static analysis and a near-zero runtime overhead. To the best of our knowledge, AutoTornado
+is not only the first tool that performs program-analysis based parallelization for a real-world
+JVM, but also the first to integrate Z3 with Soot for loop parallelization. 

@@ -1,0 +1,19 @@
+An urban tactical wireless network is considered wherein the base stations are situated on unmanned
+aerial vehicles (UAVs) that provide connectivity to ground assets such as vehicles located on city
+streets. The UAVs are assumed to be randomly deployed at a fixed height according to a two-dimensional
+point process. Millimeter-wave (mmWave) frequencies are used to avail of large available bandwidths
+and spatial isolation due to beamforming. In urban environments, mmWave signals are prone to blocking
+of the line-of-sight (LoS) by buildings. While reflections are possible, the desire for consistent
+connectivity places a strong preference on the existence of an unblocked LoS path. As such, the key
+performance metric considered in this paper is the connectivity probability, which is the probability
+of an unblocked LoS path to at least one UAV within some maximum transmission distance. By leveraging
+tools from stochastic geometry, the connectivity probability is characterized as a function of
+the city type (e.g., urban, dense urban, suburban), density of UAVs (average number of UAVs per square
+km), and height of the UAVs. The city streets are modeled as a Manhattan Poisson Line Process (MPLP)
+and the building heights are randomly distributed. The analysis first finds the connectivity probability
+conditioned on a particular network realization (location of the UAVs) and then removes the conditioning
+to uncover the distribution of the connectivity; i.e., the fraction of network realizations that
+will fail to meet an outage threshold. While related work has applied an MPLP to networks with a single
+UAV, the contributions of this paper are that it (1) considers networks of multiple UAVs, (2) characterizes
+the performance by a connectivity distribution, and (3) identifies the optimal altitude for the
+UAVs. 

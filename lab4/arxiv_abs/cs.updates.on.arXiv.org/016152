@@ -1,0 +1,19 @@
+Freezing of gait (FOG) is a common and debilitating gait impairment in Parkinson's disease. Further
+insight into this phenomenon is hampered by the difficulty to objectively assess FOG. To meet this
+clinical need, this paper proposes an automated motion-capture-based FOG assessment method driven
+by a novel deep neural network. Automated FOG assessment can be formulated as an action segmentation
+problem, where temporal models are tasked to recognize and temporally localize the FOG segments
+in untrimmed motion capture trials. This paper takes a closer look at the performance of state-of-the-art
+action segmentation models when tasked to automatically assess FOG. Furthermore, a novel deep
+neural network architecture is proposed that aims to better capture the spatial and temporal dependencies
+than the state-of-the-art baselines. The proposed network, termed multi-stage spatial-temporal
+graph convolutional network (MS-GCN), combines the spatial-temporal graph convolutional network
+(ST-GCN) and the multi-stage temporal convolutional network (MS-TCN). The ST-GCN captures the
+hierarchical spatial-temporal motion among the joints inherent to motion capture, while the multi-stage
+component reduces over-segmentation errors by refining the predictions over multiple stages.
+The experiments indicate that the proposed model outperforms four state-of-the-art baselines.
+Moreover, FOG outcomes derived from MS-GCN predictions had an excellent (r=0.93 [0.87, 0.97])
+and moderately strong (r=0.75 [0.55, 0.87]) linear relationship with FOG outcomes derived from
+manual annotations. The proposed MS-GCN may provide an automated and objective alternative to
+labor-intensive clinician-based FOG assessment. Future work is now possible that aims to assess
+the generalization of MS-GCN to a larger and more varied verification cohort. 

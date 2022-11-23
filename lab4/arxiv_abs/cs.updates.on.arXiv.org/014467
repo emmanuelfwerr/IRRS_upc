@@ -1,0 +1,20 @@
+Over the last year, the severe acute respiratory syndrome coronavirus-2 (SARS-CoV-2) and its variants
+have highlighted the importance of screening tools with high diagnostic accuracy for new illnesses
+such as COVID-19. To that regard, deep learning approaches have proven as effective solutions for
+pneumonia classification, especially when considering chest-x-rays images. However, this lung
+infection can also be caused by other viral, bacterial or fungi pathogens. Consequently, efforts
+are being poured toward distinguishing the infection source to help clinicians to diagnose the
+correct disease origin. Following this tendency, this study further explores the effectiveness
+of established neural network architectures on the pneumonia classification task through the
+transfer learning paradigm. To present a comprehensive comparison, 12 well-known ImageNet pre-trained
+models were fine-tuned and used to discriminate among chest-x-rays of healthy people, and those
+showing pneumonia symptoms derived from either a viral (i.e., generic or SARS-CoV-2) or bacterial
+source. Furthermore, since a common public collection distinguishing between such categories
+is currently not available, two distinct datasets of chest-x-rays images, describing the aforementioned
+sources, were combined and employed to evaluate the various architectures. The experiments were
+performed using a total of 6330 images split between train, validation and test sets. For all models,
+common classification metrics were computed (e.g., precision, f1-score) and most architectures
+obtained significant performances, reaching, among the others, up to 84.46% average f1-score
+when discriminating the 4 identified classes. Moreover, confusion matrices and activation maps
+computed via the Grad-CAM algorithm were also reported to present an informed discussion on the
+networks classifications. 

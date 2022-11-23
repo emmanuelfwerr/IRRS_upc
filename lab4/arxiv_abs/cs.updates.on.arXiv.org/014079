@@ -1,0 +1,20 @@
+Deep learning models usually require a large amount of labeled data to achieve satisfactory performance.
+In multimedia analysis, domain adaptation studies the problem of cross-domain knowledge transfer
+from a label rich source domain to a label scarce target domain, thus potentially alleviates the
+annotation requirement for deep learning models. However, we find that contemporary domain adaptation
+methods for cross-domain image understanding perform poorly when source domain is noisy. Weakly
+Supervised Domain Adaptation (WSDA) studies the domain adaptation problem under the scenario
+where source data can be noisy. Prior methods on WSDA remove noisy source data and align the marginal
+distribution across domains without considering the fine-grained semantic structure in the embedding
+space, which have the problem of class misalignment, e.g., features of cats in the target domain
+might be mapped near features of dogs in the source domain. In this paper, we propose a novel method,
+termed Noise Tolerant Domain Adaptation, for WSDA. Specifically, we adopt the cluster assumption
+and learn cluster discriminatively with class prototypes in the embedding space. We propose to
+leverage the location information of the data points in the embedding space and model the location
+information with a Gaussian mixture model to identify noisy source data. We then design a network
+which incorporates the Gaussian mixture noise model as a sub-module for unsupervised noise removal
+and propose a novel cluster-level adversarial adaptation method which aligns unlabeled target
+data with the less noisy class prototypes for mapping the semantic structure across domains. We
+conduct extensive experiments to evaluate the effectiveness of our method on both general images
+and medical images from COVID-19 and e-commerce datasets. The results show that our method significantly
+outperforms state-of-the-art WSDA methods. 

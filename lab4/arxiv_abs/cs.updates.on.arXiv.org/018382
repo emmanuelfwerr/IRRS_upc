@@ -1,0 +1,20 @@
+We present a logical framework that formally models how a given private information P stored on a
+given database D, can get captured progressively, by an agent/adversary querying the database
+repeatedly. Named DLTTS (Distributed Labeled Tagged Transition System), the framework borrows
+ideas from several domains: Probabilistic Automata of Segala, Probabilistic Concurrent Systems,
+and Probabilistic labelled transition systems. To every node on a DLTTS is attached a tag that represents
+the 'current' knowledge of the adversary, acquired from the responses of the answering mechanism
+of the DBMS to his/her queries, at the nodes traversed earlier, along any given run; this knowledge
+is completed at the same node, with further relational deductions, possibly in combination with
+'public' information from other databases given in advance. A 'blackbox' mechanism is also part
+of a DLTTS, and it is meant as an oracle; its role is to tell if the private information has been deduced
+by the adversary at the current node, and if so terminate the run. An additional special feature is
+that the blackbox also gives information on how 'close', or how 'far', the knowledge of the adversary
+is, from the private information P , at the current node. A metric is defined for that purpose, on the
+set of all 'type compatible' tuples from the given database, the data themselves being typed with
+the headers of the base. Despite the transition systems flavor of our framework, this metric is not
+'behavioral' in the sense presented in some other works. It is exclusively database oriented, and
+allows to define new notions of adjacency and of indistinguishabilty between databases, more generally
+than those usually based on the Hamming metric (and a restricted notion of adjacency). Examples
+are given all along to illustrate how our framework works. Keywords:Database, Privacy, Transition
+System, Probability, Distribution. 

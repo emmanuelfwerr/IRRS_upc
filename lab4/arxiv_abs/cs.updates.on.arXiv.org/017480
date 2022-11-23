@@ -1,0 +1,19 @@
+Software projects use Issue Tracking Systems (ITS) like JIRA to track issues and organize the workflows
+around them. Issues are often inter-connected via different links such as the default JIRA link
+types Duplicate, Relate, Block, or Subtask. While previous research has mostly focused on analyzing
+and predicting duplication links, this work aims at understanding the various other link types,
+their prevalence, and characteristics towards a more reliable link type prediction. For this,
+we studied 607,208 links connecting 698,790 issues in 15 public JIRA repositories. Besides the
+default types, the custom types Depend, Incorporate, Split, and Cause were also common. We manually
+grouped all 75 link types used in the repositories into five general categories: General Relation,
+Duplication, Composition, Temporal / Causal, and Workflow. Comparing the structures of the corresponding
+graphs, we observed several trends. For instance, Duplication links tend to represent simpler
+issue graphs often with two components and Composition links present the highest amount of hierarchical
+tree structures (97.7%). Surprisingly, General Relation links have a significantly higher transitivity
+score than Duplication and Temporal / Causal links. Motivated by the differences between the link
+types and by their popularity, we evaluated the robustness of two state-of-the-art duplicate detection
+approaches from the literature on the JIRA dataset. We found that current deep-learning approaches
+confuse between Duplication and other links in almost all repositories. On average, the classification
+accuracy dropped by 6% for one approach and 12% for the other. Extending the training sets with other
+link types seems to partly solve this issue. We discuss our findings and their implications for research
+and practice. 

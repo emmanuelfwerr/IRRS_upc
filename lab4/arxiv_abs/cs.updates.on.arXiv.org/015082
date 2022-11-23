@@ -1,0 +1,20 @@
+Software developers often look for solutions to their code-level problems using the Stack Overflow
+Q&A website. To receive help, developers frequently submit questions containing sample code segments
+and the description of the programming issue. Unfortunately, it is not always possible to reproduce
+the issues from the code segments that may impede questions from receiving prompt and appropriate
+solutions. We conducted an exploratory study on the reproducibility of issues discussed in 400
+Java and 400 Python questions. We parsed, compiled, executed, and carefully examined the code segments
+from these questions to reproduce the reported programming issues. The outcomes of our study are
+three-fold. First, we found that we can reproduce approximately 68% of Java and 71% of Python issues,
+whereas we were unable to reproduce approximately 22% of Java and 19% of Python issues using the code
+segments. Of the issues that were reproducible, approximately 67% of the Java code segments and
+20% of the Python code segments required minor or major modifications to reproduce the issues. Second,
+we carefully investigated why programming issues could not be reproduced and provided evidence-based
+guidelines for writing effective code examples for Stack Overflow questions. Third, we investigated
+the correlation between the issue reproducibility status of questions and the corresponding answer
+meta-data, such as the presence of an accepted answer. According to our analysis, a reproducible
+question has at least two times higher chance of receiving an accepted answer than an irreproducible
+question. Besides, the median time delay in receiving accepted answers is double if the issues reported
+in questions could not be reproduced. We also investigate the confounding factors (e.g., reputation)
+and find that confounding factors do not hurt the correlation between reproducibility status and
+answer meta-data. 

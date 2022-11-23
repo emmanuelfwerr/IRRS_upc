@@ -1,0 +1,19 @@
+Biological neural networks define the brain function and intelligence of humans and other mammals,
+and form ultra-large, spatial, structured graphs. Their neuronal organization is closely interconnected
+with the spatial organization of the brain's microvasculature, which supplies oxygen to the neurons
+and builds a complementary spatial graph. This vasculature (or the vessel structure) plays an important
+role in neuroscience; for example, the organization of (and changes to) vessel structure can represent
+early signs of various pathologies, e.g. Alzheimer's disease or stroke. Recently, advances in
+tissue clearing have enabled whole brain imaging and segmentation of the entirety of the mouse brain's
+vasculature. Building on these advances in imaging, we are presenting an extendable dataset of
+whole-brain vessel graphs based on specific imaging protocols. Specifically, we extract vascular
+graphs using a refined graph extraction scheme leveraging the volume rendering engine Voreen and
+provide them in an accessible and adaptable form through the OGB and PyTorch Geometric dataloaders.
+Moreover, we benchmark numerous state-of-the-art graph learning algorithms on the biologically
+relevant tasks of vessel prediction and vessel classification using the introduced vessel graph
+dataset. Our work paves a path towards advancing graph learning research into the field of neuroscience.
+Complementarily, the presented dataset raises challenging graph learning research questions
+for the machine learning community, in terms of incorporating biological priors into learning
+algorithms, or in scaling these algorithms to handle sparse,spatial graphs with millions of nodes
+and edges. All datasets and code are available for download at https://github.com/jocpae/VesselGraph
+. 

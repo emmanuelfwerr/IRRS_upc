@@ -1,0 +1,19 @@
+Crop type mapping at the field level is critical for a variety of applications in agricultural monitoring,
+and satellite imagery is becoming an increasingly abundant and useful raw input from which to create
+crop type maps. Still, in many regions crop type mapping with satellite data remains constrained
+by a scarcity of field-level crop labels for training supervised classification models. When training
+data is not available in one region, classifiers trained in similar regions can be transferred,
+but shifts in the distribution of crop types as well as transformations of the features between regions
+lead to reduced classification accuracy. We present a methodology that uses aggregate-level crop
+statistics to correct the classifier by accounting for these two types of shifts. To adjust for shifts
+in the crop type composition we present a scheme for properly reweighting the posterior probabilities
+of each class that are output by the classifier. To adjust for shifts in features we propose a method
+to estimate and remove linear shifts in the mean feature vector. We demonstrate that this methodology
+leads to substantial improvements in overall classification accuracy when using Linear Discriminant
+Analysis (LDA) to map crop types in Occitanie, France and in Western Province, Kenya. When using
+LDA as our base classifier, we found that in France our methodology led to percent reductions in misclassifications
+ranging from 2.8% to 42.2% (mean = 21.9%) over eleven different training departments, and in Kenya
+the percent reductions in misclassification were 6.6%, 28.4%, and 42.7% for three training regions.
+While our methodology was statistically motivated by the LDA classifier, it can be applied to any
+type of classifier. As an example, we demonstrate its successful application to improve a Random
+Forest classifier. 

@@ -1,0 +1,19 @@
+Recent advances in machine learning technologies and sensing have paved the way for the belief that
+safe, accessible, and convenient autonomous vehicles may be realized in the near future. Despite
+tremendous advances within this context, fundamental challenges around safety and reliability
+are limiting their arrival and comprehensive adoption. Autonomous vehicles are often tasked with
+operating in dynamic and uncertain environments. As a result, they often make use of highly complex
+components, such as machine learning approaches, to handle the nuances of sensing, actuation,
+and control. While these methods are highly effective, they are notoriously difficult to assure.
+Moreover, within uncertain and dynamic environments, design time assurance analyses may not be
+sufficient to guarantee safety. Thus, it is critical to monitor the correctness of these systems
+at runtime. One approach for providing runtime assurance of systems with components that may not
+be amenable to formal analysis is the simplex architecture, where an unverified component is wrapped
+with a safety controller and a switching logic designed to prevent dangerous behavior. In this paper,
+we propose using a real-time reachability algorithm for the implementation of the simplex architecture
+to assure the safety of a 1/10 scale open source autonomous vehicle platform known as F1/10. The reachability
+algorithm that we leverage (a) provides provable guarantees of safety, and (b) is used to detect
+potentially unsafe scenarios. In our approach, the need to analyze an underlying controller is
+abstracted away, instead focusing on the effects of the controller's decisions on the system's
+future states. We demonstrate the efficacy of our architecture through a vast set of experiments
+conducted both in simulation and on an embedded hardware platform. 

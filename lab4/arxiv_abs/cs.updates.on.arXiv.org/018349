@@ -1,0 +1,19 @@
+To provide click simulation or relevance estimation based on users' implicit interaction feedback,
+click models have been much studied during recent years. Most click models focus on user behaviors
+towards a single list. However, with the development of user interface (UI) design, the layout of
+displayed items on a result page tends to be multi-block (i.e., multi-list) style instead of a single
+list, which requires different assumptions to model user behaviors more accurately. There exist
+click models for multi-block pages in desktop contexts, but they cannot be directly applied to mobile
+scenarios due to different interaction manners, result types and especially multi-block presentation
+styles. In particular, multi-block mobile pages can normally be decomposed into interleavings
+of basic vertical blocks and horizontal blocks, thus resulting in typically F-shape forms. To mitigate
+gaps between desktop and mobile contexts for multi-block pages, we conduct a user eye-tracking
+study, and identify users' sequential browsing, block skip and comparison patterns on F-shape
+pages. These findings lead to the design of a novel F-shape Click Model (FSCM), which serves as a general
+solution to multi-block mobile pages. Firstly, we construct a directed acyclic graph (DAG) for
+each page, where each item is regarded as a vertex and each edge indicates the user's possible examination
+flow. Secondly, we propose DAG-structured GRUs and a comparison module to model users' sequential
+(sequential browsing, block skip) and non-sequential (comparison) behaviors respectively.
+Finally, we combine GRU states and comparison patterns to perform user click predictions. Experiments
+on a large-scale real-world dataset validate the effectiveness of FSCM on user behavior predictions
+compared with baseline models. 

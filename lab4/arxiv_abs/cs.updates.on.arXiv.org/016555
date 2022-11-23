@@ -1,0 +1,17 @@
+In a district-based election, we apply a voting rule $r$ to decide the winners in each district, and
+a candidate who wins in a maximum number of districts is the winner of the election. We present efficient
+sampling-based algorithms to predict the winner of such district-based election systems in this
+paper. When $r$ is plurality and the margin of victory is known to be at least $\varepsilon$ fraction
+of the total population, we present an algorithm to predict the winner. The sample complexity of
+our algorithm is $\mathcal{O}\left(\frac{1}{\varepsilon^4}\log \frac{1}{\varepsilon}\log\frac{1}{\delta}\right)$.
+We complement this result by proving that any algorithm, from a natural class of algorithms, for
+predicting the winner in a district-based election when $r$ is plurality, must sample at least $\Omega\left(\frac{1}{\varepsilon^4}\log\frac{1}{\delta}\right)$
+votes. We then extend this result to any voting rule $r$. Loosely speaking, we show that we can predict
+the winner of a district-based election with an extra overhead of $\mathcal{O}\left(\frac{1}{\varepsilon^2}\log\frac{1}{\delta}\right)$
+over the sample complexity of predicting the single-district winner under $r$. We further extend
+our algorithm for the case when the margin of victory is unknown, but we have only two candidates.
+We then consider the median voting rule when the set of preferences in each district is single-peaked.
+We show that the winner of a district-based election can be predicted with $\mathcal{O}\left(\frac{1}{\varepsilon^4}\log\frac{1}{\varepsilon}\log\frac{1}{\delta}\right)$
+samples even when the harmonious order in different districts can be different and even unknown.
+Finally, we also show some results for estimating the margin of victory of a district-based election
+within both additive and multiplicative error bounds. 

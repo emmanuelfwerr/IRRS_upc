@@ -1,0 +1,19 @@
+Accurately detecting Alzheimer's disease (AD) and predicting mini-mental state examination
+(MMSE) score are important tasks in elderly health by magnetic resonance imaging (MRI). Most of
+the previous methods on these two tasks are based on single-task learning and rarely consider the
+correlation between them. Since the MMSE score, which is an important basis for AD diagnosis, can
+also reflect the progress of cognitive impairment, some studies have begun to apply multi-task
+learning methods to these two tasks. However, how to exploit feature correlation remains a challenging
+problem for these methods. To comprehensively address this challenge, we propose a MRI-based multi-task
+decoupled learning method for AD detection and MMSE score prediction. First, a multi-task learning
+network is proposed to implement AD detection and MMSE score prediction, which exploits feature
+correlation by adding three multi-task interaction layers between the backbones of the two tasks.
+Each multi-task interaction layer contains two feature decoupling modules and one feature interaction
+module. Furthermore, to enhance the generalization between tasks of the features selected by the
+feature decoupling module, we propose the feature consistency loss constrained feature decoupling
+module. Finally, in order to exploit the specific distribution information of MMSE score in different
+groups, a distribution loss is proposed to further enhance the model performance. We evaluate our
+proposed method on multi-site datasets. Experimental results show that our proposed multi-task
+decoupled representation learning method achieves good performance, outperforming single-task
+learning and other existing state-of-the-art methods. The source code of our proposed method is
+available at https://github.com/miacsu/MTDL. 

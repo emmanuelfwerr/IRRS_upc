@@ -1,0 +1,19 @@
+Quantifying charge-state transition energy levels of impurities in semiconductors is critical
+to understanding and engineering their optoelectronic properties for applications ranging from
+solar photovoltaics to infrared lasers. While these transition levels can be measured and calculated
+accurately, such efforts are time-consuming and more rapid prediction methods would be beneficial.
+Here, we significantly reduce the time typically required to predict impurity transition levels
+using multi-fidelity datasets and a machine learning approach employing features based on elemental
+properties and impurity positions. We use transition levels obtained from low-fidelity (i.e.,
+local-density approximation or generalized gradient approximation) density functional theory
+(DFT) calculations, corrected using a recently proposed modified band alignment scheme, which
+well-approximates transition levels from high-fidelity DFT (i.e., hybrid HSE06). The model fit
+to the large multi-fidelity database shows improved accuracy compared to the models trained on
+the more limited high-fidelity values. Crucially, in our approach, when using the multi-fidelity
+data, high-fidelity values are not required for model training, significantly reducing the computational
+cost required for training the model. Our machine learning model of transition levels has a root
+mean squared (mean absolute) error of 0.36 (0.27) eV vs high-fidelity hybrid functional values
+when averaged over 14 semiconductor systems from the II-VI and III-V families. As a guide for use
+on other systems, we assessed the model on simulated data to show the expected accuracy level as a
+function of bandgap for new materials of interest. Finally, we use the model to predict a complete
+space of impurity charge-state transition levels in all zinc blende III-V and II-VI systems. 

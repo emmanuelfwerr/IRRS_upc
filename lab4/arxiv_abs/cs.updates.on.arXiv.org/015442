@@ -1,0 +1,19 @@
+Knowledge graph (KG) alignment - the task of recognizing entities referring to the same thing in
+different KGs - is recognized as one of the most important operations in the field of KG construction
+and completion. However, existing alignment techniques often assume that the input KGs are complete
+and isomorphic, which is not true due to the real-world heterogeneity in the domain, size, and sparsity.
+In this work, we address the problem of aligning incomplete KGs with representation learning. Our
+KG embedding framework exploits two feature channels: transitivity-based and proximity-based.
+The former captures the consistency constraints between entities via translation paths, while
+the latter captures the neighbourhood structure of KGs via attention guided relation-aware graph
+neural network. The two feature channels are jointly learned to exchange important features between
+the input KGs while enforcing the output representations of the input KGs in the same embedding space.
+Also, we develop a missing links detector that discovers and recovers the missing links in the input
+KGs during the training process, which helps mitigate the incompleteness issue and thus improve
+the compatibility of the learned representations. The embeddings then are fused to generate the
+alignment result, and the high-confidence matched node pairs are updated to the pre-aligned supervision
+data to improve the embeddings gradually. Empirical results show that our model is up to 15.2\% more
+accurate than the SOTA and is robust against different levels of incompleteness. We also demonstrate
+that the knowledge exchanging between the KGs helps reveal the unseen facts from knowledge graphs
+(a.k.a. knowledge completion), with the result being 3.5\% higher than the SOTA knowledge graph
+completion techniques. 

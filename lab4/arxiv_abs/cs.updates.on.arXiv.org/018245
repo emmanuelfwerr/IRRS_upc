@@ -1,0 +1,19 @@
+In this paper, a novel meshless method satisfying local mass conservation is developed by virtually
+constructing the node control domains. By defining the connectable node cloud, this novel meshless
+method uses the integral of the diffusion term and generalized difference operators to calculate
+the node control volumes by ensuring the local mass conservation. This novel method only focuses
+on the volume of the node control domain rather than the specific shape, so the construction of node
+control domains is called virtual, which will not increase the computational cost. To our knowledge,
+this is the first time to construct node control volumes in the meshless framework, so this novel
+method is named a node control domains-based meshless method, abbreviated as NCDMM, which can also
+be regarded as an extended finite volume method (EFVM). Taking two-phase porous flow problems as
+an example, the NCDMM discrete schemes meeting the local mass conservation are derived by integrating
+the generalized finite difference schemes of governing equations at each node control volume.
+Finally, existing commonly used low-order finite volume method (FVM) based nonlinear solvers
+for various porous flow models can be directly employed in the proposed NCDMM, significantly facilitating
+the general-purpose applications of the NCDMM. Theoretically, the proposed NCDMM has the advantages
+of previous meshless methods for discretizing computational domains with complex geometries,
+as well as the advantages of traditional low-order FVMs for stably handling a variety of porous flow
+problems with local mass conservation. Three numerical cases are implemented to test the computational
+accuracy, efficiency, convergence, and good adaptability to the calculation domain with complex
+geometry and complex boundary conditions. 

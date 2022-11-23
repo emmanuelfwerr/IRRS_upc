@@ -1,0 +1,20 @@
+The development of nuclear reactors that utilize pebble fuel has drastically increased the demand
+for improving the capabilities to simulate the packed beds found in these reactors. The complex
+flow fields found in a pebble bed make computational fluid dynamics (CFD) simulations time consuming
+and costly. Intermediate fidelity porous media models, however, are capable of approximating
+these flow fields in a much more computationally efficient manner. These models require the use
+of closures to capture the effects of complex flow phenomena without modeling them explicitly.
+This research employs data obtained from high-fidelity CFD simulations of a pebble bed to improve
+the drag closures used in porous media models in the near-wall region of the bed. Specifically, NekRS,
+a GPU-enabled spectral element CFD code, was used to simulate a bed of 1,568 pebbles at multiple Reynolds
+numbers. The case was divided into five concentric subdomains to extract radial profiles of the
+average porosity, velocity, and wall shear in each subdomain. A model consistent with the high-fidelity
+model was created in Idaho National Laboratory's Pronghorn porous media code and the KTA correlation
+was chosen as the drag closure of comparison. It was found that the KTA correlation overestimates
+the velocity in the near-wall region. An investigation of the drag coefficients between the two
+codes revealed that the KTA correlation underestimated the form factor in the outermost region
+while overestimating it in the inner four regions. This analysis in this work has revealed the underlying
+inaccuracy in the near-wall region of the KTA correlation and has set up the process for using high-fidelity
+simulation to predict more accurate drag coefficients a priori, rather than with a manual velocity-matching
+approach. This process will allow for the development of an improved drag closure for use in porous
+media models. 

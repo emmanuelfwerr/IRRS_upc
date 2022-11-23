@@ -1,0 +1,19 @@
+A path-following control algorithm enables a system's trajectories under its guidance to converge
+to and evolve along a given geometric desired path. There exist various such algorithms, but many
+of them can only guarantee local convergence to the desired path in its neighborhood. In contrast,
+the control algorithms using a well-designed guiding vector field can ensure almost global convergence
+of trajectories to the desired path; here, "almost" means that in some cases, a measure-zero set
+of trajectories converge to the singular set where the vector field becomes zero (with all other
+trajectories converging to the desired path). In this paper, we first generalize the guiding vector
+field from the Euclidean space to a general smooth Riemannian manifold. This generalization can
+deal with path-following in some abstract configuration space (such as robot arm joint space).
+Then we show several theoretical results from a topological viewpoint. Specifically, we are motivated
+by the observation that singular points of the guiding vector field exist in many examples where
+the desired path is homeomorphic to the unit circle, but it is unknown whether the existence of singular
+points always holds in general (i.e., is inherent in the topology of the desired path). In the $n$-dimensional
+Euclidean space, we provide an affirmative answer, and conclude that it is not possible to guarantee
+global convergence to desired paths that are homeomorphic to the unit circle. Furthermore, we show
+that there always exist \emph{non-path-converging trajectories} (i.e., trajectories that do
+not converge to the desired path) starting from the boundary of a ball containing the desired path
+in an $n$-dimensional Euclidean space where $n \ge 3$. Examples are provided to illustrate the theoretical
+results. 

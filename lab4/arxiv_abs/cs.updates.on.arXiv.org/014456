@@ -1,0 +1,19 @@
+The efficiency of modern computer graphics allows us to explore collections of space curves simultaneously
+with "drag-to-rotate" interfaces. This inspires us to replace "scatterplots of points" with "scatterplots
+of curves" to simultaneously visualize relationships across an entire dataset. Since spaces of
+curves are infinite dimensional, scatterplots of curves avoid the "lossy" nature of scatterplots
+of points. In particular, if two points are close in a scatterplot of points derived from high-dimensional
+data, it does not generally follow that the two associated data points are close in the data space.
+Standard Andrews plots provide scatterplots of curves that perfectly preserve Euclidean distances,
+but simultaneous visualization of these graphs over an entire dataset produces visual clutter
+because graphs of functions generally overlap in 2D. We mitigate this visual clutter issue by constructing
+computationally inexpensive 3D extensions of Andrews plots. First, we construct optimally smooth
+3D Andrews plots by considering linear isometries from Euclidean data spaces to spaces of planar
+parametric curves. We rigorously parametrize the linear isometries that produce (on average)
+optimally smooth curves over a given dataset. This parameterization of optimal isometries reveals
+many degrees of freedom, and (using recent results on generalized Gauss sums) we identify a particular
+member of this set which admits an asymptotic "tour" property that avoids certain local degeneracies
+as well. Finally, we construct unit-length 3D curves (filaments) by numerically solving Frenet-Serret
+systems given data from these 3D Andrews plots. We conclude with examples of filament plots for several
+standard datasets, illustrating how filament plots avoid visual clutter. Code and examples available
+at https://github.com/n8epi/filaments/ and https://n8epi.github.io/filaments/ 

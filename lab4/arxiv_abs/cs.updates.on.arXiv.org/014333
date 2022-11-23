@@ -1,0 +1,19 @@
+Intelligent data-driven fault diagnosis methods have been widely applied, but most of these methods
+need a large number of high-quality labeled samples. It costs a lot of labor and time to label data
+in actual industrial processes, which challenges the application of intelligent fault diagnosis
+methods. To solve this problem, a multi-stage semi-supervised improved deep embedded clustering
+(MS-SSIDEC) method is proposed for the bearing fault diagnosis under the insufficient labeled
+samples situation. This method includes three stages: pre-training, deep clustering and enhanced
+supervised learning. In the first stage, a skip-connection based convolutional auto-encoder
+(SCCAE) is proposed and pre-trained to automatically learn low-dimensional representations.
+In the second stage, a semi-supervised improved deep embedded clustering (SSIDEC) model that integrates
+the pre-trained auto-encoder with a clustering layer is proposed for deep clustering. Additionally,
+virtual adversarial training (VAT) is introduced as a regularization term to overcome the overfitting
+in the model's training. In the third stage, high-quality clustering results obtained in the second
+stage are assigned to unlabeled samples as pseudo labels. The labeled dataset is augmented by those
+pseudo-labeled samples and used to train a bearing fault discriminative model. The effectiveness
+of the method is evaluated on the Case Western Reserve University (CWRU) bearing dataset. The results
+show that the method can not only satisfy the semi-supervised learning under a small number of labeled
+samples, but also solve the problem of unsupervised learning, and has achieved better results than
+traditional diagnosis methods. This method provides a new research idea for fault diagnosis with
+limited labeled samples by effectively using unsupervised data. 

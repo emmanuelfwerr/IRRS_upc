@@ -1,0 +1,20 @@
+In this paper, we present a deep learning-based reduced-order model (DL-ROM) for the stability
+prediction of unsteady 3D fluid-structure interaction systems. The proposed DL-ROM has the format
+of a nonlinear state-space model and employs a recurrent neural network with long short-term memory
+(LSTM). We consider a canonical fluid-structure system of an elastically-mounted sphere coupled
+with incompressible fluid flow in a state-space format. We develop a nonlinear data-driven coupling
+for predicting unsteady forces and vortex-induced vibration (VIV) lock-in of the freely vibrating
+sphere in a transverse direction. We design an input-output relationship as a temporal sequence
+of force and displacement datasets for a low-dimensional approximation of the fluid-structure
+system. Based on the prior knowledge of the VIV lock-in process, the input function contains a range
+of frequencies and amplitudes, which enables an efficient DL-ROM without the need for a massive
+training dataset for the low-dimensional modeling. Once trained, the network provides a nonlinear
+mapping of input-output dynamics that can predict the coupled fluid-structure dynamics for a longer
+horizon via the feedback process. By integrating the LSTM network with the eigensystem realization
+algorithm (ERA), we construct a data-driven state-space model for the reduced-order stability
+analysis. We investigate the underlying mechanism and stability characteristics of VIV via an
+eigenvalue selection process. To understand the frequency lock-in mechanism, we study the eigenvalue
+trajectories for a range of the reduced oscillation frequencies and the mass ratios. Consistent
+with the full-order simulations, the frequency lock-in branches are accurately captured by the
+combined LSTM-ERA procedure. The proposed DL-ROM aligns with the development of physics-based
+digital twin of engineering systems involving fluid-structure interactions. 

@@ -1,0 +1,20 @@
+Cross-domain person re-identification (re-ID), such as unsupervised domain adaptive (UDA) re-ID,
+aims to transfer the identity-discriminative knowledge from the source to the target domain. Existing
+methods commonly consider the source and target domains are isolated from each other, i.e., no intermediate
+status is modeled between both domains. Directly transferring the knowledge between two isolated
+domains can be very difficult, especially when the domain gap is large. From a novel perspective,
+we assume these two domains are not completely isolated, but can be connected through intermediate
+domains. Instead of directly aligning the source and target domains against each other, we propose
+to align the source and target domains against their intermediate domains for a smooth knowledge
+transfer. To discover and utilize these intermediate domains, we propose an Intermediate Domain
+Module (IDM) and a Mirrors Generation Module (MGM). IDM has two functions: 1) it generates multiple
+intermediate domains by mixing the hidden-layer features from source and target domains and 2)
+it dynamically reduces the domain gap between the source / target domain features and the intermediate
+domain features. While IDM achieves good domain alignment, it introduces a side effect, i.e., the
+mix-up operation may mix the identities into a new identity and lose the original identities. To
+compensate this, MGM is introduced by mapping the features into the IDM-generated intermediate
+domains without changing their original identity. It allows to focus on minimizing domain variations
+to promote the alignment between the source / target domain and intermediate domains, which reinforces
+IDM into IDM++. We extensively evaluate our method under both the UDA and domain generalization
+(DG) scenarios and observe that IDM++ yields consistent performance improvement for cross-domain
+re-ID, achieving new state of the art. 

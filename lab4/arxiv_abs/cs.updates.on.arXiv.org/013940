@@ -1,0 +1,19 @@
+High-resolution (HR) hyperspectral face image plays an important role in face related computer
+vision tasks under uncontrolled conditions, such as low-light environment and spoofing attacks.
+However, the dense spectral bands of hyperspectral face images come at the cost of limited amount
+of photons reached a narrow spectral window on average, which greatly reduces the spatial resolution
+of hyperspectral face images. In this paper, we investigate how to adapt the deep learning techniques
+to hyperspectral face image super-resolution (HFSR), especially when the training samples are
+very limited. Benefiting from the amount of spectral bands, in which each band can be seen as an image,
+we present a spectral splitting and aggregation network (SSANet) for HFSR with limited training
+samples. In the shallow layers, we split the hyperspectral image into different spectral groups
+and take each of them as an individual training sample (in the sense that each group will be fed into
+the same network). Then, we gradually aggregate the neighbor bands at the deeper layers to exploit
+the spectral correlations. By this spectral splitting and aggregation strategy (SSAS), we can
+divide the original hyperspectral image into multiple samples to support the efficient training
+of the network and effectively exploit the spectral correlations among spectrum. To cope with the
+challenge of small training sample size (S3) problem, we propose to expand the training samples
+by a self-representation model and symmetry-induced augmentation. Experiments show that the
+introduced SSANet can well model the joint correlations of spatial and spectral information. By
+expanding the training samples, our proposed method can effectively alleviate the S3 problem.
+The comparison results demonstrate that our proposed method can outperform the state-of-the-arts.

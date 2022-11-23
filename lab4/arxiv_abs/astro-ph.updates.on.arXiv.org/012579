@@ -1,0 +1,19 @@
+Thermal conductivity is one of the important mechanisms of heat transfer in the solar corona. In
+the limit of strongly magnetized plasma, it is typically modeled by Spitzer's expression where
+the heat flux is aligned with the magnetic field. This paper describes the implementation of the
+heat conduction into the code MANCHA3D with an aim of extending single-fluid MHD simulations from
+the upper convection zone into the solar corona. Two different schemes to model heat conduction
+are implemented: (1) a standard scheme where a parabolic term is added to the energy equation, and
+(2) a scheme where the hyperbolic heat flux equation is solved. The first scheme limits the time step
+due to the explicit integration of a parabolic term, which makes the simulations computationally
+expensive. The second scheme solves the limitations on the time step by artificially limiting the
+heat conduction speed to computationally manageable values. The validation of both schemes is
+carried out with standard tests in one, two, and three spatial dimensions. Furthermore, we implement
+the model for heat flux derived by Braginskii (1965) in its most general form, when the expression
+for the heat flux depends on the ratio of the collisional to cyclotron frequencies of the plasma,
+and, therefore on the magnetic field strength. Additionally, our implementation takes into account
+the heat conduction in parallel, perpendicular, and transverse directions, and provides the contributions
+from ions and electrons separately. The model also transitions smoothly between field-aligned
+conductivity and isotropic conductivity for regions with a low or null magnetic field. Finally,
+we present a two-dimensional test for heat conduction using realistic values of the solar atmosphere
+where we prove the robustness of the two schemes implemented. 

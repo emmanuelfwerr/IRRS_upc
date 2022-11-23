@@ -1,0 +1,20 @@
+We introduce a framework for obtaining tight mixing times for Markov chains based on what we call
+restricted modified log-Sobolev inequalities. Modified log-Sobolev inequalities (MLSI) quantify
+the rate of relative entropy contraction for the Markov operator, and are notoriously difficult
+to establish. However, infinitesimally close to stationarity, entropy contraction becomes equivalent
+to variance contraction, a.k.a. a Poincare inequality, which is significantly easier to establish
+through, e.g., spectral analysis. Motivated by this observation, we study restricted modified
+log-Sobolev inequalities that guarantee entropy contraction not for all starting distributions,
+but for those in a large neighborhood of the stationary distribution. We show how to sample from the
+hardcore and Ising models on $n$-node graphs that have a constant $\delta$ relative gap to the tree-uniqueness
+threshold, in nearly-linear time $\widetilde O_{\delta}(n)$. Notably, our bound does not depend
+on the maximum degree $\Delta$, and is therefore optimal even for high-degree graphs. This improves
+on prior mixing time bounds of $\widetilde O_{\delta, \Delta}(n)$ and $\widetilde O_{\delta}(n^2)$,
+established via (non-restricted) modified log-Sobolev and Poincare inequalities respectively.
+We further show that optimal concentration inequalities can still be achieved from the restricted
+form of modified log-Sobolev inequalities. To establish restricted entropy contraction, we extend
+the entropic independence framework of Anari, Jain, Koehler, Pham, and Vuong to the setting of distributions
+that are spectrally independent under a restricted set of external fields. We also develop an orthogonal
+trick that might be of independent interest: utilizing Bernoulli factories we show how to implement
+Glauber dynamics updates on high-degree graphs in $O(1)$ time, assuming standard adjacency array
+representation of the graph. 

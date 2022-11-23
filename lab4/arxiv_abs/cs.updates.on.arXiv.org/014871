@@ -1,0 +1,20 @@
+Machine learning techniques are playing more and more important roles in finance market investment.
+However, finance quantitative modeling with conventional supervised learning approaches has
+a number of limitations. The development of deep reinforcement learning techniques is partially
+addressing these issues. Unfortunately, the steep learning curve and the difficulty in quick modeling
+and agile development are impeding finance researchers from using deep reinforcement learning
+in quantitative trading. In this paper, we propose an RLOps in finance paradigm and present a FinRL-Podracer
+framework to accelerate the development pipeline of deep reinforcement learning (DRL)-driven
+trading strategy and to improve both trading performance and training efficiency. FinRL-Podracer
+is a cloud solution that features high performance and high scalability and promises continuous
+training, continuous integration, and continuous delivery of DRL-driven trading strategies,
+facilitating a rapid transformation from algorithmic innovations into a profitable trading strategy.
+First, we propose a generational evolution mechanism with an ensemble strategy to improve the trading
+performance of a DRL agent, and schedule the training of a DRL algorithm onto a GPU cloud via multi-level
+mapping. Then, we carry out the training of DRL components with high-performance optimizations
+on GPUs. Finally, we evaluate the FinRL-Podracer framework for a stock trend prediction task on
+an NVIDIA DGX SuperPOD cloud. FinRL-Podracer outperforms three popular DRL libraries Ray RLlib,
+Stable Baseline 3 and FinRL, i.e., 12% \sim 35% improvements in annual return, 0.1 \sim 0.6 improvements
+in Sharpe ratio and 3 times \sim 7 times speed-up in training time. We show the high scalability by
+training a trading agent in 10 minutes with $80$ A100 GPUs, on NASDAQ-100 constituent stocks with
+minute-level data over 10 years. 

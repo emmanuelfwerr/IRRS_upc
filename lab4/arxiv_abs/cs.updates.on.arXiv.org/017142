@@ -1,0 +1,19 @@
+Instance-Based Learning Theory (IBLT) is a comprehensive account of how humans make decisions
+from experience during dynamic tasks. Since it was first proposed almost two decades ago, multiple
+computational models have been constructed based on IBLT (i.e., IBL models). These models have
+been demonstrated to be very successful in explaining and predicting human decisions in multiple
+decision making contexts. However, as IBLT has evolved, the initial description of the theory has
+become less precise, and it is unclear how its demonstration can be expanded to more complex, dynamic,
+and multi-agent environments. This paper presents an updated version of the current theoretical
+components of IBLT in a comprehensive and precise form. It also provides an advanced implementation
+of the full set of theoretical mechanisms, SpeedyIBL, to unlock the capabilities of IBLT to handle
+a diverse taxonomy of individual and multi-agent decision-making problems. SpeedyIBL addresses
+a practical computational issue in past implementations of IBL models, the curse of exponential
+growth, that emerges from memory-based tabular computations. When more observations accumulate
+over time, there is an exponential growth of the memory of instances that leads directly to an exponential
+slow down of the computational time. Thus, SpeedyIBL leverages parallel computation with vectorization
+to speed up the execution time of IBL models. We evaluate the robustness of SpeedyIBL over an existing
+implementation of IBLT in decision games of increased complexity. The results not only demonstrate
+the applicability of IBLT through a wide range of decision making tasks, but also highlight the improvement
+of SpeedyIBL over its prior implementation as the complexity of decision features and number of
+agents increase. The library is open sourced for the use of the broad research community. 

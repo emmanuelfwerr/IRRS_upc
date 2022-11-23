@@ -1,0 +1,20 @@
+Federated learning (FL) enables distributed devices to jointly train a shared model while keeping
+the training data local. Different from the horizontal FL (HFL) setting where each client has partial
+data samples, vertical FL (VFL), which allows each client to collect partial features, has attracted
+intensive research efforts recently. In this paper, we identified two challenges that state-of-the-art
+VFL frameworks are facing: (1) some works directly average the learned feature embeddings and therefore
+might lose the unique properties of each local feature set; (2) server needs to communicate gradients
+with the clients for each training step, incurring high communication cost that leads to rapid consumption
+of privacy budgets. In this paper, we aim to address the above challenges and propose an efficient
+VFL with multiple linear heads (VIM) framework, where each head corresponds to local clients by
+taking the separate contribution of each client into account. In addition, we propose an Alternating
+Direction Method of Multipliers (ADMM)-based method to solve our optimization problem, which
+reduces the communication cost by allowing multiple local updates in each step, and thus leads to
+better performance under differential privacy. We consider various settings including VFL with
+model splitting and without model splitting. For both settings, we carefully analyze the differential
+privacy mechanism for our framework. Moreover, we show that a byproduct of our framework is that
+the weights of learned linear heads reflect the importance of local clients. We conduct extensive
+evaluations and show that on four real-world datasets, VIM achieves significantly higher performance
+and faster convergence compared with state-of-the-arts. We also explicitly evaluate the importance
+of local clients and show that VIM enables functionalities such as client-level explanation and
+client denoising. 

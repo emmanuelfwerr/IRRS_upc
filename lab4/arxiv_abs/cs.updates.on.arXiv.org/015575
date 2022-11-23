@@ -1,0 +1,19 @@
+Speech emotion recognition (SER) processes speech signals to detect and characterize expressed
+perceived emotions. Many SER application systems often acquire and transmit speech data collected
+at the client-side to remote cloud platforms for inference and decision making. However, speech
+data carry rich information not only about emotions conveyed in vocal expressions, but also other
+sensitive demographic traits such as gender, age and language background. Consequently, it is
+desirable for SER systems to have the ability to classify emotion constructs while preventing unintended/improper
+inferences of sensitive and demographic information. Federated learning (FL) is a distributed
+machine learning paradigm that coordinates clients to train a model collaboratively without sharing
+their local data. This training approach appears secure and can improve privacy for SER. However,
+recent works have demonstrated that FL approaches are still vulnerable to various privacy attacks
+like reconstruction attacks and membership inference attacks. Although most of these have focused
+on computer vision applications, such information leakages exist in the SER systems trained using
+the FL technique. To assess the information leakage of SER systems trained using FL, we propose an
+attribute inference attack framework that infers sensitive attribute information of the clients
+from shared gradients or model parameters, corresponding to the FedSGD and the FedAvg training
+algorithms, respectively. As a use case, we empirically evaluate our approach for predicting the
+client's gender information using three SER benchmark datasets: IEMOCAP, CREMA-D, and MSP-Improv.
+We show that the attribute inference attack is achievable for SER systems trained using FL. We further
+identify that most information leakage possibly comes from the first layer in the SER model. 

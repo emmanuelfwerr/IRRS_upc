@@ -1,0 +1,20 @@
+Many high end and next generation computing systems to incorporated alternative memory technologies
+to meet performance goals. Since these technologies present distinct advantages and tradeoffs
+compared to conventional DDR* SDRAM, such as higher bandwidth with lower capacity or vice versa,
+they are typically packaged alongside conventional SDRAM in a heterogeneous memory architecture.
+To utilize the different types of memory efficiently, new data management strategies are needed
+to match application usage to the best available memory technology. However, current proposals
+for managing heterogeneous memories are limited because they either: 1) do not consider high-level
+application behavior when assigning data to different types of memory, or 2) require separate program
+execution (with a representative input) to collect information about how the application uses
+memory resources. This work presents a toolset for addressing the limitations of existing approaches
+for managing complex memories. It extends the application runtime layer with automated monitoring
+and management routines that assign application data to the best tier of memory based on previous
+usage, without any need for source code modification or a separate profiling run. It evaluates this
+approach on a state-of-the-art server platform with both conventional DDR4 SDRAM and non-volatile
+Intel Optane DC memory, using both memory-intensive high performance computing (HPC) applications
+as well as standard benchmarks. Overall, the results show that this approach improves program performance
+significantly compared to a standard unguided approach across a variety of workloads and system
+configurations. Additionally, we show that this approach achieves similar performance as a comparable
+offline profiling-based approach after a short startup period, without requiring separate program
+execution or offline analysis steps. 

@@ -1,0 +1,20 @@
+Recently, intelligent scheduling approaches using surrogate models have been proposed to efficiently
+allocate volatile tasks in heterogeneous fog environments. Advances like deterministic surrogate
+models, deep neural networks (DNN) and gradient-based optimization allow low energy consumption
+and response times to be reached. However, deterministic surrogate models, which estimate objective
+values for optimization, do not consider the uncertainties in the distribution of the Quality of
+Service (QoS) objective function that can lead to high Service Level Agreement (SLA) violation
+rates. Moreover, the brittle nature of DNN training and prevent such models from reaching minimal
+energy or response times. To overcome these difficulties, we present a novel scheduler: GOSH i.e.
+Gradient Based Optimization using Second Order derivatives and Heteroscedastic Deep Surrogate
+Models. GOSH uses a second-order gradient based optimization approach to obtain better QoS and
+reduce the number of iterations to converge to a scheduling decision, subsequently lowering the
+scheduling time. Instead of a vanilla DNN, GOSH uses a Natural Parameter Network to approximate
+objective scores. Further, a Lower Confidence Bound optimization approach allows GOSH to find
+an optimal trade-off between greedy minimization of the mean latency and uncertainty reduction
+by employing error-based exploration. Thus, GOSH and its co-simulation based extension GOSH*,
+can adapt quickly and reach better objective scores than baseline methods. We show that GOSH* reaches
+better objective scores than GOSH, but it is suitable only for high resource availability settings,
+whereas GOSH is apt for limited resource settings. Real system experiments for both GOSH and GOSH*
+show significant improvements against the state-of-the-art in terms of energy consumption, response
+time and SLA violations by up to 18, 27 and 82 percent, respectively. 

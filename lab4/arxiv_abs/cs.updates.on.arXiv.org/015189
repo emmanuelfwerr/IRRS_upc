@@ -1,0 +1,19 @@
+The experience shows that cooperating and communicating computing systems, comprising segregated
+single processors, have severe performance limitations. In his classic "First Draft" von Neumann
+warned that using a "too fast processor" vitiates his simple "procedure" (but not his computing
+model!); furthermore, that using the classic computing paradigm for imitating neuronal operations,
+is unsound. Amdahl added that large machines, comprising many processors, have an inherent disadvantage.
+Given that ANN's components are heavily communicating with each other, they are built from a large
+number of components designed/fabricated for use in conventional computing, furthermore they
+attempt to mimic biological operation using improper technological solutions, their achievable
+payload computing performance is conceptually modest. The type of workload that AI-based systems
+generate leads to an exceptionally low payload computational performance, and their design/technology
+limits their size to just above the "toy" level systems: the scaling of processor-based ANN systems
+is strongly nonlinear. Given the proliferation and growing size of ANN systems, we suggest ideas
+to estimate in advance the efficiency of the device or application. Through analyzing published
+measurements we provide evidence that the role of data transfer time drastically influences both
+ANNs performance and feasibility. It is discussed how some major theoretical limiting factors,
+ANN's layer structure and their methods of technical implementation of communication affect their
+efficiency. The paper starts from von Neumann's original model, without neglecting the transfer
+time apart from processing time; derives an appropriate interpretation and handling for Amdahl's
+law. It shows that, in that interpretation, Amdahl's Law correctly describes ANNs. 

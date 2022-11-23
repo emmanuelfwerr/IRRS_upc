@@ -1,0 +1,18 @@
+Wasserstein GANs with Gradient Penalty (WGAN-GP) are a very popular method for training generative
+models to produce high quality synthetic data. While WGAN-GP were initially developed to calculate
+the Wasserstein 1 distance between generated and real data, recent works (e.g. [23]) have provided
+empirical evidence that this does not occur, and have argued that WGAN-GP perform well not in spite
+of this issue, but because of it. In this paper we show for the first time that WGAN-GP compute the minimum
+of a different optimal transport problem, the so-called congested transport [7]. Congested transport
+determines the cost of moving one distribution to another under a transport model that penalizes
+congestion. For WGAN-GP, we find that the congestion penalty has a spatially varying component
+determined by the sampling strategy used in [12] which acts like a local speed limit, making congestion
+cost less in some regions than others. This aspect of the congested transport problem is new, in that
+the congestion penalty turns out to be unbounded and depends on the distributions to be transported,
+and so we provide the necessary mathematical proofs for this setting. One facet of our discovery
+is a formula connecting the gradient of solutions to the optimization problem in WGAN-GP to the time
+averaged momentum of the optimal mass flow. This is in contrast to the gradient of Kantorovich potentials
+for the Wasserstein 1 distance, which is just the normalized direction of flow. Based on this and
+other considerations, we speculate on how our results explain the observed performance of WGAN-GP.
+Beyond applications to GANs, our theorems also point to the possibility of approximately solving
+large scale congested transport problems using neural network techniques. 

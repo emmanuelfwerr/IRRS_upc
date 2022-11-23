@@ -1,0 +1,20 @@
+Secure model aggregation is a key component of federated learning (FL) that aims at protecting the
+privacy of each user's individual model, while allowing their global aggregation. It can be applied
+to any aggregation-based approaches, including algorithms for training a global model, as well
+as personalized FL frameworks. Model aggregation needs to also be resilient to likely user dropouts
+in FL system, making its design substantially more complex. State-of-the-art secure aggregation
+protocols essentially rely on secret sharing of the random-seeds that are used for mask generations
+at the users, in order to enable the reconstruction and cancellation of those belonging to dropped
+users. The complexity of such approaches, however, grows substantially with the number of dropped
+users. We propose a new approach, named LightSecAgg, to overcome this bottleneck by turning the
+focus from "random-seed reconstruction of the dropped users" to "one-shot aggregate-mask reconstruction
+of the active users". More specifically, in LightSecAgg each user protects its local model by generating
+a single random mask. This mask is then encoded and shared to other users, in such a way that the aggregate-mask
+of any sufficiently large set of active users can be reconstructed directly at the server via encoded
+masks. We show that LightSecAgg achieves the same privacy and dropout-resiliency guarantees as
+the state-of-the-art protocols, while significantly reducing the overhead for resiliency to
+dropped users. Furthermore, our system optimization helps to hide the runtime cost of offline processing
+by parallelizing it with model training. We evaluate LightSecAgg via extensive experiments for
+training diverse models on various datasets in a realistic FL system, and demonstrate that LightSecAgg
+significantly reduces the total training time, achieving a performance gain of up to $12.7\times$
+over baselines. 

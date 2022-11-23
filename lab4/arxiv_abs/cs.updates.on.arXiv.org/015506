@@ -1,0 +1,19 @@
+Communication security could be enhanced at physical layer but at the cost of complex algorithms
+and redundant hardware, which would render traditional physical layer security (PLS) techniques
+unsuitable for use with resource-constrained communication systems. This work investigates
+a waveform-defined security (WDS) framework, which differs fundamentally from traditional PLS
+techniques used in today's systems. The framework is not dependent on channel conditions such as
+signal power advantage and channel state information (CSI). Therefore, the framework is more reliable
+than channel dependent beamforming and artificial noise (AN) techniques. In addition, the framework
+is more than just increasing the cost of eavesdropping. By intentionally tuning waveform patterns
+to weaken signal feature diversity and enhance feature similarity, eavesdroppers will not be able
+to identify correctly signal formats. The wrong classification of signal formats would result
+in subsequent detection errors even when an eavesdropper uses brute-force detection techniques.
+To get a robust WDS framework, three impact factors, namely training data feature, oversampling
+factor and bandwidth compression factor (BCF) offset, are investigated. An optimal WDS waveform
+pattern is obtained at the end after a joint study of the three factors. To ensure a valid eavesdropping
+model, artificial intelligence (AI) dependent signal classifiers are designed followed by optimal
+performance achievable signal detectors. To show the compatibility in available communication
+systems, the WDS framework is successfully integrated in IEEE 802.11a with nearly no adding computational
+complexity. Finally, a low-cost software-defined radio (SDR) experiment is designed to verify
+the feasibility of the WDS framework in resource-constrained communications. 

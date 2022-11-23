@@ -1,0 +1,19 @@
+The United Nations Consumer Protection Guidelines lists "access ... to adequate information ...
+to make informed choices" as a core consumer protection right. However, problematic online reviews
+and imperfections in algorithms that detect those reviews pose obstacles to the fulfillment of
+this right. Research on reviews and review platforms often derives insights from a single web crawl,
+but the decisions those crawls observe may not be static. A platform may feature a review one day and
+filter it from view the next day. An appreciation for these dynamics is necessary to understand how
+a platform chooses which reviews consumers encounter and which reviews may be unhelpful or suspicious.
+We introduce a novel longitudinal angle to the study of reviews. We focus on "reclassification,"
+wherein a platform changes its filtering decision for a review. To that end, we perform repeated
+web crawls of Yelp to create three longitudinal datasets. These datasets highlight the platform's
+dynamic treatment of reviews. We compile over 12.5M reviews--more than 2M unique--across over
+10k businesses. Our datasets are available for researchers to use. Our longitudinal approach gives
+us a unique perspective on Yelp's classifier and allows us to explore reclassification. We find
+that reviews routinely move between Yelp's two main classifier classes ("Recommended" and "Not
+Recommended")--up to 8% over eight years--raising concerns about prior works' use of Yelp's classes
+as ground truth. These changes have impacts on small scales; for example, a business going from a
+3.5 to 4.5 star rating despite no new reviews. Some reviews move multiple times: we observed up to
+five reclassifications in eleven months. Our data suggests demographic disparities in reclassifications,
+with more changes in lower density and low-middle income areas. 

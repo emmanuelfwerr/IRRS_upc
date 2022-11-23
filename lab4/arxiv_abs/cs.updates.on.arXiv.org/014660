@@ -1,0 +1,19 @@
+The random order streaming model has been very fruitful for graph streams, allowing for polylogarithmic
+or even constant space estimators for fundamental graph problems such as matching size estimation,
+counting the number of connected components and more. However, the assumption that there are no
+correlations between the order of arrival of edges in the stream is quite strong. In this paper we
+introduce (hidden) batch random order streams, where edges are grouped in "batches" (which are
+unknown to the algorithm) that arrive in a random order, as a natural framework for modelling hidden
+correlations in the arrival order of edges, and present algorithms and lower bounds for this model.
+On the algorithmic side, we show how known techniques for connected component counting in constant
+space due to Peng and Sohler [SODA `18] easily translate from random order streams to our model with
+only a small loss in parameters. Our algorithm obtains an additive $\varepsilon n$ approximation
+to the number of connected components in the input graph using space $(1/\varepsilon)^{O(1/\varepsilon)}$
+by building a representative sample of vertices in the graph that belong to $O(1/\varepsilon)$-size
+components to estimate the count. On the lower bound side, we show that $(1/\varepsilon)^{\Omega(1/\varepsilon)}$
+space is necessary for finding a connected component of size $O(1/\varepsilon)$ even in graphs
+where most vertices reside in such components -- this makes progress towards an open problem of Peng
+and Sohler [SODA `18] and constitutes our main technical contribution. The lower bound uses Fourier
+analytic techniques inspired by the Boolean Hidden Matching problem. Our main innovation here
+is the first framework for applying such a Fourier analytic approach to a communication game with
+a polynomial number of players. 

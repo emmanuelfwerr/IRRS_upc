@@ -1,0 +1,20 @@
+Suppose we are given integer $k \leq n$ and $n$ boxes labeled $1,\ldots, n$ by an adversary, each containing
+a number chosen from an unknown distribution. We have to choose an order to sequentially open these
+boxes, and each time we open the next box in this order, we learn its number. If we reject a number in
+a box, the box cannot be recalled. Our goal is to accept the $k$ largest of these numbers, without necessarily
+opening all boxes. This is the free order multiple-choice secretary problem. Free order variants
+were studied extensively for the secretary and prophet problems. Kesselheim, Kleinberg, and Niazadeh
+KKN (STOC'15) initiated a study of randomness-efficient algorithms (with the cheapest order in
+terms of used random bits) for the free order secretary problems. We present an algorithm for free
+order multiple-choice secretary, which is simultaneously optimal for the competitive ratio and
+used amount of randomness. I.e., we construct a distribution on orders with optimal entropy $\Theta(\log\log
+n)$ such that a deterministic multiple-threshold algorithm is $1-O(\sqrt{\log k/k})$-competitive.
+This improves in three ways the previous best construction by KKN, whose competitive ratio is $1
+- O(1/k^{1/3}) - o(1)$. Our competitive ratio is (near)optimal for the multiple-choice secretary
+problem; it works for exponentially larger parameter $k$; and our algorithm is a simple deterministic
+multiple-threshold algorithm, while that in KKN is randomized. We also prove a corresponding lower
+bound on the entropy of optimal solutions for the multiple-choice secretary problem, matching
+entropy of our algorithm, where no such previous lower bound was known. We obtain our algorithmic
+results with a host of new techniques, and with these techniques we also improve significantly the
+previous results of KKN about constructing entropy-optimal distributions for the classic free
+order secretary. 

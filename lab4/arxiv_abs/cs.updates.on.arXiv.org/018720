@@ -1,0 +1,20 @@
+In this work, a simulation model for the optimal control of dielectric elastomer actuated flexible
+multibody dynamics systems is presented. The Dielectric Elastomer Actuator (DEA) behaves like
+a flexible artificial muscles in soft robotics. It is modeled as an electromechanically coupled
+geometrically exact beam, where the electric charges serve as control variables. The DEA-beam
+is integrated as an actuator into multibody systems consisting of rigid and flexible components.
+The model also represents contact interaction via unilateral constraints between the beam actuator
+and e.g. a rigid body during the grasping process of a soft robot. Specifically for the DEA, a work
+conjugated electric displacement and strain-like electric variables are derived for the Cosserat
+beam. With a mathematically concise and physically representative formulation, a reduced free
+energy function is developed for the beam-DEA. In the optimal control problem, an objective function
+is minimized while the dynamic balance equations for the multibody system have to be fulfilled together
+with the complementarity conditions for the contact and boundary conditions. The optimal control
+problem is solved via a direct transcription method, transforming it into a constrained nonlinear
+optimization problem. The beam is firstly semidiscretized with 1D finite elements and then the
+multibody dynamics is temporally discretized with a variational integrator leading to the discrete
+Euler-Lagrange equations, which are further reduced with the null space projection. The discrete
+Euler-Lagrange equations and the boundary conditions serve as equality constraints, whereas
+the contact constraints are treated as inequality constraints in the optimization of the discretized
+objective. The effectiveness of the developed model is demonstrated by three numerical examples,
+including a cantilever beam, a soft robotic worm and a soft grasper. 

@@ -1,0 +1,19 @@
+Traffic management in a city has become a major problem due to the increasing number of vehicles on
+roads. Intelligent Transportation System (ITS) can help the city traffic managers to tackle the
+problem by providing accurate traffic forecasts. For this, ITS requires a reliable traffic prediction
+algorithm that can provide accurate traffic prediction at multiple time steps based on past and
+current traffic data. In recent years, a number of different methods for traffic prediction have
+been proposed which have proved their effectiveness in terms of accuracy. However, most of these
+methods have either considered spatial information or temporal information only and overlooked
+the effect of other. In this paper, to address the above problem a deep learning based approach has
+been developed using both the spatial and temporal dependencies. To consider spatio-temporal
+dependencies, nearby road sensors at a particular instant are selected based on the attributes
+like traffic similarity and distance. Two pre-trained deep auto-encoders were cross-connected
+using the concept of latent space mapping and the resultant model was trained using the traffic data
+from the selected nearby sensors as input. The proposed deep learning based approach was trained
+using the real-world traffic data collected from loop detector sensors installed on different
+highways of Los Angeles and Bay Area. The traffic data is freely available from the web portal of the
+California Department of Transportation Performance Measurement System (PeMS). The effectiveness
+of the proposed approach was verified by comparing it with a number of machine/deep learning approaches.
+It has been found that the proposed approach provides accurate traffic prediction results even
+for 60-min ahead prediction with least error than other techniques. 

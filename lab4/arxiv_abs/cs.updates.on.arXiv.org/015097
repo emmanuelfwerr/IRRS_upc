@@ -1,0 +1,20 @@
+In node classification tasks, heterophily and oversmoothing are two problems that can hurt the
+performance of graph convolutional neural networks (GCNs). The heterophily problem refers to
+the model's inability to handle heterophilous graphs where neighboring nodes belong to different
+classes; the oversmoothing problem refers to the model's degenerated performance with increasing
+number of layers. These two seemingly unrelated problems have been studied mostly independently,
+but there is recent empirical evidence that solving one problem may benefit the other. In this work,
+beyond empirical observations, we aim to: (1) analyze the heterophily and oversmoothing problems
+from a unified theoretical perspective, (2) identify the common causes of the two problems, and
+(3) propose simple yet effective strategies to address the common causes. In our theoretical analysis,
+we show that the common causes of the heterophily and oversmoothing problems--namely, the relative
+degree of a node and its heterophily level--trigger the node representations in consecutive layers
+to "move" closer to the original decision boundary, which increases the misclassification rate
+of node labels under certain constraints. We theoretically show that: (1) Nodes with high heterophily
+have a higher misclassification rate. (2) Even with low heterophily, degree disparity in a node's
+neighborhood can influence the movements of node representations and result in a "pseudo-heterophily"
+situation, which helps to explain oversmoothing. (3) Allowing not only positive but also negative
+messages during message passing can help counteract the common causes of the two problems. Based
+on our theoretical insights, we propose simple modifications to the GCN architecture (i.e., learned
+degree corrections and signed messages), and we show that they alleviate the heteorophily and oversmoothing
+problems with experiments on 9 networks. 

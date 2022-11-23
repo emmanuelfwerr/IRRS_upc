@@ -1,0 +1,19 @@
+Performance in natural language processing, and specifically for the question-answer task, is
+typically measured by comparing a model\'s most confident (primary) prediction to golden answers
+(the ground truth). We are making the case that it is also useful to quantify how close a model came
+to predicting a correct answer even for examples that failed. We define the Golden Rank (GR) of an
+example as the rank of its most confident prediction that exactly matches a ground truth, and show
+why such a match always exists. For the 16 transformer models we analyzed, the majority of exactly
+matched golden answers in secondary prediction space hover very close to the top rank. We refer to
+secondary predictions as those ranking above 0 in descending confidence probability order. We
+demonstrate how the GR can be used to classify questions and visualize their spectrum of difficulty,
+from persistent near successes to persistent extreme failures. We derive a new aggregate statistic
+over entire test sets, named the Golden Rank Interpolated Median (GRIM) that quantifies the proximity
+of failed predictions to the top choice made by the model. To develop some intuition and explore the
+applicability of these metrics we use the Stanford Question Answering Dataset (SQuAD-2) and a few
+popular transformer models from the Hugging Face hub. We first demonstrate that the GRIM is not directly
+correlated with the F1 and exact match (EM) scores. We then calculate and visualize these scores
+for various transformer architectures, probe their applicability in error analysis by clustering
+failed predictions, and compare how they relate to other training diagnostics such as the EM and
+F1 scores. We finally suggest various research goals, such as broadening data collection for these
+metrics and their possible use in adversarial training. 

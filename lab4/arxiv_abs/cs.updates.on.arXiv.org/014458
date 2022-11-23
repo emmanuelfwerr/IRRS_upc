@@ -1,0 +1,19 @@
+Typically, unsupervised segmentation of speech into the phone and word-like units are treated
+as separate tasks and are often done via different methods which do not fully leverage the inter-dependence
+of the two tasks. Here, we unify them and propose a technique that can jointly perform both, showing
+that these two tasks indeed benefit from each other. Recent attempts employ self-supervised learning,
+such as contrastive predictive coding (CPC), where the next frame is predicted given past context.
+However, CPC only looks at the audio signal's frame-level structure. We overcome this limitation
+with a segmental contrastive predictive coding (SCPC) framework to model the signal structure
+at a higher level, e.g., phone level. A convolutional neural network learns frame-level representation
+from the raw waveform via noise-contrastive estimation (NCE). A differentiable boundary detector
+finds variable-length segments, which are then used to optimize a segment encoder via NCE to learn
+segment representations. The differentiable boundary detector allows us to train frame-level
+and segment-level encoders jointly. Experiments show that our single model outperforms existing
+phone and word segmentation methods on TIMIT and Buckeye datasets. We discover that phone class
+impacts the boundary detection performance, and the boundaries between successive vowels or semivowels
+are the most difficult to identify. Finally, we use SCPC to extract speech features at the segment
+level rather than at uniformly spaced frame level (e.g., 10 ms) and produce variable rate representations
+that change according to the contents of the utterance. We can lower the feature extraction rate
+from the typical 100 Hz to as low as 14.5 Hz on average while still outperforming the MFCC features
+on the linear phone classification task. 

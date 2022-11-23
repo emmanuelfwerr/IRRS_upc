@@ -1,0 +1,20 @@
+Artificial intelligence and semantic technologies are evolving and have been applied in various
+research areas, including the education domain. Higher Education institutions strive to improve
+students' academic performance. Early intervention to at-risk students and a reasonable curriculum
+is vital for students' success. Prior research opted for deploying traditional machine learning
+models to predict students' performance. In terms of curriculum semantic analysis, after conducting
+a comprehensive systematic review regarding the use of semantic technologies in the Computer Science
+curriculum, a major finding of the study is that technologies used to measure similarity have limitations
+in terms of accuracy and ambiguity in the representation of concepts, courses, etc. To fill these
+gaps, in this study, three implementations were developed, that is, to predict students' performance
+using marks from the previous semester, to model a course representation in a semantic way and compute
+the similarity, and to identify the prerequisite between two similar courses. Regarding performance
+prediction, we used the combination of Genetic Algorithm and Long-Short Term Memory (LSTM) on a
+dataset from a Brazilian university containing 248730 records. As for similarity measurement,
+we deployed BERT to encode the sentences and used cosine similarity to obtain the distance between
+courses. With respect to prerequisite identification, TextRazor was applied to extract concepts
+from course description, followed by employing SemRefD to measure the degree of prerequisite between
+two concepts. The outcomes of this study can be summarized as: (i) a breakthrough result improves
+Manrique's work by 2.5% in terms of accuracy in dropout prediction; (ii) uncover the similarity
+between courses based on course description; (iii) identify the prerequisite over three compulsory
+courses of School of Computing at ANU. 

@@ -1,0 +1,19 @@
+Internet of things (IoT) devices, such as smart meters, smart speakers and activity monitors, have
+become highly popular thanks to the services they offer. However, in addition to their many benefits,
+they raise privacy concerns since they share fine-grained time-series user data with untrusted
+third parties. In this work, we consider a user releasing her data containing personal information
+in return of a service from an honest-but-curious service provider (SP). We model user's personal
+information as two correlated random variables (r.v.'s), one of them, called the secret variable,
+is to be kept private, while the other, called the useful variable, is to be disclosed for utility.
+We consider active sequential data release, where at each time step the user chooses from among a
+finite set of release mechanisms, each revealing some information about the user's personal information,
+i.e., the true values of the r.v.'s, albeit with different statistics. The user manages data release
+in an online fashion such that the maximum amount of information is revealed about the latent useful
+variable as quickly as possible, while the confidence for the sensitive variable is kept below a
+predefined level. For privacy measure, we consider both the probability of correctly detecting
+the true value of the secret and the mutual information (MI) between the secret and the released data.
+We formulate both problems as partially observable Markov decision processes (POMDPs), and numerically
+solve them by advantage actor-critic (A2C) deep reinforcement learning (DRL). We evaluate the
+privacy-utility trade-off (PUT) of the proposed policies on both the synthetic data and smoking
+activity dataset, and show their validity by testing the activity detection accuracy of the SP modeled
+by a long short-term memory (LSTM) neural network. 

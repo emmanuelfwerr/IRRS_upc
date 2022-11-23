@@ -1,0 +1,19 @@
+We consider the high-resolution seismic imaging method called full-waveform inversion (FWI).
+FWI is a data fitting method aimed at inverting for subsurface mechanical parameters. Despite the
+large adoption of FWI by the academic and industrial communities, and many successful results,
+FWI still suffers from severe limitations. From a mathematical standpoint, FWI is a large scale
+PDE-constrained optimization problem. The misfit function that is used, which measures the discrepancy
+between observed seismic data and data calculated through the solution of a wave propagation problem,
+is non-convex. After discretization, the size of the FWI problem requires the use of local optimization
+solvers, which are prone to converge towards local minima. Thus the success of FWI strongly depends
+on the choice of the initial model to ensure the convergence towards the global minimum of the misfit
+function. This limitation has been the motivation for a large variety of strategies. Among the different
+methods that have been investigated, the use of optimal transport (OT) distances-based misfit
+functions has been recently promoted. The leading idea is to benefit from the inherent convexity
+of OT distances with respect to dilation and translation to render the FWI problem more convex. However,
+the application of OT distances in the framework of FWI is not straightforward, as seismic data is
+signed, while OT has been developed for the comparison of probability measures. The purpose of this
+study is to review two methods that were developed to overcome this difficulty. Both have been successfully
+applied to field data in an industrial framework. Both make it possible to better exploit the seismic
+data, alleviating the sensitivity to the initial model and to various conventional workflow steps,
+and reducing the uncertainty attached to the subsurface mechanical parameters inversion. 

@@ -1,0 +1,19 @@
+Non-randomized treatment effect models are widely used for the assessment of treatment effects
+in various fields and in particular social science disciplines like political science, psychometry,
+psychology. More specifically, these are situations where treatment is assigned to an individual
+based on some of their characteristics (e.g. scholarship is allocated based on merit or antihypertensive
+treatments are allocated based on blood pressure level) instead of being allocated randomly, as
+is the case, for example, in randomized clinical trials. Popular methods that have been largely
+employed till date for estimation of such treatment effects suffer from slow rates of convergence
+(i.e. slower than $\sqrt{n}$). In this paper, we present a new model coined SCENTS: Score Explained
+Non-Randomized Treatment Systems, and a corresponding method that allows estimation of the treatment
+effect at $\sqrt{n}$ rate in the presence of fairly general forms of confoundedness, when the `score'
+variable on whose basis treatment is assigned can be explained via certain feature measurements
+of the individuals under study. We show that our estimator is asymptotically normal in general and
+semi-parametrically efficient under normal errors. We further extend our analysis to high dimensional
+covariates and propose a $\sqrt n$ consistent and asymptotically normal estimator based on a de-biasing
+procedure. Our analysis for the high dimensional incarnation can be readily extended to analyze
+partial linear models in the presence of noisy variables corresponding to the non-linear part of
+the model, where the noise can be correlated with the variables corresponding to the linear part.
+We analyze two real datasets via our method and compare our results with those obtained by using previous
+approaches. We conclude this paper with a discussion on some possible extensions of our approach.

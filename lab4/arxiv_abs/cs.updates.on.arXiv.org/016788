@@ -1,0 +1,20 @@
+Autonomous driving requires a detailed understanding of complex driving scenes. The redundancy
+and complementarity of the vehicle's sensors provide an accurate and robust comprehension of the
+environment, thereby increasing the level of performance and safety. This thesis focuses the on
+automotive RADAR, which is a low-cost active sensor measuring properties of surrounding objects,
+including their relative speed, and has the key advantage of not being impacted by adverse weather
+conditions. With the rapid progress of deep learning and the availability of public driving datasets,
+the perception ability of vision-based driving systems has considerably improved. The RADAR sensor
+is seldom used for scene understanding due to its poor angular resolution, the size, noise, and complexity
+of RADAR raw data as well as the lack of available datasets. This thesis proposes an extensive study
+of RADAR scene understanding, from the construction of an annotated dataset to the conception of
+adapted deep learning architectures. First, this thesis details approaches to tackle the current
+lack of data. A simple simulation as well as generative methods for creating annotated data will
+be presented. It will also describe the CARRADA dataset, composed of synchronised camera and RADAR
+data with a semi-automatic annotation method. This thesis then present a proposed set of deep learning
+architectures with their associated loss functions for RADAR semantic segmentation. It also introduces
+a method to open up research into the fusion of LiDAR and RADAR sensors for scene understanding. Finally,
+this thesis exposes a collaborative contribution, the RADIal dataset with synchronised High-Definition
+(HD) RADAR, LiDAR and camera. A deep learning architecture is also proposed to estimate the RADAR
+signal processing pipeline while performing multitask learning for object detection and free
+driving space segmentation. 

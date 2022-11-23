@@ -1,0 +1,20 @@
+Open-set recognition and adversarial defense study two key aspects of deep learning that are vital
+for real-world deployment. The objective of open-set recognition is to identify samples from open-set
+classes during testing, while adversarial defense aims to robustify the network against images
+perturbed by imperceptible adversarial noise. This paper demonstrates that open-set recognition
+systems are vulnerable to adversarial samples. Furthermore, this paper shows that adversarial
+defense mechanisms trained on known classes are unable to generalize well to open-set samples.
+Motivated by these observations, we emphasize the necessity of an Open-Set Adversarial Defense
+(OSAD) mechanism. This paper proposes an Open-Set Defense Network with Clean-Adversarial Mutual
+Learning (OSDN-CAML) as a solution to the OSAD problem. The proposed network designs an encoder
+with dual-attentive feature-denoising layers coupled with a classifier to learn a noise-free
+latent feature representation, which adaptively removes adversarial noise guided by channel
+and spatial-wise attentive filters. Several techniques are exploited to learn a noise-free and
+informative latent feature space with the aim of improving the performance of adversarial defense
+and open-set recognition. First, we incorporate a decoder to ensure that clean images can be well
+reconstructed from the obtained latent features. Then, self-supervision is used to ensure that
+the latent features are informative enough to carry out an auxiliary task. Finally, to exploit more
+complementary knowledge from clean image classification to facilitate feature denoising and
+search for a more generalized local minimum for open-set recognition, we further propose clean-adversarial
+mutual learning, where a peer network (classifying clean images) is further introduced to mutually
+learn with the classifier (classifying adversarial images). 

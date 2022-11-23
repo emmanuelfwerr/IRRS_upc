@@ -1,0 +1,20 @@
+Architecture reverse engineering has become an emerging attack against deep neural network (DNN)
+implementations. Several prior works have utilized side-channel leakage to recover the model
+architecture while the target is executing on a hardware acceleration platform. In this work, we
+target an open-source deep-learning accelerator, Versatile Tensor Accelerator (VTA), and utilize
+electromagnetic (EM) side-channel leakage to comprehensively learn the association between
+DNN architecture configurations and EM emanations. We also consider the holistic system -- including
+the low-level tensor program code of the VTA accelerator on a Xilinx FPGA and explore the effect of
+such low-level configurations on the EM leakage. Our study demonstrates that both the optimization
+and configuration of tensor programs will affect the EM side-channel leakage. Gaining knowledge
+of the association between the low-level tensor program and the EM emanations, we propose NNReArch,
+a lightweight tensor program scheduling framework against side-channel-based DNN model architecture
+reverse engineering. Specifically, NNReArch targets reshaping the EM traces of different DNN
+operators, through scheduling the tensor program execution of the DNN model so as to confuse the
+adversary. NNReArch is a comprehensive protection framework supporting two modes, a balanced
+mode that strikes a balance between the DNN model confidentiality and execution performance, and
+a secure mode where the most secure setting is chosen. We implement and evaluate the proposed framework
+on the open-source VTA with state-of-the-art DNN architectures. The experimental results demonstrate
+that NNReArch can efficiently enhance the model architecture security with a small performance
+overhead. In addition, the proposed obfuscation technique makes reverse engineering of the DNN
+architecture significantly harder. 

@@ -1,0 +1,19 @@
+Context: Machine learning software can generate models that inappropriately discriminate against
+specific protected social groups (e.g., groups based on gender, ethnicity, etc). Motivated by
+those results, software engineering researchers have proposed many methods for mitigating those
+discriminatory effects. While those methods are effective in mitigating bias, few of them can provide
+explanations on what is the root cause of bias. Objective: We aim at better detection and mitigation
+of algorithmic discrimination in machine learning software problems. Method: Here we propose
+xFAIR, a model-based extrapolation method, that is capable of both mitigating bias and explaining
+the cause. In our xFAIR approach, protected attributes are represented by models learned from the
+other independent variables (and these models offer extrapolations over the space between existing
+examples). We then use the extrapolation models to relabel protected attributes later seen in testing
+data or deployment time. Our approach aims to offset the biased predictions of the classification
+model via rebalancing the distribution of protected attributes. Results: The experiments of this
+paper show that, without compromising (original) model performance, xFAIR can achieve significantly
+better group and individual fairness (as measured in different metrics) than benchmark methods.
+Moreover, when compared to another instance-based rebalancing method, our model-based approach
+shows faster runtime and thus better scalability. Conclusion: Algorithmic decision bias can be
+removed via extrapolation that smooths away outlier points. As evidence for this, our proposed
+xFAIR is not only performance-wise better (measured by fairness and performance metrics) than
+two state-of-the-art fairness algorithms. 

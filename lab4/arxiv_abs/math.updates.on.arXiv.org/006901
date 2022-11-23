@@ -1,0 +1,18 @@
+Integer programming (IP) is an important and challenging problem. Approximate methods have shown
+promising performance on both effectiveness and efficiency for solving the IP problem. However,
+we observed that a large fraction of variables solved by some iterative approximate methods fluctuate
+around their final converged discrete states in very long iterations. Inspired by this observation,
+we aim to accelerate these approximate methods by early fixing these fluctuated variables to their
+converged states while not significantly harming the solution accuracy. To this end, we propose
+an early fixing framework along with the approximate method. We formulate the whole early fixing
+process as a Markov decision process, and train it using imitation learning. A policy network will
+evaluate the posterior probability of each free variable concerning its discrete candidate states
+in each block of iterations. Specifically, we adopt the powerful multi-headed attention mechanism
+in the policy network. Extensive experiments on our proposed early fixing framework are conducted
+to three different IP applications: constrained linear programming, MRF energy minimization
+and sparse adversarial attack. The former one is linear IP problem, while the latter two are quadratic
+IP problems. We extend the problem scale from regular size to significantly large size. The extensive
+experiments reveal the competitiveness of our early fixing framework: the runtime speeds up significantly,
+while the solution quality does not degrade much, even in some cases it is available to obtain better
+solutions. Our proposed early fixing framework can be regarded as an acceleration extension of
+ADMM methods for solving integer programming. The source codes are available at \url{https://github.com/SCLBD/Accelerated-Lpbox-ADMM}.

@@ -1,0 +1,19 @@
+A number of key scientific computing applications that are based upon tensor-product grid constructions,
+such as numerical weather prediction (NWP) and combustion simulations, require property-preserving
+interpolation. Essentially Non-Oscillatory (ENO) interpolation is a classic example of such
+interpolation schemes. In the aforementioned application areas, property preservation often
+manifests itself as a requirement for either data boundedness or positivity preservation. For
+example, in NWP, one may have to interpolate between the grid on which the dynamics is calculated
+to a grid on which the physics is calculated (and back). Interpolating density or other key physical
+quantities without accounting for property preservation may lead to negative values that are nonphysical
+and result in inaccurate representations and/or interpretations of the physical data. Property-preserving
+interpolation is straightforward when used in the context of low-order numerical simulation methods.
+High-order property-preserving interpolation is, however, nontrivial, especially in the case
+where the interpolation points are not equispaced. In this paper, we demonstrate that it is possible
+to construct high-order interpolation methods that ensure either data boundedness or constrained
+positivity preservation. A novel feature of the algorithm is that the positivity-preserving interpolant
+is constrained; that is, the amount by which it exceeds the data values may be strictly controlled.
+The algorithm we have developed comes with theoretical estimates that provide sufficient conditions
+for data boundedness and constrained positivity preservation. We demonstrate the application
+of our algorithm on a collection of 1D and 2D numerical examples, and show that in all cases property
+preservation is respected. 

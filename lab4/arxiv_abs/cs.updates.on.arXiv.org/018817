@@ -1,0 +1,19 @@
+Unconstrained Image generation with high realism is now possible using recent Generative Adversarial
+Networks (GANs). However, it is quite challenging to generate images with a given set of attributes.
+Recent methods use style-based GAN models to perform image editing by leveraging the semantic hierarchy
+present in the layers of the generator. We present Few-shot Latent-based Attribute Manipulation
+and Editing (FLAME), a simple yet effective framework to perform highly controlled image editing
+by latent space manipulation. Specifically, we estimate linear directions in the latent space
+(of a pre-trained StyleGAN) that controls semantic attributes in the generated image. In contrast
+to previous methods that either rely on large-scale attribute labeled datasets or attribute classifiers,
+FLAME uses minimal supervision of a few curated image pairs to estimate disentangled edit directions.
+FLAME can perform both individual and sequential edits with high precision on a diverse set of images
+while preserving identity. Further, we propose a novel task of Attribute Style Manipulation to
+generate diverse styles for attributes such as eyeglass and hair. We first encode a set of synthetic
+images of the same identity but having different attribute styles in the latent space to estimate
+an attribute style manifold. Sampling a new latent from this manifold will result in a new attribute
+style in the generated image. We propose a novel sampling method to sample latent from the manifold,
+enabling us to generate a diverse set of attribute styles beyond the styles present in the training
+set. FLAME can generate diverse attribute styles in a disentangled manner. We illustrate the superior
+performance of FLAME against previous image editing methods by extensive qualitative and quantitative
+comparisons. FLAME also generalizes well on multiple datasets such as cars and churches. 

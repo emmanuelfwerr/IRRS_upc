@@ -1,0 +1,19 @@
+Graph Neural Networks have become one of the indispensable tools to learn from graph-structured
+data, and their usefulness has been shown in wide variety of tasks. In recent years, there have been
+tremendous improvements in architecture design, resulting in better performance on various prediction
+tasks. In general, these neural architectures combine node feature aggregation and feature transformation
+using learnable weight matrix in the same layer. This makes it challenging to analyze the importance
+of node features aggregated from various hops and the expressiveness of the neural network layers.
+As different graph datasets show varying levels of homophily and heterophily in features and class
+label distribution, it becomes essential to understand which features are important for the prediction
+tasks without any prior information. In this work, we decouple the node feature aggregation step
+and depth of graph neural network, and empirically analyze how different aggregated features play
+a role in prediction performance. We show that not all features generated via aggregation steps
+are useful, and often using these less informative features can be detrimental to the performance
+of the GNN model. Through our experiments, we show that learning certain subsets of these features
+can lead to better performance on wide variety of datasets. We propose to use softmax as a regularizer
+and "soft-selector" of features aggregated from neighbors at different hop distances; and L2-Normalization
+over GNN layers. Combining these techniques, we present a simple and shallow model, Feature Selection
+Graph Neural Network (FSGNN), and show empirically that the proposed model achieves comparable
+or even higher accuracy than state-of-the-art GNN models in nine benchmark datasets for the node
+classification task, with remarkable improvements up to 51.1%. 

@@ -1,0 +1,19 @@
+The worldwide adoption of cloud data centers (CDCs) has given rise to the ubiquitous demand for hosting
+application services on the cloud. Further, contemporary data-intensive industries have seen
+a sharp upsurge in the resource requirements of modern applications. This has led to the provisioning
+of an increased number of cloud servers, giving rise to higher energy consumption and, consequently,
+sustainability concerns. Traditional heuristics and reinforcement learning based algorithms
+for energy-efficient cloud resource management address the scalability and adaptability related
+challenges to a limited extent. Existing work often fails to capture dependencies across thermal
+characteristics of hosts, resource consumption of tasks and the corresponding scheduling decisions.
+This leads to poor scalability and an increase in the compute resource requirements, particularly
+in environments with non-stationary resource demands. To address these limitations, we propose
+an artificial intelligence (AI) based holistic resource management technique for sustainable
+cloud computing called HUNTER. The proposed model formulates the goal of optimizing energy efficiency
+in data centers as a multi-objective scheduling problem, considering three important models:
+energy, thermal and cooling. HUNTER utilizes a Gated Graph Convolution Network as a surrogate model
+for approximating the Quality of Service (QoS) for a system state and generating optimal scheduling
+decisions. Experiments on simulated and physical cloud environments using the CloudSim toolkit
+and the COSCO framework show that HUNTER outperforms state-of-the-art baselines in terms of energy
+consumption, SLA violation, scheduling time, cost and temperature by up to 12, 35, 43, 54 and 3 percent
+respectively. 

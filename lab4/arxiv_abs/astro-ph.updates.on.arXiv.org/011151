@@ -1,0 +1,19 @@
+The improvements in the precision of the published data in \textit{Gaia} EDR3 with respect to \textit{Gaia}
+DR2, particularly for parallaxes and proper motions, offer the opportunity to increase the number
+of known open clusters in the Milky Way by detecting farther and fainter objects that have so far go
+unnoticed. Our aim is to keep completing the open cluster census in the Milky Way with the detection
+of new stellar groups in the Galactic disc. We use \textit{Gaia} EDR3 up to magnitude $G = 18$ mag,
+increasing in one unit the magnitude limit and therefore the search volume explored in our previous
+studies. We use the \texttt{OCfinder} method to search for new open clusters in \textit{Gaia} EDR3
+using a Big Data environment. As a first step, \texttt{OCfinder} identifies stellar statistical
+overdensities in the five dimensional astrometric space (position, parallax and proper motions)
+using the \texttt{DBSCAN} clustering algorithm. Then, these overdensities are classified into
+random statistical overdensities or real physical open clusters using a deep artificial neural
+network trained on well-characterised $G$, $G_{\rm BP} - G_{\rm RP}$ colour-magnitude diagrams.
+We report the discovery of $664$ new open clusters within the Galactic disc, most of them located
+beyond $1$ kpc from the Sun. From the estimation of ages, distances and line-of-sight extinctions
+of these open clusters, we see that young clusters align following the Galactic spiral arms while
+older ones are dispersed in the Galactic disc. Furthermore, we find that most open clusters are located
+at low Galactic altitudes with the exception of a few groups older than $1$ Gyr. We show the success
+of the \texttt{OCfinder} method leading to the discovery of a total of $1\,310$ open clusters (joining
+the discoveries here with the previous ones based on \textit{Gaia} DR2)[abridged] 

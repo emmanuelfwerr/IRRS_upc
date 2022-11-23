@@ -1,0 +1,20 @@
+Attention mechanisms have raised significant interest in the research community, since they promise
+significant improvements in the performance of neural network architectures. However, in any
+specific problem, we still lack a principled way to choose specific mechanisms and hyper-parameters
+that lead to guaranteed improvements. More recently, self-attention has been proposed and widely
+used in transformer-like architectures, leading to significant breakthroughs in some applications.
+In this work we focus on two forms of attention mechanisms: attention modules and self-attention.
+Attention modules are used to reweight the features of each layer input tensor. Different modules
+have different ways to perform this reweighting in fully connected or convolutional layers. The
+attention models studied are completely modular and in this work they will be used with the popular
+ResNet architecture. Self-Attention, originally proposed in the area of Natural Language Processing
+makes it possible to relate all the items in an input sequence. Self-Attention is becoming increasingly
+popular in Computer Vision, where it is sometimes combined with convolutional layers, although
+some recent architectures do away entirely with convolutions. In this work, we study and perform
+an objective comparison of a number of different attention mechanisms in a specific computer vision
+task, the classification of samples in the widely used Skin Cancer MNIST dataset. The results show
+that attention modules do sometimes improve the performance of convolutional neural network architectures,
+but also that this improvement, although noticeable and statistically significant, is not consistent
+in different settings. The results obtained with self-attention mechanisms, on the other hand,
+show consistent and significant improvements, leading to the best results even in architectures
+with a reduced number of parameters. 

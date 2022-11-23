@@ -1,0 +1,19 @@
+Due to the frequent unauthorized access by commercial drones to Critical Infrastructures (CIs)
+such as airports and oil refineries, the US-based Federal Avionics Administration (FAA) recently
+published a new specification, namely RemoteID. The aforementioned rule mandates that all Unmanned
+Aerial Vehicles (UAVs) have to broadcast information about their identity and location wirelessly
+to allow for immediate invasion attribution. However, the enforcement of such a rule poses severe
+concerns on UAV operators, especially in terms of location privacy and tracking threats, to name
+a few. Indeed, by simply eavesdropping on the wireless channel, an adversary could know the precise
+location of the UAV and track it, as well as obtaining sensitive information on path source and destination
+of the UAV. In this paper, we investigate the trade-off between location privacy and data utility
+that can be provided to UAVs when obfuscating the broadcasted location through differential privacy
+techniques. Leveraging the concept of Geo-Indistinguishability (Geo-Ind), already adopted
+in the context of Location-Based Services (LBS), we show that it is possible to enhance the privacy
+of the UAVs without preventing CI operators to timely detect unauthorized invasions. In particular,
+our experiments showed that when the location of an UAV is obfuscated with an average distance of
+1.959 km, a carefully designed UAV detection system can detect 97.9% of invasions, with an average
+detection delay of 303.97 msec. The UAVs have to trade-off such enhanced location privacy with a
+non-negligible probability of false positives, i.e., being detected as invading while not really
+invading the no-fly zone. UAVs and CI operators can solve such ambiguous situations later on through
+the help of the FAA, being this latter the only one that can unveil the actual location of the UAV. 

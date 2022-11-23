@@ -1,0 +1,19 @@
+We introduce a hybrid projection scheme that combines linear Mori projection and conditional Zwanzig
+projection techniques and use it to derive a Generalized Langevin Equation (GLE) for a general interacting
+many-body system. The resulting GLE includes i) explicitly the potential of mean force (PMF) that
+describes the equilibrium distribution of the system in the chosen space of reaction coordinates,
+ii) a random force term that explicitly depends on the initial state of the system, and iii) a memory
+friction contribution that splits into two parts: a part that is linear in the past reaction-coordinate
+velocity and a part that is in general non-linear in the past reaction coordinates but does not depend
+on velocities. Our hybrid scheme thus combines all desirable properties of the Zwanzig and Mori
+projection schemes. The non-linear memory friction contribution is shown to be related to correlations
+between the reaction-coordinate velocity and the random force. We present a numerical method to
+compute all parameters of our GLE, in particular, the non-linear memory friction function and the
+random force distribution, from a trajectory in reaction coordinate space. We apply our method
+to the dihedral-angle dynamics of a butane molecule in water obtained from atomistic molecular
+dynamics simulations. For this example, we demonstrate that non-linear memory friction is present
+and that the random force exhibits significant non-Gaussian corrections. We also present the derivation
+of the GLE for multidimensional reaction coordinates that are general functions of all positions
+in the phase space of the underlying many-body system; this corresponds to a systematic coarse-graining
+procedure that preserves not only the correct equilibrium behavior but also the correct dynamics
+of the coarse-grained system. 

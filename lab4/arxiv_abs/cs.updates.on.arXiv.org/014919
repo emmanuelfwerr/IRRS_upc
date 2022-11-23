@@ -1,0 +1,19 @@
+The ubiquitous growth of mobility-on-demand services for passenger and goods delivery has brought
+various challenges and opportunities within the realm of transportation systems. As a result,
+intelligent transportation systems are being developed to maximize operational profitability,
+user convenience, and environmental sustainability. The growth of last mile deliveries alongside
+ridesharing calls for an efficient and cohesive system that transports both passengers and goods.
+Existing methods address this using static routing methods considering neither the demands of
+requests nor the transfer of goods between vehicles during route planning. In this paper, we present
+a dynamic and demand aware fleet management framework for combined goods and passenger transportation
+that is capable of (1) Involving both passengers and drivers in the decision-making process by allowing
+drivers to negotiate to a mutually suitable price, and passengers to accept/reject, (2) Matching
+of goods to vehicles, and the multi-hop transfer of goods, (3) Dynamically generating optimal routes
+for each vehicle considering demand along their paths, based on the insertion cost which then determines
+the matching, (4) Dispatching idle vehicles to areas of anticipated high passenger and goods demand
+using Deep Reinforcement Learning (RL), (5) Allowing for distributed inference at each vehicle
+while collectively optimizing fleet objectives. Our proposed model is deployable independently
+within each vehicle as this minimizes computational costs associated with the growth of distributed
+systems and democratizes decision-making to each individual. Simulations on a variety of vehicle
+types, goods, and passenger utility functions show the effectiveness of our approach as compared
+to other methods that do not consider combined load transportation or dynamic multi-hop route planning.

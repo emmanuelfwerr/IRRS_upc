@@ -1,0 +1,20 @@
+Genome sequence analysis plays a pivotal role in enabling many medical and scientific advancements
+in personalized medicine, outbreak tracing, and forensics. However, the analysis of genome sequencing
+data is currently bottlenecked by the computational power and memory bandwidth limitations of
+existing systems. In this dissertation, we propose four major works, where we characterize the
+real-system behavior of the genome sequence analysis pipeline and its associated tools, expose
+the bottlenecks and tradeoffs, and co-design fast and efficient algorithms along with scalable
+and energy-efficient customized hardware accelerators for the key bottlenecks to enable faster
+genome sequence analysis. First, we comprehensively analyze the tools in the genome assembly pipeline
+for long reads in multiple dimensions, uncovering bottlenecks and tradeoffs that different combinations
+of tools and different underlying systems lead to. Second, we propose GenASM, an acceleration framework
+that builds upon bitvector-based approximate string matching to accelerate multiple steps of
+the genome sequence analysis pipeline. We co-design our highly-parallel, scalable and memory-efficient
+algorithms with low-power and area-efficient hardware accelerators. Third, we implement an FPGA-based
+prototype for GenASM, where state-of-the-art 3D-stacked memory offers high memory bandwidth
+and FPGA resources offer high parallelism. Fourth, we propose SeGraM, the first hardware acceleration
+framework for sequence-to-graph mapping and alignment. We co-design algorithms and accelerators
+for memory-efficient minimizer-based seeding and bitvector-based, highly-parallel sequence-to-graph
+alignment. Overall, we demonstrate that genome sequence analysis can be accelerated by co-designing
+scalable and energy-efficient customized accelerators along with efficient algorithms for the
+key steps of genome sequence analysis. 

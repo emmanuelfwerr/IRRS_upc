@@ -1,0 +1,20 @@
+The PGAS model is well suited for executing irregular applications on cluster-based systems, due
+to its efficient support for short, one-sided messages. However, there are currently two major
+limitations faced by PGAS applications. The first relates to scalability: despite the availability
+of APIs that support non-blocking operations in special cases, many PGAS operations on remote locations
+are synchronous by default, which can lead to long-latency stalls and poor scalability. The second
+relates to productivity: while it is simpler for the developer to express all communications at
+a fine-grained granularity that is natural to the application, experiments have shown that such
+a natural expression results in performance that is 20x slower than more efficient but less productive
+code that requires manual message aggregation and termination detection. In this paper, we introduce
+a new programming system for PGAS applications, in which point-to-point remote operations can
+be expressed as fine-grained asynchronous actor messages. In this approach, the programmer does
+not need to worry about programming complexities related to message aggregation and termination
+detection. Our approach can also be viewed as extending the classical Bulk Synchronous Parallelism
+model with fine-grained asynchronous communications within a phase or superstep. We believe that
+our approach offers a desirable point in the productivity-performance space for PGAS applications,
+with more scalable performance and higher productivity relative to past approaches. Specifically,
+for seven irregular mini-applications from the Bale benchmark suite executed using 2048 cores
+in the NERSC Cori system, our approach shows geometric mean performance improvements of >=20x relative
+to standard PGAS versions (UPC and OpenSHMEM) while maintaining comparable productivity to those
+versions. 

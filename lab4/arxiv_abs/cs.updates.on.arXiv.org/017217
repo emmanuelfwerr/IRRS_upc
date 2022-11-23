@@ -1,0 +1,19 @@
+Context-aware decision support in the operating room can foster surgical safety and efficiency
+by leveraging real-time feedback from surgical workflow analysis. Most existing works recognize
+surgical activities at a coarse-grained level, such as phases, steps or events, leaving out fine-grained
+interaction details about the surgical activity; yet those are needed for more helpful AI assistance
+in the operating room. Recognizing surgical actions as triplets of <instrument, verb, target>
+combination delivers comprehensive details about the activities taking place in surgical videos.
+This paper presents CholecTriplet2021: an endoscopic vision challenge organized at MICCAI 2021
+for the recognition of surgical action triplets in laparoscopic videos. The challenge granted
+private access to the large-scale CholecT50 dataset, which is annotated with action triplet information.
+In this paper, we present the challenge setup and assessment of the state-of-the-art deep learning
+methods proposed by the participants during the challenge. A total of 4 baseline methods from the
+challenge organizers and 19 new deep learning algorithms by competing teams are presented to recognize
+surgical action triplets directly from surgical videos, achieving mean average precision (mAP)
+ranging from 4.2% to 38.1%. This study also analyzes the significance of the results obtained by
+the presented approaches, performs a thorough methodological comparison between them, in-depth
+result analysis, and proposes a novel ensemble method for enhanced recognition. Our analysis shows
+that surgical workflow analysis is not yet solved, and also highlights interesting directions
+for future research on fine-grained surgical activity recognition which is of utmost importance
+for the development of AI in surgery. 

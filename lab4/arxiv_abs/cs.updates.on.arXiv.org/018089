@@ -1,0 +1,20 @@
+Agent-based modeling (ABM) is a well-established paradigm for simulating complex systems via
+interactions between constituent entities. Machine learning (ML) refers to approaches whereby
+statistical algorithms 'learn' from data on their own, without imposing a priori theories of system
+behavior. Biological systems -- from molecules, to cells, to entire organisms -- consist of vast
+numbers of entities, governed by complex webs of interactions that span many spatiotemporal scales
+and exhibit nonlinearity, stochasticity and intricate coupling between entities. The macroscopic
+properties and collective dynamics of such systems are difficult to capture via continuum modelling
+and mean-field formalisms. ABM takes a 'bottom-up' approach that obviates these difficulties
+by enabling one to easily propose and test a set of well-defined 'rules' to be applied to the individual
+entities (agents) in a system. Evaluating a system and propagating its state over discrete time-steps
+effectively simulates the system, allowing observables to be computed and system properties to
+be analyzed. Because the rules that govern an ABM can be difficult to abstract and formulate from
+experimental data, there is an opportunity to use ML to help infer optimal, system-specific ABM
+rules. Once such rule-sets are devised, ABM calculations can generate a wealth of data, and ML can
+be applied there too -- e.g., to probe statistical measures that meaningfully describe a system's
+stochastic properties. As an example of synergy in the other direction (from ABM to ML), ABM simulations
+can generate realistic datasets for training ML algorithms (e.g., for regularization, to mitigate
+overfitting). In these ways, one can envision various synergistic ABM$\rightleftharpoons$ML
+loops. This review summarizes how ABM and ML have been integrated in contexts that span spatial scales
+from the cellular to population-level scale epidemiology. 

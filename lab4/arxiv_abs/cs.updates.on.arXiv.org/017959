@@ -1,0 +1,20 @@
+Multi-behavior recommendation exploits multiple types of user-item interactions to alleviate
+the data sparsity problem faced by the traditional models that often utilize only one type of interaction
+for recommendation. In real scenarios, users often take a sequence of actions to interact with an
+item, in order to get more information about the item and thus accurately evaluate whether an item
+fits personal preference. Those interaction behaviors often obey a certain order, and different
+behaviors reveal different information or aspects of user preferences towards the target item.
+Most existing multi-behavior recommendation methods take the strategy to first extract information
+from different behaviors separately and then fuse them for final prediction. However, they have
+not exploited the connections between different behaviors to learn user preferences. Besides,
+they often introduce complex model structures and more parameters to model multiple behaviors,
+largely increasing the space and time complexity. In this work, we propose a lightweight multi-behavior
+recommendation model named Cascading Residual Graph Convolutional Network (CRGCN for short),
+which can explicitly exploit the connections between different behaviors into the embedding learning
+process without introducing any additional parameters. In particular, we design a cascading residual
+graph convolutional network structure, which enables our model to learn user preferences by continuously
+refining user embeddings across different types of behaviors. The multi-task learning method
+is adopted to jointly optimize our model based on different behaviors. Extensive experimental
+results on two real-world benchmark datasets show that CRGCN can substantially outperform state-of-the-art
+methods. Further studies also analyze the effects of leveraging multi-behaviors in different
+numbers and orders on the final performance. 

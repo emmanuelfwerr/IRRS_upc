@@ -1,0 +1,18 @@
+Models used for many important engineering and natural systems are imperfect. The discrepancy
+between the mathematical representations of a true physical system and its imperfect model is called
+the model error. These model errors can lead to substantial difference between the numerical solutions
+of the model and the observations of the system, particularly in those involving nonlinear, multi-scale
+phenomena. Thus, there is substantial interest in reducing model errors, particularly through
+understanding their physics and sources and leveraging the rapid growth of observational data.
+Here we introduce a framework named MEDIDA: Model Error Discovery with Interpretability and Data
+Assimilation. MEDIDA only requires a working numerical solver of the model and a small number of
+noise-free or noisy sporadic observations of the system. In MEDIDA, first the model error is estimated
+from differences between the observed states and model-predicted states (the latter are obtained
+from a number of one-time-step numerical integrations from the previous observed states). If observations
+are noisy, a data assimilation (DA) technique such as ensemble Kalman filter (EnKF) is first used
+to provide a noise-free analysis state of the system, which is then used in estimating the model error.
+Finally, an equation-discovery technique, such as the relevance vector machine (RVM), a sparsity-promoting
+Bayesian method, is used to identify an interpretable, parsimonious, closed-form representation
+of the model error. Using the chaotic Kuramoto-Sivashinsky (KS) system as the test case, we demonstrate
+the excellent performance of MEDIDA in discovering different types of structural/parametric
+model errors, representing different types of missing physics, using noise-free and noisy observations.

@@ -1,0 +1,20 @@
+Deep clustering has recently attracted significant attention. Despite the remarkable progress,
+most of the previous deep clustering works still suffer from two limitations. First, many of them
+focus on some distribution-based clustering loss, lacking the ability to exploit sample-wise
+(or augmentation-wise) relationships via contrastive learning. Second, they often neglect the
+indirect sample-wise structure information, overlooking the rich possibilities of multi-scale
+neighborhood structure learning. In view of this, this paper presents a new deep clustering approach
+termed Image clustering with contrastive learning and multi-scale Graph Convolutional Networks
+(IcicleGCN), which bridges the gap between convolutional neural network (CNN) and graph convolutional
+network (GCN) as well as the gap between contrastive learning and multi-scale neighborhood structure
+learning for the image clustering task. The proposed IcicleGCN framework consists of four main
+modules, namely, the CNN-based backbone, the Instance Similarity Module (ISM), the Joint Cluster
+Structure Learning and Instance reconstruction Module (JC-SLIM), and the Multi-scale GCN module
+(M-GCN). Specifically, with two random augmentations performed on each image, the backbone network
+with two weight-sharing views is utilized to learn the representations for the augmented samples,
+which are then fed to ISM and JC-SLIM for instance-level and cluster-level contrastive learning,
+respectively. Further, to enforce multi-scale neighborhood structure learning, two streams
+of GCNs and an auto-encoder are simultaneously trained via (i) the layer-wise interaction with
+representation fusion and (ii) the joint self-adaptive learning that ensures their last-layer
+output distributions to be consistent. Experiments on multiple image datasets demonstrate the
+superior clustering performance of IcicleGCN over the state-of-the-art. 

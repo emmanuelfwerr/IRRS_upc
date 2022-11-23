@@ -1,0 +1,19 @@
+The fifth-generation mobile evolution enables transformations on Next-Generation Radio Access
+Networks (NG-RAN). The RAN protocol stack is split into eight disaggregated options combined in
+three network units, i.e., Central, Distributed, and Radio. Besides that, further advances allow
+the RAN functions to be virtualized on top of general-purpose hardware, using the concept of virtualized
+RAN (vRAN). The Combination of NG-RAN and vRAN results in vNG-RAN, which enables the management
+of the disaggregated units and protocols as a set of radio functions. However, the orchestration-based
+placement of these radio functions is a challenging issue since the best decision can be determined
+by multiple constraints involving RAN disaggregation, crosshaul networks requirements, availability
+of computational resources, etc. This article proposes OPlaceRAN, a vNG-RAN deployment orchestrator
+framed within the NFV reference architecture and aligned with the Open RAN initiative. OPlaceRAN
+supports the dynamic placement of radio functions focusing on vNG-RAN planning and is designed
+to be agnostic to the placement optimization model. To validate OPlaceRAN, we developed a prototype
+based on up-to-date cloud-native tools to deploy RAN using containerized virtualization using
+the OpenAirInterface emulator and considering two distinct functional splits (options 2 and 6).
+The evaluation is tested as proofs-of-concept in a real computing infrastructure using two different
+placement solutions. Our results reveal that OPlaceRAN is an effective cloud-native solution
+for containerized network functions placement and agnostic to the optimization model. Additionally,
+OPlaceRAN is up-to-date with the most advanced vNG-RAN design and development approaches, contributing
+to the evolution of the fifth-generation of mobile networks. 

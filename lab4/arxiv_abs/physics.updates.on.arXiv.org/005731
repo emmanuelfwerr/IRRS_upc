@@ -1,0 +1,20 @@
+Purpose: To assess whether the three-dimensional (3D) structural configuration of the central
+retinal vessel trunk and its branches (CRVT&B) could be used as a diagnostic marker for glaucoma.
+Method: We trained a deep learning network to automatically segment the CRVT&B from the B-scans
+of the optical coherence tomography (OCT) volume of the optic nerve head (ONH). Subsequently, two
+different approaches were used for glaucoma diagnosis using the structural configuration of the
+CRVT&B as extracted from the OCT volumes. In the first approach, we aimed to provide a diagnosis using
+only 3D CNN and the 3D structure of the CRVT&B. For the second approach, we projected the 3D structure
+of the CRVT&B orthographically onto three planes to obtain 2D images, and then a 2D CNN was used for
+diagnosis. The segmentation accuracy was evaluated using the Dice coefficient, whereas the diagnostic
+accuracy was assessed using the area under the receiver operating characteristic curves (AUC).
+The diagnostic performance of the CRVT&B was also compared with that of retinal nerve fiber layer
+(RNFL) thickness. Results: Our segmentation network was able to efficiently segment retinal blood
+vessels from OCT scans. On a test set, we achieved a Dice coefficient of 0.81\pm0.07. The 3D and 2D
+diagnostic networks were able to differentiate glaucoma from non-glaucoma subjects with accuracies
+of 82.7% and 83.3%, respectively. The corresponding AUCs for CRVT&B were 0.89 and 0.90, higher than
+those obtained with RNFL thickness alone. Conclusions: Our work demonstrated that the diagnostic
+power of the CRVT&B is superior to that of a gold-standard glaucoma parameter, i.e., RNFL thickness.
+Our work also suggested that the major retinal blood vessels form a skeleton -- the configuration
+of which may be representative of major ONH structural changes as typically observed with the development
+and progression of glaucoma. 

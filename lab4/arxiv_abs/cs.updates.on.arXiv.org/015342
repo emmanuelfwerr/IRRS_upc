@@ -1,0 +1,19 @@
+In this paper, we propose an ensemble of deep neural networks along with data augmentation (DA) learned
+using effective speech-based features to recognize emotions from speech. Our ensemble model is
+built on three deep neural network-based models. These neural networks are built using the basic
+local feature acquiring blocks (LFAB) which are consecutive layers of dilated 1D Convolutional
+Neural networks followed by the max pooling and batch normalization layers. To acquire the long-term
+dependencies in speech signals further two variants are proposed by adding Gated Recurrent Unit
+(GRU) and Long Short Term Memory (LSTM) layers respectively. All three network models have consecutive
+fully connected layers before the final softmax layer for classification. The ensemble model uses
+a weighted average to provide the final classification. We have utilized five standard benchmark
+datasets: TESS, EMO-DB, RAVDESS, SAVEE, and CREMA-D for evaluation. We have performed DA by injecting
+Additive White Gaussian Noise, pitch shifting, and stretching the signal level to generalize the
+models, and thus increasing the accuracy of the models and reducing the overfitting as well. We handcrafted
+five categories of features: Mel-frequency cepstral coefficients, Log Mel-Scaled Spectrogram,
+Zero-Crossing Rate, Chromagram, and statistical Root Mean Square Energy value from each audio
+sample. These features are used as the input to the LFAB blocks that further extract the hidden local
+features which are then fed to either fully connected layers or to LSTM or GRU based on the model type
+to acquire the additional long-term contextual representations. LFAB followed by GRU or LSTM results
+in better performance compared to the baseline model. The ensemble model achieves the state-of-the-art
+weighted average accuracy in all the datasets. 

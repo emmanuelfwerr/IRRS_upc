@@ -1,0 +1,20 @@
+The goal of this work is to propose a robust, fast, and fully automatic method for personalized cranial
+defect reconstruction and implant modeling. We propose a two-step deep learning-based method
+using a modified U-Net architecture to perform the defect reconstruction, and a dedicated iterative
+procedure to improve the implant geometry, followed by automatic generation of models ready for
+3-D printing. We propose a cross-case augmentation based on imperfect image registration combining
+cases from different datasets. We perform ablation studies regarding different augmentation
+strategies and compare them to other state-of-the-art methods. We evaluate the method on three
+datasets introduced during the AutoImplant 2021 challenge, organized jointly with the MICCAI
+conference. We perform the quantitative evaluation using the Dice and boundary Dice coefficients,
+and the Hausdorff distance. The average Dice coefficient, boundary Dice coefficient, and the 95th
+percentile of Hausdorff distance are 0.91, 0.94, and 1.53 mm respectively. We perform an additional
+qualitative evaluation by 3-D printing and visualization in mixed reality to confirm the implant's
+usefulness. We propose a complete pipeline that enables one to create the cranial implant model
+ready for 3-D printing. The described method is a greatly extended version of the method that scored
+1st place in all AutoImplant 2021 challenge tasks. We freely release the source code, that together
+with the open datasets, makes the results fully reproducible. The automatic reconstruction of
+cranial defects may enable manufacturing personalized implants in a significantly shorter time,
+possibly allowing one to perform the 3-D printing process directly during a given intervention.
+Moreover, we show the usability of the defect reconstruction in mixed reality that may further reduce
+the surgery time. 

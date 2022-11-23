@@ -1,0 +1,19 @@
+Many scientific problems focus on observed patterns of change or on how to design a system to achieve
+particular dynamics. Those problems often require fitting differential equation models to target
+trajectories. Fitting such models can be difficult because each evaluation of the fit must calculate
+the distance between the model and target patterns at numerous points along a trajectory. The gradient
+of the fit with respect to the model parameters can be challenging. Recent technical advances in
+automatic differentiation through numerical differential equation solvers potentially change
+the fitting process into a relatively easy problem, opening up new possibilities to study dynamics.
+However, application of the new tools to real data may fail to achieve a good fit. This article illustrates
+how to overcome a variety of common challenges, using the classic ecological data for oscillations
+in hare and lynx populations. Models include simple ordinary differential equations (ODEs) and
+neural ordinary differential equations (NODEs), which use artificial neural networks to estimate
+the derivatives of differential equation systems. Comparing the fits obtained with ODEs versus
+NODEs, representing small and large parameter spaces, and changing the number of variable dimensions
+provide insight into the geometry of the observed and model trajectories. To analyze the quality
+of the models for predicting future observations, a Bayesian-inspired preconditioned stochastic
+gradient Langevin dynamics (pSGLD) calculation of the posterior distribution of predicted model
+trajectories clarifies the tendency for various models to underfit or overfit the data. Coupling
+fitted differential equation systems with pSGLD sampling provides a powerful way to study the properties
+of optimization surfaces, raising an analogy with mutation-selection dynamics on fitness landscapes.

@@ -1,0 +1,19 @@
+Recently, Graph Neural Networks (GNNs) have proven their effectiveness for recommender systems.
+Existing studies have applied GNNs to capture collaborative relations in the data. However, in
+real-world scenarios, the relations in a recommendation graph can be of various kinds. For example,
+two movies may be associated either by the same genre or by the same director/actor. If we use a single
+graph to elaborate all these relations, the graph can be too complex to process. To address this issue,
+we bring the idea of pre-training to process the complex graph step by step. Based on the idea of divide-and-conquer,
+we separate the large graph into three sub-graphs: user graph, item graph, and user-item interaction
+graph. Then the user and item embeddings are pre-trained from user and item graphs, respectively.
+To conduct pre-training, we construct the multi-relational user graph and item graph, respectively,
+based on their attributes. In this paper, we propose a novel Reinforced Attentive Multi-relational
+Graph Neural Network (RAM-GNN) to the pre-train user and item embeddings on the user and item graph
+prior to the recommendation step. Specifically, we design a relation-level attention layer to
+learn the importance of different relations. Next, a Reinforced Neighbor Sampler (RNS) is applied
+to search the optimal filtering threshold for sampling top-k similar neighbors in the graph, which
+avoids the over-smoothing issue. We initialize the recommendation model with the pre-trained
+user/item embeddings. Finally, an aggregation-based GNN model is utilized to learn from the collaborative
+relations in the user-item interaction graph and provide recommendations. Our experiments demonstrate
+that RAM-GNN outperforms other state-of-the-art graph-based recommendation models and multi-relational
+graph neural networks. 

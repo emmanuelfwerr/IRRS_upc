@@ -1,0 +1,20 @@
+In this paper, we propose a probabilistic physics-guided framework, termed Physics-guided Deep
+Markov Model (PgDMM). The framework is especially targeted to the inference of the characteristics
+and latent structure of nonlinear dynamical systems from measurement data, where it is typically
+intractable to perform exact inference of latent variables. A recently surfaced option pertains
+to leveraging variational inference to perform approximate inference. In such a scheme, transition
+and emission functions of the system are parameterized via feed-forward neural networks (deep
+generative models). However, due to the generalized and highly versatile formulation of neural
+network functions, the learned latent space is often prone to lack physical interpretation and
+structured representation. To address this, we bridge physics-based state space models with Deep
+Markov Models, thus delivering a hybrid modeling framework for unsupervised learning and identification
+for nonlinear dynamical systems. Specifically, the transition process can be modeled as a physics-based
+model enhanced with an additive neural network component, which aims to learn the discrepancy between
+the physics-based model and the actual dynamical system being monitored. The proposed framework
+takes advantage of the expressive power of deep learning, while retaining the driving physics of
+the dynamical system by imposing physics-driven restrictions on the side of the latent space. We
+demonstrate the benefits of such a fusion in terms of achieving improved performance on illustrative
+simulation examples and experimental case studies of nonlinear systems. Our results indicate
+that the physics-based models involved in the employed transition and emission functions essentially
+enforce a more structured and physically interpretable latent space, which is essential to generalization
+and prediction capabilities. 

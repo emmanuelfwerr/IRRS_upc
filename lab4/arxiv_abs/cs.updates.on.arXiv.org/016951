@@ -1,0 +1,20 @@
+Recent years have witnessed an exponential growth in developing deep learning (DL) models for the
+time-series electricity forecasting in power systems. However, most of the proposed models are
+designed based on the designers' inherent knowledge and experience without elaborating on the
+suitability of the proposed neural architectures. Moreover, these models cannot be self-adjusted
+to the dynamically changing data patterns due to an inflexible design of their structures. Even
+though several latest studies have considered application of the neural architecture search (NAS)
+technique for obtaining a network with an optimized structure in the electricity forecasting sector,
+their training process is quite time-consuming, computationally expensive and not intelligent,
+indicating that the NAS application in electricity forecasting area is still at an infancy phase.
+In this research study, we propose an intelligent automated architecture search (IAAS) framework
+for the development of time-series electricity forecasting models. The proposed framework contains
+two primary components, i.e., network function-preserving transformation operation and reinforcement
+learning (RL)-based network transformation control. In the first component, we introduce a theoretical
+function-preserving transformation of recurrent neural networks (RNN) to the literature for
+capturing the hidden temporal patterns within the time-series data. In the second component, we
+develop three RL-based transformation actors and a net pool to intelligently and effectively search
+a high-quality neural architecture. After conducting comprehensive experiments on two publicly-available
+electricity load datasets and two wind power datasets, we demonstrate that the proposed IAAS framework
+significantly outperforms the ten existing models or methods in terms of forecasting accuracy
+and stability. 

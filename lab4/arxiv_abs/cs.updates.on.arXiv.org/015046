@@ -1,0 +1,19 @@
+The ever-increasing gap between compute and I/O performance in HPC platforms, together with the
+development of novel NVMe storage devices (NVRAM), led to the emergence of the burst buffer concept
+- an intermediate persistent storage layer logically positioned between random-access main memory
+and a parallel file system. Since the appearance of this technology, numerous supercomputers have
+been equipped with burst buffers exploring various architectures. Despite the development of
+real-world architectures as well as research concepts, Resource and Job Management Systems, such
+as Slurm, provide only marginal support for scheduling jobs with burst buffer requirements. This
+research is primarily motivated by the alerting observation that burst buffers are omitted from
+reservations in the procedure of backfilling in existing job schedulers. In this dissertation,
+we forge a detailed supercomputer simulator based on Batsim and SimGrid, which is capable of simulating
+I/O contention and I/O congestion effects. Due to the lack of publicly available workloads with
+burst buffer requests, we create a burst buffer request distribution model derived from Parallel
+Workload Archive logs. We investigate the impact of burst buffer reservations on the overall efficiency
+of online job scheduling for canonical algorithms: First-Come-First-Served (FCFS) and Shortest-Job-First
+(SJF) EASY-backfilling. Our results indicate that the lack of burst buffer reservations in backfilling
+may significantly deteriorate the performance of scheduling. [...] Furthermore, this lack of
+reservations may cause the starvation of medium-size and wide jobs. Finally, we propose a burst-buffer-aware
+plan-based scheduling algorithm with simulated annealing optimisation, which improves the mean
+waiting time by over 20% and mean bounded slowdown by 27% compared to the SJF EASY-backfilling. 

@@ -1,0 +1,19 @@
+Effectively integrating multi-scale information is of considerable significance for the challenging
+multi-class segmentation of fundus lesions because different lesions vary significantly in scales
+and shapes. Several methods have been proposed to successfully handle the multi-scale object segmentation.
+However, two issues are not considered in previous studies. The first is the lack of interaction
+between adjacent feature levels, and this will lead to the deviation of high-level features from
+low-level features and the loss of detailed cues. The second is the conflict between the low-level
+and high-level features, this occurs because they learn different scales of features, thereby
+confusing the model and decreasing the accuracy of the final prediction. In this paper, we propose
+a progressive multi-scale consistent network (PMCNet) that integrates the proposed progressive
+feature fusion (PFF) block and dynamic attention block (DAB) to address the aforementioned issues.
+Specifically, PFF block progressively integrates multi-scale features from adjacent encoding
+layers, facilitating feature learning of each layer by aggregating fine-grained details and high-level
+semantics. As features at different scales should be consistent, DAB is designed to dynamically
+learn the attentive cues from the fused features at different scales, thus aiming to smooth the essential
+conflicts existing in multi-scale features. The two proposed PFF and DAB blocks can be integrated
+with the off-the-shelf backbone networks to address the two issues of multi-scale and feature inconsistency
+in the multi-class segmentation of fundus lesions, which will produce better feature representation
+in the feature space. Experimental results on three public datasets indicate that the proposed
+method is more effective than recent state-of-the-art methods. 

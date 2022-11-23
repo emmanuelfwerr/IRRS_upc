@@ -1,0 +1,19 @@
+In recent years, deep learning models have become ubiquitous in industry and academia alike. Deep
+neural networks can solve some of the most complex pattern-recognition problems today, but come
+with the price of massive compute and memory requirements. This makes the problem of deploying such
+large-scale neural networks challenging in resource-constrained mobile edge computing platforms,
+specifically in mission-critical domains like surveillance and healthcare. To solve this, a promising
+solution is to split resource-hungry neural networks into lightweight disjoint smaller components
+for pipelined distributed processing. At present, there are two main approaches to do this: semantic
+and layer-wise splitting. The former partitions a neural network into parallel disjoint models
+that produce a part of the result, whereas the latter partitions into sequential models that produce
+intermediate results. However, there is no intelligent algorithm that decides which splitting
+strategy to use and places such modular splits to edge nodes for optimal performance. To combat this,
+this work proposes a novel AI-driven online policy, SplitPlace, that uses Multi-Armed-Bandits
+to intelligently decide between layer and semantic splitting strategies based on the input task's
+service deadline demands. SplitPlace places such neural network split fragments on mobile edge
+devices using decision-aware reinforcement learning for efficient and scalable computing. Moreover,
+SplitPlace fine-tunes its placement engine to adapt to volatile environments. Our experiments
+on physical mobile-edge environments with real-world workloads show that SplitPlace can significantly
+improve the state-of-the-art in terms of average response time, deadline violation rate, inference
+accuracy, and total reward by up to 46, 69, 3 and 12 percent respectively. 

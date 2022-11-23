@@ -1,0 +1,19 @@
+Biomembranes adopt varying morphologies that are vital to cellular functions. Many studies use
+computational modeling to understand how various mechanochemical factors contribute to membrane
+shape transformations. Compared to approximation-based methods (e.g., finite element method),
+the class of discrete mesh models offers greater flexibility to simulate complex physics and shapes
+in three dimensions; its formulation produces an efficient algorithm while maintaining coordinate-free
+geometric descriptions. However, ambiguities in geometric definitions in the discrete context
+have led to a lack of consensus on which discrete mesh model is theoretically and numerically optimal;
+a bijective relationship between the terms contributing to both the energy and forces from the discrete
+and smooth geometric theories remains to be established. We address this and present an extensible
+framework, $\texttt{Mem3DG}$, for modeling 3D mechanochemical dynamics of membranes based on
+Discrete Differential Geometry (DDG) on triangulated meshes. The formalism of DDG resolves the
+inconsistency and provides a unifying perspective on how to relate the smooth and discrete energy
+and forces. To demonstrate, $\texttt{Mem3DG}$ is used to model a sequence of examples with increasing
+mechanochemical complexity: recovering classical shape transformations such as 1) biconcave
+disk, dumbbell, and unduloid and 2) spherical bud on spherical, flat-patch membrane; investigating
+how the coupling of membrane mechanics with protein mobility jointly affects phase and shape transformation.
+As high-resolution 3D imaging of membrane ultrastructure becomes more readily available, we envision
+Mem3DG to be applied as an end-to-end tool to simulate realistic cell geometry under user-specified
+mechanochemical conditions. 

@@ -1,0 +1,18 @@
+Reconstructing materials in the real world has always been a difficult problem in computer graphics.
+Accurately reconstructing the material in the real world is critical in the field of realistic rendering.
+Traditionally, materials in computer graphics are mapped by an artist, then mapped onto a geometric
+model by coordinate transformation, and finally rendered with a rendering engine to get realistic
+materials. For opaque objects, the industry commonly uses physical-based bidirectional reflectance
+distribution function (BRDF) rendering models for material modeling. The commonly used physical-based
+rendering models are Cook-Torrance BRDF, Disney BRDF. In this paper, we use the Cook-Torrance model
+to reconstruct the materials. The SVBRDF material parameters include Normal, Diffuse, Specular
+and Roughness. This paper presents a Diffuse map guiding material estimation method based on the
+Generative Adversarial Network(GAN). This method can predict plausible SVBRDF maps with global
+features using only a few pictures taken by the mobile phone. The main contributions of this paper
+are: 1) We preprocess a small number of input pictures to produce a large number of non-repeating
+pictures for training to reduce over-fitting. 2) We use a novel method to directly obtain the guessed
+diffuse map with global characteristics, which provides more prior information for the training
+process. 3) We improve the network architecture of the generator so that it can generate fine details
+of normal maps and reduce the possibility to generate over-flat normal maps. The method used in this
+paper can obtain prior knowledge without using dataset training, which greatly reduces the difficulty
+of material reconstruction and saves a lot of time to generate and calibrate datasets. 

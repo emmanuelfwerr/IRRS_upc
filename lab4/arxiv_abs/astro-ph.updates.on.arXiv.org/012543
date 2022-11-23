@@ -1,0 +1,20 @@
+Context. Component separation is the process to extract the sources of emission in astrophysical
+maps generally by taking into account multi-frequency information. Developing more reliable
+methods to perform component separation is crucial for future CMB experiments. Aims. We aim to develop
+a new method based on fully convolutional neural networks called the Cosmic microwave background
+Extraction Neural Network (CENN) in order to extract the CMB signal in total intensity. The frequencies
+used are the Planck channels 143, 217 and 353 GHz. We validate the network at all sky, and at three latitude
+intervals: lat1=0^{\circ}<b<5^{\circ}, lat2=5^{\circ}<b<30^{\circ} and lat3=30^{\circ}<b<90^{\circ},
+without using any Galactic or point source masks. Methods. For training, we make realistic simulations
+in the form of patches of area 256 pixels, which contain the CMB, Dust, CIB and PS emissions, Sunyaev-Zel'dovich
+effect and the instrumental noise. After validate the network, we compare the power spectrum from
+input and output maps. We analyse the power spectrum from the residuals at each latitude interval
+and at all sky and we study the performance of our model dealing with high contamination at small scales.
+Results. We obtain a power spectrum with an error of 13{\pm}113 {\mu}K^2 for multipoles up to above
+4000. For residuals, we obtain 7{\pm}25 {\mu}K^2 for lat1, 2{\pm}10 {\mu}K^2 for lat2 and 2{\pm}3
+{\mu}K^2 for lat3. For all sky, we obtain 5{\pm}12 {\mu}K^2. We validate the network in a patch with
+strong contamination at small scales, obtaining an error of 50{\pm}120 {\mu}K^2 and residuals
+of 40{\pm}10 {\mu}K^2. Conclusions. Fully convolutional neural networks are promising methods
+to perform component separation in future CMB experiments. Particularly, CENN is reliable against
+different levels of contamination from Galactic and point source foregrounds at both large and
+small scales. 

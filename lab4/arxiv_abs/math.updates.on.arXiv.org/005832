@@ -1,0 +1,19 @@
+The quadrature-based method of moments (QMOM) offers a promising class of approximation techniques
+for reducing kinetic equations to fluid equations that are valid beyond thermodynamic equilibrium.
+A major challenge with these and other closures is that whenever the flux function must be evaluated
+(e.g., in a numerical update), a moment-inversion problem must be solved that computes the flux
+from the known input moments. In this work we study a particular five-moment variant of QMOM known
+as HyQMOM and establish that this system is moment-invertible over a convex region in solution space.
+We then develop a high-order Lax-Wendroff discontinuous Galerkin scheme for solving the resulting
+fluid system. The scheme is based on a predictor-corrector approach, where the prediction step
+is a localized space-time discontinuous Galerkin scheme. The nonlinear algebraic system that
+arises in this prediction step is solved using a Picard iteration. The correction step is a straightforward
+explicit update using the predicted solution in order to evaluate space-time flux integrals. In
+the absence of additional limiters, the proposed high-order scheme does not in general guarantee
+that the numerical solution remains in the convex set over which HyQMOM is moment-invertible. To
+overcome this challenge, we introduce novel limiters that rigorously guarantee that the computed
+solution does not leave the convex set over which moment-invertible and hyperbolicity of the fluid
+system is guaranteed. We develop positivity-preserving limiters in both the prediction and correction
+steps, as well as an oscillation-limiter that damps unphysical oscillations near shocks and rarefactions.
+Finally, we perform convergence tests to verify the order of accuracy of the scheme, as well as test
+the scheme on Riemann data to demonstrate the shock-capturing and robustness of the method. 

@@ -1,0 +1,20 @@
+We present a unique implementation of Python coding in an asynchronous object-oriented programming
+(OOP) framework to fully automate the process of collecting data with the George Mason University
+(GMU) Observatory's 0.8-meter telescope. The goal of this project is to perform automated follow-up
+observations for the Transiting Exoplanet Survey Satellite (TESS) mission, while still allowing
+for human control, monitoring, and adjustments. Prior to our implementation, the facility was
+computer-controlled by a human observer through a combination of webcams, TheSkyX, ASCOM Dome,
+MaxIm DL, and a weather station. We have automated slews and dome movements, CCD exposures, saving
+FITS images and metadata, initial focusing, guiding on the target, using the ambient temperature
+to adjust the focus as the telescope cools through the rest of the night, taking calibration images
+(darks and flats), and monitoring local weather data. The automated weather monitor periodically
+checks various weather data from multiple sources to automate the decision to close the observatory
+during adverse conditions. We have organized the OOP code structure in such a way that each hardware
+device or important higher-level process is categorized as its own object class or "module" with
+associated attributes and methods, with inherited common methods across modules for code reusability.
+To allow actions to be performed simultaneously across different modules, we implemented a multithreaded
+approach where each module is given its own CPU thread on which to operate concurrently with all other
+threads. After the initial few modules (camera, telescope, dome, data I/O) were developed, further
+development of the code was carried out in tandem with testing on sky on clear nights. The code, in
+its current state, has been tested and used for observations on 171 nights, with more planned usage
+and feature additions. 

@@ -1,0 +1,19 @@
+The common approach to compositional data analysis is to transform the data by means of logratios.
+Logratios between pairs of compositional parts (pairwise logratios) are the easiest to interpret
+in many research problems. When the number of parts is large, some form of logratio selection is a
+must, for instance by means of an unsupervised learning method based on a stepwise selection of the
+pairwise logratios that explain the largest percentage of the logratio variance in the compositional
+dataset. In this article we present three alternative stepwise supervised learning methods to
+select the pairwise logratios that best explain a dependent variable in a generalized linear model,
+each geared for a specific problem. The first method features unrestricted search, where any pairwise
+logratio can be selected. This method has a complex interpretation if some pairs of parts in the logratios
+overlap, but it leads to the most accurate predictions. The second method restricts parts to occur
+only once, which makes the corresponding logratios intuitively interpretable. The third method
+uses additive logratios, so that $K-1$ selected logratios involve exactly $K$ parts. This method
+in fact searches for the subcomposition with the highest explanatory power. Once the subcomposition
+is identified, the researcher's favourite logratio representation may be used in subsequent analyses,
+not only pairwise logratios. Our methodology allows logratios or non-compositional covariates
+to be forced into the models based on theoretical knowledge, and various stopping criteria are available
+based on information measures or statistical significance with the Bonferroni correction. We
+present an illustration of the three approaches on a dataset from a study predicting Crohn's disease.
+The first method excels in terms of predictive power, and the other two in interpretability. 

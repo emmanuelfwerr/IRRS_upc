@@ -1,0 +1,19 @@
+Motivated by a plethora of practical examples where bias is induced by automated-decision making
+algorithms, there has been strong recent interest in the design of fair algorithms. However, there
+is often a dichotomy between fairness and efficacy: fair algorithms may proffer low social welfare
+solutions whereas welfare optimizing algorithms may be very unfair. This issue is exemplified
+in the machine scheduling problem where, for $n$ jobs, the social welfare of any fair solution may
+be a factor $\Omega(n)$ worse than the optimal welfare. In this paper, we prove that this dichotomy
+between fairness and efficacy can be overcome if we allow for a negligible amount of bias: there exist
+algorithms that are both "almost perfectly fair" and have a constant factor efficacy ratio, that
+is, are guaranteed to output solutions that have social welfare within a constant factor of optimal
+welfare. Specifically, for any $\epsilon>0$, there exist mechanisms with efficacy ratio $\Theta(\frac{1}{\epsilon})$
+and where no agent is more than an $\epsilon$ fraction worse off than they are in the fairest possible
+solution (given by an algorithm that does not use personal or type data). Moreover, these bicriteria
+guarantees are tight and apply to both the single machine case and the multiple machine case. The
+key to our results are the use of Pareto scheduling mechanisms. These mechanisms, by the judicious
+use of personal or type data, are able to exploit Pareto improvements that benefit every individual;
+such Pareto improvements would typically be forbidden by fair scheduling algorithms designed
+to satisfy standard statistical measures of group fairness. We anticipate this paradigm, the judicious
+use of personal data by a fair algorithm to greatly improve performance at the cost of negligible
+bias, has wider application. 

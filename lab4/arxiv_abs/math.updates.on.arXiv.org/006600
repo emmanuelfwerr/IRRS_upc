@@ -1,0 +1,20 @@
+The filtering problem of causally estimating a desired signal from a related observation signal
+is investigated through the lens of regret optimization. Classical filter designs, such as $\mathcal
+H_2$ (Kalman) and $\mathcal H_\infty$, minimize the average and worst-case estimation errors,
+respectively. As a result $\mathcal H_2$ filters are sensitive to inaccuracies in the underlying
+statistical model, and $\mathcal H_\infty$ filters are overly conservative since they safeguard
+against the worst-case scenario. We propose instead to minimize the \emph{regret} in order to design
+filters that perform well in different noise regimes by comparing their performance with that of
+a clairvoyant filter. More explicitly, we minimize the largest deviation of the squared estimation
+error of a causal filter from that of a non-causal filter that has access to future observations.
+In this sense, the regret-optimal filter will have the best competitive performance with respect
+to the non-causal benchmark filter no matter what the true signal and the observation process are.
+For the important case of signals that can be described with a time-invariant state-space, we provide
+an explicit construction for the regret optimal filter in the estimation (causal) and the prediction
+(strictly-causal) regimes. These solutions are obtained by reducing the regret filtering problem
+to a Nehari problem, i.e., approximating a non-causal operator by a causal one in spectral norm.
+The regret-optimal filters bear some resemblance to Kalman and $H_\infty$ filters: they are expressed
+as state-space models, inherit the finite dimension of the original state-space, and their solutions
+require solving algebraic Riccati equations. Numerical simulations demonstrate that regret
+minimization inherently interpolates between the performances of the $H_2$ and $H_\infty$ filters
+and is thus a viable approach for filter design. 

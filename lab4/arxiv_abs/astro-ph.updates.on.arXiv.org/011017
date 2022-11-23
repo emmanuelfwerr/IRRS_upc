@@ -1,0 +1,20 @@
+Planetary Climate Models (PCMs) are developed to explore planetary climates other than the Earth.
+Therefore, the methods implemented need to be suitable for a large diversity of conditions. Every
+planet with a significant atmosphere has condensible cycles (e.g., hydrological cycle), which
+can play an essential role in the planet's appearance and environment. We must accurately represent
+a condensible cycle in our planet simulations to build a powerful planetary climate predictor.
+OASIS is a 3D PCM capable of self-consistently representing the main physical processes that drive
+a planet's environment. In this work, we improve the representation of mass transport in OASIS,
+which is the first step towards a complete and flexible implementation of a condensible cycle. We
+implement an upwind-biased scheme on a piece-wise linear approximation with a flux-limiter to
+solve the mass transport equation. We first benchmark the new scheme on a 2D problem that confirms
+the superior properties of the new method over the central finite-volume method in terms of performance,
+accuracy and shape-preserving mass distribution. Due to the new scheme's less dispersive nature,
+we do not have to apply any unphysical diffusion to maintain the model stable. OASIS includes the
+new improved solver in the total mass and the tracers (e.g., clouds/hazes and individual gas chemical
+species) transport. We couple the new formulation with physical schemes and validate the new code
+on two 3D simulations of an ocean Earth-like planet and an ocean tidally-locked planet. The new OASIS
+simulations are robust and do not show any known problems from the dynamics-physics coupling. We
+show that the two simulations capture the main characteristics of ocean planet atmospheres and
+are easy to set up. We propose these two simulations to be the first standard benchmark tests for models
+built to explore moist planetary environments. 

@@ -1,0 +1,19 @@
+We study methods based on reproducing kernel Hilbert spaces for estimating the value function of
+an infinite-horizon discounted Markov reward process (MRP). We study a regularized form of the
+kernel least-squares temporal difference (LSTD) estimate; in the population limit of infinite
+data, it corresponds to the fixed point of a projected Bellman operator defined by the associated
+reproducing kernel Hilbert space. The estimator itself is obtained by computing the projected
+fixed point induced by a regularized version of the empirical operator; due to the underlying kernel
+structure, this reduces to solving a linear system involving kernel matrices. We analyze the error
+of this estimate in the $L^2(\mu)$-norm, where $\mu$ denotes the stationary distribution of the
+underlying Markov chain. Our analysis imposes no assumptions on the transition operator of the
+Markov chain, but rather only conditions on the reward function and population-level kernel LSTD
+solutions. We use empirical process theory techniques to derive a non-asymptotic upper bound on
+the error with explicit dependence on the eigenvalues of the associated kernel operator, as well
+as the instance-dependent variance of the Bellman residual error. In addition, we prove minimax
+lower bounds over sub-classes of MRPs, which shows that our rate is optimal in terms of the sample
+size $n$ and the effective horizon $H = (1 - \gamma)^{-1}$. Whereas existing worst-case theory predicts
+cubic scaling ($H^3$) in the effective horizon, our theory reveals that there is in fact a much wider
+range of scalings, depending on the kernel, the stationary distribution, and the variance of the
+Bellman residual error. Notably, it is only parametric and near-parametric problems that can ever
+achieve the worst-case cubic scaling. 

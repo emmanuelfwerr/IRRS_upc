@@ -1,0 +1,19 @@
+Classically, for many computational problems one can conclude time lower bounds conditioned on
+the hardness of one or more of key problems: k-SAT, 3SUM and APSP. More recently, similar results
+have been derived in the quantum setting conditioned on the hardness of k-SAT and 3SUM. This is done
+using fine-grained reductions, where the approach is to (1) select a key problem $X$ that, for some
+function $T$, is conjectured to not be solvable by any $O(T(n)^{1-\epsilon})$ time algorithm for
+any constant $\epsilon > 0$ (in a fixed model of computation), and (2) reduce $X$ in a fine-grained
+way to these computational problems, thus giving (mostly) tight conditional time lower bounds
+for them. Interestingly, for Delta-Matching Triangles and Triangle Collection, classical hardness
+results have been derived conditioned on hardness of all three mentioned key problems. More precisely,
+it is proven that an $n^{3-\epsilon}$ time classical algorithm for either of these two graph problems
+would imply faster classical algorithms for k-SAT, 3SUM and APSP, which makes Delta-Matching Triangles
+and Triangle Collection worthwhile to study. In this paper, we show that an $n^{1.5-\epsilon}$
+time quantum algorithm for either of these two graph problems would imply faster quantum algorithms
+for k-SAT, 3SUM, and APSP. We first formulate a quantum hardness conjecture for APSP and then present
+quantum reductions from k-SAT, 3SUM, and APSP to Delta-Matching Triangles and Triangle Collection.
+Additionally, based on the quantum APSP conjecture, we are also able to prove quantum lower bounds
+for a matrix problem and many graph problems. The matching upper bounds follow trivially for most
+of them, except for Delta-Matching Triangles and Triangle Collection for which we present quantum
+algorithms that require careful use of data structures and Ambainis' variable time search. 

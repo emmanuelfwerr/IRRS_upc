@@ -1,0 +1,19 @@
+Charting the baby connectome evolution trajectory during the first year after birth plays a vital
+role in understanding dynamic connectivity development of baby brains. Such analysis requires
+acquisition of longitudinal connectomic datasets. However, both neonatal and postnatal scans
+are rarely acquired due to various difficulties. A small body of works has focused on predicting
+baby brain evolution trajectory from a neonatal brain connectome derived from a single modality.
+Although promising, large training datasets are essential to boost model learning and to generalize
+to a multi-trajectory prediction from different modalities (i.e., functional and morphological
+connectomes). Here, we unprecedentedly explore the question: Can we design a few-shot learning-based
+framework for predicting brain graph trajectories across different modalities? To this aim, we
+propose a Graph Multi-Trajectory Evolution Network (GmTE-Net), which adopts a teacher-student
+paradigm where the teacher network learns on pure neonatal brain graphs and the student network
+learns on simulated brain graphs given a set of different timepoints. To the best of our knowledge,
+this is the first teacher-student architecture tailored for brain graph multi-trajectory growth
+prediction that is based on few-shot learning and generalized to graph neural networks (GNNs).
+To boost the performance of the student network, we introduce a local topology-aware distillation
+loss that forces the predicted graph topology of the student network to be consistent with the teacher
+network. Experimental results demonstrate substantial performance gains over benchmark methods.
+Hence, our GmTE-Net can be leveraged to predict atypical brain connectivity trajectory evolution
+across various modalities. Our code is available at https: //github.com/basiralab/GmTE-Net.

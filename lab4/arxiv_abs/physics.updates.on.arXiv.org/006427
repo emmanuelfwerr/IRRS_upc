@@ -1,0 +1,19 @@
+Respiratory motion during radiotherapy causes uncertainty in the tumor's location, which is typically
+addressed by an increased radiation area and a decreased dose. As a result, the treatments' efficacy
+is reduced. The recently proposed hybrid MR-linac scanner holds the promise to efficiently deal
+with such respiratory motion through real-time adaptive MR-guided radiotherapy (MRgRT). For
+MRgRT, motion-fields should be estimated from MR-data and the radiotherapy plan should be adapted
+in real-time according to the estimated motion-fields. All of this should be performed with a total
+latency of maximally 200 ms, including data acquisition and reconstruction. A measure of confidence
+in such estimated motion-fields is highly desirable, for instance to ensure the patient's safety
+in case of unexpected and undesirable motion. In this work, we propose a framework based on Gaussian
+Processes to infer 3D motion-fields and uncertainty maps in real-time from only three readouts
+of MR-data. We demonstrated an inference frame rate up to 69 Hz including data acquisition and reconstruction,
+thereby exploiting the limited amount of required MR-data. Additionally, we designed a rejection
+criterion based on the motion-field uncertainty maps to demonstrate the framework's potential
+for quality assurance. The framework was validated in silico and in vivo on healthy volunteer data
+(n=5) acquired using an MR-linac, thereby taking into account different breathing patterns and
+controlled bulk motion. Results indicate end-point-errors with a 75th percentile below 1mm in
+silico, and a correct detection of erroneous motion estimates with the rejection criterion. Altogether,
+the results show the potential of the framework for application in real-time MR-guided radiotherapy
+with an MR-linac. 

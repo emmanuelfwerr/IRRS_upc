@@ -1,0 +1,19 @@
+In biological learning, data are used to improve performance not only on the current task, but also
+on previously encountered, and as yet unencountered tasks. In contrast, classical machine learning
+starts from a blank slate, or tabula rasa, using data only for the single task at hand. While typical
+transfer learning algorithms can improve performance on future tasks, their performance on prior
+tasks degrades upon learning new tasks (called forgetting). Many recent approaches for continual
+or lifelong learning have attempted to maintain performance given new tasks. But striving to avoid
+forgetting sets the goal unnecessarily low: the goal of lifelong learning, whether biological
+or artificial, should be to improve performance on both past tasks (backward transfer) and future
+tasks (forward transfer) with any new data. Our key insight is that even though learners trained
+on other tasks often cannot make useful decisions on the current task (the two tasks may have non-overlapping
+classes, for example), they may have learned representations that are useful for this task. Thus,
+although ensembling decisions is not possible, ensembling representations can be beneficial
+whenever the distributions across tasks are sufficiently similar. Moreover, we can ensemble representations
+learned independently across tasks in quasilinear space and time. We therefore propose two algorithms:
+representation ensembles of (1) trees and (2) networks. Both algorithms demonstrate forward and
+backward transfer in a variety of simulated and real data scenarios, including tabular, image,
+and spoken, and adversarial tasks. This is in stark contrast to the reference algorithms we compared
+to, all of which failed to transfer either forward or backward, or both, despite that many of them
+require quadratic space or time complexity. 

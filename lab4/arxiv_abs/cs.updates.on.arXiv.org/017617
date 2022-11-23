@@ -1,0 +1,20 @@
+The analysis of electrocardiogram (ECG) signals can be time consuming as it is performed manually
+by cardiologists. Therefore, automation through machine learning (ML) classification is being
+increasingly proposed which would allow ML models to learn the features of a heartbeat and detect
+abnormalities. The lack of interpretability hinders the application of Deep Learning in healthcare.
+Through interpretability of these models, we would understand how a machine learning algorithm
+makes its decisions and what patterns are being followed for classification. This thesis builds
+Convolutional Neural Network (CNN) and Long Short-Term Memory (LSTM) classifiers based on state-of-the-art
+models and compares their performance and interpretability to shallow classifiers. Here, both
+global and local interpretability methods are exploited to understand the interaction between
+dependent and independent variables across the entire dataset and to examine model decisions in
+each sample, respectively. Partial Dependence Plots, Shapley Additive Explanations, Permutation
+Feature Importance, and Gradient Weighted Class Activation Maps (Grad-Cam) are the four interpretability
+techniques implemented on time-series ML models classifying ECG rhythms. In particular, we exploit
+Grad-Cam, which is a local interpretability technique and examine whether its interpretability
+varies between correctly and incorrectly classified ECG beats within each class. Furthermore,
+the classifiers are evaluated using K-Fold cross-validation and Leave Groups Out techniques,
+and we use non-parametric statistical testing to examine whether differences are significant.
+It was found that Grad-CAM was the most effective interpretability technique at explaining predictions
+of proposed CNN and LSTM models. We concluded that all high performing classifiers looked at the
+QRS complex of the ECG rhythm when making predictions. 

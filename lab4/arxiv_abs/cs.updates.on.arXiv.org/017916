@@ -1,0 +1,20 @@
+Aiming at developing intuitive and easy-to-use portrait editing tools, we propose a novel vectorization
+method that can automatically convert raster images into a 3-tier hierarchical representation.
+The base layer consists of a set of sparse diffusion curves (DC) which characterize salient geometric
+features and low-frequency colors and provide means for semantic color transfer and facial expression
+editing. The middle level encodes specular highlights and shadows to large and editable Poisson
+regions (PR) and allows the user to directly adjust illumination via tuning the strength and/or
+changing shape of PR. The top level contains two types of pixel-sized PRs for high-frequency residuals
+and fine details such as pimples and pigmentation. We also train a deep generative model that can
+produce high-frequency residuals automatically. Thanks to the meaningful organization of vector
+primitives, editing portraits becomes easy and intuitive. In particular, our method supports
+color transfer, facial expression editing, highlight and shadow editing and automatic retouching.
+Thanks to the linearity of the Laplace operator, we introduce alpha blending, linear dodge and linear
+burn to vector editing and show that they are effective in editing highlights and shadows. To quantitatively
+evaluate the results, we extend the commonly used FLIP metric (which measures differences between
+two images) by considering illumination. The new metric, called illumination-sensitive FLIP
+or IS-FLIP, can effectively capture the salient changes in color transfer results, and is more consistent
+with human perception than FLIP and other quality measures on portrait images. We evaluate our method
+on the FFHQR dataset and show that our method is effective for common portrait editing tasks, such
+as retouching, light editing, color transfer and expression editing. We will make the code and trained
+models publicly available. 

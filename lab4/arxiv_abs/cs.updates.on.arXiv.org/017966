@@ -1,0 +1,19 @@
+IoT devices suffer from resource limitations, such as processor, RAM, and disc storage. These limitations
+become more evident when handling demanding applications, such as deep learning, well-known for
+their heavy computational requirements. A case in point is robot pose estimation, an application
+that predicts the critical points of the desired image object. One way to mitigate processing and
+storage problems is compressing that deep learning application. This paper proposes a new CNN for
+the pose estimation while applying the compression techniques of pruning and quantization to reduce
+his demands and improve the response time. While the pruning process reduces the total number of
+parameters required for inference, quantization decreases the precision of the floating-point.
+We run the approach using a pose estimation task for a robotic arm and compare the results in a high-end
+device and a constrained device. As metrics, we consider the number of Floating-point Operations
+Per Second(FLOPS), the total of mathematical computations, the calculation of parameters, the
+inference time, and the number of video frames processed per second. In addition, we undertake a
+qualitative evaluation where we compare the output image predicted for each pruned network with
+the corresponding original one. We reduce the originally proposed network to a 70% pruning rate,
+implying an 88.86% reduction in parameters, 94.45% reduction in FLOPS, and for the disc storage,
+we reduced the requirement in 70% while increasing error by a mere $1\%$. With regard input image
+processing, this metric increases from 11.71 FPS to 41.9 FPS for the Desktop case. When using the
+constrained device, image processing augmented from 2.86 FPS to 10.04 FPS. The higher processing
+rate of image frames achieved by the proposed approach allows a much shorter response time. 

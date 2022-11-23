@@ -1,0 +1,19 @@
+Images of the extended solar corona, as observed by white-light coronagraphs as observed by different
+white-light coronagraphs include the K- and F-corona and suffer from a radial variation in intensity.
+These images require separation of the two coronal components with some additional image-processing
+to reduce the intensity gradient and analyse the structures and processes occurring at different
+heights in the solar corona within the full field of view. To process these bulk coronagraph images
+with steep radial-intensity gradients, we have developed an algorithm: Simple Radial Gradient
+Filter (SiRGraF). This algorithm is based on subtracting a minimum background (F-corona) created
+using long-duration images and then dividing the resultant by a uniform intensity gradient image
+to enhance the K-corona. We demonstrate the utility of this algorithm to bring out the short time-scale
+transient structures of the corona. SiRGraF could be used to reveal and analyse such structures.
+It is not suitable for quantitative estimations based on intensity. We have successfully tested
+the algorithm on images of the LASCO-C2 onboard the Solar and Heliospheric Observatory (SOHO),
+and COR-2A onboard the STEREO with good signal to noise ratio (SNR) along with low-SNR images of STEREO/COR-1A
+and the KCoronagraph. We also compared the performance of SiRGraF with Normalising Radial Gradient
+Filter (NRGF). We found that when hundreds of images have to be processed, SiRGraF works faster than
+NRGF, providing similar brightness and contrast in the images and separating the transient features.
+Moreover, SiRGraF works better on low-SNR images of COR-1A than NRGF, providing better identification
+of dynamic coronal structures throughout the field of view. We discuss the advantages and limitations
+of the algorithm. 

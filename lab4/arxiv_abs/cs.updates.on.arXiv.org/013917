@@ -1,0 +1,19 @@
+Traditionally, finite automata theory has been used as a framework for the representation of possibly
+infinite sets of strings. In this work, we introduce the notion of second-order finite automata,
+a formalism that combines finite automata with ordered decision diagrams, with the aim of representing
+possibly infinite {\em sets of sets} of strings. Our main result states that second-order finite
+automata can be canonized with respect to the second-order languages they represent. Using this
+canonization result, we show that sets of sets of strings represented by second-order finite automata
+are closed under the usual Boolean operations, such as union, intersection, difference and even
+under a suitable notion of complementation. Additionally, emptiness of intersection and inclusion
+are decidable. We provide two algorithmic applications for second-order automata. First, we show
+that several width/size minimization problems for deterministic and nondeterministic ODDs are
+solvable in fixed-parameter tractable time when parameterized by the width of the input ODD. In
+particular, our results imply FPT algorithms for corresponding width/size minimization problems
+for ordered binary decision diagrams (OBDDs) with a fixed variable ordering. Previously, only
+algorithms that take exponential time in the size of the input OBDD were known for width minimization,
+even for OBDDs of constant width. Second, we show that for each $k$ and $w$ one can count the number
+of distinct functions computable by ODDs of width at most $w$ and length $k$ in time $h(|\Sigma|,w)\cdot
+k^{O(1)}$, for a suitable $h:\mathbb{N}\times \mathbb{N}\rightarrow \mathbb{N}$. This improves
+exponentially on the time necessary to explicitly enumerate all such functions, which is exponential
+in both the width parameter $w$ and in the length $k$ of the ODDs. 

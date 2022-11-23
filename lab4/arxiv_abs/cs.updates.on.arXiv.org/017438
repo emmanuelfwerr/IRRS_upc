@@ -1,0 +1,20 @@
+The need for reducing manufacturing defect escape in today's safety-critical applications requires
+increased fault coverage. However, generating a test set using commercial automatic test pattern
+generation (ATPG) tools that lead to zero-defect escape is still an open problem. It is challenging
+to detect all stuck-at faults to reach 100% fault coverage. In parallel, the hardware security community
+has been actively involved in developing solutions for logic locking to prevent IP piracy. Locks
+(e.g., XOR gates) are inserted in different locations of the netlist so that an adversary cannot
+determine the secret key. Unfortunately, the Boolean satisfiability (SAT) based attack, introduced
+in [1], can break different logic locking schemes in minutes. In this paper, we propose a novel test
+pattern generation approach using the powerful SAT attack on logic locking. A stuck-at fault is
+modeled as a locked gate with a secret key. Our modeling of stuck-at faults preserves the property
+of fault activation and propagation. We show that the input pattern that determines the key is a test
+for the stuck-at fault. We propose two different approaches for test pattern generation. First,
+a single stuck-at fault is targeted, and a corresponding locked circuit with one key bit is created.
+This approach generates one test pattern per fault. Second, we consider a group of faults and convert
+the circuit to its locked version with multiple key bits. The inputs obtained from the SAT tool are
+the test set for detecting this group of faults. Our approach is able to find test patterns for hard-to-detect
+faults that were previously failed in commercial ATPG tools. The proposed test pattern generation
+approach can efficiently detect redundant faults present in a circuit. We demonstrate the effectiveness
+of the approach on ITC'99 benchmarks. The results show that we can achieve a perfect fault coverage
+reaching 100%. 

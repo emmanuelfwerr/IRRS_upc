@@ -1,0 +1,19 @@
+Recent empirical work demonstrates that online advertisement can exhibit bias in the delivery
+of ads across users even when all advertisers bid in a non-discriminatory manner. We study the design
+of ad auctions that, given fair bids, are guaranteed to produce fair outcomes. Following the works
+of Dwork and Ilvento (2019) and Chawla et al. (2020), our goal is to design a truthful auction that
+satisfies ``individual fairness'' in its outcomes: informally speaking, users that are similar
+to each other should obtain similar allocations of ads. Within this framework we quantify the tradeoff
+between social welfare maximization and fairness. This work makes two conceptual contributions.
+First, we express the fairness constraint as a kind of stability condition: any two users that are
+assigned multiplicatively similar values by all the advertisers must receive additively similar
+allocations for each advertiser. This value stability constraint is expressed as a function that
+maps the multiplicative distance between value vectors to the maximum allowable $\ell_{\infty}$
+distance between the corresponding allocations. Standard auctions do not satisfy this kind of
+value stability. Second, we introduce a new class of allocation algorithms called Inverse Proportional
+Allocation that achieve a near optimal tradeoff between fairness and social welfare for a broad
+and expressive class of value stability conditions. These allocation algorithms are truthful
+and prior-free, and achieve a constant factor approximation to the optimal (unconstrained) social
+welfare. In particular, the approximation ratio is independent of the number of advertisers in
+the system. In this respect, these allocation algorithms greatly surpass the guarantees achieved
+in previous work. We also extend our results to broader notions of fairness that we call subset fairness.

@@ -1,0 +1,20 @@
+Monolith software applications encapsulate all functional capabilities into a single deployable
+unit. While there is an intention to maintain clean separation of functionalities even within the
+monolith, they tend to get compromised with the growing demand for new functionalities, changing
+team members, tough timelines, non-availability of skill sets, etc. As such applications age,
+they become hard to understand and maintain. Therefore, microservice architectures are increasingly
+used as they advocate building an application through multiple smaller sized, loosely coupled
+functional services, wherein each service owns a single functional responsibility. This approach
+has made microservices architecture as the natural choice for cloud based applications. But the
+challenges in the automated separation of functional modules for the already written monolith
+code slows down their migration task. Graphs are a natural choice to represent software applications.
+Various software artifacts like programs, tables and files become nodes in the graph and the different
+relationships they share, such as function calls, inheritance, resource(tables, files) access
+types (Create, Read, Update, Delete) can be represented as links in the graph. We therefore deduce
+this traditional application decomposition problem to a heterogeneous graph based clustering
+task. Our solution is the first of its kind to leverage heterogeneous graph neural network to learn
+representations of such diverse software entities and their relationships for the clustering
+task. We study the effectiveness by comparing with works from both software engineering and existing
+graph representation based techniques. We experiment with applications written in an object oriented
+language like Java and a procedural language like COBOL and show that our work is applicable across
+different programming paradigms. 

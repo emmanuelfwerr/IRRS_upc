@@ -1,0 +1,20 @@
+The combination of neural networks and quantum Monte Carlo methods has arisen as a path forward for
+highly accurate electronic structure calculations. Previous proposals have combined equivariant
+neural network layers with an antisymmetric layer to satisfy the antisymmetry requirements of
+the electronic wavefunction. However, to date it is unclear if one can represent antisymmetric
+functions of physical interest, and it is difficult to measure the expressiveness of the antisymmetric
+layer. This work attempts to address this problem by introducing explicitly antisymmetrized universal
+neural network layers as a diagnostic tool. We first introduce a generic antisymmetric (GA) layer,
+which we use to replace the entire antisymmetric layer of the highly accurate ansatz known as the
+FermiNet. We demonstrate that the resulting FermiNet-GA architecture can yield effectively the
+exact ground state energy for small systems. We then consider a factorized antisymmetric (FA) layer
+which more directly generalizes the FermiNet by replacing products of determinants with products
+of antisymmetrized neural networks. Interestingly, the resulting FermiNet-FA architecture
+does not outperform the FermiNet. This suggests that the sum of products of antisymmetries is a key
+limiting aspect of the FermiNet architecture. To explore this further, we investigate a slight
+modification of the FermiNet called the full determinant mode, which replaces each product of determinants
+with a single combined determinant. The full single-determinant FermiNet closes a large part of
+the gap between the standard single-determinant FermiNet and FermiNet-GA. Surprisingly, on the
+nitrogen molecule at a dissociating bond length of 4.0 Bohr, the full single-determinant FermiNet
+can significantly outperform the standard 64-determinant FermiNet, yielding an energy within
+0.4 kcal/mol of the best available computational benchmark. 

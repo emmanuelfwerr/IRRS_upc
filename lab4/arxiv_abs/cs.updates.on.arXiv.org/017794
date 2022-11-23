@@ -1,0 +1,20 @@
+This paper presents a timing attack on the FIDO2 (Fast IDentity Online) authentication protocol
+that allows attackers to link user accounts stored in vulnerable authenticators, a serious privacy
+concern. FIDO2 is a new standard specified by the FIDO industry alliance for secure token online
+authentication. It complements the W3C WebAuthn specification by providing means to use a USB token
+or other authenticator as a second factor during the authentication process. From a cryptographic
+perspective, the protocol is a simple challenge-response where the elliptic curve digital signature
+algorithm is used to sign challenges. To protect the privacy of the user the token uses unique key
+pairs per service. To accommodate for small memory, tokens use various techniques that make use
+of a special parameter called a key handle sent by the service to the token. We identify and analyse
+a vulnerability in the way the processing of key handles is implemented that allows attackers to
+remotely link user accounts on multiple services. We show that for vulnerable authenticators there
+is a difference between the time it takes to process a key handle for a different service but correct
+authenticator, and for a different authenticator but correct service. This difference can be used
+to perform a timing attack allowing an adversary to link user's accounts across services. We present
+several real world examples of adversaries that are in a position to execute our attack and can benefit
+from linking accounts. We found that two of the eight hardware authenticators we tested were vulnerable
+despite FIDO level 1 certification. This vulnerability cannot be easily mitigated on authenticators
+because, for security reasons, they usually do not allow firmware updates. In addition, we show
+that due to the way existing browsers implement the WebAuthn standard, the attack can be executed
+remotely. 

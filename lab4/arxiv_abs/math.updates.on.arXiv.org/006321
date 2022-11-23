@@ -1,0 +1,19 @@
+In this paper, we consider the problem of optimally guiding a large-scale swarm of underwater vehicles
+that is tasked with the indirect control of an advection-diffusion environmental field. The microscopic
+vehicle dynamics are governed by a stochastic differential equation with drift. The drift terms
+model the self-propelled velocity of the vehicle and the velocity field of the currents. In the mean-field
+setting, the macroscopic vehicle dynamics are governed by a Kolmogorov forward equation in the
+form of a linear parabolic advection-diffusion equation. The environmental field is governed
+by an advection-diffusion equation in which the advection term is defined by the fluid velocity
+field. The vehicles are equipped with on-board actuators that enable the swarm to act as a distributed
+source in the environmental field, modulated by a scalar control parameter that determines the
+local source intensity. In this setting, we formulate an optimal control problem to compute the
+vehicle velocity and actuator intensity fields that drive the environmental field to a desired
+distribution within a specified amount of time. In other words, we design optimal vector and scalar
+actuation fields to indirectly control the environmental field through a distributed source,
+produced by the swarm. After proving an existence result for the solution of the optimal control
+problem, we discretize and solve the problem using the Finite Element Method (FEM). The FEM discretization
+naturally provides an operator that represents the bilinear way in which the controls enter into
+the dynamics of the vehicle swarm and the environmental field. Finally, we show through numerical
+simulations the effectiveness of our control strategy in regulating the environmental field to
+zero or to a desired distribution in the presence of a double-gyre flow field. 

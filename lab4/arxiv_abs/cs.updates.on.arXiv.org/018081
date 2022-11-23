@@ -1,0 +1,19 @@
+The latest biological findings observe that the traditional motionless 'lock-and-key' theory
+is not generally applicable because the receptor and ligand are constantly moving. Nonetheless,
+remarkable changes in associated atomic sites and binding pose can provide vital information in
+understanding the process of drug binding. Based on this mechanism, molecular dynamics (MD) simulations
+were invented as a useful tool for investigating the dynamic properties of a molecular system. However,
+the computational expenditure limits the growth and application of protein trajectory-related
+studies, thus hindering the possibility of supervised learning. To tackle this obstacle, we present
+a novel spatial-temporal pre-training method based on the modified Equivariant Graph Matching
+Networks (EGMN), dubbed ProtMD, which has two specially designed self-supervised learning tasks:
+an atom-level prompt-based denoising generative task and a conformation-level snapshot ordering
+task to seize the flexibility information inside MD trajectories with very fine temporal resolutions.
+The ProtMD can grant the encoder network the capacity to capture the time-dependent geometric mobility
+of conformations along MD trajectories. Two downstream tasks are chosen, i.e., the binding affinity
+prediction and the ligand efficacy prediction, to verify the effectiveness of ProtMD through linear
+detection and task-specific fine-tuning. We observe a huge improvement from current state-of-the-art
+methods, with a decrease of 4.3\% in RMSE for the binding affinity problem and an average increase
+of 13.8\% in AUROC and AUPRC for the ligand efficacy problem. The results demonstrate valuable insight
+into a strong correlation between the magnitude of conformation's motion in the 3D space (i.e.,
+flexibility) and the strength with which the ligand binds with its receptor. 

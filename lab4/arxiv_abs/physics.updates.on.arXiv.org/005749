@@ -1,0 +1,20 @@
+Neural operators can learn nonlinear mappings between function spaces and offer a new simulation
+paradigm for real-time prediction of complex dynamics for realistic diverse applications as well
+as for system identification in science and engineering. Herein, we investigate the performance
+of two neural operators, and we develop new practical extensions that will make them more accurate
+and robust and importantly more suitable for industrial-complexity applications. The first neural
+operator, DeepONet, was published in 2019, and the second one, named Fourier Neural Operator or
+FNO, was published in 2020. In order to compare FNO with DeepONet for realistic setups, we develop
+several extensions of FNO that can deal with complex geometric domains as well as mappings where
+the input and output function spaces are of different dimensions. We also endow DeepONet with special
+features that provide inductive bias and accelerate training, and we present a faster implementation
+of DeepONet with cost comparable to the computational cost of FNO. We consider 16 different benchmarks
+to demonstrate the relative performance of the two neural operators, including instability wave
+analysis in hypersonic boundary layers, prediction of the vorticity field of a flapping airfoil,
+porous media simulations in complex-geometry domains, etc. The performance of DeepONet and FNO
+is comparable for relatively simple settings, but for complex geometries and especially noisy
+data, the performance of FNO deteriorates greatly. For example, for the instability wave analysis
+with only 0.1% noise added to the input data, the error of FNO increases 10000 times making it inappropriate
+for such important applications, while there is hardly any effect of such noise on the DeepONet.
+We also compare theoretically the two neural operators and obtain similar error estimates for DeepONet
+and FNO under the same regularity assumptions. 

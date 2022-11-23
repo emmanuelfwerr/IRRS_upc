@@ -1,0 +1,19 @@
+Recent work has suggested that a good embedding is all we need to solve many few-shot learning benchmarks.
+Furthermore, other work has strongly suggested that Model Agnostic Meta-Learning (MAML) also
+works via this same method - by learning a good embedding. These observations highlight our lack
+of understanding of what meta-learning algorithms are doing and when they work. In this work, we
+provide empirical results that shed some light on how meta-learned MAML representations function.
+In particular, we identify three interesting properties: 1) In contrast to previous work, we show
+that it is possible to define a family of synthetic benchmarks that result in a low degree of feature
+re-use - suggesting that current few-shot learning benchmarks might not have the properties needed
+for the success of meta-learning algorithms; 2) meta-overfitting occurs when the number of classes
+(or concepts) are finite, and this issue disappears once the task has an unbounded number of concepts
+(e.g., online learning); 3) more adaptation at meta-test time with MAML does not necessarily result
+in a significant representation change or even an improvement in meta-test performance - even when
+training on our proposed synthetic benchmarks. Finally, we suggest that to understand meta-learning
+algorithms better, we must go beyond tracking only absolute performance and, in addition, formally
+quantify the degree of meta-learning and track both metrics together. Reporting results in future
+work this way will help us identify the sources of meta-overfitting more accurately and help us design
+more flexible meta-learning algorithms that learn beyond fixed feature re-use. Finally, we conjecture
+the core challenge of re-thinking meta-learning is in the design of few-shot learning data sets
+and benchmarks - rather than in the algorithms, as suggested by previous work. 

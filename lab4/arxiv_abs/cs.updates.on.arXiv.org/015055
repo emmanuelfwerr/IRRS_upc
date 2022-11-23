@@ -1,0 +1,20 @@
+The way developers implement their algorithms and how these implementations behave on modern CPUs
+are governed by the design and organization of these. The vectorization units (SIMD) are among the
+few CPUs' parts that can and must be explicitly controlled. In the HPC community, the x86 CPUs and
+their vectorization instruction sets were de-facto the standard for decades. Each new release
+of an instruction set was usually a doubling of the vector length coupled with new operations. Each
+generation was pushing for adapting and improving previous implementations. The release of the
+ARM scalable vector extension (SVE) changed things radically for several reasons. First, we expect
+ARM processors to equip many supercomputers in the next years. Second, SVE's interface is different
+in several aspects from the x86 extensions as it provides different instructions, uses a predicate
+to control most operations, and has a vector size that is only known at execution time. Therefore,
+using SVE opens new challenges on how to adapt algorithms including the ones that are already well-optimized
+on x86. In this paper, we port a hybrid sort based on the well-known Quicksort and Bitonic-sort algorithms.
+We use a Bitonic sort to process small partitions/arrays and a vectorized partitioning implementation
+to divide the partitions. We explain how we use the predicates and how we manage the non-static vector
+size. We explain how we efficiently implement the sorting kernels. Our approach only needs an array
+of O(log N) for the recursive calls in the partitioning phase, both in the sequential and in the parallel
+case. We test the performance of our approach on a modern ARMv8.2 and assess the different layers
+of our implementation by sorting/partitioning integers, double floating-point numbers, and
+key/value pairs of integers. Our approach is faster than the GNU C++ sort algorithm by a speedup factor
+of 4 on average. 

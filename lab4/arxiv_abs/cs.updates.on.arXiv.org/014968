@@ -1,0 +1,19 @@
+Overcoming the link blockage challenges is essential for enhancing the reliability and latency
+of millimeter wave (mmWave) and sub-terahertz (sub-THz) communication networks. Previous approaches
+relied mainly on either (i) multiple-connectivity, which under-utilizes the network resources,
+or on (ii) the use of out-of-band and non-RF sensors to predict link blockages, which is associated
+with increased cost and system complexity. In this paper, we propose a novel solution that relies
+only on in-band mmWave wireless measurements to proactively predict future dynamic line-of-sight
+(LOS) link blockages. The proposed solution utilizes deep neural networks and special patterns
+of received signal power, that we call pre-blockage wireless signatures to infer future blockages.
+Specifically, the developed machine learning models attempt to predict: (i) If a future blockage
+will occur? (ii) When will this blockage happen? (iii) What is the type of the blockage? And (iv) what
+is the direction of the moving blockage? To evaluate our proposed approach, we build a large-scale
+real-world dataset comprising nearly $0.5$ million data points (mmWave measurements) for both
+indoor and outdoor blockage scenarios. The results, using this dataset, show that the proposed
+approach can successfully predict the occurrence of future dynamic blockages with more than 85\%
+accuracy. Further, for the outdoor scenario with highly-mobile vehicular blockages, the proposed
+model can predict the exact time of the future blockage with less than $80$ms error for blockages
+happening within the future $500$ms. These results, among others, highlight the promising gains
+of the proposed proactive blockage prediction solution which could potentially enhance the reliability
+and latency of future wireless networks. 

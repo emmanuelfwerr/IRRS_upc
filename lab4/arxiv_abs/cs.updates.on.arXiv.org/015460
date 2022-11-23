@@ -1,0 +1,19 @@
+With the increasing number of Internet of Things (IoT) devices, massive amounts of raw data is being
+generated. The latency, cost, and other challenges in cloud-based IoT data processing have driven
+the adoption of Edge and Fog computing models, where some data processing tasks are moved closer
+to data sources. Properly dealing with the flow of such data requires building data pipelines, to
+control the complete life cycle of data streams from data acquisition at the data source, edge and
+fog processing, to Cloud side storage and analytics. Data analytics tasks need to be executed dynamically
+at different distances from the data sources and often on very heterogeneous hardware devices.
+This can be streamlined by the use of a Serverless (or FaaS) cloud computing model, where tasks are
+defined as virtual functions, which can be migrated from edge to cloud (and vice versa) and executed
+in an event-driven manner on data streams. In this work, we investigate the benefits of building
+Serverless data pipelines (SDP) for IoT data analytics and evaluate three different approaches
+for designing SDPs: 1) Off-the-shelf data flow tool (DFT) based, 2) Object storage service (OSS)
+based and 3) MQTT based. Further, we applied these strategies on three fog applications (Aeneas,
+PocketSphinx, and custom Video processing application) and evaluated the performance by comparing
+their processing time (computation time, network communication and disk access time), and resource
+utilization. Results show that DFT is unsuitable for compute-intensive applications such as video
+or image processing, whereas OSS is best suitable for this task. However, DFT is nicely fit for bandwidth-intensive
+applications due to the minimum use of network resources. On the other hand, MQTT-based SDP is observed
+with increase in CPU and Memory usage as the number of...<truncted to fit character limit in Arxiv>

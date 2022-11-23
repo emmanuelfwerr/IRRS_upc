@@ -1,0 +1,20 @@
+In the classical setting of self-selection, the goal is to learn $k$ models, simultaneously from
+observations $(x^{(i)}, y^{(i)})$ where $y^{(i)}$ is the output of one of $k$ underlying models
+on input $x^{(i)}$. In contrast to mixture models, where we observe the output of a randomly selected
+model, here the observed model depends on the outputs themselves, and is determined by some known
+selection criterion. For example, we might observe the highest output, the smallest output, or
+the median output of the $k$ models. In known-index self-selection, the identity of the observed
+model output is observable; in unknown-index self-selection, it is not. Self-selection has a long
+history in Econometrics and applications in various theoretical and applied fields, including
+treatment effect estimation, imitation learning, learning from strategically reported data,
+and learning from markets at disequilibrium. In this work, we present the first computationally
+and statistically efficient estimation algorithms for the most standard setting of this problem
+where the models are linear. In the known-index case, we require poly$(1/\varepsilon, k, d)$ sample
+and time complexity to estimate all model parameters to accuracy $\varepsilon$ in $d$ dimensions,
+and can accommodate quite general selection criteria. In the more challenging unknown-index case,
+even the identifiability of the linear models (from infinitely many samples) was not known. We show
+three results in this case for the commonly studied $\max$ self-selection criterion: (1) we show
+that the linear models are indeed identifiable, (2) for general $k$ we provide an algorithm with
+poly$(d) \exp(\text{poly}(k))$ sample and time complexity to estimate the regression parameters
+up to error $1/\text{poly}(k)$, and (3) for $k = 2$ we provide an algorithm for any error $\varepsilon$
+and poly$(d, 1/\varepsilon)$ sample and time complexity. 

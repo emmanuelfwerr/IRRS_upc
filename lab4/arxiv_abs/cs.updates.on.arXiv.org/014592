@@ -1,0 +1,20 @@
+Joint registration of a stack of 2D histological sections to recover 3D structure (``3D histology
+reconstruction'') finds application in areas such as atlas building and validation of \emph{in
+vivo} imaging. Straightforward pairwise registration of neighbouring sections yields smooth
+reconstructions but has well-known problems such as ``banana effect'' (straightening of curved
+structures) and ``z-shift'' (drift). While these problems can be alleviated with an external,
+linearly aligned reference (e.g., Magnetic Resonance (MR) images), registration is often inaccurate
+due to contrast differences and the strong nonlinear distortion of the tissue, including artefacts
+such as folds and tears. In this paper, we present a probabilistic model of spatial deformation that
+yields reconstructions for multiple histological stains that that are jointly smooth, robust
+to outliers, and follow the reference shape. The model relies on a spanning tree of latent transforms
+connecting all the sections and slices of the reference volume, and assumes that the registration
+between any pair of images can be see as a noisy version of the composition of (possibly inverted)
+latent transforms connecting the two images. Bayesian inference is used to compute the most likely
+latent transforms given a set of pairwise registrations between image pairs within and across modalities.
+The framework is used for accurate 3D reconstruction of two stains (Nissl and parvalbumin) from
+the Allen human brain atlas, showing its benefits on real data with severe distortions. Moreover,
+we also provide the registration of the reconstructed volume to MNI space, bridging the gaps between
+two of the most widely used atlases in histology and MRI. The 3D reconstructed volumes and atlas registration
+can be downloaded from https://openneuro.org/datasets/ds003590. The code is freely available
+at https://github.com/acasamitjana/3dhirest. 

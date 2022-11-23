@@ -1,0 +1,19 @@
+The task of text-video retrieval aims to understand the correspondence between language and vision,
+has gained increasing attention in recent years. Previous studies either adopt off-the-shelf
+2D/3D-CNN and then use average/max pooling to directly capture spatial features with aggregated
+temporal information as global video embeddings, or introduce graph-based models and expert knowledge
+to learn local spatial-temporal relations. However, the existing methods have two limitations:
+1) The global video representations learn video temporal information in a simple average/max pooling
+manner and do not fully explore the temporal information between every two frames. 2) The graph-based
+local video representations are handcrafted, it depends heavily on expert knowledge and empirical
+feedback, which may not be able to effectively mine the higher-level fine-grained visual relations.
+These limitations result in their inability to distinguish videos with the same visual components
+but with different relations. To solve this problem, we propose a novel cross-modal retrieval framework,
+Bi-Branch Complementary Network (BiC-Net), which modifies transformer architecture to effectively
+bridge text-video modalities in a complementary manner via combining local spatial-temporal
+relation and global temporal information. Specifically, local video representations are encoded
+using multiple transformer blocks and additional residual blocks to learn spatio-temporal relation
+features, calling the module a Spatio-Temporal Residual transformer (SRT). Meanwhile, Global
+video representations are encoded using a multi-layer transformer block to learn global temporal
+features. Finally, we align the spatio-temporal relation and global temporal features with the
+text feature on two embedding spaces for cross-modal text-video retrieval. 

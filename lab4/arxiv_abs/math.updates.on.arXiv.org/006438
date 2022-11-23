@@ -1,0 +1,20 @@
+We introduce a framework for generating, organizing, and reasoning with computational knowledge.
+It is motivated by the observation that most problems in Computational Sciences and Engineering
+(CSE) can be formulated as that of completing (from data) a computational graph (or hypergraph)
+representing dependencies between functions and variables. Nodes represent variables, and edges
+represent functions. Functions and variables may be known, unknown, or random. Data comes in the
+form of observations of distinct values of a finite number of subsets of the variables of the graph
+(satisfying its functional dependencies). The underlying problem combines a regression problem
+(approximating unknown functions) with a matrix completion problem (recovering unobserved variables
+in the data). Replacing unknown functions by Gaussian Processes (GPs) and conditioning on observed
+data provides a simple but efficient approach to completing such graphs. Since this completion
+process can be reduced to an algorithm, as one solves $\sqrt{2}$ on a pocket calculator without thinking
+about it, one could, with the automation of the proposed framework, solve a complex CSE problem by
+drawing a diagram. Compared to traditional kriging, the proposed framework can be used to recover
+unknown functions with much scarcer data by exploiting interdependencies between multiple functions
+and variables. The underlying problem could therefore also be interpreted as a generalization
+of that of solving linear systems of equations to that of approximating unknown variables and functions
+with noisy, incomplete, and nonlinear dependencies. Numerous examples illustrate the flexibility,
+scope, efficacy, and robustness of the proposed framework and show how it can be used as a pathway
+to identifying simple solutions to classical CSE problems (digital twin modeling, dimension reduction,
+mode decomposition, etc.). 

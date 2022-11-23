@@ -1,0 +1,20 @@
+With the rise of contrastive learning, unsupervised graph representation learning has been booming
+recently, even surpassing the supervised counterparts in some machine learning tasks. Most of
+existing contrastive models for graph representation learning either focus on maximizing mutual
+information between local and global embeddings, or primarily depend on contrasting embeddings
+at node level. However, they are still not exquisite enough to comprehensively explore the local
+and global views of network topology. Although the former considers local-global relationship,
+its coarse global information leads to grudging cooperation between local and global views. The
+latter pays attention to node-level feature alignment, so that the role of global view appears inconspicuous.
+To avoid falling into these two extreme cases, we propose a novel unsupervised graph representation
+model by contrasting cluster assignments, called as GRCCA. It is motivated to make good use of local
+and global information synthetically through combining clustering algorithms and contrastive
+learning. This not only facilitates the contrastive effect, but also provides the more high-quality
+graph information. Meanwhile, GRCCA further excavates cluster-level information, which make
+it get insight to the elusive association between nodes beyond graph topology. Specifically, we
+first generate two augmented graphs with distinct graph augmentation strategies, then employ
+clustering algorithms to obtain their cluster assignments and prototypes respectively. The proposed
+GRCCA further compels the identical nodes from different augmented graphs to recognize their cluster
+assignments mutually by minimizing a cross entropy loss. To demonstrate its effectiveness, we
+compare with the state-of-the-art models in three different downstream tasks. The experimental
+results show that GRCCA has strong competitiveness in most tasks. 

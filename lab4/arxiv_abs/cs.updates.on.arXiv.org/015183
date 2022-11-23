@@ -1,0 +1,18 @@
+We deal with a long-standing problem about how to design an energy-stable numerical scheme for solving
+the motion of a closed curve under {\sl anisotropic surface diffusion} with a general anisotropic
+surface energy $\gamma(\boldsymbol{n})$ in two dimensions, where $\boldsymbol{n}$ is the outward
+unit normal vector. By introducing a novel symmetric positive definite surface energy matrix $Z_k(\boldsymbol{n})$
+depending on the Cahn-Hoffman $\boldsymbol{\xi}$-vector and a stabilizing function $k(\boldsymbol{n})$,
+we first reformulate the anisotropic surface diffusion into a conservative form and then derive
+a new symmetrized variational formulation for the anisotropic surface diffusion with both weakly
+and strongly anisotropic surface energies. A semi-discretization in space for the symmetrized
+variational formulation is proposed and its area (or mass) conservation and energy dissipation
+are proved. The semi-discretization is then discretized in time by either an implicit structural-preserving
+scheme (SP-PFEM) which preserves the area in the discretized level or a semi-implicit energy-stable
+method (ES-PFEM) which needs only solve a linear system at each time step. Under a relatively simple
+and mild condition on $\gamma(\boldsymbol{n})$, we show that both SP-PFEM and ES-PFEM are energy
+dissipative and thus are unconditionally energy-stable for almost all anisotropic surface energies
+$\gamma(\boldsymbol{n})$ arising in practical applications. Specifically, for several commonly-used
+anisotropic surface energies, we construct $Z_k(\boldsymbol{n})$ explicitly. Finally, extensive
+numerical results are reported to demonstrate the efficiency and accuracy as well as the unconditional
+energy-stability of the proposed symmetrized parametric finite element method. 

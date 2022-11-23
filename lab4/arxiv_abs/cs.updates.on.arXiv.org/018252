@@ -1,0 +1,20 @@
+Web application firewall (WAF) plays an integral role nowadays to protect web applications from
+various malicious injection attacks such as SQL injection, XML injection, and PHP injection, to
+name a few. However, given the evolving sophistication of injection attacks and the increasing
+complexity of tuning a WAF, it is challenging to ensure that the WAF is free of injection vulnerabilities
+such that it will block all malicious injection attacks without wrongly affecting the legitimate
+message. Automatically testing the WAF is, therefore, a timely and essential task. In this paper,
+we propose DaNuoYi, an automatic injection testing tool that simultaneously generates test inputs
+for multiple types of injection attacks on a WAF. Our basic idea derives from the cross-lingual translation
+in the natural language processing domain. In particular, test inputs for different types of injection
+attacks are syntactically different but may be semantically similar. Sharing semantic knowledge
+across multiple programming languages can thus stimulate the generation of more sophisticated
+test inputs and discovering injection vulnerabilities of the WAF that are otherwise difficult
+to find. To this end, in DaNuoYi, we train several injection translation models by using multi-task
+learning that translates the test inputs between any pair of injection attacks. The model is then
+used by a novel multi-task evolutionary algorithm to co-evolve test inputs for different types
+of injection attacks facilitated by a shared mating pool and domain-specific mutation operators
+at each generation. We conduct experiments on three real-world open-source WAFs and six types of
+injection attacks, the results reveal that DaNuoYi generates up to 3.8x and 5.78x more valid test
+inputs (i.e., bypassing the underlying WAF) than its state-of-the-art single-task counterparts
+and the context-free grammar-based injection construction. 

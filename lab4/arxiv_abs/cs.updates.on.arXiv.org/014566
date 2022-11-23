@@ -1,0 +1,20 @@
+Spiking Neural Networks (SNNs) are energy efficient alternatives to commonly used deep neural
+networks (DNNs). Through event-driven information processing, SNNs can reduce the expensive
+compute requirements of DNNs considerably, while achieving comparable performance. However,
+high inference latency is a significant hindrance to the edge deployment of deep SNNs. Computation
+over multiple timesteps not only increases latency as well as overall energy budget due to higher
+number of operations, but also incurs memory access overhead of fetching membrane potentials,
+both of which lessen the energy benefits of SNNs. To overcome this bottleneck and leverage the full
+potential of SNNs, we propose an Iterative Initialization and Retraining method for SNNs (IIR-SNN)
+to perform single shot inference in the temporal axis. The method starts with an SNN trained with
+T timesteps (T>1). Then at each stage of latency reduction, the network trained at previous stage
+with higher timestep is utilized as initialization for subsequent training with lower timestep.
+This acts as a compression method, as the network is gradually shrunk in the temporal domain. In this
+paper, we use direct input encoding and choose T=5, since as per literature, it is the minimum required
+latency to achieve satisfactory performance on ImageNet. The proposed scheme allows us to obtain
+SNNs with up to unit latency, requiring a single forward pass during inference. We achieve top-1
+accuracy of 93.05%, 70.15% and 67.71% on CIFAR-10, CIFAR-100 and ImageNet, respectively using
+VGG16, with just 1 timestep. In addition, IIR-SNNs perform inference with 5-2500X reduced latency
+compared to other state-of-the-art SNNs, maintaining comparable or even better accuracy. Furthermore,
+in comparison with standard DNNs, the proposed IIR-SNNs provide25-33X higher energy efficiency,
+while being comparable to them in classification performance. 

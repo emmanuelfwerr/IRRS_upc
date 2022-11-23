@@ -1,0 +1,19 @@
+Data processing and analysis pipelines in cosmological survey experiments introduce data perturbations
+that can significantly degrade the performance of deep learning-based models. Given the increased
+adoption of supervised deep learning methods for processing and analysis of cosmological survey
+data, the assessment of data perturbation effects and the development of methods that increase
+model robustness are increasingly important. In the context of morphological classification
+of galaxies, we study the effects of perturbations in imaging data. In particular, we examine the
+consequences of using neural networks when training on baseline data and testing on perturbed data.
+We consider perturbations associated with two primary sources: 1) increased observational noise
+as represented by higher levels of Poisson noise and 2) data processing noise incurred by steps such
+as image compression or telescope errors as represented by one-pixel adversarial attacks. We also
+test the efficacy of domain adaptation techniques in mitigating the perturbation-driven errors.
+We use classification accuracy, latent space visualizations, and latent space distance to assess
+model robustness. Without domain adaptation, we find that processing pixel-level errors easily
+flip the classification into an incorrect class and that higher observational noise makes the model
+trained on low-noise data unable to classify galaxy morphologies. On the other hand, we show that
+training with domain adaptation improves model robustness and mitigates the effects of these perturbations,
+improving the classification accuracy by 23% on data with higher observational noise. Domain adaptation
+also increases by a factor of ~2.3 the latent space distance between the baseline and the incorrectly
+classified one-pixel perturbed image, making the model more robust to inadvertent perturbations.

@@ -1,0 +1,19 @@
+The COVID-19 pandemic has fueled the spread of misinformation on social media and the Web as a whole.
+The phenomenon dubbed `infodemic' has taken the challenges of information veracity and trust to
+new heights by massively introducing seemingly scientific and technical elements into misleading
+content. Despite the existing body of work on modeling and predicting misinformation, the coverage
+of very complex scientific topics with inherent uncertainty and an evolving set of findings, such
+as COVID-19, provides many new challenges that are not easily solved by existing tools. To address
+these issues, we introduce SciLander, a method for learning representations of news sources reporting
+on science-based topics. SciLander extracts four heterogeneous indicators for the news sources;
+two generic indicators that capture (1) the copying of news stories between sources, and (2) the
+use of the same terms to mean different things (i.e., the semantic shift of terms), and two scientific
+indicators that capture (1) the usage of jargon and (2) the stance towards specific citations. We
+use these indicators as signals of source agreement, sampling pairs of positive (similar) and negative
+(dissimilar) samples, and combine them in a unified framework to train unsupervised news source
+embeddings with a triplet margin loss objective. We evaluate our method on a novel COVID-19 dataset
+containing nearly 1M news articles from 500 sources spanning a period of 18 months since the beginning
+of the pandemic in 2020. Our results show that the features learned by our model outperform state-of-the-art
+baseline methods on the task of news veracity classification. Furthermore, a clustering analysis
+suggests that the learned representations encode information about the reliability, political
+leaning, and partisanship bias of these sources. 

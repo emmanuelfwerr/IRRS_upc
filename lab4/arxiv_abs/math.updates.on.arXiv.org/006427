@@ -1,0 +1,20 @@
+A generalized downlink multi-antenna non-orthogonal multiple access (NOMA) transmission framework
+is proposed with the novel concept of cluster-free successive interference cancellation (SIC).
+In contrast to conventional NOMA approaches, where SIC is successively carried out within the same
+cluster, the key idea is that the SIC can be flexibly implemented between any arbitrary users to achieve
+efficient interference elimination. Based on the proposed framework, a sum rate maximization
+problem is formulated for jointly optimizing the transmit beamforming and the SIC operations between
+users, subject to the SIC decoding conditions and users' minimal data rate requirements. To tackle
+this highly-coupled mixed-integer nonlinear programming problem, an alternating direction
+method of multipliers-successive convex approximation (ADMM-SCA) algorithm is developed. The
+original problem is first reformulated into a tractable biconvex augmented Lagrangian (AL) problem
+by handling the non-convex terms via SCA. Then, this AL problem is decomposed into two subproblems
+that are iteratively solved by the ADMM to obtain the stationary solution. Moreover, to reduce the
+computational complexity and alleviate the parameter initialization sensitivity of ADMM-SCA,
+a Matching-SCA algorithm is proposed. The intractable binary SIC operations are solved through
+an extended many-to-many matching, which is jointly combined with an SCA process to optimize the
+transmit beamforming. The proposed Matching-SCA can converge to an enhanced exchange-stable
+matching that guarantees the local optimality. Numerical results demonstrate that: i) the proposed
+Matching-SCA algorithm achieves comparable performance and a faster convergence compared to
+ADMM-SCA; ii) the proposed generalized framework realizes scenario-adaptive communications
+and outperforms traditional multi-antenna NOMA approaches in various communication regimes.

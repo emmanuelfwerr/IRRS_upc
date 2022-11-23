@@ -1,0 +1,19 @@
+Modern neural networks are often operated in a strongly overparametrized regime: they comprise
+so many parameters that they can interpolate the training set, even if actual labels are replaced
+by purely random ones. Despite this, they achieve good prediction error on unseen data: interpolating
+the training set does not lead to a large generalization error. Further, overparametrization appears
+to be beneficial in that it simplifies the optimization landscape. Here we study these phenomena
+in the context of two-layers neural networks in the neural tangent (NT) regime. We consider a simple
+data model, with isotropic covariates vectors in $d$ dimensions, and $N$ hidden neurons. We assume
+that both the sample size $n$ and the dimension $d$ are large, and they are polynomially related.
+Our first main result is a characterization of the eigenstructure of the empirical NT kernel in the
+overparametrized regime $Nd\gg n$. This characterization implies as a corollary that the minimum
+eigenvalue of the empirical NT kernel is bounded away from zero as soon as $Nd\gg n$, and therefore
+the network can exactly interpolate arbitrary labels in the same regime. Our second main result
+is a characterization of the generalization error of NT ridge regression including, as a special
+case, min-$\ell_2$ norm interpolation. We prove that, as soon as $Nd\gg n$, the test error is well
+approximated by the one of kernel ridge regression with respect to the infinite-width kernel. The
+latter is in turn well approximated by the error of polynomial ridge regression, whereby the regularization
+parameter is increased by a `self-induced' term related to the high-degree components of the activation
+function. The polynomial degree depends on the sample size and the dimension (in particular on $\log
+n/\log d$). 

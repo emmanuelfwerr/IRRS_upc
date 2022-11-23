@@ -1,0 +1,19 @@
+Traditional deep learning networks (DNN) exhibit intriguing vulnerabilities that allow an attacker
+to force them to fail at their task. Notorious attacks such as the Fast Gradient Sign Method (FGSM)
+and the more powerful Projected Gradient Descent (PGD) generate adversarial samples by adding
+a magnitude of perturbation $\epsilon$ to the input's computed gradient, resulting in a deterioration
+of the effectiveness of the model's classification. This work introduces a model that is resilient
+to adversarial attacks. Our model leverages an established mechanism of defense which utilizes
+randomness and a population of DNNs. More precisely, our model consists of a population of $n$ diverse
+submodels, each one of them trained to individually obtain a high accuracy for the task at hand, while
+forced to maintain meaningful differences in their weights. Each time our model receives a classification
+query, it selects a submodel from its population at random to answer the query. To counter the attack
+transferability, diversity is introduced and maintained in the population of submodels. Thus
+introducing the concept of counter linking weights. A Counter-Linked Model (CLM) consists of a
+population of DNNs of the same architecture where a periodic random similarity examination is conducted
+during the simultaneous training to guarantee diversity while maintaining accuracy. Though the
+randomization technique proved to be resilient against adversarial attacks, we show that by retraining
+the DNNs ensemble or training them from the start with counter linking would enhance the robustness
+by around 20\% when tested on the MNIST dataset and at least 15\% when tested on the CIFAR-10 dataset.
+When CLM is coupled with adversarial training, this defense mechanism achieves state-of-the-art
+robustness. 

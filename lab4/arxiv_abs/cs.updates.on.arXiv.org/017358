@@ -1,0 +1,19 @@
+We consider the problem of enumerating optimal solutions for two hypergraph $k$-partitioning
+problems -- namely, Hypergraph-$k$-Cut and Minmax-Hypergraph-$k$-Partition. The input in hypergraph
+$k$-partitioning problems is a hypergraph $G=(V, E)$ with positive hyperedge costs along with
+a fixed positive integer $k$. The goal is to find a partition of $V$ into $k$ non-empty parts $(V_1,
+V_2, \ldots, V_k)$ -- known as a $k$-partition -- so as to minimize an objective of interest. 1. If
+the objective of interest is the maximum cut value of the parts, then the problem is known as Minmax-Hypergraph-$k$-Partition.
+A subset of hyperedges is a minmax-$k$-cut-set if it is the subset of hyperedges crossing an optimum
+$k$-partition for Minmax-Hypergraph-$k$-Partition. 2. If the objective of interest is the total
+cost of hyperedges crossing the $k$-partition, then the problem is known as Hypergraph-$k$-Cut.
+A subset of hyperedges is a min-$k$-cut-set if it is the subset of hyperedges crossing an optimum
+$k$-partition for Hypergraph-$k$-Cut. We give the first polynomial bound on the number of minmax-$k$-cut-sets
+and a polynomial-time algorithm to enumerate all of them in hypergraphs for every fixed $k$. Our
+technique is strong enough to also enable an $n^{O(k)}p$-time deterministic algorithm to enumerate
+all min-$k$-cut-sets in hypergraphs, thus improving on the previously known $n^{O(k^2)}p$-time
+deterministic algorithm, where $n$ is the number of vertices and $p$ is the size of the hypergraph.
+The correctness analysis of our enumeration approach relies on a structural result that is a strong
+and unifying generalization of known structural results for Hypergraph-$k$-Cut and Minmax-Hypergraph-$k$-Partition.
+We believe that our structural result is likely to be of independent interest in the theory of hypergraphs
+(and graphs). 

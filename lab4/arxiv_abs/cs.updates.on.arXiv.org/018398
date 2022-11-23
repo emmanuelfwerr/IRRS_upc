@@ -1,0 +1,20 @@
+A temporal graph is an undirected graph $G=(V,E)$ along with a function that assigns a time-label
+to each edge in $E$. A path in $G$ with non-decreasing time-labels is called temporal path and the
+distance from $u$ to $v$ is the minimum length (i.e., the number of edges) of a temporal path from $u$
+to $v$. A temporal $\alpha$-spanner of $G$ is a (temporal) subgraph $H$ that preserves the distances
+between any pair of vertices in $V$, up to a multiplicative stretch factor of $\alpha$. The size of
+$H$ is the number of its edges. In this work we study the size-stretch trade-offs of temporal spanners.
+We show that temporal cliques always admit a temporal $(2k-1)-$spanner with $\tilde{O}(kn^{1+\frac{1}{k}})$
+edges, where $k>1$ is an integer parameter of choice. Choosing $k=\lfloor\log n\rfloor$, we obtain
+a temporal $O(\log n)$-spanner with $\tilde{O}(n)$ edges that has almost the same size (up to logarithmic
+factors) as the temporal spanner in [Casteigts et al., JCSS 2021] which only preserves temporal
+connectivity. We then consider general temporal graphs. Since $\Omega(n^2)$ edges might be needed
+by any connectivity-preserving temporal subgraph [Axiotis et al., ICALP'16], we focus on approximating
+distances from a single source. We show that $\tilde{O}(n/\log(1+\varepsilon))$ edges suffice
+to obtain a stretch of $(1+\varepsilon)$, for any small $\varepsilon>0$. This result is essentially
+tight since there are temporal graphs for which any temporal subgraph preserving exact distances
+from a single-source must use $\Omega(n^2)$ edges. We extend our analysis to prove an upper bound
+of $\tilde{O}(n^2/\beta)$ on the size of any temporal $\beta$-additive spanner, which is tight
+up to polylogarithmic factors. Finally, we investigate how the lifetime of $G$, i.e., the number
+of its distinct time-labels, affects the trade-off between the size and the stretch of a temporal
+spanner. 

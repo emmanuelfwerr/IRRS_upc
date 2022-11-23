@@ -1,0 +1,20 @@
+Reconstructing images from very long baseline interferometry (VLBI) data with sparse sampling
+of the Fourier domain (uv-coverage) constitutes an ill-posed deconvolution problem. It requires
+application of robust algorithms maximizing the information extraction from all of the sampled
+spatial scales and minimizing the influence of the unsampled scales on image quality. We develop
+a new multiscale wavelet deconvolution algorithm DoG-HiT for imaging sparsely sampled interferometric
+data which combines the difference of Gaussian (DoG) wavelets and hard image thresholding (HiT).
+Based on DoG-HiT, we propose a multi-step imaging pipeline for analysis of interferometric data.
+DoG-HiT applies the compressed sensing approach to imaging by employing a flexible DoG wavelet
+dictionary which is designed to adapt smoothly to the uv-coverage. It uses closure properties as
+data fidelity terms only initially and perform non-convex, non-smooth optimization by an amplitude
+conserving and total flux conserving hard thresholding splitting. DoG-HiT calculates a multiresolution
+support as a side product. The final reconstruction is refined through self-calibration loops
+and imaging with amplitude and phase information applied for the multiresolution support only.
+We demonstrate the stability of DoG-HiT and benchmark its performance against image reconstructions
+made with CLEAN and Regularized Maximum-Likelihood (RML) methods using synthetic data. The comparison
+shows that DoG-HiT matches the superresolution achieved by the RML reconstructions and surpasses
+the sensitivity to extended emission reached by CLEAN. Application of regularized maximum likelihood
+methods outfitted with flexible multiscale wavelet dictionaries to imaging of interferometric
+data matches the performance of state-of-the art convex optimization imaging algorithms and requires
+fewer prior and user defined constraints. 

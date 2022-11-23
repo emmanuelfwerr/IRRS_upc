@@ -1,0 +1,20 @@
+Predicting vulnerable source code helps to focus attention on those parts of the code that need to
+be examined with more scrutiny. Recent work proposed the use of function names as semantic cues that
+can be learned by a deep neural network (DNN) to aid in the hunt for vulnerability of functions. Combining
+identifier splitting, which splits each function name into its constituent words, with a novel
+frequency-based algorithm, we explore the extent to which the words that make up a function's name
+can predict potentially vulnerable functions. In contrast to *lightweight* predictions by a DNN
+that considers only function names, avoiding the use of a DNN provides *featherweight* predictions.
+The underlying idea is that function names that contain certain "dangerous" words are more likely
+to accompany vulnerable functions. Of course, this assumes that the frequency-based algorithm
+can be properly tuned to focus on truly dangerous words. Because it is more transparent than a DNN,
+the frequency-based algorithm enables us to investigate the inner workings of the DNN. If successful,
+this investigation into what the DNN does and does not learn will help us train more effective future
+models. We empirically evaluate our approach on a heterogeneous dataset containing over 73000
+functions labeled vulnerable, and over 950000 functions labeled benign. Our analysis shows that
+words alone account for a significant portion of the DNN's classification ability. We also find
+that words are of greatest value in the datasets with a more homogeneous vocabulary. Thus, when working
+within the scope of a given project, where the vocabulary is unavoidably homogeneous, our approach
+provides a cheaper, potentially complementary, technique to aid in the hunt for source-code vulnerabilities.
+Finally, this approach has the advantage that it is viable with orders of magnitude less training
+data. 

@@ -1,0 +1,20 @@
+Motivated by potential financial gain, companies may hire fraudster groups to write fake reviews
+to either demote competitors or promote their own businesses. Such groups are considerably more
+successful in misleading customers, as people are more likely to be influenced by the opinion of
+a large group. To detect such groups, a common model is to represent fraudster groups' static networks,
+consequently overlooking the longitudinal behavior of a reviewer thus the dynamics of co-review
+relations among reviewers in a group. Hence, these approaches are incapable of excluding outlier
+reviewers, which are fraudsters intentionally camouflaging themselves in a group and genuine
+reviewers happen to co-review in fraudster groups. To address this issue, in this work, we propose
+to first capitalize on the effectiveness of the HIN-RNN in both reviewers' representation learning
+while capturing the collaboration between reviewers, we first utilize the HIN-RNN to model the
+co-review relations of reviewers in a group in a fixed time window of 28 days. We refer to this as spatial
+relation learning representation to signify the generalisability of this work to other networked
+scenarios. Then we use an RNN on the spatial relations to predict the spatio-temporal relations
+of reviewers in the group. In the third step, a Graph Convolution Network (GCN) refines the reviewers'
+vector representations using these predicted relations. These refined representations are then
+used to remove outlier reviewers. The average of the remaining reviewers' representation is then
+fed to a simple fully connected layer to predict if the group is a fraudster group or not. Exhaustive
+experiments of the proposed approach showed a 5% (4%), 12% (5%), 12% (5%) improvement over three
+of the most recent approaches on precision, recall, and F1-value over the Yelp (Amazon) dataset,
+respectively. 

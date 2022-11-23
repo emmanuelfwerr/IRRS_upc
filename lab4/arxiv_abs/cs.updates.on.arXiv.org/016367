@@ -1,0 +1,19 @@
+Promotions are becoming more important and prevalent in e-commerce platforms to attract customers
+and boost sales. However, Click-Through Rate (CTR) prediction methods in recommender systems
+are not able to handle such circumstances well since: 1) they can't generalize well to serving because
+the online data distribution is uncertain due to the potentially upcoming promotions; 2) without
+paying enough attention to scenario signals, they are incapable of learning different feature
+representation patterns which coexist in each scenario. In this work, we propose Scenario Adaptive
+Mixture-of-Experts (SAME), a simple yet effective model that serves both promotion and normal
+scenarios. Technically, it follows the idea of Mixture-of-Experts by adopting multiple experts
+to learn feature representations, which are modulated by a Feature Gated Network (FGN) via an attention
+mechanism. To obtain high-quality representations, we design a Stacked Parallel Attention Unit
+(SPAU) to help each expert better handle user behavior sequence. To tackle the distribution uncertainty,
+a set of scenario signals are elaborately devised from a perspective of time series prediction and
+fed into the FGN, whose output is concatenated with feature representation from each expert to learn
+the attention. Accordingly, a mixture of the feature representations is obtained scenario-adaptively
+and used for the final CTR prediction. In this way, each expert can learn a discriminative representation
+pattern. To the best of our knowledge, this is the first study for promotion-aware CTR prediction.
+Experimental results on real-world datasets validate the superiority of SAME. Online A/B test
+also shows SAME achieves significant gains of 3.58% on CTR and 5.94% on IPV during promotion periods
+as well as 3.93% and 6.57% in normal days, respectively. 

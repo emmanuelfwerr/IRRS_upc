@@ -1,0 +1,20 @@
+We provide improved differentially private algorithms for identity testing of high-dimensional
+distributions. Specifically, for $d$-dimensional Gaussian distributions with known covariance
+$\Sigma$, we can test whether the distribution comes from $\mathcal{N}(\mu^*, \Sigma)$ for some
+fixed $\mu^*$ or from some $\mathcal{N}(\mu, \Sigma)$ with total variation distance at least $\alpha$
+from $\mathcal{N}(\mu^*, \Sigma)$ with $(\varepsilon, 0)$-differential privacy, using only
+\[\tilde{O}\left(\frac{d^{1/2}}{\alpha^2} + \frac{d^{1/3}}{\alpha^{4/3} \cdot \varepsilon^{2/3}}
++ \frac{1}{\alpha \cdot \varepsilon}\right)\] samples if the algorithm is allowed to be computationally
+inefficient, and only \[\tilde{O}\left(\frac{d^{1/2}}{\alpha^2} + \frac{d^{1/4}}{\alpha
+\cdot \varepsilon}\right)\] samples for a computationally efficient algorithm. We also provide
+a matching lower bound showing that our computationally inefficient algorithm has optimal sample
+complexity. We also extend our algorithms to various related problems, including mean testing
+of Gaussians with bounded but unknown covariance, uniformity testing of product distributions
+over $\{\pm 1\}^d$, and tolerant testing. Our results improve over the previous best work of Canonne,
+Kamath, McMillan, Ullman, and Zakynthinou \cite{CanonneKMUZ20} for both computationally efficient
+and inefficient algorithms, and even our computationally efficient algorithm matches the optimal
+\emph{non-private} sample complexity of $O\left(\frac{\sqrt{d}}{\alpha^2}\right)$ in many
+standard parameter settings. In addition, our results show that, surprisingly, private identity
+testing of $d$-dimensional Gaussians can be done with fewer samples than private identity testing
+of discrete distributions over a domain of size $d$ \cite{AcharyaSZ18}, which refutes a conjectured
+lower bound of Canonne et al. \cite{CanonneKMUZ20}. 

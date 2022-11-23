@@ -1,0 +1,19 @@
+Electroencephalogram (EEG) signals are complex, non-linear, and non-stationary in nature. However,
+previous studies that applied decomposition to minimize the complexity mainly exploited the hand-engineering
+features, limiting the information learned in EEG decoding. Therefore, extracting additional
+primary features from different disassembled components to improve the EEG-based recognition
+performance remains challenging. On the other hand, attempts have been made to use a single model
+to learn the hand-engineering features. Less work has been done to improve the generalization ability
+through ensemble learning. In this work, we propose a novel decomposition-based hybrid ensemble
+convolutional neural network (CNN) framework to enhance the capability of decoding EEG signals.
+CNNs, in particular, automatically learn the primary features from raw disassembled components
+but not handcraft features. The first option is to fuse the obtained score before the Softmax layer
+and execute back-propagation on the entire ensemble network, whereas the other is to fuse the probability
+output of the Softmax layer. Moreover, a component-specific batch normalization (CSBN) layer
+is employed to reduce subject variability. Against the challenging cross-subject driver fatigue-related
+situation awareness (SA) recognition task, eight models are proposed under the framework, which
+all showed superior performance than the strong baselines. The performance of different decomposition
+methods and ensemble modes were further compared. Results indicated that discrete wavelet transform
+(DWT)-based ensemble CNN achieves the best 82.11% among the proposed models. Our framework can
+be simply extended to any CNN architecture and applied in any EEG-related sectors, opening the possibility
+of extracting more preliminary information from complex EEG data. 

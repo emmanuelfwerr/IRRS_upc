@@ -1,0 +1,19 @@
+We propose a novel constraint-handling technique for the covariance matrix adaptation evolution
+strategy (CMA-ES). The proposed technique is aimed at solving explicitly constrained black-box
+continuous optimization problems, in which the explicit constraint is a constraint whereby the
+computational time for the constraint violation and its (numerical) gradient are negligible compared
+to that for the objective function. This method is designed to realize two invariance properties:
+invariance to the affine transformation of the search space, and invariance to the increasing transformation
+of the objective and constraint functions. The CMA-ES is designed to possess these properties for
+handling difficulties that appear in black-box optimization problems, such as non-separability,
+ill-conditioning, ruggedness, and the different orders of magnitude in the objective. The proposed
+constraint-handling technique (CHT), known as ARCH, modifies the underlying CMA-ES only in terms
+of the ranking of the candidate solutions. It employs a repair operator and an adaptive ranking aggregation
+strategy to compute the ranking. We developed test problems to evaluate the effects of the invariance
+properties, and performed experiments to empirically verify the invariance of the algorithm.
+We compared the proposed method with other CHTs on the CEC 2006 constrained optimization benchmark
+suite to demonstrate its efficacy. Empirical studies reveal that ARCH is able to exploit the explicitness
+of the constraint functions effectively, sometimes even more efficiently than an existing box-constraint
+handling technique on box-constrained problems, while exhibiting the invariance properties.
+Moreover, ARCH overwhelmingly outperforms CHTs by not exploiting the explicit constraints in
+terms of the number of objective function calls. 

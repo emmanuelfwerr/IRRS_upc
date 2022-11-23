@@ -1,0 +1,19 @@
+In this paper, we propose a novel memory-centric scheme based on CMOS SRAM for acceleration of data
+intensive applications. Our proposal aims at dynamically increasing the on-chip memory storage
+capacity of SRAM arrays on-demand. The proposed scheme called - Augmented Memory Computing allows
+an SRAM cell to operate in two different modes 1) the Normal mode and 2) the Augmented mode. In the Normal
+mode of operation, the SRAM cell functions like a standard 6 transistor (6T) SRAM cell, storing one
+bit of data in static format. While in the Augmented mode, each SRAM cell can store >1 bit of data (in
+a dynamic fashion). Specifically, we propose two novel SRAM cells - an 8 transistor (8T) dual bit
+storage augmented cell and a 7 transistor (7T) ternary bit storage augmented cell. The proposed
+8T dual bit SRAM cell when operated in the Augmented mode, can store a static bit of data while also,
+simultaneously, storing another bit in a dynamic form. Thus, when operated in Augmented mode, the
+8T SRAM cell can store two bits of data - one SRAM-like data and one DRAM-like data, thereby increasing
+or augmenting the memory storage capacity. On the other hand, the proposed 7T ternary bit storage
+augmented cell can either store a single SRAM data in Normal mode or can be configured to operate in
+Augmented mode, wherein it can store ternary data (3 levels (0,0), (0,1), (1,0)) in a dynamic manner.
+Thus, based on the mode of operation, the proposed augmented memory bit-cells can either store one
+static bit of data or >1 bit of data in a dynamic format. We show the feasibility of our proposed bit-cells
+through extensive simulations at Globalfoundries 22nm FDX node. It is worth mentioning, the novel
+scheme of augmented memory bit-cells can be seamlessly combined with existing in-memory computing
+approaches for added energy and throughput benefits. 

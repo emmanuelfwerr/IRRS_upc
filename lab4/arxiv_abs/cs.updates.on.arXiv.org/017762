@@ -1,0 +1,20 @@
+It is almost always easier to find an accurate-but-complex model than an accurate-yet-simple model.
+Finding optimal, sparse, accurate models of various forms (linear models with integer coefficients,
+decision sets, rule lists, decision trees) is generally NP-hard. We often do not know whether the
+search for a simpler model will be worthwhile, and thus we do not go to the trouble of searching for
+one. In this work, we ask an important practical question: can accurate-yet-simple models be proven
+to exist, or shown likely to exist, before explicitly searching for them? We hypothesize that there
+is an important reason that simple-yet-accurate models often do exist. This hypothesis is that
+the size of the Rashomon set is often large, where the Rashomon set is the set of almost-equally-accurate
+models from a function class. If the Rashomon set is large, it contains numerous accurate models,
+and perhaps at least one of them is the simple model we desire. In this work, we formally present the
+Rashomon ratio as a new gauge of simplicity for a learning problem, depending on a function class
+and a data set. The Rashomon ratio is the ratio of the volume of the set of accurate models to the volume
+of the hypothesis space, and it is different from standard complexity measures from statistical
+learning theory. Insight from studying the Rashomon ratio provides an easy way to check whether
+a simpler model might exist for a problem before finding it, namely whether several different machine
+learning methods achieve similar performance on the data. In that sense, the Rashomon ratio is a
+powerful tool for understanding why and when an accurate-yet-simple model might exist. If, as we
+hypothesize in this work, many real-world data sets admit large Rashomon sets, the implications
+are vast: it means that simple or interpretable models may often be used for high-stakes decisions
+without losing accuracy. 

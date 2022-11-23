@@ -1,0 +1,19 @@
+The paper is concerned with a node-based, gradient-driven, continuous adjoint two-phase flow
+procedure to optimize the shapes of free-floating vessels and discusses three topics. First, we
+aim to convey that elements of a Cahn-Hilliard formulation should augment the frequently employed
+Volume-of-Fluid two-phase flow model to maintain dual consistency. It is seen that such consistency
+serves as the basis for a robust primal/adjoint coupling in practical applications at huge Reynolds
+and Froude numbers. The second topic covers different adjoint coupling strategies. A central aspect
+of the application is the floating position, particularly the trim and the sinkage, that interact
+with a variation of hydrodynamic loads induced by the shape updates. Other topics addressed refer
+to the required level of density coupling and a more straightforward -- yet non-frozen -- adjoint
+treatment of turbulence. The third part discusses the computation of a descent direction within
+a node-based environment. We will illustrate means to deform both the volume mesh and the hull shape
+simultaneously and at the same time obey technical constraints on the vessel's displacement and
+its extensions. The Hilbert-space approach provides smooth shape updates using the established
+coding infrastructure of a computational fluid dynamics algorithm and provides access to managing
+additional technical constraints. Verification and validation follow from a submerged 2D cylinder
+case. The application includes a full-scale offshore supply vessel at Re=3E+08 and Fn=0.37. Results
+illustrate that the fully parallel procedure can automatically reduce the drag of an already pre-optimized
+shape by 9-13 within approximately O(10.000-30.000) CPUh depending on the considered couplings
+and floatation aspects. 

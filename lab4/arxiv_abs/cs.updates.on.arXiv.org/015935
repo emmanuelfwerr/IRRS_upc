@@ -1,0 +1,20 @@
+Class Activation Mapping (CAM) has been widely adopted to generate saliency maps which provides
+visual explanations for deep neural networks (DNNs). The saliency maps are conventionally generated
+by fusing the channels of the target feature map using a weighted average scheme. It is a weak model
+for the inter-channel relation, in the sense that it only models the relation among channels in a
+contrastive way (i.e., channels that play key roles in the prediction are given higher weights for
+them to stand out in the fusion). The collaborative relation, which makes the channels work together
+to provide cross reference, has been ignored. Furthermore, the model has neglected the intra-channel
+relation thoroughly.In this paper, we address this problem by introducing Conceptor learning
+into CAM generation. Conceptor leaning has been originally proposed to model the patterns of state
+changes in recurrent neural networks (RNNs). By relaxing the dependency of Conceptor learning
+to RNNs, we make Conceptor-CAM not only generalizable to more DNN architectures but also able to
+learn both the inter- and intra-channel relations for better saliency map generation. Moreover,
+we have enabled the use of Boolean operations to combine the positive and pseudo-negative evidences,
+which has made the CAM inference more robust and comprehensive. The effectiveness of Conceptor-CAM
+has been validated with both formal verifications and experiments on the dataset of the largest
+scale in literature. The experimental results show that Conceptor-CAM is compatible with and can
+bring significant improvement to all well recognized CAM-based methods, and has outperformed
+the state-of-the-art methods by 43.14%~72.79% (88.39%~168.15%) on ILSVRC2012 in Average Increase
+(Drop), 15.42%~42.55% (47.09%~372.09%) on VOC, and 17.43%~31.32% (47.54%~206.45%) on COCO,
+respectively. 

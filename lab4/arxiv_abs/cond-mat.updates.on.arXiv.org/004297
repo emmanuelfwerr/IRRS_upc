@@ -1,0 +1,19 @@
+Data driven generative machine learning models have recently emerged as one of the most promising
+approaches for new materials discovery. While the generator models can generate millions of candidates,
+it is critical to train fast and accurate machine learning models to filter out stable, synthesizable
+materials with desired properties. However, such efforts to build supervised regression or classification
+screening models have been severely hindered by the lack of unstable or unsynthesizable samples,
+which usually are not collected and deposited in materials databases such as ICSD and Materials
+Project (MP). At the same time, there are a significant amount of unlabelled data available in these
+databases. Here we propose a semi-supervised deep neural network (TSDNN) model for high-performance
+formation energy and synthesizability prediction, which is achieved via its unique teacher-student
+dual network architecture and its effective exploitation of the large amount of unlabeled data.
+For formation energy based stability screening, our semi-supervised classifier achieves an absolute
+10.3\% accuracy improvement compared to the baseline CGCNN regression model. For synthesizability
+prediction, our model significantly increases the baseline PU learning's true positive rate from
+87.9\% to 97.9\% using 1/49 model parameters. To further prove the effectiveness of our models,
+we combined our TSDNN-energy and TSDNN-synthesizability models with our CubicGAN generator to
+discover novel stable cubic structures. Out of 1000 recommended candidate samples by our models,
+512 of them have negative formation energies as validated by our DFT formation energy calculations.
+Our experimental results show that our semi-supervised deep neural networks can significantly
+improve the screening accuracy in large-scale generative materials design. 

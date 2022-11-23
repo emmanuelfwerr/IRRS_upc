@@ -1,0 +1,20 @@
+Deep neural networks have exhibited remarkable performance in image super-resolution (SR) tasks
+by learning a mapping from low-resolution (LR) images to high-resolution (HR) images. However,
+the SR problem is typically an ill-posed problem and existing methods would come with several limitations.
+First, the possible mapping space of SR can be extremely large since there may exist many different
+HR images that can be downsampled to the same LR image. As a result, it is hard to directly learn a promising
+SR mapping from such a large space. Second, it is often inevitable to develop very large models with
+extremely high computational cost to yield promising SR performance. In practice, one can use model
+compression techniques to obtain compact models by reducing model redundancy. Nevertheless,
+it is hard for existing model compression methods to accurately identify the redundant components
+due to the extremely large SR mapping space. To alleviate the first challenge, we propose a dual regression
+learning scheme to reduce the space of possible SR mappings. Specifically, in addition to the mapping
+from LR to HR images, we learn an additional dual regression mapping to estimate the downsampling
+kernel and reconstruct LR images. In this way, the dual mapping acts as a constraint to reduce the
+space of possible mappings. To address the second challenge, we propose a lightweight dual regression
+compression method to reduce model redundancy in both layer-level and channel-level based on channel
+pruning. Specifically, we first develop a channel number search method that minimizes the dual
+regression loss to determine the redundancy of each layer. Given the searched channel numbers,
+we further exploit the dual regression manner to evaluate the importance of channels and prune the
+redundant ones. Extensive experiments show the effectiveness of our method in obtaining accurate
+and efficient SR models. 

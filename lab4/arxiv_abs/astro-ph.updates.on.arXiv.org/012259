@@ -1,0 +1,20 @@
+Some recent literature has claimed there to be an evolution in galaxies' dust temperatures towards
+warmer (or colder) spectral energy distributions (SEDs) between low and high redshift. These conclusions
+are driven by both theoretical models and empirical measurement. Such claims sometimes contradict
+one another and are prone to biases in samples or SED fitting techniques. What has made direct comparisons
+difficult is that there is no uniform approach to fitting galaxies' infrared/millimeter SEDs.
+Here we aim to standardize the measurement of galaxies' dust temperatures with a python-based SED
+fitting procedure, MCIRSED. We draw on reference datasets observed by IRAS, Herschel, and Scuba-2
+to test for redshift evolution out to $z\sim2$. We anchor our work to the L$_{IR}$-$\lambda_{peak}$
+plane, where there is an empirically observed anti-correlation between IR luminosity and rest-frame
+peak wavelength (an observational proxy for luminosity-weighted dust temperature) such that
+$\lambda_{peak}=\lambda_{t}({L_{IR}}/{L_{t}})^{\eta}$ where $\eta=-0.09\pm0.01$, L$_{t}=10^{12}$
+L$_{\odot}$, and $\lambda_{t}=92\pm2\mu$m. We find no evidence for redshift evolution of galaxies'
+temperatures, or $\lambda_{peak}$, at fixed L$_{IR}$ from $0<z<2$ with >99.99% confidence. Our
+finding does not preclude evolution in dust temperatures at fixed stellar mass, which is expected
+from a non-evolving L$_{IR}$-$\lambda_{peak}$ relation and a strongly evolving SFR-M$_\star$
+relation. The breadth of dust temperatures at a given L$_{IR}$ is likely driven by variation in galaxies'
+dust geometries and sizes and does not evolve. Testing for L$_{IR}$-$\lambda_{peak}$ evolution
+toward higher redshift ($z\sim5-6$) requires better sampling of galaxies' dust SEDs near their
+peaks (observed $\sim$200-600$\mu$m) with $<$1 mJy sensitivity. This poses a significant challenge
+to current instrumentation. 

@@ -1,0 +1,20 @@
+The analysis of electrical impulse phenomena in cardiac muscle tissue is important for the diagnosis
+of heart rhythm disorders and other cardiac pathophysiology. Cardiac mapping techniques acquire
+local temporal measurements and combine them to visualize the spread of electrophysiological
+wave phenomena across the heart surface. However, low spatial resolution, sparse measurement
+locations, noise and other artifacts make it challenging to accurately visualize spatio-temporal
+activity. For instance, electro-anatomical catheter mapping is severely limited by the sparsity
+of the measurements, and optical mapping is prone to noise and motion artifacts. In the past, several
+approaches have been proposed to obtain more reliable maps from noisy or sparse mapping data. Here,
+we demonstrate that deep learning can be used to compute phase maps and detect phase singularities
+in optical mapping videos of ventricular fibrillation, as well as in very noisy, low-resolution
+and extremely sparse simulated data of reentrant wave chaos mimicking catheter mapping data. The
+deep learning approach learns to directly associate phase maps and the positions of phase singularities
+with short spatio-temporal sequences of electrical data. We tested several neural network architectures,
+based on a convolutional neural network with an encoding and decoding structure, to predict phase
+maps or rotor core positions either directly or indirectly via the prediction of phase maps and a
+subsequent classical calculation of phase singularities. Predictions can be performed across
+different data, with models being trained on one species and then successfully applied to another,
+or being trained solely on simulated data and then applied to experimental data. Future uses may
+include the analysis of optical mapping studies in basic cardiovascular research, as well as the
+mapping of atrial fibrillation in the clinical setting. 

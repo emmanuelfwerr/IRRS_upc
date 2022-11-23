@@ -1,0 +1,19 @@
+Decomposing a network flow into weighted paths has numerous applications. Some applications require
+any decomposition that is optimal w.r.t. some property such as number of paths, robustness, or length.
+Many bioinformatic applications require a specific decomposition where the paths correspond
+to some underlying data that generated the flow. For real inputs, no optimization criteria guarantees
+to uniquely identify the correct decomposition. Therefore, we propose to report safe paths, i.e.,
+subpaths of at least one path in every flow decomposition. Ma, Zheng, and Kingsford [WABI 2020] addressed
+the existence of multiple optimal solutions in a probabilistic framework, i.e., non-identifiability.
+Later [RECOMB 2021], they gave a quadratic-time algorithm based on a global criterion for solving
+a problem called AND-Quant, which generalizes the problem of reporting whether a given path is safe.
+We give the first local characterization of safe paths for flow decompositions in directed acyclic
+graphs (DAGs), leading to a practical algorithm for finding the complete set of safe paths. We evaluated
+our algorithms against the trivial safe algorithms (unitigs, extended unitigs) and the popularly
+used heuristic (greedy-width) for flow decomposition on RNA transcripts datasets. Despite maintaining
+perfect precision our algorithm reports significantly higher coverage ($\approx 50\%$ more)
+than trivial safe algorithms. The greedy-width algorithm though reporting a better coverage,
+has significantly lower precision on complex graphs. Overall, our algorithm outperforms (by $\approx
+20\%$) greedy-width on a unified metric (F-Score) when the dataset has significant number of complex
+graphs. Moreover, it has superior time ($3-5\times$) and space efficiency ($1.2-2.2\times$),
+resulting in a better and more practical approach for bioinformatics applications of flow decomposition.

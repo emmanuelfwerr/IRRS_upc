@@ -1,0 +1,19 @@
+Simulating fermionic systems on a quantum computer requires a high-performing mapping of fermionic
+states to qubits. The key characteristic of an efficient mapping is its ability to translate local
+fermionic interactions into local qubit interactions, leading to easy-to-simulate qubit Hamiltonians.
+Improvements in the locality of fermion-qubit mappings have traditionally come at higher resource
+costs elsewhere, such as in the form of a significant number of additional qubits. We present a new
+way to design fermion-qubit mappings by making use of the extra degree of freedom: the choice of numbering
+scheme for the fermionic modes, a feature all mappings must have. This allows us to minimse the average
+Pauli weight of a qubit Hamiltonian -- its average number of Pauli matrices per term. Our approach
+leads to a rigorous notion of optimality by viewing fermion-qubit mappings as functions of their
+enumeration schemes. Furthermore, finding the best enumeration scheme allows one to increase
+the locality of the target qubit Hamiltonian without expending any additional resources. Minimising
+the average Pauli weight of a mapping is an NP-complete problem in general. We show how one solution,
+Mitchison and Durbin's enumeration pattern, leads to a qubit Hamiltonian for simulating the square
+fermionic lattice consisting of terms with an average Pauli weight 13.9% shorter than previously
+any previously known. Adding just two ancilla qubits, we can reduce the average Pauli weight of Hamiltonian
+terms by 37.9% on square lattices compared to previous methods. Lastly, we demonstrate the potential
+of our techniques to polynomially reduce the average Pauli weight by exhibiting $n$-mode fermionic
+systems where optimisation yields patterns that achieve $n^{\frac{1}{4}}$ improvement in average
+Pauli weight over na\"ive enumeration schemes. 

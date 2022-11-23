@@ -1,0 +1,18 @@
+Communication noise is a common feature in several real-world scenarios where systems of agents
+need to communicate in order to pursue some collective task. In particular, many biologically inspired
+systems that try to achieve agreements on some opinion must implement resilient dynamics that are
+not strongly affected by noisy communications. In this work, we study the popular 3-Majority dynamics,
+an opinion dynamics which has been proved to be an efficient protocol for the majority consensus
+problem, in which we introduce a simple feature of uniform communication noise, following (d'Amore
+et al. 2020). We prove that in the fully connected communication network of n agents and in the binary
+opinion case, the process induced by the 3-Majority dynamics exhibits a phase transition. For a
+noise probability $p < 1/3$, the dynamics reaches in logarithmic time an almost-consensus metastable
+phase which lasts for a polynomial number of rounds with high probability. Furthermore, departing
+from previous analyses, we further characterize this phase by showing that there exists an attractive
+equilibrium value $s_{\text{eq}} \in [n]$ for the bias of the system, i.e. the difference between
+the majority community size and the minority one. Moreover, the agreement opinion turns out to be
+the initial majority one if the bias towards it is of magnitude $\Omega(\sqrt{n\log n})$ in the initial
+configuration. If, instead, $p > 1/3$, no form of consensus is possible, and any information regarding
+the initial majority opinion is lost in logarithmic time with high probability. Despite more communications
+per-round are allowed, the 3-Majority dynamics surprisingly turns out to be less resilient to noise
+than the Undecided-State dynamics (d'Amore et al. 2020), whose noise threshold value is $p = 1/2$.

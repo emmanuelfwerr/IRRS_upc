@@ -1,0 +1,18 @@
+Open-set domain adaptation (OSDA) has gained considerable attention in many visual recognition
+tasks. However, most existing OSDA approaches are limited due to three main reasons, including:
+(1) the lack of essential theoretical analysis of generalization bound, (2) the reliance on the
+coexistence of source and target data during adaptation, and (3) failing to accurately estimate
+the uncertainty of model predictions. We propose a Progressive Graph Learning (PGL) framework
+that decomposes the target hypothesis space into the shared and unknown subspaces, and then progressively
+pseudo-labels the most confident known samples from the target domain for hypothesis adaptation.
+Moreover, we tackle a more realistic source-free open-set domain adaptation (SF-OSDA) setting
+that makes no assumption about the coexistence of source and target domains, and introduce a balanced
+pseudo-labeling (BP-L) strategy in a two-stage framework, namely SF-PGL. Different from PGL that
+applies a class-agnostic constant threshold for all target samples for pseudo-labeling, the SF-PGL
+model uniformly selects the most confident target instances from each category at a fixed ratio.
+The confidence thresholds in each class are regarded as the 'uncertainty' of learning the semantic
+information, which are then used to weigh the classification loss in the adaptation step. We conducted
+unsupervised and semi-supervised OSDA and SF-OSDA experiments on the benchmark image classification
+and action recognition datasets. Additionally, we find that balanced pseudo-labeling plays a
+significant role in improving calibration, which makes the trained model less prone to over-confident
+or under-confident predictions on the target data. Source code is available at https://github.com/Luoyadan/SF-PGL.

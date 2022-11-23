@@ -1,0 +1,19 @@
+Social media platforms play an important role in democratic processes. During the 2019 General
+Elections of India, political parties and politicians widely used Twitter to share their ideals,
+advocate their agenda and gain popularity. Twitter served as a ground for journalists, politicians
+and voters to interact. The organic nature of these interactions can be upended by malicious accounts
+on Twitter, which end up being suspended or deleted from the platform. Such accounts aim to modify
+the reach of content by inorganically interacting with particular handles. These interactions
+are a threat to the integrity of the platform, as such activity has the potential to affect entire
+results of democratic processes. In this work, we design a feature extraction framework which compactly
+captures potentially insidious interaction patterns. Our proposed features are designed to bring
+out communities amongst the users that work to boost the content of particular accounts. We use Hyperbolic
+Hierarchical Clustering (HypHC) which represents the features in the hyperbolic manifold to further
+separate such communities. HypHC gives the added benefit of representing these features in a lower
+dimensional space -- thus serving as a dimensionality reduction technique. We use these features
+to distinguish between different classes of users that emerged in the aftermath of the 2019 General
+Elections of India. Amongst the users active on Twitter during the elections, 2.8% of the users participating
+were suspended and 1% of the users were deleted from the platform. We demonstrate the effectiveness
+of our proposed features in differentiating between regular users (users who were neither suspended
+nor deleted), suspended users and deleted users. By leveraging HypHC in our pipeline, we obtain
+F1 scores of upto 93%. 

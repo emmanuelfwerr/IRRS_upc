@@ -1,0 +1,19 @@
+This paper is the second part of a series of studies discussing a novel attitude determination method
+for nano-satellites. Our approach is based on the utilization of thermal imaging sensors to determine
+the direction of the Sun and the nadir with respect to the satellite with sub-degree accuracy. The
+proposed method is planned to be applied during the Cubesats Applied for MEasuring and LOcalising
+Transients (CAMELOT) mission aimed at detecting and localizing gamma-ray bursts with an efficiency
+and accuracy comparable to large gamma-ray space observatories. In this paper we introduce a simulation
+model aimed at testing the applicability of our attitude determination approach. Its first part
+simulates the orbit and rotation of a satellite with arbitrary initial conditions while its second
+part applies our attitude determination algorithm which is based on a multiplicative extended
+Kalman filter. The simulated satellite is assumed to be equipped with a GPS system, MEMS gyroscopes
+and the infrasensors. These instruments provide the required data input for the Kalman filter.
+We demonstrate the applicability of our attitude determination algorithm by simulating the motion
+of a nano-satellite on Low Earth Orbit. Our results show that the attitude determination may have
+a 1$\sigma$ error of $\sim30'$ even with a large gyroscope drift during the orbital periods when
+the infrasensors provide both the direction of the Sun and the Earth (the nadir). This accuracy is
+an improvement on the point source detection accuracy of the infrasensors. However, the attitude
+determination error can get as high as 25$^{\circ}$ during periods when the Sun is occulted by the
+Earth. We show that following an occultation period the attitude information is immediately recovered
+by the Kalman filter once the Sun is observed again. 

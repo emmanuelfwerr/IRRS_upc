@@ -1,0 +1,19 @@
+Operational Neural Networks (ONNs) are new generation network models that can perform any (non-linear)
+transformation with a proper combination of "nodal" and "pool" operators. However, they still
+have a certain restriction, which is the sole usage of a single nodal operator for all (synaptic)
+connections of each neuron. The idea behind the "generative neurons" was born as a remedy for this
+restriction where each nodal operator can be "customized" during the training in order to maximize
+the learning performance. Self-Organized ONNs (Self-ONNs) composed with the generative neurons
+can achieve an utmost level of diversity even with a compact configuration; however, it still suffers
+from the last property that was inherited from the CNNs: localized kernel operations which imposes
+a severe limitation to the information flow between layers. It is, therefore, desirable for the
+neurons to gather information from a larger area in the previous layer maps without increasing the
+kernel size. For certain applications, it might be even more desirable "to learn" the kernel locations
+of each connection during the training process along with the customized nodal operators so that
+both can be optimized simultaneously. This study introduces the super (generative) neuron models
+that can accomplish this without altering the kernel sizes and will enable a significant diversity
+in terms of information flow. The two models of super neurons proposed in this study vary on the localization
+process of the kernels: i) randomly localized kernels within a bias range set for each layer, ii)
+optimized locations of each kernel during the Back-Propagation (BP) training. The extensive set
+of comparative evaluations show that Self-ONNs with super-neurons can indeed achieve a superior
+learning and generalization capability without any significant rise of the computational complexity.

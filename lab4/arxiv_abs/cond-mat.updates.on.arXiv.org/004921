@@ -1,0 +1,20 @@
+A central question in computational neuroscience is how structure determines function in neural
+networks. The emerging high-quality large-scale connectomic datasets raise the question of what
+general functional principles can be gleaned from structural information such as the distribution
+of excitatory/inhibitory synapse types and the distribution of synaptic weights. Motivated by
+this question, we developed a statistical mechanical theory of learning in neural networks that
+incorporates structural information as constraints. We derived an analytical solution for the
+memory capacity of the perceptron, a basic feedforward model of supervised learning, with constraint
+on the distribution of its weights. Our theory predicts that the reduction in capacity due to the
+constrained weight-distribution is related to the Wasserstein distance between the imposed distribution
+and that of the standard normal distribution. To test the theoretical predictions, we use optimal
+transport theory and information geometry to develop an SGD-based algorithm to find weights that
+simultaneously learn the input-output task and satisfy the distribution constraint. We show that
+training in our algorithm can be interpreted as geodesic flows in the Wasserstein space of probability
+distributions. We further developed a statistical mechanical theory for teacher-student perceptron
+rule learning and ask for the best way for the student to incorporate prior knowledge of the rule.
+Our theory shows that it is beneficial for the learner to adopt different prior weight distributions
+during learning, and shows that distribution-constrained learning outperforms unconstrained
+and sign-constrained learning. Our theory and algorithm provide novel strategies for incorporating
+prior knowledge about weights into learning, and reveal a powerful connection between structure
+and function in neural networks. 

@@ -1,0 +1,20 @@
+The Difference in Difference (DiD) estimator is a popular estimator built on the "parallel trends"
+assumption. To increase the plausibility of this assumption, a natural idea is to match treated
+and control units prior to a DiD analysis. In this paper, we characterize the bias of matching prior
+to a DiD analysis under a linear structural model. Our framework allows for both observed and unobserved
+confounders that have time varying effects. Given this framework, we find that matching on baseline
+covariates reduces the bias associated with these covariates, when compared to the original DiD
+estimator. We further find that additionally matching on the pre-treatment outcomes has both cost
+and benefit. First, it mitigates the bias associated with unobserved confounders, since matching
+on pre-treatment outcomes partially balances these unobserved confounders. This reduction is
+proportional to the reliability of the outcome, a measure of how coupled the outcomes are with these
+latent covariates. On the other hand, we find that matching on the pre-treatment outcome undermines
+the second "difference" in a DiD estimate by forcing the treated and control group's pre-treatment
+outcomes to be equal. This injects bias into the final estimate, analogous to the case when parallel
+trends holds. We extend our bias results to multivariate confounders with multiple pre-treatment
+periods and find similar results. Finally, we provide heuristic guidelines to practitioners on
+whether to match prior to their DiD analysis, along with a method for roughly estimating the reduction
+in bias. We illustrate our guidelines by reanalyzing a recent empirical study that used matching
+prior to a DiD analysis to explore the impact of principal turnover on student achievement. We find
+that the authors' decision to match on the pre-treatment outcomes was crucial in making the estimated
+treatment effect more credible. 

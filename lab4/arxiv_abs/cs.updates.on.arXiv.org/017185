@@ -1,0 +1,20 @@
+Globally, Skin carcinoma is among the most lethal diseases. Millions of people are diagnosed with
+this cancer every year. Sill, early detection can decrease the medication cost and mortality rate
+substantially. The recent improvement in automated cancer classification using deep learning
+methods has reached a human-level performance requiring a large amount of annotated data assembled
+in one location, yet, finding such conditions usually is not feasible. Recently, federated learning
+(FL) has been proposed to train decentralized models in a privacy-preserved fashion depending
+on labeled data at the client-side, which is usually not available and costly. To address this, we
+propose \verb!FedPerl!, a semi-supervised federated learning method. Our method is inspired
+by peer learning from educational psychology and ensemble averaging from committee machines.
+FedPerl builds communities based on clients' similarities. Then it encourages communities members
+to learn from each other to generate more accurate pseudo labels for the unlabeled data. We also proposed
+the peer anonymization (PA) technique to anonymize clients. As a core component of our method, PA
+is orthogonal to other methods without additional complexity and reduces the communication cost
+while enhancing performance. Finally, we propose a dynamic peer-learning policy that controls
+the learning stream to avoid any degradation in the performance, especially for individual clients.
+Our experimental setup consists of 71,000 skin lesion images collected from 5 publicly available
+datasets. We test our method in four different scenarios in SSFL. With few annotated data, FedPerl
+is on par with a state-of-the-art method in skin lesion classification in the standard setup while
+outperforming SSFLs and the baselines by 1.8% and 15.8%, respectively. Also, it generalizes better
+to unseen clients while being less sensitive to noisy ones. 

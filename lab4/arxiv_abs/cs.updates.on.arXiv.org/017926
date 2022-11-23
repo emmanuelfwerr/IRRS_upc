@@ -1,0 +1,20 @@
+During lung radiotherapy, the position of infrared reflective objects on the chest can be recorded
+to estimate the tumor location. However, radiotherapy systems have a latency inherent to robot
+control limitations that impedes the radiation delivery precision. Prediction with online learning
+of recurrent neural networks (RNN) allows for adaptation to non-stationary respiratory signals,
+but classical methods such as RTRL and truncated BPTT are respectively slow and biased. This study
+investigates the capabilities of unbiased online recurrent optimization (UORO) to forecast respiratory
+motion and enhance safety in lung radiotherapy. We used 9 observation records of the 3D position
+of 3 external markers on the chest and abdomen of healthy individuals breathing during intervals
+from 73s to 222s. The sampling frequency was 10Hz, and the amplitudes of the recorded trajectories
+range from 6mm to 40mm in the superior-inferior direction. We forecast the 3D location of each marker
+simultaneously with a horizon value between 0.1s and 2.0s, using an RNN trained with UORO. We compare
+its performance with an RNN trained with RTRL, LMS, and offline linear regression. We provide closed-form
+expressions for quantities involved in the gradient loss calculation in UORO, thereby making its
+implementation efficient. Training and cross-validation were performed during the first minute
+of each sequence. On average over the horizon values considered and the 9 sequences, UORO achieves
+the lowest root-mean-square (RMS) error and maximum error among the compared algorithms. These
+errors are respectively equal to 1.3mm and 8.8mm, and the prediction time per time step was lower
+than 2.8ms (Dell Intel core i9-9900K 3.60 GHz). Linear regression has the lowest RMS error for the
+horizon values 0.1s and 0.2s, followed by LMS for horizon values between 0.3s and 0.5s, and UORO for
+horizon values greater than 0.6s. 

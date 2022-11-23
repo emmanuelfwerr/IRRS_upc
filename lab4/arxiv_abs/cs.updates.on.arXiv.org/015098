@@ -1,0 +1,18 @@
+With the explosive increase of big data, training a Machine Learning (ML) model becomes a computation-intensive
+workload, which would take days or even weeks. Thus, reusing an already trained model has received
+attention, which is called transfer learning. Transfer learning avoids training a new model from
+scratch by transferring knowledge from a source task to a target task. Existing transfer learning
+methods mostly focus on how to improve the performance of the target task through a specific source
+model, and assume that the source model is given. Although many source models are available, it is
+difficult for data scientists to select the best source model for the target task manually. Hence,
+how to efficiently select a suitable source model in a model database for model reuse is an interesting
+but unsolved problem. In this paper, we propose SMS, an effective, efficient, and flexible source
+model selection framework. SMS is effective even when the source and target datasets have significantly
+different data labels, and is flexible to support source models with any type of structure, and is
+efficient to avoid any training process. For each source model, SMS first vectorizes the samples
+in the target dataset into soft labels by directly applying this model to the target dataset, then
+uses Gaussian distributions to fit for clusters of soft labels, and finally measures the distinguishing
+ability of the source model using Gaussian mixture-based metric. Moreover, we present an improved
+SMS (I-SMS), which decreases the output number of the source model. I-SMS can significantly reduce
+the selection time while retaining the selection performance of SMS. Extensive experiments on
+a range of practical model reuse workloads demonstrate the effectiveness and efficiency of SMS.

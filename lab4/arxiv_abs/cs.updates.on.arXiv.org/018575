@@ -1,0 +1,19 @@
+Network flow is one of the most studied combinatorial optimization problems having innumerable
+applications. Any flow on a directed acyclic graph $G$ having $n$ vertices and $m$ edges can be decomposed
+into a set of $O(m)$ paths. In some applications, each solution (decomposition) corresponds to
+some particular data that generated the original flow. Given the possibility of multiple optimal
+solutions, no optimization criterion ensures the identification of the correct decomposition.
+Hence, recently flow decomposition was studied [RECOMB22] in the Safe and Complete framework,
+particularly for RNA Assembly. They presented a characterization of the safe paths, resulting
+in an $O(mn+out_R)$ time algorithm to compute all safe paths, where $out_R$ is the size of the raw
+output reporting each safe path explicitly. They also showed that $out_R$ can be $\Omega(mn^2)$
+in the worst case but $O(m)$ in the best case. Hence, they further presented an algorithm to report
+a concise representation of the output $out_C$ in $O(mn+out_C)$ time, where $out_C$ can be $\Omega(mn)$
+in the worst case but $O(m)$ in the best case. In this work, we study how different safe paths interact,
+resulting in optimal output-sensitive algorithms requiring $O(m+out_R)$ and $O(m+out_C)$ time
+for computing the existing representations of the safe paths. Further, we propose a new characterization
+of the safe paths resulting in the {\em optimal} representation of safe paths $out_O$, which can
+be $\Omega(mn)$ in the worst case but requires optimal $O(1)$ space for every safe path reported,
+with a near-optimal computation algorithm. Overall we further develop the theory of safe and complete
+solutions for the flow decomposition problem, giving an optimal algorithm for the explicit representation,
+and a near-optimal algorithm for the optimal representation of the safe paths 

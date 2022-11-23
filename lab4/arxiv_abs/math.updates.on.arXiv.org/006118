@@ -1,0 +1,18 @@
+Randomized experiments (trials) are the gold standard for making causal inferences because randomization
+removes systematic confounding and the need for assuming any data-generating (super-population)
+models. However, outcome misclassification (e.g. measurement error or reporting bias in binary
+outcomes) often exists in practice and even a few misclassified outcomes may distort a causal conclusion
+drawn from a randomized experiment. All existing approaches to outcome misclassification rely
+on some data-generating model and therefore may not be applicable to randomized experiments without
+additional strong assumptions. We propose a model-free and finite-population-exact framework
+for randomized experiments subject to outcome misclassification, which does not require adding
+any additional assumptions to a randomized experiment. A central quantity in our framework is "warning
+accuracy," defined as the threshold such that the causal conclusion drawn from the measured outcomes
+may differ from that based on the true outcomes if the accuracy of the measured outcomes did not surpass
+that threshold. We show how learning the warning accuracy and related information and a dual concept
+can benefit the design, analysis, and validation of a randomized experiment. We show that the warning
+accuracy can be computed efficiently (even for large datasets) by adaptively reformulating an
+integer quadratically constrained linear program with respect to the randomization design. Our
+framework covers both Fisher's sharp null and Neyman's weak null, works for a wide range of randomization
+designs, and can also be applied to observational studies adopting randomization-based inference.
+We apply our framework to a large randomized clinical trial of the prevention of prostate cancer.

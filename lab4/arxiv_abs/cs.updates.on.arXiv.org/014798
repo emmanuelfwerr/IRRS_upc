@@ -1,0 +1,20 @@
+Solid-State Drives (SSDs) have significant performance advantages over traditional Hard Disk
+Drives (HDDs) such as lower latency and higher throughput. Significantly higher price per capacity
+and limited lifetime, however, prevents designers to completely substitute HDDs by SSDs in enterprise
+storage systems. SSD-based caching has recently been suggested for storage systems to benefit
+from higher performance of SSDs while minimizing the overall cost. While conventional caching
+algorithms such as Least Recently Used (LRU) provide high hit ratio in processors, due to the highly
+random behavior of Input/Output (I/O) workloads, they hardly provide the required performance
+level for storage systems. In addition to poor performance, inefficient algorithms also shorten
+SSD lifetime with unnecessary cache replacements. Such shortcomings motivate us to benefit from
+more complex non-linear algorithms to achieve higher cache performance and extend SSD lifetime.
+In this paper, we propose RC-RNN, the first reconfigurable SSD-based cache architecture for storage
+systems that utilizes machine learning to identify performance-critical data pages for I/O caching.
+The proposed architecture uses Recurrent Neural Networks (RNN) to characterize ongoing workloads
+and optimize itself towards higher cache performance while improving SSD lifetime. RC-RNN attempts
+to learn characteristics of the running workload to predict its behavior and then uses the collected
+information to identify performance-critical data pages to fetch into the cache. Experimental
+results show that RC-RNN characterizes workloads with an accuracy up to 94.6% for SNIA I/O workloads.
+RC-RNN can perform similarly to the optimal cache algorithm by an accuracy of 95% on average, and
+outperforms previous SSD caching architectures by providing up to 7x higher hit ratio and decreasing
+cache replacements by up to 2x. 

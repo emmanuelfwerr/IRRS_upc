@@ -1,0 +1,19 @@
+Background modelling is one of the main challenges in particle physics data analysis. Commonly
+employed strategies include the use of simulated events of the background processes, and the fitting
+of parametric background models to the observed data. However, reliable simulations are not always
+available or may be extremely costly to produce. As a result, in many cases, uncertainties associated
+with the accuracy or sample size of the simulation are the limiting factor in the analysis sensitivity.
+At the same time, parametric models are limited by the a priori unknown functional form and parameter
+values of the background distribution. These issues become ever more pressing when large datasets
+become available, as it is already the case at the CERN Large Hadron Collider, and when studying exclusive
+signatures involving hadronic backgrounds. Two novel and widely applicable non-parametric data-driven
+background modelling techniques are presented, which address these issues for a broad class of
+searches and measurements. The first, relying on ancestral sampling, uses data from a relaxed event
+selection to estimate a graph of conditional probability density functions of the variables used
+in the analysis, accounting for significant correlations. A background model is then generated
+by sampling events from this graph, before the full event selection is applied. In the second, a generative
+adversarial network is trained to estimate the joint probability density function of the variables
+used in the analysis. The training is performed on a relaxed event selection which excludes the signal
+region, and the network is conditioned on a blinding variable. Subsequently, the conditional probability
+density function is interpolated into the signal region to model the background. The application
+of each method on a benchmark analysis is presented in detail, and the performance is discussed.

@@ -1,0 +1,19 @@
+The SKA will be the largest radio astronomy observatory ever built, providing unprecedented sensitivity
+over a very broad frequency (50 MHz to 15.3 GHz). The SKA-Low (50 - 350 MHz), will be built at the MRO
+in Western Australia. It will consist of 512 stations each composed of 256 dual-polarised antennas,
+and the sensitivity of an individual station is pivotal to the performance of the entire SKA-Low
+telescope. The answer to the question in the title is, it depends. The sensitivity of a low frequency
+array, such as an SKA-Low station, depends strongly on the pointing direction of the digitally formed
+station beam and the local sidereal time (LST), and is different for the two orthogonal polarisations
+of the antennas. The accurate prediction of the SKA-Low sensitivity in an arbitrary direction in
+the sky is crucial for future observation planning. We present here a sensitivity calculator for
+the SKA-Low radio telescope, using a database of pre-computed sensitivity values for two realisations
+of an SKA-Low station architecture. One realisation uses the log-periodic antennas selected for
+SKA-Low. The second uses a known benchmark, in the form of the bowtie dipoles of the MWA. Data collected
+by both stations (deployed at the MRO in 2019) were used to measure their sensitivity at selected
+frequencies and over at least 24 h intervals, and were compared to the predictions described in this
+paper. The sensitivity values stored in the SQLite database were pre-computed for the X, Y and Stokes
+I polarisations in 10 MHz frequency steps, 0.5 hour LST intervals, and 5 degree resolution in pointing
+directions. The database allows users to estimate the sensitivity of SKA-Low for their favourite
+object using interactive web-based or command line interface, which can also calculate the sensitivity
+for arbitrary pointing directions, frequencies, and times without interpolations. 

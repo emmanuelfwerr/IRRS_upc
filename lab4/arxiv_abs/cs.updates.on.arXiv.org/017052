@@ -1,0 +1,20 @@
+The miniaturization of inertial measurement units (IMUs) facilitates their widespread use in
+a growing number of application domains. Orientation estimation is a prerequisite for most further
+data processing steps in inertial motion tracking, such as position/velocity estimation, joint
+angle estimation, and 3D visualization. Errors in the estimated orientations severely affect
+all further processing steps. Few existing publications systematically compare multiple algorithms
+on a broad collection of experimental data, and those publications show that out-of-the-box accuracy
+of existing algorithms is often low and that application-specific tuning is required. In the present
+work, we propose and extensively evaluate an orientation estimation algorithm that is based on
+a novel approach of filtering the acceleration measurements in an almost-inertial frame and that
+includes extensions for gyroscope bias estimation and magnetic disturbance rejection, as well
+as a variant for offline data processing. In contrast to all existing work, we perform a comprehensive
+evaluation, using a large collection of publicly available datasets and eight literature methods
+for comparison. The proposed method consistently outperforms all literature methods and achieves
+an average RMSE of 2.9{\deg}, while the errors obtained with literature methods range from 5.3{\deg}
+to 16.7{\deg}. Since the evaluation was performed with one single fixed parametrization across
+a very diverse dataset collection, we conclude that the proposed method provides unprecedented
+out-of-the-box performance for a broad range of motions, sensor hardware, and environmental conditions.
+This gain in orientation estimation accuracy is expected to advance the field of IMU-based motion
+analysis and provide performance benefits in numerous applications. The provided open-source
+implementation makes it easy to employ the proposed method. 

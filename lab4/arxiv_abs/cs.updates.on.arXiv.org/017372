@@ -1,0 +1,20 @@
+Modern day computer games have extremely large state and action spaces. To detect bugs in these games'
+models, human testers play the games repeatedly to explore the game and find errors in the games.
+Such gameplay is exhaustive and time consuming. Moreover, since robotics simulators depend on
+similar methods of model specification and debugging, the problem of finding errors in the model
+is of interest to the robotics community to ensure robot behaviors and interactions are consistent
+in simulators. Previous methods have used reinforcement learning arXiv:2103.13798 and search
+based methods (Chang, 2019, (Chang, 2021) arXiv:1811.06962 including Rapidly-exploring Random
+Trees (RRT) to explore a game's state-action space to find bugs. However, such search and exploration
+based methods are not efficient at exploring the state-action space without a pre-defined heuristic.
+In this work we attempt to combine a human-tester's expertise in solving games, and the RRT's exhaustiveness
+to search a game's state space efficiently with high coverage. This paper introduces Cloning Assisted
+RRT (CA-RRT) to test a game through search. We compare our methods to two existing baselines: 1) a
+weighted-RRT as described by arXiv:1812.03125; 2) human demonstration seeded RRT as described
+by Chang et. al. We find CA-RRT is applicable to more game maps and explores more game states in fewer
+tree expansions/iterations when compared to the existing baselines. In each test, CA-RRT reached
+more states on average in the same number of iterations as weighted-RRT. In our tested environments,
+CA-RRT reached the same number of states as weighted-RRT by more than 5000 fewer iterations on average,
+almost a 50% reduction and applied to more scenarios than. Moreover, as a consequence of our first
+person behavior cloning approach, CA-RRT worked on unseen game maps than just seeding the RRT with
+human demonstrated states. 

@@ -1,0 +1,20 @@
+We study computational aspects of Gibbs point processes that are defined by a fugacity $\lambda
+\in \mathbb{R}_{\ge 0}$ and a repulsive symmetric pair potential $\phi$ on bounded regions $\mathbb
+V$ of a Polish space, equipped with a volume measure $\nu$. We introduce a new approximate sampler
+for such point processes and a new randomized approximation algorithm for their partition functions
+$\Xi_{\mathbb V}(\lambda, \phi)$. Our algorithms have running time polynomial in the volume $\nu(\mathbb
+V)$ for all fugacities $\lambda < \text e/C_{\phi}$, where $C_{\phi}$ is the temperedness constant
+of $\phi$. In contrast to previous results, our approach is not restricted to finite-range potentials.
+Our approach is based on mapping repulsive Gibbs point processes to hard-core models on a natural
+family of geometric random graphs. Previous discretizations based on hard-core models used deterministic
+graphs, which limited the results to hard-constraint potentials and box-shaped regions in Euclidean
+space. We overcome both limitations by randomization. Specifically, we define a distribution
+$\zeta^{(n)}_{\mathbb V, \phi}$ on graphs of size $n$, such that the hard-core partition function
+of graphs from this distribution concentrates around $\Xi_{\mathbb V}(\lambda, \phi)$. We show
+this by deriving a corollary of the Efron-Stein inequality, which establishes concentration for
+a function $f$ of independent random inputs, given the output of $f$ only exhibits small relative
+changes when an input is altered. Our approximation algorithm follows from approximating the hard-core
+partition function of a random graph from $\zeta^{(n)}_{\mathbb V, \phi}$. Further, we derive
+a sampling algorithm using an approximate sampler for the hard-core model on a random graph from
+$\zeta^{(n)}_{\mathbb V, \phi}$ and prove that its density is close to the desired point process
+via R\'enyi-M\"onch theorem. 

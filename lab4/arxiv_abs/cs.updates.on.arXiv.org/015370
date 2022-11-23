@@ -1,0 +1,19 @@
+In a widely-studied class of multi-parametric optimization problems, the objective value of each
+solution is an affine function of real-valued parameters. Then, the goal is to provide an optimal
+solution set, i.e., a set containing an optimal solution for each non-parametric problem obtained
+by fixing a parameter vector. For many multi-parametric optimization problems, however, an optimal
+solution set of minimum cardinality can contain super-polynomially many solutions. Consequently,
+no polynomial-time exact algorithms can exist for these problems even if $\textsf{P}=\textsf{NP}$.
+We propose an approximation method that is applicable to a general class of multi-parametric optimization
+problems and outputs a set of solutions with cardinality polynomial in the instance size and the
+inverse of the approximation guarantee. This method lifts approximation algorithms for non-parametric
+optimization problems to their parametric version and provides an approximation guarantee that
+is arbitrarily close to the approximation guarantee of the approximation algorithm for the non-parametric
+problem. If the non-parametric problem can be solved exactly in polynomial time or if an FPTAS is
+available, our algorithm is an FPTAS. Further, we show that, for any given approximation guarantee,
+the minimum cardinality of an approximation set is, in general, not $\ell$-approximable for any
+natural number $\ell$ less or equal to the number of parameters, and we discuss applications of our
+results to classical multi-parametric combinatorial optimizations problems. In particular,
+we obtain an FPTAS for the multi-parametric minimum $s$-$t$-cut problem, an FPTAS for the multi-parametric
+knapsack problem, as well as an approximation algorithm for the multi-parametric maximization
+of independence systems problem. 

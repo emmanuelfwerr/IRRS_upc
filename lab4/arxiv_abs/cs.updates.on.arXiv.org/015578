@@ -1,0 +1,20 @@
+Drug-mediated blockade of the voltage-gated potassium channel(hERG) and the voltage-gated sodium
+channel (Nav1.5) can lead to severe cardiovascular complications. This rising concern has been
+reflected in the drug development arena, as the frequent emergence of cardiotoxicity from many
+approved drugs led to either discontinuing their use or, in some cases, their withdrawal from the
+market. Predicting potential hERG and Nav1.5 blockers at the outset of the drug discovery process
+can resolve this problem and can, therefore, decrease the time and expensive cost of developing
+safe drugs. One fast and cost-effective approach is to use in silico predictive methods to weed out
+potential hERG and Nav1.5 blockers at the early stages of drug development. Here, we introduce two
+robust 2D descriptor-based QSAR predictive models for both hERG and Nav1.5 liability predictions.
+The machine learning models were trained for both regression, predicting the potency value of a
+drug, and multiclass classification at three different potency cut-offs (i.e. 1{\mu}M, 10{\mu}M,
+and 30{\mu}M), where ToxTree-hERG Classifier, a pipeline of Random Forest models, was trained
+on a large curated dataset of 8380 unique molecular compounds. Whereas ToxTree-Nav1.5 Classifier,
+a pipeline of kernelized SVM models, was trained on a large manually curated set of 1550 unique compounds
+retrieved from both ChEMBL and PubChem publicly available bioactivity databases. The proposed
+hERG inducer outperformed most metrics of the state-of-the-art published model and other existing
+tools. Additionally, we are introducing the first Nav1.5 liability predictive model achieving
+a Q4 = 74.9% and a binary classification of Q2 = 86.7% with MCC = 71.2% evaluated on an external test
+set of 173 unique compounds. The curated datasets used in this project are made publicly available
+to the research community. 

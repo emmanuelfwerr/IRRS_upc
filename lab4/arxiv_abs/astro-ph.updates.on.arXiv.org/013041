@@ -1,0 +1,20 @@
+Context. Determining properties of dust formed in and around supernovae from observations remains
+challenging. This may be due to either incomplete coverage of data in wavelength or time but also
+due to often inconspicuous signatures of dust in the observed data. Aims. Here we address this challenge
+using modern machine learning methods to determine the amount, composition and temperature of
+dust from a large set of simulated data. We aim to determine whether such methods are suitable to infer
+these properties from future observations of supernovae. Methods. We calculate spectral energy
+distributions (SEDs) of dusty shells around supernovae. We develop a neural network consisting
+of eight fully connected layers and an output layer with specified activation functions that allow
+us to predict the dust mass, temperature and composition and their respective uncertainties from
+each SED. We conduct a feature importance analysis via SHapley Additive exPlanations (SHAP) to
+find the minimum set of JWST filters required to accurately predict these properties. Results.
+We find that our neural network predicts dust masses and temperatures with a root-mean-square error
+(RMSE) of $\sim$ 0.12 dex and $\sim$ 38 K, respectively. Moreover, our neural network can well distinguish
+between the different dust species included in our work, reaching a classification accuracy of
+up to 95\% for carbon and 99\% for silicate dust. Conclusions. Our analysis shows that the JWST filters
+NIRCam F070W, F140M, F356W, F480M and MIRI F560W, F770W, F1000W, F1130W, F1500W, F1800W are likely
+the most important needed to determine the properties of dust formed in and around supernovae from
+future observations. We tested this on selected optical to infrared data of SN 1987A at 615 days past
+explosion and find good agreement with dust masses and temperatures inferred with standard fitting
+methods in the literature. 

@@ -1,0 +1,19 @@
+This paper proposes a belief propagation (BP)-based algorithm for sequential detection and estimation
+of multipath components (MPCs) parameters based on radio signals. Under dynamic channel conditions
+with moving transmitter and/or receiver, the number of MPCs reflected from visible geometric features,
+the MPC dispersion parameters (delay, angle, Doppler frequency, etc), and the number of false alarm
+contributions are unknown and time-varying. We develop a Bayesian model for sequential detection
+and estimation of MPC dispersion parameters, and represent it by a factor graph enabling the use
+of BP for efficient computation of the marginal posterior distributions. At each time instance,
+a snapshot-based channel estimator provides parameter estimates of a set of MPCs which are used
+as noisy measurements by the proposed BP-based algorithm. It performs joint probabilistic data
+association, estimation of the time-varying MPC parameters, and the mean number of false alarm
+measurements by means of the sum-product algorithm rules. The results using synthetic measurements
+show that the proposed algorithm is able to cope with a high number of false alarm measurements originating
+from the snapshot-based channel estimator and to sequentially detect and estimate MPCs parameters
+with very low signal-to-noise ratio (SNR). The performance of the proposed algorithm compares
+well to existing algorithms for high SNR MPCs, but significantly it outperforms them for medium
+or low SNR MPCs. In particular, we show that our algorithm outperforms the Kalman enhanced super
+resolution tracking (KEST) algorithm, a state-of-the-art sequential channel parameters estimation
+method. Furthermore, results with real radio measurements demonstrate the excellent performance
+of the algorithm in realistic and challenging scenarios. 

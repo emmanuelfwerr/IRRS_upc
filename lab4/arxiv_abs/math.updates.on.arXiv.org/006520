@@ -1,0 +1,20 @@
+Low-rank matrix estimation under heavy-tailed noise is challenging, both computationally and
+statistically. Convex approaches have been proven statistically optimal but suffer from high
+computational costs, especially since robust loss functions are usually non-smooth. More recently,
+computationally fast non-convex approaches via sub-gradient descent are proposed, which, unfortunately,
+fail to deliver a statistically consistent estimator even under sub-Gaussian noise. In this paper,
+we introduce a novel Riemannian sub-gradient (RsGrad) algorithm which is not only computationally
+efficient with linear convergence but also is statistically optimal, be the noise Gaussian or heavy-tailed.
+Convergence theory is established for a general framework and specific applications to absolute
+loss, Huber loss, and quantile loss are investigated. Compared with existing non-convex methods,
+ours reveals a surprising phenomenon of dual-phase convergence. In phase one, RsGrad behaves as
+in a typical non-smooth optimization that requires gradually decaying stepsizes. However, phase
+one only delivers a statistically sub-optimal estimator which is already observed in the existing
+literature. Interestingly, during phase two, RsGrad converges linearly as if minimizing a smooth
+and strongly convex objective function and thus a constant stepsize suffices. Underlying the phase-two
+convergence is the smoothing effect of random noise to the non-smooth robust losses in an area close
+but not too close to the truth. Lastly, RsGrad is applicable for low-rank tensor estimation under
+heavy-tailed noise where a statistically optimal rate is attainable with the same phenomenon of
+dual-phase convergence, and a novel shrinkage-based second-order moment method is guaranteed
+to deliver a warm initialization. Numerical simulations confirm our theoretical discovery and
+showcase the superiority of RsGrad over prior methods. 

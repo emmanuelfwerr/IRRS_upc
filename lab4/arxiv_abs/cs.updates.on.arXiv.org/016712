@@ -1,0 +1,19 @@
+Unsupervised domain adaptation aims to train a classification model from the labeled source domain
+for the unlabeled target domain. Since the data distributions of the two domains are different,
+the model often performs poorly on the target domain. Existing methods align the feature distributions
+of the source and target domains and learn domain-invariant features to improve the performance
+of the model. However, the features are usually aligned as a whole, and the domain adaptation task
+fails to serve the classification, which will ignore the class information and lead to misalignment.In
+this paper, we investigate those features that should be used for domain alignment, introduce prior
+knowledge to extract foreground features to guide the domain adaptation task for classification
+tasks, and perform alignment in the local structure of objects. We propose a method called Foreground
+Object Structure Transfer(FOST). The key to FOST is the new clustering based condition, which combines
+the relative position relationship of foreground objects. Based on this conditions, FOST makes
+the data distribution of the same class more compact in geometry. In practice, since the label of
+the target domain is not available, we use the clustering information of the source domain to assign
+pseudo labels to the target domain samples, and then according to the source domain data prior knowledge
+guides those positive features to maximum the inter-class distance between different classes
+and mimimum the intra-class distance. Extensive experimental results on various benchmarks ($i.e.$
+ImageCLEF-DA, Office-31, Office-Home, Visda-2017) under different domain adaptation settings
+prove that our FOST compares favorably against the existing state-of-the-art domain adaptation
+methods. 

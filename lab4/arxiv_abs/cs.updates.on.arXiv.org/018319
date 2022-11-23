@@ -1,0 +1,19 @@
+In this paper, we consider the uplink channel estimation phase and downlink data transmission phase
+of cell-free millimeter wave (mmWave) massive multiple-input multiple-output (MIMO) systems
+with low-capacity fronthaul links and low-resolution analog-to-digital converters/digital-to-analog
+converters (ADC/DACs). In cell-free massive MIMO, a control unit dictates the baseband processing
+at a geographical scale, while the base stations communicate with the control unit through fronthaul
+links. Unlike most of previous works in cell-free massive MIMO with finite-capacity fronthaul
+links, we consider the general case where the fronthaul capacity and ADC/DAC resolution are not
+necessarily the same. In particular, the fronthaul compression and ADC/DAC quantization occur
+independently where each one is modeled based on the information theoretic argument and additive
+quantization noise model (AQNM). Then, we address the codebook design problem that aims to minimize
+the channel estimation error for the independent and identically distributed (i.i.d.) and colored
+compression noise cases. Also, we propose an alternating optimization (AO) method to tackle the
+max-min fairness problem. In essence, the AO method alternates between two subproblems that correspond
+to the power allocation and codebook design problems. The AO method proposed for the zero-forcing
+(ZF) precoder is guaranteed to converge, whereas the one for the maximum ratio transmission (MRT)
+precoder has no such guarantee. Finally, the performance of the proposed schemes is evaluated by
+the simulation results in terms of both energy and spectral efficiency. The numerical results show
+that the proposed scheme for the ZF precoder yields spectral and energy efficiency 28% and 15% higher
+than that of the best baseline. 

@@ -1,0 +1,19 @@
+Although deep neural networks have been immensely successful, there is no comprehensive theoretical
+understanding of how they work or are structured. As a result, deep networks are often seen as black
+boxes with unclear interpretations and reliability. Understanding the performance of deep neural
+networks is one of the greatest scientific challenges. This work aims to apply principles and techniques
+from information theory to deep learning models to increase our theoretical understanding and
+design better algorithms. We first describe our information-theoretic approach to deep learning.
+Then, we propose using the Information Bottleneck (IB) theory to explain deep learning systems.
+The novel paradigm for analyzing networks sheds light on their layered structure, generalization
+abilities, and learning dynamics. We later discuss one of the most challenging problems of applying
+the IB to deep neural networks - estimating mutual information. Recent theoretical developments,
+such as the neural tangent kernel (NTK) framework, are used to investigate generalization signals.
+In our study, we obtained tractable computations of many information-theoretic quantities and
+their bounds for infinite ensembles of infinitely wide neural networks. With these derivations,
+we can determine how compression, generalization, and sample size pertain to the network and how
+they are related. At the end, we present the dual Information Bottleneck (dualIB). This new information-theoretic
+framework resolves some of the IB's shortcomings by merely switching terms in the distortion function.
+The dualIB can account for known data features and use them to make better predictions over unseen
+examples. An analytical framework reveals the underlying structure and optimal representations,
+and a variational framework using deep neural network optimization validates the results. 

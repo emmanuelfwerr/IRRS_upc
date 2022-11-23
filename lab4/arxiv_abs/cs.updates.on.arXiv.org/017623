@@ -1,0 +1,19 @@
+Estimating the preferences of consumers is of utmost importance for the fashion industry as appropriately
+leveraging this information can be beneficial in terms of profit. Trend detection in fashion is
+a challenging task due to the fast pace of change in the fashion industry. Moreover, forecasting
+the visual popularity of new garment designs is even more demanding due to lack of historical data.
+To this end, we propose MuQAR, a Multimodal Quasi-AutoRegressive deep learning architecture that
+combines two modules: (1) a multi-modal multi-layer perceptron processing categorical, visual
+and textual features of the product and (2) a quasi-autoregressive neural network modelling the
+"target" time series of the product's attributes along with the "exogenous" time series of all other
+attributes. We utilize computer vision, image classification and image captioning, for automatically
+extracting visual features and textual descriptions from the images of new products. Product design
+in fashion is initially expressed visually and these features represent the products' unique characteristics
+without interfering with the creative process of its designers by requiring additional inputs
+(e.g manually written texts). We employ the product's target attributes time series as a proxy of
+temporal popularity patterns, mitigating the lack of historical data, while exogenous time series
+help capture trends among interrelated attributes. We perform an extensive ablation analysis
+on two large scale image fashion datasets, Mallzee and SHIFT15m to assess the adequacy of MuQAR and
+also use the Amazon Reviews: Home and Kitchen dataset to assess generalisability to other domains.
+A comparative study on the VISUELLE dataset, shows that MuQAR is capable of competing and surpassing
+the domain's current state of the art by 4.65% and 4.8% in terms of WAPE and MAE respectively. 

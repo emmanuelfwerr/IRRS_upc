@@ -1,0 +1,19 @@
+Age-related macular degeneration (AMD) is the leading cause of visual impairment among elderly
+in the world. Early detection of AMD is of great importance as the vision loss caused by AMD is irreversible
+and permanent. Color fundus photography is the most cost-effective imaging modality to screen
+for retinal disorders. \textcolor{red}{Recently, some algorithms based on deep learning had
+been developed for fundus image analysis and automatic AMD detection. However, a comprehensive
+annotated dataset and a standard evaluation benchmark are still missing.} To deal with this issue,
+we set up the Automatic Detection challenge on Age-related Macular degeneration (ADAM) for the
+first time, held as a satellite event of the ISBI 2020 conference. The ADAM challenge consisted of
+four tasks which cover the main topics in detecting AMD from fundus images, including classification
+of AMD, detection and segmentation of optic disc, localization of fovea, and detection and segmentation
+of lesions. The ADAM challenge has released a comprehensive dataset of 1200 fundus images with the
+category labels of AMD, the pixel-wise segmentation masks of the full optic disc and lesions (drusen,
+exudate, hemorrhage, scar, and other), as well as the location coordinates of the macular fovea.
+A uniform evaluation framework has been built to make a fair comparison of different models. During
+the ADAM challenge, 610 results were submitted for online evaluation, and finally, 11 teams participated
+in the onsite challenge. This paper introduces the challenge, dataset, and evaluation methods,
+as well as summarizes the methods and analyzes the results of the participating teams of each task.
+In particular, we observed that ensembling strategy and clinical prior knowledge can better improve
+the performances of the deep learning models. 

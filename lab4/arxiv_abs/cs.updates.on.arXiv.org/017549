@@ -1,0 +1,20 @@
+Fast mixing of random walks on hypergraphs has led to myriad breakthroughs in theoretical computer
+science in the last five years. On the other hand, many important applications (e.g. to locally testable
+codes, 2-2 games) rely on a more general class of underlying structures called posets, and crucially
+take advantage of non-simplicial structure. These works make it clear the global expansion properties
+of posets depend strongly on their underlying architecture (e.g. simplicial, cubical, linear
+algebraic), but the overall phenomenon remains poorly understood. In this work, we quantify the
+advantage of different poset architectures in both a spectral and combinatorial sense, highlighting
+how regularity controls the spectral decay and edge-expansion of corresponding random walks.
+We show that the spectra of walks on expanding posets (Dikstein, Dinur, Filmus, Harsha APPROX-RANDOM
+2018) concentrate in strips around a small number of approximate eigenvalues controlled by the
+regularity of the underlying poset. This gives a simple condition to identify poset architectures
+(e.g. the Grassmann) that exhibit exponential decay of eigenvalues, versus architectures like
+hypergraphs whose eigenvalues decay linearly -- a crucial distinction in applications to hardness
+of approximation such as the recent proof of the 2-2 Games Conjecture (Khot, Minzer, Safra FOCS 2018).
+We show these results lead to a tight characterization of edge-expansion on posets in the $\ell_2$-regime
+(generalizing recent work of Bafna, Hopkins, Kaufman, and Lovett (SODA 2022)), and pay special
+attention to the case of the Grassmann where we show our results are tight for a natural set of sparsifications
+of the Grassmann graphs. We note for clarity that our results do not recover the characterization
+of expansion used in the proof of the 2-2 Games Conjecture which relies on $\ell_\infty$ rather than
+$\ell_2$-structure. 

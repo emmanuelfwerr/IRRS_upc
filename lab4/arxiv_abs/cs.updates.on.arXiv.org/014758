@@ -1,0 +1,20 @@
+Severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) has caused an ongoing pandemic infecting
+219 million people as of 10/19/21, with a 3.6% mortality rate. Natural selection can generate favorable
+mutations with improved fitness advantages; however, the identified coronaviruses may be the
+tip of the iceberg, and potentially more fatal variants of concern (VOCs) may emerge over time. Understanding
+the patterns of emerging VOCs and forecasting mutations that may lead to gain of function or immune
+escape is urgently required. Here we developed PhyloTransformer, a Transformer-based discriminative
+model that engages a multi-head self-attention mechanism to model genetic mutations that may lead
+to viral reproductive advantage. In order to identify complex dependencies between the elements
+of each input sequence, PhyloTransformer utilizes advanced modeling techniques, including a
+novel Fast Attention Via positive Orthogonal Random features approach (FAVOR+) from Performer,
+and the Masked Language Model (MLM) from Bidirectional Encoder Representations from Transformers
+(BERT). PhyloTransformer was trained with 1,765,297 genetic sequences retrieved from the Global
+Initiative for Sharing All Influenza Data (GISAID) database. Firstly, we compared the prediction
+accuracy of novel mutations and novel combinations using extensive baseline models; we found that
+PhyloTransformer outperformed every baseline method with statistical significance. Secondly,
+we examined predictions of mutations in each nucleotide of the receptor binding motif (RBM), and
+we found our predictions were precise and accurate. Thirdly, we predicted modifications of N-glycosylation
+sites to identify mutations associated with altered glycosylation that may be favored during viral
+evolution. We anticipate that PhyloTransformer may guide proactive vaccine design for effective
+targeting of future SARS-CoV-2 variants. 

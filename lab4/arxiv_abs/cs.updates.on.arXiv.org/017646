@@ -1,0 +1,20 @@
+The quasi-dynamic energy flow calculation of the heat and electricity integrated energy systems
+(HE-IESs) faces the challenges of inefficiency and divergence. This is because traditional iteration
+solvers cannot guarantee to find exact solutions of these nonlinear equations in prescribed number
+of steps. This paper presents a novel non-iterative solver for the nonlinear partial differential
+algebraic equations of the quasi-dynamic energy flow models. The kernel of the proposed method
+consists of: 1) first, discretizing the spatial derivative of partial differential equations
+(PDEs), which converts the PDEs into ordinary differential equations, and 2) second, deriving
+explicit closed-form time-polynomial solutions, which are called semi-analytical solutions
+(SASs), of each unknown variable in the resulting nonlinear ordinary differential algebraic equations.
+For the first step, we use a scheme with total variation decreasing (TVD) property to eliminate the
+dissipative and dispersive errors that are often overlooked in previous researches. For the second
+step, we establish an efficient SAS-derivation framework based on differential transformation
+(DT). The framework derives SASs to any given order in a non-iterative way and, after deriving these
+SASs, we can draw smooth trajectories of variables by substituting time-series into these time-polynomials,
+which greatly accelerates the energy flow calculation. To ensure convergence, we also propose
+to control the temporal step sizes adaptively by estimating the simulation errors. Case studies
+on an HE-IES with 225 heating nodes and 118 electrical buses show that: 1) the proposed method achieves
+speed-up 1036.6% and 624.2%, and error reduction 30% and 41% in the two simulation scenarios respectively
+compared with the finite-difference-based iteration solver, and 2) the proposed method displays
+strong robustness under loading level variations. 

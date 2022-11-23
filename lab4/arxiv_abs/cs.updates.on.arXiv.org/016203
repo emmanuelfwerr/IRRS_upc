@@ -1,0 +1,20 @@
+Proving secure compilation of partial programs typically requires back-translating an attack
+against the compiled program to an attack against the source program. To prove back-translation,
+one can syntactically translate the target attacker to a source one -- i.e., syntax-directed back-translation
+-- or show that the interaction traces of the target attacker can also be emitted by source attackers
+-- i.e., trace-directed back-translation. Syntax-directed back-translation is not suitable
+when the target attacker may use unstructured control flow that the source language cannot directly
+represent. Trace-directed back-translation works with such syntactic dissimilarity because
+only the external interactions of the target attacker have to be mimicked in the source, not its internal
+control flow. Revealing only external interactions is, however, inconvenient when sharing memory
+via unforgeable pointers, since information about shared pointers stashed in private memory is
+not present on the trace. This made prior proofs unnecessarily complex, since the generated attacker
+had to instead stash all reachable pointers. In this work, we introduce more informative data-flow
+traces, combining the best of syntax- and trace-directed back-translation in a simpler technique
+that handles both syntactic dissimilarity and memory sharing well, and that is proved correct in
+Coq. Additionally, we develop a novel turn-taking simulation relation and use it to prove a recomposition
+lemma, which is key to reusing compiler correctness in such secure compilation proofs. We are the
+first to mechanize such a recomposition lemma in the presence of memory sharing. We use these two
+innovations in a secure compilation proof for a code generation compiler pass between a source language
+with structured control flow and a target language with unstructured control flow, both with safe
+pointers and components. 

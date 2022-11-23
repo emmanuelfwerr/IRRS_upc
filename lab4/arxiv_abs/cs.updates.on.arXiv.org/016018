@@ -1,0 +1,18 @@
+In this paper, we conduct extensive research on exploring the contribution of transformers to salient
+object detection, achieving both accurate and reliable saliency predictions. We first investigate
+transformers for accurate salient object detection with deterministic neural networks, and explain
+that the effective structure modeling and global context modeling abilities lead to its superior
+performance compared with the CNN based frameworks. Then, we design stochastic networks to evaluate
+the transformers' ability in reliable salient object detection. We observe that both CNN and transformer
+based frameworks suffer greatly from the over-confidence issue, where the models tend to generate
+wrong predictions with high confidence, leading to over-confident predictions or a poorly-calibrated
+model. To estimate the calibration degree of both CNN- and transformer-based frameworks for reliable
+saliency prediction, we introduce generative adversarial network (GAN) based models to identify
+the over-confident regions by sampling from the latent space. Specifically, we present the inferential
+generative adversarial network (iGAN). Different from the conventional GAN based framework,
+which defines the distribution of the latent variable as fixed standard normal distribution N(0,1),
+the proposed "iGAN" infers the latent variable by gradient-based Markov Chain Monte Carlo (MCMC),
+namely Langevin dynamics. We apply the proposed inferential generative adversarial network (iGAN)
+to both fully and weakly supervised salient object detection, and explain that iGAN within the transformer
+framework leads to both accurate and reliable salient object detection. The source code and experimental
+results are publicly available via our project page: https://github.com/fupiao1998/TrasformerSOD.

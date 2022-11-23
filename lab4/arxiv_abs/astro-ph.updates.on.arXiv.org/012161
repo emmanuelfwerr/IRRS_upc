@@ -1,0 +1,20 @@
+We describe a versatile pipeline for processing the data collected by the Ultra-Violet Imaging
+Telescope (UVIT) on board Indian Multi-wavelength astronomical satellite AstroSat.The UVIT
+instrument carries out simultaneous astronomical imaging through selected filters / gratings
+in Far-Ultra-Violet (FUV), Near-Ultra-Violet & visible (VIS) bands of the targeted circular sky
+field (~ 0.5 deg dia). This pipeline converts the data (Level-1) emanating from UVIT in their raw
+primitive format supplemented by inputs from the spacecraft sub-systems into UV sky images (& slitless
+grating spectra) and associated products readily usable by astronomers (Level-2). The primary
+products include maps of Intensity (rate of photon arrival), error on Intensity and effective Exposure.
+The pipeline is open source, extensively user configurable with many selectable parameters and
+its execution is fully automated. The key ingredients of the pipeline includes - extraction of drift
+in pointing of the spacecraft, and disturbances in pointing due to internal movements; application
+of various corrections to measured position in the detector for each photon - e.g. differential
+pointing with respect to a reference frame for shift and add operation, systematic effects and artifacts
+in the optics of the telescopes and detectors, exposure tracking on the sky, alignment of sky products
+from multi-episode exposures to generate a consolidated set and astrometry. Detailed logs of operations
+and intermediate products for every processing stage are accessible via user selectable options.
+While large number of selectable parameters are available for the user, a well characterized standard
+default set is used for executing this pipeline at the Payload Operation Centre (POC) for UVIT and
+selected products are archived and disseminated by the Indian Space Research Organization (ISRO)
+through its ISSDC portal. 

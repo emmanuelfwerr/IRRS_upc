@@ -1,0 +1,18 @@
+The generation of well-designed artwork is often quite time-consuming and assumes a high degree
+of proficiency on part of the human painter. In order to facilitate the human painting process, substantial
+research efforts have been made on teaching machines how to "paint like a human", and then using the
+trained agent as a painting assistant tool for human users. However, current research in this direction
+is often reliant on a progressive grid-based division strategy wherein the agent divides the overall
+image into successively finer grids, and then proceeds to paint each of them in parallel. This inevitably
+leads to artificial painting sequences which are not easily intelligible to human users. To address
+this, we propose a novel painting approach which learns to generate output canvases while exhibiting
+a more human-like painting style. The proposed painting pipeline Intelli-Paint consists of 1)
+a progressive layering strategy which allows the agent to first paint a natural background scene
+representation before adding in each of the foreground objects in a progressive fashion. 2) We also
+introduce a novel sequential brushstroke guidance strategy which helps the painting agent to shift
+its attention between different image regions in a semantic-aware manner. 3) Finally, we propose
+a brushstroke regularization strategy which allows for ~60-80% reduction in the total number of
+required brushstrokes without any perceivable differences in the quality of the generated canvases.
+Through both quantitative and qualitative results, we show that the resulting agents not only show
+enhanced efficiency in output canvas generation but also exhibit a more natural-looking painting
+style which would better assist human users express their ideas through digital artwork. 

@@ -1,0 +1,20 @@
+We study a control problem for queueing systems where customers may return for additional episodes
+of service after their initial service completion. At each service completion epoch, the decision
+maker can choose to reduce the probability of return for the departing customer but at a cost that
+is convex increasing in the amount of reduction in the return probability. Other costs are incurred
+as customers wait in the queue and every time they return for service. Our primary motivation comes
+from post-discharge Quality Improvement (QI) interventions (e.g., follow up phone-calls, appointments)
+frequently used in a variety of healthcare settings to reduce unplanned hospital readmissions.
+Our objective is to understand how the cost of interventions should be balanced with the reductions
+in congestion and service costs. To this end, we consider a fluid approximation of the queueing system
+and characterize the structure of optimal long-run average and bias-optimal transient control
+policies for the fluid model. Our structural results motivate the design of intuitive surge protocols
+whereby different intensities of interventions (corresponding to different levels of reduction
+in the return probability) are provided based on the congestion in the system. Through extensive
+simulation experiments, we study the performance of the fluid policy for the stochastic system
+and identify parameter regimes where it leads to significant cost savings compared to a fixed long-run
+average optimal policy that ignores holding costs and a simple policy that uses the highest level
+of intervention whenever the queue is non-empty. In particular, we find that in a parameter regime
+relevant to our motivating application, dynamically adjusting the intensity of interventions
+could result in up to 25.4% reduction in long-run average cost and 33.7% in finite-horizon costs
+compared to the simple aggressive policy. 

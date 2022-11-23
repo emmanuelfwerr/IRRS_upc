@@ -1,0 +1,20 @@
+Projected-search methods for bound-constrained optimization are based on performing a search
+along a piecewise-linear continuous path obtained by projecting a search direction onto the feasible
+region. A benefit of these methods is that many changes to the active set can be made at the cost of computing
+a single search direction. As the objective function is not differentiable along the search path,
+it is not possible to use a projected-search method with a step that satisfies the Wolfe conditions,
+which require the directional derivative of the objective function at a point on the path. Thus,
+methods based on a simple backtracking procedure must be used to give a step that satisfies an "Armijo-like"
+sufficient decrease condition. As a consequence, conventional projected-search methods are
+unable to exploit sophisticated safeguarded polynomial interpolation techniques that have been
+shown to be effective for the unconstrained case. This paper concerns the formulation and analysis
+of projected-search methods based on a new quasi-Wolfe line search that is appropriate for piecewise
+differentiable functions. The behavior of the line search is similar to conventional Wolfe line
+search, except that a step is accepted under a wider range of conditions. These conditions take into
+consideration steps at which the restriction of the objective function on the search path is not
+differentiable. Two new classes of method are proposed that may be broadly categorized as active-set
+and interior-point methods. Computational results are given for two specific methods from these
+general classes: a projected-search active-set method that uses a limited-memory quasi-Newton
+approximation of the Hessian; and a projected-search primal-dual interior-point method. The
+results show that in these contexts, a quasi-Wolfe line search is substantially more efficient
+and reliable than an Armijo line search. 

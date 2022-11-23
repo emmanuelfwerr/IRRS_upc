@@ -1,0 +1,19 @@
+In today's digital world, we are faced with an explosion of data and models produced and manipulated
+by numerous large-scale cloud-based applications. Under such settings, existing transfer evolutionary
+optimization frameworks grapple with simultaneously satisfying two important quality attributes,
+namely (1) scalability against a growing number of source tasks and (2) online learning agility
+against sparsity of relevant sources to the target task of interest. Satisfying these attributes
+shall facilitate practical deployment of transfer optimization to scenarios with big task-instances,
+while curbing the threat of negative transfer. While applications of existing algorithms are limited
+to tens of source tasks, in this paper, we take a quantum leap forward in enabling more than two orders
+of magnitude scale-up in the number of tasks; i.e., we efficiently handle scenarios beyond 1000
+source task-instances. We devise a novel transfer evolutionary optimization framework comprising
+two co-evolving species for joint evolutions in the space of source knowledge and in the search space
+of solutions to the target problem. In particular, co-evolution enables the learned knowledge
+to be orchestrated on the fly, expediting convergence in the target optimization task. We have conducted
+an extensive series of experiments across a set of practically motivated discrete and continuous
+optimization examples comprising a large number of source task-instances, of which only a small
+fraction indicate source-target relatedness. The experimental results show that not only does
+our proposed framework scale efficiently with a growing number of source tasks but is also effective
+in capturing relevant knowledge against sparsity of related sources, fulfilling the two salient
+features of scalability and online learning agility. 

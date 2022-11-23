@@ -1,0 +1,20 @@
+Continual learning describes a setting where machine learning models learn novel concepts from
+continuously shifting training data, while simultaneously avoiding degradation of knowledge
+on previously seen classes (a phenomenon known as the catastrophic forgetting problem) which may
+disappear from the training data for extended periods of time. Current approaches for continual
+learning of a single expanding task (aka class-incremental continual learning) require extensive
+rehearsal of previously seen data to avoid this degradation of knowledge. Unfortunately, rehearsal
+comes at a sharp cost to memory and computation, and it may also violate data-privacy. Instead, we
+explore combining knowledge distillation and parameter regularization in new ways to achieve
+strong continual learning performance without rehearsal. Specifically, we take a deep dive into
+common continual learning techniques: prediction distillation, feature distillation, L2 parameter
+regularization, and EWC parameter regularization. We first disprove the common assumption that
+parameter regularization techniques fail for rehearsal-free continual learning of a single,
+expanding task. Next, we explore how to leverage knowledge from a pre-trained model in rehearsal-free
+continual learning and find that vanilla L2 parameter regularization outperforms EWC parameter
+regularization and feature distillation. We then highlight the impact of the rehearsal-free continual
+learning settings with a classifier expansion benchmark, showing that a strategy based on our findings
+combined with a positive/negative label balancing heuristic can close the performance gap between
+the upper bound and the existing strategies by up to roughly 50%. Finally, we show that a simple method
+consisting of pre-training, L2 regularization, and prediction distillation can even outperform
+rehearsal-based methods on the common CIFAR-100 benchmark. 

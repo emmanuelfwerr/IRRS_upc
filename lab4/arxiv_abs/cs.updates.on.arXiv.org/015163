@@ -1,0 +1,19 @@
+We introduce a natural online allocation problem that connects several of the most fundamental
+problems in online optimization. Let $M$ be an $n$-point metric space. Consider a resource that
+can be allocated in arbitrary fractions to the points of $M$. At each time $t$, a convex monotone cost
+function $c_t: [0,1]\to\mathbb{R}_+$ appears at some point $r_t\in M$. In response, an algorithm
+may change the allocation of the resource, paying movement cost as determined by the metric and service
+cost $c_t(x_{r_t})$, where $x_{r_t}$ is the fraction of the resource at $r_t$ at the end of time $t$.
+For example, when the cost functions are $c_t(x)=\alpha x$, this is equivalent to randomized MTS,
+and when the cost functions are $c_t(x)=\infty\cdot 1_{x<1/k}$, this is equivalent to fractional
+$k$-server. We give an $O(\log n)$-competitive algorithm for weighted star metrics. Due to the
+generality of allowed cost functions, classical multiplicative update algorithms do not work
+for the metric allocation problem. A key idea of our algorithm is to decouple the rate at which a variable
+is updated from its value, resulting in interesting new dynamics. This can be viewed as running mirror
+descent with a time-varying regularizer, and we use this perspective to further refine the guarantees
+of our algorithm. The standard analysis techniques run into multiple complications when the regularizer
+is time-varying, and we show how to overcome these issues by making various modifications to the
+default potential function. We also consider the problem when cost functions are allowed to be non-convex.
+In this case, we give tight bounds of $\Theta(n)$ on tree metrics, which imply deterministic and
+randomized competitive ratios of $O(n^2)$ and $O(n\log n)$ respectively on arbitrary metrics.
+Our algorithm is based on an $\ell_2^2$-regularizer. 

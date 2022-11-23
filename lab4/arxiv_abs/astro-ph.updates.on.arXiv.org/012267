@@ -1,0 +1,20 @@
+Extragalactic globular clusters (GCs) are important tracers of galaxy formation and evolution.
+Obtaining GC catalogues from photometric data involves several steps which will likely become
+too time-consuming to perform on the large data volumes that are expected from upcoming wide-field
+imaging projects such as Euclid. In this work, we explore the feasibility of various machine learning
+(ML) methods to aid the search for GCs. We use archival Hubble Space Telescope data in the F475W and
+F850LP bands of 141 early-type galaxies in the Fornax and Virgo galaxy clusters. Using existing
+GC catalogues to label the data, we obtain an extensive data set of 84929 sources containing 18556
+GCs and we train several ML methods both on image and tabular data containing physically relevant
+features extracted from the images. We find that our evaluated ML models are capable of producing
+catalogues of similar quality as the existing ones. The best performing methods, ensemble-based
+models like random forests and convolutional neural networks, recover ~ 90-94 % of GCs while producing
+an acceptable amount of false detections (~ 6-8 %) - with some falsely detected sources being identifiable
+as GCs that have not been labelled as such in the used catalogues. In the magnitude range 22 < m4_g <
+24.5 mag, 98 - 99 % of GCs are recovered. We even find such high performance levels when training on
+Virgo and evaluating on Fornax data (and vice versa), illustrating that the models are transferable
+to environments with different conditions such as different distances than in the used training
+data. Additionally, we demonstrate how interpretable methods can be used to better understand
+model predictions, recovering that magnitudes, colours, and sizes are important for identifying
+GCs. These are encouraging results, indicating that similar methods can be applied for creating
+GC catalogues for a large number of galaxies. 

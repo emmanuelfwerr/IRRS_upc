@@ -1,0 +1,19 @@
+As the global need for large-scale data storage is rising exponentially, existing storage technologies
+are approaching their theoretical and functional limits in terms of density and energy consumption,
+making DNA based storage a potential solution for the future of data storage. Several studies introduced
+DNA based storage systems with high information density (petabytes/gram). However, DNA synthesis
+and sequencing technologies yield erroneous outputs. Algorithmic approaches for correcting
+these errors depend on reading multiple copies of each sequence and result in excessive reading
+costs. The unprecedented success of Transformers as a deep learning architecture for language
+modeling has led to its repurposing for solving a variety of tasks across various domains. In this
+work, we propose a novel approach for single-read reconstruction using an encoder-decoder Transformer
+architecture for DNA based data storage. We address the error correction process as a self-supervised
+sequence-to-sequence task and use synthetic noise injection to train the model using only the decoded
+reads. Our approach exploits the inherent redundancy of each decoded file to learn its underlying
+structure. To demonstrate our proposed approach, we encode text, image and code-script files to
+DNA, produce errors with high-fidelity error simulator, and reconstruct the original files from
+the noisy reads. Our model achieves lower error rates when reconstructing the original data from
+a single read of each DNA strand compared to state-of-the-art algorithms using 2-3 copies. This
+is the first demonstration of using deep learning models for single-read reconstruction in DNA
+based storage which allows for the reduction of the overall cost of the process. We show that this
+approach is applicable for various domains and can be generalized to new domains as well. 

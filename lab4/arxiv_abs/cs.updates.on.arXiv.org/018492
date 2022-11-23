@@ -1,0 +1,19 @@
+There is an increase in deploying Deep Learning (DL)-based software systems in real-world applications.
+Usually DL models are developed and trained using DL frameworks that have their own internal mechanisms/formats
+to represent and train DL models, and usually those formats cannot be recognized by other frameworks.
+Moreover, trained models are usually deployed in environments different from where they were developed.
+To solve the interoperability issue and make DL models compatible with different frameworks/environments,
+some exchange formats are introduced for DL models, like ONNX and CoreML. However, ONNX and CoreML
+were never empirically evaluated by the community to reveal their prediction accuracy, performance,
+and robustness after conversion. Poor accuracy or non-robust behavior of converted models may
+lead to poor quality of deployed DL-based software systems. We conduct, in this paper, the first
+empirical study to assess ONNX and CoreML for converting trained DL models. In our systematic approach,
+two popular DL frameworks, Keras and PyTorch, are used to train five widely used DL models on three
+popular datasets. The trained models are then converted to ONNX and CoreML and transferred to two
+runtime environments designated for such formats, to be evaluated. We investigate the prediction
+accuracy before and after conversion. Our results unveil that the prediction accuracy of converted
+models are at the same level of originals. The performance (time cost and memory consumption) of
+converted models are studied as well. The size of models are reduced after conversion, which can
+result in optimized DL-based software deployment. Converted models are generally assessed as
+robust at the same level of originals. However, obtained results show that CoreML models are more
+vulnerable to adversarial attacks compared to ONNX. 

@@ -1,0 +1,20 @@
+Automatic question generation is one of the most challenging tasks of Natural Language Processing.
+It requires "bidirectional" language processing: firstly, the system has to understand the input
+text (Natural Language Understanding) and it then has to generate questions also in the form of text
+(Natural Language Generation). In this article, we introduce our framework for generating the
+factual questions from unstructured text in the English language. It uses a combination of traditional
+linguistic approaches based on sentence patterns with several machine learning methods. We firstly
+obtain lexical, syntactic and semantic information from an input text and we then construct a hierarchical
+set of patterns for each sentence. The set of features is extracted from the patterns and it is then
+used for automated learning of new transformation rules. Our learning process is totally data-driven
+because the transformation rules are obtained from a set of initial sentence-question pairs. The
+advantages of this approach lie in a simple expansion of new transformation rules which allows us
+to generate various types of questions and also in the continuous improvement of the system by reinforcement
+learning. The framework also includes a question evaluation module which estimates the quality
+of generated questions. It serves as a filter for selecting the best questions and eliminating incorrect
+ones or duplicates. We have performed several experiments to evaluate the correctness of generated
+questions and we have also compared our system with several state-of-the-art systems. Our results
+indicate that the quality of generated questions outperforms the state-of-the-art systems and
+our questions are also comparable to questions created by humans. We have also created and published
+an interface with all created datasets and evaluated questions, so it is possible to follow up on
+our work. 

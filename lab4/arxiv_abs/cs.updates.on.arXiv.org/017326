@@ -1,0 +1,19 @@
+Structural graph parameters, such as treewidth, pathwidth, and clique-width, are a central topic
+of study in parameterized complexity. A main aim of research in this area is to understand the "price
+of generality" of these widths: as we transition from more restrictive to more general notions,
+which are the problems that see their complexity status deteriorate from fixed-parameter tractable
+to intractable? This type of question is by now very well-studied, but, somewhat strikingly, the
+algorithmic frontier between the two (arguably) most central width notions, treewidth and pathwidth,
+is still not understood: currently, no natural graph problem is known to be W-hard for one but FPT
+for the other. Indeed, a surprising development of the last few years has been the observation that
+for many of the most paradigmatic problems, their complexities for the two parameters actually
+coincide exactly, despite the fact that treewidth is a much more general parameter. It would thus
+appear that the extra generality of treewidth over pathwidth often comes "for free". Our main contribution
+in this paper is to uncover the first natural example where this generality comes with a high price.
+We consider Grundy Coloring, a variation of coloring where one seeks to calculate the worst possible
+coloring that could be assigned to a graph by a greedy First-Fit algorithm. We show that this well-studied
+problem is FPT parameterized by pathwidth; however, it becomes significantly harder (W[1]-hard)
+when parameterized by treewidth. Furthermore, we show that Grundy Coloring makes a second complexity
+jump for more general widths, as it becomes para-NP-hard for clique-width. Hence, Grundy Coloring
+nicely captures the complexity trade-offs between the three most well-studied parameters. Completing
+the picture, we show that Grundy Coloring is FPT parameterized by modular-width. 

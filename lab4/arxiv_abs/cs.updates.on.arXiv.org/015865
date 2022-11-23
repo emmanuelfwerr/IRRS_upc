@@ -1,0 +1,19 @@
+Recently, random walks on dynamic graphs have been studied because of their adaptivity to the time-varying
+structure of real-world networks. In general, there is a tremendous gap between static and dynamic
+graph settings for the lazy simple random walk: Although $O(n^3)$ cover time was shown for any static
+graphs of $n$ vertices, there is an edge-changing dynamic graph with an exponential hitting time.
+On the other hand, previous works indicate that the random walk on a dynamic graph with a time-homogeneous
+stationary distribution behaves almost identically to that on a static graph. In this paper, we
+strengthen this insight by obtaining general and improved bounds. Specifically, we consider a
+random walk according to a sequence $(P_t)_{t\geq 1}$ of irreducible and reversible transition
+matrices such that all $P_t$ have the same stationary distribution. We bound the mixing, hitting,
+and cover times in terms of the hitting and relaxation times of the random walk according to the worst
+fixed $P_t$. Moreover, we obtain the first bounds of the hitting and cover times of multiple random
+walks and the coalescing time on dynamic graphs. These bounds can be seen as an extension of the well-known
+bounds of random walks on static graphs. Our results generalize the previous upper bounds for specific
+random walks on dynamic graphs, e.g., lazy simple random walks and $d_{\max}$-lazy walks, and give
+improved and tight upper bounds in various cases. As an interesting consequence of our generalization,
+we obtain tight bounds for the lazy Metropolis walk [Nonaka, Ono, Sadakane, and Yamashita, TCS10]
+on any dynamic graph: $O(n^2)$ mixing time, $O(n^2)$ hitting time, and $O(n^2\log n)$ cover time.
+Additionally, our coalescing time bound implies the consensus time bound of the pull voting on a
+dynamic graph. 

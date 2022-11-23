@@ -1,0 +1,20 @@
+The optimization of the electrodes manufacturing process constitutes one of the most critical
+steps to ensure high-quality Lithium-Ion Battery (LIB) cells, in particular for automotive applications.
+Because LIB electrode manufacturing is a complex process involving multiple steps and interdependent
+parameters, we have shown in our previous works that 3D-resolved physics-based models constitute
+very useful tools to provide insights about the impact of the manufacturing process parameters
+on the textural and performance properties of the electrodes. However, their high-throughput
+application for electrode properties optimization and inverse design of manufacturing parameters
+is limited due to the high computational cost associated with this kind of model. In this work, we
+tackle this issue by proposing an innovative approach, supported by a deterministic machine learning
+(ML)-assisted pipeline for multi-objective optimization of LIB electrode properties and inverse
+design of its manufacturing process. Firstly, the pipeline generates a synthetic dataset from
+physics-based simulations with low discrepancy sequences, that allow to sufficiently represent
+the manufacturing parameters space. Secondly, the generated dataset is used to train deterministic
+ML models for the implementation of a fast multi-objective optimization, to identify an optimal
+electrode and the manufacturing parameters to adopt in order to fabricate it. Lastly, this electrode
+was successfully fabricated experimentally, proving that our modeling pipeline prediction is
+physical-relevant. Here, we demonstrate our pipeline for the simultaneous minimization of the
+electrode tortuosity factor and maximization of the effective electronic conductivity, the active
+surface area, and the density, all being parameters that affect the Li$^+$ (de-)intercalation
+kinetics, ionic, and electronic transport properties of the electrode. 

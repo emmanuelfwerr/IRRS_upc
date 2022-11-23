@@ -1,0 +1,19 @@
+We study the Weighted Min Cut problem in the Adaptive Massively Parallel Computation (AMPC) model.
+In 2019, Behnezhad et al. [3] introduced the AMPC model as an extension of the Massively Parallel
+Computation (MPC) model. In the past decade, research on highly scalable algorithms has had significant
+impact on many massive systems. The MPC model, introduced in 2010 by Karloff et al. [16], which is
+an abstraction of famous practical frameworks such as MapReduce, Hadoop, Flume, and Spark, has
+been at the forefront of this research. While great strides have been taken to create highly efficient
+MPC algorithms for a range of problems, recent progress has been limited by the 1-vs-2 Cycle Conjecture
+[20], which postulates that the simple problem of distinguishing between one and two cycles requires
+$\Omega(\log n)$ MPC rounds. In the AMPC model, each machine has adaptive read access to a distributed
+hash table even when communication is restricted (i.e., in the middle of a round). While remaining
+practical [4], this gives algorithms the power to bypass limitations like the 1-vs-2 Cycle Conjecture.
+We give the first sublogarithmic AMPC algorithm, requiring $O(\log\log n)$ rounds, for $(2+\epsilon)$-approximate
+weighted Min Cut. Our algorithm is inspired by the divide and conquer approach of Ghaffari and Nowicki
+[11], which solves the $(2+\epsilon)$-approximate weighted Min Cut problem in $O(\log n\log\log
+n)$ rounds of MPC using the classic result of Karger and Stein [15]. Our work is fully-scalable in
+the sense that the local memory of each machine is $O(n^\epsilon)$ for any constant $0 < \epsilon
+< 1$. There are no $o(\log n)$-round MPC algorithms for Min Cut in this memory regime assuming the
+1-vs-2 Cycle Conjecture holds. The exponential speedup in AMPC is the result of decoupling the different
+layers of the divide and conquer algorithm and solving all layers in $O(1)$ rounds. 

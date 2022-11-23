@@ -1,0 +1,18 @@
+Video-based human pose estimation (VHPE) is a vital yet challenging task. While deep learning methods
+have made significant progress for the VHPE, most approaches to this task implicitly model the long-range
+interaction between joints by enlarging the receptive field of the convolution. Unlike prior methods,
+we design a lightweight and plug-and-play joint relation extractor (JRE) to model the associative
+relationship between joints explicitly and automatically. The JRE takes the pseudo heatmaps of
+joints as input and calculates the similarity between pseudo heatmaps. In this way, the JRE flexibly
+learns the relationship between any two joints, allowing it to learn the rich spatial configuration
+of human poses. Moreover, the JRE can infer invisible joints according to the relationship between
+joints, which is beneficial for the model to locate occluded joints. Then, combined with temporal
+semantic continuity modeling, we propose a Relation-based Pose Semantics Transfer Network (RPSTN)
+for video-based human pose estimation. Specifically, to capture the temporal dynamics of poses,
+the pose semantic information of the current frame is transferred to the next with a joint relation
+guided pose semantics propagator (JRPSP). The proposed model can transfer the pose semantic features
+from the non-occluded frame to the occluded frame, making our method robust to the occlusion. Furthermore,
+the proposed JRE module is also suitable for image-based human pose estimation. The proposed RPSTN
+achieves state-of-the-art results on the video-based Penn Action dataset, Sub-JHMDB dataset,
+and PoseTrack2018 dataset. Moreover, the proposed JRE improves the performance of backbones on
+the image-based COCO2017 dataset. Code is available at https://github.com/YHDang/pose-estimation.

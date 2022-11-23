@@ -1,0 +1,20 @@
+We propose a new variable selection algorithm, subsample-ordered least-angle regression (solar),
+and its coordinate descent generalization, solar-cd. Solar re-constructs lasso paths using the
+$L_0$ norm and averages the resulting solution paths across subsamples. Path averaging retains
+the ranking information of the informative variables while averaging out sensitivity to high dimensionality,
+improving variable selection stability, efficiency, and accuracy. We prove that: (i) with a high
+probability, path averaging perfectly separates informative variables from redundant variables
+on the average $L_0$ path; (ii) solar variable selection is consistent and accurate; and (iii) the
+probability that solar omits weak signals is controllable for finite sample size. We also demonstrate
+that: (i) solar yields, with less than $1/3$ of the lasso computation load, substantial improvements
+over lasso in terms of the sparsity (64-84\% reduction in redundant variable selection) and accuracy
+of variable selection; (ii) compared with the lasso safe/strong rule and variable screening, solar
+largely avoids selection of redundant variables and rejection of informative variables in the
+presence of complicated dependence structures; (iii) the sparsity and stability of solar conserves
+residual degrees of freedom for data-splitting hypothesis testing, improving the accuracy of
+post-selection inference on weak signals with limited $n$; (iv) replacing lasso with solar in bootstrap
+selection (e.g., bolasso or stability selection) produces a multi-layer variable ranking scheme
+that improves selection sparsity and ranking accuracy with the computation load of only one lasso
+realization; and (v) given the computation resources, solar bootstrap selection is substantially
+faster (98\% lower computation time) than the theoretical maximum speedup for parallelized bootstrap
+lasso (confirmed by Amdahl's law). 

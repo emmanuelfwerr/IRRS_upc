@@ -1,0 +1,18 @@
+We study the query complexity of determining if a graph is connected with global queries. The first
+model we look at is matrix-vector multiplication queries to the adjacency matrix. Here, for an $n$-vertex
+graph with adjacency matrix $A$, one can query a vector $x \in \{0,1\}^n$ and receive the answer $Ax$.
+We give a randomized algorithm that can output a spanning forest of a weighted graph with constant
+probability after $O(\log^4(n))$ matrix-vector multiplication queries to the adjacency matrix.
+This complements a result of Sun et al.\ (ICALP 2019) that gives a randomized algorithm that can output
+a spanning forest of a graph after $O(\log^4(n))$ matrix-vector multiplication queries to the
+signed vertex-edge incidence matrix of the graph. As an application, we show that a quantum algorithm
+can output a spanning forest of an unweighted graph after $O(\log^5(n))$ cut queries, improving
+and simplifying a result of Lee, Santha, and Zhang (SODA 2021), which gave the bound $O(\log^8(n))$.
+In the second part of the paper, we turn to showing lower bounds on the linear query complexity of determining
+if a graph is connected. If $w$ is the weight vector of a graph (viewed as an $\binom{n}{2}$ dimensional
+vector), in a linear query one can query any vector $z \in \mathbb{R}^{n \choose 2}$ and receive the
+answer $\langle z, w\rangle$. We show that a zero-error randomized algorithm must make $\Omega(n)$
+linear queries in expectation to solve connectivity. As far as we are aware, this is the first lower
+bound of any kind on the unrestricted linear query complexity of connectivity. We show this lower
+bound by looking at the linear query \emph{certificate complexity} of connectivity, and characterize
+this certificate complexity in a linear algebraic fashion. 

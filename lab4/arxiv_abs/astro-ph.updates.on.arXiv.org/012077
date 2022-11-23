@@ -1,0 +1,19 @@
+Atmospheric refraction modifies the apparent position of objects in the sky. We computed the lateral
+translation that is to be considered for short-range applications, such as wavefront sensing and
+meteor trajectories. We aim to calculate the lateral shift at each altitude and study its variation
+according to meteorological conditions and the location of the observation site. We also pay special
+attention to the chromatism of this lateral shift. We extracted the variation equations of refraction
+from the geometric tracing of a light ray path. A numerical method and a dry atmosphere model allowed
+us to numerically integrate the system of coupled equations. In addition to this, based on Taylor
+expansions, we established three analytic approximations of the lateral shift, one of which is
+the one already known in the literature. We compared the three approximations to the numerical solution.
+All these estimators are included in a Python 3.2 package, which is available online. Using the numerical
+integration estimator, we calculated the lateral shift values for any zenith angle including low
+elevations. The shift is typically around 3 m at a zenith angle of 45{\deg}, 10 m at 65{\deg}, and even
+300 m{\deg} at 85{\deg}. Next, the study of the variability of the lateral shift as a function of wavelength
+shows differences of up to 2% between the visible and near infrared. The analysis of the errors of
+each approximation shows the ranges of validity of the three estimators as a function of the zenith
+angle. The flat Earth estimator achieves a relative error of less than 1% up to 55{\deg} while the
+new extended second-order estimators improves this result up to 75{\deg}. The flat Earth estimator
+is sufficient for applications where the zenith angle is below 55{\deg} but a refined estimator
+is necessary to estimate meteor trajectories at low elevations. 

@@ -1,0 +1,19 @@
+Adam and AdaBelief compute and make use of elementwise adaptive stepsizes in training deep neural
+networks (DNNs) by tracking the exponential moving average (EMA) of the squared-gradient g_t^2
+and the squared prediction error (m_t-g_t)^2, respectively, where m_t is the first momentum at
+iteration t and can be viewed as a prediction of g_t. In this work, we investigate if layerwise gradient
+statistics can be expoited in Adam and AdaBelief to allow for more effective training of DNNs. We
+address the above research question in two steps. Firstly, we slightly modify Adam and AdaBelief
+by introducing layerwise adaptive stepsizes in their update procedures via either pre- or post-processing.
+Our empirical results indicate that the slight modification produces comparable performance
+for training VGG and ResNet models over CIFAR10 and CIFAR100, suggesting that layer-wise gradient
+statistics play an important role towards the success of Adam and AdaBelief for at least certian
+DNN tasks. In the second step, we propose Aida, a new optimisation method, with the objective that
+the elementwise stepsizes within each layer have significantly smaller statistical variances,
+and the layerwise average stepsizes are much more compact across all the layers. Motivated by the
+fact that (m_t-g_t)^2 in AdaBelief is conservative in comparison to g_t^2 in Adam in terms of layerwise
+statistical averages and variances, Aida is designed by tracking a more conservative function
+of m_t and g_t than (m_t-g_t)^2 via layerwise vector projections. Experimental results show that
+Aida produces either competitive or better performance with respect to a number of existing methods
+including Adam and AdaBelief for a set of challenging DNN tasks. Code is available <a href="https://github.com/guoqiang-x-zhang/AidaOptimizer">at
+this URL</a> 

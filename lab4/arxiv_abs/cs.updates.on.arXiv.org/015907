@@ -1,0 +1,19 @@
+Graph Neural Networks (GNNs) have achieved state-of-the-art results for semi-supervised node
+classification on graphs. Nevertheless, the challenge of how to effectively learn GNNs with very
+few labels is still under-explored. As one of the prevalent semi-supervised methods, pseudo-labeling
+has been proposed to explicitly address the label scarcity problem. It aims to augment the training
+set with pseudo-labeled unlabeled nodes with high confidence so as to re-train a supervised model
+in a self-training cycle. However, the existing pseudo-labeling approaches often suffer from
+two major drawbacks. First, they tend to conservatively expand the label set by selecting only high-confidence
+unlabeled nodes without assessing their informativeness. Unfortunately, those high-confidence
+nodes often convey overlapping information with given labels, leading to minor improvements for
+model re-training. Second, these methods incorporate pseudo-labels to the same loss function
+with genuine labels, ignoring their distinct contributions to the classification task. In this
+paper, we propose a novel informative pseudo-labeling framework, called InfoGNN, to facilitate
+learning of GNNs with extremely few labels. Our key idea is to pseudo label the most informative nodes
+that can maximally represent the local neighborhoods via mutual information maximization. To
+mitigate the potential label noise and class-imbalance problem arising from pseudo labeling,
+we also carefully devise a generalized cross entropy loss with a class-balanced regularization
+to incorporate generated pseudo labels into model re-training. Extensive experiments on six real-world
+graph datasets demonstrate that our proposed approach significantly outperforms state-of-the-art
+baselines and strong self-supervised methods on graphs. 

@@ -1,0 +1,20 @@
+The development of personalized recommendation has significantly improved the accuracy of information
+matching and the revenue of e-commerce platforms. Recently, it has 2 trends: 1) recommender systems
+must be trained timely to cope with ever-growing new products and ever-changing user interests
+from online marketing and social network; 2) SOTA recommendation models introduce DNN modules
+to improve prediction accuracy. Traditional CPU-based recommender systems cannot meet these
+two trends, and GPU- centric training has become a trending approach. However, we observe that GPU
+devices in training recommender systems are underutilized, and they cannot attain an expected
+throughput improvement as what it has achieved in CV and NLP areas. This issue can be explained by
+two characteristics of these recommendation models: First, they contain up to a thousand input
+feature fields, introducing fragmentary and memory-intensive operations; Second, the multiple
+constituent feature interaction submodules introduce substantial small-sized compute kernels.
+To remove this roadblock to the development of recommender systems, we propose a novel framework
+named PICASSO to accelerate the training of recommendation models on commodity hardware. Specifically,
+we conduct a systematic analysis to reveal the bottlenecks encountered in training recommendation
+models. We leverage the model structure and data distribution to unleash the potential of hardware
+through our packing, interleaving, and caching optimization. Experiments show that PICASSO increases
+the hardware utilization by an order of magnitude on the basis of SOTA baselines and brings up to 6x
+throughput improvement for a variety of industrial recommendation models. Using the same hardware
+budget in production, PICASSO on average shortens the walltime of daily training tasks by 7 hours,
+significantly reducing the delay of continuous delivery. 

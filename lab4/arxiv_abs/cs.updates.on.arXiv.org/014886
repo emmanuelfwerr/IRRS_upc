@@ -1,0 +1,20 @@
+Fairness is a critical system-level objective in recommender systems that has been the subject
+of extensive recent research. It is especially important in multi-sided recommendation platforms
+where it may be crucial to optimize utilities not just for the end user, but also for other actors such
+as item sellers or producers who desire a fair representation of their items. Existing solutions
+do not properly address various aspects of multi-sided fairness in recommendations as they may
+either solely have one-sided view (i.e. improving the fairness only for one side), or do not appropriately
+measure the fairness for each actor involved in the system. In this thesis, I aim at first investigating
+the impact of unfair recommendations on the system and how these unfair recommendations can negatively
+affect major actors in the system. Then, I seek to propose solutions to tackle the unfairness of recommendations.
+I propose a rating transformation technique that works as a pre-processing step before building
+the recommendation model to alleviate the inherent popularity bias in the input data and consequently
+to mitigate the exposure unfairness for items and suppliers in the recommendation lists. Also,
+as another solution, I propose a general graph-based solution that works as a post-processing approach
+after recommendation generation for mitigating the multi-sided exposure bias in the recommendation
+results. For evaluation, I introduce several metrics for measuring the exposure fairness for items
+and suppliers, and show that these metrics better capture the fairness properties in the recommendation
+results. I perform extensive experiments to evaluate the effectiveness of the proposed solutions.
+The experiments on different publicly-available datasets and comparison with various baselines
+confirm the superiority of the proposed solutions in improving the exposure fairness for items
+and suppliers. 

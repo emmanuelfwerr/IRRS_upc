@@ -1,0 +1,19 @@
+Deep neural networks perform well on prediction and classification tasks in the canonical setting
+where data streams are i.i.d., labeled data is abundant, and class labels are balanced. Challenges
+emerge with distribution shifts, including non-stationary or imbalanced data streams. One powerful
+approach that has addressed this challenge involves self-supervised pretraining of large encoders
+on volumes of unlabeled data, followed by task-specific tuning. Given a new task, updating the weights
+of these encoders is challenging as a large number of weights needs to be fine-tuned, and as a result,
+they forget information about the previous tasks. In the present work, we propose a model architecture
+to address this issue, building upon a discrete bottleneck containing pairs of separate and learnable
+(key, value) codes. In this setup, we follow the encode; process the representation via a discrete
+bottleneck; and decode paradigm, where the input is fed to the pretrained encoder, the output of
+the encoder is used to select the nearest keys, and the corresponding values are fed to the decoder
+to solve the current task. The model can only fetch and re-use a limited number of these (key, value)
+pairs during inference, enabling localized and context-dependent model updates. We theoretically
+investigate the ability of the proposed model to minimize the effect of the distribution shifts
+and show that such a discrete bottleneck with (key, value) pairs reduces the complexity of the hypothesis
+class. We empirically verified the proposed methods' benefits under challenging distribution
+shift scenarios across various benchmark datasets and show that the proposed model reduces the
+common vulnerability to non-i.i.d. and non-stationary training distributions compared to various
+other baselines. 

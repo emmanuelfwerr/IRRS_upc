@@ -1,0 +1,20 @@
+We introduce the algorithm Bayesian Optimization (BO) with Fictitious Play (BOFiP) for the optimization
+of high dimensional black box functions. BOFiP decomposes the original, high dimensional, space
+into several sub-spaces defined by non-overlapping sets of dimensions. These sets are randomly
+generated at the start of the algorithm, and they form a partition of the dimensions of the original
+space. BOFiP searches the original space with alternating BO, within sub-spaces, and information
+exchange among sub-spaces, to update the sub-space function evaluation. The basic idea is to distribute
+the high dimensional optimization across low dimensional sub-spaces, where each sub-space is
+a player in an equal interest game. At each iteration, BO produces approximate best replies that
+update the players belief distribution. The belief update and BO alternate until a stopping condition
+is met. High dimensional problems are common in real applications, and several contributions in
+the BO literature have highlighted the difficulty in scaling to high dimensions due to the computational
+complexity associated to the estimation of the model hyperparameters. Such complexity is exponential
+in the problem dimension, resulting in substantial loss of performance for most techniques with
+the increase of the input dimensionality. We compare BOFiP to several state-of-the-art approaches
+in the field of high dimensional black box optimization. The numerical experiments show the performance
+over three benchmark objective functions from 20 up to 1000 dimensions. A neural network architecture
+design problem is tested with 42 up to 911 nodes in 6 up to 92 layers, respectively, resulting into
+networks with 500 up to 10,000 weights. These sets of experiments empirically show that BOFiP outperforms
+its competitors, showing consistent performance across different problems and increasing problem
+dimensionality. 

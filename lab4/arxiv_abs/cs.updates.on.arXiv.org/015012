@@ -1,0 +1,20 @@
+Purpose: To design multi-disease classifiers for body CT scans for three different organ systems
+using automatically extracted labels from radiology text reports.Materials & Methods: This retrospective
+study included a total of 12,092 patients (mean age 57 +- 18; 6,172 women) for model development and
+testing (from 2012-2017). Rule-based algorithms were used to extract 19,225 disease labels from
+13,667 body CT scans from 12,092 patients. Using a three-dimensional DenseVNet, three organ systems
+were segmented: lungs and pleura; liver and gallbladder; and kidneys and ureters. For each organ,
+a three-dimensional convolutional neural network classified no apparent disease versus four
+common diseases for a total of 15 different labels across all three models. Testing was performed
+on a subset of 2,158 CT volumes relative to 2,875 manually derived reference labels from 2133 patients
+(mean age 58 +- 18;1079 women). Performance was reported as receiver operating characteristic
+area under the curve (AUC) with 95% confidence intervals by the DeLong method. Results: Manual validation
+of the extracted labels confirmed 91% to 99% accuracy across the 15 different labels. AUCs for lungs
+and pleura labels were: atelectasis 0.77 (95% CI: 0.74, 0.81), nodule 0.65 (0.61, 0.69), emphysema
+0.89 (0.86, 0.92), effusion 0.97 (0.96, 0.98), and no apparent disease 0.89 (0.87, 0.91). AUCs for
+liver and gallbladder were: hepatobiliary calcification 0.62 (95% CI: 0.56, 0.67), lesion 0.73
+(0.69, 0.77), dilation 0.87 (0.84, 0.90), fatty 0.89 (0.86, 0.92), and no apparent disease 0.82
+(0.78, 0.85). AUCs for kidneys and ureters were: stone 0.83 (95% CI: 0.79, 0.87), atrophy 0.92 (0.89,
+0.94), lesion 0.68 (0.64, 0.72), cyst 0.70 (0.66, 0.73), and no apparent disease 0.79 (0.75, 0.83).
+Conclusion: Weakly-supervised deep learning models were able to classify diverse diseases in
+multiple organ systems. 

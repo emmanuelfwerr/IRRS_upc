@@ -1,0 +1,20 @@
+Road maintenance planning is an integral part of road asset management. One of the main challenges
+in Maintenance and Rehabilitation (M&R) practices is to determine maintenance type and timing.
+This research proposes a framework using Reinforcement Learning (RL) based on the Long Term Pavement
+Performance (LTPP) database to determine the type and timing of M&R practices. A predictive DNN
+model is first developed in the proposed algorithm, which serves as the Environment for the RL algorithm.
+For the Policy estimation of the RL model, both DQN and PPO models are developed. However, PPO has
+been selected in the end due to better convergence and higher sample efficiency. Indicators used
+in this study are International Roughness Index (IRI) and Rutting Depth (RD). Initially, we considered
+Cracking Metric (CM) as the third indicator, but it was then excluded due to the much fewer data compared
+to other indicators, which resulted in lower accuracy of the results. Furthermore, in cost-effectiveness
+calculation (reward), we considered both the economic and environmental impacts of M&R treatments.
+Costs and environmental impacts have been evaluated with paLATE 2.0 software. Our method is tested
+on a hypothetical case study of a six-lane highway with 23 kilometers length located in Texas, which
+has a warm and wet climate. The results propose a 20-year M&R plan in which road condition remains
+in an excellent condition range. Because the early state of the road is at a good level of service,
+there is no need for heavy maintenance practices in the first years. Later, after heavy M&R actions,
+there are several 1-2 years of no need for treatments. All of these show that the proposed plan has
+a logical result. Decision-makers and transportation agencies can use this scheme to conduct better
+maintenance practices that can prevent budget waste and, at the same time, minimize the environmental
+impacts. 

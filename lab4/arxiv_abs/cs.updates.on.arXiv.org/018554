@@ -1,0 +1,20 @@
+Three state-of-the-art language-and-image AI models, CLIP, SLIP, and BLIP, are evaluated for
+evidence of a bias previously observed in social and experimental psychology: equating American
+identity with being White. Embedding association tests (EATs) using standardized images of self-identified
+Asian, Black, Latina/o, and White individuals from the Chicago Face Database (CFD) reveal that
+White individuals are more associated with collective in-group words than are Asian, Black, or
+Latina/o individuals. In assessments of three core aspects of American identity reported by social
+psychologists, single-category EATs reveal that images of White individuals are more associated
+with patriotism and with being born in America, but that, consistent with prior findings in psychology,
+White individuals are associated with being less likely to treat people of all races and backgrounds
+equally. Three downstream machine learning tasks demonstrate biases associating American with
+White. In a visual question answering task using BLIP, 97% of White individuals are identified as
+American, compared to only 3% of Asian individuals. When asked in what state the individual depicted
+lives in, the model responds China 53% of the time for Asian individuals, but always with an American
+state for White individuals. In an image captioning task, BLIP remarks upon the race of Asian individuals
+as much as 36% of the time, but never remarks upon race for White individuals. Finally, provided with
+an initialization image from the CFD and the text "an American person," a synthetic image generator
+(VQGAN) using the text-based guidance of CLIP lightens the skin tone of individuals of all races
+(by 35% for Black individuals, based on pixel brightness). The results indicate that biases equating
+American identity with being White are learned by language-and-image AI, and propagate to downstream
+applications of such models. 

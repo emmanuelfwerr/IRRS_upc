@@ -1,0 +1,19 @@
+In this paper we develop the analytical framework for a novel Wireless signal-based Sensing capability
+for Robotics (WSR) by leveraging robots' mobility. It allows robots to primarily measure relative
+direction, or Angle-of-Arrival (AOA), to other robots, while operating in non-line-of-sight
+unmapped environments and without requiring external infrastructure. We do so by capturing all
+of the paths that a wireless signal traverses as it travels from a transmitting to a receiving robot
+in the team, which we term as an AOA profile. The key intuition behind our approach is to enable a robot
+to emulate antenna arrays as it moves freely in 2D and 3D space. The small differences in the phase
+of the wireless signals are thus processed with knowledge of robots' local displacement to obtain
+the profile, via a method akin to Synthetic Aperture Radar (SAR). The main contribution of this work
+is the development of i) a framework to accommodate arbitrary 2D and 3D motion, as well as continuous
+mobility of both signal transmitting and receiving robots, while computing AOA profiles between
+them and ii) a Cramer-Rao Bound analysis, based on antenna array theory, that provides a lower bound
+on the variance in AOA estimation as a function of the geometry of robot motion. We show that allowing
+robots to use their full mobility in 3D space while performing SAR, results in more accurate AOA profiles
+and thus better AOA estimation. All analytical developments are substantiated by extensive simulation
+and hardware experiments on air/ground robot platforms using 5 GHz WiFi. Our experimental results
+bolster our analytical findings, demonstrating that 3D motion provides enhanced and consistent
+accuracy, with total AOA error of less than 10 degree for 95% of trials. We also analytically characterize
+the impact of displacement estimation errors on the measured AOA. 

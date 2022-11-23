@@ -1,0 +1,19 @@
+Training a machine learning model with federated edge learning (FEEL) is typically time-consuming
+due to the constrained computation power of edge devices and limited wireless resources in edge
+networks. In this paper, the training time minimization problem is investigated in a quantized
+FEEL system, where the heterogeneous edge devices send quantized gradients to the edge server via
+orthogonal channels. In particular, a stochastic quantization scheme is adopted for compression
+of uploaded gradients, which can reduce the burden of per-round communication but may come at the
+cost of increasing number of communication rounds. The training time is modeled by taking into account
+the communication time, computation time and the number of communication rounds. Based on the proposed
+training time model, the intrinsic trade-off between the number of communication rounds and per-round
+latency is characterized. Specifically, we analyze the convergence behavior of the quantized
+FEEL in terms of the optimality gap. Further, a joint data-and-model-driven fitting method is proposed
+to obtain the exact optimality gap, based on which the closed-form expressions for the number of
+communication rounds and the total training time are obtained. Constrained by total bandwidth,
+the training time minimization problem is formulated as a joint quantization level and bandwidth
+allocation optimization problem. To this end, an algorithm based on alternating optimization
+is proposed, which alternatively solves the subproblem of quantization optimization via successive
+convex approximation and the subproblem of bandwidth allocation via bisection search. With different
+learning tasks and models, the validation of our analysis and the near-optimal performance of the
+proposed optimization algorithm are demonstrated by the experimental results. 

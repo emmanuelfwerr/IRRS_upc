@@ -1,0 +1,18 @@
+Most current image captioning models typically generate captions from left to right. This unidirectional
+property makes them can only leverage past context but not future context. Though recent refinement-based
+models can exploit both past and future context by generating a new caption in the second stage based
+on pre-retrieved or pre-generated captions in the first stage, the decoder of these models generally
+consists of two networks~(i.e. a retriever or captioner in the first stage and a refiner in the second
+stage), which can only be executed sequentially. In this paper, we introduce a Compact Bidirectional
+Transformer model for image captioning that can leverage bidirectional context implicitly and
+explicitly while the decoder can be executed parallelly. Specifically, it is implemented by tightly
+coupling left-to-right(L2R) and right-to-left(R2L) flows into a single compact model~(i.e.
+implicitly) and optionally allowing interaction of the two flows(i.e. explicitly), while the
+final caption is chosen from either L2R or R2L flow in a sentence-level ensemble manner. We conduct
+extensive ablation studies on the MSCOCO benchmark and find that the compact architecture, which
+serves as a regularization for implicitly exploiting bidirectional context, and the sentence-level
+ensemble play more important roles than the explicit interaction mechanism. By combining with
+word-level ensemble seamlessly, the effect of the sentence-level ensemble is further enlarged.
+We further extend the conventional one-flow self-critical training to the two-flows version under
+this architecture and achieve new state-of-the-art results in comparison with non-vision-language-pretraining
+models. Source code is available at {\color{magenta}\url{https://github.com/YuanEZhou/CBTrans}}.

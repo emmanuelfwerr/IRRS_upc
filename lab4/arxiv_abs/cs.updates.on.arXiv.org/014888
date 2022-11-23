@@ -1,0 +1,19 @@
+Classifiers and other statistics-based machine learning (ML) techniques generalize, or learn,
+based on various statistical properties of the training data. The assumption underlying statistical
+ML resulting in theoretical or empirical performance guarantees is that the distribution of the
+training data is representative of the production data distribution. This assumption often breaks;
+for instance, statistical distributions of the data may change. We term changes that affect ML performance
+`data drift' or `drift'. Many classification techniques compute a measure of confidence in their
+results. This measure might not reflect the actual ML performance. A famous example is the Panda
+picture that is correctly classified as such with a confidence of about 60\%, but when noise is added
+it is incorrectly classified as a Gibbon with a confidence of above 99\%. However, the work we report
+on here suggests that a classifier's measure of confidence can be used for the purpose of detecting
+data drift. We propose an approach based solely on classifier suggested labels and its confidence
+in them, for alerting on data distribution or feature space changes that are likely to cause data
+drift. Our approach identities degradation in model performance and does not require labeling
+of data in production which is often lacking or delayed. Our experiments with three different data
+sets and classifiers demonstrate the effectiveness of this approach in detecting data drift. This
+is especially encouraging as the classification itself may or may not be correct and no model input
+data is required. We further explore the statistical approach of sequential change-point tests
+to automatically determine the amount of data needed in order to identify drift while controlling
+the false positive rate (Type-1 error). 

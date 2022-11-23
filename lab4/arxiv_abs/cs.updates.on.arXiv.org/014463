@@ -1,0 +1,20 @@
+Given a set of $n$ integer-valued coin types and a target value $t$, the well-known change-making
+problem asks for the minimum number of coins that sum to $t$, assuming an unlimited number of coins
+in each type. In the more general all-targets version of the problem, we want the minimum number of
+coins summing to $j$, for every $j=0,\ldots,t$. For example, the textbook dynamic programming
+algorithms can solve the all-targets problem in $O(nt)$ time. Recently, Chan and He (SOSA'20) described
+a number of $O(t\,\textrm{polylog}\,t)$-time algorithms for the original (single-target) version
+of the change-making problem, but not the all-targets version. We obtain a number of new results
+on change-making and related problems, including: 1. A new algorithm for the all-targets change-making
+problem with running time $\tilde{O}(t^{4/3})$, improving a previous $\tilde{O}(t^{3/2})$-time
+algorithm. 2. A very simple $\tilde{O}(u^2+t)$-time algorithm for the all-targets change-making
+problem, where $u$ denotes the maximum coin value. The analysis of the algorithm uses a theorem of
+Erd\H{o}s and Graham (1972) on the Frobenius problem. This algorithm can be extended to solve the
+all-capacities version of the unbounded knapsack problem (for integer item weights bounded by
+$u$). 3. For the original (single-target) coin changing problem, we describe a simple modification
+of one of Chan and He's algorithms that runs in $\tilde{O}(u)$ time (instead of $\tilde{O}(t)$).
+4. For the original (single-capacity) unbounded knapsack problem, we describe a simple algorithm
+that runs in $\tilde{O}(nu)$ time, improving previous near-$u^2$-time algorithms. 5. We also
+observe how one of our ideas implies a new result on the minimum word break problem, an optimization
+version of a string problem studied by Bringmann et al. (FOCS'17), generalizing change-making
+(which corresponds to the unary special case). 

@@ -1,0 +1,20 @@
+We present a quantum circuit synthesis algorithm for implementing universal fault-tolerant quantum
+computing based on concatenated codes. To realize fault-tolerant quantum computing, the fault-tolerant
+quantum protocols should be transformed into executable quantum circuits based on the nearest-neighbor
+interaction. Unlike topological codes that are defined based on local operations fundamentally,
+for the concatenated codes, it is possible to obtain the circuits composed of the local operations
+by applying the quantum circuit synthesis. However, by the existing quantum circuit synthesis
+developed for ordinary quantum computational algorithms, the fault-tolerant of the protocol
+may not be preserved in the resulting circuit. Besides, we have to consider something more to implement
+the quantum circuit of universal fault-tolerant quantum computing. First, we have not to propagate
+quantum errors on data qubits when selecting a qubit move path (a sequence of \emph{SWAP} gates)
+to satisfy the geometric locality constraint. Second, the circuit should be self-contained so
+that it is possible to act independently regardless of the situation. Third, for universal fault-tolerant
+quantum computing, we require multiple fault-tolerant quantum circuits of multiple fault-tolerant
+quantum protocols acting on the same input, a logical data qubit. Last, we need to recall fault-tolerant
+protocols such as syndrome measure and encoder implicitly include classical control processing
+conditioned on the measurement outcomes, and therefore have to partition the quantum circuits
+in time flow to execute the classical control as the architect intended. We propose the circuit synthesis
+method resolving the requirements and show how to synthesize the set of universal fault-tolerant
+protocols for $[[7,1,3]]$ Steane code and the syndrome measurement protocol of $[[23, 1, 7]]$ Golay
+code. 

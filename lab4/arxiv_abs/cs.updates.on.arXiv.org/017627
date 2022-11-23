@@ -1,0 +1,20 @@
+Problem: There is a lack of big data for the training of deep learning models in medicine, characterized
+by the time cost of data collection and privacy concerns. Generative adversarial networks (GANs)
+offer both the potential to generate new data, as well as to use this newly generated data, without
+inclusion of patients' real data, for downstream applications. Approach: A series of GANs were
+trained and applied for a downstream computer vision spine radiograph abnormality classification
+task. Separate classifiers were trained with either access or no access to the original imaging.
+Trained GANs included a conditional StyleGAN2 with adaptive discriminator augmentation, a conditional
+StyleGAN2 with adaptive discriminator augmentation to generate spine radiographs conditional
+on lesion type, and using a novel clinical loss term for the generator a StyleGAN2 with adaptive discriminator
+augmentation conditional on abnormality (SpineGAN). Finally, a differential privacy imposed
+StyleGAN2 with adaptive discriminator augmentation conditional on abnormality was trained and
+an ablation study was performed on its differential privacy impositions. Key Results: We accomplish
+GAN generation of synthetic spine radiographs without meaningful input for the first time from
+a literature review. We further demonstrate the success of synthetic learning for the spine domain
+with a downstream clinical classification task (AUC of 0.830 using synthetic data compared to AUC
+of 0.886 using the real data). Importantly, the introduction of a new clinical loss term for the generator
+was found to increase generation recall as well as accelerate model training. Lastly, we demonstrate
+that, in a limited size medical dataset, differential privacy impositions severely impede GAN
+training, finding that this is specifically due to the requirement for gradient perturbation with
+noise. 

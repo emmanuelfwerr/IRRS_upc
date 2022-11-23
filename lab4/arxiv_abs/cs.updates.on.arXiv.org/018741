@@ -1,0 +1,19 @@
+We present a general technique, based on parametric search with some twist, for solving a variety
+of optimization problems on a set of semi-algebraic geometric objects of constant complexity.
+The common feature of these problems is that they involve a `growth parameter' $r$ and a semi-algebraic
+predicate $\Pi(o,o';r)$ of constant complexity on pairs of input objects, which depends on $r$
+and is monotone in $r$. One then defines a graph $G(r)$ whose edges are all the pairs $(o,o')$ for which
+$\Pi(o,o';r)$ is true, and seeks the smallest value of $r$ for which some monotone property holds
+for $G(r)$. Problems that fit into this context include (i) the reverse shortest path problem in
+unit-disk graphs, recently studied by Wang and Zhao, (ii) the same problem for weighted unit-disk
+graphs, with a decision procedure recently provided by Wang and Xue, (iii) extensions of these problems
+to three and higher dimensions, (iv) the discrete Fr\'echet distance with one-sided shortcuts
+in higher dimensions, extending the study by Ben Avraham et al., (v) perfect matchings in intersection
+graphs: given, e.g., a set of fat ellipses of roughly the same size, find the smallest value $r$ such
+that if we expand each of the ellipses by $r$, the resulting intersection graph contains a perfect
+matching, (vi) generalized distance selection problems: given, e.g., a set of disjoint segments,
+find the $k$'th smallest distance among the pairwise distances determined by the segments, for
+a given (sufficiently small but superlinear) parameter $k$, and (vii) the maximum-height independent
+towers problem, in which we want to erect vertical towers of maximum height over a 1.5-dimensional
+terrain so that no pair of tower tips are mutually visible. We obtain significantly improved solutions
+for problems (i), (ii) and (vi), and new efficient solutions to the other problems. 

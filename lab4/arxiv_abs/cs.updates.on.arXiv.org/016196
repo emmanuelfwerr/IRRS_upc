@@ -1,0 +1,19 @@
+Despite many proposed algorithms to provide robustness to deep learning (DL) models, DL models
+remain susceptible to adversarial attacks. We hypothesize that the adversarial vulnerability
+of DL models stems from two factors. The first factor is data sparsity which is that in the high dimensional
+input data space, there exist large regions outside the support of the data distribution. The second
+factor is the existence of many redundant parameters in the DL models. Owing to these factors, different
+models are able to come up with different decision boundaries with comparably high prediction accuracy.
+The appearance of the decision boundaries in the space outside the support of the data distribution
+does not affect the prediction accuracy of the model. However, it makes an important difference
+in the adversarial robustness of the model. We hypothesize that the ideal decision boundary is as
+far as possible from the support of the data distribution. In this paper, we develop a training framework
+to observe if DL models are able to learn such a decision boundary spanning the space around the class
+distributions further from the data points themselves. Semi-supervised learning was deployed
+during training by leveraging unlabeled data generated in the space outside the support of the data
+distribution. We measured adversarial robustness of the models trained using this training framework
+against well-known adversarial attacks and by using robustness metrics. We found that models trained
+using our framework, as well as other regularization methods and adversarial training support
+our hypothesis of data sparsity and that models trained with these methods learn to have decision
+boundaries more similar to the aforementioned ideal decision boundary. The code for our training
+framework is available at https://github.com/MahsaPaknezhad/AdversariallyRobustTraining.

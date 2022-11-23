@@ -1,0 +1,20 @@
+In accelerating and supersonic media, the interaction of photons with spectral lines can be of ultimate
+importance. However, fully accounting for such line forces currently can only be done by specialised
+codes in 1-D steady-state flows. More general cases and higher dimensions require alternative
+approaches. We presented a comprehensive and fast method for computing the radiation line-force
+using tables of spectral line-strength distribution parameters, which can be applied in arbitrary
+(multi-D, time-dependent) simulations, including those accounting for the line-deshadowing
+instability, to compute the appropriate opacities. We assumed local thermodynamic equilibrium
+to compute a flux-weighted line opacity from $>4$ million spectral lines. We derived the spectral
+line strength and tabulated the corresponding line-distribution parameters for a range of input
+densities $\rho\in[10^{-20},10^{-10}]gcm^{-3}$ and temperatures $T\in[10^4,10^{4.7}]K$.
+We found that the variation of the line distribution parameters plays an essential role in setting
+the wind dynamics in our models. In our benchmark study, we also found a good overall agreement between
+the O-star mass-loss rates of our models and those derived from steady-state studies using more
+detailed radiative transfer. Our models reinforce that self-consistent variation of the line-distribution
+parameters is important for the dynamics of line-driven flows. Within a well-calibrated O-star
+regime, our results support the proposed methodology. In practice, utilising the provided tables,
+yielded a factor $>100$ speed-up in computational time compared to specialised 1-D model-atmosphere
+codes of line-driven winds, which constitutes an important step towards efficient multi-D simulations.
+We conclude that our method and tables are ready to be exploited in various radiation-hydrodynamic
+simulations where the line force is important. 

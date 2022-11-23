@@ -1,0 +1,19 @@
+We develop new theoretical results on matrix perturbation to shed light on the impact of architecture
+on the performance of a deep network. In particular, we explain analytically what deep learning
+practitioners have long observed empirically: the parameters of some deep architectures (e.g.,
+residual networks, ResNets, and Dense networks, DenseNets) are easier to optimize than others
+(e.g., convolutional networks, ConvNets). Building on our earlier work connecting deep networks
+with continuous piecewise-affine splines, we develop an exact local linear representation of
+a deep network layer for a family of modern deep networks that includes ConvNets at one end of a spectrum
+and ResNets, DenseNets, and other networks with skip connections at the other. For regression and
+classification tasks that optimize the squared-error loss, we show that the optimization loss
+surface of a modern deep network is piecewise quadratic in the parameters, with local shape governed
+by the singular values of a matrix that is a function of the local linear representation. We develop
+new perturbation results for how the singular values of matrices of this sort behave as we add a fraction
+of the identity and multiply by certain diagonal matrices. A direct application of our perturbation
+results explains analytically why a network with skip connections (such as a ResNet or DenseNet)
+is easier to optimize than a ConvNet: thanks to its more stable singular values and smaller condition
+number, the local loss surface of such a network is less erratic, less eccentric, and features local
+minima that are more accommodating to gradient-based optimization. Our results also shed new light
+on the impact of different nonlinear activation functions on a deep network's singular values,
+regardless of its architecture. 

@@ -1,0 +1,19 @@
+In typical statistical mechanical systems the grand canonical partition function at finite volume
+is proportional to a polynomial of the fugacity $e^{\mu/T}$. The zero of this Lee-Yang polynomial
+closest to the origin determines the radius of convergence of the Taylor expansion of the pressure
+around $\mu=0$. The computationally cheapest formulation of lattice QCD, rooted staggered fermions,
+with the usual definition of the rooted determinant, does not admit such a Lee-Yang polynomial.
+We argue that the radius of convergence is then bounded by the spectral gap of the reduced matrix of
+the unrooted staggered operator. This is a cutoff effect that potentially affects all estimates
+of the radius of convergence with the standard staggered rooting. We suggest a new definition of
+the rooted staggered determinant at finite chemical potential that allows for a definition of a
+Lee-Yang polynomial, and, therefore of the numerical study of Lee-Yang zeros. We also describe
+an algorithm to determine the Lee-Yang zeros and apply it to configurations generated with the 2-stout
+improved staggered action at $N_t = 4$. We perform a finite-volume scaling study of the leading Lee-Yang
+zeros and estimate the radius of convergence of the Taylor expansion extrapolated to an infinite
+volume. We show that the limiting singularity is not on the real line, thus giving a lower bound on
+the location of any possible phase transitions at this lattice spacing. In the vicinity of the crossover
+temperature at zero chemical potential, the radius of convergence turns out to be $\mu_B/T \approx
+2$ and roughly temperature independent. Our simulations are performed at strange quark chemical
+potential $\mu_s=0$, but the method can be straightforwardly extended to strangeness chemical
+potential $\mu_S=0$ or strangeness neutrality. 

@@ -1,0 +1,19 @@
+The development of accurate methods for multi-label classification (MLC) of remote sensing (RS)
+images is one of the most important research topics in RS. The MLC methods based on Convolutional
+Neural Networks (CNNs) have shown strong performance gains in RS. However, they usually require
+a high number of reliable training images annotated with multiple land-cover class labels. Collecting
+such data is time-consuming and costly. To address this problem, the publicly available thematic
+products, which can include noisy labels, can be used to annotate RS images with zero-labeling cost.
+However, multi-label noise (which can be associated with wrong and missing label annotations)
+can distort the learning process of the MLC methods. To address this problem, we propose a novel multi-label
+noise robust collaborative learning (RCML) method to alleviate the negative effects of multi-label
+noise during the training phase of a CNN model. RCML identifies, ranks and excludes noisy multi-labels
+in RS images based on three main modules: 1) the discrepancy module; 2) the group lasso module; and
+3) the swap module. The discrepancy module ensures that the two networks learn diverse features,
+while producing the same predictions. The task of the group lasso module is to detect the potentially
+noisy labels assigned to the multi-labeled training images, while the swap module is devoted to
+exchange the ranking information between two networks. Unlike existing methods that make assumptions
+about the noise distribution, our proposed RCML does not make any prior assumption about the type
+of noise in the training set. The experiments conducted on two multi-label RS image archives confirm
+the robustness of the proposed RCML under extreme multi-label noise rates. Our code is publicly
+available at: this http URL 

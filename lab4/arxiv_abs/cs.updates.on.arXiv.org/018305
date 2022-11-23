@@ -1,0 +1,20 @@
+Three-dimensional point clouds learning is widely applied, but the point clouds are still unable
+to deal with classification and recognition tasks satisfactorily in the cases of irregular geometric
+structures and high-dimensional space. In 3D space, point clouds tend to have regular Euclidean
+structure because of their density. On the contrary, due to the high dimensionality, the spatial
+structure of high-dimensional space is more complex, and point clouds are mostly presented in non-European
+structure. Furthermore, among current 3D point clouds classification algorithms, Canonical
+Capsules algorithm based on Euclidean distance is difficult to decompose and identify non-Euclidean
+structures effectively. Thus, aiming at the point clouds classification task of non-Euclidean
+structure in 3D and high-dimensional space, this paper refers to the LLE algorithm based on geodesic
+distance for optimizing and proposes the unsupervised algorithm of high-dimensional point clouds
+capsule. In this paper, the geometric features of point clouds are considered in the extraction
+process, so as to transform the high-dimensional non-Euclidean structure into a lower-dimensional
+Euclidean structure with retaining spatial geometric features. To verify the feasibility of the
+unsupervised algorithm of high-dimensional point clouds capsule, experiments are conducted
+in Swiss Roll dataset, point clouds MNIST dataset and point clouds LFW dataset. The results show
+that (1) non-Euclidean structures can be can effectively identified by this model in Swiss Roll
+dataset; (2) a significant unsupervised learning effect is realized in point clouds MNIST dataset.
+In conclusion, the high-dimensional point clouds capsule unsupervised algorithm proposed in
+this paper is conducive to expand the application scenarios of current point clouds classification
+and recognition tasks. 

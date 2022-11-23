@@ -1,0 +1,20 @@
+Statistical shape modeling (SSM) characterizes anatomical variations in a population of shapes
+generated from medical images. SSM requires consistent shape representation across samples in
+shape cohort. Establishing this representation entails a processing pipeline that includes anatomy
+segmentation, re-sampling, registration, and non-linear optimization. These shape representations
+are then used to extract low-dimensional shape descriptors that facilitate subsequent analyses
+in different applications. However, the current process of obtaining these shape descriptors
+from imaging data relies on human and computational resources, requiring domain expertise for
+segmenting anatomies of interest. Moreover, this same taxing pipeline needs to be repeated to infer
+shape descriptors for new image data using a pre-trained/existing shape model. Here, we propose
+DeepSSM, a deep learning-based framework for learning the functional mapping from images to low-dimensional
+shape descriptors and their associated shape representations, thereby inferring statistical
+representation of anatomy directly from 3D images. Once trained using an existing shape model,
+DeepSSM circumvents the heavy and manual pre-processing and segmentation and significantly improves
+the computational time, making it a viable solution for fully end-to-end SSM applications. In addition,
+we introduce a model-based data-augmentation strategy to address data scarcity. Finally, this
+paper presents and analyzes two different architectural variants of DeepSSM with different loss
+functions using three medical datasets and their downstream clinical application. Experiments
+showcase that DeepSSM performs comparably or better to the state-of-the-art SSM both quantitatively
+and on application-driven downstream tasks. Therefore, DeepSSM aims to provide a comprehensive
+blueprint for deep learning-based image-to-shape models. 

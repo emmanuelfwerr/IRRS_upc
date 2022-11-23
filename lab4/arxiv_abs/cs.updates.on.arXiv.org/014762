@@ -1,0 +1,20 @@
+This chapter aims to aid the development of Cyber-Physical Systems (CPS) in automated understanding
+of events and activities in various applications of video-surveillance. These events are mostly
+captured by drones, CCTVs or novice and unskilled individuals on low-end devices. Being unconstrained,
+these videos are immensely challenging due to a number of quality factors. We present an extensive
+account of the various approaches taken to solve the problem over the years. This ranges from methods
+as early as Structure from Motion (SFM) based approaches to recent solution frameworks involving
+deep neural networks. We show that the long-term motion patterns alone play a pivotal role in the
+task of recognizing an event. Consequently each video is significantly represented by a fixed number
+of key-frames using a graph-based approach. Only the temporal features are exploited using a hybrid
+Convolutional Neural Network (CNN) + Recurrent Neural Network (RNN) architecture. The results
+we obtain are encouraging as they outperform standard temporal CNNs and are at par with those using
+spatial information along with motion cues. Further exploring multistream models, we conceive
+a multi-tier fusion strategy for the spatial and temporal wings of a network. A consolidated representation
+of the respective individual prediction vectors on video and frame levels is obtained using a biased
+conflation technique. The fusion strategy endows us with greater rise in precision on each stage
+as compared to the state-of-the-art methods, and thus a powerful consensus is achieved in classification.
+Results are recorded on four benchmark datasets widely used in the domain of action recognition,
+namely CCV, HMDB, UCF-101 and KCV. It is inferable that focusing on better classification of the
+video sequences certainly leads to robust actuation of a system designed for event surveillance
+and object cum activity tracking. 

@@ -1,0 +1,20 @@
+System design tools are often only available as input-output blackboxes: for a given design as input
+they compute an output representing system behavior. Blackboxes are intended to be run in the forward
+direction. This paper presents a new method of solving the inverse design problem namely, given
+requirements or constraints on output, find an input that also optimizes an objective function.
+This problem is challenging for several reasons. First, blackboxes are not designed to be run in
+reverse. Second, inputs and outputs can be discrete and continuous. Third, finding designs concurrently
+satisfying a set of requirements is hard because designs satisfying individual requirements may
+conflict with each other. Fourth, blackbox evaluations can be expensive. Finally, blackboxes
+can sometimes fail to produce an output. This paper presents CNMA, a new method of solving the inverse
+problem that overcomes these challenges. CNMA tries to sample only the part of the design space relevant
+to solving the problem, leveraging the power of neural networks, Mixed Integer Linear Programs,
+and a new learning-from-failure feedback loop. The paper also presents a parallel version of CNMA
+that improves the efficiency and quality of solutions over the sequential version, and tries to
+steer it away from local optima. CNMA's performance is evaluated against conventional optimization
+methods for seven nonlinear design problems of 8 (two problems), 10, 15, 36 and 60 real-valued dimensions
+and one with 186 binary dimensions. Conventional methods evaluated are off-the-shelf implementations
+of Bayesian Optimization with Gaussian Processes, Nelder Mead and Random Search. The first two
+do not solve problems that are high-dimensional, have discrete and continuous variables or whose
+blackboxes can fail to return values. CNMA solves all problems, and surpasses the performance of
+conventional methods by up to 87%. 

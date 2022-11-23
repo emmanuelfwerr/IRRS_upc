@@ -1,0 +1,19 @@
+This work presents CounterNet, a novel end-to-end learning framework which integrates Machine
+Learning (ML) model training and the generation of corresponding counterfactual (CF) explanations
+into a single end-to-end pipeline. Counterfactual explanations offer a contrastive case, i.e.,
+they attempt to find the smallest modification to the feature values of an instance that changes
+the prediction of the ML model on that instance to a predefined output. Prior techniques for generating
+CF explanations suffer from two major limitations: (i) they generate CF explanations by solving
+separate time-intensive optimization problems for every single input instance (which slows their
+running time); and (ii) they are post-hoc methods which are designed for use with proprietary black-box
+ML models - as a result, their procedure for generating CF explanations is uninformed by the training
+procedure of the black-box ML model, which leads to misalignment of objectives between model predictions
+and explanations. These two limitations result in significant shortcomings in the quality of the
+generated CF explanations. CounterNet, on the other hand, integrates both prediction and explanation
+in the same framework, which enables the optimization of the CF explanation generation only once
+together with the predictive model. We adopt a theoretically sound block-wise coordinate descent
+procedure which helps in effectively training CounterNet's network architecture. Finally, we
+evaluate CounterNet's performance by conducting extensive experiments on multiple real-world
+datasets. Our results show that CounterNet generates high-quality predictions, and corresponding
+CF explanations (with well-balanced cost-invalidity trade-offs) for any new input instance significantly
+faster than existing state-of-the-art baselines. 

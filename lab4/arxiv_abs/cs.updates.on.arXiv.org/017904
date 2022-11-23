@@ -1,0 +1,18 @@
+We experiment with the log-returns of financial time series, providing multi-horizon forecasts
+with a selection of robust supervised learners. We devise an external input selection algorithm
+that aims to maximise regression R^2 whilst minimising feature correlations and can operate efficiently
+in a high-dimensional setting. We improve upon the earlier work on radial basis function networks
+(rbfnets), which applies feature representation transfer from clustering algorithms to supervised
+learners. Rather than using a randomised, scalar standard deviation for each hidden processing
+unit (hpu)'s radial basis function, we use a covariance matrix estimated via a Bayesian map approach.
+If many (few) training data points are assigned to the j'th cluster, the j'th covariance matrix will
+resemble the maximum likelihood (diagonalised variance prior) estimate. More precisely, we operate
+with and adapt the precision (inverse covariance) matrices; this leads to a test time fitting time-complexity
+of O(kd^2), where k is the number of hpus and d is the external input dimensionality. Our approach
+leads to a reduction from O(kd^3) when inverting covariance matrices. Furthermore, we sequentially
+optimise the hpu parameters with an exponential decay to facilitate regime changes or concept drifts.
+Our experiments demonstrate that our online rbfnet outperforms a random-walk baseline and several
+powerful batch learners. The outperformance is not purely down to sequential updating in the test
+set. Instead, a competitor ewrls model is updated similarly and performs less well than several
+batch-learners. Finally, our online rbfnet has hpus that retain greater similarity between training
+and test vectors, ensuring that it obtains the smallest prediction mean squared errors. 

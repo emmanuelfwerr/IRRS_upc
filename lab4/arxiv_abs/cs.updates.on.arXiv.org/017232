@@ -1,0 +1,19 @@
+Partial shapes correspondences is a problem that often occurs in computer vision (occlusion, evolution
+in time...). In medical imaging, data may come from different modalities and be acquired under different
+conditions which leads to variations in shapes and topologies. In this paper we use an asymmetric
+data dissimilarity term applicable to various geometric shapes like sets of curves or surfaces,
+assessing the embedding of a shape into another one without relying on correspondences. It is designed
+as a data attachment for the Large Deformation Diffeomorphic Metric Mapping (LDDMM) framework,
+allowing to compute a meaningful deformation of one shape onto a subset of the other. We refine it
+in order to control the resulting non-rigid deformations and provide consistent deformations
+of the shapes along with their ambient space. We show that partial matching can be used for robust
+multi-modal liver registration between a Computed Tomography (CT) volume and a Cone Beam Computed
+Tomography (CBCT) volume. The 3D imaging of the patient CBCT at point of care that we call live is truncated
+while the CT pre-intervention provides a full visualization of the liver. The proposed method allows
+the truncated surfaces from CBCT to be aligned non-rigidly, yet realistically, with surfaces from
+CT with an average distance of 2.6mm(+/- 2.2). The generated deformations extend consistently
+to the liver volume, and are evaluated on points of interest for the physicians, with an average distance
+of 5.8mm (+/- 2.7) for vessels bifurcations and 5.13mm (+/- 2.5) for tumors landmarks. Such multi-modality
+volumes registrations would help the physicians in the perspective of navigating their tools in
+the patient's anatomy to locate structures that are hardly visible in the CBCT used during their
+procedures. Our code is available at https://github.com/plantonsanti/PartialMatchingVarifolds.

@@ -1,0 +1,20 @@
+With growing deployment of Internet of Things (IoT) and machine learning (ML) applications, which
+need to leverage computation on edge and cloud resources, it is important to develop algorithms
+and tools to place these distributed computations to optimize their performance. We address the
+problem of optimally placing computations (described as directed acyclic graphs (DAGs)) on a set
+of machines to maximize the steady-state throughput for pipelined inputs. Traditionally, such
+optimization has focused on a different metric, minimizing single-shot makespan, and a well-known
+algorithm is the Heterogeneous Earliest Finish Time (HEFT) algorithm. Maximizing throughput
+however, is more suitable for many real-time, edge, cloud and IoT applications, we present a different
+scheduling algorithm, namely Throughput HEFT (TPHEFT). Further, we present two throughput-oriented
+enhancements which can be applied to any baseline schedule, that we refer to as "node splitting"
+(SPLIT) and "task duplication" (DUP). In order to implement and evaluate these algorithms, we built
+new subsystems and plugins for an open-source dispersed computing framework called Jupiter. Experiments
+with varying DAG structures indicate that: 1) TPHEFT can significantly improve throughput performance
+compared to HEFT (up to 2.3 times in our experiments), with greater gains when there is less degree
+of parallelism in the DAG, 2) Node splitting can potentially improve performance over a baseline
+schedule, with greater gains when there's an imbalanced allocation of computation or inter-task
+communication, and 3) Task duplication generally gives improvements only when running upon a baseline
+that places communication over slow links. To our knowledge, this is the first study to present a
+systematic experimental implementation and exploration of throughput-enhancing techniques
+for dispersed computing on real testbeds. 

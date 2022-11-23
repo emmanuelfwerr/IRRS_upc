@@ -1,0 +1,19 @@
+We consider the data-driven discovery of governing equations from time-series data in the limit
+of high noise. The algorithms developed describe an extensive toolkit of methods for circumventing
+the deleterious effects of noise in the context of the sparse identification of nonlinear dynamics
+(SINDy) framework. We offer two primary contributions, both focused on noisy data acquired from
+a system x' = f(x). First, we propose, for use in high-noise settings, an extensive toolkit of critically
+enabling extensions for the SINDy regression method, to progressively cull functionals from an
+over-complete library and yield a set of sparse equations that regress to the derivate x'. These
+innovations can extract sparse governing equations and coefficients from high-noise time-series
+data (e.g. 300% added noise). For example, it discovers the correct sparse libraries in the Lorenz
+system, with median coefficient estimate errors equal to 1% - 3% (for 50% noise), 6% - 8% (for 100%
+noise); and 23% - 25% (for 300% noise). The enabling modules in the toolkit are combined into a single
+method, but the individual modules can be tactically applied in other equation discovery methods
+(SINDy or not) to improve results on high-noise data. Second, we propose a technique, applicable
+to any model discovery method based on x' = f(x), to assess the accuracy of a discovered model in the
+context of non-unique solutions due to noisy data. Currently, this non-uniqueness can obscure
+a discovered model's accuracy and thus a discovery method's effectiveness. We describe a technique
+that uses linear dependencies among functionals to transform a discovered model into an equivalent
+form that is closest to the true model, enabling more accurate assessment of a discovered model's
+accuracy. 

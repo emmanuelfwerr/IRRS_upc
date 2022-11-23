@@ -1,0 +1,19 @@
+Humans and animals can learn new skills after practicing for a few hours, while current reinforcement
+learning algorithms require a large amount of data to achieve good performances. Recent model-based
+approaches show promising results by reducing the number of necessary interactions with the environment
+to learn a desirable policy. However, these methods require biological implausible ingredients,
+such as the detailed storage of older experiences, and long periods of offline learning. The optimal
+way to learn and exploit word-models is still an open question. Taking inspiration from biology,
+we suggest that dreaming might be an efficient expedient to use an inner model. We propose a two-module
+(agent and model) neural network in which "dreaming" (living new experiences in a model-based simulated
+environment) significantly boosts learning. We also explore "planning", an online alternative
+to dreaming, that shows comparable performances. Importantly, our model does not require the detailed
+storage of experiences, and learns online the world-model. This is a key ingredient for biological
+plausibility and implementability (e.g., in neuromorphic hardware). Our network is composed
+of spiking neurons, further increasing the energetic efficiency and the plausibility of the model.
+To our knowledge, there are no previous works proposing biologically plausible model-based reinforcement
+learning in recurrent spiking networks. Our work is a step toward building efficient neuromorphic
+systems for autonomous robots, capable of learning new skills in real-world environments. Even
+when the environment is no longer accessible, the robot optimizes learning by "reasoning" in its
+own "mind". These approaches are of great relevance when the acquisition from the environment is
+slow, expensive (robotics) or unsafe (autonomous driving). 

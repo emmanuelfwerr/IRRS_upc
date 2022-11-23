@@ -1,0 +1,20 @@
+Indoor thermal comfort immensely impacts the health and performance of occupants. Therefore,
+researchers and engineers have proposed numerous computational models to estimate thermal comfort
+(TC). Given the impetus toward energy efficiency, the current focus is on data-driven TC prediction
+solutions that leverage state-of-the-art machine learning (ML) algorithms. However, an indoor
+occupant's perception of indoor thermal comfort (TC) is subjective and multi-dimensional. Different
+aspects of TC are represented by various standard metrics/scales viz., thermal sensation (TSV),
+thermal comfort (TCV), and thermal preference (TPV). The current ML-based TC prediction solutions
+adopt the Single-task Learning approach, i.e., one prediction model per metric. Consequently,
+solutions often focus on only one TC metric. Moreover, when several metrics are considered, multiple
+TC models for a single indoor space lead to conflicting predictions, making real-world deployment
+infeasible. This work addresses these problems. With the vision toward energy conservation and
+real-world application, naturally ventilated primary school classrooms are considered. First,
+month-long field experiments are conducted in 5 schools and 14 classrooms, including 512 unique
+student participants. Further, "DeepComfort," a Multi-task Learning inspired deep-learning
+model is proposed. DeepComfort predicts multiple TC output metrics viz., TSV, TPV, and TCV, simultaneously,
+through a single model. It demonstrates high F1-scores, Accuracy (>90%), and generalization capability
+when validated on the ASHRAE-II database and the dataset created in this study. DeepComfort is also
+shown to outperform 6 popular metric-specific single-task machine learning algorithms. To the
+best of our knowledge, this work is the first application of Multi-task Learning to thermal comfort
+prediction in classrooms. 

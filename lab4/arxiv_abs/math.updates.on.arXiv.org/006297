@@ -1,0 +1,19 @@
+Many applications, such as system identification, classification of time series, direct and inverse
+problems in partial differential equations, and uncertainty quantification lead to the question
+of approximation of a non-linear operator between metric spaces $\mathfrak{X}$ and $\mathfrak{Y}$.
+We study the problem of determining the degree of approximation of a such operators on a compact subset
+$K_\mathfrak{X}\subset \mathfrak{X}$ using a finite amount of information. If $\mathcal{F}:
+K_\mathfrak{X}\to K_\mathfrak{Y}$, a well established strategy to approximate $\mathcal{F}(F)$
+for some $F\in K_\mathfrak{X}$ is to encode $F$ (respectively, $\mathcal{F}(F)$) in terms of a
+finite number $d$ (repectively $m$) of real numbers. Together with appropriate reconstruction
+algorithms (decoders), the problem reduces to the approximation of $m$ functions on a compact subset
+of a high dimensional Euclidean space $\mathbb{R}^d$, equivalently, the unit sphere $\mathbb{S}^d$
+embedded in $\mathbb{R}^{d+1}$. The problem is challenging because $d$, $m$, as well as the complexity
+of the approximation on $\mathbb{S}^d$ are all large, and it is necessary to estimate the accuracy
+keeping track of the inter-dependence of all the approximations involved. In this paper, we establish
+constructive methods to do this efficiently; i.e., with the constants involved in the estimates
+on the approximation on $\\mathbb{S}^d$ being $\mathcal{O}(d^{1/6})$. We study different smoothness
+classes for the operators, and also propose a method for approximation of $\mathcal{F}(F)$ using
+only information in a small neighborhood of $F$, resulting in an effective reduction in the number
+of parameters involved. To further mitigate the problem of large number of parameters, we propose
+prefabricated networks, resulting in a substantially smaller number of effective parameters.

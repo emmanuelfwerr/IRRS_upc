@@ -1,0 +1,19 @@
+We study online learning in repeated first-price auctions with censored feedback, where a bidder,
+only observing the winning bid at the end of each auction, learns to adaptively bid in order to maximize
+her cumulative payoff. To achieve this goal, the bidder faces a challenging dilemma: if she wins
+the bid--the only way to achieve positive payoffs--then she is not able to observe the highest bid
+of the other bidders, which we assume is iid drawn from an unknown distribution. This dilemma, despite
+being reminiscent of the exploration-exploitation trade-off in contextual bandits, cannot directly
+be addressed by the existing UCB or Thompson sampling algorithms. In this paper, by exploiting the
+structural properties of first-price auctions, we develop the first learning algorithm that achieves
+$O(\sqrt{T}\log^{2.5} T)$ regret bound, which is minimax optimal up to $\log$ factors, when the
+bidder's private values are stochastically generated. We do so by providing an algorithm on a general
+class of problems, called the partially ordered contextual bandits, which combine the graph feedback
+across actions, the cross learning across contexts, and a partial order over the contexts. We establish
+both strengths and weaknesses of this framework, by showing a curious separation that a regret nearly
+independent of the action/context sizes is possible under stochastic contexts, but is impossible
+under adversarial contexts. Despite the limitation of this general framework, we further exploit
+the structure of first-price auctions and develop a learning algorithm that operates sample-efficiently
+(and computationally efficiently) in the presence of adversarially generated private values.
+We establish an $O(\sqrt{T}\log^3 T)$ regret bound for this algorithm, hence providing a complete
+characterization of optimal learning guarantees for first-price auctions. 

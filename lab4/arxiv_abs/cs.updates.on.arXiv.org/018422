@@ -1,0 +1,20 @@
+Text classification plays an important role in many practical applications. In the real world,
+there are extremely small datasets. Most existing methods adopt pre-trained neural network models
+to handle this kind of dataset. However, these methods are either difficult to deploy on mobile devices
+because of their large output size or cannot fully extract the deep semantic information between
+phrases and clauses. This paper proposes a multimodel-based deep learning framework for short-text
+multiclass classification with an imbalanced and extremely small data set. Our framework mainly
+includes five layers: The encoder layer uses DISTILBERT to obtain context-sensitive dynamic word
+vectors that are difficult to represent in traditional feature engineering methods. Since the
+transformer part of this layer is distilled, our framework is compressed. Then, we use the next two
+layers to extract deep semantic information. The output of the encoder layer is sent to a bidirectional
+LSTM network, and the feature matrix is extracted hierarchically through the LSTM at the word and
+sentence level to obtain the fine-grained semantic representation. After that, the max-pooling
+layer converts the feature matrix into a lower-dimensional matrix, preserving only the obvious
+features. Finally, the feature matrix is taken as the input of a fully connected softmax layer, which
+contains a function that can convert the predicted linear vector into the output value as the probability
+of the text in each classification. Extensive experiments on two public benchmarks demonstrate
+the effectiveness of our proposed approach on an extremely small data set. It retains the state-of-the-art
+baseline performance in terms of precision, recall, accuracy, and F1 score, and through the model
+size, training time, and convergence epoch, we can conclude that our method can be deployed faster
+and lighter on mobile devices. 

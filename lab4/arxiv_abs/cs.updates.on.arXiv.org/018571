@@ -1,0 +1,19 @@
+Software requirements traceability is a critical component of the software engineering process,
+enabling activities such as requirements validation, compliance verification, and safety assurance.
+However, the cost and effort of manually creating a complete set of trace links across natural language
+artifacts such as requirements, design, and test-cases can be prohibitively expensive. Researchers
+have therefore proposed automated link-generation solutions primarily based on information-retrieval
+(IR) techniques; however, these solutions have failed to deliver the accuracy needed for full adoption
+in industrial projects. Improvements can be achieved using deep-learning traceability models;
+however, their efficacy is impeded by the limited size and availability of project-level artifacts
+and links to serve as training data. In this paper, we address this problem by proposing and evaluating
+several deep-learning approaches for text-to-text traceability. Our method, named NLTrace,
+explores three transfer learning strategies that use datasets mined from open world platforms.
+Through pretraining Language Models (LMs) and leveraging adjacent tracing tasks, we demonstrate
+that NLTrace can significantly improve the performance of LM based trace models when training links
+are available. In such scenarios NLTrace outperforms the best performing classical IR method with
+an 188% improvement in F2 score and 94.01% in Mean Average Precision (MAP). It also outperforms the
+general LM based trace model by 7% and 23% for F2 and MAP respectively. In addition, NLTrace can adapt
+to low-resource tracing scenarios where other LM models can not. The knowledge learned from adjacent
+tasks enables NLTrace to outperform VSM models by 28% F2 on generation challenges when presented
+with a small number of training examples. 

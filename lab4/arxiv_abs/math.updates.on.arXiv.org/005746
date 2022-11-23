@@ -1,0 +1,19 @@
+Predictive risk scores estimating probabilities for a binary outcome on the basis of observed covariates
+are frequently developed with the intent of avoiding that outcome by intervening on covariates
+in response to estimated risks. Since risk scores are usually developed in complex systems, interventions
+often take the form of expert actors responding to estimated risks as they best see fit. In this case,
+interventions may be complex and their effects difficult to observe or infer, meaning that explicit
+specification of interventions in response to risk scores is impractical. The capacity to design
+the aggregate model-intervention scheme in a way which optimises objectives is hence limited.
+We propose an algorithm by which a model-intervention scheme can be developed by `stacking' possibly
+unknown intervention effects. By repeatedly observing and updating the intervention and model,
+this scheme leads to convergence or almost-convergence of eventual outcome risk to an equivocal
+value for any initial value of covariates, given reasonable assumptions. Roughly, our approach
+involves deploying a series of risk scores to expert actors, with instructions to act on them in succession.
+Our algorithm uses only observations of pre-intervention covariates and the eventual outcome
+as input. It is not necessary to know the action of the intervention, other than a general assumption
+that it is `well-intentioned'. This algorithm can also be used to safely update risk scores in the
+presence of unknown interventions, an important contemporary problem in machine learning. We
+demonstrate convergence of expectation of outcome in a range of settings, and give sufficient conditions
+for convergence in distribution of covariate values. Finally, we demonstrate a potential practical
+implementation by simulation to optimise population-level outcome frequency. 

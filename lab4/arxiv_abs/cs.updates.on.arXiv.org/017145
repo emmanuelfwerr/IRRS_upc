@@ -1,0 +1,18 @@
+Spectral hypergraph sparsification, which is an attempt to extend well-known spectral graph sparsification
+to hypergraphs, has been extensively studied over the past few years. For undirected hypergraphs,
+Kapralov, Krauthgamer, Tardos, and Yoshida (2022) have recently obtained an algorithm for constructing
+an $\varepsilon$-spectral sparsifier of optimal $O^*(n)$ size, where $O^*$ suppresses the $\varepsilon^{-1}$
+and $\log n$ factors, while the optimal sparsifier size has not been known for directed hypergraphs.
+In this paper, we present the first algorithm for constructing an $\varepsilon$-spectral sparsifier
+for a directed hypergraph with $O^*(n^2)$ hyperarcs. This improves the previous bound by Kapralov,
+Krauthgamer, Tardos, and Yoshida (2021), and it is optimal up to the $\varepsilon^{-1}$ and $\log
+n$ factors since there is a lower bound of $\Omega(n^2)$ even for directed graphs. For general directed
+hypergraphs, we show the first non-trivial lower bound of $\Omega(n^2/\varepsilon)$. Our algorithm
+can be regarded as an extension of the spanner-based graph sparsification by Koutis and Xu (2016).
+To exhibit the power of the spanner-based approach, we also examine a natural extension of Koutis
+and Xu's algorithm to undirected hypergraphs. We show that it outputs an $\varepsilon$-spectral
+sparsifier of an undirected hypergraph with $O^*(nr^3)$ hyperedges, where $r$ is the maximum size
+of a hyperedge. Our analysis of the undirected case is based on that of Bansal, Svensson, and Trevisan
+(2019), and the bound matches that of the hypergraph sparsification algorithm by Bansal et al. We
+further show that our algorithm inherits advantages of the spanner-based sparsification in that
+it is fast, can be implemented in parallel, and can be converted to be fault-tolerant. 

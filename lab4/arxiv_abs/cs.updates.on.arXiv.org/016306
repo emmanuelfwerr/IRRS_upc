@@ -1,0 +1,19 @@
+The use of wearable technology for posture monitoring has been expanding due to its low-intrusiveness
+and compliance with daily use requirements. However, there are still open challenges limiting
+its widespread use, especially when dealing with low-cost systems. Most solutions falls either
+into fully functioning commercial products with high costs, or ad-hoc solutions with lower performance.
+Moreover, there are few datasets available, from which complete and general solutions can be derived.
+This work presents 2 datasets, containing low-cost and high-end Magnetic, Angular Rate, and Gravity
+(MARG) sensor data respectively. It provides data for the analysis of the complete inertial pose
+pipeline, from raw measurements, to sensor-to-segment calibration, multi-sensor fusion, skeleton
+kinematics, to the complete human pose. Multiple trials were collected with 21 and 10 subjects respectively,
+performing 6 types of sequences (ranging from calibration, to daily-activities and random movements).
+It presents a high degree of variability and complex dynamics with almost complete range-of-motion,
+while containing common sources of error found on real conditions. This amounts to 3.5M samples,
+synchronized with a ground-truth inertial motion capture system at 60hz. A simple end-to-end inertial
+pose method was briefly described and used to validate the quality of the data in both acquisitions.
+This database may contribute to assess, benchmark and develop novel algorithms for each of the pipelines'
+processing steps, with applications in classic or data-driven inertial pose estimation algorithms,
+human movement understanding and forecasting and ergonomic assessment in industrial or rehabilitation
+settings. All the data is freely available on an online database and accompanied with code to process
+and analyze the complete data pipeline. 

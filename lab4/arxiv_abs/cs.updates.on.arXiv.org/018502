@@ -1,0 +1,20 @@
+Deep recommender systems jointly leverage the retrieval and ranking operations to generate the
+recommendation result. The retriever targets selecting a small set of relevant candidates from
+the entire items with high efficiency; while the ranker, usually more precise but time-consuming,
+is supposed to identify the best items out of the retrieved candidates with high precision. However,
+the retriever and ranker are usually trained in poorly-cooperative ways, leading to limited recommendation
+performances when working as an entirety. In this work, we propose a novel DRS training framework
+CoRR(short for Cooperative Retriever and Ranker), where the retriever and ranker can be mutually
+reinforced. On one hand, the retriever is learned from recommendation data and the ranker via knowledge
+distillation; knowing that the ranker is more precise, the knowledge distillation may provide
+extra weak-supervision signals for the improvement of retrieval quality. On the other hand, the
+ranker is trained by learning to discriminate the truth positive items from hard negative candidates
+sampled from the retriever. With the iteration going on, the ranker may become more precise, which
+in return gives rise to informative training signals for the retriever; meanwhile, with the improvement
+of retriever, harder negative candidates can be sampled, which contributes to a higher discriminative
+capability of the ranker. To facilitate the effective conduct of CoRR, an asymptotic-unbiased
+approximation of KL divergence is introduced for the knowledge distillation over sampled items;
+besides, a scalable and adaptive strategy is developed to efficiently sample from the retriever.
+Comprehensive experimental studies are performed over four large-scale benchmark datasets,
+where CoRR improves the overall recommendation quality resulting from the cooperation between
+retriever and ranker. 

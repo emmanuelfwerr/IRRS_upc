@@ -1,0 +1,19 @@
+Empirical estimates of the band power covariance matrix are commonly used in cosmic microwave background
+(CMB) power spectrum analyses. While this approach easily captures correlations in the data, noise
+in the resulting covariance estimate can systematically bias the parameter fitting. Conditioning
+the estimated covariance matrix, by applying prior information on the shape of the eigenvectors,
+can reduce these biases and ensure the recovery of robust parameter constraints. In this work, we
+use simulations to benchmark the performance of four different conditioning schemes, motivated
+by contemporary CMB analyses. The simulated surveys measure the $TT$, $TE$, and $EE$ power spectra
+over the angular multipole range $300 \le \ell \le 3500$ in $\Delta \ell = 50$ wide bins, for temperature
+map-noise levels of $10, 6.4$ and $2\,\mu$K-arcmin. We divide the survey data into $N_{\mathrm{real}}
+= 30, 50,$ or 100 uniform subsets. We show the results of different conditioning schemes on the errors
+in the covariance estimate, and how these uncertainties on the covariance matrix propagate to the
+best-fit parameters and parameter uncertainties. The most significant effect we find is an additional
+scatter in the best-fit point, beyond what is expected from the data likelihood. For a minimal conditioning
+strategy, $N_{\mathrm{real}} = 30$, and a temperature map-noise level of 10$\,\mu$K-arcmin,
+we find the uncertainty on the recovered best fit parameter to be $\times 1.3$ larger than the apparent
+posterior width from the likelihood ($\times 1.2$ larger than the uncertainty when the true covariance
+is used). Stronger priors on the covariance matrix reduce the misestimation of parameter uncertainties
+to $<1\%$. As expected, empirical estimates perform better with higher $N_{\mathrm{real}}$,
+ameliorating the adverse effects on parameter constraints. 

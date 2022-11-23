@@ -1,0 +1,18 @@
+Unsupervised domain adaptation methods aim to generalize well on unlabeled test data that may have
+a different (shifted) distribution from the training data. Such methods are typically developed
+on image data, and their application to time series data is less explored. Existing works on time
+series domain adaptation suffer from inconsistencies in evaluation schemes, datasets, and backbone
+neural network architectures. Moreover, labeled target data are usually employed for model selection,
+which violates the fundamental assumption of unsupervised domain adaptation. To address these
+issues, we develop a benchmarking evaluation suite (ADATIME) to systematically and fairly evaluate
+different domain adaptation methods on time series data. Specifically, we standardize the backbone
+neural network architectures and benchmarking datasets, while also exploring more realistic
+model selection approaches that can work with no labeled data or just few labeled samples. Our evaluation
+includes adapting state-of-the-art visual domain adaptation methods to time series data in addition
+to the recent methods specifically developed for time series data. We conduct extensive experiments
+to evaluate 10 state-of-the-art methods on four representative datasets spanning 20 cross-domain
+scenarios. Our results suggest that with careful selection of hyper-parameters, visual domain
+adaptation methods are competitive with methods proposed for time series domain adaptation. In
+addition, we find that hyper-parameters could be selected based on realistic model selection approaches.
+Our work unveils practical insights for applying domain adaptation methods on time series data
+and builds a solid foundation for future works in the field. The code is available at \href{https://github.com/emadeldeen24/AdaTime}{github.com/emadeldeen24/AdaTime}.

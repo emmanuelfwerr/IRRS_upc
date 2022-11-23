@@ -1,0 +1,19 @@
+Deep neural networks (DNNs) have shown their success as high-dimensional function approximators
+in many applications; however, training DNNs can be challenging in general. DNN training is commonly
+phrased as a stochastic optimization problem whose challenges include non-convexity, non-smoothness,
+insufficient regularization, and complicated data distributions. Hence, the performance of
+DNNs on a given task depends crucially on tuning hyperparameters, especially learning rates and
+regularization parameters. In the absence of theoretical guidelines or prior experience on similar
+tasks, this requires solving many training problems, which can be time-consuming and demanding
+on computational resources. This can limit the applicability of DNNs to problems with non-standard,
+complex, and scarce datasets, e.g., those arising in many scientific applications. To remedy the
+challenges of DNN training, we propose slimTrain, a stochastic optimization method for training
+DNNs with reduced sensitivity to the choice hyperparameters and fast initial convergence. The
+central idea of slimTrain is to exploit the separability inherent in many DNN architectures; that
+is, we separate the DNN into a nonlinear feature extractor followed by a linear model. This separability
+allows us to leverage recent advances made for solving large-scale, linear, ill-posed inverse
+problems. Crucially, for the linear weights, slimTrain does not require a learning rate and automatically
+adapts the regularization parameter. Since our method operates on mini-batches, its computational
+overhead per iteration is modest. In our numerical experiments, slimTrain outperforms existing
+DNN training methods with the recommended hyperparameter settings and reduces the sensitivity
+of DNN training to the remaining hyperparameters. 

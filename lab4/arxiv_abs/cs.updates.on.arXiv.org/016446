@@ -1,0 +1,19 @@
+Analyzing long time series with RNNs often suffers from infeasible training. Segmentation is therefore
+commonly used in data pre-processing. However, in non-stationary time series, there exists often
+distribution shift among different segments. RNN is easily swamped in the dilemma of fitting bias
+in these segments due to the lack of global information, leading to poor generalization, known as
+Temporal Covariate Shift (TCS) problem, which is only addressed by a recently proposed RNN-based
+model. One of the assumptions in TCS is that the distribution of all divided intervals under the same
+segment are identical. This assumption, however, may not be true on high-frequency time series,
+such as traffic flow, that also have large stochasticity. Besides, macro information across long
+periods isn't adequately considered in the latest RNN-based methods. To address the above issues,
+we propose Hyper Attention Recurrent Neural Network (HARNN) for the modeling of temporal patterns
+containing both micro and macro information. An HARNN consists of a meta layer for parameter generation
+and an attention-enabled main layer for inference. High-frequency segments are transformed into
+low-frequency segments and fed into the meta layers, while the first main layer consumes the same
+high-frequency segments as conventional methods. In this way, each low-frequency segment in the
+meta inputs generates a unique main layer, enabling the integration of both macro information and
+micro information for inference. This forces all main layers to predict the same target which fully
+harnesses the common knowledge in varied distributions when capturing temporal patterns. Evaluations
+on multiple benchmarks demonstrated that our model outperforms a couple of RNN-based methods on
+a federation of key metrics. 

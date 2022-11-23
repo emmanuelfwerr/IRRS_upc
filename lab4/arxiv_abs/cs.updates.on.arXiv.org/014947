@@ -1,0 +1,20 @@
+Cryptographic protocols have been widely used to protect the user's privacy and avoid exposing
+private information. QUIC (Quick UDP Internet Connections), including the version originally
+designed by Google (GQUIC) and the version standardized by IETF (IQUIC), as alternatives to the
+traditional HTTP, demonstrate their unique transmission characteristics: based on UDP for encrypted
+resource transmitting, accelerating web page rendering. However, existing encrypted transmission
+schemes based on TCP are vulnerable to website fingerprinting (WFP) attacks, allowing adversaries
+to infer the users' visited websites by eavesdropping on the transmission channel. Whether GQUIC
+and IQUIC can effectively resist such attacks is worth investigating. In this paper, we study the
+vulnerabilities of GQUIC, IQUIC, and HTTPS to WFP attacks from the perspective of traffic analysis.
+Extensive experiments show that, in the early traffic scenario, GQUIC is the most vulnerable to
+WFP attacks among GQUIC, IQUIC, and HTTPS, while IQUIC is more vulnerable than HTTPS, but the vulnerability
+of the three protocols is similar in the normal full traffic scenario. Features transferring analysis
+shows that most features are transferable between protocols when on normal full traffic scenario.
+However, combining with the qualitative analysis of latent feature representation, we find that
+the transferring is inefficient when on early traffic, as GQUIC, IQUIC, and HTTPS show the significantly
+different magnitude of variation in the traffic distribution on early traffic. By upgrading the
+one-time WFP attacks to multiple WFP Top-a attacks, we find that the attack accuracy on GQUIC and
+IQUIC reach 95.4% and 95.5%, respectively, with only 40 packets and just using simple features,
+whereas reach only 60.7% when on HTTPS. We also demonstrate that the vulnerability of IQUIC is only
+slightly dependent on the network environment. 

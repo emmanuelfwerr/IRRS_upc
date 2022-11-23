@@ -1,0 +1,19 @@
+Current tractography methods use the local orientation information to propagate streamlines
+from seed locations. Many such seeds provide streamlines that stop prematurely or fail to map the
+true pathways because some white matter bundles are "harder-to-track" than others. This results
+in tractography reconstructions with poor white and gray matter spatial coverage. In this work,
+we propose a generative, autoencoder-based method, named GESTA (Generative Sampling in Tractography
+using Autoencoders), that produces streamlines with better spatial coverage. Compared to other
+deep learning methods, our autoencoder-based framework is not constrained by any prior or a fixed
+set of bundles. GESTA produces new and complete streamlines for any white matter bundle. GESTA is
+shown to be effective on both synthetic and human brain in vivo data. Our streamline evaluation framework
+ensures that the streamlines produced by GESTA are anatomically plausible and fit well to the local
+diffusion signal. The streamline evaluation criteria assess anatomy (white matter coverage),
+local orientation alignment (direction), geometry features of streamlines, and optionally,
+gray matter connectivity. The GESTA framework offers considerable gains in bundle coverage using
+a reduced set of seeding streamlines with a 1.5x improvement for the "Fiber Cup", and 6x for the ISMRM
+2015 Tractography Challenge datasets. Similarly, it provides a 4x white matter volume increase
+on the BIL&GIN callosal homotopic dataset. It also successfully generates new streamlines in poorly
+populated bundles, such as the fornix and other hard-to-track bundles, on in vivo data. GESTA is
+thus the first deep tractography generative method that can improve white matter reconstruction
+of hard-to-track bundles. 

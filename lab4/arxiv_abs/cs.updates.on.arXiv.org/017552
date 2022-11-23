@@ -1,0 +1,19 @@
+Causal Bayesian Networks (CBNs) have become a powerful technology for reasoning under uncertainty,
+particularly in areas that require transparency and explainability, and rely on causal assumptions
+that enable us to simulate the effect of intervention. The graphical structure of these models can
+be estimated by causal knowledge, estimated from data using structure learning algorithms, or
+a combination of both. Various knowledge approaches have been proposed in the literature that enable
+us to specify prior knowledge that constrains or guides these algorithms. The objective of this
+paper is to investigate the impact of causal knowledge on structure learning across different settings
+that we might encounter in practice. We have achieved this by using a more comprehensive set of old
+and new knowledge approaches that enable us to obtain knowledge from heterogeneous sources, and
+considered a more comprehensive list of algorithms, case studies, and experimental settings.
+Each approach is assessed in terms of structure learning effectiveness and efficiency, including
+graphical accuracy, model fitting, complexity, and runtime; making this the first paper that provides
+a comparative evaluation of a wide range of knowledge approaches for structure learning. Because
+the value of knowledge depends on what data are available, we illustrate the results both with limited
+and big data. While the overall results show that knowledge becomes less important with big data
+due to higher learning accuracy rendering knowledge less important, some of the knowledge approaches
+are actually found to be more important with big data. Amongst the main conclusions is the observation
+that reduced search space obtained from knowledge does not always imply reduced computational
+complexity, perhaps because the relationships implied by the data and knowledge are in tension.

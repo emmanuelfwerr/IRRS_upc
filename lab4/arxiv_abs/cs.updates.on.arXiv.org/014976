@@ -1,0 +1,20 @@
+Long-term monitoring of patients with epilepsy presents a challenging problem from the engineering
+perspective of real-time detection and wearable devices design. It requires new solutions that
+allow continuous unobstructed monitoring and reliable detection and prediction of seizures.
+A high variability in the electroencephalogram (EEG) patterns exists among people, brain states,
+and time instances during seizures, but also during non-seizure periods. This makes epileptic
+seizure detection very challenging, especially if data is grouped under only seizure and non-seizure
+labels. Hyperdimensional (HD) computing, a novel machine learning approach, comes in as a promising
+tool. However, it has certain limitations when the data shows a high intra-class variability. Therefore,
+in this work, we propose a novel semi-supervised learning approach based on a multi-centroid HD
+computing. The multi-centroid approach allows to have several prototype vectors representing
+seizure and non-seizure states, which leads to significantly improved performance when compared
+to a simple 2-class HD model. Further, real-life data imbalance poses an additional challenge and
+the performance reported on balanced subsets of data is likely to be overestimated. Thus, we test
+our multi-centroid approach with three different dataset balancing scenarios, showing that performance
+improvement is higher for the less balanced dataset. More specifically, up to 14% improvement is
+achieved on an unbalanced test set with 10 times more non-seizure than seizure data. At the same time,
+the total number of sub-classes is not significantly increased compared to the balanced dataset.
+Thus, the proposed multi-centroid approach can be an important element in achieving a high performance
+of epilepsy detection with real-life data balance or during online learning, where seizures are
+infrequent. 

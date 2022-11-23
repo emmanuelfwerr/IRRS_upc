@@ -1,0 +1,19 @@
+We developed a new general-relativistic quantum-kinetics neutrino transport code, GRQKNT, for
+numerical studies of quantum kinetics of non-equilibrium neutrinos in six-dimensional phase
+space. This code is intended for use in both local and global simulations of neutrino transport in
+core-collapse supernova and binary neutron star merger. It has been widely recognized that global
+simulations of collective neutrino oscillations, in particular fast neutrino-flavor conversions
+(FFC), require unfeasible computational resources due to large disparity of scales between flavor
+conversion and astrophysical phenomena. We propose a novel approach to tackle the issue. This paper
+is devoted to describe the philosophy, design, and numerical implementation of GRQKNT with a number
+of tests ensuring correct implementation of each module. The code is based on a discrete-ordinate
+Sn method, finite-difference realization of mean-field quantum kinetic equation. The transport
+equation is solved based on a conservative formalism, and we use a fifth-order weighted essentially
+non-oscillatory scheme with fourth-order TVD Runge-Kutta time-integration. The transport module
+is designed to work with arbitrary spacetimes and currently three different stationary spacetimes
+(flat spacetime, Schwarzschild black hole, and Kerr black hole) are implemented. The collision
+term including neutrino emission, absorption, and momentum-exchanged scatterings are also implemented
+into our code. The oscillation Hamiltonian consists of vacuum, matter, and self-interactions.
+Both two- and three neutrino-flavor scenarios can be applied. Fluid-velocity dependences in transport-,
+collision-, and oscillation modules, are also treated self-consistently by using two-energy-grid
+technique, that has been already established in our another code with full Boltzmann neutrino transport.

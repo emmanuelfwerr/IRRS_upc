@@ -1,0 +1,20 @@
+Reversible logic can provide lower switching energy costs relative to all irreversible logic,
+including those developed by industry in semiconductor circuits, however, more research is needed
+to understand what is possible. Superconducting logic, an exemplary platform for both irreversible
+and reversible logic, uses flux quanta to represent bits, and the reversible implementation may
+switch state with low energy dissipation relative to the energy of a flux quantum. Here we simulate
+reversible shift register gates that are ballistic -- their operation is powered by the input bits
+alone. A storage loop is added relative to previous gates as a key innovation, which bestows an asynchronous
+property such that input bits can arrive at different times as long as their order is clearly preserved.
+The shift register represents bit states by flux polarity, both in the stored bit as well as the ballistic
+input and output bits. Its operation consists of the elastic swapping of flux between the stored
+and the moving bit. This is related to a famous irreversible shift register, developed prior to the
+advent of superconducting flux quanta logic (which used irreversible gates). In the base design
+of our ballistic shift register (BSR) there is one 1-input and 1-output port, but we find that we can
+make other asynchronous ballistic gates by extension. For example, we show that two BSRs operate
+in sequence without power added, giving a 2-bit sequential memory. We also show that a BSR with two
+input and two output ports allows a bit state to be set from one input port and then conveyed out on either
+output port. The gate constitutes the first asynchronous reversible 2-input gate. Finally, for
+a better insight into the dynamics, we introduce a collective coordinate model, where motion reduces
+to two coordinates and is subject to a potential determined by the input bit and initial stored flux
+quantum. 

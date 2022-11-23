@@ -1,0 +1,20 @@
+The advancements of deep neural networks (DNNs) have led to their deployment in diverse settings,
+including safety and security-critical applications. As a result, the characteristics of these
+models have become sensitive intellectual properties that require protection from malicious
+users. Extracting the architecture of a DNN through leaky side-channels (e.g., memory access)
+allows adversaries to (i) clone the model, and (ii) craft adversarial attacks. DNN obfuscation
+thwarts side-channel-based architecture stealing (SCAS) attacks by altering the run-time traces
+of a given DNN while preserving its functionality. In this work, we expose the vulnerability of state-of-the-art
+DNN obfuscation methods to these attacks. We present NeuroUnlock, a novel SCAS attack against obfuscated
+DNNs. Our NeuroUnlock employs a sequence-to-sequence model that learns the obfuscation procedure
+and automatically reverts it, thereby recovering the original DNN architecture. We demonstrate
+the effectiveness of NeuroUnlock by recovering the architecture of 200 randomly generated and
+obfuscated DNNs running on the Nvidia RTX 2080 TI graphics processing unit (GPU). Moreover, NeuroUnlock
+recovers the architecture of various other obfuscated DNNs, such as the VGG-11, VGG-13, ResNet-20,
+and ResNet-32 networks. After recovering the architecture, NeuroUnlock automatically builds
+a near-equivalent DNN with only a 1.4% drop in the testing accuracy. We further show that launching
+a subsequent adversarial attack on the recovered DNNs boosts the success rate of the adversarial
+attack by 51.7% in average compared to launching it on the obfuscated versions. Additionally, we
+propose a novel methodology for DNN obfuscation, ReDLock, which eradicates the deterministic
+nature of the obfuscation and achieves 2.16X more resilience to the NeuroUnlock attack. We release
+the NeuroUnlock and the ReDLock as open-source frameworks. 

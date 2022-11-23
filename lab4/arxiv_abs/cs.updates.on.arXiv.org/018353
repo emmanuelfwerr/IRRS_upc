@@ -1,0 +1,19 @@
+Remote Photoplethysmography (rPPG) is a fast, effective, inexpensive and convenient method for
+collecting biometric data as it enables vital signs estimation using face videos. Remote contactless
+medical service provisioning has proven to be a dire necessity during the COVID-19 pandemic. We
+propose an end-to-end framework to measure people's vital signs including Heart Rate (HR), Heart
+Rate Variability (HRV), Oxygen Saturation (SpO2) and Blood Pressure (BP) based on the rPPG methodology
+from the video of a user's face captured with a smartphone camera. We extract face landmarks with
+a deep learning-based neural network model in real-time. Multiple face patches also called Region-of-Interests
+(RoIs) are extracted by using the predicted face landmarks. Several filters are applied to reduce
+the noise from the RoIs in the extracted cardiac signals called Blood Volume Pulse (BVP) signal.
+We trained and validated machine learning models using two public rPPG datasets namely the TokyoTech
+rPPG and the Pulse Rate Detection (PURE) datasets, on which our models achieved the following Mean
+Absolute Errors (MAE): a) for HR, 1.73 and 3.95 Beats-Per-Minute (bpm) respectively, b) for HRV,
+18.55 and 25.03 ms respectively, and c) for SpO2, a MAE of 1.64 on the PURE dataset. We validated our
+end-to-end rPPG framework, ReViSe, in real life environment, and thereby created the Video-HR
+dataset. Our HR estimation model achieved a MAE of 2.49 bpm on this dataset. Since no publicly available
+rPPG datasets existed for BP measurement with face videos, we used a dataset with signals from fingertip
+sensor to train our model and also created our own video dataset, Video-BP. On our Video-BP dataset,
+our BP estimation model achieved a MAE of 6.7 mmHg for Systolic Blood Pressure (SBP), and a MAE of 9.6
+mmHg for Diastolic Blood Pressure (DBP). 

@@ -1,0 +1,19 @@
+Traditional content-based tag recommender systems directly learn the association between user-generated
+content (UGC) and tags based on collected UGC-tag pairs. However, since a UGC uploader simultaneously
+creates the UGC and selects the corresponding tags, her personal preference inevitably biases
+the tag selections, which prevents these recommenders from learning the causal influence of UGCs'
+content features on tags. In this paper, we propose a deep deconfounded content-based tag recommender
+system, namely, DecTag, to address the above issues. We first establish a causal graph to represent
+the relations among uploader, UGC, and tag, where the uploaders are identified as confounders that
+spuriously correlate UGC and tag selections. Specifically, to eliminate the confounding bias,
+causal intervention is conducted on the UGC node in the graph via backdoor adjustment, where uploaders'
+influence on tags leaked through backdoor paths can be eliminated for causal effect estimation.
+Observing that adjusting the causal graph with do-calculus requires integrating the entire uploader
+space, which is infeasible, we design a novel Monte Carlo (MC)-based estimator with bootstrap,
+which can achieve asymptotic unbiasedness provided that uploaders for the collected UGCs are i.i.d.
+samples from the population. In addition, the MC estimator has the intuition of substituting the
+biased uploaders with a hypothetical random uploader from the population in the training phase,
+where deconfounding can be achieved in an interpretable manner. Finally, we establish a YT-8M-Causal
+dataset based on the widely used YouTube-8M dataset with causal intervention and propose an evaluation
+strategy accordingly to unbiasedly evaluate causal tag recommenders. Extensive experiments
+show that DecTag is more robust to confounding bias than state-of-the-art causal recommenders.

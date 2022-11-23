@@ -1,0 +1,20 @@
+Diverse applications of Kolmogorov complexity to learning [CIKK16], circuit complexity [OPS19],
+cryptography [LP20], average-case complexity [Hir21], and proof search [Kra22] have been discovered
+in recent years. Since the running time of algorithms is a key resource in these fields, it is crucial
+in the corresponding arguments to consider time-bounded variants of Kolmogorov complexity. While
+fruitful interactions between time-bounded Kolmogorov complexity and different areas of theoretical
+computer science have been known for quite a while (e.g., [Sip83, Ko91, ABK+06, AF09], to name a few),
+the aforementioned results have led to a renewed interest in this topic. The theory of Kolmogorov
+complexity is well understood, but many useful results and properties of Kolmogorov complexity
+are not known to hold in time-bounded settings. This creates technical difficulties or leads to
+conditional results when applying methods from time-bounded Kolmogorov complexity to algorithms
+and complexity theory. Perhaps even more importantly, in many cases it is necessary to consider
+randomised algorithms. Since random strings have high complexity, the classical theory of time-bounded
+Kolmogorov complexity might be inappropriate in such contexts. To mitigate these issues and develop
+a theory of time-bounded Kolmogorov complexity that survives in the setting of randomised computations,
+some recent papers [Oli19, LO21, LOS21, GKLO22, LOZ22] have explored probabilistic notions of
+time-bounded Kolmogorov complexity, such as $\mathsf{rKt}$ complexity [Oli19], $\mathsf{rK}^t$
+complexity [LOS21], and $\mathsf{pK}^t$ complexity [GKLO22]. These measures consider different
+ways of encoding an object via a probabilistic representation. In this survey, we provide an introduction
+to probabilistic time-bounded Kolmogorov complexity and its applications, highlighting many
+open problems and research directions. 

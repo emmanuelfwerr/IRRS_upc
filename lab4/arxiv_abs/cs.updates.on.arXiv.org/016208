@@ -1,0 +1,20 @@
+The latest sheet stamping processes enable efficient manufacturing of complex shape structural
+components that have high stiffness to weight ratios, but these processes can introduce defects.
+To assist component design for stamping processes, this paper presents a novel deep-learning-based
+platform for optimising 3D component geometries. The platform adopts a non-parametric modelling
+approach that is capable of optimising arbitrary geometries from multiple geometric parameterisation
+schema. This approach features the interaction of two neural networks: 1) a geometry generator
+and 2) a manufacturing performance evaluator. The generator predicts continuous 3D signed distance
+fields (SDFs) for geometries of different classes, and each SDF is conditioned on a latent vector.
+The zero-level-set of each SDF implicitly represents a generated geometry. Novel training strategies
+for the generator are introduced and include a new loss function which is tailored for sheet stamping
+applications. These strategies enable the differentiable generation of high quality, large scale
+component geometries with tight local features for the first time. The evaluator maps a 2D projection
+of these generated geometries to their post-stamping physical (e.g., strain) distributions.
+Manufacturing constraints are imposed based on these distributions and are used to formulate a
+novel objective function for optimisation. A new gradient-based optimisation technique is employed
+to iteratively update the latent vectors, and therefore geometries, to minimise this objective
+function and thus meet the manufacturing constraints. Case studies based on optimising box geometries
+subject to a sheet thinning constraint for a hot stamping process are presented and discussed. The
+results show that expressive geometric changes are achievable, and that these changes are driven
+by stamping performance. 

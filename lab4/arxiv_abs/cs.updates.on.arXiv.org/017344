@@ -1,0 +1,19 @@
+3D dynamic point clouds provide a discrete representation of real-world objects or scenes in motion,
+which have been widely applied in immersive telepresence, autonomous driving, surveillance,
+etc. However, point clouds acquired from sensors are usually perturbed by noise, which affects
+downstream tasks such as surface reconstruction and analysis. Although many efforts have been
+made for static point cloud denoising, dynamic point cloud denoising remains under-explored.
+In this paper, we propose a novel gradient-field-based dynamic point cloud denoising method, exploiting
+the temporal correspondence via the estimation of gradient fields -- a fundamental problem in dynamic
+point cloud processing and analysis. The gradient field is the gradient of the log-probability
+function of the noisy point cloud, based on which we perform gradient ascent so as to converge each
+point to the underlying clean surface. We estimate the gradient of each surface patch and exploit
+the temporal correspondence, where the temporally corresponding patches are searched leveraging
+on rigid motion in classical mechanics. In particular, we treat each patch as a rigid object, which
+moves in the gradient field of an adjacent frame via force until reaching a balanced state, i.e.,
+when the sum of gradients over the patch reaches 0. Since the gradient would be smaller when the point
+is closer to the underlying surface, the balanced patch would fit the underlying surface well, thus
+leading to the temporal correspondence. Finally, the position of each point in the patch is updated
+along the direction of the gradient averaged from corresponding patches in adjacent frames. Experimental
+results demonstrate that the proposed model outperforms state-of-the-art methods under both
+synthetic noise and simulated real-world noise. 

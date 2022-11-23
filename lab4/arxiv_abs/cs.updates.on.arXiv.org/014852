@@ -1,0 +1,20 @@
+Contrastive learning has been proven effective to alleviate the high demand of expensive annotations
+in medical images analysis, which can capture general patterns in images and naturally be used as
+initial feature extractors for various tasks. Recent works are mainly based on instance-wise discrimination
+and learn global discriminative features; however, they cannot assist clinicians to deal with
+tiny anatomical structures, lesions, and tissues which are mainly distinguished by local similarities.
+In this work, we propose a general unsupervised framework to learn local discriminative features
+from medical images for models' initializations. Following the fact that images of the same body
+region should share similar anatomical structures, and pixels of the same structure should have
+similar semantic patterns, we design a neural network to construct a local discriminative embedding
+space where pixels with similar contexts are clustered and dissimilar pixels are dispersed. This
+network mainly contains two branches: an embedding branch to generate pixel-wise embeddings,
+and a clustering branch to gather pixels of the same structure together and generate segmentations.
+A region discriminative loss is proposed to optimize these two branches in a mutually beneficial
+pattern, making pixels clustered together by the clustering branch share similar embedded vectors
+and the trained model can measure pixel-wise similarity. When transferred to downstream tasks,
+the learnt feature extractor based on our framework shows better generalization ability, which
+outperforms those from extensive state-of-the-art methods and wins 11 out of all 12 downstream
+tasks in color fundus and chest X-ray. Furthermore, we utilize the pixel-wise embeddings to measure
+regional similarity and propose a shape-guided cross-modality segmentation framework and a center-sensitive
+one-shot landmark localization algorithm. 

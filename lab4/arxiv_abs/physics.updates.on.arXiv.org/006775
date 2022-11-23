@@ -1,0 +1,19 @@
+For the numerical simulation of earth system models, Arakawa grids are largely employed. A quadrilateral
+mesh is assumed for their classical definition, and different types of grids are identified depending
+on the location of the discretized quantities. The B-grid has both velocity components at the center
+of a cell, the C-grid places the velocity components on the edges in a staggered fashion, and the D-grid
+is a ninety-degree rotation of a C-grid. Historically, B-grid formulations of sea ice dynamics
+have been dominant because they have matched the grid type used by ocean models. In recent years,
+as ocean models have increasingly progressed to C-grids, sea ice models have followed suit on quadrilateral
+meshes, but few if any implementations of unstructured C-grid sea ice models have been developed.
+In this work, we present an unstructured CD-grid type formulation of the elastic-viscous-plastic
+rheology, where the velocity unknowns are located at the edges, rather than at the vertices, as in
+the B-grid. The notion of a CD-grid has been recently introduced and assumes that the velocity components
+are co-located at the edges. The mesh cells in our analysis have $n$ sides, with $n$ greater than or
+equal to four. Numerical results are included to investigate the features of the proposed method.
+Our framework of choice is the Model for Prediction Across Scales (MPAS) within E3SM, the climate
+model of the U.S. Department of Energy, although our approach is general and could be applied to other
+models as well. While MPAS-Seaice is currently defined on a B-grid, MPAS-Ocean runs on a C-grid,
+hence interpolation operators are heavily used when coupled simulations are performed. The discretization
+introduced here aims at transitioning the dynamics of MPAS-Seaice to a CD-grid, to ultimately facilitate
+improved coupling with MPAS-Ocean and reduce numerical errors associated with this communication.

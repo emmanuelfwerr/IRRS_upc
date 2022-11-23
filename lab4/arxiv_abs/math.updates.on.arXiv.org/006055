@@ -1,0 +1,20 @@
+We systematically investigate the nonlocal Hirota equation with nonzero boundary conditions
+via Riemann-Hilbert method and multi-layer physics-informed neural networks algorithm. Starting
+from the Lax pair of nonzero nonlocal Hirota equation, we first give out the Jost function, scattering
+matrix, their symmetry and asymptotic behavior. Then, the Riemann-Hilbert problem with nonzero
+boundary conditions are constructed and the precise formulaes of $N$-double poles solutions and
+$N$-simple poles solutions are written by determinants. Different from the local Hirota equation,
+the symmetry of scattering data for nonlocal Hirota equation is completely different, which results
+in disparate discrete spectral distribution. In particular, it could be more complicated and difficult
+to obtain the symmetry of scattering data under the circumstance of double poles. Besides, we also
+analyse the asymptotic state of one-double poles solution as $t\rightarrow \infty$. Whereafter,
+the PINN algorithm is applied to research the data-driven soliton solutions of the nonzero nonlocal
+Hirota equation by using the training data obtained from the Riemann-Hilbert method. Most strikingly,
+the integrable nonlocal equation is firstly solved via PINN algorithm. As we all know, the nonlocal
+equations contain the $\mathcal{PT}$ symmetry $\mathcal{P}:x\rightarrow -x,$ or $\mathcal{T}:t\rightarrow
+-t,$ which are different with local ones. Adding the nonlocal term into the NN, we can successfully
+solve the integrable nonlocal Hirota equation by PINN algorithm. The numerical results indicate
+the algorithm can well recover the data-driven soliton solutions of the integrable nonlocal equation.
+Noteworthily, the inverse problems of the integrable nonlocal equation are discussed for the first
+time through applying the PINN algorithm to discover the parameters of the equation in terms of its
+soliton solution. 

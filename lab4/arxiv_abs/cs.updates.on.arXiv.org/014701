@@ -1,0 +1,19 @@
+Processing-using-memory (PuM) techniques leverage the analog operation of memory cells to perform
+computation. Several recent works have demonstrated PuM techniques in off-the-shelf DRAM devices.
+Since DRAM is the dominant memory technology as main memory in current computing systems, these
+PuM techniques represent an opportunity for alleviating the data movement bottleneck at very low
+cost. However, system integration of PuM techniques imposes non-trivial challenges that are yet
+to be solved. Design space exploration of potential solutions to the PuM integration challenges
+requires appropriate tools to develop necessary hardware and software components. Unfortunately,
+current specialized DRAM-testing platforms, or system simulators do not provide the flexibility
+and/or the holistic system view that is necessary to deal with PuM integration challenges. We design
+and develop PiDRAM, the first flexible end-to-end framework that enables system integration studies
+and evaluation of real PuM techniques. PiDRAM provides software and hardware components to rapidly
+integrate PuM techniques across the whole system software and hardware stack (e.g., necessary
+modifications in the operating system, memory controller). We implement PiDRAM on an FPGA-based
+platform along with an open-source RISC-V system. Using PiDRAM, we implement and evaluate two state-of-the-art
+PuM techniques: in-DRAM (i) copy and initialization, (ii) true random number generation. Our results
+show that the in-memory copy and initialization techniques can improve the performance of bulk
+copy operations by 12.6x and bulk initialization operations by 14.6x on a real system. Implementing
+the true random number generator requires only 190 lines of Verilog and 74 lines of C code using PiDRAM's
+software and hardware components. 

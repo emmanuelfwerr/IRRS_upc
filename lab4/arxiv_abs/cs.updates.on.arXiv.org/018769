@@ -1,0 +1,19 @@
+Various classes of induced subgraphs are involved in the deepest results of graph theory and graph
+algorithms. A prominent example concerns the {\em perfection} of $G$ that the chromatic number
+of each induced subgraph $H$ of $G$ equals the clique number of $H$. The seminal Strong Perfect Graph
+Theorem confirms that the perfection of $G$ can be determined by detecting odd holes in $G$ and its
+complement. Chudnovsky et al. show in 2005 an $O(n^9)$ algorithm for recognizing perfect graphs,
+which can be implemented to run in $O(n^{6+\omega})$ time for the exponent $\omega<2.373$ of square-matrix
+multiplication. We show the following improved algorithms. 1. The tractability of detecting odd
+holes was open for decades until the major breakthrough of Chudnovsky et al. in 2020. Their $O(n^9)$
+algorithm is later implemented by Lai et al. to run in $O(n^8)$ time, leading to the best formerly
+known algorithm for recognizing perfect graphs. Our first result is an $O(n^7)$ algorithm for detecting
+odd holes, implying an $O(n^7)$ algorithm for recognizing perfect graphs. 2. Chudnovsky et al.
+extend in 2021 the $O(n^9)$ algorithms for detecting odd holes (2020) and recognizing perfect graphs
+(2005) into the first polynomial algorithm for obtaining a shortest odd hole, which runs in $O(n^{14})$
+time. We reduce the time for finding a shortest odd hole to $O(n^{13})$. 3. Conforti et al. show in
+1997 the first polynomial algorithm for detecting even holes, running in about $O(n^{40})$ time.
+It then takes a line of intensive efforts in the literature to bring down the complexity to $O(n^{31})$,
+$O(n^{19})$, $O(n^{11})$, and finally $O(n^9)$. On the other hand, the tractability of finding
+a shortest even hole has been open for 16 years until the very recent $O(n^{31})$ algorithm of Cheong
+and Lu in 2022. We improve the time of finding a shortest even hole to $O(n^{23})$. 

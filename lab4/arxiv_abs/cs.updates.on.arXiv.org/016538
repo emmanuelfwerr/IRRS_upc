@@ -1,0 +1,19 @@
+Regulatory networks (RNs) are a well-accepted modelling formalism in computational systems biology.
+The control of RNs is currently receiving a lot of attention because it provides a computational
+basis for cell reprogramming -- an attractive technology developed in regenerative medicine.
+By solving the control problem, we learn which parts of a biological system should be perturbed to
+stabilise the system in the desired phenotype. We allow the specification of the Boolean model representing
+a given RN to be incomplete. To that end, we utilise the formalism of partially specified Boolean
+networks which covers every possible behaviour of unspecified parts of the system. Such an approach
+causes a significant state explosion. This problem is addressed by using symbolic methods to represent
+both the unspecified model parts and all possible perturbations of the system. Additionally, to
+make the control design efficient and practically applicable, the optimal control should be minimal
+in terms of size. Moreover, in a partially specified model, a control may achieve the desired stabilisation
+only for a subset of the possible fully specified model instantiations. To address these aspects,
+we utilise several quantitative measures. Apart from the size of perturbation, we also examine
+its robustness -- a portion of instantiations for which the control is applicable. We show that proposed
+symbolic methods solving the control problem for partially specified BNs are efficient and scale
+well. We also evaluate the robustness metrics in cases of all three studied control types. The robustness
+metric tells us how big a proportion of fully defined systems the given perturbation works. Our experiments
+support the hypothesis that one-step perturbations may be less robust than temporary or permanent
+perturbations. This is a full version of a paper that is submitted to a journal. 

@@ -1,0 +1,19 @@
+We consider an object pose estimation and model fitting problem, where - given a partial point cloud
+of an object - the goal is to estimate the object pose by fitting a CAD model to the sensor data. We solve
+this problem by combining (i) a semantic keypoint-based pose estimation model, (ii) a novel self-supervised
+training approach, and (iii) a certification procedure, that not only verifies whether the output
+produced by the model is correct or not, but also flags uniqueness of the produced solution. The semantic
+keypoint detector model is initially trained in simulation and does not perform well on real-data
+due to the domain gap. Our self-supervised training procedure uses a corrector and a certification
+module to improve the detector. The corrector module corrects the detected keypoints to compensate
+for the domain gap, and is implemented as a declarative layer, for which we develop a simple differentiation
+rule. The certification module declares whether the corrected output produced by the model is certifiable
+(i.e. correct) or not. At each iteration, the approach optimizes over the loss induced only by the
+certifiable input-output pairs. As training progresses, we see that the fraction of outputs that
+are certifiable increases, eventually reaching near $100\%$ in many cases. We also introduce the
+notion of strong certifiability wherein the model can determine if the predicted object model fit
+is unique or not. The detected semantic keypoints help us implement this in the forward pass. We conduct
+extensive experiments to evaluate the performance of the corrector, the certification, and the
+proposed self-supervised training using the ShapeNet and YCB datasets, and show the proposed approach
+achieves performance comparable to fully supervised baselines while not requiring pose or keypoint
+supervision on real data. 

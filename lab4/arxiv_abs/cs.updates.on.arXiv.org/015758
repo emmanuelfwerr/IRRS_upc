@@ -1,0 +1,20 @@
+Early detection of COVID-19 is an ongoing area of research that can help with triage, monitoring
+and general health assessment of potential patients and may reduce operational strain on hospitals
+that cope with the coronavirus pandemic. Different machine learning techniques have been used
+in the literature to detect coronavirus using routine clinical data (blood tests, and vital signs).
+Data breaches and information leakage when using these models can bring reputational damage and
+cause legal issues for hospitals. In spite of this, protecting healthcare models against leakage
+of potentially sensitive information is an understudied research area. In this work, we examine
+two machine learning approaches, intended to predict a patient's COVID-19 status using routinely
+collected and readily available clinical data. We employ adversarial training to explore robust
+deep learning architectures that protect attributes related to demographic information about
+the patients. The two models we examine in this work are intended to preserve sensitive information
+against adversarial attacks and information leakage. In a series of experiments using datasets
+from the Oxford University Hospitals, Bedfordshire Hospitals NHS Foundation Trust, University
+Hospitals Birmingham NHS Foundation Trust, and Portsmouth Hospitals University NHS Trust we train
+and test two neural networks that predict PCR test results using information from basic laboratory
+blood tests, and vital signs performed on a patients' arrival to hospital. We assess the level of
+privacy each one of the models can provide and show the efficacy and robustness of our proposed architectures
+against a comparable baseline. One of our main contributions is that we specifically target the
+development of effective COVID-19 detection models with built-in mechanisms in order to selectively
+protect sensitive attributes against adversarial attacks. 

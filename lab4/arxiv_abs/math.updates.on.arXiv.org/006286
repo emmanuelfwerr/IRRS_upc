@@ -1,0 +1,20 @@
+Sensor placement is an important and ubiquitous problem across the engineering and physical sciences
+for tasks such as reconstruction, forecasting and control. Surprisingly, there are few principled
+mathematical techniques developed to date for optimizing sensor locations, with the leading sensor
+placement algorithms often based upon the discovery of linear, low-rank sub-spaces and the QR algorithm.
+QR is a computationally efficient greedy search algorithm which selects sensor locations from
+candidate positions with maximal variance exhibited in a training data set. More recently, neural
+networks, specifically shallow decoder networks (SDNs), have been shown to be very successful
+in mapping sensor measurements to the original high-dimensional state space. SDNs outperform
+linear subspace representations in reconstruction accuracy, noise tolerance, and robustness
+to sensor locations. However, SDNs lack principled mathematical techniques for determining sensor
+placement. In this work, we develop two algorithms for optimizing sensor locations for use with
+SDNs: one which is a linear selection algorithm based upon QR (Q-SDN), and one which is a nonlinear
+selection algorithm based upon neural network pruning (P-SDN). Such sensor placement algorithms
+promise to enhance the already impressive reconstruction capabilities of SDNs. We demonstrate
+our sensor selection algorithms on two example data sets from fluid dynamics. Moreover, we provide
+a detailed comparison between our linear (Q-SDN) and nonlinear (P-SDN) algorithms with traditional
+linear embedding techniques (proper orthogonal decomposition) and QR greedy selection. We show
+that QR selection with SDNs enhances performance. QR even out-performs our nonlinear selection
+method that uses magnitude-based pruning. Thus, the combination of a greedy linear selection (QR)
+with nonlinear encoding (SDN) provides a synergistic combination. 

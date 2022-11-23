@@ -1,0 +1,20 @@
+It has been well recognized that fusing the complementary information from depth-aware LiDAR point
+clouds and semantic-rich stereo images would benefit 3D object detection. Nevertheless, it is
+not trivial to explore the inherently unnatural interaction between sparse 3D points and dense
+2D pixels. To ease this difficulty, the recent proposals generally project the 3D points onto the
+2D image plane to sample the image data and then aggregate the data at the points. However, this approach
+often suffers from the mismatch between the resolution of point clouds and RGB images, leading to
+sub-optimal performance. Specifically, taking the sparse points as the multi-modal data aggregation
+locations causes severe information loss for high-resolution images, which in turn undermines
+the effectiveness of multi-sensor fusion. In this paper, we present VPFNet -- a new architecture
+that cleverly aligns and aggregates the point cloud and image data at the `virtual' points. Particularly,
+with their density lying between that of the 3D points and 2D pixels, the virtual points can nicely
+bridge the resolution gap between the two sensors, and thus preserve more information for processing.
+Moreover, we also investigate the data augmentation techniques that can be applied to both point
+clouds and RGB images, as the data augmentation has made non-negligible contribution towards 3D
+object detectors to date. We have conducted extensive experiments on KITTI dataset, and have observed
+good performance compared to the state-of-the-art methods. Remarkably, our VPFNet achieves 83.21\%
+moderate 3D AP and 91.86\% moderate BEV AP on the KITTI test set, ranking the 1st since May 21th, 2021.
+The network design also takes computation efficiency into consideration -- we can achieve a FPS
+of 15 on a single NVIDIA RTX 2080Ti GPU. The code will be made available for reproduction and further
+investigation. 

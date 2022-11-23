@@ -1,0 +1,18 @@
+Loss minimization is a dominant paradigm in machine learning, where a predictor is trained to minimize
+some loss function that depends on an uncertain event (e.g., "will it rain tomorrow?''). Different
+loss functions imply different learning algorithms and, at times, very different predictors.
+While widespread and appealing, a clear drawback of this approach is that the loss function may not
+be known at the time of learning, requiring the algorithm to use a best-guess loss function. We suggest
+a rigorous new paradigm for loss minimization in machine learning where the loss function can be
+ignored at the time of learning and only be taken into account when deciding an action. We introduce
+the notion of an (${\mathcal{L}},\mathcal{C}$)-omnipredictor, which could be used to optimize
+any loss in a family ${\mathcal{L}}$. Once the loss function is set, the outputs of the predictor
+can be post-processed (a simple univariate data-independent transformation of individual predictions)
+to do well compared with any hypothesis from the class $\mathcal{C}$. The post processing is essentially
+what one would perform if the outputs of the predictor were true probabilities of the uncertain events.
+In a sense, omnipredictors extract all the predictive power from the class $\mathcal{C}$, irrespective
+of the loss function in $\mathcal{L}$. We show that such "loss-oblivious'' learning is feasible
+through a connection to multicalibration, a notion introduced in the context of algorithmic fairness.
+In addition, we show how multicalibration can be viewed as a solution concept for agnostic boosting,
+shedding new light on past results. Finally, we transfer our insights back to the context of algorithmic
+fairness by providing omnipredictors for multi-group loss minimization. 

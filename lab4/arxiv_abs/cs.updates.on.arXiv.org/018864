@@ -1,0 +1,20 @@
+Estimating human poses from videos is critical in human-computer interaction. By precisely estimating
+human poses, the robot can provide an appropriate response to the human. Most existing approaches
+use the optical flow, RNNs, or CNNs to extract temporal features from videos. Despite the positive
+results of these attempts, most of them only straightforwardly integrate features along the temporal
+dimension, ignoring temporal correlations between joints. In contrast to previous methods, we
+propose a plug-and-play kinematics modeling module (KMM) based on the domain-cross attention
+mechanism to model the temporal correlation between joints across different frames explicitly.
+Specifically, the proposed KMM models the temporal correlation between any two joints by calculating
+their temporal similarity. In this way, KMM can learn the motion cues of each joint. Using the motion
+cues (temporal domain) and historical positions of joints (spatial domain), KMM can infer the initial
+positions of joints in the current frame in advance. In addition, we present a kinematics modeling
+network (KIMNet) based on the KMM for obtaining the final positions of joints by combining pose features
+and initial positions of joints. By explicitly modeling temporal correlations between joints,
+KIMNet can infer the occluded joints at present according to all joints at the previous moment. Furthermore,
+the KMM is achieved through an attention mechanism, which allows it to maintain the high resolution
+of features. Therefore, it can transfer rich historical pose information to the current frame,
+which provides effective pose information for locating occluded joints. Our approach achieves
+state-of-the-art results on two standard video-based pose estimation benchmarks. Moreover,
+the proposed KIMNet shows some robustness to the occlusion, demonstrating the effectiveness of
+the proposed method. 

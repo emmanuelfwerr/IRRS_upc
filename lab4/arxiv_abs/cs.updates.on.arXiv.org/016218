@@ -1,0 +1,19 @@
+Targeting simulations on parallel hardware architectures, this paper presents computational
+kernels for efficient computations in mortar finite element methods. Mortar methods enable a variationally
+consistent imposition of coupling conditions at high accuracy, but come with considerable numerical
+effort and cost for the evaluation of the mortar integrals to compute the coupling operators. In
+this paper, we identify bottlenecks in parallel data layout and domain decomposition that hinder
+an efficient evaluation of the mortar integrals. We then propose a set of computational strategies
+to restore optimal parallel communication and scalability for the core kernels devoted to the evaluation
+of mortar terms. We exemplarily study the proposed algorithmic components in the context of three-dimensional
+large-deformation contact mechanics, both for cases with fixed and dynamically varying interface
+topology, yet these concepts can naturally and easily be transferred to other mortar applications,
+e.g. classical meshtying problems. To restore parallel scalability, we employ overlapping domain
+decompositions of the interface discretization independent from the underlying volumes and then
+tackle parallel communication for the mortar evaluation by a geometrically motivated reduction
+of ghosting data. Using three-dimensional contact examples, we demonstrate strong and weak scalability
+of the proposed algorithms up to 480 parallel processes as well as study and discuss improvements
+in parallel communication related to mortar finite element methods. For the first time, dynamic
+load balancing is applied to mortar contact problems with evolving contact zones, such that the
+computational work is well balanced among all parallel processors independent of the current state
+of the simulation. 

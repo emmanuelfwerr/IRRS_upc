@@ -1,0 +1,19 @@
+The high temporal resolution of audio and our perceptual sensitivity to small irregularities in
+waveforms make synthesizing at high sampling rates a complex and computationally intensive task,
+prohibiting real-time, controllable synthesis within many approaches. In this work we aim to shed
+light on the potential of Conditional Implicit Neural Representations (CINRs) as lightweight
+backbones in generative frameworks for audio synthesis. Implicit neural representations (INRs)
+are neural networks used to approximate low-dimensional functions, trained to represent a single
+geometric object by mapping input coordinates to structural information at input locations. In
+contrast with other neural methods for representing geometric objects, the memory required to
+parameterize the object is independent of resolution, and only scales with its complexity. A corollary
+of this is that INRs have infinite resolution, as they can be sampled at arbitrary resolutions. To
+apply the concept of INRs in the generative domain we frame generative modelling as learning a distribution
+of continuous functions. This can be achieved by introducing conditioning methods to INRs. Our
+experiments show that Periodic Conditional INRs (PCINRs) learn faster and generally produce quantitatively
+better audio reconstructions than Transposed Convolutional Neural Networks with equal parameter
+counts. However, their performance is very sensitive to activation scaling hyperparameters.
+When learning to represent more uniform sets, PCINRs tend to introduce artificial high-frequency
+components in reconstructions. We validate this noise can be minimized by applying standard weight
+regularization during training or decreasing the compositional depth of PCINRs, and suggest directions
+for future research. 

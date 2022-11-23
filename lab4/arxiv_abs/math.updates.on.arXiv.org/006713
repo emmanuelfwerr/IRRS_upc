@@ -1,0 +1,20 @@
+NOMA is an emerging paradigm for B5G systems to support a large number and variety of connected users,
+simultaneously. When operated in the mmWave band and higher bands, user channels get highly correlated
+which can be exploited in mmWave-NOMA systems to cluster a set of correlated users together and serve
+them in one beam in the same time slot. Identifying the set of users to cluster together greatly affects
+the viability of NOMA systems. Typically, only CSI is used to make these clustering decisions. When
+any problem arises in accessing up-to-date and accurate CSI, user clustering will not properly
+function due to its hard-dependency on CSI, and obviously, this will negatively affect the robustness
+of these NOMA systems. To improve the robustness of the NOMA systems, in this paper, we propose to
+utilize emerging trends such as location-aware and camera-equipped base stations (CBSs) which
+do not require any extra radio frequency resource consumption. Specifically, we explore three
+different dimensions of feedback that a CBS can benefit from to solve the user clustering problem,
+namely CSI-based feedback and non-CSI-based feedback, comprised of UE location and the CBS camera
+feed. We first investigate how the vision assistance of a CBS can be used in conjunction with other
+dimensions of feedback to make clustering decisions in various scenarios. Later, we provide a simple
+user case study to illustrate how to implement vision-assisted user clustering in mmWave-NOMA
+systems to improve robustness, in which a DL beam selection algorithm is trained on the images captured
+by the CBS to perform NOMA clustering. We demonstrate that the user clustering without CSI can achieve
+comparable performance to accurate CSI-based user clustering solutions, and user clustering
+can continue to function without much performance loss even in the scenarios where CSI is severely
+outdated or not available at all. 

@@ -1,0 +1,20 @@
+Many software metrics are designed to measure aspects that are believed to be related to software
+quality. Static software metrics, e.g., size, complexity and coupling are used in defect prediction
+research as well as software quality models to evaluate software quality. Static analysis tools
+also include boundary values for complexity and size that generate warnings for developers. While
+this indicates a relationship between quality and software metrics, the extend of it is not well
+understood. Moreover, recent studies found that complexity metrics may be unreliable indicators
+for understandability of the source code. To explore this relationship, we leverage the intent
+of developers about what constitutes a quality improvement in their own code base. We manually classify
+a randomized sample of 2,533 commits from 54 Java open source projects as quality improving depending
+on the intent of the developer by inspecting the commit message. We distinguish between perfective
+and corrective maintenance via predefined guidelines and use this data as ground truth for the fine-tuning
+of a state-of-the art deep learning model for natural language processing. We use the model to increase
+our data set to 125,482 commits. Based on the resulting data set, we investigate the differences
+in size and 14 static source code metrics between changes that increase quality and other changes.
+In addition, we investigate which files are targets of quality improvements. We find that quality
+improving commits are smaller than other commits. Perfective changes have a positive impact on
+static source code metrics while corrective changes add complexity. Files which are the target
+of perfective maintenance already have a lower median complexity than other files. Our study results
+provide empirical evidence for which static source code metrics capture quality improvement from
+the developers point of view. 

@@ -1,0 +1,20 @@
+In e-commerce, online retailers are usually suffering from professional malicious users (PMUs),
+who utilize negative reviews and low ratings to their consumed products on purpose to threaten the
+retailers for illegal profits. Specifically, there are three challenges for PMU detection: 1)
+professional malicious users do not conduct any abnormal or illegal interactions (they never concurrently
+leave too many negative reviews and low ratings at the same time), and they conduct masking strategies
+to disguise themselves. Therefore, conventional outlier detection methods are confused by their
+masking strategies. 2) the PMU detection model should take both ratings and reviews into consideration,
+which makes PMU detection a multi-modal problem. 3) there are no datasets with labels for professional
+malicious users in public, which makes PMU detection an unsupervised learning problem. To this
+end, we propose an unsupervised multi-modal learning model: MMD, which employs Metric learning
+for professional Malicious users Detection with both ratings and reviews. MMD first utilizes a
+modified RNN to project the informational review into a sentiment score, which jointly considers
+the ratings and reviews. Then professional malicious user profiling (MUP) is proposed to catch
+the sentiment gap between sentiment scores and ratings. MUP filters the users and builds a candidate
+PMU set. We apply a metric learning-based clustering to learn a proper metric matrix for PMU detection.
+Finally, we can utilize this metric and labeled users to detect PMUs. Specifically, we apply the
+attention mechanism in metric learning to improve the model's performance. The extensive experiments
+in four datasets demonstrate that our proposed method can solve this unsupervised detection problem.
+Moreover, the performance of the state-of-the-art recommender models is enhanced by taking MMD
+as a preprocessing stage. 

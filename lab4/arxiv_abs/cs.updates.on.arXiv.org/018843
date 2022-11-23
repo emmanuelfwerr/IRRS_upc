@@ -1,0 +1,20 @@
+The usage of chemical imaging technologies is becoming a routine accompaniment to traditional
+methods in pathology. Significant technological advances have developed these next generation
+techniques to provide rich, spatially resolved, multidimensional chemical images. The rise of
+digital pathology has significantly enhanced the synergy of these imaging modalities with optical
+microscopy and immunohistochemistry, enhancing our understanding of the biological mechanisms
+and progression of diseases. Techniques such as imaging mass cytometry provide labelled multidimensional
+(multiplex) images of specific components used in conjunction with digital pathology techniques.
+These powerful techniques generate a wealth of high dimensional data that create significant challenges
+in data analysis. Unsupervised methods such as clustering are an attractive way to analyse these
+data, however, they require the selection of parameters such as the number of clusters. Here we propose
+a methodology to estimate the number of clusters in an automatic data-driven manner using a deep
+sparse autoencoder to embed the data into a lower dimensional space. We compute the density of regions
+in the embedded space, the majority of which are empty, enabling the high density regions to be detected
+as outliers and provide an estimate for the number of clusters. This framework provides a fully unsupervised
+and data-driven method to analyse multidimensional data. In this work we demonstrate our method
+using 45 multiplex imaging mass cytometry datasets. Moreover, our model is trained using only one
+of the datasets and the learned embedding is applied to the remaining 44 images providing an efficient
+process for data analysis. Finally, we demonstrate the high computational efficiency of our method
+which is two orders of magnitude faster than estimating via computing the sum squared distances
+as a function of cluster number. 

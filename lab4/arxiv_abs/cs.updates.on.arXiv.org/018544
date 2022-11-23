@@ -1,0 +1,19 @@
+In this work, we address the task of SDR videos to HDR videos(SDRTV-to-HDRTV). Previous approaches
+use global feature modulation for SDRTV-to-HDRTV. Feature modulation scales and shifts the features
+in the original feature space, which has limited mapping capability. In addition, the global image
+mapping cannot restore detail in HDR frames due to the luminance differences in different regions
+of SDR frames. To resolve the appeal, we propose a two-stage solution. The first stage is a hierarchical
+Dynamic Context feature mapping (HDCFM) model. HDCFM learns the SDR frame to HDR frame mapping function
+via hierarchical feature modulation (HME and HM ) module and a dynamic context feature transformation
+(DCT) module. The HME estimates the feature modulation vector, HM is capable of hierarchical feature
+modulation, consisting of global feature modulation in series with local feature modulation,
+and is capable of adaptive mapping of local image features. The DCT module constructs a feature transformation
+module in conjunction with the context, which is capable of adaptively generating a feature transformation
+matrix for feature mapping. Compared with simple feature scaling and shifting, the DCT module can
+map features into a new feature space and thus has a more excellent feature mapping capability. In
+the second stage, we introduce a patch discriminator-based context generation model PDCG to obtain
+subjective quality enhancement of over-exposed regions. PDCG can solve the problem that the model
+is challenging to train due to the proportion of overexposed regions of the image. The proposed method
+can achieve state-of-the-art objective and subjective quality results. Specifically, HDCFM
+achieves a PSNR gain of 0.81 dB at a parameter of about 100K. The number of parameters is 1/14th of the
+previous state-of-the-art methods. The test code will be released soon. 

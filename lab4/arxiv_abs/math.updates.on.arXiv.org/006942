@@ -1,0 +1,19 @@
+In this paper, we put forward secure network function computation over a directed acyclic network.
+In such a network, a sink node is required to compute with zero error a target function of which the
+inputs are generated as source messages at multiple source nodes, while a wiretapper, who can access
+any one but not more than one wiretap set in a given collection of wiretap sets, is not allowed to obtain
+any information about a security function of the source messages. The secure computing capacity
+for the above model is defined as the maximum average number of times that the target function can
+be securely computed with zero error at the sink node with the given collection of wiretap sets and
+security function for one use of the network. The characterization of this capacity is in general
+overwhelmingly difficult. In the current paper, we consider securely computing linear functions
+with a wiretapper who can eavesdrop any subset of edges up to a certain size r, referred to as the security
+level, with the security function being the identity function. We first prove an upper bound on the
+secure computing capacity, which is applicable to arbitrary network topologies and arbitrary
+security levels. When the security level r is equal to 0, our upper bound reduces to the computing
+capacity without security consideration. We discover the surprising fact that for some models,
+there is no penalty on the secure computing capacity compared with the computing capacity without
+security consideration. We further obtain an equivalent expression of the upper bound by using
+a graph-theoretic approach, and accordingly we develop an efficient approach for computing this
+bound. Furthermore, we present a construction of linear function-computing secure network codes
+and obtain a lower bound on the secure computing capacity. 

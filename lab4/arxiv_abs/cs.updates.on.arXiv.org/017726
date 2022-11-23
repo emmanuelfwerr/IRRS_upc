@@ -1,0 +1,19 @@
+A critical step of genome sequence analysis is the mapping of sequenced DNA fragments (i.e., reads)
+collected from an individual to a known linear reference genome sequence (i.e., sequence-to-sequence
+mapping). Recent works replace the linear reference sequence with a graph-based representation
+of the reference genome, which captures the genetic variations and diversity across many individuals
+in a population. Mapping reads to the graph-based reference genome (i.e., sequence-to-graph mapping)
+results in notable quality improvements in genome analysis. Unfortunately, while sequence-to-sequence
+mapping is well studied with many available tools and accelerators, sequence-to-graph mapping
+is a more difficult computational problem, with a much smaller number of practical software tools
+currently available. We analyze two state-of-the-art sequence-to-graph mapping tools and reveal
+four key issues. We find that there is a pressing need to have a specialized, high-performance, scalable,
+and low-cost algorithm/hardware co-design that alleviates bottlenecks in both the seeding and
+alignment steps of sequence-to-graph mapping. To this end, we propose SeGraM, a universal algorithm/hardware
+co-designed genomic mapping accelerator that can effectively and efficiently support both sequence-to-graph
+mapping and sequence-to-sequence mapping, for both short and long reads. To our knowledge, SeGraM
+is the first algorithm/hardware co-design for accelerating sequence-to-graph mapping. SeGraM
+consists of two main components: (1) MinSeed, the first minimizer-based seeding accelerator;
+and (2) BitAlign, the first bitvector-based sequence-to-graph alignment accelerator. We demonstrate
+that SeGraM provides significant improvements for multiple steps of the sequence-to-graph and
+sequence-to-sequence mapping pipelines. 

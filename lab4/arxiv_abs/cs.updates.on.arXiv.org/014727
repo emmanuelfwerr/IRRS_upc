@@ -1,0 +1,20 @@
+There are inherent field-of-view and resolution trade-offs in X-Ray micro-computed tomography
+imaging, which limit the characterization, analysis and model development of multi-scale porous
+systems. In this paper, we overcome these tradeoffs by developing a 3D Enhanced Deep Super Resolution
+(EDSR) convolutional neural network to create enhanced, high-resolution data over large spatial
+scales from low-resolution data. Paired high-resolution (HR, 2$\mu$m) and low resolution (LR,
+6$\mu$m) image data from a Bentheimer rock sample are used to train the network. Unseen LR and HR data
+from the training sample, and another sample with a distinct micro-structure, are used to validate
+the network with various metrics: textual analysis, segmentation behaviour and pore-network
+model (PNM) multiphase flow simulations. The validated EDSR network is used to generate ~1000 high-resolution
+REV subvolume images for each full core sample of length 6-7cm (total image sizes are ~6000x6000x32000
+voxels). Each subvolume has distinct petrophysical properties predicted from PNMs, which are
+combined to create a 3D continuum-scale model of each sample. Drainage immiscible flow at low capillary
+number is simulated across a range of fractional flows and compared directly to experimental pressures
+and 3D saturations on a 1:1 basis. The EDSR generated model is more accurate than the base LR model
+at predicting experimental behaviour in the presence of heterogeneities, especially in flow regimes
+where a wide distribution of pore-sizes are encountered. The models are generally accurate at predicting
+saturations to within the experimental repeatability and relative permeability across three
+orders of magnitude. The demonstrated workflow is a fully predictive, without calibration, and
+opens up the possibility to image, simulate and analyse flow in truly multi-scale heterogeneous
+systems that are otherwise intractable. 

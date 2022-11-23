@@ -1,0 +1,20 @@
+This paper presents the first large-scale multi-species dataset of acoustic recordings of mosquitoes
+tracked continuously in free flight. We present 20 hours of audio recordings that we have expertly
+labelled and tagged precisely in time. Significantly, 18 hours of recordings contain annotations
+from 36 different species. Mosquitoes are well-known carriers of diseases such as malaria, dengue
+and yellow fever. Collecting this dataset is motivated by the need to assist applications which
+utilise mosquito acoustics to conduct surveys to help predict outbreaks and inform intervention
+policy. The task of detecting mosquitoes from the sound of their wingbeats is challenging due to
+the difficulty in collecting recordings from realistic scenarios. To address this, as part of the
+HumBug project, we conducted global experiments to record mosquitoes ranging from those bred in
+culture cages to mosquitoes captured in the wild. Consequently, the audio recordings vary in signal-to-noise
+ratio and contain a broad range of indoor and outdoor background environments from Tanzania, Thailand,
+Kenya, the USA and the UK. In this paper we describe in detail how we collected, labelled and curated
+the data. The data is provided from a PostgreSQL database, which contains important metadata such
+as the capture method, age, feeding status and gender of the mosquitoes. Additionally, we provide
+code to extract features and train Bayesian convolutional neural networks for two key tasks: the
+identification of mosquitoes from their corresponding background environments, and the classification
+of detected mosquitoes into species. Our extensive dataset is both challenging to machine learning
+researchers focusing on acoustic identification, and critical to entomologists, geo-spatial
+modellers and other domain experts to understand mosquito behaviour, model their distribution,
+and manage the threat they pose to humans. 

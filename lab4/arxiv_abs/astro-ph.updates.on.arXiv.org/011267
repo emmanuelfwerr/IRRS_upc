@@ -1,0 +1,19 @@
+We present \textsc{Magrathea-Pathfinder}, a ray-tracing framework which accurately reconstructs
+the past light-cone of an observer in numerical simulations. Our code directly computes the 3D trajectory
+of light rays through the null geodesic equations, with the weak-field limit as its only approximation.
+Therefore, it does not rely on any other standard ray-tracing approximations such as plane-parallel,
+Born or multiple-lens. \textsc{Magrathea-Pathfinder} fully takes advantage of the small-scale
+clustering of matter by using adaptive integration steps and interpolation within an Adaptive-Mesh
+Refinement (AMR) structure to accurately account for the non-linear regime of structure formation.
+It uses MPI parallelization, C\texttt{++}11 \texttt{std::thread} multithreading, and is optimised
+for High-Performance Computing (HPC) as a post-processing tool for very large $N$-body simulations.
+In this paper, we describe how to produce realistic cosmological observables from numerical simulation
+using ray-tracing techniques, in particular the production of simulated catalogues and maps which
+accounts for all the effects at first order in metric perturbations (such as peculiar velocities,
+gravitational potential, Integrated Sachs-Wolfe, time delay, gravitational lensing, etc\ldots).
+We perform convergence tests of our gravitational lensing algorithms and conduct performance
+tests of the null geodesic integration procedures. \textsc{Magrathea-Pathfinder} provides
+sophisticated ray-tracing tools to make the link between real space ($N$-body simulations) and
+light-cone observables. This should be useful to refine existing cosmological probes and to build
+new ones beyond standard assumptions in order to prepare for next-generation large-scale structure
+surveys. 

@@ -1,0 +1,19 @@
+The sliding window model generalizes the standard streaming model and often performs better in
+applications where recent data is more important or more accurate than data that arrived prior to
+a certain time. We study the problem of approximating symmetric norms (a norm on $\mathbb{R}^n$
+that is invariant under sign-flips and coordinate-wise permutations) in the sliding window model,
+where only the $W$ most recent updates define the underlying frequency vector. Whereas standard
+norm estimation algorithms for sliding windows rely on the smooth histogram framework of Braverman
+and Ostrovsky (FOCS 2007), analyzing the smoothness of general symmetric norms seems to be a challenging
+obstacle. Instead, we observe that the symmetric norm streaming algorithm of Braverman et. al.
+(STOC 2017) can be reduced to identifying and approximating the frequency of heavy-hitters in a
+number of substreams. We introduce a heavy-hitter algorithm that gives a $(1+\epsilon)$-approximation
+to each of the reported frequencies in the sliding window model, thus obtaining the first algorithm
+for general symmetric norm estimation in the sliding window model. Our algorithm is a universal
+sketch that simultaneously approximates all symmetric norms in a parametrizable class and also
+improves upon the smooth histogram framework for estimating $L_p$ norms, for a range of large $p$.
+Finally, we consider the problem of overconstrained linear regression problem in the case that
+loss function that is an Orlicz norm, a symmetric norm that can be interpreted as a scale-invariant
+version of $M$-estimators. We give the first sublinear space algorithms that produce $(1+\epsilon)$-approximate
+solutions to the linear regression problem for loss functions that are Orlicz norms in both the streaming
+and sliding window models. 

@@ -1,0 +1,20 @@
+Existing road pothole detection approaches can be classified as computer vision-based or machine
+learning-based. The former approaches typically employ 2-D image analysis/understanding or
+3-D point cloud modeling and segmentation algorithms to detect road potholes from vision sensor
+data. The latter approaches generally address road pothole detection using convolutional neural
+networks (CNNs) in an end-to-end manner. However, road potholes are not necessarily ubiquitous
+and it is challenging to prepare a large well-annotated dataset for CNN training. In this regard,
+while computer vision-based methods were the mainstream research trend in the past decade, machine
+learning-based methods were merely discussed. Recently, we published the first stereo vision-based
+road pothole detection dataset and a novel disparity transformation algorithm, whereby the damaged
+and undamaged road areas can be highly distinguished. However, there are no benchmarks currently
+available for state-of-the-art (SoTA) CNNs trained using either disparity images or transformed
+disparity images. Therefore, in this paper, we first discuss the SoTA CNNs designed for semantic
+segmentation and evaluate their performance for road pothole detection with extensive experiments.
+Additionally, inspired by graph neural network (GNN), we propose a novel CNN layer, referred to
+as graph attention layer (GAL), which can be easily deployed in any existing CNN to optimize image
+feature representations for semantic segmentation. Our experiments compare GAL-DeepLabv3+,
+our best-performing implementation, with nine SoTA CNNs on three modalities of training data:
+RGB images, disparity images, and transformed disparity images. The experimental results suggest
+that our proposed GAL-DeepLabv3+ achieves the best overall pothole detection accuracy on all training
+data modalities. 

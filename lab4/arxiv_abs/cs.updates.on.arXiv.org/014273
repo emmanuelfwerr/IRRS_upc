@@ -1,0 +1,19 @@
+We revisit a classical crossword filling puzzle which already appeared in Garey\&Jonhson's book.
+We are given a grid with $n$ vertical and horizontal slots and a dictionary with $m$ words and are asked
+to place words from the dictionary in the slots so that shared cells are consistent. We attempt to
+pinpoint the source of intractability of this problem by taking into account the structure of the
+grid graph, which contains a vertex for each slot and an edge if two slots intersect. Our main approach
+is to consider the case where this graph has a tree-like structure. Unfortunately, if we impose the
+common rule that words cannot be reused, we show that the problem remains NP-hard even under very
+severe structural restrictions. The problem becomes slightly more tractable if word reuse is allowed,
+as we obtain an $m^{tw}$ algorithm in this case, where $tw$ is the treewidth of the grid graph. However,
+even in this case, we show that our algorithm cannot be improved. More strongly, we show that under
+the ETH the problem cannot be solved in time $m^{o(k)}$, where $k$ is the number of horizontal slots
+of the instance. Motivated by these mostly negative results, we consider the much more restricted
+case where the problem is parameterized by the number of slots $n$. Here, we show that the problem
+becomes FPT, but the parameter dependence is exponential in $n^2$. We show that this dependence
+is also justified: the existence of an algorithm with running time $2^{o(n^2)}$ would contradict
+the randomized ETH. Finally, we consider an optimization version of the problem, where we seek to
+place as many words on the grid as possible. Here it is easy to obtain a $\frac{1}{2}$-approximation,
+even on weighted instances. We show that this algorithm is also likely to be optimal, as obtaining
+a better approximation ratio in polynomial time would contradict the Unique Games Conjecture.

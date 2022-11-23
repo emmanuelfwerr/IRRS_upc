@@ -1,0 +1,18 @@
+Applications can tailor a network slice by specifying a variety of QoS attributes related to application-specific
+performance, function or operation. However, some QoS attributes like guaranteed bandwidth required
+by the application do vary over time. For example, network bandwidth needs of video streams from
+surveillance cameras can vary a lot depending on the environmental conditions and the content in
+the video streams. In this paper, we propose a novel, dynamic QoS attribute prediction technique
+that assists any application to make optimal resource reservation requests at all times. Standard
+forecasting using traditional cost functions like MAE, MSE, RMSE, MDA, etc. don't work well because
+they do not take into account the direction (whether the forecasting of resources is more or less
+than needed), magnitude (by how much the forecast deviates, and in which direction), or frequency
+(how many times the forecast deviates from actual needs, and in which direction). The direction,
+magnitude and frequency have a direct impact on the application's accuracy of insights, and the
+operational costs. We propose a new, parameterized cost function that takes into account all three
+of them, and guides the design of a new prediction technique. To the best of our knowledge, this is
+the first work that considers time-varying application requirements and dynamically adjusts
+slice QoS requests to 5G networks in order to ensure a balance between application's accuracy and
+operational costs. In a real-world deployment of a surveillance video analytics application over
+17 cameras, we show that our technique outperforms other traditional forecasting methods, and
+it saves 34% of network bandwidth (over a ~24 hour period) when compared to a static, one-time reservation.

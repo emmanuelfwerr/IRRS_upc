@@ -1,0 +1,20 @@
+We present the development of a single-photon detector and the connected read-out electronics.
+This `hybrid' detector is based on a vacuum tube, transmission photocathode, microchannel plate
+and a pixelated CMOS read-out anode encapsulating the analog and digital-front end electronics.
+This assembly will be capable of detecting up to $10^9$ photons per second with simultaneous measurement
+of position and time. The pixelated read-out anode used is based on the Timepix4 ASIC ($65~\mathrm{nm}$
+CMOS technology) designed in the framework of the Medipix4 collaboration. This ASIC is an array
+of $512\times448$ pixels distributed on a $55~\mathrm{\mu m}$ square pitch, with a sensitive area
+of $\sim 7~\mathrm{cm}^2$. It features $50$-$70~\mathrm{e^{-}}$ equivalent noise charge, a
+maximum rate of $2.5~\mathrm{Ghits/s}$, and allows to time-stamp the leading-edge time and to
+measure the Time-over-Threshold (ToT) for each pixel. The pixel-cluster position combined with
+its ToT information will allow to reach $5$-$10~\mathrm{\mu m}$ position resolution. This information
+can also be used to correct for the leading-edge time-walk achieving a timing resolution of the order
+of $10~\mathrm{ps}$. The detector will be highly compact thanks to the encapsulated front-end
+electronics allowing local data processing and digitization. An FPGA-based data acquisition
+board, placed far from the detector, will receive the detector hits using $16$ electro-optical
+links operated at $10.24~\mathrm{Gbps}$. The data acquisition board will decode the information
+and store the relevant data in a server for offline analysis. These performance will allow significant
+advances in particle physics, life sciences, quantum optics or other emerging fields where the
+detection of single photons with excellent timing and position resolutions are simultaneously
+required. 

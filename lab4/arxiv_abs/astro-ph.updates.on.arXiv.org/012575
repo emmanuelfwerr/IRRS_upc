@@ -1,0 +1,19 @@
+The upcoming large scale surveys like LSST are expected to find approximately $10^5$ strong gravitational
+lenses by analysing data of many orders of magnitude larger than those in contemporary astronomical
+surveys. In this case, non-automated techniques will be highly challenging and time-consuming,
+even if they are possible at all. We propose a new automated architecture based on the principle of
+self-attention to find strong gravitational lenses. The advantages of self-attention-based
+encoder models over convolution neural networks are investigated, and ways to optimise the outcome
+of encoder models are analysed. We constructed and trained 21 self-attention based encoder models
+and five convolution neural networks to identify gravitational lenses from the Bologna Lens Challenge.
+Each model was trained separately using 18,000 simulated images, cross-validated using 2,000
+images, and then applied to a test set with 100,000 images. We used four different metrics for evaluation:
+classification accuracy, area under the receiver operating characteristic curve (AUROC), the
+TPR$_0$ score and the TPR$_{10}$ score. The performances of self-attention-based encoder models
+and CNNs participating in the challenge are compared. They were able to surpass the CNN models that
+participated in the Bologna Lens Challenge by a high margin for the $TPR_0$ and $TPR_${10}$. Self-Attention
+based models have clear advantages compared to simpler CNNs. They have highly competing performance
+in comparison to the currently used residual neural networks. Compared to CNNs, self-attention
+based models can identify highly confident lensing candidates and will be able to filter out potential
+candidates from real data. Moreover, introducing the encoder layers can also tackle the over-fitting
+problem present in the CNNs by acting as effective filters. 

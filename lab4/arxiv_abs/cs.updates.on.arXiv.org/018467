@@ -1,0 +1,19 @@
+This proposes a novel ensemble deep learning-based model to accurately classify, detect and localize
+different defect categories for aggressive pitches and thin resists (High NA applications).In
+particular, we train RetinaNet models using different ResNet, VGGNet architectures as backbone
+and present the comparison between the accuracies of these models and their performance analysis
+on SEM images with different types of defect patterns such as bridge, break and line collapses. Finally,
+we propose a preference-based ensemble strategy to combine the output predictions from different
+models in order to achieve better performance on classification and detection of defects. As CDSEM
+images inherently contain a significant level of noise, detailed feature information is often
+shadowed by noise. For certain resist profiles, the challenge is also to differentiate between
+a microbridge, footing, break, and zones of probable breaks. Therefore, we have applied an unsupervised
+machine learning model to denoise the SEM images to remove the False-Positive defects and optimize
+the effect of stochastic noise on structured pixels for better metrology and enhanced defect inspection.
+We repeated the defect inspection step with the same trained model and performed a comparative analysis
+for "robustness" and "accuracy" metric with conventional approach for both noisy/denoised image
+pair. The proposed ensemble method demonstrates improvement of the average precision metric (mAP)
+of the most difficult defect classes. In this work we have developed a novel robust supervised deep
+learning training scheme to accurately classify as well as localize different defect types in SEM
+images with high degree of accuracy. Our proposed approach demonstrates its effectiveness both
+quantitatively and qualitatively. 

@@ -1,0 +1,19 @@
+Sensor fusion is a technique used to combine sensors with different noise characteristics into
+a super sensor that has superior noise performance. To achieve sensor fusion, complementary filters
+are used in current gravitational-wave detectors to combine relative displacement sensors and
+inertial sensors for active seismic isolation. Complementary filters are a set of digital filters,
+which have transfer functions that are summed to unity. Currently, complementary filters are shaped
+and tuned manually rather than optimized, which can be suboptimal and hard to reproduce for future
+detectors. In this paper, an optimization-based method called $\mathcal{H}_\infty$ synthesis
+is proposed for synthesizing optimal complementary filters according to the sensor noises themselves.
+The complementary filter design problem is converted into an optimization problem that seeks minimization
+of an objective function equivalent to the maximum difference between the super sensor noise and
+the lower bound in logarithmic scale. The method is exemplified by synthesizing complementary
+filters for sensor fusion of 1) a relative displacement sensor and an inertial sensor, 2) a relative
+displacement sensor coupled with seismic noise and an inertial sensor, and 3) hypothetical displacement
+sensor and inertial sensor, which have slightly different noise characteristics compared to the
+typical ones. In all cases, the method produces complementary filters that suppress the super sensor
+noise equally close to the lower bound at all frequencies in logarithmic scale. The synthesized
+filters contain features that better suppress the sensor noises compared to the pre-designed complementary
+filters. Overall, the proposed method allows the synthesis of optimal complementary filters according
+to the sensor noises themselves and is a better and versatile method for solving sensor fusion problems.

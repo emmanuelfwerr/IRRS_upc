@@ -1,0 +1,20 @@
+IoT is a rapidly emerging paradigm that now encompasses almost every aspect of our modern life. As
+such, ensuring the security of IoT devices is crucial. IoT devices can differ from traditional computing,
+thereby the design and implementation of proper security measures can be challenging in IoT devices.
+We observed that IoT developers discuss their security-related challenges in developer forums
+like Stack Overflow(SO). However, we find that IoT security discussions can also be buried inside
+non-security discussions in SO. In this paper, we aim to understand the challenges IoT developers
+face while applying security practices and techniques to IoT devices. We have two goals: (1) Develop
+a model that can automatically find security-related IoT discussions in SO, and (2) Study the model
+output to learn about IoT developer security-related challenges. First, we download 53K posts
+from SO that contain discussions about IoT. Second, we manually labeled 5,919 sentences from 53K
+posts as 1 or 0. Third, we use this benchmark to investigate a suite of deep learning transformer models.
+The best performing model is called SecBot. Fourth, we apply SecBot on the entire posts and find around
+30K security related sentences. Fifth, we apply topic modeling to the security-related sentences.
+Then we label and categorize the topics. Sixth, we analyze the evolution of the topics in SO. We found
+that (1) SecBot is based on the retraining of the deep learning model RoBERTa. SecBot offers the best
+F1-Score of 0.935, (2) there are six error categories in misclassified samples by SecBot. SecBot
+was mostly wrong when the keywords/contexts were ambiguous (e.g., gateway can be a security gateway
+or a simple gateway), (3) there are 9 security topics grouped into three categories: Software, Hardware,
+and Network, and (4) the highest number of topics belongs to software security, followed by network
+security. 

@@ -1,0 +1,20 @@
+We develop approximation algorithms for set-selection problems with deterministic constraints,
+but random objective values, i.e., stochastic probing problems. When the goal is to maximize the
+objective, approximation algorithms for probing problems are well-studied. On the other hand,
+few techniques are known for minimizing the objective, especially in the adaptive setting, where
+information about the random objective is revealed during the set-selection process and allowed
+to influence it. For minimization problems in particular, incorporating adaptivity can have a
+considerable effect on performance. In this work, we seek approximation algorithms that compare
+well to the optimal adaptive policy. We develop new techniques for adaptive minimization, applying
+them to a few problems of interest. The core technique we develop here is an approximate reduction
+from an adaptive expectation minimization problem to a set of adaptive probability minimization
+problems which we call threshold problems. By providing near-optimal solutions to these threshold
+problems, we obtain bicriteria adaptive policies. We apply this method to obtain an adaptive approximation
+algorithm for the MIN-ELEMENT problem, where the goal is to adaptively pick random variables to
+minimize the expected minimum value seen among them, subject to a knapsack constraint. This partially
+resolves an open problem raised in Goel et. al's "How to probe for an extreme value". We further consider
+three extensions on the MIN-ELEMENT problem, where our objective is the sum of the smallest k element-weights,
+or the weight of the min-weight basis of a given matroid, or where the constraint is not given by a knapsack
+but by a matroid constraint. For all three variations we explore, we develop adaptive approximation
+algorithms for their corresponding threshold problems, and prove their near-optimality via coupling
+arguments. 

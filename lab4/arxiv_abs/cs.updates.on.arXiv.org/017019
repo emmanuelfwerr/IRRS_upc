@@ -1,0 +1,20 @@
+In classification problems, supervised machine-learning methods outperform traditional algorithms,
+thanks to the ability of neural networks to learn complex patterns. However, in two-class classification
+tasks like anomaly or fraud detection, unsupervised methods could do even better, because their
+prediction is not limited to previously learned types of anomalies. An intuitive approach of anomaly
+detection can be based on the distances from the centers of mass of the two respective classes. Autoencoders,
+although trained without supervision, can also detect anomalies: considering the center of mass
+of the normal points, reconstructions have now radii, with largest radii most likely indicating
+anomalous points. Of course, radii-based classification were already possible without interposing
+an autoencoder. In any space, radial classification can be operated, to some extent. In order to
+outperform it, we proceed to radial deformations of data (i.e. centric compression or expansions
+of axes) and autoencoder training. Any autoencoder that makes use of a data center is here baptized
+a centric autoencoder (cAE). A special type is the cAE trained with a uniformly compressed dataset,
+named the centripetal autoencoder (cpAE). The new concept is studied here in relation with a schematic
+artificial dataset, and the derived methods show consistent score improvements. But tested on
+real banking data, our radial deformation supervised algorithms alone still perform better that
+cAEs, as expected from most supervised methods; nonetheless, in hybrid approaches, cAEs can be
+combined with a radial deformation of space, improving its classification score. We expect that
+centric autoencoders will become irreplaceable objects in anomaly live detection based on geometry,
+thanks to their ability to stem naturally on geometrical algorithms and to their native capability
+of detecting unknown anomaly types. 

@@ -1,0 +1,19 @@
+Simultaneous segmentation and detection of liver tumors (hemangioma and hepatocellular carcinoma
+(HCC)) by using multi-modality non-contrast magnetic resonance imaging (NCMRI) are crucial for
+the clinical diagnosis. However, it is still a challenging task due to: (1) the HCC information on
+NCMRI is invisible or insufficient makes extraction of liver tumors feature difficult; (2) diverse
+imaging characteristics in multi-modality NCMRI causes feature fusion and selection difficult;
+(3) no specific information between hemangioma and HCC on NCMRI cause liver tumors detection difficult.
+In this study, we propose a united adversarial learning framework (UAL) for simultaneous liver
+tumors segmentation and detection using multi-modality NCMRI. The UAL first utilizes a multi-view
+aware encoder to extract multi-modality NCMRI information for liver tumor segmentation and detection.
+In this encoder, a novel edge dissimilarity feature pyramid module is designed to facilitate the
+complementary multi-modality feature extraction. Second, the newly designed fusion and selection
+channel is used to fuse the multi-modality feature and make the decision of the feature selection.
+Then, the proposed mechanism of coordinate sharing with padding integrates the multi-task of segmentation
+and detection so that it enables multi-task to perform united adversarial learning in one discriminator.
+Lastly, an innovative multi-phase radiomics guided discriminator exploits the clear and specific
+tumor information to improve the multi-task performance via the adversarial learning strategy.
+The UAL is validated in corresponding multi-modality NCMRI (i.e. T1FS pre-contrast MRI, T2FS MRI,
+and DWI) and three phases contrast-enhanced MRI of 255 clinical subjects. The experiments show
+that UAL has great potential in the clinical diagnosis of liver tumors. 

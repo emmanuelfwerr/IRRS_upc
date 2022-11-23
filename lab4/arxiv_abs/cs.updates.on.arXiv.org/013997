@@ -1,0 +1,19 @@
+Graphs (networks) are an important tool to model data in different domains. Real-world graphs are
+usually directed, where the edges have a direction and they are not symmetric. Betweenness centrality
+is an important index widely used to analyze networks. In this paper, first given a directed network
+$G$ and a vertex $r \in V(G)$, we propose an exact algorithm to compute betweenness score of $r$. Our
+algorithm pre-computes a set $\mathcal{RV}(r)$, which is used to prune a huge amount of computations
+that do not contribute to the betweenness score of $r$. Time complexity of our algorithm depends
+on $|\mathcal{RV}(r)|$ and it is respectively $\Theta(|\mathcal{RV}(r)|\cdot|E(G)|)$ and
+$\Theta(|\mathcal{RV}(r)|\cdot|E(G)|+|\mathcal{RV}(r)|\cdot|V(G)|\log |V(G)|)$ for unweighted
+graphs and weighted graphs with positive weights. $|\mathcal{RV}(r)|$ is bounded from above by
+$|V(G)|-1$ and in most cases, it is a small constant. Then, for the cases where $\mathcal{RV}(r)$
+is large, we present a simple randomized algorithm that samples from $\mathcal{RV}(r)$ and performs
+computations for only the sampled elements. We show that this algorithm provides an $(\epsilon,\delta)$-approximation
+to the betweenness score of $r$. Finally, we perform extensive experiments over several real-world
+datasets from different domains for several randomly chosen vertices as well as for the vertices
+with the highest betweenness scores. Our experiments reveal that for estimating betweenness score
+of a single vertex, our algorithm significantly outperforms the most efficient existing randomized
+algorithms, in terms of both running time and accuracy. Our experiments also reveal that our algorithm
+improves the existing algorithms when someone is interested in computing betweenness values of
+the vertices in a set whose cardinality is very small. 

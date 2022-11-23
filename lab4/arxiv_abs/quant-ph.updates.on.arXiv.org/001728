@@ -1,0 +1,20 @@
+The intractability of deterministic solutions in solving $\mathcal{NP}$-Hard Combinatorial
+Optimisation Problems (COP) is well reported in the literature. One mechanism for overcoming this
+difficulty has been the use of efficient COP non-deterministic approaches. However, with the advent
+of quantum technology, these modern devices' potential to overcome this tractability limitation
+requires exploration. This paper juxtaposes classical and quantum optimisation algorithms'
+performance to solve two common COP, the Travelling Salesman Problem (TSP) and the Quadratic Assignment
+Problem (QAP). Two accepted classical optimisation methods, Branch and Bound (BNB) and Simulated
+Annealing (SA), are compared to two quantum optimisation methods, Variational Quantum Eigensolver
+(VQE) algorithm and Quantum Approximate Optimisation Algorithm (QAOA). These algorithms are
+respectively executed on both classical devices and IBM's suite of Noisy Intermediate-Scale Quantum
+(NISQ) devices. We have encoded the COP problems for the respective technologies and algorithms
+and provided the computational encodings for the NISQ devices. Our experimental results show that
+current classical devices significantly outperform the presently available NISQ devices, which
+agrees and extends with findings in the literature. Further, we introduce additional performance
+metrics to better compare the two approaches concerning computational time, feasibility and solution
+quality. Our results show that the VQE performs better than QAOA for these metrics, and we infer that
+this is due to the increased number of operations required. Additionally, we investigate the impact
+of a new set of basis gates on the quantum optimisation techniques and show they yield no notable improvement
+in the results. Finally, we present the shortcomings of state-of-the-art NISQ IBM quantum devices
+and argue for potential future work and investigation. 

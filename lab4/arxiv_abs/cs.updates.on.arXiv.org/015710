@@ -1,0 +1,19 @@
+As the network slicing is one of the critical enablers in communication networks, one anomalous
+physical node (PN) or physical link (PL) in substrate networks that carries multiple virtual network
+elements can cause significant performance degradation of multiple network slices. To recover
+the substrate networks from anomaly within a short time, rapid and accurate identification of whether
+or not the anomaly exists in PNs and PLs is vital. Online anomaly detection methods that can analyze
+system data in real-time are preferred. Besides, as virtual nodes and links mapped to PNs and PLs
+are scattered in multiple slices, the distributed detection modes are required to adapt to the virtualized
+environment. According to those requirements, in this paper, we first propose a distributed online
+PN anomaly detection algorithm based on a decentralized one-class support vector machine (OCSVM),
+which is realized through analyzing real-time measurements of virtual nodes mapped to PNs in a distributed
+manner. Specifically, to decouple the OCSVM objective function, we transform the original problem
+to a group of decentralized quadratic programming problems by introducing the consensus constraints.
+The alternating direction method of multipliers is adopted to achieve the solution for the distributed
+online PN anomaly detection. Next, by utilizing the correlation of measurements between neighbor
+virtual nodes, another distributed online PL anomaly detection algorithm based on the canonical
+correlation analysis is proposed. The network only needs to store covariance matrices and mean
+vectors of current data to calculate the canonical correlation vectors for real-time PL anomaly
+analysis. The simulation results on both synthetic and real-world network datasets show the effectiveness
+and robustness of the proposed distributed online anomaly detection algorithms. 

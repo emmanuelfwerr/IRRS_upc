@@ -1,0 +1,19 @@
+The List-3-Coloring Problem is to decide, given a graph $G$ and a list $L(v)\subseteq \{1,2,3\}$
+of colors assigned to each vertex $v$ of $G$, whether $G$ admits a proper coloring $\phi$ with $\phi(v)\in
+L(v)$ for every vertex $v$ of $G$, and the $3$-Coloring Problem is the List-$3$-Coloring Problem
+on instances with $L(v)=\{1,2,3\}$ for every vertex $v$ of $G$. The List-$3$-Coloring Problem
+is a classical NP-complete problem, and it is well-known that while restricted to $H$-free graphs
+(meaning graphs with no induced subgraph isomorphic to a fixed graph $H$), it remains NP-complete
+unless $H$ is isomorphic to an induced subgraph of a path. However, the current state of art is far
+from proving this to be sufficient for a polynomial time algorithm; in fact, the complexity of the
+$3$-Coloring Problem on $P_8$-free graphs (where $P_8$ denotes the eight-vertex path) is unknown.
+Here we consider a variant of the List-$3$-Coloring Problem called the Ordered Graph List-$3$-Coloring
+Problem, where the input is an ordered graph, that is, a graph along with a linear order on its vertex
+set. For ordered graphs $G$ and $H$, we say $G$ is $H$-free if $H$ is not isomorphic to an induced subgraph
+of $G$ with the isomorphism preserving the linear order. We prove, assuming $H$ to be an ordered graph,
+a nearly complete dichotomy for the Ordered Graph List-$3$-Coloring Problem restricted to $H$-free
+ordered graphs. In particular, we show that the problem can be solved in polynomial time if $H$ has
+at most one edge, and remains NP-complete if $H$ has at least three edges. Moreover, in the case where
+$H$ has exactly two edges, we give a complete dichotomy when the two edges of $H$ share an end, and prove
+several NP-completeness results when the two edges of $H$ do not share an end, narrowing the open
+cases down to three very special types of two-edge ordered graphs. 

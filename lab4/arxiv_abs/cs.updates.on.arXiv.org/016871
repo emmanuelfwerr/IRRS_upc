@@ -1,0 +1,19 @@
+Transfer learning is widely used in computer vision (CV), natural language processing (NLP) and
+achieves great success. Most transfer learning systems are based on the same modality (e.g. RGB
+image in CV and text in NLP). However, the cross-modality transfer learning (CMTL) systems are scarce.
+In this work, we study CMTL from 2D to 3D sensor to explore the upper bound performance of 3D sensor
+only systems, which play critical roles in robotic navigation and perform well in low light scenarios.
+While most CMTL pipelines from 2D to 3D vision are complicated and based on Convolutional Neural
+Networks (ConvNets), ours is easy to implement, expand and based on both ConvNets and Vision transformers(ViTs):
+1) By converting point clouds to pseudo-images, we can use an almost identical network from pre-trained
+models based on 2D images. This makes our system easy to implement and expand. 2) Recently ViTs have
+been showing good performance and robustness to occlusions, one of the key reasons for poor performance
+of 3D vision systems. We explored both ViT and ConvNet with similar model sizes to investigate the
+performance difference. We name our approach simCrossTrans: simple cross-modality transfer
+learning with ConvNets or ViTs. Experiments on SUN RGB-D dataset show: with simCrossTrans we achieve
+$13.2\%$ and $16.1\%$ absolute performance gain based on ConvNets and ViTs separately. We also
+observed the ViTs based performs $9.7\%$ better than the ConvNets one, showing the power of simCrossTrans
+with ViT. simCrossTrans with ViTs surpasses the previous state-of-the-art (SOTA) by a large margin
+of $+15.4\%$ mAP50. Compared with the previous 2D detection SOTA based RGB images, our depth image
+only system only has a $1\%$ gap. The code, training/inference logs and models are publicly available
+at https://github.com/liketheflower/simCrossTrans 

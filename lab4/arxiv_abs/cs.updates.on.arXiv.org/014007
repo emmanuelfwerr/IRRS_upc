@@ -1,0 +1,20 @@
+Reachability, distance, and matching are some of the most fundamental graph problems that have
+been of particular interest in dynamic complexity theory in recent years [DKMSZ18, DMVZ18, DKMTVZ20].
+Reachability can be maintained with first-order update formulas, or equivalently in DynFO in general
+graphs with n nodes [DKMSZ18], even under O(log n/loglog n) changes per step [DMVZ18]. In the context
+of how large the number of changes can be handled, it has recently been shown [DKMTVZ20] that under
+a polylogarithmic number of changes, reachability is in DynFOpar in planar, bounded treewidth,
+and related graph classes -- in fact in any graph where small non-zero circulation weights can be
+computed in NC. We continue this line of investigation and extend the meta-theorem for reachability
+to distance and bipartite maximum matching with the same bounds. These are amongst the most general
+classes of graphs known where we can maintain these problems deterministically without using a
+majority quantifier and even maintain witnesses. For the bipartite matching result, modifying
+the approach from [FGT], we convert the static non-zero circulation weights to dynamic matching-isolating
+weights. While reachability is in DynFOar under O(log n/loglog n) changes, no such bound is known
+for either distance or matching in any non-trivial class of graphs under non-constant changes.
+We show that, in the same classes of graphs as before, bipartite maximum matching is in DynFOar under
+O(log n/loglog n) changes per step. En route to showing this we prove that the rank of a matrix can be
+maintained in DynFOar, also under O(log n/loglog n) entry changes, improving upon the previous
+O(1) bound [DKMSZ18]. This implies similar extension for the non-uniform DynFO bound for maximum
+matching in general graphs and an alternate algorithm for maintaining reachability under O(log
+n/loglog n) changes [DMVZ18]. 

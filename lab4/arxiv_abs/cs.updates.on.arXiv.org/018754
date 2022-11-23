@@ -1,0 +1,19 @@
+Modern cloud computing systems distribute software executables over a network to keep the software
+sources, which are typically compiled in a security-critical cluster, secret. We develop ERIC,
+a new, efficient, and general software obfuscation framework. ERIC protects software against
+(i) static analysis, by making only an encrypted version of software executables available to the
+human eye, no matter how the software is distributed, and (ii) dynamic analysis, by guaranteeing
+that an encrypted executable can only be correctly decrypted and executed by a single authenticated
+device. ERIC comprises key hardware and software components to provide efficient software obfuscation
+support: (i) a hardware decryption engine (HDE) enables efficient decryption of encrypted hardware
+in the target device, (ii) the compiler can seamlessly encrypt software executables given only
+a unique device identifier. Both the hardware and software components are ISA-independent, making
+ERIC general. The key idea of ERIC is to use physical unclonable functions (PUFs), unique device
+identifiers, as secret keys in encrypting software executables. Malicious parties that cannot
+access the PUF in the target device cannot perform static or dynamic analyses on the encrypted binary.
+We develop ERIC's prototype on an FPGA to evaluate it end-to-end. Our prototype extends RISC-V Rocket
+Chip with the hardware decryption engine (HDE) to minimize the overheads of software decryption.
+We augment the custom LLVM-based compiler to enable partial/full encryption of RISC-V executables.
+The HDE incurs minor FPGA resource overheads, it requires 2.63% more LUTs and 3.83% more flip-flops
+compared to the Rocket Chip baseline. LLVM-based software encryption increases compile time by
+15.22% and the executable size by 1.59%. ERIC is publicly available and can be downloaded from https://github.com/kasirgalabs/ERIC

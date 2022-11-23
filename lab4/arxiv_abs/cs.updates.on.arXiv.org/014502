@@ -1,0 +1,20 @@
+Motor brain-computer interfaces (BCIs) are a promising technology that may enable motor-impaired
+people to interact with their environment. Designing real-time and accurate BCI is crucial to make
+such devices useful, safe, and easy to use by patients in a real-life environment. Electrocorticography
+(ECoG)-based BCIs emerge as a good compromise between invasiveness of the recording device and
+good spatial and temporal resolution of the recorded signal. However, most ECoG signal decoders
+used to predict continuous hand movements are linear models. These models have a limited representational
+capacity and may fail to capture the relationship between ECoG signal and continuous hand movements.
+Deep learning (DL) models, which are state-of-the-art in many problems, could be a solution to better
+capture this relationship. In this study, we tested several DL-based architectures to predict
+imagined 3D continuous hand translation using time-frequency features extracted from ECoG signals.
+The dataset used in the analysis is a part of a long-term clinical trial (ClinicalTrials.gov identifier:
+NCT02550522) and was acquired during a closed-loop experiment with a tetraplegic subject. The
+proposed architectures include multilayer perceptron (MLP), convolutional neural networks
+(CNN), and long short-term memory networks (LSTM). The accuracy of the DL-based and multilinear
+models was compared offline using cosine similarity. Our results show that CNN-based architectures
+outperform the current state-of-the-art multilinear model. The best architecture exploited
+the spatial correlation between neighboring electrodes with CNN and benefited from the sequential
+character of the desired hand trajectory by using LSTMs. Overall, DL increased the average cosine
+similarity, compared to the multilinear model, by up to 60%, from 0.189 to 0.302 and from 0.157 to
+0.249 for the left and right hand, respectively. 

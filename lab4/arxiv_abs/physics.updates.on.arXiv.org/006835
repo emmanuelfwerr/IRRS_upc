@@ -1,0 +1,19 @@
+We will describe our developments leading to an automated workflow approach that will utilize machine
+learning methods to combine first principles density functional theory (DFT) calculations with
+classical Monte-Carlo (MC) simulations. This method allows the investigation of the statistical
+mechanics and the finite temperature behavior of real materials with complex compositions and
+interactions of their constituents. The investigation of finite temperature properties using
+MC methods requires a large number of evaluations of the system's Hamiltonian to sample the phase
+space needed to obtain physical observables as function of temperature. DFT calculations can provide
+accurate evaluations of the energies, but they are too computationally expensive for routine simulations.
+We demonstrate a solution to this problem that harnesses the computational power of large massively
+parallel computers by combining classical MC calculations with our first principles multiple
+scattering electronic structure code (LSMS), which shows exceptional scaling on current HPC architectures
+such as Summit, by employing Machine Learning (ML) techniques. This workflow that can consider
+both classical interaction models and artificial neural network based models, allows us to investigate
+alloy ordering transitions for increased simulation cell sizes. We investigate the behavior of
+different models, with respect to their training capability as a function of the data set size while
+avoiding the danger of overfitting the model. An important aspect of our workflow is the periodic
+retraining with newly generated first principles data based on the progressive exploration of
+the system's phase space by the MC simulation. We will present results of these different approaches
+for training surrogate models for magnetic alloy materials. 

@@ -1,0 +1,20 @@
+Feature interaction has been recognized as an important problem in machine learning, which is also
+very essential for click-through rate (CTR) prediction tasks. In recent years, Deep Neural Networks
+(DNNs) can automatically learn implicit nonlinear interactions from original sparse features,
+and therefore have been widely used in industrial CTR prediction tasks. However, the implicit feature
+interactions learned in DNNs cannot fully retain the complete representation capacity of the original
+and empirical feature interactions (e.g., cartesian product) without loss. For example, a simple
+attempt to learn the combination of feature A and feature B <A, B> as the explicit cartesian product
+representation of new features can outperform previous implicit feature interaction models including
+factorization machine (FM)-based models and their variations. In this paper, we propose a Co-Action
+Network (CAN) to approximate the explicit pairwise feature interactions without introducing
+too many additional parameters. More specifically, giving feature A and its associated feature
+B, their feature interaction is modeled by learning two sets of parameters: 1) the embedding of feature
+A, and 2) a Multi-Layer Perceptron (MLP) to represent feature B. The approximated feature interaction
+can be obtained by passing the embedding of feature A through the MLP network of feature B. We refer
+to such pairwise feature interaction as feature co-action, and such a Co-Action Network unit can
+provide a very powerful capacity to fitting complex feature interactions. Experimental results
+on public and industrial datasets show that CAN outperforms state-of-the-art CTR models and the
+cartesian product method. Moreover, CAN has been deployed in the display advertisement system
+in Alibaba, obtaining 12\% improvement on CTR and 8\% on Revenue Per Mille (RPM), which is a great
+improvement to the business. 

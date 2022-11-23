@@ -1,0 +1,20 @@
+In this work, we perform an in-depth study of recently introduced average-case quantum distances.
+The average-case distances approximate the average Total-Variation (TV) distance between measurement
+outputs of two quantum processes, in which quantum objects of interest (states, measurements,
+or channels) are intertwined with random circuits. Contrary to conventional distances, such as
+trace distance or diamond norm, they quantify $\textit{average-case}$ statistical distinguishability
+via random circuits. We prove that once a family of random circuits forms an $\delta$-approximate
+$4$-design, with $\delta=o(d^{-8})$, then the average-case distances can be approximated by
+simple explicit functions that can be expressed via degree two polynomials in objects of interest.
+We prove that those functions, which we call quantum average-case distances, have a plethora of
+desirable properties, such as subadditivity, joint convexity, and (restricted) data-processing
+inequalities. Notably, all of the distances utilize the Hilbert-Schmidt norm which provides an
+operational interpretation it did not possess before. We also derive upper bounds on the maximal
+ratio between worst-case and average-case distances. For each dimension $d$ this ratio is at most
+$d^{\frac{1}{2}},\ d, \ d^{\frac{3}{2}}$ for states, measurements, and channels, respectively.
+To support the practical usefulness of our findings, we study multiple examples in which average-case
+quantum distances can be calculated analytically. Furthermore, we perform an extensive numerical
+study of systems up to 12 qubits where circuits have a form of variational ans\"atze with randomly
+chosen parameters. Despite the fact that such circuits are not known to form unitary designs, our
+results suggest that average-case distances are more suitable than the conventional distances
+for studying the performance of NISQ devices in such settings. 

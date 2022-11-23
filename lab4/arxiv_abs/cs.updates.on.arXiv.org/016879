@@ -1,0 +1,20 @@
+Text-based computational approaches for assessing the quality of psychotherapy are being developed
+to support quality assurance and clinical training. However, due to the long durations of typical
+conversation based therapy sessions, and due to limited annotated modeling resources, computational
+methods largely rely on frequency-based lexical features or dialogue acts to assess the overall
+session level characteristics. In this work, we propose a hierarchical framework to automatically
+evaluate the quality of transcribed Cognitive Behavioral Therapy (CBT) interactions. Given the
+richly dynamic nature of the spoken dialog within a talk therapy session, to evaluate the overall
+session level quality, we propose to consider modeling it as a function of local variations across
+the interaction. To implement that empirically, we divide each psychotherapy session into conversation
+segments and initialize the segment-level qualities with the session-level scores. First, we
+produce segment embeddings by fine-tuning a BERT-based model, and predict segment-level (local)
+quality scores. These embeddings are used as the lower-level input to a Bidirectional LSTM-based
+neural network to predict the session-level (global) quality estimates. In particular, we model
+the global quality as a linear function of the local quality scores, which allows us to update the
+segment-level quality estimates based on the session-level quality prediction. These newly estimated
+segment-level scores benefit the BERT fine-tuning process, which in turn results in better segment
+embeddings. We evaluate the proposed framework on automatically derived transcriptions from
+real-world CBT clinical recordings to predict session-level behavior codes. The results indicate
+that our approach leads to improved evaluation accuracy for most codes when used for both regression
+and classification tasks. 

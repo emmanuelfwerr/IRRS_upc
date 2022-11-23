@@ -1,0 +1,19 @@
+Objectives. We generate via advanced Deep Learning (DL) techniques artificial leaf images in an
+automatized way. We aim to dispose of a source of training samples for AI applications for modern
+crop management. Such applications require large amounts of data and, while leaf images are not
+truly scarce, image collection and annotation remains a very time--consuming process. Data scarcity
+can be addressed by augmentation techniques consisting in simple transformations of samples belonging
+to a small dataset, but the richness of the augmented data is limited: this motivates the search for
+alternative approaches. Methods. Pursuing an approach based on DL generative models, we propose
+a Leaf-to-Leaf Translation (L2L) procedure structured in two steps: first, a residual variational
+autoencoder architecture generates synthetic leaf skeletons (leaf profile and veins) starting
+from companions binarized skeletons of real images. In a second step, we perform translation via
+a Pix2pix framework, which uses conditional generator adversarial networks to reproduce the colorization
+of leaf blades, preserving the shape and the venation pattern. Results. The L2L procedure generates
+synthetic images of leaves with a realistic appearance. We address the performance measurement
+both in a qualitative and a quantitative way; for this latter evaluation, we employ a DL anomaly detection
+strategy which quantifies the degree of anomaly of synthetic leaves with respect to real samples.
+Conclusions. Generative DL approaches have the potential to be a new paradigm to provide low-cost
+meaningful synthetic samples for computer-aided applications. The present L2L approach represents
+a step towards this goal, being able to generate synthetic samples with a relevant qualitative and
+quantitative resemblance to real leaves. 

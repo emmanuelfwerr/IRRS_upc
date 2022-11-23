@@ -1,0 +1,19 @@
+Recently, one of us proposed a quantum algorithm called belief propagation with quantum messages
+(BPQM) for decoding classical data encoded using a binary linear code with tree Tanner graph that
+is transmitted over a pure-state CQ channel [Renes, NJP 19 072001 (2017)]. This algorithm presents
+a genuine quantum counterpart to decoding based on classical belief propagation, which has found
+wide success in classical coding theory when used in conjunction with LDPC or Turbo codes. More recently
+Rengaswamy et al. [npj Quantum Information 7 97 (2021)] numerically observed that, for a small example
+code, BPQM implements the optimal decoder for determining the entire input codeword. Here we significantly
+expand the understanding, formalism, and applicability of the BPQM algorithm with the following
+contributions. First, we prove analytically that BPQM realizes optimal decoding for any binary
+linear code with tree Tanner graph. We also provide the first formal description of the BPQM algorithm
+in full detail and without any ambiguity. In so doing, we identify a key flaw overlooked in the original
+algorithm and subsequent works which implies quantum circuit realizations will be exponentially
+large in the code size. Although BPQM passes quantum messages, other information required by the
+algorithm is processed globally. We remedy this problem by formulating a truly message-passing
+algorithm which approximates BPQM and has circuit complexity $\mathcal{O}(\text{poly } n, \text{polylog
+} \frac{1}{\epsilon})$, where $n$ is the code length and $\epsilon$ is the approximation error.
+Finally, we also propose a novel method for extending BPQM to factor graphs containing cycles by
+making use of approximate cloning. We show some promising numerical results that indicate that
+BPQM on factor graphs with cycles can significantly outperform the best possible classical decoder.

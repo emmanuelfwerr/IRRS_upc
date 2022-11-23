@@ -1,0 +1,20 @@
+Learning a generalizable deep model from a few examples in a short time remains a major challenge
+of machine learning, which has impeded its wide deployment to many scenarios. Recent advances reveal
+that a properly pre-trained model endows an important property: transferability. A higher transferability
+of the learned representations indicates a better generalizability across domains of different
+distributions (domain transferability), or across tasks of different semantics (task transferability).
+Transferability has become the key to enable data-efficient deep learning, however, existing
+pre-training methods focus only on the domain transferability while meta-training methods only
+on the task transferability. This restricts their data-efficiency in downstream scenarios of
+diverging domains and tasks. A finding of this paper is that even a tight combination of pre-training
+and meta-training cannot achieve both kinds of transferability. This motivates the proposed Omni-Training
+framework towards data-efficient deep learning. Our first contribution is Omni-Net, a tri-flow
+architecture. Besides the joint representation flow, Omni-Net introduces two new parallel flows
+for pre-training and meta-training, respectively responsible for learning representations
+of domain transferability and task transferability. Omni-Net coordinates the parallel flows
+by routing them via the joint-flow, making each gain the other kind of transferability. Our second
+contribution is Omni-Loss, in which a mean-teacher regularization is imposed to learn generalizable
+and stabilized representations. Omni-Training is a general framework that accommodates many
+existing pre-training and meta-training algorithms. A thorough evaluation on cross-task and
+cross-domain datasets in classification, regression and reinforcement learning problems shows
+that Omni-Training consistently outperforms the state-of-the-art methods. 

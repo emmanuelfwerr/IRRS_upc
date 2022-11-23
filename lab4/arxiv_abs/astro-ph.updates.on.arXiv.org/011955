@@ -1,0 +1,19 @@
+XMM-Newton provides unprecedented insight into the X-ray Universe, recording variability information
+for hundreds of thousands of sources. Manually searching for interesting patterns in light curves
+is impractical, requiring an automated data-mining approach for the characterization of sources.
+Straightforward fitting of temporal models to light curves is not a sure way to identify them, especially
+with noisy data. We used unsupervised machine learning to distill a large data set of light-curve
+parameters, revealing its clustering structure in preparation for anomaly detection and subsequent
+searches for specific source behaviors (e.g., flares, eclipses). Self-organizing maps (SOMs)
+achieve dimensionality reduction and clustering within a single framework. They are a type of artificial
+neural network trained to approximate the data with a two-dimensional grid of discrete interconnected
+units, which can later be visualized on the plane. We trained our SOM on temporal-only parameters
+computed from more than 100,000 detections from the EXTraS catalog. The resulting map reveals that
+about 2500 most variable sources are clustered based on temporal characteristics. We find distinctive
+regions of the SOM map associated with flares, eclipses, dips, linear light curves, and others.
+Each group contains sources that appear similar by eye. We single out a handful of interesting sources
+for further study. The condensed view of our dataset provided by SOMs allowed us to identify groups
+of similar sources, speeding up manual characterization by orders of magnitude. Our method also
+highlights problems with fitting simple temporal models to light curves and can be used to mitigate
+them to an extent. This will be crucial for fully exploiting the high data volume expected from upcoming
+X-ray surveys, and may also help with interpreting supervised classification models. 

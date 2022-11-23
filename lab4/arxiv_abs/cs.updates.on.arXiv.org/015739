@@ -1,0 +1,20 @@
+The Asymmetric Numeral Systems (ANS) is a class of entropy encoders by Duda that had an immense impact
+on the data compression, substituting arithmetic and Huffman coding. The optimality of ANS was
+studied by Duda et al. but the precise asymptotic behaviour of its redundancy (in comparison to the
+entropy) was not completely understood. In this paper we establish an optimal bound on the redundancy
+for the tabled ANS (tANS), the most popular ANS variant. Given a sequence $a_1,\ldots,a_n$ of letters
+from an alphabet $\{0,\ldots,\sigma-1\}$ such that each letter $a$ occurs in it $f_a$ times and
+$n=2^r$, the tANS encoder using Duda's ``precise initialization'' to fill tANS tables transforms
+this sequence into a bit string of length (frequencies are not included in the encoding size): $$
+\sum\limits_{a\in [0..\sigma)}f_a\cdot\log\frac{n}{f_a}+O(\sigma+r), $$ where $O(\sigma
++ r)$ can be bounded by $\sigma\log e+r$. The $r$-bit term is an encoder artifact indispensable to
+ANS; the rest incurs a redundancy of $O(\frac{\sigma}{n})$ bits per letter. We complement this
+bound by a series of examples showing that an $\Omega(\sigma+r)$ redundancy is necessary when $\sigma
+> n/3$, where $\Omega(\sigma + r)$ is at least $\frac{\sigma-1}{4}+r-2$. We argue that similar
+examples exist for any methods that distribute letters in tANS tables using only the knowledge about
+frequencies. Thus, we refute Duda's conjecture that the redundancy is $O(\frac{\sigma}{n^2})$
+bits per letter. We also propose a new variant of range ANS (rANS), called rANS with fixed accuracy,
+that is parameterized by $k \ge 1$. In this variant the integer division, which is unavoidable in
+rANS, is performed only in cases when its result belongs to $[2^k..2^{k+1})$. Hence, the division
+can be computed by faster methods provided $k$ is small. We bound the redundancy for the rANS with
+fixed accuracy $k$ by $\frac{n}{2^k-1}\log e+r$. 

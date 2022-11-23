@@ -1,0 +1,20 @@
+Actual real-world domains are characterised by uncertain situations in which acting and use of
+resources require embracing risk. Performing actions in such domains always entails costs of consuming
+some resource, such as time, money, or energy, where the knowledge about these costs can range from
+totally known to totally unknown and even unknowable probabilities of costs. Think of robotic domains,
+where actions and their costs are non-deterministic due to uncertain factors like obstacles. Choosing
+which action to perform considering its cost on the available resource requires taking a stance
+on risk. Thus, these domains call for not only planning under uncertainty but also planning while
+embracing risk. Taking Hierarchical Task Network (HTN) planning as a widely used planning technique
+in real-world applications, one can observe that existing approaches do not account for risk. That
+is, computing most probable or optimal plans using actions with single-valued costs is only enough
+to express risk neutrality. In this work, we postulate that HTN planning can become risk aware by
+considering expected utility theory, a representative concept of decision theory that enables
+choosing actions considering a probability distribution of their costs and a given risk attitude
+expressed using a utility function. In particular, we introduce a general framework for HTN planning
+that allows modelling risk and uncertainty using a probability distribution of action costs upon
+which we define risk-aware HTN planning as an approach that accounts for the different risk attitudes
+and allows computing plans that go beyond risk neutrality. In fact, we layout that computing risk-aware
+plans requires finding plans with the highest expected utility. Finally, we argue that it is possible
+for HTN planning agents to solve specialised risk-aware HTN planning problems by adapting some
+existing HTN planning approaches. 

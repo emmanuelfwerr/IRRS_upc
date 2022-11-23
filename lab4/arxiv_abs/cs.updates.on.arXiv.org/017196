@@ -1,0 +1,20 @@
+Why does stable matching work well in practice despite agents only providing short preference lists?
+Perhaps the most compelling explanation is due to Lee (Lee, 2016). He considered a model with preferences
+based on correlated cardinal utilities. The utilities were based on common public values for each
+agent and individual private values. He showed that for suitable utility functions, in large markets,
+for most agents, all stable matchings yield similar valued utilities. By means of a new analysis,
+we strengthen this result, showing that in large markets, with high probability, for \emph{all}
+but the bottommost agents, all stable matches yield similar valued utilities. We can then deduce
+that for \emph{all} but the bottommost agents, relatively short preference lists suffice. Our
+analysis shows that the key distinction is between models in which the derivatives of the utility
+function are bounded, and those in which they can be unbounded. For the bounded derivative model,
+we show that for any given constant $c\ge 1$, with $n$ agents on each side of the market, with probability
+$1 - n^{-c}$, for each agent its possible utilities in all stable matches vary by at most $O((c\ln
+n/n)^{1/3})$ for all but the bottommost $O((c\ln n/n)^{1/3})$ fraction of the agents. When the
+derivatives can be unbounded, we obtain the following bound on the utility range and the bottommost
+fraction: for any constant $\epsilon>0$, for large enough $n$, the bound is $\epsilon$. Both these
+bounds are tight. In the bounded derivative model, we also show the existence of an $\epsilon$-Bayes-Nash
+equilibrium in which agents make relatively few proposals. Our results all rely on a new technique
+for sidestepping the conditioning between the matching events that occur over the course of a run
+of the Deferred Acceptance algorithm. We complement these theoretical results with a variety of
+simulation experiments. 

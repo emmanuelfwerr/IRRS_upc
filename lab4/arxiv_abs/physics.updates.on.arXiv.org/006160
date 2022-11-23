@@ -1,0 +1,20 @@
+Computations of incompressible flows with velocity boundary conditions require solution of a
+Poisson equation for pressure with all Neumann boundary conditions. Discretization of such a Poisson
+equation results in a rank-deficient matrix of coefficients. When a non-conservative discretization
+method such as finite difference, finite element, or spectral scheme is used, such a matrix also
+generates an inconsistency which makes the residuals in the iterative solution to saturate at a
+threshold level that depends on the spatial resolution and order of the discretization scheme.
+In this paper, we examine inconsistency for a high-order meshless discretization scheme suitable
+for solving the equations on a complex domain. The high order meshless method uses polyharmonic
+spline radial basis functions (PHS-RBF) with appended polynomials to interpolate scattered data
+and constructs the discrete equations by collocation. The PHS-RBF provides the flexibility to
+vary the order of discretization by increasing the degree of the appended polynomial. In this study,
+we examine the convergence of the inconsistency for different spatial resolutions and for different
+degrees of the appended polynomials by solving the Poisson equation for a manufactured solution
+as well as the Navier-Stokes equations for several fluid flows. We observe that the inconsistency
+decreases faster than the error in the final solution, and eventually becomes vanishing small at
+sufficient spatial resolution. The rate of convergence of the inconsistency is observed to be similar
+or better than the rate of convergence of the discretization errors. This beneficial observation
+makes it unnecessary to regularize the Poisson equation by fixing either the mean pressure or pressure
+at an arbitrary point. A simple point solver such as the SOR is seen to be well-convergent, although
+it can be further accelerated using multilevel methods. 

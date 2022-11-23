@@ -1,0 +1,19 @@
+Estimating the travel time of a path is an essential topic for intelligent transportation systems.
+It serves as the foundation for real-world applications, such as traffic monitoring, route planning,
+and taxi dispatching. However, building a model for such a data-driven task requires a large amount
+of users' travel information, which directly relates to their privacy and thus is less likely to
+be shared. The non-Independent and Identically Distributed (non-IID) trajectory data across
+data owners also make a predictive model extremely challenging to be personalized if we directly
+apply federated learning. Finally, previous work on travel time estimation does not consider the
+real-time traffic state of roads, which we argue can significantly influence the prediction. To
+address the above challenges, we introduce GOF-TTE for the mobile user group, Generative Online
+Federated Learning Framework for Travel Time Estimation, which I) utilizes the federated learning
+approach, allowing private data to be kept on client devices while training, and designs the global
+model as an online generative model shared by all clients to infer the real-time road traffic state.
+II) apart from sharing a base model at the server, adapts a fine-tuned personalized model for every
+client to study their personal driving habits, making up for the residual error made by localized
+global model prediction. % III) designs the global model as an online generative model shared by
+all clients to infer the real-time road traffic state. We also employ a simple privacy attack to our
+framework and implement the differential privacy mechanism to further guarantee privacy safety.
+Finally, we conduct experiments on two real-world public taxi datasets of DiDi Chengdu and Xi'an.
+The experimental results demonstrate the effectiveness of our proposed framework. 

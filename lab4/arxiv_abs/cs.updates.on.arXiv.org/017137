@@ -1,0 +1,19 @@
+The modeling of human emotion expression in speech signals is an important, yet challenging task.
+The high resource demand of speech emotion recognition models, combined with the the general scarcity
+of emotion-labelled data are obstacles to the development and application of effective solutions
+in this field. In this paper, we present an approach to jointly circumvent these difficulties. Our
+method, named RH-emo, is a novel semi-supervised architecture aimed at extracting quaternion
+embeddings from real-valued monoaural spectrograms, enabling the use of quaternion-valued networks
+for speech emotion recognition tasks. RH-emo is a hybrid real/quaternion autoencoder network
+that consists of a real-valued encoder in parallel to a real-valued emotion classifier and a quaternion-valued
+decoder. On the one hand, the classifier permits to optimize each latent axis of the embeddings for
+the classification of a specific emotion-related characteristic: valence, arousal, dominance
+and overall emotion. On the other hand, the quaternion reconstruction enables the latent dimension
+to develop intra-channel correlations that are required for an effective representation as a quaternion
+entity. We test our approach on speech emotion recognition tasks using four popular datasets: Iemocap,
+Ravdess, EmoDb and Tess, comparing the performance of three well-established real-valued CNN
+architectures (AlexNet, ResNet-50, VGG) and their quaternion-valued equivalent fed with the
+embeddings created with RH-emo. We obtain a consistent improvement in the test accuracy for all
+datasets, while drastically reducing the resources' demand of models. Moreover, we performed
+additional experiments and ablation studies that confirm the effectiveness of our approach. The
+RH-emo repository is available at: https://github.com/ispamm/rhemo. 

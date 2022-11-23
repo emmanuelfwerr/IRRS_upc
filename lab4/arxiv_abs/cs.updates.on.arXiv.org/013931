@@ -1,0 +1,19 @@
+Many papers in the field of integer linear programming (ILP, for short) are devoted to problems of
+the type $\max\{c^\top x \colon A x = b,\, x \in \mathbb{Z}^n_{\geq 0}\}$, where all the entries of
+$A,b,c$ are integer, parameterized by the number of rows of $A$ and $\|A\|_{\max}$. This class of
+problems is known under the name of ILP problems in the standard form, adding the word "bounded" if
+$x \leq u$, for some integer vector $u$. Recently, many new sparsity, proximity, and complexity
+results were obtained for bounded and unbounded ILP problems in the standard form. In this paper,
+we consider ILP problems in the canonical form $$\max\{c^\top x \colon b_l \leq A x \leq b_r,\, x \in
+\mathbb{Z}^n\},$$ where $b_l$ and $b_r$ are integer vectors. We assume that the integer matrix
+$A$ has the rank $n$, $(n + m)$ rows, $n$ columns, and parameterize the problem by $m$ and $\Delta(A)$,
+where $\Delta(A)$ is the maximum of $n \times n$ sub-determinants of $A$, taken in the absolute value.
+We show that any ILP problem in the standard form can be polynomially reduced to some ILP problem in
+the canonical form, preserving $m$ and $\Delta(A)$, but the reverse reduction is not always possible.
+More precisely, we define the class of generalized ILP problems in the standard form, which includes
+an additional group constraint, and prove the equivalence to ILP problems in the canonical form.
+We generalize known sparsity, proximity, and complexity bounds for ILP problems in the canonical
+form. Additionally, sometimes, we strengthen previously known results for ILP problems in the
+canonical form, and, sometimes, we give shorter proofs. Finally, we consider the special cases
+of $m \in \{0,1\}$. By this way, we give specialised sparsity, proximity, and complexity bounds
+for the problems on simplices, Knapsack problems and Subset-Sum problems. 

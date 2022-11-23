@@ -1,0 +1,20 @@
+Spectral super-resolution (SSR) refers to the hyperspectral image (HSI) recovery from an RGB counterpart.
+Due to the one-to-many nature of the SSR problem, a single RGB image can be reprojected to many HSIs.
+The key to tackle this illposed problem is to plug into multi-source prior information such as the
+natural RGB spatial context-prior, deep feature-prior or inherent HSI statistical-prior, etc.,
+so as to improve the confidence and fidelity of reconstructed spectra. However, most current approaches
+only consider the general and limited priors in their designing the customized convolutional neural
+networks (CNNs), which leads to the inability to effectively alleviate the degree of ill-posedness.
+To address the problematic issues, we propose a novel holistic prior-embedded relation network
+(HPRN) for SSR. Basically, the core framework is delicately assembled by several multi-residual
+relation blocks (MRBs) that fully facilitate the transmission and utilization of the low-frequency
+content prior of RGB signals. Innovatively, the semantic prior of RGB input is introduced to identify
+category attributes and a semantic-driven spatial relation module (SSRM) is put forward to perform
+the feature aggregation among the clustered similar characteristics using a semantic-embedded
+relation matrix. Additionally, we develop a transformer-based channel relation module (TCRM),
+which breaks the habit of employing scalars as the descriptors of channel-wise relations in the
+previous deep feature-prior and replaces them with certain vectors, together with Transformerstyle
+feature interactions, supporting the representations to be more discriminative. In order to maintain
+the mathematical correlation and spectral consistency between hyperspectral bands, the second-order
+prior constraints (SOPC) are incorporated into the loss function to guide the HSI reconstruction
+process. 

@@ -1,0 +1,19 @@
+The diagonal distance or graph distance is an important parameter of a quantum error-correcting
+code that characterizes whether the code is degenerate or not. Degeneracy is a property unique to
+quantum codes, which allows quantum codes, unlike their classical counterparts, to correct more
+errors than they can uniquely identify. In the CWS framework introduced by Cross, Smith, Smolin
+and Zeng (2009), a quantum code is constructed using a classical code and a graph. It is known that
+the diagonal distance of such a code is upper bounded by $\delta+1$, where $\delta$ is the minimum
+degree of the associated graph. In this paper, we give sufficient conditions on a graph such that
+a CWS code constructed from it has diagonal distance at least $\delta$, and in fact most of the graphs
+in our sufficient class achieve the upper bound of $\delta+1$. Using this result, first we give necessary
+conditions for a CWS code to be degenerate. Secondly, we prove hardness results for the problem of
+finding the distance of a CWS code. We construct a CWS code from a given classical code, with the distance
+of the CWS code being equal to the distance of the classical code. This allows us to translate well-known
+hardness results for computing the minimum distance in classical codes to quantum codes. Specifically,
+we show that exactly computing the distance of a CWS code is NP-complete, and multiplicatively or
+additively approximating it is NP-hard under polynomial-time randomized reductions. Our reduction
+from the classical problems to the quantum problems results in a non-degenerate quantum code, hence
+our result implies that the quantum problems remain NP-hard even with the promise that the code is
+non-degenerate. Moreover, using a mapping from stabilizer codes to CSS codes due to Bravyi, Terhal
+and Leemhuis (2010), we are able to show that the hardness results hold for CSS codes as well. 

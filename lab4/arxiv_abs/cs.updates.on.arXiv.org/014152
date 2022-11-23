@@ -1,0 +1,19 @@
+This note draws conclusions that arise by combining two recent papers, by Anuj Dawar, Erich Gr\"adel,
+and Wied Pakusa, published at ICALP 2019 and by Moritz Lichter, published at LICS 2021. In both papers,
+the main technical results rely on the combinatorial and algebraic analysis of the invertible-map
+equivalences $\equiv^\text{IM}_{k,Q}$ on certain variants of Cai-F\"urer-Immerman (CFI) structures.
+These $\equiv^\text{IM}_{k,Q}$-equivalences, for a natural number $k$ and a set of primes $Q$,
+refine the well-known Weisfeiler-Leman equivalences used in algorithms for graph isomorphism.
+The intuition is that two graphs $G \equiv^\text{IM}_{k,Q} H$ cannot be distinguished by iterative
+refinements of equivalences on $k$-tuples defined via linear operators on vector spaces over fields
+of characteristic $p \in Q$. In the first paper it has been shown that for a prime $q \notin Q$, the $\equiv^\text{IM}_{k,Q}$
+equivalences are not strong enough to distinguish between non-isomorphic CFI-structures over
+the field $\mathbb{F}_q$. In the second paper, a similar but not identical construction for CFI-structures
+over the rings $\mathbb{Z}_{2^i}$ has been shown to be indistinguishable with respect to $\equiv^\text{IM}_{k,\{2\}}$.
+Together with earlier work on rank logic, this second result suffices to separate rank logic from
+polynomial time. We show here that the two approaches can be unified to prove that CFI-structures
+over the rings $\mathbb{Z}_{2^i}$ are indistinguishable with respect to $\equiv^\text{IM}_{k,\mathbb{P}}$,
+for the set $\mathbb{P}$ of all primes. This implies the following two results. 1. There is no fixed
+$k$ such that the invertible-map equivalence $\equiv^\text{IM}_{k,\mathbb{P}}$ coincides
+with isomorphism on all finite graphs. 2. No extension of fixed-point logic by linear-algebraic
+operators over fields can capture polynomial time. 

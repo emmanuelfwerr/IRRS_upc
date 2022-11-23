@@ -1,0 +1,20 @@
+With the recent availability of cloud quantum computing services, the question of the verifiability
+of quantum computations delegated by a weak quantum client to a powerful quantum server is becoming
+of practical interest. Over the last two decades, Verifiable Blind Quantum Computing (VBQC) has
+emerged as one of the key approaches to address this challenge. While many protocols have been proposed
+in recent years, each optimising one aspect of such schemes, a systematic study of required building
+blocks to achieve collectively the desired properties has been missing. We present a framework
+that encompasses all known VBQC protocols and present sufficient conditions to obtain composable
+security and noise robustness properties. We do this by providing a unified security proof within
+the Abstract Cryptography formalism that can be used for existing protocols as well as new ones that
+could be derived using the framework. While we choose Measurement-Based Quantum Computing (MBQC)
+as the working model for the presentation of our results, one could expand the domain of applicability
+of our framework via direct known translation between the circuit model and MBQC. On a theoretical
+note, we uncover fundamental relations between verification and error detection and correction,
+a folklore belief in the field that has never been mathematically proven: (i) verification can be
+reduced to the task of error detection, and (ii) encoding of the target computation into an error-correcting
+code is necessary for exponential soundness. These simple yet fundamental facts set the design
+principles for further development towards practical VBQC protocols. Indeed, as a direct application
+we demonstrate how the framework can systematize the search for new verification techniques. We
+find completely new schemes that allow more efficient robust verification of BQP computations
+than current state of the art. 

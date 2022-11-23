@@ -1,0 +1,20 @@
+Financial portfolio management (PM) is one of the most applicable problems in reinforcement learning
+(RL) owing to its sequential decision-making nature. However, existing RL-based approaches rarely
+focus on scalability or reusability to adapt to the ever-changing markets. These approaches are
+rigid and unscalable to accommodate the varying number of assets of portfolios and increasing need
+for heterogeneous data. Also, RL agents in the existing systems are ad-hoc trained and hardly reusable
+for different portfolios. To confront the above problems, a modular design is desired for the systems
+to be compatible with reusable asset-dedicated agents. In this paper, we propose a multi-agent
+RL-based system for PM (MSPM). MSPM involves two types of asynchronously-updated modules: Evolving
+Agent Module (EAM) and Strategic Agent Module (SAM). An EAM is an information-generating module
+with a DQN agent, and it receives heterogeneous data and generates signal-comprised information
+for a particular asset. An SAM is a decision-making module with a PPO agent for portfolio optimization,
+and it connects to EAMs to reallocate the assets in a portfolio. Trained EAMs can be connected to any
+SAM at will. With its modularized architecture, the multi-step condensation of volatile market
+information, and the reusable design of EAM, MSPM simultaneously addresses the two challenges
+in RL-based PM: scalability and reusability. Experiments on 8-year U.S. stock market data prove
+the effectiveness of MSPM in profit accumulation by its outperformance over five baselines in terms
+of accumulated rate of return (ARR), daily rate of return, and Sortino ratio. MSPM improves ARR by
+at least 186.5% compared to CRP, a widely-used PM strategy. To validate the indispensability of
+EAM, we back-test and compare MSPMs on four portfolios. EAM-enabled MSPMs improve ARR by at least
+1341.8% compared to EAM-disabled MSPMs. 

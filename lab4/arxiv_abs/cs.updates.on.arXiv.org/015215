@@ -1,0 +1,19 @@
+This paper studies a variant of the Art Gallery problem in which the "walls" can be replaced by \emph{reflecting-edges},
+which allows the guard to see further and thereby see a larger portion of the gallery. We study visibility
+with specular and diffuse reflections. The number of times a ray can be reflected can be taken as a
+parameter. The Art Gallery problem has two primary versions: point guarding and vertex guarding.
+Both versions are proven to be NP-hard by Lee and Aggarwal. We show that several cases of the generalized
+problem are NP-hard, too. We managed to do this by reducing the 3-SAT and the Subset-Sum problems
+to the various cases of the generalized problem. We also illustrate that if $\cal P$ is a funnel or
+a weak visibility polygon, the problem becomes more straightforward and can be solved in polynomial
+time. We generalize the $\mathcal{O}(\log n)$-approximation ratio algorithm of the vertex guarding
+problem to work in the presence of reflection. For a bounded $r$, the generalization gives a polynomial-time
+algorithm with $\mathcal{O}(\log n)$-approximation ratio for several special cases of the generalized
+problem. Furthermore, Chao Xu proved that although reflection helps the visibility of guards to
+be expanded, similar to the normal guarding problem, even considering $r$ specular reflections
+we may need $\lfloor \frac{n}{3} \rfloor$ guards to cover a simple polygon $\cal P$. In this article,
+we prove that considering $r$ diffuse reflections the minimum number of vertex or boundary guards
+required to cover $\cal P$ decreases to $\lceil \frac{\alpha}{1+ \lfloor \frac{r}{4} \rfloor}
+\rceil$, where $\alpha$ indicates the minimum number of guards required to cover $\cal P$ without
+reflection. funnel or a weak visibility polygon, then the problem becomes more straightforward
+and can be solved in polynomial time. 

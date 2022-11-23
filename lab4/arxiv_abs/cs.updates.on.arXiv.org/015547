@@ -1,0 +1,19 @@
+The popularity of Conditional Value-at-Risk (CVaR), a risk functional from finance, has been growing
+in the control systems community due to its intuitive interpretation and axiomatic foundation.
+We consider a non-standard optimal control problem in which the goal is to minimize the CVaR of a maximum
+random cost subject to a Borel-space Markov decision process. The objective takes the form $\text{CVaR}_{\alpha}(\max_{t=0,1,\dots,N}
+C_t)$, where $\alpha$ is a risk-aversion parameter representing a fraction of worst cases, $C_t$
+is a stage or terminal cost, and $N \in \mathbb{N}$ is the length of a finite discrete-time horizon.
+The objective represents the maximum departure from a desired operating region averaged over a
+given fraction $\alpha$ of worst cases. This problem provides a safety criterion for a stochastic
+system that is informed by both the probability and severity of the potential consequences of the
+system's trajectory. In contrast, existing safety analysis frameworks apply stage-wise risk
+constraints (i.e., $\rho(C_t)$ must be small for all $t$, where $\rho$ is a risk functional) or assess
+the probability of constraint violation without quantifying its possible severity. To the best
+of our knowledge, the problem of interest has not been solved. To solve the problem, we propose and
+study a family of stochastic dynamic programs on an augmented state space. We prove that the optimal
+CVaR of a maximum cost enjoys an equivalent representation in terms of the solutions to this family
+of dynamic programs under appropriate assumptions. We show the existence of an optimal policy that
+depends on the dynamics of an augmented state under a measurable selection condition. Moreover,
+we demonstrate how our safety analysis framework is useful for assessing the severity of combined
+sewer overflows under precipitation uncertainty. 

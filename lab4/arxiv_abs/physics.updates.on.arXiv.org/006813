@@ -1,0 +1,20 @@
+Purpose: Patient-specific ridge filters can modulate proton energy to obtain a conformal dose.
+We describe a new framework for optimization of filter design and spot maps to meet the unique demands
+of FLASH radiotherapy. We demonstrate an Integrated Biological Optimization IMPT (IBO-IMPT)
+approach for optimization of dose, dose-averaged dose rate (DADR), and dose-averaged LET (LETd).
+Methods: We developed inverse planning software to design patient-specific ridge filters that
+spread the Bragg peak from a fixed-energy, 250 MeV beam to a proximal beam-specific planning target
+volume. The software optimizes patient-specific ridge filter and uses a Monte Carlo calculation
+engine, based on Geant4, to provide dose and LET influence matrices. Plan optimization, using matRAD,
+accommodates the IBO-IMPT objective function considering dose, dose rate, and LET simultaneously
+with minimum MU constraints. The framework enables design of both regularly spaced and sparse-optimized
+ridge filters, which allow faster delivery and selective LET optimization. Volume distributions
+and histograms for dose, DADR, and LETd are compared using evaluation structures specific to the
+heart and lung. Results: We used IBO-IMPT to design ridge filters for a central lung tumor patient.
+The IBO-IMPT framework selectively spared heart and lung by reducing LET and increasing dose rate,
+relative to IMPT planning. Sparse-optimized ridge filters were superior to regularly spaced ridge
+filters in dose rate. Together, these innovations substantially increased the DADR in the heart
+and lung while maintaining good target coverage. The volume that received a FLASH dose rate of higher
+40 Gy/second increased by 31% for heart and 50% for lung. Conclusion: This proof-of-concept study
+demonstrates the feasibility of using an IBO-IMPT framework to accomplish proton FLASH SBPT, accounting
+for dose, DADR, and LETd simultaneously. 

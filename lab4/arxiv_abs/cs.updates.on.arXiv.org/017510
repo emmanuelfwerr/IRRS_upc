@@ -1,0 +1,20 @@
+Federated learning is a private-by-design distributed learning paradigm where clients train
+local models on their own data before a central server aggregates their local updates to compute
+a global model. Depending on the aggregation method used, the local updates are either the gradients
+or the weights of local learning models. Recent reconstruction attacks apply a gradient inversion
+optimization on the gradient update of a single minibatch to reconstruct the private data used by
+clients during training. As the state-of-the-art reconstruction attacks solely focus on single
+update, realistic adversarial scenarios are overlooked, such as observation across multiple
+updates and updates trained from multiple mini-batches. A few studies consider a more challenging
+adversarial scenario where only model updates based on multiple mini-batches are observable,
+and resort to computationally expensive simulation to untangle the underlying samples for each
+local step. In this paper, we propose AGIC, a novel Approximate Gradient Inversion Attack that efficiently
+and effectively reconstructs images from both model or gradient updates, and across multiple epochs.
+In a nutshell, AGIC (i) approximates gradient updates of used training samples from model updates
+to avoid costly simulation procedures, (ii) leverages gradient/model updates collected from
+multiple epochs, and (iii) assigns increasing weights to layers with respect to the neural network
+structure for reconstruction quality. We extensively evaluate AGIC on three datasets, CIFAR-10,
+CIFAR-100 and ImageNet. Our results show that AGIC increases the peak signal-to-noise ratio (PSNR)
+by up to 50% compared to two representative state-of-the-art gradient inversion attacks. Furthermore,
+AGIC is faster than the state-of-the-art simulation based attack, e.g., it is 5x faster when attacking
+FedAvg with 8 local steps in between model updates. 

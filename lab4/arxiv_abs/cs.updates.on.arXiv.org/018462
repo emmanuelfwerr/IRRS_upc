@@ -1,0 +1,19 @@
+Due to ill performance on many devices, sparse matrix-vector multiplication (SpMV) normally requires
+special care to store and tune for a given device. However, SpMV is one of the most important kernels
+in high-performance computing (HPC), and therefore, a storage format and tuning are required that
+allows for efficient SpMV operations with low memory and tuning overheads across heterogeneous
+devices. Additionally, the primary users of SpMV operations in HPC are normally application scientists
+that already have numerous other libraries they depend on the use of some standard sparse matrix
+storage format. As such, the ideal heterogeneous format would also be something that could easily
+be understood and requires no major changes to be translated into a standard sparse matrix format,
+such as compressed sparse row (CSR). This paper presents a heterogeneous format based on CSR, named
+CSR-k, that can be tuned quickly, requires minimal memory overheads, outperforms the average performance
+of NVIDIA's cuSPARSE and Sandia National Laboratories' KokkosKernels, while being on par with
+Intel MKL on our test suite. Additionally, CSR-k does not need any conversion to be used by standard
+library calls that require a CSR format input. In particular, CSR-k achieves this by grouping rows
+into a hierarchical structure of super-rows and super-super-rows that are represented by just
+a few extra arrays of pointers (i.e., <2.5% memory overhead to keep arrays for both GPU and CPU execution).
+Due to its simplicity, a model can be tuned for a device, and this model can be used to select super-row
+and super-super-rows sizes in constant time. We observe in this paper that CSR-k can achieve about
+17.3% improvement on an NVIDIA V100 and about 18.9% improvement on an NVIDIA A100 over NVIDIA's cuSPARSE
+while still performing on-par with Intel MKL on an Intel Xeon Platinum 8380 and an AMD Epyc 7742. 

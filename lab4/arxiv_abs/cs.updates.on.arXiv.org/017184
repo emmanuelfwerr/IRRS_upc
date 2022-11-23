@@ -1,0 +1,19 @@
+In this paper we introduce a new operation for Linear Programming (LP), called LP complementation,
+which resembles many properties of LP duality. Given a maximisation (resp.~minimisation) LP $P$,
+we define its complement $Q$ as a specific minimisation (resp.~maximisation) LP with the same objective
+function as $P$. Our central result is the LP complementation theorem, that establishes the following
+relationship between the optimal value $\text{Opt}(P)$ of $P$ and the optimal value $\text{Opt}(Q)$
+of its complement: $\frac{1}{\text{Opt}(P)}+\frac{1}{\text{Opt}(Q)}=1$. The LP complementation
+operation can be applied if and only if $\text{Opt}(P) > 1$. We then apply LP complementation to hypergraphs.
+For every hypergraph $H=(V,E)$, its dual is $H^*$ and we call $\overline{H}=(V,\{V\setminus e
+: e\in E\})$ the complement of $H$. For the covering LP $K(H)$ we obtain $\frac{1}{ \text{Opt}( K(H^*)
+) }+\frac{1}{\text{Opt}( K(\overline{H}) ) } = 1$ (and similarly for packing, matching and transversal
+LPs). We then consider \emph{fractional graph theory}. We prove that the LP for the \Define{fractional
+in-dominating number} of a digraph $D$ is the complement of the LP for the \Define{fractional total
+out-dominating number} of the digraph complement of $D$. We also establish that the fractional
+matching number of a matroid coincides with its edge toughness. Finally, we introduce the problem
+\text{Vertex Cover with Budget (VCB)}: for a graph $G$ and a positive integer $b$, what is the maximum
+number $t_b$ of vertex covers $S_1, \dots, S_{t_b}$ of $G$, such that every vertex appears in at most
+$b$ vertex covers? We relate \text{VCB} with the LP $Q_G$ for the fractional chromatic number of
+$G$: as $b \to \infty$, $t_b \sim t_f \cdot b$, where $t_f$ is the optimal value of the complement LP
+of $Q_G$. 

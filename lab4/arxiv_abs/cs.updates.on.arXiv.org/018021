@@ -1,0 +1,20 @@
+Graph autoencoders (GAE) and variational graph autoencoders (VGAE) emerged as two powerful groups
+of unsupervised node embedding methods, with various applications to graph-based machine learning
+problems such as link prediction and community detection. Nonetheless, at the beginning of this
+Ph.D. project, GAE and VGAE models were also suffering from key limitations, preventing them from
+being adopted in the industry. In this thesis, we present several contributions to improve these
+models, with the general aim of facilitating their use to address industrial-level problems involving
+graph representations. Firstly, we propose two strategies to overcome the scalability issues
+of previous GAE and VGAE models, permitting to effectively train these models on large graphs with
+millions of nodes and edges. These strategies leverage graph degeneracy and stochastic subgraph
+decoding techniques, respectively. Besides, we introduce Gravity-Inspired GAE and VGAE, providing
+the first extensions of these models for directed graphs, that are ubiquitous in industrial applications.
+We also consider extensions of GAE and VGAE models for dynamic graphs. Furthermore, we argue that
+GAE and VGAE models are often unnecessarily complex, and we propose to simplify them by leveraging
+linear encoders. Lastly, we introduce Modularity-Aware GAE and VGAE to improve community detection
+on graphs, while jointly preserving good performances on link prediction. In the last part of this
+thesis, we evaluate our methods on several graphs extracted from the music streaming service Deezer.
+We put the emphasis on graph-based music recommendation problems. In particular, we show that our
+methods can improve the detection of communities of similar musical items to recommend to users,
+that they can effectively rank similar artists in a cold start setting, and that they permit modeling
+the music genre perception across cultures. 

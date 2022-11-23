@@ -1,0 +1,20 @@
+We consider a stochastic lost-sales inventory control system with a lead time $L$ over a planning
+horizon $T$. Supply is uncertain, and is a function of the order quantity (due to random yield/capacity,
+etc). We aim to minimize the $T$-period cost, a problem that is known to be computationally intractable
+even under known distributions of demand and supply. In this paper, we assume that both the demand
+and supply distributions are unknown and develop a computationally efficient online learning
+algorithm. We show that our algorithm achieves a regret (i.e. the performance gap between the cost
+of our algorithm and that of an optimal policy over $T$ periods) of $O(L+\sqrt{T})$ when $L\geq\log(T)$.
+We do so by 1) showing our algorithm cost is higher by at most $O(L+\sqrt{T})$ for any $L\geq 0$ compared
+to an optimal constant-order policy under complete information (a well-known and widely-used
+algorithm) and 2) leveraging its known performance guarantee from the existing literature. To
+the best of our knowledge, a finite-sample $O(\sqrt{T})$ (and polynomial in $L$) regret bound when
+benchmarked against an optimal policy is not known before in the online inventory control literature.
+A key challenge in this learning problem is that both demand and supply data can be censored; hence
+only truncated values are observable. We circumvent this challenge by showing that the data generated
+under an order quantity $q^2$ allows us to simulate the performance of not only $q^2$ but also $q^1$
+for all $q^1<q^2$, a key observation to obtain sufficient information even under data censoring.
+By establishing a high probability coupling argument, we are able to evaluate and compare the performance
+of different order policies at their steady state within a finite time horizon. Since the problem
+lacks convexity, we develop an active elimination method that adaptively rules out suboptimal
+solutions. 

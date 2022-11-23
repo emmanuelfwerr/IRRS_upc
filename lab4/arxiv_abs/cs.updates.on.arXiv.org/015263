@@ -1,0 +1,19 @@
+The last decade saw an emergence of Synchronous Transmissions (ST) as an effective communication
+paradigm in low-power wireless networks. Numerous ST protocols provide high reliability and energy
+efficiency in normal wireless conditions, for a large variety of traffic requirements. Recently,
+with the EWSN dependability competitions, the community pushed ST to harsher and highly-interfered
+environments, improving upon classical ST protocols through the use of custom rules, hand-tailored
+parameters, and additional retransmissions. The results are sophisticated protocols, that require
+prior expert knowledge and extensive testing, often tuned for a specific deployment and envisioned
+scenario. In this paper, we explore how ST protocols can benefit from self-adaptivity; a self-adaptive
+ST protocol selects itself its best parameters to (1) tackle external environment dynamics and
+(2) adapt to its topology over time. We introduce Dimmer as a self-adaptive ST protocol. Dimmer builds
+on LWB and uses Reinforcement Learning to tune its parameters and match the current properties of
+the wireless medium. By learning how to behave from an unlabeled dataset, Dimmer adapts to different
+interference types and patterns, and is able to tackle previously unseen interference. With Dimmer,
+we explore how to efficiently design AI-based systems for constrained devices, and outline the
+benefits and downfalls of AI-based low-power networking. We evaluate our protocol on two deployments
+of resource-constrained nodes achieving 95.8% reliability against strong, unknown WiFi interference.
+Our results outperform baselines such as non-adaptive ST protocols (27%) and PID controllers,
+and show a performance close to hand-crafted and more sophisticated solutions, such as Crystal
+(99%). 

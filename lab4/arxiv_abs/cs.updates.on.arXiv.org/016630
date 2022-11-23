@@ -1,0 +1,20 @@
+Perching on surfaces of moving objects, like vehicles, could extend the flight times and range of
+quadrotors. For surfaces attachment, suction cups are usually adopted due to their durability
+and large adhesion force. To seal on surfaces, suction cups are required to be aligned with surfaces
+and match to the frictions on end faces induced by relative tangential velocity. However, when the
+object surface is moving and inclined such that an aggressive maneuver is required, the attitude
+and relative velocity errors of quadrotors would become significant, which poses challenges to
+perch. To address the problem, we proposed a real-time trajectory planning algorithm to alleviate
+the velocity errors of quadrotors relative to moving surfaces. Multimodal search in dynamic time-domain
+is developed in the algorithm and thus the time-optimal aggressive trajectories can be efficiently
+generated. To further adapt to the residual attitude and relative velocity errors, we design a compliant
+gripper using self-sealing cups. Multiple cups in different directions are integrated into a wheel-like
+mechanism to increase the tolerance to attitude errors. The wheel mechanism in the gripper also
+eliminates the requirement of matching the attitude and tangential velocity and thus increases
+the adaptability to tangential velocity. Extensive tests are conducted, including comparison
+experiments, to perch on static and moving surfaces at various inclinations. Results demonstrate
+that our proposed system enables a quadrotor to reliably perch on static and moving inclined (up
+to 1.18$m/s$ and 90$^\circ$) surfaces with a success rate of 70\% or higher. The trajectory planner
+is valid and efficient. Compared to conventional suction cup grippers in moving surface perching,
+our gripper has larger adaptability to attitude errors and tangential velocities, and the success
+rate increases by 45\%. 

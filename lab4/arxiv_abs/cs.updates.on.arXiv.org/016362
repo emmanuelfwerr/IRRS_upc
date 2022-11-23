@@ -1,0 +1,20 @@
+We study algorithmic applications of a natural discretization for the hard-sphere model and the
+Widom-Rowlinson model in a region $\mathbb{V}\subset\mathbb{R}^d$. These models are used in
+statistical physics to describe mixtures of one or multiple particle types subjected to hard-core
+interactions. For each type, particles follow a Poisson point process with a type specific activity
+parameter (fugacity). The Gibbs distribution is characterized by the mixture of these point processes
+conditioned that no two particles are closer than a type-dependent distance threshold. A key part
+in better understanding the Gibbs distribution is its normalizing constant, called partition
+function. We give sufficient conditions that the partition function of a discrete hard-core model
+on a geometric graph based on a point set $X \subset \mathbb{V}$ closely approximates those of such
+continuous models. Previously, this was only shown for the hard-sphere model on cubic regions $\mathbb{V}=[0,
+\ell)^d$ when $X$ is exponential in the volume of the region $\nu(\mathbb{V})$, limiting algorithmic
+applications. In the same setting, our refined analysis only requires a quadratic number of points,
+which we argue to be tight. We use our improved discretization results to approximate the partition
+functions of the hard-sphere model and the Widom-Rowlinson efficiently in $\nu(\mathbb{V})$.
+For the hard-sphere model, we obtain the first quasi-polynomial deterministic approximation
+algorithm for the entire fugacity regime for which, so far, only randomized approximations are
+known. Furthermore, we simplify a recently introduced fully polynomial randomized approximation
+algorithm. Similarly, we obtain the best known deterministic and randomized approximation bounds
+for the Widom-Rowlinson model. Moreover, we obtain approximate sampling algorithms for the respective
+spin systems within the same fugacity regimes. 

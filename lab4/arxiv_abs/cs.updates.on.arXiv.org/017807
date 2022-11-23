@@ -1,0 +1,20 @@
+Numerical solutions of partial differential equations (PDEs) require expensive simulations,
+limiting their application in design optimization, model-based control, and large-scale inverse
+problems. Surrogate modeling techniques seek to decrease the computational expense while retaining
+dominant solution features and behavior. Traditional Convolutional Neural Network-based frameworks
+for surrogate modeling require lossy pixelization and data-preprocessing, and generally are
+not effective in realistic engineering applications. We propose alternative deep-learning based
+surrogate models for discretization-independent, continuous representations of PDE solutions,
+which can be used for learning and prediction over domains with complex, variable geometry and mesh
+topology. Three methods are proposed and compared; design-variable-coded multi-layer perceptron
+(DV-MLP), design-variable hypernetworks (DV-Hnet), and non-linear independent dual system
+(NIDS). Each method utilizes a main network which consumes pointwise spatial information to provide
+a continuous representation, allowing predictions at any location in the domain. Input features
+include a minimum-distance function evaluation to implicitly encode the problem geometry. The
+geometric design variables, which define and distinguish problem instances, are used differently
+by each method, appearing as additional main-network input features (DV-MLP), or as hypernetwork
+inputs (DV-Hnet and NIDS). The methods are applied to predict solutions around complex, parametrically-defined
+geometries on non-parametrically-defined meshes with model predictions obtained many orders
+of magnitude faster than the full order models. Test cases include a vehicle-aerodynamics problem
+with complex geometry and limited training data, with a design-variable hypernetwork performing
+best, with a competitive time-to-best-model despite a much greater parameter count. 

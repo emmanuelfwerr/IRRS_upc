@@ -1,0 +1,20 @@
+The emerging technology of snapshot compressive imaging (SCI) enables capturing high dimensional
+(HD) data in an efficient way. It is generally implemented by two components: an optical encoder
+that compresses HD signals into a 2D measurement and an algorithm decoder that retrieves the HD data
+upon the hardware-encoded measurement. Over a broad range of SCI applications, hyperspectral
+imaging (HSI) and video compressive sensing have received significant research attention in recent
+years. Among existing SCI reconstruction algorithms, deep learning-based methods stand out as
+their promising performance and efficient inference. However, the deep reconstruction network
+may suffer from overlarge model size and highly-specialized network design, which inevitably
+lead to costly training time, high memory usage, and limited flexibility, thus discouraging the
+deployments of SCI systems in practical scenarios. In this paper, we tackle the above challenges
+by proposing a simple yet highly efficient reconstruction method, namely stacked residual network
+(SRN), by revisiting the residual learning strategy with nested structures and spatial-invariant
+property. The proposed SRN empowers high-fidelity data retrieval with fewer computation operations
+and negligible model size compared with existing networks, and also serves as a versatile backbone
+applicable for both hyperspectral and video data. Based on the proposed backbone, we first develop
+the channel attention enhanced SRN (CAE-SRN) to explore the spectral inter-dependencies for fine-grained
+spatial estimation in HSI. We then employ SRN as a deep denoiser and incorporate it into a generalized
+alternating projection (GAP) framework -- resulting in GAP-SRN -- to handle the video compressive
+sensing task. Experimental results demonstrate the state-of-the-art performance, high computational
+efficiency of the proposed SRN on two SCI applications. 

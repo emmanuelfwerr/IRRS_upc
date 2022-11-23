@@ -1,0 +1,20 @@
+We consider the Vector Scheduling problem on identical machines: we have m machines, and a set J of
+n jobs, where each job j has a processing-time vector $p_j\in \mathbb{R}^d_{\geq 0}$. The goal is
+to find an assignment $\sigma:J\to [m]$ of jobs to machines so as to minimize the makespan $\max_{i\in
+[m]}\max_{r\in [d]}( \sum_{j:\sigma(j)=i}p_{j,r})$. A natural lower bound on the optimal makespan
+is lb $:=\max\{\max_{j\in J,r\in [d]}p_{j,r},\max_{r\in [d]}(\sum_{j\in J}p_{j,r}/m)\}$.
+Our main result is a very simple O(log d)-approximation algorithm for vector scheduling with respect
+to the lower bound lb: we devise an algorithm that returns an assignment whose makespan is at most
+O(log d)*lb. As an application, we show that the above guarantee leads to an O(log log m)-approximation
+for Stochastic Minimum-Norm Load Balancing (StochNormLB). In StochNormLB, we have m identical
+machines, a set J of n independent stochastic jobs whose processing times are nonnegative random
+variables, and a monotone, symmetric norm $f:\mathbb{R}^m \to \mathbb{R}_{\geq 0}$. The goal
+is to find an assignment $\sigma:J\to [m]$ that minimizes the expected $f$-norm of the induced machine-load
+vector, where the load on machine i is the (random) total processing time assigned to it. Our O(log
+log m)-approximation guarantee is in fact much stronger: we obtain an assignment that is simultaneously
+an O(log log m)-approximation for StochNormLB with all monotone, symmetric norms. Next, this approximation
+factor significantly improves upon the O(log m/log log m)-approximation in (Ibrahimpur and Swamy,
+FOCS 2020) for StochNormLB, and is a consequence of a more-general black-box reduction that we present,
+showing that a $\gamma(d)$-approximation for d-dimensional vector scheduling with respect to
+the lower bound lb yields a simultaneous $\gamma(\log m)$-approximation for StochNormLB with
+all monotone, symmetric norms. 

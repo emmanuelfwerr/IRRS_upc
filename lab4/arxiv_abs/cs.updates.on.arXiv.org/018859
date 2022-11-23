@@ -1,0 +1,20 @@
+Graph structured data often possess dynamic characters in nature, e.g., the addition of links and
+nodes, in many real-world applications. Recent years have witnessed the increasing attentions
+paid to dynamic graph neural networks for modelling such graph data, where almost all the existing
+approaches assume that when a new link is built, the embeddings of the neighbor nodes should be updated
+by learning the temporal dynamics to propagate new information. However, such approaches suffer
+from the limitation that if the node introduced by a new connection contains noisy information,
+propagating its knowledge to other nodes is not reliable and even leads to the collapse of the model.
+In this paper, we propose AdaNet: a robust knowledge Adaptation framework via reinforcement learning
+for dynamic graph neural Networks. In contrast to previous approaches immediately updating the
+embeddings of the neighbor nodes once adding a new link, AdaNet attempts to adaptively determine
+which nodes should be updated because of the new link involved. Considering that the decision whether
+to update the embedding of one neighbor node will have great impact on other neighbor nodes, we thus
+formulate the selection of node update as a sequence decision problem, and address this problem
+via reinforcement learning. By this means, we can adaptively propagate knowledge to other nodes
+for learning robust node embedding representations. To the best of our knowledge, our approach
+constitutes the first attempt to explore robust knowledge adaptation via reinforcement learning
+for dynamic graph neural networks. Extensive experiments on three benchmark datasets demonstrate
+that AdaNet achieves the state-of-the-art performance. In addition, we perform the experiments
+by adding different degrees of noise into the dataset, quantitatively and qualitatively illustrating
+the robustness of AdaNet. 

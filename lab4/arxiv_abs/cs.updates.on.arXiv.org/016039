@@ -1,0 +1,20 @@
+Using large pre-trained models for image recognition tasks is becoming increasingly common owing
+to the well acknowledged success of recent models like vision transformers and other CNN-based
+models like VGG and Resnet. The high accuracy of these models on benchmark tasks has translated into
+their practical use across many domains including safety-critical applications like autonomous
+driving and medical diagnostics. Despite their widespread use, image models have been shown to
+be fragile to changes in the operating environment, bringing their robustness into question. There
+is an urgent need for methods that systematically characterise and quantify the capabilities of
+these models to help designers understand and provide guarantees about their safety and robustness.
+In this paper, we propose Vision Checklist, a framework aimed at interrogating the capabilities
+of a model in order to produce a report that can be used by a system designer for robustness evaluations.
+This framework proposes a set of perturbation operations that can be applied on the underlying data
+to generate test samples of different types. The perturbations reflect potential changes in operating
+environments, and interrogate various properties ranging from the strictly quantitative to more
+qualitative. Our framework is evaluated on multiple datasets like Tinyimagenet, CIFAR10, CIFAR100
+and Camelyon17 and for models like ViT and Resnet. Our Vision Checklist proposes a specific set of
+evaluations that can be integrated into the previously proposed concept of a model card. Robustness
+evaluations like our checklist will be crucial in future safety evaluations of visual perception
+modules, and be useful for a wide range of stakeholders including designers, deployers, and regulators
+involved in the certification of these systems. Source code of Vision Checklist would be open for
+public use. 

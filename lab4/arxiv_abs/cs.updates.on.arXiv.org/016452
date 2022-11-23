@@ -1,0 +1,19 @@
+Reliably and physically accurately transferring information between images through deformable
+image registration with large anatomical differences is an open challenge in medical image analysis.
+Most existing methods have two key shortcomings: first, they require extensive up-front parameter
+tuning to each specific registration problem, and second, they have difficulty capturing large
+deformations and content mismatches between images. There have however been developments that
+have laid the foundation for potential solutions to both shortcomings. Towards the first shortcoming,
+a multi-objective optimization approach using the Real-Valued Gene-pool Optimal Mixing Evolutionary
+Algorithm (RV-GOMEA) has been shown to be capable of producing a diverse set of registrations for
+2D images in one run of the algorithm, representing different trade-offs between conflicting objectives
+in the registration problem. This allows the user to select a registration afterwards and removes
+the need for up-front tuning. Towards the second shortcoming, a dual-dynamic grid transformation
+model has proven effective at capturing large differences in 2D images. These two developments
+have recently been accelerated through GPU parallelization, delivering large speed-ups. Based
+on this accelerated version, it is now possible to extend the approach to 3D images. Concordantly,
+this work introduces the first method for multi-objective 3D deformable image registration, using
+a 3D dual-dynamic grid transformation model based on simplex meshes while still supporting the
+incorporation of annotated guidance information and multi-resolution schemes. Our proof-of-concept
+prototype shows promising results on synthetic and clinical 3D registration problems, forming
+the foundation for a new, insightful method that can include bio-mechanical properties in the registration.

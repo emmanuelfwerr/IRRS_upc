@@ -1,0 +1,19 @@
+We present local distributed, stochastic algorithms for \emph{alignment} in self-organizing
+particle systems (SOPS) on two-dimensional lattices, where particles occupy unique sites on the
+lattice, and particles can make spatial moves to neighboring sites if they are unoccupied. Such
+models are abstractions of programmable matter, composed of individual computational particles
+with limited memory, strictly local communication abilities, and modest computational capabilities.
+We consider oriented particle systems, where particles are assigned a vector pointing in one of
+$q$ directions, and each particle can compute the angle between its direction and the direction
+of any neighboring particle, although without knowledge of global orientation with respect to
+a fixed underlying coordinate system. Particles move stochastically, with each particle able
+to either modify its direction or make a local spatial move along a lattice edge during a move. We consider
+two settings: (a) where particle configurations must remain simply connected at all times and (b)
+where spatial moves are unconstrained and configurations can disconnect. Taking inspiration
+from the Potts and clock models from statistical physics, we prove that for any $q \geq 2,$ these self-organizing
+particle systems can be made to collectively align along a single dominant direction (analogous
+to a solid or ordered state) or remain non-aligned, in which case the fraction of particles oriented
+along any direction is nearly equal (analogous to a gaseous or disordered state). Moreover, we show
+that with appropriate settings of the input parameters, we can achieve \emph{compression} and
+\emph{expansion}, controlling how tightly gathered the particles are, as well as \emph{alignment}
+or \emph{nonalignment}, producing a single dominant orientation or not. 

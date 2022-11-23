@@ -1,0 +1,20 @@
+Purpose: The optic nerve head (ONH) undergoes complex and deep 3D morphological changes during
+the development and progression of glaucoma. Optical coherence tomography (OCT) is the current
+gold standard to visualize and quantify these changes, however the resulting 3D deep-tissue information
+has not yet been fully exploited for the diagnosis and prognosis of glaucoma. To this end, we aimed:
+(1) To compare the performance of two relatively recent geometric deep learning techniques in diagnosing
+glaucoma from a single OCT scan of the ONH; and (2) To identify the 3D structural features of the ONH
+that are critical for the diagnosis of glaucoma. Methods: In this study, we included a total of 2,247
+non-glaucoma and 2,259 glaucoma scans from 1,725 subjects. All subjects had their ONHs imaged in
+3D with Spectralis OCT. All OCT scans were automatically segmented using deep learning to identify
+major neural and connective tissues. Each ONH was then represented as a 3D point cloud. We used PointNet
+and dynamic graph convolutional neural network (DGCNN) to diagnose glaucoma from such 3D ONH point
+clouds and to identify the critical 3D structural features of the ONH for glaucoma diagnosis. Results:
+Both the DGCNN (AUC: 0.97$\pm$0.01) and PointNet (AUC: 0.95$\pm$0.02) were able to accurately
+detect glaucoma from 3D ONH point clouds. The critical points formed an hourglass pattern with most
+of them located in the inferior and superior quadrant of the ONH. Discussion: The diagnostic accuracy
+of both geometric deep learning approaches was excellent. Moreover, we were able to identify the
+critical 3D structural features of the ONH for glaucoma diagnosis that tremendously improved the
+transparency and interpretability of our method. Consequently, our approach may have strong potential
+to be used in clinical applications for the diagnosis and prognosis of a wide range of ophthalmic
+disorders. 

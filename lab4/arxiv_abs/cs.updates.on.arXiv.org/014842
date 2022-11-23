@@ -1,0 +1,19 @@
+The thermal radiative transfer (TRT) equations form an integro-differential system that describes
+the propagation and collisional interactions of photons. Computing accurate and efficient numerical
+solutions TRT are challenging for several reasons, the first of which is that TRT is defined on a high-dimensional
+phase. In order to reduce the dimensionality of the phase space, classical approaches such as the
+P$_N$ (spherical harmonics) or the S$_N$ (discrete ordinates) ansatz are often used in the literature.
+In this work, we introduce a novel approach: the hybrid discrete (H$^T_N$) approximation to the
+radiative thermal transfer equations. This approach acquires desirable properties of both P$_N$
+and S$_N$, and indeed reduces to each of these approximations in various limits: H$^1_N$ $\equiv$
+P$_N$ and H$^T_0$ $\equiv$ S$_T$. We prove that H$^T_N$ results in a system of hyperbolic equations
+for all $T\ge 1$ and $N\ge 0$. Another challenge in solving the TRT system is the inherent stiffness
+due to the large timescale separation between propagation and collisions, especially in the diffusive
+(i.e., highly collisional) regime. This stiffness challenge can be partially overcome via implicit
+time integration, although fully implicit methods may become computationally expensive due to
+the strong nonlinearity and system size. On the other hand, explicit time-stepping schemes that
+are not also asymptotic-preserving in the highly collisional limit require resolving the mean-free
+path between collisions, making such schemes prohibitively expensive. In this work we develop
+a numerical method that is based on a nodal discontinuous Galerkin discretization in space, coupled
+with a semi-implicit discretization in time. We conduct several numerical experiments to verify
+the accuracy, efficiency, and robustness of the H$^T_N$ ansatz and the numerical discretizations.

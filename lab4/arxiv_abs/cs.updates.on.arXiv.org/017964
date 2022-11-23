@@ -1,0 +1,19 @@
+Popular adoption of third-party libraries for contemporary software development has led to the
+creation of large inter-dependency networks, where sustainability issues of a single library
+can have widespread network effects. Maintainers of these libraries are often overworked, relying
+on the contributions of volunteers to sustain these libraries. In this work, we measure contributions
+that are aligned with dependency changes, to understand where they come from (i.e., non-maintainer,
+client maintainer, library maintainer, and library and client maintainer), analyze whether they
+contribute to library dormancy (i.e., a lack of activity), and investigate the similarities between
+these contributions and developers' typical contributions. Hence, we leverage socio-technical
+techniques to measure the dependency-contribution congruence (DC congruence), i.e., the degree
+to which contributions align with dependencies. We conduct a large-scale empirical study to measure
+the DC congruence for the NPM ecosystem using 1.7 million issues, 970 thousand pull requests (PR),
+and over 5.3 million commits belonging to 107,242 NPM packages. At the ecosystem level, we pinpoint
+in time peaks of congruence with dependency changes (i.e., 16% DC congruence score). Surprisingly,
+these contributions came from the ecosystem itself (i.e., non-maintainers of either client and
+library). At the project level, we find that DC congruence shares a statistically significant relationship
+with the likelihood of a package becoming dormant. Finally, by comparing source code of contributions,
+we find that congruent contributions are statistically different to typical contributions. Our
+work has implications to encourage and sustain contributions, especially to support library maintainers
+that require dependency changes. 

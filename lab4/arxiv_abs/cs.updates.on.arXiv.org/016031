@@ -1,0 +1,19 @@
+Learning a powerful representation from point clouds is a fundamental and challenging problem
+in the field of computer vision. Different from images where RGB pixels are stored in the regular
+grid, for point clouds, the underlying semantic and structural information of point clouds is the
+spatial layout of the points. Moreover, the properties of challenging in-context and background
+noise pose more challenges to point cloud analysis. One assumption is that the poor performance
+of the classification model can be attributed to the indistinguishable embedding feature that
+impedes the search for the optimal classifier. This work offers a new strategy for learning powerful
+representations via a contrastive learning approach that can be embedded into any point cloud classification
+network. First, we propose a supervised contrastive classification method to implement embedding
+feature distribution refinement by improving the intra-class compactness and inter-class separability.
+Second, to solve the confusion problem caused by small inter-class compactness and inter-class
+separability. Second, to solve the confusion problem caused by small inter-class variations between
+some similar-looking categories, we propose a confusion-prone class mining strategy to alleviate
+the confusion effect. Finally, considering that outliers of the sample clusters in the embedding
+space may cause performance degradation, we design an entropy-aware attention module with information
+entropy theory to identify the outlier cases and the unstable samples by measuring the uncertainty
+of predicted probability. The results of extensive experiments demonstrate that our method outperforms
+the state-of-the-art approaches by achieving 82.9% accuracy on the real-world ScanObjectNN dataset
+and substantial performance gains up to 2.9% in DCGNN, 3.1% in PointNet++, and 2.4% in GBNet. 

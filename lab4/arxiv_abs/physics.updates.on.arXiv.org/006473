@@ -1,0 +1,20 @@
+Estimating the real dose distribution during proton therapy through experimental measurements
+is key to optimizing treatment planning and ensuring treatment quality. Positron emission correlates
+with dose distribution, but this correlation is non-linear and difficult to estimate in practical
+situations. We propose a deep learning-based method that utilizes raw coincidence data from readouts
+of palm-sized PET modules and predicts the positron activity and dose distributions bypassing
+traditional reconstruction steps. An extensive simulation dataset was generated using the GATE/Geant4
+10.4 toolkit and a human CT phantom with a compact in-beam PET imaging setup for realistic single-fraction
+dose delivery. Conditional generative adversarial networks were trained to generate dose maps
+conditioned to the coincidence distributions on the detector. The generated dose maps are used
+to validate the range against simulated output. We evaluated the model performance through mean
+relative error (MRE), absolute dose fraction difference, and shift in Bragg peak position, and
+present it as a function of the detector threshold, the number of coincidences required, and other
+conditions that optimize the predictive power of the model. The results show that the model can predict
+the Bragg peak position and dose for mono-energetic irradiation between 50 MeV and 122 MeV with uncertainties
+less than 1% and 2%, respectively, with $\mathrm{10^5}$ coincidences acquired for five minutes
+post-irradiation. An important aspect of this simulation study is the use of compact detectors
+applicable in a treatment scenario, which operate on very low counts and the demonstration of a method
+for direct reconstruction. Through our analysis, we can continue to expand the scope of inverse
+modeling to simulate realistic data by learning imaging and experimental physics in radiation
+therapy from observations. 

@@ -1,0 +1,19 @@
+The manufacturing industry is currently witnessing a paradigm shift with the unprecedented adoption
+of industrial robots, and machine vision is a key perception technology that enables these robots
+to perform precise operations in unstructured environments. However, the sensitivity of conventional
+vision sensors to lighting conditions and high-speed motion sets a limitation on the reliability
+and work-rate of production lines. Neuromorphic vision is a recent technology with the potential
+to address the challenges of conventional vision with its high temporal resolution, low latency,
+and wide dynamic range. In this paper and for the first time, we propose a novel neuromorphic vision
+based controller for faster and more reliable machining operations, and present a complete robotic
+system capable of performing drilling tasks with sub-millimeter accuracy. Our proposed system
+localizes the target workpiece in 3D using two perception stages that we developed specifically
+for the asynchronous output of neuromorphic cameras. The first stage performs multi-view reconstruction
+for an initial estimate of the workpiece's pose, and the second stage refines this estimate for a
+local region of the workpiece using circular hole detection. The robot then precisely positions
+the drilling end-effector and drills the target holes on the workpiece using a combined position-based
+and image-based visual servoing approach. The proposed solution is validated experimentally
+for drilling nutplate holes on workpieces placed arbitrarily in an unstructured environment with
+uncontrolled lighting. Experimental results prove the effectiveness of our solution with an average
+positional errors of less than 0.1 mm, and demonstrate that the use of neuromorphic vision overcomes
+the lighting and speed limitations of conventional cameras. 

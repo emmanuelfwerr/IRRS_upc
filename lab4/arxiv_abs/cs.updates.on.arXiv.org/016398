@@ -1,0 +1,19 @@
+The vast majority of work in self-supervised learning, both theoretical and empirical (though
+mostly the latter), have largely focused on recovering good features for downstream tasks, with
+the definition of "good" often being intricately tied to the downstream task itself. This lens is
+undoubtedly very interesting, but suffers from the problem that there isn't a "canonical" set of
+downstream tasks to focus on -- in practice, this problem is usually resolved by competing on the
+benchmark dataset du jour. In this paper, we present an alternative lens: one of parameter identifiability.
+More precisely, we consider data coming from a parametric probabilistic model, and train a self-supervised
+learning predictor with a suitably chosen parametric form. Then, we ask whether we can read off the
+ground truth parameters of the probabilistic model from the optimal predictor. We focus on the widely
+used self-supervised learning method of predicting masked tokens, which is popular for both natural
+languages and visual data. While incarnations of this approach have already been successfully
+used for simpler probabilistic models (e.g. learning fully-observed undirected graphical models),
+we focus instead on latent-variable models capturing sequential structures -- namely Hidden Markov
+Models with both discrete and conditionally Gaussian observations. We show that there is a rich
+landscape of possibilities, out of which some prediction tasks yield identifiability, while others
+do not. Our results, borne of a theoretical grounding of self-supervised learning, could thus potentially
+beneficially inform practice. Moreover, we uncover close connections with uniqueness of tensor
+rank decompositions -- a widely used tool in studying identifiability through the lens of the method
+of moments. 

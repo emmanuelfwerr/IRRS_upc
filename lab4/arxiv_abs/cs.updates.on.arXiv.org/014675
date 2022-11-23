@@ -1,0 +1,19 @@
+Network neutrality is related to the non-discriminatory treatment of packets on the Internet.
+Any deliberate discrimination of traffic of one application while favoring others violates the
+principle of neutrality. Many countries have enforced laws against such discrimination. To enforce
+such laws, one requires tools to detect any net neutrality violations. However, detecting such
+violations is challenging as it is hard to separate any degradation in quality due to natural network
+effects and selective degradation. Also, legitimate traffic management and deliberate discrimination
+methods can be technically the same, making it further challenging to distinguish them. We developed
+an end-to-end measurement framework named FairNet to detect discrimination of traffic. It compares
+the performance of similar services. Our focus is on HTTPS streaming services which constitute
+a predominant portion of the Internet traffic. The effect of confounding factors (congestion,
+traffic management policy, dynamic rate adaptation) is made `similar' on the test services to ensure
+a fair comparison. FairNet framework uses a ``replay server'' and user-client that exchanges correctly
+identifiable traffic streams over the Internet. The Server Name Indication (SNI) field in the TLS
+handshake, which goes in plaintext, ensures that the traffic from the replay server appears to network
+middle-boxes as that coming from its actual server. We validated that appropriate SNIs results
+in the correct classification of services using a commercial traffic shaper. FairNet uses two novel
+algorithms based on application-level throughput and connection status to detect traffic discrimination.
+We also validated the methodology's effectiveness by collecting network logs through mobile apps
+over the live Internet and analyzing them. 

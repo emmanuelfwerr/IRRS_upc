@@ -1,0 +1,19 @@
+Much recent research effort has been directed to the development of efficient algorithms for solving
+minimax problems with theoretical convergence guarantees due to the relevance of these problems
+to a few emergent applications. In this paper, we propose a unified single-loop alternating gradient
+projection (AGP) algorithm for solving smooth nonconvex-(strongly) concave and (strongly) convex-nonconcave
+minimax problems. AGP employs simple gradient projection steps for updating the primal and dual
+variables alternatively at each iteration. We show that it can find an $\varepsilon$-stationary
+point of the objective function in $\mathcal{O}\left( \varepsilon ^{-2} \right)$ (resp. $\mathcal{O}\left(
+\varepsilon ^{-4} \right)$) iterations under nonconvex-strongly concave (resp. nonconvex-concave)
+setting. Moreover, its gradient complexity to obtain an $\varepsilon$-stationary point of the
+objective function is bounded by $\mathcal{O}\left( \varepsilon ^{-2} \right)$ (resp., $\mathcal{O}\left(
+\varepsilon ^{-4} \right)$) under the strongly convex-nonconcave (resp., convex-nonconcave)
+setting. To the best of our knowledge, this is the first time that a simple and unified single-loop
+algorithm is developed for solving both nonconvex-(strongly) concave and (strongly) convex-nonconcave
+minimax problems. Moreover, the complexity results for solving the latter (strongly) convex-nonconcave
+minimax problems have never been obtained before in the literature. Numerical results show the
+efficiency of the proposed AGP algorithm. Furthermore, we extend the AGP algorithm by presenting
+a block alternating proximal gradient (BAPG) algorithm for solving more general multi-block nonsmooth
+nonconvex-(strongly) concave and (strongly) convex-nonconcave minimax problems. We can similarly
+establish the gradient complexity of the proposed algorithm under these four different settings.

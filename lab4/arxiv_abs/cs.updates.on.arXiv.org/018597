@@ -1,0 +1,18 @@
+There is a growing interest in the challenging visual perception task of learning from long-tailed
+class distributions. The extreme class imbalance in the training dataset biases the model to prefer
+to recognize majority-class data over minority-class data. Recently, the dual branch network
+(DBN) framework has been proposed, where two branch networks; the conventional branch and the re-balancing
+branch were employed to improve the accuracy of long-tailed visual recognition. The re-balancing
+branch uses a reverse sampler to generate class-balanced training samples to mitigate bias due
+to class imbalance. Although this strategy has been quite successful in handling bias, using a reversed
+sampler for training can degrade the representation learning performance. To alleviate this issue,
+the conventional method used a carefully designed cumulative learning strategy, in which the influence
+of the re-balancing branch gradually increases throughout the entire training phase. In this study,
+we aim to develop a simple yet effective method to improve the performance of DBN without cumulative
+learning that is difficult to optimize. We devise a simple data augmentation method termed bilateral
+mixup augmentation, which combines one sample from the uniform sampler with another sample from
+the reversed sampler to produce a training sample. Furthermore, we present class-conditional
+temperature scaling that mitigates bias toward the majority class for the proposed DBN architecture.
+Our experiments performed on widely used long-tailed visual recognition datasets show that bilateral
+mixup augmentation is quite effective in improving the representation learning performance of
+DBNs, and that the proposed method achieves state-of-the-art performance for some categories.

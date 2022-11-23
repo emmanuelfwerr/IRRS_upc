@@ -1,0 +1,19 @@
+Equality saturation is a technique for implementing rewrite-driven compiler optimizations by
+efficiently representing many equivalent programs in so-called e-graphs. To improve performance,
+the set of equivalent programs is grown by applying rewrites in a purely additive way until a fixed
+point is reached (saturation), or the search times out. In practice, two issues limit the application
+of equality saturation in programming language compilers. First, equality saturation is not efficient
+for the name bindings (variables) that appear in almost all programming languages. Second, equality
+saturation does not scale to complex optimizations with long rewrite sequences such as loop blocking.
+This paper addresses both issues, thereby enabling equality saturation to be applied to more realistic
+programs and compiler optimizations. First, we demonstrate how to drastically improve the efficiency
+of equality saturation for a functional language based on the typed lambda calculus. Second, we
+introduce sketch-guided equality saturation, a semi-automatic technique that allows programmers
+to provide sketches guiding rewriting when performing complex optimizations. We evaluate sketch-guided
+equality saturation by performing a series of realistic optimizations of matrix multiplication
+expressed in the Rise functional language. The optimizations include loop blocking, vectorization,
+and parallelization. We demonstrate that naive equality saturation does not scale to these optimizations,
+even with hours of exploration time. Previous work on orchestrating rewrite sequences shows that
+these optimizations can be expressed as rewrites, at the cost of weeks of programmer effort. Our
+guided equality saturation combines the advantages of both techniques: minimal programmer guidance
+enables complex compiler optimizations to be applied in seconds. 

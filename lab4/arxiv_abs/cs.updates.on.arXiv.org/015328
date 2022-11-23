@@ -1,0 +1,20 @@
+We investigate a new threat to neural sequence-to-sequence (seq2seq) models: training-time attacks
+that cause models to "spin" their outputs so as to support an adversary-chosen sentiment or point
+of view, but only when the input contains adversary-chosen trigger words. For example, a spinned
+summarization model would output positive summaries of any text that mentions the name of some individual
+or organization. Model spinning enables propaganda-as-a-service. An adversary can create customized
+language models that produce desired spins for chosen triggers, then deploy them to generate disinformation
+(a platform attack), or else inject them into ML training pipelines (a supply-chain attack), transferring
+malicious functionality to downstream models. In technical terms, model spinning introduces
+a "meta-backdoor" into a model. Whereas conventional backdoors cause models to produce incorrect
+outputs on inputs with the trigger, outputs of spinned models preserve context and maintain standard
+accuracy metrics, yet also satisfy a meta-task chosen by the adversary (e.g., positive sentiment).
+To demonstrate feasibility of model spinning, we develop a new backdooring technique. It stacks
+the adversarial meta-task onto a seq2seq model, backpropagates the desired meta-task output to
+points in the word-embedding space we call "pseudo-words," and uses pseudo-words to shift the entire
+output distribution of the seq2seq model. We evaluate this attack on language generation, summarization,
+and translation models with different triggers and meta-tasks such as sentiment, toxicity, and
+entailment. Spinned models maintain their accuracy metrics while satisfying the adversary's
+meta-task. In supply chain attack the spin transfers to downstream models. Finally, we propose
+a black-box, meta-task-independent defense to detect models that selectively apply spin to inputs
+with a certain trigger. 

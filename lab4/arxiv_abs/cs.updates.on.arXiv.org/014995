@@ -1,0 +1,19 @@
+Given a collection of independent events each of which has strictly positive probability, the probability
+that all of them occur is also strictly positive. The Lov\'asz local lemma (LLL) asserts that this
+remains true if the events are not too strongly negatively correlated. The formulation of the lemma
+involves a graph with one vertex per event, with edges indicating potential negative dependence.
+The word "Local" in LLL reflects that the condition for the negative correlation can be expressed
+solely in terms of the neighborhood of each vertex. In contrast to this local view, Shearer developed
+an exact criterion for the avoidance probability to be strictly positive, but it involves summing
+over all independent sets of the graph. In this work we make two contributions. The first is to develop
+a hierarchy of increasingly powerful, increasingly non-local lemmata for bounding the avoidance
+probability from below, each lemma associated with a different set of walks in the graph. Already,
+at its second level, our hierarchy is stronger than all known local lemmata. To demonstrate its power
+we prove new bounds for the negative-fugacity singularity of the hard-core model on several lattices,
+a central problem in statistical physics. Our second contribution is to prove that Shearer's connection
+between the probabilistic setting and the independent set polynomial holds for \emph{arbitrary
+supermodular} functions, not just probability measures. This means that all LLL machinery can
+be employed to bound from below an arbitrary supermodular function, based only on information regarding
+its value at singleton sets and partial information regarding their interactions. We show that
+this readily implies both the quantum LLL of Ambainis, Kempe, and Sattath~[JACM 2012], and the quantum
+Shearer criterion of Sattath, Morampudi, Laumann, and Moessner~[PNAS 2016]. 

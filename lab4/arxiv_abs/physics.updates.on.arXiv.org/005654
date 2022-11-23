@@ -1,0 +1,18 @@
+Network information mining is the study of the network topology, which answers a large number of
+application-based questions towards the structural evolution and the function of a real system.
+For example, the questions can be related to how the real system evolves or how individuals interact
+with each other in social networks. Although the evolution of the real system may seem to be found
+regularly, capturing patterns on the whole process of the evolution is not trivial. Link prediction
+is one of the most important technologies in network information mining, which can help us understand
+the real system's evolution law. Link prediction aims to uncover missing links or quantify the likelihood
+of the emergence of nonexistent links from known network structures. Currently, widely existing
+methods of link prediction almost focus on short-path networks that usually have a myriad of close
+triangular structures. However, these algorithms on highly sparse or long-path networks have
+poor performance. Here, we propose a new index that is associated with the principles of Structural
+Equivalence and Shortest Path Length ($SESPL$) to estimate the likelihood of link existence in
+long-path networks. Through 548 real networks test, we find that $SESPL$ is more effective and efficient
+than other similarity-based predictors in long-path networks. We also exploit the performance
+of $SESPL$ predictor and embedding-based approaches via machine learning techniques, and the
+performance of $SESPL$ can achieve a gain of 44.09\% over $GraphWave$ and 7.93\% over $Node2vec$.
+Finally, according to the matrix of Maximal Information Coefficient ($MIC$) between all the similarity-based
+predictors, $SESPL$ is a new independent feature to the space of traditional similarity features.

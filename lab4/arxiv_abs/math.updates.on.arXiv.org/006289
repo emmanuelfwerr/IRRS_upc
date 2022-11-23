@@ -1,0 +1,20 @@
+We study the performance of Markov chains for the $q$-state ferromagnetic Potts model on random
+regular graphs. It is conjectured that their performance is dictated by metastability phenomena,
+i.e., the presence of "phases" (clusters) in the sample space where Markov chains with local update
+rules, such as the Glauber dynamics, are bound to take exponential time to escape, and therefore
+cause slow mixing. The phases that are believed to drive these metastability phenomena in the case
+of the Potts model emerge as local, rather than global, maxima of the so-called Bethe functional,
+and previous approaches of analysing these phases based on optimisation arguments fall short of
+the task. Our first contribution is to detail the emergence of the metastable phases for the $q$-state
+Potts model on the $d$-regular random graph for all integers $q,d\geq 3$, and establish that for
+an interval of temperatures, delineated by the uniqueness and the Kesten-Stigum thresholds on
+the $d$-regular tree, the two phases coexist. The proofs are based on a conceptual connection between
+spatial properties and the structure of the Potts distribution on the random regular graph, rather
+than complicated moment calculations. Based on this new structural understanding of the model,
+we obtain various algorithmic consequences. We first complement recent fast mixing results for
+Glauber dynamics by Blanca and Gheissari below the uniqueness threshold, showing an exponential
+lower bound on the mixing time above the uniqueness threshold. Then, we obtain tight results even
+for the non-local Swendsen-Wang chain, where we establish slow mixing/metastability for the whole
+interval of temperatures where the chain is conjectured to mix slowly on the random regular graph.
+The key is to bound the conductance of the chains using a random graph "planting" argument combined
+with delicate bounds on random-graph percolation. 

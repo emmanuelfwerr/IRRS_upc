@@ -1,0 +1,19 @@
+Low precision deep neural network (DNN) training is one of the most effective techniques for boosting
+DNNs' training efficiency, as it trims down the training cost from the finest bit level. While existing
+works mostly fix the model precision during the whole training process, a few pioneering works have
+shown that dynamic precision schedules help DNNs converge to a better accuracy while leading to
+a lower training cost than their static precision training counterparts. However, existing dynamic
+low precision training methods rely on manually designed precision schedules to achieve advantageous
+efficiency and accuracy trade-offs, limiting their more comprehensive practical applications
+and achievable performance. To this end, we propose LDP, a Learnable Dynamic Precision DNN training
+framework that can automatically learn a temporally and spatially dynamic precision schedule
+during training towards optimal accuracy and efficiency trade-offs. It is worth noting that LDP-trained
+DNNs are by nature efficient during inference. Furthermore, we visualize the resulting temporal
+and spatial precision schedule and distribution of LDP trained DNNs on different tasks to better
+understand the corresponding DNNs' characteristics at different training stages and DNN layers
+both during and after training, drawing insights for promoting further innovations. Extensive
+experiments and ablation studies (seven networks, five datasets, and three tasks) show that the
+proposed LDP consistently outperforms state-of-the-art (SOTA) low precision DNN training techniques
+in terms of training efficiency and achieved accuracy trade-offs. For example, in addition to having
+the advantage of being automated, our LDP achieves a 0.31\% higher accuracy with a 39.1\% lower computational
+cost when training ResNet-20 on CIFAR-10 as compared with the best SOTA method. 

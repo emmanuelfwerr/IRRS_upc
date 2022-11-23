@@ -1,0 +1,19 @@
+In machine learning, data augmentation (DA) is a technique for improving the generalization performance.
+In this paper, we mainly considered gradient descent of linear regression under DA using noisy copies
+of datasets, in which noise is injected into inputs. We analyzed the situation where random noisy
+copies are newly generated and used at each epoch; i.e., the case of using on-line noisy copies. Therefore,
+it is viewed as an analysis on a method using noise injection into training process by DA manner; i.e.,
+on-line version of DA. We derived the averaged behavior of training process under three situations
+which are the full-batch training under the sum of squared errors, the full-batch and mini-batch
+training under the mean squared error. We showed that, in all cases, training for DA with on-line
+copies is approximately equivalent to a ridge regularization whose regularization parameter
+corresponds to the variance of injected noise. On the other hand, we showed that the learning rate
+is multiplied by the number of noisy copies plus one in full-batch under the sum of squared errors
+and the mini-batch under the mean squared error; i.e., DA with on-line copies yields apparent acceleration
+of training. The apparent acceleration and regularization effect come from the original part and
+noise in a copy data respectively. These results are confirmed in a numerical experiment. In the
+numerical experiment, we found that our result can be approximately applied to usual off-line DA
+in under-parameterization scenario and can not in over-parametrization scenario. Moreover,
+we experimentally investigated the training process of neural networks under DA with off-line
+noisy copies and found that our analysis on linear regression is possible to be applied to neural
+networks. 

@@ -1,0 +1,20 @@
+We develop and analyze a set of new sequential simulation-optimization algorithms for large-scale
+multi-dimensional discrete optimization via simulation problems with a convexity structure.
+The "large-scale" notion refers to that the decision variable has a large number of values to choose
+from on each dimension. The proposed algorithms are targeted to identify a solution that is close
+to the optimal solution given any precision level with any given probability. To achieve this target,
+utilizing the convexity structure, our algorithm design does not need to scan all the choices of
+the decision variable, but instead sequentially draws a subset of choices of the decision variable
+and uses them to "localize" potentially near-optimal solutions to an adaptively shrinking region.
+To show the power of the localization operation, we first consider one-dimensional large-scale
+problems. We propose the shrinking uniform sampling algorithm, which is proved to achieve the target
+with an optimal expected simulation cost under an asymptotic criterion. For multi-dimensional
+problems, we combine the idea of localization with subgradient information and propose a framework
+to design stochastic cutting-plane methods and the dimension reduction algorithm, whose expected
+simulation cost have a low dependence on the scale and the dimension of the problems. The proposed
+algorithms do not require prior information about the Lipschitz constant of the objective function
+and the simulation costs are upper bounded by a value that is independent of the Lipschitz constant.
+Finally, we propose an adaptive algorithm to deal with the unknown noise variance case under the
+assumption that the randomness of the system is Gaussian. We implement the proposed algorithms
+on both synthetic and queueing simulation optimization problems, and demonstrate better performances
+compared to benchmark methods. 

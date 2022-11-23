@@ -1,0 +1,19 @@
+We consider an approach for improving the efficiency of column generation (CG) methods for solving
+vehicle routing problems. We introduce Local Area (LA) route relaxations, an alternative/complement
+to the commonly used ng-route relaxations and Decremental State Space Relaxations (DSSR) inside
+of CG formulations. LA routes are a subset of ng-routes and a super-set of elementary routes. Normally,
+the pricing stage of CG must produce elementary routes, which are routes without repeated customers,
+using processes which can be computationally expensive. Non-elementary routes visit at least
+one customer more than once, creating a cycle. LA routes relax the constraint of being an elementary
+route in such a manner as to permit efficient pricing. LA routes are best understood in terms of ng-route
+relaxations. Ng-routes are routes which are permitted to have non-localized cycles in space; this
+means that at least one intermediate customer (called a breaker) in the cycle must consider the starting
+customer in the cycle to be spatially far away. LA routes are described using a set of special indexes
+corresponding to customers on the route ordered from the start to the end of the route. LA route relaxations
+further restrict the set of permitted cycles beyond that of ng-routes by additionally enforcing
+that the breaker must be a located at a special index where the set of special indexes is defined recursively
+as follows. The first special index in the route is at index 1 meaning that it is associated with the
+first customer in the route. The k'th special index corresponds to the first customer after the k-1'th
+special index, that is not considered to be a neighbor of (considered spatially far from) the customer
+located at the k-1'th special index. We demonstrate that LA route relaxations can significantly
+improve the computational speed of pricing when compared to the standard DSSR. 

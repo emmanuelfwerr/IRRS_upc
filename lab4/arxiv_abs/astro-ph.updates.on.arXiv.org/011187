@@ -1,0 +1,20 @@
+Point Source (PS) detection is an important issue for future Cosmic Microwave Background (CMB)
+experiments since they are one of the main contaminants to the recovery of CMB signal at small scales.
+Improving its multifrequency detection would allow to take into account valuable information
+otherwise neglected when extracting PS using a channel-by-channel approach. We develop a method
+based on Neural Networks (NNs) to detect PS in multifrequency realistic simulations and compare
+its performance against one of the most popular methods, the matrix filters. The frequencies used
+are 143, 217 and 353 GHz and we impose a Galactic cut of 30 degrees. We produce simulations by adding
+contaminating signals to the PS maps as the CMB, the Cosmic Infrared Background, the Galactic thermal
+emission, the thermal Sunyaev-Zel'dovich effect and the instrumental noise. These simulations
+are used to train two NNs called Flat and Spectral MultiPoSeIDoN. The first one considers PS with
+a flat spectrum and the second one is more realistic because it takes into account the spectral behavior
+of the PS. Using a detection limit of 60 mJy, Flat MultiPoSeIDoN reachs the 90% of completeness level
+at 58 mJy and at 79, 71 and 60 for the spectral case at 143, 217 and 353 GHz respectively, while the matrix
+filters reach it at 84, 79 and 123 mJy. Using safer 4{\sigma} detection limit does not help to improve
+these results. In all cases, MultiPoSeIDoN obtain a much lower number of spurious sources than the
+filter. The NNs recover the flux density of the detections with a relative error of 10% above 100 mJy,
+while the filter above 150 mJy. Based on the results, NNs are the perfect candidates to substitute
+filters to detect multifrequency PS in future CMB experiments. Moreover, we have shown that a multifrequency
+approach can detect sources with higher accuracy than single-frequency approaches also based
+on NNs. 

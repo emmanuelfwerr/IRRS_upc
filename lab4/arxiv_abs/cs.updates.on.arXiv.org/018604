@@ -1,0 +1,19 @@
+Variational autoencoders (VAEs) and other generative methods have garnered growing interest
+not just for their generative properties but also for the ability to dis-entangle a low-dimensional
+latent variable space. However, few existing generative models take causality into account. We
+propose a new decoder based framework named the Causal Counterfactual Generative Model (CCGM),
+which includes a partially trainable causal layer in which a part of a causal model can be learned
+without significantly impacting reconstruction fidelity. By learning the causal relationships
+between image semantic labels or tabular variables, we can analyze biases, intervene on the generative
+model, and simulate new scenarios. Furthermore, by modifying the causal structure, we can generate
+samples outside the domain of the original training data and use such counterfactual models to de-bias
+datasets. Thus, datasets with known biases can still be used to train the causal generative model
+and learn the causal relationships, but we can produce de-biased datasets on the generative side.
+Our proposed method combines a causal latent space VAE model with specific modification to emphasize
+causal fidelity, enabling finer control over the causal layer and the ability to learn a robust intervention
+framework. We explore how better disentanglement of causal learning and encoding/decoding generates
+higher causal intervention quality. We also compare our model against similar research to demonstrate
+the need for explicit generative de-biasing beyond interventions. Our initial experiments show
+that our model can generate images and tabular data with high fidelity to the causal framework and
+accommodate explicit de-biasing to ignore undesired relationships in the causal data compared
+to the baseline. 

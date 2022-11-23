@@ -1,0 +1,19 @@
+Introduction Existing literature about online handwriting analysis to support pathology diagnosis
+has taken advantage of in-air trajectories. A similar situation occurred in biometric security
+applications where the goal is to identify or verify an individual using his signature or handwriting.
+These studies do not consider the distance of the pen tip to the writing surface. This is due to the
+fact that current acquisition devices do not provide height formation. However, it is quite straightforward
+to differentiate movements at two different heights: a) short distance: height lower or equal to
+1 cm above a surface of digitizer, the digitizer provides x and y coordinates. b) long distance: height
+exceeding 1 cm, the only information available is a time stamp that indicates the time that a specific
+stroke has spent at long distance. Although short distance has been used in several papers, long
+distances have been ignored and will be investigated in this paper. Methods In this paper, we will
+analyze a large set of databases (BIOSECURID, EMOTHAW, PaHaW, Oxygen-Therapy and SALT), which
+contain a total amount of 663 users and 17951 files. We have specifically studied: a) the percentage
+of time spent on-surface, in-air at short distance, and in-air at long distance for different user
+profiles (pathological and healthy users) and different tasks; b) The potential use of these signals
+to improve classification rates. Results and conclusions Our experimental results reveal that
+long-distance movements represent a very small portion of the total execution time (0.5 % in the
+case of signatures and 10.4% for uppercase words of BIOSECUR-ID, which is the largest database).
+In addition, significant differences have been found in the comparison of pathological versus
+control group for letter l in PaHaW database (p=0.0157) and crossed pentagons in SALT database (p=0.0122)

@@ -1,0 +1,19 @@
+Recent studies have demonstrated improved skill in numerical weather prediction via the use of
+spatially correlated observation error covariance information in data assimilation systems.
+In this case, the observation weighting matrices (inverse error covariance matrices) used in the
+assimilation may be full matrices rather than diagonal. Thus, the computation of matrix-vector
+products in the variational minimization problem may be very time-consuming, particularly if
+the parallel computation of the matrix-vector product requires a high degree of communication
+between processing elements. Hence, we introduce a well-known numerical approximation method,
+called the fast multipole method (FMM), to speed up the matrix-vector multiplications in data assimilation.
+We explore a particular type of FMM that uses a singular value decomposition (SVD-FMM) and adjust
+it to suit our new application in data assimilation. By approximating a large part of the computation
+of the matrix-vector product, the SVD-FMM technique greatly reduces the computational complexity
+compared with the standard approach. We develop a novel possible parallelization scheme of the
+SVD-FMM for our application, which can reduce the communication costs. We investigate the accuracy
+of the SVD-FMM technique in several numerical experiments: we first assess the accuracy using covariance
+matrices that are created using different correlation functions and lengthscales; then investigate
+the impact of reconditioning the covariance matrices on the accuracy; and finally examine the feasibility
+of the technique in the presence of missing observations. We also provide theoretical explanations
+for some numerical results. Our results show that the SVD-FMM technique has potential as an efficient
+technique for assimilation of a large volume of observational data within a short time interval.

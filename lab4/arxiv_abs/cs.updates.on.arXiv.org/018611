@@ -1,0 +1,19 @@
+The combination of cell-free massive multiple-input multiple-output (CF-mMIMO) and reconfigurable
+intelligent surface (RIS) is envisioned as a promising paradigm to improve network capacity and
+enhance coverage capability. However, to reap full benefits of RIS-aided CF-mMIMO, the main challenge
+is to efficiently design cooperative beamforming (CBF) at base stations (BSs), RISs, and users.
+Firstly, we investigate the fractional programing to convert the weighted sum-rate (WSR) maximization
+problem into a tractable optimization problem. Then, the alternating optimization framework
+is employed to decompose the transformed problem into a sequence of subproblems, i.e., hybrid BF
+(HBF) at BSs, passive BF at RISs, and combining at users. In particular, the alternating direction
+method of multipliers algorithm is utilized to solve the HBF subproblem at BSs. Concretely, the
+analog BF design with unit-modulus constraints is solved by the manifold optimization (MO) while
+we obtain a closed-form solution to the digital BF design that is essentially a convex least-square
+problem. Additionally, the passive BF at RISs and the analog combining at users are designed by primal-dual
+subgradient and MO methods. Moreover, considering heavy communication costs in conventional
+CF-mMIMO systems, we propose a partially-connected CF-mMIMO (P-CF-mMIMO) framework to decrease
+the number of connections among BSs and users. To better compromise WSR performance and network
+costs, we formulate the BS selection problem in the P-CF-mMIMO system as a binary integer quadratic
+programming (BIQP) problem, and develop a relaxed linear approximation algorithm to handle this
+BIQP problem. Finally, numerical results demonstrate superiorities of our proposed algorithms
+over baseline counterparts. 

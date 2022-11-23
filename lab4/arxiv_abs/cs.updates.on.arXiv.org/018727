@@ -1,0 +1,20 @@
+Indian vehicle number plates have wide variety in terms of size, font, script and shape. Development
+of Automatic Number Plate Recognition (ANPR) solutions is therefore challenging, necessitating
+a diverse dataset to serve as a collection of examples. However, a comprehensive dataset of Indian
+scenario is missing, thereby, hampering the progress towards publicly available and reproducible
+ANPR solutions. Many countries have invested efforts to develop comprehensive ANPR datasets like
+Chinese City Parking Dataset (CCPD) for China and Application-oriented License Plate (AOLP) dataset
+for US. In this work, we release an expanding dataset presently consisting of 1.5k images and a scalable
+and reproducible procedure of enhancing this dataset towards development of ANPR solution for
+Indian conditions. We have leveraged this dataset to explore an End-to-End (E2E) ANPR architecture
+for Indian scenario which was originally proposed for Chinese Vehicle number-plate recognition
+based on the CCPD dataset. As we customized the architecture for our dataset, we came across insights,
+which we have discussed in this paper. We report the hindrances in direct reusability of the model
+provided by the authors of CCPD because of the extreme diversity in Indian number plates and differences
+in distribution with respect to the CCPD dataset. An improvement of 42.86% was observed in LP detection
+after aligning the characteristics of Indian dataset with Chinese dataset. In this work, we have
+also compared the performance of the E2E number-plate detection model with YOLOv5 model, pre-trained
+on COCO dataset and fine-tuned on Indian vehicle images. Given that the number Indian vehicle images
+used for fine-tuning the detection module and yolov5 were same, we concluded that it is more sample
+efficient to develop an ANPR solution for Indian conditions based on COCO dataset rather than CCPD
+dataset. 

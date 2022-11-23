@@ -1,0 +1,20 @@
+With the rapid development of additive manufacturing, microstructures are attracting both academic
+and industrial interests. As an efficient way of analyzing the mechanical behaviors of microstructures,
+the homogenization method has been well studied in the literature. However, the classic homogenization
+method still faces challenges. Its computational cost is high for topological optimization that
+requires highly repeated calculation. The computation is more expensive when the microstructure
+is deformed from a regular cubic, causing changes for the virtual homogeneous material properties.
+To conquer this problem, we introduce a fine-designed 3D convolutional neural network (CNN), named
+DH-Net, to predict the homogenized properties of deformed microstructures. The novelty of DH-Net
+is that it predicts the local displacement rather than the homogenized properties. The macroscopic
+strains are considered as a constant in the loss function based on minimum potential energy. Thus
+DH-Net is label-free and more computation efficient than existing deep learning methods with the
+mean square loss function. We apply the shape-material transformation that a deformed microstructure
+with isotropic material can be bi-transformed into a regular structure with a transformed base
+material, such that the input with a CNN-friendly form feeds in DH-Net. DH-Net predicts homogenized
+properties with hundreds of acceleration compared to the standard homogenization method and even
+supports online computing. Moreover, it does not require a labeled dataset and thus can be much faster
+than current deep learning methods in training processing. DH-Net can predict both homogenized
+material properties and micro-mechanical properties, which is unavailable for existing DL methods.
+The generalization of DH-Net for different base materials and different types of microstructures
+is also taken into account. 

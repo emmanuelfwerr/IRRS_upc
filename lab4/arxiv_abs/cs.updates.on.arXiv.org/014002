@@ -1,0 +1,19 @@
+Multi-variate time series (MTS) data is a ubiquitous class of data abstraction in the real world.
+Any instance of MTS is generated from a hybrid dynamical system and their specific dynamics are usually
+unknown. The hybrid nature of such a dynamical system is a result of complex external attributes,
+such as geographic location and time of day, each of which can be categorized into either spatial
+attributes or temporal attributes. Therefore, there are two fundamental views which can be used
+to analyze MTS data, namely the spatial view and the temporal view. Moreover, from each of these two
+views, we can partition the set of data samples of MTS into disjoint forecasting tasks in accordance
+with their associated attribute values. Then, samples of the same task will manifest similar forthcoming
+pattern, which is less sophisticated to be predicted in comparison with the original single-view
+setting. Considering this insight, we propose a novel multi-view multi-task (MVMT) learning framework
+for MTS forecasting. Instead of being explicitly presented in most scenarios, MVMT information
+is deeply concealed in the MTS data, which severely hinders the model from capturing it naturally.
+To this end, we develop two kinds of basic operations, namely task-wise affine transformation and
+task-wise normalization, respectively. Applying these two operations with prior knowledge on
+the spatial and temporal view allows the model to adaptively extract MVMT information while predicting.
+Extensive experiments on three datasets are conducted to illustrate that canonical architectures
+can be greatly enhanced by the MVMT learning framework in terms of both effectiveness and efficiency.
+In addition, we design rich case studies to reveal the properties of representations produced at
+different phases in the entire prediction procedure. 

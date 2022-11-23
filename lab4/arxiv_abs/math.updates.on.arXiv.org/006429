@@ -1,0 +1,19 @@
+The article deals with the problem of synthesis of an adaptive observer of state variables of a linear
+time-varying SISO dynamic system. It is assumed that the control signal and the output variable
+are measurable. It is assumed that the state matrix of the plant contains known variables and unknown
+constant parameters, and the control matrix (vector) is unknown. The synthesis of the observer
+is based on the GPEBO method (generalized parameter based observer) proposed in $[1]$. Synthesis
+of adaptive provides for preliminary parametrization of the initial system and its transformation
+to a linear regression model with further identification of unknown parameters. To identify unknown
+constant parameters a classical estimation algorithm was used (the least squares method with a
+forgetting factor). This approach has proven itself well in cases where the known regressor is frequency
+poor (that is, the spectral composition of the regressor contains less than $r/2$ harmonics, where
+r is the number of unknown parameters) or does not satisfy the so-called undamped excitation condition.
+To illustrate the efficiency of the proposed method an example is presented in the article. A time-varying
+second-order object with four unknown parameters was considered. Parameterization of the initial
+dynamic model was performed and a linear static regression containing six unknowns parameters
+was obtained (including the vector of unknown initial conditions of system state variables). An
+adaptive observer was synthesized and the results of computer modeling illustrating the achievement
+of a given goal were presented. The main difference from the results published earlier in $[2]$ is
+the new assumption that the linear a time-varing system contains not only unknown parameters in
+the state matrix, but also the matrix (vector) for control contains unknown constant coefficients.

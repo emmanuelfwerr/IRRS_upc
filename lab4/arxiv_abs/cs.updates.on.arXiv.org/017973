@@ -1,0 +1,20 @@
+The videofluoroscopic swallowing study (VFSS) is a gold-standard imaging technique for assessing
+swallowing, but analysis and rating of VFSS recordings is time consuming and requires specialized
+training and expertise. Researchers have recently demonstrated that it is possible to automatically
+detect the pharyngeal phase of swallowing and to localize the bolus in VFSS recordings via computer
+vision, fostering the development of novel techniques for automatic VFSS analysis. However, training
+of algorithms to perform these tasks requires large amounts of annotated data that are seldom available.
+We demonstrate that the challenges of pharyngeal phase detection and bolus localization can be
+solved together using a single approach. We propose a deep-learning framework that jointly tackles
+pharyngeal phase detection and bolus localization in a weakly-supervised manner, requiring only
+the initial and final frames of the pharyngeal phase as ground truth annotations for the training.
+Our approach stems from the observation that bolus presence in the pharynx is the most prominent
+visual feature upon which to infer whether individual VFSS frames belong to the pharyngeal phase.
+We conducted extensive experiments with multiple convolutional neural networks (CNNs) on a dataset
+of 1245 bolus-level clips from 59 healthy subjects. We demonstrated that the pharyngeal phase can
+be detected with an F1-score higher than 0.9. Moreover, by processing the class activation maps
+of the CNNs, we were able to localize the bolus with promising results, obtaining correlations with
+ground truth trajectories higher than 0.9, without any manual annotations of bolus location used
+for training purposes. Once validated on a larger sample of participants with swallowing disorders,
+our framework will pave the way for the development of intelligent tools for VFSS analysis to support
+clinicians in swallowing assessment. 

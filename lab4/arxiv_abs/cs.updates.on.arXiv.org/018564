@@ -1,0 +1,20 @@
+Aiming at the problem that the spatial-temporal hierarchical continuous sign language recognition
+model based on deep learning has a large amount of computation, which limits the real-time application
+of the model, this paper proposes a temporal super-resolution network(TSRNet). The data is reconstructed
+into a dense feature sequence to reduce the overall model computation while keeping the final recognition
+accuracy loss to a minimum. The continuous sign language recognition model(CSLR) via TSRNet mainly
+consists of three parts: frame-level feature extraction, time series feature extraction and TSRNet,
+where TSRNet is located between frame-level feature extraction and time-series feature extraction,
+which mainly includes two branches: detail descriptor and rough descriptor. The sparse frame-level
+features are fused through the features obtained by the two designed branches as the reconstructed
+dense frame-level feature sequence, and the connectionist temporal classification(CTC) loss
+is used for training and optimization after the time-series feature extraction part. To better
+recover semantic-level information, the overall model is trained with the self-generating adversarial
+training method proposed in this paper to reduce the model error rate. The training method regards
+the TSRNet as the generator, and the frame-level processing part and the temporal processing part
+as the discriminator. In addition, in order to unify the evaluation criteria of model accuracy loss
+under different benchmarks, this paper proposes word error rate deviation(WERD), which takes
+the error rate between the estimated word error rate (WER) and the reference WER obtained by the reconstructed
+frame-level feature sequence and the complete original frame-level feature sequence as the WERD.
+Experiments on two large-scale sign language datasets demonstrate the effectiveness of the proposed
+model. 

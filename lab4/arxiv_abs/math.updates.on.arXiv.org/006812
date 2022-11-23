@@ -1,0 +1,20 @@
+We present efforts to control the chaotic, nonlinear, forced van der Pol system using physics-informed
+deep operator control (PIDOC) compared to benchmark methods including idealized nonlinear feed-forward
+(FF) control, linearized feedback control (FB), and feed-forward-plus-feedback combined (C).
+The aim is to implement circular trajectories in the state space of the van der Pol system. A designed
+benchmark problem is used for testing the behavioral differences of the disparate controllers
+and then investigating controlled schemes and systems of various extents of nonlinearities. All
+methods exhibit a transient initialization accompanying arbitrary initialization points. The
+feedforward control successfully converges to the desired trajectory, and PIDOC executes good
+controls with higher stochasticity observed for higher-order terms based on the phase portraits,
+while linearized feedback control and combined feed-forward plus feedback failed. Varying trajectory
+amplitudes revealed that feed-forward, linearized feedback control, and combined feed-forward
+plus feedback control all fail for unity nonlinear damping gain. Traditional control methods display
+a robust fluctuation for higher-order terms. For some various nonlinearities, PIDOC failed to
+implement the desired trajectory, instead of becoming "trapped" in the phase of small radius, yet
+idealized nonlinear feedforward successfully implemented controls. PIDOC exhibits generally
+lower relative errors for varying targeted trajectories. However, PIDOC also shows evidently
+higher computational burden compared with traditional control theory methods, with at least more
+than 30 times longer control time compared with benchmark idealized nonlinear feed-forward control.
+This manuscript proposes a comprehensive comparative study for future controller employment
+considering deterministic and machine learning approaches. 

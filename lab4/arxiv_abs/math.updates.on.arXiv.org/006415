@@ -1,0 +1,18 @@
+In this paper, we study an intelligent reflecting surface (IRS)-aided radar-communication (Radcom)
+system, where the IRS is leveraged to help Radcom base station (BS) transmit the joint of communication
+signals and radar signals for serving communication users and tracking targets simultaneously.
+The objective of this paper is to minimize the total transmit power at the Radcom BS by jointly optimizing
+the active beamformers, including communication beamformers and radar beamformers, at the Radcom
+BS and the phase shifts at the IRS, subject to the minimum signal-to-interference-plus-noise ratio
+(SINR) required by communication users, the minimum SINR required by the radar, and the cross-correlation
+pattern design. In particular, we consider two cases, namely, case I and case II, based on the presence
+or absence of the radar cross-correlation design and the interference introduced by the IRS on the
+Radcom BS. For case I where the cross correlation design and the interference are not considered,
+we prove that the dedicated radar signals are not needed, which significantly reduces implementation
+complexity and simplifies algorithm design. Then, a penalty-based algorithm is proposed to solve
+the resulting non-convex optimization problem. Whereas for case II considering the cross-correlation
+design and the interference, we unveil that the dedicated radar signals are needed in general to
+enhance the system performance. Since the resulting optimization problem is more challenging
+to solve as compared with the case I, the semidefinite relaxation (SDR) based alternating optimization
+(AO) algorithm is proposed. Simulation results demonstrate the effectiveness of proposed algorithms
+and also show the superiority of the proposed scheme over various benchmark schemes. 

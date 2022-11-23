@@ -1,0 +1,20 @@
+Conventionally, posterior matching is investigated in channel coding and block encoding contexts
+-- the source symbols are equiprobably distributed and are entirely known by the encoder before
+the transmission. In this paper, we consider a streaming source, whose symbols arrive at the encoder
+at a sequence of deterministic times. We derive the joint source-channel coding (JSCC) reliability
+function for streaming over a discrete memoryless channel (DMC) with feedback. We propose a novel
+instantaneous encoding phase that operates during the symbol arriving period and achieves the
+JSCC reliability function for streaming when followed by a block encoding scheme that achieves
+the JSCC reliability function for a classical source whose symbols are fully accessible before
+the transmission. During the instantaneous encoding phase, the evolving message alphabet is partitioned
+into groups, and the encoder determines the index of the group that contains the symbols arrived
+so far and applies randomization to match the distribution of the transmitted index to the capacity-achieving
+one. Surprisingly, the JSCC reliability function for streaming is equal to that for a fully accessible
+source, implying that the knowledge of the entire symbol sequence before the transmission offers
+no advantage regarding the reliability function. For streaming over a symmetric 2-input DMC, we
+propose an instantaneous small-enough difference (SED) code that not only achieves the JSCC reliability
+function but also can be used to stabilize an unstable linear system over a noisy channel. We design
+low complexity algorithms to implement both the instantaneous encoding phase and the instantaneous
+SED code. While the reliability function is derived for non-degenerate DMCs, for degenerate DMCs
+we design a code with instantaneous encoding that achieves zero error for all rates below Shannon's
+JSCC limit. 

@@ -1,0 +1,19 @@
+Fairness of deepfake detectors in the presence of anomalies are not well investigated, especially
+if those anomalies are more prominent in either male or female subjects. The primary motivation
+for this work is to evaluate how deepfake detection model behaves under such anomalies. However,
+due to the black-box nature of deep learning (DL) and artificial intelligence (AI) systems, it is
+hard to predict the performance of a model when the input data is modified. Crucially, if this defect
+is not addressed properly, it will adversely affect the fairness of the model and result in discrimination
+of certain sub-population unintentionally. Therefore, the objective of this work is to adopt metamorphic
+testing to examine the reliability of the selected deepfake detection model, and how the transformation
+of input variation places influence on the output. We have chosen MesoInception-4, a state-of-the-art
+deepfake detection model, as the target model and makeup as the anomalies. Makeups are applied through
+utilizing the Dlib library to obtain the 68 facial landmarks prior to filling in the RGB values. Metamorphic
+relations are derived based on the notion that realistic perturbations of the input images, such
+as makeup, involving eyeliners, eyeshadows, blushes, and lipsticks (which are common cosmetic
+appearance) applied to male and female images, should not alter the output of the model by a huge margin.
+Furthermore, we narrow down the scope to focus on revealing potential gender biases in DL and AI systems.
+Specifically, we are interested to examine whether MesoInception-4 model produces unfair decisions,
+which should be considered as a consequence of robustness issues. The findings from our work have
+the potential to pave the way for new research directions in the quality assurance and fairness in
+DL and AI systems. 

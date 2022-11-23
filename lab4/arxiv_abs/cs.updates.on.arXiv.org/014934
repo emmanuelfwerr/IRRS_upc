@@ -1,0 +1,19 @@
+Automatically understanding and recognising human affective states using images and computer
+vision can improve human-computer and human-robot interaction. However, privacy has become an
+issue of great concern, as the identities of people used to train affective models can be exposed
+in the process. For instance, malicious individuals could exploit images from users and assume
+their identities. In addition, affect recognition using images can lead to discriminatory and
+algorithmic bias, as certain information such as race, gender, and age could be assumed based on
+facial features. Possible solutions to protect the privacy of users and avoid misuse of their identities
+are to: (1) extract anonymised facial features, namely action units (AU) from a database of images,
+discard the images and use AUs for processing and training, and (2) federated learning (FL) i.e.
+process raw images in users' local machines (local processing) and send the locally trained models
+to the main processing machine for aggregation (central processing). In this paper, we propose
+a two-level deep learning architecture for affect recognition that uses AUs in level 1 and FL in level
+2 to protect users' identities. The architecture consists of recurrent neural networks to capture
+the temporal relationships amongst the features and predict valence and arousal affective states.
+In our experiments, we evaluate the performance of our privacy-preserving architecture using
+different variations of recurrent neural networks on RECOLA, a comprehensive multimodal affective
+database. Our results show state-of-the-art performance of $0.426$ for valence and $0.401$ for
+arousal using the Concordance Correlation Coefficient evaluation metric, demonstrating the
+feasibility of developing models for affect recognition that are both accurate and ensure privacy.

@@ -1,0 +1,19 @@
+Foundation models are becoming the dominant deep learning technologies. Pretraining a foundation
+model is always time-consumed due to the large scale of both the model parameter and training dataset.
+Besides being computing-intensive, the training process is extremely memory-intensive and communication-intensive.
+These features make it necessary to apply 3D parallelism, which integrates data parallelism, pipeline
+model parallelism and tensor model parallelism, to achieve high training efficiency. To achieve
+this goal, some custom software frameworks such as Megatron-LM and DeepSpeed are developed. However,
+current 3D parallelism frameworks still meet two issues: i) they are not transparent to model developers,
+which need to manually modify the model to parallelize training. ii) their utilization of computation,
+GPU memory and network bandwidth are not sufficient. We propose Merak, an automated 3D parallelism
+deep learning training framework with high resource utilization. Merak automatically deploys
+with an automatic model partitioner, which uses a graph sharding algorithm on a proxy representation
+of the model. Merak also presents the non-intrusive API for scaling out foundation model training
+with minimal code modification. In addition, we design a high-performance 3D parallel runtime
+engine in Merak. It uses several techniques to exploit available training resources, including
+shifted critical path pipeline schedule that brings a higher computation utilization, stage-aware
+recomputation that makes use of idle worker memory, and sub-pipelined tensor model parallelism
+that overlaps communication and computation. Experiments on 64 GPUs show Merak can speedup the
+training performance over the state-of-the-art 3D parallelism frameworks of models with 1.5,
+2.5, 8.3, and 20 billion parameters by up to 1.42X, 1.39X, 1.43X, and 1.61X, respectively. 

@@ -1,0 +1,19 @@
+Spiking Neural Networks (SNN) are known to be very effective for neuromorphic processor implementations,
+achieving orders of magnitude improvements in energy efficiency and computational latency over
+traditional deep learning approaches. Comparable algorithmic performance was recently made
+possible as well with the adaptation of supervised training algorithms to the context of SNN. However,
+information including audio, video, and other sensor-derived data are typically encoded as real-valued
+signals that are not well-suited to SNN, preventing the network from leveraging spike timing information.
+Efficient encoding from real-valued signals to spikes is therefore critical and significantly
+impacts the performance of the overall system. To efficiently encode signals into spikes, both
+the preservation of information relevant to the task at hand as well as the density of the encoded
+spikes must be considered. In this paper, we study four spike encoding methods in the context of a
+speaker independent digit classification system: Send on Delta, Time to First Spike, Leaky Integrate
+and Fire Neuron and Bens Spiker Algorithm. We first show that all encoding methods yield higher classification
+accuracy using significantly fewer spikes when encoding a bio-inspired cochleagram as opposed
+to a traditional short-time Fourier transform. We then show that two Send On Delta variants result
+in classification results comparable with a state of the art deep convolutional neural network
+baseline, while simultaneously reducing the encoded bit rate. Finally, we show that several encoding
+methods result in improved performance over the conventional deep learning baseline in certain
+cases, further demonstrating the power of spike encoding algorithms in the encoding of real-valued
+signals and that neuromorphic implementation has the potential to outperform state of the art techniques.

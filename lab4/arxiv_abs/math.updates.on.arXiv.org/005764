@@ -1,0 +1,20 @@
+A novel OFDM-based waveform with low peak-to-average power ratio (PAPR) and high robustness against
+phase noise (PN) is presented. It follows the discrete Fourier transform spread orthogonal frequency
+division multiplexing (DFT-s-OFDM) signal model. 3MSK, is inspired by continuous-phase frequency
+shift keying (FSK), but it uses three frequencies in the baseband model -- specifically, 0 and $\pm
+f_{symbol}/4$, where $f_{symbol}$ is the symbol rate -- which effectively constrains the phase
+transitions between consecutive symbols to 0 and $\pm \pi/2$ rad. Motivated by the phase controlled
+model of modulation, different degrees of phase continuity can be achieved, while supporting receiver
+processing with low complexity. The signal characteristics are improved by generating an initial
+time-domain nearly constant envelope signal at higher than the symbol rate. This helps to reach
+smooth phase transitions between 3MSK symbols. Also the possibility of using excess bandwidth
+is investigated by transmitting additional non-zero subcarriers outside active subcarriers
+of the basic DFT-s-OFDM model, which provides the capability to greatly reduce the PAPR. Due to the
+fact that the information is encoded in the phase transitions, a receiver model that tracks the phase
+variations without needing reference signals is developed. To this end, it is shown that this new
+modulation is well-suited for non-coherent receivers, even under strong phase noise (PN) conditions,
+thus allowing to reduce the overhead of reference signals. Evaluations of this physical-layer
+modulation and waveform scheme are performed in terms of transmitter metrics such as PAPR, OOB emissions
+and achievable output power after the power amplifier (PA). Finally, coded radio link evaluations
+are also shown and provided, demonstrating that 3MSK has a similar BER performance as that of traditional
+QPSK. 

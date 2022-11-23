@@ -1,0 +1,18 @@
+Predicting pedestrian crossing intention is an indispensable aspect of deploying advanced driving
+systems (ADS) or advanced driver-assistance systems (ADAS) to real life. State-of-the-art methods
+in predicting pedestrian crossing intention often rely on multiple streams of information as inputs,
+each of which requires massive computational resources and heavy network architectures to generate.
+However, such reliance limits the practical application of the systems. In this paper, driven the
+the real-world demands of pedestrian crossing intention prediction models with both high efficiency
+and accuracy, we introduce a network with only frames of pedestrians as the input. Every component
+in the introduced network is driven by the goal of light weight. Specifically, we reduce the multi-source
+input dependency and employ light neural networks that are tailored for mobile devices. These smaller
+neural networks can fit into computer memory and can be transmitted over a computer network more
+easily, thus making them more suitable for real-life deployment and real-time prediction. To compensate
+the removal of the multi-source input, we enhance the network effectiveness by adopting a multi-task
+learning training, named "side task learning", to include multiple auxiliary tasks to jointly
+learn the feature extractor for improved robustness. Each head handles a specific task that potentially
+shares knowledge with other heads. In the meantime, the feature extractor is shared across all tasks
+to ensure the sharing of basic knowledge across all layers. The light weight but high efficiency
+characteristics of our model endow it the potential of being deployed on vehicle-based systems.
+Experiments validate that our model consistently delivers outstanding performances. 

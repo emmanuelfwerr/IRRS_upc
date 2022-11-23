@@ -1,0 +1,19 @@
+It is increasingly acknowledged that a priori statistical power estimation for planned studies
+with multiple model parameters is inherently a multivariate problem. Power for individual parameters
+of interest cannot be reliably estimated univariately because sampling variably in, correlation
+with, and variance explained relative to one parameter will impact the power for another parameter,
+all usual univariate considerations being equal. Explicit solutions in such cases, especially
+for models with many parameters, are either impractical or impossible to solve, leaving researchers
+with the prevailing method of simulating power. However, point estimates for a vector of model parameters
+are uncertain, and the impact of inaccuracy is unknown. In such cases, sensitivity analysis is recommended
+such that multiple combinations of possible observable parameter vectors are simulated to understand
+power trade-offs. A limitation to this approach is that it is computationally expensive to generate
+sufficient sensitivity combinations to accurately map the power trade-off function in increasingly
+high dimensional spaces for the models that social scientists estimate. This paper explores the
+efficient estimation and graphing of statistical power for a study over varying model parameter
+combinations. Optimally powering a study is crucial to ensure a minimum probability of finding
+the hypothesized effect. We first demonstrate the impact of varying parameter values on power for
+specific hypotheses of interest and quantify the computational intensity of computing such a graph
+for a given level of precision. Finally, we propose a simple and generalizable machine learning
+inspired solution to cut the computational cost to less than 7\% of what could be called a brute force
+approach. [abridged] 

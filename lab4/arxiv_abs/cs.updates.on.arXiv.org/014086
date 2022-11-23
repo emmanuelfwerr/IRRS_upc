@@ -1,0 +1,19 @@
+Hard-to-predict bursts of COVID-19 pandemic revealed significance of statistical modeling which
+would resolve spatio-temporal correlations over geographical areas, for example spread of the
+infection over a city with census tract granularity. In this manuscript, we provide algorithmic
+answers to the following two inter-related public health challenges. (1) Inference Challenge:
+assuming that there are $N$ census blocks (nodes) in the city, and given an initial infection at any
+set of nodes, what is the probability for a subset of census blocks to become infected by the time the
+spread of the infection burst is stabilized? (2) Prevention Challenge: What is the minimal control
+action one can take to minimize the infected part of the stabilized state footprint? To answer the
+challenges, we build a Graphical Model of pandemic of the attractive Ising (pair-wise, binary)
+type, where each node represents a census track and each edge factor represents the strength of the
+pairwise interaction between a pair of nodes. We show that almost all attractive Ising Models on
+dense graphs result in either of the two modes for the most probable state: either all nodes which
+were not infected initially became infected, or all the initially uninfected nodes remain uninfected.
+This bi-modal solution of the Inference Challenge allows us to re-state the Prevention Challenge
+as the following tractable convex programming: for the bare Ising Model with pair-wise and bias
+factors representing the system without prevention measures, such that the MAP state is fully infected
+for at least one of the initial infection patterns, find the closest, in $l_1$ norm, set of factors
+resulting in all the MAP states of the Ising model, with the optimal prevention measures applied,
+to become safe. 

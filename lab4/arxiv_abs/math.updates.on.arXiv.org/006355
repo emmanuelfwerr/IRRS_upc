@@ -1,0 +1,19 @@
+Stochastic MPECs have found increasing relevance for modeling a broad range of settings in engineering
+and statistics. Yet, there seem to be no efficient first/zeroth-order schemes equipped with non-asymptotic
+rate guarantees for resolving even deterministic variants of such problems. We consider MPECs
+where the parametrized lower-level equilibrium problem is given by a deterministic/stochastic
+VI problem whose mapping is strongly monotone. We develop a zeroth-order implicit algorithmic
+framework by leveraging a locally randomized spherical smoothing scheme. We present schemes for
+single-stage and two-stage stochastic MPECs when the upper-level problem is either convex or nonconvex.
+(I). Single-stage SMPECs: In convex regimes, our proposed inexact schemes are characterized by
+a complexity in upper-level projections, upper-level samples, and lower-level projections of
+$\mathcal{O}(\tfrac{1}{\epsilon^2})$, $\mathcal{O}(\tfrac{1}{\epsilon^2})$, and $\mathcal{O}(\tfrac{1}{\epsilon^2}\ln(\tfrac{1}{\epsilon}))$
+, respectively. Analogous bounds for the nonconvex regime are $\mathcal{O}(\tfrac{1}{\epsilon})$,
+$\mathcal{O}(\tfrac{1}{\epsilon^2})$, and $\mathcal{O}(\tfrac{1}{\epsilon^3})$, respectively
+. (II). Two-stage SMPECs: In convex regimes, our proposed inexact schemes have a complexity in upper-level
+projections, upper-level samples, and lower-level projections of $\mathcal{O}(\tfrac{1}{\epsilon^2}),\mathcal{O}(\tfrac{1}{\epsilon^2})$,
+and $\mathcal{O}(\tfrac{1}{\epsilon^2}\ln(\tfrac{1}{\epsilon}))$ while the corresponding
+bounds in the nonconvex regime are $\mathcal{O}(\tfrac{1}{\epsilon})$, $\mathcal{O}(\tfrac{1}{\epsilon^2})$,
+and $\mathcal{O}(\tfrac{1}{\epsilon^2}\ln(\tfrac{1}{\epsilon}))$ , respectively . In addition,
+we derive statements for exact as well as accelerated counterparts. We also provide a comprehensive
+set of numerical results for validating the theoretical findings. 

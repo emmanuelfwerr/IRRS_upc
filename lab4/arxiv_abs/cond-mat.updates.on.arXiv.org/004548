@@ -1,0 +1,19 @@
+We proposal a new approach, namely the weight pathway analysis (WPA), to study the mechanism of multilayer
+neural networks. The weight pathways linking neurons longitudinally from input neurons to output
+neurons are considered as the basic units of a neural network. We decompose a neural network into
+a series of subnetworks of weight pathways, and establish characteristic maps for these subnetworks.
+The parameters of a characteristic map can be visualized, providing a longitudinal perspective
+of the network and making the neural network explainable. Using WPA, we discover that a neural network
+stores and utilizes information in a "holographic" way, that is, the network encodes all training
+samples in a coherent structure. An input vector interacts with this "holographic" structure to
+enhance or suppress each subnetwork which working together to produce the correct activities in
+the output neurons to recognize the input sample. Furthermore, with WPA, we reveal fundamental
+learning modes of a neural network: the linear learning mode and the nonlinear learning mode. The
+former extracts linearly separable features while the latter extracts linearly inseparable features.
+It is found that hidden-layer neurons self-organize into different classes in the later stages
+of the learning process. It is further discovered that the key strategy to improve the performance
+of a neural network is to control the ratio of the two learning modes to match that of the linear and
+the nonlinear features, and that increasing the width or the depth of a neural network helps this
+ratio controlling process. This provides theoretical ground for the practice of optimizing a neural
+network via increasing its width or its depth. The knowledge gained with WPA enables us to understand
+the fundamental questions such as what to learn, how to learn, and how can learn well. 

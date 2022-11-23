@@ -1,0 +1,19 @@
+The number and diversity of consumer devices are growing rapidly, alongside their target applications'
+memory consumption. Unfortunately, DRAM scalability is becoming a limiting factor to the available
+memory capacity in consumer devices. As a potential solution, manufacturers have introduced emerging
+non-volatile memories (NVMs) into the market, which can be used to increase the memory capacity
+of consumer devices by augmenting or replacing DRAM. Since entirely replacing DRAM with NVM in consumer
+devices imposes large system integration and design challenges, recent works propose extending
+the total main memory space available to applications by using NVM as swap space for DRAM. However,
+no prior work analyzes the implications of enabling a real NVM-based swap space in real consumer
+devices. In this work, we provide the first analysis of the impact of extending the main memory space
+of consumer devices using off-the-shelf NVMs. We extensively examine system performance and energy
+consumption when the NVM device is used as swap space for DRAM main memory to effectively extend the
+main memory capacity. For our analyses, we equip real web-based Chromebook computers with the Intel
+Optane SSD, which is a state-of-the-art low-latency NVM-based SSD device. We compare the performance
+and energy consumption of interactive workloads running on our Chromebook with NVM-based swap
+space, where the Intel Optane SSD capacity is used as swap space to extend main memory capacity, against
+two state-of-the-art systems: (i) a baseline system with double the amount of DRAM than the system
+with the NVM-based swap space; and (ii) a system where the Intel Optane SSD is naively replaced with
+a state-of-the-art (yet slower) off-the-shelf NAND-flash-based SSD, which we use as a swap space
+of equivalent size as the NVM-based swap space. 

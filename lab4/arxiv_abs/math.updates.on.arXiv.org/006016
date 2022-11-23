@@ -1,0 +1,19 @@
+The logistic and probit link functions are the most common choices for regression models with a binary
+response. However, these choices are not robust to the presence of outliers/unexpected observations.
+The robit link function, which is equal to the inverse CDF of the Student's $t$-distribution, provides
+a robust alternative to the probit and logistic link functions. A multivariate normal prior for
+the regression coefficients is the standard choice for Bayesian inference in robit regression
+models. The resulting posterior density is intractable and a Data Augmentation (DA) Markov chain
+is used to generate approximate samples from the desired posterior distribution. Establishing
+geometric ergodicity for this DA Markov chain is important as it provides theoretical guarantees
+for asymptotic validity of MCMC standard errors for desired posterior expectations/quantiles.
+Previous work [Roy(2012)] established geometric ergodicity of this robit DA Markov chain assuming
+(i) the sample size $n$ dominates the number of predictors $p$, and (ii) an additional constraint
+which requires the sample size to be bounded above by a fixed constant which depends on the design
+matrix $X$. In particular, modern high-dimensional settings where $n < p$ are not considered. In
+this work, we show that the robit DA Markov chain is trace-class (i.e., the eigenvalues of the corresponding
+Markov operator are summable) for arbitrary choices of the sample size $n$, the number of predictors
+$p$, the design matrix $X$, and the prior mean and variance parameters. The trace-class property
+implies geometric ergodicity. Moreover, this property allows us to conclude that the sandwich
+robit chain (obtained by inserting an inexpensive extra step in between the two steps of the DA chain)
+is strictly better than the robit DA chain in an appropriate sense. 

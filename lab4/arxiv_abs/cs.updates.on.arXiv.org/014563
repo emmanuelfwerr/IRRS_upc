@@ -1,0 +1,19 @@
+On-chip memory (usually based on Static RAMs-SRAMs) are crucial components for various computing
+devices including heterogeneous devices, e.g., GPUs, FPGAs, ASICs to achieve high performance.
+Modern workloads such as Deep Neural Networks (DNNs) running on these heterogeneous fabrics are
+highly dependent on the on-chip memory architecture for efficient acceleration. Hence, improving
+the energy-efficiency of such memories directly leads to an efficient system. One of the common
+methods to save energy is undervolting i.e., supply voltage underscaling below the nominal level.
+Such systems can be safely undervolted without incurring faults down to a certain voltage limit.
+This safe range is also called voltage guardband. However, reducing voltage below the guardband
+level without decreasing frequency causes timing-based faults. In this paper, we propose MoRS,
+a framework that generates the first approximate undervolting fault model using real faults extracted
+from experimental undervolting studies on SRAMs to build the model. We inject the faults generated
+by MoRS into the on-chip memory of the DNN accelerator to evaluate the resilience of the system under
+the test. MoRS has the advantage of simplicity without any need for high-time overhead experiments
+while being accurate enough in comparison to a fully randomly-generated fault injection approach.
+We evaluate our experiment in popular DNN workloads by mapping weights to SRAMs and measure the accuracy
+difference between the output of the MoRS and the real data. Our results show that the maximum difference
+between real fault data and the output fault model of MoRS is 6.21%, whereas the maximum difference
+between real data and random fault injection model is 23.2%. In terms of average proximity to the
+real data, the output of MoRS outperforms the random fault injection approach by 3.21x. 

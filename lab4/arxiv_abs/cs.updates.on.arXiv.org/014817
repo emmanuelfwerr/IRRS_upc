@@ -1,0 +1,19 @@
+Model Inversion (MI), in which an adversary abuses access to a trained Machine Learning (ML) model
+attempting to infer sensitive information about its original training data, has attracted increasing
+research attention. During MI, the trained model under attack (MUA) is usually frozen and used to
+guide the training of a generator, such as a Generative Adversarial Network (GAN), to reconstruct
+the distribution of the original training data of that model. This might cause leakage of original
+training samples, and if successful, the privacy of dataset subjects will be at risk if the training
+data contains Personally Identifiable Information (PII). Therefore, an in-depth investigation
+of the potentials of MI techniques is crucial for the development of corresponding defense techniques.
+High-quality reconstruction of training data based on a single model is challenging. However,
+existing MI literature does not explore targeting multiple models jointly, which may provide additional
+information and diverse perspectives to the adversary. We propose the ensemble inversion technique
+that estimates the distribution of original training data by training a generator constrained
+by an ensemble (or set) of trained models with shared subjects or entities. This technique leads
+to noticeable improvements of the quality of the generated samples with distinguishable features
+of the dataset entities compared to MI of a single ML model. We achieve high quality results without
+any dataset and show how utilizing an auxiliary dataset that's similar to the presumed training
+data improves the results. The impact of model diversity in the ensemble is thoroughly investigated
+and additional constraints are utilized to encourage sharp predictions and high activations for
+the reconstructed samples, leading to more accurate reconstruction of training images. 

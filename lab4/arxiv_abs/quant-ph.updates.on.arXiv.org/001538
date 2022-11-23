@@ -1,0 +1,20 @@
+The variational quantum eigensolver (or VQE) uses the variational principle to compute the ground
+state energy of a Hamiltonian, a problem that is central to quantum chemistry and condensed matter
+physics. Conventional computing methods are constrained in their accuracy due to the computational
+limits. The VQE may be used to model complex wavefunctions in polynomial time, making it one of the
+most promising near-term applications for quantum computing. Finding a path to navigate the relevant
+literature has rapidly become an overwhelming task, with many methods promising to improve different
+parts of the algorithm. Despite strong theoretical underpinnings suggesting excellent scaling
+of individual VQE components, studies have pointed out that their various pre-factors could be
+too large to reach a quantum computing advantage over conventional methods. This review aims to
+provide an overview of the progress that has been made on the different parts of the algorithm. All
+the different components of the algorithm are reviewed in detail including representation of Hamiltonians
+and wavefunctions on a quantum computer, the optimization process, the post-processing mitigation
+of errors, and best practices are suggested. We identify four main areas of future research:(1)
+optimal measurement schemes for reduction of circuit repetitions; (2) large scale parallelization
+across many quantum computers;(3) ways to overcome the potential appearance of vanishing gradients
+in the optimization process, and how the number of iterations required for the optimization scales
+with system size; (4) the extent to which VQE suffers for quantum noise, and whether this noise can
+be mitigated. The answers to these open research questions will determine the routes for the VQE
+to achieve quantum advantage as the quantum computing hardware scales up and as the noise levels
+are reduced. 

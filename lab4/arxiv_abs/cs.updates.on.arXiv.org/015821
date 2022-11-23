@@ -1,0 +1,19 @@
+Estimating instruction-level throughput is critical for many applications: multimedia, low-latency
+networking, medical, automotive, avionic, and industrial control systems all rely on tightly
+calculable and accurate timing bounds of their software. Unfortunately, how long a program may
+run - or if it may indeed stop at all - cannot be answered in the general case. This is why state-of-the-art
+throughput estimation tools usually focus on a subset of operations and make several simplifying
+assumptions. Correctly identifying these sets of constraints and regions of interest in the program
+typically requires source code, specialized tools, and dedicated expert knowledge. Whenever
+a single instruction is modified, this process must be repeated, incurring high costs when iteratively
+developing timing sensitive code in practice. In this paper, we present MCAD, a novel and lightweight
+timing analysis framework that can identify the effects of code changes on the microarchitectural
+level for binary programs. MCAD provides accurate differential throughput estimates by emulating
+whole program execution using QEMU and forwarding traces to LLVM for instruction-level analysis.
+This allows developers to iterate quickly, with low overhead, using common tools: identifying
+execution paths that are less sensitive to changes over timing-critical paths only takes minutes
+within MCAD. To the best of our knowledge this represents an entirely new capability that reduces
+turnaround times for differential throughput estimation by several orders of magnitude compared
+to state-of-the-art tools. Our detailed evaluation shows that MCAD scales to real-world applications
+like FFmpeg and Clang with millions of instructions, achieving < 3% geo mean error compared to ground
+truth timings from hardware-performance counters on x86 and ARM machines. 

@@ -1,0 +1,19 @@
+We present the Regensburg Breast Shape Model (RBSM) -- a 3D statistical shape model of the female
+breast built from 110 breast scans acquired in a standing position, and the first publicly available.
+Together with the model, a fully automated, pairwise surface registration pipeline used to establish
+dense correspondence among 3D breast scans is introduced. Our method is computationally efficient
+and requires only four landmarks to guide the registration process. A major challenge when modeling
+female breasts from surface-only 3D breast scans is the non-separability of breast and thorax.
+In order to weaken the strong coupling between breast and surrounding areas, we propose to minimize
+the variance outside the breast region as much as possible. To achieve this goal, a novel concept
+called breast probability masks (BPMs) is introduced. A BPM assigns probabilities to each point
+of a 3D breast scan, telling how likely it is that a particular point belongs to the breast area. During
+registration, we use BPMs to align the template to the target as accurately as possible inside the
+breast region and only roughly outside. This simple yet effective strategy significantly reduces
+the unwanted variance outside the breast region, leading to better statistical shape models in
+which breast shapes are quite well decoupled from the thorax. The RBSM is thus able to produce a variety
+of different breast shapes as independently as possible from the shape of the thorax. Our systematic
+experimental evaluation reveals a generalization ability of 0.17 mm and a specificity of 2.8 mm.
+To underline the expressiveness of the proposed model, we finally demonstrate in two showcase applications
+how the RBSM can be used for surgical outcome simulation and the prediction of a missing breast from
+the remaining one. Our model is available at https://www.rbsm.re-mic.de/. 

@@ -1,0 +1,19 @@
+Discrete choice models (DCMs) require a priori knowledge of the utility functions, especially
+how tastes vary across individuals. Utility misspecification may lead to biased estimates, inaccurate
+interpretations and limited predictability. In this paper, we utilize a neural network to learn
+taste representation. Our formulation consists of two modules: a neural network (TasteNet) that
+learns taste parameters (e.g., time coefficient) as flexible functions of individual characteristics;
+and a multinomial logit (MNL) model with utility functions defined with expert knowledge. Taste
+parameters learned by the neural network are fed into the choice model and link the two modules. Our
+approach extends the L-MNL model (Sifringer et al., 2020) by allowing the neural network to learn
+the interactions between individual characteristics and alternative attributes. Moreover,
+we formalize and strengthen the interpretability condition - requiring realistic estimates of
+behavior indicators (e.g., value-of-time, elasticity) at the disaggregated level, which is crucial
+for a model to be suitable for scenario analysis and policy decisions. Through a unique network architecture
+and parameter transformation, we incorporate prior knowledge and guide the neural network to output
+realistic behavior indicators at the disaggregated level. We show that TasteNet-MNL reaches the
+ground-truth model's predictability and recovers the nonlinear taste functions on synthetic
+data. Its estimated value-of-time and choice elasticities at the individual level are close to
+the ground truth. On a publicly available Swissmetro dataset, TasteNet-MNL outperforms benchmarking
+MNLs and Mixed Logit model's predictability. It learns a broader spectrum of taste variations within
+the population and suggests a higher average value-of-time. 

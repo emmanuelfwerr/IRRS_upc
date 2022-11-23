@@ -1,0 +1,20 @@
+Pattern formation in biological tissues plays an important role in the development of living organisms.
+Since the classical work of Alan Turing, a pre-eminent way of modelling has been through reaction-diffusion
+mechanisms. More recently, alternative models have been proposed, that link dynamics of diffusing
+molecular signals with tissue mechanics. In order to distinguish among different models, they
+should be compared to experimental observations. However, in many experimental situations only
+the limiting, stationary regime of the pattern formation process is observable, without knowledge
+of the transient behaviour or the initial state. The unstable nature of the underlying dynamics
+in all alternative models seriously complicates model and parameter identification, since small
+changes in the initial condition lead to distinct stationary patterns. To overcome this problem
+the initial state of the model can be randomised. In the latter case, fixed values of the model parameters
+correspond to a family of patterns rather than a fixed stationary solution, and standard approaches
+to compare pattern data directly with model outputs, e.g., in the least squares sense, are not suitable.
+Instead, statistical characteristics of the patterns should be compared, which is difficult given
+the typically limited amount of available data in practical applications. To deal with this problem,
+we extend a recently developed statistical approach for parameter identification using pattern
+data, the so-called Correlation Integral Likelihood (CIL) method. We suggest modifications that
+allow increasing the accuracy of the identification process without resizing the data set. The
+proposed approach is tested using different classes of pattern formation models. For all considered
+equations, parallel GPU-based implementations of the numerical solvers with efficient time stepping
+schemes are provided. 

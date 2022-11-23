@@ -1,0 +1,20 @@
+This paper studies inference in randomized controlled trials with multiple treatments, where
+treatment status is determined according to a "matched tuples" design. Here, by a matched tuples
+design, we mean an experimental design where units are sampled i.i.d. from the population of interest,
+grouped into "homogeneous" blocks with cardinality equal to the number of treatments, and finally,
+within each block, each treatment is assigned exactly once uniformly at random. We first study estimation
+and inference for matched tuples designs in the general setting where the parameter of interest
+is a vector of linear contrasts over the collection of average potential outcomes for each treatment.
+Parameters of this form include but are not limited to standard average treatment effects used to
+compare one treatment relative to another. We first establish conditions under which a sample analogue
+estimator is asymptotically normal and construct a consistent estimator of its corresponding
+asymptotic variance. Combining these results establishes the asymptotic validity of tests based
+on these estimators. In contrast, we show that a common testing procedure based on a linear regression
+with block fixed effects and the usual heteroskedasticity-robust variance estimator is invalid
+in the sense that the resulting test may have a limiting rejection probability under the null hypothesis
+strictly greater than the nominal level. We then apply our results to study the asymptotic properties
+of what we call "fully-blocked" $2^K$ factorial designs, which are simply matched tuples designs
+applied to a full factorial experiment. Leveraging our previous results, we establish that our
+estimator achieves a lower asymptotic variance under the fully-blocked design than that under
+any stratified factorial design. A simulation study and empirical application illustrate the
+practical relevance of our results. 

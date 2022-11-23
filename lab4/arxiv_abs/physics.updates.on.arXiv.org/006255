@@ -1,0 +1,20 @@
+Purpose: To develop a voxel-based radiomics image analysis workflow and to characterize regional
+pulmonary function on CT images using a radiomic filtering approach. Methods: We developed a radiomic
+filtering technique to capture the spatially-encoded regional pulmonary ventilation information
+on CT. The lung volumes were first segmented on 46 CT images. Then, a 3D sliding window kernel was implemented
+to map the impulse response of radiomic features across the lung volume. Specifically, 53 radiomic
+feature maps were extracted to capture spatially encoded information, resulting in a 4th order
+tensor object. Accordingly, each voxel coordinate is represented as a 53-dimensional feature
+vector, and each image is represented as an image tensor that we refer to as a 3D, rotationally-invariant
+feature map. To test the technique as a potential biomarker of pulmonary function, the radiomic
+feature maps were compared to paired functional images (Galligas PET or DTPA-SPECT) of lung ventilation.
+Results: Two features were found to be highly correlated with functional imaging based on Spearman
+correlation (r) analysis. In particular, the radiomic feature maps GLRLM-based Run-Length Non-uniformity
+and GLCOM-based Sum Average achieved robust high correlation across 46 patients for both Galligas
+PET and DTPA-SPECT functional imaging, with a median r value [range] of 0.46 [0.05, 0.67] and 0.45
+[0.21, 0.65], respectively. Conclusions: Our data provide evidence that local regions of sparsely
+encoded homogenous lung parenchyma on CT are associated with diminished radiotracer uptake and
+measured lung ventilation defects on PET/SPECT imaging. Our results are comparable to other CT-based
+pulmonary function estimation techniques. These findings demonstrate the potential of radiomics
+to serve as a noninvasive surrogate of regional lung function and provide hypothesis-generating
+data for future studies. 

@@ -1,0 +1,19 @@
+A fundamental prediction of the LambdaCDM cosmology is the hierarchical build-up of structure
+and therefore the successive merging of galaxies into more massive ones. As one can only observe
+galaxies at one specific time in cosmic history, this merger history remains in principle unobservable.
+By using the TNG100 simulation of the IllustrisTNG project, we show that it is possible to infer the
+unobservable stellar assembly and merger history of central galaxies from their observable properties
+by using machine learning techniques. In particular, in this first paper of ERGO-ML (Extracting
+Reality from Galaxy Observables with Machine Learning), we choose a set of 7 observable integral
+properties of galaxies (i.e. total stellar mass, redshift, color, stellar size, morphology, metallicity,
+and age) to infer, from those, the stellar ex-situ fraction, the average merger lookback times and
+mass ratios, and the lookback time and stellar mass of the last major merger. To do so, we use and compare
+a Multilayer Perceptron Neural Network and a conditional Invertible Neural Network (cINN): thanks
+to the latter we are also able to infer the posterior distribution for these parameters and hence
+estimate the uncertainties in the predictions. We find that the stellar ex-situ fraction and the
+time of the last major merger are well determined by the selected set of observables, that the mass-weighted
+merger mass ratio is unconstrained, and that, beyond stellar mass, stellar morphology and stellar
+age are the most informative properties. Finally, we show that the cINN recovers the remaining unexplained
+scatter and secondary cross-correlations. Our tools can be applied to large galaxy surveys in order
+to infer unobservable properties of galaxies' past, enabling empirical studies of galaxy evolution
+enriched by cosmological simulations. 

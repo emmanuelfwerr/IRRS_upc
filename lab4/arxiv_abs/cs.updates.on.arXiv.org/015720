@@ -1,0 +1,20 @@
+The Fr\'{e}chet distance is a well-studied similarity measure between curves that is widely used
+throughout computer science. Motivated by applications where curves stem from paths and walks
+on an underlying graph (such as a road network), we define and study the Fr\'{e}chet distance for
+paths and walks on graphs. When provided with a distance oracle of $G$ with $O(1)$ query time, the
+classical quadratic-time dynamic program can compute the Fr\'{e}chet distance between two walks
+$P$ and $Q$ in a graph $G$ in $O(|P| \cdot |Q|)$ time. We show that there are situations where the graph
+structure helps with computing Fr\'{e}chet distance: when the graph $G$ is planar, we apply existing
+(approximate) distance oracles to compute a $(1+\varepsilon)$-approximation of the Fr\'{e}chet
+distance between any shortest path $P$ and any walk $Q$ in $O(|G| \log |G| / \sqrt{\varepsilon} +
+|P| + \frac{|Q|}{\varepsilon } )$ time. We generalise this result to near-shortest paths, i.e.
+$\kappa$-straight paths, as we show how to compute a $(1+\varepsilon)$-approximation between
+a $\kappa$-straight path $P$ and any walk $Q$ in $O(|G| \log |G| / \sqrt{\varepsilon} + |P| + \frac{\kappa|Q|}{\varepsilon
+} )$ time. Our algorithmic results hold for both the strong and the weak discrete Fr\'{e}chet distance
+over the shortest path metric in $G$. Finally, we show that additional assumptions on the input,
+such as our assumption on path straightness, are indeed necessary to obtain truly subquadratic
+running time. We provide a conditional lower bound showing that the Fr\'{e}chet distance, or even
+its $1.01$-approximation, between arbitrary \emph{paths} in a weighted planar graph cannot be
+computed in $O((|P|\cdot|Q|)^{1-\delta})$ time for any $\delta > 0$ unless the Orthogonal Vector
+Hypothesis fails. For walks, this lower bound holds even when $G$ is planar, unit-weight and has
+$O(1)$ vertices. 

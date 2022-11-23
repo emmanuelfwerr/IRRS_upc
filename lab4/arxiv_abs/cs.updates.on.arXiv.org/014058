@@ -1,0 +1,20 @@
+A streaming algorithm is adversarially robust if it is guaranteed to perform correctly even in the
+presence of an adaptive adversary. Recently, several sophisticated frameworks for robustification
+of classical streaming algorithms have been developed. One of the main open questions in this area
+is whether efficient adversarially robust algorithms exist for moment estimation problems under
+the turnstile streaming model, where both insertions and deletions are allowed. So far, the best
+known space complexity for streams of length $m$, achieved using differential privacy (DP) based
+techniques, is of order $\tilde{O}(m^{1/2})$ for computing a constant-factor approximation
+with high constant probability. In this work, we propose a new simple approach to tracking moments
+by alternating between two different regimes: a sparse regime, in which we can explicitly maintain
+the current frequency vector and use standard sparse recovery techniques, and a dense regime, in
+which we make use of existing DP-based robustification frameworks. The results obtained using
+our technique break the previous $m^{1/2}$ barrier for any fixed $p$. More specifically, our space
+complexity for $F_2$-estimation is $\tilde{O}(m^{2/5})$ and for $F_0$-estimation, i.e., counting
+the number of distinct elements, it is $\tilde O(m^{1/3})$. All existing robustness frameworks
+have their space complexity depend multiplicatively on a parameter $\lambda$ called the \emph{flip
+number} of the streaming problem, where $\lambda = m$ in turnstile moment estimation. The best known
+dependence in these frameworks (for constant factor approximation) is of order $\tilde{O}(\lambda^{1/2})$,
+and it is known to be tight for certain problems. Again, our approach breaks this barrier, achieving
+a dependence of order $\tilde{O}(\lambda^{1/2 - c(p)})$ for $F_p$-estimation, where $c(p) > 0$
+depends only on $p$. 

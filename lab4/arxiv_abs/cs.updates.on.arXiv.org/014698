@@ -1,0 +1,20 @@
+Beautification and augmented reality filters are very popular in applications that use selfie
+images captured with smartphones or personal devices. However, they can distort or modify biometric
+features, severely affecting the capability of recognizing individuals' identity or even detecting
+the face. Accordingly, we address the effect of such filters on the accuracy of automated face detection
+and recognition. The social media image filters studied either modify the image contrast or illumination
+or occlude parts of the face with for example artificial glasses or animal noses. We observe that
+the effect of some of these filters is harmful both to face detection and identity recognition, specially
+if they obfuscate the eye or (to a lesser extent) the nose. To counteract such effect, we develop a
+method to reconstruct the applied manipulation with a modified version of the U-NET segmentation
+network. This is observed to contribute to a better face detection and recognition accuracy. From
+a recognition perspective, we employ distance measures and trained machine learning algorithms
+applied to features extracted using a ResNet-34 network trained to recognize faces. We also evaluate
+if incorporating filtered images to the training set of machine learning approaches are beneficial
+for identity recognition. Our results show good recognition when filters do not occlude important
+landmarks, specially the eyes (identification accuracy >99%, EER<2%). The combined effect of
+the proposed approaches also allow to mitigate the effect produced by filters that occlude parts
+of the face, achieving an identification accuracy of >92% with the majority of perturbations evaluated,
+and an EER <8%. Although there is room for improvement, when neither U-NET reconstruction nor training
+with filtered images is applied, the accuracy with filters that severely occlude the eye is <72%
+(identification) and >12% (EER) 

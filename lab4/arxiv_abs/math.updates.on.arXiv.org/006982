@@ -1,0 +1,19 @@
+Target detection in hyperspectral imagery is the process of locating pixels from an image which
+are likely to contain target, typically done by comparing one or more spectra for the desired target
+material to each pixel in the image. Target identification is the process of target detection incorporating
+an additional process to identify more specifically the material that is present in each pixel that
+scored high in detection. Detection is generally a 2-class problem of target vs. background, and
+identification is a many class problem including target, background, and additional know materials.
+The identification process we present is probabilistic and hierarchical which provides transparency
+to the process and produces trustworthy output. In this paper we show that target identification
+has a much lower false alarm rate than detection alone, and provide a detailed explanation of a robust
+identification method using probabilistic hierarchical classification that handles the vague
+categories of materials that depend on users which are different than the specific physical categories
+of chemical constituents. Identification is often done by comparing mixtures of materials including
+the target spectra to mixtures of materials that do not include the target spectra, possibly with
+other steps. (band combinations, feature checking, background removal, etc.) Standard linear
+regression does not handle these problems well because the number of regressors (identification
+spectra) is greater than the number of feature variables (bands), and there are multiple correlated
+spectra. Our proposed method handles these challenges efficiently and provides additional important
+practical information in the form of hierarchical probabilities computed from Bayesian model
+averaging. 

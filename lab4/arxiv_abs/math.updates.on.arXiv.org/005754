@@ -1,0 +1,19 @@
+One of the major issues in the computational mechanics is to take into account the geometrical complexity.
+To overcome this difficulty and to avoid the expensive mesh generation, geometrically unfitted
+methods, i.e. the numerical methods using the simple computational meshes that do not fit the boundary
+of the domain, and/or the internal interfaces, have been widely developed. In the present work,
+we investigate the performances of an unfitted method called $\phi$-FEM that converges optimally
+and uses classical finite element spaces so that it can be easily implemented using general FEM libraries.
+The main idea is to take into account the geometry thanks to a level set function describing the boundary
+or the interface. Up to now, the $\phi$-FEM approach has been proposed, tested and substantiated
+mathematically only in some simplest settings: Poisson equation with Dirichlet/Neumann/Robin
+boundary conditions. Our goal here is to demonstrate its applicability to some more sophisticated
+governing equations arising in the computational mechanics. We consider the linear elasticity
+equations accompanied by either pure Dirichlet boundary conditions or by the mixed ones (Dirichlet
+and Neumann boundary conditions co-existing on parts of the boundary), an interface problem (linear
+elasticity with material coefficients abruptly changing over an internal interface), a model
+of elastic structures with cracks, and finally the heat equation. In all these settings, we derive
+an appropriate variant of $\phi$-FEM and then illustrate it by numerical tests on manufactured
+solutions. We also compare the accuracy and efficiency of $\phi$-FEM with those of the standard
+fitted FEM on the meshes of similar size, revealing the substantial gains that can be achieved by
+$\phi$-FEM in both the accuracy and the computational time. 

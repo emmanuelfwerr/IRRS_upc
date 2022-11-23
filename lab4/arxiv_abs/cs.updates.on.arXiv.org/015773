@@ -1,0 +1,20 @@
+Although ubiquitous in modern vehicles, Controller Area Networks (CANs) lack basic security properties
+and are easily exploitable. A rapidly growing field of CAN security research has emerged that seeks
+to detect intrusions on CANs. Producing vehicular CAN data with a variety of intrusions is out of
+reach for most researchers as it requires expensive assets and expertise. To assist researchers,
+we present the first comprehensive guide to the existing open CAN intrusion datasets, including
+a quality analysis of each dataset and an enumeration of each's benefits, drawbacks, and suggested
+use case. Current public CAN IDS datasets are limited to real fabrication (simple message injection)
+attacks and simulated attacks often in synthetic data, which lack fidelity. In general, the physical
+effects of attacks on the vehicle are not verified in the available datasets. Only one dataset provides
+signal-translated data but not a corresponding raw binary version. Overall, the available data
+pigeon-holes CAN IDS works into testing on limited, often inappropriate data (usually with attacks
+that are too easily detectable to truly test the method), and this lack data has stymied comparability
+and reproducibility of results. As our primary contribution, we present the ROAD (Real ORNL Automotive
+Dynamometer) CAN Intrusion Dataset, consisting of over 3.5 hours of one vehicle's CAN data. ROAD
+contains ambient data recorded during a diverse set of activities, and attacks of increasing stealth
+with multiple variants and instances of real fuzzing, fabrication, and unique advanced attacks,
+as well as simulated masquerade attacks. To facilitate benchmarking CAN IDS methods that require
+signal-translated inputs, we also provide the signal time series format for many of the CAN captures.
+Our contributions aim to facilitate appropriate benchmarking and needed comparability in the
+CAN IDS field. 

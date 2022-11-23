@@ -1,0 +1,20 @@
+Online voting for independent elections is generally supported by trusted election providers.
+Typically these providers do not offer any way in which a voter can verify their vote, so the providers
+are trusted with ballot privacy and ensuring correctness. Despite the desire to offer online voting
+for political elections, this lack of transparency and verifiability is often seen as a significant
+barrier to the large-scale adoption of online elections. Adding verifiability to an online election
+increases transparency and integrity, allowing voters to verify that their vote has been recorded
+correctly and included in the tally. However, replacing existing online systems with those that
+provide verifiable voting requires new algorithms and code to be deployed, and this presents a significant
+business risk to commercial election providers. In this paper we present the first step in an incremental
+approach which minimises the business risk but demonstrates the advantages of verifiability,
+by developing an implementation of key elements of a Selene-based verifiability layer and adding
+it to an operational online voting system. Selene is a verifiable voting protocol that uses trackers
+to enable voters to confirm that their votes have been captured correctly while protecting voter
+anonymity. This results in a system where even the election authority running the system cannot
+change the result in an undetectable way, and gives stronger guarantees on the integrity of the election
+than were previously present. We explore the challenges presented by adding a verifiability layer
+to an operational system. We describe the results of two initial trials, which obtained that survey
+respondents found this form of verifiability easy to use and that they broadly appreciated it. We
+conclude by outlining the further steps in the road-map towards the deployment of a fully trustworthy
+online voting system. 

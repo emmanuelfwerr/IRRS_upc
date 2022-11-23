@@ -1,0 +1,19 @@
+Atmospheric drag calculation error greatly reduce the low-earth orbit spacecraft trajectory
+prediction fidelity. To solve the issue, the "correction - prediction" strategy is usually employed.
+In the method, one parameter is fixed and other parameters are revised by inverting spacecraft orbit
+data. However, based on a single spacecraft data, the strategy usually performs poorly as parameters
+in drag force calculation are coupled with each other, which result in convoluted errors. A gravity
+field recovery and atmospheric density detection satellite, Q-Sat, developed by xxxxx Lab at xxx
+University, is launched on August 6th, 2020. The satellite is designed to be spherical for a constant
+drag coefficient regardless of its attitude. An orbit prediction method for low-earth orbit spacecraft
+with employment of Q-Sat data is proposed in present paper for decoupling atmospheric density and
+drag coefficient identification. For the first step, by using a dynamic approach-based inversion,
+several empirical atmospheric density models are revised based on Q-Sat orbit data. Depending
+on the performs, one of the revised atmospheric density model would be selected for the next step
+in which the same inversion is employed for drag coefficient identification for a low-earth orbit
+operating spacecraft whose orbit needs to be predicted. Finally, orbit prediction is conducted
+by extrapolation with the dynamic parameters in the previous steps. Tests are carried out with the
+proposed method by using a GOCE satellite 15-day continuous orbit data. Compared with legacy "correction
+- prediction" method in which only GOCE data is employed, the accuracy of the 24-hour orbit prediction
+is improved by about 171m the highest for the proposed method. 14-day averaged 24-hour prediction
+precision is elevated by approximately 70m. 

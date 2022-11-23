@@ -1,0 +1,20 @@
+We study the spectrum of inner-product kernel matrices, i.e., $n \times n$ matrices with entries
+$h (\langle \textbf{x}_i ,\textbf{x}_j \rangle/d)$ where the $( \textbf{x}_i)_{i \leq n}$ are
+i.i.d.~random covariates in $\mathbb{R}^d$. In the linear high-dimensional regime $n \asymp
+d$, it was shown that these matrices are well approximated by their linearization, which simplifies
+into the sum of a rescaled Wishart matrix and identity matrix. In this paper, we generalize this decomposition
+to the polynomial high-dimensional regime $n \asymp d^\ell,\ell \in \mathbb{N}$, for data uniformly
+distributed on the sphere and hypercube. In this regime, the kernel matrix is well approximated
+by its degree-$\ell$ polynomial approximation and can be decomposed into a low-rank spike matrix,
+identity and a `Gegenbauer matrix' with entries $Q_\ell (\langle \textbf{x}_i , \textbf{x}_j
+\rangle)$, where $Q_\ell$ is the degree-$\ell$ Gegenbauer polynomial. We show that the spectrum
+of the Gegenbauer matrix converges in distribution to a Marchenko-Pastur law. This problem is motivated
+by the study of the prediction error of kernel ridge regression (KRR) in the polynomial regime $n
+\asymp d^\kappa, \kappa >0$. Previous work showed that for $\kappa \not\in \mathbb{N}$, KRR fits
+exactly a degree-$\lfloor \kappa \rfloor$ polynomial approximation to the target function. In
+this paper, we use our characterization of the kernel matrix to complete this picture and compute
+the precise asymptotics of the test error in the limit $n/d^\kappa \to \psi$ with $\kappa \in \mathbb{N}$.
+In this case, the test error can present a double descent behavior, depending on the effective regularization
+and signal-to-noise ratio at level $\kappa$. Because this double descent can occur each time $\kappa$
+crosses an integer, this explains the multiple descent phenomenon in the KRR risk curve observed
+in several previous works. 

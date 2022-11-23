@@ -1,0 +1,20 @@
+We present a framework for speeding up the time it takes to sample from discrete distributions $\mu$
+defined over subsets of size $k$ of a ground set of $n$ elements, in the regime $k\ll n$. We show that
+having estimates of marginals $\mathbb{P}_{S\sim \mu}[i\in S]$, the task of sampling from $\mu$
+can be reduced to sampling from distributions $\nu$ supported on size $k$ subsets of a ground set
+of only $n^{1-\alpha}\cdot \operatorname{poly}(k)$ elements. Here, $1/\alpha\in [1, k]$ is
+the parameter of entropic independence for $\mu$. Further, the sparsified distributions $\nu$
+are obtained by applying a sparse (mostly $0$) external field to $\mu$, an operation that often retains
+algorithmic tractability of sampling from $\nu$. This phenomenon, which we dub domain sparsification,
+allows us to pay a one-time cost of estimating the marginals of $\mu$, and in return reduce the amortized
+cost needed to produce many samples from the distribution $\mu$, as is often needed in upstream tasks
+such as counting and inference. For a wide range of distributions where $\alpha=\Omega(1)$, our
+result reduces the domain size, and as a corollary, the cost-per-sample, by a $\operatorname{poly}(n)$
+factor. Examples include monomers in a monomer-dimer system, non-symmetric determinantal point
+processes, and partition-constrained Strongly Rayleigh measures. Our work significantly extends
+the reach of prior work of Anari and Derezi\'nski who obtained domain sparsification for distributions
+with a log-concave generating polynomial (corresponding to $\alpha=1$). As a corollary of our
+new analysis techniques, we also obtain a less stringent requirement on the accuracy of marginal
+estimates even for the case of log-concave polynomials; roughly speaking, we show that constant-factor
+approximation is enough for domain sparsification, improving over $O(1/k)$ relative error established
+in prior work. 

@@ -1,0 +1,20 @@
+The gas-solid particle two-phase flow in a fluidized bed shows complex physics. Following our previous
+work, the multi-scale framework based on gas-kinetic scheme (GKS) and unified gas-kinetic wave-particle
+method (UGKWP) for the gas-particle system is firstly extended to the three-dimensional simulation
+of the fluidized bed. For the solid particle evolution, different from the widely-used Eulerian
+and Lagrangian approaches, the UGKWP unifies the wave (dense particle region) and discrete particle
+(dilute particle region) formulation seamlessly according to a continuous variation of particle
+cell's Kundsen number ($Kn$). The GKS-UGKWP for the coupled gas-particle evolution system can
+automatically become an Eulerian-Eulerian (EE) method in the high particle collision regime and
+Eulerian-Lagrangian (EL) formulation in the collisionless particle regime. In the transition
+regime, the UGKWP can achieve a smooth transition between the Eulerian and Lagrangian limiting
+formulation. More importantly, the weights of mass distributions from analytical wave and discrete
+particle are related to the local $Kn$ by $\exp(-1/Kn)$ for wave and $(1-\exp(-1/Kn))$ for discrete
+particle. As a result, the UGKWP provides an optimal modeling for capturing the particle phase in
+terms of physical accuracy and numerical efficiency. In the numerical simulation, the UGKWP does
+not need any prior division of dilute/dense regions, which makes it suitable for the fluidized bed
+problem, where the dilute/transition/dense regions instantaneously coexist and are dynamically
+interconvertible. In this paper, based on the GKS-UGKWP formulation two lab-scale fluidization
+cases are simulated in 3D and the simulation results are compared with the experimental measurements.
+The typical heterogeneous flow features of the fluidized bed are well captured and the statistics
+are in good agreement with experiment data. 

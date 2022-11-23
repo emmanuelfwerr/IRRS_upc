@@ -1,0 +1,19 @@
+The temporal answering grounding in the video (TAGV) is a new task naturally derived from temporal
+sentence grounding in the video (TSGV). Given an untrimmed video and a text question, this task aims
+at locating the matching span from the video that can semantically answer the question. Existing
+methods tend to formulate the TAGV task with a visual span-based question answering (QA) approach
+by matching the visual frame span queried by the text question. However, due to the weak correlations
+and huge gaps of the semantic features between the textual question and visual answer, existing
+methods adopting visual span predictor perform poorly in the TAGV task. To bridge these gaps, we
+propose a visual-prompt text span localizing (VPTSL) method, which introduces the timestamped
+subtitles as a passage to perform the text span localization for the input text question, and prompts
+the visual highlight features into the pre-trained language model (PLM) for enhancing the joint
+semantic representations. Specifically, the context query attention is utilized to perform cross-modal
+interaction between the extracted textual and visual features. Then, the highlight features are
+obtained through the video-text highlighting for the visual prompt. To alleviate semantic differences
+between textual and visual features, we design the text span predictor by encoding the question,
+the subtitles, and the prompted visual highlight features with the PLM. As a result, the TAGV task
+is formulated to predict the span of subtitles matching the visual answer. Extensive experiments
+on the medical instructional dataset, namely MedVidQA, show that the proposed VPTSL outperforms
+the state-of-the-art (SOTA) method by 28.36% in terms of mIOU with a large margin, which demonstrates
+the effectiveness of the proposed visual prompt and the text span predictor. 

@@ -1,0 +1,20 @@
+Classical image denoising methods utilize the non-local self-similarity principle to effectively
+recover image content from noisy images. Current state-of-the-art methods use deep convolutional
+neural networks (CNNs) to effectively learn the mapping from noisy to clean images. Deep denoising
+CNNs manifest a high learning capacity and integrate non-local information owing to the large receptive
+field yielded by numerous cascade of hidden layers. However, deep networks are also computationally
+complex and require large data for training. To address these issues, this study draws the focus
+on the Self-organized Operational Neural Networks (Self-ONNs) empowered by a novel neuron model
+that can achieve a similar or better denoising performance with a compact and shallow model. Recently,
+the concept of super-neurons has been introduced which augment the non-linear transformations
+of generative neurons by utilizing non-localized kernel locations for an enhanced receptive field
+size. This is the key accomplishment which renders the need for a deep network configuration. As
+the integration of non-local information is known to benefit denoising, in this work we investigate
+the use of super neurons for both synthetic and real-world image denoising. We also discuss the practical
+issues in implementing the super neuron model on GPUs and propose a trade-off between the heterogeneity
+of non-localized operations and computational complexity. Our results demonstrate that with
+the same width and depth, Self-ONNs with super neurons provide a significant boost of denoising
+performance over the networks with generative and convolutional neurons for both denoising tasks.
+Moreover, results demonstrate that Self-ONNs with super neurons can achieve a competitive and
+superior synthetic denoising performances than well-known deep CNN denoisers for synthetic and
+real-world denoising, respectively. 

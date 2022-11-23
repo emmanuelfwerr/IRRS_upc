@@ -1,0 +1,19 @@
+Given a graph with non-negative edge weights, there are various ways to interpret the edge weights
+and induce a metric on the vertices of the graph. A few examples are shortest-path, when interpreting
+the weights as lengths; resistance distance, when thinking of the graph as an electrical network
+and the weights are resistances; and the inverse of minimum $st$-cut, when thinking of the weights
+as capacities. It is known that the 3 above-mentioned metrics can all be derived from flows, when
+formalizing them as convex optimization problems. This key observation led us to studying a family
+of metrics that are derived from flows, which we call flow metrics, that gives a natural interpolation
+between the above metrics using a parameter $p$. We make the first steps in studying the flow metrics,
+and mainly focus on two aspects: (a) understanding basic properties of the flow metrics, either
+as an optimization problem (e.g. finding relations between the flow problem and the dual potential
+problem) and as a metric function (e.g. understanding their structure and geometry); and (b) considering
+methods for reducing the size of graphs, either by removing vertices or edges while approximating
+the flow metrics, and thus attaining a smaller instance that can be used to accelerate running time
+of algorithms and reduce their storage requirements. Our main result is a lower bound for the number
+of edges required for a resistance sparsifier in the worst case. Furthermore, we present a method
+for reducing the number of edges in a graph while approximating the flow metrics, by utilizing a method
+of [Cohen and Peng, 2015] for reducing the size of matrices. In addition, we show that the flow metrics
+satisfy a stronger version of the triangle inequality, which gives some information about their
+structure and geometry. 

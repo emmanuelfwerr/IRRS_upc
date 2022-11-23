@@ -1,0 +1,19 @@
+The Phasor Measurement Unit (PMU) is an important metering device for smart grid. Like any other
+Intelligent Electronic Device (IED), PMUs are prone to various types of cyberattacks. However,
+one form of attack is unique to the PMU, the GPS-spoofing attack, where the time and /or the one second
+pulse that enables time synchronization are modified and the measurements are computed using the
+modified time reference. This article exploits the vulnerability of PMUs in their GPS time synchronization
+signal. At first, the paper proposes an undetectable attack scheme which is able to bypass Bad Data
+Detection (BDD) algorithms used with PMU data. The attack is applied by solving a convex optimization
+criterion at regular time interval, so that after a specific time period the attack vector incurs
+a significant change in the angle information delivered by the PMU. Secondly, the impact of phase
+angle shift on the power flow calculation between two adjacent nodes of the transmission line is
+analyzed with numerical experiment using IEEE 39 bus system. Moreover, the undetectibilities
+of the proposed attack scheme against conventional $\chi^2$, Weighted Least Squares (WLS) and
+Kalman Filtering test on the estimation residuals are investigated. Finally, the power flow results
+with the proposed attack are compared with the results using a random GPS-spoofing attack. It can
+be observed that using the proposed method enables the attacker with more control over the impact
+against power grid than it is for the random attack. Furthermore, the proposed attack model has demonstrated
+a very small probability of detection against each of the common detection methods. For WLS and KF,
+the attack is detected only about 1-20$\%$ of the times, whereas for $\chi^2$-test, the attack goes
+undetected 100 $\%$ of the times. 

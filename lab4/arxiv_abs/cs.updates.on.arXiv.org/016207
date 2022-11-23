@@ -1,0 +1,19 @@
+The mortality of lung cancer has ranked high among cancers for many years. Early detection of lung
+cancer is critical for disease prevention, cure, and mortality rate reduction. However, existing
+detection methods on pulmonary nodules introduce an excessive number of false positive proposals
+in order to achieve high sensitivity, which is not practical in clinical situations. In this paper,
+we propose the multi-head detection and spatial squeeze-and-attention network, MHSnet, to detect
+pulmonary nodules, in order to aid doctors in the early diagnosis of lung cancers. Specifically,
+we first introduce multi-head detectors and skip connections to customize for the variety of nodules
+in sizes, shapes and types and capture multi-scale features. Then, we implement a spatial attention
+module to enable the network to focus on different regions differently inspired by how experienced
+clinicians screen CT images, which results in fewer false positive proposals. Lastly, we present
+a lightweight but effective false positive reduction module with the Linear Regression model to
+cut down the number of false positive proposals, without any constraints on the front network. Extensive
+experimental results compared with the state-of-the-art models have shown the superiority of
+the MHSnet in terms of the average FROC, sensitivity and especially false discovery rate (2.98%
+and 2.18% improvement in terms of average FROC and sensitivity, 5.62% and 28.33% decrease in terms
+of false discovery rate and average candidates per scan). The false positive reduction module significantly
+decreases the average number of candidates generated per scan by 68.11% and the false discovery
+rate by 13.48%, which is promising to reduce distracted proposals for the downstream tasks based
+on the detection results. 

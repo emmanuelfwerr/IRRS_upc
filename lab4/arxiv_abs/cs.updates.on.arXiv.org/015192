@@ -1,0 +1,19 @@
+Once you have invented digital money, you may need a ledger to track who owns what -- and an interface
+to that ledger so that users of your money can transact. On the Tezos blockchain this implies: a smart
+contract (distributed program), storing in its state a ledger to map owner addresses to token quantities,
+and standardised entrypoints to transact on accounts. A bank does a similar job -- it maps account
+numbers to account quantities and permits users to transact -- but in return the bank demands trust,
+it incurs expense to maintain a centralised server and staff, it uses a proprietary interface ...
+and it may speculate using your money and/or display rent-seeking behaviour. A blockchain ledger
+is by design decentralised, inexpensive, open, and it won't just bet your tokens on risky derivatives
+(unless you ask). The FA1.2 standard is an open standard for ledger-keeping smart contracts on the
+Tezos blockchain. Several FA1.2 implementations already exist. Or do they? Is the standard sensible
+and complete? Are the implementations correct? And what are they implementations \emph{of}? The
+FA1.2 standard is written in English, a specification language favoured by wet human brains but
+notorious for its incompleteness and ambiguity when rendered into dry and unforgiving code. In
+this paper we report on a formalisation of the FA1.2 standard as a Coq specification, and on a formal
+verification of three FA1.2-compliant smart contracts with respect to that specification. Errors
+were found and ambiguities were resolved; but also, there now exists a \emph{mathematically precise}
+and battle-tested specification of the FA1.2 ledger standard. We will describe FA1.2 itself, outline
+the structure of the Coq theories -- which in itself captures some non-trivial and novel design decisions
+of the development -- and review the detailed verification of the implementations. 

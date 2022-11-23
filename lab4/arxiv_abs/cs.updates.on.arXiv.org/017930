@@ -1,0 +1,20 @@
+Recent advances have shown that SNN-based systems can efficiently perform unsupervised continual
+learning due to their bio-plausible learning rule, e.g., Spike-Timing-Dependent Plasticity
+(STDP). Such learning capabilities are especially beneficial for use cases like autonomous agents
+(e.g., robots and UAVs) that need to continuously adapt to dynamically changing scenarios/environments,
+where new data gathered directly from the environment may have novel features that should be learned
+online. Current state-of-the-art works employ high-precision weights (i.e., 32 bit) for both
+training and inference phases, which pose high memory and energy costs thereby hindering efficient
+embedded implementations of such systems for battery-driven mobile autonomous systems. On the
+other hand, precision reduction may jeopardize the quality of unsupervised continual learning
+due to information loss. Towards this, we propose lpSpikeCon, a novel methodology to enable low-precision
+SNN processing for efficient unsupervised continual learning on resource-constrained autonomous
+agents/systems. Our lpSpikeCon methodology employs the following key steps: (1) analyzing the
+impacts of training the SNN model under unsupervised continual learning settings with reduced
+weight precision on the inference accuracy; (2) leveraging this study to identify SNN parameters
+that have a significant impact on the inference accuracy; and (3) developing an algorithm for searching
+the respective SNN parameter values that improve the quality of unsupervised continual learning.
+The experimental results show that our lpSpikeCon can reduce weight memory of the SNN model by 8x
+(i.e., by judiciously employing 4-bit weights) for performing online training with unsupervised
+continual learning and achieve no accuracy loss in the inference phase, as compared to the baseline
+model with 32-bit weights across different network sizes. 

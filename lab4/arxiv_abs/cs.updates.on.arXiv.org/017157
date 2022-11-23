@@ -1,0 +1,19 @@
+Gliomas are one of the most prevalent types of primary brain tumours, accounting for more than 30\%
+of all cases and they develop from the glial stem or progenitor cells. In theory, the majority of brain
+tumours could well be identified exclusively by the use of Magnetic Resonance Imaging (MRI). Each
+MRI modality delivers distinct information on the soft tissue of the human brain and integrating
+all of them would provide comprehensive data for the accurate segmentation of the glioma, which
+is crucial for the patient's prognosis, diagnosis, and determining the best follow-up treatment.
+Unfortunately, MRI is prone to artifacts for a variety of reasons, which might result in missing
+one or more MRI modalities. Various strategies have been proposed over the years to synthesize the
+missing modality or compensate for the influence it has on automated segmentation models. However,
+these methods usually fail to model the underlying missing information. In this paper, we propose
+a style matching U-Net (SMU-Net) for brain tumour segmentation on MRI images. Our co-training approach
+utilizes a content and style-matching mechanism to distill the informative features from the full-modality
+network into a missing modality network. To do so, we encode both full-modality and missing-modality
+data into a latent space, then we decompose the representation space into a style and content representation.
+Our style matching module adaptively recalibrates the representation space by learning a matching
+function to transfer the informative and textural features from a full-modality path into a missing-modality
+path. Moreover, by modelling the mutual information, our content module surpasses the less informative
+features and re-calibrates the representation space based on discriminative semantic features.
+The evaluation process on the BraTS 2018 dataset shows a significant results. 

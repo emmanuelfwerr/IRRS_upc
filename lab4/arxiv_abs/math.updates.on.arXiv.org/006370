@@ -1,0 +1,20 @@
+Conformal prediction has received tremendous attention in recent years and has offered new solutions
+to problems in missing data and causal inference; yet these advances have not leveraged modern semiparametric
+efficiency theory for more robust and efficient uncertainty quantification. In this paper, we
+consider the problem of obtaining distribution-free prediction regions accounting for a shift
+in the distribution of the covariates between the training and test data. Under an explainable covariate
+shift assumption analogous to the standard missing at random assumption, we propose three variants
+of a general framework to construct well-calibrated prediction regions for the unobserved outcome
+in the test sample. Our approach is based on the efficient influence function for the quantile of
+the unobserved outcome in the test population combined with an arbitrary machine learning prediction
+algorithm, without compromising asymptotic coverage. Next, we extend our approach to account
+for departure from the explainable covariate shift assumption in a semiparametric sensitivity
+analysis for potential latent covariate shift. In all cases, we establish that the resulting prediction
+sets eventually attain nominal average coverage in large samples. This guarantee is a consequence
+of the product bias form of our proposal which implies correct coverage if either the propensity
+score or the conditional distribution of the response is estimated sufficiently well. Our results
+also provide a framework for construction of doubly robust prediction sets of individual treatment
+effects, under both unconfoundedness and allowing for some degree of unmeasured confounding.
+Finally, we discuss aggregation of prediction sets from different machine learning algorithms
+for optimal prediction and illustrate the performance of our methods in both synthetic and real
+data. 

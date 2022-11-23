@@ -1,0 +1,20 @@
+We consider real-time timely tracking of infection status (e.g., covid-19) of individuals in a
+population. In this work, a health care provider wants to detect infected people as well as people
+who have recovered from the disease as quickly as possible. In order to measure the timeliness of
+the tracking process, we use the long-term average difference between the actual infection status
+of the people and their real-time estimate by the health care provider based on the most recent test
+results. We first find an analytical expression for this average difference for given test rates,
+infection rates and recovery rates of people. Next, we propose an alternating minimization based
+algorithm to find the test rates that minimize the average difference. We observe that if the total
+test rate is limited, instead of testing all members of the population equally, only a portion of
+the population may be tested in unequal rates calculated based on their infection and recovery rates.
+Next, we characterize the average difference when the test measurements are erroneous (i.e., noisy).
+Further, we consider the case where the infection status of individuals may be dependent, which
+happens when an infected person spreads the disease to another person if they are not detected and
+isolated by the health care provider. Then, we consider an age of incorrect information based error
+metric where the staleness metric increases linearly over time as long as the health care provider
+does not detect the changes in the infection status of the people. In numerical results, we observe
+that an increased population size increases diversity of people with different infection and recovery
+rates which may be exploited to spend testing capacity more efficiently. Depending on the health
+care provider's preferences, test rate allocation can be adjusted to detect either the infected
+people or the recovered people more quickly. 

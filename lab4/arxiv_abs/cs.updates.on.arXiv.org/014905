@@ -1,0 +1,18 @@
+We consider the problem of accurate channel estimation for OTFS based systems with few transmit/receive
+antennas, where additional sparsity due to large number of antennas is not a possibility. For such
+systems the sparsity of the effective delay-Doppler (DD) domain channel is adversely affected
+in the presence of channel path delay and Doppler shifts which are non-integer multiples of the delay
+and Doppler domain resolution. The sparsity is also adversely affected when practical transmit
+and receive pulses are used. In this paper we propose a Modified Maximum Likelihood Channel Estimation
+(M-MLE) method for OTFS based systems which exploits the fine delay and Doppler domain resolution
+of the OTFS modulated signal to decouple the joint estimation of the channel parameters (i.e., channel
+gain, delay and Doppler shift) of all channel paths into separate estimation of the channel parameters
+for each path. We further observe that with fine delay and Doppler domain resolution, the received
+DD domain signal along a particular channel path can be written as a product of a delay domain term
+and a Doppler domain term where the delay domain term is primarily dependent on the delay of this path
+and the Doppler domain term is primarily dependent on the Doppler shift of this path. This allows
+us to propose another method termed as the two-step method (TSE), where the joint two-dimensional
+estimation of the delay and Doppler shift of a particular path in the M-MLE method is further decoupled
+into two separate one-dimensional estimation for the delay and for the Doppler shift of that path.
+Simulations reveal that the proposed methods (M-MLE and TSE) achieve better channel estimation
+accuracy at lower complexity when compared to other known methods for accurate OTFS channel estimation.

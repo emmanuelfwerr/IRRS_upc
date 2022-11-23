@@ -1,0 +1,19 @@
+Objective: The paper focuses on development of robust and accurate processing solutions for continuous
+and cuff-less blood pressure (BP) monitoring. In this regard, a robust deep learning-based framework
+is proposed for computation of low latency, continuous, and calibration-free upper and lower bounds
+on the systolic and diastolic BP. Method: Referred to as the BP-Net, the proposed framework is a novel
+convolutional architecture that provides longer effective memory while achieving superior performance
+due to incorporation of casual dialated convolutions and residual connections. To utilize the
+real potential of deep learning in extraction of intrinsic features (deep features) and enhance
+the long-term robustness, the BP-Net uses raw Electrocardiograph (ECG) and Photoplethysmograph
+(PPG) signals without extraction of any form of hand-crafted features as it is common in existing
+solutions. Results: By capitalizing on the fact that datasets used in recent literature are not
+unified and properly defined, a benchmark dataset is constructed from the MIMIC-I and MIMIC-III
+databases obtained from PhysioNet. The proposed BP-Net is evaluated based on this benchmark dataset
+demonstrating promising performance and shows superior generalizable capacity. Conclusion:
+The proposed BP-Net architecture is more accurate than canonical recurrent networks and enhances
+the long-term robustness of the BP estimation task. Significance: The proposed BP-Net architecture
+addresses key drawbacks of existing BP estimation solutions, i.e., relying heavily on extraction
+of hand-crafted features, such as pulse arrival time (PAT), and; Lack of robustness. Finally, the
+constructed BP-Net dataset provides a unified base for evaluation and comparison of deep learning-based
+BP estimation algorithms. 

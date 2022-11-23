@@ -1,0 +1,20 @@
+The rapid deployment of new Internet protocols over the last few years and the COVID-19 pandemic
+more recently (2020) has resulted in a change in the Internet traffic composition. Consequently,
+an updated microscopic view of traffic shares is needed to understand how the Internet is evolving
+to capture both such shorter- and longer-term events. Toward this end, we observe traffic composition
+at a research network in Japan and a Tier-1 ISP in the USA. We analyze the traffic traces passively
+captured at two inter-domain links: MAWI (Japan) and CAIDA (New York-Sao Paulo), which cover 100GB
+of data for MAWI traces and 4TB of data for CAIDA traces in total. We begin by studying the impact of
+COVID-19 on the MAWI link: We find a substantial increase in the traffic volume of OpenVPN and rsync,
+as well as increases in traffic volume from cloud storage and video conferencing services, which
+shows that clients shift to remote work during the pandemic. For traffic traces between March 2018
+to December 2018, we find that the use of IPv6 is increasing quickly on the CAIDA monitor: The IPv6
+traffic volume increases from 1.1% in March 2018 to 6.1% in December 2018, while the IPv6 traffic
+share remains stable in the MAWI dataset at around 9% of the traffic volume. Among other protocols
+at the application layer, 60%-70% of IPv4 traffic on the CAIDA link is HTTP(S) traffic, out of which
+two-thirds are encrypted; for the MAWI link, more than 90% of the traffic is Web, of which nearly 75%
+is encrypted. Compared to previous studies, this depicts a larger increase in encrypted Web traffic
+of up to a 3-to-1 ratio of HTTPS to HTTP. As such, our observations in this study further reconfirm
+that traffic shares change with time and can vary greatly depending on the vantage point studied
+despite the use of the same generalized methodology and analyses, which can also be applied to other
+traffic monitoring datasets. 

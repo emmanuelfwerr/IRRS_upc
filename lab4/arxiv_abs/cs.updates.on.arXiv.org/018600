@@ -1,0 +1,20 @@
+Fixing bugs is easiest by patching source code. However, source code is not always available: only
+0.3% of the ~49M smart contracts that are currently deployed on Ethereum have their source code publicly
+available. Moreover, since contracts may call functions from other contracts, security flaws
+in closed-source contracts may affect open-source contracts as well. However, current state-of-the-art
+approaches that operate on closed-source contracts (i.e., EVM bytecode), such as EVMPatch and
+SmartShield, make use of purely hard-coded templates that leverage fix patching patterns. As a
+result, they cannot dynamically adapt to the bytecode that is being patched, which severely limits
+their flexibility and scalability. For instance, when patching integer overflows using hard-coded
+templates, a particular patch template needs to be employed as the bounds to be checked are different
+for each integer size. In this paper, we propose Elysium, a scalable approach towards automatic
+smart contract repair at the bytecode level. Elysium combines template-based and semantic-based
+patching by inferring context information from bytecode. Elysium is currently able to patch 7 different
+types of vulnerabilities in smart contracts automatically and can easily be extended with new templates
+and new bug-finding tools. We evaluate its effectiveness and correctness using 3 different datasets
+by replaying more than 500K transactions on patched contracts. We find that Elysium outperforms
+existing tools by patching at least 30% more contracts correctly. Finally, we also compare the overhead
+of Elysium in terms of deployment and transaction cost. In comparison to other tools, we find that
+generally Elysium minimizes the runtime cost (i.e., transaction cost) up to a factor of 1.7, for
+only a marginally higher deployment cost, where deployment cost is a one-time cost as compared to
+the runtime cost. 

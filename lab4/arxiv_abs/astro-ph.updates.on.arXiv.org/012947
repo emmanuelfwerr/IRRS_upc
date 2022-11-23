@@ -1,0 +1,19 @@
+Chemical composition is an important factor that affects stellar evolution. The element abundance
+on the stellar surface evolves along the lifetime of the star because of transport processes, including
+atomic diffusion. However, models of stars with masses higher than about 1.2Msun predict unrealistic
+variations at the stellar surface. This indicates the need for competing transport processes that
+are mostly computationally expensive for large grids of stellar models. The purpose of this study
+is to implement turbulent mixing in stellar models and assess the possibility of reproducing the
+effect of radiative accelerations with turbulent mixing for elements like iron in order to make
+the computation of large grids possible. We computed stellar models with MESA and assessed the effects
+of atomic diffusion (with radiative acceleration) in the presence of turbulent mixing. We parametrised
+the effect of radiative accelerations on iron with a turbulent diffusion coefficient. Finally,
+we tested this parametrisation by modelling two F-type stars of the Kepler Legacy sample. We found
+that, for iron, a parametrisation of turbulent mixing that simulates the effect of radiative acceleration
+is possible. This leads to an increase in the efficiency of the turbulent mixing to counteract the
+effect of gravitational settling. This approximation does not affect significantly the surface
+abundances of the other elements we studied, except for oxygen and calcium. We demonstrate that
+this parametrisation has a negligible impact on the accuracy of the seismic properties inferred
+with these models. Moreover, turbulent mixing makes the computation of realistic F-type star models
+including the effect atomic diffusion possible. This leads to differences of about 10% in the inferred
+ages compared to results obtained with models that neglect these processes. 

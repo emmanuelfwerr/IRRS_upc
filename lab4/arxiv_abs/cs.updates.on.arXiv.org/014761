@@ -1,0 +1,19 @@
+Reorganizing implicit feedback of users as a user-item interaction graph facilitates the applications
+of graph convolutional networks (GCNs) in recommendation tasks. In the interaction graph, edges
+between user and item nodes function as the main element of GCNs to perform information propagation
+and generate informative representations. Nevertheless, an underlying challenge lies in the
+quality of interaction graph, since observed interactions with less-interested items occur in
+implicit feedback (say, a user views micro-videos accidentally). This means that the neighborhoods
+involved with such false-positive edges will be influenced negatively and the signal on user preference
+can be severely contaminated. However, existing GCN-based recommender models leave such challenge
+under-explored, resulting in suboptimal representations and performance. In this work, we focus
+on adaptively refining the structure of interaction graph to discover and prune potential false-positive
+edges. Towards this end, we devise a new GCN-based recommender model, \emph{Graph-Refined Convolutional
+Network} (GRCN), which adjusts the structure of interaction graph adaptively based on status of
+model training, instead of remaining the fixed structure. In particular, a graph refining layer
+is designed to identify the noisy edges with the high confidence of being false-positive interactions,
+and consequently prune them in a soft manner. We then apply a graph convolutional layer on the refined
+graph to distill informative signals on user preference. Through extensive experiments on three
+datasets for micro-video recommendation, we validate the rationality and effectiveness of our
+GRCN. Further in-depth analysis presents how the refined graph benefits the GCN-based recommender
+model. 

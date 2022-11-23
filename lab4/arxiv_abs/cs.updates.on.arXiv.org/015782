@@ -1,0 +1,20 @@
+In tissue characterization and cancer diagnostics, multimodal imaging has emerged as a powerful
+technique. Thanks to computational advances, large datasets can be exploited to improve diagnosis
+and discover patterns in pathologies. However, this requires efficient and scalable image retrieval
+methods. Cross-modality image retrieval is particularly demanding, as images of the same content
+captured in different modalities may display little common information. We propose a content-based
+image retrieval system (CBIR) for reverse (sub-)image search to retrieve microscopy images in
+one modality given a corresponding image captured by a different modality, where images are not
+aligned and share only few structures. We propose to combine deep learning to generate representations
+which embed both modalities in a common space, with classic, fast, and robust feature extractors
+(SIFT, SURF) to create a bag-of-words model for efficient and reliable retrieval. Our application-independent
+approach shows promising results on a publicly available dataset of brightfield and second harmonic
+generation microscopy images. We obtain 75.4% and 83.6% top-10 retrieval success for retrieval
+in one or the other direction. Our proposed method significantly outperforms both direct retrieval
+of the original multimodal (sub-)images, as well as their corresponding generative adversarial
+network (GAN)-based image-to-image translations. We establish that the proposed method performs
+better in comparison with a recent sub-image retrieval toolkit, GAN-based image-to-image translations,
+and learnt feature extractors for the downstream task of cross-modal image retrieval. We highlight
+the shortcomings of the latter methods and observe the importance of equivariance and invariance
+properties of the learnt representations and feature extractors in the CBIR pipeline. Code will
+be available at github.com/MIDA-group. 

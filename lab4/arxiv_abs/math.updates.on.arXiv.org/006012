@@ -1,0 +1,19 @@
+Let $P$ be a linear differential operator over $\mathcal{D} \subset \mathbb{R}^d$ and $U = (U_x)_{x
+\in \mathcal{D}}$ a second order stochastic process. In the first part of this article, we prove
+a new simple necessary and sufficient condition for all the trajectories of $U$ to verify the partial
+differential equation (PDE) $T(U) = 0$. This condition is formulated in terms of the covariance
+kernel of $U$. The novelty of this result is that the equality $T(U) = 0$ is understood in the sense
+of distributions, which is a functional analysis framework particularly adapted to the study of
+PDEs. This theorem provides precious insights during the second part of this article, which is dedicated
+to performing "physically informed" machine learning on data that is solution to the homogeneous
+3 dimensional free space wave equation. We perform Gaussian Process Regression (GPR) on this data,
+which is a kernel based Bayesian approach to machine learning. To do so, we put Gaussian process (GP)
+priors over the wave equation's initial conditions and propagate them through the wave equation.
+We obtain explicit formulas for the covariance kernel of the corresponding stochastic process;
+this kernel can then be used for GPR. We explore two particular cases : the radial symmetry and the
+point source. For the former, we derive convolution-free GPR formulas; for the latter, we show a
+direct link between GPR and the classical triangulation method for point source localization used
+e.g. in GPS systems. Additionally, this Bayesian framework gives rise to a new answer for the ill-posed
+inverse problem of reconstructing initial conditions for the wave equation with finite dimensional
+data, and simultaneously provides a way of estimating physical parameters from this data as in [Raissi
+et al,2017]. We finish by showcasing this physically informed GPR on a number of practical examples.

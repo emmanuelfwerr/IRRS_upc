@@ -1,0 +1,19 @@
+In this work we address the question of efficiency of distributed computing in anonymous, congested
+and highly dynamic and not-always-connected networks/systems. More precisely, the system consists
+of an unknown number of anonymous nodes with congestion on links and local computation. Links can
+change arbitrarily from round to round, with only limitation that the union of any T consecutive
+networks must form a temporarily connected (multi-)graph on all nodes (knowledge of T is the only
+information the nodes require, otherwise the communication would not be feasible). Nodes do not
+have any IDs, only some number l of them have a bit distinguishing them from nodes without such a bit.
+In each round a node can send and receive messages from its current neighbors. Links and nodes are
+congested, in the sense that the length of messages and local cache memory for local computation
+is (asymptotically) logarithmic. All-to-all communication is a fundamental principle in distributed
+computing - it assumes that each node has an input message to be delivered to all other nodes. Without
+loss of generality, the size of each input message is logarithmic to fit in the link and node congestion
+assumption; otherwise, they could be split in logarithmic batches and considered one-by-one.
+Because of anonymity, each node needs to receive only a set of all input messages, each accompanied
+by a number of initiating nodes (message multiplicity). We prove that this task can be done in time
+polynomial in the (initially unknown) number of nodes n and in the lower bound on the isoperimetric
+numbers of dynamically evolving graphs. This allows to efficiently emulate a popular Congested
+Clique model on top of Anonymous Dynamic Congested Systems (ADCS) with Opportunistic Connectivity,
+even if the number of nodes may arbitrarily change in the beginning of emulation. 

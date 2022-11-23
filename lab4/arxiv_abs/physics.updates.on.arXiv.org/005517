@@ -1,0 +1,20 @@
+The REST-for-Physics (Rare Event Searches Toolkit for Physics) framework is a ROOT-based solution
+providing the means to process and analyze experimental or Monte Carlo event data. Special care
+has been taken on the traceability of the code and the validation of the results produced within the
+framework, together with the connectivity between code and data stored registered through specific
+version metadata members. The framework development was originally motivated to cover the needs
+at Rare Event Searches experiments (experiments looking for phenomena having extremely low occurrence
+probability like dark matter or neutrino interactions or rare nuclear decays), and its components
+naturally implement tools to address the challenges in these kinds of experiments; the integration
+of a detector physics response, the implementation of signal processing routines, or topological
+algorithms for physical event identification are some examples. Despite this specialization,
+the framework was conceived thinking in scalability, and other event-oriented applications could
+benefit from the data processing routines and/or metadata description implemented in REST, being
+the generic framework tools completely decoupled from dedicated libraries. REST-for-Physics
+is a consolidated piece of software already serving the needs of different physics experiments
+- using gaseous Time Projection Chambers (TPCs) as detection technology - for background data analysis
+and detector characterization, as well as generic detector R\&D. Even though REST has been exploited
+mainly with gaseous TPCs, the code could be easily applied or adapted to other detection technologies.
+We present in this work an overview of REST-for-Physics, providing a broad perspective to the infrastructure
+and organization of the project as a whole. The framework and its different components will be described
+in the text. 

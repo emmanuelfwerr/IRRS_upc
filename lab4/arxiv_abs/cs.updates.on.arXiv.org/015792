@@ -1,0 +1,19 @@
+Driven by climate change, rising environmental awareness, and financial incentives, more and
+more commercial fleets transition to electric vehicles. However, this endeavor remains challenging
+as time-inefficient charge operations and lack of public charging infrastructure require fleet
+operators to invest into additional private on-premise charging stations. Here, grid capacity
+constraints and investment cost limit the number of available charging stations such that charging
+bottlenecks may arise. Accordingly, efficient scheduling of charge and service operations becomes
+inevitable to realize profitable fleets. Creating the underlying schedules constitutes a challenging
+optimization problem, especially when additional factors, such as battery degradation, variable
+energy prices, and non-linear battery behavior need to be considered. In this paper, we study the
+resulting joint charge and service operations scheduling problem, that combines the scheduling
+of vehicle service operations and charge scheduling. We propose an exact algorithm based on branch
+& price to solve this problem. This algorithm bases on an exact labeling algorithm developed for
+a novel resource constrained shortest path problem, which models our pricing problem, and leverages
+a custom branching rule and a primal heuristic to accelerate the branch & bound phase. We benchmark
+our algorithm in a comprehensive numerical study and show that it can solve realistic problem instances
+with computational times below one hour, thus enabling its application in practice. Additionally,
+we analyze the benefit of jointly scheduling charging and service operations in practice. We find
+that our integrated approach lowers the amount of charging infrastructure required for fleet operation
+by up to 57% besides enabling cost savings of up to 5%. 

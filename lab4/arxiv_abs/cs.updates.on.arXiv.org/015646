@@ -1,0 +1,20 @@
+Deep neural networks (DNN) have been widely applied in modern life, including critical domains
+like autonomous driving, making it essential to ensure the reliability and robustness of DNN-powered
+systems. As an analogy to code coverage metrics for testing conventional software, researchers
+have proposed neuron coverage metrics and coverage-driven methods to generate DNN test cases.
+However, Yan et al. doubt the usefulness of existing coverage criteria in DNN testing. They show
+that a coverage-driven method is less effective than a gradient-based method in terms of both uncovering
+defects and improving model robustness. In this paper, we conduct a replication study of the work
+by Yan et al. and extend the experiments for deeper analysis. A larger model and a dataset of higher
+resolution images are included to examine the generalizability of the results. We also extend the
+experiments with more test case generation techniques and adjust the process of improving model
+robustness to be closer to the practical life cycle of DNN development. Our experiment results confirm
+the conclusion from Yan et al. that coverage-driven methods are less effective than gradient-based
+methods. Yan et al. find that using gradient-based methods to retrain cannot repair defects uncovered
+by coverage-driven methods. They attribute this to the fact that the two types of methods use different
+perturbation strategies: gradient-based methods perform differentiable transformations while
+coverage-driven methods can perform additional non-differentiable transformations. We test
+several hypotheses and further show that even coverage-driven methods are constrained only to
+perform differentiable transformations, the uncovered defects still cannot be repaired by adversarial
+training with gradient-based methods. Thus, defensive strategies for coverage-driven methods
+should be further studied. 

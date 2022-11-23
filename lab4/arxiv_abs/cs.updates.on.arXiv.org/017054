@@ -1,0 +1,19 @@
+Schizophrenia is a severe mental health condition that requires a long and complicated diagnostic
+process. However, early diagnosis is vital to control symptoms. Deep learning has recently become
+a popular way to analyse and interpret medical data. Past attempts to use deep learning for schizophrenia
+diagnosis from brain-imaging data have shown promise but suffer from a large training-application
+gap - it is difficult to apply lab research to the real world. We propose to reduce this training-application
+gap by focusing on readily accessible data. We collect a data set of psychiatric observations of
+patients based on DSM-5 criteria. Because similar data is already recorded in all mental health
+clinics that diagnose schizophrenia using DSM-5, our method could be easily integrated into current
+processes as a tool to assist clinicians, whilst abiding by formal diagnostic criteria. To facilitate
+real-world usage of our system, we show that it is interpretable and robust. Understanding how a
+machine learning tool reaches its diagnosis is essential to allow clinicians to trust that diagnosis.
+To interpret the framework, we fuse two complementary attention mechanisms, 'squeeze and excitation'
+and 'self-attention', to determine global attribute importance and attribute interactivity,
+respectively. The model uses these importance scores to make decisions. This allows clinicians
+to understand how a diagnosis was reached, improving trust in the model. Because machine learning
+models often struggle to generalise to data from different sources, we perform experiments with
+augmented test data to evaluate the model's applicability to the real world. We find that our model
+is more robust to perturbations, and should therefore perform better in a clinical setting. It achieves
+98% accuracy with 10-fold cross-validation. 

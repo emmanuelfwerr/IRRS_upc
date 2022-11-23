@@ -1,0 +1,20 @@
+Tensor Processing Units (TPUs) are specialized hardware accelerators developed by Google to support
+large-scale machine-learning tasks, but they can also be leveraged to accelerate and scale other
+linear-algebra-intensive computations. In this paper we demonstrate the usage of TPUs for massively
+parallel, classical simulations of quantum many-body dynamics on long timescales. We apply our
+methods to study the phenomenon of Floquet prethermalization, i.e., exponentially slow heating
+in quantum spin chains subject to high-frequency periodic driving. We simulate the dynamics of
+L=34 qubits for over $10^5$ Floquet periods, corresponding to circuits with millions of two-qubit
+gates. The circuits simulated have no additional symmetries and represent a pure-state evolution
+in the full $2^L$-dimensional Hilbert space. This is achieved by distributing the computation
+over 128 TPU cores. On that size TPU cluster, we find speedups in wall-clock runtime of 230x and 15x
+when compared to reference CPU and single-GPU simulations, respectively, for shorter 30-qubit
+simulations that can be handled by all three platforms. We study the computational cost of the simulations,
+as a function of both the number of qubits and the number of TPU cores used, up to our maximum capacity
+of L=40 qubits, which requires a ``full pod" of 2048 TPU cores with tens of terabytes of memory in total.
+For these simulations, an 8-TPU-core machine is comparable to a single A100 GPU, and thus the full
+TPU pod is comparable to a machine with hundreds of GPUs. However, the TPU pod is more energy and cost
+efficient, and readily accessible (via Google Cloud), unlike such large many-GPU configurations.
+We also study the accumulation of numerical error as a function of circuit depth in very deep circuits.
+Our work demonstrates that TPUs can offer significant advantages for state-of-the-art simulations
+of quantum many-body dynamics. 

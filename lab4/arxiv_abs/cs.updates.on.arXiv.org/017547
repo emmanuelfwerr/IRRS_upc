@@ -1,0 +1,19 @@
+We prove strengthened lower bounds for constant-depth set-multilinear formulas. More precisely,
+we show that over any field, there is an explicit polynomial $f$ in VNP defined over $n^2$ variables,
+and of degree $n$, such that any product-depth $\Delta$ set-multilinear formula computing $f$
+has size at least $n^{\Omega \left( n^{1/\Delta}/\Delta\right)}$. The hard polynomial $f$ comes
+from the class of Nisan-Wigderson (NW) design-based polynomials. Our lower bounds improve upon
+the recent work of Limaye, Srinivasan and Tavenas (STOC 2022), where a lower bound of the form $(\log
+n)^{\Omega (\Delta n^{1/\Delta})}$ was shown for the size of product-depth $\Delta$ set-multilinear
+formulas computing the iterated matrix multiplication (IMM) polynomial of the same degree and
+over the same number of variables as $f$. Moreover, our lower bounds are novel for any $\Delta\geq
+2$. For general set-multilinear formulas, a lower bound of the form $ n^{\Omega(\log n)}$ was already
+obtained by Raz (J. ACM 2009) for the more general model of multilinear formulas. The techniques
+of LST give a different route to set-multilinear formula lower bounds, and allow them to obtain a
+lower bound of the form $(\log n)^{\Omega(\log n)}$ for the size of general set-multilinear formulas
+computing the IMM polynomial. Our proof techniques are another variation on those of LST, and enable
+us to show an improved lower bound (matching that of Raz) of the form $n^{\Omega(\log n)}$, albeit
+for the same polynomial $f$ in VNP (the NW polynomial). As observed by LST, if the same $n^{\Omega(\log
+n)}$ size lower bounds for unbounded-depth set-multilinear formulas could be obtained for the
+IMM polynomial, then using the self-reducibility of IMM and using hardness escalation results,
+this would imply super-polynomial lower bounds for general algebraic formulas. 

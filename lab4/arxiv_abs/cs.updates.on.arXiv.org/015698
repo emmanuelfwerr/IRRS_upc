@@ -1,0 +1,20 @@
+The aim of this thesis is to develop a theoretical framework to study parameter estimation of quantum
+channels. We study the task of estimating unknown parameters encoded in a channel in the sequential
+setting. A sequential strategy is the most general way to use a channel multiple times. Our goal is
+to establish lower bounds (called Cramer-Rao bounds) on the estimation error. The bounds we develop
+are universally applicable; i.e., they apply to all permissible quantum dynamics. We consider
+the use of catalysts to enhance the power of a channel estimation strategy. This is termed amortization.
+The power of a channel for a parameter estimation is determined by its Fisher information. Thus,
+we study how much a catalyst quantum state can enhance the Fisher information of a channel by defining
+the amortized Fisher information. We establish our bounds by proving that for certain Fisher information
+quantities, catalyst states do not improve the performance of a sequential estimation protocol
+compared to a parallel one. The technical term for this is an amortization collapse. We use this to
+establish bounds when estimating one parameter, or multiple parameters simultaneously. Our bounds
+apply universally and we also cast them as optimization problems. For the single parameter case,
+we establish bounds for general quantum channels using both the symmetric logarithmic derivative
+(SLD) Fisher information and the right logarithmic derivative (RLD) Fisher information. The task
+of estimating multiple parameters simultaneously is more involved than the single parameter case,
+because the Cramer-Rao bounds take the form of matrix inequalities. We establish a scalar Cramer-Rao
+bound for multiparameter channel estimation using the RLD Fisher information. For both single
+and multiparameter estimation, we provide a no-go condition for the so-called Heisenberg scaling
+using our RLD-based bound. 

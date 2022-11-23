@@ -1,0 +1,20 @@
+Quantification of uncertainty in deep-neural-networks (DNN) based image registration algorithms
+plays a critical role in the deployment of image registration algorithms for clinical applications
+such as surgical planning, intraoperative guidance, and longitudinal monitoring of disease progression
+or treatment efficacy as well as in research-oriented processing pipelines. Currently available
+approaches for uncertainty estimation in DNN-based image registration algorithms may result
+in sub-optimal clinical decision making due to potentially inaccurate estimation of the uncertainty
+of the registration stems for the assumed parametric distribution of the registration latent space.
+We introduce NPBDREG, a fully non-parametric Bayesian framework for uncertainty estimation in
+DNN-based deformable image registration by combining an Adam optimizer with stochastic gradient
+Langevin dynamics (SGLD) to characterize the underlying posterior distribution through posterior
+sampling. Thus, it has the potential to provide uncertainty estimates that are highly correlated
+with the presence of out of distribution data. We demonstrated the added-value of NPBDREG, compared
+to the baseline probabilistic VoxelMorph model (PrVXM), on brain MRI image registration using
+$390$ image pairs from four publicly available databases: MGH10, CMUC12, ISBR18 and LPBA40. The
+NPBDREG shows a better correlation of the predicted uncertainty with out-of-distribution data
+($r>0.95$ vs. $r<0.5$) as well as a 7.3%improvement in the registration accuracy (Dice score, $0.74$
+vs. $0.69$, $p \ll 0.01$), and 18% improvement in registration smoothness (percentage of folds
+in the deformation field, 0.014 vs. 0.017, $p \ll 0.01$). Finally, NPBDREG demonstrated a better
+generalization capability for data corrupted by a mixed structure noise (Dice score of $0.73$ vs.
+$0.69$, $p \ll 0.01$) compared to the baseline PrVXM approach. 

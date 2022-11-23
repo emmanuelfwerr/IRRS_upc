@@ -1,0 +1,20 @@
+Imputation of missing data is a task that plays a vital role in a number of engineering and science
+applications. Often such missing data arise in experimental observations from limitations of
+sensors or post-processing transformation errors. Other times they arise from numerical and algorithmic
+constraints in computer simulations. One such instance and the application emphasis of this paper
+are numerical simulations of storm surge. The simulation data corresponds to time-series surge
+predictions over a number of save points within the geographic domain of interest, creating a spatio-temporal
+imputation problem where the surge points are heavily correlated spatially and temporally, and
+the missing values regions are structurally distributed at random. Very recently, machine learning
+techniques such as neural network methods have been developed and employed for missing data imputation
+tasks. Generative Adversarial Nets (GANs) and GAN-based techniques have particularly attracted
+attention as unsupervised machine learning methods. In this study, the Generative Adversarial
+Imputation Nets (GAIN) performance is improved by applying convolutional neural networks instead
+of fully connected layers to better capture the correlation of data and promote learning from the
+adjacent surge points. Another adjustment to the method needed specifically for the studied data
+is to consider the coordinates of the points as additional features to provide the model more information
+through the convolutional layers. We name our proposed method as Convolutional Generative Adversarial
+Imputation Nets (Conv-GAIN). The proposed method's performance by considering the improvements
+and adaptations required for the storm surge data is assessed and compared to the original GAIN and
+a few other techniques. The results show that Conv-GAIN has better performance than the alternative
+methods on the studied data. 

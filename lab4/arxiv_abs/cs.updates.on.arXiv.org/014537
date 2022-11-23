@@ -1,0 +1,20 @@
+Multi-task optimization (MTO) studies how to simultaneously solve multiple optimization problems
+for the purpose of obtaining better performance on each problem. Over the past few years, evolutionary
+MTO (EMTO) was proposed to handle MTO problems via evolutionary algorithms. So far, many EMTO algorithms
+have been developed and demonstrated well performance on solving real-world problems. However,
+there remain many works to do in adapting knowledge transfer to task relatedness in EMTO. Different
+from the existing works, we develop a self-adaptive multi-task particle swarm optimization (SaMTPSO)
+through the developed knowledge transfer adaptation strategy, the focus search strategy and the
+knowledge incorporation strategy. In the knowledge transfer adaptation strategy, each task has
+a knowledge source pool that consists of all knowledge sources. Each source (task) outputs knowledge
+to the task. And knowledge transfer adapts to task relatedness via individuals' choice on different
+sources of a pool, where the chosen probabilities for different sources are computed respectively
+according to task's success rate in generating improved solutions via these sources. In the focus
+search strategy, if there is no knowledge source benefit the optimization of a task, then all knowledge
+sources in the task's pool are forbidden to be utilized except the task, which helps to improve the
+performance of the proposed algorithm. Note that the task itself is as a knowledge source of its own.
+In the knowledge incorporation strategy, two different forms are developed to help the SaMTPSO
+explore and exploit the transferred knowledge from a chosen source, each leading to a version of
+the SaMTPSO. Several experiments are conducted on two test suites. The results of the SaMTPSO are
+comparing to that of 3 popular EMTO algorithms and a particle swarm algorithm, which demonstrates
+the superiority of the SaMTPSO. 

@@ -1,0 +1,18 @@
+End-to-end optimization of diffractive optical elements (DOEs) profile through a digital differentiable
+model combined with computational imaging have gained an increasing attention in emerging applications
+due to the compactness of resultant physical setups. Despite recent works have shown the potential
+of this methodology to design optics, its performance in physical setups is still limited and affected
+by manufacturing artifacts of DOE, mismatch between simulated and resultant experimental point
+spread functions, and calibration errors. Additionally, the computational burden of the digital
+differentiable model to effectively design the DOE is increasing, thus limiting the size of the
+DOE that can be designed. To overcome the above mentioned limitations, the broadband imaging system
+with phase-only spatial light modulator (SLM) as an encoded DOE is proposed and developed in this
+paper. A co-design of the SLM phase pattern and image reconstruction algorithm is produced following
+the end-to-end strategy, using for optimization a convolutional neural network equipped with
+quantitative and qualitative loss functions. The optics of the imaging system is hybrid consisting
+of SLM as DOE and refractive lens. SLM phase-pattern is optimized by applying the Hardware-in-the-loop
+technique, which helps to eliminate the mismatch between numerical modeling and physical reality
+of image formation as light propagation is not numerically modeled but is physically done. In our
+experiments, the hybrid optics is implemented by the optical projection of the SLM phase-pattern
+on a lens plane for a depth range 0.4-1.9m. Comparison with compound multi-lens optics such as Sony
+A7 III and iPhone Xs Max cameras show that the proposed system is advanced in all-in-focus sharp imaging.

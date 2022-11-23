@@ -1,0 +1,20 @@
+Dynamical analysis of manufacturing and natural systems provides critical information about
+production of manufactured and natural resources respectively, thus playing an important role
+in assessing sustainability of these systems. However, current dynamic models for these systems
+exist as mechanistic models, simulation of which is computationally intensive and does not provide
+a simplified understanding of the mechanisms driving the overall dynamics. For such systems, lower-order
+models can prove useful to enable sustainability analysis through coupled dynamical analysis.
+There have been few attempts at finding low-order models of manufacturing and natural systems,
+with existing work focused on model development of individual mechanism level. This work seeks
+to fill this current gap in the literature of developing simplified dynamical models for these systems
+by developing reduced-order models using a machine learning (ML) approach. The approach is demonstrated
+on an entire soybean-oil to soybean-diesel process plant and a lake system. We use a grey-box ML method
+with a standard nonlinear optimization approach to identify relevant models of governing dynamics
+as ODEs using the data simulated from mechanistic models. Results show that the method identifies
+a high accuracy linear ODE models for the process plant, reflective of underlying linear stoichiometric
+mechanisms and mass balance driving the dynamics. For the natural systems, we modify the ML approach
+to include the effect of past dynamics, which gives non-linear ODE. While the modified approach
+provides a better match to dynamics of stream flow, it falls short of completely recreating the dynamics.
+We conclude that the proposed ML approach work well for systems where dynamics is smooth, such as
+in manufacturing plant whereas does not work perfectly well in case of chaotic dynamics such as water
+stream flow. 

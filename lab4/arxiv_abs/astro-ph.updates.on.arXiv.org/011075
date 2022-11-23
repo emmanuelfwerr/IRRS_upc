@@ -1,0 +1,19 @@
+The shear signal required for weak lensing analyses is small, so any detector-level effects which
+distort astronomical images can contaminate the inferred shear. The Nancy Grace Roman Space Telescope
+(Roman) will fly a focal plane with 18 Teledyne H4RG-10 near infrared (IR) detector arrays; these
+have never been used for weak lensing and they present unique instrument calibration challenges.
+A pair of previous investigations (Hirata & Choi 2020; Choi & Hirata 2020) demonstrated that spatiotemporal
+correlations of flat fields can effectively separate the brighter-fatter effect (BFE) and interpixel
+capacitance (IPC). Later work (Freudenburg et al. 2020) introduced a Fourier-space treatment
+of these correlations which allowed the authors to expand to higher orders in BFE, IPC, and classical
+nonlinearity (CNL). This work expands the previous formalism to include quantum yield and charge
+diffusion. We test the updated formalism on simulations and show that we can recover input characterization
+values. We then apply the formalism to visible and IR flat field data from three Roman flight candidate
+detectors. We fit a 2D Gaussian model to the charge diffusion at 0.5 $\mu$m wavelength, and find variances
+of $C_{11} = 0.1066\pm 0.0011$ pix$^2$ in the horizontal direction, $C_{22} = 0.1136\pm 0.0012$
+pix$^2$ in the vertical direction, and a covariance of $C_{12} = 0.0001\pm 0.0007$ pix$^2$ (stat)
+for SCA 20829. Last, we convert the asymmetry of the charge diffusion into an equivalent shear signal,
+and find a contamination of the shear correlation function to be $\xi_+ \sim 10^{-6}$ for each detector.
+This exceeds Roman's allotted error budget for the measurement by a factor of $\mathcal{O}(10)$
+in power (amplitude squared) but can likely be mitigated through standard methods for fitting the
+point spread function (PSF) since charge diffusion can be treated as a contribution to the PSF. 

@@ -1,0 +1,20 @@
+Context modeling and recognition represent complex tasks that allow mobile and ubiquitous computing
+applications to adapt to the user's situation. Current solutions mainly focus on limited context
+information generally processed on centralized architectures, potentially exposing users'
+personal data to privacy leakage, and missing personalization features. For these reasons on-device
+context modeling and recognition represent the current research trend in this area. Among the different
+information characterizing the user's context in mobile environments, social interactions and
+visited locations remarkably contribute to the characterization of daily life scenarios. In this
+paper we propose a novel, unsupervised and lightweight approach to model the user's social context
+and her locations based on ego networks directly on the user mobile device. Relying on this model,
+the system is able to extract high-level and semantic-rich context features from smartphone-embedded
+sensors data. Specifically, for the social context it exploits data related to both physical and
+cyber social interactions among users and their devices. As far as location context is concerned,
+we assume that it is more relevant to model the familiarity degree of a specific location for the user's
+context than the raw location data, both in terms of GPS coordinates and proximity devices. By using
+5 real-world datasets, we assess the structure of the social and location ego networks, we provide
+a semantic evaluation of the proposed models and a complexity evaluation in terms of mobile computing
+performance. Finally, we demonstrate the relevance of the extracted features by showing the performance
+of 3 machine learning algorithms to recognize daily-life situations, obtaining an improvement
+of 3% of AUROC, 9% of Precision, and 5% in terms of Recall with respect to use only features related
+to physical context. 

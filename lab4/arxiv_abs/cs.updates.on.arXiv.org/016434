@@ -1,0 +1,19 @@
+Deep-learning-based intelligent services have become prevalent in cyber-physical applications
+including smart cities and health-care. Deploying deep-learning-based intelligence near the
+end-user enhances privacy protection, responsiveness, and reliability. Resource-constrained
+end-devices must be carefully managed in order to meet the latency and energy requirements of computationally-intensive
+deep learning services. Collaborative end-edge-cloud computing for deep learning provides a
+range of performance and efficiency that can address application requirements through computation
+offloading. The decision to offload computation is a communication-computation co-optimization
+problem that varies with both system parameters (e.g., network condition) and workload characteristics
+(e.g., inputs). On the other hand, deep learning model optimization provides another source of
+tradeoff between latency and model accuracy. An end-to-end decision-making solution that considers
+such computation-communication problem is required to synergistically find the optimal offloading
+policy and model for deep learning services. To this end, we propose a reinforcement-learning-based
+computation offloading solution that learns optimal offloading policy considering deep learning
+model selection techniques to minimize response time while providing sufficient accuracy. We
+demonstrate the effectiveness of our solution for edge devices in an end-edge-cloud system and
+evaluate with a real-setup implementation using multiple AWS and ARM core configurations. Our
+solution provides 35% speedup in the average response time compared to the state-of-the-art with
+less than 0.9% accuracy reduction, demonstrating the promise of our online learning framework
+for orchestrating DL inference in end-edge-cloud systems. 

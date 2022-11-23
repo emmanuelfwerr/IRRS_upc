@@ -1,0 +1,19 @@
+Quantum Machine Learning (QML) is an emerging research area advocating the use of quantum computing
+for advancement in machine learning. Since the discovery of the capability of Parametrized Variational
+Quantum Circuits (VQC) to replace Artificial Neural Networks, they have been widely adopted to
+different tasks in Quantum Machine Learning. However, despite their potential to outperform neural
+networks, VQCs are limited to small scale applications given the challenges in scalability of quantum
+circuits. To address this shortcoming, we propose an algorithm that compresses the quantum state
+within the circuit using a tensor ring representation. Using the input qubit state in the tensor
+ring representation, single qubit gates maintain the tensor ring representation. However, the
+same is not true for two qubit gates in general, where an approximation is used to have the output as
+a tensor ring representation. Using this approximation, the storage and computational time increases
+linearly in the number of qubits and number of layers, as compared to the exponential increase with
+exact simulation algorithms. This approximation is used to implement the tensor ring VQC. The training
+of the parameters of tensor ring VQC is performed using a gradient descent based algorithm, where
+efficient approaches for backpropagation are used. The proposed approach is evaluated on two datasets:
+Iris and MNIST for the classification task to show the improved accuracy using more number of qubits.
+We achieve a test accuracy of 83.33\% on Iris dataset and a maximum of 99.30\% and 76.31\% on binary
+and ternary classification of MNIST dataset using various circuit architectures. The results
+from the IRIS dataset outperform the results on VQC implemented on Qiskit, and being scalable, demonstrates
+the potential for VQCs to be used for large scale Quantum Machine Learning applications. 

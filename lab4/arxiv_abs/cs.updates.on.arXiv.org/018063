@@ -1,0 +1,19 @@
+Augmentations are the key factor in determining the performance of any neural network as they provide
+a model with a critical edge in boosting its performance. Their ability to boost a model's robustness
+depends on two factors, viz-a-viz, the model architecture, and the type of augmentations. Augmentations
+are very specific to a dataset, and it is not imperative that all kinds of augmentation would necessarily
+produce a positive effect on a model's performance. Hence there is a need to identify augmentations
+that perform consistently well across a variety of datasets and also remain invariant to the type
+of architecture, convolutions, and the number of parameters used. Hence there is a need to identify
+augmentations that perform consistently well across a variety of datasets and also remain invariant
+to the type of architecture, convolutions, and the number of parameters used. This paper evaluates
+the effect of parameters using 3x3 and depth-wise separable convolutions on different augmentation
+techniques on MNIST, FMNIST, and CIFAR10 datasets. Statistical Evidence shows that techniques
+such as Cutouts and Random horizontal flip were consistent on both parametrically low and high architectures.
+Depth-wise separable convolutions outperformed 3x3 convolutions at higher parameters due to
+their ability to create deeper networks. Augmentations resulted in bridging the accuracy gap between
+the 3x3 and depth-wise separable convolutions, thus establishing their role in model generalization.
+At higher number augmentations did not produce a significant change in performance. The synergistic
+effect of multiple augmentations at higher parameters, with antagonistic effect at lower parameters,
+was also evaluated. The work proves that a delicate balance between architectural supremacy and
+augmentations needs to be achieved to enhance a model's performance in any given deep learning task.

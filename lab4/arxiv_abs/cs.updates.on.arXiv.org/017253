@@ -1,0 +1,19 @@
+Many software systems today face uncertain operating conditions, such as sudden changes in the
+availability of resources or unexpected user behavior. Without proper mitigation these uncertainties
+can jeopardize the system goals. Self-adaptation is a common approach to tackle such uncertainties.
+When the system goals may be compromised, the self-adaptive system has to select the best adaptation
+option to reconfigure by analyzing the possible adaptation options, i.e., the adaptation space.
+Yet, analyzing large adaptation spaces using rigorous methods can be resource- and time-consuming,
+or even be infeasible. One approach to tackle this problem is by using online machine learning to
+reduce adaptation spaces. However, existing approaches require domain expertise to perform feature
+engineering to define the learner, and support online adaptation space reduction only for specific
+goals. To tackle these limitations, we present 'Deep Learning for Adaptation Space Reduction Plus'
+-- DLASeR+ in short. DLASeR+ offers an extendable learning framework for online adaptation space
+reduction that does not require feature engineering, while supporting three common types of adaptation
+goals: threshold, optimization, and set-point goals. We evaluate DLASeR+ on two instances of an
+Internet-of-Things application with increasing sizes of adaptation spaces for different combinations
+of adaptation goals. We compare DLASeR+ with a baseline that applies exhaustive analysis and two
+state-of-the-art approaches for adaptation space reduction that rely on learning. Results show
+that DLASeR+ is effective with a negligible effect on the realization of the adaptation goals compared
+to an exhaustive analysis approach, and supports three common types of adaptation goals beyond
+the state-of-the-art approaches. 

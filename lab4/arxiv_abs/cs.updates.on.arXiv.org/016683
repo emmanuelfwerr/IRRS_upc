@@ -1,0 +1,19 @@
+Over the past few years, deep convolutional neural network-based methods have made great progress
+in semantic segmentation of street scenes. Some recent methods align feature maps to alleviate
+the semantic gap between them and achieve high segmentation accuracy. However, they usually adopt
+the feature alignment modules with the same network configuration in the decoder and thus ignore
+the different roles of stages of the decoder during feature aggregation, leading to a complex decoder
+structure. Such a manner greatly affects the inference speed. In this paper, we present a novel Stage-aware
+Feature Alignment Network (SFANet) based on the encoder-decoder structure for real-time semantic
+segmentation of street scenes. Specifically, a Stage-aware Feature Alignment module (SFA) is
+proposed to align and aggregate two adjacent levels of feature maps effectively. In the SFA, by taking
+into account the unique role of each stage in the decoder, a novel stage-aware Feature Enhancement
+Block (FEB) is designed to enhance spatial details and contextual information of feature maps from
+the encoder. In this way, we are able to address the misalignment problem with a very simple and efficient
+multi-branch decoder structure. Moreover, an auxiliary training strategy is developed to explicitly
+alleviate the multi-scale object problem without bringing additional computational costs during
+the inference phase. Experimental results show that the proposed SFANet exhibits a good balance
+between accuracy and speed for real-time semantic segmentation of street scenes. In particular,
+based on ResNet-18, SFANet respectively obtains 78.1% and 74.7% mean of class-wise Intersection-over-Union
+(mIoU) at inference speeds of 37 FPS and 96 FPS on the challenging Cityscapes and CamVid test datasets
+by using only a single GTX 1080Ti GPU. 

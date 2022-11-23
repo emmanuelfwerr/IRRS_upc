@@ -1,0 +1,20 @@
+Simulating electronic structure on a quantum computer requires encoding of fermionic systems
+onto qubits. Common encoding methods transform a fermionic system of $N$ spin-orbitals into an
+$N$-qubit system, but many of the fermionic configurations do not respect the required conditions
+and symmetries of the system so the qubit Hilbert space in this case may have unphysical states and
+thus can not be fully utilized. We propose a generalized qubit-efficient encoding (QEE) scheme
+that requires the qubit number to be only logarithmic in the number of configurations that satisfy
+the required conditions and symmetries. For the case of considering only the particle-conserving
+and singlet configurations, we reduce the qubit count to an upper bound of $\mathcal O(m\log_2N)$,
+where $m$ is the number of particles. This QEE scheme is demonstrated on an H$_2$ molecule in the 6-31G
+basis set and a LiH molecule in the STO-3G basis set using fewer qubits than the common encoding methods.
+We calculate the ground-state energy surfaces using a variational quantum eigensolver algorithm
+with a hardware-efficient ansatz circuit. We choose to use a hardware-efficient ansatz since most
+of the Hilbert space in our scheme is spanned by desired configurations so a heuristic search for
+an eigenstate is sensible. The simulations are performed on IBM Quantum machines and the Qiskit
+simulator with a noise model implemented from a IBM Quantum machine. Using the methods of measurement
+error mitigation and error-free linear extrapolation, we demonstrate that most of the distributions
+of the extrapolated energies using our QEE scheme agree with the exact results obtained by Hamiltonian
+diagonalization in the given basis sets within chemical accuracy. Our proposed scheme and results
+show the feasibility of quantum simulations for larger molecular systems in the noisy intermediate-scale
+quantum (NISQ) era. 

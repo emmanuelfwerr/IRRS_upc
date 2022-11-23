@@ -1,0 +1,19 @@
+The deep neural networks (DNNs)based autonomous driving systems (ADSs) are expected to reduce
+road accidents and improve safety in the transportation domain as it removes the factor of human
+error from driving tasks. The DNN based ADS sometimes may exhibit erroneous or unexpected behaviors
+due to unexpected driving conditions which may cause accidents. It is not possible to generalize
+the DNN model performance for all driving conditions. Therefore, the driving conditions that were
+not considered during the training of the ADS may lead to unpredictable consequences for the safety
+of autonomous vehicles. This study proposes an autoencoder and time series analysis based anomaly
+detection system to prevent the safety critical inconsistent behavior of autonomous vehicles
+at runtime. Our approach called DeepGuard consists of two components. The first component, the
+inconsistent behavior predictor, is based on an autoencoder and time series analysis to reconstruct
+the driving scenarios. Based on reconstruction error and threshold it determines the normal and
+unexpected driving scenarios and predicts potential inconsistent behavior. The second component
+provides on the fly safety guards, that is, it automatically activates healing strategies to prevent
+inconsistencies in the behavior. We evaluated the performance of DeepGuard in predicting the injected
+anomalous driving scenarios using already available open sourced DNN based ADSs in the Udacity
+simulator. Our simulation results show that the best variant of DeepGuard can predict up to 93 percent
+on the CHAUFFEUR ADS, 83 percent on DAVE2 ADS, and 80 percent of inconsistent behavior on the EPOCH
+ADS model, outperforming SELFORACLE and DeepRoad. Overall, DeepGuard can prevent up to 89 percent
+of all predicted inconsistent behaviors of ADS by executing predefined safety guards. 

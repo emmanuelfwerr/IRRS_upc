@@ -1,0 +1,20 @@
+Data assimilation presents computational challenges because many high-fidelity models must
+be simulated. Various deep-learning-based surrogate modeling techniques have been developed
+to reduce the simulation costs associated with these applications. However, to construct data-driven
+surrogate models, several thousand high-fidelity simulation runs may be required to provide training
+samples, and these computations can make training prohibitively expensive. To address this issue,
+in this work we present a framework where most of the training simulations are performed on coarsened
+geomodels. These models are constructed using a flow-based upscaling method. The framework entails
+the use of a transfer-learning procedure, incorporated within an existing recurrent residual
+U-Net architecture, in which network training is accomplished in three steps. In the first step.
+where the bulk of the training is performed, only low-fidelity simulation results are used. The
+second and third steps, in which the output layer is trained and the overall network is fine-tuned,
+require a relatively small number of high-fidelity simulations. Here we use 2500 low-fidelity
+runs and 200 high-fidelity runs, which leads to about a 90% reduction in training simulation costs.
+The method is applied for two-phase subsurface flow in 3D channelized systems, with flow driven
+by wells. The surrogate model trained with multifidelity data is shown to be nearly as accurate as
+a reference surrogate trained with only high-fidelity data in predicting dynamic pressure and
+saturation fields in new geomodels. Importantly, the network provides results that are significantly
+more accurate than the low-fidelity simulations used for most of the training. The multifidelity
+surrogate is also applied for history matching using an ensemble-based procedure, where accuracy
+relative to reference results is again demonstrated. 

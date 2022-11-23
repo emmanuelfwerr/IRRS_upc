@@ -1,0 +1,19 @@
+Static bug localization techniques that locate bugs at method granularity have gained much attention
+from both researchers and practitioners. For a static method-level bug localization technique,
+a key but challenging step is to fully retrieve the semantics of methods and bug reports. Currently,
+existing studies mainly use the same bag-of-word space to represent the semantics of methods and
+bug reports without considering structure information of methods and textual contexts of bug reports,
+which largely and negatively affects bug localization performance. To address this problem, we
+develop BLESER, a new bug localization technique based on enhanced semantic retrieval. Specifically,
+we use an AST-based code embedding model (capturing code structure better) to retrieve the semantics
+of methods, and word embedding models (capturing textual contexts better) to represent the semantics
+of bug reports. Then, a deep learning model is built on the enhanced semantic representations. During
+model building, we compare five typical word embedding models in representing bug reports and try
+to explore the usefulness of re-sampling strategies and cost-sensitive strategies in handling
+class imbalance problems. We evaluate our BLESER on five Java projects from the Defects4J dataset.
+We find that: (1) On the whole, the word embedding model ELMo outperformed the other four models (including
+word2vec, BERT, etc.) in facilitating bug localization techniques. (2) Among four strategies
+aiming at solving class imbalance problems, the strategy ROS (random over-sampling) performed
+much better than the other three strategies (including random under-sampling, Focal Loss, etc.).
+(3) By integrating ELMo and ROS into BLESER, at method-level bug localization, we could achieve
+MAP of 0.108-0.504, MRR of 0.134-0.510, and Accuracy@1 of 0.125-0.5 on five Defects4J projects.

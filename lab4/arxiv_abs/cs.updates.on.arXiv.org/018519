@@ -1,0 +1,20 @@
+Serverless computing, in particular the Function-as-a-Service (FaaS) execution model, has recently
+shown to be effective for running large-scale computations. However, little attention has been
+paid to highly-parallel applications with unbalanced and irregular workloads. Typically, these
+workloads have been kept out of the cloud due to the impossibility of anticipating their computing
+resources ahead of time, frequently leading to severe resource over- and underprovisioning situations.
+Our main insight in this article is, however, that the elasticity and ease of management of serverless
+computing technology can be a key enabler for effectively running these problematic workloads
+for the first time in the cloud. More concretely, we demonstrate that with a simple serverless executor
+pool abstraction one can achieve a better cost-performance trade-off than a Spark cluster of static
+size built upon large EC2 virtual machines. To support this conclusion, we evaluate three irregular
+algorithms: Unbalanced Tree Search (UTS), Mandelbrot Set using the Mariani-Silver algorithm
+and Betweenness Centrality (BC) on a random graph. For instance, our serverless implementation
+of UTS is able to outperform Spark by up to 55% with the same cost. We also show that a serverless environment
+can outperform a large EC2 in the BC algorithm by a 10% using the same amount of virtual CPUs. This provides
+the first concrete evidence that highly-parallel, irregular workloads can be efficiently executed
+using purely stateless functions with almost zero burden on users i.e., no need for users to understand
+non-obvious system-level parameters and optimizations. Furthermore, we show that UTS can benefit
+from the FaaS pay-as-you-go billing model, which makes it worth for the first time to enable certain
+application-level optimizations that can lead to significant improvements (e.g. of 41%) with
+negligible increase in cost. 

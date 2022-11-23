@@ -1,0 +1,19 @@
+Radiology reports contain a diverse and rich set of clinical abnormalities documented by radiologists
+during their interpretation of the images. Comprehensive semantic representations of radiological
+findings would enable a wide range of secondary use applications to support diagnosis, triage,
+outcomes prediction, and clinical research. In this paper, we present a new corpus of radiology
+reports annotated with clinical findings. Our annotation schema captures detailed representations
+of pathologic findings that are observable on imaging ("lesions") and other types of clinical problems
+("medical problems"). The schema used an event-based representation to capture fine-grained
+details, including assertion, anatomy, characteristics, size, count, etc. Our gold standard
+corpus contained a total of 500 annotated computed tomography (CT) reports. We extracted triggers
+and argument entities using two state-of-the-art deep learning architectures, including BERT.
+We then predicted the linkages between trigger and argument entities (referred to as argument roles)
+using a BERT-based relation extraction model. We achieved the best extraction performance using
+a BERT model pre-trained on 3 million radiology reports from our institution: 90.9%-93.4% F1 for
+finding triggers 72.0%-85.6% F1 for arguments roles. To assess model generalizability, we used
+an external validation set randomly sampled from the MIMIC Chest X-ray (MIMIC-CXR) database. The
+extraction performance on this validation set was 95.6% for finding triggers and 79.1%-89.7% for
+argument roles, demonstrating that the model generalized well to the cross-institutional data
+with a different imaging modality. We extracted the finding events from all the radiology reports
+in the MIMIC-CXR database and provided the extractions to the research community. 

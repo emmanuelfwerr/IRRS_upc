@@ -1,0 +1,19 @@
+We constrain the planetary atmospheric mass fraction at the time of the dispersal of the protoplanetary
+disk and the evolution of the stellar rotation rate for a dozen multi-planet systems that host sub-Neptunes
+and/or super-Earths. We employ a custom-developed Python code that we have dubbed Pasta (Planetary
+Atmospheres and Stellar roTation rAtes), which runs within a Bayesian framework to model the atmospheric
+evolution of exoplanets. The code combines MESA stellar evolutionary tracks, a model describing
+planetary structures, a model relating stellar rotation and activity level, and a model predicting
+planetary atmospheric mass-loss rates based on the results of hydrodynamic simulations. Through
+a MCMC scheme, we retrieved the posterior PDFs of all considered parameters. For ages older than
+about 2 Gyr, we find a median spin-down (i.e. $P(t)\propto t^y$) of $\bar{y}=0.38_{-0.27}^{+0.38}$,
+indicating a rotation decay slightly slower than classical literature values ($\approx$0.5),
+though still within $1\sigma$. At younger ages, we find a median spin-down (i.e. $P(t)\propto t^x$)
+of $\bar{x}=0.26_{-0.19}^{+0.42}$, which is below what is observed in young open clusters, though
+within $1\sigma$. However, these two results are likely due to a selection bias as the systems suitable
+to be analysed by Pasta contain at least one planet with a hydrogen-dominated atmosphere, implying
+that the host star has more likely evolved as a slow rotator. We further look for correlations between
+the initial atmospheric mass fraction of the considered planets and system parameters, but without
+finding any. The TESS, CHEOPS, and PLATO missions are going to be instrumental in identifying and
+precisely measuring systems amenable to Pasta's analysis and can thus potentially constrain planet
+formation and stellar evolution. 

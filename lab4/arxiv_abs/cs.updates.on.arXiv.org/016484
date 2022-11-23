@@ -1,0 +1,19 @@
+Intelligent Transportation Systems (ITS) underpin the concept of Mobility as a Service (MaaS),
+which requires universal and seamless users' access across multiple public and private transportation
+systems while allowing operators' proportional revenue sharing. Current user sensing technologies
+such as Walk-in/Walk-out (WIWO) and Check-in/Check-out (CICO) have limited scalability for large-scale
+deployments. These limitations prevent ITS from supporting analysis, optimization, calculation
+of revenue sharing, and control of MaaS comfort, safety, and efficiency. We focus on the concept
+of implicit Be-in/Be-out (BIBO) smartphone-sensing and classification. To close the gap and enhance
+smartphones towards MaaS, we developed a proprietary smartphone-sensing platform collecting
+contemporary Bluetooth Low Energy (BLE) signals from BLE devices installed on buses and Global
+Positioning System (GPS) locations of both buses and smartphones. To enable the training of a model
+based on GPS features against the BLE pseudo-label, we propose the Cause-Effect Multitask Wasserstein
+Autoencoder (CEMWA). CEMWA combines and extends several frameworks around Wasserstein autoencoders
+and neural networks. As a dimensionality reduction tool, CEMWA obtains an auto-validated representation
+of a latent space describing users' smartphones within the transport system. This representation
+allows BIBO clustering via DBSCAN. We perform an ablation study of CEMWA's alternative architectures
+and benchmark against the best available supervised methods. We analyze performance's sensitivity
+to label quality. Under the na\"ive assumption of accurate ground truth, XGBoost outperforms CEMWA.
+Although XGBoost and Random Forest prove to be tolerant to label noise, CEMWA is agnostic to label
+noise by design and provides the best performance with an 88\% F1 score. 

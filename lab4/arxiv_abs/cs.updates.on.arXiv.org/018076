@@ -1,0 +1,20 @@
+Deep-learning models based on whole-slide digital pathology images (WSIs) become increasingly
+popular for predicting molecular biomarkers. Instance-based models has been the mainstream strategy
+for predicting genetic alterations using WSIs although bag-based models along with self-attention
+mechanism-based algorithms have been proposed for other digital pathology applications. In this
+paper, we proposed a novel Attention-based Multiple Instance Mutation Learning (AMIML) model
+for predicting gene mutations. AMIML was comprised of successive 1-D convolutional layers, a decoder,
+and a residual weight connection to facilitate further integration of a lightweight attention
+mechanism to detect the most predictive image patches. Using data for 24 clinically relevant genes
+from four cancer cohorts in The Cancer Genome Atlas (TCGA) studies (UCEC, BRCA, GBM and KIRC), we
+compared AMIML with one popular instance-based model and four recently published bag-based models
+(e.g., CHOWDER, HE2RNA, etc.). AMIML demonstrated excellent robustness, not only outperforming
+all the five baseline algorithms in the vast majority of the tested genes (17 out of 24), but also providing
+near-best-performance for the other seven genes. Conversely, the performance of the baseline
+published algorithms varied across different cancers/genes. In addition, compared to the published
+models for genetic alterations, AMIML provided a significant improvement for predicting a wide
+range of genes (e.g., KMT2C, TP53, and SETD2 for KIRC; ERBB2, BRCA1, and BRCA2 for BRCA; JAK1, POLE,
+and MTOR for UCEC) as well as produced outstanding predictive models for other clinically relevant
+gene mutations, which have not been reported in the current literature. Furthermore, with the flexible
+and interpretable attention-based MIL pooling mechanism, AMIML could further zero-in and detect
+predictive image patches. 

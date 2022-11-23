@@ -1,0 +1,20 @@
+We propose a series of quantum algorithms for computing a wide range of quantum entropies and distances,
+including the von Neumann entropy, quantum R\'{e}nyi entropy, trace distance, and fidelity. The
+proposed algorithms significantly outperform the best known (and even quantum) ones in the low-rank
+case, some of which achieve exponential speedups. In particular, for $N$-dimensional quantum
+states of rank $r$, our proposed quantum algorithms for computing the von Neumann entropy, trace
+distance and fidelity within additive error $\varepsilon$ have time complexity of $\tilde O(r^2/\varepsilon^2)$,
+$\tilde O(r^5/\varepsilon^6)$ and $\tilde O(r^{6.5}/\varepsilon^{7.5})$, respectively.
+In contrast, the known algorithms for the von Neumann entropy and trace distance require quantum
+time complexity of $\Omega(N)$ [AISW19,GL20,GHS21], and the best known one for fidelity requires
+$\tilde O(r^{21.5}/\varepsilon^{23.5})$ [WZC+21]. The key idea of our quantum algorithms is
+to extend block-encoding from unitary operators in previous work to quantum states (i.e., density
+operators). It is realized by developing several convenient techniques to manipulate quantum
+states and extract information from them. In particular, we introduce a novel technique for eigenvalue
+transformation of density operators and their (non-integer) positive powers, based on the powerful
+quantum singular value transformation (QSVT) [GSLW19]. The advantage of our techniques over the
+existing methods is that no restrictions on density operators are required; in sharp contrast,
+the previous methods usually require a lower bound of the minimal non-zero eigenvalue of density
+operators. In addition, we provide some techniques of independent interest for trace estimation,
+linear combinations, and eigenvalue threshold projectors of (subnormalized) density operators,
+which will be, we believe, useful in other quantum algorithms. 

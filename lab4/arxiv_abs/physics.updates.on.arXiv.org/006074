@@ -1,0 +1,20 @@
+Reliably predictive simulation of complex flows requires a level of model sophistication and robustness
+exceeding the capabilities of current Reynolds-averaged Navier-Stokes (RANS) models. The necessary
+capability can often be provided by well-resolved large eddy simulation (LES), but, for many flows
+of interest, such simulations are too computationally intensive to be performed routinely. In
+principle, hybrid RANS/LES (HRL) models capable of transitioning through arbitrary levels of
+modeled and resolved turbulence would ameliorate both RANS deficiencies and LES expense. However,
+these HRL approaches have led to a host of unique complications, in addition to those already present
+in RANS and LES. This work proposes a modeling approach aimed at overcoming such challenges. The
+approach presented here relies on splitting the turbulence model into three distinct components:
+two responsible for the standard subgrid model roles of either providing the unresolved stress
+or dissipation and a third which reduces the model length scale by creating resolved turbulence.
+This formulation renders blending functions unnecessary in HRL. Further, the split-model approach
+both reduces the physics-approximation burden on simple eddy-viscosity-based models and provides
+convenient flexibility in model selection. In regions where the resolution is adequate to support
+additional turbulence, fluctuations are generated at the smallest locally resolved scales of
+motion. This active forcing drives the system towards a balance between RANS and grid-resolved
+LES for any combination of resolution and flow while the split-model formulation prevents local
+disruption to the total stress. The model is demonstrated on fully-developed, incompressible
+channel flow [1] and the periodic hill [2], in which it is shown to produce accurate results and avoid
+common HRL shortcomings, such as model stress depletion. 

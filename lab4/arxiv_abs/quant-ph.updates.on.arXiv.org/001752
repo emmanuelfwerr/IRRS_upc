@@ -1,0 +1,19 @@
+In the quantum computation verification problem, a quantum server wants to convince a client that
+the output of evaluating a quantum circuit $C$ is some result that it claims. This problem is considered
+very important both theoretically and practically in quantum computation [arXiv:1709.06984],
+[arXiv:1704.04487], [arXiv:1209.0449]. The client is considered to be limited in computational
+power, and one desirable property is that the client can be completely classical, which leads to
+the classical verification of quantum computation (CVQC) problem. In terms of the total time complexity,
+the fastest single-server CVQC protocol so far has complexity $O(poly(\kappa)|C|^3)$ where $|C|$
+is the size of the circuit to be verified and $\kappa$ is the security parameter, given by Mahadev
+[arXiv:1804.01082]. In this work, by developing new techniques, we give a new CVQC protocol with
+complexity $O(poly(\kappa)|C|)$, which is significantly faster than existing protocols. Our
+protocol is secure in the quantum random oracle model [arXiv:1008.0931] assuming the existence
+of noisy trapdoor claw-free functions [arXiv:1804.00640], which are both extensively used assumptions
+in quantum cryptography. Along the way, we also give a new classical channel remote state preparation
+protocol for states in $\{|+_\theta\rangle=\frac{1}{\sqrt{2}}(|0\rangle+e^{i\theta\pi/4}|1\rangle):\theta\in
+\{0,1\cdots 7\}\}$, another basic primitive in quantum cryptography. Our protocol allows for
+parallel verifiable preparation of $L$ independently random states in this form (up to a constant
+overall error and a possibly unbounded server-side isometry), and runs in only $O(poly(\kappa)L)$
+time and constant rounds; for comparison, existing works (even for possibly simpler state families)
+all require very large or unestimated time and round complexities [arXiv:1904.06320][arXiv:1904.06303][arXiv:2201.13445][arXiv:2201.13430].

@@ -1,0 +1,19 @@
+The Covid-19 pandemic has forced the workforce to switch to working from home, which has put significant
+burdens on the management of broadband networks and called for intelligent service-by-service
+resource optimization at the network edge. In this context, network traffic prediction is crucial
+for operators to provide reliable connectivity across large geographic regions. Although recent
+advances in neural network design have demonstrated potential to effectively tackle forecasting,
+in this work we reveal based on real-world measurements that network traffic across different regions
+differs widely. As a result, models trained on historical traffic data observed in one region can
+hardly serve in making accurate predictions in other areas. Training bespoke models for different
+regions is tempting, but that approach bears significant measurement overhead, is computationally
+expensive, and does not scale. Therefore, in this paper we propose TransMUSE, a novel deep learning
+framework that clusters similar services, groups edge-nodes into cohorts by traffic feature similarity,
+and employs a Transformer-based Multi-service Traffic Prediction Network (TMTPN), which can
+be directly transferred within a cohort without any customization. We demonstrate that TransMUSE
+exhibits imperceptible performance degradation in terms of mean absolute error (MAE) when forecasting
+traffic, compared with settings where a model is trained for each individual edge node. Moreover,
+our proposed TMTPN architecture outperforms the state-of-the-art, achieving up to 43.21% lower
+MAE in the multi-service traffic prediction task. To the best of our knowledge, this is the first
+work that jointly employs model transfer and multi-service traffic prediction to reduce measurement
+overhead, while providing fine-grained accurate demand forecasts for edge services provisioning.

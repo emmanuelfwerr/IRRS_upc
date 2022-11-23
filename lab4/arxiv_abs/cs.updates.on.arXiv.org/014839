@@ -1,0 +1,20 @@
+In this paper, we study two natural generalizations of ordered $k$-median, named robust ordered
+$k$-median and fault-tolerant ordered $k$-median. In ordered $k$-median, given a finite metric
+space $(X,d)$, we seek to open $k$ facilities $S\subseteq X$ which induce a service cost vector $\vec{c}=\{d(j,S):j\in
+X\}$, and minimize the ordered objective $w^\top\vec{c}^\downarrow$. Here $d(j,S)=\min_{i\in
+S}d(j,i)$ is the minimum distance between $j$ and facilities in $S$, $w\in\mathbb{R}^{|X|}$ is
+a given non-increasing non-negative vector, and $\vec{c}^\downarrow$ is the non-increasingly
+sorted version of $\vec{c}$. The current best result is a $(5+\epsilon)$-approximation [CS19].
+We first consider robust ordered $k$-median, a.k.a. ordered $k$-median with outliers, where the
+input consists of an ordered $k$-median instance and parameter $m\in\mathbb{Z}_+$. The goal is
+to open $k$ facilities $S$, select $m$ clients $T\subseteq X$ and assign the nearest open facility
+to each $j\in T$. The service cost vector is $\vec{c}=\{d(j,S):j\in T\}$ and $w$ is in $\mathbb{R}^m$.
+We introduce a novel yet simple objective function that enables linear analysis of the non-linear
+ordered objective, apply an iterative rounding framework [KLS18] and obtain a constant-factor
+approximation. We devise the first constant-approximations for ordered matroid median and ordered
+knapsack median using the same method. We also consider fault-tolerant ordered $k$-median, where
+besides the same input as ordered $k$-median, we are also given additional client requirements
+$\{r_j\in\mathbb{Z}_+:j\in X\}$ and need to assign $r_j$ distinct open facilities to each client
+$j\in X$. The service cost of $j$ is the sum of distances to its assigned facilities, and the objective
+is the same. We obtain a constant-factor approximation using a novel LP relaxation with constraints
+created via a new sparsification technique. 

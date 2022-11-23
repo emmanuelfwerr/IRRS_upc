@@ -1,0 +1,20 @@
+Machine learning techniques including neural networks are popular tools for materials and chemical
+scientists with applications that may provide viable alternative methods in the analysis of structure
+and energetics of systems ranging from crystals to biomolecules. However, efforts are less abundant
+for prediction of dynamics. Here we explore the ability of three well established recurrent neural
+network architectures for forecasting the energetics of a macromolecular polymer-lipid aggregate
+solvated in ethyl acetate at ambient conditions. Data models generated from recurrent neural networks
+are trained and tested on nanoseconds-long time series of the intra-macromolecules potential
+energy and their interaction energy with the solvent generated from Molecular Dynamics and containing
+half million points. Our exhaustive analyses convey that the three recurrent neural network investigated
+generate data models with limited capability of reproducing the energetic fluctuations and yielding
+short or long term energetics forecasts with underlying distribution of points inconsistent with
+the input series distributions. We propose an in silico experimental protocol consisting on forming
+an ensemble of artificial network models trained on an ensemble of series with additional features
+from time series containing pre-clustered time patterns of the original series. The forecast process
+improves by predicting a band of forecasted time series with a spread of values consistent with the
+molecular dynamics energy fluctuations span. However, the distribution of points from the band
+of forecasts is not optimal. Although the three inspected recurrent neural networks were unable
+of generating single models that reproduce the actual fluctuations of the inspected molecular
+system energies in thermal equilibrium at the nanosecond scale, the proposed protocol provides
+useful estimates of the molecular fate 

@@ -1,0 +1,20 @@
+Floating offshore structures often exhibit low-frequency oscillatory motions in the horizontal
+plane, with amplitudes in the same order as their characteristic dimensions and larger than the
+corresponding wave-frequency responses, making the traditional formulations in an inertial
+coordinate system inconsistent and less applicable. To address this issue, we extend and explore
+an alternative formulation completely based on a non-inertial body-fixed coordinate system.
+Unlike the traditional seakeeping models, this formulation consistently allows for large-amplitude
+horizontal motions. A numerical model based on a higher-order boundary element is applied to solve
+the resulting boundary-value problems in the time domain. A recently developed new set of explicit
+time-integration methods, which do not necessitate the use of upwind schemes for spatial derivatives,
+are adopted to deal with the convective-type free-surface conditions. To suppress the weak saw-tooth
+instabilities on the free surface in time marching, we also present novel low-pass filters based
+on optimized weighted-least-squares, which are in principle applicable for both structured and
+unstructured meshes. The presented schemes for the convection equation and the low-pass filter
+are also relevant for other engineering fields dealing with similar mathematical problems. For
+ship seakeeping and added resistance analyses, we show that the present computational model does
+not need to use soft-springs for surge and sway, in contrast to the traditional models. For a floating
+monopile, the importance of consistently taking into account the effects of large horizontal motions
+is demonstrated considering the bi-chromatic incident waves. The present model is considered
+as a complete 2nd order wave-load model, as all the 2nd order wave loads, including the sum-frequency
+and difference-frequency components, are solved simultaneously. 

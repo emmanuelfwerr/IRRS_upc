@@ -1,0 +1,18 @@
+Image denoising is of vital importance in many imaging or computer vision related areas. With the
+convolutional neural networks showing strong capability in computer vision tasks, the performance
+of image denoising has also been brought up by CNN based methods. Though CNN based image denoisers
+show promising results on this task, most of the current CNN based methods try to learn the mapping
+from noisy image to clean image directly, which lacks the explicit exploration of prior knowledge
+of images and noises. Natural images are observed to obey the reciprocal power law, implying the
+low-frequency band of image tend to occupy most of the energy. Thus in the condition of AGWN (additive
+gaussian white noise) deterioration, low-frequency band tend to preserve a higher PSNR than high-frequency
+band. Considering the spatial morphological consistency of different frequency bands, low-frequency
+band with more fidelity can be used as a guidance to refine the more contaminated high-frequency
+bands. Based on this thought, we proposed a novel network architecture denoted as IGNet, in order
+to refine the frequency bands from low to high in a progressive manner. Firstly, it decomposes the
+feature maps into high- and low-frequency subbands using DWT (discrete wavelet transform) iteratively,
+and then each low band features are used to refine the high band features. Finally, the refined feature
+maps are processed by a decoder to recover the clean result. With this design, more inter-frequency
+prior and information are utilized, thus the model size can be lightened while still perserves competitive
+results. Experiments on several public datasets show that our model obtains competitive performance
+comparing with other state-of-the-art methods yet with a lightweight structure. 

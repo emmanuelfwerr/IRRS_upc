@@ -1,0 +1,20 @@
+The DeepDoseNet 3D dose prediction model based on ResNet and Dilated DenseNet is proposed. The 340
+head-and-neck datasets from the 2020 AAPM OpenKBP challenge were utilized, with 200 for training,
+40 for validation, and 100 for testing. Structures include 56Gy, 63Gy, 70Gy PTVs, and brainstem,
+spinal cord, right parotid, left parotid, larynx, esophagus, and mandible OARs. Mean squared error
+(MSE) loss, mean absolute error (MAE) loss, and MAE plus dose-volume histogram (DVH) based loss
+functions were investigated. Each model's performance was compared using a 3D dose score, $\bar{S_{D}}$,
+(mean absolute difference between ground truth and predicted 3D dose distributions) and a DVH score,
+$\bar{S_{DVH}}$ (mean absolute difference between ground truth and predicted dose-volume metrics).Furthermore,
+DVH metrics Mean[Gy] and D0.1cc [Gy] for OARs and D99%, D95%, D1% for PTVs were computed. DeepDoseNet
+with the MAE plus DVH-based loss function had the best dose score performance of the OpenKBP entries.
+MAE+DVH model had the lowest prediction error (P<0.0001, Wilcoxon test) on validation and test
+datasets (validation: $\bar{S_{D}}$=2.3Gy, $\bar{S_{DVH}}$=1.9Gy; test: $\bar{S_{D}}$=2.0Gy,
+$\bar{S_{DVH}}$=1.6Gy) followed by the MAE model (validation: $\bar{S_{D}}$=3.6Gy, $\bar{S_{DVH}}$=2.4Gy;
+test: $\bar{S_{D}}$=3.5Gy, $\bar{S_{DVH}}$=2.3Gy). The MSE model had the highest prediction
+error (validation: $\bar{S_{D}}$=3.7Gy, $\bar{S_{DVH}}$=3.2Gy; test: $\bar{S_{D}}$=3.6Gy,
+$\bar{S_{DVH}}$=3.0Gy). No significant difference was found among models in terms of Mean [Gy],
+but the MAE+DVH model significantly outperformed the MAE and MSE models in terms of D0.1cc[Gy],
+particularly for mandible and parotids on both validation (P<0.01) and test (P<0.0001) datasets.
+MAE+DVH outperformed (P<0.0001) in terms of D99%, D95%, D1% for targets. MAE+DVH reduced $\bar{S_{D}}$
+by ~60% and $\bar{S_{DVH}}$ by ~70%. 

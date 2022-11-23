@@ -1,0 +1,18 @@
+In this paper, we make some progress in addressing Woodall's Conjecture, and the refuted Edmonds-Giles
+Conjecture on packing dijoins in unweighted and weighted digraphs. Let $D=(V,A)$ be a digraph,
+and let $w\in \mathbb{Z}^A_{\geq 0}$. Suppose every dicut has weight at least $\tau$, for some integer
+$\tau\geq 2$. Let $\rho(\tau,D,w):=\frac{1}{\tau}\sum_{v\in V} m_v$, where each $m_v$ is the
+integer in $\{0,1,\ldots,\tau-1\}$ equal to $w(\delta^+(v))-w(\delta^-(v))$ mod $\tau$. In
+this paper, we prove the following results, amongst others: (1) If $w={\bf 1}$, then $A$ can be partitioned
+into a $k$-dijoin and a $(\tau-k)$-dijoin, for every $k\in [\tau]$. (2) If $\rho(\tau,D,w)\in
+\{0,1\}$, then there is an equitable $w$-weighted packing of dijoins of size $\tau$. (3) If $\rho(\tau,D,w)=
+2$, then there is a $w$-weighted packing of dijoins of size $\tau$. (4) If $w={\bf 1}$ and $\rho(\tau,D,w)=3$,
+then $A$ can be partitioned into two dijoins and a $(\tau-2)$-dijoin. Each result is best possible:
+(1) and (4) do not hold for general $w$, (2) does not hold for $\rho(\tau,D,w)=2$ even if $w={\bf 1}$,
+and (3) does not hold for $\rho(\tau,D,w)=3$. The results are rendered possible by a \emph{Decompose,
+Lift, and Reduce procedure}, which turns $(D,w)$ into a set of \emph{sink-regular weighted $(\tau,\tau+1)$-bipartite
+digraphs}, each of which is a weighted digraph where every vertex is a sink of weighted degree $\tau$
+or a source of weighted degree $\tau,\tau+1$, and every dicut has weight at least $\tau$. Our results
+give rise to a number of approaches for resolving Woodall's Conjecture, fixing the refuted Edmonds-Giles
+Conjecture, and the $\tau=2$ Conjecture for the clutter of minimal dijoins. They also show an intriguing
+connection to Barnette's Conjecture. 

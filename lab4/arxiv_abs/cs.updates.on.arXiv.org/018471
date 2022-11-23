@@ -1,0 +1,19 @@
+Federated Recommendation can mitigate the systematical privacy risks of traditional recommendation
+since it allows the model training and online inferring without centralized user data collection.
+Most existing works assume that all user devices are available and adequate to participate in the
+Federated Learning. However, in practice, the complex recommendation models designed for accurate
+prediction and massive item data cause a high computation and communication cost to the resource-constrained
+user device, resulting in poor performance or training failure. Therefore, how to effectively
+compress the computation and communication overhead to achieve efficient federated recommendations
+across ubiquitous mobile devices remains a significant challenge. This paper introduces split
+learning into the two-tower recommendation models and proposes STTFedRec, a privacy-preserving
+and efficient cross-device federated recommendation framework. STTFedRec achieves local computation
+reduction by splitting the training and computation of the item model from user devices to a performance-powered
+server. The server with the item model provides low-dimensional item embeddings instead of raw
+item data to the user devices for local training and online inferring, achieving server broadcast
+compression. The user devices only need to perform similarity calculations with cached user embeddings
+to achieve efficient online inferring. We also propose an obfuscated item request strategy and
+multi-party circular secret sharing chain to enhance the privacy protection of model training.
+The experiments conducted on two public datasets demonstrate that STTFedRec improves the average
+computation time and communication size of the baseline models by about 40 times and 42 times in the
+best-case scenario with balanced recommendation accuracy. 

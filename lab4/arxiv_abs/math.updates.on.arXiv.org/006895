@@ -1,0 +1,20 @@
+We solve the problem of estimating the distribution of presumed i.i.d. observations for the total
+variation loss. Our approach is based on density models and is versatile enough to cope with many
+different ones, including some density models for which the Maximum Likelihood Estimator (MLE
+for short) does not exist. We mainly illustrate the properties of our estimator on models of densities
+on the line that satisfy a shape constraint. We show that it possesses some similar optimality properties,
+with regard to some global rates of convergence, as the MLE does when it exists. It also enjoys some
+adaptation properties with respect to some specific target densities in the model for which our
+estimator is proven to converge at parametric rate. More important is the fact that our estimator
+is robust, not only with respect to model misspecification, but also to contamination, the presence
+of outliers among the dataset and the equidistribution assumption. This means that the estimator
+performs almost as well as if the data were i.i.d. with density $p$ in a situation where these data
+are only independent and most of their marginals are close enough in total variation to a distribution
+with density $p$. We also show that our estimator converges to the average density of the data, when
+this density belongs to the model, even when none of the marginal densities belongs to it. Our main
+result on the risk of the estimator takes the form of an exponential deviation inequality which is
+non-asymptotic and involves explicit numerical constants. We deduce from it several global rates
+of convergence, including some bounds for the minimax $\mathbb{L}_{1}$-risks over the sets of
+concave and log-concave densities. These bounds derive from some specific results on the approximation
+of densities which are monotone, convex, concave and log-concave. Such results may be of independent
+interest. 

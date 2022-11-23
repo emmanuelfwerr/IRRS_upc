@@ -1,0 +1,19 @@
+Fault-tolerant measurement-based quantum computation (MBQC) with recent progress on quantum
+technologies leads to a promising scalable platform for realizing quantum computation, conducted
+by preparing a large-scale graph state over many qubits and performing single-qubit measurements
+on the state. With fault-tolerant MBQC, even if the graph-state preparation suffers from errors
+occurring at an unknown physical error rate, we can suppress the effect of the errors. Verifying
+graph states is vital to test whether we can conduct MBQC as desired even with such errors. However,
+problematically, existing state-of-the-art protocols for graph-state verification by fidelity
+estimation have required measurements on many copies of the entire graph state and hence have been
+prohibitively costly in terms of the number of qubits and the runtime. We here construct an efficient
+alternative framework for testing graph states for fault-tolerant MBQC based on the theory of property
+testing. Our test protocol accepts with high probability when the physical error rate is small enough
+to make fault-tolerant MBQC feasible and rejects when the rate is above the threshold of fault-tolerant
+MBQC. The novelty of our protocol is that we use only a single copy of the $N$-qubit graph state and
+single-qubit Pauli measurements only on a constant-sized subset of the qubits; thus, the protocol
+has a constant runtime independently of $N$. Furthermore, we can immediately use the rest of the
+graph state for fault-tolerant MBQC if the protocol accepts. These results achieve a significant
+advantage over prior art for graph-state verification in the number of qubits and the total runtime.
+Consequently, our work offers a new route to a fast and practical framework for benchmarking large-scale
+quantum state preparation. 

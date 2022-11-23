@@ -1,0 +1,19 @@
+Fix $D>0$. For $r>0$, let $X^{(r)}(\cdot)$ be a Brownian motion with diffusion coefficient $D$,
+equipped with an exponential clock with rate $r$, so that when the clock rings the process jumps to
+the origin, where it resets and begins anew. Denote expectations with respect to this process by
+$E_0^{(r)}$. This process, by now rather well-studied, is called Brownian motion with resetting.
+For $T>0$, consider also a process $X^{\text{bb};T}(\cdot)$ that performs a Brownian bridge with
+diffusion coefficient $D$ and bridge interval $T$, and then at time $T$ resets and starts anew from
+the origin. Denote expectations with respect to this process by $E_0^{\text{bb};T}$. The two resetting
+processes, one with jumps and the other continuous, search for a random target $a\in\mathbb{R}$
+that has a known distribution $\mu$. Letting $\tau_a$ denote the hitting time of $a$, the expected
+time to locate the target is $\int_{\mathbb{R}}\big(E_0^{(r)}\tau_a\big)\mu(da)$ for the first
+process and $\int_{\mathbb{R}}\big(E_0^{\text{bb};T}\tau_a\big)\mu(da)$ for the second
+process. It is known that $E_0^{(r)}\tau_a=\frac{e^{\sqrt{\frac{2r}D}\thinspace |a|}-1}r$.
+We calculate $E_0^{\text{bb};T}\tau_a$. Then we calculate $\int_{\mathbb{R}}\big(E_0^{(r)}\tau_a\big)\mu(da)$
+and $\int_{\mathbb{R}}\big(E_0^{\text{bb};T}\tau_a\big)\mu(da)$ in the case that $\mu$ is
+a centered Gaussian distribution with variance $\sigma^2$, which is the mean-squared distance
+of the target from the origin. Finally, we compare $\inf_{r>0}\int_{\mathbb{R}}\big(E_0^{(r)}\tau_a\big)\mu(da)$
+to $\inf_{T>0}\int_{\mathbb{R}}\big(E_0^{\text{bb};T}\tau_a\big)\mu(da)$, obtaining
+$\inf_{r>0}\int_{\mathbb{R}}\big(E_0^{(r)}\tau_a\big)\mu(da)\approx3.548\frac{\sigma^2}D$
+and $\inf_{T>0}\int_{\mathbb{R}}\big(E_0^{\text{bb};T}\tau_a\big)\mu(da)\approx4.847\frac{\sigma^2}D$.

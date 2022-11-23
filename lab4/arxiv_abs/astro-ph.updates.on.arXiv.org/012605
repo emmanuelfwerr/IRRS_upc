@@ -1,0 +1,19 @@
+In the era of large sky surveys, photometric redshifts (photo-z) represent crucial information
+for galaxy evolution and cosmology studies. In this work, we propose a new Machine Learning (ML)
+tool called Galaxy morphoto-Z with neural Networks (GaZNet-1), which uses both images and multi-band
+photometry measurements to predict galaxy redshifts, with accuracy, precision and outlier fraction
+superior to standard methods based on photometry only. As a first application of this tool, we estimate
+photo-z of a sample of galaxies in the Kilo-Degree Survey (KiDS). GaZNet-1 is trained and tested
+on $\sim140 000$ galaxies collected from KiDS Data Release 4 (DR4), for which spectroscopic redshifts
+are available from different surveys. This sample is dominated by bright (MAG$\_$AUTO$<21$) and
+low redshift ($z < 0.8$) systems, however, we could use $\sim$ 6500 galaxies in the range $0.8 < z <
+3$ to effectively extend the training to higher redshift. The inputs are the r-band galaxy images
+plus the 9-band magnitudes and colours, from the combined catalogs of optical photometry from KiDS
+and near-infrared photometry from the VISTA Kilo-degree Infrared survey. By combining the images
+and catalogs, GaZNet-1 can achieve extremely high precision in normalized median absolute deviation
+(NMAD=0.014 for lower redshift and NMAD=0.041 for higher redshift galaxies) and low fraction of
+outliers ($0.4$\% for lower and $1.27$\% for higher redshift galaxies). Compared to ML codes using
+only photometry as input, GaZNet-1 also shows a $\sim 10-35$% improvement in precision at different
+redshifts and a $\sim$ 45% reduction in the fraction of outliers. We finally discuss that, by correctly
+separating galaxies from stars and active galactic nuclei, the overall photo-z outlier fraction
+of galaxies can be cut down to $0.3$\%. 

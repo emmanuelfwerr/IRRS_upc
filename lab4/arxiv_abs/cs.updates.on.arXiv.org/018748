@@ -1,0 +1,19 @@
+Platooning and coordination are two implementation strategies that are frequently proposed for
+traffic control of connected and autonomous vehicles (CAVs) at signal-free intersections instead
+of using conventional traffic signals. However, few studies have attempted to integrate both strategies
+to better facilitate the CAV control at signal-free intersections. To this end, this study proposes
+a hierarchical control model, named COOR-PLT, to coordinate adaptive CAV platoons at a signal-free
+intersection based on deep reinforcement learning (DRL). COOR-PLT has a two-layer framework.
+The first layer uses a centralized control strategy to form adaptive platoons. The optimal size
+of each platoon is determined by considering multiple objectives (i.e., efficiency, fairness
+and energy saving). The second layer employs a decentralized control strategy to coordinate multiple
+platoons passing through the intersection. Each platoon is labeled with coordinated status or
+independent status, upon which its passing priority is determined. As an efficient DRL algorithm,
+Deep Q-network (DQN) is adopted to determine platoon sizes and passing priorities respectively
+in the two layers. The model is validated and examined on the simulator Simulation of Urban Mobility
+(SUMO). The simulation results demonstrate that the model is able to: (1) achieve satisfactory
+convergence performances; (2) adaptively determine platoon size in response to varying traffic
+conditions; and (3) completely avoid deadlocks at the intersection. By comparison with other control
+methods, the model manifests its superiority of adopting adaptive platooning and DRL-based coordination
+strategies. Also, the model outperforms several state-of-the-art methods on reducing travel
+time and fuel consumption in different traffic conditions. 

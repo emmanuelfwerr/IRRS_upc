@@ -1,0 +1,18 @@
+Visual inertial odometry (VIO) is widely used for the state estimation of multicopters, but it may
+function poorly in environments with few visual features or in overly aggressive flights. In this
+work, we propose a perception-aware collision avoidance local planner for multicopters. Our approach
+is able to fly the vehicle to a goal position at high speed, avoiding obstacles in the environment
+while achieving good VIO state estimation accuracy. The proposed planner samples a group of minimum
+jerk trajectories and finds collision-free trajectories among them, which are then evaluated
+based on their speed to the goal and perception quality. Both the features' motion blur and their
+locations are considered for the perception quality. The best trajectory from the evaluation is
+tracked by the vehicle and is updated in a receding horizon manner when new images are received from
+the camera. All the sampled trajectories have zero speed and acceleration at the end, and the planner
+assumes no other visual features except those already found by the VIO. As a result, the vehicle will
+follow the current trajectory to the end and stop safely if no new trajectories are found, avoiding
+collision or flying into areas without features. The proposed method can run in real time on a small
+embedded computer on board. We validated the effectiveness of our proposed approach through experiments
+in indoor and outdoor environments. Compared to a perception-agnostic planner, the proposed planner
+kept more features in the camera's view and made the flight less aggressive, making the VIO more accurate.
+It also reduced VIO failures, which occurred for the perception-agnostic planner but not for the
+proposed planner. The experiment video can be found at https://youtu.be/LjZju4KEH9Q. 

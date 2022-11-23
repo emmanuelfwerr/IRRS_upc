@@ -1,0 +1,19 @@
+The discovery of neutrino oscillation, proving that neutrinos do have masses, reveals the misfits
+of particles in the current Standard Model (SM) theory. In theory, neutrinos having masses could
+result in lepton flavour not being a symmetry called Lepton Flavour Violation (LFV). While SM theory
+extensions allowed LFV processes, their branching fractions are too small, making them unobservable
+even with the strongest equipment up-to-date. With that, scientists in recent years have generated
+LFV-like processes from the combined LHCb and Monte-Carlo-Simulated data in an attempt to identify
+LFV using Artificial Intelligence (AI), specifically Machine Learning (ML) and Deep Learning
+(DL). In this paper, the performance of several algorithms in AI has been presented, such as XGBoost,
+LightGBM, custom 1-D Dense Block Neural Networks (DBNNs), and custom 1-D Convolutional Neural
+Networks (CNNs) in identifying LFV signals, specifically $\tau^{-} \rightarrow \mu^{-}\mu^{-}\mu^{+}$
+decay from the combined LHCb and Monte-Carlo-Simulated data that imitates the signatures of the
+said decay. Kolmogorov-Smirnov (KS) and Cramer-von Mises (CvM) tests were also conducted to verify
+the validity of predictions for each of the trained algorithms. The result shows decent performances
+among algorithms, except for the LightGBM, for failing the CvM test, and a 20-layered CNN for having
+recorded a considerably low AUC. Meanwhile, XGBoost and a 10-layered DBNN recorded the highest
+AUC of 0.88. The main contribution of this paper is the extensive experiment involving custom DBNN
+and CNN algorithms in different layers, all of which have been rarely used in the past years in identifying
+LFV-like signatures, unlike GBMs and tree-based algorithms, which have been more popular in the
+said task. 

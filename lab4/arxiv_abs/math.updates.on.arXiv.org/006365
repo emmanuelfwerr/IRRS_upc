@@ -1,0 +1,18 @@
+The generalization error of a classifier is related to the complexity of the set of functions among
+which the classifier is chosen. We study a family of low-complexity classifiers consisting of thresholding
+a random one-dimensional feature. The feature is obtained by projecting the data on a random line
+after embedding it into a higher-dimensional space parametrized by monomials of order up to k. More
+specifically, the extended data is projected n-times and the best classifier among those n, based
+on its performance on training data, is chosen. We show that this type of classifier is extremely
+flexible, as it is likely to approximate, to an arbitrary precision, any continuous function on
+a compact set as well as any boolean function on a compact set that splits the support into measurable
+subsets. In particular, given full knowledge of the class conditional densities, the error of these
+low-complexity classifiers would converge to the optimal (Bayes) error as k and n go to infinity.
+On the other hand, if only a training dataset is given, we show that the classifiers will perfectly
+classify all the training points as k and n go to infinity. We also bound the generalization error
+of our random classifiers. In general, our bounds are better than those for any classifier with VC
+dimension greater than O (ln n) . In particular, our bounds imply that, unless the number of projections
+n is extremely large, there is a significant advantageous gap between the generalization error
+of the random projection approach and that of a linear classifier in the extended space. Asymptotically,
+as the number of samples approaches infinity, the gap persists for any such n. Thus, there is a potentially
+large gain in generalization properties by selecting parameters at random, rather than optimization.

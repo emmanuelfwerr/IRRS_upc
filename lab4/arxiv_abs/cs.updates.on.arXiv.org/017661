@@ -1,0 +1,20 @@
+Thoracic aortic aneurysm (TAA) is a localized dilatation of the aorta resulting from compromised
+wall composition, structure, and function, which can lead to life-threatening dissection or rupture.
+Several genetic mutations and predisposing factors that contribute to TAA have been studied in
+mouse models to characterize specific changes in aortic microstructure and material properties
+that result from a wide range of mechanobiological insults. Assessments of TAA progression in vivo
+is largely limited to measurements of aneurysm size and growth rate. It has been shown that aortic
+geometry alone is not sufficient to predict the patient-specific progression of TAA but computational
+modeling of the evolving biomechanics of the aorta could predict future geometry and properties
+from initiating insults. In this work, we present an integrated framework to train a deep operator
+network (DeepONet)-based surrogate model to identify contributing factors for TAA by using FE-based
+datasets of aortic growth and remodeling resulting from prescribed insults. For training data,
+we investigate multiple types of TAA risk factors and spatial distributions within a constrained
+mixture model to generate axial--azimuthal maps of aortic dilatation and distensibility. The
+trained network is then capable of predicting the initial distribution and extent of the insult
+from a given set of dilatation and distensibility information. Two DeepONet frameworks are proposed,
+one trained on sparse information and one on full-field grayscale images, to gain insight into a
+preferred neural operator-based approach. Performance of the surrogate models is evaluated through
+multiple simulations carried out on insult distributions varying from fusiform to complex. We
+show that the proposed approach can predict patient-specific mechanobiological insult profile
+with a high accuracy, particularly when based on full-field images. 

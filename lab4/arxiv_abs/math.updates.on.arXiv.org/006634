@@ -1,0 +1,18 @@
+This paper presents the first parallel implementation of the novel "Interpolated Factored Green
+Function" (IFGF) method introduced recently for the accelerated evaluation of discrete integral
+operators arising in wave scattering and other areas (Bauinger and Bruno, Jour. Computat. Phys.,
+2021). On the basis of the hierarchical IFGF interpolation strategy, the proposed (hybrid MPI-OpenMP)
+parallel implementation results in highly efficient data communication, and it exhibits in practice
+excellent parallel scaling up to large numbers of cores - without any hard limitations on the number
+of cores concurrently employed with high efficiency. Moreover, on any given number of cores, the
+proposed parallel approach preserves the O(N log N) computing cost inherent in the sequential version
+of the IFGF algorithm. Unlike other approaches, the IFGF method does not utilize the Fast Fourier
+Transform (FFT), and it is thus better suited than other methods for efficient parallelization
+in distributed-memory computer systems. In particular, the IFGF method relies on a "peer-to-peer"
+strategy wherein, at every level, field propagation is directly enacted via "exchanges" between
+"peer" polynomials of low and constant degree, without data accumulation in large-scale "telephone-central"
+mathematical constructs such as those in the Fast Multipole Method (FMM) or pure FFT-based approaches.
+A variety of numerical results presented in this paper illustrate the character of the proposed
+parallel algorithm, including excellent weak and strong parallel scaling properties in all cases
+considered - for problems of up to 4,096 wavelengths in acoustic size, and scaling tests spanning
+from 1 compute core to all 1,680 cores available in the High Performance Computing cluster used.

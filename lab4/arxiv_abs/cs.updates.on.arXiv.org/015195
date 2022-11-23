@@ -1,0 +1,19 @@
+The deep learning-based tomographic image reconstruction methods have been attracting much attention
+among these years. The sparse-view data reconstruction is one of typical underdetermined inverse
+problems, how to reconstruct high-quality CT images from dozens of projections is still a challenge
+in practice. To address this challenge, in this article we proposed a Multi-domain Integrative
+Swin Transformer network (MIST-net). First, the proposed MIST-net incorporated lavish domain
+features from data, residual-data, image, and residual-image using flexible network architectures.
+Here, the residual-data and residual-image domains network components can be considered as the
+data consistency module to eliminate interpolation errors in both residual data and image domains,
+and then further retain image details. Second, to detect the image features and further protect
+image edge, the trainable Sobel Filter was incorporated into the network to improve the encode-decode
+ability. Third, with the classical Swin Transformer, we further designed the high-quality reconstruction
+transformer (i.e., Recformer) to improve the reconstruction performance. The Recformer inherited
+the power of Swin transformer to capture the global and local features of the reconstructed image.
+The experiments on the numerical datasets with 48 views demonstrated our proposed MIST-net provided
+higher reconstructed image quality with small feature recovery and edge protection than other
+competitors including the advanced unrolled networks. The quantitative results show that our
+MIST-net also obtained the best performance. The trained network was transferred to the real cardiac
+CT dataset with 48 views, the reconstruction results further validated the advantages of our MIST-net,
+which demonstrated the good robustness of our MIST-net in clinical applications. 

@@ -1,0 +1,19 @@
+We present a new machine learning based bed-occupancy detection system that uses the accelerometer
+signal captured by a bed-attached consumer smartphone. Automatic bed-occupancy detection is
+necessary for automatic long-term cough monitoring, since the time which the monitored patient
+occupies the bed is required to accurately calculate a cough rate. Accelerometer measurements
+are more cost effective and less intrusive than alternatives such as video monitoring or pressure
+sensors. A 249-hour dataset of manually-labelled acceleration signals gathered from seven patients
+undergoing treatment for tuberculosis (TB) was compiled for experimentation. These signals are
+characterised by brief activity bursts interspersed with long periods of little or no activity,
+even when the bed is occupied. To process them effectively, we propose an architecture consisting
+of three interconnected components. An occupancy-change detector locates instances at which
+bed occupancy is likely to have changed, an occupancy-interval detector classifies periods between
+detected occupancy changes and an occupancy-state detector corrects falsely-identified occupancy
+changes. Using long short-term memory (LSTM) networks, this architecture was demonstrated to
+achieve an AUC of 0.94. When integrated into a complete cough monitoring system, the daily cough
+rate of a patient undergoing TB treatment was determined over a period of 14 days. As the colony forming
+unit (CFU) counts decreased and the time to positivity (TPP) increased, the measured cough rate
+decreased, indicating effective TB treatment. This provides a first indication that automatic
+cough monitoring based on bed-mounted accelerometer measurements may present a non-invasive,
+non-intrusive and cost-effective means of monitoring long-term recovery of TB patients. 

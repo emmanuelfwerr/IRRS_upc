@@ -1,0 +1,18 @@
+The vast amounts of data used in social, business or traffic networks, biology and other natural
+sciences are often managed in graph-based data sets, consisting of a few thousand up to billions
+and trillions of vertices and edges, respectively. Typical applications utilizing such data either
+execute one or a few complex queries or many small queries at the same time interactively or as batch
+jobs. Furthermore, graph processing is inherently complex, as data sets can substantially differ
+(scale free vs. constant degree), and algorithms exhibit diverse behavior (computational intensity,
+local or global, push- or pull-based). This work is concerned with multi-query execution by automatically
+controlling the degree of parallelization, with overall objectives including high system utilization,
+low synchronization cost, and highly efficient concurrent execution. The underlying concept
+is three-fold: (1) sampling is used to determine graph statistics, (2) parallelization constraints
+are derived from algorithm and system properties, and (3) suitable work packages are generated
+based on the previous two aspects. We evaluate the proposed concept using different algorithms
+on synthetic and real world data sets, with up to 16 concurrent sessions (queries). The results demonstrate
+a robust performance in spite of these various configurations, and in particular that the performance
+is always close to or even slightly ahead of the performance of manually optimized implementations.
+Furthermore, the similar performance to manually optimized implementations under extreme configurations,
+which require either a full parallelization (few large queries) or complete sequential execution
+(many small queries), shows that the proposed concept exhibits a particularly low overhead. 

@@ -1,0 +1,19 @@
+We present a fast iterative solver for scattering problems in 2D, where a penetrable object with
+compact support is considered. By representing the scattered field as a volume potential in terms
+of the Green's function, we arrive at the Lippmann-Schwinger equation in integral form, which is
+then discretized using an appropriate quadrature technique. The discretized linear system is
+then solved using an iterative solver accelerated by Directional Algebraic Fast Multipole Method
+(DAFMM). The DAFMM presented here relies on the directional admissibility condition of the 2D Helmholtz
+kernel. And the construction of low-rank factorizations of the appropriate low-rank matrix sub-blocks
+is based on our new Nested Cross Approximation (NCA)~\cite{ arXiv:2203.14832 [math.NA]}. The
+advantage of our new NCA is that the search space of so-called far-field pivots is smaller than that
+of the existing NCAs. Another significant contribution of this work is the use of HODLR based direct
+solver as a preconditioner to further accelerate the iterative solver. In one of our numerical experiments,
+the iterative solver does not converge without a preconditioner. We show that the HODLR preconditioner
+is capable of solving problems that the iterative solver can not. Another noteworthy contribution
+of this article is that we perform a comparative study of the HODLR based fast direct solver, DAFMM
+based fast iterative solver, and HODLR preconditioned DAFMM based fast iterative solver for the
+discretized Lippmann-Schwinger problem. To the best of our knowledge, this work is one of the first
+to provide a systematic study and comparison of these different solvers for various problem sizes
+and contrast functions. In the spirit of reproducible computational science, the implementation
+of the algorithms developed in this article is made available at \url{https://github.com/vaishna77/Lippmann_Schwinger_Solver}.

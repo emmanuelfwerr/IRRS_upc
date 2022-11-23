@@ -1,0 +1,20 @@
+In line with the growing trend of using machine learning to help solve combinatorial optimisation
+problems, one promising idea is to improve node selection within a mixed integer programming (MIP)
+branch-and-bound tree by using a learned policy. Previous work using imitation learning indicates
+the feasibility of acquiring a node selection policy, by learning an adaptive node searching order.
+In contrast, our imitation learning policy is focused solely on learning which of a node's children
+to select. We present an offline method to learn such a policy in two settings: one that comprises
+a heuristic by committing to pruning of nodes; one that is exact and backtracks from a leaf to guarantee
+finding the optimal integer solution. The former setting corresponds to a child selector during
+plunging, while the latter is akin to a diving heuristic. We apply the policy within the popular open-source
+solver SCIP, in both heuristic and exact settings. Empirical results on five MIP datasets indicate
+that our node selection policy leads to solutions significantly more quickly than the state-of-the-art
+precedent in the literature. While we do not beat the highly-optimised SCIP state-of-practice
+baseline node selector in terms of solving time on exact solutions, our heuristic policies have
+a consistently better optimality gap than all baselines, if the accuracy of the predictive model
+is sufficient. Further, the results also indicate that, when a time limit is applied, our heuristic
+method finds better solutions than all baselines in the majority of problems tested. We explain
+the results by showing that the learned policies have imitated the SCIP baseline, but without the
+latter's early plunge abort. Our recommendation is that, despite the clear improvements over the
+literature, this kind of MIP child selector is better seen in a broader approach using learning in
+MIP branch-and-bound tree decisions. 

@@ -1,0 +1,20 @@
+A multi-fidelity (MF) active learning method is presented for design optimization problems characterized
+by noisy evaluations of the performance metrics. Namely, a generalized MF surrogate model is used
+for design-space exploration, exploiting an arbitrary number of hierarchical fidelity levels,
+i.e., performance evaluations coming from different models, solvers, or discretizations, characterized
+by different accuracy. The method is intended to accurately predict the design performance while
+reducing the computational effort required by simulation-driven design (SDD) to achieve the global
+optimum. The overall MF prediction is evaluated as a low-fidelity trained surrogate corrected
+with the surrogates of the errors between consecutive fidelity levels. Surrogates are based on
+stochastic radial basis functions (SRBF) with least squares regression and in-the-loop optimization
+of hyperparameters to deal with noisy training data. The method adaptively queries new training
+data, selecting both the design points and the required fidelity level via an active learning approach.
+This is based on the lower confidence bounding method, which combines performance prediction and
+associated uncertainty to select the most promising design regions. The fidelity levels are selected
+considering the benefit-cost ratio associated with their use in the training. The method's performance
+is assessed and discussed using four analytical tests and three SDD problems based on computational
+fluid dynamics simulations, namely the shape optimization of a NACA hydrofoil, the DTMB 5415 destroyer,
+and a roll-on/roll-off passenger ferry. Fidelity levels are provided by both adaptive grid refinement
+and multi-grid resolution approaches. Under the assumption of a limited budget of function evaluations,
+the proposed MF method shows better performance in comparison with the model trained by high-fidelity
+evaluations only. 

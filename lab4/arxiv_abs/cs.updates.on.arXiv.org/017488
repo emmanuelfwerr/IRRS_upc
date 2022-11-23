@@ -1,0 +1,19 @@
+Variable-density cellular structures can overcome connectivity and manufacturability issues
+of topologically optimized structures, particularly those represented as discrete density maps.
+However, the optimization of such cellular structures is challenging due to the multiscale design
+problem. Past work addressing this problem generally either only optimizes the volume fraction
+of single-type unit cells but ignores the effects of unit cell geometry on properties, or considers
+the geometry-property relation but builds this relation via heuristics. In contrast, we propose
+a simple yet more principled way to accurately model the property to geometry mapping using a conditional
+deep generative model, named Inverse Homogenization Generative Adversarial Network (IH-GAN).
+It learns the conditional distribution of unit cell geometries given properties and can realize
+the one-to-many mapping from properties to geometries. We further reduce the complexity of IH-GAN
+by using the implicit function parameterization to represent unit cell geometries. Results show
+that our method can 1) generate various unit cells that satisfy given material properties with high
+accuracy ($R^2$-scores between target properties and properties of generated unit cells $>98\%$)
+and 2) improve the optimized structural performance over the conventional variable-density single-type
+structure. In the minimum compliance example, our IH-GAN generated structure achieves a $79.7\%$
+reduction in concentrated stress and an extra $3.03\%$ reduction in displacement. In the target
+deformation examples, our IH-GAN generated structure reduces the target matching error by $86.4\%$
+and $79.6\%$ for two test cases, respectively. We also demonstrated that the connectivity issue
+for multi-type unit cells can be solved by transition layer blending. 

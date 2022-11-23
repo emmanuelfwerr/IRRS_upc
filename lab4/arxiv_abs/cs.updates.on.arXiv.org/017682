@@ -1,0 +1,20 @@
+Fault attacks are active, physical attacks that an adversary can leverage to alter the control-flow
+of embedded devices to gain access to sensitive information or bypass protection mechanisms. Due
+to the severity of these attacks, manufacturers deploy hardware-based fault defenses into security-critical
+systems, such as secure elements. The development of these countermeasures is a challenging task
+due to the complex interplay of circuit components and because contemporary design automation
+tools tend to optimize inserted structures away, thereby defeating their purpose. Hence, it is
+critical that such countermeasures are rigorously verified post-synthesis. As classical functional
+verification techniques fall short of assessing the effectiveness of countermeasures, developers
+have to resort to methods capable of injecting faults in a simulation testbench or into a physical
+chip. However, developing test sequences to inject faults in simulation is an error-prone task
+and performing fault attacks on a chip requires specialized equipment and is incredibly time-consuming.
+To that end, this paper introduces SYNFI, a formal pre-silicon fault verification framework that
+operates on synthesized netlists. SYNFI can be used to analyze the general effect of faults on the
+input-output relationship in a circuit and its fault countermeasures, and thus enables hardware
+designers to assess and verify the effectiveness of embedded countermeasures in a systematic and
+semi-automatic way. To demonstrate that SYNFI is capable of handling unmodified, industry-grade
+netlists synthesized with commercial and open tools, we analyze OpenTitan, the first open-source
+secure element. In our analysis, we identified critical security weaknesses in the unprotected
+AES block, developed targeted countermeasures, reassessed their security, and contributed these
+countermeasures back to the OpenTitan repository. 

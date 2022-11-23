@@ -1,0 +1,19 @@
+We introduce several new datasets namely ImageNet-A/O and ImageNet-R as well as a synthetic environment
+and testing suite we called CAOS. ImageNet-A/O allow researchers to focus in on the blind spots remaining
+in ImageNet. ImageNet-R was specifically created with the intention of tracking robust representation
+as the representations are no longer simply natural but include artistic, and other renditions.
+The CAOS suite is built off of CARLA simulator which allows for the inclusion of anomalous objects
+and can create reproducible synthetic environment and scenes for testing robustness. All of the
+datasets were created for testing robustness and measuring progress in robustness. The datasets
+have been used in various other works to measure their own progress in robustness and allowing for
+tangential progress that does not focus exclusively on natural accuracy. Given these datasets,
+we created several novel methods that aim to advance robustness research. We build off of simple
+baselines in the form of Maximum Logit, and Typicality Score as well as create a novel data augmentation
+method in the form of DeepAugment that improves on the aforementioned benchmarks. Maximum Logit
+considers the logit values instead of the values after the softmax operation, while a small change
+produces noticeable improvements. The Typicality Score compares the output distribution to a
+posterior distribution over classes. We show that this improves performance over the baseline
+in all but the segmentation task. Speculating that perhaps at the pixel level the semantic information
+of a pixel is less meaningful than that of class level information. Finally the new augmentation
+technique of DeepAugment utilizes neural networks to create augmentations on images that are radically
+different than the traditional geometric and camera based transformations used previously. 

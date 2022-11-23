@@ -1,0 +1,20 @@
+Conventional object-stores are built on top of traditional OS storage stack, where I/O requests
+typically transfers through multiple hefty and redundant layers. The complexity of object management
+has grown dramatically with the ever increasing requirements of performance, consistency and
+fault-tolerance from storage subsystems. Simply stated, more number of intermediate layers are
+encountered in the I/O data path, with each passing layer adding its own syntax and semantics. Thereby
+increasing the overheads of request processing. In this paper, through comprehensive under-the-hood
+analysis of an object-storage node, we characterize the impact of object-store (and user-application)
+workloads on the OS I/O stack and its subsequent rippling effect on the underlying object-storage
+devices (OSD). We observe that the legacy architecture of the OS based I/O storage stack coupled
+with complex data management policies leads to a performance mismatch between what an end-storage
+device is capable of delivering and what it actually delivers in a production environment. Therefore,
+the gains derived from developing faster storage devices is often nullified. These issues get more
+pronounced in highly concurrent and multiplexed cloud environments. Owing to the associated issues
+of object-management and the vulnerabilities of the OS I/O software stacks, we discuss the potential
+of a new class of storage devices, known as Object-Drives. Samsung Key-Value SSD (KV-SSD) [1] and
+Seagate Kinetic Drive [2] are classic industrial implementations of object-drives, where host
+data management functionalities can be offloaded to the storage device. This leads towards the
+simplification of the over-all storage stack. Based on our analysis, we believe object-drives
+can alleviate object-stores from highly taxing overheads of data management with 20-38% time-savings
+over traditional Operating Systems (OS) stack. 

@@ -1,0 +1,20 @@
+This work presents a critical overview of the effects of different aspects of model formulation
+on crack path selection in quasi-static phase field fracture. We consider different evolution
+methods, mechanics formulations, fracture dissipation energy formulations, and forms of the
+irreversibility condition. The different model variants are implemented with common numerical
+methods based on staggered solution of the phase-field and mechanics sub-problems via FFT-based
+solvers. These methods mix standard approaches with novel elements, such as the use of bound-constrained
+conjugate gradients for the phase field sub-problem and a heuristic method for near-equilibrium
+evolution. We examine differences in crack paths between model variants in simple model systems
+and microstructures with randomly heterogeneous Young's modulus. Our results indicate that near-equilibrium
+evolution methods are preferable for quasi-static fracture of heterogeneous microstructures
+compared to minimization and time-dependent methods. In examining mechanics formulations, we
+find distinct effects of crack driving force and the model for contact implicit in phase field fracture.
+Our results favor the use of a strain-spectral decomposition for the crack driving force but not
+the contact model. Irreversibility condition and fracture dissipation energy formulation were
+also found to affect crack path selection, but systematic effects were difficult to deduce due to
+the overall sensitivity of crack selection within the heterogeneous microstructures. Our findings
+support the use of the AT1 model over the AT2 model and irreversibility of the phase field within a
+crack set rather than the entire domain. Sensitivity to these differences in formulation was reduced
+but not eliminated by reducing the crack width parameter $\ell$ relative to the size scale of the
+random microstructures. 

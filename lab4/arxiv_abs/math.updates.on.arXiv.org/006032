@@ -1,0 +1,19 @@
+Human brain activity is based on electrochemical processes, which can only be measured invasively.
+Therefore, quantities such as magnetic flux density (MEG) or electric potential differences (EEG)
+are measured non-invasively in medicine and research. The reconstruction of the neuronal current
+from the measurements is a severely ill-posed problem though its visualization is one of the main
+research tools in cognitive neuroscience. Here, using an isotropic multiple-shell model for the
+geometry of the head and a quasi-static approach for modeling the electro-magnetic processes,
+we derive a novel vector-valued spline method based on reproducing kernel Hilbert spaces. The presented
+vector spline method follows the path of former spline approaches and provides classical minimum
+norm properties. In addition, it minimizes the (infinite-dimensional) Tikhonov-Philips functional
+handling the instability of the inverse problem. This optimization problem reduces to solving
+a finite-dimensional system of linear equations without loss of information. It results in a unique
+solution which takes into account that only the harmonic and solenoidal component of the current
+affects the measurements. Besides, we prove a convergence result: the solution achieved by the
+vector spline method converges to the generator of the data as the number of measurements increases.
+The vector splines are applied to the inversion of synthetic test cases, where the irregularly distributed
+data situation could be handled very well. Combined with parameter choice methods, numerical results
+are shown with and without additional Gaussian white noise. Former approaches based on scalar splines
+are outperformed by the vector splines results with respect to the normalized root mean square error.
+Finally, reasonable results with respect to physiological expectations for real data are shown.

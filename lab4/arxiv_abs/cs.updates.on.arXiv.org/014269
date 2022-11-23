@@ -1,0 +1,19 @@
+The traditional convolution neural networks (CNN) have several drawbacks like the Picasso effect
+and the loss of information by the pooling layer. The Capsule network (CapsNet) was proposed to address
+these challenges because its architecture can encode and preserve the spatial orientation of input
+images. Similar to traditional CNNs, CapsNet is also vulnerable to several malicious attacks,
+as studied by several researchers in the literature. However, most of these studies focus on single-device-based
+inference, but horizontally collaborative inference in state-of-the-art systems, like intelligent
+edge services in self-driving cars, voice controllable systems, and drones, nullify most of these
+analyses. Horizontal collaboration implies partitioning the trained CNN models or CNN tasks to
+multiple end devices or edge nodes. Therefore, it is imperative to examine the robustness of the
+CapsNet against malicious attacks when deployed in horizontally collaborative environments.
+Towards this, we examine the robustness of the CapsNet when subjected to noise-based inference
+attacks in a horizontal collaborative environment. In this analysis, we perturbed the feature
+maps of the different layers of four DNN models, i.e., CapsNet, Mini-VGG, LeNet, and an in-house
+designed CNN (ConvNet) with the same number of parameters as CapsNet, using two types of noised-based
+attacks, i.e., Gaussian Noise Attack and FGSM noise attack. The experimental results show that
+similar to the traditional CNNs, depending upon the access of the attacker to the DNN layer, the classification
+accuracy of the CapsNet drops significantly. For example, when Gaussian Noise Attack classification
+is performed at the DigitCap layer of the CapsNet, the maximum classification accuracy drop is approximately
+97%. 

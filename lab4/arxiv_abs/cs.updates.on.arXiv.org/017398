@@ -1,0 +1,19 @@
+Safe deployment of deep learning systems in critical real world applications requires models to
+make very few mistakes, and only under predictable circumstances. In this work, we address this
+problem using an abstaining classifier that is tuned to have $>$95% accuracy, and then identify
+the determinants of abstention using LIME. Essentially, we are training our model to learn the attributes
+of pathology reports that are likely to lead to incorrect classifications, albeit at the cost of
+reduced sensitivity. We demonstrate an abstaining classifier in a multitask setting for classifying
+cancer pathology reports from the NCI SEER cancer registries on six tasks of interest. For these
+tasks, we reduce the classification error rate by factors of 2--5 by abstaining on 25--45% of the
+reports. For the specific task of classifying cancer site, we are able to identify metastasis, reports
+involving lymph nodes, and discussion of multiple cancer sites as responsible for many of the classification
+mistakes, and observe that the extent and types of mistakes vary systematically with cancer site
+(e.g., breast, lung, and prostate). When combining across three of the tasks, our model classifies
+50% of the reports with an accuracy greater than 95% for three of the six tasks\edit, and greater than
+85% for all six tasks on the retained samples. Furthermore, we show that LIME provides a better determinant
+of classification than measures of word occurrence alone. By combining a deep abstaining classifier
+with feature identification using LIME, we are able to identify concepts responsible for both correctness
+and abstention when classifying cancer sites from pathology reports. The improvement of LIME over
+keyword searches is statistically significant, presumably because words are assessed in context
+and have been identified as a local determinant of classification. 

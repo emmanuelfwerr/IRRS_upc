@@ -1,0 +1,20 @@
+There is a growing interest in developing data-driven reduced-order models for atmospheric and
+oceanic flows that are trained on data obtained either from high-resolution simulations or satellite
+observations. The data-driven models are non-intrusive in nature and offer significant computational
+savings compared to large-scale numerical models. These low-dimensional models can be utilized
+to reduce the computational burden of generating forecasts and estimating model uncertainty without
+losing the key information needed for data assimilation to produce accurate state estimates. This
+paper aims at exploring an equation-free surrogate modeling approach at the intersection of machine
+learning and data assimilation in Earth system modeling. With this objective, we introduce an end-to-end
+non-intrusive reduced-order modeling (NIROM) framework equipped with contributions in modal
+decomposition, time series prediction, optimal sensor placement, and sequential data assimilation.
+Specifically, we use proper orthogonal decomposition (POD) to identify the dominant structures
+of the flow, and a long short-term memory network to model the dynamics of the POD modes. The NIROM
+is integrated within the deterministic ensemble Kalman filter (DEnKF) to incorporate sparse and
+noisy observations at optimal sensor locations obtained through QR pivoting. The feasibility
+and the benefit of the proposed framework are demonstrated for the NOAA Optimum Interpolation Sea
+Surface Temperature (SST) V2 dataset. Our results indicate that the NIROM is stable for long-term
+forecasting and can model dynamics of SST with a reasonable level of accuracy. Furthermore, the
+prediction accuracy of the NIROM gets improved by one order of magnitude by the DEnKF algorithm.
+This work provides a way forward toward transitioning these methods to fuse information from Earth
+system models and observations to achieve accurate forecasts. 

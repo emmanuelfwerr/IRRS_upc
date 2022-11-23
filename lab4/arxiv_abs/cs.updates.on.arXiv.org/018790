@@ -1,0 +1,19 @@
+The active region lookup of a neural network tells us which regions the neural network focuses on
+when making a decision, which gives us a basis for interpretability when the neural network makes
+a classification decision. We propose an algorithm Multiple Dynamic Mask(MDM), which is a general
+saliency graph query method with interpretability of the inference process. Its proposal is based
+on an assumption: when a picture is input to a neural network that has been trained, the activation
+features related to classification will affect the classification results of the neural network,
+and the features unrelated to classification will hardly affect the classification results of
+the network. MDM: A learning-based end-to-end algorithm for finding regions of interest for neural
+network classification. It has the following advantages: 1. It has the interpretability of the
+reasoning process. 2. It is universal, it can be used for any neural network and does not depend on
+the internal structure of the neural network. 3. The search performance is better. Because the algorithm
+is based on learning to generate masks and has the ability to adapt to different data and networks,
+the performance is better than the method proposed in the previous paper. For the MDM saliency map
+search algorithm, we experimentally compared the performance indicators of various saliency
+map search methods and the MDM with ResNet and DenseNet as the trained neural networks. The search
+effect performance of the MDM reached the state of the art. We applied the MDM to the interpretable
+neural network ProtoPNet and XProtoNet, which improved the interpretability of the model and the
+prototype search performance. We visualize the performance of convolutional neural architecture
+and Transformer architecture on saliency map search. 

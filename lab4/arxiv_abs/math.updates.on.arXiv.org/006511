@@ -1,0 +1,19 @@
+The online semi-random graph process is a one-player game which starts with the empty graph on $n$
+vertices. At every round, a player (called Builder) is presented with a vertex $v$ chosen uniformly
+at random and constructs an edge of his choice that is incident to $v$. Inspired by recent advances,
+we define a family of generalised online semi-random models. Then, we analyse a particular instance
+that shares similar features with the original semi-random graph process and study the hitting
+times of classical graph properties. More formally, in our model the process also starts with the
+empty graph on $n$ vertices. At the beginning of each round, Builder is offered a spanning tree $T$
+of $K_n$ chosen uniformly at random and independently from the previous rounds. He then chooses
+an edge from $T$ and adds it (if not yet present) to the already constructed graph. We show that an "optimal"
+strategy ensures whp that the hitting time of a graph with minimum degree $k = o(n^{1/2})$ is given
+by $\tfrac{kn}{2} + \tfrac{(2\pi n)^{1/2}}{4} + o(n^{1/2})$ and we also provide an upper bound
+of $\tfrac{kn}{2} + O(\max\{k, n^{1/2}\})$ when $k = o(n)$. While this yields a lower bound for creating
+a perfect matching (resp. a Hamiltonian cycle), we describe strategies for Builder to attain these
+properties whp in $\tfrac{n}{2} + O((\log n) n^{1/2})$ (resp. in $n + O((\log n) n^{1/2})$) rounds.
+We also study the hitting time of an $H$-factor for a fixed graph $H$ possessing an additional tree-like
+property, and show that it is given by the trivial deterministic lower bound up to lower order terms.
+Another contribution of the work is to show that Builder may cover all $n$ vertices by copies of any
+given graph $H$ in $d_{\min}(H) n + o(n)$ rounds whp, where $d_{\min}(H)$ is the minimum degree of
+a vertex in $H$, which is a factor of 2 away from a corresponding deterministic lower bound. 

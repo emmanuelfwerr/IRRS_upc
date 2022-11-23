@@ -1,0 +1,19 @@
+Osteoporosis is a common disease that increases fracture risk. Hip fractures, especially in elderly
+people, lead to increased morbidity, decreased quality of life and increased mortality. Being
+a silent disease before fracture, osteoporosis often remains undiagnosed and untreated. Areal
+bone mineral density (aBMD) assessed by dual-energy X-ray absorptiometry (DXA) is the gold-standard
+method for osteoporosis diagnosis and hence also for future fracture prediction (prognostic).
+However, the required special equipment is not broadly available everywhere, in particular not
+to patients in developing countries. We propose a deep learning classification model (FORM) that
+can directly predict hip fracture risk from either plain radiographs (X-ray) or 2D projection images
+of computed tomography (CT) data. Our method is fully automated and therefore well suited for opportunistic
+screening settings, identifying high risk patients in a broader population without additional
+screening. FORM was trained and evaluated on X-rays and CT projections from the Osteoporosis in
+Men (MrOS) study. 3108 X-rays (89 incident hip fractures) or 2150 CTs (80 incident hip fractures)
+with a 80/20 split were used. We show that FORM can correctly predict the 10-year hip fracture risk
+with a validation AUC of 81.44 +- 3.11% / 81.04 +- 5.54% (mean +- STD) including additional information
+like age, BMI, fall history and health background across a 5-fold cross validation on the X-ray and
+CT cohort, respectively. Our approach significantly (p < 0.01) outperforms previous methods like
+Cox Proportional-Hazards Model and \frax with 70.19 +- 6.58 and 74.72 +- 7.21 respectively on the
+X-ray cohort. Our model outperform on both cohorts hip aBMD based predictions. We are confident
+that FORM can contribute on improving osteoporosis diagnosis at an early stage. 

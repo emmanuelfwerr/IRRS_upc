@@ -1,0 +1,19 @@
+The classical (parallel) black pebbling game is a useful abstraction which allows us to analyze
+the resources (space, space-time, cumulative space) necessary to evaluate a function $f$ with
+a static data-dependency graph $G$. Of particular interest in the field of cryptography are data-independent
+memory-hard functions $f_{G,H}$ which are defined by a directed acyclic graph (DAG) $G$ and a cryptographic
+hash function $H$. The pebbling complexity of the graph $G$ characterizes the amortized cost of
+evaluating $f_{G,H}$ multiple times as well as the total cost to run a brute-force preimage attack
+over a fixed domain $\mathcal{X}$, i.e., given $y \in \{0,1\}^*$ find $x \in \mathcal{X}$ such that
+$f_{G,H}(x)=y$. While a classical attacker will need to evaluate the function $f_{G,H}$ at least
+$m=|\mathcal{X}|$ times a quantum attacker running Grover's algorithm only requires $\mathcal{O}(\sqrt{m})$
+blackbox calls to a quantum circuit $C_{G,H}$ evaluating the function $f_{G,H}$. Thus, to analyze
+the cost of a quantum attack it is crucial to understand the space-time cost (equivalently width
+times depth) of the quantum circuit $C_{G,H}$. We first observe that a legal black pebbling strategy
+for the graph $G$ does not necessarily imply the existence of a quantum circuit with comparable complexity
+-- in contrast to the classical setting where any efficient pebbling strategy for $G$ corresponds
+to an algorithm with comparable complexity evaluating $f_{G,H}$. Motivated by this observation
+we introduce a new (parallel) quantum pebbling game which captures additional restrictions imposed
+by the No-Deletion Theorem in Quantum Computing. We apply our new quantum pebbling game to analyze
+the quantum space-time complexity of several important graphs: the line graph, Argon2i-A, Argon2i-B,
+and DRSample. (See the paper for the full abstract.) 

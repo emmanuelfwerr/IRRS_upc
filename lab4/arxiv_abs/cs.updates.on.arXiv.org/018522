@@ -1,0 +1,19 @@
+Distributional shift, or the mismatch between training and deployment data, is a significant obstacle
+to the usage of machine learning in high-stakes industrial applications, such as autonomous driving
+and medicine. This creates a need to be able to assess how robustly ML models generalize as well as
+the quality of their uncertainty estimates. Standard ML baseline datasets do not allow these properties
+to be assessed, as the training, validation and test data are often identically distributed. Recently,
+a range of dedicated benchmarks have appeared, featuring both distributionally matched and shifted
+data. Among these benchmarks, the Shifts dataset stands out in terms of the diversity of tasks as
+well as the data modalities it features. While most of the benchmarks are heavily dominated by 2D
+image classification tasks, Shifts contains tabular weather forecasting, machine translation,
+and vehicle motion prediction tasks. This enables the robustness properties of models to be assessed
+on a diverse set of industrial-scale tasks and either universal or directly applicable task-specific
+conclusions to be reached. In this paper, we extend the Shifts Dataset with two datasets sourced
+from industrial, high-risk applications of high societal importance. Specifically, we consider
+the tasks of segmentation of white matter Multiple Sclerosis lesions in 3D magnetic resonance brain
+images and the estimation of power consumption in marine cargo vessels. Both tasks feature ubiquitous
+distributional shifts and a strict safety requirement due to the high cost of errors. These new datasets
+will allow researchers to further explore robust generalization and uncertainty estimation in
+new situations. In this work, we provide a description of the dataset and baseline results for both
+tasks. 

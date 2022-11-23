@@ -1,0 +1,20 @@
+The commercialization of Cloud-RAN, and Open-RAN in particular, is a key factor to enable 5G cell
+densification, by providing lower cost and more agile deployment of small cells. In addition, the
+adoption of MEC is important to support ultra-low latency and high reliability required by mission-critical
+applications, which constitute a milestone of the 5G and beyond vision of a fully connected society.
+However, connecting antenna site, C-RAN processing and MEC at low cost is challenging, as it requires
+high-capacity, low latency connectivity delivered through a highly inter-connected topology.
+While PON is being considered as a solution for providing low-cost connectivity to C-RAN, they only
+allow data transmission from the endpoints (for example hosting RU at the antenna site) towards
+a central node (e.g., the central office, hosting computing equipment), thus cannot support traffic
+from RU towards MEC end nodes that could host DU and possibly CU and network core. This led to research
+into the evolution of PON architectures with the ability to provide direct communications between
+endpoints, thus supporting mesh traffic patterns required by MEC installations. In this context,
+virtualization plays a key role in enabling efficient resource allocation (i.e. optical transmission
+capacity) to endpoints, according to their communication patterns. In this article, we address
+the challenge of dynamic allocation of virtual PON slices over mesh-PON architectures to support
+C-RAN and MEC nodes. We make use of a mixed analytical-iterative model to compute optimal virtual
+PON slice allocation, with the objective of minimizing the use of MEC node resources, while meeting
+a target latency threshold (100 $\mu s$ in our scenario). Our method is particularly effective in
+reducing computation time, enabling virtual PON slice allocation in timescales compatible with
+real-time or near real-time operations. 

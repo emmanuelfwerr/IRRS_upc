@@ -1,0 +1,19 @@
+A fundamental task underlying many important optimization problems, from influence maximization
+to sensor placement to content recommendation, is to select the optimal group of $k$ items from a
+larger set. Submodularity has been very effective in allowing approximation algorithms for such
+subset selection problems. However, in several applications, we are interested not only in the
+elements of a set, but also the order in which they appear, breaking the assumption that all selected
+items receive equal consideration. One such category of applications involves the presentation
+of search results, product recommendations, news articles, and other content, due to the well-documented
+phenomenon that humans pay greater attention to higher-ranked items. As a result, optimization
+in content presentation for diversity, user coverage, calibration, or other objectives more accurately
+represents a sequence selection problem, to which traditional submodularity approximation results
+no longer apply. Although extensions of submodularity to sequences have been proposed, none is
+designed to model settings where items contribute based on their position in a ranked list, and hence
+they are not able to express these types of optimization problems. In this paper, we aim to address
+this modeling gap. Here, we propose a new formalism of ordered submodularity that captures these
+ordering problems in content presentation, and more generally a category of optimization problems
+over ranked sequences in which different list positions contribute differently to the objective
+function. We analyze the natural ordered analogue of the greedy algorithm and show that it provides
+a $2$-approximation. We also show that this bound is tight, establishing that our new framework
+is conceptually and quantitatively distinct from previous formalisms of set and sequence submodularity.

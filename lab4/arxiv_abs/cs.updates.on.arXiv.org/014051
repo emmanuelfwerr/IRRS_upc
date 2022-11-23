@@ -1,0 +1,19 @@
+Contrastive Learning (CL) is one of the most popular self-supervised learning frameworks for graph
+representation learning, which trains a Graph Neural Network (GNN) by discriminating positive
+and negative node pairs. However, there are two challenges for CL on graphs. On the one hand, traditional
+CL methods will unavoidably introduce semantic errors since they will treat some semantically
+similar nodes as negative pairs. On the other hand, most of the existing CL methods ignore the multiplexity
+nature of the real-world graphs, where nodes are connected by various relations and each relation
+represents a view of the graph. To address these challenges, we propose a novel Graph Multi-View
+Prototypical (Graph-MVP) framework to extract node embeddings on multiplex graphs. Firstly,
+we introduce a Graph Prototypical Contrastive Learning (Graph-PCL) framework to capture both
+node-level and semantic-level information for each view of multiplex graphs. Graph-PCL captures
+the node-level information by a simple yet effective data transformation technique. It captures
+the semantic-level information by an Expectation-Maximization (EM) algorithm, which alternatively
+performs clustering over node embeddings and parameter updating for GNN. Next, we introduce Graph-MVP
+based on Graph-PCL to jointly model different views of the multiplex graphs. Our key insight behind
+Graph-MVP is that different view-specific embeddings of the same node should have similar underlying
+semantic, based on which we propose two versions of Graph-MVP: Graph-MVP_hard and Graph-MVP_soft
+to align embeddings across views. Finally, we evaluate the proposed Graph-PCL and Graph-MVP on
+a variety of real-world datasets and downstream tasks. The experimental results demonstrate the
+effectiveness of the proposed Graph-PCL and Graph-MVP frameworks. 

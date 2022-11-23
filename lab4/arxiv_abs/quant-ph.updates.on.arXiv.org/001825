@@ -1,0 +1,20 @@
+In the problem of quantum channel discrimination, one distinguishes between a given number of quantum
+channels, which is done by sending an input state through a channel and measuring the output state.
+This work studies applications of variational quantum circuits and machine learning techniques
+for discriminating such channels. In particular, we explore (i) the practical implementation
+of embedding this task into the framework of variational quantum computing, (ii) training a quantum
+classifier based on variational quantum circuits, and (iii) applying the quantum kernel estimation
+technique. For testing these three channel discrimination approaches, we considered a pair of
+entanglement-breaking channels and the depolarizing channel with two different depolarization
+factors. For the approach (i), we address solving the quantum channel discrimination problem using
+widely discussed parallel and sequential strategies. We show the advantage of the latter in terms
+of better convergence with less quantum resources. Quantum channel discrimination with a variational
+quantum classifier (ii) allows one to operate even with random and mixed input states and simple
+variational circuits. The kernel-based classification approach (iii) is also found effective
+as it allows one to discriminate depolarizing channels associated not with just fixed values of
+the depolarization factor, but with ranges of it. Additionally, we discovered that a simple modification
+of one of the commonly used kernels significantly increases the efficiency of this approach. Finally,
+our numerical findings reveal that the performance of variational methods of channel discrimination
+depends on the trace of the product of the output states. These findings demonstrate that quantum
+machine learning can be used to discriminate channels, such as those representing physical noise
+processes. 

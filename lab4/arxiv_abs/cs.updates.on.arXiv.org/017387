@@ -1,0 +1,19 @@
+Predicting incoming failures and scheduling maintenance based on sensors information in industrial
+machines is increasingly important to avoid downtime and machine failure. Different machine learning
+formulations can be used to solve the predictive maintenance problem. However, many of the approaches
+studied in the literature are not directly applicable to real-life scenarios. Indeed, many of those
+approaches usually either rely on labelled machine malfunctions in the case of classification
+and fault detection, or rely on finding a monotonic health indicator on which a prediction can be
+made in the case of regression and remaining useful life estimation, which is not always feasible.
+Moreover, the decision-making part of the problem is not always studied in conjunction with the
+prediction phase. This paper aims to design and compare different formulations for predictive
+maintenance in a two-level framework and design metrics that quantify both the failure detection
+performance as well as the timing of the maintenance decision. The first level is responsible for
+building a health indicator by aggregating features using a learning algorithm. The second level
+consists of a decision-making system that can trigger an alarm based on this health indicator. Three
+degrees of refinements are compared in the first level of the framework, from simple threshold-based
+univariate predictive technique to supervised learning methods based on the remaining time before
+failure. We choose to use the Support Vector Machine (SVM) and its variations as the common algorithm
+used in all the formulations. We apply and compare the different strategies on a real-world rotating
+machine case study and observe that while a simple model can already perform well, more sophisticated
+refinements enhance the predictions for well-chosen parameters. 

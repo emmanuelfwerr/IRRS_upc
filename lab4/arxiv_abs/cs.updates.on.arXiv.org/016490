@@ -1,0 +1,20 @@
+Convolutional Neural Networks (CNNs) with U-shaped architectures have dominated medical image
+segmentation, which is crucial for various clinical purposes. However, the inherent locality
+of convolution makes CNNs fail to fully exploit global context, essential for better recognition
+of some structures, e.g., brain lesions. Transformers have recently proved promising performance
+on vision tasks, including semantic segmentation, mainly due to their capability of modeling long-range
+dependencies. Nevertheless, the quadratic complexity of attention makes existing Transformer-based
+models use self-attention layers only after somehow reducing the image resolution, which limits
+the ability to capture global contexts present at higher resolutions. Therefore, this work introduces
+a family of models, dubbed Factorizer, which leverages the power of low-rank matrix factorization
+for constructing an end-to-end segmentation model. Specifically, we propose a linearly scalable
+approach to context modeling, formulating Nonnegative Matrix Factorization (NMF) as a differentiable
+layer integrated into a U-shaped architecture. The shifted window technique is also utilized in
+combination with NMF to effectively aggregate local information. Factorizers compete favorably
+with CNNs and Transformers in terms of accuracy, scalability, and interpretability, achieving
+state-of-the-art results on the BraTS dataset for brain tumor segmentation, with Dice scores of
+79.33%, 83.14%, and 90.16% for enhancing tumor, tumor core, and whole tumor, respectively. Highly
+meaningful NMF components give an additional interpretability advantage to Factorizers over
+CNNs and Transformers. Moreover, our ablation studies reveal a distinctive feature of Factorizers
+that enables a significant speed-up in inference for a trained Factorizer without any extra steps
+and without sacrificing much accuracy. 

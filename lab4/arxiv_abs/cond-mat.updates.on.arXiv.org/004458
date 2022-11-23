@@ -1,0 +1,20 @@
+We propose a physics and chemistry-based constitutive framework to predict the stress responses
+of thermo-chemically aged elastomers and capture their brittle failure using the phase-field
+approach. High-temperature aging in the presence of oxygen causes the macromolecular network
+of elastomers to undergo complex chemical reactions inducing two main mechanisms: chain-scission
+and crosslinking. Chemical crosslinking contributes to the stiffening behavior characterizing
+the brittle response of aged elastomers. In this work, we first modify the Helmholtz free energy
+to incorporate the effect of thermo-chemically-driven crosslinking processes. Then, we equip
+the constitutive description with phase-field to capture the induced brittle failure via a strain-based
+criterion for fracture. We show that our proposed framework is self-contained and requires only
+four main material properties whose evolution due to thermo-chemical aging is characterized entirely
+by the change of the crosslink density obtained based on chemical characterization experiments.
+The developed constitutive framework is first solved analytically for the case of uniaxial tension
+in a homogeneous bar to highlight the interconnection between all four material properties. Then,
+the framework is numerically implemented within a finite element (FE) context via a user-element
+subroutine (UEL) in the commercial FE software Abaqus to simulate more complicated geometries
+and loading states. The framework is finally validated with respect to a set of experimental results
+available in the literature. The comparison confirms that the proposed constitutive framework
+can accurately predict the mechanical response of thermo-chemically aged elastomers. Further
+numerical examples are provided to demonstrate the effects of evolving material properties on
+the response of specimens containing pre-existing cracks. 

@@ -1,0 +1,20 @@
+We consider the problem of helping agents improve by setting short-term goals. Given a set of target
+skill levels, we assume each agent will try to improve from their initial skill level to the closest
+target level within reach or do nothing if no target level is within reach. We consider two models:
+the common improvement capacity model, where agents have the same limit on how much they can improve,
+and the individualized improvement capacity model, where agents have individualized limits.
+Our goal is to optimize the target levels for social welfare and fairness objectives, where social
+welfare is defined as the total amount of improvement, and fairness objectives are considered where
+the agents belong to different underlying populations. A key technical challenge of this problem
+is the non-monotonicity of social welfare in the set of target levels, i.e., adding a new target level
+may decrease the total amount of improvement as it may get easier for some agents to improve. This
+is especially challenging when considering multiple groups because optimizing target levels
+in isolation for each group and outputting the union may result in arbitrarily low improvement for
+a group, failing the fairness objective. Considering these properties, we provide algorithms
+for optimal and near-optimal improvement for both social welfare and fairness objectives. These
+algorithmic results work for both the common and individualized improvement capacity models.
+Furthermore, we show a placement of target levels exists that is approximately optimal for the social
+welfare of each group. Unlike the algorithmic results, this structural statement only holds in
+the common improvement capacity model, and we show counterexamples in the individualized improvement
+capacity model. Finally, we extend our algorithms to learning settings where we have only sample
+access to the initial skill levels of agents. 

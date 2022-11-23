@@ -1,0 +1,19 @@
+Machine learning techniques are increasingly being used in fundamental research to solve various
+challenging problems. Here we explore one such technique to address an important problem in quantum
+communication scenario. While transferring quantum information through a noisy quantum channel,
+the utility of the channel is characterized by its quantum capacity. Quantum channels, however,
+display an intriguing property called super-additivity of coherent information. This makes the
+calculation of quantum capacity a hard computational problem involving optimization over an exponentially
+increasing search space. In this work, we first utilize a neural network ansatz to represent quantum
+states and then apply an evolutionary optimization scheme to address this problem. We find regions
+in the three-parameter space of qubit Pauli channels where coherent information exhibits this
+super-additivity feature. We characterised the quantum codes that achieves high coherent information,
+finding several non-trivial quantum codes that outperforms the repetition codes for some Pauli
+channels. For some Pauli channels, these codes displays very high super-additivity of the order
+of 0.01, much higher than the observed values in other well studied quantum channels. We further
+compared the learning performance of the Neural Network ansatz with the raw ansatz to find that in
+the three-shot case, the neural network ansatz outperforms the raw representation in finding quantum
+codes of high coherent information. We also compared the learning performance of the evolutionary
+algorithm with a simple Particle Swarm Optimisation scheme and show empirical results indicating
+comparable performance, suggesting that the Neural Network ansatz coupled with the evolutionary
+scheme is indeed a promising approach to finding non-trivial quantum codes of high coherent information.

@@ -1,0 +1,19 @@
+Inferring the source of a diffusion in a large network of agents is a difficult but feasible task,
+if a few agents act as sensors revealing the time at which they got hit by the diffusion. A main limitation
+of current source detection algorithms is that they assume full knowledge of the contact network,
+which is rarely the case, especially for epidemics, where the source is called patient zero. Inspired
+by recent contact tracing algorithms, we propose a new framework, which we call Source Detection
+via Contact Tracing Framework (SDCTF). In the SDCTF, the source detection task starts at the time
+of the first hospitalization, and initially we have no knowledge about the contact network other
+than the identity of the first hospitalized agent. We may then explore the network by contact queries,
+and obtain symptom onset times by test queries in an adaptive way. We also assume that some of the agents
+may be asymptomatic, and therefore cannot reveal their symptom onset time. Our goal is to find patient
+zero with as few contact and test queries as possible. We propose two local search algorithms for
+the SDCTF: the LS algorithm is more data-efficient, but can fail to find the true source if many asymptomatic
+agents are present, whereas the LS+ algorithm is more robust to asymptomatic agents. By simulations
+we show that both LS and LS+ outperform state of the art adaptive and non-adaptive source detection
+algorithms adapted to the SDCTF, even though these baseline algorithms have full access to the contact
+network. Extending the theory of random exponential trees, we analytically approximate the probability
+of success of the LS/ LS+ algorithms, and we show that our analytic results match the simulations.
+Finally, we benchmark our algorithms on the Data-driven COVID-19 Simulator developed by Lorch
+et al., which is the first time source detection algorithms are tested on such a complex dataset.

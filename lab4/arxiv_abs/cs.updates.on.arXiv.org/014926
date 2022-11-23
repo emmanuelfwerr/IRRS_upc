@@ -1,0 +1,20 @@
+Subset-Sum is an NP-complete problem where one must decide if a multiset of $n$ integers contains
+a subset whose elements sum to a target value $m$. The best known classical and quantum algorithms
+run in time $\tilde{O}(2^{n/2})$ and $\tilde{O}(2^{n/3})$, respectively, based on the well-known
+meet-in-the-middle technique. Here we introduce a novel dynamic programming data structure with
+applications to Subset-Sum and a number of variants, including Equal-Sums (where one seeks two
+disjoint subsets with the same sum), 2-Subset-Sum (a relaxed version of Subset-Sum where each item
+in the input set can be used twice in the summation), and Shifted-Sums, a generalization of both of
+these variants, where one seeks two disjoint subsets whose sums differ by some specified value.
+Given any modulus $p$, our data structure can be constructed in time $O(np)$, after which queries
+can be made in time $O(n)$ to the lists of subsets summing to a same value modulo $p$. We use this data
+structure to give new $\tilde{O}(2^{n/2})$ and $\tilde{O}(2^{n/3})$ classical and quantum algorithms
+for Subset-Sum, not based on the meet-in-the-middle method. We then use the data structure in combination
+with variable time amplitude amplification and a quantum pair finding algorithm, extending quantum
+element distinctness and claw finding algorithms to the multiple solutions case, to give an $O(2^{0.504n})$
+quantum algorithm for Shifted-Sums, an improvement on the best known $O(2^{0.773n})$ classical
+running time. We also study Pigeonhole Equal-Sums and Pigeonhole Modular Equal-Sums, where the
+existence of a solution is guaranteed by the pigeonhole principle. For the former problem we give
+classical and quantum algorithms with running time $\tilde{O}(2^{n/2})$ and $\tilde{O}(2^{2n/5})$,
+respectively. For the more general modular problem we give a classical algorithm which also runs
+in time $\tilde{O}(2^{n/2})$. 

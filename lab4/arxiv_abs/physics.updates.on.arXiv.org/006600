@@ -1,0 +1,20 @@
+Machine Learning (ML) methods have demonstrated exceptional performance in recent years when
+applied to the task of seismic event detection. With numerous ML techniques now available for detecting
+seismicity, applying these methods in practice can help further highlight their advantages over
+more traditional approaches. Constructing such workflows also enables benchmarking comparisons
+of the latest algorithms on practical data. We combine the latest methods in seismic event detection
+to analyse an 18-day period of aftershock seismicity for the $M_{w}$ 6.4 2019 Durr\"es earthquake
+in Albania. We test two phase association-based event detection methods, the EarthQuake Transformer
+(EQT; Mousavi et al., 2020) end-to-end seismic detection workflow, and the PhaseNet (Zhu & Beroza,
+2019) picker with the Hyperbolic Event eXtractor (Woollam et al., 2020) associator. Both ML approaches
+are benchmarked against a data set compiled by two independently operating seismic experts who
+processed a subset of events of this 18-day period. In total, PhaseNet & HEX identifies 3,551 events,
+and EQT detects 1,110 events with the larger catalog (PhaseNet & HEX) achieving a magnitude of completeness
+of ~1. By relocating the derived catalogs with the same minimum 1D velocity model, we calculate statistics
+on the resulting hypocentral locations and phase picks. We find that the ML-methods yield results
+consistent with manual pickers, with bias that is no larger than that between different pickers.
+The achieved fit after relocation is comparable to that of the manual picks but the increased number
+of picks per event for the ML pickers, especially PhaseNet, yields smaller hypocentral errors.
+The number of associated events per hour increases for seismically quiet times of the day, and the
+smallest magnitude events are detected throughout these periods, which we interpret to be indicative
+of true event associations. 

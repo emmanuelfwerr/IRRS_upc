@@ -1,0 +1,19 @@
+Hole detection is a crucial task for monitoring the status of wireless sensor networks (WSN) which
+often consist of low-capability sensors. Holes can form in WSNs due to the problems during placement
+of the sensors or power/hardware failure. In these situations, sensing or transmitting data could
+be affected and can interrupt the normal operation of the WSNs. It may also decrease the lifetime
+of the network and sensing coverage of the sensors. The problem of hole detection is especially challenging
+in WSNs since the exact location of the sensors is often unknown. In this paper, we propose a novel
+hole detection approach called FD-CNN which is based on Force-directed (FD) Algorithm and Convolutional
+Neural Network (CNN). In contrast to existing approaches, FD-CNN is a centralized approach and
+is able to detect holes from WSNs without relying on the information related to the location of the
+sensors. The proposed approach also alleviates the problem of high computational complexity in
+distributed approaches. The proposed approach accepts the network topology of a WSN as an input
+and generates the identity of the nodes surrounding each detected hole in the network as the final
+output. In the proposed approach, an FD algorithm is used to generate the layout of the wireless sensor
+networks followed by the identification of the holes in the layouts using a trained CNN model. In
+order to prepare labeled datasets for training the CNN model, an unsupervised pre-processing method
+is also proposed in this paper. After the holes are detected by the CNN model, two algorithms are proposed
+to identify the regions of the holes and corresponding nodes surrounding the regions. Extensive
+experiments are conducted to evaluate the proposed approach based on different datasets. Experimental
+results show that FD-CNN can achieve 80% sensitivity and 93% specificity in less than 2 minutes.

@@ -1,0 +1,19 @@
+Distributed switched large-scale systems are composed by dynamically coupled subsystems, in
+which interactions among subsystems vary over time according to an exogenous input signal named
+switching signal. In this paper, we present a distributed robust switched model-based predictive
+control (DSwMPC) to control such systems that are subject to local state and input constraints.
+The proposed method guarantees stabilizing the origin of the whole closed-loop system and ensures
+the constraints satisfaction in the presence of an unknown switching signal. In the distributed
+model-based predictive control (DMPC) used in this work, by considering the interactions among
+subsystems as an additive disturbance, the effect of the switch is reflected on the dynamic equation,
+local, and consistency constraint sets of the nominal subsystems. In the DSwMPC, to compensate
+the effect of switching signal which creates a time-varying network topology, a robust tube-based
+switched model-based predictive control (RSwMPC) with switched robust control invariant (switchRCI)
+set as the target set robust to unknown mode switching is used as local controller. The scheme performance
+is assessed using three typical examples. In the first example, the switching times are unknown
+in prior, but the next neighborhood sets are assumed to be known in prior. In the second and third cases,
+both of them are supposed to be unknown in prior. The simulation results show that the input and state
+constraints are satisfied by the proposed DSwMPC at all times. They also validate that the closed-loop
+system converges to the origin. Also, a comparison of the DSwMPC with a centralized SwMPC (CSwMPC)
+and a decentralized SwMPC (DeSwMPC) shows that the DSwMPC outperforms the DecSwMPC and also the
+shapes of response curves under the CSwMPC are very similar to those obtained by the DSwMPC. 

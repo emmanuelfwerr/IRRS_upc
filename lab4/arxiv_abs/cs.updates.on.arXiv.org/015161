@@ -1,0 +1,19 @@
+Modern deep neural networks must demonstrate state-of-the-art accuracy while exhibiting low
+latency and energy consumption. As such, neural architecture search (NAS) algorithms take these
+two constraints into account when generating a new architecture. However, efficiency metrics
+such as latency are typically hardware dependent requiring the NAS algorithm to either measure
+or predict the architecture latency. Measuring the latency of every evaluated architecture adds
+a significant amount of time to the NAS process. Here we propose Microprocessor A Priori for Latency
+Estimation MAPLE that does not rely on transfer learning or domain adaptation but instead generalizes
+to new hardware by incorporating a prior hardware characteristics during training. MAPLE takes
+advantage of a novel quantitative strategy to characterize the underlying microprocessor by measuring
+relevant hardware performance metrics, yielding a fine-grained and expressive hardware descriptor.
+Moreover, the proposed MAPLE benefits from the tightly coupled I/O between the CPU and GPU and their
+dependency to predict DNN latency on GPUs while measuring microprocessor performance hardware
+counters from the CPU feeding the GPU hardware. Through this quantitative strategy as the hardware
+descriptor, MAPLE can generalize to new hardware via a few shot adaptation strategy where with as
+few as 3 samples it exhibits a 3% improvement over state-of-the-art methods requiring as much as
+10 samples. Experimental results showed that, increasing the few shot adaptation samples to 10
+improves the accuracy significantly over the state-of-the-art methods by 12%. Furthermore, it
+was demonstrated that MAPLE exhibiting 8-10% better accuracy, on average, compared to relevant
+baselines at any number of adaptation samples. 

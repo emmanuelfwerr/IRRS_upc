@@ -1,0 +1,20 @@
+Particle tracking in biological imaging is concerned with reconstructing the trajectories, locations,
+or velocities of the targeting particles. The standard approach of particle tracking consists
+of two steps: first reconstructing statically the source locations in each time step, and second
+applying tracking techniques to obtain the trajectories and velocities. In contrast, the dynamic
+reconstruction seeks to simultaneously recover the source locations and velocities from all frames,
+which enjoys certain advantages. In this paper, we provide a rigorous mathematical analysis for
+the resolution limit of reconstructing source number, locations, and velocities by general dynamical
+reconstruction in particle tracking problems, by which we demonstrate the possibility of achieving
+super-resolution for the dynamic reconstruction. We show that when the location-velocity pairs
+of the particles are separated beyond certain distances (the resolution limits), the number of
+particles and the location-velocity pair can be stably recovered. The resolution limits are related
+to the cut-off frequency of the imaging system, signal-to-noise ratio, and the sparsity of the source.
+By these estimates, we also derive a stability result for a sparsity-promoting dynamic reconstruction.
+In addition, we further show that the reconstruction of velocities has a better resolution limit
+which improves constantly as the particles moving. This result is derived by an observation that
+the inherent cut-off frequency for the velocity recovery can be viewed as the total observation
+time multiplies the cut-off frequency of the imaging system, which may lead to a better resolution
+limit as compared to the one for each diffraction-limited frame. It is anticipated that this observation
+can inspire new reconstruction algorithms that improve the resolution of particle tracking in
+practice. 

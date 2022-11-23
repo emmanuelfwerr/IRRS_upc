@@ -1,0 +1,20 @@
+Due to their high energy intensity, buildings play a major role in the current worldwide energy transition.
+Building models are ubiquitous since they are needed at each stage of the life of buildings, i.e.
+for design, retrofitting, and control operations. Classical white-box models, based on physical
+equations, are bound to follow the laws of physics but the specific design of their underlying structure
+might hinder their expressiveness and hence their accuracy. On the other hand, black-box models
+are better suited to capture nonlinear building dynamics and thus can often achieve better accuracy,
+but they require a lot of data and might not follow the laws of physics, a problem that is particularly
+common for neural network (NN) models. To counter this known generalization issue, physics-informed
+NNs have recently been introduced, where researchers introduce prior knowledge in the structure
+of NNs to ground them in known underlying physical laws and avoid classical NN generalization issues.
+In this work, we present a novel physics-informed NN architecture, dubbed Physically Consistent
+NN (PCNN), which only requires past operational data and no engineering overhead, including prior
+knowledge in a linear module running in parallel to a classical NN. We formally prove that such networks
+are physically consistent -- by design and even on unseen data -- with respect to different control
+inputs and temperatures outside and in neighboring zones. We demonstrate their performance on
+a case study, where the PCNN attains an accuracy up to $40\%$ better than a classical physics-based
+resistance-capacitance model on $3$-day long prediction horizons. Furthermore, despite their
+constrained structure, PCNNs attain similar performance to classical NNs on the validation data,
+overfitting the training data less and retaining high expressiveness to tackle the generalization
+issue. 

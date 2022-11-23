@@ -1,0 +1,19 @@
+In the recent past, different researchers have proposed novel privacy-enhancing face recognition
+systems designed to conceal soft-biometric information at feature level. These works have reported
+impressive results, but usually do not consider specific attacks in their analysis of privacy protection.
+In most cases, the privacy protection capabilities of these schemes are tested through simple machine
+learning-based classifiers and visualisations of dimensionality reduction tools. In this work,
+we introduce an attack on feature level-based facial soft-biometric privacy-enhancement techniques.
+The attack is based on two observations: (1) to achieve high recognition accuracy, certain similarities
+between facial representations have to be retained in their privacy-enhanced versions; (2) highly
+similar facial representations usually originate from face images with similar soft-biometric
+attributes. Based on these observations, the proposed attack compares a privacy-enhanced face
+representation against a set of privacy-enhanced face representations with known soft-biometric
+attributes. Subsequently, the best obtained similarity scores are analysed to infer the unknown
+soft-biometric attributes of the attacked privacy-enhanced face representation. That is, the
+attack only requires a relatively small database of arbitrary face images and the privacy-enhancing
+face recognition algorithm as a black-box. In the experiments, the attack is applied to two representative
+approaches which have previously been reported to reliably conceal the gender in privacy-enhanced
+face representations. It is shown that the presented attack is able to circumvent the privacy enhancement
+to a considerable degree and is able to correctly classify gender with an accuracy of up to approximately
+90% for both of the analysed privacy-enhancing face recognition systems. 

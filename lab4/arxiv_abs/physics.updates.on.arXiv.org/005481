@@ -1,0 +1,20 @@
+Simulations of thin film sputter deposition require the separation of the plasma and material transport
+in the gas-phase from the growth/sputtering processes at the bounding surfaces. Interface models
+based on analytic expressions or look-up tables inherently restrict this complex interaction
+to a bare minimum. A machine learning model has recently been shown to overcome this remedy for Ar
+ions bombarding a Ti-Al composite target. However, the chosen network structure (i.e., a multilayer
+perceptron) provides approximately 4 million degrees of freedom, which bears the risk of overfitting
+the relevant dynamics and complicating the model to an unreliable extend. This work proposes a conceptually
+more sophisticated but parameterwise simplified regression artificial neural network for an
+extended scenario, considering a variable instead of a single fixed Ti-Al stoichiometry. A convolutional
+$\beta$-variational autoencoder is trained to reduce the high-dimensional energy-angular distribution
+of sputtered particles to a latent space representation of only two components. In addition to a
+primary decoder which is trained to reconstruct the input energy-angular distribution, a secondary
+decoder is employed to reconstruct the mean energy of incident Ar ions as well as the present Ti-Al
+composition. The mutual latent space is hence conditioned on these quantities. The trained primary
+decoder of the variational autoencoder network is subsequently transferred to a regression network,
+for which only the mapping to the particular latent space has to be learned. While obtaining a competitive
+performance, the number of degrees of freedom is drastically reduced to 15,111 and 486 parameters
+for the primary decoder and the remaining regression network, respectively. The underlying methodology
+is general and can easily be extended to more complex physical descriptions with a minimal amount
+of data required. 

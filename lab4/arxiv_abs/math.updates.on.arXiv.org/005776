@@ -1,0 +1,19 @@
+In this paper, we develop a new type of accelerated algorithms to solve some classes of maximally
+monotone equations as well as monotone inclusions. Instead of using Nesterov's accelerating approach,
+our methods rely on a so-called Halpern-type fixed-point iteration in [32], and recently exploited
+by a number of researchers, including [24, 70]. Firstly, we derive a new variant of the anchored extra-gradient
+scheme in [70] based on Popov's past extra-gradient method to solve a maximally monotone equation
+$G(x) = 0$. We show that our method achieves the same $\mathcal{O}(1/k)$ convergence rate (up to
+a constant factor) as in the anchored extra-gradient algorithm on the operator norm $\Vert G(x_k)\Vert$,
+, but requires only one evaluation of $G$ at each iteration, where $k$ is the iteration counter. Next,
+we develop two splitting algorithms to approximate a zero point of the sum of two maximally monotone
+operators. The first algorithm originates from the anchored extra-gradient method combining
+with a splitting technique, while the second one is its Popov's variant which can reduce the per-iteration
+complexity. Both algorithms appear to be new and can be viewed as accelerated variants of the Douglas-Rachford
+(DR) splitting method. They both achieve $\mathcal{O}(1/k)$ rates on the norm $\Vert G_{\gamma}(x_k)\Vert$
+of the forward-backward residual operator $G_{\gamma}(\cdot)$ associated with the problem.
+We also propose a new accelerated Douglas-Rachford splitting scheme for solving this problem which
+achieves $\mathcal{O}(1/k)$ convergence rate on $\Vert G_{\gamma}(x_k)\Vert$ under only maximally
+monotone assumptions. Finally, we specify our first algorithm to solve convex-concave minimax
+problems and apply our accelerated DR scheme to derive a new variant of the alternating direction
+method of multipliers (ADMM). 

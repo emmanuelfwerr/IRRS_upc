@@ -1,0 +1,20 @@
+As Deep Learning algorithms continue to evolve and become more sophisticated, they require massive
+datasets for model training and efficacy of models. Some of those data requirements can be met with
+the help of existing datasets within the organizations. Current Machine Learning practices can
+be leveraged to generate synthetic data from an existing dataset. Further, it is well established
+that diversity in generated synthetic data relies on (and is perhaps limited by) statistical properties
+of available dataset within a single organization or entity. The more diverse an existing dataset
+is, the more expressive and generic synthetic data can be. However, given the scarcity of underlying
+data, it is challenging to collate big data in one organization. The diverse, non-overlapping dataset
+across distinct organizations provides an opportunity for them to contribute their limited distinct
+data to a larger pool that can be leveraged to further synthesize. Unfortunately, this raises data
+privacy concerns that some institutions may not be comfortable with. This paper proposes a novel
+approach to generate synthetic data - FedSyn. FedSyn is a collaborative, privacy preserving approach
+to generate synthetic data among multiple participants in a federated and collaborative network.
+FedSyn creates a synthetic data generation model, which can generate synthetic data consisting
+of statistical distribution of almost all the participants in the network. FedSyn does not require
+access to the data of an individual participant, hence protecting the privacy of participant's
+data. The proposed technique in this paper leverages federated machine learning and generative
+adversarial network (GAN) as neural network architecture for synthetic data generation. The proposed
+method can be extended to many machine learning problem classes in finance, health, governance,
+technology and many more. 

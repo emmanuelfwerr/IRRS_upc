@@ -1,0 +1,20 @@
+In this work we developed a mathematical model and a simulation platform for a fish-inspired robotic
+template, namely Magnetic, Modular, Undulatory Robotics ($\mu$Bots). Through this platform,
+we systematically explored the effects of design and fluid parameters on the swimming performance
+via reinforcement learning. The mathematical model was composed of two interacting subsystems,
+the robot dynamics and the hydrodynamics, and the hydrodynamic model consisted of reactive components
+(added-mass and pressure forces) and resistive components (drag and friction forces), which were
+then nondimensionalized for deriving key "control parameters" of robot-fluid interaction. The
+$\mu$Bot was actuated via magnetic actuators controlled with harmonic voltage signals, which
+were optimized via EM-based Policy Hyper Parameter Exploration (EPHE) to maximize swimming speed.
+By varying the control parameters, total 36 cases with different robot template variations (Number
+of Actuation (NoA) and stiffness) and hydrodynamic parameters were simulated and optimized via
+EPHE. Results showed that wavelength of optimized gaits (i.e., traveling wave along body) was independent
+of template variations and hydrodynamic parameters. Higher NoA yielded higher speed but lower
+speed per body length however with diminishing gain and lower speed per body length. Body and caudal-fin
+gait dynamics were dominated by the interaction among fluid added-mass, spring, and actuation
+torque, with negligible contribution from fluid resistive drag. In contrast, thrust generation
+was dominated by pressure force acting on caudal fin, as steady swimming resulted from a balance
+between resistive force and pressure force, with minor contributions from added-mass and body
+drag forces. Therefore, added-mass force only indirectly affected the thrust generation and swimming
+speed via the caudal fin dynamics. 

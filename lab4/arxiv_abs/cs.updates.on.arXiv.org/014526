@@ -1,0 +1,20 @@
+Synthesizing multimodality medical data provides complementary knowledge and helps doctors
+make precise clinical decisions. Although promising, existing multimodal brain graph synthesis
+frameworks have several limitations. First, they mainly tackle only one problem (intra- or inter-modality),
+limiting their generalizability to synthesizing inter- and intra-modality simultaneously.
+Second, while few techniques work on super-resolving low-resolution brain graphs within a single
+modality (i.e., intra), inter-modality graph super-resolution remains unexplored though this
+would avoid the need for costly data collection and processing. More importantly, both target and
+source domains might have different distributions, which causes a domain fracture between them.
+To fill these gaps, we propose a multi-resolution StairwayGraphNet (SG-Net) framework to jointly
+infer a target graph modality based on a given modality and super-resolve brain graphs in both inter
+and intra domains. Our SG-Net is grounded in three main contributions: (i) predicting a target graph
+from a source one based on a novel graph generative adversarial network in both inter (e.g., morphological-functional)
+and intra (e.g., functional-functional) domains, (ii) generating high-resolution brain graphs
+without resorting to the time consuming and expensive MRI processing steps, and (iii) enforcing
+the source distribution to match that of the ground truth graphs using an inter-modality aligner
+to relax the loss function to optimize. Moreover, we design a new Ground Truth-Preserving loss function
+to guide both generators in learning the topological structure of ground truth brain graphs more
+accurately. Our comprehensive experiments on predicting target brain graphs from source graphs
+using a multi-resolution stairway showed the outperformance of our method in comparison with its
+variants and state-of-the-art method. 

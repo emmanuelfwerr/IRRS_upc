@@ -1,0 +1,19 @@
+The development of coarse-grained (CG) molecular models typically requires a time-consuming
+iterative tuning of parameters in order to have the approximated CG models behaving correctly and
+consistently with, e.g., available higher-resolution simulation data and/or experimental observables.
+Automatic data-driven approaches are increasingly used to develop accurate models for molecular
+dynamics simulations. But the parameters obtained via such automatic methods often make use of
+specifically-designed interaction potentials, and are typically poorly transferable to molecular
+systems or conditions other than those used for training them. Using a multi-objective approach
+in combination with an automatic optimization engine (SwarmCG), here we show that it is possible
+to optimize CG models that are also transferable, obtaining optimized CG force fields (FFs). As
+a proof of concept, here we use lipids, for which we can avail of reference experimental data (area
+per lipid, bilayer thickness) and reliable atomistic simulations to guide the optimization. Once
+the resolution of the CG models (mapping) is set as an input, SwarmCG optimizes the parameters of
+the CG lipid models iteratively and simultaneously against higher-resolution simulations (bottom-up)
+and experimental data (top-down references). Including different types of lipid bilayers in the
+training set in a parallel optimization guarantees the transferability of the optimized lipid
+FF parameters. We demonstrate that SwarmCG can reach satisfactory agreement with experimental
+data for different resolution CG FFs. We also obtain stimulating insights on the precision-resolution
+balance of the FFs. The approach is general and can be effectively used to develop new FFs, as well
+as to improve existing ones. 

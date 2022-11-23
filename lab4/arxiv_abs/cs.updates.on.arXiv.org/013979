@@ -1,0 +1,20 @@
+In the context of the global coronavirus pandemic, different deep learning solutions for infected
+subject detection using chest X-ray images have been proposed. However, deep learning models usually
+need large labelled datasets to be effective. Semi-supervised deep learning is an attractive alternative,
+where unlabelled data is leveraged to improve the overall model's accuracy. However, in real-world
+usage settings, an unlabelled dataset might present a different distribution than the labelled
+dataset (i.e. the labelled dataset was sampled from a target clinic and the unlabelled dataset from
+a source clinic). This results in a distribution mismatch between the unlabelled and labelled datasets.
+In this work, we assess the impact of the distribution mismatch between the labelled and the unlabelled
+datasets, for a semi-supervised model trained with chest X-ray images, for COVID-19 detection.
+Under strong distribution mismatch conditions, we found an accuracy hit of almost 30\%, suggesting
+that the unlabelled dataset distribution has a strong influence in the behaviour of the model. Therefore,
+we propose a straightforward approach to diminish the impact of such distribution mismatch. Our
+proposed method uses a density approximation of the feature space. It is built upon the target dataset
+to filter out the observations in the source unlabelled dataset that might harm the accuracy of the
+semi-supervised model. It assumes that a small labelled source dataset is available together with
+a larger source unlabelled dataset. Our proposed method does not require any model training, it
+is simple and computationally cheap. We compare our proposed method against two popular state of
+the art out-of-distribution data detectors, which are also cheap and simple to implement. In our
+tests, our method yielded accuracy gains of up to 32\%, when compared to the previous state of the
+art methods. 

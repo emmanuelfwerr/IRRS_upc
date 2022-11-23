@@ -1,0 +1,19 @@
+This paper presents the design, development, and testing of hardware-software systems by the IISc-TCS
+team for Challenge 1 of the Mohammed Bin Zayed International Robotics Challenge 2020. The goal of
+Challenge 1 was to grab a ball suspended from a moving and maneuvering UAV and pop balloons anchored
+to the ground, using suitable manipulators. The important tasks carried out to address this challenge
+include the design and development of a hardware system with efficient grabbing and popping mechanisms,
+considering the restrictions in volume and payload, design of accurate target interception algorithms
+using visual information suitable for outdoor environments, and development of a software architecture
+for dynamic multi-agent aerial systems performing complex dynamic missions. In this paper, a single
+degree of freedom manipulator attached with an end-effector is designed for grabbing and popping,
+and robust algorithms are developed for the interception of targets in an uncertain environment.
+Vision-based guidance and tracking laws are proposed based on the concept of pursuit engagement
+and artificial potential function. The software architecture presented in this work proposes
+an Operation Management System (OMS) architecture that allocates static and dynamic tasks collaboratively
+among multiple UAVs to perform any given mission. An important aspect of this work is that all the
+systems developed were designed to operate in completely autonomous mode. A detailed description
+of the architecture along with simulations of complete challenge in the Gazebo environment and
+field experiment results are also included in this work. The proposed hardware-software system
+is particularly useful for counter-UAV systems and can also be modified in order to cater to several
+other applications. 

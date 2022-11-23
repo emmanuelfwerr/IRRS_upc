@@ -1,0 +1,19 @@
+MIF approaches, such as the MagLIF experiment, use magnetic fields in dense plasma to suppress cross-field
+thermal conduction, attempting to reduce heat losses and trap alpha particles to achieve ignition.
+However, the magnetic field can introduce other transport effects, some of which are deleterious.
+An understanding of these processes is thus crucial for accurate modelling of MIF. We generalise
+past work exploiting self-similar solutions to describe transport processes in planar geometry
+and compare the model to the radiation-magnetohydrodynamics code Chimera. We solve the 1D extended
+MHD equations under pressure balance, making no assumptions about the ratio of magnetic and thermal
+pressures in the plasma. The resulting ODE boundary value problem is solved using a shooting method,
+combining an implicit ODE solver and a Newton-Raphson root finder. We show that the Nernst effect
+dominates over resistive diffusion in high $\beta$ plasma, but its significance is reduced as the
+$\beta$ decreases. On the other hand, we find that Ettingshausen and Ohmic heating effects are dominant
+in low $\beta$ plasma, and can be observable in even order unity $\beta$ plasma, though in the presence
+of a strong temperature gradient heat conduction remains dominant. We then present a test problem
+for the Ohmic heating and Ettingshausen effects which will be useful to validate codes modelling
+these effects. We also observe that the Ettingshausen effect plays a role in preventing temperature
+separation when Ohmic heating is strong. Neglecting this term may lead to overestimates for the
+electron temperature at a vacuum-plasma interface, such as at the edge of a z-pinch. The model developed
+can be used to provide test problems with arbitrary boundary conditions for magnetohydrodynamics
+codes, with the ability to freely switch on terms to compare their individual implementations.

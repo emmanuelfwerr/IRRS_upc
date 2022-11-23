@@ -1,0 +1,19 @@
+Programming machines with commonsense reasoning (CSR) abilities is a longstanding challenge
+in the Artificial Intelligence community. Current CSR benchmarks use multiple-choice (and in
+relatively fewer cases, generative) question-answering instances to evaluate machine commonsense.
+Recent progress in transformer-based language representation models suggest that considerable
+progress has been made on existing benchmarks. However, although tens of CSR benchmarks currently
+exist, and are growing, it is not evident that the full suite of commonsense capabilities have been
+systematically evaluated. Furthermore, there are doubts about whether language models are 'fitting'
+to a benchmark dataset's training partition by picking up on subtle, but normatively irrelevant
+(at least for CSR), statistical features to achieve good performance on the testing partition.
+To address these challenges, we propose a benchmark called Theoretically-Grounded Commonsense
+Reasoning (TG-CSR) that is also based on discriminative question answering, but with questions
+designed to evaluate diverse aspects of commonsense, such as space, time, and world states. TG-CSR
+is based on a subset of commonsense categories first proposed as a viable theory of commonsense by
+Gordon and Hobbs. The benchmark is also designed to be few-shot (and in the future, zero-shot), with
+only a few training and validation examples provided. This report discusses the structure and construction
+of the benchmark. Preliminary results suggest that the benchmark is challenging even for advanced
+language representation models designed for discriminative CSR question answering tasks. Benchmark
+access and leaderboard: https://codalab.lisn.upsaclay.fr/competitions/3080 Benchmark website:
+https://usc-isi-i2.github.io/TGCSR/ 

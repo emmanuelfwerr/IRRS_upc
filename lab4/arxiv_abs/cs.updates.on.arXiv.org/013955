@@ -1,0 +1,20 @@
+Internet of Things (IoT)-based indoor localization has gained significant popularity recently
+to satisfy the ever-increasing requirements of indoor Location-based Services (LBS). In this
+context, Inertial Measurement Unit (IMU)-based localization is of interest as it provides a scalable
+solution independent of any proprietary sensors/modules. Existing IMU-based methodologies,
+however, are mainly developed based on statistical heading and step length estimation techniques
+that suffer from cumulative error issues and have extensive computational time requirements limiting
+their application for real-time indoor positioning. To address the aforementioned issues, we
+propose the Online Dynamic Window (ODW)-assisted two-stage Long Short Term Memory (LSTM) localization
+framework. Three ODWs are proposed, where the first model uses a Natural Language Processing (NLP)-inspired
+Dynamic Window (DW) approach, which significantly reduces the required computational time. The
+second framework is developed based on a Signal Processing Dynamic Windowing (SP-DW) approach
+to further reduce the required processing time of the two-stage LSTM-based model. The third ODW,
+referred to as the SP-NLP, combines the first two windowing mechanisms to further improve the overall
+achieved accuracy. Compared to the traditional LSTM-based positioning approaches, which suffer
+from either high tensor computation requirements or low accuracy, the proposed ODW-assisted models
+can perform indoor localization in a near-real time fashion with high accuracy. Performances of
+the proposed ODW-assisted models are evaluated based on a real Pedestrian Dead Reckoning (PDR)
+dataset. The results illustrate potentials of the proposed ODW-assisted techniques in achieving
+high classification accuracy with significantly reduced computational time, making them applicable
+for near real-time implementations. 

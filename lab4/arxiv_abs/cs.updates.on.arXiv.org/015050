@@ -1,0 +1,19 @@
+Traditional deep learning models exhibit intriguing vulnerabilities that allow an attacker to
+force them to fail at their task. Notorious attacks such as the Fast Gradient Sign Method (FGSM) and
+the more powerful Projected Gradient Descent (PGD) generate adversarial examples by adding a magnitude
+of perturbation $\epsilon$ to the input's computed gradient, resulting in a deterioration of the
+effectiveness of the model's classification. This work introduces a model that is resilient to
+adversarial attacks. Our model leverages a well established principle from biological sciences:
+population diversity produces resilience against environmental changes. More precisely, our
+model consists of a population of $n$ diverse submodels, each one of them trained to individually
+obtain a high accuracy for the task at hand, while forced to maintain meaningful differences in their
+weight tensors. Each time our model receives a classification query, it selects a submodel from
+its population at random to answer the query. To introduce and maintain diversity in population
+of submodels, we introduce the concept of counter linking weights. A Counter-Linked Model (CLM)
+consists of submodels of the same architecture where a periodic random similarity examination
+is conducted during the simultaneous training to guarantee diversity while maintaining accuracy.
+In our testing, CLM robustness got enhanced by around 20% when tested on the MNIST dataset and at least
+15% when tested on the CIFAR-10 dataset. When implemented with adversarially trained submodels,
+this methodology achieves state-of-the-art robustness. On the MNIST dataset with $\epsilon=0.3$,
+it achieved 94.34% against FGSM and 91% against PGD. On the CIFAR-10 dataset with $\epsilon=8/255$,
+it achieved 62.97% against FGSM and 59.16% against PGD. 

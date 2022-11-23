@@ -1,0 +1,20 @@
+Mining the latent intentions from large volumes of natural language inputs is a key step to help data
+analysts design and refine Intelligent Virtual Assistants (IVAs) for customer service. To aid
+data analysts in this task we present Verint Intent Manager (VIM), an analysis platform that combines
+unsupervised and semi-supervised approaches to help analysts quickly surface and organize relevant
+user intentions from conversational texts. For the initial exploration of data we make use of a novel
+unsupervised and semi-supervised pipeline that integrates the fine-tuning of high performing
+language models, a distributed k-NN graph building method and community detection techniques
+for mining the intentions and topics from texts. The fine-tuning step is necessary because pre-trained
+language models cannot encode texts to efficiently surface particular clustering structures
+when the target texts are from an unseen domain or the clustering task is not topic detection. For
+flexibility we deploy two clustering approaches: where the number of clusters must be specified
+and where the number of clusters is detected automatically with comparable clustering quality
+but at the expense of additional computation time. We describe the application and deployment and
+demonstrate its performance using BERT on three text mining tasks. Our experiments show that BERT
+begins to produce better task-aware representations using a labeled subset as small as 0.5% of the
+task data. The clustering quality exceeds the state-of-the-art results when BERT is fine-tuned
+with labeled subsets of only 2.5% of the task data. As deployed in the VIM application, this flexible
+clustering pipeline produces high quality results, improving the performance of data analysts
+and reducing the time it takes to surface intentions from customer service data, thereby reducing
+the time it takes to build and deploy IVAs in new domains. 

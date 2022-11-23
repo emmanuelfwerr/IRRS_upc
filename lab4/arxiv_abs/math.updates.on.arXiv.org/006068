@@ -1,0 +1,20 @@
+Let $\bx_j = \btheta +\bep_j, j=1,...,n$, be observations of an unknown parameter $\btheta$ in
+a Euclidean or separable Hilbert space $\scrH$, where $\bep_j$ are noises as random elements in
+$\scrH$ from a general distribution. We study the estimation of $f(\btheta)$ for a given functional
+$f:\scrH\rightarrow \RR$ based on $\bx_j$'s. The key element of our approach is a new method which
+we call High-Order Degenerate Statistical Expansion. It leverages the use of classical multivariate
+Taylor expansion and degenerate $U$-statistic and yields an elegant explicit formula. In the univariate
+case of $\scrH=\R$, the formula expresses the error of the proposed estimator as a sum of order $k$
+degenerate $U$-products of the noises with coefficient $f^{(k)}(\btheta)/k!$ and an explicit
+remainder term in the form of the Riemann-Liouville integral as in the Taylor expansion around the
+true $\btheta$. For general $\scrH$, the formula expresses the estimation error in terms of the
+inner product of $f^{(k)}(\btheta)/k!$ and the average of the tensor products of $k$ noises with
+distinct indices and a parallel extension of the remainder term from the univariate case. This makes
+the proposed method a natural statistical version of the classical Taylor expansion. The proposed
+estimator can be viewed as a jackknife estimator of an ideal degenerate expansion of $f(\cdot)$
+around the true $\btheta$ with the degenerate $U$-product of the noises, and can be approximated
+by bootstrap. Thus, the jackknife, bootstrap and Taylor expansion approaches all converge to the
+proposed estimator. We develop risk bounds for the proposed estimator and a central limit theorem
+under a second moment condition (even in expansions of higher than the second order). We apply this
+new method to generalize several existing results with smooth and nonsmooth $f$ to universal $\bep_j$'s
+with only minimum moment constraints. 

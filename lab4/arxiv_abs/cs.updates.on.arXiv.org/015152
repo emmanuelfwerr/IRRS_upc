@@ -1,0 +1,19 @@
+Seminal works on light spanners over the years provide spanners with optimal lightness in various
+graph classes, such as in general graphs, Euclidean spanners, and minor-free graphs. Three shortcomings
+of previous works on light spanners are: (1) The techniques are ad hoc per graph class, and thus can't
+be applied broadly. (2) The runtimes of these constructions are almost always sub-optimal, and
+usually far from optimal. (3) These constructions are optimal in the standard and crude sense, but
+not in a refined sense that takes into account a wider range of involved parameters. This work aims
+at addressing these shortcomings by presenting a unified framework of light spanners in a variety
+of graph classes. Informally, the framework boils down to a transformation from sparse spanners
+to light spanners; since the state-of-the-art for sparse spanners is much more advanced than that
+for light spanners, such a transformation is powerful. Our framework is developed in two papers.
+The current paper is the first of the two -- it lays the basis of the unified framework and then applies
+it to design fast constructions with optimal lightness for several graph classes. Among various
+applications and implications of our framework, we highlight here the following: _ In low-dimensional
+Euclidean spaces, we present an $O(n\log n)$-time construction of $(1+\epsilon)$-spanners with
+lightness and degree both bounded by constants in the algebraic computation tree (ACT). Our construction
+resolves a major problem in the area of geometric spanners, which was open for three decades. _ In
+general graphs, for any $k \geq 2$, we construct a $(2k-1)(1+\epsilon)$-spanner with lightness
+$O(n^{1/k})$ in $O(m \alpha(m,n))$ time. This result for light spanners in general weighted graphs
+is surprising, as it outperforms the analog one for sparse spanners. 

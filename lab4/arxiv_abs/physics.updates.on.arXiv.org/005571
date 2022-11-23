@@ -1,0 +1,20 @@
+Numerical simulations of turbulence provide non-intrusive access to all the resolved scales,
+although they often invoke idealizations that can compromise realism. In contrast, experimental
+measurements probe the true flow with lesser idealizations, but they continually contend with
+spatio-temporal sensor resolution. Assimilating observations directly in simulations can combine
+the benefits of both approaches. The problem is expressed in variational form, where we seek a Navier-Stokes
+solution that minimizes a cost function defined in terms of the deviation of numerical predictions
+and observations. In this framework, measurements are no longer a mere record of the instantaneous,
+local quantity, but rather an encoding of the antecedent flow events that we aim to decode using the
+governing equations. We examine three state estimation problems: In circular Couette flow, starting
+from wall stress data, we accurately reconstruct the nonlinear saturated wavy Taylor vortices.
+Through a discussion of transition to chaos in a Lorenz system, we highlight the challenge of navigating
+the landscape of the cost function, and how the landscape can be modified by sensor placement. In
+turbulent channel flow, the Taylor microscale and Lyapunov timescale place restrictions on the
+resolution of observations that ensure an accurate reconstruction of all the scales. The notion
+of domain of dependence of an observation is introduced and related to the Hessian of the cost function.
+For measurements of wall stress, the eigenspectrum of the Hessian demonstrates the sensitivity
+of short-time observations to the near-wall turbulent scales and to outer large scales. At long
+times, backward chaos obfuscates the interpretation of the data: observations that are infinitesimally
+close may be traced back to entirely different earlier flow states--a dual to the more common butterfly
+effect for forward trajectories. 

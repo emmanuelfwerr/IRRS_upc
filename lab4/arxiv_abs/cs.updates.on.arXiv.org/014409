@@ -1,0 +1,19 @@
+Purpose: This work aims at developing a generalizable MRI reconstruction model in the meta-learning
+framework. The standard benchmarks in meta-learning are challenged by learning on diverse task
+distributions. The proposed network learns the regularization function in a variational model
+and reconstructs MR images with various under-sampling ratios or patterns that may or may not be
+seen in the training data by leveraging a heterogeneous dataset. Methods: We propose an unrolling
+network induced by learnable optimization algorithms (LOA) for solving our nonconvex nonsmooth
+variational model for MRI reconstruction. In this model, the learnable regularization function
+contains a task-invariant common feature encoder and task-specific learner represented by a shallow
+network. To train the network we split the training data into two parts: training and validation,
+and introduce a bilevel optimization algorithm. The lower-level optimization trains task-invariant
+parameters for the feature encoder with fixed parameters of the task-specific learner on the training
+dataset, and the upper-level optimizes the parameters of the task-specific learner on the validation
+dataset. Results: The average PSNR increases significantly compared to the network trained through
+conventional supervised learning on the seen CS ratios. We test the result of quick adaption on the
+unseen tasks after meta-training and in the meanwhile saving half of the training time; Conclusion:
+We proposed a meta-learning framework consisting of the base network architecture, design of regularization,
+and bi-level optimization-based training. The network inherits the convergence property of the
+LOA and interpretation of the variational model. The generalization ability is improved by the
+designated regularization and bilevel optimization-based training algorithm. 

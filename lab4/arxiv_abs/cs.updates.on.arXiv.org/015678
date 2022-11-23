@@ -1,0 +1,20 @@
+In this paper, we investigate the problem of synthesizing computable functions of infinite words
+over an infinite alphabet (data $\omega$-words). The notion of computability is defined through
+Turing machines with infinite inputs which can produce the corresponding infinite outputs in the
+limit. We use non-deterministic transducers equipped with registers, an extension of register
+automata with outputs, to describe specifications. Being non-deterministic, such transducers
+may not define functions but more generally relations of data $\omega$-words. In order to increase
+the expressive power of these machines, we even allow guessing of arbitrary data values when updating
+their registers. For functions over data $\omega$-words, we identify a sufficient condition (the
+possibility of determining the next letter to be outputted, which we call next letter problem) under
+which computability (resp. uniform computability) and continuity (resp. uniform continuity)
+coincide. We focus on two kinds of data domains: first, the general setting of oligomorphic data,
+which encompasses any data domain with equality, as well as the setting of rational numbers with
+linear order; and second, the set of natural numbers equipped with linear order. For both settings,
+we prove that functionality, i.e. determining whether the relation recognized by the transducer
+is actually a function, is decidable. We also show that the so-called next letter problem is decidable,
+yielding equivalence between (uniform) continuity and (uniform) computability. Last, we provide
+characterizations of (uniform) continuity, which allow us to prove that these notions, and thus
+also (uniform) computability, are decidable. We even show that all these decision problems are
+PSpace-complete for (N,<) and for a large class of oligomorphic data domains, including for instance
+(Q,<). 

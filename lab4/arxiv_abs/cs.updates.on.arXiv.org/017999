@@ -1,0 +1,20 @@
+The complex driving environment brings great challenges to the visual perception of autonomous
+vehicles. The accuracy of visual perception drops off sharply under diverse weather conditions
+and uncertain traffic flow. Black box model makes it difficult to interpret the mechanisms of visual
+perception. To enhance the user acceptance and reliability of the visual perception system, a textual
+explanation of the scene evolvement is essential. It analyzes the geometry and topology structure
+in the complex environment and offers clues to decision and control. However, the existing scene
+explanation has been implemented as a separate model. It cannot detect comprehensive textual information
+and requires a high computational load and time consumption. Thus, this study proposed a comprehensive
+and efficient textual explanation model for complex road and traffic scenarios. From 336k video
+frames of the driving environment, critical images of complex road and traffic scenarios were selected
+into a dataset. Through transfer learning, this study established an accurate and efficient segmentation
+model to gain semantic information. Based on the XGBoost algorithm, a comprehensive model was developed.
+The model obtained textual information including road types, the motion of conflict objects, and
+scenario complexity. The approach was verified on the real-world road. It improved the perception
+accuracy of critical traffic elements to 78.8%. The time consumption reached 13 minutes for each
+epoch, which was 11.5 times more efficient compared with the pre-trained network. The textual information
+analyzed from the model was also accordant with reality. The findings explain how autonomous vehicle
+detects the driving environment, which lays a foundation for subsequent decision and control.
+It can improve the perception ability by enriching the prior knowledge and judgments for complex
+traffic situations. 

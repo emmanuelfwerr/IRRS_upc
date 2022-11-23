@@ -1,0 +1,19 @@
+Gaussian covariance graph model is a popular model in revealing underlying dependency structures
+among random variables. A Bayesian approach to the estimation of covariance structures uses priors
+that force zeros on some off-diagonal entries of covariance matrices and put a positive definite
+constraint on matrices. In this paper, we consider a spike and slab prior on off-diagonal entries,
+which uses a mixture of point-mass and normal distribution. The point-mass naturally introduces
+sparsity to covariance structures so that the resulting posterior from this prior renders covariance
+structure learning. Under this prior, we calculate posterior model probabilities of covariance
+structures using Laplace approximation. We show that the error due to Laplace approximation becomes
+asymptotically marginal at some rate depending on the posterior convergence rate of covariance
+matrix under the Frobenius norm. With the approximated posterior model probabilities, we propose
+a new framework for estimating a covariance structure. Since the Laplace approximation is done
+around the mode of conditional posterior of covariance matrix, which cannot be obtained in the closed
+form, we propose a block coordinate descent algorithm to find the mode and show that the covariance
+matrix can be estimated using this algorithm once the structure is chosen. Through a simulation
+study based on five numerical models, we show that the proposed method outperforms graphical lasso
+and sample covariance matrix in terms of root mean squared error, max norm, spectral norm, specificity,
+and sensitivity. Also, the advantage of the proposed method is demonstrated in terms of accuracy
+compared to our competitors when it is applied to linear discriminant analysis (LDA) classification
+to breast cancer diagnostic dataset. 

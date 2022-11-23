@@ -1,0 +1,19 @@
+Low-order thermoacoustic models are qualitatively correct, but they are typically quantitatively
+inaccurate. We propose a time-domain bias-aware method to make qualitatively low--order models
+quantitatively (more) accurate. First, we develop a Bayesian ensemble data assimilation method
+for a low-order model to self-adapt and self-correct any time that reference data becomes available.
+Second, we apply the methodology to infer the thermoacoustic states and heat release parameters
+on the fly without storing data (real-time). We perform twin experiments using synthetic acoustic
+pressure measurements to analyse the performance of data assimilation in all nonlinear thermoacoustic
+regimes, from limit cycles to chaos, and interpret the results physically. Third, we propose practical
+rules for thermoacoustic data assimilation. An increase, reject, inflate strategy is proposed
+to deal with the rich nonlinear behaviour; and physical time scales for assimilation are proposed
+in non-chaotic regimes (with the Nyquist-Shannon criterion) and in chaotic regimes (with the Lyapunov
+time). Fourth, we perform data assimilation using data from a higher-fidelity model. We introduce
+an echo state network to estimate in real-time the forecast bias, which is the model error of the low-fidelity
+model. We show that (i) the correct acoustic pressure, parameters, and model bias can be accurately
+inferred; (ii) the learning is robust as it can tackle large uncertainties in the observations (up
+to 50% the mean values); (iii) the uncertainty of the prediction and parameters is naturally part
+of the output; and (iv) both the time-accurate solution and statistics can be successfully inferred.
+Data assimilation opens up new possibility for real-time prediction of thermoacoustics by synergistically
+combining physical knowledge and experimental data. 

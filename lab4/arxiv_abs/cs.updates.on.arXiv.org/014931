@@ -1,0 +1,19 @@
+The noise in diffusion-weighted images (DWIs) decreases the accuracy and precision of diffusion
+tensor magnetic resonance imaging (DTI) derived microstructural parameters and leads to prolonged
+acquisition time for achieving improved signal-to-noise ratio (SNR). Deep learning-based image
+denoising using convolutional neural networks (CNNs) has superior performance but often requires
+additional high-SNR data for supervising the training of CNNs, which reduces the practical feasibility.
+We develop a self-supervised deep learning-based method entitled "SDnDTI" for denoising DTI data,
+which does not require additional high-SNR data for training. Specifically, SDnDTI divides multi-directional
+DTI data into many subsets, each consisting of six DWI volumes along optimally chosen diffusion-encoding
+directions that are robust to noise for the tensor fitting, and then synthesizes DWI volumes along
+all acquired directions from the diffusion tensors fitted using each subset of the data as the input
+data of CNNs. On the other hand, SDnDTI synthesizes DWI volumes along acquired diffusion-encoding
+directions with higher SNR from the diffusion tensors fitted using all acquired data as the training
+target. SDnDTI removes noise from each subset of synthesized DWI volumes using a deep 3-dimensional
+CNN to match the quality of the cleaner target DWI volumes and achieves even higher SNR by averaging
+all subsets of denoised data. The denoising efficacy of SDnDTI is demonstrated on two datasets provided
+by the Human Connectome Project (HCP) and the Lifespan HCP in Aging. The SDnDTI results preserve
+image sharpness and textural details and substantially improve upon those from the raw data. The
+results of SDnDTI are comparable to those from supervised learning-based denoising and outperform
+those from state-of-the-art conventional denoising algorithms including BM4D, AONLM and MPPCA.

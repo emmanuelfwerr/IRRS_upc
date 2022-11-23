@@ -1,0 +1,20 @@
+It is well known that hyperspectral images (HSI) contain rich spatial-spectral contextual information,
+and how to effectively combine both spectral and spatial information using DNN for HSI classification
+has become a new research hotspot. Compared with CNN with square kernels, GCN have exhibited exciting
+potential to model spatial contextual structure and conduct flexible convolution on arbitrarily
+irregular image regions. However, current GCN only using first-order spectral-spatial signatures
+can result in boundary blurring and isolated misclassification. To address these, we first designed
+the graph-based second-order pooling (GSOP) operation to obtain contextual nodes information
+in non-Euclidean space for GCN. Further, we proposed a novel multi-stream hybridized convolutional
+network (MSHCNet) with combination of first and second order statistics in Euclidean/non-Euclidean
+spaces to learn and fuse multi-view complementary information to segment HSIs. Specifically,
+our MSHCNet adopted four parallel streams, which contained G-stream, utilizing the irregular
+correlation between adjacent land covers in terms of first-order graph in non-Euclidean space;
+C-stream, adopting convolution operator to learn regular spatial-spectral features in Euclidean
+space; N-stream, combining first and second order features to learn representative and discriminative
+regular spatial-spectral features of Euclidean space; S-stream, using GSOP to capture boundary
+correlations and obtain graph representations from all nodes in graphs of non-Euclidean space.
+Besides, these feature representations learned from four different streams were fused to integrate
+the multi-view complementary information for HSI classification. Finally, we evaluated our proposed
+MSHCNet on three hyperspectral datasets, and experimental results demonstrated that our method
+significantly outperformed state-of-the-art eight methods. 

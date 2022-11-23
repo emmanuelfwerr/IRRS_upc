@@ -1,0 +1,19 @@
+Liver cancer is one of the most common malignant diseases in the world. Segmentation and labeling
+of liver tumors and blood vessels in CT images can provide convenience for doctors in liver tumor
+diagnosis and surgical intervention. In the past decades, many state-of-the-art medical image
+segmentation algorithms appeared during this period. With the development of embedded devices,
+embedded deployment for medical segmentation and automatic reconstruction brings prospects
+for future automated surgical tasks. Yet, most of the existing segmentation methods mostly care
+about the spatial feature context and have a perception defect in the semantic relevance of medical
+images, which significantly affects the segmentation accuracy of liver tumors and blood vessels.
+Deploying large and complex models into embedded devices requires a reasonable trade-off between
+model accuracy, reasoning speed and model capacity. Given these problems, we introduce a multi-scale
+feature fusion network called TransFusionNet based on Transformer. This network achieved very
+competitive performance for liver vessel and liver tumor segmentation tasks, meanwhile it can
+improve the recognition of morphologic margins of liver tumors by exploiting the global information
+of CT images. Experiments show that in vessel segmentation task TransFusionNet achieved mean Dice
+coefficients of 0.899 and in liver tumor segmentation task TransFusionNet achieved mean Dice coefficients
+of 0.961. Compared with the state-of-the-art framework, our model achieves the best segmentation
+result. In addition, we deployed the model into an embedded micro-structure and constructed an
+integrated model for liver tumor vascular segmentation and reconstruction. This proprietary
+structure will be the exclusive component of the future medical field. 

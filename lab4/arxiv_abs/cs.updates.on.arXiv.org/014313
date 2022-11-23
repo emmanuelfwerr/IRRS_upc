@@ -1,0 +1,20 @@
+Every computer system -- from schedulers in public clouds (Amazon, Google, etc.) to computer networks
+to hypervisors to operating systems -- performs resource allocation across system users. The defacto
+allocation policy used in most of these systems, max-min fairness, guarantees desirable properties
+like incentive compatibility and Pareto efficiency, assuming user demands are time-independent.
+However, in modern real-world production systems, user demands are dynamic, i.e., vary over time.
+As a result, there is now a fundamental mismatch between the resource allocation goals of computer
+systems and the properties enabled by classic resource allocation policies. We consider a natural
+generalization of the classic algorithm for max-min fair allocation for the case of dynamic demands:
+this algorithm guarantees Pareto optimality, while ensuring that allocated resources are as max-min
+fair as possible up to any time instant, given the allocation in previous periods. While this dynamic
+allocation scheme remains Pareto optimal, it is not incentive compatible. We show that the possible
+increase in utility by misreporting demand is minimal and since this misreporting can lead to significant
+decrease in overall useful allocation, this suggests that it is not a useful strategy. Our main result
+is to show that when user demands are random variables, increasing the total amount of resource by
+a $(1+O(\epsilon))$ factor compared to the sum of expected instantaneous demands, makes the algorithm
+$(1+\epsilon)$-incentive compatible: no user can improve her allocation by a factor more than
+$(1+\epsilon)$ by misreporting demands, where $\epsilon\to 0$ as $n\to\infty$ and $n$ is the number
+of users. In the adversarial setting, we show that this algorithm is $3/2$-incentive compatible,
+which is nearly tight. We also generalize our results for the case of colluding users and multi-resource
+allocation. 

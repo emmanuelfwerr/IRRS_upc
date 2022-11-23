@@ -1,0 +1,20 @@
+Specialized accelerators are increasingly used to meet the power-performance goals of emerging
+applications such as machine learning, image processing, and graph analysis. Existing accelerator
+programming methodologies using APIs have several limitations: (1) The application code lacks
+portability to other platforms and compiler frameworks; (2) the lack of integration of accelerator
+code in the compiler limits useful optimizations such as instruction selection and operator fusion;
+and (3) the opacity of the accelerator function semantics limits the ability to check the final code
+for correctness. The root of these limitations is the lack of a formal software/hardware interface
+specification for accelerators. In this paper, we use the recently developed Instruction-Level
+Abstraction (ILA) for accelerators to serve this purpose, similar to how the Instruction Set Architecture
+(ISA) has been used as the software/hardware interface for processors. We propose a compiler flow
+termed D2A using the ILA and present a prototype that demonstrates this flow for deep learning (DL)
+applications. This prototype compiles programs from high-level domain-specific languages,
+e.g., PyTorch and MxNet, to multiple target accelerators with no target-specific extensions to
+the application or compiler - thus demonstrating application portability. It includes compiler
+optimizations through instruction selection using equality saturation-based flexible matching.
+Finally, we show checking the correctness of the resulting code through formal verification of
+individual matched operations and fully automated simulation-based validation of complete applications.
+The evaluation of the prototype compiler is based on six different DL applications and three different
+accelerators. Overall, this methodology lays the foundation for integrating accelerators in
+compiler flows using a formal software/hardware interface. 

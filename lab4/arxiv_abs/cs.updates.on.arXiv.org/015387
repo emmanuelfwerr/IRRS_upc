@@ -1,0 +1,18 @@
+Extreme Multilabel Text Classification (XMTC) is a text classification problem in which, (i) the
+output space is extremely large, (ii) each data point may have multiple positive labels, and (iii)
+the data follows a strongly imbalanced distribution. With applications in recommendation systems
+and automatic tagging of web-scale documents, the research on XMTC has been focused on improving
+prediction accuracy and dealing with imbalanced data. However, the robustness of deep learning
+based XMTC models against adversarial examples has been largely underexplored. In this paper,
+we investigate the behaviour of XMTC models under adversarial attacks. To this end, first, we define
+adversarial attacks in multilabel text classification problems. We categorize attacking multilabel
+text classifiers as (a) positive-targeted, where the target positive label should fall out of top-k
+predicted labels, and (b) negative-targeted, where the target negative label should be among the
+top-k predicted labels. Then, by experiments on APLC-XLNet and AttentionXML, we show that XMTC
+models are highly vulnerable to positive-targeted attacks but more robust to negative-targeted
+ones. Furthermore, our experiments show that the success rate of positive-targeted adversarial
+attacks has an imbalanced distribution. More precisely, tail classes are highly vulnerable to
+adversarial attacks for which an attacker can generate adversarial samples with high similarity
+to the actual data-points. To overcome this problem, we explore the effect of rebalanced loss functions
+in XMTC where not only do they increase accuracy on tail classes, but they also improve the robustness
+of these classes against adversarial attacks. The code for our experiments is available at https://github.com/xmc-aalto/adv-xmtc

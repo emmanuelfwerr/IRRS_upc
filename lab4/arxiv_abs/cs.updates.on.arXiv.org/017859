@@ -1,0 +1,19 @@
+Large language models can perform new tasks by adapting to a few in-context examples. For humans,
+rapid learning from examples can benefit from explanations that connect examples to task principles.
+We therefore investigate whether explanations of few-shot examples can allow language models
+to adapt more effectively. We annotate a set of 40 challenging tasks from BIG-Bench with explanations
+of answers to a small subset of questions, as well as a variety of matched control explanations. We
+evaluate the effects of various zero-shot and few-shot prompts that include different types of
+explanations, instructions, and controls on the performance of a range of large language models.
+We analyze these results using statistical multilevel modeling techniques that account for the
+nested dependencies among conditions, tasks, prompts, and models. We find that explanations of
+examples can improve performance. Adding untuned explanations to a few-shot prompt offers a modest
+improvement in performance; about 1/3 the effect size of adding few-shot examples, but twice the
+effect size of task instructions. We then show that explanations tuned for performance on a small
+validation set offer substantially larger benefits; building a prompt by selecting examples and
+explanations together substantially improves performance over selecting examples alone. Hand-tuning
+explanations can substantially improve performance on challenging tasks. Furthermore, even
+untuned explanations outperform carefully matched controls, suggesting that the benefits are
+due to the link between an example and its explanation, rather than lower-level features of the language
+used. However, only large models can benefit from explanations. In summary, explanations can support
+the in-context learning abilities of large language models on challenging tasks. 

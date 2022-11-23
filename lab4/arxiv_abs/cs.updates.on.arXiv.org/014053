@@ -1,0 +1,20 @@
+In the classical synthesis problem, we are given an LTL formula \psi over sets of input and output
+signals, and we synthesize a system T that realizes \psi: with every input sequences x, the system
+associates an output sequence T(x) such that the generated computation x \otimes T(x) satisfies
+\psi. In practice, the requirement to satisfy the specification in all environments is often too
+strong, and it is common to add assumptions on the environment. We introduce a new type of relaxation
+on this requirement. In good-enough synthesis (GE-synthesis), the system is required to generate
+a satisfying computation only if one exists. Formally, an input sequence x is hopeful if there exists
+some output sequence y such that the computation x \otimes y satisfies \psi, and a system GE-realizes
+\psi if it generates a computation that satisfies \psi on all hopeful input sequences. GE-synthesis
+is particularly relevant when the notion of correctness is multi-valued (rather than Boolean),
+and thus we seek systems of the highest possible quality, and when synthesizing autonomous systems,
+which interact with unexpected environments and are often only expected to do their best. We study
+GE-synthesis in Boolean and multi-valued settings. In both, we suggest and solve various definitions
+of GE-synthesis, corresponding to different ways a designer may want to take hopefulness into account.
+We show that in all variants, GE-synthesis is not computationally harder than traditional synthesis,
+and can be implemented on top of existing tools. Our algorithms are based on careful combinations
+of nondeterministic and universal automata. We augment systems that GE-realize their specifications
+by monitors that provide satisfaction information. In the multi-valued setting, we provide both
+a worst-case analysis and an expectation-based one, the latter corresponding to an interaction
+with a stochastic environment. 

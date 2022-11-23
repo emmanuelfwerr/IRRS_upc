@@ -1,0 +1,20 @@
+Although researchers increasingly adopt machine learning to model travel behavior, they predominantly
+focus on prediction accuracy, ignoring the ethical challenges embedded in machine learning algorithms.
+This study introduces an important missing dimension - computational fairness - to travel behavior
+analysis. We first operationalize computational fairness by equality of opportunity, then differentiate
+between the bias inherent in data and the bias introduced by modeling. We then demonstrate the prediction
+disparities in travel behavior modeling using the 2017 National Household Travel Survey (NHTS)
+and the 2018-2019 My Daily Travel Survey in Chicago. Empirically, deep neural network (DNN) and
+discrete choice models (DCM) reveal consistent prediction disparities across multiple social
+groups: both over-predict the false negative rate of frequent driving for the ethnic minorities,
+the low-income and the disabled populations, and falsely predict a higher travel burden of the socially
+disadvantaged groups and the rural populations than reality. Comparing DNN with DCM, we find that
+DNN can outperform DCM in prediction disparities because of DNN's smaller misspecification error.
+To mitigate prediction disparities, this study introduces an absolute correlation regularization
+method, which is evaluated with synthetic and real-world data. The results demonstrate the prevalence
+of prediction disparities in travel behavior modeling, and the disparities still persist regarding
+a variety of model specifics such as the number of DNN layers, batch size and weight initialization.
+Since these prediction disparities can exacerbate social inequity if prediction results without
+fairness adjustment are used for transportation policy making, we advocate for careful consideration
+of the fairness problem in travel behavior modeling, and the use of bias mitigation algorithms for
+fair transport decisions. 

@@ -1,0 +1,19 @@
+Thermal flows characterized by high Prandtl number are numerically challenging as the transfer
+of momentum and heat occurs at different time scales. To account for very low thermal conductivity
+and obey the Courant-Friedrichs-Lewy condition, the numerical diffusion of the scheme has to be
+reduced. As a consequence, the numerical artefacts are dominated by dispersion errors commonly
+known as wiggles. In this study, we explore possible remedies in the framework of the lattice Boltzmann
+method by applying novel collision kernels, lattices with a large number of discrete velocities,
+namely D3Q27, and second-order boundary conditions. For the first time, the cumulant-based collision
+operator is utilised to simulate both the hydrodynamic and the thermal field. Alternatively, the
+advected field is computed using the central moments' collision operator. Different relaxation
+strategies have been examined to account for additional degrees of freedom introduced by a higher-order
+lattice. To validate the proposed kernels for a pure advection-diffusion problem, the numerical
+simulations are compared against an analytical solution of a Gaussian hill. The structure of the
+numerical dispersion is shown by simulating advection and diffusion of a square indicator function.
+Finally, a study of steady forced heat convection from a confined cylinder is performed and compared
+against a FEM solution. It has been found, that the relaxation scheme of the advected field must be
+adjusted to profit from lattice with a larger number of discrete velocities. Obtained results show
+clearly that it is not sufficient to assume that only the first-order central moments/cumulants
+contribute to solving the macroscopic advection-diffusion equation. In the case of central moments,
+the beneficial effect of the two relaxation time approach is presented. 

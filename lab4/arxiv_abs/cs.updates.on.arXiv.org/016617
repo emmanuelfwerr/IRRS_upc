@@ -1,0 +1,20 @@
+We consider the decentralized stochastic optimization problems, where a network of $n$ nodes,
+each owning a local cost function, cooperate to find a minimizer of the globally-averaged cost.
+A widely studied decentralized algorithm for this problem is decentralized SGD (D-SGD), in which
+each node averages only with its neighbors. D-SGD is efficient in single-iteration communication,
+but it is very sensitive to the network topology. For smooth objective functions, the transient
+stage (which measures the number of iterations the algorithm has to experience before achieving
+the linear speedup stage) of D-SGD is on the order of ${\Omega}(n/(1-\beta)^2)$ and $\Omega(n^3/(1-\beta)^4)$
+for strongly and generally convex cost functions, respectively, where $1-\beta \in (0,1)$ is a
+topology-dependent quantity that approaches $0$ for a large and sparse network. Hence, D-SGD suffers
+from slow convergence for large and sparse networks. In this work, we study the non-asymptotic convergence
+property of the D$^2$/Exact-diffusion algorithm. By eliminating the influence of data heterogeneity
+between nodes, D$^2$/Exact-diffusion is shown to have an enhanced transient stage that is on the
+order of $\tilde{\Omega}(n/(1-\beta))$ and $\Omega(n^3/(1-\beta)^2)$ for strongly and generally
+convex cost functions, respectively. Moreover, when D$^2$/Exact-diffusion is implemented with
+gradient accumulation and multi-round gossip communications, its transient stage can be further
+improved to $\tilde{\Omega}(1/(1-\beta)^{\frac{1}{2}})$ and $\tilde{\Omega}(n/(1-\beta))$
+for strongly and generally convex cost functions, respectively. These established results for
+D$^2$/Exact-Diffusion have the best (i.e., weakest) dependence on network topology to our knowledge
+compared to existing decentralized algorithms. We also conduct numerical simulations to validate
+our theories. 

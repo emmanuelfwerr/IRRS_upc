@@ -1,0 +1,19 @@
+We propose CX-ToM, short for counterfactual explanations with theory-of mind, a new explainable
+AI (XAI) framework for explaining decisions made by a deep convolutional neural network (CNN).
+In contrast to the current methods in XAI that generate explanations as a single shot response, we
+pose explanation as an iterative communication process, i.e. dialog, between the machine and human
+user. More concretely, our CX-ToM framework generates sequence of explanations in a dialog by mediating
+the differences between the minds of machine and human user. To do this, we use Theory of Mind (ToM)
+which helps us in explicitly modeling human's intention, machine's mind as inferred by the human
+as well as human's mind as inferred by the machine. Moreover, most state-of-the-art XAI frameworks
+provide attention (or heat map) based explanations. In our work, we show that these attention based
+explanations are not sufficient for increasing human trust in the underlying CNN model. In CX-ToM,
+we instead use counterfactual explanations called fault-lines which we define as follows: given
+an input image I for which a CNN classification model M predicts class c_pred, a fault-line identifies
+the minimal semantic-level features (e.g., stripes on zebra, pointed ears of dog), referred to
+as explainable concepts, that need to be added to or deleted from I in order to alter the classification
+category of I by M to another specified class c_alt. We argue that, due to the iterative, conceptual
+and counterfactual nature of CX-ToM explanations, our framework is practical and more natural
+for both expert and non-expert users to understand the internal workings of complex deep learning
+models. Extensive quantitative and qualitative experiments verify our hypotheses, demonstrating
+that our CX-ToM significantly outperforms the state-of-the-art explainable AI models. 

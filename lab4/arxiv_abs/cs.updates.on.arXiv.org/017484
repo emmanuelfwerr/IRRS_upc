@@ -1,0 +1,20 @@
+This research aims to study a self-supervised 3D clothing reconstruction method, which recovers
+the geometry shape, and texture of human clothing from a single 2D image. Compared with existing
+methods, we observe that three primary challenges remain: (1) the conventional template-based
+methods are limited to modeling non-rigid clothing objects, e.g., handbags and dresses, which
+are common in fashion images; (2) 3D ground-truth meshes of clothing are usually inaccessible due
+to annotation difficulties and time costs. (3) It remains challenging to simultaneously optimize
+four reconstruction factors, i.e., camera viewpoint, shape, texture, and illumination. The inherent
+ambiguity compromises the model training, such as the dilemma between a large shape with a remote
+camera or a small shape with a close camera. In an attempt to address the above limitations, we propose
+a causality-aware self-supervised learning method to adaptively reconstruct 3D non-rigid objects
+from 2D images without 3D annotations. In particular, to solve the inherent ambiguity among four
+implicit variables, i.e., camera position, shape, texture, and illumination, we study existing
+works and introduce an explainable structural causal map (SCM) to build our model. The proposed
+model structure follows the spirit of the causal map, which explicitly considers the prior template
+in the camera estimation and shape prediction. When optimization, the causality intervention
+tool, i.e., two expectation-maximization loops, is deeply embedded in our algorithm to (1) disentangle
+four encoders and (2) help the prior template update. Extensive experiments on two 2D fashion benchmarks,
+e.g., ATR, and Market-HQ, show that the proposed method could yield high-fidelity 3D reconstruction.
+Furthermore, we also verify the scalability of the proposed method on a fine-grained bird dataset,
+i.e., CUB. 

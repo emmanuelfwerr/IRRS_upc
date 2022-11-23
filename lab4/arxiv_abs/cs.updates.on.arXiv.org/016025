@@ -1,0 +1,19 @@
+Given a sequence of random (directed and weighted) graphs, we address the problem of online monitoring
+and detection of changes in the underlying data distribution. Our idea is to endow sequential change-point
+detection (CPD) techniques with a graph representation learning substrate based on the versatile
+Random Dot Product Graph (RDPG) model. We consider efficient, online updates of a judicious monitoring
+function, which quantifies the discrepancy between the streaming graph observations and the nominal
+RDPG. This reference distribution is inferred via spectral embeddings of the first few graphs in
+the sequence. We characterize the distribution of this running statistic to select thresholds
+that guarantee error-rate control, and under simplifying approximations we offer insights on
+the algorithm's detection resolution and delay. The end result is a lightweight online CPD algorithm,
+that is also explainable by virtue of the well-appreciated interpretability of RDPG embeddings.
+This is in stark contrast with most existing graph CPD approaches, which either rely on extensive
+computation, or they store and process the entire observed time series. An apparent limitation
+of the RDPG model is its suitability for undirected and unweighted graphs only, a gap we aim to close
+here to broaden the scope of the CPD framework. Unlike previous proposals, our non-parametric RDPG
+model for weighted graphs does not require a priori specification of the weights' distribution
+to perform inference and estimation. This network modeling contribution is of independent interest
+beyond CPD. We offer an open-source implementation of the novel online CPD algorithm for weighted
+and direct graphs, whose effectiveness and efficiency are demonstrated via (reproducible) synthetic
+and real network data experiments. 

@@ -1,0 +1,19 @@
+Predicting geomagnetic conditions based on in-situ solar wind observations allows us to evade
+disasters caused by large electromagnetic disturbances originating from the Sun to save lives
+and protect economic activity. In this study, we aimed to examine the relationship between the Kp
+index, representing global magnetospheric activity level, and solar wind conditions using an
+interpretable neural network known as potential learning (PL). Data analyses based on neural networks
+are difficult to interpret; however, PL learns by focusing on the "potentiality of input neurons"
+and can identify which inputs are significantly utilized by the network. Using the full advantage
+of PL, we extracted the influential solar wind parameters that disturb the magnetosphere under
+southward Interplanetary magnetic field (IMF) conditions. The input parameters of PL were the
+three components of the IMF (Bx, By, -Bz(Bs)), solar wind flow speed (Vx), and proton number density
+(Np) in geocentric solar ecliptic (GSE) coordinates obtained from the OMNI solar wind database
+between 1998 and 2019. Furthermore, we classified these input parameters into two groups (targets),
+depending on the Kp level: Kp = 6- to 9 (positive target) and Kp = 0 to 1+ (negative target). Negative
+target samples were randomly selected to ensure that numbers of positive and negative targets were
+equal. The PL results revealed that solar wind flow speed is an influential parameter for increasing
+Kp under southward IMF conditions, which was in good agreement with previous reports on the statistical
+relationship between the Kp index and solar wind velocity, and the Kp formulation based on the IMF
+and solar wind plasma parameters. Based on this new neural network, we aim to construct a more correct
+and parameter-dependent space weather forecasting model. 

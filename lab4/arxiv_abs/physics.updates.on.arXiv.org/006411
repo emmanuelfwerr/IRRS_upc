@@ -1,0 +1,20 @@
+Background: Filtered back projection algorithms for voxel-based CT image reconstruction have
+noise properties defined by the filter. Iterative algorithms must stop at some point in their convergence
+and do not necessarily produce consistent noise properties for images with different degrees of
+heterogeneity. Purpose: A least-squares iterative algorithm for pCT image reconstruction converges
+toward a unique solution that optimally fits the protons. We present a stopping criterion that delivers
+solutions with the property that correlations of RSP noise between voxels are relatively low. This
+provides a method to produce pCT images with consistent noise properties useful for proton therapy
+treatment planning, which relies on summing RSP along columns of voxels. Consistent noise properties
+will also be useful for future studies of image quality using metrics such as contrast to noise ratio,
+and to compare RSP noise and dose of pCT with other modalities such as dual-energy CT. With simulated
+and real images with varying heterogeneity from a prototype clinical proton imaging system, we
+calculate average RSP correlations between voxel pairs in uniform regions-of-interest versus
+distance between voxels. We define a parameter r, the remaining distance to the unique solution
+relative to estimated RSP noise, and our stopping criterion is based on r falling below a chosen value.
+Results: We find large correlations between voxels for larger values of r, and anticorrelations
+for smaller values. For r in the range of 0.5 to 1, voxels are relatively uncorrelated, and compared
+to smaller values of r have lower noise with only slight loss of spatial resolution. Conclusions:
+A least-squares iterative algorithm with an r-based stopping criterion defines a pCT image reconstruction
+method with consistent statistical properties optimal for clinical use, including for treatment
+planning with pCT images. 

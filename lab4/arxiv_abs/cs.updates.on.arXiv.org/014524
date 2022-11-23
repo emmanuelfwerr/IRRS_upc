@@ -1,0 +1,20 @@
+Rich interaction with the world requires extensive contact between robots and the objects in their
+environment. Most such contacts involve significant compliance between the contacting surfaces
+due to rubber pads or inflated grippers, soft objects to be manipulated, and soft surfaces for safe
+human-robot interaction. Accurate simulation of these contacts is critical for meaningful sim-to-real
+transfer. Compliant contact interactions generate contact surfaces of considerable extent,
+over which contact forces are distributed with varying pressure. Finite element methods can capture
+these effects but are too slow for most robotics applications. Consequently, in order to enable
+real-time simulation rates, most current simulation tools model contact as occurring between
+rigid bodies at a point or set of points using ad hoc methods to incorporate localized compliance.
+However, point contact is non-smooth, hard to extend to arbitrary geometry, and often introduces
+non-physical artifacts. Moreover, point contact misses important area-dependent phenomena
+critical for robust manipulation, such as net contact moment and slip control. Pressure Field Contact
+(PFC) was recently introduced as a method for detailed modeling of contact interface regions at
+rates much faster than elasticity-theory models, while at the same time predicting essential trends
+and capturing rich contact behavior. PFC was designed to work with coarsely-meshed objects while
+preserving continuity to permit use with error-controlled integrators. Here we introduce a discrete
+approximation of PFC suitable for use with velocity-level time steppers that enables execution
+at real-time rates. We evaluate the accuracy and performance gains of our approach and demonstrate
+its effectiveness in simulation of relevant manipulation tasks. The method is available in open
+source as part of Drake's Hydroelastic Contact model. 

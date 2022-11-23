@@ -1,0 +1,19 @@
+Federated learning has emerged as a privacy-preserving machine learning approach where multiple
+parties can train a single model without sharing their raw training data. Federated learning typically
+requires the utilization of multi-party computation techniques to provide strong privacy guarantees
+by ensuring that an untrusted or curious aggregator cannot obtain isolated replies from parties
+involved in the training process, thereby preventing potential inference attacks. Until recently,
+it was thought that some of these secure aggregation techniques were sufficient to fully protect
+against inference attacks coming from a curious aggregator. However, recent research has demonstrated
+that a curious aggregator can successfully launch a disaggregation attack to learn information
+about model updates of a target party. This paper presents DeTrust-FL, an efficient privacy-preserving
+federated learning framework for addressing the lack of transparency that enables isolation attacks,
+such as disaggregation attacks, during secure aggregation by assuring that parties' model updates
+are included in the aggregated model in a private and secure manner. DeTrust-FL proposes a decentralized
+trust consensus mechanism and incorporates a recently proposed decentralized functional encryption
+(FE) scheme in which all parties agree on a participation matrix before collaboratively generating
+decryption key fragments, thereby gaining control and trust over the secure aggregation process
+in a decentralized setting. Our experimental evaluation demonstrates that DeTrust-FL outperforms
+state-of-the-art FE-based secure multi-party aggregation solutions in terms of training time
+and reduces the volume of data transferred. In contrast to existing approaches, this is achieved
+without creating any trust dependency on external trusted entities. 

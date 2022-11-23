@@ -1,0 +1,19 @@
+In micro-fluidics not only does capillarity dominate but also thermal fluctuations become important.
+On the level of the lubrication approximation, this leads to a quasi-linear fourth-order parabolic
+equation for the film height $h$ driven by space-time white noise. The gradient flow structure of
+its deterministic counterpart, the thin-film equation, which encodes the balance between driving
+capillary and limiting viscous forces, provides the guidance for the thermodynamically consistent
+introduction of fluctuations. We follow this route on the level of a spatial discretization of the
+gradient flow structure. Starting from an energetically conformal finite-element (FE) discretization,
+we point out that the numerical mobility function introduced by Gr\"un and Rumpf can be interpreted
+as a discretization of the metric tensor in the sense of a mixed FE method with lumping. While this
+discretization was devised in order to preserve the so-called entropy estimate, we use this to show
+that the resulting high-dimensional stochastic differential equation (SDE) preserves pathwise
+and pointwise strict positivity, at least in case of the physically relevant mobility function
+arising from the no-slip boundary condition. As a consequence, this discretization gives rise
+to a consistent invariant measure, namely a discretization of the Brownian excursion (up to the
+volume constraint), and thus features an entropic repulsion. The price to pay over more naive discretizations
+is that when writing the SDE in It\^o's form, which is the basis for the Euler-Mayurama time discretization,
+a correction term appears. To conclude, we perform various numerical experiments to compare the
+behavior of our discretization to that of the more naive finite difference discretization of the
+equation. 

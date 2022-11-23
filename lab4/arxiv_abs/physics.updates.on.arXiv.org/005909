@@ -1,0 +1,20 @@
+This work continues the parametric investigation on the sampling nuances of the Dynamic Mode Decomposition
+(DMD) under the Koopman analysis. Through turbulent wakes, the investigation corroborated the
+generality of the universal convergence states for all DMD implementations. It discovered the
+implications of sampling range and resolution -- the determinants of the spectral discretisation
+by discrete frequency bins and the highest resolved frequency, respectively. The work reaffirmed
+the necessity of the Convergence state for sampling independence, too. Results also suggested
+that the observables derived from the same flow may contain dynamically distinct information,
+thus altering the DMD output. The static pressure and vortex identification criteria are optimal
+variables for characterising structural response and fluid excitation. The pressure, velocity
+magnitude, and turbulence kinetic energy fields also suffice for general applications, but the
+Reynolds stresses and velocity components shall be avoided. Mean-subtraction is recommended
+for best approximations of the Koopman eigen tuples. Furthermore, the parametric investigation
+on truncation discovered some low-energy states that dictate a system's temporal integrity. The
+best practice for order reduction is to avoid truncation and employ dominant mode selection on a
+full-state subspace, though large-degree truncation supports fair data reconstruction with
+low computational cost. Finally, this work demonstrated the synthetic noise resulting from pre-decomposition
+interpolation. In unavoidable interpolations to increase the spatial dimension n, high-order
+schemes are recommended for better retention of the original dynamics. Finally, the observations
+herein, derived from inhomogeneous anisotropic turbulence, offer constructive references for
+DMD on fluid systems, if not also others beyond fluid mechanics. 

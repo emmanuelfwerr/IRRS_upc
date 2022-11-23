@@ -1,0 +1,19 @@
+Facial expression plays an important role in understanding human emotions. Most recently, deep
+learning based methods have shown promising for facial expression recognition. However, the performance
+of the current state-of-the-art facial expression recognition (FER) approaches is directly related
+to the labeled data for training. To solve this issue, prior works employ the pretrain-and-finetune
+strategy, i.e., utilize a large amount of unlabeled data to pretrain the network and then finetune
+it by the labeled data. As the labeled data is in a small amount, the final network performance is still
+restricted. From a different perspective, we propose to perform omni-supervised learning to directly
+exploit reliable samples in a large amount of unlabeled data for network training. Particularly,
+a new dataset is firstly constructed using a primitive model trained on a small number of labeled
+samples to select samples with high confidence scores from a face dataset, i.e., MS-Celeb-1M, based
+on feature-wise similarity. We experimentally verify that the new dataset created in such an omni-supervised
+manner can significantly improve the generalization ability of the learned FER model. However,
+as the number of training samples grows, computational cost and training time increase dramatically.
+To tackle this, we propose to apply a dataset distillation strategy to compress the created dataset
+into several informative class-wise images, significantly improving the training efficiency.
+We have conducted extensive experiments on widely used benchmarks, where consistent performance
+gains can be achieved under various settings using the proposed framework. More importantly, the
+distilled dataset has shown its capabilities of boosting the performance of FER with negligible
+additional computational costs. 

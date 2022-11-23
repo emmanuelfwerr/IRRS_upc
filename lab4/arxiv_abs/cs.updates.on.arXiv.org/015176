@@ -1,0 +1,18 @@
+Graph Neural Networks (GNNs) have achieved unprecedented success in learning graph representations
+to identify categorical labels of graphs. However, most existing graph classification problems
+with GNNs follow a balanced data splitting protocol, which is misaligned with many real-world scenarios
+in which some classes have much fewer labels than others. Directly training GNNs under this imbalanced
+situation may lead to uninformative representations of graphs in minority classes, and compromise
+the overall performance of downstream classification, which signifies the importance of developing
+effective GNNs for handling imbalanced graph classification. Existing methods are either tailored
+for non-graph structured data or designed specifically for imbalance node classification while
+few focus on imbalance graph classification. To this end, we introduce a novel framework, Graph-of-Graph
+Neural Networks (G$^2$GNN), which alleviates the graph imbalance issue by deriving extra supervision
+globally from neighboring graphs and locally from graphs themselves. Globally, we construct a
+graph of graphs (GoG) based on kernel similarity and perform GoG propagation to aggregate neighboring
+graph representations, which are initially obtained by node-level propagation with pooling via
+a GNN encoder. Locally, we employ topological augmentation via masking nodes or dropping edges
+to improve the model generalizability in discerning topology of unseen testing graphs. Extensive
+graph classification experiments conducted on seven benchmark datasets demonstrate our proposed
+G$^2$GNN outperforms numerous baselines by roughly 5\% in both F1-macro and F1-micro scores. The
+implementation of G$^2$GNN is available at \href{https://github.com/YuWVandy/G2GNN}{https://github.com/YuWVandy/G2GNN}.

@@ -1,0 +1,20 @@
+Considering the multimodal nature of transport systems and potential cross-modal correlations,
+there is a growing trend of enhancing demand forecasting accuracy by learning from multimodal data.
+These multimodal forecasting models can improve accuracy but be less practical when different
+parts of multimodal datasets are owned by different institutions who cannot directly share data
+among them. While various institutions may can not share their data with each other directly, they
+may share forecasting models trained by their data, where such models cannot be used to identify
+the exact information from their datasets. This study proposes an Unsupervised Knowledge Adaptation
+Demand Forecasting framework to forecast the demand of the target mode by utilizing a pre-trained
+model based on data of another mode, which does not require direct data sharing of the source mode.
+The proposed framework utilizes the potential shared patterns among multiple transport modes
+to improve forecasting performance while avoiding the direct sharing of data among different institutions.
+Specifically, a pre-trained forecasting model is first learned based on the data of a source mode,
+which can capture and memorize the source travel patterns. Then, the demand data of the target dataset
+is encoded into an individual knowledge part and a sharing knowledge part which will extract travel
+patterns by individual extraction network and sharing extraction network, respectively. The
+unsupervised knowledge adaptation strategy is utilized to form the sharing features for further
+forecasting by making the pre-trained network and the sharing extraction network analogous. Our
+findings illustrate that unsupervised knowledge adaptation by sharing the pre-trained model
+to the target mode can improve the forecasting performance without the dependence on direct data
+sharing. 

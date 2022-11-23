@@ -1,0 +1,19 @@
+With the emergence of mixed precision capabilities in hardware, iterative refinement schemes
+for solving linear systems $Ax=b$ have recently been revisited and reanalyzed in the context of
+three or more precisions. These new analyses show that under certain constraints on condition number,
+the LU factorization of the matrix can be computed in low precision without affecting the final accuracy.
+Another promising technique is GMRES-based iterative refinement, which, in contrast to the standard
+approach, use GMRES preconditioned by the low-precision triangular factors to solve for the approximate
+solution update in each refinement step. This more accurate solution method extends the range of
+problems which can be solved with a given combination of precisions. However, in certain settings,
+GMRES may require too many iterations per refinement step, making it potentially more expensive
+than simply recomputing the LU factors in a higher precision. Krylov subspace recycling is a well-known
+technique for reusing information across sequential invocations of a Krylov subspace method on
+systems with the same or a slowly changing coefficient matrix. In this work, we incorporate the idea
+of Krylov subspace recycling into a mixed precision GMRES-based iterative refinement solver.
+The insight is that in each refinement step, we call preconditioned GMRES on a linear system with
+the same coefficient matrix $A$, with only the right-hand side changing. In this way, the GMRES solves
+in subsequent refinement steps can be accelerated by recycling information obtained from the first
+step. We perform extensive numerical experiments on various random dense problems, Toeplitz problems
+(prolate matrices), and problems from real applications, which confirm the benefits of the recycling
+approach. 

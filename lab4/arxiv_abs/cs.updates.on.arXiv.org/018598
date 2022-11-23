@@ -1,0 +1,19 @@
+Software-defined Networking is an approach that decouples the software-based control plane from
+the hardware-based data plane proposed for enterprise networks; OpenFlow is the most famous flexible
+protocol that can manage network traffic between the control and the data plane. Software-Defined
+Networking (SDN) requires up to 18 fields of the packets header to be checked against a big many-fields
+ruleset to categorize packets into flows, the process of categorizing packets into flows is called
+packet classification. Network switches process all packets belonging to the same flow in a similar
+manner by applying the same actions defined in the corresponding rule. Packet classification facilitates
+supporting new services such as filtering, blocking unsafe sites traffic, routing packets based
+on the packet's header information, and giving priority to specific flows. High-performance algorithms
+for many-field packet classification had been gained much interest in the research communities.
+This paper presents a new method to implement the many-fields packet classification of SDN flow
+table using Rectangle Tree (R-Tree). In this method, source and destination IP addresses from each
+flow table entry have been converted to a two-dimensional point. The remainders of the rule's fields
+have been concatenated into a single field by taking the most important bits with rules' ID in order
+to be inserted into the R-tree, for each rule an effective small binary flag is used to indicate the
+field's size, type, and ranges. Subsequently, searching is performed on the rectangle tree to find
+the matched rules according to the highest priority. In the simulation using the class-bench databases,
+the results show that this method achieves very good performance, classification speed and reduces
+the number of memory accesses significantly. 

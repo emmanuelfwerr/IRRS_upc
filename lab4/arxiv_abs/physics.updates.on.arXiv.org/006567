@@ -1,0 +1,19 @@
+AIMS: Clinical radiographic imaging is seated upon the principle of differential keV photon transmission
+through an object. At clinical x-ray energies the scattering of photons causes signal noise and
+is utilized solely for transmission measurements. However, scatter - particularly Compton scatter,
+is characterizable. In this work we hypothesized that modern radiation sources and detectors paired
+with deep learning techniques can use scattered photon information constructively to resolve
+superimposed attenuators in planar x-ray imaging. METHODS: We simulated a monoenergetic x-ray
+imaging system consisting of a pencil beam x-ray source directed at an imaging target positioned
+in front of a high spatial- and energy-resolution detector array. The signal was analyzed by a convolutional
+neural network, and a description of scattering material along the axis of the beam was derived.
+The system was virtually designed/tested using Monte Carlo processing of simple phantoms consisting
+of 10 pseudo-randomly stacked air/bone/water materials, and the network was trained by solving
+a classification problem. RESULTS: The average accuracy of the material identification along
+the beam was 0.91 +- 0.01, with slightly higher accuracy towards the entrance/exit peripheral surfaces
+of the object. The average sensitivity and specificity was 0.91 and 0.95, respectively. CONCLUSIONS:
+Our work provides proof of principle that deep learning techniques can be used to analyze scattered
+photon patterns which can constructively contribute to the information content in radiography,
+here used to infer depth information in a traditional 2D planar setup. This principle, and our results,
+demonstrate that the information in Compton scattered photons may provide a basis for further development.
+The ability to scale performance to the clinic remains unexplored and requires further study. 

@@ -1,0 +1,20 @@
+Constructing accurate and generalizable approximators for complex physico-chemical processes
+exhibiting highly non-smooth dynamics is challenging. In this work, we propose new developments
+and perform comparisons for two promising approaches: manifold-based polynomial chaos expansion
+(m-PCE) and the deep neural operator (DeepONet), and we examine the effect of over-parameterization
+on generalization. We demonstrate the performance of these methods in terms of generalization
+accuracy by solving the 2D time-dependent Brusselator reaction-diffusion system with uncertainty
+sources, modeling an autocatalytic chemical reaction between two species. We first propose an
+extension of the m-PCE by constructing a mapping between latent spaces formed by two separate embeddings
+of input functions and output QoIs. To enhance the accuracy of the DeepONet, we introduce weight
+self-adaptivity in the loss function. We demonstrate that the performance of m-PCE and DeepONet
+is comparable for cases of relatively smooth input-output mappings. However, when highly non-smooth
+dynamics is considered, DeepONet shows higher accuracy. We also find that for m-PCE, modest over-parameterization
+leads to better generalization, both within and outside of distribution, whereas aggressive over-parameterization
+leads to over-fitting. In contrast, an even highly over-parameterized DeepONet leads to better
+generalization for both smooth and non-smooth dynamics. Furthermore, we compare the performance
+of the above models with another operator learning model, the Fourier Neural Operator, and show
+that its over-parameterization also leads to better generalization. Our studies show that m-PCE
+can provide very good accuracy at very low training cost, whereas a highly over-parameterized DeepONet
+can provide better accuracy and robustness to noise but at higher training cost. In both methods,
+the inference cost is negligible. 

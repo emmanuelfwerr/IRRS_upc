@@ -1,0 +1,19 @@
+The Vera C. Rubin Observatory Legacy Survey of Space and Time (LSST) will soon carry out an unprecedented
+wide, fast, and deep survey of the sky in multiple optical bands. The data from LSST will open up a new
+discovery space in astronomy and cosmology, simultaneously providing clues toward addressing
+burning issues of the day, such as the origin of dark energy and and the nature of dark matter, while
+at the same time yielding data that will, in turn, pose fresh new questions. To prepare for the imminent
+arrival of this remarkable data set, it is crucial that the associated scientific communities be
+able to develop the software needed to analyze it. Computational power now available allows us to
+generate synthetic data sets that can be used as a realistic training ground for such an effort. This
+effort raises its own challenges -- the need to generate very large simulations of the night sky,
+scaling up simulation campaigns to large numbers of compute nodes across multiple computing centers
+with different architectures, and optimizing the complex workload around memory requirements
+and widely varying wall clock times. We describe here a large-scale workflow that melds together
+Python code to steer the workflow, Parsl to manage the large-scale distributed execution of workflow
+components, and containers to carry out the image simulation campaign across multiple sites. Taking
+advantage of these tools, we developed an extreme-scale computational framework and used it to
+simulate five years of observations for 300 square degrees of sky area. We describe our experiences
+and lessons learned in developing this workflow capability, and highlight how the scalability
+and portability of our approach enabled us to efficiently execute it on up to 4000 compute nodes on
+two supercomputers. 

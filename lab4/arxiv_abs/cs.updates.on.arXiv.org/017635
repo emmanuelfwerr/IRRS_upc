@@ -1,0 +1,19 @@
+This paper settles an open and challenging question pertaining to the design of simple high-order
+regularization methods for solving smooth and monotone variational inequalities (VIs). A VI involves
+finding $x^\star \in \mathcal{X}$ such that $\langle F(x), x - x^\star\rangle \geq 0$ for all $x
+\in \mathcal{X}$ and we consider the setting where $F: \mathbb{R}^d \mapsto \mathbb{R}^d$ is smooth
+with up to $(p-1)^{th}$-order derivatives. For the case of $p = 2$,~\citet{Nesterov-2006-Constrained}
+extended the cubic regularized Newton's method to VIs with a global rate of $O(\epsilon^{-1})$.
+\citet{Monteiro-2012-Iteration} proposed another second-order method which achieved an improved
+rate of $O(\epsilon^{-2/3}\log(1/\epsilon))$, but this method required a nontrivial binary
+search procedure as an inner loop. High-order methods based on similar binary search procedures
+have been further developed and shown to achieve a rate of $O(\epsilon^{-2/(p+1)}\log(1/\epsilon))$.
+However, such search procedure can be computationally prohibitive in practice and the problem
+of finding a simple high-order regularization methods remains as an open and challenging question
+in optimization theory. We propose a $p^{th}$-order method which does \textit{not} require any
+binary search scheme and is guaranteed to converge to a weak solution with a global rate of $O(\epsilon^{-2/(p+1)})$.
+A version with restarting attains a global linear and local superlinear convergence rate for smooth
+and strongly monotone VIs. Further, our method achieves a global rate of $O(\epsilon^{-2/p})$
+for solving smooth and non-monotone VIs satisfying the Minty condition; moreover, the restarted
+version again attains a global linear and local superlinear convergence rate if the strong Minty
+condition holds. 

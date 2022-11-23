@@ -1,0 +1,20 @@
+Data in the natural sciences frequently violate assumptions of independence. Such datasets have
+samples with inherent clustering (e.g. by study site, subject, experimental batch), which may
+lead to spurious associations, poor model fitting, and confounded analyses. While largely unaddressed
+in deep learning, mixed effects models have been used in traditional statistics for clustered data.
+Mixed effects models separate cluster-invariant, population-level fixed effects from cluster-specific
+random effects. We propose a general-purpose framework for building Adversarially-Regularized
+Mixed Effects Deep learning (ARMED) models through 3 non-intrusive additions to existing networks:
+1) a domain adversarial classifier constraining the original model to learn only cluster-invariant
+features, 2) a random effects subnetwork capturing cluster-specific features, and 3) a cluster-inferencing
+approach to predict on clusters unseen during training. We apply this framework to dense feedforward
+neural networks (DFNNs), convolutional neural networks, and autoencoders on 4 applications including
+simulations, dementia prognosis and diagnosis, and cell microscopy. We compare to conventional
+models, domain adversarial-only models, and the naive inclusion of cluster membership as a covariate.
+Our models better distinguish confounded from true associations in simulations and emphasize
+more biologically plausible features in clinical applications. ARMED DFNNs quantify inter-cluster
+variance in clinical data while ARMED autoencoders visualize batch effects in cell images. Finally,
+ARMED improves accuracy on data from clusters seen during training (up to 28% vs. conventional models)
+and generalizes better to unseen clusters (up to 9% vs. conventional models). By incorporating
+powerful mixed effects modeling into deep learning, ARMED increases performance, interpretability,
+and generalization on clustered data. 

@@ -1,0 +1,19 @@
+We revisit the evolution of generalised parton distributions (GPDs) in momentum space. We formulate
+the evolution kernels at one-loop in perturbative QCD (pQCD) in a form suitable for numerical implementation
+and that allows for an accurate study of their properties. This leads to the first open-source implementation
+of GPD evolution equations able to cover the entire kinematic region and allowing for heavy-quark-threshold
+crossings. The numerical implementation of the GPD evolution equations is publicly accessible
+through the APFEL++ evolution library and is available within the PARTONS framework. Our formulation
+makes use of the operator definition of GPDs in light-cone gauge renormalised in the $\overline{\mbox{MS}}$
+scheme. For the sake of clarity, we recompute the evolution kernels at one-loop in pQCD, confirming
+previous calculations. We obtain general conditions on the evolution kernels deriving from the
+GPD sum rules and show that our formulation obeys these conditions. We analytically show that our
+calculation reproduces the DGLAP and the ERBL equations in the appropriate limits and that it guarantees
+the continuity of GPDs. We numerically check that the evolved GPDs fulfil DGLAP and ERBL limits,
+continuity, and polynomiality. We benchmark our numerical implementation against analytical
+evolution in conformal space. Finally, we perform a numerical comparison to an existing implementation
+of GPD evolution finding a general good agreement on the kinematic region accessible to the latter.
+This work provides a pedagogical description of GPD evolution equations which benefits from a renewed
+interest as future colliders, such as the electron-ion colliders in the US and in China, are being
+designed. It also paves the way to the extension of GPD evolution codes to higher accuracies in pQCD
+desirable for precision phenomenology at these facilities. 

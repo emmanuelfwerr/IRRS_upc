@@ -1,0 +1,19 @@
+In recent publications, the construction of explicit symplectic integrators for Schwarzschild
+and Kerr type spacetimes is based on splitting and composition methods for numerical integrations
+of Hamiltonians or time-transformed Hamiltonians associated with these spacetimes. Such splittings
+are not unique but have various choices. A Hamiltonian describing the motion of charged particles
+around the Schwarzschild black hole with an external magnetic field can be separated into three,
+four and five explicitly integrable parts. It is shown through numerical tests of regular and chaotic
+orbits that the three-part splitting method is the best one of the three Hamiltonian splitting methods
+in accuracy. In the three-part splitting, optimized fourth-order partitioned Runge-Kutta and
+Runge-Kutta-Nystr\"{o}m explicit symplectic integrators exhibit the best accuracies. In fact,
+they are several orders of magnitude better than the fourth-order Yoshida algorithms for appropriate
+time steps. The former algorithms need small additional computational cost compared with the latter
+ones. Optimized sixth-order partitioned Runge-Kutta and Runge-Kutta-Nystr\"{o}m explicit
+symplectic integrators have no dramatic advantages over the optimized fourth-order ones in accuracies
+during long-term integrations due to roundoff errors. The idea finding the integrators with the
+best performance is also suitable for Hamiltonians or time-transformed Hamiltonians of other
+curved spacetimes including the Kerr type spacetimes. When the numbers of explicitly integrable
+splitting sub-Hamiltonians are as small as possible, such splitting Hamiltonian methods would
+bring better accuracies. In this case, the optimized fourth-order partitioned Runge-Kutta and
+Runge-Kutta-Nystr\"{o}m methods are worth recommending. 

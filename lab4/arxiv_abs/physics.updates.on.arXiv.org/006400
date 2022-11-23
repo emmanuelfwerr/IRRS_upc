@@ -1,0 +1,19 @@
+Unfolding is an ill-posed inverse problem in particle physics aiming to infer a true particle-level
+spectrum from smeared detector-level data. For computational and practical reasons, these spaces
+are typically discretized using histograms, and the smearing is modeled through a response matrix
+corresponding to a discretized smearing kernel of the particle detector. This response matrix
+depends on the unknown shape of the true spectrum, leading to a fundamental systematic uncertainty
+in the unfolding problem. To handle the ill-posed nature of the problem, common approaches regularize
+the problem either directly via methods such as Tikhonov regularization, or implicitly by using
+wide-bins in the true space that match the resolution of the detector. Unfortunately, both of these
+methods lead to a non-trivial bias in the unfolded estimator, thereby hampering frequentist coverage
+guarantees for confidence intervals constructed from these methods. We propose two new approaches
+to addressing the bias in the wide-bin setting through methods called One-at-a-time Strict Bounds
+(OSB) and Prior-Optimized (PO) intervals. The OSB intervals are a bin-wise modification of an existing
+guaranteed-coverage procedure, while the PO intervals are based on a decision-theoretic view
+of the problem. Importantly, both approaches provide well-calibrated frequentist confidence
+intervals even in constrained and rank-deficient settings. These methods are built upon a more
+general answer to the wide-bin bias problem, involving unfolding with fine bins first, followed
+by constructing confidence intervals for linear functionals of the fine-bin counts. We test and
+compare these methods to other available methodologies in a wide-bin deconvolution example and
+a realistic particle physics simulation of unfolding a steeply falling particle spectrum. 

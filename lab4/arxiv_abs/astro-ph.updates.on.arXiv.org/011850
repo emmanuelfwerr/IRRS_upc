@@ -1,0 +1,19 @@
+Future ground-based telescopes, such as the 4-metre class facilities DKIST and EST, will dramatically
+improve on current capabilities for simultaneous multi-line polarimetric observations in a wide
+range of wavelength bands, from the near-ultraviolet to the near-infrared. As a result, there will
+be an increasing demand for fast diagnostic tools, i.e., inversion codes, that can infer the physical
+properties of the solar atmosphere from the vast amount of data these observatories will produce.
+The advent of substantially larger apertures, with the concomitant increase in polarimetric sensitivity,
+will drive an increased interest in observing chromospheric spectral lines. Accordingly, pertinent
+inversion codes will need to take account of line formation under general non-local thermodynamic
+equilibrium (NLTE) conditions. Several currently available codes can already accomplish this,
+but they have a common practical limitation that impairs the speed at which they can invert polarised
+spectra, namely that they employ numerical evaluation of the so-called response functions to changes
+in the atmospheric parameters, which makes them less suitable for the analysis of very large data
+volumes. Here we present DeSIRe (Departure coefficient aided Stokes Inversion based on Response
+functions), an inversion code that integrates the well-known inversion code SIR with the NLTE radiative
+transfer solver RH. The DeSIRe runtime benefits from employing analytical response functions
+computed in local thermodynamic equilibrium (through SIR), modified with fixed departure coefficients
+to incorporate NLTE effects in chromospheric spectral lines. This publication describes the operating
+fundamentals of DeSIRe and describes its behaviour, robustness, stability, and speed. The code
+is ready to be used by the solar community and is being made publicly available. 

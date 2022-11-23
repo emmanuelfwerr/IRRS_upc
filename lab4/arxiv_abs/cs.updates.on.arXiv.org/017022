@@ -1,0 +1,20 @@
+As part of the large number of scientific articles being published every year, the publication rate
+of biomedical literature has been increasing. Consequently, there has been considerable effort
+to harness and summarize the massive amount of biomedical research articles. While transformer-based
+encoder-decoder models in a vanilla source document-to-summary setting have been extensively
+studied for abstractive summarization in different domains, their major limitations continue
+to be entity hallucination (a phenomenon where generated summaries constitute entities not related
+to or present in source article(s)) and factual inconsistency. This problem is exacerbated in a
+biomedical setting where named entities and their semantics (which can be captured through a knowledge
+base) constitute the essence of an article. The use of named entities and facts mined from background
+knowledge bases pertaining to the named entities to guide abstractive summarization has not been
+studied in biomedical article summarization literature. In this paper, we propose an entity-driven
+fact-aware framework for training end-to-end transformer-based encoder-decoder models for
+abstractive summarization of biomedical articles. We call the proposed approach, whose building
+block is a transformer-based model, EFAS, Entity-driven Fact-aware Abstractive Summarization.
+We conduct experiments using five state-of-the-art transformer-based models (two of which are
+specifically designed for long document summarization) and demonstrate that injecting knowledge
+into the training/inference phase of these models enables the models to achieve significantly
+better performance than the standard source document-to-summary setting in terms of entity-level
+factual accuracy, N-gram novelty, and semantic equivalence while performing comparably on ROUGE
+metrics. The proposed approach is evaluated on ICD-11-Summ-1000, and PubMed-50k. 

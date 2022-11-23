@@ -1,0 +1,19 @@
+The Einstein and Maxwell equations are both systems of hyperbolic equations which need to satisfy
+a set of elliptic constraints throughout evolution. However, while electrodynamics (EM) and magnetohydrodynamics
+(MHD) have benefited from a large number of evolution schemes that are able to enforce these constraints
+and are easily applicable to curvilinear coordinates, unstructured meshes, or N-body simulations,
+many of these techniques cannot be straightforwardly applied to existing formulations of the Einstein
+equations. We develop a 3+1 a formulation of the Einstein equations which shows a striking resemblance
+to the equations of relativistic MHD and to EM in material media. The fundamental variables of this
+formulation are the frame fields, their exterior derivatives, and the Nester-Witten and Sparling
+forms. These mirror the roles of the electromagnetic 4-potential, the electromagnetic field strengths,
+the field excitations and the electric current. The role of the lapse function and shift vector,
+corresponds exactly to that of the scalar electric potential. The formulation, that we name dGREM
+(for differential forms, General Relativity and Electro-Magnetism), is manifestly first order
+and flux-conservative, which makes it suitable for high-resolution shock capturing schemes and
+finite-element methods. Being derived as a system of equations in exterior derivatives, it is directly
+applicable to any coordinate system and to unstructured meshes, and leads to a natural discretization
+potentially suitable for the use of machine-precision constraint propagation techniques such
+as the Yee algorithm and constrained transport. Due to these properties, we expect this new formulation
+to be beneficial in simulations of many astrophysical systems, such as binary compact objects and
+core-collapse supernovae as well as cosmological simulations of the early universe. 

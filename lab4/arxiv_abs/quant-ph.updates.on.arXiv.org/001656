@@ -1,0 +1,19 @@
+We present a classical algorithm that, for any $D$-dimensional geometrically-local, quantum
+circuit $C$ of polylogarithmic-depth, and any bit string $x \in {0,1}^n$, can compute the quantity
+$|<x|C|0^{\otimes n}>|^2$ to within any inverse-polynomial additive error in quasi-polynomial
+time, for any fixed dimension $D$. This is an extension of the result [CC21], which originally proved
+this result for $D = 3$. To see why this is interesting, note that, while the $D = 1$ case of this result
+follows from standard use of Matrix Product States, known for decades, the $D = 2$ case required novel
+and interesting techniques introduced in [BGM19]. Extending to the case $D = 3$ was even more laborious
+and required further new techniques introduced in [CC21]. Our work here shows that, while handling
+each new dimension has historically required a new insight, and fixed algorithmic primitive, based
+on known techniques for $D \leq 3$, we can now handle any fixed dimension $D > 3$. Our algorithm uses
+the Divide-and-Conquer framework of [CC21] to approximate the desired quantity via several instantiations
+of the same problem type, each involving $D$-dimensional circuits on about half the number of qubits
+as the original. This division step is then applied recursively, until the width of the recursively
+decomposed circuits in the $D^{th}$ dimension is so small that they can effectively be regarded
+as $(D-1)$-dimensional problems by absorbing the small width in the $D^{th}$ dimension into the
+qudit structure at the cost of a moderate increase in runtime. The main technical challenge lies
+in ensuring that the more involved portions of the recursive circuit decomposition and error analysis
+from [CC21] still hold in higher dimensions, which requires small modifications to the analysis
+in some places. 

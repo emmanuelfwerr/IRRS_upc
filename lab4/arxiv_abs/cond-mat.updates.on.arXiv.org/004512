@@ -1,0 +1,20 @@
+In this work we aim to develop a unified mathematical framework and a reliable computational approach
+to model the brittle fracture in heterogeneous materials with variability in material microstructures,
+and to provide statistic metrics for quantities of interest, such as the fracture toughness. To
+depict the material responses and naturally describe the nucleation and growth of fractures, we
+consider the peridynamics model. In particular, a stochastic state-based peridynamic model is
+developed, where the micromechanical parameters are modeled by a finite-dimensional random vector,
+or a combination of random variables truncating the Karhunen-Lo\`{e}ve decomposition or the principle
+component analysis (PCA). To solve this stochastic peridynamic problem, probabilistic collocation
+method (PCM) is employed to sample the random field representing the micromechanical parameters.
+For each sample, the deterministic peridynamic problem is discretized with an optimization-based
+meshfree quadrature rule. We present rigorous analysis for the proposed scheme and demonstrate
+its convergence for a number of benchmark problems, showing that it sustains the asymptotic compatibility
+spatially and achieves an algebraic or sub-exponential convergence rate in the random space as
+the number of collocation points grows. Finally, to validate the applicability of this approach
+on real-world fracture problems, we consider the problem of crystallization toughening in glass-ceramic
+materials, in which the material at the microstructural scale contains both amorphous glass and
+crystalline phases. The proposed stochastic peridynamic solver is employed to capture the crack
+initiation and growth for glass-ceramics with different crystal volume fractions, and the averaged
+fracture toughness are calculated. The numerical estimates of fracture toughness show good consistency
+with experimental measurements. 

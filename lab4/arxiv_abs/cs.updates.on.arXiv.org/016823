@@ -1,0 +1,19 @@
+Temporal action proposal generation (TAPG) aims to estimate temporal intervals of actions in untrimmed
+videos, which is a challenging yet plays an important role in many tasks of video analysis and understanding.
+Despite the great achievement in TAPG, most existing works ignore the human perception of interaction
+between agents and the surrounding environment by applying a deep learning model as a black-box
+to the untrimmed videos to extract video visual representation. Therefore, it is beneficial and
+potentially improve the performance of TAPG if we can capture these interactions between agents
+and the environment. In this paper, we propose a novel framework named Agent-Aware Boundary Network
+(ABN), which consists of two sub-networks (i) an Agent-Aware Representation Network to obtain
+both agent-agent and agents-environment relationships in the video representation, and (ii)
+a Boundary Generation Network to estimate the confidence score of temporal intervals. In the Agent-Aware
+Representation Network, the interactions between agents are expressed through local pathway,
+which operates at a local level to focus on the motions of agents whereas the overall perception of
+the surroundings are expressed through global pathway, which operates at a global level to perceive
+the effects of agents-environment. Comprehensive evaluations on 20-action THUMOS-14 and 200-action
+ActivityNet-1.3 datasets with different backbone networks (i.e C3D, SlowFast and Two-Stream)
+show that our proposed ABN robustly outperforms state-of-the-art methods regardless of the employed
+backbone network on TAPG. We further examine the proposal quality by leveraging proposals generated
+by our method onto temporal action detection (TAD) frameworks and evaluate their detection performances.
+The source code can be found in this URL https://github.com/vhvkhoa/TAPG-AgentEnvNetwork.git.

@@ -1,0 +1,20 @@
+Purpose: A core component of advancing cancer treatment research is assessing response to therapy.
+Doing so by hand, for example as per RECIST or RANO criteria, is tedious, time-consuming, and can
+miss important tumor response information; most notably, they exclude non-target lesions. We
+wish to assess change in a holistic fashion that includes all lesions, obtaining simple, informative,
+and automated assessments of tumor progression or regression. Due to often low patient enrolments
+in clinical trials, we wish to make response assessments with small training sets. Deep neuroevolution
+(DNE) can produce radiology artificial intelligence (AI) that performs well on small training
+sets. Here we use DNE for function approximation that predicts progression versus regression of
+metastatic brain disease. Methods: We analyzed 50 pairs of MRI contrast-enhanced images as our
+training set. Half of these pairs, separated in time, qualified as disease progression, while the
+other 25 images constituted regression. We trained the parameters of a relatively small CNN via
+mutations that consisted of random CNN weight adjustments and mutation fitness. We then incorporated
+the best mutations into the next generations CNN, repeating this process for approximately 50,000
+generations. We applied the CNNs to our training set, as well as a separate testing set with the same
+class balance of 25 progression and 25 regression images. Results: DNE achieved monotonic convergence
+to 100% training set accuracy. DNE also converged monotonically to 100% testing set accuracy. Conclusion:
+DNE can accurately classify brain-metastatic disease progression versus regression. Future
+work will extend the input from 2D image slices to full 3D volumes, and include the category of no change.
+We believe that an approach such as our could ultimately provide a useful adjunct to RANO/RECIST
+assessment. 

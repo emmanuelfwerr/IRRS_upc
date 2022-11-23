@@ -1,0 +1,20 @@
+Methods for upwinding the potential vorticity in a compatible finite element discretisation of
+the rotating shallow water equations are studied. These include the well-known anticipated potential
+vorticity method (APVM), streamwise upwind Petrov-Galerkin (SUPG) method, and a recent approach
+where the trial functions are evaluated downstream within the reference element. In all cases the
+upwinding scheme conserves both potential vorticity and energy, since the antisymmetric structure
+of the equations is preserved. The APVM leads to a symmetric definite correction to the potential
+enstrophy that is dissipative and inconsistent, resulting in a turbulent state where the potential
+enstrophy is more strongly damped than for the other schemes. While the SUPG scheme is widely known
+to be consistent, since it modifies the test functions only, the downwinded trial function formulation
+results in the advection of downwind corrections. Results of the SUPG and downwinded trial function
+schemes are very similar in terms of both potential enstrophy conservation and turbulent spectra.
+The main difference between these schemes is in the energy conservation and residual errors. If
+just two nonlinear iterations are applied then the energy conservation errors are improved for
+the downwinded trial function formulation, reflecting a smaller residual error than for the SUPG
+scheme. We also present formulations by which potential enstrophy is exactly integrated at each
+time level. Results using these formulations are observed to be stable in the absence of dissipation,
+despite the uncontrolled aliasing of grid scale turbulence. Using such a formulation and the APVM
+with a coefficient $\mathcal{O}(100)$ times smaller that its regular value leads to turbulent
+spectra that are greatly improved at the grid scale over the SUPG and downwinded trial function formulations
+with unstable potential enstrophy errors. 

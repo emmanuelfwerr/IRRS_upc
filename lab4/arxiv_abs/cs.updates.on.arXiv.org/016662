@@ -1,0 +1,20 @@
+When sharing sensitive relational databases with other parties, a database owner aims to (i) have
+privacy guarantees for the database entries, (ii) have liability guarantees (via fingerprinting)
+in case of unauthorized sharing of its database by the recipients, and (iii) provide a high quality
+(utility) database to the recipients. We observe that sharing a relational database with privacy
+and liability guarantees are orthogonal objectives. The former can be achieved by injecting noise
+into the database to prevent inference of the original data values, whereas, the latter can be achieved
+by hiding unique marks inside the database to trace malicious parties (data recipients) who redistribute
+the data without the authorization. We achieve these two objectives simultaneously by proposing
+a novel entry-level differentially-private fingerprinting mechanism for relational databases.
+At a high level, the proposed mechanism fulfills the privacy and liability requirements by leveraging
+the randomization nature that is intrinsic to fingerprinting and achieves desired entry-level
+privacy guarantees. To be more specific, we devise a bit-level random response scheme to achieve
+differential privacy guarantee for arbitrary data entries when sharing the entire database, and
+then, based on this, we develop an $\epsilon$-entry-level differentially-private fingerprinting
+mechanism. Next, we theoretically analyze the relationships between privacy guarantee, fingerprint
+robustness, and database utility by deriving closed form expressions. The outcome of this analysis
+allows us to bound the privacy leakage caused by attribute inference attack and characterize the
+privacy-utility coupling and privacy-fingerprint robustness coupling. Furthermore, we also
+propose a SVT-based solution to control the cumulative privacy loss when fingerprinted copies
+of a database are shared with multiple recipients. 

@@ -1,0 +1,19 @@
+Federated learning (FL), enabling different medical institutions or clients to train a model collaboratively
+without data privacy leakage, has drawn great attention in medical imaging communities recently.
+Though inter-client data heterogeneity has been thoroughly studied, the class imbalance problem
+due to the existence of rare diseases still is under-explored. In this paper, we propose a novel FL
+framework FedRare for medical image classification especially on dealing with data heterogeneity
+with the existence of rare diseases. In FedRare, each client trains a model locally to extract highly-separable
+latent features for classification via intra-client supervised contrastive learning. Considering
+the limited data on rare diseases, we build positive sample queues for augmentation (i.e. data re-sampling).
+The server in FedRare would collect the latent features from clients and automatically select the
+most reliable latent features as guidance sent back to clients. Then, each client is jointly trained
+by an inter-client contrastive loss to align its latent features to the federated latent features
+of full classes. In this way, the parameter/feature variances across clients are effectively minimized,
+leading to better convergence and performance improvements. Experimental results on the publicly-available
+dataset for skin lesion diagnosis demonstrate FedRare's superior performance. Under the 10-client
+federated setting where four clients have no rare disease samples, FedRare achieves an average
+increase of 9.60% and 5.90% in balanced accuracy compared to the baseline framework FedAvg and the
+state-of-the-art approach FedIRM respectively. Considering the board existence of rare diseases
+in clinical scenarios, we believe FedRare would benefit future FL framework design for medical
+image classification. The source code of this paper is publicly available at https://github.com/wnn2000/FedRare.

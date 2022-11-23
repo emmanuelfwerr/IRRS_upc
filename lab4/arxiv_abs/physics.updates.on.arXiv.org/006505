@@ -1,0 +1,20 @@
+A major drawback of Boussinesq-type subgrid-scale stress models used in large-eddy simulations
+is the inherent assumption of alignment between large-scale strain rates and filtered subgrid-stresses.
+A priori analyses using direct numerical simulation (DNS) data has shown that this assumption is
+invalid locally as subgrid-scale stresses are poorly correlated with the large-scale strain rates
+[Bardina et al., AIAA 1980; Meneveau and Liu, Ann. Rev. Fluid Mech. 2002]. In the present work, a new,
+non-Boussinesq subgrid-scale model is presented where the model coefficients are computed dynamically.
+Some previous non-Boussinesq models have observed issues in providing adequate dissipation of
+turbulent kinetic energy [e.g.: Bardina et al., AIAA 1980; Clark et al. J. Fluid Mech., 1979; Stolz
+and Adams, Phys. of Fluids, 1999]; however, the present model is shown to provide sufficient dissipation
+using dynamic coefficients. Modeled subgrid-scale Reynolds stresses satisfy the consistency
+requirements of the governing equations for LES, vanish in laminar flow and at solid boundaries,
+and have the correct asymptotic behavior in the near-wall region of a turbulent boundary layer.
+The new model, referred to as the dynamic tensor-coefficient Smagorinsky model (DTCSM), has been
+tested in simulations of canonical flows: decaying and forced homogeneous isotropic turbulence
+(HIT), and wall-modeled turbulent channel flow at high Reynolds numbers; the results show favorable
+agreement with DNS data. In order to assess the performance of DTCSM in more complex flows, wall-modeled
+simulations of high Reynolds number flow over a Gaussian bump exhibiting smooth-body flow separation
+are performed. Predictions of surface pressure and skin friction, compared against DNS and experimental
+data, show improved accuracy from DTCSM in comparison to the existing static coefficient (Vreman)
+and dynamic Smagorinsky model. 

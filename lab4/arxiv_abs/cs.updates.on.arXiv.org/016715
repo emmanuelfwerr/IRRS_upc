@@ -1,0 +1,20 @@
+The development of face recognition algorithms by academic and commercial organizations is growing
+rapidly due to the onset of deep learning and the widespread availability of training data. Though
+tests of face recognition algorithm performance indicate yearly performance gains, error rates
+for many of these systems differ based on the demographic composition of the test set. These "demographic
+differentials" in algorithm performance can contribute to unequal or unfair outcomes for certain
+groups of people, raising concerns with increased worldwide adoption of face recognition systems.
+Consequently, regulatory bodies in both the United States and Europe have proposed new rules requiring
+audits of biometric systems for "discriminatory impacts" (European Union Artificial Intelligence
+Act) and "fairness" (U.S. Federal Trade Commission). However, no standard for measuring fairness
+in biometric systems yet exists. This paper characterizes two proposed measures of face recognition
+algorithm fairness (fairness measures) from scientists in the U.S. and Europe. We find that both
+proposed methods are challenging to interpret when applied to disaggregated face recognition
+error rates as they are commonly experienced in practice. To address this, we propose a set of interpretability
+criteria, termed the Functional Fairness Measure Criteria (FFMC), that outlines a set of properties
+desirable in a face recognition algorithm fairness measure. We further develop a new fairness measure,
+the Gini Aggregation Rate for Biometric Equitability (GARBE), and show how, in conjunction with
+the Pareto optimization, this measure can be used to select among alternative algorithms based
+on the accuracy/fairness trade-space. Finally, we have open-sourced our dataset of machine-readable,
+demographically disaggregated error rates. We believe this is currently the largest open-source
+dataset of its kind. 

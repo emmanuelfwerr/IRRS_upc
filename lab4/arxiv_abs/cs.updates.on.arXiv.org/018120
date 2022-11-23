@@ -1,0 +1,20 @@
+Detailed mobile sensing data from phones, watches, and fitness trackers offer an unparalleled
+opportunity to quantify and act upon previously unmeasurable behavioral changes in order to improve
+individual health and accelerate responses to emerging diseases. Unlike in natural language processing
+and computer vision, deep representation learning has yet to broadly impact this domain, in which
+the vast majority of research and clinical applications still rely on manually defined features
+and boosted tree models or even forgo predictive modeling altogether due to insufficient accuracy.
+This is due to unique challenges in the behavioral health domain, including very small datasets
+(~10^1 participants), which frequently contain missing data, consist of long time series with
+critical long-range dependencies (length>10^4), and extreme class imbalances (>10^3:1). Here,
+we introduce a neural architecture for multivariate time series classification designed to address
+these unique domain challenges. Our proposed behavioral representation learning approach combines
+novel tasks for self-supervised pretraining and transfer learning to address data scarcity, and
+captures long-range dependencies across long-history time series through transformer self-attention
+following convolutional neural network-based dimensionality reduction. We propose an evaluation
+framework aimed at reflecting expected real-world performance in plausible deployment scenarios.
+Concretely, we demonstrate (1) performance improvements over baselines of up to 0.15 ROC AUC across
+five prediction tasks, (2) transfer learning-induced performance improvements of 16% PR AUC in
+small data scenarios, and (3) the potential of transfer learning in novel disease scenarios through
+an exploratory case study of zero-shot COVID-19 prediction in an independent data set. Finally,
+we discuss potential implications for medical surveillance testing. 

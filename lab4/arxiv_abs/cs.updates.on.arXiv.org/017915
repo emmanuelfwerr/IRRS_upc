@@ -1,0 +1,19 @@
+In recent years, recommender systems are crucially important for the delivery of personalized
+services that satisfy users' preferences. With personalized recommendation services, users
+can enjoy a variety of recommendations such as movies, books, ads, restaurants, and more. Despite
+the great benefits, personalized recommendations typically require the collection of personal
+data for user modelling and analysis, which can make users susceptible to attribute inference attacks.
+Specifically, the vulnerability of existing centralized recommenders under attribute inference
+attacks leaves malicious attackers a backdoor to infer users' private attributes, as the systems
+remember information of their training data (i.e., interaction data and side information). An
+emerging practice is to implement recommender systems in the federated setting, which enables
+all user devices to collaboratively learn a shared global recommender while keeping all the training
+data on device. However, the privacy issues in federated recommender systems have been rarely explored.
+In this paper, we first design a novel attribute inference attacker to perform a comprehensive privacy
+analysis of the state-of-the-art federated recommender models. The experimental results show
+that the vulnerability of each model component against attribute inference attack is varied, highlighting
+the need for new defense approaches. Therefore, we propose a novel adaptive privacy-preserving
+approach to protect users' sensitive data in the presence of attribute inference attacks and meanwhile
+maximize the recommendation accuracy. Extensive experimental results on two real-world datasets
+validate the superior performance of our model on both recommendation effectiveness and resistance
+to inference attacks. 

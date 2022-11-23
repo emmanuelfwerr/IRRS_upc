@@ -1,0 +1,20 @@
+Physics-informed neural networks (PINNs) have shown to be an effective tool for solving forward
+and inverse problems of partial differential equations (PDEs). PINNs embed the PDEs into the loss
+of the neural network, and this PDE loss is evaluated at a set of scattered residual points. The distribution
+of these points are highly important to the performance of PINNs. However, in the existing studies
+on PINNs, only a few simple residual point sampling methods have mainly been used. Here, we present
+a comprehensive study of two categories of sampling: non-adaptive uniform sampling and adaptive
+nonuniform sampling. We consider six uniform sampling, including (1) equispaced uniform grid,
+(2) uniformly random sampling, (3) Latin hypercube sampling, (4) Halton sequence, (5) Hammersley
+sequence, and (6) Sobol sequence. We also consider a resampling strategy for uniform sampling.
+To improve the sampling efficiency and the accuracy of PINNs, we propose two new residual-based
+adaptive sampling methods: residual-based adaptive distribution (RAD) and residual-based adaptive
+refinement with distribution (RAR-D), which dynamically improve the distribution of residual
+points based on the PDE residuals during training. Hence, we have considered a total of 10 different
+sampling methods, including six non-adaptive uniform sampling, uniform sampling with resampling,
+two proposed adaptive sampling, and an existing adaptive sampling. We extensively tested the performance
+of these sampling methods for four forward problems and two inverse problems in many setups. Our
+numerical results presented in this study are summarized from more than 6000 simulations of PINNs.
+We show that the proposed adaptive sampling methods of RAD and RAR-D significantly improve the accuracy
+of PINNs with fewer residual points. The results obtained in this study can also be used as a practical
+guideline in choosing sampling methods. 

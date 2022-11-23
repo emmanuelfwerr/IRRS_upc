@@ -1,0 +1,19 @@
+Geometric deep learning, i.e., designing neural networks to handle the ubiquitous geometric data
+such as point clouds and graphs, have achieved great successes in the last decade. One critical inductive
+bias is that the model can maintain invariance towards various transformations such as translation,
+rotation, and scaling. The existing graph neural network (GNN) approaches can only maintain permutation-invariance,
+failing to guarantee invariance with respect to other transformations. Besides GNNs, other works
+design sophisticated transformation-invariant layers, which are computationally expensive
+and difficult to be extended. To solve this problem, we revisit why the existing neural networks
+cannot maintain transformation invariance when handling geometric data. Our findings show that
+transformation-invariant and distance-preserving initial representations are sufficient
+to achieve transformation invariance rather than needing sophisticated neural layer designs.
+Motivated by these findings, we propose Transformation Invariant Neural Networks (TinvNN), a
+straightforward and general framework for geometric data. Specifically, we realize transformation-invariant
+and distance-preserving initial point representations by modifying multi-dimensional scaling
+before feeding the representations into neural networks. We prove that TinvNN can strictly guarantee
+transformation invariance, being general and flexible enough to be combined with the existing
+neural networks. Extensive experimental results on point cloud analysis and combinatorial optimization
+demonstrate the effectiveness and general applicability of our proposed method. Based on the experimental
+results, we advocate that TinvNN should be considered a new starting point and an essential baseline
+for further studies of transformation-invariant geometric deep learning. 

@@ -1,0 +1,19 @@
+Context. The response of imaging atmospheric Cherenkov telescopes to incident {\gamma}-ray-initiated
+showers in the atmosphere changes as the telescopes age due to exposure to light and weather. These
+aging processes affect the reconstructed energies of the events and {\gamma}-ray fluxes. Aims.
+This work discusses the implementation of signal calibration methods for the Very Energetic Radiation
+Imaging Telescope Array System (VERITAS) to account for changes in the optical throughput and detector
+performance over time. Methods. The total throughput of a Cherenkov telescope is the product of
+camera-dependent factors, such as the photomultiplier tube gains and their quantum efficiencies,
+and the mirror reflectivity and Winston cone response to incoming radiation. This document summarizes
+different methods to determine how the camera gains and mirror reflectivity have evolved over time
+and how we can calibrate this changing throughput in reconstruction pipelines for imaging atmospheric
+Cherenkov telescopes. The implementation is validated against seven years of observations with
+the VERITAS telescopes of the Crab Nebula, which is a reference object in very-high-energy astronomy.
+Results. Regular optical throughput monitoring and the corresponding signal calibrations are
+found to be critical for the reconstruction of extensive air shower images. The proposed implementation
+is applied as a correction to the signals of the photomultiplier tubes in the telescope simulation
+to produce fine-tuned instrument response functions. This method is shown to be effective for calibrating
+the acquired {\gamma}-ray data and for recovering the correct energy of the events and photon fluxes.
+At the same time, it keeps the computational effort of generating Monte Carlo simulations for instrument
+response functions affordably low. 

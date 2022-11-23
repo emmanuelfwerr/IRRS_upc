@@ -1,0 +1,20 @@
+Real-world applications of machine learning tools in high-stakes domains are often regulated
+to be fair, in the sense that the predicted target should satisfy some quantitative notion of parity
+with respect to a protected attribute. However, the exact tradeoff between fairness and accuracy
+is not entirely clear, even for the basic paradigm of classification problems. In this paper, we
+characterize an inherent tradeoff between statistical parity and accuracy in the classification
+setting by providing a lower bound on the sum of group-wise errors of any fair classifiers. Our impossibility
+theorem could be interpreted as a certain uncertainty principle in fairness: if the base rates differ
+among groups, then any fair classifier satisfying statistical parity has to incur a large error
+on at least one of the groups. We further extend this result to give a lower bound on the joint error
+of any (approximately) fair classifiers, from the perspective of learning fair representations.
+To show that our lower bound is tight, assuming oracle access to Bayes (potentially unfair) classifiers,
+we also construct an algorithm that returns a randomized classifier which is both optimal and fair.
+Interestingly, when the protected attribute can take more than two values, an extension of this
+lower bound does not admit an analytic solution. Nevertheless, in this case, we show that the lower
+bound can be efficiently computed by solving a linear program, which we term as the TV-Barycenter
+problem, a barycenter problem under the TV-distance. On the upside, we prove that if the group-wise
+Bayes optimal classifiers are close, then learning fair representations leads to an alternative
+notion of fairness, known as the accuracy parity, which states that the error rates are close between
+groups. Finally, we also conduct experiments on real-world datasets to confirm our theoretical
+findings. 

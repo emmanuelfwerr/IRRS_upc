@@ -1,0 +1,19 @@
+Environmental disturbances, such as sensor data noises, various lighting conditions, challenging
+weathers and external adversarial perturbations, are inevitable in real self-driving applications.
+Existing researches and testings have shown that they can severely influence the vehicles perception
+ability and performance, one of the main issue is the false positive detection, i.e., the ghost object
+which is not real existed or occurs in the wrong position (such as a non-existent vehicle). Traditional
+navigation methods tend to avoid every detected objects for safety, however, avoiding a ghost object
+may lead the vehicle into a even more dangerous situation, such as a sudden break on the highway. Considering
+the various disturbance types, it is difficult to address this issue at the perceptual aspect. A
+potential solution is to detect the ghost through relation learning among the whole scenario and
+develop an integrated end-to-end navigation system. Our underlying logic is that the behavior
+of all vehicles in the scene is influenced by their neighbors, and normal vehicles behave in a logical
+way, while ghost vehicles do not. By learning the spatio-temporal relation among surrounding vehicles,
+an information reliability representation is learned for each detected vehicle and then a robot
+navigation network is developed. In contrast to existing works, we encourage the network to learn
+how to represent the reliability and how to aggregate all the information with uncertainties by
+itself, thus increasing the efficiency and generalizability. To the best of the authors knowledge,
+this paper provides the first work on using graph relation learning to achieve end-to-end robust
+navigation in the presence of ghost vehicles. Simulation results in the CARLA platform demonstrate
+the feasibility and effectiveness of the proposed method in various scenarios. 

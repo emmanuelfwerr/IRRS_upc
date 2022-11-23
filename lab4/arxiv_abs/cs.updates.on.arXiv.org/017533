@@ -1,0 +1,19 @@
+Predicting medications is a crucial task in many intelligent healthcare systems. It can assist
+doctors in making informed medication decisions for patients according to electronic medical
+records (EMRs). However, medication prediction is a challenging data mining task due to the complex
+relations between medical codes. Most existing studies focus on utilizing inherent relations
+between homogeneous codes of medical ontology graph to enhance their representations using supervised
+methods, and few studies pay attention to the valuable relations between heterogeneous or homogeneous
+medical codes from history EMRs, which further limits the prediction performance and application
+scenarios. Therefore, to address these limitations, this paper proposes KnowAugNet, a multi-sourced
+medical knowledge augmented medication prediction network which can fully capture the diverse
+relations between medical codes via multi-level graph contrastive learning framework. Specifically,
+KnowAugNet first leverages the graph contrastive learning using graph attention network as the
+encoder to capture the implicit relations between homogeneous medical codes from the medical ontology
+graph and obtains the knowledge augmented medical codes embedding vectors. Then, it utilizes the
+graph contrastive learning using a weighted graph convolutional network as the encoder to capture
+the correlative relations between homogeneous or heterogeneous medical codes from the constructed
+medical prior relation graph and obtains the relation augmented medical codes embedding vectors.
+Finally, the augmented medical codes embedding vectors and the supervised medical codes embedding
+vectors are retrieved and input to the sequential learning network to capture the temporal relations
+of medical codes and predict medications for patients. 

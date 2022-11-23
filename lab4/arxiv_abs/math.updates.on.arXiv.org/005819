@@ -1,0 +1,19 @@
+In genome rearrangements, the mutational event transposition swaps two adjacent blocks of genes
+in one chromosome. The Transposition Distance Problem (TDP) aims to find the minimum number of transpositions
+required to transform one chromosome into another, both represented as permutations. The TDP can
+be reduced to the problem of Sorting by Transpositions (SBT). SBT is $\mathcal{NP}$-hard and the
+best approximation algorithm with a $1.375$ ratio was proposed by Elias and Hartman. Their algorithm
+employs simplification, a technique used to transform an input permutation $\pi$ into a simple
+permutation $\hat{\pi}$, presumably easier to handle with. The permutation $\hat{\pi}$ is obtained
+by inserting new symbols into $\pi$ in a way that the lower bound of the transposition distance of
+$\pi$ is kept on $\hat{\pi}$. The simplification is guaranteed to keep the lower bound, not the transposition
+distance. In this paper, we first show that the algorithm of Elias and Hartman (EH algorithm) may
+require one extra transposition above the approximation ratio of $1.375$, depending on how the
+input permutation is simplified. Next, using an algebraic approach, we propose a new upper bound
+for the transposition distance and a new $1.375$-approximation algorithm to solve SBT skipping
+simplification and ensuring the approximation ratio of $1.375$ for all $S_n$. We implemented our
+algorithm and EH's. Regarding the implementation of the EH algorithm, two issues needed to be fixed.
+We tested both algorithms against all permutations of size $n$, $2\leq n \leq 12$. The results show
+that the EH algorithm exceeds the approximation ratio of $1.375$ for permutations with a size greater
+than $7$. Finally, we investigate the performance of both implementations on longer permutations
+of maximum length $500$. 

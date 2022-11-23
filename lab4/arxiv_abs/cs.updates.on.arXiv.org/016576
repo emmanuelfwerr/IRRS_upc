@@ -1,0 +1,19 @@
+Medical dialogue systems (MDSs) aim to assist doctors and patients with a range of professional
+medical services, i.e., diagnosis, treatment and consultation. The development of MDSs is hindered
+because of a lack of resources. In particular. (1) there is no dataset with large-scale medical dialogues
+that covers multiple medical services and contains fine-grained medical labels (i.e., intents,
+actions, slots, values), and (2) there is no set of established benchmarks for MDSs for multi-domain,
+multi-service medical dialogues. In this paper, we present ReMeDi, a set of resource for medical
+dialogues. ReMeDi consists of two parts, the ReMeDi dataset and the ReMeDi benchmarks. The ReMeDi
+dataset contains 96,965 conversations between doctors and patients, including 1,557 conversations
+with fine-gained labels. It covers 843 types of diseases, 5,228 medical entities, and 3 specialties
+of medical services across 40 domains. To the best of our knowledge, the ReMeDi dataset is the only
+medical dialogue dataset that covers multiple domains and services, and has fine-grained medical
+labels. The second part of the ReMeDi resources consists of a set of state-of-the-art models for
+(medical) dialogue generation. The ReMeDi benchmark has the following methods: (1) pretrained
+models (i.e., BERT-WWM, BERT-MED, GPT2, and MT5) trained, validated, and tested on the ReMeDi dataset,
+and (2) a self-supervised contrastive learning(SCL) method to expand the ReMeDi dataset and enhance
+the training of the state-of-the-art pretrained models. We describe the creation of the ReMeDi
+dataset, the ReMeDi benchmarking methods, and establish experimental results using the ReMeDi
+benchmarking methods on the ReMeDi dataset for future research to compare against. With this paper,
+we share the dataset, implementations of the benchmarks, and evaluation scripts. 

@@ -1,0 +1,20 @@
+We propose a new sequential decision-making setting, motivated by mobile health applications,
+based on combining key aspects of two established online problems with bandit feedback. Both assume
+that the optimal action to play is contingent on an underlying changing state which is not directly
+observable by the agent. They differ in what kind of side information can be used to estimate this
+state. The first one considers each state to be associated with a context, possibly corrupted, allowing
+the agent to learn the context-to-state mapping. The second one considers that the state itself
+evolves in a Markovian fashion, thus allowing the agent to estimate the current state based on history.
+We argue that it is realistic for the agent to have access to both these sources of information, i.e.,
+an arbitrarily corrupted context obeying the Markov property. Thus, the agent is faced with a new
+challenge of balancing its belief about the reliability of information from learned state transitions
+versus context information. We present an algorithm that uses a referee to dynamically combine
+the policies of a contextual bandit and a multi-armed bandit. We capture the time-correlation of
+states through iteratively learning the action-reward transition model, allowing for efficient
+exploration of actions. Users transition through different unobserved, time-correlated but
+only partially observable internal states, which determine their current needs. The side-information
+about users might not always be reliable and standard approaches solely relying on the context risk
+incurring high regret. Similarly, some users might exhibit weaker correlations between subsequent
+states, leading to approaches that solely rely on state transitions risking the same. We evaluate
+our method on simulated data and on several real-world data sets, showing improved empirical performance
+compared to several popular algorithms. 

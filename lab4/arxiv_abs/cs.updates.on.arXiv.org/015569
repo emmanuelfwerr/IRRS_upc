@@ -1,0 +1,20 @@
+Although equirectangular projection (ERP) is a convenient form to store omnidirectional images
+(also known as 360-degree images), it is neither equal-area nor conformal, thus not friendly to
+subsequent visual communication. In the context of image compression, ERP will over-sample and
+deform things and stuff near the poles, making it difficult for perceptually optimal bit allocation.
+In conventional 360-degree image compression, techniques such as region-wise packing and tiled
+representation are introduced to alleviate the over-sampling problem, achieving limited success.
+In this paper, we make one of the first attempts to learn deep neural networks for omnidirectional
+image compression. We first describe parametric pseudocylindrical representation as a generalization
+of common pseudocylindrical map projections. A computationally tractable greedy method is presented
+to determine the (sub)-optimal configuration of the pseudocylindrical representation in terms
+of a novel proxy objective for rate-distortion performance. We then propose pseudocylindrical
+convolutions for 360-degree image compression. Under reasonable constraints on the parametric
+representation, the pseudocylindrical convolution can be efficiently implemented by standard
+convolution with the so-called pseudocylindrical padding. To demonstrate the feasibility of
+our idea, we implement an end-to-end 360-degree image compression system, consisting of the learned
+pseudocylindrical representation, an analysis transform, a non-uniform quantizer, a synthesis
+transform, and an entropy model. Experimental results on $19,790$ omnidirectional images show
+that our method achieves consistently better rate-distortion performance than the competing
+methods. Moreover, the visual quality by our method is significantly improved for all images at
+all bitrates. 

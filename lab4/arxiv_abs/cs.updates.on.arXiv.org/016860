@@ -1,0 +1,19 @@
+Traditional botnet attacks leverage large and distributed numbers of compromised internet-connected
+devices to target and overwhelm other devices with internet packets. With increasing consumer
+adoption of high-wattage internet-facing "smart devices", a new "power botnet" attack emerges,
+where such devices are used to target and overwhelm power grid devices with unusual load demand.
+We introduce a variant of this attack, the power-botnet weardown-attack, which does not intend
+to cause blackouts or short-term acute instability, but instead forces expensive mechanical components
+to activate more frequently, necessitating costly replacements / repairs. Specifically, we target
+the on-load tap-changer (OLTC) transformer, which uses a mechanical switch that responds to change
+in load demand. In our analysis and simulations, these attacks can halve the lifespan of an OLTC,
+or in the most extreme cases, reduce it to $2.5\%$ of its original lifespan. Notably, these power
+botnets are composed of devices not connected to the internal SCADA systems used to control power
+grids. This represents a new internet-based cyberattack that targets the power grid from the outside.
+To help the power system to mitigate these types of botnet attacks, we develop attack-localization
+strategies. We formulate the problem as a supervised machine learning task to locate the source
+of power botnet attacks. Within a simulated environment, we generate the training and testing dataset
+to evaluate several machine learning algorithm based localization methods, including SVM, neural
+network and decision tree. We show that decision-tree based classification successfully identifies
+power botnet attacks and locates compromised devices with at least $94\%$ improvement of accuracy
+over a baseline "most-frequent" classifier. 

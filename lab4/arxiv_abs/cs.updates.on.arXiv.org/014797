@@ -1,0 +1,20 @@
+For the past two decades, there have been significant efforts to develop methods for object detection
+in Remote Sensing (RS) images. In most cases, the datasets for small object detection in remote sensing
+images are inadequate. Many researchers used scene classification datasets for object detection,
+which has its limitations; for example, the large-sized objects outnumber the small objects in
+object categories. Thus, they lack diversity; this further affects the detection performance
+of small object detectors in RS images. This paper reviews current datasets and object detection
+methods (deep learning-based) for remote sensing images. We also propose a large-scale, publicly
+available benchmark Remote Sensing Super-resolution Object Detection (RSSOD) dataset. The RSSOD
+dataset consists of 1,759 hand-annotated images with 22,091 instances of very high resolution
+(VHR) images with a spatial resolution of ~0.05 m. There are five classes with varying frequencies
+of labels per class. The image patches are extracted from satellite images, including real image
+distortions such as tangential scale distortion and skew distortion. We also propose a novel Multi-class
+Cyclic super-resolution Generative adversarial network with Residual feature aggregation (MCGR)
+and auxiliary YOLOv5 detector to benchmark image super-resolution-based object detection and
+compare with the existing state-of-the-art methods based on image super-resolution (SR). The
+proposed MCGR achieved state-of-the-art performance for image SR with an improvement of 1.2dB
+PSNR compared to the current state-of-the-art NLSN method. MCGR achieved best object detection
+mAPs of 0.758, 0.881, 0.841, and 0.983, respectively, for five-class, four-class, two-class,
+and single classes, respectively surpassing the performance of the state-of-the-art object detectors
+YOLOv5, EfficientDet, Faster RCNN, SSD, and RetinaNet. 

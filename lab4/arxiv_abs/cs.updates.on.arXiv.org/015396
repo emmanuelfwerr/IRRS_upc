@@ -1,0 +1,19 @@
+A well-established theoretical model for modular robots in two dimensions are edge-connected
+configurations of square modules, which can reconfigure through so-called sliding moves. Dumitrescu
+and Pach [Graphs and Combinatorics, 2006] proved that it is always possible to reconfigure one edge-connected
+configuration of $n$ squares into any other using at most $O(n^2)$ sliding moves, while keeping
+the configuration connected at all times. For certain pairs of configurations, reconfiguration
+may require $\Omega(n^2)$ sliding moves. However, significantly fewer moves may be sufficient.
+We prove that it is NP-hard to minimize the number of sliding moves for a given pair of edge-connected
+configurations. On the positive side we present Gather&Compact, an input-sensitive in-place
+algorithm that requires only $O(\bar{P} n)$ sliding moves to transform one configuration into
+the other, where $\bar{P}$ is the maximum perimeter of the two bounding boxes. The squares move within
+the bounding boxes only, with the exception of at most one square at a time which may move through the
+positions adjacent to the bounding boxes. The $O(\bar{P} n)$ bound never exceeds $O(n^2)$, and
+is optimal (up to constant factors) among all bounds parameterized by just $n$ and $\bar{P}$. Our
+algorithm is built on the basic principle that well-connected components of modular robots can
+be transformed efficiently. Hence we iteratively increase the connectivity within a configuration,
+to finally arrive at a single solid $xy$-monotone component. We implemented Gather&Compact and
+compared it experimentally to the in-place modification by Moreno and Sacrist\'an [EuroCG 2020]
+of the Dumitrescu and Pach algorithm (MSDP). Our experiments show that Gather&Compact consistently
+outperforms MSDP by a significant margin, on all types of square configurations. 

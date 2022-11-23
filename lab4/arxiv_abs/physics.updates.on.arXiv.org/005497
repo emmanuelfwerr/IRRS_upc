@@ -1,0 +1,20 @@
+Traffic congestion in big cities has been proven to be a difficult problem with suboptimal effects
+in terms of driver delay and frustration, cost, and impact on the environment. In principle, many
+transportation networks lack a unified framework, which will coordinate the traffic in such a manner,
+in order to suppress congestion and at the same time improve the travel time of the users situated
+in it. The rapid advancements in information, communication, and computation technologies have
+given rise to more elaborate modeling frameworks, aiming to act as the coordination unit necessary
+to counter the issue of congestion in real-time conditions. Such actions might have an adverse effect
+on the efficiency of the network, prospectively leading to greater waiting time intervals for each
+individual driver. We propose a macroscopic model equipped with an underlying reservation feature,
+known as Route Reservation Architecture (RRA). Vehicles enter the network (mainstream-wise or
+from the on-ramps) as long as this inflow does not incur a density that exceeds the network's critical
+density. Those vehicles prospectively exceeding the critical density are stored as queues at the
+origin of the motorway stretch and within the on-ramps. Once there is sufficient space, for those
+vehicles to be accommodated by the respective cell of the network, they are discharged from their
+queueing instance at their respective origin, moving towards their assigned path freely. In previous
+works, this architecture has been only applied in microscopic simulations in the context of urban
+networks without the influence of source terms (on-ramps). When the critical density of the stretch
+is reached, the reservations are activated, instigating a waiting interval to the vehicles stored
+at queues, allowing vehicles only to enter the network at a later time instant, such that the critical
+density is not crossed. 

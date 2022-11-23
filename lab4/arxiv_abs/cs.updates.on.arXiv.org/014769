@@ -1,0 +1,19 @@
+The Internet of Vehicles (IoV), whereby interconnected vehicles communicate with each other and
+with road infrastructure on a common network, has promising socio-economic benefits but also poses
+new cyber-physical threats. Data on vehicular attackers can be realistically gathered through
+cyber threat intelligence using systems like honeypots. Admittedly, configuring honeypots introduces
+a trade-off between the level of honeypot-attacker interactions and any incurred overheads and
+costs for implementing and monitoring these honeypots. We argue that effective deception can be
+achieved through strategically configuring the honeypots to represent components of the IoV and
+engage attackers to collect cyber threat intelligence. In this paper, we present HoneyCar, a novel
+decision support framework for honeypot deception in IoV. HoneyCar builds upon a repository of
+known vulnerabilities of the autonomous and connected vehicles found in the Common Vulnerabilities
+and Exposure (CVE) data within the National Vulnerability Database (NVD) to compute optimal honeypot
+configuration strategies. By taking a game-theoretic approach, we model the adversarial interaction
+as a repeated imperfect-information zero-sum game in which the IoV network administrator chooses
+a set of vulnerabilities to offer in a honeypot and a strategic attacker chooses a vulnerability
+of the IoV to exploit under uncertainty. Our investigation is substantiated by examining two different
+versions of the game, with and without the re-configuration cost to empower the network administrator
+to determine optimal honeypot configurations. We evaluate HoneyCar in a realistic use case to support
+decision makers with determining optimal honeypot configuration strategies for strategic deployment
+in IoV. 

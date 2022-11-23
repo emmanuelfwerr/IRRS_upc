@@ -1,0 +1,19 @@
+The most important computational problem on lattices is the Shortest Vector Problem (SVP). In this
+paper, we present new algorithms that improve the state-of-the-art for provable classical/quantum
+algorithms for SVP. We present the following results. $\bullet$ A new algorithm for SVP that provides
+a smooth tradeoff between time complexity and memory requirement. For any positive integer $4\leq
+q\leq \sqrt{n}$, our algorithm takes $q^{13n+o(n)}$ time and requires $poly(n)\cdot q^{16n/q^2}$
+memory. This tradeoff which ranges from enumeration ($q=\sqrt{n}$) to sieving ($q$ constant),
+is a consequence of a new time-memory tradeoff for Discrete Gaussian sampling above the smoothing
+parameter. $\bullet$ A quantum algorithm for SVP that runs in time $2^{0.950n+o(n)}$ and requires
+$2^{0.5n+o(n)}$ classical memory and poly(n) qubits. In Quantum Random Access Memory (QRAM) model
+this algorithm takes only $2^{0.835n+o(n)}$ time and requires a QRAM of size $2^{0.293n+o(n)}$,
+poly(n) qubits and $2^{0.5n}$ classical space. This improves over the previously fastest classical
+(which is also the fastest quantum) algorithm due to [ADRS15] that has a time and space complexity
+$2^{n+o(n)}$. $\bullet$ A classical algorithm for SVP that runs in time $2^{1.669n+o(n)}$ time
+and $2^{0.5n+o(n)}$ space. This improves over an algorithm of [CCL18] that has the same space complexity.
+The time complexity of our classical and quantum algorithms are obtained using a known upper bound
+on a quantity related to the lattice kissing number which is $2^{0.402n}$. We conjecture that for
+most lattices this quantity is a $2^{o(n)}$. Assuming that this is the case, our classical algorithm
+runs in time $2^{1.292n+o(n)}$, our quantum algorithm runs in time $2^{0.750n+o(n)}$ and our quantum
+algorithm in QRAM model runs in time $2^{0.667n+o(n)}$. 

@@ -1,0 +1,19 @@
+High-resolution (HR) MRI is critical in assisting the doctor's diagnosis and image-guided treatment,
+but is hard to obtain in a clinical setting due to long acquisition time. Therefore, the research
+community investigated deep learning-based super-resolution (SR) technology to reconstruct
+HR MRI images with shortened acquisition time. However, training such neural networks usually
+requires paired HR and low-resolution (LR) in-vivo images, which are difficult to acquire due to
+patient movement during and between the image acquisition. Rigid movements of hard tissues can
+be corrected with image-registration, whereas the alignment of deformed soft tissues is challenging,
+making it impractical to train the neural network with such authentic HR and LR image pairs. Therefore,
+most of the previous studies proposed SR reconstruction by employing authentic HR images and synthetic
+LR images downsampled from the HR images, yet the difference in degradation representations between
+synthetic and authentic LR images suppresses the performance of SR reconstruction from authentic
+LR images. To mitigate the aforementioned problems, we propose a novel Unsupervised DEgradation
+Adaptation Network (UDEAN). Our model consists of two components: the degradation learning network
+and the SR reconstruction network. The degradation learning network downsamples the HR images
+by addressing the degradation representation of the misaligned or unpaired LR images, and the SR
+reconstruction network learns the mapping from the downsampled HR images to their original HR images.
+As a result, the SR reconstruction network can generate SR images from the LR images and achieve comparable
+quality to the HR images. Experimental results show that our method outperforms the state-of-the-art
+models and can potentially be applied in real-world clinical settings. 

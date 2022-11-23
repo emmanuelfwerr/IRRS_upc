@@ -1,0 +1,20 @@
+Non-Uniform Rational B-Spline (NURBS) surfaces are commonly used within Computer-Aided Design
+(CAD) tools to represent geometric objects. When using isogeometric analysis (IGA), it is possible
+to use such NURBS geometries for numerical analysis directly. Analyzing fluid flows, however,
+requires complex three-dimensional geometries to represent flow domains. Defining a parametrization
+of such volumetric domains using NURBS can be challenging and is still an ongoing topic in the IGA
+community. With the recently developed NURBS-enhanced finite element method (NEFEM), the favorable
+geometric characteristics of NURBS are used within a standard finite element method. This is achieved
+by enhancing the elements touching the boundary by using the NURBS geometry itself. In the current
+work, a new variation of NEFEM is introduced, which is suitable for three-dimensional space-time
+finite element formulations. The proposed method makes use of a new mapping which results in a non-Cartesian
+formulation suitable for fluid-structure interaction (FSI). This is demonstrated by combining
+the method with an IGA formulation in a strongly-coupled partitioned framework for solving FSI
+problems. The framework yields a fully spline-based representation of the fluid-structure interface
+through a single NURBS. The coupling conditions at the fluid-structure interface are enforced
+through a Robin-Neumann type coupling scheme. This scheme is particularly useful when considering
+incompressible fluids in fully Dirichlet-bounded and curved problems, as it satisfies the incompressibility
+constraint on the fluid for each step within the coupling procedure. The accuracy and performance
+of the introduced spline-based space-time finite element approach and its use within the proposed
+coupled FSI framework are demonstrated using a series of two- and three-dimensional benchmark
+problems. 

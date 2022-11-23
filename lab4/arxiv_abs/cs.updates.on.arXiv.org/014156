@@ -1,0 +1,20 @@
+Traditionally, diagnosis and treatment of fungal infections in humans depend heavily on face-to-face
+consultations or examinations made by specialized laboratory scientists known as mycologists.
+In many cases, such as the recent mucormycosis spread in the COVID-19 pandemic, an initial treatment
+can be safely suggested to the patient during the earliest stage of the mycological diagnostic process
+by performing a direct examination of biopsies or samples through a microscope. Computer-aided
+diagnosis systems using deep learning models have been trained and used for the late mycological
+diagnostic stages. However, there are no reference literature works made for the early stages.
+A mycological laboratory in Colombia donated the images used for the development of this research
+work. They were manually labelled into five classes and curated with a subject matter expert assistance.
+The images were later cropped and patched with automated code routines to produce the final dataset.
+This paper presents experimental results classifying five fungi types using two different deep
+learning approaches and three different convolutional neural network models, VGG16, Inception
+V3, and ResNet50. The first approach benchmarks the classification performance for the models
+trained from scratch, while the second approach benchmarks the classification performance using
+pre-trained models based on the ImageNet dataset. Using k-fold cross-validation testing on the
+5-class dataset, the best performing model trained from scratch was Inception V3, reporting 73.2%
+accuracy. Also, the best performing model using transfer learning was VGG16 reporting 85.04%.
+The statistics provided by the two approaches create an initial point of reference to encourage
+future research works to improve classification performance. Furthermore, the dataset built
+is published in Kaggle and GitHub to foster future research. 

@@ -1,0 +1,19 @@
+Many hardware structures in today's high-performance out-of-order processors do not scale in
+an efficient way. To address this, different solutions have been proposed that build execution
+schedules in an energy-efficient manner. Issue time prediction processors are one such solution
+that use data-flow dependencies and predefined instruction latencies to predict issue times of
+repeated instructions. In this work, we aim to improve their accuracy, and consequently their performance,
+in an energy efficient way. We accomplish this by taking advantage of two key observations. First,
+memory accesses often take additional time to arrive than the static, predefined access latency
+that is used to describe these systems. Second, we find that these memory access delays often repeat
+across iterations of the same code. This, in turn, allows us to predict the arrival time of these accesses.
+In this work, we introduce a new processor microarchitecture, that replaces a complex reservation-station-based
+scheduler with an efficient, scalable alternative. Our proposed scheduling technique tracks
+real-time delays of loads to accurately predict instruction issue times, and uses a reordering
+mechanism to prioritize instructions based on that prediction, achieving close-to-out-of-order
+processor performance. To accomplish this in an energy-efficient manner we introduce: (1) an instruction
+delay learning mechanism that monitors repeated load instructions and learns their latest delay,
+(2) an issue time predictor that uses learned delays and data-flow dependencies to predict instruction
+issue times and (3) priority queues that reorder instructions based on their issue time prediction.
+Together, our processor achieves 86.2% of the performance of a traditional out-of-order processor,
+higher than previous efficient scheduler proposals, while still consuming 30% less power. 

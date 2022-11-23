@@ -1,0 +1,19 @@
+Virtual Reality (VR) is becoming ubiquitous with the rise of consumer displays and commercial VR
+platforms. Such displays require low latency and high quality rendering of synthetic imagery with
+reduced compute overheads. Recent advances in neural rendering showed promise of unlocking new
+possibilities in 3D computer graphics via image-based representations of virtual or physical
+environments. Specifically, the neural radiance fields (NeRF) demonstrated that photo-realistic
+quality and continuous view changes of 3D scenes can be achieved without loss of view-dependent
+effects. While NeRF can significantly benefit rendering for VR applications, it faces unique challenges
+posed by high field-of-view, high resolution, and stereoscopic/egocentric viewing, typically
+causing low quality and high latency of the rendered images. In VR, this not only harms the interaction
+experience but may also cause sickness. To tackle these problems toward six-degrees-of-freedom,
+egocentric, and stereo NeRF in VR, we present the first gaze-contingent 3D neural representation
+and view synthesis method. We incorporate the human psychophysics of visual- and stereo-acuity
+into an egocentric neural representation of 3D scenery. We then jointly optimize the latency/performance
+and visual quality while mutually bridging human perception and neural scene synthesis to achieve
+perceptually high-quality immersive interaction. We conducted both objective analysis and subjective
+studies to evaluate the effectiveness of our approach. We find that our method significantly reduces
+latency (up to 99% time reduction compared with NeRF) without loss of high-fidelity rendering (perceptually
+identical to full-resolution ground truth). The presented approach may serve as the first step
+toward future VR/AR systems that capture, teleport, and visualize remote environments in real-time.

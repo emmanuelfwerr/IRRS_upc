@@ -1,0 +1,19 @@
+Given $(a_1, \dots, a_n, t) \in \mathbb{Z}_{\geq 0}^{n + 1}$, the Subset Sum problem ($\mathsf{SSUM}$)
+is to decide whether there exists $S \subseteq [n]$ such that $\sum_{i \in S} a_i = t$. There is a close
+variant of the $\mathsf{SSUM}$, called $\mathsf{Subset~Product}$. Given positive integers
+$a_1, ..., a_n$ and a target integer $t$, the $\mathsf{Subset~Product}$ problem asks to determine
+whether there exists a subset $S \subseteq [n]$ such that $\prod_{i \in S} a_i=t$. There is a pseudopolynomial
+time dynamic programming algorithm, due to Bellman (1957) which solves the $\mathsf{SSUM}$ and
+$\mathsf{Subset~Product}$ in $O(nt)$ time and $O(t)$ space. In the first part, we present {\em
+search} algorithms for variants of the Subset Sum problem. Our algorithms are parameterized by
+$k$, which is a given upper bound on the number of realisable sets (i.e.,~number of solutions, summing
+exactly $t$). We show that $\mathsf{SSUM}$ with a unique solution is already NP-hard, under randomized
+reduction. This makes the regime of parametrized algorithms, in terms of $k$, very interesting.
+Subsequently, we present an $\tilde{O}(k\cdot (n+t))$ time deterministic algorithm, which finds
+the hamming weight of all the realisable sets for a subset sum instance. We also give a poly$(knt)$-time
+and $O(\log(knt))$-space deterministic algorithm that finds all the realisable sets for a subset
+sum instance. In the latter part, we present a simple and elegant randomized $\tilde{O}(n + t)$ time
+algorithm for $\mathsf{Subset~Product}$. Moreover, we also present a poly$(nt)$ time and $O(\log^2
+(nt))$ space deterministic algorithm for the same. We study these problems in the unbounded setting
+as well. Our algorithms use multivariate FFT, power series and number-theoretic techniques, introduced
+by Jin and Wu (SOSA'19) and Kane (2010). 

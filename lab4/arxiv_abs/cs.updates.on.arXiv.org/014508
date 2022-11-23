@@ -1,0 +1,18 @@
+In this paper, we study edit distance (ED) and longest common subsequence (LCS) in the asymmetric
+streaming model, introduced by Saks and Seshadhri [SS13]. As an intermediate model between the
+random access model and the streaming model, this model allows one to have streaming access to one
+string and random access to the other string. Our first main contribution is a systematic study of
+space lower bounds for ED and LCS in the asymmetric streaming model. Previously, there are no explicitly
+stated results in this context, although some lower bounds about LCS can be inferred from the lower
+bounds for longest increasing subsequence (LIS) in [SW07][GG10][EJ08]. Yet these bounds only
+work for large alphabet size. In this paper, we develop several new techniques to handle ED in general
+and LCS for small alphabet size, thus establishing strong lower bounds for both problems. In particular,
+our lower bound for ED provides an exponential separation between edit distance and Hamming distance
+in the asymmetric streaming model. Our lower bounds also extend to LIS and longest non-decreasing
+sequence (LNS) in the standard streaming model. Together with previous results, our bounds provide
+an almost complete picture for these two problems. As our second main contribution, we give improved
+algorithms for ED and LCS in the asymmetric streaming model. For ED, we improve the space complexity
+of the constant factor approximation algorithms in [FHRS20][CJLZ20] from $\tilde{O}(\frac{n^\delta}{\delta})$
+to $O(\frac{d^\delta}{\delta}\;\mathsf{polylog}(n))$, where $n$ is the length of each string
+and $d$ is the edit distance between the two strings. For LCS, we give the first $1/2+\epsilon$ approximation
+algorithm with space $n^{\delta}$ for any constant $\delta>0$, over a binary alphabet. 

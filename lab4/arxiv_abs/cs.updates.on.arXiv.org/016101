@@ -1,0 +1,20 @@
+Representing words by vectors, or embeddings, enables computational reasoning and is foundational
+to automating natural language tasks. For example, if word embeddings of similar words contain
+similar values, word similarity can be readily assessed, whereas judging that from their spelling
+is often impossible (e.g. cat /feline) and to predetermine and store similarities between all words
+is prohibitively time-consuming, memory intensive and subjective. We focus on word embeddings
+learned from text corpora and knowledge graphs. Several well-known algorithms learn word embeddings
+from text on an unsupervised basis by learning to predict those words that occur around each word,
+e.g. word2vec and GloVe. Parameters of such word embeddings are known to reflect word co-occurrence
+statistics, but how they capture semantic meaning has been unclear. Knowledge graph representation
+models learn representations both of entities (words, people, places, etc.) and relations between
+them, typically by training a model to predict known facts in a supervised manner. Despite steady
+improvements in fact prediction accuracy, little is understood of the latent structure that enables
+this. The limited understanding of how latent semantic structure is encoded in the geometry of word
+embeddings and knowledge graph representations makes a principled means of improving their performance,
+reliability or interpretability unclear. To address this: 1. we theoretically justify the empirical
+observation that particular geometric relationships between word embeddings learned by algorithms
+such as word2vec and GloVe correspond to semantic relations between words; and 2. we extend this
+correspondence between semantics and geometry to the entities and relations of knowledge graphs,
+providing a model for the latent structure of knowledge graph representation linked to that of word
+embeddings. 

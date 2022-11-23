@@ -1,0 +1,20 @@
+The bin packing problem exists widely in real logistic scenarios (e.g., packing pipeline, express
+delivery), with its goal to improve the packing efficiency and reduce the transportation cost.
+In this NP-hard combinatorial optimization problem, the position and quantity of each item in the
+box are strictly restricted by complex constraints and special customer requirements. Existing
+approaches are hard to obtain the optimal solution since rigorous constraints cannot be handled
+within a reasonable computation load. In this paper, for handling this difficulty, the packing
+knowledge is extracted from historical data collected from the packing pipeline of Huawei. First,
+by fully exploiting the relationship between historical packing records and input orders(orders
+to be packed) , the problem is reformulated as a set cover problem. Then, two novel strategies, the
+constraint handling and process acceleration strategies are applied to the classic column generation
+approach to solve this set cover problem. The cost of solving pricing problem for generating new
+columns is high due to the complex constraints and customer requirements. The proposed constraints
+handling strategy exploits the historical packing records with the most negative value of the reduced
+cost. Those constraints have been implicitly satisfied in these historical packing records so
+that there is no need to conduct further evaluation on constraints, thus the computational load
+is saved. To further eliminate the iteration process of column generation algorithm and accelerate
+the optimization process, a Learning to Price approach called Modified Pointer Network is proposed,
+by which we can determine which historical packing records should be selected directly. Through
+experiments on realworld datasets, we show our proposed method can improve the packing success
+rate and decrease the computation time simultaneously. 

@@ -1,0 +1,20 @@
+Modeling of strong gravitational lenses is a necessity for further applications in astrophysics
+and cosmology. Especially with the large number of detections in current and upcoming surveys such
+as the Rubin Legacy Survey of Space and Time (LSST), it is timely to investigate in automated and fast
+analysis techniques beyond the traditional and time consuming Markov chain Monte Carlo sampling
+methods. Building upon our convolutional neural network (CNN) presented in Schuldt et al. (2021b),
+we present here another CNN, specifically a residual neural network (ResNet), that predicts the
+five mass parameters of a Singular Isothermal Ellipsoid (SIE) profile (lens center $x$ and $y$,
+ellipticity $e_x$ and $e_y$, Einstein radius $\theta_E$) and the external shear ($\gamma_{ext,1}$,
+$\gamma_{ext,2}$) from ground-based imaging data. In contrast to our CNN, this ResNet further
+predicts a 1$\sigma$ uncertainty for each parameter. To train our network, we use our improved pipeline
+from Schuldt et al. (2021b) to simulate lens images using real images of galaxies from the Hyper Suprime-Cam
+Survey (HSC) and from the Hubble Ultra Deep Field as lens galaxies and background sources, respectively.
+We find overall very good recoveries for the SIE parameters, while differences remain in predicting
+the external shear. From our tests, most likely the low image resolution is the limiting factor for
+predicting the external shear. Given the run time of milli-seconds per system, our network is perfectly
+suited to predict the next appearing image and time delays of lensed transients in time. Therefore,
+we also present the performance of the network on these quantities in comparison to our simulations.
+Our ResNet is able to predict the SIE and shear parameter values in fractions of a second on a single
+CPU such that we are able to process efficiently the huge amount of expected galaxy-scale lenses
+in the near future. 

@@ -1,0 +1,19 @@
+Millions of particles are collided every second at the LHCb detector placed inside the Large Hadron
+Collider at CERN. The particles produced as a result of these collisions pass through various detecting
+devices which will produce a combined raw data rate of up to 40 Tbps by 2021. These data will be fed through
+a data acquisition system which reconstructs individual particles and filters the collision events
+in real time. This process will occur in a heterogeneous farm employing exclusively off-the-shelf
+CPU and GPU hardware, in a two stage process known as High Level Trigger. The reconstruction of charged
+particle trajectories in physics detectors, also referred to as track reconstruction or tracking,
+determines the position, charge and momentum of particles as they pass through detectors. The Vertex
+Locator subdetector (VELO) is the closest such detector to the beamline, placed outside of the region
+where the LHCb magnet produces a sizable magnetic field. It is used to reconstruct straight particle
+trajectories which serve as seeds for reconstruction of other subdetectors and to locate collision
+vertices. The VELO subdetector will detect up to 109 particles every second, which need to be reconstructed
+in real time in the High Level Trigger. We present Search by triplet, an efficient track reconstruction
+algorithm. Our algorithm is designed to run efficiently across parallel architectures. We extend
+on previous work and explain the algorithm evolution since its inception. We show the scaling of
+our algorithm under various situations, and analyze its amortized time in terms of complexity for
+each of its constituent parts and profile its performance. Our algorithm is the current state-of-the-art
+in VELO track reconstruction on SIMT architectures, and we qualify its improvements over previous
+results. 

@@ -1,0 +1,19 @@
+COVID-19 has become a global pandemic and is still posing a severe health risk to the public. Accurate
+and efficient segmentation of pneumonia lesions in CT scans is vital for treatment decision-making.
+We proposed a novel unsupervised approach using cycle consistent generative adversarial network
+(cycle-GAN) which automates and accelerates the process of lesion delineation. The workflow includes
+lung volume segmentation, "synthetic" healthy lung generation, infected and healthy image subtraction,
+and binary lesion mask creation. The lung volume volume was firstly delineated using a pre-trained
+U-net and worked as the input for the later network. The cycle-GAN was developed to generate synthetic
+"healthy" lung CT images from infected lung images. After that, the pneumonia lesions are extracted
+by subtracting the synthetic "healthy" lung CT images from the "infected" lung CT images. A median
+filter and K-means clustering were then applied to contour the lesions. The auto segmentation approach
+was validated on two public datasets (Coronacases and Radiopedia). The Dice coefficients reached
+0.748 and 0.730, respectively, for the Coronacases and Radiopedia datasets. Meanwhile, the precision
+and sensitivity for lesion segmentationdetection are 0.813 and 0.735 for the Coronacases dataset,
+and 0.773 and 0.726 for the Radiopedia dataset. The performance is comparable to existing supervised
+segmentation networks and outperforms previous unsupervised ones. The proposed unsupervised
+segmentation method achieved high accuracy and efficiency in automatic COVID-19 lesion delineation.
+The segmentation result can serve as a baseline for further manual modification and a quality assurance
+tool for lesion diagnosis. Furthermore, due to its unsupervised nature, the result is not influenced
+by physicians' experience which otherwise is crucial for supervised methods. 

@@ -1,0 +1,19 @@
+We propose a new technique for creating a space-efficient index for large repetitive text collections,
+such as pangenomic databases containing sequences of many individuals from the same species. We
+combine two recent techniques from this area: Wheeler graphs (Gagie et al., 2017) and prefix-free
+parsing (PFP, Boucher et al., 2019). Wheeler graphs (WGs) are a general framework encompassing
+several indexes based on the Burrows-Wheeler transform (BWT), such as the FM-index. Wheeler graphs
+admit a succinct representation which can be further compacted by employing the idea of tunnelling,
+which exploits redundancies in the form of parallel, equally-labelled paths called blocks that
+can be merged into a single path. The problem of finding the optimal set of blocks for tunnelling,
+i.e. the one that minimizes the size of the resulting WG, is known to be NP-complete and remains the
+most computationally challenging part of the tunnelling process. To find an adequate set of blocks
+in less time, we propose a new method based on the prefix-free parsing (PFP). The idea of PFP is to divide
+the input text into phrases of roughly equal sizes that overlap by a fixed number of characters. The
+original text is represented by a sequence of phrase ranks (the parse) and a list of all used phrases
+(the dictionary). In repetitive texts, the PFP of the text is generally much shorter than the original.
+To speed up the block selection for tunnelling, we apply the PFP to obtain the parse and the dictionary
+of the text, tunnel the WG of the parse using existing heuristics and subsequently use this tunnelled
+parse to construct a compact WG of the original text. Compared with constructing a WG from the original
+text without PFP, our method is much faster and uses less memory on collections of pangenomic sequences.
+Therefore, our method enables the use of WGs as a pangenomic reference for real-world datasets.

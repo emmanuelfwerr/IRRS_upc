@@ -1,0 +1,19 @@
+Alternatively to the full reconstruction of an unknown quantum process, the so-called selective
+and efficient quantum process tomography (SEQPT) allows estimating, individually and up to the
+required accuracy, a given element of the matrix that describes such an operation with a polynomial
+amount of resources. The implementation of this protocol, which depends on the possibility of building,
+or approximating, an especial set of quantum states (a state 2--design), has been carried out with
+success to characterize the evolution of a quantum system that is well described by a trace preserving
+quantum map. Here, we deal with a more general type of quantum process that do not preserve the trace
+of the input quantum state, which naturally arise in the presence of imperfect devices and system-environment
+interactions, in the context of quantum information science or quantum dynamics control. In that
+case, we show that with the aid of \emph{a priori} information on the losses structure of the quantum
+channel, the SEQPT reconstruction can be adapted to reconstruct the non-trace-preserving map.
+We explicitly describe how to implement the reconstruction in an arbitrary Hilbert space of finite
+dimension $d$. The method is experimentally verified on a superconducting quantum processor of
+the cloud IBM Quantum services, by estimating several non trace-preserving quantum processes
+in two representative cases: when maps act on a Hilbert space of dimension $d=3$, where a state 2--design
+can be found, and when they act on a Hilbert space of dimension $d=6$, where such a set is not known to
+exist. Our results show that it is possible to efficiently reconstruct non trace-preserving processes,
+with high precision, and with significantly higher fidelity than when the process is assumed to
+be trace-preserving. 

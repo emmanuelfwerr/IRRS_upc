@@ -1,0 +1,20 @@
+In the last years there has been a growing attention towards predicting the political orientation
+of active social media users, being this of great help to study political forecasts, opinion dynamics
+modeling and users polarization. Existing approaches, mainly targeting Twitter users, rely on
+content-based analysis or are based on a mixture of content, network and communication analysis.
+The recent research perspective exploits the fact that a user's political affinity mainly depends
+on his/her positions on major political and social issues, thus shifting the focus on detecting
+the stance of users through user-generated content shared on social networks. The work herein described
+focuses on a completely unsupervised stance detection framework that predicts the user's stance
+about specific social-political statements by exploiting content-based analysis of its Twitter
+timeline. The ground-truth user's stance may come from Voting Advice Applications, online tools
+that help citizens to identify their political leanings by comparing their political preferences
+with party political stances. Starting from the knowledge of the agreement level of six parties
+on 20 different statements, the objective of the study is to predict the stance of a Party p in regard
+to each statement s exploiting what the Twitter Party account wrote on Twitter. To this end we propose
+Tweets2Stance (T2S), a novel and totally unsupervised stance detector framework which relies
+on the zero-shot learning technique to quickly and accurately operate on non-labeled data. Interestingly,
+T2S can be applied to any social media user for any context of interest, not limited to the political
+one. Results obtained from multiple experiments show that, although the general maximum F1 value
+is 0.4, T2S can correctly predict the stance with a general minimum MAE of 1.13, which is a great achievement
+considering the task complexity. 

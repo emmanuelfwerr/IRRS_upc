@@ -1,0 +1,19 @@
+Piping and Instrumentation Diagrams (P&ID) are ubiquitous in several manufacturing, oil and gas
+enterprises for representing engineering schematics and equipment layout. There is an urgent
+need to extract and digitize information from P&IDs without the cost of annotating a varying set
+of symbols for each new use case. A robust one-shot learning approach for symbol recognition i.e.,
+localization followed by classification, would therefore go a long way towards this goal. Our method
+works by sampling pixels sequentially along the different contour boundaries in the image. These
+sampled points form paths which are used in the prototypical line diagram to construct a graph that
+captures the structure of the contours. Subsequently, the prototypical graphs are fed into a Dynamic
+Graph Convolutional Neural Network (DGCNN) which is trained to classify graphs into one of the given
+symbol classes. Further, we append embeddings from a Resnet-34 network which is trained on symbol
+images containing sampled points to make the classification network more robust. Since, many symbols
+in P&ID are structurally very similar to each other, we utilize Arcface loss during DGCNN training
+which helps in maximizing symbol class separability by producing highly discriminative embeddings.
+The images consist of components attached on the pipeline (straight line). The sampled points segregated
+around the symbol regions are used for the classification task. The proposed pipeline, named OSSR-PID,
+is fast and gives outstanding performance for recognition of symbols on a synthetic dataset of 100
+P&ID diagrams. We also compare our method against prior-work on a real-world private dataset of
+12 P&ID sheets and obtain comparable/superior results. Remarkably, it is able to achieve such excellent
+performance using only one prototypical example per symbol. 

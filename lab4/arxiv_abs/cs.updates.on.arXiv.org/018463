@@ -1,0 +1,19 @@
+Bayesian Optimization (BO) is a surrogate-based global optimization strategy that relies on a
+Gaussian Process regression (GPR) model to approximate the objective function and an acquisition
+function to suggest candidate points. It is well-known that BO does not scale well for high-dimensional
+problems because the GPR model requires substantially more data points to achieve sufficient accuracy
+and acquisition optimization becomes computationally expensive in high dimensions. Several
+recent works aim at addressing these issues, e.g., methods that implement online variable selection
+or conduct the search on a lower-dimensional sub-manifold of the original search space. Advancing
+our previous work of PCA-BO that learns a linear sub-manifold, this paper proposes a novel kernel
+PCA-assisted BO (KPCA-BO) algorithm, which embeds a non-linear sub-manifold in the search space
+and performs BO on this sub-manifold. Intuitively, constructing the GPR model on a lower-dimensional
+sub-manifold helps improve the modeling accuracy without requiring much more data from the objective
+function. Also, our approach defines the acquisition function on the lower-dimensional sub-manifold,
+making the acquisition optimization more manageable. We compare the performance of KPCA-BO to
+a vanilla BO and to PCA-BO on the multi-modal problems of the COCO/BBOB benchmark suite. Empirical
+results show that KPCA-BO outperforms BO in terms of convergence speed on most test problems, and
+this benefit becomes more significant when the dimensionality increases. For the 60D functions,
+KPCA-BO achieves better results than PCA-BO for many test cases. Compared to the vanilla BO, it efficiently
+reduces the CPU time required to train the GPR model and to optimize the acquisition function compared
+to the vanilla BO. 

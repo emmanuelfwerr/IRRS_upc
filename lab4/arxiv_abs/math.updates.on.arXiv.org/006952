@@ -1,0 +1,20 @@
+The stochastic approximation algorithm is a widely used probabilistic method for finding a zero
+of a vector-valued funtion, when only noisy measurements of the function are available. In the literature
+to date, one can make a distinction between "synchronous" updating, whereby every component of
+the current guess is updated at each time, and `"synchronous" updating, whereby only one component
+is updated. In principle, it is also possible to update, at each time instant, some but not all components
+of $\theta_t$, which might be termed as "batch asynchronous stochastic approximation" (BASA).
+Also, one can also make a distinction between using a "local" clock versus a "global" clock. In this
+paper, we propose a unified formulation of batch asynchronous stochastic approximation (BASA)
+algorithms, and develop a general methodology for proving that such algorithms converge, irrespective
+of whether global or local clocks are used. These convergence proofs make use of weaker hypotheses
+than existing results. For example: existing convergence proofs when a local clock is used require
+that the measurement noise is an i.i.d sequence. Here, it is assumed that the measurement errors
+form a martingale difference sequence. Also, all results to date assume that the stochastic step
+sizes satisfy a probabilistic analog of the Robbins-Monro conditions. We replace this by a purely
+deterministic condition on the irreducibility of the underlying Markov processes. As specific
+applications to Reinforcement Learning, we introduce ``batch'' versions of the temporal difference
+algorithm $TD(0)$ for value iteration, and the $Q$-learning algorithm for finding the optimal
+action-value function, and also permit the use of local clocks instead of a global clock. In all cases,
+we establish the convergence of these algorithms, under milder conditions than in the existing
+literature. 

@@ -1,0 +1,19 @@
+The availability of the sheer volume of Copernicus Sentinel-2 imagery has created new opportunities
+for exploiting deep learning methods for land use land cover (LULC) mapping at large scales. However,
+an extensive set of benchmark experiments is currently lacking, i.e. deep learning models tested
+on the same dataset, with a common and consistent set of metrics, and in the same hardware. In this
+work, we use the BigEarthNet Sentinel-2 multispectral dataset to benchmark for the first time different
+state-of-the-art deep learning models for the multi-label, multi-class LULC classification
+problem, contributing with an exhaustive zoo of 56 trained models. Our benchmark includes standard
+Convolution Neural Network architectures, but we also test non-convolutional methods, such as
+Multi-Layer Perceptrons and Vision Transformers. We put to the test EfficientNets and Wide Residual
+Networks (WRN) architectures, and leverage classification accuracy, training time and inference
+rate. Furthermore, we propose to use the EfficientNet framework for the compound scaling of a lightweight
+WRN, by varying network depth, width, and input data resolution. Enhanced with an Efficient Channel
+Attention mechanism, our scaled lightweight model emerged as the new state-of-the-art. It achieves
+4.5% higher averaged F-Score classification accuracy for all 19 LULC classes compared to a standard
+ResNet50 baseline model, with an order of magnitude less trainable parameters. We provide access
+to all trained models, along with our code for distributed training on multiple GPU nodes. This model
+zoo of pre-trained encoders can be used for transfer learning and rapid prototyping in different
+remote sensing tasks that use Sentinel-2 data, instead of exploiting backbone models trained with
+data from a different domain, e.g., from ImageNet. 

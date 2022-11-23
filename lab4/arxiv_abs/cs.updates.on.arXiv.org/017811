@@ -1,0 +1,20 @@
+Building Information Modeling (BIM) produces three-dimensional models of buildings combining
+the geometrical information with a wide range of properties. BIM is slowly but inevitably revolutionizing
+the architecture, engineering, and construction (AEC) industry. Buildings need to be compliant
+with regulations about stability, safety, and environmental impact. Manual compliance checking
+is tedious and error-prone, and amending flaws discovered only at construction time causes huge
+additional costs and delays. Several tools can check BIM models for conformance with rules/guidelines.
+For example, Singapore's CORENET e-Submission System checks fire safety. But since the current
+BIM exchange format only contains basic information of building objects, a separate, ad-hoc model
+pre-processing is required to determine, e.g., evacuation routes. Moreover, they face difficulties
+in adapting existing built-in rules and/or adding new ones (to cater for building regulations,
+that can vary not only among countries but also among parts of the same city), if at all possible. We
+propose the use of logic-based executable formalisms (CLP and Constraint ASP) to couple BIM models
+with advanced knowledge representation and reasoning capabilities. Previous experience shows
+that such formalisms can be used to uniformly capture and reason with knowledge (including ambiguity)
+in a large variety of domains. Additionally, incorporating checking within design tools makes
+it possible to ensure that models are rule-compliant at every step. This also prevents erroneous
+designs from having to be (partially) redone, which is also costly and burdensome. To validate our
+proposal, we implemented a preliminary reasoner under CLP(Q/R) and ASP with constraints and evaluated
+it with several BIM models. Under consideration for acceptance in Theory and Practice of Logic Programming
+(TPLP). 

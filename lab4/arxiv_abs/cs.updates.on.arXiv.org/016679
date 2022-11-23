@@ -1,0 +1,19 @@
+Recently, convolutional neural networks (CNN) have obtained promising results in single-image
+SR for hyperspectral pansharpening. However, enhancing CNNs' representation ability with fewer
+parameters and a shorter prediction time is a challenging and critical task. In this paper, we propose
+a novel multi-spectral image fusion method using a combination of the previously proposed 3D CNN
+model VolumeNet and 2.5D texture transfer method using other modality high resolution (HR) images.
+Since a multi-spectral (MS) image consists of several bands and each band is a 2D image slice, MS images
+can be seen as 3D data. Thus, we use the previously proposed VolumeNet to fuse HR panchromatic (PAN)
+images and bicubic interpolated MS images. Because the proposed 3D VolumeNet can effectively improve
+the accuracy by expanding the receptive field of the model, and due to its lightweight structure,
+we can achieve better performance against the existing method without purchasing a large number
+of remote sensing images for training. In addition, VolumeNet can restore the high-frequency information
+lost in the HR MR image as much as possible, reducing the difficulty of feature extraction in the following
+step: 2.5D texture transfer. As one of the latest technologies, deep learning-based texture transfer
+has been demonstrated to effectively and efficiently improve the visual performance and quality
+evaluation indicators of image reconstruction. Different from the texture transfer processing
+of RGB image, we use HR PAN images as the reference images and perform texture transfer for each frequency
+band of MS images, which is named 2.5D texture transfer. The experimental results show that the proposed
+method outperforms the existing methods in terms of objective accuracy assessment, method efficiency,
+and visual subjective evaluation. 

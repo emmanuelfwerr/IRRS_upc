@@ -1,0 +1,20 @@
+The segmentation task has traditionally been formulated as a complete-label pixel classification
+task to predict a class for each pixel from a fixed number of predefined semantic categories shared
+by all images or videos. Yet, following this formulation, standard architectures will inevitably
+encounter various challenges under more realistic settings where the scope of categories scales
+up (e.g., beyond the level of 1k). On the other hand, in a typical image or video, only a few categories,
+i.e., a small subset of the complete label are present. Motivated by this intuition, in this paper,
+we propose to decompose segmentation into two sub-problems: (i) image-level or video-level multi-label
+classification and (ii) pixel-level rank-adaptive selected-label classification. Given an
+input image or video, our framework first conducts multi-label classification over the complete
+label, then sorts the complete label and selects a small subset according to their class confidence
+scores. We then use a rank-adaptive pixel classifier to perform the pixel-wise classification
+over only the selected labels, which uses a set of rank-oriented learnable temperature parameters
+to adjust the pixel classifications scores. Our approach is conceptually general and can be used
+to improve various existing segmentation frameworks by simply using a lightweight multi-label
+classification head and rank-adaptive pixel classifier. We demonstrate the effectiveness of
+our framework with competitive experimental results across four tasks, including image semantic
+segmentation, image panoptic segmentation, video instance segmentation, and video semantic
+segmentation. Especially, with our RankSeg, Mask2Former gains +0.8%/+0.7%/+0.7% on ADE20K panoptic
+segmentation/YouTubeVIS 2019 video instance segmentation/VSPW video semantic segmentation
+benchmarks respectively. 

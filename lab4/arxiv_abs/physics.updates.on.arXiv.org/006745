@@ -1,0 +1,19 @@
+In RANS simulations for turbulent scalar transport, it is common that using an eddy-viscosity (EV)
+model to close the Reynolds stress yields reasonable mean flow predictions but large errors in scalar
+transfer results regardless of scalar flux model inadequacies. This failure mode of EV models is
+generally related to the fact that the transport of momentum and scalar depends on different Reynolds
+stress components. The present work addresses two common issues relevant to such failures in turbulent
+scalar transport around obstacles. The first issue is the general overprediction of scalar transfer
+near the upwind surfaces, which is primarily attributed to the absence of wall-blocking mechanism
+in conventional EV models. We accordingly propose a Shear-Preserving-Wall-Blocking (SPWB) method
+to analytically correct the overpredicted wall-normal stress under the realizability constraint.
+The second issue is the general underprediction of scalar transfer in the downstream large separation
+regions, which is essentially attributed to the presence of vortex shedding invalidating the scaling
+ground in conventional EV models' dissipation closures. We accordingly apply the recently proposed
+Double-Scale Double-Linear-EV (DSDL) model to scalar transport predictions. Consequently,
+a hybrid model SPWB-DSDL is developed. The model is then applied to two test cases, of which the first
+features a bluff obstacle with an upstream impingement flow and a downstream two-dimensional separation
+and the second a streamlined obstacle with an upstream concave surface flow and a downstream three-dimensional
+separation. In the two cases, the SPWB-DSDL model is capable of simultaneously yielding reasonable
+results of mean flow field, turbulence energy and stress, and scalar transfer in both upstream and
+downstream regions, thus demonstrating significant improvement upon a classical EV model. 

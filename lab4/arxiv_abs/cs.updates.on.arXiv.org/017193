@@ -1,0 +1,19 @@
+Various deep neural networks (DNNs) are developed and reported for their tremendous success in
+multiple domains. Given a specific task, developers can collect massive DNNs from public sources
+for efficient reusing and avoid redundant work from scratch. However, testing the performance
+(e.g., accuracy and robustness) of multiple DNNs and giving a reasonable recommendation that which
+model should be used is challenging regarding the scarcity of labeled data and demand of domain expertise.
+Existing testing approaches are mainly selection-based where after sampling, a few of the test
+data are labeled to discriminate DNNs. Therefore, due to the randomness of sampling, the performance
+ranking is not deterministic. In this paper, we propose a labeling-free comparison testing approach
+to overcome the limitations of labeling effort and sampling randomness. The main idea is to learn
+a Bayesian model to infer the models' specialty only based on predicted labels. To evaluate the effectiveness
+of our approach, we undertook exhaustive experiments on 9 benchmark datasets spanning in the domains
+of image, text, and source code, and 165 DNNs. In addition to accuracy, we consider the robustness
+against synthetic and natural distribution shifts. The experimental results demonstrate that
+the performance of existing approaches degrades under distribution shifts. Our approach outperforms
+the baseline methods by up to 0.74 and 0.53 on Spearman's correlation and Kendall's $\tau$, respectively,
+regardless of the dataset and distribution shift. Additionally, we investigated the impact of
+model quality (accuracy and robustness) and diversity (standard deviation of the quality) on the
+testing effectiveness and observe that there is a higher chance of a good result when the quality
+is over 50\% and the diversity is larger than 18\%. 

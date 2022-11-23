@@ -1,0 +1,20 @@
+We demonstrate the use of matrix product state (MPS) models for discriminating quantum data on quantum
+computers using holographic algorithms, focusing on classifying a translationally invariant
+quantum state based on $L$ qubits of quantum data extracted from it. We detail a process in which data
+from single-shot experimental measurements are used to optimize an isometric tensor network,
+the tensors are compiled into unitary quantum operations using greedy compilation heuristics,
+parameter optimization on the resulting quantum circuit model removes the post-selection requirements
+of the isometric tensor model, and the resulting quantum model is inferenced on either product state
+or entangled quantum data. We demonstrate our training and inference architecture on a synthetic
+dataset of six-site single-shot measurements from the bulk of a one-dimensional transverse field
+Ising model (TFIM) deep in its antiferromagnetic and paramagnetic phases. We experimentally evaluate
+models on Quantinuum's H1-2 trapped ion quantum computer using entangled input data modeled as
+translationally invariant, bond dimension 4 MPSs across the known quantum phase transition of
+the TFIM. Using linear regression on the experimental data near the transition point, we find predictions
+for the critical transverse field of $h=0.962$ and $0.994$ for tensor network discriminators of
+bond dimension $\chi=2$ and $\chi=4$, respectively. These predictions compare favorably with
+the known transition location of $h=1$ despite training on data far from the transition point. Our
+techniques identify families of short-depth variational quantum circuits in a data-driven and
+hardware-aware fashion and robust classical techniques to precondition the model parameters,
+and can be adapted beyond machine learning to myriad applications of tensor networks on quantum
+computers, such as quantum simulation and error correction. 

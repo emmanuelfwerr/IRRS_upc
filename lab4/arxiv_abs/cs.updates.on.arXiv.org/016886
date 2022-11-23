@@ -1,0 +1,19 @@
+Skin cancer is one of the most common types of malignancy, affecting a large population and causing
+a heavy economic burden worldwide. Over the last few years, computer-aided diagnosis has been rapidly
+developed and make great progress in healthcare and medical practices due to the advances in artificial
+intelligence. However, most studies in skin cancer detection keep pursuing high prediction accuracies
+without considering the limitation of computing resources on portable devices. In this case, knowledge
+distillation (KD) has been proven as an efficient tool to help improve the adaptability of lightweight
+models under limited resources, meanwhile keeping a high-level representation capability. To
+bridge the gap, this study specifically proposes a novel method, termed SSD-KD, that unifies diverse
+knowledge into a generic KD framework for skin diseases classification. Our method models an intra-instance
+relational feature representation and integrates it with existing KD research. A dual relational
+knowledge distillation architecture is self-supervisedly trained while the weighted softened
+outputs are also exploited to enable the student model to capture richer knowledge from the teacher
+model. To demonstrate the effectiveness of our method, we conduct experiments on ISIC 2019, a large-scale
+open-accessed benchmark of skin diseases dermoscopic images. Experiments show that our distilled
+lightweight model can achieve an accuracy as high as 85% for the classification tasks of 8 different
+skin diseases with minimal parameters and computing requirements. Ablation studies confirm the
+effectiveness of our intra- and inter-instance relational knowledge integration strategy. Compared
+with state-of-the-art knowledge distillation techniques, the proposed method demonstrates
+improved performances for multi-diseases classification on the large-scale dermoscopy database.

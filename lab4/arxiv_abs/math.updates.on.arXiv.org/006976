@@ -1,0 +1,19 @@
+In this paper, a meshfree method using the deep neural network (DNN) approach is developed for solving
+two kinds of dynamic two-phase interface problems governed by different dynamic partial differential
+equations on either side of the stationary interface with the jump and high-contrast coefficients.
+The first type of two-phase interface problem to be studied is the fluid-fluid (two-phase flow)
+interface problem modeled by Navier-Stokes equations with high-contrast physical parameters
+across the interface. The second one belongs to fluid-structure interaction (FSI) problems modeled
+by Navier-Stokes equations on one side of the interface and the structural equation on the other
+side of the interface, both the fluid and the structure interact with each other via the kinematic-
+and the dynamic interface conditions across the interface. The DNN/meshfree method is respectively
+developed for the above two-phase interface problems by representing solutions of PDEs using the
+DNNs' structure and reformulating the dynamic interface problem as a least-squares minimization
+problem based upon a space-time sampling point set. Approximation error analyses are also carried
+out for each kind of interface problem, which reveals an intrinsic strategy about how to efficiently
+build a sampling-point training dataset to obtain a more accurate DNNs' approximation. In addition,
+compared with traditional discretization approaches, the proposed DNN/meshfree method and its
+error analysis technique can be smoothly extended to many other dynamic interface problems with
+fixed interfaces. Numerical experiments are conducted to illustrate the accuracies of the proposed
+DNN/meshfree method for the presented two-phase interface problems. Theoretical results are
+validated to some extent through three numerical examples. 

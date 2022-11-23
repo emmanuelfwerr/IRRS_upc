@@ -1,0 +1,19 @@
+Feature selection is a crucial step in developing robust and powerful machine learning models.
+Feature selection techniques can be divided into two categories: filter and wrapper methods. While
+wrapper methods commonly result in strong predictive performances, they suffer from a large computational
+complexity and therefore take a significant amount of time to complete, especially when dealing
+with high-dimensional feature sets. Alternatively, filter methods are considerably faster,
+but suffer from several other disadvantages, such as (i) requiring a threshold value, (ii) not taking
+into account intercorrelation between features, and (iii) ignoring feature interactions with
+the model. To this end, we present powershap, a novel wrapper feature selection method, which leverages
+statistical hypothesis testing and power calculations in combination with Shapley values for
+quick and intuitive feature selection. Powershap is built on the core assumption that an informative
+feature will have a larger impact on the prediction compared to a known random feature. Benchmarks
+and simulations show that powershap outperforms other filter methods with predictive performances
+on par with wrapper methods while being significantly faster, often even reaching half or a third
+of the execution time. As such, powershap provides a competitive and quick algorithm that can be
+used by various models in different domains. Furthermore, powershap is implemented as a plug-and-play
+and open-source sklearn component, enabling easy integration in conventional data science pipelines.
+User experience is even further enhanced by also providing an automatic mode that automatically
+tunes the hyper-parameters of the powershap algorithm, allowing to use the algorithm without any
+configuration needed. 

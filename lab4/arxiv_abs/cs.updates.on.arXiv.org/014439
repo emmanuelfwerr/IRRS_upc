@@ -1,0 +1,19 @@
+Diabetes is a global raising pandemic. Diabetes patients are at risk of developing foot ulcer that
+usually leads to limb amputation. In order to develop a self monitoring mobile application, in this
+work, we propose a novel deep subspace analysis pipeline for semi-supervised diabetic foot ulcer
+mulit-label classification. To avoid any chance of over-fitting, unlike recent state of the art
+deep semi-supervised methods, the proposed pipeline dose not include any data augmentation. Whereas,
+after extracting deep features, in order to make the representation shift invariant, we employ
+variety of data augmentation methods on each image and generate an image-sets, which is then mapped
+into a linear subspace. Moreover, the proposed pipeline reduces the cost of retraining when more
+new unlabelled data become available. Thus, the first stage of the pipeline employs the concept
+of transfer learning for feature extraction purpose through modifying and retraining a deep convolutional
+network architect known as Xception. Then, the output of a mid-layer is extracted to generate an
+image set representer of any given image with help of data augmentation methods. At this stage, each
+image is transferred to a linear subspace which is a point on a Grassmann Manifold topological space.
+Hence, to perform analyse them, the geometry of such manifold must be considered. As such, each labelled
+image is represented as a vector of distances to number of unlabelled images using geodesic distance
+on Grassmann manifold. Finally, Random Forest is trained for multi-label classification of diabetic
+foot ulcer images. The method is then evaluated on the blind test set provided by DFU2021 competition,
+and the result considerable improvement compared to using classical transfer learning with data
+augmentation. 

@@ -1,0 +1,20 @@
+Organizations often collect private data and release aggregate statistics for the public's benefit.
+If no steps toward preserving privacy are taken, adversaries may use released statistics to deduce
+unauthorized information about the individuals described in the private dataset. Differentially
+private algorithms address this challenge by slightly perturbing underlying statistics with
+noise, thereby mathematically limiting the amount of information that may be deduced from each
+data release. Properly calibrating these algorithms -- and in turn the disclosure risk for people
+described in the dataset -- requires a data curator to choose a value for a privacy budget parameter,
+$\epsilon$. However, there is little formal guidance for choosing $\epsilon$, a task that requires
+reasoning about the probabilistic privacy-utility trade-off. Furthermore, choosing $\epsilon$
+in the context of statistical inference requires reasoning about accuracy trade-offs in the presence
+of both measurement error and differential privacy (DP) noise. We present Visualizing Privacy
+(ViP), an interactive interface that visualizes relationships between $\epsilon$, accuracy,
+and disclosure risk to support setting and splitting $\epsilon$ among queries. As a user adjusts
+$\epsilon$, ViP dynamically updates visualizations depicting expected accuracy and risk. ViP
+also has an inference setting, allowing a user to reason about the impact of DP noise on statistical
+inferences. Finally, we present results of a study where 16 research practitioners with little
+to no DP background completed a set of tasks related to setting $\epsilon$ using both ViP and a control.
+We find that ViP helps participants more correctly answer questions related to judging the probability
+of where a DP-noised release is likely to fall and comparing between DP-noised and non-private confidence
+intervals. 

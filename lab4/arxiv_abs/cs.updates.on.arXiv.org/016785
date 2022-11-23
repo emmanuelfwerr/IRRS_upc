@@ -1,0 +1,20 @@
+In this paper we propose a method to generate suitably refined finite element meshes using neural
+networks. As a model problem we consider a linear elasticity problem on a planar domain (possibly
+with holes) having a polygonal boundary. We impose boundary conditions by fixing the position of
+a part of the boundary and applying a force on another part of the boundary. The resulting displacement
+and distribution of stresses depend on the geometry of the domain and on the boundary conditions.
+When applying a standard Galerkin discretization using quadrilateral finite elements, one usually
+has to perform adaptive refinement to properly resolve maxima of the stress distribution. Such
+an adaptive scheme requires a local error estimator and a corresponding local refinement strategy.
+The overall costs of such a strategy are high. We propose to reduce the costs of obtaining a suitable
+discretization by training a neural network whose evaluation replaces this adaptive refinement
+procedure. We set up a single network for a large class of possible domains and boundary conditions
+and not on a single domain of interest. The computational domain and boundary conditions are interpreted
+as images, which are suitable inputs for convolution neural networks. We use the U-net architecture
+and we devise training strategies by dividing the possible inputs into different categories based
+on their overall geometric complexity. Thus, we compare different training strategies based on
+varying geometric complexity. One of the advantages of the proposed approach is the interpretation
+of input and output as images, which do not depend on the underlying discretization scheme. Another
+is the generalizability and geometric flexibility. The network can be applied to previously unseen
+geometries, even with different topology and level of detail. Thus, training can easily be extended
+to other classes of geometries. 

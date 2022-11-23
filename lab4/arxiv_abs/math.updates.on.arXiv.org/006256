@@ -1,0 +1,18 @@
+In these lectures notes, we review our recent works addressing various problems of finding the nearest
+stable system to an unstable one. After the introduction, we provide some preliminary background,
+namely, defining Port-Hamiltonian systems and dissipative Hamiltonian systems and their properties,
+briefly discussing matrix factorizations, and describing the optimization methods that we will
+use in these notes. In the third chapter, we present our approach to tackle the distance to stability
+for standard continuous linear time invariant (LTI) systems. The main idea is to rely on the characterization
+of stable systems as dissipative Hamiltonian systems. We show how this idea can be generalized to
+compute the nearest $\Omega$-stable matrix, where the eigenvalues of the sought system matrix
+$A$ are required to belong a rather general set $\Omega$. We also show how these ideas can be used to
+compute minimal-norm static feedbacks, that is, stabilize a system by choosing a proper input $u(t)$
+that linearly depends on $x(t)$ (static-state feedback), or on $y(t)$ (static-output feedback).
+In the fourth chapter, we present our approach to tackle the distance to passivity. The main idea
+is to rely on the characterization of stable systems as port-Hamiltonian systems. We also discuss
+in more details the special case of computing the nearest stable matrix pairs. In the last chapter,
+we focus on discrete-time LTI systems. Similarly as for the continuous case, we propose a parametrization
+that allows efficiently compute the nearest stable system (for matrices and matrix pairs), allowing
+to compute the distance to stability. We show how this idea can be used in data-driven system identification,
+that is, given a set of input-output pairs, identify the system $A$. 

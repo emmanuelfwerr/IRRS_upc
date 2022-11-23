@@ -1,0 +1,19 @@
+Objective: Knowledge based planning (KBP) typically involves training an end-to-end deep learning
+model to predict dose distributions. However, training end-to-end KBP methods may be associated
+with practical limitations due to the limited size of medical datasets that are often used. To address
+these limitations, we propose a content based image retrieval (CBIR) method for retrieving dose
+distributions of previously planned patients based on anatomical similarity. Approach: Our proposed
+CBIR method trains a representation model that produces latent space embeddings of a patient's
+anatomical information. The latent space embeddings of new patients are then compared against
+those of previous patients in a database for image retrieval of dose distributions. Summary metrics
+(e.g. dose-volume histogram, conformity index, homogeneity index, etc.) are computed and can
+then be utilized in subsequent automated planning. All source code for this project is available
+on github. Main Results: The retrieval performance of various CBIR methods is evaluated on a dataset
+consisting of both publicly available plans and clinical plans from our institution. This study
+compares various encoding methods, ranging from simple autoencoders to more recent Siamese networks
+like SimSiam, and the best performance was observed for the multitask Siamese network. Significance:
+Applying CBIR to inform subsequent treatment planning potentially addresses many limitations
+associated with end-to-end KBP. Our current results demonstrate that excellent image retrieval
+performance can be obtained through slight changes to previously developed Siamese networks.
+We hope to integrate CBIR into automated planning workflow in future works, potentially through
+methods like the MetaPlanner framework. 

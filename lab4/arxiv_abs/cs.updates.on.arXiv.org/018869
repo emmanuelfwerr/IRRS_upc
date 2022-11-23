@@ -1,0 +1,19 @@
+Traditionally, traffic incident management (TIM) programs coordinate the deployment of emergency
+resources to immediate incident requests without accommodating the interdependencies on incident
+evolutions in the environment. However, ignoring inherent interdependencies on the evolution
+of incidents in the environment while making current deployment decisions is shortsighted, and
+the resulting naive deployment strategy can significantly worsen the overall incident delay impact
+on the network. The interdependencies on incident evolution in the environment, including those
+between incident occurrences, and those between resource availability in near-future requests
+and the anticipated duration of the immediate incident request, should be considered through a
+look-ahead model when making current-stage deployment decisions. This study develops a new proactive
+framework based on the distributed constraint optimization problem (DCOP) to address the above
+limitations, overcoming conventional TIM models that cannot accommodate the dependencies in
+the TIM problem. Furthermore, the optimization objective is formulated to incorporate Unmanned
+Aerial Vehicles (UAVs). The UAVs' role in TIM includes exploring uncertain traffic conditions,
+detecting unexpected events, and augmenting information from roadway traffic sensors. Robustness
+analysis of our model for multiple TIM scenarios shows satisfactory performance using local search
+exploration heuristics. Overall, our model reports a significant reduction in total incident
+delay compared to conventional TIM models. With UAV support, we demonstrate a further decrease
+in the overall incident delay through the shorter response time of emergency vehicles, and a reduction
+in uncertainties associated with the estimated incident delay impact. 

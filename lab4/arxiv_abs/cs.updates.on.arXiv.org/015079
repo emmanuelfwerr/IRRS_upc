@@ -1,0 +1,18 @@
+Term Rewriting Systems (TRS) are used in compilers to simplify and prove expressions. State-of-the-art
+TRSs in compilers use a greedy algorithm that applies a set of rewriting rules in a predefined order
+(where some of the rules are not axiomatic). This leads to a loss in the ability to simplify certain
+expressions. E-graphs and equality saturation sidestep this issue by representing the different
+equivalent expressions in a compact manner from which the optimal expression can be extracted.
+While an e-graph-based TRS can be more powerful than a TRS that uses a greedy algorithm, it is slower
+because expressions may have a large or sometimes infinite number of equivalent expressions. Accelerating
+e-graph construction is crucial for making the use of e-graphs practical in compilers. In this paper,
+we present Caviar, an e-graph-based TRS for proving expressions within compilers. Caviar is a fast
+(20x faster than base e-graph TRS) and flexible (completely parameterized) TRS that that relies
+on three novel techniques: 1) a technique that stops e-graphs from growing when the goal is reached,
+called Iteration Level Check; 2) a mechanism that balances exploration and exploitation in the
+equality saturation algorithm, called Pulsing Caviar; 3) a technique to stop e-graph construction
+before reaching saturation when a non-provable pattern is detected, called Non-Provable Patterns
+Detection (NPPD). We evaluate caviar on Halide, an optimizing compiler that relies on a greedy-algorithm-based
+TRS to simplify and prove its expressions. The proposed techniques allow Caviar to accelerate e-graph
+expansion by 20x for the task of proving expressions. They also allow Caviar to prove 51% of the expressions
+that Halide's TRS cannot prove while being only 0.68x slower. 

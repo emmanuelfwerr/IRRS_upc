@@ -1,0 +1,19 @@
+Existing tools to detect side-channel attacks on Intel SGX are grounded on the observation that
+attacks affect the performance of the victim application. As such, all detection tools monitor
+the potential victim and raise an alarm if the witnessed performance (in terms of runtime, enclave
+interruptions, cache misses, etc.) is out of the ordinary. In this paper, we show that monitoring
+the performance of enclaves to detect side-channel attacks may not be effective. Our core intuition
+is that all monitoring tools are geared towards an adversary that interferes with the victim's execution
+in order to extract the most number of secret bits (e.g., the entire secret) in one or few runs. They
+cannot, however, detect an adversary that leaks smaller portions of the secret - as small as a single
+bit - at each execution of the victim. In particular, by minimizing the information leaked at each
+run, the impact of any side-channel attack on the application's performance is significantly lowered
+- ensuring that the detection tool does not detect an attack. By repeating the attack multiple times,
+each time on a different part of the secret, the adversary can recover the whole secret and remain
+undetected. Based on this intuition, we adapt known attacks leveraging page-tables and L3 cache
+to bypass existing detection mechanisms. We show experimentally how an attacker can successfully
+exfiltrate the secret key used in an enclave running various cryptographic routines of libgcrypt.
+Beyond cryptographic libraries, we also show how to compromise the predictions of enclaves running
+decision-tree routines of OpenCV. Our evaluation results suggest that performance-based detection
+tools do not deter side-channel attacks on SGX enclaves and that effective detection mechanisms
+are yet to be designed. 

@@ -1,0 +1,19 @@
+We introduce a novel framework for continuous facial motion deblurring that restores the continuous
+sharp moment latent in a single motion-blurred face image via a moment control factor. Although
+a motion-blurred image is the accumulated signal of continuous sharp moments during the exposure
+time, most existing single image deblurring approaches aim to restore a fixed number of frames using
+multiple networks and training stages. To address this problem, we propose a continuous facial
+motion deblurring network based on GAN (CFMD-GAN), which is a novel framework for restoring the
+continuous moment latent in a single motion-blurred face image with a single network and a single
+training stage. To stabilize the network training, we train the generator to restore continuous
+moments in the order determined by our facial motion-based reordering process (FMR) utilizing
+domain-specific knowledge of the face. Moreover, we propose an auxiliary regressor that helps
+our generator produce more accurate images by estimating continuous sharp moments. Furthermore,
+we introduce a control-adaptive (ContAda) block that performs spatially deformable convolution
+and channel-wise attention as a function of the control factor. Extensive experiments on the 300VW
+datasets demonstrate that the proposed framework generates a various number of continuous output
+frames by varying the moment control factor. Compared with the recent single-to-single image deblurring
+networks trained with the same 300VW training set, the proposed method show the superior performance
+in restoring the central sharp frame in terms of perceptual metrics, including LPIPS, FID and Arcface
+identity distance. The proposed method outperforms the existing single-to-video deblurring
+method for both qualitative and quantitative comparisons. 

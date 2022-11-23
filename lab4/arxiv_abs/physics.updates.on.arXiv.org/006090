@@ -1,0 +1,20 @@
+The vitality of urban spaces has been steadily undermined by the pervasive adoption of car-centric
+forms of urban development as characterised by lower densities, street networks offering poor
+connectivity for pedestrians, and a lack of accessible land-uses; yet, even if these issues have
+been clearly framed for some time, the problem persists in new forms of planning. It is here posited
+that a synthesis of domain knowledge and machine learning methods allows for the creation of robust
+toolsets against which newly proposed developments can be benchmarked in a more rigorous manner
+in the interest of greater accountability and better-evidenced decision-making. A worked example
+develops a sequence of machine learning models that distinguishing `artificial' towns from their
+more walkable and mixed-use `historical' equivalents. The dataset is developed from network centrality,
+mixed-use, land-use accessibility, and population density measures as proxies for spatial complexity,
+which are computed at the pedestrian-scale for 931 towns and cities in Great Britain. Using officially
+designated `New Towns' as a departure point, a series of clues is then developed. First, using an
+iterative human-in-the-loop procedure, a supervised classifier (Extra-Trees) is cultivated
+from which 185 `artificial' locations are identified based on data aggregated to respective town
+or city boundaries. This information is then used to train supervised and semi-supervised (M2)
+deep neural network classifiers against the higher resolution dataset. The models broadly align
+with intuitions expressed by urbanists and show potential for continued development to broach
+ensuing challenges pertaining to: selection of curated training exemplars; further development
+of techniques to accentuate localised scales of analysis; and methods for the calibration of model
+probabilities to align with the intuitions of domain experts. 

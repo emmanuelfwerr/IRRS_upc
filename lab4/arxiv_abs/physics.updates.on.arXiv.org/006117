@@ -1,0 +1,18 @@
+Our ability to predict the structure and evolution of stars is in part limited by complex, 3D hydrodynamic
+processes such as convective boundary mixing. Hydrodynamic simulations help us understand the
+dynamics of stellar convection and convective boundaries. However, the codes used to compute such
+simulations are usually tested on extremely simple problems and the reliability and reproducibility
+of their predictions for turbulent flows is unclear. We define a test problem involving turbulent
+convection in a plane-parallel box, which leads to mass entrainment from, and internal-wave generation
+in, a stably stratified layer. We compare the outputs from the codes FLASH, MUSIC, PPMSTAR, PROMPI,
+and SLH, which have been widely employed to study hydrodynamic problems in stellar interiors. The
+convection is dominated by the largest scales that fit into the simulation box. All time-averaged
+profiles of velocity components, fluctuation amplitudes, and fluxes of enthalpy and kinetic energy
+are within $\lesssim 3\sigma$ of the mean of all simulations on a given grid ($128^3$ and $256^3$
+grid cells), where $\sigma$ describes the statistical variation due to the flow's time dependence.
+They also agree well with a $512^3$ reference run. The $128^3$ and $256^3$ simulations agree within
+$9\%$ and $4\%$, respectively, on the total mass entrained into the convective layer. The entrainment
+rate appears to be set by the amount of energy that can be converted to work in our setup and details
+of the small-scale flows in the boundary layer seem to be largely irrelevant. Our results lend credence
+to hydrodynamic simulations of flows in stellar interiors. We provide in electronic form all outputs
+of our simulations as well as all information needed to reproduce or extend our study. 

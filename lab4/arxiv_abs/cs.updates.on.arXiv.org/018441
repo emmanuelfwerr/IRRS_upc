@@ -1,0 +1,19 @@
+This paper proposes a real-time neural network (NN) stochastic filter-based controller on the
+Lie Group of the Special Orthogonal Group $SO(3)$ as a novel approach to the attitude tracking problem.
+The introduced solution consists of two parts: a filter and a controller. Firstly, an adaptive NN-based
+stochastic filter is proposed that estimates attitude components and dynamics using measurements
+supplied by onboard sensors directly. The filter design accounts for measurement uncertainties
+inherent to the attitude dynamics, namely unknown bias and noise corrupting angular velocity measurements.
+The closed loop signals of the proposed NN-based stochastic filter have been shown to be semi-globally
+uniformly ultimately bounded (SGUUB). Secondly, a novel control law on $SO(3)$ coupled with the
+proposed estimator is presented. The control law addresses unknown disturbances. In addition,
+the closed loop signals of the proposed filter-based controller have been shown to be SGUUB. The
+proposed approach offers robust tracking performance by supplying the required control signal
+given data extracted from low-cost inertial measurement units. While the filter-based controller
+is presented in continuous form, the discrete implementation is also presented. Additionally,
+the unit-quaternion form of the proposed approach is given. The effectiveness and robustness of
+the proposed filter-based controller is demonstrated using its discrete form and considering
+low sampling rate, high initialization error, high-level of measurement uncertainties, and unknown
+disturbances. Keywords: Neuro-adaptive, estimator, filter, observer, control system, trajectory
+tracking, Lyapunov stability, stochastic differential equations, nonlinear filter, attitude
+tracking control, observer-based controller. 

@@ -1,0 +1,20 @@
+We present and implement the concept of the Fourier-domain dedispersion (FDD) algorithm, a brute-force
+incoherent dedispersion algorithm. This algorithm corrects the frequency-dependent dispersion
+delays in the arrival time of radio emission from sources such as radio pulsars and fast radio bursts.
+Where traditional time-domain dedispersion algorithms correct time delays using time shifts,
+the FDD algorithm performs these shifts by applying phase rotations to the Fourier-transformed
+time-series data. Incoherent dedispersion to many trial dispersion measures (DMs) is compute,
+memory-bandwidth and I/O intensive and dedispersion algorithms have been implemented on Graphics
+Processing Units (GPUs) to achieve high computational performance. However, time-domain dedispersion
+algorithms have low arithmetic intensity and are therefore often memory-bandwidth limited. The
+FDD algorithm avoids this limitation and is compute limited, providing a path to exploit the potential
+of current and upcoming generations of GPUs. We implement the FDD algorithm as an extension of the
+DEDISP time-domain dedispersion software. We compare the performance and energy-to-completion
+of the FDD implementation using an NVIDIA Titan RTX GPU against the standard as well as an optimized
+version of DEDISP. The optimized implementation already provides a factor of 1.5 to 2 speedup at
+only 66% of the energy utilization compared to the original algorithm. We find that the FDD algorithm
+outperforms the optimized time-domain dedispersion algorithm by another 20% in performance and
+5% in energy-to-completion when a large number of DMs (>=512) are required. The FDD algorithm provides
+additional performance improvements for FFT-based periodicity surveys of radio pulsars, as the
+FFT back to the time domain can be omitted. We expect that this computational performance gain will
+further improve in the future. 

@@ -1,0 +1,19 @@
+The semi-random graph process is a single-player game that begins with an empty graph on $n$ vertices.
+In each round, a vertex $u$ is presented to the player independently and uniformly at random. The
+player then adaptively selects a vertex $v$ and adds the edge $uv$ to the graph. For a fixed monotone
+graph property, the objective of the player is to force the graph to satisfy this property with high
+probability in as few rounds as possible. We focus on the problem of constructing a subgraph isomorphic
+to an arbitrary, fixed graph $G$. Let $\omega = \omega(n)$ be any function tending to infinity as
+$n \to \infty$. In (Omri Ben-Eliezer et al. "Semi-random graph process". In: Random Structures
+& Algorithms 56.3 (2020), pp. 648-675) it was proved that asymptotically almost surely one can construct
+$G$ in less than $n^{(d-1)/d} \omega$ rounds where $d \ge 2$ is the degeneracy of $G$. It was also proved
+that the result is sharp for $G = K_{d+1}$, that is, asymptotically almost surely it takes at least
+$n^{(d-1)/d} / \omega$ rounds to create $K_{d+1}$. Moreover, the authors conjectured that their
+general upper bound is sharp for all graphs $G$. We prove this conjecture here. We also consider a
+natural generalization of the process to $s$-uniform hypergraphs, the semi-random hypergraph
+process in which $r \ge 1$ vertices are presented at random, and the player then selects $s-r \ge 1$
+vertices to form an edge of size~$s$. Our results for graphs easily generalize to hypergraphs when
+$r=1$; the threshold for constructing a fixed $s$-uniform hypergraph $G$ is, again, determined
+by the degeneracy of $G$. However, new challenges are mounting when $r \ge 2$; thresholds are not
+even known for complete hypergraphs. We provide bounds for this family and determine thresholds
+for some sparser hypergraphs. 

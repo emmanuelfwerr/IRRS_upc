@@ -1,0 +1,19 @@
+Web phishing remains a serious cyber threat responsible for most data breaches. Machine Learning
+(ML)-based anti-phishing detectors are seen as an effective countermeasure, and are increasingly
+adopted by web-browsers and software products. However, with an average of 10K phishing links reported
+per hour to platforms such as PhishTank and VirusTotal (VT), the deficiencies of such ML-based solutions
+are laid bare. We first explore how phishing sites bypass ML-based detection with a deep dive into
+13K phishing pages targeting major brands such as Facebook. Results show successful evasion is
+caused by: (1) use of benign services to obscure phishing URLs; (2) high similarity between the HTML
+structures of phishing and benign pages; (3) hiding the ultimate phishing content within Javascript
+and running such scripts only on the client; (4) looking beyond typical credentials and credit cards
+for new content such as IDs and documents; (5) hiding phishing content until after human interaction.
+We attribute the root cause to the dependency of ML-based models on the vertical feature space (webpage
+content). These solutions rely only on what phishers present within the page itself. Thus, we propose
+Anti-SubtlePhish, a more resilient model based on logistic regression. The key augmentation is
+the inclusion of a horizontal feature space, which examines correlation variables between the
+final render of suspicious pages against what trusted services have recorded (e.g., PageRank).
+To defeat (1) and (2), we correlate information between WHOIS, PageRank, and page analytics. To
+combat (3), (4) and (5), we correlate features after rendering the page. Experiments with 100K phishing/benign
+sites show promising accuracy (98.8%). We also obtained 100% accuracy against 0-day phishing pages
+that were manually crafted, comparing well to the 0% recorded by VT vendors over the first four days.

@@ -1,0 +1,19 @@
+Proof-of-Stake (PoS) blockchain systems, especially those that allow stakeholders to organize
+themselves in ``stake-pools'', have emerged as a compelling paradigm for the deployment of large
+scale distributed ledgers. A stake-pool operates a node that engages in the PoS protocol and potentially
+represents a large number of smaller stakeholders. While such pooled PoS operation is attractive
+from various angles, it also exhibits a significant shortcoming that, so far and to the best of our
+knowledge, has not been sufficiently understood or investigated. Pooled PoS operation, to be effective
+and not lead to sub-optimal dictatorial or cartel-like configurations, should enable the stakeholders
+to revoke and re-delegate their stake in a way that is aligned with their incentives. However, given
+that stake-pool operators are exactly those entities who determine what transactions are to be
+recorded in the ledger, they are quite likely to form a cartel and censor any transaction they want,
+such as those that attempt to adjust the current stake-pool lineup. In this way, a power grab takes
+place, where the stake-pool cartel perpetuates its control over the PoS system. We first model and
+observe formally the emergence of the above problem in pooled PoS systems, and then we describe an
+anti-censorship mechanism that takes advantage of the underlying cryptographic functions of
+the ledger and the nature of peer-to-peer networks to diffuse information without suppression.
+We provide a thorough game-theoretic analysis of this mechanism discovering various types of Nash
+equilibria which demonstrate that the ``revolution'', i.e., the strategic decision of pool members
+to withdraw support from a censoring cartel as well as the pool operators to step down, can be incentivized,
+under suitable and plausible conditions in the utility functions of the involved participants.

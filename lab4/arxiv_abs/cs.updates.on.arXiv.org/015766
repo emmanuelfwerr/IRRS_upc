@@ -1,0 +1,18 @@
+Scene text recognition in low-resource Indian languages is challenging because of complexities
+like multiple scripts, fonts, text size, and orientations. In this work, we investigate the power
+of transfer learning for all the layers of deep scene text recognition networks from English to two
+common Indian languages. We perform experiments on the conventional CRNN model and STAR-Net to
+ensure generalisability. To study the effect of change in different scripts, we initially run our
+experiments on synthetic word images rendered using Unicode fonts. We show that the transfer of
+English models to simple synthetic datasets of Indian languages is not practical. Instead, we propose
+to apply transfer learning techniques among Indian languages due to similarity in their n-gram
+distributions and visual features like the vowels and conjunct characters. We then study the transfer
+learning among six Indian languages with varying complexities in fonts and word length statistics.
+We also demonstrate that the learned features of the models transferred from other Indian languages
+are visually closer (and sometimes even better) to the individual model features than those transferred
+from English. We finally set new benchmarks for scene-text recognition on Hindi, Telugu, and Malayalam
+datasets from IIIT-ILST and Bangla dataset from MLT-17 by achieving 6%, 5%, 2%, and 23% gains in Word
+Recognition Rates (WRRs) compared to previous works. We further improve the MLT-17 Bangla results
+by plugging in a novel correction BiLSTM into our model. We additionally release a dataset of around
+440 scene images containing 500 Gujarati and 2535 Tamil words. WRRs improve over the baselines by
+8%, 4%, 5%, and 3% on the MLT-19 Hindi and Bangla datasets and the Gujarati and Tamil datasets. 

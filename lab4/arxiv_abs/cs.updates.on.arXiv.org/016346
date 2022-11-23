@@ -1,0 +1,20 @@
+$\newcommand{\NP}{\mathsf{NP}}\newcommand{\GapSVP}{\textrm{GapSVP}}$We give a simple
+proof that the (approximate, decisional) Shortest Vector Problem is $\NP$-hard under a randomized
+reduction. Specifically, we show that for any $p \geq 1$ and any constant $\gamma < 2^{1/p}$, the
+$\gamma$-approximate problem in the $\ell_p$ norm ($\gamma$-$\GapSVP_p$) is not in $\mathsf{RP}$
+unless $\NP \subseteq \mathsf{RP}$. Our proof follows an approach pioneered by Ajtai (STOC 1998),
+and strengthened by Micciancio (FOCS 1998 and SICOMP 2000), for showing hardness of $\gamma$-$\GapSVP_p$
+using locally dense lattices. We construct such lattices simply by applying "Construction A" to
+Reed-Solomon codes with suitable parameters, and prove their local density via an elementary argument
+originally used in the context of Craig lattices. As in all known $\NP$-hardness results for $\GapSVP_p$
+with $p < \infty$, our reduction uses randomness. Indeed, it is a notorious open problem to prove
+$\NP$-hardness via a deterministic reduction. To this end, we additionally discuss potential
+directions and associated challenges for derandomizing our reduction. In particular, we show
+that a close deterministic analogue of our local density construction would improve on the state-of-the-art
+explicit Reed-Solomon list-decoding lower bounds of Guruswami and Rudra (STOC 2005 and IEEE Trans.
+Inf. Theory 2006). As a related contribution of independent interest, we also give a polynomial-time
+algorithm for decoding $n$-dimensional "Construction A Reed-Solomon lattices" (with different
+parameters than those used in our hardness proof) to a distance within an $O(\sqrt{\log n})$ factor
+of Minkowski's bound. This asymptotically matches the best known distance for decoding near Minkowski's
+bound, due to Mook and Peikert (IEEE Trans. Inf. Theory 2022), whose work we build on with a somewhat
+simpler construction and analysis. 

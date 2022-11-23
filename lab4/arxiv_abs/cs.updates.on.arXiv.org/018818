@@ -1,0 +1,20 @@
+We present a new Integrated Finite Element Neural Network framework (I-FENN), with the objective
+to accelerate the numerical solution of nonlinear computational mechanics problems. We leverage
+the swift predictive capability of neural networks (NNs) and we embed them inside the finite element
+stiffness function, to compute element-level state variables and their derivatives within a nonlinear,
+iterative numerical solution. This process is conducted jointly with conventional finite element
+methods that involve shape functions: the NN receives input data that resembles the material point
+deformation and its output is used to construct element-level field variables such as the element
+Jacobian matrix and residual vector. Here we introduce I-FENN to the continuum damage analysis
+of quasi-brittle materials, and we establish a new non-local gradient-based damage framework
+which operates at the cost of a local damage approach. First, we develop a physics informed neural
+network (PINN) to resemble the non-local gradient model and then we train the neural network offline.
+The network learns to predict the non-local equivalent strain at each material point, as well as
+its derivative with respect to the local strain. Then, the PINN is integrated in the element stiffness
+definition and conducts the local to non-local strain transformation, whereas the two PINN outputs
+are used to construct the element Jacobian matrix and residual vector. This process is carried out
+within the nonlinear solver, until numerical convergence is achieved. The resulting method bears
+the computational cost of the conventional local damage approach, but ensures mesh-independent
+results and a diffused non-local strain and damage profile. As a result, the proposed method tackles
+the vital drawbacks of both the local and non-local gradient method, respectively being the mesh-dependence
+and additional computational cost. 

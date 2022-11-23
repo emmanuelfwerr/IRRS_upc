@@ -1,0 +1,19 @@
+The rapid updates in error-resilient applications along with their quest for high throughput have
+motivated designing fast approximate functional units for Field-Programmable Gate Arrays (FPGAs).
+Studies that proposed imprecise functional techniques are posed with three shortcomings: first,
+most inexact multipliers and dividers are specialized for Application-Specific Integrated Circuit
+(ASIC) platforms. Second, state-of-the-art (SoA) approximate units are substituted, mostly
+in a single kernel of a multi-kernel application. Moreover, the end-to-end assessment is adopted
+on the Quality of Results (QoR), but not on the overall gained performance. Finally, existing imprecise
+components are not designed to support a pipelined approach, which could boost the operating frequency/throughput
+of, e.g., division-included applications. In this paper, we propose RAPID, the first pipelined
+approximate multiplier and divider architecture, customized for FPGAs. The proposed units efficiently
+utilize 6-input Look-up Tables (6-LUTs) and fast carry chains to implement Mitchell's approximate
+algorithms. Our novel error-refinement scheme not only has negligible overhead over the baseline
+Mitchell's approach but also boosts its accuracy to 99.4% for arbitrary size of multiplication
+and division. Experimental results demonstrate the efficiency of the proposed pipelined and non-pipelined
+RAPID multipliers and dividers over accurate counterparts. Moreover, the end-to-end evaluations
+of RAPID, deployed in three multi-kernel applications in the domains of bio-signal processing,
+image processing, and moving object tracking for Unmanned Air Vehicles (UAV) indicate up to 45%
+improvements in area, latency, and Area-Delay-Product (ADP), respectively, over accurate kernels,
+with negligible loss in QoR. 

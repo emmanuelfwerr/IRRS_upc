@@ -1,0 +1,20 @@
+We consider learning a trading agent acting on behalf of the treasury of a firm earning revenue in
+a foreign currency (FC) and incurring expenses in the home currency (HC). The goal of the agent is
+to maximize the expected HC at the end of the trading episode by deciding to hold or sell the FC at each
+time step in the trading episode. We pose this as an optimization problem, and consider a broad spectrum
+of approaches with the learning component ranging from supervised to imitation to reinforcement
+learning. We observe that most of the approaches considered struggle to improve upon simple heuristic
+baselines. We identify two key aspects of the problem that render standard solutions ineffective
+- i) while good forecasts of future FX rates can be highly effective in guiding good decisions, forecasting
+FX rates is difficult, and erroneous estimates tend to degrade the performance of trading agents
+instead of improving it, ii) the inherent non-stationary nature of FX rates renders a fixed decision-threshold
+highly ineffective. To address these problems, we propose a novel supervised learning approach
+that learns to forecast the top-K future FX rates instead of forecasting all the future FX rates,
+and bases the hold-versus-sell decision on the forecasts (e.g. hold if future FX rate is higher than
+current FX rate, sell otherwise). Furthermore, to handle the non-stationarity in the FX rates data
+which poses challenges to the i.i.d. assumption in supervised learning methods, we propose to adaptively
+learn decision-thresholds based on recent historical episodes. Through extensive empirical
+evaluation, we show that our approach is the only approach which is able to consistently improve
+upon a simple heuristic baseline. Further experiments show the inefficacy of state-of-the-art
+statistical and deep-learning-based forecasting methods as they degrade the performance of the
+trading agent. 

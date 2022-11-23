@@ -1,0 +1,20 @@
+Today's systems have diverse needs that are difficult to address using one-size-fits-all commodity
+DRAM. Unfortunately, although system designers can theoretically adapt commodity DRAM chips
+to meet their particular design goals (e.g., by reducing access timings to improve performance,
+implementing system-level RowHammer mitigations), we observe that designers today lack sufficient
+insight into commodity DRAM chips' reliability characteristics to implement these techniques
+in practice. In this work, we make a case for DRAM manufacturers to provide increased transparency
+into key aspects of DRAM reliability (e.g., basic chip design properties, testing strategies).
+Doing so enables system designers to make informed decisions to better adapt commodity DRAM to meet
+modern systems' needs while preserving its cost advantages. To support our argument, we study four
+ways that system designers can adapt commodity DRAM chips to system-specific design goals: (1)
+improving DRAM reliability; (2) reducing DRAM refresh overheads; (3) reducing DRAM access latency;
+and (4) mitigating RowHammer attacks. We observe that adopting solutions for any of the four goals
+requires system designers to make assumptions about a DRAM chip's reliability characteristics.
+These assumptions discourage system designers from using such solutions in practice due to the
+difficulty of both making and relying upon the assumption. We identify DRAM standards as the root
+of the problem: current standards rigidly enforce a fixed operating point with no specifications
+for how a system designer might explore alternative operating points. To overcome this problem,
+we introduce a two-step approach that reevaluates DRAM standards with a focus on transparency of
+DRAM reliability so that system designers are encouraged to make the most of commodity DRAM technology
+for both current and future DRAM chips. 

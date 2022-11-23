@@ -1,0 +1,19 @@
+One of the grand challenges of utilizing machine learning for the discovery of innovative new polymers
+lies in the difficulty of accurately representing the complex structures of polymeric materials.
+Although a wide array of hand-designed polymer representations have been explored, there has yet
+to be an ideal solution for how to capture the periodicity of polymer structures, and how to develop
+polymer descriptors without the need for human feature design. In this work, we tackle these problems
+through the development of our periodic polymer graph representation. Our pipeline for polymer
+property predictions is comprised of our polymer graph representation that naturally accounts
+for the periodicity of polymers, followed by a message-passing neural network (MPNN) that leverages
+the power of graph deep learning to automatically learn chemically-relevant polymer descriptors.
+Across a diverse dataset of 10 polymer properties, we find that this polymer graph representation
+consistently outperforms hand-designed representations with a 20% average reduction in prediction
+error. Our results illustrate how the incorporation of chemical intuition through directly encoding
+periodicity into our polymer graph representation leads to a considerable improvement in the accuracy
+and reliability of polymer property predictions. We also demonstrate how combining polymer graph
+representations with message-passing neural network architectures can automatically extract
+meaningful polymer features that are consistent with human intuition, while outperforming human-derived
+features. This work highlights the advancement in predictive capability that is possible if using
+chemical descriptors that are specifically optimized for capturing the unique chemical structure
+of polymers. 

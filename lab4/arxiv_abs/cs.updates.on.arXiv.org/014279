@@ -1,0 +1,19 @@
+Many Markov Chain Monte Carlo (MCMC) methods leverage gradient information of the potential function
+of target distribution to explore sample space efficiently. However, computing gradients can
+often be computationally expensive for large scale applications, such as those in contemporary
+machine learning. Stochastic Gradient (SG-)MCMC methods approximate gradients by stochastic
+ones, commonly via uniformly subsampled data points, and achieve improved computational efficiency,
+however at the price of introducing sampling error. We propose a non-uniform subsampling scheme
+to improve the sampling accuracy. The proposed exponentially weighted stochastic gradient (EWSG)
+is designed so that a non-uniform-SG-MCMC method mimics the statistical behavior of a batch-gradient-MCMC
+method, and hence the inaccuracy due to SG approximation is reduced. EWSG differs from classical
+variance reduction (VR) techniques as it focuses on the entire distribution instead of just the
+variance; nevertheless, its reduced local variance is also proved. EWSG can also be viewed as an
+extension of the importance sampling idea, successful for stochastic-gradient-based optimizations,
+to sampling tasks. In our practical implementation of EWSG, the non-uniform subsampling is performed
+efficiently via a Metropolis-Hastings chain on the data index, which is coupled to the MCMC algorithm.
+Numerical experiments are provided, not only to demonstrate EWSG's effectiveness, but also to
+guide hyperparameter choices, and validate our \emph{non-asymptotic global error bound} despite
+of approximations in the implementation. Notably, while statistical accuracy is improved, convergence
+speed can be comparable to the uniform version, which renders EWSG a practical alternative to VR
+(but EWSG and VR can be combined too). 

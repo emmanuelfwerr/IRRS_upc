@@ -1,0 +1,19 @@
+Conventional damage localization algorithms used in ultrasonic guided wave-based structural
+health monitoring (GW-SHM) rely on physics-defined features of GW signals. In addition to requiring
+domain knowledge of the interaction of various GW modes with various types of damages, they also
+suffer from errors due to variations in environmental and operating conditions (EOCs) in practical
+use cases. While several machine learning tools have been reported for EOC compensation, they need
+to be custom-designed for each combination of damage and structure due to their dependence on physics-defined
+feature extraction. In this work, we propose a CNN-based automated feature extraction framework
+coupled with Gaussian mixture model (GMM) based EOC compensation and damage classification and
+localization method. Features learnt by the CNNs are used for damage classification and localization
+of damage by modeling the probability distribution of the features using GMMs. The Kullback-Leibler
+(KL) divergence of these GMMs with respect to corresponding baseline GMMs are used as signal difference
+coefficients (SDCs) to compute damage indices (DIs) along various GW sensor paths, and thus for
+damage localization. The efficacy of the proposed method is demonstrated using FE generated GW-data
+for an aluminum plate with a network of six lead zirconate titanate (PZT) sensors, for three different
+types of damages (rivet hole, added mass, notch) at various temperatures, with added white noise
+and pink noise to incorporate errors due to EOCs. We also present experimental validation of the
+method through characterization of notch damage in an aluminum panel under varying and non-uniform
+temperature profiles, using a portable custom-designed field programmable gate array (FPGA)
+based signal transduction and data acquisition system. 

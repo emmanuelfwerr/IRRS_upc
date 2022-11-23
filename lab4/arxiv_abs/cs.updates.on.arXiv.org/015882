@@ -1,0 +1,20 @@
+Online learning is an important technical means for sketching massive real-time and high-speed
+data. Although this direction has attracted intensive attention, most of the literature in this
+area ignore the following three issues: (1) they think little of the underlying abstract hierarchical
+latent information existing in examples, even if extracting these abstract hierarchical latent
+representations is useful to better predict the class labels of examples; (2) the idea of preassigned
+model on unseen datapoints is not suitable for modeling streaming data with evolving probability
+distribution. This challenge is referred as model flexibility. And so, with this in minds, the online
+deep learning model we need to design should have a variable underlying structure; (3) moreover,
+it is of utmost importance to fusion these abstract hierarchical latent representations to achieve
+better classification performance, and we should give different weights to different levels of
+implicit representation information when dealing with the data streaming where the data distribution
+changes. To address these issues, we propose a two-phase Online Deep Learning based on Auto-Encoder
+(ODLAE). Based on auto-encoder, considering reconstruction loss, we extract abstract hierarchical
+latent representations of instances; Based on predictive loss, we devise two fusion strategies:
+the output-level fusion strategy, which is obtained by fusing the classification results of encoder
+each hidden layer; and feature-level fusion strategy, which is leveraged self-attention mechanism
+to fusion every hidden layer output. Finally, in order to improve the robustness of the algorithm,
+we also try to utilize the denoising auto-encoder to yield hierarchical latent representations.
+Experimental results on different datasets are presented to verify the validity of our proposed
+algorithm (ODLAE) outperforms several baselines. 

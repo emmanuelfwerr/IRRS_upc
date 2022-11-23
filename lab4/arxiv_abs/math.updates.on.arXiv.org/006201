@@ -1,0 +1,18 @@
+We consider the problem of finding nearly optimal solutions of optimization problems with random
+objective functions. Two concrete problems we consider are (a) optimizing the Hamiltonian of a
+spherical or Ising $p$-spin glass model, and (b) finding a large independent set in a sparse Erd\H{o}s-R\'{e}nyi
+graph. The following families of algorithms are considered: (a) low-degree polynomials of the
+input; (b) low-depth Boolean circuits; (c) the Langevin dynamics algorithm. We show that these
+families of algorithms fail to produce nearly optimal solutions with high probability. For the
+case of Boolean circuits, our results improve the state-of-the-art bounds known in circuit complexity
+theory (although we consider the search problem as opposed to the decision problem). Our proof uses
+the fact that these models are known to exhibit a variant of the overlap gap property (OGP) of near-optimal
+solutions. Specifically, for both models, every two solutions whose objectives are above a certain
+threshold are either close or far from each other. The crux of our proof is that the classes of algorithms
+we consider exhibit a form of stability. We show by an interpolation argument that stable algorithms
+cannot overcome the OGP barrier. The stability of Langevin dynamics is an immediate consequence
+of the well-posedness of stochastic differential equations. The stability of low-degree polynomials
+and Boolean circuits is established using tools from Gaussian and Boolean analysis -- namely hypercontractivity
+and total influence, as well as a novel lower bound for random walks avoiding certain subsets. In
+the case of Boolean circuits, the result also makes use of Linal-Mansour-Nisan's classical theorem.
+Our techniques apply more broadly to low influence functions and may apply more generally. 

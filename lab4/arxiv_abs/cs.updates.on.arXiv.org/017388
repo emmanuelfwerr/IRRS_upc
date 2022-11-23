@@ -1,0 +1,19 @@
+In an IoT environment, which is characterized by a multitude of interconnected smart devices with
+sensing and computational capabilities, many applications are (i) content-based, that is, they
+are only interested in finding a given type of content rather than the location of data, and (ii) contextualized,
+that is, the content is generated and consumed in the proximity of the user. In this context, the Information-Centric
+Networking (ICN) paradigm is an appealing model for efficiently retrieving application data,
+and the service decentralization towards the network edge helps to reduce the core network load
+being the data produced by IoT devices mainly confined in the area where they are generated. MobCCN
+is an ICN-based data delivery protocol that we designed for operating efficiently in such context
+[1][2], where static and mobile IoT devices are enriched with ICN functions. Specifically, MobCCN
+leverages an efficient routing and forwarding protocol, exploiting opportunistic contacts among
+IoT mobile devices, to fill the Forwarding Interest Base (FIB) tables so as to correctly forward
+Interest packets towards the intended data producers. In this paper, we aim to enhance the reliability
+of MobCCN by exploring different retransmissions mechanisms, such as retransmissions based on
+number of duplicate Interests that are received for the same requested content, periodic retransmissions,
+single path versus disjoint multi-path forwarding, hysteresis mechanism and combinations of
+them. Extensive simulation results show that, among the analysed MobCCN variants, the one that
+implements both periodic retransmissions and a hysteresis-based retransmission process ensures
+the highest delivery rates (up to 95\%) and the shortest network path, with a very limited traffic
+overhead due to retransmissions. 

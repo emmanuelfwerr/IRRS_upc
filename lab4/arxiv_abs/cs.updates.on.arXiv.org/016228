@@ -1,0 +1,18 @@
+\emph{Funnelling} (Fun) is a recently proposed method for cross-lingual text classification
+(CLTC) based on a two-tier learning ensemble for heterogeneous transfer learning (HTL). In this
+ensemble method, 1st-tier classifiers, each working on a different and language-dependent feature
+space, return a vector of calibrated posterior probabilities (with one dimension for each class)
+for each document, and the final classification decision is taken by a metaclassifier that uses
+this vector as its input. The metaclassifier can thus exploit class-class correlations, and this
+(among other things) gives Fun an edge over CLTC systems in which these correlations cannot be brought
+to bear. In this paper we describe \emph{Generalized Funnelling} (gFun), a generalization of Fun
+consisting of an HTL architecture in which 1st-tier components can be arbitrary \emph{view-generating
+functions}, i.e., language-dependent functions that each produce a language-independent representation
+("view") of the (monolingual) document. We describe an instance of gFun in which the metaclassifier
+receives as input a vector of calibrated posterior probabilities (as in Fun) aggregated to other
+embedded representations that embody other types of correlations, such as word-class correlations
+(as encoded by \emph{Word-Class Embeddings}), word-word correlations (as encoded by \emph{Multilingual
+Unsupervised or Supervised Embeddings}), and word-context correlations (as encoded by \emph{multilingual
+BERT}). We show that this instance of \textsc{gFun} substantially improves over Fun and over state-of-the-art
+baselines, by reporting experimental results obtained on two large, standard datasets for multilingual
+multilabel text classification. Our code that implements gFun is publicly available. 

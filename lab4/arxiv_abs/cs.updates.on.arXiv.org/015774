@@ -1,0 +1,19 @@
+We study the parameterized complexity of various classic vertex-deletion problems such as Odd
+cycle transversal, Vertex planarization, and Chordal vertex deletion under hybrid parameterizations.
+Existing FPT algorithms for these problems either focus on the parameterization by solution size,
+detecting solutions of size $k$ in time $f(k) \cdot n^{O(1)}$, or width parameterizations, finding
+arbitrarily large optimal solutions in time $f(w) \cdot n^{O(1)}$ for some width measure $w$ like
+treewidth. We unify these lines of research by presenting FPT algorithms for parameterizations
+that can simultaneously be arbitrarily much smaller than the solution size and the treewidth. We
+consider two classes of parameterizations which are relaxations of either treedepth of treewidth.
+They are related to graph decompositions in which subgraphs that belong to a target class H (e.g.,
+bipartite or planar) are considered simple. First, we present a framework for computing approximately
+optimal decompositions for miscellaneous classes H. Namely, if the cost of an optimal decomposition
+is $k$, we show how to find a decomposition of cost $k^{O(1)}$ in time $f(k) \cdot n^{O(1)}$. This
+is applicable to any graph class H for which the corresponding vertex-deletion problem admits a
+constant-factor approximation algorithm or an FPT algorithm paramaterized by the solution size.
+Secondly, we exploit the constructed decompositions for solving vertex-deletion problems by
+extending ideas from algorithms using iterative compression and the finite state property. For
+the three mentioned vertex-deletion problems, and all problems which can be formulated as hitting
+a finite set of connected forbidden (a) minors or (b) (induced) subgraphs, we obtain FPT algorithms
+with respect to both studied parameterizations. 

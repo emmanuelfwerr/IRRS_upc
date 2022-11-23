@@ -1,0 +1,19 @@
+Formulating cyber-security problems with attackers and defenders as a partially observable stochastic
+game has become a trend recently. Among them, the one-sided two-player zero-sum partially observable
+stochastic game (OTZ-POSG) has emerged as a popular model because it allows players to compete for
+multiple stages based on partial knowledge of the system. All existing work on OTZ-POSG has focused
+on the simultaneous move scenario and assumed that one player's actions are private in the execution
+process. However, this assumption may become questionable since one player's action may be detected
+by the opponent through deploying action detection strategies. Hence, in this paper, we propose
+a turn-based OTZ-POSG with the assumption of public actions and investigate the existence and properties
+of a Stackelberg equilibrium for this game. We first prove the existence of the Stackelberg equilibrium
+for the one-stage case and show that the one-stage game can be converted into a linear-fractional
+programming problem and therefore solved by linear programming. For multiple stages, the main
+challenge is the information leakage issue as the public run-time action reveals certain private
+information to the opponent and allows the opponent to achieve more rewards in the future. To deal
+with this issue, we adopt the concept of $\epsilon$-Stackelberg equilibrium and prove that this
+equilibrium can be achieved for finite-horizon OTZ-POSGs. We propose a space partition approach
+to solve the game iteratively and show that the value function of the leader is piece-wise linear
+and the value function of the follower is piece-wise constant for multiple stages. Finally, examples
+are given to illustrate the space partition approach and show that value functions are piece-wise
+linear and piece-wise constant. 

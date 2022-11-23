@@ -1,0 +1,19 @@
+In 1983, Burr and Erd\H{o}s initiated the study of Ramsey goodness problems.Nikiforov and Rousseau
+(2009) resolved almost all goodness questions raised by Burr and Erd\H{o}s, in which the bounds
+on the parameters are of tower type since their proofs rely on the regularity lemma. Let $B_{k,n}$
+be the book graph on $n$ vertices which consists of $n-k$ copies of $K_{k+1}$ all sharing a common
+$K_k$, and let $H=K_p(a_1,\dots,a_{p})$ be the complete $p$-partite graph with parts of sizes
+$a_1,\dots,a_{p}$. Recently, avoiding use of the regularity lemma, Fox, He and Wigderson (2021)
+revisit several Ramsey goodness results involving books. They comment that it would be very interesting
+to see how far one can push these ideas. In particular, they conjecture that for all integers $k, p,
+t\ge 2$, there exists some $\delta>0$ such that for all $n\ge 1$, $1\leq a_1\le\cdots\le a_{p-1}\le
+t$ and $a_p \le \delta n$, we have $r(H, B_{k,n})= (p-1)(n-1)+d_k(n,K_{a_1,a_2})+1,$ where $d_k(n,K_{a_1,a_2})$
+is the maximum $d$ for which there is an $(n+d-1)$-vertex $K_{a_1,a_2}$-free graph in which at most
+$k-1$ vertices have degree less than $d$.They verify the conjecture when $a_1=a_2=1$. Building
+upon the work of Fox et al. (2021), we make a substantial step by showing that the conjecture "roughly"
+holds if $a_1=1$ and $a_2|(n-1-k)$, i.e. $a_2$ divides $n-1-k$. Moreover, avoiding use of the regularity
+lemma, we prove that for every $k, a\geq 1$ and $p\ge2$, there exists $\delta>0$ such that for all
+large $n$ and $b\le \delta\ln n$, $r(K_p(1,a,b,\dots,b), B_{k,n})= (p-1)(n-1)+k(p-1)(a-1)+1$
+if $a|(n-1-k)$, where the case when $a=1$ has been proved by Nikiforov and Rousseau (2009) using
+the regularity lemma. The bounds on $1/\delta$ we obtain are not of tower-type since our proofs do
+not rely on the regularity lemma. 

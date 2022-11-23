@@ -1,0 +1,20 @@
+Although mission-critical applications require the use of deep neural networks (DNNs), their
+continuous execution at mobile devices results in a significant increase in energy consumption.
+While edge offloading can decrease energy consumption, erratic patterns in channel quality, network
+and edge server load can lead to severe disruption of the system's key operations. An alternative
+approach, called split computing, generates compressed representations within the model (called
+"bottlenecks"), to reduce bandwidth usage and energy consumption. Prior work has proposed approaches
+that introduce additional layers, to the detriment of energy consumption and latency. For this
+reason, we propose a new framework called BottleFit, which, in addition to targeted DNN architecture
+modifications, includes a novel training strategy to achieve high accuracy even with strong compression
+rates. We apply BottleFit on cutting-edge DNN models in image classification, and show that BottleFit
+achieves 77.1% data compression with up to 0.6% accuracy loss on ImageNet dataset, while state of
+the art such as SPINN loses up to 6% in accuracy. We experimentally measure the power consumption
+and latency of an image classification application running on an NVIDIA Jetson Nano board (GPU-based)
+and a Raspberry PI board (GPU-less). We show that BottleFit decreases power consumption and latency
+respectively by up to 49% and 89% with respect to (w.r.t.) local computing and by 37% and 55% w.r.t.
+edge offloading. We also compare BottleFit with state-of-the-art autoencoders-based approaches,
+and show that (i) BottleFit reduces power consumption and execution time respectively by up to 54%
+and 44% on the Jetson and 40% and 62% on Raspberry PI; (ii) the size of the head model executed on the
+mobile device is 83 times smaller. We publish the code repository for reproducibility of the results
+in this study. 

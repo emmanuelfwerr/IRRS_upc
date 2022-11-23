@@ -1,0 +1,19 @@
+Recently, the popularity and wide use of the last-generation video conferencing technologies
+created an exponential growth in its market size. Such technology allows participants in different
+geographic regions to have a virtual face-to-face meeting. Additionally, it enables users to employ
+a virtual background to conceal their own environment due to privacy concerns or to reduce distractions,
+particularly in professional settings. Nevertheless, in scenarios where the users should not
+hide their actual locations, they may mislead other participants by claiming their virtual background
+as a real one. Therefore, it is crucial to develop tools and strategies to detect the authenticity
+of the considered virtual background. In this paper, we present a detection strategy to distinguish
+between real and virtual video conferencing user backgrounds. We demonstrate that our detector
+is robust against two attack scenarios. The first scenario considers the case where the detector
+is unaware about the attacks and inn the second scenario, we make the detector aware of the adversarial
+attacks, which we refer to Adversarial Multimedia Forensics (i.e, the forensically-edited frames
+are included in the training set). Given the lack of publicly available dataset of virtual and real
+backgrounds for video conferencing, we created our own dataset and made them publicly available
+[1]. Then, we demonstrate the robustness of our detector against different adversarial attacks
+that the adversary considers. Ultimately, our detector's performance is significant against
+the CRSPAM1372 [2] features, and post-processing operations such as geometric transformations
+with different quality factors that the attacker may choose. Moreover, our performance results
+shows that we can perfectly identify a real from a virtual background with an accuracy of 99.80%.

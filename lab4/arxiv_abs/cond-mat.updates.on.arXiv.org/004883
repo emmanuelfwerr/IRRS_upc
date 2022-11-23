@@ -1,0 +1,20 @@
+Accurate prediction of vacancy migration energy barriers, $\Delta E_a$, in multi-component alloys
+is extremely challenging yet critical for the development of diffusional transformation kinetics
+needed to model alloy behavior in many technological applications. Here, results from $\Delta
+E_a$ and the energy driving force $\Delta E$ of many (>1000) vacancy migration events calculated
+using density functional theory and nudged elastic band method show large changes (~1eV) of $\Delta
+E_a$ in different local chemical environments of the model face-centered cubic Al-Mg-Zn alloys.
+Due to local lattice distortion effects induced by solute atoms (such as Mg) with different sizes
+than the matrix element (Al), the changes of $\Delta E_a$ for one type of migrating atoms originate
+primarily from fluctuations of $\Delta e_a\equiv \Delta E_a - \frac{1}{2}\Delta E$. To understand
+the fluctuations, a quartic function is shown to accurately describe the energy landscape of the
+minimum energy path (MEP) for each vacancy migration event. Analyses of the quartic function show
+that $\Delta e_a$ can be approximated with $\Delta e_a \approx \alpha k_fD^2$, where $\alpha\sim
+0.022$ is a constant of all types of migrating atoms. Here $D$ is the distance of a migrating atom between
+two adjacent equilibrium positions and $k_f$ is the average vibration spring constant of this atom
+at these two equilibrium positions. $k_f$ and $D$ quantitatively describe the lattice distortion
+effects on the curvatures and locations of the MEP at its initial and final states in different local
+chemical environments. We also used the local lattice occupations as inputs to train surrogate
+models to predict coefficients of the quartic function, which accurately and efficiently output
+both $\Delta E_a$ and $\Delta E$ as the necessary inputs for the mesoscale studies of diffusional
+transformation in Al-Mg-Zn alloys. 

@@ -1,0 +1,19 @@
+The Frozen Density Embedding scheme represents an embedding method in which environmental effects
+onto a given subsystem are included by representing the other subsystems making up the surroundings
+quantum mechanically, by means of their electron densities. In the present paper, we extend the
+full 4-component relativistic Dirac-Kohn-Sham method, as implemented in the BERTHA code, to include
+environmental and confinement effects with the FDE scheme. This implementation has been enormously
+facilitated by BERTHA's python API (PyBERTHA), which provides a flexible framework of development
+by using all Python advantages in terms of code re-usability, portability while facilitating the
+interoperability with other FDE implementations available through the PyADF framework. The computational
+performance has been evaluated on a series of gold clusters (Au$_n$, with n=2,4,8) embedded into
+an increasing number of water molecules (5, 10, 20, 40 and 80 water molecules). We found that the procedure
+scales approximately linearly both with the size of the frozen surrounding environment (in line
+with the underpinnings of the FDE approach) and with the size of the active system (in line with the
+use of density fitting). Finally, we applied the code to a series of Heavy (Rn) and Super-Heavy elements
+(Cn, Fl, Og) embedded in a C_60 cage to explore the confinement effect induced by C_60 on their electronic
+structure. We compare the results from our simulations with more approximate models employed in
+the atomic physics literature, in which confinement is represented by a radial potential slightly
+affected by the nature of the central atom. Our results indicate that the specific interactions
+described by FDE are able to improve upon the cruder approximations currently employed, and thus
+provide a basis from which to generate more realistic radial potentials for confined atoms. 

@@ -1,0 +1,18 @@
+Service platforms must determine rules for matching heterogeneous demand (customers) and supply
+(workers) that arrive randomly over time and may be lost if forced to wait too long for a match. Our
+objective is to maximize the cumulative value of matches, minus costs incurred when demand and supply
+wait. We develop a fluid model, that approximates the evolution of the stochastic model, and captures
+explicitly the nonlinear dependence between the amount of demand and supply waiting and the distribution
+of their patience times. The fluid model invariant states approximate the steady-state mean queue-lengths
+in the stochastic system, and, therefore, can be used to develop an optimization problem whose optimal
+solution provides matching rates between demand and supply types that are asymptotically optimal
+(on fluid scale, as demand and supply rates grow large). We propose a discrete review matching policy
+that asymptotically achieves the optimal matching rates. We further show that when the aforementioned
+matching optimization problem has an optimal extreme point solution, which occurs when the patience
+time distributions have increasing hazard rate functions, a state-independent priority policy,
+that ranks the edges on the bipartite graph connecting demand and supply, is asymptotically optimal.
+A key insight from this analysis is that the ranking critically depends on the patience time distributions,
+and may be different for different distributions even if they have the same mean, demonstrating
+that models assuming, e.g., exponential patience times for tractability, may lack robustness.
+Finally, we observe that when holding costs are zero, a discrete review policy, that does not require
+knowledge of inter-arrival and patience time distributions, is asymptotically optimal. 

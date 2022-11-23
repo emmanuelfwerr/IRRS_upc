@@ -1,0 +1,20 @@
+Many problems in computational science and engineering can be described in terms of approximating
+a smooth function of $d$ variables, defined over an unknown domain of interest $\Omega\subset \mathbb{R}^d$,
+from sample data. Here both the curse of dimensionality ($d\gg 1$) and the lack of domain knowledge
+with $\Omega$ potentially irregular and/or disconnected are confounding factors for sampling-based
+methods. Na\"{i}ve approaches often lead to wasted samples and inefficient approximation schemes.
+For example, uniform sampling can result in upwards of 20\% wasted samples in some problems. In surrogate
+model construction in computational uncertainty quantification (UQ), the high cost of computing
+samples needs a more efficient sampling procedure. In the last years, methods for computing such
+approximations from sample data have been studied in the case of irregular domains. The advantages
+of computing sampling measures depending on an approximation space $P$ of $\dim(P)=N$ have been
+shown. In particular, such methods confer advantages such as stability and well-conditioning,
+with $\mathcal{O}(N\log(N))$ as sample complexity. The recently-proposed adaptive sampling
+for general domains (ASGD) strategy is one method to construct these sampling measures. The main
+contribution of this paper is to improve ASGD by adaptively updating the sampling measures over
+unknown domains. We achieve this by first introducing a general domain adaptivity strategy (GDAS),
+which approximates the function and domain of interest from sample points. Second, we propose adaptive
+sampling for unknown domains (ASUD), which generates sampling measures over a domain that may not
+be known in advance. Then, we derive least squares techniques for polynomial approximation on unknown
+domains. Numerical results show that the ASUD approach can reduce the computational cost by as 50\%
+when compared with uniform sampling. 

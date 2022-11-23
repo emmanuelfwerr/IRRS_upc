@@ -1,0 +1,19 @@
+Optimization is finding the best solution, which mathematically amounts to locating the global
+minimum of some cost function. Optimization is traditionally automated with digital or quantum
+computers, each having their limitations and none guaranteeing an optimal solution. Here, we conceive
+a principle behind optimization based on delay-induced bifurcations, which is potentially implementable
+in non-quantum analog devices. Often, optimization techniques are interpreted via a particle
+moving in multi-well energy landscape and to prevent confinement to a non-global minima they should
+incorporate mechanisms to overcome barriers between the minima. Particularly, simulated annealing
+digitally emulates pushing a fictitious particle over a barrier by random noise, whereas quantum
+computers utilize tunneling through barriers. In our principle, the barriers are effectively
+destroyed by delay-induced bifurcations. Although bifurcation scenarios in nonlinear delay-differential
+equations can be very complex and are notoriously difficult to predict, we hypothesize, verify,
+and utilize the finding that they become considerably more predictable in dynamical systems, where
+the right-hand side depends only on the delayed variable and represents a gradient of some potential
+energy function. By tuning the delay introduced into the gradient descent setting, thanks to global
+bifurcations destroying local attractors, one could force the system to spontaneously wander
+around all minima. This would be similar to noise-induced behavior in simulated annealing but achieved
+deterministically. Ideally, a slow increase and then decrease of the delay should automatically
+push the system toward the global minimum. We explore the possibility of this scenario and formulate
+some prerequisites. 

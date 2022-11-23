@@ -1,0 +1,20 @@
+Unmanned aerial vehicles (UAVs) have gained wide research interests due to their technological
+advancement and high mobility. The UAVs are equipped with increasingly advanced capabilities
+to run computationally intensive applications enabled by machine learning techniques. However,
+because of both energy and computation constraints, the UAVs face issues hovering in the sky while
+performing computation due to weather uncertainty. To overcome the computation constraints,
+the UAVs can partially or fully offload their computation tasks to the edge servers. In ordinary
+computation offloading operations, the UAVs can retrieve the result from the returned output.
+Nevertheless, if the UAVs are unable to retrieve the entire result from the edge servers, i.e., straggling
+edge servers, this operation will fail. In this paper, we propose a coded distributed computing
+approach for computation offloading to mitigate straggling edge servers. The UAVs can retrieve
+the returned result when the number of returned copies is greater than or equal to the recovery threshold.
+There is a shortfall if the returned copies are less than the recovery threshold. To minimize the
+cost of the network, energy consumption by the UAVs, and prevent over and under subscription of the
+resources, we devise a two-phase Stochastic Coded Offloading Scheme (SCOS). In the first phase,
+the appropriate UAVs are allocated to the charging stations amid weather uncertainty. In the second
+phase, we use the $z$-stage Stochastic Integer Programming (SIP) to optimize the number of computation
+subtasks offloaded and computed locally, while taking into account the computation shortfall
+and demand uncertainty. By using a real dataset, the simulation results show that our proposed scheme
+is fully dynamic, and minimizes the cost of the network and UAV energy consumption amid stochastic
+uncertainties. 

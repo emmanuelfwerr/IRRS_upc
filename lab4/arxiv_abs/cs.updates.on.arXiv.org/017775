@@ -1,0 +1,19 @@
+Empowered by the backpropagation (BP) algorithm, deep neural networks have dominated the race
+in solving various cognitive tasks. The restricted training pattern in the standard BP requires
+end-to-end error propagation, causing large memory cost and prohibiting model parallelization.
+Existing local training methods aim to resolve the training obstacle by completely cutting off
+the backward path between modules and isolating their gradients to reduce memory cost and accelerate
+the training process. These methods prevent errors from flowing between modules and hence information
+exchange, resulting in inferior performance. This work proposes a novel local training algorithm,
+BackLink, which introduces inter-module backward dependency and allows errors to flow between
+modules. The algorithm facilitates information to flow backward along with the network. To preserve
+the computational advantage of local training, BackLink restricts the error propagation length
+within the module. Extensive experiments performed in various deep convolutional neural networks
+demonstrate that our method consistently improves the classification performance of local training
+algorithms over other methods. For example, in ResNet32 with 16 local modules, our method surpasses
+the conventional greedy local training method by 4.00\% and a recent work by 1.83\% in accuracy on
+CIFAR10, respectively. Analysis of computational costs reveals that small overheads are incurred
+in GPU memory costs and runtime on multiple GPUs. Our method can lead up to a 79\% reduction in memory
+cost and 52\% in simulation runtime in ResNet110 compared to the standard BP. Therefore, our method
+could create new opportunities for improving training algorithms towards better efficiency and
+biological plausibility. 

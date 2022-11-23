@@ -1,0 +1,19 @@
+With the fast-growing number of classification models being produced every day, numerous model
+interpretation and comparison solutions have also been introduced. For example, LIME and SHAP
+can interpret what input features contribute more to a classifier's output predictions. Different
+numerical metrics (e.g., accuracy) can be used to easily compare two classifiers. However, few
+works can interpret the contribution of a data feature to a classifier in comparison with its contribution
+to another classifier. This comparative interpretation can help to disclose the fundamental difference
+between two classifiers, select classifiers in different feature conditions, and better ensemble
+two classifiers. To accomplish it, we propose a learning-from-disagreement (LFD) framework to
+visually compare two classification models. Specifically, LFD identifies data instances with
+disagreed predictions from two compared classifiers and trains a discriminator to learn from the
+disagreed instances. As the two classifiers' training features may not be available, we train the
+discriminator through a set of meta-features proposed based on certain hypotheses of the classifiers
+to probe their behaviors. Interpreting the trained discriminator with the SHAP values of different
+meta-features, we provide actionable insights into the compared classifiers. Also, we introduce
+multiple metrics to profile the importance of meta-features from different perspectives. With
+these metrics, one can easily identify meta-features with the most complementary behaviors in
+two classifiers, and use them to better ensemble the classifiers. We focus on binary classification
+models in the financial services and advertising industry to demonstrate the efficacy of our proposed
+framework and visualizations. 

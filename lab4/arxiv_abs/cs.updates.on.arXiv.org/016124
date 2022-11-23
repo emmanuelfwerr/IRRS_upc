@@ -1,0 +1,20 @@
+Keyword localisation is the task of finding where in a speech utterance a given query keyword occurs.
+We investigate to what extent keyword localisation is possible using a visually grounded speech
+(VGS) model. VGS models are trained on unlabelled images paired with spoken captions. These models
+are therefore self-supervised -- trained without any explicit textual label or location information.
+To obtain training targets, we first tag training images with soft text labels using a pretrained
+visual classifier with a fixed vocabulary. This enables a VGS model to predict the presence of a written
+keyword in an utterance, but not its location. We consider four ways to equip VGS models with localisations
+capabilities. Two of these -- a saliency approach and input masking -- can be applied to an arbitrary
+prediction model after training, while the other two -- attention and a score aggregation approach
+-- are incorporated directly into the structure of the model. Masked-based localisation gives
+some of the best reported localisation scores from a VGS model, with an accuracy of 57% when the system
+knows that a keyword occurs in an utterance and need to predict its location. In a setting where localisation
+is performed after detection, an $F_1$ of 25% is achieved, and in a setting where a keyword spotting
+ranking pass is first performed, we get a localisation P@10 of 32%. While these scores are modest
+compared to the idealised setting with unordered bag-of-word-supervision (from transcriptions),
+these models do not receive any textual or location supervision. Further analyses show that these
+models are limited by the first detection or ranking pass. Moreover, individual keyword localisation
+performance is correlated with the tagging performance from the visual classifier. We also show
+qualitatively how and where semantic mistakes occur, e.g. that the model locates surfer when queried
+with ocean. 

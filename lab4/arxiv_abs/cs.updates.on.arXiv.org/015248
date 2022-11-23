@@ -1,0 +1,19 @@
+Active learning is an established technique to reduce the labeling cost to build high-quality machine
+learning models. A core component of active learning is the acquisition function that determines
+which data should be selected to annotate. State-of-the-art acquisition functions -- and more
+largely, active learning techniques -- have been designed to maximize the clean performance (e.g.
+accuracy) and have disregarded robustness, an important quality property that has received increasing
+attention. Active learning, therefore, produces models that are accurate but not robust. In this
+paper, we propose \emph{robust active learning}, an active learning process that integrates adversarial
+training -- the most established method to produce robust models. Via an empirical study on 11 acquisition
+functions, 4 datasets, 6 DNN architectures, and 15105 trained DNNs, we show that robust active learning
+can produce models with the robustness (accuracy on adversarial examples) ranging from 2.35\%
+to 63.85\%, whereas standard active learning systematically achieves negligible robustness
+(less than 0.20\%). Our study also reveals, however, that the acquisition functions that perform
+well on accuracy are worse than random sampling when it comes to robustness. We, therefore, examine
+the reasons behind this and devise a new acquisition function that targets both clean performance
+and robustness. Our acquisition function -- named density-based robust sampling with entropy
+(DRE) -- outperforms the other acquisition functions (including random) in terms of robustness
+by up to 24.40\% (3.84\% than random particularly), while remaining competitive on accuracy. Additionally,
+we prove that DRE is applicable as a test selection metric for model retraining and stands out from
+all compared functions by up to 8.21\% robustness. 

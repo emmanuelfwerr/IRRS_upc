@@ -1,0 +1,19 @@
+In our recent work [AIP Adv. 11, 095006], we presented an efficient numerical method to compute dispersions
+and spatial mode profiles of spin waves propagating in waveguides with translationally invariant
+equilibrium magnetization. Using a finite-element method (FEM) allowed to model two-dimensional
+waveguide cross sections of arbitrary shape but only finite size. Here, we extend our FEM propagating-wave
+dynamic-matrix approach from finite waveguides to the important practical cases of infinitely-extended
+mono- and multilayers of arbitrary spacing and thickness. To obtain the mode profiles and frequencies,
+the linearized equation of motion of magnetization is solved as an eigenvalue problem only on a one-dimensional
+line-trace mesh, defined along the normal direction of the layers. Being an important contribution
+in multilayer systems, we introduce interlayer-exchange interaction into our FEM approach. With
+the calculation of dynamic dipolar fields being the main focus of this paper, we also extend the previously
+presented plane-wave Fredkin-Koehler method to calculate the dipolar potential of spin waves
+in infinite layers. The major benefit of this method is that it avoids the discretization of any non-magnetic
+material, such as non-magnetic spacers in multilayers. Therefore, the computational effort becomes
+completely independent on the spacer thicknesses. Furthermore, it keeps the resulting discretized
+eigenvalue problem sparse, which therefore, inherits a comparably low arithmetic complexity.
+As a validation of our method (implemented into the open-source finite-element micromagnetic
+package TetraX), we present results for various systems and compare them with theoretical predictions
+as well as with established finite-difference numerical methods. We believe this method offers
+an efficient and versatile tool to calculate spin-wave dispersions in layered magnetic systems.

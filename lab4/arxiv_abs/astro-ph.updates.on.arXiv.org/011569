@@ -1,0 +1,18 @@
+Relativistic binary pulsars orbiting white dwarfs and neutron stars have already provided excellent
+tests of gravity. However, despite observational efforts, a pulsar orbiting a black hole has remained
+elusive. One possible explanation is the extreme Doppler smearing caused by the pulsar's orbital
+motion which changes its apparent spin frequency during an observation. The classical solution
+to this problem has been to assume a constant acceleration or jerk for the entire observation. However,
+this assumption breaks down when the observation samples a large fraction of the orbit. This limits
+the length of search observations, and hence their sensitivity. This provides a strong motivation
+to develop techniques that can find compact binaries in longer observations. Here we present a GPU-based
+radio pulsar search pipeline that can perform a coherent search for binary pulsars by directly searching
+over three or five Keplerian parameters using the template-bank algorithm. We compare the sensitivity
+obtained from our pipeline with acceleration and jerk search pipelines for simulated pulsar-stellar-mass
+black hole binaries and observations of PSR J0737-3039A. We also discuss the computational feasibility
+of our pipeline for untargeted pulsar surveys and targeted searches. Our benchmarks indicate that
+circular orbit searches for P-BH binaries with spin-period P$_{\rm spin} \geq 20 \rm ms$ covering
+the 3-10 T$\mathrm{_{obs}}$ regime are feasible for the High Time Resolution Universe pulsar survey.
+Additionally, an elliptical orbit search in Globular clusters for P$_{\rm spin} \geq 20 \rm ms$
+pulsars orbiting intermediate-mass black holes in the 5-10 T$\mathrm{_{obs}}$ regime is feasible
+for observations shorter than 2 hours with an eccentricity limit of 0.1. 

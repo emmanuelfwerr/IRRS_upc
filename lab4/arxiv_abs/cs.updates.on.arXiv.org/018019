@@ -1,0 +1,19 @@
+In recent years, the gap between Deep Learning (DL) methods and analytical or numerical approaches
+in scientific computing is tried to be filled by the evolution of Physics-Informed Neural Networks
+(PINNs). However, still, there are many complications in the training of PINNs and optimal interleaving
+of physical models. Here, we introduced the concept of Physical Activation Functions (PAFs). This
+concept offers that instead of using general activation functions (AFs) such as ReLU, tanh, and
+sigmoid for all the neurons, one can use generic AFs that their mathematical expression is inherited
+from the physical laws of the investigating phenomena. The formula of PAFs may be inspired by the
+terms in the analytical solution of the problem. We showed that the PAFs can be inspired by any mathematical
+formula related to the investigating phenomena such as the initial or boundary conditions of the
+PDE system. We validated the advantages of PAFs for several PDEs including the harmonic oscillations,
+Burgers, Advection-Convection equation, and the heterogeneous diffusion equations. The main
+advantage of PAFs was in the more efficient constraining and interleaving of PINNs with the investigating
+physical phenomena and their underlying mathematical models. This added constraint significantly
+improved the predictions of PINNs for the testing data that was out-of-training distribution.
+Furthermore, the application of PAFs reduced the size of the PINNs up to 75% in different cases. Also,
+the value of loss terms was reduced by 1 to 2 orders of magnitude in some cases which is noteworthy for
+upgrading the training of the PINNs. The iterations required for finding the optimum values were
+also significantly reduced. It is concluded that using the PAFs helps in generating PINNs with less
+complexity and much more validity for longer ranges of prediction. 

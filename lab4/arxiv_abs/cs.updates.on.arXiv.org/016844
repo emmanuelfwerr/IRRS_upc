@@ -1,0 +1,20 @@
+In simulation sciences, it is desirable to capture the real-world problem features as accurately
+as possible. Methods popular for scientific simulations such as the finite element method (FEM)
+and finite volume method (FVM) use piecewise polynomials to approximate various characteristics
+of a problem, such as the concentration profile and the temperature distribution across the domain.
+Polynomials are prone to creating artifacts such as Gibbs oscillations while capturing a complex
+profile. An efficient and accurate approach must be applied to deal with such inconsistencies in
+order to obtain accurate simulations. This often entails dealing with negative values for the concentration
+of chemicals, exceeding a percentage value over 100, and other such problems. We consider these
+inconsistencies in the context of partial differential equations (PDEs). We propose an innovative
+filter based on convex optimization to deal with the inconsistencies observed in polynomial-based
+simulations. In two or three spatial dimensions, additional complexities are involved in solving
+the problems related to structure preservation. We present the construction and application of
+a structure-preserving filter with a focus on multidimensional PDEs. Methods used such as the Barycentric
+interpolation for polynomial evaluation at arbitrary points in the domain and an optimized root-finder
+to identify points of interest improve the filter efficiency, usability, and robustness. Lastly,
+we present numerical experiments in 2D and 3D using discontinuous Galerkin formulation and demonstrate
+the filter's efficacy to preserve the desired structure. As a real-world application, implementation
+of the mathematical biology model involving platelet aggregation and blood coagulation has been
+reviewed and the issues around FEM implementation of the model are resolved by applying the proposed
+structure-preserving filter. 

@@ -1,0 +1,20 @@
+We continue the study of $(\mathrm{tw},\omega)$-bounded graph classes, that is, hereditary graph
+classes in which the treewidth can only be large due to the presence of a large clique, with the goal
+of understanding the extent to which this property has useful algorithmic implications for the
+Independent Set and related problems. In the previous paper of the series [Dallard, Milani\v{c},
+and \v{S}torgel, Treewidth versus clique number. II. Tree-independence number], we introduced
+the tree-independence number, a min-max graph invariant related to tree decompositions. Bounded
+tree-independence number implies both $(\mathrm{tw},\omega)$-boundedness and the existence
+of a polynomial-time algorithm for the Maximum Weight Independent Set problem, provided that the
+input graph is given together with a tree decomposition with bounded independence number. In this
+paper, we consider six graph containment relations and for each of them characterize the graphs
+$H$ for which any graph excluding $H$ with respect to the relation admits a tree decomposition with
+bounded independence number. The induced minor relation is of particular interest: we show that
+excluding either a $K_5$ minus an edge or the $4$-wheel implies the existence of a tree decomposition
+in which every bag is a clique plus at most $3$ vertices, while excluding a complete bipartite graph
+$K_{2,q}$ implies the existence of a tree decomposition with independence number at most $2(q-1)$.
+Our constructive proofs are obtained using a variety of tools, including $\ell$-refined tree decompositions,
+SPQR trees, and potential maximal cliques. They imply polynomial-time algorithms for the Independent
+Set and related problems in an infinite family of graph classes; in particular, the results apply
+to the class of $1$-perfectly orientable graphs, answering a question of Beisegel, Chudnovsky,
+Gurvich, Milani\v{c}, and Servatius from 2019. 

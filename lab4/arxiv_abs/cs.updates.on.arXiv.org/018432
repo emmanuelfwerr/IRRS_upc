@@ -1,0 +1,19 @@
+In modern deep learning, there is a recent and growing literature on the interplay between large-width
+asymptotic properties of deep Gaussian neural networks (NNs), i.e. deep NNs with Gaussian-distributed
+weights, and Gaussian stochastic processes (SPs). Such an interplay has proved to be critical in
+Bayesian inference under Gaussian SP priors, kernel regression for infinitely wide deep NNs trained
+via gradient descent, and information propagation within infinitely wide NNs. Motivated by empirical
+analyses that show the potential of replacing Gaussian distributions with Stable distributions
+for the NN's weights, in this paper we present a rigorous analysis of the large-width asymptotic
+behaviour of (fully connected) feed-forward deep Stable NNs, i.e. deep NNs with Stable-distributed
+weights. We show that as the width goes to infinity jointly over the NN's layers, i.e. the ``joint
+growth" setting, a rescaled deep Stable NN converges weakly to a Stable SP whose distribution is
+characterized recursively through the NN's layers. Because of the non-triangular structure of
+the NN, this is a non-standard asymptotic problem, to which we propose an inductive approach of independent
+interest. Then, we establish sup-norm convergence rates of the rescaled deep Stable NN to the Stable
+SP, under the ``joint growth" and a ``sequential growth" of the width over the NN's layers. Such a
+result provides the difference between the ``joint growth" and the ``sequential growth" settings,
+showing that the former leads to a slower rate than the latter, depending on the depth of the layer
+and the number of inputs of the NN. Our work extends some recent results on infinitely wide limits
+for deep Gaussian NNs to the more general deep Stable NNs, providing the first result on convergence
+rates in the ``joint growth" setting. 

@@ -1,0 +1,20 @@
+In a Fisher market, agents (users) spend a budget of (artificial) currency to buy goods that maximize
+their utilities, and producers set prices on capacity-constrained goods such that the market clears.
+The equilibrium prices in such a market are typically computed through the solution of a convex program,
+e.g., the Eisenberg-Gale program, that aggregates users' preferences into a centralized social
+welfare objective. However, the computation of equilibrium prices using convex programs assumes
+that all transactions happen in a static market wherein all users are present simultaneously and
+relies on complete information on each user's budget and utility function. Since, in practice,
+information on users' utilities and budgets is unknown and users tend to arrive over time in the market,
+we study an online variant of Fisher markets, wherein users enter the market sequentially. We focus
+on the setting where users have linear utilities with privately known utility and budget parameters
+drawn i.i.d. from a distribution $\mathcal{D}$. In this setting, we develop a simple yet effective
+algorithm to set prices that preserves user privacy while achieving a regret and capacity violation
+of $O(\sqrt{n})$, where $n$ is the number of arriving users and the capacities of the goods scale
+as $O(n)$. Here, our regret measure represents the optimality gap in the objective of the Eisenberg-Gale
+program between the online allocation policy and that of an offline oracle with complete information
+on users' budgets and utilities. To establish the efficacy of our approach, we show that even an algorithm
+that sets expected equilibrium prices with perfect information on the distribution $\mathcal{D}$
+cannot achieve both a regret and constraint violation of better than $\Omega(\sqrt{n})$. Finally,
+we present numerical experiments to demonstrate the performance of our approach relative to several
+benchmarks. 

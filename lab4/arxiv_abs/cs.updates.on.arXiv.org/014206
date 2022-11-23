@@ -1,0 +1,19 @@
+Since the publication of The Case for Learned Index Structures in 2018, there has been a rise in research
+that focuses on learned indexes for different domains and with different functionalities. While
+the effectiveness of learned indexes as an alternative to traditional index structures such as
+B+Trees have already been demonstrated by several studies, previous work tend to focus on higher-level
+performance metrics such as throughput and index size. In this paper, our goal is to dig deeper and
+investigate how learned indexes behave at a micro-architectural level compared to traditional
+indexes. More specifically, we focus on previously proposed learned index structure ALEX, which
+is a tree-based in-memory index structure that consists of a hierarchy of machine learned models.
+Unlike the original proposal for learned indexes, ALEX is designed from the ground up to allow updates
+and inserts. Therefore, it enables more dynamic workloads using learned indexes. In this work,
+we perform a micro-architectural analysis of ALEX and compare its behavior to the tree-based index
+structures that are not based on learned models, i.e., ART and B+Tree. Our results show that ALEX
+is bound by memory stalls, mainly stalls due to data misses from the last-level cache. Compared to
+ART and B+Tree, ALEX exhibits fewer stalls and a lower cycles-per-instruction value across different
+workloads. On the other hand, the amount of instructions required to handle out-of-bound inserts
+in ALEX can increase the instructions needed per request significantly (10X) for write-heavy workloads.
+However, the micro-architectural behavior shows that this increase in the instruction footprint
+exhibit high instruction-level parallelism, and, therefore, does not negatively impact the overall
+execution time. 

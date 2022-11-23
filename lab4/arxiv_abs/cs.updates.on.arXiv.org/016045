@@ -1,0 +1,20 @@
+Shortening acquisition time and reducing the motion artifacts are two of the most essential concerns
+in magnetic resonance imaging. As a promising solution, deep learning-based high-quality MR image
+restoration has been investigated to generate higher resolution and motion artifact-free MR images
+from lower resolution images acquired with shortened acquisition time, without costing additional
+acquisition time or modifying the pulse sequences. However, numerous problems still exist to prevent
+deep learning approaches from becoming practical in the clinic environment. Specifically, most
+of the prior works focus solely on the network model but ignore the impact of various downsampling
+strategies on the acquisition time. Besides, the long inference time and high GPU consumption are
+also the bottlenecks to deploy most of the prior works in clinics. Furthermore, prior studies employ
+random movement in retrospective motion artifact generation, resulting in uncontrollable severity
+of motion artifact. More importantly, doctors are unsure whether the generated MR images are trustworthy,
+making diagnosis difficult. To overcome all these problems, we employed a unified 2D deep learning
+neural network for both 3D MRI super resolution and motion artifact reduction, demonstrating such
+a framework can achieve better performance in 3D MRI restoration tasks compared to other states
+of the art methods and remains the GPU consumption and inference time significantly low, thus easier
+to deploy. We also analyzed several downsampling strategies based on the acceleration factor,
+including multiple combinations of in-plane and through-plane downsampling, and developed a
+controllable and quantifiable motion artifact generation method. At last, the pixel-wise uncertainty
+was calculated and used to estimate the accuracy of the generated image, providing additional information
+for reliable diagnosis. 

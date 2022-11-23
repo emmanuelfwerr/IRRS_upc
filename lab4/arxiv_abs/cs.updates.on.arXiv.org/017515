@@ -1,0 +1,19 @@
+Evolutionary algorithms are effective general-purpose techniques for solving optimization
+problems. Understanding how each component of an evolutionary algorithm influences its problem-solving
+success improves our ability to target particular problem domains. Our work focuses on evaluating
+selection schemes, which choose individuals to contribute genetic material to the next generation.
+We introduce four diagnostic search spaces for testing the strengths and weaknesses of selection
+schemes: the exploitation rate diagnostic, ordered exploitation rate diagnostic, contradictory
+objectives diagnostic, and the multi-path exploration diagnostic. Each diagnostic is handcrafted
+to isolate and measure the relative exploitation and exploration characteristics of selection
+schemes. In this study, we use our diagnostics to evaluate six population selection methods: truncation
+selection, tournament selection, fitness sharing, lexicase selection, nondominated sorting,
+and novelty search. Expectedly, tournament and truncation selection excelled in gradient exploitation
+but poorly explored search spaces, and novelty search excelled at exploration but failed to exploit
+fitness gradients. Fitness sharing performed poorly across all diagnostics, suggesting poor
+overall exploitation and exploration abilities. Nondominated sorting was best for maintaining
+populations comprised of individuals with different trade-offs of multiple objectives, but struggled
+to effectively exploit fitness gradients. Lexicase selection balanced search space exploration
+with exploitation, generally performing well across diagnostics. Our work demonstrates the value
+of diagnostic search spaces for building a deeper understanding of selection schemes, which can
+then be used to improve or develop new selection methods. 

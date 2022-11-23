@@ -1,0 +1,20 @@
+Entanglement distillation is a well-studied problem in quantum information, where one typically
+starts with $n$ noisy Bell pairs and distills $k$ Bell pairs of higher fidelity. While distilling
+Bell pairs is the canonical setting, it is important to study the distillation of multipartite entangled
+states because these can be useful for realizing distributed algorithms on quantum networks. In
+this paper, we study the distillation of GHZ states using quantum error correcting codes (QECCs).
+Using the stabilizer formalism, we begin by explaining the QECC-based Bell pair distillation protocol
+in arXiv:0708.3699, which relies particularly on the transpose symmetry between Alice's and Bob's
+qubits in Bell states. Extending this idea, we show that, given $n$ GHZ states, performing a matrix
+on Alice's qubits is equivalent to performing a "stretched" version of the transpose of the matrix
+on the qubits of Bob and Charlie. We call this mapping to the stretched version of the matrix the GHZ-map,
+and show that it is an algebra homomorphism. Using this property, we show that Alice projecting her
+qubits onto an $[[n,k]]$ stabilizer code implies the simultaneous projection of Bob's and Charlie's
+qubits onto an induced $[[2n,k]]$ stabilizer code. Guided by this insight, we develop a GHZ distillation
+protocol based on local operations and classical communication that uses any stabilizer code.
+Inspired by stabilizer measurements on GHZ states, we also develop a new algorithm to generate logical
+Pauli operators of any stabilizer code and use it in the protocol. Since quantum codes with finite
+rate and almost linear minimum distance have recently been discovered, this paper paves the way
+for high-rate high-output-fidelity GHZ distillation. We provide simulation results on the $5$-qubit
+perfect code to emphasize the importance of the placement of a certain local Clifford operation
+in the protocol. 

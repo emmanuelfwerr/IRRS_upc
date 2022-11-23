@@ -1,0 +1,20 @@
+We study in a real Hilbert space continuous in time dynamics as well as numerical algorithms for the
+problem of approaching the set of zeros of a single-valued monotone and continuous operator $V$.
+The starting point is a second order dynamical system that combines a vanishing damping term with
+the time derivative of $V$ along the trajectory. Our method exhibits fast convergence rates of order
+$o \left( \frac{1}{t\beta(t)} \right)$ for $\|V(z(t))\|$, and $\beta(\cdot)$ is a nondecreasing
+function satisfiyng a growth condition, and also for the restricted gap function, which is a measure
+of optimality for variational inequalities. We also prove the weak convergence of the trajectory
+to a zero of $V$. Temporal discretizations generate implicit and explicit numerical algorithms,
+which can be both seen as accelerated versions of the Optimistic Gradient Descent Ascent (OGDA)
+method, for which we prove that the generated sequence of iterates shares the asymptotic features
+of the continuous dynamics. In particular we show for the implicit numerical algorithm convergence
+rates of order $o \left( \frac{1}{k\beta_k} \right)$ for $\|V(z^k)\|$ and the restricted gap function,
+where $(\beta_k)_{k \geq 0}$ is a nondecreasing sequence satisfying a growth condition. For the
+explicit numerical algorithm we show by additionally assuming that the operator $V$ is Lipschitz
+continuous convergence rates of order $o \left( \frac{1}{k} \right)$ for $\|V(z^k)\|$ and the
+restricted gap function. All convergence rate statements are last iterate convergence results;
+in addition to these we prove for both algorithms the convergence of the iterates to a zero of $V$.
+To our knowledge, our study exhibits the best known convergence rate results for monotone equations.
+Numerical experiments indicate the overwhelming superiority of our explicit numerical algorithm
+over other methods for monotone equations. 

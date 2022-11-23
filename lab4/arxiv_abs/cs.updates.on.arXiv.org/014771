@@ -1,0 +1,19 @@
+We consider a variation of balls-into-bins which randomly allocates $m$ balls into $n$ bins. Following
+Godfrey's model (SODA, 2008), we assume that each ball $t$, $1\le t\le m$, comes with a hypergraph
+$\mathcal{H}^{(t)}=\{B_1,B_2,\ldots,B_{s_t}\}$, and each edge $B\in\mathcal{H}^{(t)}$
+contains at least a logarithmic number of bins. Given $d\ge 2$, our $d$-choice algorithm chooses
+an edge $B\in \mathcal{H}^{(t)}$, uniformly at random, and then chooses a set $D$ of $d$ random bins
+from the selected edge $B$. The ball is allocated to a least-loaded bin from $D$, with ties are broken
+randomly. We prove that if the hypergraphs $\mathcal{H}^{(1)},\ldots, \mathcal{H}^{(m)}$ satisfy
+a \emph{balancedness} condition and have low \emph{pair visibility}, then after allocating $m=\Theta(n)$
+balls, the maximum number of balls at any bin, called the \emph{maximum load}, is at most $\log_d\log
+n+O(1)$, with high probability. The balancedness condition enforces that bins appear almost uniformly
+within the hyperedges of $\mathcal{H}^{(t)}$, $1\le t\le m$, while the pair visibility condition
+measures how frequently a pair of bins is chosen during the allocation of balls. Moreover, we establish
+a lower bound for the maximum load attained by the balanced allocation for a sequence of hypergraphs
+in terms of pair visibility, showing the relevance of the visibility parameter to the maximum load.
+In Godfrey's model, each ball is forced to probe all bins in a randomly selected hyperedge and the
+ball is then allocated in a least-loaded bin. Godfrey showed that if each $\mathcal{H}^{(t)}$,
+$1\le t\le m$, is balanced and $m=O(n)$, then the maximum load is at most one, with high probability.
+However, we apply the power of $d$ choices paradigm, and only query the load information of $d$ random
+bins per ball, while achieving very slow growth in the maximum load. 

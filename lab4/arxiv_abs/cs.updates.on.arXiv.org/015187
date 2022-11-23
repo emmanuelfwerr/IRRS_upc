@@ -1,0 +1,19 @@
+We consider a fundamental online scheduling problem in which jobs with processing times and deadlines
+arrive online over time at their release dates. The task is to determine a feasible preemptive schedule
+on a single or multiple possibly unrelated machines that maximizes the number of jobs that complete
+before their deadline. Due to strong impossibility results for competitive analysis on a single
+machine, we require that jobs contain some slack $\varepsilon>0$, which means that the feasible
+time window for scheduling a job is at least $1+\varepsilon$ times its processing time on each eligible
+machine. Our contribution is two-fold: (i) We give the first non-trivial online algorithms for
+throughput maximization on unrelated machines, and (ii), this is the main focus of our paper, we
+answer the question on how to handle commitment requirements which enforce that a scheduler has
+to guarantee at a certain point in time the completion of admitted jobs. This is very relevant, e.g.,
+in providing cloud-computing services, and disallows last-minute rejections of critical tasks.
+We present an algorithm for unrelated machines that is $\Theta\big(\frac{1}\varepsilon\big
+)$-competitive when the scheduler must commit upon starting a job. Somewhat surprisingly, this
+is the same optimal performance bound (up to constants) as for scheduling without commitment on
+a single machine. If commitment decisions must be made before a job's slack becomes less than a $\delta$-fraction
+of its size, we prove a competitive ratio of $\mathcal{O}\big(\frac{1}{\varepsilon - \delta}\big)$
+for $0 < \delta < \varepsilon$. This result nicely interpolates between commitment upon starting
+a job and commitment upon arrival. For the latter commitment model, it is known that no (randomized)
+online algorithm admits any bounded competitive ratio. 

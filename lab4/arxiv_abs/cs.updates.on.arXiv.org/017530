@@ -1,0 +1,18 @@
+Stream processing applications extract value from raw data through Directed Acyclic Graphs of
+data analysis tasks. Shared-nothing (SN) parallelism is the de-facto standard to scale stream
+processing applications. Given an application, SN parallelism instantiates several copies of
+each analysis task, making each instance responsible for a dedicated portion of the overall analysis,
+and relies on dedicated queues to exchange data among connected instances. On the one hand, SN parallelism
+can scale the execution of applications both up and out since threads can run task instances within
+and across processes/nodes. On the other hand, its lack of sharing can cause unnecessary overheads
+and hinder the scaling up when threads operate on data that could be jointly accessed in shared memory.
+This trade-off motivated us in studying a way for stream processing applications to leverage shared
+memory and boost the scale up (before the scale out) while adhering to the widely-adopted and SN-based
+APIs for stream processing applications. We introduce STRETCH, a framework that maximizes the
+scale up and offers instantaneous elastic reconfigurations (without state transfer) for stream
+processing applications. We propose the concept of Virtual Shared-Nothing (VSN) parallelism
+and elasticity and provide formal definitions and correctness proofs for the semantics of the analysis
+tasks supported by STRETCH, showing they extend the ones found in common Stream Processing Engines.
+We also provide a fully implemented prototype and show that STRETCH's performance exceeds that
+of state-of-the-art frameworks such as Apache Flink and offers, to the best of our knowledge, unprecedented
+ultra-fast reconfigurations, taking less than 40 ms even when provisioning tens of new task instances.

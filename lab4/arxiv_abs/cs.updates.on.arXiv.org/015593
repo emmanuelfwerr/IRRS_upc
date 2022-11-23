@@ -1,0 +1,19 @@
+Fine-grained IP geolocation systems often rely on some linear delay-distance rules. They are not
+easy to generalize in network environments where the delay-distance relationship is non-linear.
+Recently, researchers begin to pay attention to learning-based IP geolocation systems. These
+data-driven algorithms leverage multi-layer perceptron (MLP) to model non-linear relationships.
+However, MLP is not so suitable for modeling computer networks because networks are fundamentally
+graph-typed data. MLP-based IP geolocation systems only treat IP addresses as isolated data instances,
+forgoing the connection information between IP addresses. This would lead to sub-optimal representations
+and limit the geolocation performance. Graph convolutional network (GCN) is an emerging deep learning
+method for graph-typed data presentation. In this work, we research how to model computer networks
+for fine-grained IP geolocation with GCN. First, we formulate the IP geolocation task as an attributed
+graph node regression problem. Then, a GCN-based IP geolocation system named GCN-Geo is proposed
+to predict the location of each IP address. GCN-Geo consists of a preprocessor, an encoder, graph
+convolutional (GC) layers and a decoder. The preprocessor and the encoder transform raw measurement
+data into the initial graph embeddings. GC layers refine the initial graph node embeddings by explicitly
+modeling the connection information between IP addresses. The proposed decoder can relieve the
+converging problem of GCN-Geo by considering some prior knowledge about target IP addresses. Finally,
+the experimental results in three real-world datasets show that: GCN-Geo clearly outperforms
+the state-of-art rule-based and learning-based baselines on all three datasets w.r.t. average,
+median and max error distances. This work verifies the potential of GCN in fine-grained IP geolocation.

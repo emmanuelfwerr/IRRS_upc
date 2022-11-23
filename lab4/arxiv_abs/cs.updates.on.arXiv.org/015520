@@ -1,0 +1,20 @@
+This thesis introduces the wide multiple baseline stereo (WxBS) problem. WxBS, a generalization
+of the standard wide baseline stereo problem, considers the matching of images that simultaneously
+differ in more than one image acquisition factor such as viewpoint, illumination, sensor type,
+or where object appearance changes significantly, e.g., over time. A new dataset with the ground
+truth, evaluation metric and baselines has been introduced. The thesis presents the following
+improvements of the WxBS pipeline. (i) A loss function, called HardNeg, for learning a local image
+descriptor that relies on hard negative mining within a mini-batch and on the maximization of the
+distance between the closest positive and the closest negative patches. (ii) The descriptor trained
+with the HardNeg loss, called HardNet, is compact and shows state-of-the-art performance in standard
+matching, patch verification and retrieval benchmarks. (iii) A method for learning the affine
+shape, orientation, and potentially other parameters related to geometric and appearance properties
+of local features. (iv) A tentative correspondences generation strategy which generalizes the
+standard first to second closest distance ratio is presented. The selection strategy, which shows
+performance superior to the standard method, is applicable to either hard-engineered descriptors
+like SIFT, LIOP, and MROGH or deeply learned like HardNet. (v) A feedback loop is introduced for the
+two-view matching problem, resulting in MODS -- matching with on-demand view synthesis -- algorithm.
+MODS is an algorithm that handles a viewing angle difference even larger than the previous state-of-the-art
+ASIFT algorithm, without a significant increase of computational cost over "standard" wide and
+narrow baseline approaches. Last, but not least, a comprehensive benchmark for local features
+and robust estimation algorithms is introduced. 

@@ -1,0 +1,19 @@
+Principal Component Analysis (PCA) is a dimensionality reduction technique widely used to reduce
+the computational cost associated with numerical simulations of combustion phenomena. However,
+PCA, which transforms the thermo-chemical state space based on eigenvectors of co-variance of
+the data, could fail to capture information regarding important localized chemical dynamics,
+such as the formation of ignition kernels, appearing as outlier samples in a dataset. In this paper
+we propose an alternate dimensionality reduction procedure, co-kurtosis PCA (CoK-PCA), wherein
+the required principal vectors are computed from a high-order joint statistical moment, namely
+the co-kurtosis tensor, which may better identify directions in the state space that represent
+stiff dynamics. We first demonstrate the potential of the proposed CoK-PCA method using a synthetically
+generated dataset that is representative of typical combustion simulations. Thereafter, we characterize
+and contrast the accuracy of CoK-PCA against PCA for datasets representing spontaneous ignition
+of premixed ethylene in a simple homogeneous reactor and ethanol-fueled homogeneous charged compression
+ignition (HCCI) engine. Specifically, we compare the low-dimensional manifolds in terms of reconstruction
+errors of the original thermo-chemical state, and species production and heat release rates computed
+from the reconstructed state. We find that, even using a simplistic linear reconstruction, the
+co-kurtosis based reduced manifold represents the original thermo-chemical state more accurately
+than PCA, especially in the regions where chemical reactions are important. We observe that the
+accuracy of the CoK-PCA can be further improved by adopting many of the refinements (e.g., non-linear
+reconstruction, localized manifolds) already widely in use with PCA. 

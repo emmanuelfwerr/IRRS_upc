@@ -1,0 +1,20 @@
+In swimming microorganisms and the cell cytoskeleton, inextensible fibers resist bending and
+twisting, and interact with the surrounding fluid to cause or resist large-scale fluid motion.
+In this paper, we develop a novel numerical method for the simulation of cylindrical fibers by extending
+our previous work on inextensible bending fibers [Maxian et al., Phys. Rev. Fluids 6 (1), 014102]
+to fibers with twist elasticity. In our "Euler" model, twist is a scalar function that measures the
+deviation of the fiber cross section relative to a twist-free frame, the fiber exerts only torque
+parallel to the centerline on the fluid, and the perpendicular components of the rotational fluid
+velocity are discarded in favor of the translational velocity. In the first part of this paper, we
+justify this model by comparing it to another commonly-used "Kirchhoff" formulation where the
+fiber exerts both perpendicular and parallel torque on the fluid, and the perpendicular angular
+fluid velocity is required to be consistent with the translational fluid velocity. We then develop
+a spectral numerical method for the hydrodynamics of the Euler model. We define hydrodynamic mobility
+operators using integrals of the Rotne-Prager-Yamakawa tensor, and evaluate these integrals
+through a novel slender-body quadrature, which requires on the order of 10 points along the fiber
+to obtain several digits of accuracy. We demonstrate that this choice of mobility removes the unphysical
+negative eigenvalues in the translation-translation mobility associated with asymptotic slender
+body theories, and ensures strong convergence of the fiber velocity and weak convergence of the
+fiber constraint forces. We pair the spatial discretization with a semi-implicit temporal integrator
+to confirm the negligible contribution of twist elasticity to the relaxation dynamics of a bent
+fiber and study the instability of a twirling fiber. 

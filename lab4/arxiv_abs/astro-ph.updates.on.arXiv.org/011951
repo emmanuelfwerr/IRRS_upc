@@ -1,0 +1,19 @@
+Recently, there has been growing interest in the use of machine-learning methods for predicting
+solar flares. Initial efforts along these lines employed comparatively simple models, correlating
+features extracted from observations of sunspot active regions with known instances of flaring.
+Typically, these models have used physics-inspired features that have been carefully chosen by
+experts in order to capture the salient features of such magnetic field structures. Over time, the
+sophistication and complexity of the models involved has grown. However, there has been little
+evolution in the choice of feature sets, nor any systematic study of whether the additional model
+complexity is truly useful. Our goal is to address these issues. To that end, we compare the relative
+prediction performance of machine-learning-based, flare-forecasting models with varying degrees
+of complexity. We also revisit the feature set design, using topological data analysis to extract
+shape-based features from magnetic field images of the active regions. Using hyperparameter training
+for fair comparison of different machine-learning models across different feature sets, we show
+that simpler models with fewer free parameters \textit{generally perform better than more-complicated
+models}, ie., powerful machinery does not necessarily guarantee better prediction performance.
+Secondly, we find that \textit{abstract, shape-based features contain just as much useful information},
+for the purposes of flare prediction, as the set of hand-crafted features developed by the solar-physics
+community over the years. Finally, we study the effects of dimensionality reduction, using principal
+component analysis, to show that streamlined feature sets, overall, perform just as well as the
+corresponding full-dimensional versions. 

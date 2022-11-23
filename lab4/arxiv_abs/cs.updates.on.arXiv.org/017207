@@ -1,0 +1,20 @@
+High resolution simulations of polar ice-sheets play a crucial role in the ongoing effort to develop
+more accurate and reliable Earth-system models for probabilistic sea-level projections. These
+simulations often require a massive amount of memory and computation from large supercomputing
+clusters to provide sufficient accuracy and resolution. The latest exascale machines poised to
+come online contain a diverse set of computing architectures. In an effort to avoid architecture
+specific programming and maintain productivity across platforms, the ice-sheet modeling code
+known as MALI uses high level abstractions to integrate Trilinos libraries and the Kokkos programming
+model for performance portable code across a variety of different architectures. In this paper,
+we analyze the performance portable features of MALI via a performance analysis on current CPU-based
+and GPU-based supercomputers. The analysis highlights performance portable improvements made
+in finite element assembly and multigrid preconditioning within MALI with speedups between 1.26-1.82x
+across CPU and GPU architectures but also identifies the need to further improve performance in
+software coupling and preconditioning on GPUs. We also perform a weak scalability study and show
+that simulations on GPU-based machines perform 1.24-1.92x faster when utilizing the GPUs. The
+best performance is found in finite element assembly which achieved a speedup of up to 8.65x and a
+weak scaling efficiency of 82.9% with GPUs. We additionally describe an automated performance
+testing framework developed for this code base using a changepoint detection method. The framework
+is used to make actionable decisions about performance within MALI. We provide several concrete
+examples of scenarios in which the framework has identified performance regressions, improvements,
+and algorithm differences over the course of two years of development. 

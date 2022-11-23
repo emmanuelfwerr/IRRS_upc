@@ -1,0 +1,19 @@
+Identification of unknown physical processes and parameters of groundwater contaminant sources
+is a challenging task due to their ill-posed and non-unique nature. Numerous works have focused
+on determining nonlinear physical processes through model selection methods. However, identifying
+corresponding nonlinear systems for different physical phenomena using numerical methods can
+be computationally prohibitive. With the advent of machine learning (ML) algorithms, more efficient
+surrogate models based on neural networks (NNs) have been developed in various disciplines. In
+this work, a theory-guided U-net (TgU-net) framework is proposed for surrogate modeling of three-dimensional
+(3D) groundwater contaminant problems in order to efficiently elucidate their involved processes
+and unknown parameters. In TgU-net, the underlying governing equations are embedded into the loss
+function of U-net as soft constraints. For the considered groundwater contaminant problem, sorption
+is considered to be a potential process of an uncertain type, and three equilibrium sorption isotherm
+types (i.e., linear, Freundlich, and Langmuir) are considered. Different from traditional approaches
+in which one model corresponds to one equation, these three sorption types are modeled through only
+one TgU-net surrogate. The three mentioned sorption terms are integrated into one equation by assigning
+indicators. Accurate predictions illustrate the satisfactory generalizability and extrapolability
+of the constructed TgU-net. Furthermore, based on the constructed TgU-net surrogate, a data assimilation
+method is employed to identify the physical process and parameters simultaneously. This work shows
+the possibility of governing equation discovery of physical problems that contain multiple and
+even uncertain processes by using deep learning and data assimilation methods. 

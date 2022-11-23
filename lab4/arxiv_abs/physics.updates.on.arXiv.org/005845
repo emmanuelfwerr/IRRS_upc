@@ -1,0 +1,20 @@
+Most geophysical inverse problems are nonlinear and rely upon numerical forward solvers involving
+discretization and simplified representations of the underlying physics. As a result, forward
+modeling errors are inevitable. In practice, such model errors tend to be either completely ignored,
+which leads to biased and over-confident inversion results, or only partly taken into account using
+restrictive Gaussian assumptions. Here, we rely on deep generative neural networks to learn problem-specific
+low-dimensional probabilistic representations of the discrepancy between high-fidelity and
+low-fidelity forward solvers. These representations are then used to probabilistically invert
+for the model error jointly with the target geophysical property field, using the computationally-cheap,
+low-fidelity forward solver. To this end, we combine a Markov-chain-Monte-Carlo (MCMC) inversion
+algorithm with a trained convolutional neural network of the spatial generative adversarial network
+(SGAN) type, whereby at each MCMC step, the simulated low-fidelity forward response is corrected
+using a proposed model-error realization. Considering the crosshole ground-penetrating radar
+traveltime tomography inverse problem, we train SGAN networks on traveltime discrepancy images
+between: (1) curved-ray (high fidelity) and straight-ray (low fidelity) forward solvers; and
+(2) finite-difference-time-domain (high fidelity) and straight-ray (low fidelity) forward
+solvers. We demonstrate that the SGAN is able to learn the spatial statistics of the model error and
+that suitable representations of both the subsurface model and model error can be recovered by MCMC.
+In comparison with inversion results obtained when model errors are either ignored or approximated
+by a Gaussian distribution, we find that our method has lower posterior parameter bias and better
+explains the observed traveltime data.[...] 

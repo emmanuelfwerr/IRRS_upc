@@ -1,0 +1,20 @@
+Many combinatorial optimization problems can be approximated within $(1 \pm \epsilon)$ factors
+in $\text{poly}(\log n, 1/\epsilon)$ rounds in the LOCAL model via network decompositions [Ghaffari,
+Kuhn, and Maus, STOC 2018]. These approaches require sending messages of unlimited size, so they
+do not extend to the CONGEST model, which restricts the message size to be $O(\log n)$ bits. In this
+paper, we develop a generic framework for obtaining $\text{poly}(\log n, 1/\epsilon)$-round
+$(1\pm \epsilon)$-approximation algorithms for many combinatorial optimization problems,
+including maximum weighted matching, maximum independent set, and correlation clustering, in
+graphs excluding a fixed minor in the CONGEST model. This class of graphs covers many sparse network
+classes that have been studied in the literature, including planar graphs, bounded-genus graphs,
+and bounded-treewidth graphs. Furthermore, we show that our framework can be applied to give an
+efficient distributed property testing algorithm for an arbitrary minor-closed graph property
+that is closed under taking disjoint union, significantly generalizing the previous distributed
+property testing algorithm for planarity in [Levi, Medina, and Ron, PODC 2018 & Distributed Computing
+2021]. Our framework uses distributed expander decomposition algorithms [Chang and Saranurak,
+FOCS 2020] to decompose the graph into clusters of high conductance. We show that any graph excluding
+a fixed minor admits small edge separators. Using this result, we show the existence of a high-degree
+vertex in each cluster in an expander decomposition, which allows the entire graph topology of the
+cluster to be routed to a vertex. Similar to the use of network decompositions in the LOCAL model,
+the vertex will be able to perform any local computation on the subgraph induced by the cluster and
+broadcast the result over the cluster. 

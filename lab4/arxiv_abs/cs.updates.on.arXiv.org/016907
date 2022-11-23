@@ -1,0 +1,20 @@
+The Immersed Boundary (IB) method of Peskin (J. Comput. Phys., 1977) is useful for problems involving
+fluid-structure interactions or complex geometries. By making use of a regular Cartesian grid
+that is independent of the geometry, the IB framework yields a robust numerical scheme that can efficiently
+handle immersed deformable structures. Additionally, the IB method has been adapted to problems
+with prescribed motion and other PDEs with given boundary data. IB methods for these problems traditionally
+involve penalty forces which only approximately satisfy boundary conditions, or they are formulated
+as constraint problems. In the latter approach, one must find the unknown forces by solving an equation
+that corresponds to a poorly conditioned first-kind integral equation. This operation can require
+a large number of iterations of a Krylov method, and since a time-dependent problem requires this
+solve at each time step, this method can be prohibitively inefficient without preconditioning.
+In this work, we introduce a new, well-conditioned IB formulation for boundary value problems,
+which we call the Immersed Boundary Double Layer (IBDL) method. We present the method as it applies
+to Poisson and Helmholtz problems to demonstrate its efficiency over the original constraint method.
+In this double layer formulation, the equation for the unknown boundary distribution corresponds
+to a well-conditioned second-kind integral equation that can be solved efficiently with a small
+number of iterations of a Krylov method. Furthermore, the iteration count is independent of both
+the mesh size and immersed boundary point spacing. The method converges away from the boundary,
+and when combined with a local interpolation, it converges in the entire PDE domain. Additionally,
+while the original constraint method applies only to Dirichlet problems, the IBDL formulation
+can also be used for Neumann conditions. 

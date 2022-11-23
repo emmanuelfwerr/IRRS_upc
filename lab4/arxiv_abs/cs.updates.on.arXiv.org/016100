@@ -1,0 +1,19 @@
+Dementia related cognitive impairment (CI) affects over 55 million people worldwide and is growing
+rapidly at the rate of one new case every 3 seconds. With a recurring failure of clinical trials, early
+diagnosis is crucial, but 75% of dementia cases go undiagnosed globally with up to 90% in low-and-middle-income
+countries. Current diagnostic methods are notoriously complex, involving manual review of medical
+notes, numerous cognitive tests, expensive brain scans or spinal fluid tests. Information relevant
+to CI is often found in the electronic health records (EHRs) and can provide vital clues for early
+diagnosis, but a manual review by experts is tedious and error prone. This project develops a novel
+state-of-the-art automated screening pipeline for scalable and high-speed discovery of undetected
+CI in EHRs. To understand the linguistic context from complex language structures in EHR, a database
+of 8,656 sequences was constructed to train attention-based deep learning natural language processing
+model to classify sequences. A patient level prediction model based on logistic regression was
+developed using the sequence level classifier. The deep learning system achieved 93% accuracy
+and AUC = 0.98 to identify patients who had no earlier diagnosis, dementia-related diagnosis code,
+or dementia-related medications in their EHR. These patients would have otherwise gone undetected
+or detected too late. The EHR screening pipeline was deployed in NeuraHealthNLP, a web application
+for automated and real-time CI screening by simply uploading EHRs in a browser. NeuraHealthNLP
+is cheaper, faster, more accessible, and outperforms current clinical methods including text-based
+analytics and machine learning approaches. It makes early diagnosis viable in regions with scarce
+health care services but accessible internet or cellular services. 

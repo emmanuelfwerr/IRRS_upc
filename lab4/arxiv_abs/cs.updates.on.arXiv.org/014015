@@ -1,0 +1,19 @@
+Static bug finders have been widely-adopted by developers to find bugs in real world software projects.
+They leverage predefined heuristic static analysis rules to scan source code or binary code of a
+software project, and report violations to these rules as warnings to be verified. However, the
+advantages of static bug finders are overshadowed by such issues as uncovered obvious bugs, false
+positives, etc. To improve these tools, many techniques have been proposed to filter out false positives
+reported or design new static analysis rules. Nevertheless, the under-performance of bug finders
+can also be caused by the incorrectness of current rules contained in the static bug finders, which
+is not explored yet. In this work, we propose a differential testing approach to detect bugs in the
+rules of four widely-used static bug finders, i.e., SonarQube, PMD, SpotBugs, and ErrorProne,
+and conduct a qualitative study about the bugs found. To retrieve paired rules across static bug
+finders for differential testing, we design a heuristic-based rule mapping method which combines
+the similarity in rules description and the overlap in warning information reported by the tools.
+The experiment on 2,728 open source projects reveals 46 bugs in the static bug finders, among which
+24 are fixed or confirmed and the left are awaiting confirmation. We also summarize 13 bug patterns
+in the static analysis rules based on their context and root causes, which can serve as the checklist
+for designing and implementing other rules and or in other tools. This study indicates that the commonly-used
+static bug finders are not as reliable as they might have been envisaged. It not only demonstrates
+the effectiveness of our approach, but also highlights the need to continue improving the reliability
+of the static bug finders. 

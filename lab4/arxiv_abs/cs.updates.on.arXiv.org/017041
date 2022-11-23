@@ -1,0 +1,19 @@
+As a promising candidate to complement traditional biometric modalities, brain biometrics using
+electroencephalography (EEG) data has received a widespread attention in recent years. However,
+compared with existing biometrics such as fingerprints and face recognition, research on EEG biometrics
+is still in its infant stage. Most of the studies focus on either designing signal elicitation protocols
+from the perspective of neuroscience or developing feature extraction and classification algorithms
+from the viewpoint of machine learning. These studies have laid the ground for the feasibility of
+using EEG as a biometric authentication modality, but they have also raised security and privacy
+concerns as EEG data contains sensitive information. Existing research has used hash functions
+and cryptographic schemes to protect EEG data, but they do not provide functions for revoking compromised
+templates as in cancellable template design. This paper proposes the first cancellable EEG template
+design for privacy-preserving EEG-based authentication systems, which can protect raw EEG signals
+containing sensitive privacy information (e.g., identity, health and cognitive status). A novel
+cancellable EEG template is developed based on EEG graph features and a non-invertible transform.
+The proposed transformation provides cancellable templates, while taking advantage of EEG elicitation
+protocol fusion to enhance biometric performance. The proposed authentication system offers
+equivalent authentication performance (8.58\% EER on a public database) as in the non-transformed
+domain, while protecting raw EEG data. Furthermore, we analyze the system's capacity for resisting
+multiple attacks, and discuss some overlooked but critical issues and possible pitfalls involving
+hill-climbing attacks, second attacks, and classification-based authentication systems. 

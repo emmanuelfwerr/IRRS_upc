@@ -1,0 +1,19 @@
+Storage systems have not kept the same technology improvement rate as computing systems. As applications
+produce more and more data, I/O becomes the limiting factor for increasing application performance.
+I/O congestion caused by concurrent access to storage devices is one of the main obstacles that cause
+I/O performance degradation and, consequently, total performance degradation. Although task-based
+programming models made it possible to achieve higher levels of parallelism by enabling the execution
+of tasks in large-scale distributed platforms, this parallelism only benefited the compute workload
+of the application. Previous efforts addressing I/O performance bottlenecks either focused on
+optimizing fine-grained I/O access patterns using I/O libraries or avoiding system-wide I/O congestion
+by minimizing interference between multiple applications. In this paper, we propose enabling
+I/O Awareness in task-based programming models for improving the total performance of applications.
+An I/O aware programming model is able to create more parallelism and mitigate the causes of I/O performance
+degradation. On the one hand, more parallelism can be created by supporting special tasks for executing
+I/O workloads, called I/O tasks, that can overlap with the execution of compute tasks. On the other
+hand, I/O congestion can be mitigated by constraining I/O tasks scheduling. We propose two approaches
+for specifying such constraints: explicitly set by the users or automatically inferred and tuned
+during application's execution to optimize the execution of variable I/O workloads on a certain
+storage infrastructure. Our experiments on the MareNostrum 4 Supercomputer demonstrate that
+using I/O aware programming model can achieve up to 43% total performance improvement as compared
+to the I/O non-aware implementation. 

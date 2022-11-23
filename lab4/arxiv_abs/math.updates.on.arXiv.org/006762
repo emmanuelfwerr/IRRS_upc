@@ -1,0 +1,20 @@
+In massive multiple-input multiple-output (MIMO) systems, hybrid analog-digital beamforming
+is an essential technique for exploiting the potential array gain without using a dedicated radio
+frequency chain for each antenna. However, due to the large number of antennas, the conventional
+channel estimation and hybrid beamforming algorithms generally require high computational complexity
+and signaling overhead. In this work, we propose an end-to-end deep-unfolding neural network (NN)
+joint channel estimation and hybrid beamforming (JCEHB) algorithm to maximize the system sum rate
+in time-division duplex (TDD) massive MIMO. Specifically, the recursive least-squares (RLS)
+algorithm and stochastic successive convex approximation (SSCA) algorithm are unfolded for channel
+estimation and hybrid beamforming, respectively. In order to reduce the signaling overhead, we
+consider a mixed-timescale hybrid beamforming scheme, where the analog beamforming matrices
+are optimized based on the channel state information (CSI) statistics offline, while the digital
+beamforming matrices are designed at each time slot based on the estimated low-dimensional equivalent
+CSI matrices. We jointly train the analog beamformers together with the trainable parameters of
+the RLS and SSCA induced deep-unfolding NNs based on the CSI statistics offline. During data transmission,
+we estimate the low-dimensional equivalent CSI by the RLS induced deep-unfolding NN and update
+the digital beamformers. In addition, we propose a mixed-timescale deep-unfolding NN where the
+analog beamformers are optimized online, and extend the framework to frequency-division duplex
+(FDD) systems where channel feedback is considered. Simulation results show that the proposed
+algorithm can significantly outperform conventional algorithms with reduced computational
+complexity and signaling overhead. 

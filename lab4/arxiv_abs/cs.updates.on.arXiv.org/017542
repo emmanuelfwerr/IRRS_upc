@@ -1,0 +1,19 @@
+Frequency control plays a pivotal role in reliable power system operations. It is conventionally
+performed in a hierarchical way that first rapidly stabilizes the frequency deviations and then
+slowly recovers the nominal frequency. However, as the generation mix shifts from synchronous
+generators to renewable resources, power systems experience larger and faster frequency fluctuations
+due to the loss of inertia, which adversely impacts the frequency stability. This has motivated
+active research in algorithms that jointly address frequency degradation and economic efficiency
+in a fast timescale, among which the distributed averaging-based integral (DAI) control is a notable
+one that sets controllable power injections directly proportional to the integrals of frequency
+deviation and economic inefficiency signals. Nevertheless, DAI do not typically consider the
+transient performance of the system following power disturbances and has been restricted to quadratic
+operational cost functions. This manuscript aims to leverage nonlinear optimal controllers to
+simultaneously achieve optimal transient frequency control and find the most economic power dispatch
+for frequency restoration. To this end, we integrate reinforcement learning (RL) to the classic
+DAI, which results in RL-DAI. Specifically, we use RL to learn a neural network-based control policy
+mapping from the integral variables of DAI to the controllable power injections which provides
+optimal transient frequency control, while DAI inherently ensures the frequency restoration
+and optimal economic dispatch. Compared to existing methods, we provide provable guarantees on
+the stability of the learned controllers and extend allowable cost functions to a much larger class.
+Simulations on the 39-bus New England system illustrate our results. 

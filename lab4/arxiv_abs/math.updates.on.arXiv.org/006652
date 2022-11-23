@@ -1,0 +1,19 @@
+Many researchers have been interested in the questions about investigating the influence of optimization
+methods of various kinds of interference on the estimates of the convergence rate for a long time.
+We study the gradient method under the assumption that an additively inexact gradient is available
+for, generally speaking, non-convex problems. The non-convexity of the objective function, as
+well as the use of an inexactness specified gradient at iterations, can lead to various problems.
+For example, it is possible that the trajectory of the gradient method is far enough away from the
+starting point. This can be problematic, since the initial position of the method may already have
+certain nice properties. On the other hand, the unbounded removal of the trajectory of the gradient
+method in the presence of noise can lead to the removal of the trajectory of the method from the desired
+exact solution. The results of studying the behavior of the trajectory of the gradient method are
+obtained under the assumption of an inexact value of the gradient and the condition of gradient dominance.
+It is well known that such a condition is valid for many important non-convex problems. Moreover,
+it leads to good speed guarantees for the gradient method. A rule of early stopping of the gradient
+method is proposed. Firstly, it guarantees the desire to achieve acceptable quality of the exit
+point of the method in terms of the function. Secondly, the stopping rule ensures a fairly moderate
+distance of this point from the chosen initial position. In addition to the gradient method with
+a constant step, its variant with adaptive step size is also investigated in detail, which makes
+it possible to apply the developed technique in the case of an unknown Lipschitz constant for gradient.
+Some computational experiments have been carried out. 

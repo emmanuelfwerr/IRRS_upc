@@ -1,0 +1,19 @@
+Style transfer has achieved great success and attracted a wide range of attention from both academic
+and industrial communities due to its flexible application scenarios. However, the dependence
+on pretty large VGG based autoencoder leads to existing style transfer models have a high parameter
+complexities which limits the application for resource-constrained devices. Unfortunately,
+the compression of style transfer model has less been explored. In parallel, study on the lottery
+ticket hypothesis (LTH) has shown great potential in finding extremely sparse matching subnetworks
+which can achieve on par or even better performance than original full networks when trained in isolation.
+In this work, we perform the first empirical study to verify whether such trainable networks also
+exist in style transfer models. From a wide range of style transfer methods, we choose two of the most
+popular style transfer models as the main testbeds, i.e., AdaIN and SANet, representing approaches
+of global and local transformation based style transfer respectively. Through extensive experiments
+and comprehensive analysis, we draw the following main conclusions. (1) Compared with fixing VGG
+encoder, style transfer models can benefit more from training the whole network together. (2) Using
+iterative magnitude pruning, we find the most sparse matching subnetworks at 89.2% in AdaIN and
+73.7% in SANet, which suggests that style transfer models can play lottery tickets too. (3) Feature
+transformation module should also be pruned to get a sparser model without affecting the existence
+and quality of matching subnetworks. (4) Besides AdaIN and SANet, other models such as LST, MANet,
+AdaAttN and MCCNet can also play lottert tickets, which shows that LTH can be generalized to various
+style transfer models. 

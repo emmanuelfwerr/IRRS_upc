@@ -1,0 +1,20 @@
+The evolution of interfaces is intrinsic to many physical processes ranging from cavitation in
+fluids to recrystallization in solids. Computational modeling of interface motion entails a number
+of challenges, largely due to the range of topological transitions that can occur over the course
+of the simulation. Microstructure evolution in a polycrystalline material that involves grain
+boundary motion is a particularly complex example due to the extreme variety, heterogeneity, and
+anisotropy of grain boundary properties. Accurately modeling this process is essential to determining
+processing-structure-property relationships in polycrystalline materials though, making
+modeling efforts central to the eventual rational design of materials. Simulations of microstructure
+evolution often use diffuse interface methods, and specifically the phase field method; these
+are advantageous for their versatility and ease of handling complex geometries, but can be prohibitively
+expensive due to the need for high interface resolution. Discrete interface methods require fewer
+grid points and can consequently exhibit better performance but have received comparatively little
+attention, perhaps due to the difficulty of consistently implementing topological transitions.
+This work considers a recently developed discrete-interface method for microstructure evolution,
+and provides an explicit comparison to diffuse interface methods by comparing against a multiphase
+field method in a number of classical microstructure evolution problems: the shrinking of a spherical
+grain, determination of a triple junction diheral angle, and determination of a quadruple point
+dihedral angle. In each case, the discrete method is found to meet or outperform the multiphase field
+method in terms of accuracy for comparable levels of refinement, demonstrating its potential efficacy
+as a numerical approach for microstructure evolution. 

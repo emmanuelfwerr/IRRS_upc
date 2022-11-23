@@ -1,0 +1,20 @@
+Automatic speaker verification is susceptible to various manipulations and spoofing, such as
+text-to-speech (TTS) synthesis, voice conversion (VC), replay, tampering, and so on. In this paper,
+we consider a new spoofing scenario called "Partial Spoof" (PS) in which synthesized or transformed
+audio segments are embedded into a bona fide speech utterance. While existing countermeasures
+(CMs) can detect fully spoofed utterances, there is a need for their adaptation or extension to the
+PS scenario to detect utterances in which only a part of the audio signal is generated and hence only
+a fraction of an utterance is spoofed. For improved explainability, such new CMs should ideally
+also be able to detect such short spoofed segments. Our previous study introduced the first version
+of a speech database suitable for training CMs for the PS scenario and showed that, although it is
+possible to train CMs to execute the two types of detection described above, there is much room for
+improvement. In this paper we propose various improvements to construct a significantly more accurate
+CM that can detect short generated spoofed audio segments at finer temporal resolutions. First,
+we introduce newly proposed self-supervised pre-trained models as enhanced feature extractors.
+Second, we extend the PartialSpoof database by adding segment labels for various temporal resolutions,
+ranging from 20 ms to 640 ms. Third, we propose a new CM and training strategies that enable the simultaneous
+use of the utterance-level and segment-level labels at different temporal resolutions. We also
+show that the proposed CM is capable of detecting spoofing at the utterance level with low error rates,
+not only in the PS scenario but also in a related logical access (LA) scenario. The equal error rates
+of utterance-level detection on the PartialSpoof and the ASVspoof 2019 LA database were 0.47% and
+0.59%, respectively. 

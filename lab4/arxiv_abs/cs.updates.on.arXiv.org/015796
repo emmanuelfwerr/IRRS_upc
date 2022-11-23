@@ -1,0 +1,19 @@
+This study aims to identify chicken eggs fertility using the support vector machine (SVM) classifier
+method. The classification basis used the first-order statistical (FOS) parameters as feature
+extraction in the identification process. This research was developed based on the process's identification
+process, which is still manual (conventional). Although currently there are many technologies
+in the identification process, they still need development. Thus, this research is one of the developments
+in the field of image processing technology. The sample data uses datasets from previous studies
+with a total of 100 egg images. The egg object in the image is a single object. From these data, the classification
+of each fertile and infertile egg is 50 image data. Chicken egg image data became input in image processing,
+with the initial process is segmentation. This initial segmentation aims to get the cropped image
+according to the object. The cropped image is repaired using image preprocessing with grayscaling
+and image enhancement methods. This method (image enhancement) used two combination methods:
+contrast limited adaptive histogram equalization (CLAHE) and histogram equalization (HE). The
+improved image becomes the input for feature extraction using the FOS method. The FOS uses five parameters,
+namely mean, entropy, variance, skewness, and kurtosis. The five parameters entered into the SVM
+classifier method to identify the fertility of chicken eggs. The results of these experiments,
+the method proposed in the identification process has a success percentage of 84.57%. Thus, the
+implementation of this method can be used as a reference for future research improvements. In addition,
+it may be possible to use a second-order feature extraction method to improve its accuracy and improve
+supervised learning for classification. 

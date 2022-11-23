@@ -1,0 +1,19 @@
+The massive growth of network traffic data leads to a large volume of datasets. Labeling these datasets
+for identifying intrusion attacks is very laborious and error-prone. Furthermore, network traffic
+data have complex time-varying non-linear relationships. The existing state-of-the-art intrusion
+detection solutions use a combination of various supervised approaches along with fused features
+subsets based on correlations in traffic data. These solutions often require high computational
+cost, manual support in fine-tuning intrusion detection models, and labeling of data that limit
+real-time processing of network traffic. Unsupervised solutions do reduce computational complexities
+and manual support for labeling data but current unsupervised solutions do not consider spatio-temporal
+correlations in traffic data. To address this, we propose a unified Autoencoder based on combining
+multi-scale convolutional neural network and long short-term memory (MSCNN-LSTM-AE) for anomaly
+detection in network traffic. The model first employs Multiscale Convolutional Neural Network
+Autoencoder (MSCNN-AE) to analyze the spatial features of the dataset, and then latent space features
+learned from MSCNN-AE employs Long Short-Term Memory (LSTM) based Autoencoder Network to process
+the temporal features. Our model further employs two Isolation Forest algorithms as error correction
+mechanisms to detect false positives and false negatives to improve detection accuracy. %Additionally,
+covariance matrices forms a Riemannian manifold that is naturally embedded with distance metrices
+that facilitates descriminative patterns for detecting malicious network traffic. We evaluated
+our model NSL-KDD, UNSW-NB15, and CICDDoS2019 dataset and showed our proposed method significantly
+outperforms the conventional unsupervised methods and other existing studies on the dataset.

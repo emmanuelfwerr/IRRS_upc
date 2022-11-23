@@ -1,0 +1,20 @@
+The aim of this paper is to describe a novel non-parametric noise reduction technique from the point
+of view of Bayesian inference that may automatically improve the signal-to-noise ratio of one-
+and two-dimensional data, such as e.g. astronomical images and spectra. The algorithm iteratively
+evaluates possible smoothed versions of the data, the smooth models, obtaining an estimation of
+the underlying signal that is statistically compatible with the noisy measurements. Iterations
+stop based on the evidence and the $\chi^2$ statistic of the last smooth model, and we compute the
+expected value of the signal as a weighted average of the whole set of smooth models. In this paper,
+we explain the mathematical formalism and numerical implementation of the algorithm, and we evaluate
+its performance in terms of the peak signal to noise ratio, the structural similarity index, and
+the time payload, using a battery of real astronomical observations. Our Fully Adaptive Bayesian
+Algorithm for Data Analysis (FABADA) yields results that, without any parameter tuning, are comparable
+to standard image processing algorithms whose parameters have been optimized based on the true
+signal to be recovered, something that is impossible in a real application. State-of-the-art non-parametric
+methods, such as BM3D, offer slightly better performance at high signal-to-noise ratio, while
+our algorithm is significantly more accurate for extremely noisy data (higher than $20-40\%$ relative
+errors, a situation of particular interest in the field of astronomy). In this range, the standard
+deviation of the residuals obtained by our reconstruction may become more than an order of magnitude
+lower than that of the original measurements. The source code needed to reproduce all the results
+presented in this report, including the implementation of the method, is publicly available at
+https://github.com/PabloMSanAla/fabada 

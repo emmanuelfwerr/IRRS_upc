@@ -1,0 +1,19 @@
+This article presents a new high-order accurate algorithm for finding a particular solution to
+a linear, constant-coefficient partial differential equation (PDE) by means of a convolution
+of the volumetric source function with the Green's function in complex geometries. Utilizing volumetric
+domain decomposition, the integral is computed over a union of regular boxes (lending the scheme
+compatibility with adaptive box codes) and triangular regions (which may be potentially curved
+near boundaries). Singular and near-singular quadrature is handled by converting integrals on
+volumetric regions to line integrals bounding a reference volume cell using cell mappings and elements
+of the Poincar\'e lemma, followed by leveraging existing one-dimensional near-singular and singular
+quadratures appropriate to the singular nature of the kernel. The scheme achieves compatibility
+with fast multipole methods (FMMs) and thereby optimal asymptotic complexity by coupling global
+rules for target-independent quadrature of smooth functions to local target-dependent singular
+quadrature corrections, and it relies on orthogonal polynomial systems on each cell for well-conditioned,
+high-order and efficient (with respect to number of required volume function evaluations) approximation
+of arbitrary volumetric sources. Our domain discretization scheme is naturally compatible with
+standard meshing software such as Gmsh, which are employed to discretize a narrow region surrounding
+the domain boundaries. We present 8th-order accurate results, demonstrate the success of the method
+with examples showing up to 12-digit accuracy on complex geometries, and, for static geometries,
+our numerical examples show well over $99\%$ of evaluation time of the particular solution is spent
+in the FMM step. 

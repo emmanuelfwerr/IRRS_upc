@@ -1,0 +1,19 @@
+Materials property predictions have improved from advances in machine learning algorithms, delivering
+materials discoveries and novel insights through data-driven models of structure-property relationships.
+Nearly all available models rely on featurization of materials composition, however, whether
+the exclusive use of structural knowledge in such models has the capacity to make comparable predictions
+remains unknown. Here we employ a deep neural network model to decode structure-property relationships
+in crystalline materials without explicitly considering chemical compositions. The focus is
+on classification of crystal systems, mechanical elasticity, electronic band gap, and phase stability.
+Our model utilizes a three-dimensional (3D) momentum space representation of structure from elastic
+x-ray scattering theory that exhibits rotation and permutation invariance. We perform novel ablation
+studies to help interpret the model performance by perturbing the physically meaningful input
+features (i.e., the diffraction patterns) instead of tuning the architecture of the learning model
+as in conventional ablation methods. We find that the spatial symmetry of the 3D diffraction patterns,
+which reflects crystalline symmetry operations, is more important than the diffraction intensities
+contained within for the model to make a successful classification. Our work showcases the potential
+of using statistical learning models to help understand materials physics, rather than performing
+predictive and generative tasks as in most materials informatics research. We also argue that learning
+the crystal structure genome in a chemistry-agnostic manner demonstrates that some crystal structures
+inherently host high propensities for optimal materials properties, which enables the decoupling
+of structure and composition for future codesign of multifunctionality. 

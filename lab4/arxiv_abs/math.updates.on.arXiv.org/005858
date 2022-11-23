@@ -1,0 +1,18 @@
+We study the deep ReLU neural network collocation approximation of the solution $u$ to elliptic
+PDEs with lognormal inputs, parametrized by $\boldsymbol{y}$ from the non-compact set $\mathbb{R}^\infty$.
+The approximation error is measured in the norm of the Bochner space $L_2(\mathbb{R}^\infty, V,
+\gamma)$, where $\gamma$ is the infinite tensor product standard Gaussian probability measure
+on $\mathbb{R}^\infty$ and $V$ is the energy space. Under a certain assumption on $\ell_q$-summability
+for the lognormal inputs $(0<q<2)$, we proved that given arbitrary number $\delta >0$ small enough,
+for every integer $n > 1$, one can construct a compactly supported deep ReLU neural network $\boldsymbol{\phi}_n:=
+\big(\phi_j\big)_{j=1}^m$ of size at most $n$ on $\mathbb{R}^m$ with $m =\mathcal{O}(n^{1 - \delta})$,
+and a sequence of points $\big(\boldsymbol{y}j\big)_{j=1}^m \subset \mathbb{R}^m$ (which are
+independent of $u$) so that the collocation approximation of $u$ by $\Phi_n u:= \sum_{j=1}^m u\big(\boldsymbol{y}^j\big)
+\Phi_j,$ which is based on the $m$ solvers $\Big( u\big(\boldsymbol{y}^j\big)\Big)_{j=1}^m$
+and the deep ReLU network $\boldsymbol{\phi}_n$, gives the twofold error bounds: $\|u- \Phi_n
+u \|_{L_2(\mathbb{R}^\infty V, \gamma)} = \mathcal{O}\left(m^{- (1/q - 1/2)}\right) =\mathcal{O}\left(n^{-
+(1-\delta)(1/q - 1/2)}\right),$ where $\Phi_j$ are the extensions of $\phi_j$ to the whole $\mathbb{R}^\infty$.
+We also obtained similar results for the case when the lognormal inputs are parametrized on $\mathbb{R}^M$
+with very large dimension $M$, and the approximation error is measured in the $\sqrt{g_M}$-weighted
+uniform norm of the Bochner space $L_\infty^{\sqrt{g}}(\mathbb{R}^M, V)$, where $g_M$ is the
+density function of the standard Gaussian probability measure on $\mathbb{R}^M$. 

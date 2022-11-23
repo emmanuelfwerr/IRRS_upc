@@ -1,0 +1,19 @@
+Engineering problems that are modeled using sophisticated mathematical methods or are characterized
+by expensive-to-conduct tests or experiments, are encumbered with limited budget or finite computational
+resources. Moreover, practical scenarios in the industry, impose restrictions, based on logistics
+and preference, on the manner in which the experiments can be conducted. For example, material supply
+may enable only a handful of experiments in a single-shot or in the case of computational models one
+may face significant wait-time based on shared computational resources. In such scenarios, one
+usually resorts to performing experiments in a manner that allows for maximizing one's state-of-knowledge
+while satisfying the above mentioned practical constraints. Sequential design of experiments
+(SDOE) is a popular suite of methods, that has yielded promising results in recent years across different
+engineering and practical problems. A common strategy, that leverages Bayesian formalism is the
+Bayesian SDOE, which usually works best in the one-step-ahead or myopic scenario of selecting a
+single experiment at each step of a sequence of experiments. In this work, we aim to extend the SDOE
+strategy, to query the experiment or computer code at a batch of inputs. To this end, we leverage deep
+reinforcement learning (RL) based policy gradient methods, to propose batches of queries that
+are selected taking into account entire budget in hand. The algorithm retains the sequential nature,
+inherent in the SDOE, while incorporating elements of reward based on task from the domain of deep
+RL. A unique capability of the proposed methodology is its ability to be applied to multiple tasks,
+for example optimization of a function, once its trained. We demonstrate the performance of the
+proposed algorithm on a synthetic problem, and a challenging high-dimensional engineering problem.

@@ -1,0 +1,19 @@
+With the wider availability of sensor technology, a number of Structural Health Monitoring (SHM)
+systems are deployed to monitor civil infrastructure. The continuous monitoring provides valuable
+information about the structure that can help in providing a decision support system for retrofits
+and other structural modifications. However, when the sensors are exposed to harsh environmental
+conditions, the data measured by the SHM systems tend to be affected by multiple anomalies caused
+by faulty or broken sensors. Given a deluge of high-dimensional data collected continuously over
+time, research into using machine learning methods to detect anomalies are a topic of great interest
+to the SHM community. This paper contributes to this effort by proposing the use of a relatively new
+time series representation named Shapelet Transform in combination with a Random Forest classifier
+to autonomously identify anomalies in SHM data. The shapelet transform is a unique time series representation
+that is solely based on the shape of the time series data. In consideration of the individual characteristics
+unique to every anomaly, the application of this transform yields a new shape-based feature representation
+that can be combined with any standard machine learning algorithm to detect anomalous data with
+no manual intervention. For the present study, the anomaly detection framework consists of three
+steps: identifying unique shapes from anomalous data, using these shapes to transform the SHM data
+into a local-shape space and training machine learning algorithm on this transformed data to identify
+anomalies. The efficacy of this method is demonstrated by the identification of anomalies in acceleration
+data from a SHM system installed on a long-span bridge in China. The results show that multiple data
+anomalies in SHM data can be automatically detected with high accuracy using the proposed method.

@@ -1,0 +1,19 @@
+Structure prediction has become a key task of the modern atomistic sciences, and depends on the rapid
+and reliable computation of the energy landscape. First principles density functional based calculations
+are highly reliable, faithfully describing the entire energy landscape. They are, however, computationally
+intensive and slow compared to interatomic potentials. Great progress has been made in the development
+of machine learning, or data derived, potentials, which promise to describe the entire energy landscape
+at first principles quality. However, compared to first principles approaches, their preparation
+can be time consuming and delay searching. Ab initio random structure searching (AIRSS) is a straightforward
+and powerful approach to structure prediction, based on the stochastic generation of sensible
+initial structures, and their repeated local optimisation. Here, a scheme, compatible with AIRSS,
+for the rapid construction of disposable, or ephemeral, data derived potentials (EDDPs) is described.
+These potentials are constructed using a homogeneous, separable manybody environment vector,
+and iterative neural network fits, sparsely combined through non-negative least squares. The
+approach is first tested on methane, boron and urea. In the case of boron, an EDDP generated using
+data from small unit cells is used to rediscover the complex $\gamma$-boron structure without recourse
+to symmetry or fragments. Finally, an EDDP generated for silane (SiH$_4$) at 500 GPa enables the
+discovery of an extremely complex, dense, structure which significantly modifies silane's high
+pressure phase diagram. This has implications for the theoretical exploration for high temperature
+superconductivity in the dense hydrides, which have so far largely depended on searches in smaller
+unit cells. 

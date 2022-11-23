@@ -1,0 +1,20 @@
+Next generation online and real-time adaptive radiotherapy workflows require precise particle
+transport simulations in sub-second times, which is unfeasible with current analytical pencil
+beam algorithms (PBA) or stochastic Monte Carlo (MC) methods. We present a data-driven millisecond
+speed dose calculation algorithm (DoTA) accurately predicting the dose deposited by mono-energetic
+proton pencil beams for arbitrary energies and patient geometries. Given the forward-scattering
+nature of protons, we frame 3D particle transport as modeling a sequence of 2D geometries in the beam's
+eye view. DoTA combines convolutional neural networks extracting spatial features (e.g., tissue
+and density contrasts) with a transformer self-attention backbone that routes information between
+the sequence of geometry slices and a vector representing the beam's energy, and is trained to predict
+low noise MC simulations of proton beamlets using 80,000 different head and neck, lung, and prostate
+geometries. Predicting beamlet doses in 5 ms with a very high gamma pass rate of 99.37% (1%, 3 mm) compared
+to the ground truth MC calculations, DoTA significantly improves upon analytical pencil beam algorithms
+both in precision and speed. Offering MC accuracy 100 times faster than PBAs for pencil beams, our
+model calculates full treatment plan doses in 10 to 15 s depending on the number of beamlets, achieving
+a 99.70% (2%, 2 mm) gamma pass rate across 9 test patients. Outperforming all previous analytical
+pencil beam and deep learning based approaches, DoTA represents a new state of the art in data-driven
+dose calculation and can directly compete with the speed of even commercial GPU MC approaches. Providing
+the sub-second speed required for adaptive treatments, straightforward implementations could
+offer similar benefits to other steps of the radiotherapy workflow or other modalities such as helium
+or carbon treatments. 

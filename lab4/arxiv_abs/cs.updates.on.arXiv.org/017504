@@ -1,0 +1,20 @@
+Semantic networks, such as the knowledge graph, can represent the knowledge leveraging the graph
+structure. Although the knowledge graph shows promising values in natural language processing,
+it suffers from incompleteness. This paper focuses on knowledge graph completion by predicting
+linkage between entities, which is a fundamental yet critical task. Semantic matching is a potential
+solution as it can deal with unseen entities, which the translational distance based methods struggle
+with. However, to achieve competitive performance as translational distance based methods, semantic
+matching based methods require large-scale datasets for the training purpose, which are typically
+unavailable in practical settings. Therefore, we employ the language model and introduce a novel
+knowledge graph architecture named LP-BERT, which contains two main stages: multi-task pre-training
+and knowledge graph fine-tuning. In the pre-training phase, three tasks are taken to drive the model
+to learn the relationship from triples by predicting either entities or relations. While in the
+fine-tuning phase, inspired by contrastive learning, we design a triple-style negative sampling
+in a batch, which greatly increases the proportion of negative sampling while keeping the training
+time almost unchanged. Furthermore, we propose a new data augmentation method utilizing the inverse
+relationship of triples to improve the performance and robustness of the model. To demonstrate
+the effectiveness of our method, we conduct extensive experiments on three widely-used datasets,
+WN18RR, FB15k-237, and UMLS. The experimental results demonstrate the superiority of our methods,
+and our approach achieves state-of-the-art results on WN18RR and FB15k-237 datasets. Significantly,
+Hits@10 indicator is improved by 5% from previous state-of-the-art result on the WN18RR dataset
+while reaching 100% on the UMLS dataset. 

@@ -1,0 +1,19 @@
+High dimensional parameter space optimization is crucial in many applications. The parameters
+affecting this performance can be both numerical and categorical in their type. The existing techniques
+of black-box optimization and visual analytics are good in dealing with numerical parameters but
+analyzing categorical variables in context of the numerical variables are not well studied. Hence,
+we propose a novel approach, to create an auto-tuning framework for storage systems optimization
+combining both direct optimization techniques and visual analytics research. While the optimization
+algorithm will be the core of the system, visual analytics will provide a guideline with the help
+of an external agent (expert) to provide crucial hints to narrow down the large search space for the
+optimization engine. As part of the initial step towards creating an auto-tuning engine for storage
+systems optimization, we created an Interactive Configuration Explorer \textit{ICE}, which
+directly addresses the need of analysts to learn how the dependent numerical variable is affected
+by the parameter settings given multiple optimization objectives. No information is lost as ICE
+shows the complete distribution and statistics of the dependent variable in context with each categorical
+variable. Analysts can interactively filter the variables to optimize for certain goals such as
+achieving a system with maximum performance, low variance, etc. Our system was developed in tight
+collaboration with a group of systems performance researchers and its final effectiveness was
+evaluated with expert interviews, a comparative user study, and two case studies. We also discuss
+our research plan for creating an efficient auto-tuning framework combining black-box optimization
+and visual analytics for storage systems performance optimization. 

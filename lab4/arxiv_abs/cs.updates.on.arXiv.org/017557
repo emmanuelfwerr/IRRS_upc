@@ -1,0 +1,19 @@
+We present a combined scaling method - named BASIC - that achieves 85.7% top-1 accuracy on the ImageNet
+ILSVRC-2012 validation set without learning from any labeled ImageNet example. This accuracy
+surpasses best published similar models - CLIP and ALIGN - by 9.3%. Our BASIC model also shows significant
+improvements in robustness benchmarks. For instance, on 5 test sets with natural distribution
+shifts such as ImageNet-{A,R,V2,Sketch} and ObjectNet, our model achieves 84.3% top-1 average
+accuracy, only a small drop from its original ImageNet accuracy. To achieve these results, we scale
+up the contrastive learning framework of CLIP and ALIGN in three dimensions: data size, model size,
+and batch size. Our dataset has 6.6B noisy image-text pairs, which is 4x larger than ALIGN, and 16x
+larger than CLIP. Our largest model has 3B weights, which is 3.75x larger in parameters and 8x larger
+in FLOPs than ALIGN and CLIP. Finally, our batch size is 65536 which is 2x more than CLIP and 4x more
+than ALIGN. We encountered two main challenges with the scaling rules of BASIC. First, the main challenge
+with implementing the combined scaling rules of BASIC is the limited memory of accelerators, such
+as GPUs and TPUs. To overcome the memory limit, we propose two simple methods which make use of gradient
+checkpointing and model parallelism. Second, while increasing the dataset size and the model size
+has been the defacto method to improve the performance of deep learning models like BASIC, the effect
+of a large contrastive batch size on such contrastive-trained image-text models is not well-understood.
+To shed light on the benefits of large contrastive batch sizes, we develop a theoretical framework
+which shows that larger contrastive batch sizes lead to smaller generalization gaps for image-text
+models such as BASIC. 

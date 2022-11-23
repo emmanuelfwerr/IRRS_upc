@@ -1,0 +1,19 @@
+Most IoT systems involve IoT devices, communication protocols, remote cloud, IoT applications,
+mobile apps, and the physical environment. However, existing IoT security analyses only focus
+on a subset of all the essential components, such as device firmware, and ignore IoT systems' interactive
+nature, resulting in limited attack detection capabilities. In this work, we propose Iota, a logic
+programming-based framework to perform system-level security analysis for IoT systems. Iota
+generates attack graphs for IoT systems, showing all of the system resources that can be compromised
+and enumerating potential attack traces. In building Iota, we design novel techniques to scan IoT
+systems for individual vulnerabilities and further create generic exploit models for IoT vulnerabilities.
+We also identify and model physical dependencies between different devices as they are unique to
+IoT systems and are employed by adversaries to launch complicated attacks. In addition, we utilize
+NLP techniques to extract IoT app semantics based on app descriptions. To evaluate vulnerabilities'
+system-wide impact, we propose two metrics based on the attack graph, which provide guidance on
+fortifying IoT systems. Evaluation on 127 IoT CVEs (Common Vulnerabilities and Exposures) shows
+that Iota's exploit modeling module achieves over 80% accuracy in predicting vulnerabilities'
+preconditions and effects. We apply Iota to 37 synthetic smart home IoT systems based on real-world
+IoT apps and devices. Experimental results show that our framework is effective and highly efficient.
+Among 27 shortest attack traces revealed by the attack graphs, 62.8% are not anticipated by the system
+administrator. It only takes 1.2 seconds to generate and analyze the attack graph for an IoT system
+consisting of 50 devices. 

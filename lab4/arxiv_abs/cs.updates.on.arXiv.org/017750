@@ -1,0 +1,19 @@
+Natural language processing (NLP) is the field that attempts to make human language accessible
+to computers, and it relies on applying a mathematical model to express the meaning of symbolic language.
+One such model, DisCoCat, defines how to express both the meaning of individual words as well as their
+compositional nature. This model can be naturally implemented on quantum computers, leading to
+the field quantum NLP (QNLP). Recent experimental work used quantum machine learning techniques
+to map from text to class label using the expectation value of the quantum encoded sentence. Theoretical
+work has been done on computing the similarity of sentences but relies on an unrealized quantum memory
+store. The main goal of this thesis is to leverage the DisCoCat model to design a quantum-based kernel
+function that can be used by a support vector machine (SVM) for NLP tasks. Two similarity measures
+were studied: (i) the transition amplitude approach and (ii) the SWAP test. A simple NLP meaning
+classification task from previous work was used to train the word embeddings and evaluate the performance
+of both models. The Python module lambeq and its related software stack was used for implementation.
+The explicit model from previous work was used to train word embeddings and achieved a testing accuracy
+of $93.09 \pm 0.01$%. It was shown that both the SVM variants achieved a higher testing accuracy of
+$95.72 \pm 0.01$% for approach (i) and $97.14 \pm 0.01$% for (ii). The SWAP test was then simulated
+under a noise model defined by the real quantum device, ibmq_guadalupe. The explicit model achieved
+an accuracy of $91.94 \pm 0.01$% while the SWAP test SVM achieved 96.7% on the testing dataset, suggesting
+that the kernelized classifiers are resilient to noise. These are encouraging results and motivate
+further investigations of our proposed kernelized QNLP paradigm. 

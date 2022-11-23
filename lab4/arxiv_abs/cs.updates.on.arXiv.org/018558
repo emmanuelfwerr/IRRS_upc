@@ -1,0 +1,20 @@
+The research community has long studied computer-assisted pronunciation training (CAPT) methods
+in non-native speech. Researchers focused on studying various model architectures, such as Bayesian
+networks and deep learning methods, as well as on the analysis of different representations of the
+speech signal. Despite significant progress in recent years, existing CAPT methods are not able
+to detect pronunciation errors with high accuracy (only 60\% precision at 40\%-80\% recall). One
+of the key problems is the low availability of mispronounced speech that is needed for the reliable
+training of pronunciation error detection models. If we had a generative model that could mimic
+non-native speech and produce any amount of training data, then the task of detecting pronunciation
+errors would be much easier. We present three innovative techniques based on phoneme-to-phoneme
+(P2P), text-to-speech (T2S), and speech-to-speech (S2S) conversion to generate correctly pronounced
+and mispronounced synthetic speech. We show that these techniques not only improve the accuracy
+of three machine learning models for detecting pronunciation errors but also help establish a new
+state-of-the-art in the field. Earlier studies have used simple speech generation techniques
+such as P2P conversion, but only as an additional mechanism to improve the accuracy of pronunciation
+error detection. We, on the other hand, consider speech generation to be the first-class method
+of detecting pronunciation errors. The effectiveness of these techniques is assessed in the tasks
+of detecting pronunciation and lexical stress errors. Non-native English speech corpora of German,
+Italian, and Polish speakers are used in the evaluations. The best proposed S2S technique improves
+the accuracy of detecting pronunciation errors in AUC metric by 41\% from 0.528 to 0.749 compared
+to the state-of-the-art approach. 

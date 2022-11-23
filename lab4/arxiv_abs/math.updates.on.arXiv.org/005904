@@ -1,0 +1,19 @@
+This work begins by applying peridynamics and phase-field modeling to predict 1-d interface motion
+with inertia in an elastic solid with a non-monotone stress-strain response. In classical nonlinear
+elasticity, it is known that subsonic interfaces require a kinetic law, in addition to momentum
+balance, to obtain unique solutions; in contrast, for supersonic interfaces, momentum balance
+alone is sufficient to provide unique solutions. This work finds that peridynamics agrees with
+this classical result, in that different choices of regularization parameters provide different
+kinetics for subsonic motion but the same kinetics for supersonic motion. In contrast, conventional
+phase-field models coupled to elastodynamics are unable to model, even qualitatively, the supersonic
+motion of interfaces. This work identifies the shortcomings in the physics of standard phase-field
+models to be: (1) the absence of higher-order stress to balance unphysical stress singularities,
+and (2) the ability of the model to access unphysical regions of the energy landscape. Based on these
+observations, this work proposes an augmented phase-field model to introduce the missing physics.
+The augmented model adds: (1) a viscous stress to the momentum balance, in addition to the dissipative
+phase-field evolution, to regularize singularities; and (2) an augmented driving force that models
+the physical mechanism that keeps the system out of unphysical regions of the energy landscape.
+When coupled to elastodynamics, the augmented model correctly describes both subsonic and supersonic
+interface motion. The augmented model has essentially the same computational expense as conventional
+phase-field models and requires only minor modifications of numerical methods, and is therefore
+proposed as a replacement to the conventional phase-field models. 

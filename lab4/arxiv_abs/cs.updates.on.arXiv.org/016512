@@ -1,0 +1,19 @@
+Hybrid methods have been shown to outperform pure statistical and pure deep learning methods at
+both forecasting tasks, and at quantifying the uncertainty associated with those forecasts (prediction
+intervals). One example is Multivariate Exponential Smoothing Long Short-Term Memory (MES-LSTM),
+a hybrid between a multivariate statistical forecasting model and a Recurrent Neural Network variant,
+Long Short-Term Memory. It has also been shown that a model that ($i$) produces accurate forecasts
+and ($ii$) is able to quantify the associated predictive uncertainty satisfactorily, can be successfully
+adapted to a model suitable for anomaly detection tasks. With the increasing ubiquity of multivariate
+data and new application domains, there have been numerous anomaly detection methods proposed
+in recent years. The proposed methods have largely focused on deep learning techniques, which are
+prone to suffer from challenges such as ($i$) large sets of parameters that may be computationally
+intensive to tune, $(ii)$ returning too many false positives rendering the techniques impractical
+for use, $(iii)$ requiring labeled datasets for training which are often not prevalent in real life,
+and ($iv$) understanding of the root causes of anomaly occurrences inhibited by the predominantly
+black-box nature of deep learning methods. In this article, an extension of MES-LSTM is presented,
+an interpretable anomaly detection model that overcomes these challenges. With a focus on renewable
+energy generation as an application domain, the proposed approach is benchmarked against the state-of-the-art.
+The findings are that MES-LSTM anomaly detector is at least competitive to the benchmarks at anomaly
+detection tasks, and less prone to learning from spurious effects than the benchmarks, thus making
+it more reliable at root cause discovery and explanation. 

@@ -1,0 +1,20 @@
+We consider the task of identifying and estimating the causal effect of a treatment variable on a
+long-term outcome variable using data from an observational domain and an experimental domain.
+The observational domain is subject to unobserved confounding. Furthermore, subjects in the experiment
+are only followed for a short period of time; hence, long-term effects of treatment are unobserved
+but short-term effects will be observed. Therefore, data from neither domain alone suffices for
+causal inference about the effect of the treatment on the long-term outcome, and must be pooled in
+a principled way, instead. Athey et al. (2020) proposed a method for systematically combining such
+data for identifying the downstream causal effect in view. Their approach is based on the assumptions
+of internal and external validity of the experimental data, and an extra novel assumption called
+latent unconfoundedness. In this paper, we first review their proposed approach, and then we propose
+three alternative approaches for data fusion for the purpose of identifying and estimating average
+treatment effect as well as the effect of treatment on the treated. Our first approach is based on
+assuming equi-confounding bias for the short-term and long-term outcomes. Our second approach
+is based on a relaxed version of the equi-confounding bias assumption, where we assume the existence
+of an observed confounder such that the short-term and long-term potential outcome variables have
+the same partial additive association with that confounder. Our third approach is based on the proximal
+causal inference framework, in which we assume the existence of an extra variable in the system which
+is a proxy of the latent confounder of the treatment-outcome relation. We propose influence function-based
+estimation strategies for each of our data fusion frameworks and study the robustness properties
+of the proposed estimators. 

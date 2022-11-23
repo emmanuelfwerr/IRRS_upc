@@ -1,0 +1,19 @@
+This work presents a solution to the adaptive tracking control of Euler Lagrange systems with guaranteed
+tracking and parameter estimation error convergence. Specifically a concurrent learning based
+update rule fused by the filtered version of the desired system dynamics in conjunction with a desired
+state based regression matrix has been utilized to ensure that both the position tracking error
+and parameter estimation error terms converge to origin exponentially. As the regression matrix
+used in proposed controller makes use of the desired versions of the system states, an initial, sufficiently
+exciting memory stack can be formed from the knowledge of the desired system trajectory a priori,
+thus removing the initial excitation condition required for the previously proposed concurrent
+learning based controllers in the literature. The output feedback versions of the proposed method
+where only the position measurements are available for the controller design, (for both gradient
+and composite type adaptions) are also presented in order to illustrate the modularity of the proposed
+method. The stability and boundedness of the closed loop signals for all the proposed controllers
+are ensured via Lyapunov based analysis. %Trajectory tracking control of a class of fully actuated
+Euler Lagrange systems is considered in this work. System dynamics is considered to be subject to
+parametric uncertainties and on--line identification uncertain model parameters is also aimed.
+When compared with the relevant past research, via a novel approach, desired states are proposed
+to be used in forming the regression matrix and a desired compensation based concurrent learning
+type adaptive update rule is designed. Via utilizing novel Lyapunov analysis, semi--global exponential
+convergence of both tracking and parameter identification error to the origin is ensured. 

@@ -1,0 +1,19 @@
+Recently, deep learning-based image compression has made signifcant progresses, and has achieved
+better ratedistortion (R-D) performance than the latest traditional method, H.266/VVC, in both
+subjective metric and the more challenging objective metric. However, a major problem is that many
+leading learned schemes cannot maintain a good trade-off between performance and complexity.
+In this paper, we propose an effcient and effective image coding framework, which achieves similar
+R-D performance with lower complexity than the state of the art. First, we develop an improved multi-scale
+residual block (MSRB) that can expand the receptive feld and is easier to obtain global information.
+It can further capture and reduce the spatial correlation of the latent representations. Second,
+a more advanced importance map network is introduced to adaptively allocate bits to different regions
+of the image. Third, we apply a 2D post-quantization flter (PQF) to reduce the quantization error,
+motivated by the Sample Adaptive Offset (SAO) flter in video coding. Moreover, We fnd that the complexity
+of encoder and decoder have different effects on image compression performance. Based on this observation,
+we design an asymmetric paradigm, in which the encoder employs three stages of MSRBs to improve the
+learning capacity, whereas the decoder only needs one stage of MSRB to yield satisfactory reconstruction,
+thereby reducing the decoding complexity without sacrifcing performance. Experimental results
+show that compared to the state-of-the-art method, the encoding and decoding time of the proposed
+method are about 17 times faster, and the R-D performance is only reduced by less than 1% on both Kodak
+and Tecnick datasets, which is still better than H.266/VVC(4:4:4) and other recent learning-based
+methods. Our source code is publicly available at https://github.com/fengyurenpingsheng. 

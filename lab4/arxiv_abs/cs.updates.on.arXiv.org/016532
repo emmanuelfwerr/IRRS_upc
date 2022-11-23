@@ -1,0 +1,18 @@
+We present approximation algorithms for several network design problems in the model of Flexible
+Graph Connectivity (Adjiashvili, Hommelsheim and M\"uhlenthaler, "Flexible Graph Connectivity",
+Math. Program. pp. 1-33 (2021), and IPCO 2020: pp. 13-26). Let $k\geq 1$, $p\geq 1$ and $q\geq 0$ be
+integers. In an instance of the $(p,q)$-Flexible Graph Connectivity problem, denoted $(p,q)$-FGC,
+we have an undirected connected graph $G = (V,E)$, a partition of $E$ into a set of safe edges $S$ and
+a set of unsafe edges $U$, and nonnegative costs $c: E\to\Re$ on the edges. A subset $F \subseteq E$
+of edges is feasible for the $(p,q)$-FGC problem if for any subset $F'$ of unsafe edges with $|F'|\leq
+q$, the subgraph $(V, F \setminus F')$ is $p$-edge connected. The algorithmic goal is to find a feasible
+solution $F$ that minimizes $c(F) = \sum_{e \in F} c_e$. We present a simple $2$-approximation algorithm
+for the $(1,1)$-FGC problem via a reduction to the minimum-cost rooted $2$-arborescence problem.
+This improves on the $2.527$-approximation algorithm of Adjiashvili et al. Our $2$-approximation
+algorithm for the $(1,1)$-FGC problem extends to a $(k+1)$-approximation algorithm for the $(1,k)$-FGC
+problem. We present a $4$-approximation algorithm for the $(p,1)$-FGC problem, and an $O(q\log|V|)$-approximation
+algorithm for the $(p,q)$-FGC problem. Finally, we improve on the result of Adjiashvili et al. for
+the unweighted $(1,1)$-FGC problem by presenting a $16/11$-approximation algorithm. The $(p,q)$-FGC
+problem is related to the well-known Capacitated $k$-Connected Subgraph problem (denoted Cap-k-ECSS)
+that arises in the area of Capacitated Network Design. We give a $\min(k,2 u_{max})$-approximation
+algorithm for the Cap-k-ECSS problem, where $u_{max}$ denotes the maximum capacity of an edge.

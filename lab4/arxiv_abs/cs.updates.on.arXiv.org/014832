@@ -1,0 +1,20 @@
+For a $d$-dimensional log-concave distribution $\pi(\theta)\propto e^{-f(\theta)}$ on a polytope
+$K$, we consider the problem of outputting samples from a distribution $\nu$ which is $O(\varepsilon)$-close
+in infinity-distance $\sup_{\theta\in K}|\log\frac{\nu(\theta)}{\pi(\theta)}|$ to $\pi$.
+Such samplers with infinity-distance guarantees are specifically desired for differentially
+private optimization as traditional sampling algorithms which come with total-variation distance
+or KL divergence bounds are insufficient to guarantee differential privacy. Our main result is
+an algorithm that outputs a point from a distribution $O(\varepsilon)$-close to $\pi$ in infinity-distance
+and requires $O((md+dL^2R^2)\times(LR+d\log(\frac{Rd+LRd}{\varepsilon r}))\times md^{\omega-1})$
+arithmetic operations, where $f$ is $L$-Lipschitz, $K$ is defined by $m$ inequalities, is contained
+in a ball of radius $R$ and contains a ball of smaller radius $r$, and $\omega$ is the matrix-multiplication
+constant. In particular this runtime is logarithmic in $\frac{1}{\varepsilon}$ and significantly
+improves on prior works. Technically, we depart from the prior works that construct Markov chains
+on a $\frac{1}{\varepsilon^2}$-discretization of $K$ to achieve a sample with $O(\varepsilon)$
+infinity-distance error, and present a method to convert continuous samples from $K$ with total-variation
+bounds to samples with infinity bounds. To achieve improved dependence on $d$, we present a "soft-threshold"
+version of the Dikin walk which may be of independent interest. Plugging our algorithm into the framework
+of the exponential mechanism yields similar improvements in the running time of $\varepsilon$-pure
+differentially private algorithms for optimization problems such as empirical risk minimization
+of Lipschitz-convex functions and low-rank approximation, while still achieving the tightest
+known utility bounds. 

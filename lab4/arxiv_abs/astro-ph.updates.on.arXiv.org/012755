@@ -1,0 +1,20 @@
+We present the General Stellar Parameterizer from Photometry (GSP-Phot), which is part of the astrophysical
+parameters inference system (Apsis). GSP-Phot is designed to produce a homogeneous catalogue
+of parameters for hundreds of millions of single non-variable stars based on their astrometry,
+photometry, and low-resolution BP/RP spectra. These parameters are effective temperature, surface
+gravity, metallicity, absolute $M_G$ magnitude, radius, distance, and extinction for each star.
+GSP-Phot uses a Bayesian forward-modelling approach to simultaneously fit the BP/RP spectrum,
+parallax, and apparent $G$ magnitude. A major design feature of GSP-Phot is the use of the apparent
+flux levels of BP/RP spectra to derive, in combination with isochrone models, tight observational
+constraints on radii and distances. We carefully validate the uncertainty estimates by exploiting
+repeat Gaia observations of the same source. The data release includes GSP-Phot results for 471
+million sources with $G<19$. Typical differences to literature values are 110 K for $T_{\rm eff}$
+and 0.2-0.25 for $\log g$, but these depend strongly on data quality. In particular, GSP-Phot results
+are significantly better for stars with good parallax measurements ($\varpi/\sigma_varpi>20$),
+mostly within 2kpc. Metallicity estimates exhibit substantial biases compared to literature
+values and are only useful at a qualitative level. However, we provide an empirical calibration
+of our metallicity estimates that largely removes these biases. Extinctions $A_0$ and $A_{\rm
+BP}$ show typical differences from reference values of 0.07-0.09 mag. MCMC samples of the parameters
+are also available for 95% of the sources. GSP-Phot provides a homogeneous catalogue of stellar
+parameters, distances, and extinctions that can be used for various purposes, such as sample selections
+(OB stars, red giants, solar analogues etc.). 

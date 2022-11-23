@@ -1,0 +1,20 @@
+In many fields of science and engineering, models with different fidelities are available. Physical
+experiments or detailed simulations that accurately capture the behavior of the system are regarded
+as high-fidelity models with low model uncertainty, however, they are expensive to run. On the other
+hand, simplified physical experiments or numerical models are seen as low-fidelity models that
+are cheaper to evaluate. Although low-fidelity models are often not suitable for direct use in reliability
+analysis due to their low accuracy, they can offer information about the trend of the high-fidelity
+model thus providing the opportunity to explore the design space at a low cost. This study presents
+a new approach called adaptive multi-fidelity Gaussian process for reliability analysis (AMGPRA).
+Contrary to selecting training points and information sources in two separate stages as done in
+state-of-the-art mfEGRA method, the proposed approach finds the optimal training point and information
+source simultaneously using the novel collective learning function (CLF). CLF is able to assess
+the global impact of a candidate training point from an information source and it accommodates any
+learning function that satisfies a certain profile. In this context, CLF provides a new direction
+for quantifying the impact of new training points and can be easily extended with new learning functions
+to adapt to different reliability problems. The performance of the proposed method is demonstrated
+by three mathematical examples and one engineering problem concerning the wind reliability of
+transmission towers. It is shown that the proposed method achieves similar or higher accuracy with
+reduced computational costs compared to state-of-the-art single and multi-fidelity methods.
+A key application of AMGPRA is high-fidelity fragility modeling using complex and costly physics-based
+computational models. 

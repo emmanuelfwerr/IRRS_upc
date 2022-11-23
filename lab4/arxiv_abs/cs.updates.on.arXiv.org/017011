@@ -1,0 +1,19 @@
+Runtime-reconfigurable software coupled with reconfigurable hardware is highly desirable as
+a means towards maximizing runtime efficiency without compromising programmability. Compilers
+for such software systems are extremely difficult to design as they must leverage different types
+of hardware at runtime. To address the need for static and dynamic compiler optimization of workflows
+matched to dynamically reconfigurable hardware, we propose a novel design of the central component
+of a dynamic software compiler for software defined hardware. Our comprehensive design focuses
+not just on static knowledge but also on semi-supervised extraction of knowledge from program executions
+and developing their performance models. Specifically, our novel {\it dynamic and extensible
+knowledge base} 1) continuously gathers knowledge during execution of workflows 2) identifies
+{\it optimal} implementations of workflows on {\it optimal} (available) hardware configurations.
+It plays a hub role in storing information from, and providing information to other components of
+the compiler, as well as the human analyst. Through a rich tripartite graph representation, the
+knowledge base captures and learns extensive information on decomposition and mapping of code
+steps to kernels and mapping of kernels to available hardware configurations. The knowledge base
+is implemented using the C++ Boost Library and is capable of quickly processing offline and online
+queries and updates. We show that our knowledge base can answer queries in $1ms$ regardless of the
+number of workflows it stores. To the best of our knowledge, this is the first design of a dynamic and
+extensible knowledge base to support compilation of high-level languages to leverage arbitrary
+reconfigurable platforms. 

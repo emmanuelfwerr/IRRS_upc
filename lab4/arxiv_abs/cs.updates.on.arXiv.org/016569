@@ -1,0 +1,19 @@
+Cloud applications have reshaped the model of services and infrastructure of the Internet. Search
+engines, social networks, content delivery and retail and e-commerce sites belong to this group
+of applications. An important element in the architecture of data centers where these applications
+run is the communication infrastructure, commonly known as data center networks (DCNs). A critical
+challenge DCNs have to address is the processing of the traffic of cloud applications, which due
+to its properties is essentially different to the traffic of other Internet applications. In order
+to improve the responsiveness and throughput of applications, DCNs should be able to prioritize
+short flows (a few KB) over long flows (several MB). However, given the time and space variations
+the traffic presents, the information about flow sizes is not available in advance in order to plan
+the flow scheduling. In this paper, we present an adaptable mechanism called Adaptable Workload-Agnostic
+Flow Scheduling (AWAFS). It is an adaptable approach that can adjust in an agnostic way the scheduling
+configuration of DCN forwarding devices. This agnostic adjustment contributes to reduce the Flow
+Completion Time (FCT) of those short flows, representing around 85% of the traffic handled by cloud
+applications. Our evaluation results based on simulation show that AWAFS can reduce the average
+FCT of short flows between 16.9% and 45.2% when compared to the best existing agnostic non-adaptable
+solution, without inducing starvation on long flows. Indeed, it can provide improvements as high
+as 39% for long flows. Additionally, AWAFS can improve the FCT for short flows in scenarios with high
+heterogeneity in the traffic present in the network, with a reduction up to 5% for the average FCT
+and 15% for the tail FCT. 

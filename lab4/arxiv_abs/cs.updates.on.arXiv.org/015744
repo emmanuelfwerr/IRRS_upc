@@ -1,0 +1,19 @@
+Deep learning is regarded as a promising solution for reversible steganography. The recent development
+of end-to-end learning has made it possible to bypass multiple intermediate stages of steganographic
+operations with a pair of encoder and decoder neural networks. This framework is, however, incapable
+of guaranteeing perfect reversibility since it is difficult for this kind of monolithic machinery,
+in the form of a black box, to learn the intricate logics of reversible computing. A more reliable
+way to develop a learning-based reversible steganographic scheme is through a divide-and-conquer
+paradigm. Prediction-error modulation is a well-established modular framework that consists
+of an analytics module and a coding module. The former serves the purpose of analysing pixel correlations
+and predicting pixel intensities, while the latter specialises in reversible coding mechanisms.
+Given that reversibility is governed independently by the coding module, we narrow our focus to
+the incorporation of neural networks into the analytics module. The objective of this study is to
+evaluate the impacts of different training configurations on predictive neural networks and to
+provide practical insights. Context-aware pixel intensity prediction has a central role in reversible
+steganography and can be perceived as a low-level computer vision task. Therefore, instead of reinventing
+the wheel, we can adopt neural network models originally designed for such computer vision tasks
+to perform intensity prediction. Furthermore, we rigorously investigate the effect of intensity
+initialisation upon predictive performance and the influence of distributional shift in dual-layer
+prediction. Experimental results show that state-of-the-art steganographic performance can
+be achieved with advanced neural network models. 

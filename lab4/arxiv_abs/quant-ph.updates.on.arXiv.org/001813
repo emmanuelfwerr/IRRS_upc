@@ -1,0 +1,19 @@
+We consider the hardness of computing additive approximations to output probabilities of random
+quantum circuits. We consider three random circuit families, namely, Haar random, $p=1$ QAOA,
+and random IQP circuits. Our results are as follows. For Haar random circuits with $m$ gates, we improve
+on prior results by showing $\mathsf{coC_=P}$ hardness of average-case additive approximations
+to an imprecision of $2^{-O(m)}$. Efficient classical simulation of such problems would imply
+the collapse of the polynomial hierarchy. For constant depth circuits i.e., when $m=O(n)$, this
+linear scaling in the exponent is within a constant of the scaling required to show hardness of sampling.
+Prior to our work, such a result was shown only for Boson Sampling in Bouland et al (2021). We also use
+recent results in polynomial interpolation to show $\mathsf{coC_=P}$ hardness under $\mathsf{BPP}$
+reductions rather than $\mathsf{BPP}^{\mathsf{NP}}$ reductions. This improves the results
+of prior work for Haar random circuits both in terms of the error scaling and the power of reductions.
+Next, we consider random $p=1$ QAOA and IQP circuits and show that in the average-case, it is $\mathsf{coC_=P}$
+hard to approximate the output probability to within an additive error of $2^{-O(n)}$. For $p=1$
+QAOA circuits, this work constitutes the first average-case hardness result for the problem of
+approximating output probabilities for random QAOA circuits, which include Sherrington-Kirkpatrick
+and Erd\"{o}s-Renyi graphs. For IQP circuits, a consequence of our results is that approximating
+the Ising partition function with imaginary couplings to an additive error of $2^{-O(n)}$ is hard
+even in the average-case, which extends prior work on worst-case hardness of multiplicative approximation
+to Ising partition functions. 

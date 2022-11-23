@@ -1,0 +1,19 @@
+Markov chain Monte Carlo (MCMC) is an all-purpose tool that allows one to generate dependent replicates
+from a posterior distribution for effectively any Bayesian hierarchical model. As such, MCMC has
+become a standard in Bayesian statistics. However, convergence issues, tuning, and the effective
+sample size of the MCMC are nontrivial considerations that are often overlooked or can be difficult
+to assess. Moreover, these practical issues can produce a significant computational burden. This
+motivates us to consider finding closed-form expressions of the posterior distribution that are
+computationally straightforward to sample from directly. We focus on a broad class of Bayesian
+generalized linear mixed-effects models (GLMM) that allows one to jointly model data of different
+types (e.g., Gaussian, Poisson, and binomial distributed observations). Exact sampling from
+the posterior distribution for Bayesian GLMMs is such a difficult problem that it is now arguably
+overlooked as a possible problem to solve. To solve this problem, we derive a new class of distributions
+that gives one the flexibility to specify the prior on fixed and random effects to be any conjugate
+multivariate distribution. We refer to this new distribution as the generalized conjugate multivariate
+(GCM) distribution, and several technical results are provided. The expression of the exact posterior
+distribution is given along with the steps to obtain direct independent simulations from the posterior
+distribution. These direct simulations have an efficient projection/regression form, and hence,
+we refer to our method as Exact Posterior Regression (EPR). Several theoretical results are developed
+that create the foundation for EPR. Illustrative examples are provided including a simulation
+study and an analysis of estimates from the U.S. Census Bureau's American Community Survey (ACS).

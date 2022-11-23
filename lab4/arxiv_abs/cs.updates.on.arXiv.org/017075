@@ -1,0 +1,18 @@
+Adversarial learning is a widely used technique in fair representation learning to remove the biases
+on sensitive attributes from data representations. It usually requires to incorporate the sensitive
+attribute labels as prediction targets. However, in many scenarios the sensitive attribute labels
+of many samples can be unknown, and it is difficult to train a strong discriminator based on the scarce
+data with observed attribute labels, which may lead to generate unfair representations. In this
+paper, we propose a semi-supervised fair representation learning approach based on adversarial
+variational autoencoder, which can reduce the dependency of adversarial fair models on data with
+labeled sensitive attributes. More specifically, we use a bias-aware model to capture inherent
+bias information on sensitive attribute by accurately predicting sensitive attributes from input
+data, and we use a bias-free model to learn debiased fair representations by using adversarial learning
+to remove bias information from them. The hidden representations learned by the two models are regularized
+to be orthogonal. In addition, the soft labels predicted by the two models are further integrated
+into a semi-supervised variational autoencoder to reconstruct the input data, and we apply an additional
+entropy regularization to encourage the attribute labels inferred from the bias-free model to
+be high-entropy. In this way, the bias-aware model can better capture attribute information while
+the bias-free model is less discriminative on sensitive attributes if the input data is well reconstructed.
+Extensive experiments on two datasets for different tasks validate that our approach can achieve
+good representation learning fairness under limited data with sensitive attribute labels. 

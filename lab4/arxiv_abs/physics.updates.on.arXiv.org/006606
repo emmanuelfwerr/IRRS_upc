@@ -1,0 +1,19 @@
+The advent of fast sensing technologies allows for real-time model updates in many applications
+where the model parameters are uncertain. Bayesian algorithms, such as ensemble smoothers, offer
+a real-time probabilistic inversion accounting for uncertainties. However, they rely on the repeated
+evaluation of the computational models, and deep neural network (DNN) based proxies can be useful
+to address this computational bottleneck. This paper studies the effects of the approximate nature
+of the deep learned models and associated model errors during the inversion of extra-deep borehole
+electromagnetic (EM) measurements, which are critical for geosteering. Using a deep neural network
+(DNN) as a forward model allows us to perform thousands of model evaluations within seconds, which
+is very useful for quantifying uncertainties and non-uniqueness in real-time. While significant
+efforts are usually made to ensure the accuracy of the DNN models, it is known that they contain unknown
+model errors in the regions not covered by the training data. When DNNs are utilized during inversion
+of EM measurements, the effects of the model errors could manifest themselves as a bias in the estimated
+input parameters and, consequently, might result in a low-quality geosteering decision. We present
+numerical results highlighting the challenges associated with the inversion of EM measurements
+while neglecting model error. We further demonstrate the utility of a recently proposed flexible
+iterative ensemble smoother in reducing the effect of model bias by capturing the unknown model
+errors, thus improving the quality of the estimated subsurface properties for geosteering operation.
+Moreover, we describe a procedure for identifying inversion multimodality and propose possible
+solutions to alleviate it in real-time. 

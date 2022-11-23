@@ -1,0 +1,19 @@
+In this paper, we analyze how well a machine can solve a general problem in queueing theory. To answer
+this question, we use a deep learning model to predict the stationary queue-length distribution
+of an $M/G/1$ queue (Poisson arrivals, general service times, one server). To the best of our knowledge,
+this is the first time a machine learning model is applied to a general queueing theory problem. We
+chose $M/G/1$ queue for this paper because it lies "on the cusp" of the analytical frontier: on the
+one hand exact solution for this model is available, which is both computationally and mathematically
+complex. On the other hand, the problem (specifically the service time distribution) is general.
+This allows us to compare the accuracy and efficiency of the deep learning approach to the analytical
+solutions. The two key challenges in applying machine learning to this problem are (1) generating
+a diverse set of training examples that provide a good representation of a "generic" positive-valued
+distribution, and (2) representations of the continuous distribution of service times as an input.
+We show how we overcome these challenges. Our results show that our model is indeed able to predict
+the stationary behavior of the $M/G/1$ queue extremely accurately: the average value of our metric
+over the entire test set is $0.0009$. Moreover, our machine learning model is very efficient, computing
+very accurate stationary distributions in a fraction of a second (an approach based on simulation
+modeling would take much longer to converge). We also present a case-study that mimics a real-life
+setting and shows that our approach is more robust and provides more accurate solutions compared
+to the existing methods. This shows the promise of extending our approach beyond the analytically
+solvable systems (e.g., $G/G/1$ or $G/G/c$). 

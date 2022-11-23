@@ -1,0 +1,20 @@
+Objective: To determine if a realistic, but computationally efficient model of the electrocardiogram
+can be used to pre-train a deep neural network (DNN) with a wide range of morphologies and abnormalities
+specific to a given condition - T-wave Alternans (TWA) as a result of Post-Traumatic Stress Disorder,
+or PTSD - and significantly boost performance on a small database of rare individuals. Approach:
+Using a previously validated artificial ECG model, we generated 180,000 artificial ECGs with or
+without significant TWA, with varying heart rate, breathing rate, TWA amplitude, and ECG morphology.
+A DNN, trained on over 70,000 patients to classify 25 different rhythms, was modified the output
+layer to a binary class (TWA or no-TWA, or equivalently, PTSD or no-PTSD), and transfer learning
+was performed on the artificial ECG. In a final transfer learning step, the DNN was trained and cross-validated
+on ECG from 12 PTSD and 24 controls for all combinations of using the three databases. Main results:
+The best performing approach (AUROC = 0.77, Accuracy = 0.72, F1-score = 0.64) was found by performing
+both transfer learning steps, using the pre-trained arrhythmia DNN, the artificial data and the
+real PTSD-related ECG data. Removing the artificial data from training led to the largest drop in
+performance. Removing the arrhythmia data from training provided a modest, but significant, drop
+in performance. The final model showed no significant drop in performance on the artificial data,
+indicating no overfitting. Significance: In healthcare, it is common to only have a small collection
+of high-quality data and labels, or a larger database with much lower quality (and less relevant)
+labels. The paradigm presented here, involving model-based performance boosting, provides a
+solution through transfer learning on a large realistic artificial database, and a partially relevant
+real database. 

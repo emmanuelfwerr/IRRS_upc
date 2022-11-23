@@ -1,0 +1,19 @@
+Heat transfer characteristics of nanofluids have been extensively studied since the 1990s. Research
+investigations show that the suspended nanoparticles significantly alter the suspension's thermal
+properties. The thermal conductivity of nanofluids is one of the properties that is generally found
+to be greater than that of the base fluid. This increase in thermal conductivity is found to depend
+on several parameters. Several theories have been proposed to model the thermal conductivities
+of nanofluids, but there is no reliable universal theory yet to model the anomalous thermal conductivity
+of nanofluids. In recent years, supervised data-driven methods have been successfully employed
+to create surrogate models across various scientific disciplines, especially for modeling difficult-to-understand
+phenomena. These supervised learning methods allow the models to capture highly non-linear phenomena.
+In this work, we have taken advantage of existing correlations and used them concurrently with available
+experimental results to develop more robust surrogate models for predicting the thermal conductivity
+of nanofluids. Artificial neural networks are trained using the transfer learning approach to
+predict the thermal conductivity enhancement of nanofluids with spherical particles for 32 different
+particle-fluid combinations (8 particles materials and 4 fluids). The large amount of lower accuracy
+data generated from correlations is used to coarse-tune the model parameters, and the limited amount
+of more trustworthy experimental data is used to fine-tune the model parameters. The transfer learning-based
+models' results are compared with those from baseline models which are trained only on experimental
+data using a goodness of fit metric. It is found that the transfer learning models perform better
+with goodness of fit values of 0.93 as opposed to 0.83 from the baseline models. 

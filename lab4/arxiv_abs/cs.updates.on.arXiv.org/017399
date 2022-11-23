@@ -1,0 +1,18 @@
+Feature-based transfer is one of the most effective methodologies for transfer learning. Existing
+studies usually assume that the learned new feature representation is \emph{domain-invariant},
+and thus train a transfer model $\mathcal{M}$ on the source domain. In this paper, we consider a more
+realistic scenario where the new feature representation is suboptimal and small divergence still
+exists across domains. We propose a new transfer model called Randomized Transferable Machine
+(RTM) to handle such small divergence of domains. Specifically, we work on the new source and target
+data learned from existing feature-based transfer methods. The key idea is to enlarge source training
+data populations by randomly corrupting the new source data using some noises, and then train a transfer
+model $\widetilde{\mathcal{M}}$ that performs well on all the corrupted source data populations.
+In principle, the more corruptions are made, the higher the probability of the new target data can
+be covered by the constructed source data populations, and thus better transfer performance can
+be achieved by $\widetilde{\mathcal{M}}$. An ideal case is with infinite corruptions, which however
+is infeasible in reality. We develop a marginalized solution that enables to train an $\widetilde{\mathcal{M}}$
+without conducting any corruption but equivalent to be trained using infinite source noisy data
+populations. We further propose two instantiations of $\widetilde{\mathcal{M}}$, which theoretically
+show the transfer superiority over the conventional transfer model $\mathcal{M}$. More importantly,
+both instantiations have closed-form solutions, leading to a fast and efficient training process.
+Experiments on various real-world transfer tasks show that RTM is a promising transfer model. 

@@ -1,0 +1,20 @@
+We consider a multiperiod stochastic capacitated facility location problem under uncertain demand
+and budget in each period. Using a scenario tree representation of the uncertainties, we formulate
+a multistage stochastic integer program to dynamically locate facilities in each period and compare
+it with a two-stage approach that determines the facility locations up front. In the multistage
+model, in each stage, a decision maker optimizes facility locations and recourse flows from open
+facilities to demand sites, to minimize certain risk measures of the cost associated with current
+facility location and shipment decisions. When the budget is also uncertain, a popular modeling
+framework is to prioritize the candidate sites. In the two-stage model, the priority list is decided
+in advance and fixed through all periods, while in the multistage model, the priority list can change
+adaptively. In each period, the decision maker follows the priority list to open facilities according
+to the realized budget, and optimizes recourse flows given the realized demand. Using expected
+conditional risk measures (ECRMs), we derive tight lower bounds for the gaps between the optimal
+objective values of risk-averse multistage models and their two-stage counterparts in both settings
+with and without prioritization. Moreover, we propose two approximation algorithms to efficiently
+solve risk-averse two-stage and multistage models without prioritization, which are asymptotically
+optimal under an expanding market assumption. We also design a set of super-valid inequalities
+for risk-averse two-stage and multistage stochastic programs with prioritization to reduce the
+computational time. We conduct numerical studies using both randomly generated and real-world
+instances with diverse sizes, to demonstrate the tightness of the analytical bounds and efficacy
+of the approximation algorithms and prioritization cuts. 

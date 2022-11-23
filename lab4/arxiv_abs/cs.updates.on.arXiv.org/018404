@@ -1,0 +1,19 @@
+The Transformer-based encoder-decoder framework is becoming popular in scene text recognition,
+largely because it naturally integrates recognition clues from both visual and semantic domains.
+However, recent studies show that the two kinds of clues are not always well registered and therefore,
+feature and character might be misaligned in the difficult text (e.g., with rare shapes). As a result,
+constraints such as character position are introduced to alleviate this problem. Despite certain
+success, a content-free positional embedding hardly associates stably with meaningful local
+image regions. In this paper, we propose a novel module called Multi-Domain Character Distance
+Perception (MDCDP) to establish a visual and semantic related positional encoding. MDCDP uses
+positional embedding to query both visual and semantic features following the attention mechanism.
+The two kinds of constrained features are then fused to produce a reinforced feature, generating
+a content-aware embedding that well perceives spacing variations and semantic affinities among
+characters, i.e., multi-domain character distance. We develop a novel network named CDistNet
+that stacks multiple MDCDPs to guide a gradually precise distance modeling. Thus, the feature-character
+alignment is well built even various recognition difficulties presented. We create two series
+of augmented datasets with increasing recognition difficulties and apply CDistNet to both them
+and six public benchmarks. The experiments demonstrate that CDistNet outperforms recent popular
+methods by large margins in challenging recognition scenarios. It also achieves state-of-the-art
+accuracy on standard benchmarks. In addition, the visualization shows that CDistNet achieves
+proper information utilization in both visual and semantic domains. Our code is given in https://github.com/simplify23/CDistNet.

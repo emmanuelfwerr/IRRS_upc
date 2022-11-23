@@ -1,0 +1,19 @@
+Performing data-intensive analytics is an essential part of modern Earth science. As such, research
+in atmospheric physics and meteorology frequently requires the processing of very large observational
+and/or modeled datasets. Typically, these datasets (a) have high dimensionality, i.e. contain
+various measurements per spatiotemporal point, (b) are extremely large, containing observations
+over a long time period. Additionally, (c) the analytical tasks being performed on these datasets
+are structurally complex. Over the years, the binary format NetCDF has been established as a de-facto
+standard in distributing and exchanging such multi-dimensional datasets in the Earth science
+community -- along with tools and APIs to visualize, process, and generate them. Unfortunately,
+these access methods typically lack either (1) an easy-to-use but rich query interface or (2) an
+automatic optimization pipeline tailored towards the specialities of these datasets. As such,
+researchers from the field of Earth sciences (which are typically not computer scientists) unnecessarily
+struggle in efficiently working with these datasets on a daily basis. Consequently, in this work,
+we aim at resolving the aforementioned issues. Instead of proposing yet another specialized tool
+and interface to work with atmospheric datasets, we integrate sophisticated NetCDF processing
+capabilities into the established SparkSQL dataflow engine -- resulting in our system Northlight.
+In contrast to comparable systems, Northlight introduces a set of fully automatic optimizations
+specifically tailored towards NetCDF processing. We experimentally show that Northlight scales
+gracefully with the selectivity of the analysis tasks and outperforms the comparable state-of-the-art
+pipeline by up to a factor of 6x. 

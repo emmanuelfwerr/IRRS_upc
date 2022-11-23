@@ -1,0 +1,18 @@
+Let $\mathcal{F}$ be a family of graphs, and let $p,r$ be nonnegative integers. The \textsc{$(p,r,\mathcal{F})$-Covering}
+problem asks whether for a graph $G$ and an integer $k$, there exists a set $D$ of at most $k$ vertices
+in $G$ such that $G^p\setminus N_G^r[D]$ has no induced subgraph isomorphic to a graph in $\mathcal{F}$,
+where $G^p$ is the $p$-th power of $G$. The \textsc{$(p,r,\mathcal{F})$-Packing} problem asks
+whether for a graph $G$ and an integer $k$, $G^p$ has $k$ induced subgraphs $H_1,\ldots,H_k$ such
+that each $H_i$ is isomorphic to a graph in $\mathcal{F}$, and for distinct $i,j\in \{1, \ldots,
+k\}$, the distance between $V(H_i)$ and $V(H_j)$ in $G$ is larger than $r$. We show that for every
+fixed nonnegative integers $p,r$ and every fixed nonempty finite family $\mathcal{F}$ of connected
+graphs, the \textsc{$(p,r,\mathcal{F})$-Covering} problem with $p\leq2r+1$ and the \textsc{$(p,r,\mathcal{F})$-Packing}
+problem with $p\leq2\lfloor r/2\rfloor+1$ admit almost linear kernels on every nowhere dense
+class of graphs, and admit linear kernels on every class of graphs with bounded expansion, parameterized
+by the solution size $k$. We obtain the same kernels for their annotated variants. As corollaries,
+we prove that \textsc{Distance-$r$ Vertex Cover}, \textsc{Distance-$r$ Matching}, \textsc{$\mathcal{F}$-Free
+Vertex Deletion}, and \textsc{Induced-$\mathcal{F}$-Packing} for any fixed finite family $\mathcal{F}$
+of connected graphs admit almost linear kernels on every nowhere dense class of graphs and linear
+kernels on every class of graphs with bounded expansion. Our results extend the results for \textsc{Distance-$r$
+Dominating Set} by Drange et al. (STACS 2016) and Eickmeyer et al. (ICALP 2017), and the result for
+\textsc{Distance-$r$ Independent Set} by Pilipczuk and Siebertz (EJC 2021). 

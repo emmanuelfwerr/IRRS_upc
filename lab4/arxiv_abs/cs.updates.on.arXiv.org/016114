@@ -1,0 +1,18 @@
+We develop biologically plausible training mechanisms for self-supervised learning (SSL) in
+deep networks. Specifically, by biological plausible training we mean (i) All updates of weights
+are based on current activities of pre-synaptic units and current, or activity retrieved from short
+term memory of post synaptic units, including at the top-most error computing layer, (ii) Complex
+computations such as normalization, inner products and division are avoided (iii) Asymmetric
+connections between units, (iv) Most learning is carried out in an unsupervised manner. SSL with
+a contrastive loss satisfies the third condition as it does not require labelled data and it introduces
+robustness to observed perturbations of objects, which occur naturally as objects or observer
+move in 3d and with variable lighting over time. We propose a contrastive hinge based loss whose error
+involves simple local computations satisfying (ii), as opposed to the standard contrastive losses
+employed in the literature, which do not lend themselves easily to implementation in a network architecture
+due to complex computations involving ratios and inner products. Furthermore we show that learning
+can be performed with one of two more plausible alternatives to backpropagation that satisfy conditions
+(i) and (ii). The first is difference target propagation (DTP) and the second is layer-wise learning
+(LL), where each layer is directly connected to a layer computing the loss error. Both methods represent
+alternatives to the symmetric weight issue of backpropagation. By training convolutional neural
+networks (CNNs) with SSL and DTP, LL, we find that our proposed framework achieves comparable performance
+to standard BP learning downstream linear classifier evaluation of the learned embeddings. 

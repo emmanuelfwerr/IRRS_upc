@@ -1,0 +1,19 @@
+Purpose: Long scan time in phase encoding for forming complete K-space matrices is a critical drawback
+of MRI, making patients uncomfortable and wasting important time for diagnosing emergent diseases.
+This paper aims to reducing the scan time by actively and sequentially selecting partial phases
+in a short time so that a slice can be accurately reconstructed from the resultant slice-specific
+incomplete K-space matrix. Methods: A transformer based deep reinforcement learning framework
+is proposed for actively determining a sequence of partial phases according to reconstruction-quality
+based Q-value (a function of reward), where the reward is the improvement degree of reconstructed
+image quality. The Q-value is efficiently predicted from binary phase-indicator vectors, incomplete
+K-space matrices and their corresponding undersampled images with a light-weight transformer
+so that the sequential information of phases and global relationship in images can be used. The inverse
+Fourier transform is employed for efficiently computing the undersampled images and hence gaining
+the rewards of selecting phases. Results: Experimental results on the fastMRI dataset with original
+K-space data accessible demonstrate the efficiency and accuracy superiorities of proposed method.
+Compared with the state-of-the-art reinforcement learning based method proposed by Pineda et
+al., the proposed method is roughly 150 times faster and achieves significant improvement in reconstruction
+accuracy. Conclusions: We have proposed a light-weight transformer based deep reinforcement
+learning framework for generating high-quality slice-specific trajectory consisting of a small
+number of phases. The proposed method, called TITLE (Transformer Involved Trajectory LEarning),
+has remarkable superiority in phase-encode selection efficiency and image reconstruction accuracy.

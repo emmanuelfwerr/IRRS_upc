@@ -1,0 +1,20 @@
+State-of-the-art contextualized models eg. BERT use tasks such as WiC and WSD to evaluate their
+word-in-context representations. This inherently assumes that performance in these tasks reflect
+how well a model represents the coupled word and context semantics. We question this assumption
+by presenting the first quantitative analysis on the context-word interaction required and being
+tested in major contextual lexical semantic tasks, taking into account that tasks can be inherently
+biased and models can learn spurious correlations from datasets. To achieve this, we run probing
+baselines on masked input, based on which we then propose measures to calculate the degree of context
+or word biases in a dataset, and plot existing datasets on a continuum. The analysis were performed
+on both models and humans to decouple biases inherent to the tasks and biases learned from the datasets.
+We found that, (1) to models, most existing datasets fall into the extreme ends of the continuum:
+the retrieval-based tasks and especially the ones in the medical domain (eg. COMETA) exhibit strong
+target word bias while WiC-style tasks and WSD show strong context bias; (2) AM2iCo and Sense Retrieval
+show less extreme model biases and challenge a model more to represent both the context and target
+words. (3) A similar trend of biases exists in humans but humans are much less biased compared with
+models as humans found semantic judgments more difficult with the masked input, indicating models
+are learning spurious correlations. This study demonstrates that with heavy context or target
+word biases, models are usually not being tested for word-in-context representations as such in
+these tasks and results are therefore open to misinterpretation. We recommend our framework as
+a sanity check for context and target word biases in future task design and model interpretation
+in lexical semantics. 

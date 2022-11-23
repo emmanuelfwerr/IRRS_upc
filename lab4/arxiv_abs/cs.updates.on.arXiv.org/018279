@@ -1,0 +1,19 @@
+Deep-learning based techniques have contributed to the remarkable progress in the field of automatic
+image quality assessment (IQA). Existing IQA methods are designed to measure the quality of an image
+in terms of Mean Opinion Score (MOS) at the image-level (i.e. the whole image) or at the patch-level
+(dividing the image into multiple units and measuring quality of each patch). Some applications
+may require assessing the quality at the pixel-level (i.e. MOS value for each pixel), however, this
+is not possible in case of existing techniques as the spatial information is lost owing to their network
+structures. This paper proposes an IQA algorithm that can measure the MOS at the pixel-level, in
+addition to the image-level MOS. The proposed algorithm consists of three core parts, namely: i)
+Local IQA; ii) Region of Interest (ROI) prediction; iii) High-level feature embedding. The Local
+IQA part outputs the MOS at the pixel-level, or pixel-by-pixel MOS - we term it 'pMOS'. The ROI prediction
+part outputs weights that characterize the relative importance of region when calculating the
+image-level IQA. The high-level feature embedding part extracts high-level image features which
+are then embedded into the Local IQA part. In other words, the proposed algorithm yields three outputs:
+the pMOS which represents MOS for each pixel, the weights from the ROI indicating the relative importance
+of region, and finally the image-level MOS that is obtained by the weighted sum of pMOS and ROI values.
+The image-level MOS thus obtained by utilizing pMOS and ROI weights shows superior performance
+compared to the existing popular IQA techniques. In addition, visualization results indicate
+that predicted pMOS and ROI outputs are reasonably aligned with the general principles of the human
+visual system (HVS). 

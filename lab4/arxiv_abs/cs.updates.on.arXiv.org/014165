@@ -1,0 +1,20 @@
+Light emitted from a source into a scene can undergo complex interactions with scene surfaces of
+different material types before being reflected. During this transport, every surface reflection
+is encoded in the properties of the photons that reach the detector, including time, direction,
+intensity, wavelength and polarization. Conventional imaging systems capture intensity by integrating
+over all other dimensions of the light, hiding this rich scene information. Existing methods are
+capable of untangling these measurements into their spatial and temporal dimensions, fueling
+geometric scene understanding tasks. However, examining material properties jointly with geometric
+properties is an open challenge that could enable unprecedented capabilities beyond geometric
+scene understanding, allowing for material-dependent scene understanding and imaging through
+complex transport. In this work, we close this gap, and propose a computational light transport
+imaging method that captures the spatially- and temporally-resolved complete polarimetric response
+of a scene. Our method hinges on a 7D tensor theory of light transport. We discover low-rank structure
+in the polarimetric tensor dimension and propose a data-driven rotating ellipsometry method that
+learns to exploit redundancy of polarimetric structure. We instantiate our theory with two prototypes:
+spatio-polarimetric imaging and coaxial temporal-polarimetric imaging. This allows us, for
+the first time, to decompose scene light transport into temporal, spatial, and complete polarimetric
+dimensions that unveil scene properties hidden to conventional methods. We validate the applicability
+of our method on diverse tasks, including shape reconstruction with subsurface scattering, seeing
+through scattering media, untangling multi-bounce light transport, breaking metamerism, and
+decomposition of crystals. 

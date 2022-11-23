@@ -1,0 +1,19 @@
+Deraining is a significant and fundamental computer vision task, aiming to remove the rain streaks
+and accumulations in an image or video captured under a rainy day. Existing deraining methods usually
+make heuristic assumptions of the rain model, which compels them to employ complex optimization
+or iterative refinement for high recovery quality. This, however, leads to time-consuming methods
+and affects the effectiveness for addressing rain patterns deviated from from the assumptions.
+In this paper, we propose a simple yet efficient deraining method by formulating deraining as a predictive
+filtering problem without complex rain model assumptions. Specifically, we identify spatially-variant
+predictive filtering (SPFilt) that adaptively predicts proper kernels via a deep network to filter
+different individual pixels. Since the filtering can be implemented via well-accelerated convolution,
+our method can be significantly efficient. We further propose the EfDeRain+ that contains three
+main contributions to address residual rain traces, multi-scale, and diverse rain patterns without
+harming the efficiency. First, we propose the uncertainty-aware cascaded predictive filtering
+(UC-PFilt) that can identify the difficulties of reconstructing clean pixels via predicted kernels
+and remove the residual rain traces effectively. Second, we design the weight-sharing multi-scale
+dilated filtering (WS-MS-DFilt) to handle multi-scale rain streaks without harming the efficiency.
+Third, to eliminate the gap across diverse rain patterns, we propose a novel data augmentation method
+(i.e., RainMix) to train our deep models. By combining all contributions with sophisticated analysis
+on different variants, our final method outperforms baseline methods on four single-image deraining
+datasets and one video deraining dataset in terms of both recovery quality and speed. 

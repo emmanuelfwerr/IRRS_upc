@@ -1,0 +1,20 @@
+Although quantum computation (QC) is regarded as a promising numerical method for computational
+quantum chemistry, current applications of quantum-chemistry calculations on quantum computers
+are limited to small molecules. This limitation can be ascribed to technical problems in building
+and manipulating more qubits and the associated complicated operations of quantum gates in a quantum
+circuit when the size of the molecular system becomes large. As a result, reducing the number of required
+qubits is necessary to make QC practical. Currently, the minimal STO-3G basis set is commonly used
+in benchmark studies because it requires the minimum number of spin orbitals. Nonetheless, the
+accuracy of using STO-3G is generally low and thus cannot provide useful predictions. We propose
+to adopt Daubechies wavelet functions as an accurate and efficient method for QCs of molecular electronic
+properties. We demonstrate that a minimal basis set constructed from Daubechies wavelet basis
+can yield accurate results through a better description of the molecular Hamiltonian, while keeping
+the number of spin orbitals minimal. With the improved Hamiltonian through Daubechies wavelets,
+we calculate vibrational frequencies for H$_2$ and LiH using quantum-computing algorithm to show
+that the results are in excellent agreement with experimental data. As a result, we achieve quantum
+calculations in which accuracy is comparable with that of the full configuration interaction calculation
+using the cc-pVDZ basis set, whereas the computational cost is the same as that of a STO-3G calculation.
+Thus, our work provides a more efficient and accurate representation of the molecular Hamiltonian
+for efficient QCs of molecular systems, and for the first time demonstrates that predictions in
+agreement with experimental measurements are possible to be achieved with quantum resources available
+in near-term quantum computers. 

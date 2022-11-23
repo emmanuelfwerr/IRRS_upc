@@ -1,0 +1,19 @@
+The model is based on a vector representation of each agent. The components of the vector are the key
+continuous attributes that determine the social behavior of the agent. A simple mathematical force
+vector model is used to predict the effect of each agent on all other agents. The force law used is motivated
+by gravitational force laws and electrical force laws for dipoles. It assumes that the force between
+two agents is proportional to the similarity of attributes, which is implemented mathematically
+as the dot product of the vectors representing the attributes of the agents, and the force goes as
+the inverse square of the difference in attributes, which is expressed as the Euclidean distance
+in attribute space between the two vectors. The force between the agents may be positive (attractive),
+zero, or negative (repulsive) depending on whether the angle between the corresponding vectors
+is less than, equal to, or greater than 90 degrees. A positive force causes the attributes of the agents
+to become more similar and the corresponding vectors to become more nearly parallel. Interaction
+between all agents is allowed unless the distance between the attributes representing the agents
+exceeds a confidence limit (the Attribute Influence Bound) set in the simulation. Agents with similar
+attributes tend to form groups. For small values of the Attribute Influence Bound, numerous groups
+remain scattered throughout attribute space at the end of a simulation. As the Attribute Influence
+Bound is increased, and agents with increasingly different attributes can communicate, fewer
+groups remain at the end, and the remaining groups have increasingly different characteristic
+attributes and approximately equal sizes. With a large Attribute Influence Bound all agents are
+connected and extreme bi- or tri-polarization results. 

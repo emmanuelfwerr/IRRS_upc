@@ -1,0 +1,20 @@
+Traffic time series forecasting is challenging due to complex spatio-temporal dynamics time series
+from different locations often have distinct patterns; and for the same time series, patterns may
+vary across time, where, for example, there exist certain periods across a day showing stronger
+temporal correlations. Although recent forecasting models, in particular deep learning based
+models, show promising results, they suffer from being spatio-temporal agnostic. Such spatio-temporal
+agnostic models employ a shared parameter space irrespective of the time series locations and the
+time periods and they assume that the temporal patterns are similar across locations and do not evolve
+across time, which may not always hold, thus leading to sub-optimal results. In this work, we propose
+a framework that aims at turning spatio-temporal agnostic models to spatio-temporal aware models.
+To do so, we encode time series from different locations into stochastic variables, from which we
+generate location-specific and time-varying model parameters to better capture the spatio-temporal
+dynamics. We show how to integrate the framework with canonical attentions to enable spatio-temporal
+aware attentions. Next, to compensate for the additional overhead introduced by the spatio-temporal
+aware model parameter generation process, we propose a novel window attention scheme, which helps
+reduce the complexity from quadratic to linear, making spatio-temporal aware attentions also
+have competitive efficiency. We show strong empirical evidence on four traffic time series datasets,
+where the proposed spatio-temporal aware attentions outperform state-of-the-art methods in
+term of accuracy and efficiency. This is an extended version of "Towards Spatio-Temporal Aware
+Traffic Time Series Forecasting", to appear in ICDE 2022 [1], including additional experimental
+results. 

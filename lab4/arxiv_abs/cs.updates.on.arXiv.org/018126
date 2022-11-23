@@ -1,0 +1,19 @@
+Radiomics has shown a capability for different types of cancers such as glioma to predict the clinical
+outcome. It can have a non-invasive means of evaluating the immunotherapy response prior to treatment.
+However, the use of deep convolutional neural networks (CNNs)-based radiomics requires large
+training image sets. To avoid this problem, we investigate a new imaging features that model distribution
+with a Gaussian mixture model (GMM) of learned 3D CNN features. Using these deep radiomic features
+(DRFs), we aim to predict the immune marker status (low versus high) and overall survival for glioma
+patients. We extract the DRFs by aggregating the activation maps of a pre-trained 3D-CNN within
+labeled tumor regions of MRI scans that corresponded immune markers of 151 patients. Our experiments
+are performed to assess the relationship between the proposed DRFs, three immune cell markers (Macrophage
+M1, Neutrophils and T Cells Follicular Helper), and measure their association with overall survival.
+Using the random forest (RF) model, DRFs was able to predict the immune marker status with area under
+the ROC curve (AUC) of 78.67, 83.93 and 75.67\% for Macrophage M1, Neutrophils and T Cells Follicular
+Helper, respectively. Combined the immune markers with DRFs and clinical variables, Kaplan-Meier
+estimator and Log-rank test achieved the most significant difference between predicted groups
+of patients (short-term versus long-term survival) with p\,=\,4.31$\times$10$^{-7}$ compared
+to p\,=\,0.03 for Immune cell markers, p\,=\,0.07 for clinical variables , and p\,=\,1.45$\times$10$^{-5}$
+for DRFs. Our findings indicate that the proposed features (DRFs) used in RF models may significantly
+consider prognosticating patients with brain tumour prior to surgery through regularly acquired
+imaging data. 

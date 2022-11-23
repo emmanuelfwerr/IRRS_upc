@@ -1,0 +1,19 @@
+Laboratory testing and medication prescription are two of the most important routines in daily
+clinical practice. Developing an artificial intelligence system that can automatically make
+lab test imputations and medication recommendations can save costs on potentially redundant lab
+tests and inform physicians of a more effective prescription. We present an intelligent medical
+system (named MedGCN) that can automatically recommend the patients' medications based on their
+incomplete lab tests, and can even accurately estimate the lab values that have not been taken. In
+our system, we integrate the complex relations between multiple types of medical entities with
+their inherent features in a heterogeneous graph. Then we model the graph to learn a distributed
+representation for each entity in the graph based on graph convolutional networks (GCN). By the
+propagation of graph convolutional networks, the entity representations can incorporate multiple
+types of medical information that can benefit multiple medical tasks. Moreover, we introduce a
+cross regularization strategy to reduce overfitting for multi-task training by the interaction
+between the multiple tasks. In this study, we construct a graph to associate 4 types of medical entities,
+i.e., patients, encounters, lab tests, and medications, and applied a graph neural network to learn
+node embeddings for medication recommendation and lab test imputation. we validate our MedGCN
+model on two real-world datasets: NMEDW and MIMIC-III. The experimental results on both datasets
+demonstrate that our model can outperform the state-of-the-art in both tasks. We believe that our
+innovative system can provide a promising and reliable way to assist physicians to make medication
+prescriptions and to save costs on potentially redundant lab tests. 

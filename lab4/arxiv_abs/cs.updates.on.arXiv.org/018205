@@ -1,0 +1,20 @@
+We train a neural network model to predict the full phase space evolution of cosmological N-body
+simulations. Its success implies that the neural network model is accurately approximating the
+Green's function expansion that relates the initial conditions of the simulations to its outcome
+at later times in the deeply nonlinear regime. We test the accuracy of this approximation by assessing
+its performance on well understood simple cases that have either known exact solutions or well understood
+expansions. These scenarios include spherical configurations, isolated plane waves, and two
+interacting plane waves: initial conditions that are very different from the Gaussian random fields
+used for training. We find our model generalizes well to these well understood scenarios, demonstrating
+that the networks have inferred general physical principles and learned the nonlinear mode couplings
+from the complex, random Gaussian training data. These tests also provide a useful diagnostic for
+finding the model's strengths and weaknesses, and identifying strategies for model improvement.
+We also test the model on initial conditions that contain only transverse modes, a family of modes
+that differ not only in their phases but also in their evolution from the longitudinal growing modes
+used in the training set. When the network encounters these initial conditions that are orthogonal
+to the training set, the model fails completely. In addition to these simple configurations, we
+evaluate the model's predictions for the density, displacement, and momentum power spectra with
+standard initial conditions for N-body simulations. We compare these summary statistics against
+N-body results and an approximate, fast simulation method called COLA. Our model achieves percent
+level accuracy at nonlinear scales of $k\sim 1\ \mathrm{Mpc}^{-1}\, h$, representing a significant
+improvement over COLA. 

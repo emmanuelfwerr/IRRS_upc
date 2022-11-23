@@ -1,0 +1,20 @@
+Magnetohydrodynamic (MHD) flow of liquid metals through conduits play an important role in the
+proposed systems for harnessing fusion energy, and various other engineering and scientific problems.
+The interplay between the magnetic fields and the fluid motion gives rise to complex flow physics,
+which depend on the electrical conductivity of the bounding walls. An effective approach to represent
+the latter is via the Shercliff boundary condition for thin conducting walls relating the induced
+magnetic field and its wall normal gradient at the boundary via a parameter referred to as the wall
+conductance ratio (Shercliff, JA, J. Fluid Mech. 1, 644 (1956)). Within the framework of the highly
+parallelizable lattice Boltzmann (LB) method, a lattice kinetic scheme for MHD involving a vector
+distribution function for the magnetic fields was proposed by Dellar (Dellar, PJ, J. Comp. Phys.
+179, 95 (2002)). However, the prior LB algorithms only accounted for limiting special cases involving
+perfectly insulated boundaries and did not consider the finite conductivity effects. In this paper,
+we present two new boundary schemes that enforce the Shercliff boundary condition in the LB schemes
+for MHD. It allows for the specification of the wall conductance ratio to any desired value based
+on the actual conductivities and length scales of the container and the wall thicknesses. One approach
+is constructed using a link-based formulation involving a weighted combination of the bounce back
+and anti-bounce back of the distribution function for the magnetic field and the other approach
+involves an on-node moment-based implementation. Moreover, their extensions to representing
+moving walls are also presented. Numerical validations of the boundary schemes for body force or
+shear driven MHD flows for a wide range of the values of the wall conductance ratio and their second
+order grid convergence are demonstrated. 

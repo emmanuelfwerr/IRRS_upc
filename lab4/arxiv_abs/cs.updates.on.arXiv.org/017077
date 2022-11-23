@@ -1,0 +1,19 @@
+Auxiliary tasks have been argued to be useful for representation learning in reinforcement learning.
+Although many auxiliary tasks have been empirically shown to be effective for accelerating learning
+on the main task, it is not yet clear what makes useful auxiliary tasks. Some of the most promising
+results are on the pixel control, reward prediction, and the next state prediction auxiliary tasks;
+however, the empirical results are mixed, showing substantial improvements in some cases and marginal
+improvements in others. Careful investigations of how auxiliary tasks help the learning of the
+main task is necessary. In this paper, we take a step studying the effect of the target policies on
+the usefulness of the auxiliary tasks formulated as general value functions. General value functions
+consist of three core elements: 1) policy 2) cumulant 3) continuation function. Our focus on the
+role of the target policy of the auxiliary tasks is motivated by the fact that the target policy determines
+the behavior about which the agent wants to make a prediction and the state-action distribution
+that the agent is trained on, which further affects the main task learning. Our study provides insights
+about questions such as: Does a greedy policy result in bigger improvement gains compared to other
+policies? Is it best to set the auxiliary task policy to be the same as the main task policy? Does the
+choice of the target policy have a substantial effect on the achieved performance gain or simple
+strategies for setting the policy, such as using a uniformly random policy, work as well? Our empirical
+results suggest that: 1) Auxiliary tasks with the greedy policy tend to be useful. 2) Most policies,
+including a uniformly random policy, tend to improve over the baseline. 3) Surprisingly, the main
+task policy tends to be less useful compared to other policies. 

@@ -1,0 +1,18 @@
+Traditionally, graph algorithms get a single graph as input, and then they should decide if this
+graph satisfies a certain property $\Phi$. What happens if this question is modified in a way that
+we get a possibly infinite family of graphs as an input, and the question is if there is a graph satisfying
+$\Phi$ in the family? We approach this question by using formal languages for specifying families
+of graphs, in particular by regular sets of words. We show that certain graph properties can be decided
+by studying the syntactic monoid of the specification language $L$ if a certain torsion condition
+is satisfied. This condition holds trivially if $L$ is regular. More specifically, we use a natural
+binary encoding of finite graphs over a binary alphabet $\Sigma$, and we define a regular set $\mathbb{G}\subseteq
+\Sigma^*$ such that every nonempty word $w\in \mathbb{G}$ defines a finite and nonempty graph.
+Also, graph properties can then be syntactically defined as languages over $\Sigma$. Then, we ask
+whether the automaton $\mathcal{A}$ specifies some graph satisfying a certain property~$\Phi$.
+Our structural results show that we can answer this question for all "typical" graph properties.
+In order to show our results, we split $L$ into a finite union of subsets and every subset of this union
+defines in a natural way a single finite graph $F$ where some edges and vertices are marked. The marked
+graph in turn defines an infinite graph $F^\infty$ and therefore the family of finite subgraphs
+of $F^\infty$ where $F$ appears as an induced subgraph. This yields a geometric description of all
+graphs specified by $L$ based on splitting $L$ into finitely many pieces; then using the notion of
+graph retraction, we obtain an easily understandable description of the graphs in each piece. 

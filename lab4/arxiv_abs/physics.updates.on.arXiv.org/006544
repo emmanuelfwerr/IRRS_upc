@@ -1,0 +1,18 @@
+XANES is an important experimental method to probe the local three dimensional geometry and electronic
+structure of the system. The quantitative analysis of XANES data is very important to obtain the
+above mentioned structure. Because XANES contains a lot of information and complexity, the quantitative
+analysis of XANES is also a challenging task. In this paper, the coordination number and stereo coordination
+motif of the system are analyzed using the random forest, XGBoost, LightGBM algorithm based on the
+small and medium scale XANES theoretical spectral database. The accuracy of the analytical results
+is 90$\%$ in coordination number aspect and more than 80$\%$ in stereo coordination motif, which
+has practical value. At the same time, we have carried out analysis based on interpretable machine
+learning. We use the TreeSHAP method to explain the mechanism of our model and of a specific prediction
+example. The model mechanism is explained from the physical perspective as much as possible, which
+expands the methodological perspective of machine learning application in XAS data analysis.
+This method builds machine learning model based on database, which has great generality and high
+model repeatability. This method can be used to provide the initial structure for on-line system
+judgment during beamline experiment time, and can also be used as the starting point for subsequent
+XANES fitting or neural network spectral analysis. This method is based on the small and medium scale
+database construction model, which can be used as a reference for construction of beamline experiment
+spectrum database and related data analysis produce. This work has formed a preliminary GUI applet,
+which will be a submodule of an overall XAS data analysis framework in the future. 

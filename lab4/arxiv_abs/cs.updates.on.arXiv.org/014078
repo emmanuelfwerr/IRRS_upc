@@ -1,0 +1,20 @@
+Like many scientific fields, new chemistry literature has grown at a staggering pace, with thousands
+of papers released every month. A large portion of chemistry literature focuses on new molecules
+and reactions between molecules. Most vital information is conveyed through 2-D images of molecules,
+representing the underlying molecules or reactions described. In order to ensure reproducible
+and machine-readable molecule representations, text-based molecule descriptors like SMILES
+and SELFIES were created. These text-based molecule representations provide molecule generation
+but are unfortunately rarely present in published literature. In the absence of molecule descriptors,
+the generation of molecule descriptors from the 2-D images present in the literature is necessary
+to understand chemistry literature at scale. Successful methods such as Optical Structure Recognition
+Application (OSRA), and ChemSchematicResolver are able to extract the locations of molecules
+structures in chemistry papers and infer molecular descriptions and reactions. While effective,
+existing systems expect chemists to correct outputs, making them unsuitable for unsupervised
+large-scale data mining. Leveraging the task formulation of image captioning introduced by DECIMER,
+we introduce IMG2SMI, a model which leverages Deep Residual Networks for image feature extraction
+and an encoder-decoder Transformer layers for molecule description generation. Unlike previous
+Neural Network-based systems, IMG2SMI builds around the task of molecule description generation,
+which enables IMG2SMI to outperform OSRA-based systems by 163% in molecule similarity prediction
+as measured by the molecular MACCS Fingerprint Tanimoto Similarity. Additionally, to facilitate
+further research on this task, we release a new molecule prediction dataset. including 81 million
+molecules for molecule description generation 

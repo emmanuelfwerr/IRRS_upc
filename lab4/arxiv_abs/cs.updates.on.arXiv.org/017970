@@ -1,0 +1,20 @@
+Recently, there has been a surge of Transformer-based solutions for the time series forecasting
+(TSF) task, especially for the challenging long-term TSF problem. Transformer architecture relies
+on self-attention mechanisms to effectively extract the semantic correlations between paired
+elements in a long sequence, which is permutation-invariant and anti-ordering to some extent.
+However, in time series modeling, we are to extract the temporal relations among an ordering set
+of continuous points. Consequently, whether Transformer-based techniques are the right solutions
+for long-term time series forecasting is an interesting problem to investigate, despite the performance
+improvements shown in these studies. In this work, we question the validity of Transformer-based
+TSF solutions. In their experiments, the compared (non-Transformer) baselines are mainly autoregressive
+forecasting solutions, which usually have a poor long-term prediction capability due to inevitable
+error accumulation effects. In contrast, we use an embarrassingly simple architecture named DLinear
+that conducts direct multi-step (DMS) forecasting for comparison. DLinear decomposes the time
+series into a trend and a remainder series and employs two one-layer linear networks to model these
+two series for the forecasting task. Surprisingly, it outperforms existing complex Transformer-based
+models in most cases by a large margin. Therefore, we conclude that the relatively higher long-term
+forecasting accuracy of Transformer-based TSF solutions shown in existing works has little to
+do with the temporal relation extraction capabilities of the Transformer architecture. Instead,
+it is mainly due to the non-autoregressive DMS forecasting strategy used in them. We hope this study
+also advocates revisiting the validity of Transformer-based solutions for other time series analysis
+tasks (e.g., anomaly detection) in the future. 

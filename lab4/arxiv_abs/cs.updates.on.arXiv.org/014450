@@ -1,0 +1,20 @@
+This thesis focuses on video understanding for human action and interaction recognition. We start
+by identifying the main challenges related to action recognition from videos and review how they
+have been addressed by current methods. Based on these challenges, and by focusing on the temporal
+aspect of actions, we argue that current fixed-sized spatio-temporal kernels in 3D convolutional
+neural networks (CNNs) can be improved to better deal with temporal variations in the input. Our
+contributions are based on the enlargement of the convolutional receptive fields through the introduction
+of spatio-temporal size-varying segments of videos, as well as the discovery of the local feature
+relevance over the entire video sequence. The resulting extracted features encapsulate information
+that includes the importance of local features across multiple temporal durations, as well as the
+entire video sequence. Subsequently, we study how we can better handle variations between classes
+of actions, by enhancing their feature differences over different layers of the architecture.
+The hierarchical extraction of features models variations of relatively similar classes the same
+as very dissimilar classes. Therefore, distinctions between similar classes are less likely to
+be modelled. The proposed approach regularises feature maps by amplifying features that correspond
+to the class of the video that is processed. We move away from class-agnostic networks and make early
+predictions based on feature amplification mechanism. The proposed approaches are evaluated
+on several benchmark action recognition datasets and show competitive results. In terms of performance,
+we compete with the state-of-the-art while being more efficient in terms of GFLOPs. Finally, we
+present a human-understandable approach aimed at providing visual explanations for features
+learned over spatio-temporal networks. 

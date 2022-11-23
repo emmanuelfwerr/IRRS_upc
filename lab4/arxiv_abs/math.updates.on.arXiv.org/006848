@@ -1,0 +1,19 @@
+When investigating epidemic dynamics through differential models, the parameters needed to understand
+the phenomenon and to simulate forecast scenarios require a delicate calibration phase, often
+made even more challenging by the scarcity and uncertainty of the observed data reported by official
+sources. In this context, Physics-Informed Neural Networks (PINNs), by embedding the knowledge
+of the differential model that governs the physical phenomenon in the learning process, can effectively
+address the inverse and forward problem of data-driven learning and solving the corresponding
+epidemic problem. In many circumstances, however, the spatial propagation of an infectious disease
+is characterized by movements of individuals at different scales governed by multiscale PDEs.
+This reflects the heterogeneity of a region or territory in relation to the dynamics within cities
+and in neighboring zones. In presence of multiple scales, a direct application of PINNs generally
+leads to poor results due to the multiscale nature of the differential model in the loss function
+of the neural network. To allow the neural network to operate uniformly with respect to the small
+scales, it is desirable that the neural network satisfies an Asymptotic-Preservation (AP) property
+in the learning process. To this end, we consider a new class of AP Neural Networks (APNNs) for multiscale
+hyperbolic transport models of epidemic spread that, thanks to an appropriate AP formulation of
+the loss function, is capable to work uniformly at the different scales of the system. A series of
+numerical tests for different epidemic scenarios confirms the validity of the proposed approach,
+highlighting the importance of the AP property in the neural network when dealing with multiscale
+problems especially in presence of sparse and partially observed systems. 

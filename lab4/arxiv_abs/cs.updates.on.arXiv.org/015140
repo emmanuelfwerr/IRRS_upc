@@ -1,0 +1,20 @@
+We consider the product of determinantal point processes (DPPs), a point process whose probability
+mass is proportional to the product of principal minors of multiple matrices, as a natural, promising
+generalization of DPPs. We study the computational complexity of computing its normalizing constant,
+which is among the most essential probabilistic inference tasks. Our complexity-theoretic results
+(almost) rule out the existence of efficient algorithms for this task unless the input matrices
+are forced to have favorable structures. In particular, we prove the following: (1) Computing $\sum_S\det({\bf
+A}_{S,S})^p$ exactly for every (fixed) positive even integer $p$ is UP-hard and Mod$_3$P-hard,
+which gives a negative answer to an open question posed by Kulesza and Taskar. (2) $\sum_S\det({\bf
+A}_{S,S})\det({\bf B}_{S,S})\det({\bf C}_{S,S})$ is NP-hard to approximate within a factor
+of $2^{O(|I|^{1-\epsilon})}$ or $2^{O(n^{1/\epsilon})}$ for any $\epsilon>0$, where $|I|$
+is the input size and $n$ is the order of the input matrix. This result is stronger than the #P-hardness
+for the case of two matrices derived by Gillenwater. (3) There exists a $k^{O(k)}n^{O(1)}$-time
+algorithm for computing $\sum_S\det({\bf A}_{S,S})\det({\bf B}_{S,S})$, where $k$ is the maximum
+rank of $\bf A$ and $\bf B$ or the treewidth of the graph formed by nonzero entries of $\bf A$ and $\bf
+B$. Such parameterized algorithms are said to be fixed-parameter tractable. These results can
+be extended to the fixed-size case. Further, we present two applications of fixed-parameter tractable
+algorithms given a matrix $\bf A$ of treewidth $w$: (4) We can compute a $2^{\frac{n}{2p-1}}$-approximation
+to $\sum_S\det({\bf A}_{S,S})^p$ for any fractional number $p>1$ in $w^{O(wp)}n^{O(1)}$ time.
+(5) We can find a $2^{\sqrt n}$-approximation to unconstrained MAP inference in $w^{O(w\sqrt n)}n^{O(1)}$
+time. 

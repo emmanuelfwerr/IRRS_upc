@@ -1,0 +1,19 @@
+Embedded machine learning (ML) systems have now become the dominant platform for deploying ML serving
+tasks and are projected to become of equal importance for training ML models. With this comes the
+challenge of overall efficient deployment, in particular low power and high throughput implementations,
+under stringent memory constraints. In this context, non-volatile memory (NVM) technologies
+such as STT-MRAM and SOT-MRAM have significant advantages compared to conventional SRAM due to
+their non-volatility, higher cell density, and scalability features. While prior work has investigated
+several architectural implications of NVM for generic applications, in this work we present DeepNVM++,
+a comprehensive framework to characterize, model, and analyze NVM-based caches in GPU architectures
+for deep learning (DL) applications by combining technology-specific circuit-level models and
+the actual memory behavior of various DL workloads. DeepNVM++ relies on iso-capacity and iso-area
+performance and energy models for last-level caches implemented using conventional SRAM and emerging
+STT-MRAM and SOT-MRAM technologies. In the iso-capacity case, STT-MRAM and SOT-MRAM provide up
+to 3.8x and 4.7x energy-delay product (EDP) reduction and 2.4x and 2.8x area reduction compared
+to conventional SRAM, respectively. Under iso-area assumptions, STT-MRAM and SOT-MRAM provide
+up to 2.2x and 2.4x EDP reduction and accommodate 2.3x and 3.3x cache capacity when compared to SRAM,
+respectively. We also perform a scalability analysis and show that STT-MRAM and SOT-MRAM achieve
+orders of magnitude EDP reduction when compared to SRAM for large cache capacities. DeepNVM++ is
+demonstrated on STT-/SOT-MRAM technologies and can be used for the characterization, modeling,
+and analysis of any NVM technology for last-level caches in GPUs for DL applications. 

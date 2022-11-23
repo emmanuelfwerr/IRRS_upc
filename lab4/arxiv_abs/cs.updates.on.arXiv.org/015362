@@ -1,0 +1,19 @@
+Computational fluid dynamics (CFD) simulations are broadly applied in engineering and physics.
+A standard description of fluid dynamics requires solving the Navier-Stokes (N-S) equations in
+different flow regimes. However, applications of CFD simulations are computationally-limited
+by the availability, speed, and parallelism of high-performance computing. To improve computational
+efficiency, machine learning techniques have been used to create accelerated data-driven approximations
+for CFD. A majority of such approaches rely on large labeled CFD datasets that are expensive to obtain
+at the scale necessary to build robust data-driven models. We develop a weakly-supervised approach
+to solve the steady-state N-S equations under various boundary conditions, using a multi-channel
+input with boundary and geometric conditions. We achieve state-of-the-art results without any
+labeled simulation data, but using a custom data-driven and physics-informed loss function by
+using and small-scale solutions to prime the model to solve the N-S equations. To improve the resolution
+and predictability, we train stacked models of increasing complexity generating the numerical
+solutions for N-S equations. Without expensive computations, our model achieves high predictability
+with a variety of obstacles and boundary conditions. Given its high flexibility, the model can generate
+a solution on a 64 x 64 domain within 5 ms on a regular desktop computer which is 1000 times faster than
+a regular CFD solver. Translation of interactive CFD simulation on local consumer computing hardware
+enables new applications in real-time predictions on the internet of things devices where data
+transfer is prohibitive and can increase the scale, speed, and computational cost of boundary-value
+fluid problems. 

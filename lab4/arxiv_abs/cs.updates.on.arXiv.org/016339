@@ -1,0 +1,19 @@
+Progress in digital pathology is hindered by high-resolution images and the prohibitive cost of
+exhaustive localized annotations. The commonly used paradigm to categorize pathology images
+is patch-based processing, which often incorporates multiple instance learning (MIL) to aggregate
+local patch-level representations yielding image-level prediction. Nonetheless, diagnostically
+relevant regions may only take a small fraction of the whole tissue, and MIL-based aggregation operation
+assumes that all patch representations are independent and thus mislays the contextual information
+from adjacent cell and tissue microenvironments. Consequently, the computational resources
+dedicated to a specific region are independent of its information contribution. This paper proposes
+a transformer-based architecture specifically tailored for histopathological image classification,
+which combines fine-grained local attention with a coarse global attention mechanism to learn
+meaningful representations of high-resolution images at an efficient computational cost. More
+importantly, based on the observation above, we propose a novel mixing-based data-augmentation
+strategy, namely ScoreMix, by leveraging the distribution of the semantic regions of images during
+the training and carefully guiding the data mixing via sampling the locations of discriminative
+image content. Thorough experiments and ablation studies on three challenging representative
+cohorts of Haematoxylin & Eosin (H&E) tumour regions-of-interest (TRoIs) datasets have validated
+the superiority of our approach over existing state-of-the-art methods and effectiveness of our
+proposed components, e.g., data augmentation in improving classification performance. We also
+demonstrate our method's interpretability, robustness, and cross-domain generalization capability.

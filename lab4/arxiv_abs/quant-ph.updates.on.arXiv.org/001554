@@ -1,0 +1,19 @@
+Variational quantum algorithms (VQAs) offer a promising path towards using near-term quantum
+hardware for applications in academic and industrial research. These algorithms aim to find approximate
+solutions to quantum problems by optimizing a parametrized quantum circuit using a classical optimization
+algorithm. A successful VQA requires fast and reliable classical optimization algorithms. Understanding
+and optimizing how off-the-shelf optimization methods perform in this context is important for
+the future of the field. In this work we study the performance of four commonly used gradient-free
+optimization methods: SLSQP, COBYLA, CMA-ES, and SPSA, at finding ground-state energies of a range
+of small chemistry and material science problems. We test a telescoping sampling scheme (where
+the accuracy of the cost-function estimate provided to the optimizer is increased as the optimization
+converges) on all methods, demonstrating mixed results across our range of optimizers and problems
+chosen. We further hyperparameter tune two of the four optimizers (CMA-ES and SPSA) across a large
+range of models, and demonstrate that with appropriate hyperparameter tuning, CMA-ES is competitive
+with and sometimes outperforms SPSA (which is not observed in the absence of hyperparameter tuning).
+Finally, we investigate the ability of an optimizer to beat the `sampling noise floor', given by
+the sampling noise on each cost-function estimate provided to the optimizer. Our results demonstrate
+the necessity for tailoring and hyperparameter-tuning known optimization techniques for inherently-noisy
+variational quantum algorithms, and that the variational landscape that one finds in a VQA is highly
+problem- and system-dependent. This provides guidance for future implementations of these algorithms
+in experiment. 

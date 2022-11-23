@@ -1,0 +1,19 @@
+A deep learning-based model reduction (DeePMR) method for simplifying chemical kinetics is proposed
+and validated using high-temperature auto-ignitions, perfectly stirred reactors (PSR), and
+one-dimensional freely propagating flames of n-heptane/air mixtures. The mechanism reduction
+is modeled as an optimization problem on Boolean space, where a Boolean vector, each entry corresponding
+to a species, represents a reduced mechanism. The optimization goal is to minimize the reduced mechanism
+size given the error tolerance of a group of pre-selected benchmark quantities. The key idea of the
+DeePMR is to employ a deep neural network (DNN) to formulate the objective function in the optimization
+problem. In order to explore high dimensional Boolean space efficiently, an iterative DNN-assisted
+data sampling and DNN training procedure are implemented. The results show that DNN-assistance
+improves sampling efficiency significantly, selecting only $10^5$ samples out of $10^{34}$ possible
+samples for DNN to achieve sufficient accuracy. The results demonstrate the capability of the DNN
+to recognize key species and reasonably predict reduced mechanism performance. The well-trained
+DNN guarantees the optimal reduced mechanism by solving an inverse optimization problem. By comparing
+ignition delay times, laminar flame speeds, temperatures in PSRs, the resulting skeletal mechanism
+has fewer species (45 species) but the same level of accuracy as the skeletal mechanism (56 species)
+obtained by the Path Flux Analysis (PFA) method. In addition, the skeletal mechanism can be further
+reduced to 28 species if only considering atmospheric, near-stoichiometric conditions (equivalence
+ratio between 0.6 and 1.2). The DeePMR provides an innovative way to perform model reduction and
+demonstrates the great potential of data-driven methods in the combustion area. 

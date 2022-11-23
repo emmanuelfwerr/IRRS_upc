@@ -1,0 +1,19 @@
+One of the main bottlenecks in the pursuit of a large-scale--chip-based quantum computer is the
+large number of control signals needed to operate qubit systems. As system sizes scale up, the number
+of terminals required to connect to off-chip control electronics quickly becomes unmanageable.
+Here, we discuss a quantum-dot spin-qubit architecture that integrates on-chip control electronics,
+allowing for a significant reduction in the number of signal connections at the chip boundary. By
+arranging the qubits in a two-dimensional (2D) array with $\sim$12 $\mu$m pitch, we create space
+to implement locally integrated sample-and-hold circuits. This allows to offset the inhomogeneities
+in the potential landscape across the array and to globally share the majority of the control signals
+for qubit operations. We make use of advanced circuit modeling software to go beyond conceptual
+drawings of the component layout, to assess the feasibility of the scheme through a concrete floor
+plan, including estimates of footprints for quantum and classical electronics, as well as routing
+of signal lines across the chip using different interconnect layers. We make use of local demultiplexing
+circuits to achieve an efficient signal-connection scaling leading to a Rent's exponent as low
+as $p = 0.43$. Furthermore, we use available data from state-of-the-art spin qubit and microelectronics
+technology development, as well as circuit models and simulations, to estimate the operation frequencies
+and power consumption of a million-qubit processor. This work presents a novel and complementary
+approach to previously proposed architectures, focusing on a feasible scheme to integrating quantum
+and classical hardware, and significantly closing the gap towards a fully CMOS-compatible quantum
+computer implementation. 

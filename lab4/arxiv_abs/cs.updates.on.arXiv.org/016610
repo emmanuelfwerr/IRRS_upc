@@ -1,0 +1,19 @@
+A powerful approach, and one of the most common ones in structural health monitoring (SHM), is to
+use data-driven models to make predictions and inferences about structures and their condition.
+Such methods almost exclusively rely on the quality of the data. Within the SHM discipline, data
+do not always suffice to build models with satisfactory accuracy for given tasks. Even worse, data
+may be completely missing from one's dataset, regarding the behaviour of a structure under different
+environmental conditions. In the current work, with a view to confronting such issues, the generation
+of artificial data using a variation of the generative adversarial network (GAN) algorithm, is
+used. The aforementioned variation is that of the conditional GAN or cGAN. The algorithm is not only
+used to generate artificial data, but also to learn transformations of manifolds according to some
+known parameters. Assuming that the structure's response is represented by points in a manifold,
+part of the space will be formed due to variations in external conditions affecting the structure.
+This idea proves efficient in SHM, as it is exploited to generate structural data for specific values
+of environmental coefficients. The scheme is applied here on a simulated structure which operates
+under different temperature and humidity conditions. The cGAN is trained on data for some discrete
+values of the temperature within some range, and is able to generate data for every temperature in
+this range with satisfactory accuracy. The novelty, compared to classic regression in similar
+problems, is that the cGAN allows unknown environmental parameters to affect the structure and
+can generate whole manifolds of data for every value of the known parameters, while the unknown ones
+vary within the generated manifolds. 

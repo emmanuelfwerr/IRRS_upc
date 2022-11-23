@@ -1,0 +1,20 @@
+Optical navigation on a CubeSat must rely on the best extraction of the directions of some beacons
+from on-board images. We present an experiment on OPS-SAT, a CubeSat of the European Space Agency
+(ESA), that will characterize an onboard algorithm to this aim, named Angle-based Correlation
+(AbC). OPS-SAT is a 3-unit CubeSat with an Attitude Determination and Control System (ADCS) and
+an imager that have proved their reliability with typical performance at CubeSat scale. We selected
+a few star-fields that all present enough visible stars within a 10 ? field of view. When our experiment
+is run, OPS-SAT is pointed to the most convenient star-field at that time. There, the star-field
+is imaged and subwindows are extracted from the image around the expected location of each star,
+based on the attitude-quaternion reported by the ADCS. The AbC reconstructs the absolute direction
+of the central body, in principle unknown, which is the pointed known star in the experiment. The
+method intensively uses the quaternion algebra. The beacon location is first consolidated in the
+field of view with the AbC. Then, the field of view is finely positioned against the sky, again with
+the AbC. A covariance is associated with the found beacon direction. Our experiment with OPS-SAT
+manages the pointing and the imager, and processes the taken images. Then, it downloads the on-board
+computed absolute directions and their covariances, to be compared with the actual directions.
+After a campaign of intensive use of the experiment, the statistical performance of the algorithm
+will be established and compared to the on-board computed covariances. As a bonus, an assessment
+of OPS-SAT's inertial pointing stability will be available. The AbC can theoretically get rid of
+the Attitude Control Error (ACE) of the platform and of the Attitude Knowledge Error (AKE) estimated
+by the ADCS, and potentially converge to (...) 

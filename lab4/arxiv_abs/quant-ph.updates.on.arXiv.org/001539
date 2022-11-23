@@ -1,0 +1,20 @@
+Quantum simulation is expected to be one of the key applications of future quantum computers. Product
+formulas, or Trotterization, are the oldest and, still today, an appealing method for quantum simulation.
+For an accurate product formula approximation in the spectral norm, the state-of-the-art gate
+complexity depends on the number of Hamiltonian terms and a certain 1-norm of its local terms. This
+work studies the concentration aspects of Trotter error: we prove that, typically, the Trotter
+error exhibits 2-norm (i.e., incoherent) scaling; the current estimate with 1-norm (i.e., coherent)
+scaling is for the worst cases. For k-local Hamiltonians and higher-order product formulas, we
+obtain gate count estimates for input states drawn from a 1-design ensemble (e.g., computational
+basis states). Our gate count depends on the number of Hamiltonian terms but replaces the 1-norm
+quantity by its analog in 2-norm, giving significant speedup for systems with large connectivity.
+Our results generalize to Hamiltonians with Fermionic terms and when the input state is drawn from
+a low-particle number subspace. Further, when the Hamiltonian itself has Gaussian coefficients
+(e.g., the SYK models), we show the stronger result that the 2-norm behavior persists even for the
+worst input state. Our main technical tool is a family of simple but versatile inequalities from
+non-commutative martingales called uniform smoothness. We use them to derive Hypercontractivity,
+namely p-norm estimates for low-degree polynomials, which implies concentration via Markov's
+inequality. In terms of optimality, we give examples that simultaneously match our p-norm bounds
+and the spectral norm bounds. Therefore, our improvement is due to asking a qualitatively different
+question from the spectral norm bounds. Our results give evidence that product formulas in practice
+may generically work much better than expected. 

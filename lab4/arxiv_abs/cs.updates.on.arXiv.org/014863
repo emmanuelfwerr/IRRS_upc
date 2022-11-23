@@ -1,0 +1,19 @@
+Convolutional neural networks are state-of-the-art and ubiquitous in modern signal processing
+and machine vision. Nowadays, hardware solutions based on emerging nanodevices are designed to
+reduce the power consumption of these networks. Spintronics devices are promising for information
+processing because of the various neural and synaptic functionalities they offer. However, due
+to their low OFF/ON ratio, performing all the multiplications required for convolutions in a single
+step with a crossbar array of spintronic memories would cause sneak-path currents. Here we present
+an architecture where synaptic communications have a frequency selectivity that prevents crosstalk
+caused by sneak-path currents. We first demonstrate how a chain of spintronic resonators can function
+as synapses and make convolutions by sequentially rectifying radio-frequency signals encoding
+consecutive sets of inputs. We show that a parallel implementation is possible with multiple chains
+of spintronic resonators to avoid storing intermediate computational steps in memory. We propose
+two different spatial arrangements for these chains. For each of them, we explain how to tune many
+artificial synapses simultaneously, exploiting the synaptic weight sharing specific to convolutions.
+We show how information can be transmitted between convolutional layers by using spintronic oscillators
+as artificial microwave neurons. Finally, we simulate a network of these radio-frequency resonators
+and spintronic oscillators to solve the MNIST handwritten digits dataset, and obtain results comparable
+to software convolutional neural networks. Since it can run convolutional neural networks fully
+in parallel in a single step with nano devices, the architecture proposed in this paper is promising
+for embedded applications requiring machine vision, such as autonomous driving. 

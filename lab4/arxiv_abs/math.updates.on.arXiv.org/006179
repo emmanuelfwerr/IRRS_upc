@@ -1,0 +1,19 @@
+In $d$ dimensions, approximating an arbitrary function oscillating with frequency $\lesssim
+k$ requires $\sim k^d$ degrees of freedom. A numerical method for solving the Helmholtz equation
+(with wavenumber $k$ and in $d$ dimensions) suffers from the pollution effect if, as $k\to\infty$,
+the total number of degrees of freedom needed to maintain accuracy grows faster than this natural
+threshold (i.e., faster than $k^d$ for domain-based formulations, such as finite element methods,
+and $k^{d-1}$ for boundary-based formulations, such as boundary element methods). It is well known
+that the $h$-version of the finite element method (FEM) (where accuracy is increased by decreasing
+the meshwidth $h$ and keeping the polynomial degree $p$ fixed) suffers from the pollution effect,
+and research over the last $\sim$ 30 years has resulted in a near-complete rigorous understanding
+of how quickly the number of degrees of freedom must grow with $k$ (and how this depends on both $p$
+and properties of the scatterer). In contrast to the $h$-FEM, at least empirically, the $h$-version
+of the boundary element method (BEM) does $\textit{not}$ suffer from the pollution effect (recall
+that in the boundary element method the scattering problem is reformulated as an integral equation
+on the boundary of the scatterer, with this integral equation then solved numerically using a finite-element-type
+approximation space). However, the current best results in the literature on how quickly the number
+of degrees of freedom for the $h$-BEM must grow with $k$ fall short of proving this. In this paper,
+we prove that the $h$-version of the Galerkin method applied to the standard second-kind boundary
+integral equations for solving the Helmholtz exterior Dirichlet problem does not suffer from the
+pollution effect when the obstacle is nontrapping (i.e., does not trap geometric-optic rays).

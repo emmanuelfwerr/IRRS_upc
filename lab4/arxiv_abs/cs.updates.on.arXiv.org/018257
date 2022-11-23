@@ -1,0 +1,20 @@
+This work introduces Directed-Evolution (DE) method for sparsification of neural networks, where
+the relevance of parameters to the network accuracy is directly assessed and the parameters that
+produce the least effect on accuracy when tentatively zeroed are indeed zeroed. DE method avoids
+a potentially combinatorial explosion of all possible candidate sets of parameters to be zeroed
+in large networks by mimicking evolution in the natural world. DE uses a distillation context [5].
+In this context, the original network is the teacher and DE evolves the student neural network to
+the sparsification goal while maintaining minimal divergence between teacher and student. After
+the desired sparsification level is reached in each layer of the network by DE, a variety of quantization
+alternatives are used on the surviving parameters to find the lowest number of bits for their representation
+with acceptable loss of accuracy. A procedure to find optimal distribution of quantization levels
+in each sparsified layer is presented. Suitable final lossless encoding of the surviving quantized
+parameters is used for the final parameter representation. DE was used in sample of representative
+neural networks using MNIST, FashionMNIST and COCO data sets with progressive larger networks.
+An 80 classes YOLOv3 with more than 60 million parameters network trained on COCO dataset reached
+90% sparsification and correctly identifies and segments all objects identified by the original
+network with more than 80% confidence using 4bit parameter quantization. Compression between
+40x and 80x. It has not escaped the authors that techniques from different methods can be nested.
+Once the best parameter set for sparsification is identified in a cycle of DE, a decision on zeroing
+only a sub-set of those parameters can be made using a combination of criteria like parameter magnitude
+and Hessian approximations. 

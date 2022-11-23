@@ -1,0 +1,19 @@
+We introduce here the model of growing graphs, a model of dynamic networks in which nodes can generate
+new nodes, thus expanding the network. This motivates the algorithmic problem of constructing
+a target graph G, starting from a single node. To properly model this, we assume that every node u can
+generate at most one node v in every round (or time slot). Every newly generated node v can activate
+edges with other nodes, only at the time of its birth, provided that these nodes are up to a small distance
+d away from v. We show that the most interesting case is when d=2. As we prove, in order to achieve the
+construction of a target graph G in a small number of time slots, we might need to pay for auxiliary
+edges (the "excess edges"), which will be eventually removed. This creates a trade-off between
+the number of time slots and the number of excess edges required to construct a target graph. In this
+paper, we deal with the following algorithmic question: Given a target graph G of n nodes, can G be
+constructed in at most k time slots and with at most \ell excess edges? On the positive side, we provide
+polynomial-time algorithms that efficiently construct fundamental graph families, such as lines,
+stars, trees, and planar graphs. In particular, we show that trees can be constructed in a poly-logarithmic
+number of slots with linearly many excess edges, while planar graphs can be constructed in a logarithmic
+number of slots with O(n\log n) excess edges. We also give a polynomial-time algorithm for deciding
+whether a graph can be constructed in \log n slots with \ell = 0 excess edges. On the negative side,
+we prove that the problem of determining the minimum number of slots required for a graph to be constructed
+with zero excess edges (i) is NP-complete and (ii) for any \varepsilon>0, cannot be approximated
+within n^{1-\varepsilon}, unless P=NP. 

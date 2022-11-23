@@ -1,0 +1,19 @@
+Improving software performance through configuration parameter tuning is a common activity during
+software maintenance. Beyond traditional performance metrics like latency, mobile app developers
+are interested in reducing app energy usage. Some mobile apps have centralized locations for parameter
+tuning, similar to databases and operating systems, but it is common for mobile apps to have hundreds
+of parameters scattered around the source code. The correlation between these "deep" parameters
+and app energy usage is unclear. Researchers have studied the energy effects of deep parameters
+in specific modules, but we lack a systematic understanding of the energy impact of mobile deep parameters.
+In this paper we empirically investigate this topic, combining a developer survey with systematic
+energy measurements. Our motivational survey of 25 Android developers suggests that developers
+do not understand, and largely ignore, the energy impact of deep parameters. To assess the potential
+implications of this practice, we propose a deep parameter energy profiling framework that can
+analyze the energy impact of deep parameters in an app. Our framework identifies deep parameters,
+mutates them based on our parameter value selection scheme, and performs reliable energy impact
+analysis. Applying the framework to 16 popular Android apps, we discovered that deep parameter-induced
+energy inefficiency is rare. We found only 2 out of 1644 deep parameters for which a different value
+would significantly improve its app's energy efficiency. A detailed analysis found that most deep
+parameters have either no energy impact, limited energy impact, or an energy impact only under extreme
+values. Our study suggests that it is generally safe for developers to ignore the energy impact when
+choosing deep parameter values in mobile apps. 

@@ -1,0 +1,20 @@
+This dissertation rigorously characterizes many modern commodity DRAM devices and shows that
+by exploiting DRAM access timing margins within manufacturer-recommended DRAM timing specifications,
+we can significantly improve system performance, reduce power consumption, and improve device
+reliability and security. First, we characterize DRAM timing parameter margins and find that certain
+regions of DRAM can be accessed faster than other regions due to DRAM cell process manufacturing
+variation. We exploit this by enabling variable access times depending on the DRAM cells being accessed,
+which not only improves overall system performance, but also decreases power consumption. Second,
+we find that we can uniquely identify DRAM devices by the locations of failures that result when we
+access DRAM with timing parameters reduced below specification values. Because we induce these
+failures with DRAM accesses, we can generate these unique identifiers significantly more quickly
+than prior work. Third, we propose a random number generator that is based on our observation that
+timing failures in certain DRAM cells are randomly induced and can thus be repeatedly polled to very
+quickly generate true random values. Finally, we characterize the RowHammer security vulnerability
+on a wide range of modern DRAM chips while violating the DRAM refresh requirement in order to directly
+characterize the underlying DRAM technology without the interference of refresh commands. We
+demonstrate with our characterization of real chips, that existing RowHammer mitigation mechanisms
+either are not scalable or suffer from prohibitively large performance overheads in projected
+future devices and it is critical to research more effective solutions to RowHammer. Overall, our
+studies build a new understanding of modern DRAM devices to improve computing system performance,
+reliability and security all at the same time. 

@@ -1,0 +1,20 @@
+Compact stellar systems such as Ultra-compact dwarfs (UCDs) and Globular Clusters (GCs) around
+galaxies are known to be the tracers of the merger events that have been forming these galaxies. Therefore,
+identifying such systems allows to study galaxies mass assembly, formation and evolution. However,
+in the lack of spectroscopic information detecting UCDs/GCs using imaging data is very uncertain.
+Here, we aim to train a machine learning model to separate these objects from the foreground stars
+and background galaxies using the multi-wavelength imaging data of the Fornax galaxy cluster in
+6 filters, namely u, g, r, i, J and Ks. The classes of objects are highly imbalanced which is problematic
+for many automatic classification techniques. Hence, we employ Synthetic Minority Over-sampling
+to handle the imbalance of the training data. Then, we compare two classifiers, namely Localized
+Generalized Matrix Learning Vector Quantization (LGMLVQ) and Random Forest (RF). Both methods
+are able to identify UCDs/GCs with a precision and a recall of >93 percent and provide relevances
+that reflect the importance of each feature dimension %(colors and angular sizes) for the classification.
+Both methods detect angular sizes as important markers for this classification problem. While
+it is astronomical expectation that color indices of u-i and i-Ks are the most important colors,
+our analysis shows that colors such as g-r are more informative, potentially because of higher signal-to-noise
+ratio. Besides the excellent performance the LGMLVQ method allows further interpretability by
+providing the feature importance for each individual class, class-wise representative samples
+and the possibility for non-linear visualization of the data as demonstrated in this contribution.
+We conclude that employing machine learning techniques to identify UCDs/GCs can lead to promising
+results. 

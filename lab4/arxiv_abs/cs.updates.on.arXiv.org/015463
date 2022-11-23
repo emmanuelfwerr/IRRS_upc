@@ -1,0 +1,19 @@
+Machine learning methods especially deep neural networks have achieved great success but many
+of them often rely on a number of labeled samples for training. In real-world applications, we often
+need to address sample shortage due to e.g., dynamic contexts with emerging prediction targets
+and costly sample annotation. Therefore, low-resource learning, which aims to learn robust prediction
+models with no enough resources (especially training samples), is now being widely investigated.
+Among all the low-resource learning studies, many prefer to utilize some auxiliary information
+in form of Knowledge Graph (KG), which is becoming more and more popular for knowledge representation,
+to reduce the reliance on labeled samples. In this survey, we very comprehensively reviewed over
+$90$ papers about KG-aware research for two major low-resource learning settings -- zero-shot
+learning (ZSL) where new classes for prediction have never appeared in training, and few-shot learning
+(FSL) where new classes for prediction have only a small number of labeled samples that are available.
+We first introduced the KGs used in ZSL and FSL studies as well as the existing and potential KG construction
+solutions, and then systematically categorized and summarized KG-aware ZSL and FSL methods, dividing
+them into different paradigms such as the mapping-based, the data augmentation, the propagation-based
+and the optimization-based. We next presented different applications, including both KG augmented
+prediction tasks in Computer Vision and Natural Language Processing but also tasks for KG completion,
+and some typical evaluation resources for each task. We eventually discussed some challenges and
+future directions on aspects such as new learning and reasoning paradigms, and the construction
+of high quality KGs. 

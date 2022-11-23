@@ -1,0 +1,20 @@
+Contextual features are important data sources for building spatiotemporal crowd flow prediction
+(STCFP) models. However, the difficulty of applying context lies in the unknown generalizability
+of both contextual features (e.g., weather, holiday, and points-of-interests) and context modeling
+techniques across different scenarios. In this paper, we develop an experimental platform composed
+of large-scale spatiotemporal crowd flow data, contextual data, and state-of-the-art spatiotemporal
+prediction models to conduct a comprehensive experimental study to quantitatively investigate
+the generalizability of different contextual features and modeling techniques in three urban
+crowd flow prediction scenarios (bike flow, metro passenger flow, and electric vehicle charging
+demand). In particular, we develop a general taxonomy of context modeling techniques based on extensive
+investigations in prevailing research. With three real-world datasets including millions of
+records and rich context data, we have trained and tested hundreds of different models. Our results
+reveal several important observations: (1) Using more contextual features may not always result
+in better prediction with existing context modeling techniques; in particular, the contextual
+feature combination of holiday and temporal position can provide more generalizable beneficial
+information than other contextual feature combinations. (2) In context modeling techniques,
+using a gated unit to incorporate raw contextual features into the state-of-the-art prediction
+model has good generalizability. Besides, we also offer several suggestions about incorporating
+contextual factors for practitioners who want to build STCFP applications. From our findings,
+we call for future research efforts devoted to developing new context processing and modeling solutions
+to fully exploit the potential of contextual features for STCFP. 

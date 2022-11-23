@@ -1,0 +1,20 @@
+In the present study, the capabilities of a new Convolutional Neural Network (CNN) model are explored
+with the paramount objective of reconstructing the temperature field of wall-bounded flows based
+on a limited set of measurement points taken at the boundaries of the fluid domain. For that, we employ
+an algorithm that leverages the CNN capabilities provided with additional information about the
+governing equations of the physical problem. Great progress has been made in recent years towards
+reconstructing and characterizing the spatial distribution of physical variables of interest
+using CNNs. In principle, CNNs can represent any continuous mathematical function with a relatively
+reduced number of parameters. However, depending on the complexity imposed by the physical problem,
+this technique becomes unfeasible. The present study employs a Physics Informed Neuron Network
+technique featuring a data-efficient function approximator. As a proof of concept, the CNN is trained
+to retrieve the temperature of a heated channel based on a limited number of sensors placed at the
+boundaries of the domain. In this context, the training data are the temperature fields solutions
+considering various flows conditions at steady state, e.g varying the Reynolds and the Prandtl
+numbers. Additionally, a demonstration case considering the more complex geometry of a MSR is also
+provided. Assessment on the performance of the CNN is done by the mean L2 and the maximum Linf Euclidean
+norms stemmed from the difference between the actual solutions and the predictions made by the CNN.
+Finally, a sensitivity analysis is carried out such that the robustness of the CNN is tested considering
+a potential real application scenario where noise is inevitable. For that, the original test inputs
+are overlaid with a normal distribution of random numbers targeting to mimic different levels of
+noise in the measurement points. 

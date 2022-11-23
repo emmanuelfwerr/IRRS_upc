@@ -1,0 +1,19 @@
+Environmental sound classification (ESC) is a challenging problem due to the unstructured spatial-temporal
+relations that exist in the sound signals. Recently, many studies have focused on abstracting features
+from convolutional neural networks while the learning of semantically relevant frames of sound
+signals has been overlooked. To this end, we present an end-to-end framework, namely feature pyramid
+attention network (FPAM), focusing on abstracting the semantically relevant features for ESC.
+We first extract the feature maps of the preprocessed spectrogram of the sound waveform by a backbone
+network. Then, to build multi-scale hierarchical features of sound spectrograms, we construct
+a feature pyramid representation of the sound spectrograms by aggregating the feature maps from
+multi-scale layers, where the temporal frames and spatial locations of semantically relevant
+frames are localized by FPAM. Specifically, the multiple features are first processed by a dimension
+alignment module. Afterward, the pyramid spatial attention module (PSA) is attached to localize
+the important frequency regions spatially with a spatial attention module (SAM). Last, the processed
+feature maps are refined by a pyramid channel attention (PCA) to localize the important temporal
+frames. To justify the effectiveness of the proposed FPAM, visualization of attention maps on the
+spectrograms has been presented. The visualization results show that FPAM can focus more on the
+semantic relevant regions while neglecting the noises. The effectiveness of the proposed methods
+is validated on two widely used ESC datasets: the ESC-50 and ESC-10 datasets. The experimental results
+show that the FPAM yields comparable performance to state-of-the-art methods. A substantial performance
+increase has been achieved by FPAM compared with the baseline methods. 

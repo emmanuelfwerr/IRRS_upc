@@ -1,0 +1,20 @@
+Interstellar dust affects astronomical observations through absorption and reddening, yet this
+extinction is also a powerful tool for studying interstellar matter in galaxies. 3D reconstructions
+of dust extinction and density in the Milky Way have suffered from artefacts such as the fingers-of-god
+effect and negative densities, and have been limited by large computational costs. Here we aim to
+overcome these issues with a novel algorithm that derives the 3D extinction density of dust in the
+Milky Way using a latent variable Gaussian Process and variational inference. Our model maintains
+non-negative density and hence monotonically non-decreasing extinction along all lines-of-sight,
+and performs inference within a reasonable computational time. Using extinctions for hundreds
+of thousands of stars computed from optical and near-IR photometry, together with distances based
+on Gaia parallaxes, we use our algorithm to infer the structure of the Orion, Taurus, Perseus, and
+Cygnus X star-forming regions. A number of features superimposed in 2D extinction maps are clearly
+deblended in 3D dust extinction density maps. We find a large filament on the edge of Orion, identify
+filament that in the Taurus and Perseus regions, and show that Cygnus X is located at 1300-1500pc.
+We compute dust masses of the regions and find these to be slightly higher than previous estimates,
+likely a consequence of our input data recovering the highest column densities more effectively.
+Comparing our predicted extinctions to Planck data, we find that known relationships between density
+and dust processing, where high extinction lines of sight have the most processed grains, hold up
+in resolved observations when density is included, and that they exist at smaller scales than previously
+suggested. This can be used to study the changes in size or composition of dust as they are processed
+in molecular clouds. (Abridged) 

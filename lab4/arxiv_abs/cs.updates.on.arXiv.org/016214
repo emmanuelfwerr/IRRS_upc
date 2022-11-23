@@ -1,0 +1,19 @@
+Since Spectre and Meltdown's disclosure in 2018, a new category of attacks has been identified and
+characterized by the scientific community. The Foreshadow attack, which was the first one to target
+Intel's secure enclave technology (namely SGX) has been developed shortly after. It opened the
+way to micro architectural attacks on Intel's architecture, and led to the quick development of
+micro architectural attacks until today. While Spectre and Meltdown are often considered as the
+first micro architectural attacks, one can argue that cache attacks, as introduced by Osvik et al.
+in 2006, can be seen as the first types of micro architectural attacks that were developed. Now, even
+though there are many variants, they are still the most prominent type of micro architectural attacks.
+One example of cache micro architectural covert-channel is the Prime+Probe. Lately targeting
+the Intel architecture, the micro architectural attacks are now challenging a wider variety of
+CPUs. Recently, CPUs running the RISC-V Instruction Set Architecture have been targeted. One famous
+and widely used RISC-V CPU is the ETH Zurich's CVA6 (formerly Ariane) core. CVA6 is a 6-stage, single
+issue, in-order CPU. To the best of our knowledge, there is no existing document presenting very
+detailed aspects of the CVA6's micro architecture, especially with respect to the data cache. Such
+information is mandatory to deeply understand any architectural or micro architectural study
+successfully, such as the replication of the Prime+Probe attack on the CVA6 CPU proposed by Nils
+Wistoff. This paper presents the implementation of the Data cache in the CVA6 CPU from OpenHW Group
+by focusing on its memory structure and explaining through several examples what happens when a
+request for memory allocation occurs. 

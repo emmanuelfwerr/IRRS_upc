@@ -1,0 +1,19 @@
+The existence of a universal learning architecture in human cognition is a widely spread conjecture
+supported by experimental findings from neuroscience. While no low-level implementation can
+be specified yet, an abstract outline of human perception and learning is believed to entail three
+basic properties: (a) hierarchical attention and processing, (b) memory-based knowledge representation,
+and (c) progressive learning and knowledge compaction. We approach the design of such a learning
+architecture from a system-theoretic viewpoint, developing a closed-loop system with three main
+components: (i) a multi-resolution analysis pre-processor, (ii) a group-invariant feature extractor,
+and (iii) a progressive knowledge-based learning module. Multi-resolution feedback loops are
+used for learning, i.e., for adapting the system parameters to online observations. To design (i)
+and (ii), we build upon the established theory of wavelet-based multi-resolution analysis and
+the properties of group convolution operators. Regarding (iii), we introduce a novel learning
+algorithm that constructs progressively growing knowledge representations in multiple resolutions.
+The proposed algorithm is an extension of the Online Deterministic Annealing (ODA) algorithm based
+on annealing optimization, solved using gradient-free stochastic approximation. ODA has inherent
+robustness and regularization properties and provides a means to progressively increase the complexity
+of the learning model i.e. the number of the neurons, as needed, through an intuitive bifurcation
+phenomenon. The proposed multi-resolution approach is hierarchical, progressive, knowledge-based,
+and interpretable. We illustrate the properties of the proposed architecture in the context of
+the state-of-the-art learning algorithms and deep learning methods. 

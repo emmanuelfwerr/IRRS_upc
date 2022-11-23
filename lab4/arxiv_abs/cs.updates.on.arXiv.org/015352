@@ -1,0 +1,19 @@
+The interpretation of the electrocardiogram (ECG) gives clinical information and helps in the
+assessing of the heart function. There are distinct ECG patterns associated with a specific class
+of arrythmia. The convolutional neural network is actually one of the most applied deep learning
+algorithms in ECG processing. However, with deep learning models there are many more hyperparameters
+to tune. Selecting an optimum or best hyperparameter for the convolutional neural network algorithm
+is challenging. Often, we end up tuning the model manually with different possible range of values
+until a best fit model is obtained. Automatic hyperparameters tuning using Bayesian optimization
+(BO) and evolutionary algorithms brings a solution to the harbor manual configuration. In this
+paper, we propose to optimize the Recurrent one Dimensional Convolutional Neural Network model
+(R-1D-CNN) with two levels. At the first level, a residual convolutional layer and one-dimensional
+convolutional neural layers are trained to learn patient-specific ECG features over which the
+multilayer perceptron layers can learn to produce the final class vectors of each input. This level
+is manual and aims to lower the search space. The second level is automatic and based on proposed algorithm
+based BO. Our proposed optimized R-1D-CNN architecture is evaluated on two publicly available
+ECG Datasets. The experimental results display that the proposed algorithm based BO achieves an
+optimum rate of 99.95\%, while the baseline model achieves 99.70\% for the MIT-BIH database. Moreover,
+experiments demonstrate that the proposed architecture fine-tuned with BO achieves a higher accuracy
+than the other proposed architectures. Our architecture achieves a good result compared to previous
+works and based on different experiments. 

@@ -1,0 +1,20 @@
+Demands are increasing to measure per-flow statistics in the data plane of high-speed switches.
+Measuring flows with exact counting is infeasible due to processing and memory constraints, but
+a sketch is a promising candidate for collecting approximately per-flow statistics in data plane
+in real-time. Among them, Count-Min sketch is a versatile tool to measure spectral density of high
+volume data using a small amount of memory and low processing overhead. Due to its simplicity and
+versatility, Count-Min sketch and its variants have been adopted in many works as a stand alone or
+even as a supporting measurement tool. However, Count-Min's estimation accuracy is limited owing
+to its data structure not fully accommodating Zipfian distribution and the indiscriminate update
+algorithm without considering a counter value. This in turn degrades the accuracy of heavy hitter,
+heavy changer, cardinality, and entropy. To enhance measurement accuracy of Count-Min, there
+have been many and various attempts. One of the most notable approaches is to cascade multiple sketches
+in a sequential manner so that either mouse or elephant flows should be filtered to separate elephants
+from mouse flows such as Elastic sketch (an elephant filter leveraging TCAM + Count-Min) and FCM
+sketch (Count-Min-based layered mouse filters). In this paper, we first show that these cascaded
+filtering approaches adopting a Pyramid-shaped data structure (allocating more counters for
+mouse flows) still suffer from under-utilization of memory, which gives us a room for better estimation.
+To this end, we are facing two challenges: one is (a) how to make Count-Min's data structure accommodate
+more effectively Zipfian distribution, and the other is (b) how to make update and query work without
+delaying packet processing in the switch's data plane. Count-Less adopts a different combination
+... 

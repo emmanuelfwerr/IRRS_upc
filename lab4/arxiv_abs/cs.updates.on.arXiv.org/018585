@@ -1,0 +1,20 @@
+We design new policies that ensure both worst-case optimality for expected regret and light-tailed
+risk for regret distribution in the stochastic multi-armed bandit problem. Recently, arXiv:2109.13595
+showed that information-theoretically optimized bandit algorithms suffer from some serious
+heavy-tailed risk; that is, the worst-case probability of incurring a linear regret slowly decays
+at a polynomial rate of $1/T$, as $T$ (the time horizon) increases. Inspired by their results, we
+further show that widely used policies (e.g., Upper Confidence Bound, Thompson Sampling) also
+incur heavy-tailed risk; and this heavy-tailed risk actually exists for all "instance-dependent
+consistent" policies. With the aim to ensure safety against such heavy-tailed risk, starting from
+the two-armed bandit setting, we provide a simple policy design that (i) has the worst-case optimality
+for the expected regret at order $\tilde O(\sqrt{T})$ and (ii) has the worst-case tail probability
+of incurring a linear regret decay at an optimal exponential rate $\exp(-\Omega(\sqrt{T}))$.
+Next, we improve the policy design and analysis to the general $K$-armed bandit setting. We provide
+explicit tail probability bound for any regret threshold under our policy design. Specifically,
+the worst-case probability of incurring a regret larger than $x$ is upper bounded by $\exp(-\Omega(x/\sqrt{KT}))$.
+We also enhance the policy design to accommodate the "any-time" setting where $T$ is not known a priori,
+and prove equivalently desired policy performances as compared to the "fixed-time" setting with
+known $T$. A brief account of numerical experiments is conducted to illustrate the theoretical
+findings. Our results reveal insights on the incompatibility between consistency and light-tailed
+risk, whereas indicate that worst-case optimality on expected regret and light-tailed risk on
+regret distribution are compatible. 

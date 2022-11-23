@@ -1,0 +1,20 @@
+A matching $M$ is a $\mathscr{P}$-matching if the subgraph induced by the endpoints of the edges
+of $M$ satisfies property $\mathscr{P}$. As examples, for appropriate choices of $\mathscr{P}$,
+the problems Induced Matching, Uniquely Restricted Matching, Connected Matching and Disconnected
+Matching arise. For many of these problems, finding a maximum $\mathscr{P}$-matching is a knowingly
+NP-Hard problem, with few exceptions, such as connected matchings, which has the same time complexity
+as usual Maximum Matching problem. The weighted variant of Maximum Matching has been studied for
+decades, with many applications, including the well-known Assignment problem. Motivated by this
+fact, in addition to some recent researches in weighted versions of acyclic and induced matchings,
+we study the Maximum Weight Connected Matching. In this problem, we want to find a matching $M$ such
+that the endpoint vertices of its edges induce a connected subgraph and the sum of the edge weights
+of $M$ is maximum. Unlike the unweighted Connected Matching problem, which is in P for general graphs,
+we show that Maximum Weight Connected Matching is NP-Hard even for bounded diameter bipartite graphs,
+starlike graphs, planar bipartite, and bounded degree planar graphs, while solvable in linear
+time for trees and subcubic graphs. When we restrict edge weights to be non negative only, we show
+that the problem turns to be polynomially solvable for chordal graphs, while it remains NP-Hard
+for most of the cases when weights can be negative. Our final contributions are on parameterized
+complexity. On the positive side, we present a single exponential time algorithm when parameterized
+by treewidth. In terms of kernelization, we show that, even when restricted to binary weights, Weighted
+Connected Matching does not admit a polynomial kernel when parameterized by vertex cover under
+standard complexity-theoretical hypotheses. 

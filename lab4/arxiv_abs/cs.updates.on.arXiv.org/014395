@@ -1,0 +1,20 @@
+The Kalman filter computes the optimal variable-gain using prior knowledge of the initial state
+and random (process and measurement) noise distributions, which are assumed to be Gaussian with
+known variance. However, when these distributions are unknown, the Kalman filter is not necessarily
+optimal and other simpler state-estimators, such as fixed-gain ({\alpha}, {\alpha}-\b{eta}
+or {\alpha}-\b{eta}-{\gamma} etc.) filters may be sufficient. When such filters are used as low-complexity
+state-estimators in embedded tracking systems, the fixed gain parameters are usually set equal
+to the steady-state gains of the corresponding Kalman filter. An alternative procedure, that does
+not rely prior distributions, based on Luenberger observers, is presented here. It is suggested
+that the arbitrary placement of closed-loop state-observer poles is a simple and intuitive way
+of tuning the transient and steady-state response of a fixed-gain tracking filter when prior distributions
+are unknown. All poles are placed inside the unit circle on the positive real axis of the complex z-plane
+at p for a well damped response and a configurable bandwidth. Transient bias errors, e.g. due to target
+manoeuvres or process modelling errors, decrease as p=0 is approached for a wider bandwidth. Steady-state
+random errors, e.g. due to sensor noise, decrease as p=1 is approached for a narrower bandwidth.
+Thus the p parameter (with 0<p<1) may be interpreted as a dimensionless smoothing factor. This tutorial-style
+report examines state-observer design by pole placement, which is a standard procedure for feedback
+controls but unusual for tracking filters, due to the success and popularity of the Kalman filter.
+As Bayesian trackers are designed via statistical modelling, not by pole-zero placement in the
+complex plane, the underlying principles of linear time-invariant signals and systems are also
+reviewed. 

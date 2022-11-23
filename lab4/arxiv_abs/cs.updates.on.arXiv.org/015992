@@ -1,0 +1,19 @@
+Convolutional neural networks (CNNs) have dramatically improved the accuracy of tasks such as
+object recognition, image segmentation and interactive speech systems. CNNs require large amounts
+of computing resources because ofcomputationally intensive convolution layers. Fast convolution
+algorithms such as Winograd convolution can greatly reduce the computational cost of these layers
+at a cost of poor numeric properties, such that greater savings in computation exponentially increase
+floating point errors. A defining feature of each Winograd convolution algorithm is a set of real-value
+points where polynomials are sampled. The choice of points impacts the numeric accuracy of the algorithm,
+but the optimal set of points for small convolutions remains unknown. Existing work considers only
+small integers and simple fractions as candidate points. In this work, we propose a novel approach
+to point selection using points of the form {-1/c , -c, c, 1/c } using the full range of real-valued
+numbers for c. We show that groups of this form cause cancellations in the Winograd transform matrices
+that reduce numeric error. We find empirically that the error for different values of c forms a rough
+curve across the range of real-value numbers helping to localize the values of c that reduce error
+and that lower errors can be achieved with non-obvious real-valued evaluation points instead of
+integers or simple fractions. We study a range of sizes for small convolutions and achieve reduction
+in error ranging from 2% to around 59% for both 1D and 2D convolution. Furthermore, we identify patterns
+in cases when we select a subset of our proposed points which will always lead to a lower error. Finally
+we implement a complete Winograd convolution layer and use it to run deep convolution neural networks
+on real datasets and show that our proposed points reduce error, ranging from 22% to 63%. 

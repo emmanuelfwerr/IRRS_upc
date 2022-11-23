@@ -1,0 +1,20 @@
+In the near-future, dedicated telescopes observe Earth-like exoplanets in reflected light, allowing
+their characterization. Because of the huge distances, every exoplanet will be a single pixel,
+but temporal variations in its spectral flux hold information about the planet's surface and atmosphere.
+We test convolutional neural networks for retrieving a planet's rotation axis, surface and cloud
+map from simulated single-pixel flux and polarization observations. We investigate the assumption
+that the planets reflect Lambertian in the retrieval while their actual reflection is bidirectional,
+and of including polarization in retrievals. We simulate observations along a planet's orbit using
+a radiative transfer algorithm that includes polarization and bidirectional reflection by vegetation,
+desert, oceans, water clouds, and Rayleigh scattering in 6 spectral bands from 400 to 800 nm, at various
+photon noise levels. The surface-types and cloud patterns of the facets covering a model planet
+are based on probability distributions. Our networks are trained with simulated observations
+of millions of planets before retrieving maps of test planets. The neural networks can constrain
+rotation axes with a mean squared error (MSE) as small as 0.0097, depending on the orbital inclination.
+On a bidirectionally reflecting planet, 92% of ocean and 85% of vegetation, desert, and cloud facets
+are correctly retrieved, in the absence of noise. With realistic noise, it should still be possible
+to retrieve the main map features with a dedicated telescope. Except for face-on orbits, a network
+trained with Lambertian reflecting planets, yields significant retrieval errors when given observations
+of bidirectionally reflecting planets, in particular, brightness artefacts around a planet's
+pole. Including polarization improves retrieving the rotation axis and the accuracy of the retrieval
+of ocean and cloud facets. 

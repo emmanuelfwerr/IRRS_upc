@@ -1,0 +1,20 @@
+We prove new bounds on the distributed fractional coloring problem in the LOCAL model. Fractional
+$c$-colorings can be understood as multicolorings as follows. For some natural numbers $p$ and
+$q$ such that $p/q\leq c$, each node $v$ is assigned a set of at least $q$ colors from $\{1,\dots,p\}$
+such that adjacent nodes are assigned disjoint sets of colors. The minimum $c$ for which a fractional
+$c$-coloring of a graph $G$ exists is called the fractional chromatic number $\chi_f(G)$ of $G$.
+Recently, [Bousquet, Esperet, and Pirot; SIROCCO '21] showed that for any constant $\epsilon>0$,
+a fractional $(\Delta+\epsilon)$-coloring can be computed in $\Delta^{O(\Delta)} + O(\Delta\cdot\log^*
+n)$ rounds. We show that such a coloring can be computed in only $O(\log^2 \Delta)$ rounds, without
+any dependency on $n$. We further show that in $O\big(\frac{\log n}{\epsilon}\big)$ rounds, it
+is possible to compute a fractional $(1+\epsilon)\chi_f(G)$-coloring, even if the fractional
+chromatic number $\chi_f(G)$ is not known. That is, this problem can be approximated arbitrarily
+well by an efficient algorithm in the LOCAL model. For the standard coloring problem, it is only known
+that an $O\big(\frac{\log n}{\log\log n}\big)$-approximation can be computed in polylogarithmic
+time in the LOCAL model. We also show that our distributed fractional coloring approximation algorithm
+is best possible. We show that in trees, which have fractional chromatic number $2$, computing a
+fractional $(2+\epsilon)$-coloring requires at least $\Omega\big(\frac{\log n}{\epsilon}\big)$
+rounds. We finally study fractional colorings of regular grids. In [Bousquet, Esperet, and Pirot;
+SIROCCO '21], it is shown that in regular grids of bounded dimension, a fractional $(2+\epsilon)$-coloring
+can be computed in time $O(\log^* n)$. We show that such a coloring can even be computed in $O(1)$ rounds
+in the LOCAL model. 

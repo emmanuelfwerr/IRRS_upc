@@ -1,0 +1,19 @@
+Most language grounding models learn to select the referred object from a pool of object proposals
+provided by a pre-trained detector. This object proposal bottleneck is limiting because an utterance
+may refer to visual entities at various levels of granularity, such as the chair, the leg of a chair,
+or the tip of the front leg of a chair, which may be missed by the detector. Recently, MDETR introduced
+a language grounding model for 2D images that do not have such a box proposal bottleneck; instead
+of selecting objects from a proposal pool, it instead decodes the referenced object boxes directly
+from image and language features and achieves big leaps in performance. We propose a language grounding
+model for 3D scenes built on MDETR, which we call BEAUTY-DETR, from bottom-up and top-down DETR.
+BEAUTY-DETR attends on an additional object proposal pool computed bottom-up from a pre-trained
+detector. Yet it decodes referenced objects without selecting them from the pool. In this way, it
+uses powerful object detectors to help ground language without being restricted by their misses.
+Second, BEAUTY-DETR augments supervision from language grounding annotations by configuring
+object detection annotations as language prompts to be grounded in images. The proposed model sets
+a new state-of-the-art across popular 3D language grounding benchmarks with significant performance
+gains over previous 3D approaches (12.6% on SR3D, 11.6% on NR3D and 6.3% on ScanRefer). It outperforms
+a straightforward MDETR for the 3D point clouds method we implemented by 6.7% on SR3D, 11.8% on NR3D
+and 5% on the ScanRefer benchmark. When applied to language grounding in 2D images, it performs on
+par with MDETR. We ablate each of the design choices of the model and quantify their contribution
+to performance. Code and checkpoints are available at https://github.com/nickgkan/beauty_detr.

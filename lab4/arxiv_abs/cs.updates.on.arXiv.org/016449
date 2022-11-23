@@ -1,0 +1,19 @@
+We study hidden-action principal-agent problems in which a principal commits to an outcome-dependent
+payment scheme (called contract) so as to incentivize the agent to take a costly, unobservable action
+leading to favorable outcomes. In particular, we focus on Bayesian settings where the agent has
+private information. This is collectively encoded by the agent's type, which is unknown to the principal,
+but randomly drawn according to a finitely-supported, commonly-known probability distribution.
+The agent's type determines both the probability distribution over outcomes and the cost associated
+with each agent's action. In Bayesian principal-agent problems, the principal may be better off
+by committing to a menu of contracts specifying a contract for each agent's type, rater than committing
+to a single contract. This induces a two-stage process that resembles interactions studied in mechanism
+design: after the principal has committed to a menu, the agent first reports a type to the principal,
+and, then, the latter puts in place the contract in the menu that corresponds to the reported type.
+Thus, the principal's computational problem boils down to designing a menu of contracts that incentivizes
+the agent to report their true type and maximizes expected utility. Previous works showed that computing
+an optimal menu of contracts or an optimal (single) contract is APX-hard, which is in sharp contrast
+from what happens in non-Bayesian settings, where an optimal contract can be computed efficiently.
+Crucially, previous works focus on menus of deterministic contracts. Surprisingly, in this paper
+we show that, if one considers menus of randomized contracts, then an optimal menu can be computed
+in polynomial time. Besides this main result, we also close several gaps in the computational complexity
+analysis of the problem of computing menus of deterministic contracts. 

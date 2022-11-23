@@ -1,0 +1,19 @@
+Data-driven methodologies offer promising ways to improve the efficiency, safety, and adaptability
+of modern and future mobility systems. While these methodologies offer many exciting upsides,
+they also introduce new challenges, particularly in the realm of user privacy. Specifically, data-driven
+algorithms often require user data, and the way this data is collected can pose privacy risks to end
+users. Centralized data sharing systems where a single entity (mobility service provider or transit
+network operator) collects and manages user data have a central point of failure. Users have to trust
+that this entity will not sell or use their data to infer sensitive private information. Unfortunately,
+in practice many advertising companies offer to buy such data for the sake of targeted advertisements.
+With this as motivation, we study the problem of using location data for congestion-aware routing
+in a privacy-preserving way. Rather than having users report their location to a central operator,
+we present a protocol in which users participate in a decentralized and privacy-preserving computation
+to estimate travel times for the roads in the network in a way that no individuals' location is ever
+observed by any other party. The protocol uses the Laplace mechanism in conjunction with secure
+multi-party computation to ensure that it is cryptogrpahically secure and that its output is differentially
+private. A natural question is if privacy necessitates degradation in accuracy or system performance.
+We show that if a road has sufficiently high capacity, then the travel time estimated by our protocol
+is provably close to the travel time estimated by the ground truth. We also evaluate the protocol
+through numerical experiments which show that the protocol provides privacy guarantees with minimal
+overhead to system performance. 

@@ -1,0 +1,19 @@
+Unmanned aerial vehicle (UAV) is expected to revolutionize the existing integrated sensing and
+communication (ISAC) system and promise a more flexible joint design. Nevertheless, the existing
+works on ISAC mainly focus on exploring the performance of both functionalities simultaneously
+during the entire considered period, which may ignore the practical asymmetric sensing and communication
+requirements. In particular, always forcing sensing along with communication may make it is harder
+to balance between these two functionalities due to shared spectrum resources and limited transmit
+power. To address this issue, we propose a new integrated periodic sensing and communication mechanism
+for the UAV-enabled ISAC system to provide a more flexible trade-off between two integrated functionalities.
+Specifically, the system achievable rate is maximized via jointly optimizing UAV trajectory,
+user association, target sensing selection, and transmit beamforming, while meeting the sensing
+frequency and beam pattern gain requirement for the given targets. Despite that this problem is
+highly non-convex and involves closely coupled integer variables, we derive the closed-form optimal
+beamforming vector to dramatically reduce the complexity of beamforming design, and present a
+tight lower bound of the achievable rate to facilitate UAV trajectory design. Based on the above
+results, we propose a penalty-based algorithm to efficiently solve the considered problem. The
+optimal achievable rate and the optimal UAV location are analyzed under a special case of infinity
+number of antennas. Furthermore, we prove the structural symmetry between the optimal solutions
+in different ISAC frames without location constraints and propose an efficient algorithm for solving
+the problem with location constraints. 

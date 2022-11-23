@@ -1,0 +1,19 @@
+The AP-LCA problem asks, given an $n$-node directed acyclic graph (DAG), to compute for every pair
+of vertices $u$ and $v$ in the DAG a lowest common ancestor (LCA) of $u$ and $v$ if one exists. In this
+paper we study several interesting variants of AP-LCA, providing both algorithms and fine-grained
+lower bounds for them. The lower bounds we obtain are the first conditional lower bounds for LCA problems
+higher than $n^{\omega-o(1)}$, where $\omega$ is the matrix multiplication exponent. Some of
+our results include: - In any DAG, we can detect all vertex pairs that have at most two LCAs and list
+all of their LCAs in $O(n^\omega)$ time. This algorithm extends a result of [Kowaluk and Lingas ESA'07]
+which showed an $\tilde{O}(n^\omega)$ time algorithm that detects all pairs with a unique LCA in
+a DAG and outputs their corresponding LCAs. - Listing $7$ LCAs per vertex pair in DAGs requires $n^{3-o(1)}$
+time under the popular assumption that 3-uniform 5-hyperclique detection requires $n^{5-o(1)}$
+time. This is surprising since essentially cubic time is sufficient to list all LCAs (if $\omega=2$).
+- Counting the number of LCAs for every vertex pair in a DAG requires $n^{3-o(1)}$ time under the Strong
+Exponential Time Hypothesis, and $n^{\omega(1,2,1)-o(1)}$ time under the $4$-Clique hypothesis.
+This shows that the algorithm of [Echkardt, M\"{u}hling and Nowak ESA'07] for listing all LCAs for
+every pair of vertices is likely optimal. - Given a DAG and a vertex $w_{u,v}$ for every vertex pair
+$u,v$, verifying whether all $w_{u,v}$ are valid LCAs requires $n^{2.5-o(1)}$ time assuming 3-uniform
+4-hyperclique requires $n^{4 - o(1)}$ time. This defies the common intuition that verification
+is easier than computation since returning some LCA per vertex pair can be solved in $O(n^{2.447})$
+time [Grandoni et al. SODA'21]. 

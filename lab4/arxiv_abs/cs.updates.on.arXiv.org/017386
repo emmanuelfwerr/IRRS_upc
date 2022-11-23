@@ -1,0 +1,19 @@
+This paper presents a new trajectory planning algorithm for 3D autonomous UAV volume coverage and
+visual inspection. The algorithm is an extension of a state-of-the-art Heat Equation Driven Area
+Coverage (HEDAC) multi-agent area coverage algorithm for 3D domains. With a given target exploration
+density field, the algorithm designs a potential field and directs UAVs to the regions of higher
+potential, i.e., higher values of remaining density. Collisions between the agents and agents
+with domain boundaries are prevented by implementing the distance field and correcting the agent's
+directional vector when the distance threshold is reached. A unit cube test case is considered to
+evaluate this trajectory planning strategy for volume coverage. For visual inspection applications,
+the algorithm is supplemented with camera direction control. A field containing the nearest distance
+from any point in the domain to the structure surface is designed. The gradient of this field is calculated
+to obtain the camera orientation throughout the trajectory. Three different test cases of varying
+complexities are considered to validate the proposed method for visual inspection. The simplest
+scenario is a synthetic portal-like structure inspected using three UAVs. The other two inspection
+scenarios are based on realistic structures where UAVs are commonly utilized: a wind turbine and
+a bridge. When deployed to a wind turbine inspection, two simulated UAVs traversing smooth spiral
+trajectories have successfully explored the entire turbine structure while cameras are directed
+to the curved surfaces of the turbine's blades. In the bridge test case an efficacious visual inspection
+of a complex structure is demonstrated by employing a single UAV and five UAVs. The proposed methodology
+is successful, flexible and applicable in real-world UAV inspection tasks. 

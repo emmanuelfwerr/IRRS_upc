@@ -1,0 +1,20 @@
+Facial image inpainting is a challenging problem as it requires generating new pixels that include
+semantic information for masked key components in a face, e.g., eyes and nose. Recently, remarkable
+methods have been proposed in this field. Most of these approaches use encoder-decoder architectures
+and have different limitations such as allowing unique results for a given image and a particular
+mask. Alternatively, some optimization-based approaches generate promising results using different
+masks with generator networks. However, these approaches are computationally more expensive.
+In this paper, we propose an efficient solution to the facial image inpainting problem using the
+Cyclic Reverse Generator (CRG) architecture, which provides an encoder-generator model. We use
+the encoder to embed a given image to the generator space and incrementally inpaint the masked regions
+until a plausible image is generated; we trained a discriminator model to assess the quality of the
+generated images during the iterations and determine the convergence. After the generation process,
+for the post-processing, we utilize a Unet model that we trained specifically for this task to remedy
+the artifacts close to the mask boundaries. We empirically observed that only a few iterations are
+sufficient to generate realistic images with the proposed model. Since the models are not trained
+for particular mask types, our method allows applying sketch-based inpaintings, using a variety
+of mask types, and producing multiple and diverse results. We compared our method with the state-of-the-art
+models both quantitatively and qualitatively, and observed that our method can compete with the
+other models in all mask types; it is particularly better in images where larger masks are utilized.
+Our code, dataset and models are available at: https://github.com/yahyadogan72/iterative facial
+image inpainting. 

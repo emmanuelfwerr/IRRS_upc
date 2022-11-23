@@ -1,0 +1,19 @@
+This paper proposes a novel mission planning platform, capable of efficiently deploying a team
+of UAVs to cover complex-shaped areas, in various remote sensing applications. Under the hood lies
+a novel optimization scheme for grid-based methods, utilizing Simulated Annealing algorithm,
+that significantly increases the achieved percentage of coverage and improves the qualitative
+features of the generated paths. Extensive simulated evaluation in comparison with a state-of-the-art
+alternative methodology, for coverage path planning (CPP) operations, establishes the performance
+gains in terms of achieved coverage and overall duration of the generated missions. On top of that,
+DARP algorithm is employed to allocate sub-tasks to each member of the swarm, taking into account
+each UAV's sensing and operational capabilities, their initial positions and any no-fly-zones
+possibly defined inside the operational area. This feature is of paramount importance in real-life
+applications, as it has the potential to achieve tremendous performance improvements in terms
+of time demanded to complete a mission, while at the same time it unlocks a wide new range of applications,
+that was previously not feasible due to the limited battery life of UAVs. In order to investigate
+the actual efficiency gains that are introduced by the multi-UAV utilization, a simulated study
+is performed as well. All of these capabilities are packed inside an end-to-end platform that eases
+the utilization of UAVs' swarms in remote sensing applications. Its versatility is demonstrated
+via two different real-life applications: (i) a photogrametry for precision agriculture and (ii)
+an indicative search and rescue for first responders missions, that were performed utilizing a
+swarm of commercial UAVs. The source code can be found at: https://github.com/savvas-ap/mCPP-optimized-DARP

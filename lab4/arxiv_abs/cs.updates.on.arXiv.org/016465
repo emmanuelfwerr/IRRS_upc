@@ -1,0 +1,20 @@
+Purpose: Functional Magnetic Resonance Imaging (fMRI) data acquired through resting-state studies
+have been used to obtain information about the spontaneous activations inside the brain. One of
+the approaches for analysis and interpretation of resting-state fMRI data require spatially and
+functionally homogenous parcellation of the whole brain based on underlying temporal fluctuations.
+Clustering is often used to generate functional parcellation. However, major clustering algorithms,
+when used for fMRI data, have their limitations. Among commonly used parcellation schemes, a tradeoff
+exists between intra-cluster functional similarity and alignment with anatomical regions. Approach:
+In this work, we present a clustering algorithm for resting state and task fMRI data which is developed
+to obtain brain parcellations that show high structural and functional homogeneity. The clustering
+is performed by multistage binary k-means clustering algorithm designed specifically for the
+4D fMRI data. The results from this multistage k-means algorithm show that by modifying and combining
+different algorithms, we can take advantage of the strengths of different techniques while overcoming
+their limitations. Results: The clustering output for resting state fMRI data using the multistage
+k-means approach is shown to be better than simple k-means or functional atlas in terms of spatial
+and functional homogeneity. The clusters also correspond to commonly identifiable brain networks.
+For task fMRI, the clustering output can identify primary and secondary activation regions and
+provide information about the varying hemodynamic response across different brain regions. Conclusion:
+The multistage k-means approach can provide functional parcellations of the brain using resting
+state fMRI data. The method is model-free and is data driven which can be applied to both resting state
+and task fMRI. 

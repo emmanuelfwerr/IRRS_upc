@@ -1,0 +1,19 @@
+The planted densest subgraph detection problem refers to the task of testing whether in a given (random)
+graph there is a subgraph that is unusually dense. Specifically, we observe an undirected and unweighted
+graph on $n$ nodes. Under the null hypothesis, the graph is a realization of an Erd\H{o}s-R\'{e}nyi
+graph with edge probability (or, density) $q$. Under the alternative, there is a subgraph on $k$
+vertices with edge probability $p>q$. The statistical as well as the computational barriers of
+this problem are well-understood for a wide range of the edge parameters $p$ and $q$. In this paper,
+we consider a natural variant of the above problem, where one can only observe a small part of the graph
+using adaptive edge queries. For this model, we determine the number of queries necessary and sufficient
+for detecting the presence of the planted subgraph. Specifically, we show that any (possibly randomized)
+algorithm must make $\mathsf{Q} = \Omega(\frac{n^2}{k^2\chi^4(p||q)}\log^2n)$ adaptive queries
+(on expectation) to the adjacency matrix of the graph to detect the planted subgraph with probability
+more than $1/2$, where $\chi^2(p||q)$ is the Chi-Square distance. On the other hand, we devise a
+quasi-polynomial-time algorithm that finds the planted subgraph with high probability by making
+$\mathsf{Q} = O(\frac{n^2}{k^2\chi^4(p||q)}\log^2n)$ adaptive queries. We then propose a polynomial-time
+algorithm which is able to detect the planted subgraph using $\mathsf{Q} = O(\frac{n^4}{k^4\chi^2(p||q)}\log
+n)$ queries. We conjecture that in the leftover regime, where $\frac{n^2}{k^2}\ll\mathsf{Q}\ll
+\frac{n^4}{k^4}$, no polynomial-time algorithms exist; we give an evidence for this hypothesis
+using the planted clique conjecture. Our results resolve three questions posed in \cite{racz2020finding},
+where the special case of adaptive detection and recovery of a planted clique was considered. 

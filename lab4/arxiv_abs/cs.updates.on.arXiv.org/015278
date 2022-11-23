@@ -1,0 +1,20 @@
+Histopathological cancer diagnostics has become more complex, and the increasing number of biopsies
+is a challenge for most pathology laboratories. Thus, development of automatic methods for evaluation
+of histopathological cancer sections would be of value. In this study, we used 624 whole slide images
+(WSIs) of breast cancer from a Norwegian cohort. We propose a cascaded convolutional neural network
+design, called H2G-Net, for semantic segmentation of gigapixel histopathological images. The
+design involves a detection stage using a patch-wise method, and a refinement stage using a convolutional
+autoencoder. To validate the design, we conducted an ablation study to assess the impact of selected
+components in the pipeline on tumour segmentation. Guiding segmentation, using hierarchical
+sampling and deep heatmap refinement, proved to be beneficial when segmenting the histopathological
+images. We found a significant improvement when using a refinement network for postprocessing
+the generated tumour segmentation heatmaps. The overall best design achieved a Dice score of 0.933
+on an independent test set of 90 WSIs. The design outperformed single-resolution approaches, such
+as cluster-guided, patch-wise high-resolution classification using MobileNetV2 (0.872) and
+a low-resolution U-Net (0.874). In addition, segmentation on a representative x400 WSI took ~58
+seconds, using only the CPU. The findings demonstrate the potential of utilizing a refinement network
+to improve patch-wise predictions. The solution is efficient and does not require overlapping
+patch inference or ensembling. Furthermore, we showed that deep neural networks can be trained
+using a random sampling scheme that balances on multiple different labels simultaneously, without
+the need of storing patches on disk. Future work should involve more efficient patch generation
+and sampling, as well as improved clustering. 

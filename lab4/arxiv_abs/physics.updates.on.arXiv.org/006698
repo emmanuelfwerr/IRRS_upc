@@ -1,0 +1,19 @@
+The presence of pathogens in complex, multi-cellular samples such as blood, urine, mucus, and wastewater
+can serve as indicators of active infection, and their identification can impact how human and environmental
+health are treated. Surface-enhanced Raman spectroscopy (SERS) and machine learning (ML) can
+distinguish multiple pathogen species and strains, but processing complex fluid samples to sensitively
+and specifically detect pathogens remains an outstanding challenge. Here, we develop an acoustic
+bioprinting platform to digitize samples into millions of droplets, each containing just a few
+cells, which are then identified with SERS and ML. As a proof of concept, we focus on bacterial bloodstream
+infections. We demonstrate ~2pL droplet generation from solutions containing S. epidermidis,
+E. coli, and mouse red blood cells (RBCs) mixed with gold nanorods (GNRs) at 1 kHz ejection rates;
+use of parallel printing heads would enable processing of mL-volume samples in minutes. Droplets
+printed with GNRs achieve spectral enhancements of up to 1500x compared to samples printed without
+GNRs. With this improved signal-to-noise, we train an ML model on droplets consisting of either
+pure cells with GNRs or mixed, multicellular species with GNRs, using scanning electron microscopy
+images as our ground truth. We achieve >=99% classification accuracy of droplets printed from cellularly-pure
+samples, and >=87% accuracy in droplets printed from mixtures of S. epidermidis, E. coli, and RBCs.
+We compute the feature importance at each wavenumber and confirm that the most significant spectral
+bands for classification correspond to biologically relevant Raman peaks within our cells. This
+combined acoustic droplet ejection, SERS and ML platform could enable clinical and industrial
+translation of SERS-based cellular identification. 

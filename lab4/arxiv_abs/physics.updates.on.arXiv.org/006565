@@ -1,0 +1,19 @@
+We propose the first machine-learned control-oriented flow estimation for multiple-input multiple-output
+plants. Starting point are experiments or simulations with representative steady actuation commands
+leading to a database with simultaneously recorded actuation commands, sensor signals and flow
+fields. A key enabler is an estimator input vector comprising sensor signals and actuation commands.
+The mapping from the sensor signals and actuation commands to the flow fields is realized in an analytically
+simple, data-centric and general nonlinear approach. The analytically simple estimator generalizes
+Linear Stochastic Estimation (LSE) for actuation commands. The data-centric approach yields
+flow fields by interpolating from the database. The interpolation is performed with k Nearest Neighbors
+(kNN). The general global nonlinear mapping from inputs to flow fields is obtained from a Deep Neural
+Network (DNN) via an iterative training approach. The estimator comparison is performed for the
+fluidic pinball plant, which is a multipleinput, multiple-output wake control benchmark (Deng
+et al. 2020) featuring rich dynamics. The steady rotations of three cylinders represent actuation
+commands while the flow state is monitored by downstream sensors. We conclude that the machine learning
+methods clearly outperform the linear model. The performance of kNN and DNN estimators are comparable
+for periodic dynamics. Yet, DNN performs consistently better when the flow is chaotic. Moreover,
+a thorough comparison regarding to the complexity, computational cost, and prediction accuracy
+is presented to demonstrate the relative merits of each estimator. The proposed machine-learning
+estimation methods can be applied to a wide range of flow control configurations with promising
+accuracy. 

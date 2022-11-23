@@ -1,0 +1,19 @@
+The problem of finding the largest induced balanced bipartite subgraph in a given graph is NP-hard.
+This problem is closely related to the problem of finding the smallest Odd Cycle Transversal. In
+this work, we consider the following model of instances: starting with a set of vertices $V$, a set
+$S \subseteq V$ of $k$ vertices is chosen and an arbitrary $d$-regular bipartite graph is added on
+it; edges between pairs of vertices in $S \times (V \setminus S)$ and $(V \setminus S) \times (V \setminus
+S)$ are added with probability $p$. Since for $d=0$, the problem reduces to recovering a planted
+independent set, we don't expect efficient algorithms for $k=o(\sqrt{n})$. This problem is a generalization
+of the planted balanced biclique problem where the bipartite graph induced on $S$ is a complete bipartite
+graph; [Lev18] gave an algorithm for recovering $S$ in this problem when $k=\Omega(\sqrt{n})$.
+Our main result is an efficient algorithm that recovers (w.h.p.) the planted bipartite graph when
+$k=\Omega_p(\sqrt{n \log n})$ for a large range of parameters. Our results also hold for a natural
+semi-random model of instances, which involve the presence of a monotone adversary. Our proof shows
+that a natural SDP relaxation for the problem is integral by constructing an appropriate solution
+to it's dual formulation. Our main technical contribution is a new approach for constructing the
+dual solution where we calibrate the eigenvectors of the adjacency matrix to be the eigenvectors
+of the dual matrix. We believe that this approach may have applications to other recovery problems
+in semi-random models as well. When $k=\Omega(\sqrt{n})$, we give an algorithm for recovering
+$S$ whose running time is exponential in the number of small eigenvalues in graph induced on $S$;
+this algorithm is based on subspace enumeration techniques due to the works of [KT07,ABS10,Kol11].

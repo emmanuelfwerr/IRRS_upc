@@ -1,0 +1,20 @@
+We prove that a random $d$-regular graph, with high probability, is a cut sparsifier of the clique
+with approximation error at most $\left(2\sqrt{\frac 2 \pi} + o_{n,d}(1)\right)/\sqrt d$, where
+$2\sqrt{\frac 2 \pi} = 1.595\ldots$ and $o_{n,d}(1)$ denotes an error term that depends on $n$ and
+$d$ and goes to zero if we first take the limit $n\rightarrow \infty$ and then the limit $d \rightarrow
+\infty$. This is established by analyzing linear-size cuts using techniques of Jagannath and Sen
+derived from ideas in statistical physics, and analyzing small cuts via martingale inequalities.
+We also prove new lower bounds on spectral sparsification of the clique. If $G$ is a spectral sparsifier
+of the clique and $G$ has average degree $d$, we prove that the approximation error is at least the
+"Ramanujan bound'' $(2-o_{n,d}(1))/\sqrt d$, which is met by $d$-regular Ramanujan graphs, provided
+that either the weighted adjacency matrix of $G$ is a (multiple of) a doubly stochastic matrix, or
+that $G$ satisfies a certain high "odd pseudo-girth" property. The first case can be seen as an "Alon-Boppana
+theorem for symmetric doubly stochastic matrices," showing that a symmetric doubly stochastic
+matrix with $dn$ non-zero entries has a non-trivial eigenvalue of magnitude at least $(2-o_{n,d}(1))/\sqrt
+d$; the second case generalizes a lower bound of Srivastava and Trevisan, which requires a large
+girth assumption. Together, these results imply a separation between spectral sparsification
+and cut sparsification. If $G$ is a random $\log n$-regular graph on $n$ vertices, we show that, with
+high probability, $G$ admits a (weighted subgraph) cut sparsifier of average degree $d$ and approximation
+error at most $(1.595\ldots + o_{n,d}(1))/\sqrt d$, while every (weighted subgraph) spectral
+sparsifier of $G$ having average degree $d$ has approximation error at least $(2-o_{n,d}(1))/\sqrt
+d$. 

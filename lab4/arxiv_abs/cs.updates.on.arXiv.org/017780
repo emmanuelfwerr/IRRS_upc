@@ -1,0 +1,19 @@
+Automatic food detection is an emerging topic of interest due to its wide array of applications ranging
+from detecting food images on social media platforms to filtering non-food photos from the users
+in dietary assessment apps. Recently, during the COVID-19 pandemic, it has facilitated enforcing
+an eating ban by automatically detecting eating activities from cameras in public places. Therefore,
+to tackle the challenge of recognizing food images with high accuracy, we proposed the idea of a hybrid
+framework for extracting and selecting optimal features from an efficient neural network. There
+on, a nonlinear classifier is employed to discriminate between linearly inseparable feature vectors
+with great precision. In line with this idea, our method extracts features from MobileNetV3, selects
+an optimal subset of attributes by using Shapley Additive exPlanations (SHAP) values, and exploits
+kernel extreme learning machine (KELM) due to its nonlinear decision boundary and good generalization
+ability. However, KELM suffers from the 'curse of dimensionality problem' for large datasets due
+to the complex computation of kernel matrix with large numbers of hidden nodes. We solved this problem
+by proposing a novel multicolumn kernel extreme learning machine (MCKELM) which exploited the
+k-d tree algorithm to divide data into N subsets and trains separate KELM on each subset of data. Then,
+the method incorporates KELM classifiers into parallel structures and selects the top k nearest
+subsets during testing by using the k-d tree search for classifying input instead of the whole network.
+For evaluating a proposed framework large food/non-food dataset is prepared using nine publically
+available datasets. Experimental results showed the superiority of our method on an integrated
+set of measures while solving the problem of 'curse of dimensionality in KELM for large datasets.

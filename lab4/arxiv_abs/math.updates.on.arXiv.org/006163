@@ -1,0 +1,20 @@
+In an aerial hybrid massive multiple-input multiple-output (MIMO) and orthogonal frequency division
+multiplexing (OFDM) system, how to design a spectral-efficient broadband multi-user hybrid beamforming
+with a limited pilot and feedback overhead is challenging. To this end, by modeling the key transmission
+modules as an end-to-end (E2E) neural network, this paper proposes a data-driven deep learning
+(DL)-based unified hybrid beamforming framework for both the time division duplex (TDD) and frequency
+division duplex (FDD) systems with implicit channel state information (CSI). For TDD systems,
+the proposed DL-based approach jointly models the uplink pilot combining and downlink hybrid beamforming
+modules as an E2E neural network. While for FDD systems, we jointly model the downlink pilot transmission,
+uplink CSI feedback, and downlink hybrid beamforming modules as an E2E neural network. Different
+from conventional approaches separately processing different modules, the proposed solution
+simultaneously optimizes all modules with the sum rate as the optimization object. Therefore,
+by perceiving the inherent property of air-to-ground massive MIMO-OFDM channel samples, the DL-based
+E2E neural network can establish the mapping function from the channel to the beamformer, so that
+the explicit channel reconstruction can be avoided with reduced pilot and feedback overhead. Besides,
+practical low-resolution phase shifters (PSs) introduce the quantization constraint, leading
+to the intractable gradient backpropagation when training the neural network. To mitigate the
+performance loss caused by the phase quantization error, we adopt the transfer learning strategy
+to further fine-tune the E2E neural network based on a pre-trained network that assumes the ideal
+infinite-resolution PSs. Numerical results show that our DL-based schemes have considerable
+advantages over state-of-the-art schemes. 

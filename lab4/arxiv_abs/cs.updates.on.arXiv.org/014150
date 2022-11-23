@@ -1,0 +1,19 @@
+The CNN-based methods have achieved impressive results in medical image segmentation, but it failed
+to capture the long-range dependencies due to the inherent locality of convolution operation.
+Transformer-based methods are popular in vision tasks recently because of its capacity of long-range
+dependencies and get a promising performance. However, it lacks in modeling local context, although
+some works attempted to embed convolutional layer to overcome this problem and achieved some improvement,
+but it makes the feature inconsistent and fails to leverage the natural multi-scale features of
+hierarchical transformer, which limit the performance of models. In this paper, taking medical
+image segmentation as an example, we present MISSFormer, an effective and powerful Medical Image
+Segmentation tranSFormer. MISSFormer is a hierarchical encoder-decoder network and has two appealing
+designs: 1) A feed forward network is redesigned with the proposed Enhanced Transformer Block,
+which makes features aligned adaptively and enhances the long-range dependencies and local context.
+2) We proposed Enhanced Transformer Context Bridge, a context bridge with the enhanced transformer
+block to model the long-range dependencies and local context of multi-scale features generated
+by our hierarchical transformer encoder. Driven by these two designs, the MISSFormer shows strong
+capacity to capture more valuable dependencies and context in medical image segmentation. The
+experiments on multi-organ and cardiac segmentation tasks demonstrate the superiority, effectiveness
+and robustness of our MISSFormer, the exprimental results of MISSFormer trained from scratch even
+outperforms state-of-the-art methods pretrained on ImageNet, and the core designs can be generalized
+to other visual segmentation tasks. The code will be released in Github. 

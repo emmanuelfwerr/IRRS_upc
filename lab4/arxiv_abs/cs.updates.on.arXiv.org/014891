@@ -1,0 +1,19 @@
+We present approximation algorithms for the following NP-hard optimization problems related
+to bottleneck spanning trees in metric spaces. 1. The disjoint bottleneck spanning tree problem:
+Given $n$ pairs of points in a metric space, find two disjoint trees each containing exactly one point
+from each pair and minimize the largest edge length (over all edges of both trees). It is known that
+approximating this problem by a factor better than 2 is NP-hard. We present a 4-approximation algorithm
+for this problem. This improves upon the previous best known approximation ratio of $9$. Our algorithm
+extends to a $(3k-2)$-approximation for a more general case where points are partitioned into $k$-tuples
+and we seek $k$ disjoint trees. 2. The generalized bottleneck spanning tree problem: Given $n$ points
+in some metric space that are partitioned into clusters of size at most 2, find a tree that contains
+exactly one point from each cluster and minimizes the largest edge length. We show that it is NP-hard
+to approximate this problem by a factor better than 2, and present a 3-approximation algorithm.
+3. The partitioned bottleneck spanning tree problem: Given $kn$ points in some metric space, find
+$k$ trees each containing exactly $n$ points and minimize the largest edge length (over all edges
+of the $k$ trees). We show that it is NP-hard to approximate this problem by a factor better than 2 for
+any $k\ge 2$. We present an $\alpha$-approximation algorithm for this problem where $\alpha=2$
+for $k=2,3$ and $\alpha=3$ for $k\ge 4$. Towards obtaining these approximation ratios we present
+tight upper bounds on the edge lengths of $k$ equal-size disjoint trees that can be obtained from
+the nodes of a given tree. This result is of independent interest. Our hardness proofs imply that
+it is NP-hard to approximate the non-metric version of the above problems within any constant factor.

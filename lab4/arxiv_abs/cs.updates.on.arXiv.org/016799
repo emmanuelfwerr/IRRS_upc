@@ -1,0 +1,20 @@
+Suppose we are given a pair of points $s, t$ and a set $S$ of $n$ geometric objects in the plane, called
+obstacles. We show that in polynomial time one can construct an auxiliary (multi-)graph $G$ with
+vertex set $S$ and every edge labeled from $\{0, 1\}$, such that a set $S_d \subseteq S$ of obstacles
+separates $s$ from $t$ if and only if $G[S_d]$ contains a cycle whose sum of labels is odd. Using this
+structural characterization of separating sets of obstacles we obtain the following algorithmic
+results. In the Obstacle-Removal problem the task is to find a curve in the plane connecting s to t
+intersecting at most q obstacles. We give a $2.3146^qn^{O(1)}$ algorithm for Obstacle-Removal,
+significantly improving upon the previously best known $q^{O(q^3)} n^{O(1)}$ algorithm of Eiben
+and Lokshtanov (SoCG'20). We also obtain an alternative proof of a constant factor approximation
+algorithm for Obstacle-Removal, substantially simplifying the arguments of Kumar et al. (SODA'21).
+In the Generalized Points-Separation problem, the input consists of the set S of obstacles, a point
+set A of k points and p pairs $(s_1, t_1),... (s_p, t_p)$ of points from A. The task is to find a minimum
+subset $S_r \subseteq S$ such that for every $i$, every curve from $s_i$ to $t_i$ intersects at least
+one obstacle in $S_r$. We obtain $2^{O(p)} n^{O(k)}$-time algorithm for Generalized Points-Separation
+problem. This resolves an open problem of Cabello and Giannopoulos (SoCG'13), who asked about the
+existence of such an algorithm for the special case where $(s_1, t_1), ... (s_p, t_p)$ contains all
+the pairs of points in A. Finally, we improve the running time of our algorithm to $f(p,k) n^{O(\sqrt{k})}$
+when the obstacles are unit disks, where $f(p,k) = 2^O(p) k^{O(k)}$, and show that, assuming the
+Exponential Time Hypothesis (ETH), the running time dependence on $k$ of our algorithms is essentially
+optimal. 

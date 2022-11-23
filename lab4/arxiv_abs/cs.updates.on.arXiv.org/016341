@@ -1,0 +1,19 @@
+In this work, we give a unifying view of locality in four settings: distributed algorithms, sequential
+greedy algorithms, dynamic algorithms, and online algorithms. We introduce a new model of computing,
+called the online-LOCAL model: the adversary reveals the nodes of the input graph one by one, in the
+same way as in classical online algorithms, but for each new node the algorithm can also inspect its
+radius-$T$ neighborhood before choosing the output. Instead of looking ahead in time, we have the
+power of looking around in space. We compare the online-LOCAL model with three other models: the
+LOCAL model of distributed computing, where each node produces its output based on its radius-$T$
+neighborhood, its sequential counterpart SLOCAL, and the dynamic-LOCAL model, where changes
+in the dynamic input graph only influence the radius-$T$ neighborhood of the point of change. SLOCAL
+and dynamic-LOCAL models are sandwiched between LOCAL and online-LOCAL models, with LOCAL being
+the weakest and online-LOCAL the strongest model. In this work, we seek to answer the following question:
+is the online-LOCAL model strictly stronger than the LOCAL model when we look at graph algorithms
+for solving locally checkable labeling problems (LCLs)? First, we show that for LCL problems in
+paths, cycles, and rooted trees, all four models are roughly equivalent: the locality of any LCL
+problem falls in the same broad class - $O(\log^* n)$, $\Theta(\log n)$, or $n^{\Theta(1)}$ - in
+all four models. In particular, prior work on the LOCAL model directly generalizes to all four models.
+Second, we show that this equivalence does not hold in two-dimensional grids. We show that the locality
+of the $3$-coloring problem is $O(\log n)$ in the online-LOCAL model, while it is known to be $\Omega(\sqrt{n})$
+in the LOCAL model. 

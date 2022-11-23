@@ -1,0 +1,19 @@
+We present the first application of the Cosmoglobe analysis framework by analyzing 9-year $\mathit{WMAP}$
+time-ordered observations using similar machinery as BeyondPlanck utilizes for $\mathit{Planck}$
+LFI. We analyze only the $\mathit Q$-band (41 GHz) data and report on the low-level analysis process
+from uncalibrated time-ordered data to calibrated maps. Most of the existing BeyondPlanck pipeline
+may be reused for $\mathit{WMAP}$ analysis with minimal changes to the existing codebase. The main
+modification is the implementation of the same preconditioned biconjugate gradient mapmaker
+used by the $\mathit{WMAP}$ team. Producing a single $\mathit{WMAP}$ $\mathit Q$1-band sample
+requires 22 CPU-hrs, which is slightly more than the cost of a $\mathit{Planck}$ 44 GHz sample of
+17 CPU-hrs; this demonstrates that full end-to-end Bayesian processing of the $\mathit{WMAP}$
+data is computationally feasible. In general, our recovered maps are very similar to the maps released
+by the $\mathit{WMAP}$ team, although with two notable differences. In temperature we find a $\sim2\,\mathrm{\mu
+K}$ quadrupole difference that most likely is caused by different gain modeling, while in polarization
+we find a distinct $2.5\,\mathrm{\mu K}$ signal that has been previously called poorly-measured
+modes by the $\mathit{WMAP}$ team. In the Cosmoglobe processing, this pattern arises from temperature-to-polarization
+leakage from the coupling between the CMB Solar dipole, transmission imbalance, and sidelobes.
+No traces of this pattern are found in either the frequency map or TOD residual map, suggesting that
+the current processing has succeeded in modelling these poorly measured modes within the assumed
+parametric model by using $\mathit{Planck}$ information to break the sky-synchronous degeneracies
+inherent in the $\mathit{WMAP}$ scanning strategy. 

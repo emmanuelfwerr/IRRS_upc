@@ -1,0 +1,20 @@
+The ongoing NIST standardization process has shown that Proof of Knowledge (PoK) based signatures
+have become an important type of possible post-quantum signatures. Regarding code-based cryptography,
+the original approach for PoK based signatures is the Stern protocol which allows to prove the knowledge
+of a small weight vector solving a given instance of the Syndrome Decoding (SD) problem over F2. It
+features a soundness error equal to 2/3. This protocol was improved a few years later by V\'eron who
+proposed a variation of the scheme based on the General Syndrome Decoding (GSD) problem which leads
+to better results in term of communication. A few years later, the AGS protocol introduced a variation
+of the V\'eron protocol based on Quasi-Cyclic (QC) matrices. The AGS protocol permits to obtain
+an asymptotic soundness error of 1/2 and an improvement in term of communications. In the present
+paper, we introduce the Quasi-Cyclic Stern PoK which constitutes an adaptation of the AGS scheme
+in a SD context, as well as several new optimizations for code-based PoK. Our main optimization on
+the size of the signature can't be applied to GSD based protocols such as AGS and therefore motivated
+the design of our new protocol. In addition, we also provide a special soundness proof that is compatible
+with the use of the Fiat-Shamir transform for 5-round protocols. This approach is valid for our protocol
+but also for the AGS protocol which was lacking such a proof. We compare our results with existing
+signatures including the recent code-based signatures based on PoK leveraging the MPC in the head
+paradigm. In practice, our new protocol is as fast as AGS while reducing its associated signature
+length by 20%. As a consequence, it constitutes an interesting trade-off between signature length
+and execution time for the design of a code-based signature relying only on the difficulty of the
+SD problem. 

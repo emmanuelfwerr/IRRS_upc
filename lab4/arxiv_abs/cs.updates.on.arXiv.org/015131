@@ -1,0 +1,20 @@
+This study presents a comprehensive spatial eigenanalysis of fully-discrete discontinuous spectral
+element methods, now generalizing previous spatial eigenanalysis that did not include time integration
+errors. The influence of discrete time integration is discussed in detail for different explicit
+Runge-Kutta (1st to 4th order accurate) schemes combined with either Discontinuous Galerkin (DG)
+or Spectral Difference (SD) methods, both here recovered from the Flux Reconstruction (FR) scheme.
+Selected numerical experiments using the improved SD method by Liang and Jameson [1] are performed
+to quantify the influence of time integration errors on actual simulations. These involve test
+cases of varied complexity, from one-dimensional linear advection equation studies to well-resolved
+and under-resolved inviscid vortical flows. It is shown that, while both well-resolved and under-resolved
+simulations of linear problems correlate well with the eigenanalysis prediction of time integration
+errors, the correlation can be much worse for under-resolved nonlinear problems. The effect of
+mesh regularity is also considered, where time integration errors are found to be, in the case of
+irregular grids, less pronounced than those of the spatial discretisation. In fact, for the under-resolved
+vortical flows considered, the predominance of spatial errors made it practically impossible
+for time integration errors to be distinctly identified. Nevertheless, for well-resolved nonlinear
+simulations, the effect of time integration errors could still be recognized. This highlights
+that the interaction between space and time discretisation errors is more complex than otherwise
+anticipated, contributing to the current understanding about when eigenanalysis can effectively
+predict the behaviour of numerical errors in practical under-resolved nonlinear problems, including
+under-resolved turbulence computations. 

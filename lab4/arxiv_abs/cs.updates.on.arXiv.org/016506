@@ -1,0 +1,20 @@
+The increasing amount of data to be processed on edge devices, such as cameras, has motivated Artificial
+Intelligence (AI) integration at the edge. Typical image processing methods performed at the edge,
+such as feature extraction or edge detection, use convolutional filters that are energy, computation,
+and memory hungry algorithms. But edge devices and cameras have scarce computational resources,
+bandwidth, and power and are limited due to privacy constraints to send data over to the cloud. Thus,
+there is a need to process image data at the edge. Over the years, this need has incited a lot of interest
+in implementing neuromorphic computing at the edge. Neuromorphic systems aim to emulate the biological
+neural functions to achieve energy-efficient computing. Recently, Oscillatory Neural Networks
+(ONN) present a novel brain-inspired computing approach by emulating brain oscillations to perform
+autoassociative memory types of applications. To speed up image edge detection and reduce its power
+consumption, we perform an in-depth investigation with ONNs. We propose a novel image processing
+method by using ONNs as a hetero-associative memory (HAM) for image edge detection. We simulate
+our ONN-HAM solution using first, a Matlab emulator, and then a fully digital ONN design. We show
+results on gray scale square evaluation maps, also on black and white and gray scale 28x28 MNIST images
+and finally on black and white 512x512 standard test images. We compare our solution with standard
+edge detection filters such as Sobel and Canny. Finally, using the fully digital design simulation
+results, we report on timing and resource characteristics, and evaluate its feasibility for real-time
+image processing applications. Our digital ONN-HAM solution can process images with up to 120x120
+pixels (166 MHz system frequency) respecting real-time camera constraints. This work is the first
+to explore ONNs as hetero-associative memory for image processing applications. 

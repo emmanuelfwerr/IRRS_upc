@@ -1,0 +1,19 @@
+Emerging non-volatile memories have been proposed for a wide range of applications from easing
+the von-Neumann bottleneck to neuromorphic applications. Specifically, scalable RRAMs based
+on Pr$_{1-x}$Ca$_x$MnO$_3$ (PCMO) exhibit analog switching have been demonstrated as an integrating
+neuron, an analog synapse, and a voltage-controlled oscillator. More recently, the inherent stochasticity
+of memristors has been proposed for efficient hardware implementations of Boltzmann Machines.
+However, as the problem size scales, the number of neurons increase and controlling the stochastic
+distribution tightly over many iterations is necessary. This requires parametric control over
+stochasticity. Here, we characterize the stochastic Set in PCMO RRAMs. We identify that the Set
+time distribution depends on the internal state of the device (i.e., resistance) in addition to
+external input (i.e., voltage pulse). This requires the confluence of contradictory properties
+like stochastic switching as well as deterministic state control in the same device. Unlike, "stochastic-everywhere"
+filamentary memristors, in PCMO RRAMs, we leverage the (i) stochastic Set in negative polarity
+and (ii) deterministic analog Reset in positive polarity to demonstrate 100x reduced Set time distribution
+drift. The impact on Boltzmann Machines' performance is analyzed and as opposed to the "fixed external
+input stochasticity", the "state-monitored stochasticity" can solve problems 20x larger in size.
+State monitoring also tunes out the device-to-device variability effect on distributions providing
+10x better performance. In addition to the physical insights, this study establishes the use of
+experimental stochasticity in PCMO RRAMs in stochastic recurrent neural networks reliably over
+many iterations. 

@@ -1,0 +1,19 @@
+Safe collaboration between human and robots in a common unstructured environment becomes increasingly
+critical with the emergence of Industry 4.0. However, to accomplish safe, robust, and autonomous
+collaboration with humans, modern robotic systems must possess not only effective proximity perception
+but also reactive obstacle avoidance. Unfortunately, for most robotic systems, their shared working
+environment with human operators may not always be static, instead often dynamically varying and
+being constantly cluttered with unanticipated obstacles or hazards. In this paper, we present
+a novel methodology of reactive whole-body obstacle avoidance methodology that safeguards the
+human who enters the robot's workspace through achieving conflict-free human-robot interactions
+even in a dynamically constrained environment. Unlike existing Jacobian-type or geometric approaches,
+our proposed methodology leverages both topological manifold learning and latest deep learning
+advances, therefore can not only be readily generalized into other unseen problem settings, but
+also achieve high computing efficiency with concrete theoretical basis. Furthermore, in sharp
+contrast to the industrial cobot setting, our methodology allows a robotic arm to proactively avoid
+obstacles of arbitrary 3D shapes without direct contacting. To solidify our study, we implement
+and validate our methodology with a robotic platform consisting of dual 6-DoF robotic arms with
+optimized proximity sensor placement, both of which are capable of working collaboratively with
+different levels of interference. Specifically, one arm will perform reactive whole-body obstacle
+avoidance while achieving its pre-determined objective, with the other arm emulating the presence
+of a human collaborator with independent and potentially adversary movements. 

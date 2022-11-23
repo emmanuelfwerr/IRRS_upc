@@ -1,0 +1,20 @@
+As persistent memory (PM) technologies emerge, hybrid memory architectures combining DRAM with
+PM bring the potential to provide a tiered, byte-addressable main memory of unprecedented capacity.
+Nearly a decade after the first proposals for these hybrid architectures, the real technology has
+finally reached commercial availability with Intel Optane(TM) DC Persistent Memory (DCPMM).
+This raises the challenge of designing systems that realize this potential in practice, namely
+through effective approaches that dynamically decide at which memory tier should pages be placed.
+In this paper, we are the first, to our knowledge, to systematically analyze tiered page placement
+on real DCPMM-based systems. To this end, we start by revisiting the assumptions of state-of-the-art
+proposals, and confronting them with the idiosyncrasies of today's off-the-shelf DCPMM-equipped
+architectures. This empirical study reveals that some of the key design choices in the literature
+rely on important assumptions that are not verified in present-day DRAM-DCPMM memory architectures.
+Based on the lessons from this study, we design and implement HyPlacer, a tool for tiered page placement
+in off-the-shelf Linux-based systems equipped with DRAM+DCPMM. In contrast to previous proposals,
+HyPlacer follows an approach guided by two main practicality principles: 1) it is tailored to the
+performance idiosyncrasies of off-theshelf DRAM+DCPMM systems; and 2) it can be seamlessly integrated
+into Linux with minimal kernel-mode components, while ensuring extensibility to other HMAs and
+other data placement policies. Our experimental evaluation of HyPlacer shows that it outperforms
+both solutions proposed in past literature and placement options that are currently available
+in off-the-shelf DCPMM-equipped Linux systems, reaching an improvement of up to 11x when compared
+to the default memory policy in Linux. 

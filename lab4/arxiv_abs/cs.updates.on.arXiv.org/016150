@@ -1,0 +1,19 @@
+Future human action forecasting from partial observations of activities is an important problem
+in many practical applications such as assistive robotics, video surveillance and security. We
+present a method to forecast actions for the unseen future of the video using a neural machine translation
+technique that uses encoder-decoder architecture. The input to this model is the observed RGB video,
+and the objective is to forecast the correct future symbolic action sequence. Unlike prior methods
+that make action predictions for some unseen percentage of video one for each frame, we predict the
+complete action sequence that is required to accomplish the activity. We coin this task action sequence
+forecasting. To cater for two types of uncertainty in the future predictions, we propose a novel
+loss function. We show a combination of optimal transport and future uncertainty losses help to
+improve results. We extend our action sequence forecasting model to perform weakly supervised
+action forecasting on two challenging datasets, the Breakfast and the 50Salads. Specifically,
+we propose a model to predict actions of future unseen frames without using frame level annotations
+during training. Using Fisher vector features, our supervised model outperforms the state-of-the-art
+action forecasting model by 0.83% and 7.09% on the Breakfast and the 50Salads datasets respectively.
+Our weakly supervised model is only 0.6% behind the most recent state-of-the-art supervised model
+and obtains comparable results to other published fully supervised methods, and sometimes even
+outperforms them on the Breakfast dataset. Most interestingly, our weakly supervised model outperforms
+prior models by 1.04% leveraging on proposed weakly supervised architecture, and effective use
+of attention mechanism and loss functions. 

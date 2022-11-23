@@ -1,0 +1,20 @@
+Dilated and transposed convolutions are widely used in modern convolutional neural networks (CNNs).
+These kernels are used extensively during CNN training and inference of applications such as image
+segmentation and high-resolution image generation. Although these kernels have grown in popularity,
+they stress current compute systems due to their high memory intensity, exascale compute demands,
+and large energy consumption. We find that commonly-used low-power CNN inference accelerators
+based on spatial architectures are not optimized for both of these convolutional kernels. Dilated
+and transposed convolutions introduce significant zero padding when mapped to the underlying
+spatial architecture, significantly degrading performance and energy efficiency. Existing
+approaches that address this issue require significant design changes to the otherwise simple,
+efficient, and well-adopted architectures used to compute direct convolutions. To address this
+challenge, we propose EcoFlow, a new set of dataflows and mapping algorithms for dilated and transposed
+convolutions. These algorithms are tailored to execute efficiently on existing low-cost, small-scale
+spatial architectures and requires minimal changes to the network-on-chip of existing accelerators.
+EcoFlow eliminates zero padding through careful dataflow orchestration and data mapping tailored
+to the spatial architecture. EcoFlow enables flexible and high-performance transpose and dilated
+convolutions on architectures that are otherwise optimized for CNN inference. We evaluate the
+efficiency of EcoFlow on CNN training workloads and Generative Adversarial Network (GAN) training
+workloads. Experiments in our new cycle-accurate simulator show that EcoFlow 1) reduces end-to-end
+CNN training time between 7-85%, and 2) improves end-to-end GAN training performance between 29-42%,
+compared to state-of-the-art CNN inference accelerators. 

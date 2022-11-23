@@ -1,0 +1,20 @@
+In this paper, we propose a general framework for the algorithm New Q-Newton's method Backtracking,
+developed in the author's previous work. For a symmetric, square real matrix $A$, we define $minsp(A):=\min
+_{||e||=1} ||Ae||$. Given a $C^2$ cost function $f:\mathbb{R}^m\rightarrow \mathbb{R}$ and
+a real number $0<\tau $, as well as $m+1$ fixed real numbers $\delta _0,\ldots ,\delta _m$, we define
+for each $x\in \mathbb{R}^m$ with $\nabla f(x)\not= 0$ the following quantities: $\kappa :=\min
+_{i\not= j}|\delta _i-\delta _j|$; $A(x):=\nabla ^2f(x)+\delta ||\nabla f(x)||^{\tau}Id$,
+where $\delta$ is the first element in the sequence $\{\delta _0,\ldots ,\delta _m\}$ for which
+$minsp(A(x))\geq \kappa ||\nabla f(x)||^{\tau}$; $e_1(x),\ldots ,e_m(x)$ are an orthonormal
+basis of $\mathbb{R}^m$, chosen appropriately; $w(x)=$ the step direction, given by the formula:
+$$w(x)=\sum _{i=1}^m\frac{<\nabla f(x),e_i(x)>}{||A(x)e_i(x)||}e_i(x);$$ (we can also normalise
+by $w(x)/\max \{1,||w(x)||\}$ when needed) $\gamma (x)>0$ learning rate chosen by Backtracking
+line search so that Armijo's condition is satisfied: $$f(x-\gamma (x)w(x))-f(x)\leq -\frac{1}{3}\gamma
+(x)<\nabla f(x),w(x)>.$$ The update rule for our algorithm is $x\mapsto H(x)=x-\gamma (x)w(x)$.
+In New Q-Newton's method Backtracking, the choices are $\tau =1+\alpha >1$ and $e_1(x),\ldots
+,e_m(x)$'s are eigenvectors of $\nabla ^2f(x)$. In this paper, we allow more flexibility and generality,
+for example $\tau$ can be chosen to be $<1$ or $e_1(x),\ldots ,e_m(x)$'s are not necessarily eigenvectors
+of $\nabla ^2f(x)$. New Q-Newton's method Backtracking (as well as Backtracking gradient descent)
+is a special case, and some versions have flavours of quasi-Newton's methods. Several versions
+allow good theoretical guarantees. An application to solving systems of polynomial equations
+is given. 

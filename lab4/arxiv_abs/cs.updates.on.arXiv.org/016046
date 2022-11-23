@@ -1,0 +1,19 @@
+In the storied Colonel Blotto game, two colonels allocate $a$ and $b$ troops, respectively, to $k$
+distinct battlefields. A colonel wins a battle if they assign more troops to that particular battle,
+and each colonel seeks to maximize their total number of victories. Despite the problem's formulation
+in 1921, the first polynomial-time algorithm to compute Nash equilibrium (NE) strategies for this
+game was discovered only quite recently. In 2016, \citep{ahmadinejad_dehghani_hajiaghayi_lucier_mahini_seddighin_2019}
+formulated a breakthrough algorithm to compute NE strategies for the Colonel Blotto game in computational
+complexity $O(k^{14}\max\{a,b\}^{13})$, receiving substantial media coverage (e.g. \citep{Insider},
+\citep{NSF}, \citep{ScienceDaily}). As of this work, this is the only known provably efficient
+algorithm (to our knowledge) for the Colonel Blotto game with general parameters. In this work,
+we present the first known algorithm to compute $\eps$-approximate NE strategies in the two-player
+Colonel Blotto game in runtime $\widetilde{O}(\eps^{-4} k^8 \max\{a,b\})$ for arbitrary settings
+of these parameters. Moreover, this algorithm is the first known efficient algorithm to compute
+approximate coarse correlated equilibrium strategies in the multiplayer Colonel Blotto game
+(when there are $\ell > 2$ colonels) with runtime $\widetilde{O}(\ell \eps^{-4} k^8 \max\{a,b\}
++ \ell^2 \eps^{-2} k^3 \max\{a,b\})$. Prior to this work, no polynomial-time algorithm was known
+to compute exact or approximate equilibrium (in any sense) strategies for multiplayer Colonel
+Blotto with arbitrary parameters. Our algorithm computes these approximate equilibria by implicitly
+performing multiplicative weights update over the exponentially many strategies available to
+each player. 

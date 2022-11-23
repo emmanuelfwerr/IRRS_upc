@@ -1,0 +1,20 @@
+Radio-frequency portion of the electromagnetic spectrum is a scarce resource. Cognitive radio
+technology has emerged as a promising solution to overcome the spectrum scarcity bottleneck. Through
+this technology, secondary users (SUs) sense the spectrum opportunities free from primary users
+(PUs), and opportunistically take advantage of these (temporarily) idle portions, known as spectrum
+holes. In this correspondence, we consider a variant of the cognitive radio resource allocation
+problem posed by Martinovic et al. in 2017. The distinguishing feature of this version of the problem
+is that each SU, due to its hardware limitations, imposes the requirement that the to-be-aggregated
+spectrum holes cannot be arbitrarily far from each other. We call this restriction as the Maximal
+Aggregation Range (MAR) constraint, and refer to this variant of the problem as the MAR-constrained
+hole assignment problem. The problem can be formalized as an NP-hard combinatorial optimization
+problem. We propose a novel binary integer linear programming (ILP) formulation to the problem.
+The number of constraints in this formulation is the number of spectrum holes plus the number of SUs.
+On the other hand, the number of binary decision variables in the formulation can be prohibitively
+large, as for each legitimate spectrum allocation to each SU, one variable is needed. We propose
+a branch-and-price (B&P) framework to tackle this challenge. This framework is in fact a branch-and-bound
+procedure in which at each node of the search tree, we utilize the so-called (delayed) column generation
+technique for solving the LP relaxation of the corresponding subproblem. As evidenced by the numerical
+results, the LP relaxation bounds are very tight. This allows for a very effective pruning of the
+search space. Compared to the previously suggested formulations, the proposed technique can require
+much less computational effort. 

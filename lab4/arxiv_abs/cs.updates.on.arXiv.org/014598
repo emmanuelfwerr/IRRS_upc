@@ -1,0 +1,19 @@
+Label propagation is frequently encountered in machine learning and data mining applications
+on graphs, either as a standalone problem or as part of node classification. Many label propagation
+algorithms utilize random walks (or network propagation), which provide limited ability to take
+into account negatively-labeled nodes (i.e., nodes that are known to be not associated with the
+label of interest). Specialized algorithms to incorporate negatively labeled samples generally
+focus on learning or readjusting the edge weights to drive walks away from negatively-labeled nodes
+and toward positively-labeled nodes. This approach has several disadvantages, as it increases
+the number of parameters to be learned, and does not necessarily drive the walk away from regions
+of the network that are rich in negatively-labeled nodes. We reformulate random walk with restarts
+and network propagation to enable "variable restarts", that is the increased likelihood of restarting
+at a positively-labeled node when a negatively-labeled node is encountered. Based on this reformulation,
+we develop CusTaRd, an algorithm that effectively combines variable restart probabilities and
+edge re-weighting to avoid negatively-labeled nodes. In addition to allowing variable restarts,
+CusTaRd samples negatively-labeled nodes from neighbors of positively-labeled nodes to better
+characterize the difference between positively and negatively labeled nodes. To assess the performance
+of CusTaRd, we perform comprehensive experiments on four network datasets commonly used in benchmarking
+label propagation and node classification algorithms. Our results show that CusTaRd consistently
+outperforms competing algorithms that learn/readjust edge weights, and sampling of negatives
+from the close neighborhood of positives further improves predictive accuracy. 

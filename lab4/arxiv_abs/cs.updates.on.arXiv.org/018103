@@ -1,0 +1,19 @@
+Physical Unclonable Functions (PUFs) are promising security primitives for resource-constrained
+network nodes. The XOR Arbiter PUF (XOR PUF or XPUF) is an intensively studied PUF invented to improve
+the security of the Arbiter PUF, probably the most lightweight delay-based PUF. Recently, highly
+powerful machine learning attack methods were discovered and were able to easily break large-sized
+XPUFs, which were highly secure against earlier machine learning attack methods. Component-differentially-challenged
+XPUFs (CDC-XPUFs) are XPUFs with different component PUFs receiving different challenges. Studies
+showed they were much more secure against machine learning attacks than the conventional XPUFs,
+whose component PUFs receive the same challenge. But these studies were all based on earlier machine
+learning attack methods, and hence it is not clear if CDC-XPUFs can remain secure under the recently
+discovered powerful attack methods. In this paper, the two current most powerful two machine learning
+methods for attacking XPUFs are adapted by fine-tuning the parameters of the two methods for CDC-XPUFs.
+Attack experiments using both simulated PUF data and silicon data generated from PUFs implemented
+on field-programmable gate array (FPGA) were carried out, and the experimental results showed
+that some previously secure CDC-XPUFs of certain circuit parameter values are no longer secure
+under the adapted new attack methods, while many more CDC-XPUFs of other circuit parameter values
+remain secure. Thus, our experimental attack study has re-defined the boundary between the secure
+region and the insecure region of the PUF circuit parameter space, providing PUF manufacturers
+and IoT security application developers with valuable information in choosing PUFs with secure
+parameter values. 

@@ -1,0 +1,19 @@
+The recognition of hate speech and offensive language (HOF) is commonly formulated as a classification
+task to decide if a text contains HOF. We investigate whether HOF detection can profit by taking into
+account the relationships between HOF and similar concepts: (a) HOF is related to sentiment analysis
+because hate speech is typically a negative statement and expresses a negative opinion; (b) it is
+related to emotion analysis, as expressed hate points to the author experiencing (or pretending
+to experience) anger while the addressees experience (or are intended to experience) fear. (c)
+Finally, one constituting element of HOF is the mention of a targeted person or group. On this basis,
+we hypothesize that HOF detection shows improvements when being modeled jointly with these concepts,
+in a multi-task learning setup. We base our experiments on existing data sets for each of these concepts
+(sentiment, emotion, target of HOF) and evaluate our models as a participant (as team IMS-SINAI)
+in the HASOC FIRE 2021 English Subtask 1A. Based on model-selection experiments in which we consider
+multiple available resources and submissions to the shared task, we find that the combination of
+the CrowdFlower emotion corpus, the SemEval 2016 Sentiment Corpus, and the OffensEval 2019 target
+detection data leads to an F1 =.79 in a multi-head multi-task learning model based on BERT, in comparison
+to .7895 of plain BERT. On the HASOC 2019 test data, this result is more substantial with an increase
+by 2pp in F1 and a considerable increase in recall. Across both data sets (2019, 2021), the recall
+is particularly increased for the class of HOF (6pp for the 2019 data and 3pp for the 2021 data), showing
+that MTL with emotion, sentiment, and target identification is an appropriate approach for early
+warning systems that might be deployed in social media platforms. 

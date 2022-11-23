@@ -1,0 +1,19 @@
+Edge computing promises lower processing latencies and better privacy control than cloud computing
+for task offloading as edge devices are positioned closer to users. Realizing this promise depends
+on building strong theoretical and engineering foundations of computing based on an edge continuum
+connecting edge to other resources. In the SPEC-RG Cloud Group, we conducted a systematic study
+of computing models for task offloading and found that these models have many shared characteristics.
+Despite these commonalities, no systematic model or architecture for task offloading currently
+exists. In this paper, we address this need by proposing a reference architecture for task offloading
+in the edge continuum and synthesize its components using well-understood abstractions, services,
+and resources from cloud computing. We provide domain-specific architectures for deep learning
+and industrial IoT and show how this unified computing model opens up application development as
+developers are no longer limited to the single set of constraints posed by current isolated computing
+models. Additionally, we demonstrate the utility of the architecture by designing a deployment
+and benchmarking framework for edge continuum applications and investigate the performance of
+various edge continuum deployments. The framework allows for fine-grained discovery of the edge
+continuum deployment space, including the emulation of complex networks, all with minimal user
+input required. To enhance the performance analysis capabilities of the benchmark, we introduce
+an analytical first-order performance model that can be used to explore multiple application deployment
+scenarios such as local processing on endpoints or offloading between cloud or edge. The deployment
+and benchmarking framework is open-sourced and available at https://github.com/atlarge-research/continuum.

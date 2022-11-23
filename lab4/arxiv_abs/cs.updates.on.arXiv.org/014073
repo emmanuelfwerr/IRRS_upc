@@ -1,0 +1,19 @@
+$\newcommand{\Z}{\mathbb{Z}}$ We show improved fine-grained hardness of two key lattice problems
+in the $\ell_p$ norm: Bounded Distance Decoding to within an $\alpha$ factor of the minimum distance
+($\mathrm{BDD}_{p, \alpha}$) and the (decisional) $\gamma$-approximate Shortest Vector Problem
+($\mathrm{SVP}_{p,\gamma}$), assuming variants of the Gap (Strong) Exponential Time Hypothesis
+(Gap-(S)ETH). Specifically, we show: 1. For all $p \in [1, \infty)$, there is no $2^{o(n)}$-time
+algorithm for $\mathrm{BDD}_{p, \alpha}$ for any constant $\alpha > \alpha_\mathsf{kn}$, where
+$\alpha_\mathsf{kn} = 2^{-c_\mathsf{kn}} < 0.98491$ and $c_\mathsf{kn}$ is the $\ell_2$ kissing-number
+constant, unless non-uniform Gap-ETH is false. 2. For all $p \in [1, \infty)$, there is no $2^{o(n)}$-time
+algorithm for $\mathrm{BDD}_{p, \alpha}$ for any constant $\alpha > \alpha^\ddagger_p$, where
+$\alpha^\ddagger_p$ is explicit and satisfies $\alpha^\ddagger_p = 1$ for $1 \leq p \leq 2$, $\alpha^\ddagger_p
+< 1$ for all $p > 2$, and $\alpha^\ddagger_p \to 1/2$ as $p \to \infty$, unless randomized Gap-ETH
+is false. 3. For all $p \in [1, \infty) \setminus 2 \Z$, all $C > 1$, and all $\varepsilon > 0$, there
+is no $2^{(1-\varepsilon)n/C}$-time algorithm for $\mathrm{BDD}_{p, \alpha}$ for any constant
+$\alpha > \alpha^\dagger_{p, C}$, where $\alpha^\dagger_{p, C}$ is explicit and satisfies $\alpha^\dagger_{p,
+C} \to 1$ as $C \to \infty$ for any fixed $p \in [1, \infty)$, unless non-uniform Gap-SETH is false.
+4. For all $p > p_0 \approx 2.1397$, $p \notin 2\Z$, and all $\varepsilon > 0$, there is no $2^{(1-\varepsilon)n/C_p}$-time
+algorithm for $\mathrm{SVP}_{p, \gamma}$ for some constant $\gamma = \gamma(p, \varepsilon)
+> 1$ and explicit constant $C_p > 0$ where $C_p \to 1$ as $p \to \infty$, unless randomized Gap-SETH
+is false. 

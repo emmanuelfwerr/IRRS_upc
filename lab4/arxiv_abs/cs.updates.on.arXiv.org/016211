@@ -1,0 +1,20 @@
+Signal maps are essential for the planning and operation of cellular networks. However, the measurements
+needed to create such maps are expensive, often biased, not always reflecting the metrics of interest,
+and posing privacy risks. In this paper, we develop a unified framework for predicting cellular
+signal maps from limited measurements. We propose and combine three mechanisms that deal with the
+fact that not all measurements are equally important for a particular prediction task. First, we
+design \emph{quality-of-service functions ($Q$)}, including signal strength (RSRP) but also
+other metrics of interest, such as coverage (improving recall by 76\%-92\%) and call drop probability
+(reducing error by as much as 32\%). By implicitly altering the training loss function, quality
+functions can also improve prediction for RSRP itself where it matters (e.g. MSE reduction up to
+27\% in the low signal strength regime, where errors are critical). Second, we introduce \emph{weight
+functions} ($W$) to specify the relative importance of prediction at different parts of the feature
+space. We propose re-weighting based on importance sampling to obtain unbiased estimators when
+the sampling and target distributions mismatch(yielding 20\% improvement for targets on spatially
+uniform loss or on user population density). Third, we apply the {\em Data Shapley} framework for
+the first time in this context: to assign values ($\phi$) to individual measurement points, which
+capture the importance of their contribution to the prediction task. This can improve prediction
+(e.g. from 64\% to 94\% in recall for coverage loss) by removing points with negative values, and
+can also enable data minimization (i.e. we show that we can remove 70\% of data w/o loss in performance).
+We evaluate our methods and demonstrate significant improvement in prediction performance, using
+several real-world datasets. 

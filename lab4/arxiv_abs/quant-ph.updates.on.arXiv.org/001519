@@ -1,0 +1,20 @@
+Combinatorial optimization is regarded as a potentially promising application of near and long-term
+quantum computers. The best-known heuristic quantum algorithm for combinatorial optimization
+on gate-based devices, the Quantum Approximate Optimization Algorithm (QAOA), has been the subject
+of many theoretical and empirical studies. Unfortunately, its application to specific combinatorial
+optimization problems poses several difficulties: among these, few performance guarantees are
+known, and the variational nature of the algorithm makes it necessary to classically optimize a
+number of parameters. In this work, we partially address these issues for a specific combinatorial
+optimization problem: diluted spin models, with MAX-CUT as a notable special case. Specifically,
+generalizing the analysis of the Sherrington-Kirkpatrick model by Farhi et al., we establish an
+explicit algorithm to evaluate the performance of QAOA on MAX-CUT applied to random Erdos-Renyi
+graphs of expected degree $d$ for an arbitrary constant number of layers $p$ and as the problem size
+tends to infinity. This analysis yields an explicit mapping between QAOA parameters for MAX-CUT
+on Erdos-Renyi graphs of expected degree $d$, in the limit $d \to \infty$, and the Sherrington-Kirkpatrick
+model, and gives good QAOA variational parameters for MAX-CUT applied to Erdos-Renyi graphs. We
+then partially generalize the latter analysis to graphs with a degree distribution rather than
+a single degree $d$, and finally to diluted spin-models with $D$-body interactions ($D \geq 3$).
+We validate our results with numerical experiments suggesting they may have a larger reach than
+rigorously established; among other things, our algorithms provided good initial, if not nearly
+optimal, variational parameters for very small problem instances where the infinite-size limit
+assumption is clearly violated. 

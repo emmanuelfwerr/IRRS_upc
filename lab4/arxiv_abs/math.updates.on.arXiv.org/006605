@@ -1,0 +1,19 @@
+We study two continuous-time Markov chains modeling the spread of infections on graphs, namely
+the SIS and the SIRS model. In the SIS model, vertices are either susceptible or infected; each infected
+vertex becomes susceptible at rate 1 and infects each of its neighbors independently at rate $\lambda$.
+In the SIRS model, vertices are either susceptible, infected, or recovered; each infected vertex
+becomes recovered at rate 1 and infects each of its susceptible neighbors independently at rate
+$\lambda$; each recovered vertex becomes susceptible at a rate $\varrho$, which we assume to be
+independent of the size of the graph. The survival time of the SIS process, i.e., the time until no
+vertex of the host graph is infected, is fairly well understood for a variety of graph classes. Stars
+are an important graph class for the SIS model, as the survival time of SIS on stars has been used to
+show that the process survives on real-world graphs for a long time. For the SIRS model, however,
+to the best of our knowledge, there are no rigorous results, even for simple graphs such as stars.
+We analyze the survival time of the SIS and the SIRS process on stars and cliques. We determine three
+threshold values for $\lambda$ such that when $\lambda<\lambda_\ell$, the expected survival
+time of the process is at most logarithmic, when $\lambda<\lambda_p$, it is at most polynomial,
+and when $\lambda>\lambda_s$, it is at least super-polynomial in the number of vertices. Our results
+show that the survival time of the two processes behaves fundamentally different on stars, while
+it behaves fairly similar on cliques. Our analyses bound the drift of potential functions with globally
+stable equilibrium points. On the SIRS process, our two-state potential functions are inspired
+by Lyapunov functions used in mean-field theory. 

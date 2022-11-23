@@ -1,0 +1,19 @@
+A hybrid quantum-classical method for learning Boltzmann machines (BM) for a generative and discriminative
+task is presented. Boltzmann machines are undirected graphs with a network of visible and hidden
+nodes where the former is used as the reading site while the latter is used to manipulate visible states'
+probability. In Generative BM, the samples of visible data imitate the probability distribution
+of a given data set. In contrast, the visible sites of discriminative BM are treated as Input/Output
+(I/O) reading sites where the conditional probability of output state is optimized for a given set
+of input states. The cost function for learning BM is defined as a weighted sum of Kullback-Leibler
+(KL) divergence and Negative conditional Log-Likelihood (NCLL), adjusted using a hyperparamter.
+Here, the KL Divergence is the cost for generative learning, and NCLL is the cost for discriminative
+learning. A Stochastic Newton-Raphson optimization scheme is presented. The gradients and the
+Hessians are approximated using direct samples of BM obtained through Quantum annealing (QA).
+Quantum annealers are hardware representing the physics of the Ising model that operates on low
+but finite temperature. This temperature affects the probability distribution of the BM; however,
+its value is unknown. Previous efforts have focused on estimating this unknown temperature through
+regression of theoretical Boltzmann energies of sampled states with the probability of states
+sampled by the actual hardware. This assumes that the control parameter change does not affect the
+system temperature, however, this is not usually the case. Instead, an approach that works on the
+probability distribution of samples, instead of the energies, is proposed to estimate the optimal
+parameter set. This ensures that the optimal set can be obtained from a single run. 

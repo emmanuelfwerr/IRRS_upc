@@ -1,0 +1,19 @@
+Influence maximization is a key issue for mining the deep information of social networks, which
+aims to select a seed set from the network to maximize the number of influenced nodes. To evaluate
+the influence spread of a seed set efficiently, existing works have proposed some proxy models (transformations)
+with lower computational costs to replace the expensive Monte Carlo simulation process. These
+alternate transformations based on network prior knowledge induce different search behaviors
+with similar characteristics from various perspectives. For a specific case, it is difficult for
+users to determine a suitable transformation a priori. Keeping those in mind, we propose a multi-transformation
+evolutionary framework for influence maximization (MTEFIM) to exploit the potential similarities
+and unique advantages of alternate transformations and avoid users to determine the most suitable
+one manually. In MTEFIM, multiple transformations are optimized simultaneously as multiple tasks.
+Each transformation is assigned an evolutionary solver. Three major components of MTEFIM are conducted:
+1) estimating the potential relationship across transformations based on the degree of overlap
+across individuals (seed sets) of different populations, 2) transferring individuals across
+populations adaptively according to the inter-transformation relationship, 3) selecting the
+final output seed set containing all the proxy model knowledge. The effectiveness of MTEFIM is validated
+on four real-world social networks. Experimental results show that MTEFIM can efficiently utilize
+the potentially transferable knowledge across multiple transformations to achieve highly competitive
+performance compared to several popular IM-specific methods. The implementation of MTEFIM can
+be accessed at https://github.com/xiaofangxd/MTEFIM. 

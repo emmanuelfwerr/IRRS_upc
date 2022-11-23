@@ -1,0 +1,19 @@
+The world around us consists of objects that have different relationships with each other. The result
+of these communications is various networks, part of which are bipartite networks. While many studies
+have investigated essential network members, less attention has been paid to the bipartite graphs.
+On the other hand, one of the most critical aspects of network analysis is the detection and extraction
+of communities that arise in the structure of networks. For these reasons, we have introduced a measure
+called H.H to identify influential nodes in community formation in the one-mode projection of a
+bipartite graph. The three main parameters that influence this measure are the size of the formed
+community, the effect of each node in the formation of that community, and the number of communities
+in which the node had an impact. The results of this paper show the differences of this measure with
+other centralities (eigenvector centrality, closeness centrality, betweenness centrality,
+and degree centrality) and how this measure takes into account aspects that other centralities
+do not. Through H.H score, we can find essential nodes that have been effective in forming a community,
+and by removing these nodes, communities can be eliminated. Any of the existing centralities has
+not addressed this issue, and this measure has sufficient independence to represent the important
+nodes in the formation of the communities. Experimental validation of the proposed measure is carried
+out on two real-world datasets: Southern Women Network and Person-Crime Network. The results of
+the implementation of the H.H score on the Person-Crime dataset show that by eliminating the nodes
+with the highest H.H score (top-10%), 29% of the communities have changed; this is while the centralities
+change the average of 18% of the communities and this shows the importance of the H.H score. 

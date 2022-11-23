@@ -1,0 +1,19 @@
+Reinforcement learning is applied to the development of control strategies in order to reduce skin
+friction drag in a fully developed turbulent channel flow at a low Reynolds number. Motivated by
+the so-called opposition control (Choi et al. 1993), in which a control input is applied so as to cancel
+the wall-normal velocity fluctuation on a detection plane at a certain distance from the wall, we
+consider wall blowing and suction as a control input, and its spatial distribution is determined
+by the instantaneous streamwise and wall-normal velocity fluctuations at the distance of 15 wall
+units above the wall. Deep neural network is used to express the complex relationship between the
+sensing information and the control input, and it is trained so as to maximize the expected long-term
+reward, i.e., drag reduction. When only the wall-normal velocity fluctuation is measured and a
+linear network is used, the present framework successfully reproduces the optimal linear weight
+for the opposition control reported in the previous study (Chung & Talha 2011). In contrast, when
+a non-linear network is used, more complex control strategies based on the instantaneous streamwise
+and wall-normal velocity fluctuations are obtained. Specifically, the obtained control strategies
+abruptly switch between strong wall blowing and suction for downwelling of a high-speed fluid toward
+the wall and upwelling of a low-speed fluid away from the wall, respectively. The obtained control
+policies lead to drag reduction rates as high as 37 %, which is higher than 23 % achieved by the conventional
+opposition control at the same Reynolds number. The present results indicate that reinforcement
+learning can be a novel framework for the development of effective control strategies through systematic
+learning based on a large number of trials. 

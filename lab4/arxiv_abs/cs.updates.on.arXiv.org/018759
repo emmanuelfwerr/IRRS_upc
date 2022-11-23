@@ -1,0 +1,19 @@
+Photovoltaic (PV) energy is key to mitigating the current energy crisis. However, distributed
+PV generation, which amounts to half of the PV energy generation, makes it increasingly difficult
+for transmission system operators (TSOs) to balance the load and supply and avoid grid congestions.
+Indeed, in the absence of measurements, estimating the distributed PV generation is tough. In recent
+years, many remote sensing-based approaches have been proposed to map distributed PV installations.
+However, to be applicable in industrial settings, one needs to assess the accuracy of the mapping
+over the whole deployment area. We build on existing work to propose an automated PV registry pipeline.
+This pipeline automatically generates a dataset recording all distributed PV installations'
+location, area, installed capacity, and tilt angle. It only requires aerial orthoimagery and topological
+data, both of which are freely accessible online. In order to assess the accuracy of the registry,
+we propose an unsupervised method based on the {\it Registre national d'installation} (RNI), that
+centralizes all individual PV systems aggregated at communal level, enabling practitioners to
+assess the accuracy of the registry and eventually remove outliers. We deploy our model on 9 French
+{\it d\'epartements} covering more than 50 000 square kilometers, providing the largest mapping
+of distributed PV panels with this level of detail to date. We then demonstrate how practitioners
+can use our unsupervised accuracy assessment method to assess the accuracy of the outputs. In particular,
+we show how it can easily identify outliers in the detections. Overall, our approach paves the way
+for a safer integration of deep learning-based pipelines for remote PV mapping. Code is available
+at {\tt https://github.com/gabrielkasmi/dsfrance}. 

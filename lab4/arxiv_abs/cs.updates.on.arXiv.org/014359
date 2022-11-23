@@ -1,0 +1,26 @@
+Wireless Body Area Networks (WBANs) comprise a network of sensors subcutaneously implanted or
+placed near the body surface and facilitate continuous monitoring of health parameters of a patient.
+Research endeavours involving WBAN are directed towards effective transmission of detected parameters
+to a Local Processing Unit (LPU, usually a mobile device) and analysis of the parameters at the LPU
+or a back-end cloud. An important concern in WBAN is the lightweight nature of WBAN nodes and the need
+to conserve their energy. This is especially true for subcutaneously implanted nodes that cannot
+be recharged or regularly replaced. Work in energy conservation is mostly aimed at optimising the
+routing of signals to minimise energy expended. In this paper, a simple yet innovative approach
+to energy conservation and detection of alarming health status is proposed. Energy conservation
+is ensured through a two-tier approach wherein the first tier eliminates `uninteresting' health
+parameter readings at the site of a sensing node and prevents these from being transmitted across
+the WBAN to the LPU. A reading is categorised as uninteresting if it deviates very slightly from its
+immediately preceding reading and does not provide new insight on the patient's well being. In addition
+to this, readings that are faulty and emanate from possible sensor malfunctions are also eliminated.
+These eliminations are done at the site of the sensor using algorithms that are light enough to effectively
+function in the extremely resource-constrained environments of the sensor nodes. We notice, through
+experiments, that this eliminates and thus reduces around 90% of the readings that need to be transmitted
+to the LPU leading to significant energy savings. Furthermore, the proper functioning of these
+algorithms in such constrained environments is confirmed and validated over a hardware simulation
+set up. The second tier of assessment includes a proposed anomaly detection model at the LPU that
+is capable of identifying anomalies from streaming health parameter readings and indicates an
+adverse medical condition. In addition to being able to handle streaming data, the model works within
+the resource-constrained environments of an LPU and eliminates the need of transmitting the data
+to a back-end cloud, ensuring further energy savings. The anomaly detection capability of the model
+is validated using data available from the critical care units of hospitals and is shown to be superior
+to other anomaly detection techniques. 

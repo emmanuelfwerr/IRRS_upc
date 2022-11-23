@@ -1,0 +1,20 @@
+BRAVO, the most widely tried method for risk-limiting election audits, cannot accommodate sampling
+without replacement or stratified sampling, which can improve efficiency and may be required by
+law. It applies only to ballot-polling audits, which are less efficient than comparison audits.
+It applies to plurality, majority, super-majority, proportional representation, and ranked-choice
+voting contests, but not to other social choice functions for which there are RLA methods, such as
+approval voting, STAR-voting, Borda count, and general scoring rules. And while BRAVO has the smallest
+expected sample size among sequentially valid ballot-polling-with-replacement methods when
+reported vote shares are exactly right, it can require arbitrarily large samples when the reported
+reported winner(s) really won but reported vote shares are wrong. ALPHA is a simple generalization
+of BRAVO that (i) works for sampling with and without replacement; (ii) increases power for stratified
+audits by avoiding the need to use a $P$-value combining function and the need to maximize $P$-values
+over nuisance parameters within strata, and allowing adaptive sampling across strata; (iii) works
+not only for ballot-polling but also for ballot-level comparison, batch-polling, and batch-level
+comparison audits, sampling with or without replacement, uniformly or with weights proportional
+to size; (iv) works for all social choice functions covered by SHANGRLA; and (v) in situations where
+both ALPHA and BRAVO apply, requires smaller samples than BRAVO when the reported vote shares are
+wrong but the outcome is correct--five orders of magnitude in some examples. ALPHA includes the
+family of betting martingale tests in RiLACS, with a different betting strategy parametrized as
+an estimator of the population mean and explicit flexibility to accommodate sampling weights and
+population bounds that change with each draw. 

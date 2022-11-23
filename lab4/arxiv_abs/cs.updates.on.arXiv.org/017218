@@ -1,0 +1,19 @@
+Digital twins (DTs) constitute a critical link between the real-world and the metaverse. To guarantee
+a robust connection between these two worlds, DTs should maintain accurate representations of
+the physical applications, while preserving synchronization between real and digital entities.
+In this paper, a novel edge continual learning framework is proposed to accurately model the evolving
+affinity between a physical twin (PT) and its corresponding cyber twin (CT) while maintaining their
+utmost synchronization. In particular, a CT is simulated as a deep neural network (DNN) at the wireless
+network edge to model an autonomous vehicle traversing an episodically dynamic environment. As
+the vehicular PT updates its driving policy in each episode, the CT is required to concurrently adapt
+its DNN model to the PT, which gives rise to a de-synchronization gap. Considering the history-aware
+nature of DTs, the model update process is posed a dual objective optimization problem whose goal
+is to jointly minimize the loss function over all encountered episodes and the corresponding de-synchronization
+time. As the de-synchronization time continues to increase over sequential episodes, an elastic
+weight consolidation (EWC) technique that regularizes the DT history is proposed to limit de-synchronization
+time. Furthermore, to address the plasticity-stability tradeoff accompanying the progressive
+growth of the EWC regularization terms, a modified EWC method that considers fair execution between
+the historical episodes of the DTs is adopted. Ultimately, the proposed framework achieves a simultaneously
+accurate and synchronous CT model that is robust to catastrophic forgetting. Simulation results
+show that the proposed solution can achieve an accuracy of 90 % while guaranteeing a minimal desynchronization
+time. 

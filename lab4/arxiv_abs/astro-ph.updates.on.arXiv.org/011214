@@ -1,0 +1,18 @@
+Considering the relatively high precision that will be reached by future observatories, it has
+recently become clear that one dimensional (1D) atmospheric models, in which the atmospheric temperature
+and composition of a planet are considered to vary only in the vertical, will be unable to represent
+exoplanetary transmission spectra with a sufficient accuracy. This is particularly true for warm
+to (ultra-) hot exoplanets because the atmosphere is unable to redistribute all the energy deposited
+on the dayside, creating a strong thermal and often compositional dichotomy on the planet. This
+situation is exacerbated by transmission spectroscopy, which probes the terminator region. This
+is the most heterogeneous region of the atmosphere. However, if being able to compute transmission
+spectra from 3D atmospheric structures (from a global climate model, e.g.) is necessary to predict
+realistic observables, it is too computationally expensive to be used in a data inversion framework.
+For this reason, there is a need for a medium-complexity 2D approach that captures the most salient
+features of the 3D model in a sufficiently fast implementation. With this in mind, we present a new
+open-source documented version of Pytmosph3R that handles the computation of transmission spectra
+for atmospheres with up to three spatial dimensions and can account for time variability. Taking
+the example of an ultra hot Jupiter, we illustrate how the changing orientation of the planet during
+the transit can allow us to probe the horizontal variations in the atmosphere. We further implement
+our algorithm in TauREx to allow the community to perform 2D retrievals. We describe our extensive
+cross-validation benchmarks and discuss the accuracy and numerical performance of each model.

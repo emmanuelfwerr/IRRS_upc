@@ -1,0 +1,19 @@
+Hamiltonian simulation represents an important module in a large class of quantum algorithms and
+simulations such as quantum machine learning, quantum linear algebra methods, and modeling for
+physics, material science and chemistry. One of the most prominent methods for realizing the time-evolution
+unitary is via the Trotter-Suzuki decomposition. However, there is a large class of possible decompositions
+for the infinitesimal time-evolution operator as the order in which the Hamiltonian terms are implemented
+is arbitrary. We introduce a novel perspective for generating a low-depth Trotter-Suzuki decomposition
+assuming the standard Clifford+RZ gate set by adapting ideas from quantum error correction. We
+map a given Trotter-Suzuki decomposition to a constrained path on a graph which we deem the Pauli
+Frame Graph (PFG). Each node of the PFG represents the set of possible Hamiltonian terms currently
+available to be applied, Clifford operations represent a move from one node to another, and so the
+graph distance represents the gate cost of implementing the decomposition. The problem of finding
+the optimal decomposition is then equivalent to solving a problem similar to the traveling salesman.
+Though this is an NP-hard problem, we demonstrate the simplest heuristic, greedy search, and compare
+the resulting two-qubit gate count and circuit depth to more standard methods for a large class of
+scientifically relevant Hamiltonians, both fermionic and bosonic, found in chemical, vibrational
+and condensed matter problems. Moreover, these models all have a natural scaling behavior. We find
+that in nearly every case we study, the resulting depth and two-qubit gate counts are less than those
+provided by standard methods. We also find the method is efficient in producing these circuits and
+amenable to parallelization, making the method scalable for problems of real interest. 

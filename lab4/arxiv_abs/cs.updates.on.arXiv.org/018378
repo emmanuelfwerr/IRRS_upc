@@ -1,0 +1,19 @@
+Deep Neural Networks (DNNs) have been extensively used in many areas including image processing,
+medical diagnostics, and autonomous driving. However, DNNs can exhibit erroneous behaviours
+that may lead to critical errors, especially when used in safety-critical systems. Inspired by
+testing techniques for traditional software systems, researchers have proposed neuron coverage
+criteria, as an analogy to source code coverage, to guide the testing of DNN models. Despite very
+active research on DNN coverage, several recent studies have questioned the usefulness of such
+criteria in guiding DNN testing. Further, from a practical standpoint, these criteria are white-box
+as they require access to the internals or training data of DNN models, which is in many contexts not
+feasible or convenient. In this paper, we investigate black-box input diversity metrics as an alternative
+to white-box coverage criteria. To this end, we first select and adapt three diversity metrics and
+study, in a controlled manner, their capacity to measure actual diversity in input sets. We then
+analyse their statistical association with fault detection using four datasets and five DNN models.
+We further compare diversity with state-of-the-art white-box coverage criteria. Our experiments
+show that relying on the diversity of image features embedded in test input sets is a more reliable
+indicator than coverage criteria to effectively guide the testing of DNNs. Indeed, we found that
+one of our selected black-box diversity metrics far outperforms existing coverage criteria in
+terms of fault-revealing capability and computational time. Results also confirm the suspicions
+that state-of-the-art coverage metrics are not adequate to guide the construction of test input
+sets to detect as many faults as possible with natural inputs. 

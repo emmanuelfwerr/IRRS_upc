@@ -1,0 +1,19 @@
+We consider the allocation of $m$ balls (jobs) into $n$ bins (servers). In the standard Two-Choice
+process, at each step $t=1,2,\ldots,m$ we first sample two randomly chosen bins, compare their
+two loads and then place a ball in the least loaded bin. It is well-known that for any $m \geq n$, this
+results in a gap (difference between the maximum and average load) of $\log_2 \log n + \Theta(1)$
+(with high probability). In this work, we consider Two-Choice in different models with noisy load
+comparisons. One key model involves an adaptive adversary whose power is limited by some threshold
+$g \in \mathbb{N}$. In each round, such adversary can determine the result of any load comparison
+between two bins whose loads differ by at most $g$, while if the load difference is greater than $g$,
+the comparison is correct. For this adversarial model, we first prove that for any $m \geq n$ the gap
+is $O(g+\log n)$ with high probability. Then through a refined analysis we prove that if $g \leq \log
+n$, then for any $m \geq n$ the gap is $O(\frac{g}{\log g} \cdot \log \log n)$. For constant values
+of $g$, this generalizes the heavily loaded analysis of [BCSV06, TW14] for the Two-Choice process,
+and establishes that asymptotically the same gap bound holds even if many (or possibly all) load
+comparisons among "similarly loaded" bins are wrong. Finally, we complement these upper bounds
+with tight lower bounds, which establishes an interesting phase transition on how the parameter
+$g$ impacts the gap. We also apply a similar analysis to other noise models, including ones where
+bins only update their load information with delay. For example, for the model of [BCEFN12] where
+balls are allocated in consecutive batches of size $n$, we present an improved and tight gap bound
+of $\Theta(\log n/ \log \log n )$. 

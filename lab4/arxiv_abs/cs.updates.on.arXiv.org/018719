@@ -1,0 +1,19 @@
+Deep learning has been shown to accurately assess 'hidden' phenotypes and predict biomarkers from
+medical imaging beyond traditional clinician interpretation of medical imaging. Given the black
+box nature of artificial intelligence (AI) models, caution should be exercised in applying models
+to healthcare as prediction tasks might be short-cut by differences in demographics across disease
+and patient populations. Using large echocardiography datasets from two healthcare systems,
+we test whether it is possible to predict age, race, and sex from cardiac ultrasound images using
+deep learning algorithms and assess the impact of varying confounding variables. We trained video-based
+convolutional neural networks to predict age, sex, and race. We found that deep learning models
+were able to identify age and sex, while unable to reliably predict race. Without considering confounding
+differences between categories, the AI model predicted sex with an AUC of 0.85 (95% CI 0.84 - 0.86),
+age with a mean absolute error of 9.12 years (95% CI 9.00 - 9.25), and race with AUCs ranging from 0.63
+- 0.71. When predicting race, we show that tuning the proportion of a confounding variable (sex)
+in the training data significantly impacts model AUC (ranging from 0.57 to 0.84), while in training
+a sex prediction model, tuning a confounder (race) did not substantially change AUC (0.81 - 0.83).
+This suggests a significant proportion of the model's performance on predicting race could come
+from confounding features being detected by AI. Further work remains to identify the particular
+imaging features that associate with demographic information and to better understand the risks
+of demographic identification in medical AI as it pertains to potentially perpetuating bias and
+disparities. 

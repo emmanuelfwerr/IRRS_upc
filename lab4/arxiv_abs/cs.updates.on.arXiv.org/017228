@@ -1,0 +1,20 @@
+Given a sequence of sets, where each set is associated with a timestamp and contains an arbitrary
+number of elements, the task of temporal sets prediction aims to predict the elements in the subsequent
+set. Previous studies for temporal sets prediction mainly capture each user's evolutionary preference
+by learning from his/her own sequence. Although insightful, we argue that: 1) the collaborative
+signals latent in different users' sequences are essential but have not been exploited; 2) users
+also tend to show stationary preferences while existing methods fail to consider. To this end, we
+propose an integrated learning framework to model both the evolutionary and the stationary preferences
+of users for temporal sets prediction, which first constructs a universal sequence by chronologically
+arranging all the user-set interactions, and then learns on each user-set interaction. In particular,
+for each user-set interaction, we first design an evolutionary user preference modelling component
+to track the user's time-evolving preference and exploit the latent collaborative signals among
+different users. This component maintains a memory bank to store memories of the related user and
+elements, and continuously updates their memories based on the currently encoded messages and
+the past memories. Then, we devise a stationary user preference modelling module to discover each
+user's personalized characteristics according to the historical sequence, which adaptively
+aggregates the previously interacted elements from dual perspectives with the guidance of the
+user's and elements' embeddings. Finally, we develop a set-batch algorithm to improve the model
+efficiency, which can create time-consistent batches in advance and achieve 3.5x training speedups
+on average. Experiments on real-world datasets demonstrate the effectiveness and good interpretability
+of our approach. 

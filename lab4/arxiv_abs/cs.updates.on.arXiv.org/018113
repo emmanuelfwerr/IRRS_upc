@@ -1,0 +1,20 @@
+In virtualized radio access network (vRAN), the base station (BS) functions are decomposed into
+virtualized components that can be hosted at the centralized unit or distributed units through
+functional splits. Such flexibility has many benefits; however, it also requires solving the problem
+of finding the optimal splits of functions of the BSs in such a way that minimizes the total network
+cost. The underlying vRAN system is complex and precise modelling of it is not trivial. Formulating
+the functional split problem to minimize the cost results in a combinatorial problem that is provably
+NP-hard, and solving it is computationally expensive. In this paper, a constrained deep reinforcement
+learning (RL) approach is proposed to solve the problem with minimal assumptions about the underlying
+system. Since in deep RL, the action selection is the outcome of inference of a neural network, it
+can be done in real-time while training to update the neural networks can be done in the background.
+However, since the problem is combinatorial, even for a small number of functions, the action space
+of the RL problem becomes large. Therefore, to deal with such a large action space, a chain rule-based
+stochastic policy is exploited in which a long short-term memory (LSTM) network-based sequence-to-sequence
+model is applied to estimate the policy that is selecting the functional split actions. However,
+the utilized policy is still limited to an unconstrained problem, and each split decision is bounded
+by vRAN's constraint requirements. Hence, a constrained policy gradient method is leveraged to
+train and guide the policy toward constraint satisfaction. Further, a search strategy by greedy
+decoding or temperature sampling is utilized to improve the optimality performance at the test
+time. Simulations are performed to evaluate the performance of the proposed solution using synthetic
+and real network datasets. 

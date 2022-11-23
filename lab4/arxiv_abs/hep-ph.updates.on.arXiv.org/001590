@@ -1,0 +1,20 @@
+Abridged. Neutron stars are surrounded by ultra-relativistic particles efficiently accelerated
+by ultra strong electromagnetic fields. However so far, no numerical simulations were able to handle
+such extreme regimes of very high Lorentz factors and magnetic field strengths. It is the purpose
+of this paper to study particle acceleration and radiation reaction damping in a rotating magnetic
+dipole with realistic field strengths typical of millisecond and young pulsars as well as of magnetars.
+To this end, we implemented an exact analytical particle pusher including radiation reaction in
+the reduced Landau-Lifshitz approximation where the electromagnetic field is assumed constant
+in time and uniform in space during one time step integration. The position update is performed using
+a velocity Verlet method. We extensively tested our algorithm against time independent background
+electromagnetic fields like the electric drift in cross electric and magnetic fields and the magnetic
+drift and mirror motion in a dipole. Eventually, we apply it to realistic neutron star environments.
+We investigated particle acceleration and the impact of radiation reaction for electrons, protons
+and iron nuclei plunged around millisecond pulsars, young pulsars and magnetars, comparing it
+to situations without radiation reaction. We found that the maximum Lorentz factor depends on the
+particle species but only weakly on the neutron star type. Electrons reach energies up to $\gamma_e
+\approx 10^8-10^9$ whereas protons energies up to $\gamma_p \approx 10^5-10^6$ and iron up to $\gamma
+\approx 10^4-10^5$. While protons and irons are not affected by radiation reaction, electrons
+are drastically decelerated, reducing their maximum Lorentz factor by 2 orders of magnitude. We
+also found that the radiation reaction limit trajectories fairly agree with the reduced Landau-Lifshitz
+approximation in almost all cases. 

@@ -1,0 +1,19 @@
+With the popularity of Android growing exponentially, the amount of malware has significantly
+exploded. It is arguably one of the most viral problems on mobile platforms. Recently, various approaches
+have been introduced to detect Android malware, the majority of these are either based on the Manifest
+File features or the structural information, such as control flow graph and API calls. Among those
+methods, nearly all of them only consider the Java byte-code as the target to detect malicious behaviors.
+However, Recent research and our own statistics show that native payloads are commonly used in both
+benign and malicious apps. Current state-of-the-art Android static analysis tools avoid handling
+native method invocation. None of those tools have the capability to capture the inter-language
+behaviors. In this work, we explore an ensemble mechanism, which presents how the combination of
+byte-code and native-code analysis of Android applications can be efficiently used to cope with
+the advanced sophistication of Android malware. We, therefore, present a multi-layer approach
+that utilizes deep learning, natural language processing (NLP), as well as graph embedding techniques
+to handle the threats of Android malware, both from the Java byte-code and native code. After that,
+we design an ensemble algorithm to get the final result of malware detection system. To be specific,
+the first layer of our detection approach operates on the byte-code of application and the native
+code level, whereas the second layer focuses on the ensemble algorithm. Large-scale experiments
+on 100,113 samples (35,113 malware and 65,000 benign) show that only byte-code sub-system yields
+99.8% accuracy and native-code sub-system yields an accuracy of 96.6%, whereas the Android-COCO
+method attains an accuracy of 99.86% which outperforms various related works. 

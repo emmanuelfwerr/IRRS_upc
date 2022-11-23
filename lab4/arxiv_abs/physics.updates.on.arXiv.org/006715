@@ -1,0 +1,20 @@
+Recoil-imaging gaseous time projection chambers (TPCs) with directional sensitivity are attractive
+for dark matter (DM) searches. Detectors capable of reconstructing 3D nuclear recoil directions
+would be uniquely sensitive to the predicted dipole angular distribution of DM recoils that would
+unambiguously establish the galactic origin of a claimed DM signal and provide powerful discrimination
+against background recoils from solar neutrinos. These advantages can only be exploited however,
+if electron recoil backgrounds from gamma rays can be sufficiently suppressed. We introduce a deep
+learning-based recoil event classifier that uses a 3D convolutional neural network (3DCNN) to
+identify event species based on their recoil images. We compare electron background rejection
+performance of the 3DCNN both to the traditional discriminant of track length, as well as discriminants
+obtained from state-of-the-art shallow learning methods. We train the 3DCNN classifier using
+recoil charge distributions with ionization energies ranging from 0.5-10.5 $\rm keV_{ee}$, for
+25 cm of drift in an 80:10:10 mixture of $\rm He$:$\rm CF_4$:$\rm CHF_3$. The charges are initially
+segmented into $(100\times 100\times 100)$ $\rm\mu m^3$ bins when determining track length and
+the shallow learning discriminants, but are rebinned with a reduced segmentation of about $(850\times
+850\times 850)$ $\rm\mu m^3$ for the 3DCNN. Despite the courser binning, compared to using track
+length, we find that classifying events with the 3DCNN reduces electron backgrounds by a factor
+of up to 1,000 and effectively reduces the energy threshold of our simulated TPC by $30\%$ for fluorine
+recoils and $50\%$ for helium recoils. We also find that the 3DCNN reduces electron backgrounds
+by up to a factor of 20 compared to the shallow machine learning approaches, corresponding to a 2 $\rm
+keV_{ee}$ reduction in the energy threshold. 

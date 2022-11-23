@@ -1,0 +1,19 @@
+We give the first polynomial time and sample $(\epsilon, \delta)$-differentially private (DP)
+algorithm to estimate the mean, covariance and higher moments in the presence of a constant fraction
+of adversarial outliers. Our algorithm succeeds for families of distributions that satisfy two
+well-studied properties in prior works on robust estimation: certifiable subgaussianity of directional
+moments and certifiable hypercontractivity of degree 2 polynomials. Our recovery guarantees
+hold in the "right affine-invariant norms": Mahalanobis distance for mean, multiplicative spectral
+and relative Frobenius distance guarantees for covariance and injective norms for higher moments.
+Prior works obtained private robust algorithms for mean estimation of subgaussian distributions
+with bounded covariance. For covariance estimation, ours is the first efficient algorithm (even
+in the absence of outliers) that succeeds without any condition-number assumptions. Our algorithms
+arise from a new framework that provides a general blueprint for modifying convex relaxations for
+robust estimation to satisfy strong worst-case stability guarantees in the appropriate parameter
+norms whenever the algorithms produce witnesses of correctness in their run. We verify such guarantees
+for a modification of standard sum-of-squares (SoS) semidefinite programming relaxations for
+robust estimation. Our privacy guarantees are obtained by combining stability guarantees with
+a new "estimate dependent" noise injection mechanism in which noise scales with the eigenvalues
+of the estimated covariance. We believe this framework will be useful more generally in obtaining
+DP counterparts of robust estimators. Independently of our work, Ashtiani and Liaw [AL21] also
+obtained a polynomial time and sample private robust estimation algorithm for Gaussian distributions.

@@ -1,0 +1,19 @@
+Selfie images enjoy huge popularity in social media. The same platforms centered around sharing
+this type of images offer filters to beautify them or incorporate augmented reality effects. Studies
+suggests that filtered images attract more views and engagement. Selfie images are also in increasing
+use in security applications due to mobiles becoming data hubs for many transactions. Also, video
+conference applications, boomed during the pandemic, include such filters. Such filters may destroy
+biometric features that would allow person recognition or even detection of the face itself, even
+if such commodity applications are not necessarily used to compromise facial systems. This could
+also affect subsequent investigations like crimes in social media, where automatic analysis is
+usually necessary given the amount of information posted in social sites or stored in devices or
+cloud repositories. To help in counteracting such issues, we contribute with a database of facial
+images that includes several manipulations. It includes image enhancement filters (which mostly
+modify contrast and lightning) and augmented reality filters that incorporate items like animal
+noses or glasses. Additionally, images with sunglasses are processed with a reconstruction network
+trained to learn to reverse such modifications. This is because obfuscating the eye region has been
+observed in the literature to have the highest impact on the accuracy of face detection or recognition.
+We start from the popular Labeled Faces in the Wild (LFW) database, to which we apply different modifications,
+generating 8 datasets. Each dataset contains 4,324 images of size 64 x 64, with a total of 34,592 images.
+The use of a public and widely employed face dataset allows for replication and comparison. The created
+database is available at https://github.com/HalmstadUniversityBiometrics/LFW-Beautified

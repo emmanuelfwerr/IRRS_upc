@@ -1,0 +1,20 @@
+Most visual scene understanding tasks in the field of computer vision involve identification of
+the objects present in the scene. Image regions like hideouts, turns, & other obscured regions of
+the scene also contain crucial information, for specific surveillance tasks. Task proposed in
+this paper involves the design of an intelligent visual aid for identification of such locations
+in an image, which has either the potential to create an imminent threat from an adversary or appear
+as the target zones needing further investigation. Covert places (CGL) for hiding behind an occluding
+object are concealed 3D locations, not detectable from the viewpoint (camera). Hence this involves
+delineating specific image regions around the projections of outer boundary of the occluding objects,
+as places to be accessed around the potential hideouts. CGL detection finds applications in military
+counter-insurgency operations, surveillance with path planning for an exploratory robot. Given
+an RGB image, the goal is to identify all CGLs in the 2D scene. Identification of such regions would
+require knowledge about the 3D boundaries of obscuring items (pillars, furniture), their spatial
+location with respect to the neighboring regions of the scene. We propose this as a novel task, termed
+Covert Geo-Location (CGL) Detection. Classification of any region of an image as a CGL (as boundary
+sub-segments of an occluding object that conceals the hideout) requires examining the 3D relation
+between boundaries of occluding objects and their neighborhoods & surroundings. Our method successfully
+extracts relevant depth features from a single RGB image and quantitatively yields significant
+improvement over existing object detection and segmentation models adapted and trained for CGL
+detection. We also introduce a novel hand-annotated CGL detection dataset containing 1.5K real-world
+images for experimentation. 

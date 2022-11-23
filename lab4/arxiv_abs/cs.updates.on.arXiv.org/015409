@@ -1,0 +1,19 @@
+Accurate segmentation of the liver is a prerequisite for the diagnosis of disease. Automated segmentation
+is an important application of computer-aided detection and diagnosis of liver disease. In recent
+years, automated processing of medical images has gained breakthroughs. However, the low contrast
+of abdominal scan CT images and the complexity of liver morphology make accurate automatic segmentation
+challenging. In this paper, we propose RA V-Net, which is an improved medical image automatic segmentation
+model based on U-Net. It has the following three main innovations. CofRes Module (Composite Original
+Feature Residual Module) is proposed. With more complex convolution layers and skip connections
+to make it obtain a higher level of image feature extraction capability and prevent gradient disappearance
+or explosion. AR Module (Attention Recovery Module) is proposed to reduce the computational effort
+of the model. In addition, the spatial features between the data pixels of the encoding and decoding
+modules are sensed by adjusting the channels and LSTM convolution. Finally, the image features
+are effectively retained. CA Module (Channel Attention Module) is introduced, which used to extract
+relevant channels with dependencies and strengthen them by matrix dot product, while weakening
+irrelevant channels without dependencies. The purpose of channel attention is achieved. The attention
+mechanism provided by LSTM convolution and CA Module are strong guarantees for the performance
+of the neural network. The accuracy of U-Net network: 0.9862, precision: 0.9118, DSC: 0.8547, JSC:
+0.82. The evaluation metrics of RA V-Net, accuracy: 0.9968, precision: 0.9597, DSC: 0.9654, JSC:
+0.9414. The most representative metric for the segmentation effect is DSC, which improves 0.1107
+over U-Net, and JSC improves 0.1214. 

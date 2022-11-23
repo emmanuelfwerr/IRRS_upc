@@ -1,0 +1,19 @@
+Link prediction aims to infer the existence of a link between two nodes in a network. Despite their
+wide application, the success of traditional link prediction algorithms is hindered by three major
+challenges -- link sparsity, node attribute noise and network dynamics -- that are faced by real-world
+networks. To overcome these challenges, we propose a Contextualized Self-Supervised Learning
+(CSSL) framework that fully exploits structural context prediction for link prediction. The proposed
+CSSL framework forms edge embeddings through aggregating pairs of node embeddings constructed
+via a transformation on node attributes, which are used to predict the link existence probability.
+To generate node embeddings tailored for link prediction, structural context prediction is leveraged
+as a self-supervised learning task to boost link prediction. Two types of structural contexts are
+investigated, i.e., context nodes collected from random walks vs. context subgraphs. The CSSL
+framework can be trained in an end-to-end manner, with the learning of node and edge embeddings supervised
+by link prediction and the self-supervised learning task. The proposed CSSL is a generic and flexible
+framework in the sense that it can handle both transductive and inductive link prediction settings,
+and both attributed and non-attributed networks. Extensive experiments and ablation studies
+on seven real-world benchmark graph datasets demonstrate the superior performance of the proposed
+self-supervision based link prediction algorithm over state-of-the-art baselines on different
+types of networks under both transductive and inductive settings. The proposed CSSL also yields
+competitive performance in terms of its robustness to node attribute noise and scalability over
+large-scale networks. 

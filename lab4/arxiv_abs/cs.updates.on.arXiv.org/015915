@@ -1,0 +1,19 @@
+The outcome of a collective decision-making process, such as crowdsourcing, often relies on the
+procedure through which the perspectives of its individual members are aggregated. Popular aggregation
+methods, such as the majority rule, often fail to produce the optimal result, especially in high-complexity
+tasks. Methods that rely on meta-cognitive information, such as confidence-based methods and
+the Surprisingly Popular Option, had shown an improvement in various tasks. However, there is still
+a significant number of cases with no optimal solution. Our aim is to exploit meta-cognitive information
+and to learn from it, for the purpose of enhancing the ability of the group to produce a correct answer.
+Specifically, we propose two different feature-representation approaches: (1) Response-Centered
+feature Representation (RCR), which focuses on the characteristics of the individual response
+instances, and (2) Answer-Centered feature Representation (ACR), which focuses on the characteristics
+of each of the potential answers. Using these two feature-representation approaches, we train
+Machine-Learning (ML) models, for the purpose of predicting the correctness of a response and of
+an answer. The trained models are used as the basis of an ML-based aggregation methodology that,
+contrary to other ML-based techniques, has the advantage of being a "one-shot" technique, independent
+from the crowd-specific composition and personal record, and adaptive to various types of situations.
+To evaluate our methodology, we collected 2490 responses for different tasks, which we used for
+feature engineering and for the training of ML models. We tested our feature-representation approaches
+through the performance of our proposed ML-based aggregation methods. The results show an increase
+of 20% to 35% in the success rate, compared to the use of standard rule-based aggregation methods.

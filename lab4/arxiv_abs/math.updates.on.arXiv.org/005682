@@ -1,0 +1,18 @@
+For any pair $(n,p)$, $n\in\mathbb{N}$ and $0<p<\infty$, it has been recently proved that a radial
+weight $\omega$ on the unit disc of the complex plane $\mathbb{D}$ satisfies the Littlewood-Paley
+equivalence $$ \int_{\mathbb{D}}|f(z)|^p\,\omega(z)\,dA(z)\asymp\int_\mathbb{D}|f^{(n)}(z)|^p(1-|z|)^{np}\omega(z)\,dA(z)+\sum_{j=0}^{n-1}|f^{(j)}(0)|^p,$$
+for any analytic function $f$ in $\mathbb{D}$, if and only if $\omega\in\mathcal{D}=\widehat{\mathcal{D}}
+\cap \check{\mathcal{D}}$. A radial weight $\omega$ belongs to the class $\widehat{\mathcal{D}}$
+if $\sup_{0\le r<1} \frac{\int_r^1 \omega(s)\,ds}{\int_{\frac{1+r}{2}}^1\omega(s)\,ds}<\infty$,
+and $\omega \in \check{\mathcal{D}}$ if there exists $k>1$ such that $\inf_{0\le r<1} \frac{\int_{r}^1\omega(s)\,ds}{\int_{1-\frac{1-r}{k}}^1
+\omega(s)\,ds}>1$. In this paper we extend this result to the setting of fractional derivatives.
+Being precise, for an analytic function $f(z)=\sum_{n=0}^\infty \widehat{f}(n) z^n$ we consider
+the fractional derivative $ D^{\mu}(f)(z)=\sum\limits_{n=0}^{\infty} \frac{\widehat{f}(n)}{\mu_{2n+1}}
+z^n $ induced by a radial weight $\mu \in \mathcal{D}$, where $\mu_{2n+1}=\int_0^1 r^{2n+1}\mu(r)\,dr$.
+Then, we prove that for any $p\in (0,\infty)$, the Littlewood-Paley equivalence $$\int_{\mathbb{D}}
+|f(z)|^p \omega(z)\,dA(z)\asymp \int_{\mathbb{D}}|D^{\mu}(f)(z)|^p\left[\int_{|z|}^1\mu(s)\,ds\right]^p\omega(z)\,dA(z)$$
+holds for any analytic function $f$ in $\mathbb{D}$ if and only if $\omega\in\mathcal{D}$. We also
+prove that for any $p\in (0,\infty)$, the inequality $$\int_{\mathbb{D}} |D^{\mu}(f)(z)|^p
+\left[\int_{|z|}^1\mu(s)\,ds\right]^p\omega(z)\,dA(z) \lesssim \int_{\mathbb{D}} |f(z)|^p
+\omega(z)\,dA(z) $$ holds for any analytic function $f$ in $\mathbb{D}$ if and only if $\omega\in
+\widehat{\mathcal{D}}$. 

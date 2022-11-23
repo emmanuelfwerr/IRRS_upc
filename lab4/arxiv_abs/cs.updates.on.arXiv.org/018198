@@ -1,0 +1,19 @@
+Objective: Shapley additive explanations (SHAP) is a popular post-hoc technique for explaining
+black box models. While the impact of data imbalance on predictive models has been extensively studied,
+it remains largely unknown with respect to SHAP-based model explanations. This study sought to
+investigate the effects of data imbalance on SHAP explanations for deep learning models, and to
+propose a strategy to mitigate these effects. Materials and Methods: We propose to adjust class
+distributions in the background and explanation data in SHAP when explaining black box models.
+Our data balancing strategy is to compose background data and explanation data with an equal distribution
+of classes. To evaluate the effects of data adjustment on model explanation, we propose to use the
+beeswarm plot as a qualitative tool to identify "abnormal" explanation artifacts, and quantitatively
+test the consistency between variable importance and prediction power. We demonstrated our proposed
+approach in an empirical study that predicted inpatient mortality using the Medical Information
+Mart for Intensive Care (MIMIC-III) data and a multilayer perceptron. Results: Using the data balancing
+strategy would allow us to reduce the number of the artifacts in the beeswarm plot, thus mitigating
+the negative effects of data imbalance. Additionally, with the balancing strategy, the top-ranked
+variables from the corresponding importance ranking demonstrated improved discrimination power.
+Discussion and Conclusion: Our findings suggest that balanced background and explanation data
+could help reduce the noise in explanation results induced by skewed data distribution and improve
+the reliability of variable importance ranking. Furthermore, these balancing procedures improve
+the potential of SHAP in identifying patients with abnormal characteristics in clinical applications.

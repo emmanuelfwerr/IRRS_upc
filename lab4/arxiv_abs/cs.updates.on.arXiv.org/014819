@@ -1,0 +1,20 @@
+We introduce a new data structure for answering connectivity queries in undirected graphs subject
+to batched vertex failures. Precisely, given any graph G and integer k, we can in fixed-parameter
+time construct a data structure that can later be used to answer queries of the form: ``are vertices
+s and t connected via a path that avoids vertices $u_1,..., u_k$?'' in time $2^{2^{O(k)}}$. In the
+terminology of the literature on data structures, this gives the first deterministic data structure
+for connectivity under vertex failures where for every fixed number of failures, all operations
+can be performed in constant time. With the aim to understand the power and the limitations of our
+new techniques, we prove an algorithmic meta theorem for the recently introduced separator logic,
+which extends first-order logic with atoms for connectivity under vertex failures. We prove that
+the model-checking problem for separator logic is fixed-parameter tractable on every class of
+graphs that exclude a fixed topological minor. We also show a weak converse. This implies that from
+the point of view of parameterized complexity, under standard complexity assumptions, the frontier
+of tractability of separator logic is almost exactly delimited by classes excluding a fixed topological
+minor. The backbone of our proof relies on a decomposition theorem of Cygan et al. [SICOMP '19], which
+provides a tree decomposition of a given graph into bags that are unbreakable. Crucially, unbreakability
+allows to reduce separator logic to plain first-order logic within each bag individually. We design
+our model-checking algorithm using dynamic programming over the tree decomposition, where the
+transition at each bag amounts to running a suitable model-checking subprocedure for plain first-order
+logic. This approach is robust enough to provide also efficient enumeration of queries expressed
+in separator logic. 

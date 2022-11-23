@@ -1,0 +1,20 @@
+When patients develop acute respiratory failure, accurately identifying the underlying etiology
+is essential for determining the best treatment, but it can be challenging to differentiate between
+common diagnoses in clinical practice. Machine learning models could improve medical diagnosis
+by augmenting clinical decision making and play a role in the diagnostic evaluation of patients
+with acute respiratory failure. While machine learning models have been developed to identify
+common findings on chest radiographs (e.g. pneumonia), augmenting these approaches by also analyzing
+clinically relevant data from the electronic health record (EHR) could aid in the diagnosis of acute
+respiratory failure. Machine learning models were trained to predict the cause of acute respiratory
+failure (pneumonia, heart failure, and/or COPD) using chest radiographs and EHR data from patients
+within an internal cohort using diagnoses based on physician chart review. Models were also tested
+on patients in an external cohort using discharge diagnosis codes. A model combining chest radiographs
+and EHR data outperformed models based on each modality alone for pneumonia and COPD. For pneumonia,
+the combined model AUROC was 0.79 (0.78-0.79), image model AUROC was 0.73 (0.72-0.75), and EHR model
+AUROC was 0.73 (0.70-0.76); for COPD, combined: 0.89 (0.83-0.91), image: 0.85 (0.77-0.89), and
+EHR: 0.80 (0.76-0.84); for heart failure, combined: 0.80 (0.77-0.84), image: 0.77 (0.71-0.81),
+and EHR: 0.80 (0.75-0.82). In the external cohort, performance was consistent for heart failure
+and COPD, but declined slightly for pneumonia. Overall, machine learning models combing chest
+radiographs and EHR data can accurately differentiate between common causes of acute respiratory
+failure. Further work is needed to determine whether these models could aid clinicians in the diagnosis
+of acute respiratory failure in clinical settings. 

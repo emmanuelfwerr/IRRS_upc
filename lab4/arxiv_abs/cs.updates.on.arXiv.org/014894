@@ -1,0 +1,19 @@
+We present deterministic algorithms for the Hidden Subgroup Problem. The first algorithm, for
+abelian groups, achieves the same asymptotic worst-case query complexity as the optimal randomized
+algorithm, namely O($\sqrt{ n}\,$), where $n$ is the order of the group. The analogous algorithm
+for non-abelian groups comes within a $\sqrt{ \log n}$ factor of the optimal randomized query complexity.
+The best known randomized algorithm for the Hidden Subgroup Problem has expected query complexity
+that is sensitive to the input, namely O($\sqrt{ n/m}\,$), where $m$ is the order of the hidden subgroup.
+In the first version of this article (arXiv:2104.14436v1 [cs.DS]), we asked if there is a deterministic
+algorithm whose query complexity has a similar dependence on the order of the hidden subgroup. Prompted
+by this question, Ye and Li (arXiv:2110.00827v1 [cs.DS]) present deterministic algorithms for
+abelian groups which solve the problem with O($\sqrt{ n/m }\,$ ) queries, and find the hidden subgroup
+with O($\sqrt{ n (\log m) / m} + \log m$) queries. Moreover, they exhibit instances which show that
+in general, the deterministic query complexity of the problem may be o($\sqrt{ n/m } \,$), and that
+of finding the entire subgroup may also be o($\sqrt{ n/m } \,$) or even $\omega(\sqrt{ n/m } \,)$.
+We present a different deterministic algorithm for the Hidden Subgroup Problem that also has query
+complexity O($\sqrt{ n/m }\,$) for abelian groups. The algorithm is arguably simpler. Moreover,
+it works for non-abelian groups, and has query complexity O($\sqrt{ (n/m) \log (n/m) }\,$) for a
+large class of instances, such as those over supersolvable groups. We build on this to design deterministic
+algorithms to find the hidden subgroup for all abelian and some non-abelian instances, at the cost
+of a $\log m$ multiplicative factor increase in the query complexity. 

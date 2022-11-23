@@ -1,0 +1,20 @@
+Digitization of scanned Piping and Instrumentation diagrams(P&ID), widely used in manufacturing
+or mechanical industries such as oil and gas over several decades, has become a critical bottleneck
+in dynamic inventory management and creation of smart P&IDs that are compatible with the latest
+CAD tools. Historically, P&ID sheets have been manually generated at the design stage, before being
+scanned and stored as PDFs. Current digitization initiatives involve manual processing and are
+consequently very time consuming, labour intensive and error-prone.Thanks to advances in image
+processing, machine and deep learning techniques there are emerging works on P&ID digitization.
+However, existing solutions face several challenges owing to the variation in the scale, size and
+noise in the P&IDs, sheer complexity and crowdedness within drawings, domain knowledge required
+to interpret the drawings. This motivates our current solution called Digitize-PID which comprises
+of an end-to-end pipeline for detection of core components from P&IDs like pipes, symbols and textual
+information, followed by their association with each other and eventually, the validation and
+correction of output data based on inherent domain knowledge. A novel and efficient kernel-based
+line detection and a two-step method for detection of complex symbols based on a fine-grained deep
+recognition technique is presented in the paper. In addition, we have created an annotated synthetic
+dataset, Dataset-P&ID, of 500 P&IDs by incorporating different types of noise and complex symbols
+which is made available for public use (currently there exists no public P&ID dataset). We evaluate
+our proposed method on this synthetic dataset and a real-world anonymized private dataset of 12
+P&ID sheets. Results show that Digitize-PID outperforms the existing state-of-the-art for P&ID
+digitization. 

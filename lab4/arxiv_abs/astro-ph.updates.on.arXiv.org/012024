@@ -1,0 +1,18 @@
+All-sky radio surveys are set to revolutionise the field with new discoveries. However, the vast
+majority of the tens of millions of radio galaxies won't have the spectroscopic redshift measurements
+required for a large number of science cases. Here, we evaluate techniques for estimating redshifts
+of galaxies from a radio-selected survey. Using a radio-selected sample with broadband photometry
+at infrared and optical wavelengths, we test the k-Nearest Neighbours (kNN) and Random Forest machine
+learning algorithms, testing them both in their regression and classification modes. Further,
+we test different distance metrics used by the kNN algorithm, including the standard Euclidean
+distance, the Mahalanobis distance and a learned distance metric for both the regression mode (the
+Metric Learning for Kernel Regression metric) and the classification mode (the Large Margin Nearest
+Neighbour metric). We find that all regression-based modes fail on galaxies at a redshift $z > 1$.
+However, below this range, the kNN algorithm using the Mahalanobis distance metric performs best,
+with an $\eta_{0.15}$ outlier rate of 5.85\%. In the classification mode, the kNN algorithm using
+the Mahalanobis distance metric also performs best, with an $\eta_{0.15}$ outlier rate of 5.85\%,
+correctly placing 74\% of galaxies in the top $z > 1.02$ bin. Finally, we also tested the effect of
+training in one field and applying the trained algorithm to similar data from another field and found
+that variation across fields does not result in statistically significant differences in predicted
+redshifts. Importantly, we find that while we may not be able to predict a continuous value for high-redshift
+radio sources, we can identify the majority of them using the classification modes of existing techniques.

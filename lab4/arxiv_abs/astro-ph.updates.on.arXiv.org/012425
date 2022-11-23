@@ -1,0 +1,20 @@
+During solar flares plasma is typically heated to very high temperatures, and the resulting redistribution
+of energy via thermal conduction is a primary mechanism transporting energy throughout the flaring
+solar atmosphere. The thermal flux is usually modeled using Spitzer's theory, which is based on
+local Coulomb collisions between the electrons carrying the thermal flux and those in the background.
+However, often during flares, temperature gradients become sufficiently steep that the collisional
+mean free path exceeds the temperature gradient scale size, so that thermal conduction becomes
+inherently non-local. Further, turbulent angular scattering, which is detectable in nonthermal
+widths of atomic emission lines, can also act to increase the collision frequency and so suppress
+the heat flux. Recent work by Emslie & Bian (2018) extended Spitzer's theory of thermal conduction
+to account for both non-locality and turbulent suppression. We have implemented their theoretical
+expression for the heat flux (which is a convolution of the Spitzer flux with a kernel function) into
+the RADYN flare-modeling code and performed a parameter study to understand how the resulting changes
+in thermal conduction affect flare dynamics and hence the radiation produced. We find that models
+with reduced heat fluxes predict slower bulk flows, less intense line emission, and longer cooling
+times. By comparing features of atomic emission lines predicted by the models with Doppler velocities
+and nonthermal line widths deduced from a particular flare observation, we find that models with
+suppression factors between 0.3 to 0.5 relative to the Spitzer value best reproduce observed Doppler
+velocities across emission lines forming over a wide range of temperatures. Interestingly, the
+model that best matches observed nonthermal line widths has a kappa-type velocity distribution
+function. 

@@ -1,0 +1,20 @@
+Commit messages are the atomic level of software documentation. They provide a natural language
+description of the code change and its purpose. Messages are critical for software maintenance
+and program comprehension. Unlike documenting feature updates and bug fixes, little is known about
+how developers document their refactoring activities. Developers can perform multiple refactoring
+operations, including moving methods, extracting classes, for various reasons. Yet, there is
+no systematic study that analyzes the extent to which the documentation of refactoring accurately
+describes the refactoring operations performed at the source code level. Therefore, this paper
+challenges the ability of refactoring documentation to adequately predict the refactoring types,
+performed at the commit level. Our analysis relies on the text mining of commit messages to extract
+the corresponding features that better represent each class. The extraction of text patterns,
+specific to each refactoring allows the design of a model that verifies the consistency of these
+patterns with their corresponding refactoring. Such verification process can be achieved via
+automatically predicting the method-level type of refactoring being applied, namely Extract
+Method, Inline Method, Move Method, Pull-up Method, Push-down Method, and Rename Method. We compared
+various classifiers, and a baseline keyword-based approach, in terms of their prediction performance,
+using a dataset of 5,004 commits. Our main findings show that the complexity of refactoring type
+prediction varies from one type to another. Rename method and Extract method were found to be the
+best documented refactoring activities, while Pull-up Method and Push-down Method were the hardest
+to be identified via textual descriptions. Such findings bring the attention of developers to the
+necessity of paying more attention to the documentation of these types. 

@@ -1,0 +1,20 @@
+A proof of work (PoW) is an important cryptographic construct enabling a party to convince others
+that they invested some effort in solving a computational task. Arguably, its main impact has been
+in the setting of cryptocurrencies such as Bitcoin and its underlying blockchain protocol, which
+received significant attention in recent years due to its potential for various applications as
+well as for solving fundamental distributed computing questions in novel threat models. PoWs enable
+the linking of blocks in the blockchain data structure and thus the problem of interest is the feasibility
+of obtaining a sequence (chain) of such proofs. In this work, we examine the hardness of finding such
+chain of PoWs against quantum strategies. We prove that the chain of PoWs problem reduces to a problem
+we call multi-solution Bernoulli search, for which we establish its quantum query complexity.
+Effectively, this is an extension of a threshold direct product theorem to an average-case unstructured
+search problem. Our proof, adding to active recent efforts, simplifies and generalizes the recording
+technique due to Zhandry (Crypto 2019). In addition, we revisit the formal treatment of security
+of the core of the Bitcoin consensus protocol, called the Bitcoin backbone (Eurocrypt 2015), against
+quantum adversaries and show that its security holds under a quantum analogue of the ``honest majority''
+assumption that we formulate. Our analysis indicates that security of the Bitcoin backbone protocol
+is guaranteed provided that the number of adversarial quantum queries is bounded so that each quantum
+query is worth $O(p^{-1/2})$ classical ones, where $p$ is the probability of success of a single
+classical query to the protocol's underlying hash function. Somewhat surprisingly, the wait time
+for safe settlement in the case of quantum adversaries matches the safe settlement time in the classical
+case. 

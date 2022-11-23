@@ -1,0 +1,19 @@
+Since gyri and sulci, two basic anatomical building blocks of cortical folding patterns, were suggested
+to bear different functional roles, a precise mapping from brain function to gyro-sulcal patterns
+can provide profound insights into both biological and artificial neural networks. However, there
+lacks a generic theory and effective computational model so far, due to the highly nonlinear relation
+between them, huge inter-individual variabilities and a sophisticated description of brain function
+regions/networks distribution as mosaics, such that spatial patterning of them has not been considered.
+we adopted brain functional gradients derived from resting-state fMRI to embed the "gradual" change
+of functional connectivity patterns, and developed a novel attention mesh convolution model to
+predict cortical gyro-sulcal segmentation maps on individual brains. The convolution on mesh
+considers the spatial organization of functional gradients and folding patterns on a cortical
+sheet and the newly designed channel attention block enhances the interpretability of the contribution
+of different functional gradients to cortical folding prediction. Experiments show that the prediction
+performance via our model outperforms other state-of-the-art models. In addition, we found that
+the dominant functional gradients contribute less to folding prediction. On the activation maps
+of the last layer, some well-studied cortical landmarks are found on the borders of, rather than
+within, the highly activated regions. These results and findings suggest that a specifically designed
+artificial neural network can improve the precision of the mapping between brain functions and
+cortical folding patterns, and can provide valuable insight of brain anatomy-function relation
+for neuroscience. 

@@ -1,0 +1,19 @@
+Growing evidence has indicated that the global composition distribution plays an indisputable
+role in interpreting observational data. 3D general circulation models (GCMs) with a reliable
+treatment of chemistry and clouds are particularly crucial in preparing for the upcoming observations.
+In the effort of achieving 3D chemistry-climate modeling, the challenge mainly lies in the expensive
+computing power required for treating a large number of chemical species and reactions. Motivated
+by the need for a robust and computationally efficient chemical scheme, we devise a mini-chemical
+network with a minimal number of species and reactions for H$_2$-dominated atmospheres. We apply
+a novel technique to simplify the chemical network from a full kinetics model -- VULCAN by replacing
+a large number of intermediate reactions with net reactions. The number of chemical species is cut
+down from 67 to 12, with the major species of thermal and observational importance retained, including
+H$_2$O, CH$_4$, CO, CO$_2$, C$_2$H$_2$, NH$_3$, and HCN. The size of the total reactions is greatly
+reduced from $\sim$ 800 to 20. The mini-chemical scheme is validated by verifying the temporal evolution
+and benchmarking the predicted compositions in four exoplanet atmospheres (GJ 1214b, GJ 436b,
+HD 189733b, HD 209458b) against the full kinetics of VULCAN. It reproduces the chemical timescales
+and composition distributions of the full kinetics well within an order of magnitude for the major
+species in the pressure range of 1 bar -- 0.1 mbar across various metallicities and carbon-to-oxygen
+(C/O) ratios. The small scale of the mini-chemical scheme permits simple use and fast computation,
+which is optimal for implementation in a 3D GCM or a retrieval framework. We focus on the thermochemical
+kinetics of net reactions in this paper and address photochemistry in a follow-up paper. 

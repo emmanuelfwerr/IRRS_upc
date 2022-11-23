@@ -1,0 +1,20 @@
+Deep convolutional neural networks have been demonstrated to be effective for SISR in recent years.
+On the one hand, residual connections and dense connections have been used widely to ease forward
+information and backward gradient flows to boost performance. However, current methods use residual
+connections and dense connections separately in most network layers in a sub-optimal way. On the
+other hand, although various networks and methods have been designed to improve computation efficiency,
+save parameters, or utilize training data of multiple scale factors for each other to boost performance,
+it either do super-resolution in HR space to have a high computation cost or can not share parameters
+between models of different scale factors to save parameters and inference time. To tackle these
+challenges, we propose an efficient single image super-resolution network using dual path connections
+with multiple scale learning named as EMSRDPN. By introducing dual path connections inspired by
+Dual Path Networks into EMSRDPN, it uses residual connections and dense connections in an integrated
+way in most network layers. Dual path connections have the benefits of both reusing common features
+of residual connections and exploring new features of dense connections to learn a good representation
+for SISR. To utilize the feature correlation of multiple scale factors, EMSRDPN shares all network
+units in LR space between different scale factors to learn shared features and only uses a separate
+reconstruction unit for each scale factor, which can utilize training data of multiple scale factors
+to help each other to boost performance, meanwhile which can save parameters and support shared
+inference for multiple scale factors to improve efficiency. Experiments show EMSRDPN achieves
+better performance and comparable or even better parameter and inference efficiency over SOTA
+methods. 

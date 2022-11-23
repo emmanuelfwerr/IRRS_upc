@@ -1,0 +1,20 @@
+Discovering new hyperlinks enables Web crawlers to find new pages that have not yet been indexed.
+This is especially important for focused crawlers because they strive to provide a comprehensive
+analysis of specific parts of the Web, thus prioritizing discovery of new pages over discovery of
+changes in content. In the literature, changes in hyperlinks and content have been usually considered
+simultaneously. However, there is also evidence suggesting that these two types of changes are
+not necessarily related. Moreover, many studies about predicting changes assume that long history
+of a page is available, which is unattainable in practice. The aim of this work is to provide a methodology
+for detecting new links effectively using a short history. To this end, we use a dataset of ten crawls
+at intervals of one week. Our study consists of three parts. First, we obtain insight in the data by
+analyzing empirical properties of the number of new outlinks. We observe that these properties
+are, on average, stable over time, but there is a large difference between emergence of hyperlinks
+towards pages within and outside the domain of a target page (internal and external outlinks, respectively).
+Next, we provide statistical models for three targets: the link change rate, the presence of new
+links, and the number of new links. These models include the features used earlier in the literature,
+as well as new features introduced in this work. We analyze correlation between the features, and
+investigate their informativeness. A notable finding is that, if the history of the target page
+is not available, then our new features, that represent the history of related pages, are most predictive
+for new links in the target page. Finally, we propose ranking methods as guidelines for focused crawlers
+to efficiently discover new pages, which achieve excellent performance with respect to the corresponding
+targets. 

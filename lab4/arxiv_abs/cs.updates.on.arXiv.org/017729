@@ -1,0 +1,19 @@
+Robust perception is an essential component to enable long-term operation of mobile robots. It
+depends on failure resilience through reliable sensor data and preprocessing, as well as failure
+awareness through introspection, for example the ability to self-assess localization performance.
+This paper presents CorAl: a principled, intuitive, and generalizable method to measure the quality
+of alignment between pairs of point clouds, which learns to detect alignment errors in a self-supervised
+manner. CorAl compares the differential entropy in the point clouds separately with the entropy
+in their union to account for entropy inherent to the scene. By making use of dual entropy measurements,
+we obtain a quality metric that is highly sensitive to small alignment errors and still generalizes
+well to unseen environments. In this work, we extend our previous work on lidar-only CorAl to radar
+data by proposing a two-stage filtering technique that produces high-quality point clouds from
+noisy radar scans. Thus we target robust perception in two ways: by introducing a method that introspectively
+assesses alignment quality, and applying it to an inherently robust sensor modality. We show that
+our filtering technique combined with CorAl can be applied to the problem of alignment classification,
+and that it detects small alignment errors in urban settings with up to 98% accuracy, and with up to
+96% if trained only in a different environment. Our lidar and radar experiments demonstrate that
+CorAl outperforms previous methods both on the ETH lidar benchmark, which includes several indoor
+and outdoor environments, and the large-scale Oxford and MulRan radar data sets for urban traffic
+scenarios The results also demonstrate that CorAl generalizes very well across substantially
+different environments without the need of retraining. 

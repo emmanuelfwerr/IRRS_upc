@@ -1,0 +1,20 @@
+Given a ground set of items, the result diversification problem aims to select a subset with high
+"quality" and "diversity" while satisfying some constraints. It arises in various real-world
+artificial intelligence applications, such as web-based search, document summarization and
+feature selection, and also has applications in other areas, e.g., computational geometry, databases,
+finance and operations research. Previous algorithms are mainly based on greedy or local search.
+In this paper, we propose to reformulate the result diversification problem as a bi-objective maximization
+problem, and solve it by a multi-objective evolutionary algorithm (EA), i.e., the GSEMO. We theoretically
+prove that the GSEMO can achieve the (asymptotically) optimal theoretical guarantees under both
+static and dynamic environments. For cardinality constraints, the GSEMO can achieve the optimal
+polynomial-time approximation ratio, $1/2$. For more general matroid constraints, the GSEMO
+can achieve an asymptotically optimal polynomial-time approximation ratio, $1/2-\epsilon/(4n)$,
+where $\epsilon>0$ and $n$ is the size of the ground set of items. Furthermore, when the objective
+function (i.e., a linear combination of quality and diversity) changes dynamically, the GSEMO
+can maintain this approximation ratio in polynomial running time, addressing the open question
+proposed by Borodin. This also theoretically shows the superiority of EAs over local search for
+solving dynamic optimization problems for the first time, and discloses the robustness of the mutation
+operator of EAs against dynamic changes. Experiments on the applications of web-based search,
+multi-label feature selection and document summarization show the superior performance of the
+GSEMO over the state-of-the-art algorithms (i.e., the greedy algorithm and local search) under
+both static and dynamic environments. 

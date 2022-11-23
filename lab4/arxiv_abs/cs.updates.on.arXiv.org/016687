@@ -1,0 +1,18 @@
+Data poisoning attacks, in which an adversary corrupts a training set with the goal of inducing specific
+desired mistakes, have raised substantial concern: even just the possibility of such an attack
+can make a user no longer trust the results of a learning system. In this work, we show how to achieve
+strong robustness guarantees in the face of such attacks across multiple axes. We provide robustly-reliable
+predictions, in which the predicted label is guaranteed to be correct so long as the adversary has
+not exceeded a given corruption budget, even in the presence of instance targeted attacks, where
+the adversary knows the test example in advance and aims to cause a specific failure on that example.
+Our guarantees are substantially stronger than those in prior approaches, which were only able
+to provide certificates that the prediction of the learning algorithm does not change, as opposed
+to certifying that the prediction is correct, as we are able to achieve in our work. Remarkably, we
+provide a complete characterization of learnability in this setting, in particular, nearly-tight
+matching upper and lower bounds on the region that can be certified, as well as efficient algorithms
+for computing this region given an ERM oracle. Moreover, for the case of linear separators over logconcave
+distributions, we provide efficient truly polynomial time algorithms (i.e., non-oracle algorithms)
+for such robustly-reliable predictions. We also extend these results to the active setting where
+the algorithm adaptively asks for labels of specific informative examples, and the difficulty
+is that the adversary might even be adaptive to this interaction, as well as to the agnostic learning
+setting where there is no perfect classifier even over the uncorrupted data. 

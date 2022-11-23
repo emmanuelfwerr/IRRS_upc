@@ -1,0 +1,20 @@
+Despite its rise as a prominent solution to the data inefficiency of today's machine learning models,
+self-supervised learning has yet to be studied from a purely multi-agent perspective. In this work,
+we propose that aligning internal subjective representations, which naturally arise in a multi-agent
+setup where agents receive partial observations of the same underlying environmental state, can
+lead to more data-efficient representations. We propose that multi-agent environments, where
+agents do not have access to the observations of others but can communicate within a limited range,
+guarantees a common context that can be leveraged in individual representation learning. The reason
+is that subjective observations necessarily refer to the same subset of the underlying environmental
+states and that communication about these states can freely offer a supervised signal. To highlight
+the importance of communication, we refer to our setting as \textit{socially supervised representation
+learning}. We present a minimal architecture comprised of a population of autoencoders, where
+we define loss functions, capturing different aspects of effective communication, and examine
+their effect on the learned representations. We show that our proposed architecture allows the
+emergence of aligned representations. The subjectivity introduced by presenting agents with
+distinct perspectives of the environment state contributes to learning abstract representations
+that outperform those learned by a single autoencoder and a population of autoencoders, presented
+with identical perspectives of the environment state. Altogether, our results demonstrate how
+communication from subjective perspectives can lead to the acquisition of more abstract representations
+in multi-agent systems, opening promising perspectives for future research at the intersection
+of representation learning and emergent communication. 

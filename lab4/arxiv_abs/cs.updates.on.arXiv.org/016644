@@ -1,0 +1,19 @@
+Recently, the EAGL-I system was developed to rapidly create massive labeled datasets of plants
+intended to be commonly used by farmers and researchers to create AI-driven solutions in agriculture.
+As a result, a publicly available plant species recognition dataset composed of 40,000 images with
+different sizes consisting of 8 plant species was created with the system in order to demonstrate
+its capabilities. This paper proposes a novel method, called Variably Overlapping Time-Coherent
+Sliding Window (VOTCSW), that transforms a dataset composed of images with variable size to a 3D
+representation with fixed size that is suitable for convolutional neural networks, and demonstrates
+that this representation is more informative than resizing the images of the dataset to a given size.
+We theoretically formalized the use cases of the method as well as its inherent properties and we
+proved that it has an oversampling and a regularization effect on the data. By combining the VOTCSW
+method with the 3D extension of a recently proposed machine learning model called 1-Dimensional
+Polynomial Neural Networks, we were able to create a model that achieved a state-of-the-art accuracy
+of 99.9% on the dataset created by the EAGL-I system, surpassing well-known architectures such
+as ResNet and Inception. In addition, we created a heuristic algorithm that enables the degree reduction
+of any pre-trained N-Dimensional Polynomial Neural Network and which compresses it without altering
+its performance, thus making the model faster and lighter. Furthermore, we established that the
+currently available dataset could not be used for machine learning in its present form, due to a substantial
+class imbalance between the training set and the test set. Hence, we created a specific preprocessing
+and a model development framework that enabled us to improve the accuracy from 49.23% to 99.9%. 

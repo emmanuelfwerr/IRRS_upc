@@ -1,0 +1,20 @@
+We study the Bayesian inverse problem of inferring the Biot number, a spatio-temporal heat-flux
+parameter in a PDE model. This is an ill-posed problem where standard optimisation yields unphysical
+inferences. We introduce a training scheme that uses temperature data to adaptively train a neural-network
+surrogate to simulate the parametric forward model. This approach approximates forward and inverse
+solution together, by simultaneously identifying an approximate posterior distribution over
+the Biot number, and weighting the forward training loss according to this approximation. Utilising
+random Chebyshev series, we outline how to approximate an arbitrary Gaussian process prior, and
+using the surrogate we apply Hamiltonian Monte Carlo (HMC) to efficiently sample from the corresponding
+posterior distribution. We derive convergence of the surrogate posterior to the true posterior
+distribution in the Hellinger metric as our adaptive loss function approaches zero. Furthermore,
+we describe how this surrogate-accelerated HMC approach can be combined with a traditional PDE
+solver in a delayed-acceptance scheme to a-priori control the posterior accuracy, thus overcoming
+a major limitation of deep learning-based surrogate approaches, which do not achieve guaranteed
+accuracy a-priori due to their non-convex training. Biot number calculations are involved turbo-machinery
+design, which is safety critical and highly regulated, therefore it is important that our results
+have such mathematical guarantees. Our approach achieves fast mixing in high-dimensional parameter
+spaces, whilst retaining the convergence guarantees of a traditional PDE solver, and without the
+burden of evaluating this solver for proposals that are likely to be rejected. Numerical results
+compare the accuracy and efficiency of the adaptive and general training regimes, as well as various
+Markov chain Monte Carlo proposals strategies. 

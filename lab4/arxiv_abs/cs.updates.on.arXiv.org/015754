@@ -1,0 +1,19 @@
+Automated monitoring of dark web (DW) platforms on a large scale is the first step toward developing
+proactive Cyber Threat Intelligence (CTI). While there are efficient methods for collecting data
+from the surface web, large-scale dark web data collection is often hindered by anti-crawling measures.
+In particular, text-based CAPTCHA serves as the most prevalent and prohibiting type of these measures
+in the dark web. Text-based CAPTCHA identifies and blocks automated crawlers by forcing the user
+to enter a combination of hard-to-recognize alphanumeric characters. In the dark web, CAPTCHA
+images are meticulously designed with additional background noise and variable character length
+to prevent automated CAPTCHA breaking. Existing automated CAPTCHA breaking methods have difficulties
+in overcoming these dark web challenges. As such, solving dark web text-based CAPTCHA has been relying
+heavily on human involvement, which is labor-intensive and time-consuming. In this study, we propose
+a novel framework for automated breaking of dark web CAPTCHA to facilitate dark web data collection.
+This framework encompasses a novel generative method to recognize dark web text-based CAPTCHA
+with noisy background and variable character length. To eliminate the need for human involvement,
+the proposed framework utilizes Generative Adversarial Network (GAN) to counteract dark web background
+noise and leverages an enhanced character segmentation algorithm to handle CAPTCHA images with
+variable character length. Our proposed framework, DW-GAN, was systematically evaluated on multiple
+dark web CAPTCHA testbeds. DW-GAN significantly outperformed the state-of-the-art benchmark
+methods on all datasets, achieving over 94.4% success rate on a carefully collected real-world
+dark web dataset... 

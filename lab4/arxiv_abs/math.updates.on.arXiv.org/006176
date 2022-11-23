@@ -1,0 +1,20 @@
+We consider the vehicle routing problem with stochastic demands (VRPSD), a problem in which customer
+demands are known in distribution at the route planning stage and revealed during route execution
+upon arrival at each customer. A long-standing open question on the VRPSD concerns the benefits
+of allowing, during route execution, partial reordering of the planned customer visits. Given
+the practical importance of this question and the growing interest on the VRPSD under optimal restocking,
+we study the VRPSD under a recourse policy known as the switch policy. The switch policy is a canonical
+reoptimization policy that permits only pairs of successive customers to be reordered. We consider
+this policy jointly with optimal preventive restocking and introduce a branch-cut-and-price
+algorithm to compute optimal a priori routing plans. This algorithm features pricing routines
+where value functions represent the expected cost-to-go along planned routes for all possible
+states and reordering decisions. To ensure pricing tractability, we adopt a strategy that combines
+elementary pricing with completion bounds of varying complexity, and solve the pricing problem
+without relying on dominance rules. Our numerical experiments demonstrate the effectiveness
+of the algorithm for solving instances with up to 50 customers. Notably, they also give us new insights
+into the value of reoptimization. The switch policy enables significant cost savings over optimal
+restocking when the planned routes come from an algorithm built on a deterministic approximation
+of the data, an important scenario given the difficulty of finding optimal VRPSD solutions. The
+benefits are smaller when comparing optimal a priori VRPSD solutions obtained for both recourse
+policies. As it appears, further cost savings may require joint reordering and reassignment of
+customer visits among vehicles when the context permits. 

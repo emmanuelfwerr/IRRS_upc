@@ -1,0 +1,20 @@
+Tensor numerical methods, based on the rank-structured tensor representation of $d$-variate
+functions and operators, are designed to provide $O(dn)$ complexity of numerical calculations
+on $n^{\otimes d }$ grids contrary to $O(n^d)$ scaling by conventional grid-based methods. However,
+multiple tensor operations may lead to enormous increase in the tensor ranks (curse of ranks) of
+the target data, making calculation intractable. Therefore one of the most important steps in tensor
+calculations is the robust and efficient rank reduction procedure which should be performed many
+times in the course of various tensor transforms in multidimensional operator and function calculus.
+The rank reduction scheme based on the Reduced Higher Order SVD (RHOSVD) introduced in [33] played
+a significant role in the development of tensor numerical methods. Here, we briefly survey the essentials
+of RHOSVD method and then focus on some new theoretical and computational aspects of the RHOSVD demonstrating
+that this rank reduction technique constitutes the basic ingredient in tensor computations for
+real-life problems. In particular, the stability analysis of RHOSVD is presented. We introduce
+the multilinear algebra of tensors represented in the range-separated (RS) tensor format. This
+allows to apply the RHOSVD rank-reduction techniques to non-regular functional data with many
+singularities, for example, to the rank-structured computation of the collective multi-particle
+interaction potentials in bio-molecular modeling, as well as to complicated composite radial
+functions. The new theoretical and numerical results on application of the RHOSVD in scattered
+data modeling are presented. RHOSVD proved to be the efficient rank reduction technique in numerous
+applications ranging from numerical treatment of multi-particle systems up to a numerical solution
+of PDE constrained control problems. 

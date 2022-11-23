@@ -1,0 +1,19 @@
+For given graph $H$ and graphical property $P$, the conditional chromatic number $\chi(H,P)$ of
+$H$, is the smallest number $k$, so that $V(H)$ can be decomposed into sets $V_1,V_2,\ldots, V_k$,
+in which $H[V_i]$ satisfies the property $P$, for each $1\leq i\leq k$. When property $P$ be that
+each color class contains no copy of $G$, we write $\chi_{G}(H)$ instead of $\chi(G,P)$, which is
+called the $G$-free chromatic number. Due to this, we say $H$ has a $k$-$G$-free coloring if there
+is a map $c : V(H) \longrightarrow \{1,\ldots,k\}$, so that each of the color classes of $c$ be $G$-free.
+Assume that for each vertex $v$ of a graph $H$ is assigned a set $L(V)$ of colors, called a color list.
+Set $g(L) = \{g(v): v\in V(H)\}$, that is the set of colors chosen for the vertices of $H$ under $g$.
+An $L$-coloring $g$ is called $G$-free, so that: \begin{itemize} \item $g(v)\in L(v)$, for any
+$v\in V(H)$. \item $ H[V_i]$ is $G$-free for each $i=1,2,\ldots, L$. \end{itemize} If there exists
+an $L$-coloring of $H$, then $H$ is called $L$-$G$-free-colorable. A graph $H$ is said to be $k$-$G$-free-choosable
+if there exists an $L$-coloring for any list-assignment $L$ satisfying $|L(V)|\geq k$ for each
+$v\in V(H)$, and $H[V_i]$ be $G$-free for each $i=1,2,\ldots, L$. Let graph $H$ and a collection
+of graphs $\G$ are given, the $\chi_{\G}^L(H)$ of $H$ is the last integer $k$, so that $H$ is $k$-$\G$-free-choosable
+i.e. $H[V_i]$ is $\G$-free for each $i=1,2,\ldots, k$ i.e. contains no copy of any member of $\G$.
+In this article, we show that $\chi_G^L(H)=\chi_G(H)$ for some graph $H$ and $G$, $\chi_G^L(H\oplus
+H')\leq \chi_G^L(H)+\chi_G^L(H')$ for each $G$, $H$, and $H'$. Also, we show that $\chi_{\G}(H\oplus
+K_n)=\chi^L_{\G}(H\oplus K_n)$, where $\G$ is a collection of all $d$-regular graphs, and some
+$n$. 

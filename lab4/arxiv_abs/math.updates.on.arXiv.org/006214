@@ -1,0 +1,20 @@
+We consider a liquidation problem in which a risk-averse trader tries to liquidate a fixed quantity
+of an asset in the presence of market impact and random price fluctuations. The trader encounters
+a trade-off between the transaction costs incurred due to market impact and the volatility risk
+of holding the position. Our formulation begins with a continuous-time and infinite horizon variation
+of the seminal model of Almgren and Chriss (2000), but we define as the objective the conditional
+value-at-risk (CVaR) of the implementation shortfall, and allow for dynamic (adaptive) trading
+strategies. In this setting, we are able to derive closed-form expressions for the optimal liquidation
+strategy and its value function. Our results yield a number of important practical insights. We
+are able to quantify the benefit of adaptive policies over optimized static policies. The relevant
+improvement depends only on the level of risk aversion: for moderate levels of risk aversion, the
+optimal dynamic policy outperforms the optimal static policy by 5-15%, and outperforms the optimal
+volume weighted average price (VWAP) policy by 15-25%. This improvement is achieved through dynamic
+policies that exhibit "aggressiveness-in-the-money": trading is accelerated when price movements
+are favorable, and is slowed when price movements are unfavorable. From a mathematical perspective,
+our analysis exploits the dual representation of CVaR to convert the problem to a continuous-time,
+zero-sum game. We leverage the idea of the state-space augmentation, and obtain a partial differential
+equation describing the optimal value function, which is separable and a special instance of the
+Emden-Fowler equation. This leads to a closed-form solution. As our problem is a special case of
+a linear-quadratic-Gaussian control problem with a CVaR objective, these results may be interesting
+in broader settings. 

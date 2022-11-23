@@ -1,0 +1,20 @@
+Heterogeneous networks, which connect informative nodes containing text with different edge
+types, are routinely used to store and process information in various real-world applications.
+Graph Neural Networks (GNNs) and their hyperbolic variants provide a promising approach to encode
+such networks in a low-dimensional latent space through neighborhood aggregation and hierarchical
+feature extraction, respectively. However, these approaches typically ignore metapath structures
+and the available semantic information. Furthermore, these approaches are sensitive to the noise
+present in the training data. To tackle these limitations, in this paper, we propose Text Enriched
+Sparse Hyperbolic Graph Convolution Network (TESH-GCN) to capture the graph's metapath structures
+using semantic signals and further improve prediction in large heterogeneous graphs. In TESH-GCN,
+we extract semantic node information, which successively acts as a connection signal to extract
+relevant nodes' local neighborhood and graph-level metapath features from the sparse adjacency
+tensor in a reformulated hyperbolic graph convolution layer. These extracted features in conjunction
+with semantic features from the language model (for robustness) are used for the final downstream
+task. Experiments on various heterogeneous graph datasets show that our model outperforms the
+current state-of-the-art approaches by a large margin on the task of link prediction. We also report
+a reduction in both the training time and model parameters compared to the existing hyperbolic approaches
+through a reformulated hyperbolic graph convolution. Furthermore, we illustrate the robustness
+of our model by experimenting with different levels of simulated noise in both the graph structure
+and text, and also, present a mechanism to explain TESH-GCN's prediction by analyzing the extracted
+metapaths. 

@@ -1,0 +1,20 @@
+To rapidly obtain high resolution T2, T2* and quantitative susceptibility mapping (QSM) source
+separation maps with whole-brain coverage and high geometric fidelity. We propose Blip Up-Down
+Acquisition for Spin And Gradient Echo imaging (BUDA-SAGE), an efficient echo-planar imaging
+(EPI) sequence for quantitative mapping. The acquisition includes multiple T2*-, T2'- and T2-weighted
+contrasts. We alternate the phase-encoding polarities across the interleaved shots in this multi-shot
+navigator-free acquisition. A field map estimated from interim reconstructions was incorporated
+into the joint multi-shot EPI reconstruction with a structured low rank constraint to eliminate
+geometric distortion. A self-supervised MR-Self2Self (MR-S2S) neural network (NN) was utilized
+to perform denoising after BUDA reconstruction to boost SNR. Employing Slider encoding allowed
+us to reach 1 mm isotropic resolution by performing super-resolution reconstruction on BUDA-SAGE
+volumes acquired with 2 mm slice thickness. Quantitative T2 and T2* maps were obtained using Bloch
+dictionary matching on the reconstructed echoes. QSM was estimated using nonlinear dipole inversion
+(NDI) on the gradient echoes. Starting from the estimated R2 and R2* maps, R2' information was derived
+and used in source separation QSM reconstruction, which provided additional para- and dia-magnetic
+susceptibility maps. In vivo results demonstrate the ability of BUDA-SAGE to provide whole-brain,
+distortion-free, high-resolution multi-contrast images and quantitative T2 and T2* maps, as
+well as yielding para- and dia-magnetic susceptibility maps. Derived quantitative maps showed
+comparable values to conventional mapping methods in phantom and in vivo measurements. BUDA-SAGE
+acquisition with self-supervised denoising and Slider encoding enabled rapid, distortion-free,
+whole-brain T2, T2* mapping at 1 mm3 isotropic resolution in 90 seconds. 

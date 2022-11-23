@@ -1,0 +1,19 @@
+We propose a novel Structure-Preserving Discontinuous Galerkin (SPDG) operator that recovers
+at the discrete level the algebraic property related to the divergence of the curl of a vector field,
+which is typically referred to as div-curl problem. A staggered Cartesian grid is adopted in 3D,
+where the vector field is naturally defined at the corners of the control volume, while its curl is
+evaluated as a cell-centered quantity. Firstly, the curl operator is rewritten as the divergence
+of a tensor, hence allowing compatible finite difference schemes to be devised and to be proven to
+mimic the algebraic div-curl property. Successively, a high order DG divergence operator is built
+upon integration by parts, so that the structure-preserving finite difference div-curl operator
+is exactly retrieved for first order discretizations. We further demonstrate that the novel SPDG
+schemes are capable of obtaining a zero div-curl identity with machine precision from second up
+to sixth order accuracy. In a second part, we show the applicability of these SPDG methods by solving
+the incompressible Navier-Stokes equations written in vortex-stream formulation. This hyperbolic
+system deals with divergence-free involutions related to the velocity and vorticity field as well
+as to the stream function, thus it provides an ideal setting for the validation of the novel schemes.
+A compatible discretization of the numerical viscosity is also proposed in order to maintain the
+structure-preserving property of the div-curl DG operators even in the presence of artificial
+or physical dissipative terms. Finally, to overcome the time step restriction dictated by the viscous
+sub-system, Implicit-Explicit (IMEX) Runge-Kutta time stepping techniques are tailored to handle
+the SPDG framework. 

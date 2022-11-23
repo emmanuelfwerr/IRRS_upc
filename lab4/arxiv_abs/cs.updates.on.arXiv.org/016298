@@ -1,0 +1,19 @@
+As deep reinforcement learning (RL) showcases its strengths in networking and systems, its pitfalls
+also come to the public's attention--when trained to handle a wide range of network workloads and
+previously unseen deployment environments, RL policies often manifest suboptimal performance
+and poor generalizability. To tackle these problems, we present Genet, a new training framework
+for learning better RL-based network adaptation algorithms. Genet is built on the concept of curriculum
+learning, which has proved effective against similar issues in other domains where RL is extensively
+employed. At a high level, curriculum learning gradually presents more difficult environments
+to the training, rather than choosing them randomly, so that the current RL model can make meaningful
+progress in training. However, applying curriculum learning in networking is challenging because
+it remains unknown how to measure the "difficulty" of a network environment. Instead of relying
+on handcrafted heuristics to determine the environment's difficulty level, our insight is to utilize
+traditional rule-based (non-RL) baselines: If the current RL model performs significantly worse
+in a network environment than the baselines, then the model's potential to improve when further
+trained in this environment is substantial. Therefore, Genet automatically searches for the environments
+where the current model falls significantly behind a traditional baseline scheme and iteratively
+promotes these environments as the training progresses. Through evaluating Genet on three use
+cases--adaptive video streaming, congestion control, and load balancing, we show that Genet produces
+RL policies which outperform both regularly trained RL policies and traditional baselines in each
+context, not only under synthetic workloads but also in real environments. 

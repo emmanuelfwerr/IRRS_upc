@@ -1,0 +1,19 @@
+Patient similarity assessment, which identifies patients similar to a given patient, can help
+improve medical care. The assessment can be performed using Electronic Medical Records (EMRs).
+Patient similarity measurement requires converting heterogeneous EMRs into comparable formats
+to calculate their distance. While versatile document representation learning methods have been
+developed in recent years, it is still unclear how complex EMR data should be processed to create
+the most useful patient representations. This study presents a new data representation method
+for EMRs that takes the information in clinical narratives into account. To address the limitations
+of previous approaches in handling complex parts of EMR data, an unsupervised method is proposed
+for building a patient representation, which integrates unstructured data with structured data
+extracted from patients' EMRs. In order to model the extracted data, we employed a tree structure
+that captures the temporal relations of multiple medical events from EMR. We processed clinical
+notes to extract symptoms, signs, and diseases using different tools such as medspaCy, MetaMap,
+and scispaCy and mapped entities to the Unified Medical Language System (UMLS). After creating
+a tree data structure, we utilized two novel relabeling methods for the non-leaf nodes of the tree
+to capture two temporal aspects of the extracted events. By traversing the tree, we generated a sequence
+that could create an embedding vector for each patient. The comprehensive evaluation of the proposed
+method for patient similarity and mortality prediction tasks demonstrated that our proposed model
+leads to lower mean squared error (MSE), higher precision, and normalized discounted cumulative
+gain (NDCG) relative to baselines. 

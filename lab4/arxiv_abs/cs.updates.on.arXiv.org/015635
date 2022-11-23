@@ -1,0 +1,20 @@
+A fast algorithm for the large-scale joint inversion of gravity and magnetic data is developed.
+It uses a nonlinear Gramian constraint to impose correlation between density and susceptibility
+of reconstructed models. The global objective function is formulated in the space of the weighted
+parameters, but the Gramian constraint is implemented in the original space, and the nonlinear
+constraint is imposed using two separate Lagrange parameters, one for each model domain. This combined
+approach provides more similarity between the reconstructed models. It is assumed that the measured
+data are obtained on a uniform grid and that a consistent regular discretization of the volume domain
+is imposed. The sensitivity matrices exhibit a block Toeplitz Toeplitz block structure for each
+depth layer of the model domain. Forward and transpose operations with the matrices can be implemented
+efficiently using two dimensional fast Fourier transforms. This makes it feasible to solve for
+large scale problems with respect to both computational costs and memory demands, and to solve the
+nonlinear problem by applying iterative methods that rely only on matrix vector multiplications.
+As such, the use of the regularized reweighted conjugate gradient algorithm, in conjunction with
+the structure of the sensitivity matrices, leads to a fast methodology for large-scale joint inversion
+of geophysical data sets. Numerical simulations demonstrate that it is possible to apply a nonlinear
+joint inversion algorithm, with $L_p$-norm stabilisers, for the reconstruction of large model
+domains on a standard laptop computer. It is demonstrated, that the p=1 choice provides sparse reconstructed
+solutions with sharp boundaries, and $p=2$ provides smooth and blurred models. Gravity and magnetic
+data obtained over an area in northwest of Mesoproterozoic St. Francois Terrane, southeast of Missouri,
+USA are inverted. 

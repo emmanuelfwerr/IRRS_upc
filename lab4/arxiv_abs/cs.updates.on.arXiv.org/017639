@@ -1,0 +1,19 @@
+Interactive theorem proving software is typically designed around a trusted proof-checking kernel,
+the sole system component capable of authenticating theorems. Untrusted automation procedures
+reside outside of the kernel, and drive it to deduce new theorems via an API. Kernel and untrusted
+automation are typically implemented in the same programming language -- the "meta-language"
+-- usually some functional programming language in the ML family. This strategy -- introduced by
+Milner in his LCF proof assistant -- is a reliability mechanism, aiming to ensure that any purported
+theorem produced by the system is indeed entailed by the theory within the logic. Changing tack,
+operating systems are also typically designed around a trusted kernel, a privileged component
+responsible for -- amongst other things -- mediating interaction betwixt user-space software
+and hardware. Untrusted processes interact with the system by issuing kernel system calls across
+a hardware privilege boundary. In this way, the operating system kernel supervises user-space
+processes. Though ostensibly very different, squinting, we see that the two kinds of kernel are
+tasked with solving the same task: enforcing system invariants in the face of unbounded interaction
+with untrusted code. Yet, the two solutions to solving this problem, employed by the respective
+kinds of kernel, are very different. In this abstract, we explore designing proof-checking kernels
+as supervisory software, where separation between kernel and untrusted code is enforced by privilege,
+not programming language module boundaries and type abstraction. We describe work on the Supervisionary
+proof-checking kernel, and briefly sketch its unique system interface. We then describe some potential
+uses of the Supervisionary kernel. 

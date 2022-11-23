@@ -1,0 +1,19 @@
+Training machine learning (ML) models at the edge (on-chip training on end user devices) can address
+many pressing challenges including data privacy/security, increase the accessibility of ML applications
+to different parts of the world by reducing the dependence on the communication fabric and the cloud
+infrastructure, and meet the real-time requirements of AR/VR applications. However, existing
+edge platforms do not have sufficient computing capabilities to support complex ML tasks such as
+training large CNNs. ReRAM-based architectures offer high-performance yet energy efficient
+computing platforms for on-chip CNN training/inferencing. However, ReRAM-based architectures
+are not scalable with the size of the CNN. Larger CNNs have more weights, which requires more ReRAM
+cells that cannot be integrated in a single chip. Moreover, training larger CNNs on-chip will require
+higher power, which cannot be afforded by these smaller devices. Pruning is an effective way to solve
+this problem. However, existing pruning techniques are either targeted for inferencing only,
+or they are not crossbar-aware. This leads to sub-optimal hardware savings and performance benefits
+for CNN training on ReRAM-based architectures. In this paper, we address this problem by proposing
+a novel crossbar-aware pruning strategy, referred as ReaLPrune, which can prune more than 90% of
+CNN weights. The pruned model can be trained from scratch without any accuracy loss. Experimental
+results indicate that ReaLPrune reduces hardware requirements by 77.2% and accelerates CNN training
+by ~20X compared to unpruned CNNs. ReaLPrune also outperforms other crossbar-aware pruning techniques
+in terms of both performance and hardware savings. In addition, ReaLPrune is equally effective
+for diverse datasets and more complex CNNs 

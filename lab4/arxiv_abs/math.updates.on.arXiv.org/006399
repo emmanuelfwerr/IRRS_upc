@@ -1,0 +1,19 @@
+The ever increasing penetration of Renewable Energy Resources (RESs) in power distribution networks
+has brought, among others, the challenge of maintaining the grid voltages within the secure region.
+Employing droop voltage regulators on the RES inverters is an efficient and low cost solution to
+reach this objective. However, fixing droop parameters or optimizing them only for overvoltage
+conditions does not provide the required robustness and optimality under changing operating conditions.
+In this paper, a convex optimization approach is proposed for reconfiguring PV and QV droop regulators
+during online operation. The objective is to minimize power curtailment, power losses, and voltage
+deviation subject to electrical security constraints. This enables to optimally operate the grid
+with high RES penetration under variable conditions while preserving electrical security constraints
+(e.g., current and voltage limits). As a first contribution, a mixed integer linear model of the
+droop characteristics is developed. According to this model, a droop regulated generation unit
+is represented as a constant power generator in parallel with a constant impedance load. As a second
+contribution, a Modified Augmented Relaxed Optimal Power Flow (MAROPF) formulation is proposed
+to guarantee that the electrical security constraints are respected in the presence of constant
+impedance loads in the network. Sufficient conditions for the feasibility of the MAROPF solution
+are provided. Those conditions can be checked a priori and are valid for several real distribution
+networks. Furthermore, an iterative approach is proposed to derive an approximate solution to
+the MAROPF that is close to the global optimal one. The performance of the MAROPF approach and the
+accuracy of the proposed model are evaluated on standard 34 bus and 85 bus test networks. 

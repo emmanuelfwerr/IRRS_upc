@@ -1,0 +1,20 @@
+Objective: Electroencephalography (EEG) and electromyography (EMG) are two non-invasive bio-signals,
+which are widely used in human machine interface (HMI) technologies (EEG-HMI and EMG-HMI paradigm)
+for the rehabilitation of physically disabled people. Successful decoding of EEG and EMG signals
+into respective control command is a pivotal step in the rehabilitation process. Recently, several
+Convolutional neural networks (CNNs) based architectures are proposed that directly map the raw
+time-series signal into decision space and the process of meaningful features extraction and classification
+are performed simultaneously. However, these networks are tailored to the learn the expected characteristics
+of the given bio-signal and are limited to single paradigm. In this work, we addressed the question
+that can we build a single architecture which is able to learn distinct features from different HMI
+paradigms and still successfully classify them. Approach: In this work, we introduce a single hybrid
+model called ConTraNet, which is based on CNN and Transformer architectures that is equally useful
+for EEG-HMI and EMG-HMI paradigms. ConTraNet uses CNN block to introduce inductive bias in the model
+and learn local dependencies, whereas the Transformer block uses the self-attention mechanism
+to learn the long-range dependencies in the signal, which are crucial for the classification of
+EEG and EMG signals. Main results: We evaluated and compared the ConTraNet with state-of-the-art
+methods on three publicly available datasets which belong to EEG-HMI and EMG-HMI paradigms. ConTraNet
+outperformed its counterparts in all the different category tasks (2-class, 3-class, 4-class,
+and 10-class decoding tasks). Significance: The results suggest that ConTraNet is robust to learn
+distinct features from different HMI paradigms and generalizes well as compared to the current
+state of the art algorithms. 

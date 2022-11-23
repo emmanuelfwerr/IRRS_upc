@@ -1,0 +1,20 @@
+The Li-ion battery is a complex physicochemical system that generally takes applied current as
+input and terminal voltage as output. The mappings from current to voltage can be described by several
+kinds of models, such as accurate but inefficient physics-based models, and efficient but sometimes
+inaccurate equivalent circuit and black-box models. To realize accuracy and efficiency simultaneously
+in battery modeling, we propose to build a data-driven surrogate for a battery system while incorporating
+the underlying physics as constraints. In this work, we innovatively treat the functional mapping
+from current curve to terminal voltage as a composite of operators, which is approximated by the
+powerful deep operator network (DeepONet). Its learning capability is firstly verified through
+a predictive test for Li-ion concentration at two electrodes. In this experiment, the physics-informed
+DeepONet is found to be more robust than the purely data-driven DeepONet, especially in temporal
+extrapolation scenarios. A composite surrogate is then constructed for mapping current curve
+and solid diffusivity to terminal voltage with three operator networks, in which two parallel physics-informed
+DeepONets are firstly used to predict Li-ion concentration at two electrodes, and then based on
+their surface values, a DeepONet is built to give terminal voltage predictions. Since the surrogate
+is differentiable anywhere, it is endowed with the ability to learn from data directly, which was
+validated by using terminal voltage measurements to estimate input parameters. The proposed surrogate
+built upon operator networks possesses great potential to be applied in on-board scenarios, such
+as battery management system, since it integrates efficiency and accuracy by incorporating underlying
+physics, and also leaves an interface for model refinement through a totally differentiable model
+structure. 

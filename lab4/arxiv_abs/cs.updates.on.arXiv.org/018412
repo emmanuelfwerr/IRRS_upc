@@ -1,0 +1,19 @@
+Incremental Structure from Motion (ISfM) has been widely used for UAV image orientation. Its efficiency,
+however, decreases dramatically due to the sequential constraint. Although the divide-and-conquer
+strategy has been utilized for efficiency improvement, cluster merging becomes difficult or depends
+on seriously designed overlap structures. This paper proposes an algorithm to extract the global
+model for cluster merging and designs a parallel SfM solution to achieve efficient and accurate
+UAV image orientation. First, based on vocabulary tree retrieval, match pairs are selected to construct
+an undirected weighted match graph, whose edge weights are calculated by considering both the number
+and distribution of feature matches. Second, an algorithm, termed weighted connected dominating
+set (WCDS), is designed to achieve the simplification of the match graph and build the global model,
+which incorporates the edge weight in the graph node selection and enables the successful reconstruction
+of the global model. Third, the match graph is simultaneously divided into compact and non-overlapped
+clusters. After the parallel reconstruction, cluster merging is conducted with the aid of common
+3D points between the global and cluster models. Finally, by using three UAV datasets that are captured
+by classical oblique and recent optimized views photogrammetry, the validation of the proposed
+solution is verified through comprehensive analysis and comparison. The experimental results
+demonstrate that the proposed parallel SfM can achieve 17.4 times efficiency improvement and comparative
+orientation accuracy. In absolute BA, the geo-referencing accuracy is approximately 2.0 and 3.0
+times the GSD (Ground Sampling Distance) value in the horizontal and vertical directions, respectively.
+For parallel SfM, the proposed solution is a more reliable alternative. 

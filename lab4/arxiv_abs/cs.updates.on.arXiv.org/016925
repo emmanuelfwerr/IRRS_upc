@@ -1,0 +1,19 @@
+Cloud-enabled Machine Learning as a Service (MLaaS) has shown enormous promise to transform how
+deep learning models are developed and deployed. Nonetheless, there is a potential risk associated
+with the use of such services since a malicious party can modify them to achieve an adverse result.
+Therefore, it is imperative for model owners, service providers, and end-users to verify whether
+the deployed model has not been tampered with or not. Such verification requires public verifiability
+(i.e., fingerprinting patterns are available to all parties, including adversaries) and black-box
+access to the deployed model via APIs. Existing watermarking and fingerprinting approaches, however,
+require white-box knowledge (such as gradient) to design the fingerprinting and only support private
+verifiability, i.e., verification by an honest party. In this paper, we describe a practical watermarking
+technique that enables black-box knowledge in fingerprint design and black-box queries during
+verification. The service ensures the integrity of cloud-based services through public verification
+(i.e. fingerprinting patterns are available to all parties, including adversaries). If an adversary
+manipulates a model, this will result in a shift in the decision boundary. Thus, the underlying principle
+of double-black watermarking is that a model's decision boundary could serve as an inherent fingerprint
+for watermarking. Our approach captures the decision boundary by generating a limited number of
+encysted sample fingerprints, which are a set of naturally transformed and augmented inputs enclosed
+around the model's decision boundary in order to capture the inherent fingerprints of the model.
+We evaluated our watermarking approach against a variety of model integrity attacks and model compression
+attacks. 

@@ -1,0 +1,19 @@
+Traffic forecasting is a problem of intelligent transportation systems (ITS) and crucial for individuals
+and public agencies. Therefore, researches pay great attention to deal with the complex spatio-temporal
+dependencies of traffic system for accurate forecasting. However, there are two challenges: 1)
+Most traffic forecasting studies mainly focus on modeling correlations of neighboring sensors
+and ignore correlations of remote sensors, e.g., business districts with similar spatio-temporal
+patterns; 2) Prior methods which use static adjacency matrix in graph convolutional networks (GCNs)
+are not enough to reflect the dynamic spatial dependence in traffic system. Moreover, fine-grained
+methods which use self-attention to model dynamic correlations of all sensors ignore hierarchical
+information in road networks and have quadratic computational complexity. In this paper, we propose
+a novel dynamic multi-graph convolution recurrent network (DMGCRN) to tackle above issues, which
+can model the spatial correlations of distance, the spatial correlations of structure, and the
+temporal correlations simultaneously. We not only use the distance-based graph to capture spatial
+information from nodes are close in distance but also construct a novel latent graph which encoded
+the structure correlations among roads to capture spatial information from nodes are similar in
+structure. Furthermore, we divide the neighbors of each sensor into coarse-grained regions, and
+dynamically assign different weights to each region at different times. Meanwhile, we integrate
+the dynamic multi-graph convolution network into the gated recurrent unit (GRU) to capture temporal
+dependence. Extensive experiments on three real-world traffic datasets demonstrate that our
+proposed algorithm outperforms state-of-the-art baselines. 

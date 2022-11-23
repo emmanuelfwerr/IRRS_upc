@@ -1,0 +1,20 @@
+This paper describes the development and validation of a Monte Carlo (MC) dose computing module
+dedicated to organ dose calculations of patients undergoing nuclear medicine (NM) internal radiation
+exposures involving 18F-FDG PET/CT examination. This new module extends the more-than-10-years-long
+ARCHER project that developed a GPU-accelerated MC dose engine by adding dedicated NM source-definition
+features. To validate the code, we compared dose distributions from the 0.511-MeV point photon
+source calculated for a water phantom as well as a patient PET/CT phantom against a well-tested MC
+code, GATE. The water-phantom results show excellent agreement, suggesting that the radiation
+physics module in the new NM code is adequate. To demonstrate the clinical utility and advantage
+of ARCHER-NM, one set of PET/CT data for an adult male NM patient is calculated using the new code.
+Radiosensitive organs in the CT dataset are segmented using a CNN-based tool called DeepViewer.
+The PET image intensity maps are converted to radioactivity distributions to allow for MC radiation
+transport dose calculations at the voxel level. The dose rate maps and corresponding statistical
+uncertainties were calculated for the duration of PET image acquisition. The dose rate results
+of the 18F-FDG PET imaging patient show that ARCHER-NM's results agree very well with those of the
+GATE within 0.58% to 4.11%. Most impressively, ARCHER-NM obtains such results in less than 0.5 minutes
+while it takes GATE as much as 376 minutes. This is the first study presenting GPU-accelerated patient-specific
+MC internal radiation dose rate calculations for clinically realistic 18F-FDG PET/CT imaging
+cases involving auto-segmentation of whole-body PET/CT images. This study suggests that modern
+computing tools -- ARCHER-NM and DeepViewer -- are accurate and fast enough for routine internal
+dosimetry in NM clinics. 

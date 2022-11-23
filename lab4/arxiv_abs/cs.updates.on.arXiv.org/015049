@@ -1,0 +1,18 @@
+Characterizing blood vessels in digital images is important for the diagnosis of many types of diseases
+as well as for assisting current researches regarding vascular systems. The automated analysis
+of blood vessels typically requires the identification, or segmentation, of the blood vessels
+in an image or a set of images, which is usually a challenging task. Convolutional Neural Networks
+(CNNs) have been shown to provide excellent results regarding the segmentation of blood vessels.
+One important aspect of CNNs is that they can be trained on large amounts of data and then be made available,
+for instance, in image processing software for wide use. The pre-trained CNNs can then be easily
+applied in downstream blood vessel characterization tasks such as the calculation of the length,
+tortuosity, or caliber of the blood vessels. Yet, it is still unclear if pre-trained CNNs can provide
+robust, unbiased, results on downstream tasks when applied to datasets that they were not trained
+on. Here, we focus on measuring the tortuosity of blood vessels and investigate to which extent CNNs
+may provide biased tortuosity values even after fine-tuning the network to the new dataset under
+study. We show that the tortuosity values obtained by a CNN trained from scratch on a dataset may not
+agree with those obtained by a fine-tuned network that was pre-trained on a dataset having different
+tortuosity statistics. In addition, we show that the improvement in segmentation performance
+when fine-tuning the network does not necessarily lead to a respective improvement on the estimation
+of the tortuosity. To mitigate the aforementioned issues, we propose the application of specific
+data augmentation techniques even in situations where they do not improve segmentation performance.

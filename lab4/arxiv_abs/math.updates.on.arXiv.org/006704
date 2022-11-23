@@ -1,0 +1,18 @@
+By a {\em Riemann function} we mean a function $f\colon{\mathbb Z}^n\to{\mathbb Z}$ such that $f({\bf
+d})$ is equals $0$ for $d_1+\cdots+d_n$ sufficiently small, and equals $d_1+\cdots+d_n+C$ for
+a constant, $C$, for $d_1+\cdots+d_n$ sufficiently large. By adding $1$ to the Baker-Norine rank
+function of a graph, one gets an equivalent Riemann function, and similarly for related rank functions.
+To each Riemann function we associate a related function $W\colon{\mathbb Z}^n\to{\mathbb Z}$
+via M\"obius inversion that we call the {\em weight} of the Riemann function. We give evidence that
+the weight seems to organize the structure of a Riemann function in a simpler way: first, a Riemann
+function $f$ satisfies a Riemann-Roch formula iff its weight satisfies a simpler symmetry condition.
+Second, we will calculate the weight of the Baker-Norine rank for certain graphs and show that the
+weight function is quite simple to describe; we do this for graphs on two vertices and for the complete
+graph. For the complete graph, we build on the work of Cori and Le Borgne who gave a linear time method
+to compute the Baker-Norine rank of the complete graph. The associated weight function has a simple
+formula and is extremely sparse (i.e., mostly zero). Our computation of the weight function leads
+to another linear time algorithm to compute the Baker-Norine rank, via a formula likely related
+to one of Cori and Le Borgne, but seemingly simpler, namely $$ r_{{\rm BN},K_n}({\bf d}) = -1+\biggl|
+\biggl\{ i=0,\ldots,{\rm deg}({\bf d}) \ \Bigm| \ \sum_{j=1}^{n-2} \bigl( (d_j-d_{n-1}+i) \bmod
+n \bigr) \le {\rm deg}({\bf d})-i \biggr\} \biggr|. $$ Our study of weight functions leads to a natural
+generalization of Riemann functions, with many of the same properties exhibited by Riemann functions.

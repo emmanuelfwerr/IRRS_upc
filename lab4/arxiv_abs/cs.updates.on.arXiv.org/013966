@@ -1,0 +1,18 @@
+The annotation for large-scale point clouds is still time-consuming and unavailable for many real-world
+tasks. Point cloud pre-training is one potential solution for obtaining a scalable model for fast
+adaptation. Therefore, in this paper, we investigate a new self-supervised learning approach,
+called Mixing and Disentangling (MD), for point cloud pre-training. As the name implies, we explore
+how to separate the original point cloud from the mixed point cloud, and leverage this challenging
+task as a pretext optimization objective for model training. Considering the limited training
+data in the original dataset, which is much less than prevailing ImageNet, the mixing process can
+efficiently generate more high-quality samples. We build one baseline network to verify our intuition,
+which simply contains two modules, encoder and decoder. Given a mixed point cloud, the encoder is
+first pre-trained to extract the semantic embedding. Then an instance-adaptive decoder is harnessed
+to disentangle the point clouds according to the embedding. Albeit simple, the encoder is inherently
+able to capture the point cloud keypoints after training and can be fast adapted to downstream tasks
+including classification and segmentation by the pre-training and fine-tuning paradigm. Extensive
+experiments on two datasets show that the encoder + ours (MD) significantly surpasses that of the
+encoder trained from scratch and converges quickly. In ablation studies, we further study the effect
+of each component and discuss the advantages of the proposed self-supervised learning strategy.
+We hope this self-supervised learning attempt on point clouds can pave the way for reducing the deeply-learned
+model dependence on large-scale labeled data and saving a lot of annotation costs in the future.

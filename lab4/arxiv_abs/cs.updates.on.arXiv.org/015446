@@ -1,0 +1,19 @@
+Magnetic tapes are often considered as an outdated storage technology, yet they are still used to
+store huge amounts of data. Their main interests are a large capacity and a low price per gigabyte,
+which come at the cost of a much larger file access time than on disks. With tapes, finding the right
+ordering of multiple file accesses is thus key to performance. Moving the reading head back and forth
+along a kilometer long tape has a non-negligible cost and unnecessary movements thus have to be avoided.
+However, the optimization of tape request ordering has then rarely been studied in the scheduling
+literature, much less than I/O scheduling on disks. For instance, minimizing the average service
+time for several read requests on a linear tape remains an open question. Therefore, in this paper,
+we aim at improving the quality of service experienced by users of tape storage systems, and not only
+the peak performance of such systems. To this end, we propose a reasonable polynomial-time exact
+algorithm while this problem and simpler variants have been conjectured NP-hard. We also refine
+the proposed model by considering U-turn penalty costs accounting for inherent mechanical accelerations.
+Then, we propose a low-cost variant of our optimal algorithm by restricting the solution space,
+yet still yielding an accurate suboptimal solution. Finally, we compare our algorithms to existing
+solutions from the literature on logs of the mass storage management system of a major datacenter.
+This allows us to assess the quality of previous solutions and the improvement achieved by our low-cost
+algorithm. Aiming for reproducibility, we make available the complete implementation of the algorithms
+used in our evaluation, alongside the dataset of tape requests that is, to the best of our knowledge,
+the first of its kind to be publicly released. 

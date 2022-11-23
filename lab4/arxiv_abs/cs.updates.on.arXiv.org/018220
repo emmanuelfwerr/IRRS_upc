@@ -1,0 +1,19 @@
+Self-Sovereign Identity (SSI) is a new distributed method for identity management, commonly used
+to address the problem that users are lack of control over their identities. However, the excessive
+pursuit of self-sovereignty in the most existing SSI schemes hinders sanctions against attackers.
+To deal with the malicious behavior, a few SSI schemes introduce accountability mechanisms, but
+they sacrifice users' privacy. What's more, the digital identities (static strings or updatable
+chains) in the existing SSI schemes are as inputs to a third-party executable program (mobile app,
+smart contract, etc.) to achieve identity reading, storing and proving, users' self-sovereignty
+are weakened. To solve the above problems, we present a new self-sovereign identity scheme to strike
+a balance between privacy and accountability and get rid of the dependence on the third-party program.
+In our scheme, one and only individual-specific executable code is generated as a digital avatar-i
+for each human to interact with others in cyberspace without a third-party program, in which the
+embedding of biometrics enhances uniqueness and user control over their identity. In addition,
+a joint accountability mechanism, which is based on the shamir (t, n) threshold algorithm and a consortium
+blockchain, is designed to restrict the power of each regulatory authority and protect users' privacy.
+Finally, we analyze the security, SSI properties and conduct detailed experiments in term of the
+cost of computation, storage and blockchain gas. The analysis results indicate that our scheme
+resists the known attacks and fulfills all the six SSI properties. Compared with the state-of-the-art
+schemes, the extensive experiment results show that the cost is larger in server storage, blockchain
+storage and blockchain gas, but is still low enough for practical situations. 

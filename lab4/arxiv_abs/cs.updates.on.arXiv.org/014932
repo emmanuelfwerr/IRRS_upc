@@ -1,0 +1,20 @@
+The echo state network (ESN) is a powerful and efficient tool for displaying dynamic data. However,
+many existing ESNs have limitations for properly modeling high-dimensional data. The most important
+limitation of these networks is the high memory consumption due to their reservoir structure, which
+has prevented the increase of reservoir units and the maximum use of special capabilities of this
+type of network. One way to solve this problem is to use quaternion algebra. Because quaternions
+have four different dimensions, high-dimensional data are easily represented and, using Hamilton
+multiplication, with fewer parameters than real numbers, make external relations between the
+multidimensional features easier. In addition to the memory problem in the ESN network, the linear
+output of the ESN network poses an indescribable limit to its processing capacity, as it cannot effectively
+utilize higher-order statistics of features provided by the nonlinear dynamics of reservoir neurons.
+In this research, a new structure based on ESN is presented, in which quaternion algebra is used to
+compress the network data with the simple split function, and the output linear combiner is replaced
+by a multidimensional bilinear filter. This filter will be used for nonlinear calculations of the
+output layer of the ESN. In addition, the two-dimensional principal component analysis technique
+is used to reduce the number of data transferred to the bilinear filter. In this study, the coefficients
+and the weights of the quaternion nonlinear ESN (QNESN) are optimized using the genetic algorithm.
+In order to prove the effectiveness of the proposed model compared to the previous methods, experiments
+for speech emotion recognition have been performed on EMODB, SAVEE, and IEMOCAP speech emotional
+datasets. Comparisons show that the proposed QNESN network performs better than the ESN and most
+currently SER systems. 

@@ -1,0 +1,19 @@
+Continuous medical time series data such as ECG is one of the most complex time series due to its dynamic
+and high dimensional characteristics. In addition, due to its sensitive nature, privacy concerns
+and legal restrictions, it is often even complex to use actual data for different medical research.
+As a result, generating continuous medical time series is a very critical research area. Several
+research works already showed that the ability of generative adversarial networks (GANs) in the
+case of continuous medical time series generation is promising. Most medical data generation works,
+such as ECG synthesis, are mainly driven by the GAN model and its variation. On the other hand, Some
+recent work on Neural Ordinary Differential Equation (Neural ODE) demonstrates its strength against
+informative missingness, high dimension as well as dynamic nature of continuous time series. Instead
+of considering continuous-time series as a discrete-time sequence, Neural ODE can train continuous
+time series in real-time continuously. In this work, we used Neural ODE based model to generate synthetic
+sine waves and synthetic ECG. We introduced a new technique to design the generative adversarial
+network with Neural ODE based Generator and Discriminator. We developed three new models to synthesise
+continuous medical data. Different evaluation metrics are then used to quantitatively assess
+the quality of generated synthetic data for real-world applications and data analysis. Another
+goal of this work is to combine the strength of GAN and Neural ODE to generate synthetic continuous
+medical time series data such as ECG. We also evaluated both the GAN model and the Neural ODE model
+to understand the comparative efficiency of models from the GAN and Neural ODE family in medical
+data synthesis. 

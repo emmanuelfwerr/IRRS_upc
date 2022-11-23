@@ -1,0 +1,18 @@
+The distribution of shortest path lengths (DSPL) of random networks provides useful information
+on their large scale structure. In the special case of random regular graphs (RRGs), which consist
+of $N$ nodes of degree $c \ge 3$, the DSPL, denoted by $P(L=\ell)$, follows a discrete Gompertz distribution.
+Using the discrete Laplace transform and the Euler-Maclaurin formula we derive a closed-form expression
+for the moment generating function of the DSPL of RRGs. From the moment generating function we obtain
+closed-form expressions for the mean and variance of the DSPL. More specifically, we find that the
+mean distance between pairs of distinct nodes is given by $\langle L \rangle = \frac{\ln N}{\ln (c-1)}
++ \frac{1}{2} - \frac{ \ln c - \ln (c-2) +\gamma}{\ln (c-1)} + \mathcal{O} \left( \frac{\ln N}{N}
+\right)$, where $\gamma$ is the Euler-Mascheroni constant. While the leading term is known, this
+result includes a novel correction term, which yields very good agreement with the results obtained
+from direct numerical evaluation of $\langle L \rangle$ via the tail-sum formula and with the results
+obtained from computer simulations. However, it does not account for an oscillatory behavior of
+$\langle L \rangle$ as a function of $c$, which is negligible in the sparse-network limit but detectable
+in the dense-network limit. We also derive a closed-form expression for the variance ${\rm Var}(L)$
+of the DSPL. This expression captures the overall dependence of the variance on the degree $c$ but
+does not account for the oscillations. The oscillations of the mean and variance are analyzed and
+discussed. The results for the mean and variance of the DSPL are compared to the corresponding results
+obtained in other types of random networks. The relation to the diameter is also discussed. 

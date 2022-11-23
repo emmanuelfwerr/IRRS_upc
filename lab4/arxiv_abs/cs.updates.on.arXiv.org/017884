@@ -1,0 +1,20 @@
+The massive spread of hate speech, hateful content targeted at specific subpopulations, is a problem
+of critical social importance. Automated methods of hate speech detection typically employ state-of-the-art
+deep learning (DL)-based text classifiers-large pretrained neural language models of over 100
+million parameters, adapting these models to the task of hate speech detection using relevant labeled
+datasets. Unfortunately, there are only a few public labeled datasets of limited size that are available
+for this purpose. We make several contributions with high potential for advancing this state of
+affairs. We present HyperNetworks for hate speech detection, a special class of DL networks whose
+weights are regulated by a small-scale auxiliary network. These architectures operate at character-level,
+as opposed to word or subword-level, and are several orders of magnitude smaller compared to the
+popular DL classifiers. We further show that training hate detection classifiers using additional
+large amounts of automatically generated examples is beneficial in general, yet this practice
+especially boosts the performance of the proposed HyperNetworks. We report the results of extensive
+experiments, assessing the performance of multiple neural architectures on hate detection using
+five public datasets. The assessed methods include the pretrained language models of BERT, RoBERTa,
+ALBERT, MobileBERT and CharBERT, a variant of BERT that incorporates character alongside subword
+embeddings. In addition to the traditional setup of within-dataset evaluation, we perform cross-dataset
+evaluation experiments, testing the generalization of the various models in conditions of data
+shift. Our results show that the proposed HyperNetworks achieve performance that is competitive,
+and better in some cases, than these pretrained language models, while being smaller by orders of
+magnitude. 

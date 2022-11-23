@@ -1,0 +1,19 @@
+System-level decision making in transportation needs to understand day-to-day variation of network
+flows, which calls for accurate modeling and estimation of probabilistic dynamic travel demand
+on networks. Most existing studies estimate deterministic dynamic origin-destination (OD) demand,
+while the day-to-day variation of demand and flow is overlooked. Estimating probabilistic distributions
+of dynamic OD demand is challenging due to the complexity of the spatio-temporal networks and the
+computational intensity of the high-dimensional problems. With the availability of massive traffic
+data and the emergence of advanced computational methods, this paper develops a data-driven framework
+that solves the probabilistic dynamic origin-destination demand estimation (PDODE) problem
+using multi-day data. Different statistical distances (e.g., lp-norm, Wasserstein distance,
+KL divergence, Bhattacharyya distance) are used and compared to measure the gap between the estimated
+and the observed traffic conditions, and it is found that 2-Wasserstein distance achieves a balanced
+accuracy in estimating both mean and standard deviation. The proposed framework is cast into the
+computational graph and a reparametrization trick is developed to estimate the mean and standard
+deviation of the probabilistic dynamic OD demand simultaneously. We demonstrate the effectiveness
+and efficiency of the proposed PDODE framework on both small and real-world networks. In particular,
+it is demonstrated that the proposed PDODE framework can mitigate the overfitting issues by considering
+the demand variation. Overall, the developed PDODE framework provides a practical tool for public
+agencies to understand the sources of demand stochasticity, evaluate day-to-day variation of
+network flow, and make reliable decisions for intelligent transportation systems. 

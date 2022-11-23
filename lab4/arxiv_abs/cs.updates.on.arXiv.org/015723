@@ -1,0 +1,19 @@
+For a graph class ${\cal H}$, the graph parameters elimination distance to ${\cal H}$ (denoted by
+${\bf ed}_{\cal H}$) [Bulian and Dawar, Algorithmica, 2016], and ${\cal H}$-treewidth (denoted
+by ${\bf tw}_{\cal H}$) [Eiben et al. JCSS, 2021] aim to minimize the treedepth and treewidth, respectively,
+of the "torso" of the graph induced on a modulator to the graph class ${\cal H}$. Here, the torso of
+a vertex set $S$ in a graph $G$ is the graph with vertex set $S$ and an edge between two vertices $u, v
+\in S$ if there is a path between $u$ and $v$ in $G$ whose internal vertices all lie outside $S$. In this
+paper, we show that from the perspective of (non-uniform) fixed-parameter tractability (FPT),
+the three parameters described above give equally powerful parameterizations for every hereditary
+graph class ${\cal H}$ that satisfies mild additional conditions. In fact, we show that for every
+hereditary graph class ${\cal H}$ satisfying mild additional conditions, with the exception of
+${\bf tw}_{\cal H}$ parameterized by ${\bf ed}_{\cal H}$, for every pair of these parameters, computing
+one parameterized by itself or any of the others is FPT-equivalent to the standard vertex-deletion
+(to ${\cal H}$) problem. As an example, we prove that an FPT algorithm for the vertex-deletion problem
+implies a non-uniform FPT algorithm for computing ${\bf ed}_{\cal H}$ and ${\bf tw}_{\cal H}$.
+The conclusions of non-uniform FPT algorithms being somewhat unsatisfactory, we essentially
+prove that if ${\cal H}$ is hereditary, union-closed, CMSO-definable, and (a) the canonical equivalence
+relation (or any refinement thereof) for membership in the class can be efficiently computed, or
+(b) the class admits a "strong irrelevant vertex rule", then there exists a uniform FPT algorithm
+for ${\bf ed}_{\cal H}$. 

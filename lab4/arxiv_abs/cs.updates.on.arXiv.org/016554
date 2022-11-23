@@ -1,0 +1,19 @@
+Multiscale modeling is an effective approach for investigating multiphysics systems with largely
+disparate size features, where models with different resolutions or heterogeneous descriptions
+are coupled together for predicting the system's response. The solver with lower fidelity (coarse)
+is responsible for simulating domains with homogeneous features, whereas the expensive high-fidelity
+(fine) model describes microscopic features with refined discretization, often making the overall
+cost prohibitively high, especially for time-dependent problems. In this work, we explore the
+idea of multiscale modeling with machine learning and employ DeepONet, a neural operator, as an
+efficient surrogate of the expensive solver. DeepONet is trained offline using data acquired from
+the fine solver for learning the underlying and possibly unknown fine-scale dynamics. It is then
+coupled with standard PDE solvers for predicting the multiscale systems with new boundary/initial
+conditions in the coupling stage. The proposed framework significantly reduces the computational
+cost of multiscale simulations since the DeepONet inference cost is negligible, facilitating
+readily the incorporation of a plurality of interface conditions and coupling schemes. We present
+various benchmarks to assess accuracy and speedup, and in particular we develop a coupling algorithm
+for a time-dependent problem, and we also demonstrate coupling of a continuum model (finite element
+methods, FEM) with a neural operator representation of a particle system (Smoothed Particle Hydrodynamics,
+SPH) for a uniaxial tension problem with hyperelastic material. What makes this approach unique
+is that a well-trained over-parametrized DeepONet can generalize well and make predictions at
+a negligible cost. 

@@ -1,0 +1,20 @@
+Given the computational cost and technical expertise required to train machine learning models,
+users may delegate the task of learning to a service provider. We show how a malicious learner can
+plant an undetectable backdoor into a classifier. On the surface, such a backdoored classifier
+behaves normally, but in reality, the learner maintains a mechanism for changing the classification
+of any input, with only a slight perturbation. Importantly, without the appropriate "backdoor
+key", the mechanism is hidden and cannot be detected by any computationally-bounded observer.
+We demonstrate two frameworks for planting undetectable backdoors, with incomparable guarantees.
+First, we show how to plant a backdoor in any model, using digital signature schemes. The construction
+guarantees that given black-box access to the original model and the backdoored version, it is computationally
+infeasible to find even a single input where they differ. This property implies that the backdoored
+model has generalization error comparable with the original model. Second, we demonstrate how
+to insert undetectable backdoors in models trained using the Random Fourier Features (RFF) learning
+paradigm or in Random ReLU networks. In this construction, undetectability holds against powerful
+white-box distinguishers: given a complete description of the network and the training data, no
+efficient distinguisher can guess whether the model is "clean" or contains a backdoor. Our construction
+of undetectable backdoors also sheds light on the related issue of robustness to adversarial examples.
+In particular, our construction can produce a classifier that is indistinguishable from an "adversarially
+robust" classifier, but where every input has an adversarial example! In summary, the existence
+of undetectable backdoors represent a significant theoretical roadblock to certifying adversarial
+robustness. 

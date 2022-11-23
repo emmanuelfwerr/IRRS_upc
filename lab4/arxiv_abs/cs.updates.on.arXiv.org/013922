@@ -1,0 +1,19 @@
+In resource allocation, it is common to assume that agents have a utility for their allocated items
+and zero utility for unallocated ones. We refer to such valuation domain as 1-D. This assumption
+of zero utility for unallocated items is not always valid. For example, in the pandemic, allocation
+of ventilators, oxygen beds, and critical medical help yields dis-utility to an agent when not received
+in time, i.e., a setting where people consume resources at the cost of others' utility. Various externalities
+affect an agent's utility, i.e., when an agent doesn't receive an item, it can result in their gain
+(positive externalities) or loss (negative externalities). The existing preference models lack
+capturing the setting with these externalities. We conduct a study on a 2-D domain, where each agent
+has a utility ($v$) for an item assigned to it and utility ($v'$) for an item not allocated to it. We
+consider a generalized model, i.e., goods and chores. There is a vast literature to allocate fairly
+and efficiently. We observe that adapting the existing notions of fairness and efficiency to the
+2-D domain is non-trivial. We propose a utility transformation ($T_u$) and valuation transformation
+($T_v$) to convert from the 2-D domain to 1-D. We study the retention of fairness and efficiency property
+given this transformation, i.e., an allocation with property $\mathcal{P}$ in a 1-D domain also
+satisfies property $\mathcal{P}$ in 2-D, and vice versa. If a property is retainable, we can apply
+the transformation, and all the existing approaches are valid for the 2-D domain. Further, we study
+whether we can apply current results in a 2-D domain when they do not retain. We explore fairness notions
+such as Envy-freeness (EF), Equitability (EQ), Maxmin Share (MMS), and Proportionality and efficiency
+notions such as Pareto Optimality, Utilitarian Welfare, Nash Welfare, and Egalitarian Welfare.

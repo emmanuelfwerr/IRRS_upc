@@ -1,0 +1,19 @@
+We design the first efficient sensitivity oracles and dynamic algorithms for a variety of parameterized
+problems. Our main approach is to modify the algebraic coding technique from static parameterized
+algorithm design, which had not previously been used in a dynamic context. We particularly build
+off of the `extensor coding' method of Brand, Dell and Husfeldt [STOC'18], employing properties
+of the exterior algebra over different fields. For the $k$-Path detection problem for directed
+graphs, it is known that no efficient dynamic algorithm exists (under popular assumptions from
+fine-grained complexity). We circumvent this by designing an efficient sensitivity oracle, which
+preprocesses a directed graph on $n$ vertices in $2^k poly(k) n^{\omega+o(1)}$ time, such that,
+given $\ell$ updates (mixing edge insertions and deletions, and vertex deletions) to that input
+graph, it can decide in time $\ell^2 2^kpoly(k)$ and with high probability, whether the updated
+graph contains a path of length $k$. We also give a deterministic sensitivity oracle requiring $4^k
+poly(k) n^{\omega+o(1)}$ preprocessing time and $\ell^2 2^{\omega k + o(k)}$ query time, and obtain
+a randomized sensitivity oracle for the task of approximately counting the number of $k$-paths.
+For $k$-Path detection in undirected graphs, we obtain a randomized sensitivity oracle with $O(1.66^k
+n^3)$ preprocessing time and $O(\ell^3 1.66^k)$ query time, and a better bound for undirected bipartite
+graphs. In addition, we present the first fully dynamic algorithms for a variety of problems: $k$-Partial
+Cover, $m$-Set $k$-Packing, $t$-Dominating Set, $d$-Dimensional $k$-Matching, and Exact $k$-Partial
+Cover. For example, for $k$-Partial Cover we show a randomized dynamic algorithm with $2^k poly(k)polylog(n)$
+update time, and a deterministic dynamic algorithm with $4^kpoly(k)polylog(n)$ update time.

@@ -1,0 +1,19 @@
+This paper presents a new fast power series solution method to solve the Hierarchal Method of Moment(MoM)
+matrix for a large complex,perfectly electric conducting (PEC) 3D structures. The proposed power
+series solution converges in just two iterations which is faster than the conventional fast solver-based
+iterative solution. The method is purely algebraic in nature and, as such applicable to existing
+conventional methods. The method uses regular fast solver Hierarchal Matrix (H-Matrix) and can
+also be applied to Multilevel Fast Multipole Method Algorithm(MLFMA). In the proposed method,
+we use the scaling of the symmetric near-field matrix to develop a diagonally dominant overall matrix
+to enable a power series solution. Left and right block scaling coefficients are required for scaling
+near-field blocks to diagonal blocks using Schur's complement method. However,only the right-hand
+scaling coefficients are computed for symmetric near-field matrix leading to saving of computation
+time and memory. Due to symmetric property, the left side-block scaling coefficients are just the
+transpose of the right-scaling blocks. Next, the near-field blocks are replaced by scaled near-field
+diagonal blocks. Now the scaled near-field blocks in combination with far-field and scaling coefficients
+are subjected to power series solution terminating after only two terms. As all the operations are
+performed on the near-field blocks, the complexity of scaling coefficient computation is retained
+as O(N). The power series solution only involves the matrix-vector product of the far-field, scaling
+coefficients blocks, and inverse of scaled near-field blocks. Hence, the solution cost remains
+O(NlogN). Several numerical results are presented to validate the efficiency and robustness of
+the proposed numerical method. 

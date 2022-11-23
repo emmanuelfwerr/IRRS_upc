@@ -1,0 +1,19 @@
+Geoscience domain experts traditionally correlate formation tops in the subsurface using geophysical
+well logs (known as well-log correlation) by-hand. Based on individual well log interpretation
+and well-to-well comparisons, these correlations are done in the context of depositional models
+within a stratigraphic framework. Recently, many researchers have focused on automatic well-log
+correlation using a variety of warping algorithms that measure well similarity, and both unsupervised
+and supervised machine learning methods that assign categorical labels based on known tops in many
+other wells. These methods require a standardized suite of digital well logs (i.e. gamma ray logs
+for every well) along with the depth to the top of the formations, which might not be available in many
+cases. Herein, we propose a method that does not use geophysical well logs for correlation, but rather
+uses already picked tops in multiple wells to recommend the depth to the remaining unpicked tops
+in the wells. This recommender system calculates the depth to all formation tops in all the wells
+for two different datasets in two different basins. The Teapot Dome dataset is composed of lithostratigraphic
+formation tops, and the Mannville Group dataset is composed of sequence-stratigraphic (representing
+multiple lithologic groups within a stratigraphic unit) formation tops. For the demonstration,
+mean absolute error and root mean squared error of four-fold cross-validation compares the recommender
+system predictions to the ground truth human interpretations. The recommender system is competitive
+and often outperforms state of the art spline interpolation methods. Lastly, increasing the size
+of the training dataset decreases the prediction error, and that variance in error decreases with
+increasing formation tops picked in each formation and well for the lithostratigraphic top picks.

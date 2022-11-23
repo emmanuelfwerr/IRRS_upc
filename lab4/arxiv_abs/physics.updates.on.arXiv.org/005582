@@ -1,0 +1,20 @@
+Current methods of estimating the change in stress caused by injecting fluid into subsurface formations
+require choosing the type of constitutive model and the model parameters based on core, log, and
+geophysical data during the characterization phase, with little feedback from operational observations
+to validate or refine these choices. It is shown that errors in the assumed constitutive response,
+even when informed by laboratory tests on core samples, are likely to be common, large, and underestimate
+the magnitude of stress change caused by injection. Recent advances in borehole-based strain instruments
+and borehole and surface-based tilt and displacement instruments have now enabled monitoring
+of the deformation of the storage system throughout its operational lifespan. This data can enable
+validation and refinement of the knowledge of the geomechanical properties and state of the system,
+but brings with it a challenge to transform the raw data into actionable knowledge. We demonstrate
+a method to perform a gradient-based deterministic inversion of geomechanical monitoring data.
+This approach allows autonomous integration of the instrument data without the need for time consuming
+manual interpretation and selection of updated model parameters. The approach presented is very
+flexible as to what type of geomechanical constitutive response can be used. The approach is easily
+adaptable to nonlinear physics-based constitutive models to account for common rock behaviors
+such as creep and plasticity. The approach also enables training of machine learning-based constitutive
+models by allowing back propagation of errors through the finite element calculations. This enables
+strongly enforcing known physics, such as conservation of momentum and continuity, while allowing
+data-driven models to learn the truly unknown physics such as the constitutive or petrophysical
+responses. 

@@ -1,0 +1,19 @@
+We present a convolutional neural network that is capable of searching for continuous gravitational
+waves, quasi-monochromatic, persistent signals arising from asymmetrically rotating neutron
+stars, in $\sim 1$ year of simulated data that is plagued by non-stationary, narrow-band disturbances,
+i.e., lines. Our network has learned to classify the input strain data into four categories: (1)
+only Gaussian noise, (2) an astrophysical signal injected into Gaussian noise, (3) a line embedded
+in Gaussian noise, and (4) an astrophysical signal contaminated by both Gaussian noise and line
+noise. In our algorithm, different frequencies are treated independently; therefore, our network
+is robust against sets of evenly-spaced lines, i.e., combs, and we only need to consider perfectly
+sinusoidal line in this work. We find that our neural network can distinguish between astrophysical
+signals and lines with high accuracy. In a frequency band without line noise, the sensitivity depth
+of our network is about $\mathcal{D}^{95\%} \simeq 43.9$ with a false alarm probability of $\sim
+0.5\%$, while in the presence of line noise, we can maintain a false alarm probability of $\sim 10\%$
+and achieve $\mathcal{D}^\mathrm{95\%} \simeq 3.62$ when the line noise amplitude is $h_0^\mathrm{line}/\sqrt{S_\mathrm{n}(f_k)}
+= 1.0$. We evaluate the computational cost of our method to be $O(10^{19})$ floating point operations,
+and compare it to those from standard all-sky searches, putting aside differences between covered
+parameter spaces. Our results show that our method is more efficient by one or two orders of magnitude
+than standard searches. Although our neural network takes about $O(10^8)$ sec to employ using our
+current facilities (a single GPU of GTX1080Ti), we expect that it can be reduced to an acceptable
+level by utilizing a larger number of improved GPUs. 

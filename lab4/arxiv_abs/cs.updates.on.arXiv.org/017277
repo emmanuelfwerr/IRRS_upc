@@ -1,0 +1,19 @@
+We propose a one-step person detector for topview omnidirectional indoor scenes based on convolutional
+neural networks (CNNs). While state of the art person detectors reach competitive results on perspective
+images, missing CNN architectures as well as training data that follows the distortion of omnidirectional
+images makes current approaches not applicable to our data. The method predicts bounding boxes
+of multiple persons directly in omnidirectional images without perspective transformation,
+which reduces overhead of pre- and post-processing and enables real-time performance. The basic
+idea is to utilize transfer learning to fine-tune CNNs trained on perspective images with data augmentation
+techniques for detection in omnidirectional images. We fine-tune two variants of Single Shot MultiBox
+detectors (SSDs). The first one uses Mobilenet v1 FPN as feature extractor (moSSD). The second one
+uses ResNet50 v1 FPN (resSSD). Both models are pre-trained on Microsoft Common Objects in Context
+(COCO) dataset. We fine-tune both models on PASCAL VOC07 and VOC12 datasets, specifically on class
+person. Random 90-degree rotation and random vertical flipping are used for data augmentation
+in addition to the methods proposed by original SSD. We reach an average precision (AP) of 67.3 % with
+moSSD and 74.9 % with resSSD onthe evaluation dataset. To enhance the fine-tuning process, we add
+a subset of HDA Person dataset and a subset of PIROPOdatabase and reduce the number of perspective
+images to PASCAL VOC07. The AP rises to 83.2 % for moSSD and 86.3 % for resSSD, respectively. The average
+inference speed is 28 ms per image for moSSD and 38 ms per image for resSSD using Nvidia Quadro P6000.
+Our method is applicable to other CNN-based object detectors and can potentially generalize for
+detecting other objects in omnidirectional images. 

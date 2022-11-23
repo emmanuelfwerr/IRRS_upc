@@ -1,0 +1,19 @@
+For a connected graph $\mathcal{G}=(V,E)$ with $n$ nodes, $m$ edges, and Laplacian matrix $\boldsymbol{{\mathit{L}}}$,
+a grounded Laplacian matrix $\boldsymbol{{\mathit{L}}}(S)$ of $\mathcal{G}$ is a $(n-k) \times
+(n-k)$ principal submatrix of $\boldsymbol{{\mathit{L}}}$, obtained from $\boldsymbol{{\mathit{L}}}$
+by deleting $k$ rows and columns corresponding to $k$ selected nodes forming a set $S\subseteq V$.
+The smallest eigenvalue $\lambda(S)$ of $\boldsymbol{{\mathit{L}}}(S)$ plays a pivotal role
+in various dynamics defined on $\mathcal{G}$. For example, $\lambda(S)$ characterizes the convergence
+rate of leader-follower consensus, as well as the effectiveness of a pinning scheme for the pinning
+control problem, with larger $\lambda(S)$ corresponding to smaller convergence time or better
+effectiveness of a pinning scheme. In this paper, we focus on the problem of optimally selecting
+a subset $S$ of fixed $k \ll n$ nodes, in order to maximize the smallest eigenvalue $\lambda(S)$ of
+the grounded Laplacian matrix $\boldsymbol{{\mathit{L}}}(S)$. We show that this optimization
+problem is NP-hard and that the objective function is non-submodular but monotone. Due to the difficulty
+to obtain the optimal solution, we first propose a na\"{\i}ve heuristic algorithm selecting one
+optimal node at each time for $k$ iterations. Then we propose a fast heuristic scalable algorithm
+to approximately solve this problem, using derivative matrix, matrix perturbations, and Laplacian
+solvers as tools. Our na\"{\i}ve heuristic algorithm takes $\tilde{O}(knm)$ time, while the fast
+greedy heuristic has a nearly linear time complexity of $\tilde{O}(km)$. We also conduct numerous
+experiments on different networks sized up to one million nodes, demonstrating the superiority
+of our algorithm in terms of efficiency and effectiveness. 

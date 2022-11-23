@@ -1,0 +1,20 @@
+Given a probability distribution $\mathcal{D}$ over the non-negative integers, a $\mathcal{D}$-repeat
+channel acts on an input symbol by repeating it a number of times distributed as $\mathcal{D}$. For
+example, the binary deletion channel ($\mathcal{D}=Bernoulli$) and the Poisson repeat channel
+($\mathcal{D}=Poisson$) are special cases. We say a $\mathcal{D}$-repeat channel is square-integrable
+if $\mathcal{D}$ has finite first and second moments. In this paper, we construct explicit codes
+for all square-integrable $\mathcal{D}$-repeat channels with rate arbitrarily close to the capacity,
+that are encodable and decodable in linear and quasi-linear time, respectively. We also consider
+possible extensions to the repeat channel model, and illustrate how our construction can be extended
+to an even broader class of channels capturing insertions, deletions, and substitutions. Our work
+offers an alternative, simplified, and more general construction to the recent work of Rubinstein
+(arXiv:2111.00261), who attains similar results to ours in the cases of the deletion channel and
+the Poisson repeat channel. It also slightly improves the runtime and decoding failure probability
+of the polar codes constructions of Tal et al. (ISIT 2019) and of Pfister and Tal (arXiv:2102.02155)
+for the deletion channel and certain insertion/deletion/substitution channels. Our techniques
+follow closely the approaches of Guruswami and Li (IEEEToIT 2019) and Con and Shpilka (IEEEToIT
+2020); what sets apart our work is that we show that a capacity-achieving code can be assumed to have
+an "approximate balance" in the frequency of zeros and ones of all sufficiently long substrings
+of all codewords. This allows us to attain near-capacity-achieving codes in a general setting.
+We consider this "approximate balance" result to be of independent interest, as it can be cast in
+much greater generality than repeat channels. 

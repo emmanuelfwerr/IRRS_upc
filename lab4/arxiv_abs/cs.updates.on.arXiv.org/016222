@@ -1,0 +1,19 @@
+Non-Fungible Token (NFT) markets are one of the fastest growing digital markets today, with the
+sales during the third quarter of 2021 exceeding $10 billions! Nevertheless, these emerging markets
+- similar to traditional emerging marketplaces - can be seen as a great opportunity for illegal activities
+(e.g., money laundering, sale of illegal goods etc.). In this study we focus on a specific marketplace,
+namely NBA TopShot, that facilitates the purchase and (peer-to-peer) trading of sports collectibles.
+Our objective is to build a framework that is able to label peer-to-peer transactions on the platform
+as anomalous or not. To achieve our objective we begin by building a model for the profit to be made
+by selling a specific collectible on the platform. We then use RFCDE - a random forest model for the
+conditional density of the dependent variable - to model the errors from the profit models. This
+step allows us to estimate the probability of a transaction being anomalous. We finally label as
+anomalous any transaction whose aforementioned probability is less than 1%. Given the absence
+of ground truth for evaluating the model in terms of its classification of transactions, we analyze
+the trade networks formed from these anomalous transactions and compare it with the full trade network
+of the platform. Our results indicate that these two networks are statistically different when
+it comes to network metrics such as, edge density, closure, node centrality and node degree distribution.
+This network analysis provides additional evidence that these transactions do not follow the same
+patterns that the rest of the trades on the platform follow. However, we would like to emphasize here
+that this does not mean that these transactions are also illegal. These transactions will need to
+be further audited from the appropriate entities to verify whether or not they are illicit. 

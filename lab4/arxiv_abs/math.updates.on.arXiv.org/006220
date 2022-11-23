@@ -1,0 +1,19 @@
+To support the unprecedented growth of the Internet of Things (IoT) applications and the access
+of tremendous IoT devices, two new technologies emerge recently to overcome the shortage of spectrum
+resources. The first one, known as integrated sensing and communication (ISAC), aims to share the
+spectrum bandwidth for both radar sensing and data communication. The second one, called over-the-air
+computation (AirComp), enables simultaneous transmission and computation of data from multiple
+IoT devices in the same frequency. The promising performance of ISAC and AirComp motivates the current
+work on developing a framework that combines the merits of both called integrated sensing and AirComp
+(ISAA). Two schemes are designed to support multiple-input-multiple-output (MIMO) ISAA simultaneously,
+namely the shared and separated schemes. The performance metrics of radar sensing and AirComp are
+evaluated by the mean square errors of the estimated target response matrix and the received computation
+results, respectively. The design challenge of MIMO ISAA lies in the joint optimization of radar
+sensing beamformers and data transmission beamformers at the IoT devices, and data aggregation
+beamformer at the server, which results in complex non-convex problem. To solve this problem, an
+algorithmic solution based on the technique of semidefinite relaxation is proposed. The results
+reveal that the beamformer at each sensor needs to account for supporting dual-functional signals
+in the shared scheme, while dedicated beamformers for sensing and AirComp are needed to mitigate
+the mutual interference between the two functionalities in the separated scheme. The use case of
+target location estimation based on ISAA is demonstrated in simulation to show the performance
+superiority. 

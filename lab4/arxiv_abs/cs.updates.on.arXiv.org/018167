@@ -1,0 +1,20 @@
+In recent years, Mixture-of-Experts (MoE) has emerged as a promising technique for deep learning
+that can scale the model capacity to trillion-plus parameters while reducing the computing cost
+via sparse computation. While MoE opens a new frontier of exceedingly large models, its implementation
+over thousands of GPUs has been limited due to mismatch between the dynamic nature of MoE and static
+parallelism/pipelining of the system. We present Tutel, a highly scalable stack design and implementation
+for MoE with dynamically adaptive parallelism and pipelining. Tutel delivers adaptive parallelism
+switching and adaptive pipelining at runtime, which achieves up to 1.74x and 2.00x single MoE layer
+speedup, respectively. We also propose a novel two-dimensional hierarchical algorithm for MoE
+communication speedup that outperforms the previous state-of-the-art up to 20.7x over 2,048 GPUs.
+Aggregating all techniques, Tutel finally delivers 4.96x and 5.75x speedup of a single MoE layer
+on 16 GPUs and 2,048 GPUs, respectively, over Fairseq: Meta's Facebook AI Research Sequence-to-Sequence
+Toolkit (Tutel is now partially adopted by Fairseq). Tutel source code is available in public: https://github.com/microsoft/tutel
+. Our evaluation shows that Tutel efficiently and effectively runs a real-world MoE-based model
+named SwinV2-MoE, built upon Swin Transformer V2, a state-of-the-art computer vision architecture.
+On efficiency, Tutel accelerates SwinV2-MoE, achieving up to 1.55x and 2.11x speedup in training
+and inference over Fairseq, respectively. On effectiveness, the SwinV2-MoE model achieves superior
+accuracy in both pre-training and down-stream computer vision tasks such as COCO object detection
+than the counterpart dense model, indicating the readiness of Tutel for end-to-end real-world
+model training and inference. SwinV2-MoE is open sourced in https://github.com/microsoft/Swin-Transformer
+. 

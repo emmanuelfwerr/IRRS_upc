@@ -1,0 +1,20 @@
+The residential buildings sector is one of the largest electricity consumers worldwide and contributes
+disproportionally to peak electricity demand in many regions. Strongly driven by occupant activities
+at home, household energy consumption is stochastic and heterogeneous in nature. However, most
+residential building energy models applied by industry use homogeneous, deterministic occupant
+activity schedules, which work well for predictions of annual energy consumption, but can result
+in unrealistic hourly or sub-hourly electric load profiles, with exaggerated or muted peaks. This
+mattered less in the past, but the increasing proportion of variable renewable energy generators
+in power systems means that representing the heterogeneity and stochasticity of occupant behavior
+is crucial for reliable energy planning. This is particularly true for systems that include distributed
+energy resources, such as grid-interactive efficient buildings, solar photovoltaics, and battery
+storage. This work presents a stochastic occupant behavior simulator that models the energy use
+behavior of individual household members. It also presents an integration with a building stock
+model to simulate residential building loads more accurately at community, city, state, and national
+scales. More specifically, we first employ clustering techniques to identify distinct patterns
+of occupant behavior. Then, we combine time-inhomogeneous Markov chain simulations with probabilistic
+sampling of event durations to realistically simulate occupant behaviors. This stochastic simulator
+is integrated with ResStock, a large-scale residential building stock simulation tool, to demonstrate
+the capability of stochastic residential building load modeling at scale. The simulation results
+were validated against both American Time Use Survey data and measured end-use electricity data
+for accuracy and reliability. 

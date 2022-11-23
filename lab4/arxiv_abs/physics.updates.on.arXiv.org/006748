@@ -1,0 +1,19 @@
+There has been a massive increase in research interest towards applying data driven methods to problems
+in mechanics. While traditional machine learning (ML) methods have enabled many breakthroughs,
+they rely on the assumption that the training (observed) data and testing (unseen) data are independent
+and identically distributed (i.i.d). Thus, traditional ML approaches often break down when applied
+to real world mechanics problems with unknown test environments and data distribution shifts.
+In contrast, out-of-distribution (OOD) generalization assumes that the test data may shift (i.e.,
+violate the i.i.d. assumption). To date, multiple methods have been proposed to improve the OOD
+generalization of ML methods. However, because of the lack of benchmark datasets for OOD regression
+problems, the efficiency of these OOD methods on regression problems, which dominate the mechanics
+field, remains unknown. To address this, we investigate the performance of OOD generalization
+methods for regression problems in mechanics. Specifically, we identify three OOD problems: covariate
+shift, mechanism shift, and sampling bias. For each problem, we create two benchmark examples that
+extend the Mechanical MNIST dataset collection, and we investigate the performance of popular
+OOD generalization methods on these mechanics-specific regression problems. Our numerical experiments
+show that in most cases, while the OOD generalization algorithms perform better compared to traditional
+ML methods on these OOD problems, there is a compelling need to develop more robust OOD generalization
+methods that are effective across multiple OOD scenarios. Overall, we expect that this study, as
+well as the associated open access benchmark datasets, will enable further development of OOD generalization
+methods for mechanics specific regression problems. 

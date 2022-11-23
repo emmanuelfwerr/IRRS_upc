@@ -1,0 +1,20 @@
+Facial images disclose many hidden personal traits such as age, gender, race, health, emotion,
+and psychology. Understanding these traits will help to classify the people in different attributes.
+In this paper, we have presented a novel method for classifying images using a pretrained transformer
+model. We apply the pretrained transformer for the binary classification of facial images in criminal
+and non-criminal classes. The pretrained transformer of GPT-2 is trained to generate text and then
+fine-tuned to classify facial images. During the finetuning process with images, most of the layers
+of GT-2 are frozen during backpropagation and the model is frozen pretrained transformer (FPT).
+The FPT acts as a universal image classifier, and this paper shows the application of FPT on facial
+images. We also use our FPT on encrypted images for classification. Our FPT shows high accuracy on
+both raw facial images and encrypted images. We hypothesize the meta-learning capacity FPT gained
+because of its large size and trained on a large size with theory and experiments. The GPT-2 trained
+to generate a single word token at a time, through the autoregressive process, forced to heavy-tail
+distribution. Then the FPT uses the heavy-tail property as its meta-learning capacity for classifying
+images. Our work shows one way to avoid bias during the machine classification of images.The FPT
+encodes worldly knowledge because of the pretraining of one text, which it uses during the classification.
+The statistical error of classification is reduced because of the added context gained from the
+text.Our paper shows the ethical dimension of using encrypted data for classification.Criminal
+images are sensitive to share across the boundary but encrypted largely evades ethical concern.FPT
+showing good classification accuracy on encrypted images shows promise for further research on
+privacy-preserving machine learning. 

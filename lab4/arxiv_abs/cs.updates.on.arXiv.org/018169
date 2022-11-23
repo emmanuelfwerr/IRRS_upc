@@ -1,0 +1,20 @@
+Federated learning is a type of collaborative machine learning, where participating clients process
+their data locally, sharing only updates to the collaborative model. This enables to build privacy-aware
+distributed machine learning models, among others. The goal is the optimization of a statistical
+model's parameters by minimizing a cost function of a collection of datasets which are stored locally
+by a set of clients. This process exposes the clients to two issues: leakage of private information
+and lack of personalization of the model. On the other hand, with the recent advancements in techniques
+to analyze data, there is a surge of concern for the privacy violation of the participating clients.
+To mitigate this, differential privacy and its variants serve as a standard for providing formal
+privacy guarantees. Often the clients represent very heterogeneous communities and hold data
+which are very diverse. Therefore, aligned with the recent focus of the FL community to build a framework
+of personalized models for the users representing their diversity, it is also of utmost importance
+to protect against potential threats against the sensitive and personal information of the clients.
+$d$-privacy, which is a generalization of geo-indistinguishability, the lately popularized
+paradigm of location privacy, uses a metric-based obfuscation technique that preserves the spatial
+distribution of the original data. To address the issue of protecting the privacy of the clients
+and allowing for personalized model training to enhance the fairness and utility of the system,
+we propose a method to provide group privacy guarantees exploiting some key properties of $d$-privacy
+which enables personalized models under the framework of FL. We provide with theoretical justifications
+to the applicability and experimental validation on real-world datasets to illustrate the working
+of the proposed method. 

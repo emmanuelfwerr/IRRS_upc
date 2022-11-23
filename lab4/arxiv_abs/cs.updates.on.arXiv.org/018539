@@ -1,0 +1,19 @@
+Randomised field experiments, such as A/B testing, have long been the gold standard for evaluating
+software changes. In the automotive domain, running randomised field experiments is not always
+desired, possible, or even ethical. In the face of such limitations, we develop a framework BOAT
+(Bayesian causal modelling for ObvservAtional Testing), utilising observational studies in
+combination with Bayesian causal inference, in order to understand real-world impacts from complex
+automotive software updates and help software development organisations arrive at causal conclusions.
+In this study, we present three causal inference models in the Bayesian framework and their corresponding
+cases to address three commonly experienced challenges of software evaluation in the automotive
+domain. We develop the BOAT framework with our industry collaborator, and demonstrate the potential
+of causal inference by conducting empirical studies on a large fleet of vehicles. Moreover, we relate
+the causal assumption theories to their implications in practise, aiming to provide a comprehensive
+guide on how to apply the causal models in automotive software engineering. We apply Bayesian propensity
+score matching for producing balanced control and treatment groups when we do not have access to
+the entire user base, Bayesian regression discontinuity design for identifying covariate dependent
+treatment assignments and the local treatment effect, and Bayesian difference-in-differences
+for causal inference of treatment effect overtime and implicitly control unobserved confounding
+factors. Each one of the demonstrative case has its grounds in practise, and is a scenario experienced
+when randomisation is not feasible. With the BOAT framework, we enable online software evaluation
+in the automotive domain without the need of a fully randomised experiment. 

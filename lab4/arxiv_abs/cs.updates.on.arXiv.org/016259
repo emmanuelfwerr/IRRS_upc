@@ -1,0 +1,19 @@
+Bayesian estimation of short-time spectral amplitude is one of the most predominant approaches
+for the enhancement of the noise corrupted speech. The performance of these estimators are usually
+significantly improved when any perceptually relevant cost function is considered. On the other
+hand, the recent progress in the phase-based speech signal processing have shown that the phase-only
+enhancement based on spectral phase estimation methods can also provide joint improvement in the
+perceived speech quality and intelligibility, even in low SNR conditions. In this paper, to take
+advantage of both the perceptually motivated cost function involving STSAs of estimated and true
+clean speech and utilizing the prior spectral phase information, we have derived a phase-aware
+Bayesian STSA estimator. The parameters of the cost function are chosen based on the characteristics
+of the human auditory system, namely, the dynamic compressive nonlinearity of the cochlea, the
+perceived loudness theory and the simultaneous masking properties of the ear. This type of parameter
+selection scheme results in more noise reduction while limiting the speech distortion. The derived
+STSA estimator is optimal in the MMSE sense if the prior phase information is available. In practice,
+however, typically only an estimate of the clean speech phase can be obtained via employing different
+types of spectral phase estimation techniques which have been developed throughout the last few
+years. In a blind setup, we have evaluated the proposed Bayesian STSA estimator with different types
+of standard phase estimation methods available in the literature. Experimental results have shown
+that the proposed estimator can achieve substantial improvement in performance than the traditional
+phase-blind approaches. 

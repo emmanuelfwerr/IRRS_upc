@@ -1,0 +1,20 @@
+We studied the discrimination of deformable objects by grasping them using 4 different robot hands
+/ grippers: Barrett hand (3 fingers with adjustable configuration, 96 tactile, 8 position, 3 torque
+sensors), qb SoftHand (5 fingers, 1 motor, position and current feedback), and two industrial type
+parallel jaw grippers with position and effort feedback (Robotiq 2F-85 and OnRobot RG6). A set of
+9 ordinary objects differing in size and stiffness and another highly challenging set of 20 polyurethane
+foams differing in material properties only was used. We systematically compare the grippers'
+performance, together with the effects of: (1) type of classifier (k-NN, SVM, LSTM) operating on
+raw time series or on features, (2) action parameters (grasping configuration and speed of squeezing),
+(3) contribution of sensory modalities. Classification results are complemented by visualization
+of the data using PCA. We found: (i) all the grippers but the qb SoftHand could reliably distinguish
+the ordinary objects set; (ii) Barrett Hand reached around 95% accuracy on the foams; OnRobot RG6
+around 75% and Robotiq 2F-85 around 70%; (iii) across all grippers, SVM over features and LSTM on
+raw time series performed best; (iv) faster compression speeds degrade classification performance;
+(v) transfer learning between compression speeds worked well for the Barrett Hand only; transfer
+between grasping configurations is limited; (vi) ablation experiments provided intriguing insights
+-- sometimes a single sensory channel suffices for discrimination. Overall, the Barrett Hand as
+a complex and expensive device with rich sensory feedback provided best results, but uncalibrated
+parallel jaw grippers without tactile sensors can have sufficient performance for single-grasp
+object discrimination based on position and effort data only. Transfer learning between the different
+robot hands remains a challenge. 

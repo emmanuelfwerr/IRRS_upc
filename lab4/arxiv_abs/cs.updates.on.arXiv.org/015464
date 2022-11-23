@@ -1,0 +1,19 @@
+Nowadays, Android is the most dominant operating system in the mobile ecosystem, with billions
+of people using its apps daily. As expected, this trend did not go unnoticed by miscreants, and Android
+became the favorite platform for discovering new victims through malicious apps. Moreover, these
+apps have become so sophisticated that they can bypass anti-malware measures to protect the users.
+Therefore, it is safe to admit that traditional anti-malware techniques have become cumbersome,
+sparking the urge to develop an efficient way to detect Android malware. This paper presents hybrid-Flacon,
+a hybrid pattern Android malware detection and categorization framework. It combines dynamic
+and static features of Android malware, which are from network traffic and code graph structure.
+In hybrid-Flacon, we treat network traffic as a dynamic feature and process it as a 2D image sequence.
+Meanwhile, hybrid-Flacon handles each network flow in the packet as a 2D image and uses a bidirectional
+LSTM network to process those 2D-image sequences to obtain vectors representing network packets.
+We use the program code graph for a static feature and introduce natural language processing (NLP)
+inspired techniques on function call graph (FCG). We design a graph neural network-based approach
+to convert the whole graph structure of Android apps to vectors. Finally, We utilize those converted
+vectors, both network and program code features, and concatenate them to detect and categorize
+the malware. Our results reveal that hybrid-Flacon yields better results as we get 97.16% accuracy
+on average for malware detection and 88.32% accuracy for malware categorization. Additionally,
+we release a dataset AndroNetMnist, which converts the network traffic to a 2D-image sequence and
+helps to accomplish malware detection on a 2D-image sequence. 

@@ -1,0 +1,19 @@
+Deep learning-based virtual staining was developed to introduce image contrast to label-free
+tissue sections, digitally matching the histological staining, which is time-consuming, labor-intensive,
+and destructive to tissue. Standard virtual staining requires high autofocusing precision during
+the whole slide imaging of label-free tissue, which consumes a significant portion of the total
+imaging time and can lead to tissue photodamage. Here, we introduce a fast virtual staining framework
+that can stain defocused autofluorescence images of unlabeled tissue, achieving equivalent performance
+to virtual staining of in-focus label-free images, also saving significant imaging time by lowering
+the microscope's autofocusing precision. This framework incorporates a virtual-autofocusing
+neural network to digitally refocus the defocused images and then transforms the refocused images
+into virtually stained images using a successive network. These cascaded networks form a collaborative
+inference scheme: the virtual staining model regularizes the virtual-autofocusing network through
+a style loss during the training. To demonstrate the efficacy of this framework, we trained and blindly
+tested these networks using human lung tissue. Using 4x fewer focus points with 2x lower focusing
+precision, we successfully transformed the coarsely-focused autofluorescence images into high-quality
+virtually stained H&E images, matching the standard virtual staining framework that used finely-focused
+autofluorescence input images. Without sacrificing the staining quality, this framework decreases
+the total image acquisition time needed for virtual staining of a label-free whole-slide image
+(WSI) by ~32%, together with a ~89% decrease in the autofocusing time, and has the potential to eliminate
+the laborious and costly histochemical staining process in pathology. 

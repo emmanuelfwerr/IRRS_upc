@@ -1,0 +1,20 @@
+In cone-beam X-ray transmission imaging, due to the divergence of X-rays, imaged structures with
+different depths have different magnification factors on an X-ray detector, which results in perspective
+deformation. Perspective deformation causes difficulty in direct, accurate geometric assessments
+of anatomical structures. In this work, to reduce perspective deformation in X-ray images acquired
+from regular cone-beam computed tomography (CBCT) systems, we investigate on learning perspective
+deformation, i.e., converting perspective projections into orthogonal projections. Directly
+converting a single perspective projection image into an orthogonal projection image is extremely
+challenging due to the lack of depth information. Therefore, we propose to utilize one additional
+perspective projection, a complementary (180-degree) or orthogonal (90-degree) view, to provide
+a certain degree of depth information. Furthermore, learning perspective deformation in different
+spatial domains is investigated. Our proposed method is evaluated on numerical spherical bead
+phantoms as well as patients' chest and head X-ray data. The experiments on numerical bead phantom
+data demonstrate that learning perspective deformation in polar coordinates has significant
+advantages over learning in Cartesian coordinates, as root-mean-square error (RMSE) decreases
+from 5.31 to 1.40, while learning in log-polar coordinates has no further considerable improvement
+(RMSE = 1.85). In addition, using a complementary view (RMSE = 1.40) is better than an orthogonal
+view (RMSE = 3.87). The experiments on patients' chest and head data demonstrate that learning perspective
+deformation using dual complementary views is also applicable in anatomical X-ray data, allowing
+accurate cardiothoracic ratio measurements in chest X-ray images and cephalometric analysis
+in synthetic cephalograms from cone-beam X-ray projections. 

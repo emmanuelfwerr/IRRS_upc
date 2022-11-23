@@ -1,0 +1,19 @@
+In existing biometric authentication methods, the user must perform an authentication operation
+such as placing a finger in a scanner or facing a camera. With ear acoustic authentication, acoustic
+characteristics of the ear canal are used as biometric information. Therefore, a person wearing
+earphones does not need to perform any authentication operation. In biometric authentication,
+it is necessary to minimize the false acceptance rate (FAR) so that no unauthorized user is misidentified
+as an authorized user. However, if the FAR is set low, it increases the false rejection rate (FRR),
+the rate at which authorized users are falsely recognized as unauthorized users. It has been reported
+that when FAR is 0.1%, the FRR in ear acoustic authentication reaches as much as 22%. In this study,
+we propose a method that reduces FRR and enhances authentication accuracy; it generates new ear
+canal acoustic characteristics called between-class (BC) features, which combine the ear canal
+acoustic characteristics of authorized and unauthorized users features. The proposed method
+uses a support vector machine to learn the BC features as the data of authorized users, then generates
+a hyperplane in an area close to that data. We hypothesize that this would decrease the possibility
+of misidentifying an unauthorized user as an authorized user and decrease the FRR when the FAR is
+0.1%. To evaluate the performance of the proposed method, BC features were applied to ear acoustic
+authentication, and FAR and FRR were calculated. The FRR with FAR = 0.1% was 7.95% lower than with
+the previous method, and the equal error rate -- the error rate when FAR and FRR are equivalent -- decreased
+by 0.15%. These results confirmed that the proposed method can make ear acoustic authentication
+more convenient while maintaining a high level of security. 

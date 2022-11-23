@@ -1,0 +1,19 @@
+The detection of small exoplanets with the radial velocity (RV) technique is limited by various
+poorly known noise sources of instrumental and stellar origin. As a consequence, current detection
+techniques often fail to provide reliable estimates of the significance levels of detection tests
+(p-values). We designed an RV detection procedure that provides reliable p-value estimates while
+accounting for the various noise sources. The method can incorporate ancillary information about
+the noise (e.g., stellar activity indicators) and specific data- or context-driven data (e.g.,
+instrumental measurements, simulations of stellar variability) . The detection part of the procedure
+uses a detection test that is applied to a standardized periodogram. Standardization allows an
+autocalibration of the noise sources with partially unknown statistics. The estimation of the
+p-value of the test output is based on dedicated Monte Carlo simulations that allow handling unknown
+parameters. The procedure is versatile in the sense that the specific pair (periodogram and test)
+is chosen by the user. We demonstrate by extensive numerical experiments on synthetic and real RV
+data from the Sun and aCenB that the proposed method reliably allows estimating the p-values. The
+method also provides a way to evaluate the dependence of the estimated p-values that are attributed
+to a reported detection on modeling errors. It is a critical point for RV planet detection at low signal-to-noise
+ratio to evaluate this dependence. The python algorithms are available on GitHub. Accurate estimation
+of p-values when unknown parameters are involved is an important but only recently addressed question
+in the field of RV detection. Although this work presents a method to do this, the statistical literature
+discussed in this paper may trigger the development of other strategies. 

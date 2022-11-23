@@ -1,0 +1,19 @@
+Rust is a modern systems language focused on performance and reliability. Complementing Rust's
+promise to provide "fearless concurrency", developers frequently exploit asynchronous message
+passing. Unfortunately, arbitrarily ordering sending and receiving messages to maximise computation-communication
+overlap (a popular optimisation to message-passing applications) opens up a Pandora's box of further
+subtle concurrency bugs. To guarantee deadlock-freedom by construction, we present Rumpsteak:
+a new Rust framework based on multiparty session types. Previous session type implementations
+in Rust are either built upon synchronous and blocking communication and/or limited to two-party
+interactions. Crucially, none support the arbitrary ordering of messages for efficiency. Rumpsteak
+instead targets asynchronous async/await code. Its unique ability is allowing developers to arbitrarily
+order send/receive messages while preserving deadlock-freedom. For this, Rumpsteak incorporates
+two recent advanced session type theories: (1) k-multiparty compatibility (kmc), which globally
+verifies the safety of a set of participants, and (2) asynchronous multiparty session subtyping,
+which locally verifies optimisations in the context of a single participant. Specifically, we
+propose a novel algorithm for asynchronous subtyping that is both sound and decidable. We first
+evaluate the performance and expressiveness of Rumpsteak against three previous Rust implementations.
+We discover that Rumpsteak is around 1.7--8.6x more efficient and can safely express many more examples
+by virtue of offering arbitrary message ordering. Secondly, we analyse the complexity of our new
+algorithm and benchmark it against kmc and a binary session subtyping algorithm. We find they are
+exponentially slower than Rumpsteak's. 

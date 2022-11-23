@@ -1,0 +1,18 @@
+Face recognition (FR) has recently made substantial progress and achieved high accuracy on standard
+benchmarks. However, it has raised security concerns in enormous FR applications because deep
+CNNs are unusually vulnerable to adversarial examples, and it is still lack of a comprehensive robustness
+evaluation before a FR model is deployed in safety-critical scenarios. To facilitate a better understanding
+of the adversarial vulnerability on FR, we develop an adversarial robustness evaluation library
+on FR named \textbf{RobFR}, which serves as a reference for evaluating the robustness of downstream
+tasks. Specifically, RobFR involves 15 popular naturally trained FR models, 9 models with representative
+defense mechanisms and 2 commercial FR API services, to perform the robustness evaluation by using
+various adversarial attacks as an important surrogate. The evaluations are conducted under diverse
+adversarial settings in terms of dodging and impersonation, $\ell_2$ and $\ell_\infty$, as well
+as white-box and black-box attacks. We further propose a landmark-guided cutout (LGC) attack method
+to improve the transferability of adversarial examples for black-box attacks by considering the
+special characteristics of FR. Based on large-scale evaluations, the commercial FR API services
+fail to exhibit acceptable performance on robustness evaluation, and we also draw several important
+conclusions for understanding the adversarial robustness of FR models and providing insights
+for the design of robust FR models. RobFR is open-source and maintains all extendable modules, i.e.,
+\emph{Datasets}, \emph{FR Models}, \emph{Attacks\&Defenses}, and \emph{Evaluations} at \url{https://github.com/ShawnXYang/Face-Robustness-Benchmark},
+which will be continuously updated to promote future research on robust FR. 

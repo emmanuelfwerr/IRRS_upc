@@ -1,0 +1,20 @@
+Production-level workflows for producing convincing 3D dynamic human faces have long relied on
+a disarray of labor-intensive tools for geometry and texture generation, motion capture and rigging,
+and expression synthesis. Recent neural approaches automate individual components but the corresponding
+latent representations cannot provide artists explicit controls as in conventional tools. In
+this paper, we present a new learning-based, video-driven approach for generating dynamic facial
+geometries with high-quality physically-based assets. Two key components are well-structured
+latent spaces due to dense temporal samplings from videos and explicit facial expression controls
+to regulate the latent spaces. For data collection, we construct a hybrid multiview-photometric
+capture stage, coupling with an ultra-fast video camera to obtain raw 3D facial assets. We then model
+the facial expression, geometry and physically-based textures using separate VAEs with a global
+MLP-based expression mapping across the latent spaces, to preserve characteristics across respective
+attributes while maintaining explicit controls over geometry and texture. We also introduce to
+model the delta information as wrinkle maps for physically-base textures, achieving high-quality
+rendering of dynamic textures. We demonstrate our approach in high-fidelity performer-specific
+facial capture and cross-identity facial motion retargeting. In addition, our neural asset along
+with fast adaptation schemes can also be deployed to handle in-the-wild videos. Besides, we motivate
+the utility of our explicit facial disentangle strategy by providing promising physically-based
+editing results like geometry and material editing or winkle transfer with high realism. Comprehensive
+experiments show that our technique provides higher accuracy and visual fidelity than previous
+video-driven facial reconstruction and animation methods. 

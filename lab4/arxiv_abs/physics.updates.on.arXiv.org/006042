@@ -1,0 +1,20 @@
+Numerical simulations of geophysical and atmospheric flows have to rely on parameterizations
+of subgrid scale processes due to their limited spatial resolution. Despite substantial progress
+in developing parameterization (or closure) models for subgrid scale (SGS) processes using physical
+insights and mathematical approximations, they remain imperfect and can lead to inaccurate predictions.
+In recent years, machine learning has been successful in extracting complex patterns from high-resolution
+spatio-temporal data, leading to improved parameterization models, and ultimately better coarse
+grid prediction. However, the inability to satisfy known physics and poor generalization hinders
+the application of these models for real-world problems. In this work, we propose a frame invariant
+closure approach to improve the accuracy and generalizability of deep learning-based subgrid
+scale closure models by embedding physical symmetries directly into the structure of the neural
+network. Specifically, we utilized specialized layers within the convolutional neural network
+in such a way that desired constraints are theoretically guaranteed without the need for any regularization
+terms. We demonstrate our framework for a two-dimensional decaying turbulence test case mostly
+characterized by the forward enstrophy cascade. We show that our frame invariant SGS model (i) accurately
+predicts the subgrid scale source term, (ii) respects the physical symmetries such as translation,
+Galilean, and rotation invariance, and (iii) is numerically stable when implemented in coarse-grid
+simulation with generalization to different initial conditions and Reynolds number. This work
+builds a bridge between extensive physics-based theories and data-driven modeling paradigms,
+and thus represents a promising step towards the development of physically consistent data-driven
+turbulence closure models. 

@@ -1,0 +1,18 @@
+Multipoint evaluation is the computational task of evaluating a polynomial given as a list of coefficients
+at a given set of inputs. And while \emph{nearly linear time} algorithms have been known for the univariate
+instance of multipoint evaluation for close to five decades due to a work of Borodin and Moenck \cite{BM74},
+fast algorithms for the multivariate version have been much harder to come by. In a significant improvement
+to the state of art for this problem, Umans \cite{Umans08} and Kedlaya \& Umans \cite{Kedlaya11}
+gave nearly linear time algorithms for this problem over field of small characteristic and over
+all finite fields respectively, provided that the number of variables $n$ is at most $d^{o(1)}$
+where the degree of the input polynomial in every variable is less than $d$. They also stated the question
+of designing fast algorithms for the large variable case (i.e. $n \notin d^{o(1)}$) as an open problem.
+In this work, we show that there is a deterministic algorithm for multivariate multipoint evaluation
+over a field $\F_{q}$ of characteristic $p$ which evaluates an $n$-variate polynomial of degree
+less than $d$ in each variable on $N$ inputs in time $$\left((N + d^n)^{1 + o(1)}\poly(\log q, d, p,
+n)\right) \, ,$$ provided that $p$ is at most $d^{o(1)}$, and $q$ is at most $(\exp(\exp(\exp(\cdots
+(\exp(d)))))$, where the height of this tower of exponentials is fixed. When the number of variables
+is large (e.g. $n \notin d^{o(1)}$), this is the first {nearly linear} time algorithm for this problem
+over any (large enough) field.Our algorithm is based on elementary algebraic ideas and this algebraic
+structure naturally leads to the applications to data structure upper bounds for polynomial evaluation
+and to an upper bound on the rigidity of Vandermonde matrices. 

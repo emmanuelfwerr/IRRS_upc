@@ -1,0 +1,20 @@
+Understanding the abundance of a species is the first step towards understanding both its long-term
+sustainability and the impact that we may be having upon it. Ecologists use camera traps to remotely
+survey for the presence of specific animal species. Previous studies have shown that deep learning
+models can be trained to automatically detect and classify animals within camera trap imagery with
+high levels of confidence. However, the ability to train these models is reliant upon having enough
+high-quality training data. What happens when the animal is rare or the data sets are non-existent?
+This research proposes an approach of using images of rare animals in captivity (focusing on the
+Scottish wildcat) to generate the training dataset. We explore the challenges associated with
+generalising a model trained on captivity data when applied to data collected in the wild. The research
+is contextualised by the needs of ecologists in planning/engineering. Following precedents from
+other research, this project establishes an ensemble for object detection, image segmentation
+and image classification models which are then tested using different image manipulation and class
+structuring techniques to encourage model generalisation. The research concludes, in the context
+of Scottish wildcat, that models trained on captivity imagery cannot be generalised to wild camera
+trap imagery using existing techniques. However, final model performances based on a two-class
+model Wildcat vs Not Wildcat achieved an overall accuracy score of 81.6% and Wildcat accuracy score
+of 54.8% on a test set in which only 1% of images contained a wildcat. This suggests using captivity
+images is feasible with further research. This is the first research which attempts to generate
+a training set based on captivity data and the first to explore the development of such models in the
+context of ecologists in planning/engineering. 

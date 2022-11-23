@@ -1,0 +1,20 @@
+To improve predictive models for STEM applications, supplemental physics-based features computed
+from input parameters are introduced into single and multiple layers of a deep neural network (DNN).
+While many studies focus on informing DNNs with physics through differential equations or numerical
+simulation, much may be gained through integration of simplified relationships. To evaluate this
+hypothesis, a number of thin rectangular plates simply-supported on all edges are simulated for
+five materials. With plate dimensions and material properties as input features and fundamental
+natural frequency as the sole output, predictive performance of a purely data-driven DNN-based
+model is compared with models using additional inputs computed from simplified physical relationships
+among baseline parameters, namely plate weight, modulus of rigidity, and shear modulus. To better
+understand the benefit to model accuracy, these additional features are injected into various
+single and multiple DNN layers, and trained with four different dataset sizes. When these physics-enhanced
+models are evaluated against independent data of the same materials and similar dimensions to the
+training sets, supplementation with simplified physics-based parameters provides little reduction
+in prediction error over the baseline for models trained with dataset sizes of 60 and greater, although
+small improvement from 19.3% to 16.1% occurs when trained with a sparse size of 30. Conversely, notable
+accuracy gains occur when the independent test data is of material and dimensions not conforming
+to the training set. Specifically, when physics-enhanced data is injected into multiple DNN layers,
+reductions in error from 33.2% to 19.6%, 34.9% to 19.9%, 35.8% to 22.4%, and 43.0% to 28.4% are achieved
+for training dataset sizes of 261, 117, 60, and 30, respectively, demonstrating attainment of a
+degree of generalizability. 

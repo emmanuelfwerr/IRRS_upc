@@ -1,0 +1,19 @@
+This paper proposes a new approach for privacy-preserving and verifiable convolutional neural
+network (CNN) testing, enabling a CNN model developer to convince a user of the truthful CNN performance
+over non-public data from multiple testers, while respecting model privacy. To balance the security
+and efficiency issues, three new efforts are done by appropriately integrating homomorphic encryption
+(HE) and zero-knowledge succinct non-interactive argument of knowledge (zk-SNARK) primitives
+with the CNN testing. First, a CNN model to be tested is strategically partitioned into a private
+part kept locally by the model developer, and a public part outsourced to an outside server. Then,
+the private part runs over HE-protected test data sent by a tester and transmits its outputs to the
+public part for accomplishing subsequent computations of the CNN testing. Second, the correctness
+of the above CNN testing is enforced by generating zk-SNARK based proofs, with an emphasis on optimizing
+proving overhead for two-dimensional (2-D) convolution operations, since the operations dominate
+the performance bottleneck during generating proofs. We specifically present a new quadratic
+matrix programs (QMPs)-based arithmetic circuit with a single multiplication gate for expressing
+2-D convolution operations between multiple filters and inputs in a batch manner. Third, we aggregate
+multiple proofs with respect to a same CNN model but different testers' test data (i.e., different
+statements) into one proof, and ensure that the validity of the aggregated proof implies the validity
+of the original multiple proofs. Lastly, our experimental results demonstrate that our QMPs-based
+zk-SNARK performs nearly 13.9$\times$faster than the existing QAPs-based zk-SNARK in proving
+time, and 17.6$\times$faster in Setup time, for high-dimension matrix multiplication. 

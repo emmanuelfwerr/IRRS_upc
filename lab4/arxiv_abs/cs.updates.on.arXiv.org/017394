@@ -1,0 +1,20 @@
+Compared with other imaging modalities, intravascular optical coherence tomography (IVOCT)
+has significant advantages for guiding percutaneous coronary interventions. To aid IVOCT research
+studies, we developed the Optical Coherence TOmography PlaqUe and Stent (OCTOPUS) analysis software.
+To automate image analysis results, the software includes several important algorithmic steps:
+pre-processing, deep learning plaque segmentation, machine learning identification of stent
+struts, and registration of pullbacks. Interactive visualization and manual editing of segmentations
+were included in the software. Quantifications include stent deployment characteristics (e.g.,
+stent strut malapposition), strut level analysis, calcium angle, and calcium thickness measurements.
+Interactive visualizations include (x,y) anatomical, en face, and longitudinal views with optional
+overlays. Underlying plaque segmentation algorithm yielded excellent pixel-wise results (86.2%
+sensitivity and 0.781 F1 score). Using OCTOPUS on 34 new pullbacks, we determined that following
+automated segmentation, only 13% and 23% of frames needed any manual touch up for detailed lumen
+and calcification labeling, respectively. Only up to 3.8% of plaque pixels were modified, leading
+to an average editing time of only 7.5 seconds/frame, an approximately 80% reduction compared to
+manual analysis. Regarding stent analysis, sensitivity and precision were both greater than 90%,
+and each strut was successfully classified as either covered or uncovered with high sensitivity
+(94%) and specificity (90%). We introduced and evaluated the clinical application of a highly automated
+software package, OCTOPUS, for quantitative plaque and stent analysis in IVOCT images. The software
+is currently used as an offline tool for research purposes; however, the software's embedded algorithms
+may also be useful for real-time treatment planning. 

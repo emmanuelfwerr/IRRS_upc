@@ -1,0 +1,20 @@
+A digital twin is a computer model that represents an individual, for example, a component, a patient
+or a process. In many situations, we want to gain knowledge about an individual from its data while
+incorporating imperfect physical knowledge and also learn from data from other individuals. In
+this paper, we introduce and demonstrate a fully Bayesian methodology for learning between digital
+twins in a setting where the physical parameters of each individual are of interest. For each individual,
+the methodology is based on Bayesian calibration with model discrepancy. Through the discrepancy,
+modelled as a Gaussian process, the imperfect low-fidelity physical model is accounted for. Using
+ideas from Bayesian hierarchical models, a joint probabilistic model of digital twins is constructed
+by connecting them through a new level in the hierarchy. For the physical parameters, the methodology
+can be seen as using a prior distribution in the individual model that is the posterior of the corresponding
+hyperparameter in the joint model. For learning the imperfect physics between individuals two
+approaches are introduced, one that assumes the same discrepancy for all individuals and one that
+can be seen as using a prior learned from all individuals for the parameters of the Gaussian processes
+representing the discrepancies. Based on recent advances related to physics-informed priors,
+Hamiltonian Monte Carlo methods and using these for inverse problems we set up an inference methodology
+that allows our approach to be computational feasible also for physical models based on partial
+differential equations and individual data that are not aligned. The methodology is demonstrated
+in two synthetic case studies, a toy example previously used in the literature extended to more individuals
+and an example based on a cardiovascular differential equation model relevant for the treatment
+of hypertension. 

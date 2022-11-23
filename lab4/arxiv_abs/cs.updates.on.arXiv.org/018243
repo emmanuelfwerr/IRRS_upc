@@ -1,0 +1,19 @@
+Advancing ocean science has a significant impact to the development of the world, from operating
+a safe navigation for vessels to maintaining a healthy and diverse ocean ecosystem. Various ocean
+software systems have been extensively adopted for different purposes, for instance, predicting
+hourly sea level elevation across shorelines, simulating large-scale ocean circulations, as
+well as integrating into Earth system models for weather forecasts and climate projections. Regardless
+of their significance, guaranteeing the trustworthiness of ocean software and modelling systems
+is a long-standing challenge. The testing of ocean software suffers a lot from the so-called oracle
+problem, which refers to the absence of test oracles mainly due to the nonlinear interactions of
+multiple physical variables and the high complexity in computation. In the ocean, observed tidal
+signals are distorted by non-deterministic physical variables, hindering us from knowing the
+"true" astronomical tidal constituents existing in the timeseries. In this paper, we present how
+to test tidal analysis and prediction (TAP) software based on metamorphic testing (MT), a simple
+yet effective testing approach to the oracle problem. In particular, we construct metamorphic
+relations from the periodic property of astronomical tide, and then use them to successfully detect
+a real-life defect in an open-source TAP software. We also conduct a series of experiments to further
+demonstrate the applicability and effectiveness of MT in the testing of TAP software. Our study
+not only justifies the potential of MT in testing more complex ocean software and modelling systems,
+but also can be expanded to assess and improve the quality of a broader range of scientific simulation
+software systems. 

@@ -1,0 +1,19 @@
+In the last decade, several studies have proposed the use of automated techniques to estimate the
+effort of agile software development. In this paper we perform a close replication and extension
+of a seminal work proposing the use of Deep Learning for agile effort estimation (namely Deep-SE),
+which has set the state-of-the-art since. Specifically, we replicate three of the original research
+questions aiming at investigating the effectiveness of Deep-SE for both within-project and cross-project
+effort estimation. We benchmark Deep-SE against three baseline techniques (i.e., Random, Mean
+and Median effort prediction) and a previously proposed method to estimate agile software project
+development effort (dubbed TF/IDF-SE), as done in the original study. To this end, we use both the
+data from the original study and a new larger dataset of 31,960 issues, which we mined from 29 open-source
+projects. Using more data allows us to strengthen our confidence in the results and further mitigate
+the threat to the external validity of the study. We also extend the original study by investigating
+two additional research questions. One evaluates the accuracy of Deep-SE when the training set
+is augmented with issues from all other projects available in the repository at the time of estimation,
+and the other examines whether an expensive pre-training step used by the original Deep-SE, has
+any beneficial effect on its accuracy and convergence speed. The results of our replication show
+that Deep-SE outperforms the Median baseline estimator and TF/IDF-SE in only very few cases with
+statistical significance (8/42 and 9/32 cases, respectively), thus confounding previous findings
+on the efficacy of Deep-SE. The two additional RQs revealed that neither augmenting the training
+set nor pre-training Deep-SE play a role in improving its accuracy and convergence speed. ... 

@@ -1,0 +1,19 @@
+Multi-Agent Path Finding (MAPF) is a problem of finding a sequence of movements for agents to reach
+their assigned location without collision. Centralized algorithms usually give optimal solutions,
+but have difficulties to scale without employing various techniques - usually with a sacrifice
+of optimality; but solving MAPF problems with the number of agents greater than a thousand remains
+a challenge nevertheless. To tackle the scalability issue, we present DMAPF - a decentralized and
+distributed MAPF solver, which is a continuation of our recently published work, ros-dmapf. We
+address the issues of ros-dmapf where it (i) only works in maps without obstacles; and (ii) has a low
+success rate with dense maps. Given a MAPF problem, both ros-dmapf and DMAPF divide the map spatially
+into subproblems, but the latter further divides each subproblem into disconnected regions called
+areas. Each subproblem is assigned to a distributed solver, which then individually creates an
+abstract plan - a sequence of areas that an agent needs to visit - for each agent in it, and interleaves
+agent migration with movement planning. Answer Set Programming, which is known for its performance
+in small but complex problems, is used in many parts including problem division, abstract planning,
+border assignment for the migration, and movement planning. Robot Operating System is used to facilitate
+communication between the solvers and to enable the opportunity to integrate with robotic systems.
+DMAPF introduces a new interaction protocol between the solvers, and mechanisms that together
+result in a higher success rate and better solution quality without sacrificing much of the performance.
+We implement and experimentally validate DMAPF by comparing it with other state-of-the-art MAPF
+solvers and the results show that our system achieves better scalability. 

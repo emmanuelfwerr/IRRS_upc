@@ -1,0 +1,20 @@
+Optimal stopping is a fundamental class of stochastic dynamic optimization problems with numerous
+applications in finance and operations management. We introduce a new approach for solving computationally-demanding
+stochastic optimal stopping problems with known probability distributions. The approach uses
+simulation to construct a robust optimization problem that approximates the stochastic optimal
+stopping problem to any arbitrary accuracy; we then solve the robust optimization problem to obtain
+near-optimal Markovian stopping rules for the stochastic optimal stopping problem. In this paper,
+we focus on designing algorithms for solving the robust optimization problems that approximate
+the stochastic optimal stopping problems. These robust optimization problems are challenging
+to solve because they require optimizing over the infinite-dimensional space of all Markovian
+stopping rules. We overcome this challenge by characterizing the structure of optimal Markovian
+stopping rules for the robust optimization problems. In particular, we show that optimal Markovian
+stopping rules for the robust optimization problems have a structure that is surprisingly simple
+and finite-dimensional. We leverage this structure to develop an exact reformulation of the robust
+optimization problem as a zero-one bilinear program over totally unimodular constraints. We show
+that the bilinear program can be solved in polynomial time in special cases, establish computational
+complexity results for general cases, and develop polynomial-time heuristics by relating the
+bilinear program to the maximal closure problem from graph theory. Numerical experiments demonstrate
+that our algorithms for solving the robust optimization problems are practical and can outperform
+state-of-the-art simulation-based algorithms in the context of widely-studied stochastic optimal
+stopping problems from high-dimensional option pricing. 

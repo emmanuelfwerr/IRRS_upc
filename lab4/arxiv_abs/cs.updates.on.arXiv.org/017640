@@ -1,0 +1,19 @@
+We consider a single source-destination pair, where information updates arrive at the source at
+arbitrary time instants. For each update, its size, i.e. the service time required for complete
+transmission to the destination, is also arbitrary. At any time, age of information (AoI) is equal
+to the difference between the current time, and the arrival time of the latest update (at the source)
+that has been completely transmitted (to the destination). AoI quantifies the staleness of the
+update (information) at the destination. The goal is to find a causal scheduling policy that minimizes
+the time average of AoI, where the possible decisions at any time are i) whether to preempt the update
+under transmission upon arrival of a new update, and ii) if no update is under transmission, then
+choose which update to transmit (among the available updates). In this paper, we propose a causal
+policy called SRPT$^+$ that at each time, i) preempts the update under transmission if a new update
+arrives with a smaller size, and ii) if no update is under transmission, then begins to transmit the
+update for which the ratio of the reduction in AoI upon complete transmission (if not preempted in
+future) and the remaining size, is maximum. We characterize the performance of SRPT$^+$ using the
+metric called the competitive ratio, i.e. the ratio of the average AoI of causal policy and the average
+AoI of an optimal offline policy (that knows the entire input in advance), maximized over all possible
+inputs. We show that the competitive ratio of SRPT$^+$ is at most $4$. Further, we propose a simpler
+policy called SRPT$^L$, that i) preempts the update under transmission if a new update arrives with
+a smaller size, and ii) if no update is under transmission, then begins to transmit the update with
+the latest arrival time. We show that the competitive ratio of SRPT$^L$ is at most $29$. 

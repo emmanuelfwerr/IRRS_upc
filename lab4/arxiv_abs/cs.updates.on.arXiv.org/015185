@@ -1,0 +1,20 @@
+A fundamental problem in statistics is to compare the outcomes attained by members of subpopulations.
+This problem arises in the analysis of randomized controlled trials, in the analysis of A/B tests,
+and in the assessment of fairness and bias in the treatment of sensitive subpopulations, especially
+when measuring the effects of algorithms and machine learning. Often the comparison makes the most
+sense when performed separately for individuals who are similar according to certain characteristics
+given by the values of covariates of interest; the separate comparisons can also be aggregated in
+various ways to compare across all values of the covariates. Separating, segmenting, or stratifying
+into those with similar values of the covariates is also known as "conditioning on" or "controlling
+for" those covariates; controlling for age or annual income is common. Two standard methods of controlling
+for covariates are (1) binning and (2) regression modeling. Binning requires making fairly arbitrary,
+yet frequently highly influential choices, and is unsatisfactorily temperamental in multiple
+dimensions, with multiple covariates. Regression analysis works wonderfully when there is good
+reason to believe in a particular parameterized regression model or classifier (such as logistic
+regression). Thus, there appears to be no extant canonical fully non-parametric regression for
+the comparison of subpopulations, not while conditioning on multiple specified covariates. Existing
+methods rely on analysts to make choices, and those choices can be debatable; analysts can deceive
+others or even themselves. The present paper aims to fill the gap, combining two ingredients: (1)
+recently developed methodologies for such comparisons that already exist when conditioning on
+a single scalar covariate and (2) the Hilbert space-filling curve that maps continuously from one
+dimension to multiple dimensions. 

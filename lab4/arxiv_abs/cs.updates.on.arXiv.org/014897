@@ -1,0 +1,20 @@
+Intersection is one of the most complex and accident-prone urban scenarios for autonomous driving
+wherein making safe and computationally efficient decisions is non-trivial. Current research
+mainly focuses on the simplified traffic conditions while ignoring the existence of mixed traffic
+flows, i.e., vehicles, cyclists and pedestrians. For urban roads, different participants leads
+to a quite dynamic and complex interaction, posing great difficulty to learn an intelligent policy.
+This paper develops the dynamic permutation state representation in the framework of integrated
+decision and control (IDC) to handle signalized intersections with mixed traffic flows. Specially,
+this representation introduces an encoding function and summation operator to construct driving
+states from environmental observation, capable of dealing with different types and variant number
+of traffic participants. A constrained optimal control problem is built wherein the objective
+involves tracking performance and the constraints for different participants and signal lights
+are designed respectively to assure safety. We solve this problem by offline optimizing encoding
+function, value function and policy function, wherein the reasonable state representation will
+be given by the encoding function and then served as the input of policy and value function. An off-policy
+training is designed to reuse observations from driving environment and backpropagation through
+time is utilized to update the policy function and encoding function jointly. Verification result
+shows that the dynamic permutation state representation can enhance the driving performance of
+IDC, including comfort, decision compliance and safety with a large margin. The trained driving
+policy can realize efficient and smooth passing in the complex intersection, guaranteeing driving
+intelligence and safety simultaneously. 

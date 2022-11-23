@@ -1,0 +1,18 @@
+Infrared small target super-resolution (SR) aims to recover reliable and detailed high-resolution
+image with highcontrast targets from its low-resolution counterparts. Since the infrared small
+target lacks color and fine structure information, it is significant to exploit the supplementary
+information among sequence images to enhance the target. In this paper, we propose the first infrared
+small target SR method named local motion and contrast prior driven deep network (MoCoPnet) to integrate
+the domain knowledge of infrared small target into deep network, which can mitigate the intrinsic
+feature scarcity of infrared small targets. Specifically, motivated by the local motion prior
+in the spatio-temporal dimension, we propose a local spatiotemporal attention module to perform
+implicit frame alignment and incorporate the local spatio-temporal information to enhance the
+local features (especially for small targets). Motivated by the local contrast prior in the spatial
+dimension, we propose a central difference residual group to incorporate the central difference
+convolution into the feature extraction backbone, which can achieve center-oriented gradient-aware
+feature extraction to further improve the target contrast. Extensive experiments have demonstrated
+that our method can recover accurate spatial dependency and improve the target contrast. Comparative
+results show that MoCoPnet can outperform the state-of-the-art video SR and single image SR methods
+in terms of both SR performance and target enhancement. Based on the SR results, we further investigate
+the influence of SR on infrared small target detection and the experimental results demonstrate
+that MoCoPnet promotes the detection performance. The code is available at https://github.com/XinyiYing/MoCoPnet.

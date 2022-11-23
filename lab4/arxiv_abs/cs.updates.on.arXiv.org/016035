@@ -1,0 +1,18 @@
+We consider Time-to-Live (TTL) caches that tag every object in cache with a specific (and possibly
+renewable) expiration time. State-of-the-art models for TTL caches assume zero object fetch delay,
+i.e., the time required to fetch a requested object that is not in cache from a different cache or the
+origin server. Particularly, in cache hierarchies, this delay has a significant impact on performance
+metrics such as the object hit probability. Recent work suggests that the impact of the object fetch
+delay on the cache performance will continue to increase due to the scaling mismatch between shrinking
+inter-request times (due to higher data center link rates) in contrast to processing and memory
+access times. In this paper, we analyze tree-based cache hierarchies with random object fetch delays
+and provide an exact analysis of the corresponding object hit probability. Our analysis allows
+understanding the impact of random delays and TTLs on cache metrics for a wide class of request stream
+models characterized through Markov arrival processes. This is expressed through a metric that
+we denote delay impairment of the hit probability. In addition, we analyze and extend state-of-the-art
+approximations of the hit probability to take the delay into account. We provide numerical and trace-based
+simulation-based evaluation results showing that larger TTLs do not efficiently compensate for
+the detrimental effect of object fetch delays. Our evaluations also show that unlike our exact model
+the state-of-the-art approximations do not capture the impact of the object fetch delay well especially
+for cache hierarchies. Surprisingly, we show that the impact of this delay on the hit probability
+is not monotonic but depends on the request stream properties, as well as, the TTL. 

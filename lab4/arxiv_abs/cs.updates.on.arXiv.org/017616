@@ -1,0 +1,19 @@
+Most real-world ecological dynamics, ranging from ecosystem dynamics to collective animal movement,
+are inherently stochastic in nature. Stochastic differential equations (SDEs) are a popular modelling
+framework to model dynamics with intrinsic randomness. Here, we focus on the inverse question:
+If one has empirically measured time-series data from some system of interest, is it possible to
+discover the SDE model that best describes the data. Here, we present PyDaddy (PYthon library for
+DAta Driven DYnamics), a toolbox to construct and analyze interpretable SDE models based on time-series
+data. We combine traditional approaches for data-driven SDE reconstruction with an equation learning
+approach, to derive symbolic equations governing the stochastic dynamics. The toolkit is presented
+as an open-source Python library, and consists of tools to construct and analyze SDEs. Functionality
+is included for visual examination of the stochastic structure of the data, guided extraction of
+the functional form of the SDE, and diagnosis and debugging of the underlying assumptions and the
+extracted model. Using simulated time-series datasets, exhibiting a wide range of dynamics, we
+show that PyDaddy is able to correctly identify underlying SDE models. We demonstrate the applicability
+of the toolkit to real-world data using a previously published movement data of a fish school. Starting
+from the time-series of the observed polarization of the school, pyDaddy readily discovers the
+SDE model governing the dynamics of group polarization. The model recovered by PyDaddy is consistent
+with the previous study. In summary, stochastic and noise-induced effects are central to the dynamics
+of many biological systems. In this context, we present an easy-to-use package to reconstruct SDEs
+from timeseries data. 

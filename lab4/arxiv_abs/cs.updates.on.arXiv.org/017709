@@ -1,0 +1,19 @@
+We study the single-choice prophet inequality problem, where a gambler faces a sequence of $n$ online
+i.i.d. random variables drawn from an unknown distribution. When a variable reveals its value,
+the gambler needs to decide irrevocably whether or not to accept it. The goal is to maximize the competitive
+ratio between the expected gain of the gambler and that of the maximum variable. It is shown by Correa
+et al. that when the distribution is unknown or only $o(n)$ uniform samples from the distribution
+are given, the best an algorithm can do is $1/e$-competitive. In contrast, when the distribution
+is known or $\Omega(n)$ uniform samples are given, the optimal competitive ratio 0.7451 can be achieved.
+In this paper, we propose a new model in which the algorithm has access to an oracle that answers quantile
+queries about the distribution, and study the extent to which we can use a small number of queries
+to achieve good competitive ratios. Naturally, by making queries to the oracle, one can implement
+the threshold-based blind strategies that use the answers from the queries as thresholds to accept
+variables. Our first contribution is to prove that the competitive ratio improves gracefully with
+the number of thresholds. Particularly with two thresholds our algorithm achieves a competitive
+ratio of 0.6786. Our second contribution, surprisingly, shows that with a single query, we can do
+strictly better than with a single threshold. The algorithm sets a threshold in the first phase by
+making a single query and uses the maximum realization from the first phase as the threshold for the
+second phase. It can be viewed as a natural combination of the single-threshold algorithm and the
+algorithm for the secretary problem. By properly choosing the quantile to query and the break-point
+between the two phases, we achieve a competitive ratio of 0.6718. 

@@ -1,0 +1,19 @@
+Systemic lupus erythematosus (SLE) is a rare autoimmune disorder characterized by an unpredictable
+course of flares and remission with diverse manifestations. Lupus nephritis, one of the major disease
+manifestations of SLE for organ damage and mortality, is a key component of lupus classification
+criteria. Accurately identifying lupus nephritis in electronic health records (EHRs) would therefore
+benefit large cohort observational studies and clinical trials where characterization of the
+patient population is critical for recruitment, study design, and analysis. Lupus nephritis can
+be recognized through procedure codes and structured data, such as laboratory tests. However,
+other critical information documenting lupus nephritis, such as histologic reports from kidney
+biopsies and prior medical history narratives, require sophisticated text processing to mine
+information from pathology reports and clinical notes. In this study, we developed algorithms
+to identify lupus nephritis with and without natural language processing (NLP) using EHR data.
+We developed four algorithms: a rule-based algorithm using only structured data (baseline algorithm)
+and three algorithms using different NLP models. The three NLP models are based on regularized logistic
+regression and use different sets of features including positive mention of concept unique identifiers
+(CUIs), number of appearances of CUIs, and a mixture of three components respectively. The baseline
+algorithm and the best performed NLP algorithm were external validated on a dataset from Vanderbilt
+University Medical Center (VUMC). Our best performing NLP model incorporating features from both
+structured data, regular expression concepts, and mapped CUIs improved F measure in both the NMEDW
+(0.41 vs 0.79) and VUMC (0.62 vs 0.96) datasets compared to the baseline lupus nephritis algorithm.

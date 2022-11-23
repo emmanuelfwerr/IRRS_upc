@@ -1,0 +1,20 @@
+In chaotic dynamical systems such as the weather, prediction errors grow faster in some situations
+than in others. Real-time knowledge about the error growth could enable strategies to adjust the
+modelling and forecasting infrastructure on-the-fly to increase accuracy and/or reduce computation
+time. For example one could change the spatio-temporal resolution of the numerical model, locally
+increase the data availability, etc. Local Lyapunov exponents are known indicators of the rate
+at which very small prediction errors grow over a finite time interval. However, their computation
+is very expensive: it requires maintaining and evolving a tangent linear model and orthogonalisation
+algorithms. In this study, we investigate the capability of supervised machine learning to estimate
+the imminent local Lyapunov exponents, from input of current and recent time steps of the system
+trajectory. Thus machine learning is not used here to emulate a physical model or some of its components,
+but "non intrusively" as a complementary tool. Specifically, we test the accuracy of four popular
+supervised learning algorithms: regression trees, multilayer perceptrons, convolutional neural
+networks and long short-term memory networks. Experiments are conducted on two low-dimensional
+chaotic systems of ordinary differential equations, the Lorenz 63 and the R\"ossler models. We
+find that on average the machine learning algorithms predict the stable local Lyapunov exponent
+accurately, the unstable exponent reasonably accurately, and the neutral exponent only somewhat
+accurately. We show that greater prediction accuracy is associated with local homogeneity of the
+local Lyapunov exponents on the system attractor. Importantly, the situations in which (forecast)
+errors grow fastest are not necessarily the same as those where it is more difficult to predict local
+Lyapunov exponents with machine learning. 

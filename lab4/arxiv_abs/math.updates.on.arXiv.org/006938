@@ -1,0 +1,22 @@
+We consider the FCFS $GI/GI/n$ queue, and prove the first simple and explicit bounds that scale as
+$\frac{1}{1-\rho}$ (and sometimes better). Here $\rho$ denotes the corresponding traffic intensity.
+Conceptually, our results can be viewed as a multi-server analogue of Kingman's bound. Our main
+results are bounds for the tail of the steady-state queue length and the steady-state probability
+of delay. The strength of our bounds (e.g. in the form of tail decay rate) is a function of how many moments
+of the inter-arrival and service distributions are assumed finite. More formally, suppose that
+the inter-arrival and service times (distributed as random variables $A$ and $S$ respectively)
+have finite $r$th moment for some $r > 2.$ Let $\mu_A$ (respectively $\mu_S$) denote $\frac{1}{\mathbb{E}[A]}$
+(respectively $\frac{1}{\mathbb{E}[S]}$). Then our bounds (also for higher moments) are simple
+and explicit functions of $\mathbb{E}\big[(A \mu_A)^r\big], \mathbb{E}\big[(S \mu_S)^r\big],
+r$, and $\frac{1}{1-\rho}$ only. Our bounds scale gracefully even when the number of servers grows
+large and the traffic intensity converges to unity simultaneously, as in the Halfin-Whitt scaling
+regime. Some of our bounds scale better than $\frac{1}{1-\rho}$ in certain asymptotic regimes.
+More precisely, they scale as $\frac{1}{1-\rho}$ multiplied by an inverse polynomial in $n(1 -
+\rho)^2.$ These results formalize the intuition that bounds should be tighter in light traffic
+as well as certain heavy-traffic regimes (e.g. with $\rho$ fixed and $n$ large). In these same asymptotic
+regimes we also prove bounds for the tail of the steady-state number in service. Our main proofs proceed
+by explicitly analyzing the bounding process which arises in the stochastic comparison bounds
+of amarnik and Goldberg for multi-server queues. Along the way we derive several novel results for
+suprema of random walks and pooled renewal processes which may be of independent interest. We also
+prove several additional bounds using drift arguments (which have much smaller pre-factors),
+and make several conjectures which would imply further related bounds and generalizations. 

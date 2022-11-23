@@ -1,0 +1,21 @@
+Aims. The present study aims at providing a deeper insight into the power and limitation of an unsupervised
+classification algorithm (called Fisher-EM) on spectra of galaxies. This algorithm uses a Gaussian
+mixture in a discriminative latent subspace. To this end, we investigate the capacity of this algorithm
+to segregate the physical parameters used to generate mock spectra and the influence of the noise
+on the classification. Methods. With the code CIGALE and different values for nine input parameters
+characterising the stellar population, we have simulated a sample of 11 475 optical spectra of galaxies
+containing 496 monochromatic fluxes. The statistical model and the optimum number of clusters
+is given in Fisher-EM by the integrated completed likelihood (ICL) criterion. We repeated the analyses
+several times to assess the robustness of the results. Results. Two distinct classifications can
+be distinguished in the case of the noiseless spectra. The one above 13 clusters disappears when
+noise is added, while the classification with 12 clusters is very robust against noise down to a signal
+to noise ratio (SNR) of 3. At SNR=1, the optimum is 5 clusters, but the classification is still compatible
+with the previous one. The distribution of the parameters used for the simulation shows an excellent
+discrimination between classes. A higher dispersion both in the spectra within each class and in
+the parameter distribution, leads us to conclude that despite a much higher ICL, the classification
+with more than 13 clusters in the noiseless case is not physically relevant. Conclusions. This study
+yields two conclusions valid at least for the Fisher-EM algorithm. Firstly, the unsupervised classification
+of spectra of galaxies is both reliable and robust to noise. Secondly, such analyses are able to extract
+the useful physical information contained in the spectra and to build highly meaningful classifications.
+In an epoch of data-driven astrophysics, it is important to trust unsupervised machine learning
+approaches that do not require training samples which are unavoidably biased. 

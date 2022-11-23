@@ -1,0 +1,19 @@
+In a multi-party fair coin-flipping protocol, the parties output a common (close to) unbiased bit,
+even when some adversarial parties try to bias the output. In this work we focus on the case of an arbitrary
+number of corrupted parties. Cleve [STOC 1986] has shown that in any such $m$-round coin-flipping
+protocol, the corrupted parties can bias the honest parties' common output bit by $\Theta(1/m)$.
+For more than two decades, the best known coin-flipping protocol was the one of Awerbuch et al. [Manuscript
+1985], who presented a $t$-party, $m$-round protocol with bias $\Theta(t/\sqrt{m})$. This was
+changed by the breakthrough result of Moran et al. [TCC 2009], who constructed an $m$-round, two-party
+coin-flipping protocol with optimal bias $\Theta(1/m)$. Haitner and Tsfadia [STOC 2014] constructed
+an $m$-round, three-party coin-flipping protocol with bias $O(\log^3m / m)$. Still for the case
+of more than three parties, the best known protocol remained the $\Theta(t/\sqrt{m})$-bias protocol
+of Awerbuch et al. We make a step towards eliminating the above gap, presenting a $t$-party, $m$-round
+coin-flipping protocol, with bias $O(\frac{t^4 \cdot 2^t \cdot \sqrt{\log m}}{m^{1/2+1/\left(2^{t-1}-2\right)}})$
+for any $t\le \tfrac12 \log\log m$. This improves upon the $\Theta(t/\sqrt{m})$-bias protocol
+of Awerbuch et al., and in particular, for $t\in O(1)$ it is an $1/m^{\frac12 + \Theta(1)}$-bias
+protocol. For the three-party case, it is an $O(\sqrt{\log m}/m)$-bias protocol, improving over
+the $O(\log^3m / m)$-bias protocol of Haitner and Tsfadia. Our protocol generalizes that of Haitner
+and Tsfadia, by presenting an appropriate recovery protocol for the remaining parties to interact
+in, in the case that some parties abort or are caught cheating. We prove the fairness of the new protocol
+by presenting a new paradigm for analyzing fairness of coin-flipping protocols. 

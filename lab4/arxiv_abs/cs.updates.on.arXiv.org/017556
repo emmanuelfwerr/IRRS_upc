@@ -1,0 +1,19 @@
+We study a new algorithmic process of graph growth. The process starts from a single initial vertex
+u_0 and operates in discrete time-steps, called \emph{slots}. In every slot t\geq 1, the process
+updates the current graph instance to generate the next graph instance G_t, according to the following
+vertex and edge update rules. The process first sets G_t = G_{t-1}. Then, for every u\in V(G_{t-1}),
+it adds at most one new vertex u' to V(G_{t}) and adds the edge uu' to E(G_{t}) alongside any subset
+of the edges {vu' | v\in V(G_{t-1}) is at distance at most d-1 from u in G_{t-1}}, for some integer d\geq
+1 fixed in advance. The process completes slot t after removing any (possibly empty) subset of edges
+from E(G_{t}). Removed edges are called \emph{excess edges}. Graph Growth Problem: Given a graph
+family F, we are asked to design a \emph{centralized} algorithm that on any input \emph{target graph}
+G\in F, will output such a process growing G, called a \emph{growth schedule} for G. Additionally,
+the algorithm should try to minimize the total number of slots k and of excess edges \ell used by the
+process. We show that the most interesting case is when d = 2 and that there is a natural trade-off between
+k and \ell. On the positive side, we provide polynomial-time algorithms that decide whether a graph
+has growth schedules of k=\log n or k=n-1 slots. Along the way, interesting connections to cop-win
+graphs are being revealed. On the negative side, we establish strong hardness results for determining
+the minimum number of slots required to grow a graph with zero excess edges. We then show that trees
+can be grown in a polylogarithmic number of slots using linearly many excess edges, while planar
+graphs can be grown in a logarithmic number of slots using O(n\log n) excess edges. We also give lower
+bounds on the number of excess edges, when the number of slots is fixed to \log n. 

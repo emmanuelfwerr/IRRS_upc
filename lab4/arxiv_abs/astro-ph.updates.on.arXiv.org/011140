@@ -1,0 +1,20 @@
+Next-generation surveys will provide photometric and spectroscopic data of millions to billions
+of galaxies with unprecedented precision. This offers a unique chance to improve our understanding
+of the galaxy evolution and the unresolved nature of dark matter (DM). At galaxy scales, the density
+distribution of DM is strongly affected by the astrophysical feedback processes, which are difficult
+to fully account for in classical techniques to derive mass models. In this work, we explore the capability
+of supervised learning algorithms to predict the DM content of galaxies from luminous observational-like
+parameters, using the public catalog of the TNG100 simulation. In particular, we use Photometric,
+Structural and Kinematic parameters to predict the total DM mass, DM half-mass radius, DM mass inside
+one and two stellar half-mass radii. We adopt the coefficient of determination, $R^2$, as a reference
+metric to evaluate the accuracy of these predictions. We find that the Photometric features alone
+are able to predict the total DM mass with fair accuracy, while Structural and Photometric features
+together are more effective to determine the DM inside the stellar half mass radius, and the DM within
+twice the stellar half mass radius. However, using all observational quantities together (Photometry,
+Structural and Kinematics) incredibly improves the overall accuracy for all DM quantities. This
+first test shows that Machine Learning tools are promising approaches to derive predictions of
+the DM in real galaxies. The next steps will be to improve observational realism of the training sets,
+by closely select samples which accurately reproduce the typical observed luminous scaling relations.
+The trained pipelines will be suitable for real galaxy data collected from the next-generation
+surveys like Rubin/LSST, Euclid, CSST, 4MOST, DESI, to derive, e.g., the properties of their central
+DM fractions. 

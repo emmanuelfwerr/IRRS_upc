@@ -1,0 +1,18 @@
+Let $\sigma$ be a first-order signature and let $\mathbf{W}_n$ be the set of all $\sigma$-structures
+with domain $[n] = \{1, \ldots, n\}$. We can think of each structure in $\mathbf{W}_n$ as representing
+a "possible (state of the) world". By an inference framework we mean a class $\mathbf{F}$ of pairs
+$(\mathbb{P}, L)$, where $\mathbb{P} = (\mathbb{P}_n : n = 1, 2, 3, \ldots)$ and each $\mathbb{P}_n$
+is a probability distribution on $\mathbb{W}_n$, and $L$ is a logic with truth values in the unit
+interval $[0, 1]$. From the point of view of probabilistic and logical expressivity one may consider
+an inference framework as optimal if it allows any pair $(\mathbb{P}, L)$ where $\mathbb{P} = (\mathbb{P}_n
+: n = 1, 2, 3, \ldots)$ is a sequence of probability distributions on $\mathbb{W}_n$ and $L$ is a logic.
+But from the point of view of using a pair $(\mathbb{P}, L)$ from such an inference framework for making
+inferences on $\mathbb{W}_n$ when $n$ is large we face the problem of computational complexity.
+This motivates looking for an "optimal" trade-off (in a given context) between expressivity and
+computational efficiency. We define a notion that an inference framework is "asymptotically at
+least as expressive" as another inference framework. This relation is a preorder and we describe
+a (strict) partial order on the equivalence classes of some inference frameworks that in our opinion
+are natural in the context of machine learning and artificial intelligence. The results have bearing
+on issues concerning efficient learning and probabilistic inference, but are also new instances
+of results in finite model theory about "almost sure elimination" of extra syntactic features (e.g
+quantifiers) beyond the connectives. Often such a result has a logical convergence law as a corollary.

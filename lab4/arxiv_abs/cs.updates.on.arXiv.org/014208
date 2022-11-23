@@ -1,0 +1,19 @@
+We consider a network consisting of a single source and $n$ receiver nodes that are grouped into equal-sized
+clusters. We use cluster heads in each cluster to facilitate communication between the source and
+the nodes within that cluster. Inside clusters, nodes are connected to each other according to a
+given network topology. Based on the connectivity among the nodes, each node relays its current
+stored version of the source update to its neighboring nodes by $local$ $gossiping$. We use the $version$
+$age$ metric to assess information freshness at the nodes. We consider disconnected, ring, and
+fully connected network topologies for each cluster. For each network topology, we characterize
+the average version age at each node and find the average version age scaling as a function of the network
+size $n$. Our results indicate that per node average version age scalings of $O(\sqrt{n})$, $O(n^{\frac{1}{3}})$,
+and $O(\log n)$ are achievable in disconnected, ring, and fully connected cluster models, respectively.
+Next, we increase connectivity in the network and allow gossiping among the cluster heads to improve
+version age at the nodes. With that, we show that when the cluster heads form a ring network among themselves,
+we obtain per node average version age scalings of $O(n^{\frac{1}{3}})$, $O(n^{\frac{1}{4}})$,
+and $O(\log n)$ in disconnected, ring, and fully connected cluster models, respectively. Next,
+focusing on a ring network topology in each cluster, we introduce hierarchy to the considered clustered
+gossip network model and show that when we employ two levels of hierarchy, we can achieve the same
+$O(n^{\frac{1}{4}})$ scaling without using dedicated cluster heads. We generalize this result
+for $h$ levels of hierarchy and show that per user average version age scaling of $O(n^{\frac{1}{2h}})$
+is achievable in the case of a ring network in each cluster across all hierarchy levels. 

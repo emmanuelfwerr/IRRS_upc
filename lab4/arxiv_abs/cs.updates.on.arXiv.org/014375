@@ -1,0 +1,20 @@
+The standard ML methodology assumes that the test samples are derived from a set of pre-observed
+classes used in the training phase. Where the model extracts and learns useful patterns to detect
+new data samples belonging to the same data classes. However, in certain applications such as Network
+Intrusion Detection Systems, it is challenging to obtain data samples for all attack classes that
+the model will most likely observe in production. ML-based NIDSs face new attack traffic known as
+zero-day attacks, that are not used in the training of the learning models due to their non-existence
+at the time. In this paper, a zero-shot learning methodology has been proposed to evaluate the ML
+model performance in the detection of zero-day attack scenarios. In the attribute learning stage,
+the ML models map the network data features to distinguish semantic attributes from known attack
+(seen) classes. In the inference stage, the models are evaluated in the detection of zero-day attack
+(unseen) classes by constructing the relationships between known attacks and zero-day attacks.
+A new metric is defined as Zero-day Detection Rate, which measures the effectiveness of the learning
+model in the inference stage. The results demonstrate that while the majority of the attack classes
+do not represent significant risks to organisations adopting an ML-based NIDS in a zero-day attack
+scenario. However, for certain attack groups identified in this paper, such systems are not effective
+in applying the learnt attributes of attack behaviour to detect them as malicious. Further Analysis
+was conducted using the Wasserstein Distance technique to measure how different such attacks are
+from other attack types used in the training of the ML model. The results demonstrate that sophisticated
+attacks with a low zero-day detection rate have a significantly distinct feature distribution
+compared to the other attack classes. 

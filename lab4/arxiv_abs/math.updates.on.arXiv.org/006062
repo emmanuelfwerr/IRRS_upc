@@ -1,0 +1,19 @@
+The paper concerns convergence and asymptotic statistics for stochastic approximation driven
+by Markovian noise: $$ \theta_{n+1}= \theta_n + \alpha_{n + 1} f(\theta_n, \Phi_{n+1}) \,,\quad
+n\ge 0, $$ in which each $\theta_n\in\Re^d$, $ \{ \Phi_n \}$ is a Markov chain on a general state space
+X with stationary distribution $\pi$, and $f:\Re^d\times \text{X} \to\Re^d$. In addition to standard
+Lipschitz bounds on $f$, and conditions on the vanishing step-size sequence $\{\alpha_n\}$, it
+is assumed that the associated ODE is globally asymptotically stable with stationary point denoted
+$\theta^*$, where $\bar f(\theta)=E[f(\theta,\Phi)]$ with $\Phi\sim\pi$. Moreover, the ODE@$\infty$
+defined with respect to the vector field, $$ \bar f_\infty(\theta):= \lim_{r\to\infty} r^{-1}
+\bar f(r\theta) \,,\qquad \theta\in\Re^d, $$ is asymptotically stable. The main contributions
+are summarized as follows: (i) The sequence $\theta$ is convergent if $\Phi$ is geometrically ergodic,
+and subject to compatible bounds on $f$. The remaining results are established under a stronger
+assumption on the Markov chain: A slightly weaker version of the Donsker-Varadhan Lyapunov drift
+condition known as (DV3). (ii) A Lyapunov function is constructed for the joint process $\{\theta_n,\Phi_n\}$
+that implies convergence of $\{ \theta_n\}$ in $L_4$. (iii) A functional CLT is established, as
+well as the usual one-dimensional CLT for the normalized error $z_n:= (\theta_n-\theta^*)/\sqrt{\alpha_n}$.
+Moment bounds combined with the CLT imply convergence of the normalized covariance, $$ \lim_{n
+\to \infty} E [ z_n z_n^T ] = \Sigma_\theta, $$ where $\Sigma_\theta$ is the asymptotic covariance
+appearing in the CLT. (iv) An example is provided where the Markov chain $\Phi$ is geometrically
+ergodic but it does not satisfy (DV3). While the algorithm is convergent, the second moment is unbounded.

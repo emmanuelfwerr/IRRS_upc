@@ -1,0 +1,19 @@
+A real-time image reconstruction method for scanning transmission electron microscopy (STEM)
+is proposed. The method uses the concept of integrated centre of mass (iCOM) and creates a live-updated
+image based on diffraction patterns collected at each probe position during scanning. It is shown
+that the method has similar characteristics to the traditional iCOM approach. However, by reformulating
+the integration method, the reconstruction process can be divided into sub-units, with each unit
+requiring only information from a single probe position, such that the resulting image can be updated
+each time a new probe position is visited without storing any intermediate diffraction patterns.
+As a certain position in the image is only influenced by its surrounding pixels in the immediate vicinity,
+the image update provides interpretable images being build up while the scanning is being performed.
+The results show clearer features at higher spatial frequency, such as atomic column positions.
+It is also demonstrated that common post processing methods, such as a band pass filter, can be directly
+integrated in the real time processing flow. By comparing with other reconstruction methods, it
+is shown that the proposed method can produce high quality reconstructions with good noise robustness
+at extremely low memory and computational requirements. We further present an efficient, interactive
+open source implementation of the concept, compatible with frame-based, as well as event-based
+camera/file types. The proposed method provides the attractive feature of immediate feedback
+that microscope operators have become used to for e.g. conventional HAADF STEM imaging allowing
+for rapid decision making and fine tuning to obtain the best possible images for beam sensitive samples
+at the lowest possible dose. 

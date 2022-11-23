@@ -1,0 +1,19 @@
+Brain-inspired hyperdimensional computing (HDC) is continuously gaining remarkable attention.
+It is a promising alternative to traditional machine-learning approaches due to its ability to
+learn from little data, lightweight implementation, and resiliency against errors. However,
+HDC is overwhelmingly data-centric similar to traditional machine-learning algorithms. In-memory
+computing is rapidly emerging to overcome the von Neumann bottleneck by eliminating data movements
+between compute and storage units. In this work, we investigate and model the impact of imprecise
+in-memory computing hardware on the inference accuracy of HDC. Our modeling is based on 14nm FinFET
+technology fully calibrated with Intel measurement data. We accurately model, for the first time,
+the voltage-dependent error probability in SRAM-based and FeFET-based in-memory computing.
+Thanks to HDC's resiliency against errors, the complexity of the underlying hardware can be reduced,
+providing large energy savings of up to 6x. Experimental results for SRAM reveal that variability-induced
+errors have a probability of up to 39 percent. Despite such a high error probability, the inference
+accuracy is only marginally impacted. This opens doors to explore new tradeoffs. We also demonstrate
+that the resiliency against errors is application-dependent. In addition, we investigate the
+robustness of HDC against errors when the underlying in-memory hardware is realized using emerging
+non-volatile FeFET devices instead of mature CMOS-based SRAMs. We demonstrate that inference
+accuracy does remain high despite the larger error probability, while large area and power savings
+can be obtained. All in all, HW/SW co-design is the key for efficient yet reliable in-memory hyperdimensional
+computing for both conventional CMOS technology and upcoming emerging technologies. 

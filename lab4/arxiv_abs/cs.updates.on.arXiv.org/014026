@@ -1,0 +1,20 @@
+Reducing traffic fatalities and serious injuries is a top priority of the US Department of Transportation.
+The computer vision (CV)-based crash anticipation in the near-crash phase is receiving growing
+attention. The ability to perceive fatal crash risks earlier is also critical because it will improve
+the reliability of crash anticipation. Yet, annotated image data for training a reliable AI model
+for the early visual perception of crash risks are not abundant. The Fatality Analysis Reporting
+System contains big data of fatal crashes. It is a reliable data source for learning the relationship
+between driving scene characteristics and fatal crashes to compensate for the limitation of CV.
+Therefore, this paper develops a data analytics model, named scenario-wise, Spatio-temporal
+attention guidance, from fatal crash report data, which can estimate the relevance of detected
+objects to fatal crashes from their environment and context information. First, the paper identifies
+five sparse variables that allow for decomposing the 5-year fatal crash dataset to develop scenario-wise
+attention guidance. Then, exploratory analysis of location- and time-related variables of the
+crash report data suggests reducing fatal crashes to spatially defined groups. The group's temporal
+pattern is an indicator of the similarity of fatal crashes in the group. Hierarchical clustering
+and K-means clustering merge the spatially defined groups into six clusters according to the similarity
+of their temporal patterns. After that, association rule mining discovers the statistical relationship
+between the temporal information of driving scenes with crash features, for each cluster. The paper
+shows how the developed attention guidance supports the design and implementation of a preliminary
+CV model that can identify objects of a possibility to involve in fatal crashes from their environment
+and context information. 

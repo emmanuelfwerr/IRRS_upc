@@ -1,0 +1,19 @@
+A promising approach to improve cloud parameterizations within climate models and thus climate
+projections is to use deep learning in combination with training data from storm-resolving model
+(SRM) simulations. The Icosahedral Non-Hydrostatic (ICON) modeling framework permits simulations
+ranging from numerical weather prediction to climate projections, making it an ideal target to
+develop neural network (NN) based parameterizations for sub-grid scale processes. Within the
+ICON framework, we train NN based cloud cover parameterizations with coarse-grained data based
+on realistic regional and global ICON SRM simulations. We set up three different types of NNs that
+differ in the degree of vertical locality they assume for diagnosing cloud cover from coarse-grained
+atmospheric state variables. The NNs accurately estimate sub-grid scale cloud cover from coarse-grained
+data that has similar geographical characteristics as their training data. Additionally, globally
+trained NNs can reproduce sub-grid scale cloud cover of the regional SRM simulation. Using the game-theory
+based interpretability library SHapley Additive exPlanations, we identify an overemphasis on
+specific humidity and cloud ice as the reason why our column-based NN cannot perfectly generalize
+from the global to the regional coarse-grained SRM data. The interpretability tool also helps visualize
+similarities and differences in feature importance between regionally and globally trained column-based
+NNs, and reveals a local relationship between their cloud cover predictions and the thermodynamic
+environment. Our results show the potential of deep learning to derive accurate yet interpretable
+cloud cover parameterizations from global SRMs, and suggest that neighborhood-based models may
+be a good compromise between accuracy and generalizability. 

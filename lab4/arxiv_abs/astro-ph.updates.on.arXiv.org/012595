@@ -1,0 +1,19 @@
+Preparing for the first detection of the cosmic 21-cm signal from large-scale interferometer experiments
+requires rigorous testing of the data analysis and reduction pipelines. To validate that these
+pipelines do not erroneously remove or add features that can mimic the cosmic signal (e.g. from side-lobes
+or large-scale power leakage), we require reionisation simulations larger than the experiments
+primary field of view. For an experiment such as the MWA, with a field of view of $\sim25^{2}$ deg.$^{2}$,
+this would require a simulation of several Gpcs, which is currently infeasible. To overcome this,
+we developed a simplified version of the semi-numerical reionisation simulation code 21CMFAST
+preferencing large volumes over some physical accuracy by assuming linear theory for structure
+formation. With this, we constructed a 7.5 Gpc comoving volume with voxel resolution of $\sim1.17$
+cMpc tailored specifically to the binned spectral resolution of the MWA. This simulation was used
+for validating the pipelines for the 2020 MWA 21-cm power spectrum (PS) upper limits (Trott et al.).
+We then use this large-volume simulation to explore: (i) whether smaller volume simulations are
+biased by the missing large-scale modes, (ii) non-Gaussianity in estimates of the cosmic variance,
+(iii) biases in the recovered 21-cm PS following foreground wedge removal and (iv) the impact of
+tiling smaller volume simulations to achieve extremely large volumes. In summary, we find: (i)
+no biases from missing large-scale power, (ii) significant contribution from non-Gaussianity
+in the cosmic variance as expected following Mondal et al. (iii) an over-estimate of the 21-cm PS
+of 10-20 per cent following wedge mode excision for our particular model and (iv) tiling smaller
+volume simulations under-estimates the large-scale power and also the estimated cosmic variance.

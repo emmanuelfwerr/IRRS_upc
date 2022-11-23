@@ -1,0 +1,19 @@
+For any real numbers $B \ge 1$ and $\delta \in (0, 1)$ and function $f: [0, B] \rightarrow \mathbb{R}$,
+let $d_{B; \delta} (f) \in \mathbb{Z}_{> 0}$ denote the minimum degree of a polynomial $p(x)$ satisfying
+$\sup_{x \in [0, B]} \big| p(x) - f(x) \big| < \delta$. In this paper, we provide precise asymptotics
+for $d_{B; \delta} (e^{-x})$ and $d_{B; \delta} (e^{x})$ in terms of both $B$ and $\delta$, improving
+both the previously known upper bounds and lower bounds. In particular, we show $$d_{B; \delta}
+(e^{-x}) = \Theta\left( \max \left\{ \sqrt{B \log(\delta^{-1})}, \frac{\log(\delta^{-1})
+}{ \log(B^{-1} \log(\delta^{-1}))} \right\}\right), \text{ and}$$ $$d_{B; \delta} (e^{x})
+= \Theta\left( \max \left\{ B, \frac{\log(\delta^{-1}) }{ \log(B^{-1} \log(\delta^{-1}))}
+\right\}\right).$$ Polynomial approximations for $e^{-x}$ and $e^x$ have applications to the
+design of algorithms for many problems, and our degree bounds show both the power and limitations
+of these algorithms. We focus in particular on the Batch Gaussian Kernel Density Estimation problem
+for $n$ sample points in $\Theta(\log n)$ dimensions with error $\delta = n^{-\Theta(1)}$. We show
+that the running time one can achieve depends on the square of the diameter of the point set, $B$, with
+a transition at $B = \Theta(\log n)$ mirroring the corresponding transition in $d_{B; \delta} (e^{-x})$:
+- When $B=o(\log n)$, we give the first algorithm running in time $n^{1 + o(1)}$. - When $B = \kappa
+\log n$ for a small constant $\kappa>0$, we give an algorithm running in time $n^{1 + O(\log \log \kappa^{-1}
+/\log \kappa^{-1})}$. The $\log \log \kappa^{-1} /\log \kappa^{-1}$ term in the exponent comes
+from analyzing the behavior of the leading constant in our computation of $d_{B; \delta} (e^{-x})$.
+- When $B = \omega(\log n)$, we show that time $n^{2 - o(1)}$ is necessary assuming SETH. 

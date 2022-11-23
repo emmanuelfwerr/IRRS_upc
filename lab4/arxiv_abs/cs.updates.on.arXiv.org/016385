@@ -1,0 +1,19 @@
+A homomorphism from a graph $G$ to a graph $H$ is an edge-preserving mapping from $V(G)$ to $V(H)$.
+Let $H$ be a fixed graph with possible loops. In the list homomorphism problem, denoted by \textsc{LHom}($H$),
+the instance is a graph $G$, whose every vertex is equipped with a subset of $V(H)$, called list. We
+ask whether there exists a homomorphism from $G$ to $H$, such that every vertex from $G$ is mapped
+to a vertex from its list. We study the complexity of the \textsc{LHom}($H$) problem in intersection
+graphs of various geometric objects. In particular, we are interested in answering the question
+for what graphs $H$ and for what types of geometric objects, the \textsc{LHom}($H$) problem can
+be solved in time subexponential in the number of vertices of the instance. We fully resolve this
+question for string graphs, i.e., intersection graphs of continuous curves in the plane. Quite
+surprisingly, it turns out that the dichotomy exactly coincides with the analogous dichotomy for
+graphs excluding a fixed path as an induced subgraph [Okrasa, Rz\k{a}\.zewski, STACS 2021]. Then
+we turn our attention to subclasses of string graphs, defined as intersections of fat objects. We
+observe that the (non)existence of subexponential-time algorithms in such classes is closely
+related to the size $\mathrm{mrc}(H)$ of a maximum reflexive clique in $H$, i.e., maximum number
+of pairwise adjacent vertices, each of which has a loop. We study the maximum value of $\mathrm{mrc}(H)$
+that guarantees the existence of a subexponential-time algorithm for \textsc{LHom}($H$) in intersection
+graphs of (i) convex fat objects, (ii) fat similarly-sized objects, and (iii) disks. In the first
+two cases we obtain optimal results, by giving matching algorithms and lower bounds. Finally, we
+discuss possible extensions of our results to weighted generalizations of \textsc{LHom}($H$).

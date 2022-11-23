@@ -1,0 +1,19 @@
+The bamboo trimming problem considers $n$ bamboo with growth rates $h_1, h_2, \ldots, h_n$ satisfying
+$\sum_i h_i = 1$. During a given unit of time, each bamboo grows by $h_i$, and then the bamboo-trimming
+algorithm gets to trim one of the bamboo back down to height 0. The goal is to minimize the height of
+the tallest bamboo, also known as the backlog. The bamboo trimming problem is closely related to
+many scheduling problems, and can be viewed as a variation of the widely-studied fixed-rate cup
+game, but with constant-factor resource augmentation. Past work has given sophisticated pinwheel
+algorithms that achieve the optimal backlog of 2 in the bamboo trimming problem. It remains an open
+question, however, whether there exists a \emph{simple} algorithm with the same guarantee -- recent
+work has devoted considerable theoretical and experimental effort to answering this question.
+Two algorithms, in particular, have appeared as natural candidates: the \textbf{Reduce-Max}
+algorithm (which always cuts the tallest bamboo) and the \textbf{Reduce-Fastest}$(x)$ algorithm
+(which cuts the fastest-growing bamboo of those that have height at least $x$). Both algorithms
+are conjectured to achieve backlog 2. This paper improves the bounds for both \textbf{Reduce-Fastest}
+and \textbf{Reduce-Max}. Among other results, we show that the \emph{exact optimal} backlog for
+\textbf{Reduce-Fastest}$(x)$ is $x + 1$ for all $x \geq 2$ and that \textbf{Reduce-Fastest}$(1)$
+\emph{does not} achieve backlog 2, resolving two conjectures of D'Emidio, Di Stefano, and Navarra.
+Finally, we show that there is a different algorithm, which we call the \textbf{Deadline-Driven}
+Strategy, that is both very simple and achieves the optimal backlog of 2. This resolves the question
+as to whether there exists a simple worst-case optimal algorithm for the bamboo trimming problem.

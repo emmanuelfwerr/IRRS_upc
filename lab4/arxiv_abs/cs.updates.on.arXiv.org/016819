@@ -1,0 +1,19 @@
+HOLODEC, an airborne cloud particle imager, captures holographic images of a fixed volume of cloud
+to characterize the types and sizes of cloud particles, such as water droplets and ice crystals.
+Cloud particle properties include position, diameter, and shape. We present a hologram processing
+algorithm, HolodecML, that utilizes a neural segmentation model, GPUs, and computational parallelization.
+HolodecML is trained using synthetically generated holograms based on a model of the instrument,
+and predicts masks around particles found within reconstructed images. From these masks, the position
+and size of the detected particles can be characterized in three dimensions. In order to successfully
+process real holograms, we find we must apply a series of image corrupting transformations and noise
+to the synthetic images used in training. In this evaluation, HolodecML had comparable position
+and size estimation performance to the standard processing method, but improved particle detection
+by nearly 20\% on several thousand manually labeled HOLODEC images. However, the improvement only
+occurred when image corruption was performed on the simulated images during training, thereby
+mimicking non-ideal conditions in the actual probe. The trained model also learned to differentiate
+artifacts and other impurities in the HOLODEC images from the particles, even though no such objects
+were present in the training data set, while the standard processing method struggled to separate
+particles from artifacts. The novelty of the training approach, which leveraged noise as a means
+for parameterizing non-ideal aspects of the HOLODEC detector, could be applied in other domains
+where the theoretical model is incapable of fully describing the real-world operation of the instrument
+and accurate truth data required for supervised learning cannot be obtained from real-world observations.

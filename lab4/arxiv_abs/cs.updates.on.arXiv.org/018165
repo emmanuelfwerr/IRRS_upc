@@ -1,0 +1,19 @@
+Recent work has illuminated the vulnerability of speaker recognition systems (SRSs) against adversarial
+attacks, raising significant security concerns in deploying SRSs. However, they considered only
+a few settings (e.g., some combinations of source and target speakers), leaving many interesting
+and important settings in real-world attack scenarios alone. In this work, we present AS2T, the
+first attack in this domain which covers all the settings, thus allows the adversary to craft adversarial
+voices using arbitrary source and target speakers for any of three main recognition tasks. Since
+none of the existing loss functions can be applied to all the settings, we explore many candidate
+loss functions for each setting including the existing and newly designed ones. We thoroughly evaluate
+their efficacy and find that some existing loss functions are suboptimal. Then, to improve the robustness
+of AS2T towards practical over-the-air attack, we study the possible distortions occurred in over-the-air
+transmission, utilize different transformation functions with different parameters to model
+those distortions, and incorporate them into the generation of adversarial voices. Our simulated
+over-the-air evaluation validates the effectiveness of our solution in producing robust adversarial
+voices which remain effective under various hardware devices and various acoustic environments
+with different reverberation, ambient noises, and noise levels. Finally, we leverage AS2T to perform
+thus far the largest-scale evaluation to understand transferability among 14 diverse SRSs. The
+transferability analysis provides many interesting and useful insights which challenge several
+findings and conclusion drawn in previous works in the image domain. Our study also sheds light on
+future directions of adversarial attacks in the speaker recognition domain. 

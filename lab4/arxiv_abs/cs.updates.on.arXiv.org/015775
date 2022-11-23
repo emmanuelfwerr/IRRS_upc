@@ -1,0 +1,19 @@
+Purpose: To develop an algorithm for robust partial Fourier (PF) reconstruction applicable to
+diffusion-weighted (DW) images with non-smooth phase variations. Methods: Based on an unrolled
+proximal splitting algorithm, a neural network architecture is derived which alternates between
+data consistency operations and regularization implemented by recurrent convolutions. In order
+to exploit correlations, multiple repetitions of the same slice are jointly reconstructed under
+consideration of permutation-equivariance. The algorithm is trained on DW liver data of 60 volunteers
+and evaluated on retrospectively and prospectively sub-sampled data of different anatomies and
+resolutions. Results: The proposed method is able to significantly outperform conventional PF
+techniques on retrospectively sub-sampled data in terms of quantitative measures as well as perceptual
+image quality. In this context, joint reconstruction of repetitions as well as the particular type
+of recurrent network unrolling are found to be beneficial with respect to reconstruction quality.
+On prospectively PF-sampled data, the proposed method enables DW imaging with higher signal without
+sacrificing image resolution or introducing additional artifacts. Alternatively, it can be used
+to counter the TE increase in acquisitions with higher resolution. Further, generalizability
+can be shown to prospective brain data exhibiting anatomies and contrasts not present in the training
+set. Conclusion: This work demonstrates that robust PF reconstruction of DW data is feasible even
+at strong PF factors in anatomies prone to phase variations. Since the proposed method does not rely
+on smoothness priors of the phase but uses learned recurrent convolutions instead, artifacts of
+conventional PF methods can be avoided. 

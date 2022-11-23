@@ -1,0 +1,19 @@
+Learning from limited and imbalanced data is a challenging problem in the Artificial Intelligence
+community. Real-time scenarios demand decision-making from rare events wherein the data are typically
+imbalanced. These situations commonly arise in medical applications, cybersecurity, catastrophic
+predictions etc. This motivates development of learning algorithms capable of learning from imbalanced
+data. Human brain effortlessly learns from imbalanced data. Inspired by the chaotic neuronal firing
+in the human brain, a novel learning algorithm namely \emph{Neurochaos Learning} (NL) was recently
+proposed. NL is categorized in three blocks: Feature Transformation, Neurochaos Feature Extraction
+(CFX), and Classification. In this work, the efficacy of neurochaos feature transformation and
+extraction for classification in imbalanced learning is studied. We propose a unique combination
+of neurochaos based feature transformation and extraction with traditional ML algorithms. The
+explored datasets in this study revolve around medical diagnosis, banknote fraud detection, environmental
+applications and spoken-digit classification. In this study, experiments are performed in both
+high and low training sample regime. In the former, five out of nine datasets have shown a performance
+boost in terms of macro F1-score after using CFX features. The highest performance boost obtained
+is $\textbf{25.97\%}$ for {\it Statlog (Heart)} dataset using CFX+Decision Tree. In the low training
+sample regime (from just one to nine training samples per class), the highest performance boost
+of $\textbf{144.38\%}$ is obtained for {\it Haberman's Survival} dataset using CFX+Random Forest.
+NL offers enormous flexibility of combining CFX with any ML classifier to boost its performance,
+especially for learning tasks with limited and imbalanced data. 

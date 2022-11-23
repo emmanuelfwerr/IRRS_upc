@@ -1,0 +1,20 @@
+Metamorphic Testing (MT) addresses the test oracle problem by examining the relations between
+inputs and outputs of test executions. Such relations are known as Metamorphic Relations (MRs).
+In current practice, identifying and selecting suitable MRs is usually a challenging manual task,
+requiring a thorough grasp of the SUT and its application domain. Thus, Kanewala et al. proposed
+the Predicting Metamorphic Relations (PMR) approach to automatically suggest MRs from a list of
+six pre-defined MRs for testing newly developed methods. PMR is based on a classification model
+trained on features extracted from the control-flow graph (CFG) of 100 Java methods. In our replication
+study, we explore the generalizability of PMR. First, we rebuild the entire preprocessing and training
+pipeline and repeat the original study in a close replication to verify the reported results and
+establish the basis for further experiments. Second, we perform a conceptual replication to explore
+the reusability of the PMR model trained on CFGs from Java methods in the first step for functionally
+identical methods implemented in Python and C++. Finally, we retrain the model on the CFGs from the
+Python and C++ methods to investigate the dependence on programming language and implementation
+details. We were able to successfully replicate the original study achieving comparable results
+for the Java methods set. However, the prediction performance of the Java-based classifiers significantly
+decreases when applied to functionally equivalent Python and C++ methods despite using only CFG
+features to abstract from language details. Since the performance improved again when the classifiers
+were retrained on the CFGs of the methods written in Python and C++, we conclude that the PMR approach
+can be generalized, but only when classifiers are developed starting from code artefacts in the
+used programming language. 

@@ -1,0 +1,20 @@
+Analytical database systems are typically designed to use a column-first data layout that maps
+better to analytical queries of access patterns. This choice is premised on the assumption that
+storing data in a row-first format leads to accessing unwanted fields; moreover, transforming
+rows to columns at runtime is expensive. On the other hand, new data items are constantly ingested
+in row-first form and transformed in the background to columns to facilitate future analytical
+queries. How will this design change if we can always access only the desired set of columns? In this
+paper, to address this question, we present a radically new approach to data transformation from
+rows to columns. We build upon recent advancements in commercial embedded platforms with tightly-coupled
+re-programmable logic to design native in-memory access on rows and columns. We propose a new database
+management system (DBMS) architecture that is the first hardware/software co-design. It relies
+on an FPGA-based accelerator to transparently transform base data to any group of columns with minimal
+overhead at runtime. This design allows the DBMS to access any group of columns as if it already exists
+in memory. Our method, termed relational memory, currently implements projection, and offers
+the groundwork for implementing selection, group by, aggregation, and supporting joins in hardware,
+thus, vastly simplifying the software logic and accelerating the query execution. We present a
+detailed analysis of relational memory using both synthetic benchmarks and realistic workloads.
+Our relational memory implementation can convert on the fly rows to arbitrary groups of columns
+without any latency penalty. Essentially, relational memory can load in cache the desired columns
+from a row-oriented base data layout as fast as reading from column-oriented base data layout by
+outsourcing data transformation to the hardware. 

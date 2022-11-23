@@ -1,0 +1,19 @@
+We assess costs and efficiency of state-of-the-art high performance cloud computing compared
+to a traditional on-premises compute cluster. Our use case are atomistic simulations carried out
+with the GROMACS molecular dynamics (MD) toolkit with a focus on alchemical protein-ligand binding
+free energy calculations. We set up a compute cluster in the Amazon Web Services (AWS) cloud that
+incorporates various different instances with Intel, AMD, and ARM CPUs, some with GPU acceleration.
+Using representative biomolecular simulation systems we benchmark how GROMACS performs on individual
+instances and across multiple instances. Thereby we assess which instances deliver the highest
+performance and which are the most cost-efficient ones for our use case. We find that, in terms of
+total costs including hardware, personnel, room, energy and cooling, producing MD trajectories
+in the cloud can be as cost-efficient as an on-premises cluster given that optimal cloud instances
+are chosen. Further, we find that high-throughput ligand-screening for protein-ligand binding
+affinity estimation can be accelerated dramatically by using global cloud resources. For a ligand
+screening study consisting of 19,872 independent simulations, we used all hardware that was available
+in the cloud at the time of the study. The computations scaled-up to reach peak performances using
+more than 4,000 instances, 140,000 cores, and 3,000 GPUs simultaneously around the globe. Our simulation
+ensemble finished in about two days in the cloud, while weeks would be required to complete the task
+on a typical on-premises cluster consisting of several hundred nodes. We demonstrate that the costs
+of such and similar studies can be drastically reduced with a checkpoint-restart protocol that
+allows to use cheap Spot pricing and by using instance types with optimal cost-efficiency. 

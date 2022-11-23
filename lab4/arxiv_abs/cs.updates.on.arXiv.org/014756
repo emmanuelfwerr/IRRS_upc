@@ -1,0 +1,20 @@
+Prediction of the blood flow characteristics is of utmost importance for understanding the behavior
+of the blood arterial network, especially in the presence of vascular diseases such as stenosis.
+Computational fluid dynamics (CFD) has provided a powerful and efficient tool to determine these
+characteristics including the pressure and velocity fields within the network. Despite numerous
+studies in the field, the extremely high computational cost of CFD has led the researchers to develop
+new platforms including Machine Learning approaches that instead provide faster analyses at a
+much lower cost. In this study, we put forth a Deep Neural Network framework to predict flow behavior
+in a coronary arterial network with different properties in the presence of any abnormality like
+stenosis. To this end, an artificial neural network (ANN) model is trained using synthetic data
+so that it can predict the pressure and velocity within the arterial network. The data required to
+train the neural network were obtained from the CFD analysis of several geometries of arteries with
+specific features in ABAQUS software. Blood pressure drop caused by stenosis, which is one of the
+most important factors in the diagnosis of heart diseases, can be predicted using our proposed model
+knowing the geometrical and flow boundary conditions of any section of the coronary arteries. The
+efficiency of the model was verified using three real geometries of LAD's vessels. The proposed
+approach precisely predicts the hemodynamic behavior of the blood flow. The average accuracy of
+the pressure prediction was 98.7% and the average velocity magnitude accuracy was 93.2%. According
+to the results of testing the model on three patient-specific geometries, model can be considered
+as an alternative to finite element methods as well as other hard-to-implement and time-consuming
+numerical simulations. 

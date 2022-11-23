@@ -1,0 +1,19 @@
+Planning based on long and short term time series forecasts is a common practice across many industries.
+In this context, temporal aggregation and reconciliation techniques have been useful in improving
+forecasts, reducing model uncertainty, and providing a coherent forecast across different time
+horizons. However, an underlying assumption spanning all these techniques is the complete availability
+of data across all levels of the temporal hierarchy, while this offers mathematical convenience
+but most of the time low frequency data is partially completed and it is not available while forecasting.
+On the other hand, high frequency data can significantly change in a scenario like the COVID pandemic
+and this change can be used to improve forecasts that will otherwise significantly diverge from
+long term actuals. We propose a dynamic reconciliation method whereby we formulate the problem
+of informing low frequency forecasts based on high frequency actuals as a Markov Decision Process
+(MDP) allowing for the fact that we do not have complete information about the dynamics of the process.
+This allows us to have the best long term estimates based on the most recent data available even if
+the low frequency cycles have only been partially completed. The MDP has been solved using a Time
+Differenced Reinforcement learning (TDRL) approach with customizable actions and improves the
+long terms forecasts dramatically as compared to relying solely on historical low frequency data.
+The result also underscores the fact that while low frequency forecasts can improve the high frequency
+forecasts as mentioned in the temporal reconciliation literature (based on the assumption that
+low frequency forecasts have lower noise to signal ratio) the high frequency forecasts can also
+be used to inform the low frequency forecasts. 

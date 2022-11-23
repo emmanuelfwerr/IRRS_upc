@@ -1,0 +1,20 @@
+As our ability to sense increases, we are experiencing a transition from data-poor problems, in
+which the central issue is a lack of relevant data, to data-rich problems, in which the central issue
+is to identify a few relevant features in a sea of observations. Motivated by applications in gravitational-wave
+astrophysics, we study the problem of predicting the presence of transient noise artifacts in a
+gravitational wave detector from a rich collection of measurements from the detector and its environment.
+We argue that feature learning--in which relevant features are optimized from data--is critical
+to achieving high accuracy. We introduce models that reduce the error rate by over 60% compared to
+the previous state of the art, which used fixed, hand-crafted features. Feature learning is useful
+not only because it improves performance on prediction tasks; the results provide valuable information
+about patterns associated with phenomena of interest that would otherwise be undiscoverable.
+In our application, features found to be associated with transient noise provide diagnostic information
+about its origin and suggest mitigation strategies. Learning in high-dimensional settings is
+challenging. Through experiments with a variety of architectures, we identify two key factors
+in successful models: sparsity, for selecting relevant variables within the high-dimensional
+observations; and depth, which confers flexibility for handling complex interactions and robustness
+with respect to temporal variations. We illustrate their significance through systematic experiments
+on real detector data. Our results provide experimental corroboration of common assumptions in
+the machine-learning community and have direct applicability to improving our ability to sense
+gravitational waves, as well as to many other problem settings with similarly high-dimensional,
+noisy, or partly irrelevant data. 

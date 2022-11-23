@@ -1,0 +1,28 @@
+Context. Serendipitous X-ray surveys have proven to be an efficient way to find rare objects, for
+example tidal disruption events, changing-look active galactic nuclei (AGN), binary quasars,
+ultraluminous X-ray sources (ULXs), and intermediate mass black holes. With the advent of very
+large X-ray surveys, an automated classification of X-ray sources becomes increasingly valuable.Aims.
+This work proposes a revisited naive Bayes classification of the X-ray sources in the Swift-XRT
+and XMM-Newton catalogs into four classes -- AGN, stars, X-ray binaries (XRBs) and cataclysmic
+variables (CVs) -- based on their spatial, spectral and timing properties and their multiwavelength
+counterparts. An outlier measure is used to identify objects of other natures. The classifier is
+optimized to maximize the classification performance of a chosen class (here XRBs) and it is adapted
+to data mining purposes.Methods. We augmented the X-ray catalogs with multiwavelength data, source
+class, and variability properties. We then built a reference sample of about 25000 X-ray sources
+of known nature. From this sample the distribution of each property was carefully estimated and
+taken as reference to assign probabilities of belonging to each class. The classification was then
+performed on the whole catalog, combining the information from each property.Results. Using the
+algorithm on the Swift reference sample we retrieved 99%, 98%, 92% and 34% of AGN, stars, XRBs, and
+CVs, respectively, and the false positive rates are 3%, 1%, 9% and 15%. Similar results are obtained
+on XMM sources. When applied to a carefully selected test sample, representing 55% of the X-ray catalog,
+the classification gives consistent results in terms of distributions of source properties. A
+substantial fraction of sources not belonging to any class is efficiently retrieved using the outlier
+measure, as well as AGN and stars with properties deviating from the bulk of their class. Our algorithm
+is then compared to a random forest method; the two showed similar performances but the algorithm
+presented in this paper improved insight into the grounds of each classification.Conclusions.
+This robust classification method can be tailored to include additional or different source classes
+and can be applied to other X-ray catalogs. The transparency of the classification compared to other
+methods makes it a useful tool in the search for homogeneous populations or rare source types, including
+multi-messenger events. Such a tool will be increasingly valuable with the development of surveys
+of unprecedented size, such as LSST, SKA and Athena, and the search for counterparts of multi-messenger
+events. 

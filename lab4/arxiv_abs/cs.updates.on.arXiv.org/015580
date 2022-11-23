@@ -1,0 +1,19 @@
+Ground-penetrating radar (GPR) has been used as a non-destructive tool for tree root inspection.
+Estimating root-related parameters from GPR radargrams greatly facilitates root health monitoring
+and imaging. However, the task of estimating root-related parameters is challenging as the root
+reflection is a complex function of multiple root parameters and root orientations. Existing methods
+can only estimate a single root parameter at a time without considering the influence of other parameters
+and root orientations, resulting in limited estimation accuracy under different root conditions.
+In addition, soil heterogeneity introduces clutter in GPR radargrams, making the data processing
+and interpretation even harder. To address these issues, a novel neural network architecture,
+called mask-guided multi-polarimetric integration neural network (MMI-Net), is proposed to
+automatically and simultaneously estimate multiple root-related parameters in heterogeneous
+soil environments. The MMI-Net includes two sub-networks: a MaskNet that predicts a mask to highlight
+the root reflection area to eliminate interfering environmental clutter, and a ParaNet that uses
+the predicted mask as guidance to integrate, extract, and emphasize informative features in multi-polarimetric
+radargrams for accurate estimation of five key root-related parameters. The parameters include
+the root depth, diameter, relative permittivity, horizontal and vertical orientation angles.
+Experimental results demonstrate that the proposed MMI-Net achieves high estimation accuracy
+in these root-related parameters. This is the first work that takes the combined contributions
+of root parameters and spatial orientations into account and simultaneously estimates multiple
+root-related parameters. The data and code implemented in the paper can be found at https://haihan-sun.github.io/GPR.html.

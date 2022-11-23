@@ -1,0 +1,19 @@
+The Ethereum platform allows developers to implement and deploy applications called Dapps onto
+the blockchain for public use through the use of smart contracts. To execute code within a smart contract,
+a paid transaction must be issued towards one of the functions that are exposed in the interface of
+a contract. However, such a transaction is only processed once one of the miners in the peer-to-peer
+network selects it, adds it to a block, and appends that block to the blockchain This creates a delay
+between transaction submission and code execution. It is crucial for Dapp developers to be able
+to precisely estimate when transactions will be processed, since this allows them to define and
+provide a certain Quality of Service (QoS) level (e.g., 95% of the transactions processed within
+1 minute). However, the impact that different factors have on these times have not yet been studied.
+Processing time estimation services are used by Dapp developers to achieve predefined QoS. Yet,
+these services offer minimal insights into what factors impact processing times. Considering
+the vast amount of data that surrounds the Ethereum blockchain, changes in processing times are
+hard for Dapp developers to predict, making it difficult to maintain said QoS. In our study, we build
+random forest models to understand the factors that are associated with transaction processing
+times. We engineer several features that capture blockchain internal factors, as well as gas pricing
+behaviors of transaction issuers. By interpreting our models, we conclude that features surrounding
+gas pricing behaviors are very strongly associated with transaction processing times. Based on
+our empirical results, we provide Dapp developers with concrete insights that can help them provide
+and maintain high levels of QoS. 

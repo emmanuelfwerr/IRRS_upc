@@ -1,0 +1,19 @@
+We propose a new approach to proving lower bounds for sizes of dag-like proofs in the proof system
+Res(lin$_{\mathbb{F}_p}$), where $\mathbb{F}_p$ is a finite field of prime order $p\geq 5$. An
+exponential lower bound on sizes of arbitrary dag-like refutations in proof systems Res(lin$_{\mathbb{F}}$)
+has previously been proven in (Part, Tzameret, ITCS'20) in case $\mathbb{F}$ is a field of characteristic
+$0$ for an instance, which is not CNF: for the binary value principle $x_1+2x_2+\dots+2^{n-1}x_n
+= -1$. The proof of this lower bound substantially uses peculiarities of characteristic $0$ regime
+and does not give a clue on how to prove lower bounds neither for finite fields nor for CNFs. Aiming
+at constructing a bridge between lower bounds for the binary value principle and CNF lower bounds
+we initiate the development of methods for proving dag-like Res(lin$_{\mathbb{F}_p}$) lower
+bounds for tautologies of the form $b\notin A(\{0,1\}^n)$, where $A$ is a linear map. The negation
+of such a tautology can be represented in the language of Res(lin$_{\mathbb{F}_p}$) as a system
+of linear equations $A\cdot x = b$ unsatisfiable over the boolean assignments. Instances of this
+form are in some ways simpler than CNFs, this makes analysis of their Res(lin$_{\mathbb{F}_p}$)
+refutations more approachable and might be aided by tools from linear algebra and additive combinatorics.
+We identify hardness criterions for instances of the form $A\cdot x = b$ using notions of an error
+correcting code and what we call $(s, r)$-robustness, a combinatorial, algebraic property of linear
+systems $A\cdot x = b$, which we introduce. We prove two lower bounds for fragments of Res(lin$_{\mathbb{F}_p}$)
+that capture two complementary aspects of Res(lin$_{\mathbb{F}_p}$) refutations and constitute
+a combinatorial toolbox for approaching general dag-like Res(lin$_{\mathbb{F}_p}$) refutations.

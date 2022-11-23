@@ -1,0 +1,18 @@
+Physics-based and first-principles models pervade the engineering and physical sciences, allowing
+for the ability to model the dynamics of complex systems with a prescribed accuracy. The approximations
+used in deriving governing equations often result in discrepancies between the model and sensor-based
+measurements of the system, revealing the approximate nature of the equations and/or the signal-to-noise
+ratio of the sensor itself. In modern dynamical systems, such discrepancies between model and measurement
+can lead to poor quantification, often undermining the ability to produce accurate and precise
+control algorithms. We introduce a discrepancy modeling framework to resolve deterministic model-measurement
+mismatch with two distinct approaches: (i) by learning a model for the evolution of systematic state-space
+residual, and (ii) by discovering a model for the missing deterministic physics. Regardless of
+approach, a common suite of data-driven model discovery methods can be used. Specifically, we use
+four fundamentally different methods to demonstrate the mathematical implementations of discrepancy
+modeling: (i) the sparse identification of nonlinear dynamics (SINDy), (ii) dynamic mode decomposition
+(DMD), (iii) Gaussian process regression (GPR), and (iv) neural networks (NN). The choice of method
+depends on one's intent for discrepancy modeling, as well as quantity and quality of the sensor measurements.
+We demonstrate the utility and suitability for both discrepancy modeling approaches using the
+suite of data-driven modeling methods on three dynamical systems under varying signal-to-noise
+ratios. We compare reconstruction and forecasting accuracies and provide detailed comparatives,
+allowing one to select the appropriate approach and method in practice. 

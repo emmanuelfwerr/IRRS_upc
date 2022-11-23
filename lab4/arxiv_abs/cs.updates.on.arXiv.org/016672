@@ -1,0 +1,19 @@
+We initiate the study of diameter computation in geometric intersection graphs from the fine-grained
+complexity perspective. A geometric intersection graph is a graph whose vertices correspond to
+some shapes in $d$-dimensional Euclidean space, such as balls, segments, or hypercubes, and whose
+edges correspond to pairs of intersecting shapes. The diameter of a graph is the largest distance
+realized by a pair of vertices in the graph. Computing the diameter in near-quadratic time is possible
+in several classes of intersection graphs [Chan and Skrepetos 2019], but it is not at all clear if
+these algorithms are optimal, especially since in the related class of planar graphs the diameter
+can be computed in $\widetilde{\mathcal{O}}(n^{5/3})$ time [Cabello 2019, Gawrychowski et al.
+2021]. In this work we (conditionally) rule out sub-quadratic algorithms in several classes of
+intersection graphs, i.e., algorithms of running time $\mathcal{O}(n^{2-\delta})$ for some
+$\delta>0$. In particular, there are no sub-quadratic algorithms already for fat objects in small
+dimensions: unit balls in $\mathbb{R}^3$ or congruent equilateral triangles in $\mathbb{R}^2$.
+For unit segments and congruent equilateral triangles, we can even rule out strong sub-quadratic
+approximations already in $\mathbb{R}^2$. It seems that the hardness of approximation may also
+depend on dimensionality: for axis-parallel unit hypercubes in~$\mathbb{R}^{12}$, distinguishing
+between diameter 2 and 3 needs quadratic time (ruling out $(3/2-\varepsilon)$- approximations),
+whereas for axis-parallel unit squares, we give an algorithm that distinguishes between diameter
+$2$ and $3$ in near-linear time. Note that many of our lower bounds match the best known algorithms
+up to sub-polynomial factors. 

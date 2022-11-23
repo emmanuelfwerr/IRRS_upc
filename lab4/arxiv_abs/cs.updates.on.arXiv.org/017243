@@ -1,0 +1,19 @@
+Purpose: To develop a deep network architecture that would achieve fully automated radiologist-level
+segmentation of cancers at breast MRI. Materials and Methods: In this retrospective study, 38229
+examinations (composed of 64063 individual breast scans from 14475 patients) were performed in
+female patients (age range, 12-94 years; mean age, 52 years +/- 10 [standard deviation]) who presented
+between 2002 and 2014 at a single clinical site. A total of 2555 breast cancers were selected that
+had been segmented on two-dimensional (2D) images by radiologists, as well as 60108 benign breasts
+that served as examples of noncancerous tissue; all these were used for model training. For testing,
+an additional 250 breast cancers were segmented independently on 2D images by four radiologists.
+Authors selected among several three-dimensional (3D) deep convolutional neural network architectures,
+input modalities, and harmonization methods. The outcome measure was the Dice score for 2D segmentation,
+which was compared between the network and radiologists by using the Wilcoxon signed rank test and
+the two one-sided test procedure. Results: The highest-performing network on the training set
+was a 3D U-Net with dynamic contrast-enhanced MRI as input and with intensity normalized for each
+examination. In the test set, the median Dice score of this network was 0.77 (interquartile range,
+0.26). The performance of the network was equivalent to that of the radiologists (two one-sided
+test procedures with radiologist performance of 0.69-0.84 as equivalence bounds, P <= .001 for
+both; n = 250). Conclusion: When trained on a sufficiently large dataset, the developed 3D U-Net
+performed as well as fellowship-trained radiologists in detailed 2D segmentation of breast cancers
+at routine clinical MRI. 

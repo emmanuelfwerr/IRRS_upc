@@ -1,0 +1,19 @@
+Consider a set $P$ of $n$ points in $\mathbb{R}^d$. In the discrete median line segment problem,
+the objective is to find a line segment bounded by a pair of points in $P$ such that the sum of the Euclidean
+distances from $P$ to the line segment is minimized. In the continuous median line segment problem,
+a real number $\ell>0$ is given, and the goal is to locate a line segment of length $\ell$ in $\mathbb{R}^d$
+such that the sum of the Euclidean distances between $P$ and the line segment is minimized. We show
+how to compute $(1+\epsilon\Delta)$- and $(1+\epsilon)$-approximations to a discrete median
+line segment in time $O(n\epsilon^{-2d}\log n)$ and $O(n^2\epsilon^{-d})$, respectively, where
+$\Delta$ is the spread of line segments spanned by pairs of points. While developing our algorithms,
+by using the principle of pair decomposition, we derive new data structures that allow us to quickly
+approximate the sum of the distances from a set of points to a given line segment or point. To our knowledge,
+our utilization of pair decompositions for solving minsum facility location problems is the first
+of its kind; it is versatile and easily implementable. We prove that it is impossible to construct
+a continuous median line segment for $n\geq3$ non-collinear points in the plane by using only ruler
+and compass. In view of this, we present an $O(n^d\epsilon^{-d})$-time algorithm for approximating
+a continuous median line segment in $\mathbb{R}^d$ within a factor of $1+\epsilon$. The algorithm
+is based upon generalizing the point-segment pair decomposition from the discrete to the continuous
+domain. Last but not least, we give an $(1+\epsilon)$-approximation algorithm, whose time complexity
+is sub-quadratic in $n$, for solving the constrained median line segment problem in $\mathbb{R}^2$
+where an endpoint or the slope of the median line segment is given at input. 

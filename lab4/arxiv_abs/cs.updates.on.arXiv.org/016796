@@ -1,0 +1,19 @@
+In the problem of semialgebraic range searching, we are to preprocess a set of points in $\mathbb{R}^D$
+such that the subset of points inside a semialgebraic region described by $O(1)$ polynomial inequalities
+of degree $\Delta$ can be found efficiently. Relatively recently, several major advances were
+made on this problem. Using algebraic techniques, "near-linear space" structures [AMS13,MP15]
+with almost optimal query time of $Q(n)=O(n^{1-1/D+o(1)})$ were obtained. For "fast query" structures
+(i.e., when $Q(n)=n^{o(1)}$), it was conjectured that a structure with space $S(n) = O(n^{D+o(1)})$
+is possible. The conjecture was refuted recently by Afshani and Cheng [AC21]. In the plane, they
+proved that $S(n) = \Omega(n^{\Delta+1 - o(1)}/Q(n)^{(\Delta+3)\Delta/2})$ which shows $\Omega(n^{\Delta+1-o(1)})$
+space is needed for $Q(n) = n^{o(1)}$. While this refutes the conjecture, it still leaves a number
+of unresolved issues: the lower bound only works in 2D and for fast queries, and neither the exponent
+of $n$ or $Q(n)$ seem to be tight even for $D=2$, as the current upper bound is $S(n) = O(n^{\boldsymbol{m}+o(1)}/Q(n)^{(\boldsymbol{m}-1)D/(D-1)})$
+where $\boldsymbol{m}=\binom{D+\Delta}{D}-1 = \Omega(\Delta^D)$ is the maximum number of parameters
+to define a monic degree-$\Delta$ $D$-variate polynomial, for any $D,\Delta=O(1)$. In this paper,
+we resolve two of the issues: we prove a lower bound in $D$-dimensions and show that when $Q(n)=n^{o(1)}+O(k)$,
+$S(n)=\Omega(n^{\boldsymbol{m}-o(1)})$, which is almost tight as far as the exponent of $n$ is
+considered in the pointer machine model. When considering the exponent of $Q(n)$, we show that the
+analysis in [AC21] is tight for $D=2$, by presenting matching upper bounds for uniform random point
+sets. This shows either the existing upper bounds can be improved or a new fundamentally different
+input set is needed to get a better lower bound. 

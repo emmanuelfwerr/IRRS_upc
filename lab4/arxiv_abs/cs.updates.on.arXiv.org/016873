@@ -1,0 +1,19 @@
+As robots play an increasingly important role in the industrial, the expectations about their applications
+for everyday living tasks are getting higher. Robots need to perform long-horizon tasks that consist
+of several sub-tasks that need to be accomplished. Task and Motion Planning (TAMP) provides a hierarchical
+framework to handle the sequential nature of manipulation tasks by interleaving a symbolic task
+planner that generates a possible action sequence, with a motion planner that checks the kinematic
+feasibility in the geometric world, generating robot trajectories if several constraints are
+satisfied, e.g., a collision-free trajectory from one state to another. Hence, the reasoning about
+the task plan's geometric grounding is taken over by the motion planner. However, motion planning
+is computationally intense and is usability as feasibility checker casts TAMP methods inapplicable
+to real-world scenarios. In this paper, we introduce neural feasibility classifier (NFC), a simple
+yet effective visual heuristic for classifying the feasibility of proposed actions in TAMP. Namely,
+NFC will identify infeasible actions of the task planner without the need for costly motion planning,
+hence reducing planning time in multi-step manipulation tasks. NFC encodes the image of the robot's
+workspace into a feature map thanks to convolutional neural network (CNN). We train NFC using simulated
+data from TAMP problems and label the instances based on IK feasibility checking. Our empirical
+results in different simulated manipulation tasks show that our NFC generalizes to the entire robot
+workspace and has high prediction accuracy even in scenes with multiple obstructions. When combined
+with state-of-the-art integrated TAMP, our NFC enhances its performance while reducing its planning
+time. 

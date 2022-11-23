@@ -1,0 +1,20 @@
+Radiomics features extract quantitative information from medical images, towards the derivation
+of biomarkers for clinical tasks, such as diagnosis, prognosis, or treatment response assessment.
+Different image discretization parameters (e.g. bin number or size), convolutional filters,
+segmentation perturbation, or multi-modality fusion levels can be used to generate radiomics
+features and ultimately signatures. Commonly, only one set of parameters is used; resulting in
+only one value or flavour for a given RF. We propose tensor radiomics (TR) where tensors of features
+calculated with multiple combinations of parameters (i.e. flavours) are utilized to optimize
+the construction of radiomics signatures. We present examples of TR as applied to PET/CT, MRI, and
+CT imaging invoking machine learning or deep learning solutions, and reproducibility analyses:
+(1) TR via varying bin sizes on CT images of lung cancer and PET-CT images of head & neck cancer (HNC)
+for overall survival prediction. A hybrid deep neural network, referred to as TR-Net, along with
+two ML-based flavour fusion methods showed improved accuracy compared to regular rediomics features.
+(2) TR built from different segmentation perturbations and different bin sizes for classification
+of late-stage lung cancer response to first-line immunotherapy using CT images. TR improved predicted
+patient responses. (3) TR via multi-flavour generated radiomics features in MR imaging showed
+improved reproducibility when compared to many single-flavour features. (4) TR via multiple PET/CT
+fusions in HNC. Flavours were built from different fusions using methods, such as Laplacian pyramids
+and wavelet transforms. TR improved overall survival prediction. Our results suggest that the
+proposed TR paradigm has the potential to improve performance capabilities in different medical
+imaging tasks. 

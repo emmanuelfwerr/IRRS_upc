@@ -1,0 +1,19 @@
+Food profiling is an essential step in any food monitoring system needed to prevent health risks
+and potential frauds in the food industry. Significant improvements in sequencing technologies
+are pushing food profiling to become the main computational bottleneck. State-of-the-art profilers
+are unfortunately too costly for food profiling. Our goal is to design a food profiler that solves
+the main limitations of existing profilers, namely (1) working on massive data structures and (2)
+incurring considerable data movement, for a real-time monitoring system. To this end, we propose
+Demeter, the first platform-independent framework for food profiling. Demeter overcomes the
+first limitation through the use of hyperdimensional computing (HDC) and efficiently performs
+the accurate few-species classification required in food profiling. We overcome the second limitation
+by the use of an in-memory hardware accelerator for Demeter (named Acc-Demeter) based on memristor
+devices. Acc-Demeter actualizes several domain-specific optimizations and exploits the inherent
+characteristics of memristors to improve the overall performance and energy consumption of Acc-Demeter.
+We compare Demeter's accuracy with other industrial food profilers using detailed software modeling.
+We synthesize Acc-Demeter's required hardware using UMC's 65nm library by considering an accurate
+PCM model based on silicon-based prototypes. Our evaluations demonstrate that Acc-Demeter achieves
+a (1) throughput improvement of 192x and 724x and (2) memory reduction of 36x and 33x compared to Kraken2
+and MetaCache (2 state-of-the-art profilers), respectively, on typical food-related databases.
+Demeter maintains an acceptable profiling accuracy (within 2% of existing tools) and incurs a very
+low area overhead. 

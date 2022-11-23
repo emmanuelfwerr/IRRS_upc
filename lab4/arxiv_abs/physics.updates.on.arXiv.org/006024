@@ -1,0 +1,19 @@
+A PET scanner based on silicon photomultipliers (SiPMs) has been widely used as an advanced nuclear
+medicine imaging technique that yields quantitative images of regional in vivo biology and biochemistry.
+The compact size of the SiPM allows direct one to one coupling between the scintillation crystal
+and the photosensor, yielding better timing and energy resolutions than the light sharing methods
+that have to be used in photomultiplier tube (PMT) PET systems. To decrease the volume of readout
+electronics, a front end multiplexer with position decoder is a common choice for the one to one system
+without a highly integrated application specific integrated circuit (ASIC). However, in this
+case we cannot measure each crystal's deposited energy inspired by an annihilation photon, so the
+inter-crystal scatter (ICS) events will lead to the crystal mispositioning and then deteriorate
+the detector intrinsic resolution. Besides, considering the events rejection within the energy
+window resulting from the gain dispersion and nonlinear outputs of the SiPMs, an energy correction
+mechanism is needed. Yet, lack of the information of each crystal's energy will introduce large
+energy correction error for the ICS events. For this issue, an online energy correction mechanism
+implemented on a Kintext-7 Field Programmable Gate Array (FPGA) device is presented in this paper.
+Experiments in the laboratory were performed using an 8 x 8 segmented LYSO crystals coupled with
+an 8 x 8 SiPM (J-series, from ON Semiconductor) array which is under 22Na point source excitation.
+Test results indicate that both the energy of the non-ICS and ICS events can be precisely corrected
+and the energy resolution is better than 12 %. We also applied this method to an actual clinical PET
+scanner under a 68Ge line source to verify its multi-channel reliability. 

@@ -1,0 +1,20 @@
+We demonstrate how to apply the tensor-train format to solve the time-independent Schr\"{o}dinger
+equation for quasi one-dimensional excitonic chain systems with and without periodic boundary
+conditions. The coupled excitons and phonons are modeled by Frenkel-Holstein type Hamiltonians
+with on-site and nearest-neighbor interactions only. We reduce the memory consumption as well
+as the computational costs significantly by employing efficient decompositions to construct
+low rank tensor-train representations, thus mitigating the curse of dimensionality. In order
+to compute also higher quantum states, we introduce an approach which directly incorporates the
+Wielandt deflation technique into the alternating linear scheme for the solution of eigenproblems.
+Besides systems with coupled excitons and phonons, we also investigate uncoupled problems for
+which (semi-)analytical results exist. There, we find that in case of homogeneous systems the tensor-train
+ranks of state vectors only marginally depend on the chain length which results in a linear growth
+of the storage consumption. However, the CPU time increases slightly faster with the chain length
+than the storage consumption because the alternating linear scheme adopted in our work requires
+more iterations to achieve convergence for longer chains and a given rank. Finally, we demonstrate
+that the tensor-train approach to the quantum treatment of coupled excitons and phonons makes it
+possible to directly tackle the phenomenon of mutual self-trapping. We are able to confirm the main
+results of the Davydov theory, i.e., the dependence of the wavepacket width and the corresponding
+stabilization energy on the exciton-phonon coupling strength, though only for a certain range
+of that parameter. In future work, our approach will allow calculations also beyond the restrictions
+of the Frenkel-Holstein type Hamiltonians. 

@@ -1,0 +1,19 @@
+This paper studies a fundamental problem regarding the security of blockchain PoW consensus on
+how the existence of multiple misbehaving miners influences the profitability of selfish mining.
+Each selfish miner (or attacker interchangeably) maintains a private chain and makes it public
+opportunistically for acquiring more rewards incommensurate to his Hash power. We first establish
+a general Markov chain model to characterize the state transition of public and private chains for
+Basic Selfish Mining (BSM), and derive the stationary profitable threshold of Hash power in closed-form.
+It reduces from 25% for a single attacker to below 21.48% for two symmetric attackers theoretically,
+and further reduces to around 10% with eight symmetric attackers experimentally. We next explore
+the profitable threshold when one of the attackers performs strategic mining based on Partially
+Observable Markov Decision Process (POMDP) that only half of the attributes pertinent to a mining
+state are observable to him. An online algorithm is presented to compute the nearly optimal policy
+efficiently despite the large state space and high dimensional belief space. The strategic attacker
+mines selfishly and more agilely than BSM attacker when his Hash power is relatively high, and mines
+honestly otherwise, thus leading to a much lower profitable threshold. Last, we formulate a simple
+model of absolute mining revenue that yields an interesting observation: selfish mining is never
+profitable at the first difficulty adjustment period, but replying on the reimbursement of stationary
+selfish mining gains in the future periods. The delay till being profitable of an attacker increases
+with the decrease of his Hash power, making blockchain miners more cautious on performing selfish
+mining. 

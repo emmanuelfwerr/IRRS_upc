@@ -1,0 +1,19 @@
+Purpose: (1) To assess the performance of geometric deep learning (PointNet) in diagnosing glaucoma
+from a single optical coherence tomography (OCT) 3D scan of the optic nerve head (ONH); (2) To compare
+its performance to that obtained with a standard 3D convolutional neural network (CNN), and with
+a gold-standard glaucoma parameter, i.e. retinal nerve fiber layer (RNFL) thickness. Methods:
+3D raster scans of the ONH were acquired with Spectralis OCT for 477 glaucoma and 2,296 non-glaucoma
+subjects at the Singapore National Eye Centre. All volumes were automatically segmented using
+deep learning to identify 7 major neural and connective tissues including the RNFL, the prelamina,
+and the lamina cribrosa (LC). Each ONH was then represented as a 3D point cloud with 1,000 points chosen
+randomly from all tissue boundaries. To simplify the problem, all ONH point clouds were aligned
+with respect to the plane and center of Bruch's membrane opening. Geometric deep learning (PointNet)
+was then used to provide a glaucoma diagnosis from a single OCT point cloud. The performance of our
+approach was compared to that obtained with a 3D CNN, and with RNFL thickness. Results: PointNet
+was able to provide a robust glaucoma diagnosis solely from the ONH represented as a 3D point cloud
+(AUC=95%). The performance of PointNet was superior to that obtained with a standard 3D CNN (AUC=87%)
+and with that obtained from RNFL thickness alone (AUC=80%). Discussion: We provide a proof-of-principle
+for the application of geometric deep learning in the field of glaucoma. Our technique requires
+significantly less information as input to perform better than a 3D CNN, and with an AUC superior
+to that obtained from RNFL thickness alone. Geometric deep learning may have wide applicability
+in the field of Ophthalmology. 

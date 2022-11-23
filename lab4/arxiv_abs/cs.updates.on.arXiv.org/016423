@@ -1,0 +1,19 @@
+In recent years, as blockchain adoption has been expanding across a wide range of domains, e.g.,
+supply chain and digital asset, smart contracts' confidentiality has now become a fundamental
+demand for practical applications. However, while new privacy protection techniques are emerging,
+how existing ones can best fit development settings is understudied. State-of-art solutions lack
+architectural support of programming interfaces thus can hardly reach general developers. This
+paper proposes CLOAK, a pluggable and configurable framework for developing and deploying confidential
+smart contracts. The key capability of CLOAK is to allow developers to develop and deploy practical
+solutions to Multi-party Transaction (MPT) problems, i.e., to verifiably transact with secret
+parameters and states owned by different parties by simply specifying it. To this end, CLOAK allows
+users to specify privacy invariants in a declarative way, automatically generate runtime with
+enforced privacy, and deploy it to enable the MPT on existing platforms. Additionally, we identify
+the pitfalls and treats for achieving MPT, e.g., achieving public verifiability and resisting
+byzantine adversaries with minimal blockchain interaction. In our evaluation of both examples
+and real-world applications, developers manage to deploy business services on blockchain concisely
+by only developing CLOAK smart contracts, whose size is less than 13.5% of the deployed ones. Moreover,
+while previous works require at least $O(n)$ transactions to secure an MPT, CLOAK requires only
+2 transactions and reduces gas cost by 29% on average. We believe that the insights learned from CLOAK
+pave the way for public verifiable thus reusable general-purpose multi-party computation achieved
+by harmonizing TEE and blockchain. 

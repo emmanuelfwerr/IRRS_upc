@@ -1,0 +1,19 @@
+Robotic manipulators are widely used in modern manufacturing processes. However, their deployment
+in unstructured environments remains an open problem. To deal with the variety, complexity, and
+uncertainty of real-world manipulation tasks, it is essential to develop a flexible framework
+with reduced assumptions on the environment characteristics. In recent years, reinforcement
+learning (RL) has shown great results for single-arm robotic manipulation. However, research
+focusing on dual-arm manipulation is still rare. From a classical control perspective, solving
+such tasks often involves complex modeling of interactions between two manipulators and the objects
+encountered in the tasks, as well as the two robots coupling at a control level. Instead, in this work,
+we explore the applicability of model-free RL to dual-arm assembly. As we aim to contribute towards
+an approach that is not limited to dual-arm assembly, but dual-arm manipulation in general, we keep
+modeling efforts at a minimum. Hence, to avoid modeling the interaction between the two robots and
+the used assembly tools, we present a modular approach with two decentralized single-arm controllers
+which are coupled using a single centralized learned policy. We reduce modeling effort to a minimum
+by using sparse rewards only. Our architecture enables successful assembly and simple transfer
+from simulation to the real world. We demonstrate the effectiveness of the framework on dual-arm
+peg-in-hole and analyze sample efficiency and success rates for different action spaces. Moreover,
+we compare results on different clearances and showcase disturbance recovery and robustness,
+when dealing with position uncertainties. Finally we zero-shot transfer policies trained in simulation
+to the real world and evaluate their performance. 

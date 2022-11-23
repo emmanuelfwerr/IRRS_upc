@@ -1,0 +1,18 @@
+A key reason for the lack of reliability of deep neural networks in the real world is their heavy reliance
+on spurious input features that are not essential to the true label. Focusing on image classifications,
+we define core attributes as the set of visual features that are always a part of the object definition
+while spurious attributes are the ones that are likely to co-occur with the object but not a part of
+it (e.g., attribute "fingers" for class "band aid"). Traditional methods for discovering spurious
+features either require extensive human annotations (thus, not scalable), or are useful on specific
+models. In this work, we introduce a general framework to discover a subset of spurious and core visual
+attributes used in inferences of a general model and localize them on a large number of images with
+minimal human supervision. Our methodology is based on this key idea: to identify spurious or core
+visual attributes used in model predictions, we identify spurious or core neural features (penultimate
+layer neurons of a robust model) via limited human supervision (e.g., using top 5 activating images
+per feature). We then show that these neural feature annotations generalize extremely well to many
+more images without any human supervision. We use the activation maps for these neural features
+as the soft masks to highlight spurious or core visual attributes. Using this methodology, we introduce
+the Salient Imagenet dataset containing core and spurious masks for a large set of samples from Imagenet.
+Using this dataset, we show that several popular Imagenet models rely heavily on various spurious
+features in their predictions, indicating the standard accuracy alone is not sufficient to fully
+assess model' performance specially in safety-critical applications. 

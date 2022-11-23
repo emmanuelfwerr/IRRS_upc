@@ -1,0 +1,19 @@
+Deep operator learning has emerged as a promising tool for reduced-order modelling and PDE model
+discovery. Leveraging the expressive power of deep neural networks, especially in high dimensions,
+such methods learn the mapping between functional state variables. While proposed methods have
+assumed noise only in the dependent variables, experimental and numerical data for operator learning
+typically exhibit noise in the independent variables as well, since both variables represent signals
+that are subject to measurement error. In regression on scalar data, failure to account for noisy
+independent variables can lead to biased parameter estimates. With noisy independent variables,
+linear models fitted via ordinary least squares (OLS) will show attenuation bias, wherein the slope
+will be underestimated. In this work, we derive an analogue of attenuation bias for linear operator
+regression with white noise in both the independent and dependent variables. In the nonlinear setting,
+we computationally demonstrate underprediction of the action of the Burgers operator in the presence
+of noise in the independent variable. We propose error-in-variables (EiV) models for two operator
+regression methods, MOR-Physics and DeepONet, and demonstrate that these new models reduce bias
+in the presence of noisy independent variables for a variety of operator learning problems. Considering
+the Burgers operator in 1D and 2D, we demonstrate that EiV operator learning robustly recovers operators
+in high-noise regimes that defeat OLS operator learning. We also introduce an EiV model for time-evolving
+PDE discovery and show that OLS and EiV perform similarly in learning the Kuramoto-Sivashinsky
+evolution operator from corrupted data, suggesting that the effect of bias in OLS operator learning
+depends on the regularity of the target operator. 

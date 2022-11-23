@@ -1,0 +1,19 @@
+Keyphrase extraction from a given document is the task of automatically extracting salient phrases
+that best describe the document. This paper proposes a novel unsupervised graph-based ranking
+method to extract high-quality phrases from a given document. We obtain the contextualized embeddings
+from pre-trained language models enriched with topic vectors from Latent Dirichlet Allocation
+(LDA) to represent the candidate phrases and the document. We introduce a scoring mechanism for
+the phrases using the information obtained from contextualized embeddings and the topic vectors.
+The salient phrases are extracted using a ranking algorithm on an undirected graph constructed
+for the given document. In the undirected graph, the nodes represent the phrases, and the edges between
+the phrases represent the semantic relatedness between them, weighted by a score obtained from
+the scoring mechanism. To demonstrate the efficacy of our proposed method, we perform several experiments
+on open source datasets in the science domain and observe that our novel method outperforms existing
+unsupervised embedding based keyphrase extraction methods. For instance, on the SemEval2017
+dataset, our method advances the F1 score from 0.2195 (EmbedRank) to 0.2819 at the top 10 extracted
+keyphrases. Several variants of the proposed algorithm are investigated to determine their effect
+on the quality of keyphrases. We further demonstrate the ability of our proposed method to collect
+additional high-quality keyphrases that are not present in the document from external knowledge
+bases like Wikipedia for enriching the document with newly discovered keyphrases. We evaluate
+this step on a collection of annotated documents. The F1-score at the top 10 expanded keyphrases
+is 0.60, indicating that our algorithm can also be used for 'concept' expansion using external knowledge.

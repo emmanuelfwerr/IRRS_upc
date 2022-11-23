@@ -1,0 +1,20 @@
+A two-phase, low-Mach-number flow solver is proposed for variable-density liquid and gas with
+phase change. The interface is captured using a split Volume-of-Fluid method, which solves the
+advection of the reference phase, generalized for the case where the liquid velocity is not divergence-free
+and both phases exchange mass. A sharp interface is identified by using PLIC. Mass conservation
+is achieved in the limit of incompressible liquid, but not with the liquid compressibility and mass
+exchange. This is a relevant modeling choice for two-phase mixtures at near-critical and supercritical
+pressure conditions for the liquid but away from the mixture critical temperature. Under this thermodynamic
+environment, the dissolution of lighter gas species into the liquid phase is enhanced and vaporization
+or condensation can occur simultaneously at different interface locations. The numerical challenge
+of solving two-phase, supercritical-pressure flows is greater than simpler two-phase solvers
+because: a) local phase equilibrium is imposed at each interface cell to determine temperature,
+composition, or surface tension coefficient; b) a real-fluid thermodynamic model is used to obtain
+fluid properties; and c) necessary phase-wise values for certain variables are obtained via extrapolation
+techniques. To alleviate the increased numerical cost, the pressure Poisson equation (PPE) used
+to solve the low-Mach-number flow is split into a constant-coefficient implicit part and a variable-coefficient
+explicit part. Thus, a Fast Fourier Transform method can be used for the PPE. Various verification
+tests are performed to show the accuracy and viability of the present approach. The growth of surface
+instabilities in a binary system composed of liquid n-decane and gaseous oxygen at supercritical
+pressures for n-decane is analyzed. Other features of supercritical liquid injection are also
+shown. 

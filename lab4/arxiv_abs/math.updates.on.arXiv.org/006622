@@ -1,0 +1,20 @@
+The accurate and efficient evaluation of potentials with singular or weakly-singular kernels
+is of great importance for the numerical solution of partial differential equations. When the integration
+domain of the potential is irregular and is discretized by an unstructured mesh, the function spaces
+of near field and self-interactions are non-compact, and, thus, their computations cannot be easily
+accelerated. In this paper, we propose several novel and complementary techniques for accelerating
+the evaluation of potentials over unstructured meshes. Firstly, we observe that the standard approximation
+of the near field by a ball or a triangle often leads to an over-estimated near field. We rigorously
+characterize the geometry of the near field, and show that this analysis can be used to reduce the
+number of near field interaction computations dramatically. Secondly, as the near field can be
+made arbitrarily small by increasing the order of the far field quadrature rule, the expensive near
+field interaction computation can be efficiently offloaded onto the FMM-based far field interaction
+computation, which leverages the computational efficiency of highly optimized parallel FMM libraries.
+Finally, we observe that the usual arrangement in which the interpolation nodes are placed on the
+same mesh over which the potential is integrated results in an artificially large number of near
+field interaction calculations, since the discretization points tend to cluster near the boundaries
+of mesh elements. We show that the use of a separate staggered mesh for interpolation effectively
+reduces the cost of near field and self-interaction computations. Besides these contributions,
+we present a robust and extensible framework for the evaluation and interpolation of 2-D volume
+potentials over complicated geometries. We demonstrate the effectiveness of the techniques with
+several numerical experiments. 

@@ -1,0 +1,19 @@
+The Quantum CONGEST model is a variant of the CONGEST model, where messages consist of $O(\log(n))$
+qubits. We give a general framework for implementing quantum query algorithms in Quantum CONGEST,
+using the concept of parallel-queries. We apply our framework for distributed quantum queries
+in two settings: when data is distributed over the network, and graph theoretical problems where
+the network defines the input. The first is slightly unusual in CONGEST but our results follow almost
+directly. The second is more traditional for the CONGEST model but here we require some classical
+CONGEST steps to get our results. In the setting with distributed data, we show how a network can schedule
+a meeting in one of $k$ dates using $\tilde{O}(\sqrt{kD}+D)$ rounds, with $D$ the network diameter.
+We also give an algorithm for element distinctness: if all nodes together hold a list of $k$ numbers,
+they can find a duplicate in $\tilde O(k^{2/3}D^{1/3}+D)$ rounds. We also generalize the protocol
+for the distributed Deutsch-Jozsa problem from the two-party setting considered in [arXiv:quant-ph/9802040]
+to general networks, giving a novel separation between exact classical and exact quantum protocols
+in CONGEST. When the input is the network structure itself, we almost directly recover the $O(\sqrt{nD})$
+round diameter computation algorithm of Le Gall and Magniez [arXiv:1804.02917]. We also compute
+the radius in the same number of rounds, and give an $\epsilon$-additive approximation of the average
+eccentricity in $\tilde{O}(D+D^{3/2}/\epsilon)$ rounds. Finally, we give quantum speedups
+for the problems of cycle detection and girth computation. We detect whether a graph has a cycle of
+length at most $k$ in $O(k+(kn)^{1/2-1/\Theta(k)})$ rounds. For girth computation we give an $\tilde{O}(g+(gn)^{1/2-1/\Theta(g)})$
+round algorithm for graphs with girth $g$, beating the known classical lower bound. 

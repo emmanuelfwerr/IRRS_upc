@@ -1,0 +1,20 @@
+Diffusion Monte Carlo (DMC) is being recognized as a higher-accuracy, albeit more computationally
+expensive, alternative to Density Functional Theory (DFT) for energy predictions of catalytic
+systems. A major computational bottleneck in the use of DMC for catalysis is the need to perform finite-size
+extrapolations by simulating increasingly large periodic cells (supercells) to eliminate many-body
+finite-size effects and obtain energies in the thermodynamic limit. Here, we show that this computational
+cost can be significantly reduced by leveraging the cancellation of many-body finite-size errors
+that accompanies the evaluation of energy differences when calculating quantities like binding
+energies and mapping potential energy surfaces. We test the error cancellation and convergence
+in two well-known adsorbate/slab systems, H2O/LiH(001) and CO/Pt(111). Based on this, we identify
+strategies for obtaining binding energies in the thermodynamic limit that optimize error cancellation
+to balance accuracy and computational efficiency. We then predict the correct order of adsorption
+site preference on CO/Pt(111), a challenging problem for DFT. Our accurate, inexpensive DMC calculations
+recover the top > bridge > hollow site order, in agreement with experimental observations. We proceed
+to map the potential energy surface of CO hopping between Pt(111) adsorption sites. This reveals
+the existence of an L-shaped top-bridge-hollow diffusion trajectory characterized by energy
+barriers that provide an additional kinetic justification for experimental observations of CO/Pt(111)
+adsorption. Overall, this work demonstrates that it is routinely possible to achieve order-of-magnitude
+speedups and memory savings in DMC calculations by taking advantage of error cancellation in the
+calculation of energy differences that are ubiquitous in heterogeneous catalysis and surface
+chemistry more broadly. 

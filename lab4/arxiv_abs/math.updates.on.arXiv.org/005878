@@ -1,0 +1,20 @@
+We develop a framework for simulating measure-preserving, ergodic dynamical systems on a quantum
+computer. Our approach provides a new operator-theoretic representation of classical dynamics
+by combining ergodic theory with quantum information science. The resulting quantum embedding
+of classical dynamics (QECD) enables efficient simulation of spaces of classical observables
+with exponentially large dimension using a quadratic number of quantum gates. The QECD framework
+is based on a quantum feature map for representing classical states by density operators on a reproducing
+kernel Hilbert space, $\mathcal H $, and an embedding of classical observables into self-adjoint
+operators on $\mathcal H$. In this scheme, quantum states and observables evolve unitarily under
+the lifted action of Koopman evolution operators of the classical system. Moreover, by virtue of
+the reproducing property of $\mathcal H$, the quantum system is pointwise-consistent with the
+underlying classical dynamics. To achieve an exponential quantum computational advantage, we
+project the state of the quantum system to a density matrix on a $2^n$-dimensional tensor product
+Hilbert space associated with $n$ qubits. By employing discrete Fourier-Walsh transforms, the
+evolution operator of the finite-dimensional quantum system is factorized into tensor product
+form, enabling implementation through a quantum circuit of size $O(n)$. Furthermore, the circuit
+features a state preparation stage, also of size $O(n)$, and a quantum Fourier transform stage of
+size $O(n^2)$, which makes predictions of observables possible by measurement in the standard
+computational basis. We prove theoretical convergence results for these predictions as $n\to\infty$.
+We present simulated quantum circuit experiments in Qiskit Aer, as well as actual experiments on
+the IBM Quantum System One. 

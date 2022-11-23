@@ -1,0 +1,20 @@
+In this paper, we focus on learning effective entity matching models over multi-source large-scale
+data. For real applications, we relax typical assumptions that data distributions/spaces, or
+entity identities are shared between sources, and propose a Relaxed Multi-source Large-scale
+Entity-matching (RMLE) problem. Challenges of the problem include 1) how to align large-scale
+entities between sources to share information and 2) how to mitigate negative transfer from joint
+learning multi-source data. What's worse, one practical issue is the entanglement between both
+challenges. Specifically, incorrect alignments may increase negative transfer; while mitigating
+negative transfer for one source may result in poorly learned representations for other sources
+and then decrease alignment accuracy. To handle the entangled challenges, we point out that the
+key is to optimize information sharing first based on Pareto front optimization, by showing that
+information sharing significantly influences the Pareto front which depicts lower bounds of negative
+transfer. Consequently, we proposed an Incentive Compatible Pareto Alignment (ICPA) method to
+first optimize cross-source alignments based on Pareto front optimization, then mitigate negative
+transfer constrained on the optimized alignments. This mechanism renders each source can learn
+based on its true preference without worrying about deteriorating representations of other sources.
+Specifically, the Pareto front optimization encourages minimizing lower bounds of negative transfer,
+which optimizes whether and which to align. Comprehensive empirical evaluation results on four
+large-scale datasets are provided to demonstrate the effectiveness and superiority of ICPA. Online
+A/B test results at a search advertising platform also demonstrate the effectiveness of ICPA in
+production environments. 

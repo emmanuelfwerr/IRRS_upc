@@ -1,0 +1,20 @@
+Deep artificial neural networks (DNNs) have moved to the forefront of medical image analysis due
+to their success in classification, segmentation, and detection challenges. A principal challenge
+in large-scale deployment of DNNs in neuroimage analysis is the potential for shifts in signal-to-noise
+ratio, contrast, resolution, and presence of artifacts from site to site due to variances in scanners
+and acquisition protocols. DNNs are famously susceptible to these distribution shifts in computer
+vision. Currently, there are no benchmarking platforms or frameworks to assess the robustness
+of new and existing models to specific distribution shifts in MRI, and accessible multi-site benchmarking
+datasets are still scarce or task-specific. To address these limitations, we propose ROOD-MRI:
+a platform for benchmarking the Robustness of DNNs to Out-Of-Distribution (OOD) data, corruptions,
+and artifacts in MRI. The platform provides modules for generating benchmarking datasets using
+transforms that model distribution shifts in MRI, implementations of newly derived benchmarking
+metrics for image segmentation, and examples for using the methodology with new models and tasks.
+We apply our methodology to hippocampus, ventricle, and white matter hyperintensity segmentation
+in several large studies, providing the hippocampus dataset as a publicly available benchmark.
+By evaluating modern DNNs on these datasets, we demonstrate that they are highly susceptible to
+distribution shifts and corruptions in MRI. We show that while data augmentation strategies can
+substantially improve robustness to OOD data for anatomical segmentation tasks, modern DNNs using
+augmentation still lack robustness in more challenging lesion-based segmentation tasks. We finally
+benchmark U-Nets and transformer-based models, finding consistent differences in robustness
+to particular classes of transforms across architectures. 

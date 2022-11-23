@@ -1,0 +1,19 @@
+Complete time of flight (TOF) sinograms of state-of-the-art TOF PET scanners have a large memory
+footprint. Currently, they contain ~4e9 data bins which amount to ~17GB in 32bit floating point
+precision. Using iterative algorithms to reconstruct such enormous TOF sinograms becomes increasingly
+challenging due to the memory requirements and the computation time needed to evaluate the forward
+model for every data bin. This is especially true for more advanced optimization algorithms such
+as the SPDHG algorithm which allows for the use of non-smooth priors using subsets with guaranteed
+convergence. SPDHG requires the storage of additional sinograms in memory, which severely limits
+its application to data sets from state-of-the-art TOF PET systems. Motivated by the generally
+sparse nature of the TOF sinograms, we propose and analyze a new listmode (LM) extension of the SPDHG
+algorithm for reconstruction of sparse data following a Poisson distribution. The new algorithm
+is evaluated based on 2D and 3D simulations, and a real dataset acquired on a recent TOF PET/CT system.
+The performance of the newly proposed LM SPDHG algorithm is compared against the conventional sinogram
+SPDHG and the listmode EM-TV algorithm. We show that the speed of convergence of LM-SPDHG is equivalent
+the original SPDHG using binned data. However, we find that for a TOF PET system with 400ps TOF resolution,
+LM-SPDHG reduces the required memory from ~56GB to 0.7GB for a short dynamic frame with 1e7 counts
+and to 12.4GB for a long static acquisition with 5e8 counts. In contrast to SPDHG, the reduced memory
+requirements of LM-SPDHG enable a pure GPU implementation on state-of-the-art GPUs which will
+substantially accelerate reconstruction times. This in turn will allow the application of LM-SPDHG
+in routine clinical practice where short reconstruction times are crucial. 

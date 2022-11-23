@@ -1,0 +1,20 @@
+A critical need in assistive robotics, such as assistive wheelchairs for navigation, is a need to
+learn task intent and safety guarantees through user interactions in order to ensure safe task performance.
+For tasks where the objectives from the user are not easily defined, learning from user demonstrations
+has been a key step in enabling learning. However, most robot learning from demonstration (LfD)
+methods primarily rely on optimal demonstration in order to successfully learn a control policy,
+which can be challenging to acquire from novice users. Recent work does use suboptimal and failed
+demonstrations to learn about task intent; few focus on learning safety guarantees to prevent repeat
+failures experienced, essential for assistive robots. Furthermore, interactive human-robot
+learning aims to minimize effort from the human user to facilitate deployment in the real-world.
+As such, requiring users to label the unsafe states or keyframes from the demonstrations should
+not be a necessary requirement for learning. Here, we propose an algorithm to learn a safety value
+function from a set of suboptimal and failed demonstrations that is used to generate a real-time
+safety control filter. Importantly, we develop a credit assignment method that extracts the failure
+states from the failed demonstrations without requiring human labelling or prespecified knowledge
+of unsafe regions. Furthermore, we extend our formulation to allow for user-specific safety functions,
+by incorporating user-defined safety rankings from which we can generate safety level sets according
+to the users' preferences. By using both suboptimal and failed demonstrations and the developed
+credit assignment formulation, we enable learning a safety value function with minimal effort
+needed from the user, making it more feasible for widespread use in human-robot interactive learning
+tasks. 

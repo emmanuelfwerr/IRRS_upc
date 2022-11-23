@@ -1,0 +1,19 @@
+While deep learning-based image reconstruction methods have shown significant success in removing
+objects from pictures, they have yet to achieve acceptable results for attributing consistency
+to gender, ethnicity, expression, and other characteristics like the topological structure of
+the face. The purpose of this work is to extract the mask region from a masked image and rebuild the
+area that has been detected. This problem is complex because (i) it is difficult to determine the
+gender of an image hidden behind a mask, which causes the network to become confused and reconstruct
+the male face as a female or vice versa; (ii) we may receive images from multiple angles, making it
+extremely difficult to maintain the actual shape, topological structure of the face and a natural
+image; and (iii) there are problems with various mask forms because, in some cases, the area of the
+mask cannot be anticipated precisely; certain parts of the mask remain on the face after completion.
+To solve this complex task, we split the problem into three phases: landmark detection, object detection
+for the targeted mask area, and inpainting the addressed mask region. To begin, to solve the first
+problem, we have used gender classification, which detects the actual gender behind a mask, then
+we detect the landmark of the masked facial image. Second, we identified the non-face item, i.e.,
+the mask, and used the Mask R-CNN network to create the binary mask of the observed mask area. Thirdly,
+we developed an inpainting network that uses anticipated landmarks to create realistic images.
+To segment the mask, this article uses a mask R-CNN and offers a binary segmentation map for identifying
+the mask area. Additionally, we generated the image utilizing landmarks as structural guidance
+through a GAN-based network. The studies presented in this paper use the FFHQ and CelebA datasets.

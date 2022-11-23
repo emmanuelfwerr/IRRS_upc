@@ -1,0 +1,20 @@
+CP decomposition (CPD) is prevalent in chemometrics, signal processing, data mining and many more
+fields. While many algorithms have been proposed to compute the CPD, alternating least squares
+(ALS) remains one of the most widely used algorithm for computing the decomposition. Recent works
+have introduced the notion of eigenvalues and singular values of a tensor and explored applications
+of eigenvectors and singular vectors in areas like signal processing, data analytics and in various
+other fields. We introduce a new formulation for deriving singular values and vectors of a tensor
+by considering the critical points of a function different from what is used in the previous work.
+Computing these critical points in an alternating manner motivates an alternating optimization
+algorithm which corresponds to alternating least squares algorithm in the matrix case. However,
+for tensors with order greater than equal to $3$, it minimizes an objective function which is different
+from the commonly used least squares loss. Alternating optimization of this new objective leads
+to simple updates to the factor matrices with the same asymptotic computational cost as ALS. We show
+that a subsweep of this algorithm can achieve a superlinear convergence rate for exact CPD with known
+rank and verify it experimentally. We then view the algorithm as optimizing a Mahalanobis distance
+with respect to each factor with ground metric dependent on the other factors. This perspective
+allows us to generalize our approach to interpolate between updates corresponding to the ALS and
+the new algorithm to manage the tradeoff between stability and fitness of the decomposition. Our
+experimental results show that for approximating synthetic and real-world tensors, this algorithm
+and its variants converge to a better conditioned decomposition with comparable and sometimes
+better fitness as compared to the ALS algorithm. 

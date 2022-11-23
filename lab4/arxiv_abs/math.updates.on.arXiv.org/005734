@@ -1,0 +1,20 @@
+This paper studies the UAV-enabled integrated sensing and communication (ISAC), in which UAVs
+are dispatched as aerial dual-functional access points (APs) for efficient ISAC. In particular,
+we consider a scenario with one UAV-AP equipped with a vertically placed uniform linear array (ULA),
+which sends combined information and sensing signals to communicate with multiple users and sense
+potential targets at interested areas on the ground simultaneously. Our objective is to jointly
+design the UAV maneuver with the transmit beamforming for optimizing the communication performance
+while ensuring the sensing requirements. First, we consider the quasi-stationary UAV scenario,
+in which the UAV is deployed at an optimizable location over the whole ISAC mission period. In this
+case, we jointly optimize the UAV deployment location, as well as the transmit information and sensing
+beamforming to maximize the weighted sum-rate throughput, subject to the sensing beampattern
+gain requirements and transmit power constraint. Although the above problem is non-convex, we
+find a high-quality solution by using the techniques of SCA and SDR, together with a 2D location search.
+Next, we consider the fully mobile UAV scenario, in which the UAV can fly over different locations
+during the ISAC mission period. In this case, we optimize the UAV flight trajectory, jointly with
+the transmit beamforming over time, to maximize the average weighted sum-rate throughput, subject
+to the sensing beampattern gain requirements and transmit power constraints as well as practical
+flight constraints. While the joint UAV trajectory and beamforming problem is more challenging
+to solve, we propose an efficient algorithm by adopting the alternating optimization together
+with SCA. Finally, numerical results are provided to validate the superiority of our proposed designs
+as compared to various benchmark schemes. 

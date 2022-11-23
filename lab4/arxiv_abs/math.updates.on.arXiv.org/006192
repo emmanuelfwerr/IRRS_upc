@@ -1,0 +1,19 @@
+In this paper, we propose a conservative low rank tensor method to approximate nonlinear Vlasov
+solutions. The low rank approach is based on our earlier work (arxiv: 2106.08834). It takes advantage
+of the fact that the differential operators in the Vlasov equation are tensor friendly, based on
+which we propose to dynamically and adaptively build up low rank solution basis by adding new basis
+functions from discretization of the differential equation, and removing basis from a singular
+value decomposition (SVD)-type truncation procedure. For the discretization, we adopt a high
+order finite difference spatial discretization together with a second order strong stability
+preserving multi-step time discretization. While the SVD truncation will remove the redundancy
+in representing the high dimensional Vlasov solution, it will destroy the conservation properties
+of the associated full conservative scheme. In this paper, we develop a conservative truncation
+procedure with conservation of mass, momentum and kinetic energy densities. The conservative
+truncation is achieved by an orthogonal projection onto a subspace spanned by $1$, $v$ and $v^2$
+in the velocity space associated with a weighted inner product. Then the algorithm performs a weighted
+SVD truncation of the remainder, which involves a scaling, followed by the standard SVD truncation
+and rescaling back. The algorithm is further developed in high dimensions with hierarchical Tucker
+tensor decomposition of high dimensional Vlasov solutions, overcoming the curse of dimensionality.
+An extensive set of nonlinear Vlasov examples are performed to show the effectiveness and conservation
+property of proposed conservative low rank approach. Comparison is performed against the non-conservative
+low rank tensor approach on conservation history of mass, momentum and energy. 

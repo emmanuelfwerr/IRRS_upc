@@ -1,0 +1,19 @@
+In this paper we study syntactic branching programs of bounded repetition representing CNFs of
+bounded treewidth. For this purpose we introduce two new structural graph parameters $d$-pathwidth
+and clique preserving $d$-pathwidth denoted by $d-pw(G)$ and $d-cpw(G)$ where $G$ is a graph. We
+show that $2-cpw(G) \leq O(tw(G) \Delta(G))$ where $tw(G)$ and $\Delta(G)$ are, respectively
+the treewidth and maximal degree of $G$. Using this upper bound, we demonstrate that each CNF $\psi$
+can be represented as a conjunction of two OBDDs of size $2^{O(\Delta(\psi)*tw(\psi)^2)}$ where
+$tw(\psi)$ is the treewidth of the primal graph of $\psi$ and each variable occurs in $\psi$ at most
+$\Delta(\psi)$ times. Next we use $d$-pathwdith to obtain lower bounds for monotone branching
+programs. In particular, we consider the monotone version of syntactic nondeterministic read
+$d$ times branching programs (just forbidding negative literals as edge labels) and introduce
+a further restriction that each computational path can be partitioned into at most $d$ read-once
+subpaths. We call the resulting model separable monotone read $d$ times branching programs and
+abbreviate them $d$-SMNBPs. For each graph $G$ without isolated vertices, we introduce a CNF $\psi(G)$
+whsose clauses are $(u \vee e \vee v)$ for each edge $e=\{u,v\}$ of $G$. We prove that a $d$-SMNBP representing
+$\psi(G)$ is of size at least $\Omega(c^{d-pw(G)})$ where $c=(8/7)^{1/12}$. We use this 'generic'
+lower bound to obtain an exponential lower bound for a 'concrete' class of CNFs $\psi(K_n)$. In particular,
+we demonstrate that for each $0<a<1$, the size of $n^{a}$-SMNBP representing $\psi(K_n)$ is at
+least $c^{n^b}$ where $b$ is an arbitrary constant such that $a+b<1$. This lower bound is tight in
+the sense $\psi(K_n)$ can be represented by a poly-sized $n$-SMNBP. 

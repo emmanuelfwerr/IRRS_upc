@@ -1,0 +1,20 @@
+Due to data privacy constraints, data sharing among multiple centers is restricted. Continual
+learning, as one approach to peer-to-peer federated learning, can promote multicenter collaboration
+on deep learning algorithm development by sharing intermediate models instead of training data.
+This work aims to investigate the feasibility of continual learning for multicenter collaboration
+on an exemplary application of brain metastasis identification using DeepMedic. 920 T1 MRI contrast
+enhanced volumes are split to simulate multicenter collaboration scenarios. A continual learning
+algorithm, synaptic intelligence (SI), is applied to preserve important model weights for training
+one center after another. In a bilateral collaboration scenario, continual learning with SI achieves
+a sensitivity of 0.917, and naive continual learning without SI achieves a sensitivity of 0.906,
+while two models trained on internal data solely without continual learning achieve sensitivity
+of 0.853 and 0.831 only. In a seven-center multilateral collaboration scenario, the models trained
+on internal datasets (100 volumes each center) without continual learning obtain a mean sensitivity
+value of 0.699. With single-visit continual learning (i.e., the shared model visits each center
+only once during training), the sensitivity is improved to 0.788 and 0.849 without SI and with SI,
+respectively. With iterative continual learning (i.e., the shared model revisits each center
+multiple times during training), the sensitivity is further improved to 0.914, which is identical
+to the sensitivity using mixed data for training. Our experiments demonstrate that continual learning
+can improve brain metastasis identification performance for centers with limited data. This study
+demonstrates the feasibility of applying continual learning for peer-to-peer federated learning
+in multicenter collaboration. 

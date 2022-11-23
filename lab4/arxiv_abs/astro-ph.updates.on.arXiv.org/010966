@@ -1,0 +1,19 @@
+We present $\texttt{matryoshka}$, a suite of neural network based emulators and accompanying
+Python package that have been developed with the goal of producing fast and accurate predictions
+of the nonlinear galaxy power spectrum. The suite of emulators consists of four linear component
+emulators, from which fast linear predictions of the power spectrum can be made, allowing all nonlinearities
+to be included in predictions from a nonlinear boost component emulator. The linear component emulators
+includes an emulator for the matter transfer function that produces predictions in $\sim 0.0004
+\ \mathrm{s}$, with an error of $<0.08\%$ (at $1\sigma$ level) on scales $10^{-4} \ h \ \mathrm{Mpc}^{-1}<k<10^1
+\ h \ \mathrm{Mpc}^{-1}$. In this paper we demonstrate $\texttt{matryoshka}$ by training the nonlinear
+boost component emulator with analytic training data calculated with HALOFIT, that has been designed
+to replicate training data that would be generated using numerical simulations. Combining all
+the component emulator predictions we achieve an accuracy of $< 0.75\%$ (at $1\sigma$ level) when
+predicting the real space nonlinear galaxy power spectrum on scales $0.0025 \ h \ \mathrm{Mpc}^{-1}<k<1
+\ h \ \mathrm{Mpc}^{-1}$. We use $\texttt{matryoshka}$ to investigate the impact of the analysis
+setup on cosmological constraints by conducting several full shape analyses of the real space galaxy
+power spectrum. Specifically we investigate the impact of the minimum scale (or $k_\mathrm{max}$),
+finding an improvement of $\sim 1.8\times$ in the constraint on $\sigma_8$ by pushing $k_\mathrm{max}$
+from $k_\mathrm{max}=0.25 \ h \ \mathrm{Mpc}^{-1}$ to $k_\mathrm{max}=0.85 \ h \ \mathrm{Mpc}^{-1}$,
+highlighting the potential gains when using clustering emulators such as $\texttt{matryoshka}$
+in cosmological analyses. $\texttt{matryoshka}$ is publicly available at https://github.com/JDonaldM/Matryoshka.

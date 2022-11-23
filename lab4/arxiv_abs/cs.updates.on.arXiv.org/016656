@@ -1,0 +1,18 @@
+The aim of this article is to delineate a theory of interaction semantics and thereby provide a proper
+understanding of the "meaning" of the exchanged characters within an interaction. The key idea
+is to approach the semantics of an interaction as we do for a formal language. This approach consists
+of two steps: first to assign values to variables and second to provide meaning by an interpretation
+function. A natural choice for the variables are the state functions of the interacting systems,
+assigning values at each time step. Thereby the description of a system's behaviour with an input/output-transition
+system (I/O-TS) becomes a representation of the variable-to-value assignments.To identify the
+interpretation function I propose to model the interaction of systems based on Shannon's theory
+of information with the protocol concept, complemented by decisions to form a "game in interactive
+form (GIF)". Decisions in this sense determine the transition relation and thereby create a transition
+function. Then the natural choice for the interpretation function is the transition function of
+the GIF. In this sense, the interpretation of the interaction becomes its execution. Now we can say
+that the interpretation of the characters during the GIF's execution results in their meaning,
+the result of the mapping. Equivalent meaning is based on resulting equivalent states of the GIF.
+Based on the decisions we can partition any GIF into a deterministic traditional automaton where
+the states represent equivalance classes of GIF-states related to a single decision. Except for
+the utility function, this automaton is equivalent to a traditional game in extensive form. Thus,
+traditional game theory actually abstracts from interactions and deals with the meaning of decisions.

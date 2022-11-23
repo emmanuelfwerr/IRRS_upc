@@ -1,0 +1,19 @@
+Equipped with a wide span of sensors, predominant autonomous driving solutions are becoming more
+modular-oriented for safe system design. Though these sensors have laid a solid foundation, most
+massive-production solutions up to date still fall into L2 phase. Among these, Comma.ai comes to
+our sight, claiming one $999 aftermarket device mounted with a single camera and board inside owns
+the ability to handle L2 scenarios. Together with open-sourced software of the entire system released
+by Comma.ai, the project is named Openpilot. Is it possible? If so, how is it made possible? With curiosity
+in mind, we deep-dive into Openpilot and conclude that its key to success is the end-to-end system
+design instead of a conventional modular framework. The model is briefed as Supercombo, and it can
+predict the ego vehicle's future trajectory and other road semantics on the fly from monocular input.
+Unfortunately, the training process and massive amount of data to make all these work are not publicly
+available. To achieve an intensive investigation, we try to reimplement the training details and
+test the pipeline on public benchmarks. The refactored network proposed in this work is referred
+to as OP-Deepdive. For a fair comparison of our version to the original Supercombo, we introduce
+a dual-model deployment scheme to test the driving performance in the real world. Experimental
+results on nuScenes, Comma2k19, CARLA, and in-house realistic scenarios verify that a low-cost
+device can indeed achieve most L2 functionalities and be on par with the original Supercombo model.
+In this report, we would like to share our latest findings, shed some light on the new perspective
+of end-to-end autonomous driving from an industrial product-level side, and potentially inspire
+the community to continue improving the performance. Our code, benchmarks are at https://github.com/OpenPerceptionX/Openpilot-Deepdive.

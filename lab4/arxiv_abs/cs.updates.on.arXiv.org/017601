@@ -1,0 +1,20 @@
+Choreographic programming is an emerging programming paradigm for concurrent and distributed
+systems, whereby developers write the communications that should be enacted and then a distributed
+implementation is automatically obtained by means of a compiler. Theories of choreographic programming
+typically come with strong theoretical guarantees about the compilation process, most notably:
+the generated implementations operationally correspond to their source choreographies and are
+deadlock-free. Currently, the most advanced incarnation of the paradigm is Choral, an object-oriented
+choreographic programming language that targets Java. Choral deviated significantly from known
+theories of choreographies, and introduced the possibility of expressing higher-order choreographies
+(choreographies parameterised over choreographies) that are fully distributed. As a consequence,
+it is unclear if the usual guarantees of choreographies can still hold in the more general setting
+of higher-order ones. We introduce Chor{\lambda}, the first functional choreographic programming
+language: it introduces a new formulation of the standard communication primitive found in choreographies
+as a function, and it is based upon the {\lambda}-calculus. Chor{\lambda} is the first theory that
+explains the core ideas of higher-order choreographic programming (as in Choral). Bridging the
+gap between practice and theory requires developing a new evaluation strategy and typing discipline
+for {\lambda} terms that accounts for the distributed nature of computation in choreographies.
+We illustrate the expressivity of Chor{\lambda} with a series of examples, which include reconstructions
+of the key examples from the original presentation of Choral. Our theory supports the expected properties
+of choreographic programming and bridges the gap between the communities of functional and choreographic
+programming. 

@@ -1,0 +1,20 @@
+Location fingerprinting based on RSSI becomes a mainstream indoor localization technique due
+to its advantage of not requiring the installation of new infrastructure and the modification of
+existing devices, especially given the prevalence of Wi-Fi-enabled devices and the ubiquitous
+Wi-Fi access in modern buildings. The use of AI/ML technologies like DNNs makes location fingerprinting
+more accurate and reliable, especially for large-scale multi-building and multi-floor indoor
+localization. The application of DNNs for indoor localization, however, depends on a large amount
+of preprocessed and deliberately-labeled data for their training. Considering the difficulty
+of the data collection in an indoor environment, especially under the current epidemic situation
+of COVID-19, we investigate three different methods of RSSI data augmentation based on Multi-Output
+Gaussian Process (MOGP), i.e., by a single floor, by neighboring floors, and by a single building;
+unlike Single-Output Gaussian Process (SOGP), MOGP can take into account the correlation among
+RSSI observations from multiple Access Points (APs) deployed closely to each other (e.g., APs on
+the same floor of a building) by collectively handling them. The feasibility of the MOGP-based RSSI
+data augmentation is demonstrated through experiments based on the state-of-the-art RNN indoor
+localization model and the UJIIndoorLoc, i.e., the most popular publicly-available multi-building
+and multi-floor indoor localization database, where the RNN model trained with the UJIIndoorLoc
+database augmented by using the whole RSSI data of a building in fitting an MOGP model (i.e., by a single
+building) outperforms the other two augmentation methods as well as the RNN model trained with the
+original UJIIndoorLoc database, resulting in the mean three-dimensional positioning error of
+8.42 m. 

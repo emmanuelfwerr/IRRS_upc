@@ -1,0 +1,20 @@
+Autonomous Cyber-Physical Systems must often operate under uncertainties like sensor degradation
+and shifts in the operating conditions, which increases its operational risk. Dynamic Assurance
+of these systems requires designing runtime safety components like Out-of-Distribution detectors
+and risk estimators, which require labeled data from different operating modes of the system that
+belong to scenes with adverse operating conditions, sensors, and actuator faults. Collecting
+real-world data of these scenes can be expensive and sometimes not feasible. So, scenario description
+languages with samplers like random and grid search are available to generate synthetic data from
+simulators, replicating these real-world scenes. However, we point out three limitations in using
+these conventional samplers. First, they are passive samplers, which do not use the feedback of
+previous results in the sampling process. Second, the variables to be sampled may have constraints
+that are often not included. Third, they do not balance the tradeoff between exploration and exploitation,
+which we hypothesize is necessary for better search space coverage. We present a scene generation
+approach with two samplers called Random Neighborhood Search (RNS) and Guided Bayesian Optimization
+(GBO), which extend the conventional random search and Bayesian Optimization search to include
+the limitations. Also, to facilitate the samplers, we use a risk-based metric that evaluates how
+risky the scene was for the system. We demonstrate our approach using an Autonomous Vehicle example
+in CARLA simulation. To evaluate our samplers, we compared them against the baselines of random
+search, grid search, and Halton sequence search. Our samplers of RNS and GBO sampled a higher percentage
+of high-risk scenes of 83% and 92%, compared to 56%, 66% and 71% of the grid, random and Halton samplers,
+respectively. 

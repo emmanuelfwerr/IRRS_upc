@@ -1,0 +1,20 @@
+In many applications, to estimate a parameter or quantity of interest psi, a finite-dimensional
+nuisance parameter theta is estimated first. For example, many estimators in causal inference
+depend on the propensity score: the probability of (possibly time-dependent) treatment given
+the past. theta is often estimated in a first step, which can affect the variance of the estimator
+for psi. theta is often estimated by maximum (partial) likelihood. Inverse Probability Weighting,
+Marginal Structural Models and Structural Nested Models are well-known causal inference examples,
+where one often posits a (pooled) logistic regression model for the treatment (initiation) and/or
+censoring probabilities, and estimates these with standard software, so by maximum partial likelihood.
+Inverse Probability Weighting, Marginal Structural Models and Structural Nested Models have
+something else in common: they can all be shown to be based on unbiased estimating equations. This
+paper has four main results for estimators psi-hat based on unbiased estimating equations including
+theta. First, it shows that the true limiting variance of psi-hat is smaller or remains the same when
+theta is estimated by solving (partial) score equations, compared to if theta were known and plugged
+in. Second, it shows that if estimating theta using (partial) score equations is ignored, the resulting
+sandwich estimator for the variance of psi-hat is conservative. Third, it provides a variance correction.
+Fourth, it shows that if the estimator psi-hat with the true theta plugged in is efficient, the true
+limiting variance of psi-hat does not depend on whether or not theta is estimated, and the sandwich
+estimator for the variance of psi-hat ignoring estimation of theta is consistent. These findings
+hold in semiparametric and parametric settings where the parameters of interest psi are estimated
+based on unbiased estimating equations. 

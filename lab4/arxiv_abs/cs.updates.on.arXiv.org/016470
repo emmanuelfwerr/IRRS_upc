@@ -1,0 +1,20 @@
+With the introduction of Navigation Message Authentication (NMA), future Global Navigation Satellite
+Systems (GNSSs) prevent spoofing by simulation, i.e., the generation of forged satellite signals
+based on public information. However, authentication does not prevent record-and-replay attacks,
+commonly termed as meaconing. These attacks are less powerful in terms of adversarial control over
+the victim receiver location and time, but by acting at the signal level, they are not thwarted by
+NMA. This makes replaying/relaying attacks a significant threat for GNSS. While there are numerous
+investigations on meaconing, the majority does not rely on actual implementation and experimental
+evaluation in real-world settings. In this work, we contribute to the improvement of the experimental
+understanding of meaconing attacks. We design and implement a system capable of real-time, distributed,
+and mobile meaconing, built with off-the-shelf hardware. We extend from basic distributed attacks,
+with signals from different locations relayed over the Internet and replayed within range of the
+victim receiver(s): this has high bandwidth requirements and thus depends on the quality of service
+of the available network to work. To overcome this limitation, we propose to replay on message level,
+including the authentication part of the payload. The resultant reduced bandwidth enables the
+attacker to operate in mobile scenarios, as well as to replay signals from multiple GNSS constellations
+and/or bands simultaneously. Additionally, the attacker can delay individually selected satellite
+signals to potentially influence the victim position and time solution in a more fine-grained manner.
+Our versatile test-bench, enabling different types of replaying/relaying attacks, facilitates
+testing realistic scenarios towards new and improved replaying/relaying-focused countermeasures
+in GNSS receivers. 

@@ -1,0 +1,19 @@
+Unlearning the data observed during the training of a machine learning (ML) model is an important
+task that can play a pivotal role in fortifying the privacy and security of ML-based applications.
+This paper raises the following questions: (i) can we unlearn a class/classes of data from a ML model
+without looking at the full training data even once? (ii) can we make the process of unlearning fast
+and scalable to large datasets, and generalize it to different deep networks? We introduce a novel
+machine unlearning framework with error-maximizing noise generation and impair-repair based
+weight manipulation that offers an efficient solution to the above questions. An error-maximizing
+noise matrix is learned for the class to be unlearned using the original model. The noise matrix is
+used to manipulate the model weights to unlearn the targeted class of data. We introduce impair and
+repair steps for a controlled manipulation of the network weights. In the impair step, the noise
+matrix along with a very high learning rate is used to induce sharp unlearning in the model. Thereafter,
+the repair step is used to regain the overall performance. With very few update steps, we show excellent
+unlearning while substantially retaining the overall model accuracy. Unlearning multiple classes
+requires a similar number of update steps as for the single class, making our approach scalable to
+large problems. Our method is quite efficient in comparison to the existing methods, works for multi-class
+unlearning, doesn't put any constraints on the original optimization mechanism or network design,
+and works well in both small and large-scale vision tasks. This work is an important step towards
+fast and easy implementation of unlearning in deep networks. We will make the source code publicly
+available. 

@@ -1,0 +1,18 @@
+We present a postprocessing layer for deformable image registration to make a registration field
+more diffeomorphic by encouraging Jacobians of the transformation to be positive. Diffeomorphic
+image registration is important for medical imaging studies because of the properties like invertibility,
+smoothness of the transformation, and topology preservation/non-folding of the grid. Violation
+of these properties can lead to destruction of the neighbourhood and the connectivity of anatomical
+structures during image registration. Most of the recent deep learning methods do not explicitly
+address this folding problem and try to solve it with a smoothness regularization on the registration
+field. In this paper, we propose a differentiable layer, which takes any registration field as its
+input, computes exponential of the Jacobian matrices of the input and reconstructs a new registration
+field from the exponentiated Jacobian matrices using Poisson reconstruction. Our proposed Poisson
+reconstruction loss enforces positive Jacobians for the final registration field. Thus, our method
+acts as a post-processing layer without any learnable parameters of its own and can be placed at the
+end of any deep learning pipeline to form an end-to-end learnable framework. We show the effectiveness
+of our proposed method for a popular deep learning registration method Voxelmorph and evaluate
+it with a dataset containing 3D brain MRI scans. Our results show that our post-processing can effectively
+decrease the number of non-positive Jacobians by a significant amount without any noticeable deterioration
+of the registration accuracy, thus making the registration field more diffeomorphic. Our code
+is available online at https://github.com/Soumyadeep-Pal/Diffeomorphic-Image-Registration-Postprocess.

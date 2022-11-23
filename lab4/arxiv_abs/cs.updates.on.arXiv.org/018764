@@ -1,0 +1,19 @@
+Quantitative investment is a fundamental financial task that highly relies on accurate stock prediction
+and profitable investment decision making. Despite recent advances in deep learning (DL) have
+shown stellar performance on capturing trading opportunities in the stochastic stock market,
+we observe that the performance of existing DL methods is sensitive to random seeds and network initialization.
+To design more profitable DL methods, we analyze this phenomenon and find two major limitations
+of existing works. First, there is a noticeable gap between accurate financial predictions and
+profitable investment strategies. Second, investment decisions are made based on only one individual
+predictor without consideration of model uncertainty, which is inconsistent with the workflow
+in real-world trading firms. To tackle these two limitations, we first reformulate quantitative
+investment as a multi-task learning problem. Later on, we propose AlphaMix, a novel two-stage mixture-of-experts
+(MoE) framework for quantitative investment to mimic the efficient bottom-up trading strategy
+design workflow of successful trading firms. In Stage one, multiple independent trading experts
+are jointly optimized with an individual uncertainty-aware loss function. In Stage two, we train
+neural routers (corresponding to the role of a portfolio manager) to dynamically deploy these experts
+on an as-needed basis. AlphaMix is also a universal framework that is applicable to various backbone
+network architectures with consistent performance gains. Through extensive experiments on long-term
+real-world data spanning over five years on two of the most influential financial markets (US and
+China), we demonstrate that AlphaMix significantly outperforms many state-of-the-art baselines
+in terms of four financial criteria. 

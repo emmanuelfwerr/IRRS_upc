@@ -1,0 +1,20 @@
+With the rapid development of deep learning, the sizes of neural networks become larger and larger
+so that the training and inference often overwhelm the hardware resources. Given the fact that neural
+networks are often over-parameterized, one effective way to reduce such computational overhead
+is neural network pruning, by removing redundant parameters from trained neural networks. It has
+been recently observed that pruning can not only reduce computational overhead but also can improve
+empirical robustness of deep neural networks (NNs), potentially owing to removing spurious correlations
+while preserving the predictive accuracies. This paper for the first time demonstrates that pruning
+can generally improve certified robustness for ReLU-based NNs under the complete verification
+setting. Using the popular Branch-and-Bound (BaB) framework, we find that pruning can enhance
+the estimated bound tightness of certified robustness verification, by alleviating linear relaxation
+and sub-domain split problems. We empirically verify our findings with off-the-shelf pruning
+methods and further present a new stability-based pruning method tailored for reducing neuron
+instability, that outperforms existing pruning methods in enhancing certified robustness. Our
+experiments show that by appropriately pruning an NN, its certified accuracy can be boosted up to
+8.2% under standard training, and up to 24.5% under adversarial training on the CIFAR10 dataset.
+We additionally observe the existence of certified lottery tickets that can match both standard
+and certified robust accuracies of the original dense models across different datasets. Our findings
+offer a new angle to study the intriguing interaction between sparsity and robustness, i.e. interpreting
+the interaction of sparsity and certified robustness via neuron stability. Codes are available
+at: https://github.com/VITA-Group/CertifiedPruning. 

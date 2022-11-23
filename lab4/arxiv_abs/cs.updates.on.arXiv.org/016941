@@ -1,0 +1,20 @@
+Earthquake forecasting and prediction have long and in some cases sordid histories but recent work
+has rekindled interest based on advances in early warning, hazard assessment for induced seismicity
+and successful prediction of laboratory earthquakes. In the lab, frictional stick-slip events
+provide an analog for earthquakes and the seismic cycle. Labquakes are ideal targets for machine
+learning (ML) because they can be produced in long sequences under controlled conditions. Recent
+works show that ML can predict several aspects of labquakes using fault zone acoustic emissions.
+Here, we generalize these results and explore deep learning (DL) methods for labquake prediction
+and autoregressive (AR) forecasting. DL improves existing ML methods of labquake prediction.
+AR methods allow forecasting at future horizons via iterative predictions. We demonstrate that
+DL models based on Long-Short Term Memory (LSTM) and Convolution Neural Networks predict labquakes
+under several conditions, and that fault zone stress can be predicted with fidelity, confirming
+that acoustic energy is a fingerprint of fault zone stress. We predict also time to start of failure
+(TTsF) and time to the end of Failure (TTeF) for labquakes. Interestingly, TTeF is successfully
+predicted in all seismic cycles, while the TTsF prediction varies with the amount of preseismic
+fault creep. We report AR methods to forecast the evolution of fault stress using three sequence
+modeling frameworks: LSTM, Temporal Convolution Network and Transformer Network. AR forecasting
+is distinct from existing predictive models, which predict only a target variable at a specific
+time. The results for forecasting beyond a single seismic cycle are limited but encouraging. Our
+ML/DL models outperform the state-of-the-art and our autoregressive model represents a novel
+framework that could enhance current methods of earthquake forecasting. 

@@ -1,0 +1,19 @@
+Learning-to-rank, a machine learning technique widely used in information retrieval, has recently
+been applied to the problem of ligand-based virtual screening, to accelerate the early stages of
+new drug development. Ranking prediction models learn based on ordinal relationships, making
+them suitable for integrating assay data from various environments. Existing studies of rank prediction
+in compound screening have generally used a learning-to-rank method called RankSVM. However,
+they have not been compared with or validated against the gradient boosting decision tree (GBDT)-based
+learning-to-rank methods that have gained popularity recently. Furthermore, although the ranking
+metric called Normalized Discounted Cumulative Gain (NDCG) is widely used in information retrieval,
+it only determines whether the predictions are better than those of other models. In other words,
+NDCG is incapable of recognizing when a prediction model produces worse than random results. Nevertheless,
+NDCG is still used in the performance evaluation of compound screening using learning-to-rank.
+This study used the GBDT model with ranking loss functions, called lambdarank and lambdaloss, for
+ligand-based virtual screening; results were compared with existing RankSVM methods and GBDT
+models using regression. We also proposed a new ranking metric, Normalized Enrichment Discounted
+Cumulative Gain (NEDCG), which aims to properly evaluate the goodness of ranking predictions.
+Results showed that the GBDT model with learning-to-rank outperformed existing regression methods
+using GBDT and RankSVM on diverse datasets. Moreover, NEDCG showed that predictions by regression
+were comparable to random predictions in multi-assay, multi-family datasets, demonstrating
+its usefulness for a more direct assessment of compound screening performance. 

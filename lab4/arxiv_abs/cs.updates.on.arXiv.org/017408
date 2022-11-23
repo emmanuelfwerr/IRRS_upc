@@ -1,0 +1,20 @@
+We develop an asymptotic theory of adversarial estimators (`A-estimators'). Like maximum-likelihood-type
+estimators (`M-estimators'), both the estimator and estimand are defined as the critical points
+of a sample and population average respectively. A-estimators generalize M-estimators, as their
+objective is maximized by one set of parameters and minimized by another. The continuous-updating
+Generalized Method of Moments estimator, popular in econometrics and causal inference, is among
+the earliest members of this class which distinctly falls outside the M-estimation framework.
+Since the recent success of Generative Adversarial Networks, A-estimators received considerable
+attention in both machine learning and causal inference contexts, where a flexible adversary can
+remove the need for researchers to manually specify which features of a problem are important. We
+present general results characterizing the convergence rates of A-estimators under both point-wise
+and partial identification, and derive the asymptotic root-n normality for plug-in estimates
+of smooth functionals of their parameters. All unknown parameters may contain functions which
+are approximated via sieves. While the results apply generally, we provide easily verifiable,
+low-level conditions for the case where the sieves correspond to (deep) neural networks. Our theory
+also yields the asymptotic normality of general functionals of neural network M-estimators (as
+a special case), overcoming technical issues previously identified by the literature. We examine
+a variety of A-estimators proposed across econometrics and machine learning and use our theory
+to derive novel statistical results for each of them. Embedding distinct A-estimators into the
+same framework, we notice interesting connections among them, providing intuition and formal
+justification for their recent success in practical applications. 

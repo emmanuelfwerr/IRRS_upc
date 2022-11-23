@@ -1,0 +1,19 @@
+Schr\"odinger equation belongs to the most fundamental differential equations in quantum physics.
+However, the exact solutions are extremely rare, and many analytical methods are applicable only
+to the cases with small perturbations or weak correlations. Solving the many-body Schr\"odinger
+equation in the continuous spaces with the presence of strong correlations is an extremely important
+and challenging issue. In this work, we propose the functional tensor network (FTN) approach to
+solve the many-body Schr\"odinger equation. Provided the orthonormal functional bases, we represent
+the coefficients of the many-body wave-function as tensor network. The observables, such as energy,
+can be calculated simply by tensor contractions. Simulating the ground state becomes solving a
+minimization problem defined by the tensor network. An efficient gradient-decent algorithm based
+on the automatically differentiable tensors is proposed. We here take matrix product state (MPS)
+as an example, whose complexity scales only linearly with the system size. We apply our approach
+to solve the ground state of coupled harmonic oscillators, and achieve high accuracy by comparing
+with the exact solutions. Reliable results are also given with the presence of three-body interactions,
+where the system cannot be decoupled to isolated oscillators. Our approach is simple and with well-controlled
+error, superior to the highly-nonlinear neural-network solvers. Our work extends the applications
+of tensor network from quantum lattice models to the systems in the continuous space. FTN can be used
+as a general solver of the differential equations with many variables. The MPS exemplified here
+can be generalized to, e.g., the fermionic tensor networks, to solve the electronic Schr\"odinger
+equation. 

@@ -1,0 +1,20 @@
+We consider the rank-reduced coupled-cluster theory with single and double excitations (RR-CCSD)
+introduced recently [Parrish \emph{et al.}, J. Chem. Phys. {\bf 150}, 164118 (2019)]. The main
+feature of this method is the decomposed form of the doubly-excited amplitudes which are expanded
+in the basis of largest magnitude eigenvectors of the MP2 or MP3 amplitudes. This approach enables
+a substantial compression of the amplitudes with only minor loss of accuracy. However, the formal
+scaling of the computational costs with the system size ($N$) is unaffected in comparison with the
+conventional CCSD theory ($\propto N^6$) due to presence of some terms quadratic in the amplitudes.
+We show how to solve this problem, exploiting the fact that their effective rank increases only linearly
+with the system size and reduce the scaling of the RR-CCSD iterations down to the level of $N^5$. This
+is combined with an iterative method of finding dominant eigenpairs of the MP2 or MP3 amplitudes
+which eliminates the necessity to perform the complete diagonalization. Next, we consider the
+evaluation of the perturbative corrections to the CCSD energies resulting from triply excited
+configurations. The triply-excited amplitudes present in the CCSD(T) method are decomposed to
+the Tucker-3 format using the higher-order orthogonal iteration (HOOI) procedure. This enables
+to compute the energy correction due to triple excitations non-iteratively with $N^6$ cost. The
+accuracy of the resulting rank-reduced CCSD(T) method is studied both for total and relative correlation
+energies of a diverse set of molecules. Accuracy levels better than 99.9\% can be achieved with a
+substantial reduction of the computational costs. Concerning the computational timings, break-even
+point between the rank-reduced and conventional CCSD implementations occurs for systems with
+about $30-40$ active electrons. 

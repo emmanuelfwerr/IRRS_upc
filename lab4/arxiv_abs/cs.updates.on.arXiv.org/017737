@@ -1,0 +1,19 @@
+We present a novel space-efficient graph coarsening technique for n-vertex separable graphs G,
+in particular for planar graphs, called cloud partition, which partitions the vertices V(G) into
+disjoint sets C of size O(log n) such that each C induces a connected subgraph of G. Using this partition
+P we construct a so-called structure-maintaining minor F of G via specific contractions within
+the disjoint sets such that F has O(n/log n) vertices. The combination of (F, P) is referred to as a
+cloud decomposition. We call a graph G=(V, E) separable if it admits to an O(n^c)-separator theorem
+for some constant c < 1 meaning there exists a separator S subset V that partitions V into {A, S, B} such
+that no vertices of A and B are adjacent in G and neither A nor B contain more than c'n vertices for a fixed
+constant c' < 1. Due to the last property such separators are called balanced. This famously includes
+planar graphs, which admit an O(sqrt(n) n)-separator theorem. For planar graphs we show that a cloud
+decomposition can be constructed in O(n) time and using O(n) bits. Given a cloud decomposition (F,
+P) constructed for a planar graph G we are able to find a balanced separator of G in O(n/log n) time.
+Contrary to related publications, we do not make use of an embedding of the input graph. This allows
+us to construct the succinct encoding scheme for planar graphs due to Blelloch and Farzan (CPM 2010)
+in O(n) time and O(n) bits improving both runtime and space by a factor of Theta(log n). As an additional
+application of our cloud decomposition we show that a tree decomposition for planar graphs of width
+O(n^(1/2 + epsilon)) for any epsilon > 0 can be constructed in O(n) bits and a time linear in the size
+of the tree decomposition. Finally, we generalize our cloud decomposition from planar graphs to
+arbitrary separable graphs. 

@@ -1,0 +1,20 @@
+Deep Learning (DL) requires a large amount of training data to provide quality outcomes. However,
+the field of medical imaging suffers from the lack of sufficient data for properly training DL models
+because medical images require manual labelling carried out by clinical experts thus the process
+is time-consuming, expensive, and error-prone. Recently, transfer learning (TL) was introduced
+to reduce the need for the annotation procedure by means of transferring the knowledge performed
+by a previous task and then fine-tuning the result using a relatively small dataset. Nowadays, multiple
+classification methods from medical imaging make use of TL from general-purpose pre-trained models,
+e.g., ImageNet, which has been proven to be ineffective due to the mismatch between the features
+learned from natural images (ImageNet) and those more specific from medical images especially
+medical gray images such as X-rays. ImageNet does not have grayscale images such as MRI, CT, and X-ray.
+In this paper, we propose a novel DL model to be used for addressing classification tasks of medical
+imaging, called MedNet. To do so, we aim to issue two versions of MedNet. The first one is Gray-MedNet
+which will be trained on 3M publicly available gray-scale medical images including MRI, CT, X-ray,
+ultrasound, and PET. The second version is Color-MedNet which will be trained on 3M publicly available
+color medical images including histopathology, taken images, and many others. To validate the
+effectiveness MedNet, both versions will be fine-tuned to train on the target tasks of a more reduced
+set of medical images. MedNet performs as the pre-trained model to tackle any real-world application
+from medical imaging and achieve the level of generalization needed for dealing with medical imaging
+tasks, e.g. classification. MedNet would serve the research community as a baseline for future
+research. 

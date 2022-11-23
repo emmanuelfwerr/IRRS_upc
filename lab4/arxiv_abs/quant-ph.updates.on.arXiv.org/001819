@@ -1,0 +1,19 @@
+Quantum computers are anticipated to transcend classical supercomputers for computationally
+intensive tasks by exploiting the principles of quantum mechanics. However, the capabilities
+of the current generation of quantum devices are limited due to noise or errors, and therefore implementation
+of error mitigation and/or correction techniques is pivotal to reliably process quantum algorithms.
+In this work, we have performed a comparative analysis of the error mitigation capability of the
+[[4,2,2]] quantum error-detecting code (QEC method), duplicate circuit technique, and the Bayesian
+read-out error mitigation (BREM) approach in the context of proof-of-concept implementations
+of variational quantum eigensolver (VQE) algorithm for determining the ground state energy of
+H$_2$ molecule. Based on experiments on IBM quantum device, our results show that the duplicate
+circuit approach performs superior to the QEC method in the presence of the hardware noise. A significant
+impact of cross-talk noise was observed when multiple mappings of the duplicate circuit and the
+QEC method were implemented simultaneously $-$ again the duplicate circuit approach overall performed
+better than the QEC method. To gain further insights into the performance of the studied error mitigation
+techniques, we also performed quantum simulations on IBM system with varying strengths of depolarising
+circuit noise and read-out errors which further supported the main finding of our work that the duplicate
+circuit offer superior performance towards mitigating of errors when compared to the QEC method.
+Our work reports a first assessment of the duplicate circuit approach for a quantum algorithm implementation
+and the documented evidence will pave the way for future scalable implementations of the duplicated
+circuit techniques for the error-mitigated practical applications of near-term quantum computers.

@@ -1,0 +1,19 @@
+Each year, underwater remotely operated vehicles (ROVs) collect thousands of hours of video of
+unexplored ocean habitats revealing a plethora of information regarding biodiversity on Earth.
+However, fully utilizing this information remains a challenge as proper annotations and analysis
+require trained scientists time, which is both limited and costly. To this end, we present a Dataset
+for Underwater Substrate and Invertebrate Analysis (DUSIA), a benchmark suite and growing large-scale
+dataset to train, validate, and test methods for temporally localizing four underwater substrates
+as well as temporally and spatially localizing 59 underwater invertebrate species. DUSIA currently
+includes over ten hours of footage across 25 videos captured in 1080p at 30 fps by an ROV following
+pre planned transects across the ocean floor near the Channel Islands of California. Each video
+includes annotations indicating the start and end times of substrates across the video in addition
+to counts of species of interest. Some frames are annotated with precise bounding box locations
+for invertebrate species of interest, as seen in Figure 1. To our knowledge, DUSIA is the first dataset
+of its kind for deep sea exploration, with video from a moving camera, that includes substrate annotations
+and invertebrate species that are present at significant depths where sunlight does not penetrate.
+Additionally, we present the novel context-driven object detector (CDD) where we use explicit
+substrate classification to influence an object detection network to simultaneously predict
+a substrate and species class influenced by that substrate. We also present a method for improving
+training on partially annotated bounding box frames. Finally, we offer a baseline method for automating
+the counting of invertebrate species of interest. 

@@ -1,0 +1,20 @@
+Time series models with recurrent neural networks (RNNs) can have high accuracy but are unfortunately
+difficult to interpret as a result of feature-interactions, temporal-interactions, and non-linear
+transformations. Interpretability is important in domains like healthcare where constructing
+models that provide insight into the relationships they have learned are required to validate and
+trust model predictions. We want accurate time series models where users can understand the contribution
+of individual input features. We present the Interpretable-RNN (I-RNN) that balances model complexity
+and accuracy by forcing the relationship between variables in the model to be additive. Interactions
+are restricted between hidden states of the RNN and additively combined at the final step. I-RNN
+specifically captures the unique characteristics of clinical time series, which are unevenly
+sampled in time, asynchronously acquired, and have missing data. Importantly, the hidden state
+activations represent feature coefficients that correlate with the prediction target and can
+be visualized as risk curves that capture the global relationship between individual input features
+and the outcome. We evaluate the I-RNN model on the Physionet 2012 Challenge dataset to predict in-hospital
+mortality, and on a real-world clinical decision support task: predicting hemodynamic interventions
+in the intensive care unit. I-RNN provides explanations in the form of global and local feature importances
+comparable to highly intelligible models like decision trees trained on hand-engineered features
+while significantly outperforming them. I-RNN remains intelligible while providing accuracy
+comparable to state-of-the-art decay-based and interpolation-based recurrent time series models.
+The experimental results on real-world clinical datasets refute the myth that there is a tradeoff
+between accuracy and interpretability. 

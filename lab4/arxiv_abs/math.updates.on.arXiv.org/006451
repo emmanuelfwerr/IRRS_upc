@@ -1,0 +1,19 @@
+We introduce the notion of delineation. A graph class $\mathcal C$ is said delineated if for every
+hereditary closure $\mathcal D$ of a subclass of $\mathcal C$, it holds that $\mathcal D$ has bounded
+twin-width if and only if $\mathcal D$ is monadically dependent. An effective strengthening of
+delineation for a class $\mathcal C$ implies that tractable FO model checking on $\mathcal C$ is
+perfectly understood: On hereditary closures $\mathcal D$ of subclasses of $\mathcal C$, FO model
+checking is fixed-parameter tractable (FPT) exactly when $\mathcal D$ has bounded twin-width.
+Ordered graphs [BGOdMSTT, STOC '22] and permutation graphs [BKTW, JACM '22] are effectively delineated,
+while subcubic graphs are not. On the one hand, we prove that interval graphs, and even, rooted directed
+path graphs are delineated. On the other hand, we show that segment graphs, directed path graphs,
+and visibility graphs of simple polygons are not delineated. In an effort to draw the delineation
+frontier between interval graphs (that are delineated) and axis-parallel two-lengthed segment
+graphs (that are not), we investigate the twin-width of restricted segment intersection classes.
+It was known that (triangle-free) pure axis-parallel unit segment graphs have unbounded twin-width
+[BGKTW, SODA '21]. We show that $K_{t,t}$-free segment graphs, and axis-parallel $H_t$-free unit
+segment graphs have bounded twin-width, where $H_t$ is the half-graph or ladder of height $t$. In
+contrast, axis-parallel $H_4$-free two-lengthed segment graphs have unbounded twin-width.
+Our new results, combined with the known FPT algorithm for FO model checking on graphs given with
+$O(1)$-sequences, lead to win-win arguments. For instance, we derive FPT algorithms for $k$-Ladder
+on visibility graphs of 1.5D terrains, and $k$-Independent Set on visibility graphs of simple polygons.

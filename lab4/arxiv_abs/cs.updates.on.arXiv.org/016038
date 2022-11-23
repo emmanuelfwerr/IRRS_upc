@@ -1,0 +1,20 @@
+With the rapid development of big data and cloud computing, data management has become increasingly
+challenging. Over the years, a number of frameworks for data management and storage with various
+characteristics and features have become available. Most of these are highly efficient, but ultimately
+create data silos. It becomes difficult to move and work coherently with data as new requirements
+emerge as no single framework can efficiently fulfill the data management needs of diverse applications.
+A possible solution is to design smart and efficient hierarchical (multi-tier) storage solutions.
+A hierarchical storage system (HSS) is a meta solution that consists of different storage frameworks
+organized as a jointly constructed large storage pool. It brings a number of benefits including
+better utilization of the storage, cost-efficiency, and use of different features provided by
+the underlying storage frameworks. In order to maximize the gains of hierarchical storage solutions,
+it is important that they include intelligent and autonomous mechanisms for data management grounded
+in the features of the different underlying frameworks. These decisions should be made according
+to the characteristics of the dataset, tier status, and access patterns. These are highly dynamic
+parameters and defining a policy based on the mentioned parameters is a non-trivial task. This paper
+presents an open-source hierarchical storage framework with a dynamic migration policy based
+on reinforcement learning (RL). We present a mathematical model, a software architecture, and
+an implementation based on both simulations and a live cloud-based environment. We compare the
+proposed RL-based strategy to a baseline of three rule-based policies, showing that the RL-based
+policy achieves significantly higher efficiency and optimal data distribution in different scenarios
+compared to the dynamic rule-based policies. 

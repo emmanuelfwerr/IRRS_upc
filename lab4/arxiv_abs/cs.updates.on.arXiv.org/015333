@@ -1,0 +1,20 @@
+In recent years the sleeping model came to the focus of researchers. In this model nodes can go into
+a sleep state in which they spend no energy but at the same time cannot receive or send messages, nor
+can they perform internal computations. This model captures energy considerations of a problem.
+A problem P is an O-LOCAL problem if, given an acyclic orientation on the edges of the input graph,
+one can solve the problem as follows. Each vertex awaits the decisions of its parents according to
+the given orientation and can make its own decision in regard to P using only the information about
+its parents decisions. problems and showed that for this class of problems there is a deterministic
+algorithm that runs in $O(\log \Delta)$ awake time. The clock round complexity of that algorithm
+is $O(\Delta^2)$. In this work we offer three algorithms for the bf O-LOCAL class of problems with
+a trade off between awake complexity and clock round complexity. One of these algorithms requires
+only $O(\Delta^{1+\epsilon})$ clock rounds for some constant $\epsilon>0$ but still only $O(\log
+\Delta)$ awake time which improves on the algorithm in \cite{BM21}. We add to this two other algorithms
+that trade a higher awake complexity for lower clock round complexity. We note that the awake time
+incurred is not that significant. We offer dynamic algorithms in the sleeping model. We show three
+algorithms for solving dynamic problems in the O-LOCAL class as well as an algorithm for solving
+any dynamic decidable problem. We show that one can solve any {\bf O-LOCAL} problem in constant awake
+time in graphs with constant neighborhood independence. Specifically, our algorithm requires
+$O(K)$ awake time where $K$ is the neighborhood independence of the input graph. Graphs with bounded
+neighborhood independence are well studied with several results in recent years for several core
+problem in the distributed setting. 

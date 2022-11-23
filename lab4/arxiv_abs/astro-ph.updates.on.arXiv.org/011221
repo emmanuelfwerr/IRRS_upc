@@ -1,0 +1,20 @@
+Next generation large sky surveys, from ground and space, will observe up to billions of galaxies
+for which basic structural parameters are needed to study their evolution. This is a challenging
+task that, for ground-based observations, is complicated by the seeing limited point-spread-function
+(PSF), strongly affecting the intrinsic light profile of galaxies. To perform fast and accurate
+analysis of galaxy surface brightness, we have developed a family of "supervised" Convolutional
+Neural Network (CNN) tools to derive S{\'e}rsic profile parameters of galaxies. In this work, we
+present the first two Galaxy Light profile convolutional neural Networks (GaLNets) of this family.
+A first one, trained using galaxy images only (GaLNet-1), and a second one, trained with both galaxy
+images and the ``local'' PSF (GaLNet-2). The two CNNs have been tested on a subset of public data from
+the Kilo-Degree Survey (KiDS), as a pathfinder dataset for high-quality ground-based observations.
+We have compared the results from the two CNNs with structural parameters (namely the total magnitude
+$mag$, the effective radius $R_{\rm eff}$, and S{\'e}rsic index $n$) derived for the same galaxies
+by 2DPHOT, as a representative of "standard" PSF-convolved S{\'e}rsic fitting tools. The comparison
+shows that, provided a suitable prior distribution is adopted, GaLNet-2 can reach an accuracy as
+high as 2DPHOT, while GaLNet-1 performs slightly worse because it misses the information on the
+``local'' PSF. In terms of computational speed, both GaLNets are more than three orders of magnitude
+faster than standard methods. This first application of CNN to ground-based galaxy surface photometry
+shows that CNNs are promising tools to perform parametric analyses of very large samples of galaxy
+light profiles, as expected from surveys like Vera Rubin/LSST, Euclid mission and the Chinese Space
+Station Telescope. 

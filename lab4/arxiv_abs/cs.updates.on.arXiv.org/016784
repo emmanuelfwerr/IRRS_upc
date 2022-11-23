@@ -1,0 +1,19 @@
+The Bayesian approach to solving inverse problems relies on the choice of a prior. This critical
+ingredient allows the formulation of expert knowledge or physical constraints in a probabilistic
+fashion and plays an important role for the success of the inference. Recently, Bayesian inverse
+problems were solved using generative models as highly informative priors. Generative models
+are a popular tool in machine learning to generate data whose properties closely resemble those
+of a given database. Typically, the generated distribution of data is embedded in a low-dimensional
+manifold. For the inverse problem, a generative model is trained on a database that reflects the
+properties of the sought solution, such as typical structures of the tissue in the human brain in
+magnetic resonance (MR) imaging. The inference is carried out in the low-dimensional manifold
+determined by the generative model which strongly reduces the dimensionality of the inverse problem.
+However, this proceeding produces a posterior that admits no Lebesgue density in the actual variables
+and the accuracy reached can strongly depend on the quality of the generative model. For linear Gaussian
+models we explore an alternative Bayesian inference based on probabilistic generative models
+which is carried out in the original high-dimensional space. A Laplace approximation is employed
+to analytically derive the required prior probability density function induced by the generative
+model. Properties of the resulting inference are investigated. Specifically, we show that derived
+Bayes estimates are consistent, in contrast to the approach employing the low-dimensional manifold
+of the generative model. The MNIST data set is used to construct numerical experiments which confirm
+our theoretical findings. 

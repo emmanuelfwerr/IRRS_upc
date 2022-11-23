@@ -1,0 +1,19 @@
+Increasing the cardinality of categorical variables might decrease the overall performance of
+machine learning (ML) algorithms. This paper presents a novel computational preprocessing method
+to convert categorical to numerical variables ML algorithms. It uses a supervised binary classifier
+to extract additional context-related features from the categorical values. Up to two numerical
+variables per categorical variable are created, depending on the compression achieved by the Principal
+Component Analysis (PCA). The method requires two hyperparameters: a threshold related to the
+distribution of categories in the variables and the PCA representativeness. This paper applies
+the proposed approach to the well-known cybersecurity NSLKDD dataset to select and convert three
+categorical features to numerical features. After choosing the threshold parameter, we use conditional
+probabilities to convert the three categorical variables into six new numerical variables. After
+that, we feed these numerical variables to the PCA algorithm and select the whole or partial numbers
+of the Principal Components (PCs). Finally, by applying binary classification with ten different
+classifiers, we measure the performance of the new encoder and compare it with the other 17 well-known
+category encoders. The new technique achieves the highest performance related to accuracy and
+Area Under the Curve (AUC) on high cardinality categorical variables. Also, we define the harmonic
+average metrics to find the best trade-off between train and test performances and prevent underfitting
+and overfitting. Ultimately, the number of newly created numerical variables is minimal. This
+data reduction improves computational processing time in Internet of things (IoT) devices in future
+telecommunication networks. 

@@ -1,0 +1,20 @@
+Measures to predict 30-day readmission are considered an important quality factor for hospitals
+as accurate predictions can reduce the overall cost of care by identifying high risk patients before
+they are discharged. While recent deep learning-based studies have shown promising empirical
+results on readmission prediction, several limitations exist that may hinder widespread clinical
+utility, such as (a) only patients with certain conditions are considered, (b) existing approaches
+do not leverage data temporality, (c) individual admissions are assumed independent of each other,
+which is unrealistic, (d) prior studies are usually limited to single source of data and single center
+data. To address these limitations, we propose a multimodal, modality-agnostic spatiotemporal
+graph neural network (MM-STGNN) for prediction of 30-day all-cause hospital readmission that
+fuses multimodal in-patient longitudinal data. By training and evaluating our methods using longitudinal
+chest radiographs and electronic health records from two independent centers, we demonstrate
+that MM-STGNN achieves AUROC of 0.79 on both primary and external datasets. Furthermore, MM-STGNN
+significantly outperforms the current clinical reference standard, LACE+ score (AUROC=0.61),
+on the primary dataset. For subset populations of patients with heart and vascular disease, our
+model also outperforms baselines on predicting 30-day readmission (e.g., 3.7 point improvement
+in AUROC in patients with heart disease). Lastly, qualitative model interpretability analysis
+indicates that while patients' primary diagnoses were not explicitly used to train the model, node
+features crucial for model prediction directly reflect patients' primary diagnoses. Importantly,
+our MM-STGNN is agnostic to node feature modalities and could be utilized to integrate multimodal
+data for triaging patients in various downstream resource allocation tasks. 

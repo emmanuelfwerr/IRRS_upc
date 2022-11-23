@@ -1,0 +1,19 @@
+Real-world data often comes in compressed form. Analyzing compressed data directly (without decompressing
+it) can save space and time by orders of magnitude. In this work, we focus on fundamental sequence
+comparison problems and try to quantify the gain in time complexity when the underlying data is highly
+compressible. We consider grammar compression, which unifies many practically relevant compression
+schemes. For two strings of total length $N$ and total compressed size $n$, it is known that the edit
+distance and a longest common subsequence (LCS) can be computed exactly in time $\tilde{O}(nN)$,
+as opposed to $O(N^2)$ for the uncompressed setting. Many applications need to align multiple sequences
+simultaneously, and the fastest known exact algorithms for median edit distance and LCS of $k$ strings
+run in $O(N^k)$ time. This naturally raises the question of whether compression can help to reduce
+the running time significantly for $k \geq 3$, perhaps to $O(N^{k/2}n^{k/2})$ or $O(Nn^{k-1})$.
+Unfortunately, we show lower bounds that rule out any improvement beyond $\Omega(N^{k-1}n)$ time
+for any of these problems assuming the Strong Exponential Time Hypothesis. At the same time, we show
+that approximation and compression together can be surprisingly effective. We develop an $\tilde{O}(N^{k/2}n^{k/2})$-time
+FPTAS for the median edit distance of $k$ sequences. In comparison, no $O(N^{k-\Omega(1)})$-time
+PTAS is known for the median edit distance problem in the uncompressed setting. For two strings,
+we get an $\tilde{O}(N^{2/3}n^{4/3})$-time FPTAS for both edit distance and LCS. In contrast,
+for uncompressed strings, there is not even a subquadratic algorithm for LCS that has less than a
+polynomial gap in the approximation factor. Building on the insight from our approximation algorithms,
+we also obtain results for many distance measures including the edit, Hamming, and shift distances.

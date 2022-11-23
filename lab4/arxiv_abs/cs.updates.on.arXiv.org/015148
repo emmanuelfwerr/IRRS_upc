@@ -1,0 +1,19 @@
+Longevity and safety of lithium-ion batteries are facilitated by efficient monitoring and adjustment
+of the battery operating conditions. Hence, it is crucial to implement fast and accurate algorithms
+for State of Health (SoH) monitoring on the Battery Management System. The task is challenging due
+to the complexity and multitude of the factors contributing to the battery degradation, especially
+because the different degradation processes occur at various timescales and their interactions
+play an important role. Data-driven methods bypass this issue by approximating the complex processes
+with statistical or machine learning models. This paper proposes a data-driven approach which
+is understudied in the context of battery degradation, despite its simplicity and ease of computation:
+the Multivariable Fractional Polynomial (MFP) regression. Models are trained from historical
+data of one exhausted cell and used to predict the SoH of other cells. The data are characterised by
+varying loads simulating dynamic operating conditions. Two hypothetical scenarios are considered:
+one assumes that a recent capacity measurement is known, the other is based only on the nominal capacity.
+It was shown that the degradation behaviour of the batteries under examination is influenced by
+their historical data, as supported by the low prediction errors achieved (root mean squared errors
+from 1.2% to 7.22% when considering data up to the battery End of Life). Moreover, we offer a multi-factor
+perspective where the degree of impact of each different factor is analysed. Finally, we compare
+with a Long Short-Term Memory Neural Network and other works from the literature on the same dataset.
+We conclude that the MFP regression is effective and competitive with contemporary works, and provides
+several additional advantages e.g. in terms of interpretability, generalisability, and implementability.

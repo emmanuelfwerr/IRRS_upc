@@ -1,0 +1,20 @@
+As an important task for the management of bike sharing systems, accurate forecast of travel demand
+could facilitate dispatch and relocation of bicycles to improve user satisfaction. In recent years,
+many deep learning algorithms have been introduced to improve bicycle usage forecast. A typical
+practice is to integrate convolutional (CNN) and recurrent neural network (RNN) to capture spatial-temporal
+dependency in historical travel demand. For typical CNN, the convolution operation is conducted
+through a kernel that moves across a "matrix-format" city to extract features over spatially adjacent
+urban areas. This practice assumes that areas close to each other could provide useful information
+that improves prediction accuracy. However, bicycle usage in neighboring areas might not always
+be similar, given spatial variations in built environment characteristics and travel behavior
+that affect cycling activities. Yet, areas that are far apart can be relatively more similar in temporal
+usage patterns. To utilize the hidden linkage among these distant urban areas, the study proposes
+an irregular convolutional Long-Short Term Memory model (IrConv+LSTM) to improve short-term
+bike sharing demand forecast. The model modifies traditional CNN with irregular convolutional
+architecture to extract dependency among "semantic neighbors". The proposed model is evaluated
+with a set of benchmark models in five study sites, which include one dockless bike sharing system
+in Singapore, and four station-based systems in Chicago, Washington, D.C., New York, and London.
+We find that IrConv+LSTM outperforms other benchmark models in the five cities. The model also achieves
+superior performance in areas with varying levels of bicycle usage and during peak periods. The
+findings suggest that "thinking beyond spatial neighbors" can further improve short-term travel
+demand prediction of urban bike sharing systems. 

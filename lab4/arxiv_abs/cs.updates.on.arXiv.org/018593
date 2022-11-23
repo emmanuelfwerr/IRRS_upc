@@ -1,0 +1,20 @@
+Vetting security impacts introduced by third-party libraries in iOS apps requires a reliable library
+detection technique. Especially when a new vulnerability (or a privacy-invasive behavior) was
+discovered in a third-party library, there is a practical need to precisely identify the existence
+of libraries and their versions for iOS apps. However, few studies have been proposed to tackle this
+problem, and they all suffer from the code duplication problem in different libraries. In this paper,
+we focus on third-party library detection in iOS apps. Given an app, we aim to identify the integrated
+libraries and pinpoint their versions (or the version range).To this end, we first conduct an in-depth
+study on iOS third-party libraries to demystify the code duplication challenge. By doing so, we
+have two key observations: 1) even though two libraries can share classes, the shared classes cannot
+be integrated into an app simultaneously without causing a class name conflict; and 2) code duplication
+between multiple versions of two libraries can vary. Based on these findings, we propose a novel
+profile-based similarity comparison approach to perform the detection. Specifically, we build
+a library database consists of original library binaries with distinct versions. After extracting
+profiles for each library version and the target app, we conduct a similarity comparison to find
+the best matches. We implemented this approach in iLibScope. We built a benchmark consists of 5,807
+apps with 10,495 library integrations and applied our tool to it. Our evaluation shows that iLibScope
+achieves a recall exceeds 99% and a precision exceeds 97% for library detection. We also applied
+iLibScope to detect the presence of well-known vulnerable third-party libraries in real-world
+iOS mobile apps to show the promising usage of our tool. It successfully identified 405 vulnerable
+library usage from 4,249 apps. 

@@ -1,0 +1,19 @@
+Deep learning models have shown their potential for several applications. However, most of the
+models are opaque and difficult to trust due to their complex reasoning - commonly known as the black-box
+problem. Some fields, such as medicine, require a high degree of transparency to accept and adopt
+such technologies. Consequently, creating explainable/interpretable models or applying post-hoc
+methods on classifiers to build trust in deep learning models are required. Moreover, deep learning
+methods can be used for segmentation tasks, which typically require hard-to-obtain, time-consuming
+manually-annotated segmentation labels for training. This paper introduces three inherently-explainable
+classifiers to tackle both of these problems as one. The localisation heatmaps provided by the networks
+-- representing the models' focus areas and being used in classification decision-making -- can
+be directly interpreted, without requiring any post-hoc methods to derive information for model
+explanation. The models are trained by using the input image and only the classification labels
+as ground-truth in a supervised fashion - without using any information about the location of the
+region of interest (i.e. the segmentation labels), making the segmentation training of the models
+weakly-supervised through classification labels. The final segmentation is obtained by thresholding
+these heatmaps. The models were employed for the task of multi-class brain tumour classification
+using two different datasets, resulting in the best F1-score of 0.93 for the supervised classification
+task while securing a median Dice score of 0.67$\pm$0.08 for the weakly-supervised segmentation
+task. Furthermore, the obtained accuracy on a subset of tumour-only images outperformed the state-of-the-art
+glioma tumour grading binary classifiers with the best model achieving 98.7\% accuracy. 

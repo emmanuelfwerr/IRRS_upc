@@ -1,0 +1,20 @@
+Among the biggest challenges we face in utilizing neural networks trained on waveform data (i.e.,
+seismic, electromagnetic, or ultrasound) is its application to real data. The requirement for
+accurate labels forces us to develop solutions using synthetic data, where labels are readily available.
+However, synthetic data often do not capture the reality of the field/real experiment, and we end
+up with poor performance of the trained neural network (NN) at the inference stage. We describe a
+novel approach to enhance supervised training on synthetic data with real data features (domain
+adaptation). Specifically, for tasks in which the absolute values of the vertical axis (time or
+depth) of the input data are not crucial, like classification, or can be corrected afterward, like
+velocity model building using a well-log, we suggest a series of linear operations on the input so
+the training and application data have similar distributions. This is accomplished by applying
+two operations on the input data to the NN model: 1) The crosscorrelation of the input data (i.e.,
+shot gather, seismic image, etc.) with a fixed reference trace from the same dataset. 2) The convolution
+of the resulting data with the mean (or a random sample) of the autocorrelated data from another domain.
+In the training stage, the input data are from the synthetic domain and the auto-correlated data
+are from the real domain, and random samples from real data are drawn at every training epoch. In the
+inference/application stage, the input data are from the real subset domain and the mean of the autocorrelated
+sections are from the synthetic data subset domain. Example applications on passive seismic data
+for microseismic event source location determination and active seismic data for predicting low
+frequencies are used to demonstrate the power of this approach in improving the applicability of
+trained models to real data. 

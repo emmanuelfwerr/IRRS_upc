@@ -1,0 +1,19 @@
+We introduce a new class of iterative image reconstruction algorithms for radio interferometry,
+at the interface of convex optimization and deep learning, inspired by plug-and-play methods.
+The approach consists in learning a prior image model by training a deep neural network (DNN) as a
+denoiser, and substituting it for the handcrafted proximal regularization operator of an optimization
+algorithm. The proposed AIRI ("AI for Regularization in Radio-Interferometric Imaging") framework,
+for imaging complex intensity structure with diffuse and faint emission, inherits the robustness
+and interpretability of optimization, and the learning power and speed of networks. Our approach
+relies on three steps. Firstly, we design a low dynamic range database for supervised training from
+optical intensity images. Secondly, we train a DNN denoiser with basic architecture ensuring positivity
+of the output image, at a noise level inferred from the signal-to-noise ratio of the data. We use either
+$\ell_2$ or $\ell_1$ training losses, enhanced with a nonexpansiveness term ensuring algorithm
+convergence, and including on-the-fly database dynamic range enhancement via exponentiation.
+Thirdly, we plug the learned denoiser into the forward-backward optimization algorithm, resulting
+in a simple iterative structure alternating a denoising step with a gradient-descent data-fidelity
+step. The resulting AIRI-$\ell_2$ and AIRI-$\ell_1$ were validated against CLEAN and optimization
+algorithms of the SARA family, propelled by the "average sparsity" proximal regularization operator.
+Simulation results show that these first AIRI incarnations are competitive in imaging quality
+with SARA and its unconstrained forward-backward-based version uSARA, while providing significant
+acceleration. CLEAN remains faster but offers lower reconstruction quality. 

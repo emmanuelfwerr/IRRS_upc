@@ -1,0 +1,19 @@
+Many complex fluids can be described by continuum hydrodynamic field equations, to which noise
+must be added in order to capture thermal fluctuations. In almost all cases, the resulting coarse-grained
+stochastic partial differential equations carry a short-scale cutoff -- which is also reflected
+in numerical discretisation schemes. We draw together our recent findings concerning the construction
+of such schemes and the interpretation of their continuum limits, focusing for simplicity on models
+with a purely diffusive scalar field, such as `Model B' which describes phase separation in binary
+fluid mixtures. We address the requirement that the steady state entropy production rate (EPR)
+must vanish for any stochastic hydrodynamic model in thermal equilibrium. Only if this is achieved
+can the given discretisation scheme be relied upon to correctly calculate the nonvanishing EPR
+for `active field theories' in which new terms are deliberately added to the fluctuating hydrodynamic
+equations that break detailed balance. To compute the correct probabilities of forward and time-reversed
+paths (whose ratio determines the EPR) we must make a careful treatment of so-called `spurious drift'
+and other closely related terms that depend on the discretisation scheme. We show that such subtleties
+can arise not only in the temporal discretisation (as is well documented for stochastic ODEs with
+multiplicative noise) but also from spatial discretisation, even when noise is additive, as most
+active field theories assume. We then review how such noise can become multiplicative, via off-diagonal
+couplings to additional fields that encode thermodynamically the underlying chemical processes
+responsible for activity. In this case the spurious drift terms need careful accounting, not just
+to evaluate correctly the EPR, but also to numerically implement the Langevin dynamics itself.

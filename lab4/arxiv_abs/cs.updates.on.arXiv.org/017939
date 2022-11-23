@@ -1,0 +1,19 @@
+The hazard and operability analysis (HAZOP) report contains precious industrial safety knowledge
+(ISK) with expert experience and process nature, which is of great significance to the development
+of industrial intelligence. Subject to the attributes of ISK, existing researches mine them through
+sequence labeling in deep learning. Yet, there are two thorny issues: (1) Uneven distribution of
+ISK and (2) Consistent importance of ISK: for safety review. In this study, we propose a novel generative
+mining strategy called CRGM to explore ISK. Inspired Zipf law in linguistics, CRGM consists of common-rare
+discriminator, induction-extension generator and ISK extractor. Firstly, the common-rare discriminator
+divides HAZOP descriptions into common words and rare words, and obtains the common description
+and the rare description, where the latter contains more industrial substances. Then, they are
+operated by the induction-extension generator in the way of deep text generation, the common description
+is induced and the rare description is extended, the material knowledge and the equipment knowledge
+can be enriched. Finally, the ISK extractor processes the material knowledge and equipment knowledge
+from the generated description through the rule template method, the additional ISK is regarded
+as the supplement of the training set to train the proposed sequence labeling model. We conduct multiple
+evaluation experiments on two industrial safety datasets. The results show that CRGM has promising
+and gratifying aptitudes, greatly improves the performance of the model, and is efficient and generalized.
+Our sequence labeling model also shows the expected performance, which is better than the existing
+research. Our research provides a new perspective for exploring ISK, we hope it can contribute support
+for the intelligent progress of industrial safety. 

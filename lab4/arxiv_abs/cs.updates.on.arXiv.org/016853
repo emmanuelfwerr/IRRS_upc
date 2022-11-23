@@ -1,0 +1,19 @@
+The Treewidth-2 Vertex Deletion problem asks whether a set of at most $t$ vertices can be removed
+from a graph, such that the resulting graph has treewidth at most two. A graph has treewidth at most
+two if and only if it does not contain a $K_4$ minor. Hence, this problem corresponds to the NP-hard
+$\mathcal{F}$-Minor Cover problem with $\mathcal{F} = \{K_4\}$. For any variant of the $\mathcal{F}$-Minor
+Cover problem where $\mathcal{F}$ contains a planar graph, it is known that a polynomial kernel
+exists. I.e., a preprocessing routine that in polynomial time outputs an equivalent instance of
+size $t^{O(1)}$. However, this proof is non-constructive, meaning that this proof does not yield
+an explicit bound on the kernel size. The $\{K_4\}$-Minor Cover problem is the simplest variant
+of the $\mathcal{F}$-Minor Cover problem with an unknown kernel size. To develop a constructive
+kernelization algorithm, we present a new method to decompose graphs into near-protrusions, such
+that near-protrusions in this new decomposition can be reduced using elementary reduction rules.
+Our method extends the `approximation and tidying' framework by van Bevern et al. [Algorithmica
+2012] to provide guarantees stronger than those provided by both this framework and a regular protrusion
+decomposition. Furthermore, we provide extensions of the elementary reduction rules used by the
+$\{K_4, K_{2,3}\}$-Minor Cover kernelization algorithm introduced by Donkers et al. [IPEC 2021].
+Using the new decomposition method and reduction rules, we obtain a kernel consisting of $O(t^{41})$
+vertices, which is the first constructive kernel. This kernel is a step towards more concrete kernelization
+bounds for the $\mathcal{F}$-Minor Cover problem where $\mathcal{F}$ contains a planar graph,
+and our decomposition provides a potential direction to achieve these new bounds. 

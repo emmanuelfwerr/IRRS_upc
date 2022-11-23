@@ -1,0 +1,20 @@
+Unsupervised domain adaptation (UDA) aims to transfer knowledge from a labeled source domain to
+an unlabeled target domain. Owing to privacy concerns and heavy data transmission, source-free
+UDA, exploiting the pre-trained source models instead of the raw source data for target learning,
+has been gaining popularity in recent years. Some works attempt to recover unseen source domains
+with generative models, however introducing additional network parameters. Other works propose
+to fine-tune the source model by pseudo labels, while noisy pseudo labels may misguide the decision
+boundary, leading to unsatisfied results. To tackle these issues, we propose an effective method
+named Proxy-based Mixup training with label refinery (ProxyMix). First of all, to avoid additional
+parameters and explore the information in the source model, ProxyMix defines the weights of the
+classifier as the class prototypes and then constructs a class-balanced proxy source domain by
+the nearest neighbors of the prototypes to bridge the unseen source domain and the target domain.
+To improve the reliability of pseudo labels, we further propose the frequency-weighted aggregation
+strategy to generate soft pseudo labels for unlabeled target data. The proposed strategy exploits
+the internal structure of target features, pulls target features to their semantic neighbors,
+and increases the weights of low-frequency classes samples during gradient updating. With the
+proxy domain and the reliable pseudo labels, we employ two kinds of mixup regularization, i.e.,
+inter- and intra-domain mixup, in our framework, to align the proxy and the target domain, enforcing
+the consistency of predictions, thereby further mitigating the negative impacts of noisy labels.
+Experiments on three 2D image and one 3D point cloud object recognition benchmarks demonstrate
+that ProxyMix yields state-of-the-art performance for source-free UDA tasks. 

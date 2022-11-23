@@ -1,0 +1,19 @@
+Gradient descent (GD) type optimization schemes are the standard instruments to train fully connected
+feedforward artificial neural networks (ANNs) with rectified linear unit (ReLU) activation and
+can be considered as temporal discretizations of solutions of gradient flow (GF) differential
+equations. It has recently been proved that the risk of every bounded GF trajectory converges in
+the training of ANNs with one hidden layer and ReLU activation to the risk of a critical point. Taking
+this into account it is one of the key research issues in the mathematical convergence analysis of
+GF trajectories and GD type optimization schemes, respectively, to study sufficient and necessary
+conditions for critical points of the risk function and, thereby, to obtain an understanding about
+the appearance of critical points in dependence of the problem parameters such as the target function.
+In the first main result of this work we prove in the training of ANNs with one hidden layer and ReLU
+activation that for every $ a, b \in \mathbb{R} $ with $ a < b $ and every arbitrarily large $ \delta >
+0 $ we have that there exists a Lipschitz continuous target function $ f \colon [a,b] \to \mathbb{R}
+$ such that for every number $ H > 1 $ of neurons on the hidden layer we have that the risk function has
+uncountably many different realization functions of non-global local minimum points whose risks
+are strictly larger than the sum of the risk of the global minimum points and the arbitrarily large
+$ \delta $. In the second main result of this work we show in the training of ANNs with one hidden layer
+and ReLU activation in the special situation where there is only one neuron on the hidden layer and
+where the target function is continuous and piecewise polynomial that there exist at most finitely
+many different realization functions of critical points. 

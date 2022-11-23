@@ -1,0 +1,20 @@
+We present a case study of model-free reinforcement learning (RL) framework to solve stochastic
+optimal control for a predefined parameter uncertainty distribution and partially observable
+system. We focus on robust optimal well control problem which is a subject of intensive research
+activities in the field of subsurface reservoir management. For this problem, the system is partially
+observed since the data is only available at well locations. Furthermore, the model parameters
+are highly uncertain due to sparsity of available field data. In principle, RL algorithms are capable
+of learning optimal action policies -- a map from states to actions -- to maximize a numerical reward
+signal. In deep RL, this mapping from state to action is parameterized using a deep neural network.
+In the RL formulation of the robust optimal well control problem, the states are represented by saturation
+and pressure values at well locations while the actions represent the valve openings controlling
+the flow through wells. The numerical reward refers to the total sweep efficiency and the uncertain
+model parameter is the subsurface permeability field. The model parameter uncertainties are handled
+by introducing a domain randomisation scheme that exploits cluster analysis on its uncertainty
+distribution. We present numerical results using two state-of-the-art RL algorithms, proximal
+policy optimization (PPO) and advantage actor-critic (A2C), on two subsurface flow test cases
+representing two distinct uncertainty distributions of permeability field. The results were
+benchmarked against optimisation results obtained using differential evolution algorithm.
+Furthermore, we demonstrate the robustness of the proposed use of RL by evaluating the learned control
+policy on unseen samples drawn from the parameter uncertainty distribution that were not used during
+the training process. 

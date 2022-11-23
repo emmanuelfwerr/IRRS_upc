@@ -1,0 +1,19 @@
+Pixel-level analysis of blood images plays a pivotal role in diagnosing blood-related diseases,
+especially Anaemia. These analyses mainly rely on an accurate diagnosis of morphological deformities
+like shape, size, and precise pixel counting. In traditional segmentation approaches, instance
+or object-based approaches have been adopted that are not feasible for pixel-level analysis. The
+convolutional neural network (CNN) model required a large dataset with detailed pixel-level information
+for the semantic segmentation of red blood cells in the deep learning domain. In current research
+work, we address these problems by proposing a multi-level deep convolutional encoder-decoder
+network along with two state-of-the-art healthy and Anaemic-RBC datasets. The proposed multi-level
+CNN model preserved pixel-level semantic information extracted in one layer and then passed to
+the next layer to choose relevant features. This phenomenon helps to precise pixel-level counting
+of healthy and anaemic-RBC elements along with morphological analysis. For experimental purposes,
+we proposed two state-of-the-art RBC datasets, i.e., Healthy-RBCs and Anaemic-RBCs dataset.
+Each dataset contains 1000 images, ground truth masks, relevant, complete blood count (CBC), and
+morphology reports for performance evaluation. The proposed model results were evaluated using
+crossmatch analysis with ground truth mask by finding IoU, individual training, validation, testing
+accuracies, and global accuracies using a 05-fold training procedure. This model got training,
+validation, and testing accuracies as 0.9856, 0.9760, and 0.9720 on the Healthy-RBC dataset and
+0.9736, 0.9696, and 0.9591 on an Anaemic-RBC dataset. The IoU and BFScore of the proposed model were
+0.9311, 0.9138, and 0.9032, 0.8978 on healthy and anaemic datasets, respectively. 

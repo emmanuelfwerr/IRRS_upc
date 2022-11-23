@@ -1,0 +1,19 @@
+Message passing has evolved as an effective tool for designing Graph Neural Networks (GNNs). However,
+most existing methods for message passing simply sum or average all the neighboring features to
+update node representations. They are restricted by two problems, i.e., (i) lack of interpretability
+to identify node features significant to the prediction of GNNs, and (ii) feature over-mixing that
+leads to the over-smoothing issue in capturing long-range dependencies and inability to handle
+graphs under heterophily or low homophily. In this paper, we propose a Node-level Capsule Graph
+Neural Network (NCGNN) to address these problems with an improved message passing scheme. Specifically,
+NCGNN represents nodes as groups of node-level capsules, in which each capsule extracts distinctive
+features of its corresponding node. For each node-level capsule, a novel dynamic routing procedure
+is developed to adaptively select appropriate capsules for aggregation from a subgraph identified
+by the designed graph filter. NCGNN aggregates only the advantageous capsules and restrains irrelevant
+messages to avoid over-mixing features of interacting nodes. Therefore, it can relieve the over-smoothing
+issue and learn effective node representations over graphs with homophily or heterophily. Furthermore,
+our proposed message passing scheme is inherently interpretable and exempt from complex post-hoc
+explanations, as the graph filter and the dynamic routing procedure identify a subset of node features
+that are most significant to the model prediction from the extracted subgraph. Extensive experiments
+on synthetic as well as real-world graphs demonstrate that NCGNN can well address the over-smoothing
+issue and produce better node representations for semisupervised node classification. It outperforms
+the state of the arts under both homophily and heterophily. 

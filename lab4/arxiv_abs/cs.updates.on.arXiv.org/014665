@@ -1,0 +1,19 @@
+In the last decade, researchers have been investigating the severity of insulation breakdown caused
+by partial discharge (PD) in overhead transmission lines with covered conductors or electrical
+equipment such as generators and motors used in various industries. Developing an effective partial
+discharge detection system can lead to significant savings on maintenance and prevent power disruptions.
+Traditional methods rely on hand-crafted features and domain expertise to identify partial discharge
+patterns in the electrical current. Many data-driven deep learning-based methods have been proposed
+in recent years to remove these ad hoc feature extraction. However, most of these methods either
+operate in the time-domain or frequency-domain. Many research approaches have been developed
+to generate phase-resolved partial discharge (PRPD) patterns from raw PD sensor data. These PRPD
+diagrams suggest a correlation between partial discharge activities occurring in an alternating
+electrical waveform's positive and negative half-cycles. However, this correlation criterion
+between half-cycles has been remained unexplored in deep learning-based methods. This work proposes
+a novel feature-fusion-based Dual-CyCon Net that can utilize all time, frequency, and phase domain
+features for joint learning in one cohesive framework. Our proposed cycle-consistency loss exploits
+any relation between an alternating electrical signal's positive and negative half-cycles to
+calibrate the model's sensitivity. This loss explores cycle-invariant PD-specific features,
+enabling the model to learn more robust, noise-invariant features for PD detection. A case study
+of our proposed framework on a public real-world noisy measurement from high-frequency voltage
+sensors to detect damaged power lines has achieved a state-of-the-art MCC score of 0.8455. 

@@ -1,0 +1,19 @@
+As powerful as fine-grained visual classification (FGVC) is, responding your query with a bird
+name of "Whip-poor-will" or "Mallard" probably does not make much sense. This however commonly
+accepted in the literature, underlines a fundamental question interfacing AI and human -- what
+constitutes transferable knowledge for human to learn from AI? This paper sets out to answer this
+very question using FGVC as a test bed. Specifically, we envisage a scenario where a trained FGVC
+model (the AI expert) functions as a knowledge provider in enabling average people (you and me) to
+become better domain experts ourselves, i.e. those capable in distinguishing between "Whip-poor-will"
+and "Mallard". Fig. 1 lays out our approach in answering this question. Assuming an AI expert trained
+using expert human labels, we ask (i) what is the best transferable knowledge we can extract from
+AI, and (ii) what is the most practical means to measure the gains in expertise given that knowledge?
+On the former, we propose to represent knowledge as highly discriminative visual regions that are
+expert-exclusive. For that, we devise a multi-stage learning framework, which starts with modelling
+visual attention of domain experts and novices before discriminatively distilling their differences
+to acquire the expert exclusive knowledge. For the latter, we simulate the evaluation process as
+book guide to best accommodate the learning practice of what is accustomed to humans. A comprehensive
+human study of 15,000 trials shows our method is able to consistently improve people of divergent
+bird expertise to recognise once unrecognisable birds. Interestingly, our approach also leads
+to improved conventional FGVC performance when the extracted knowledge defined is utilised as
+means to achieve discriminative localisation. Codes are available at: https://github.com/PRIS-CV/Making-a-Bird-AI-Expert-Work-for-You-and-Me

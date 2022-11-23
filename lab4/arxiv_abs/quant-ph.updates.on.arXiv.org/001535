@@ -1,0 +1,20 @@
+Despite progress in quantum Hamiltonian complexity, little is known about the computational complexity
+of quantum physics at the thermodynamic limit. Even defining the problem is not straight forward.
+We study the complexity of estimating the ground energy of a fixed, translationally invariant Hamiltonian
+in the thermodynamic limit, to within a given precision; the number of bits $n$ for the precision
+is the sole input to the problem. The complexity of this problem captures how difficult it is for the
+physicist to measure or compute another digit in the approximation of a physical quantity in the
+thermodynamic limit. We show that this problem is contained in $\mbox{FEXP}^{\mbox{QMA-EXP}}$
+and is hard for $\mbox{FEXP}^{\mbox{NEXP}}$. This means that the problem is doubly exponentially
+hard in the size of the input. As an ingredient in our construction, we study the problem of computing
+the ground energy of translationally invariant finite 1D chains. A single Hamiltonian term, which
+is a fixed parameter of the problem, is applied to every pair of particles in a finite chain. The length
+of the chain is the sole input to the problem and the task is to compute an approximation of the ground
+energy. No thresholds are provided as in the standard formulation of the local Hamiltonian problem.
+We show that this problem is contained in $\mbox{FP}^{\mbox{QMA-EXP}}$ and is hard for $\mbox{FP}^{\mbox{NEXP}}$.
+Our techniques employ a circular clock in which the ground energy is calibrated by the length of the
+cycle. This requires more precise expressions for the ground states of the resulting matrices than
+was required for previous QMA-completeness constructions and even exact analytical bounds for
+the infinite case which we derive using techniques from spectral graph theory. To our knowledge,
+this is the first use of the circuit-to-Hamiltonian construction which shows hardness for a function
+class. 

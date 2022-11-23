@@ -1,0 +1,19 @@
+A streaming algorithm is considered to be adversarially robust if it provides correct outputs with
+high probability even when the stream updates are chosen by an adversary who may observe and react
+to the past outputs of the algorithm. We grow the burgeoning body of work on such algorithms in a new
+direction by studying robust algorithms for the problem of maintaining a valid vertex coloring
+of an $n$-vertex graph given as a stream of edges. Following standard practice, we focus on graphs
+with maximum degree at most $\Delta$ and aim for colorings using a small number $f(\Delta)$ of colors.
+A recent breakthrough (Assadi, Chen, and Khanna; SODA~2019) shows that in the standard, non-robust,
+streaming setting, $(\Delta+1)$-colorings can be obtained while using only $\widetilde{O}(n)$
+space. Here, we prove that an adversarially robust algorithm running under a similar space bound
+must spend almost $\Omega(\Delta^2)$ colors and that robust $O(\Delta)$-coloring requires a
+linear amount of space, namely $\Omega(n\Delta)$. We in fact obtain a more general lower bound,
+trading off the space usage against the number of colors used. From a complexity-theoretic standpoint,
+these lower bounds provide (i)~the first significant separation between adversarially robust
+algorithms and ordinary randomized algorithms for a natural problem on insertion-only streams
+and (ii)~the first significant separation between randomized and deterministic coloring algorithms
+for graph streams, since deterministic streaming algorithms are automatically robust. We complement
+our lower bounds with a suite of positive results, giving adversarially robust coloring algorithms
+using sublinear space. In particular, we can maintain an $O(\Delta^2)$-coloring using $\widetilde{O}(n
+\sqrt{\Delta})$ space and an $O(\Delta^3)$-coloring using $\widetilde{O}(n)$ space. 

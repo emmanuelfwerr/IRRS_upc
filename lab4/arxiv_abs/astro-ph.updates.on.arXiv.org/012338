@@ -1,0 +1,19 @@
+We are in an era of large catalogs and, thus, statistical analysis tools for large data sets, such
+as machine learning, play a fundamental role. One example of such a survey is the Sloan Moving Object
+Catalog (MOC), which lists the astrometric and photometric information of all moving objects captured
+by the Sloan field of view. One great advantage of this telescope is represented by its set of five
+filters, allowing for taxonomic analysis of asteroids by studying their colors. However, until
+now, the color variation produced by the change of phase angle of the object has not been taken into
+account. In this paper, we address this issue by using absolute magnitudes for classification.
+We aim to produce a new taxonomic classification of asteroids based on their magnitudes that is unaffected
+by variations caused by the change in phase angle. We selected 9481 asteroids with absolute magnitudes
+of Hg, Hi and Hz, computed from the Sloan Moving Objects Catalog using the HG12 system. We calculated
+the absolute colors with them. To perform the taxonomic classification, we applied a unsupervised
+machine learning algorithm known as fuzzy C-means. This is a useful soft clustering tool for working
+with {data sets where the different groups are not completely separated and there are regions of
+overlap between them. We have chosen to work with the four main taxonomic complexes, C, S, X, and V,
+as they comprise most of the known spectral characteristics. We classified a total of 6329 asteroids
+with more than 60% probability of belonging to the assigned taxonomic class, with 162 of these objects
+having been characterized by an ambiguous classification in the past. By analyzing the sample obtained
+in the plane Semimajor axis versus inclination, we identified 15 new V-type asteroid candidates
+outside the Vesta family region. 

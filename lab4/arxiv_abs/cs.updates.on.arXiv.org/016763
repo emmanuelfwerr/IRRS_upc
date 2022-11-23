@@ -1,0 +1,19 @@
+The count-min sketch (CMS) is a time and memory efficient randomized data structure that provides
+estimates of tokens' frequencies in a data stream of tokens, i.e. point queries, based on random
+hashed data. A learning-augmented version of the CMS, referred to as CMS-DP, has been proposed by
+Cai, Mitzenmacher and Adams (\textit{NeurIPS} 2018), and it relies on Bayesian nonparametric
+(BNP) modeling of the data stream of tokens via a Dirichlet process (DP) prior, with estimates of
+a point query being obtained as mean functionals of the posterior distribution of the point query,
+given the hashed data. While the CMS-DP has proved to improve on some aspects of CMS, it has the major
+drawback of arising from a "heuristic" proof that builds upon arguments tailored to the DP prior,
+namely arguments that are not usable for other nonparametric priors. In this paper, we present a
+"rigorous" proof of the CMS-DP that has the advantage of building upon arguments that are usable,
+in principle, within the broad class of nonparametric priors arising from normalized random measures.
+This first result leads to develop a novel learning-augmented CMS under power-law data streams,
+referred to as CMS-PYP, which relies on BNP modeling of the data stream of tokens via a Pitman-Yor
+process (PYP) prior. Under this more general BNP model, we apply the arguments of the "rigorous"
+proof of the CMS-DP, suitably adapted to the PYP prior, in order to compute the posterior distribution
+of a point query, given the hashed data. Some large sample asymptotic behaviours of the CMS-DP and
+the CMS-PYP are also investigated and discussed. Applications to synthetic and real data show that
+the CMS-PYP outperforms the CMS and the CMS-DP in estimating low-frequency tokens, and it is competitive
+with respect to a variation of the CMS designed for low-frequency tokens. 

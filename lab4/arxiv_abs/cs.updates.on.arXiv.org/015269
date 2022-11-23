@@ -1,0 +1,19 @@
+Facing the difficulty of expensive and trivial data collection and annotation, how to make a deep
+learning-based short-term voltage stability assessment (STVSA) model work well on a small training
+dataset is a challenging and urgent problem. Although a big enough dataset can be directly generated
+by contingency simulation, this data generation process is usually cumbersome and inefficient;
+while data augmentation provides a low-cost and efficient way to artificially inflate the representative
+and diversified training datasets with label preserving transformations. In this respect, this
+paper proposes a novel deep-learning intelligent system incorporating data augmentation for
+STVSA of power systems. First, due to the unavailability of reliable quantitative criteria to judge
+the stability status for a specific power system, semi-supervised cluster learning is leveraged
+to obtain labeled samples in an original small dataset. Second, to make deep learning applicable
+to the small dataset, conditional least squares generative adversarial networks (LSGAN)-based
+data augmentation is introduced to expand the original dataset via artificially creating additional
+valid samples. Third, to extract temporal dependencies from the post-disturbance dynamic trajectories
+of a system, a bi-directional gated recurrent unit with attention mechanism based assessment model
+is established, which bi-directionally learns the significant time dependencies and automatically
+allocates attention weights. The test results demonstrate the presented approach manages to achieve
+better accuracy and a faster response time with original small datasets. Besides classification
+accuracy, this work employs statistical measures to comprehensively examine the performance
+of the proposal. 

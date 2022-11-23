@@ -1,0 +1,20 @@
+High-order gas-kinetic scheme (HGKS) has become a workable tool for the direct numerical simulation
+(DNS) of turbulence. In this paper, to accelerate the computation, HGKS is implemented with the
+graphical processing unit (GPU) using the compute unified device architecture (CUDA). To conduct
+the much large-scale DNS of turbulence, HGKS also be further upgraded with multiple GPUs using message
+passing interface (MPI) and CUDA architecture. The benchmark cases for compressible turbulence,
+including Taylor-Green vortex and turbulent channel flows, are presented to assess the numerical
+performance of HGKS with Nvidia TITAN RTX and Tesla V100 GPUs. For single-GPU computation, compared
+with the parallel central processing unit (CPU) code running on the Intel Core i7-9700 with open
+multi-processing (OpenMP) directives, 7x speedup is achieved by TITAN RTX and 16x speedup is achieved
+by Tesla V100. For multiple-GPU computation, the computational time of parallel CPU code running
+on 1024 Intel Xeon E5-2692 cores with MPI is approximately 3 times longer than that of GPU code using
+8 Tesla V100 GPUs with MPI and CUDA. Numerical results confirm the excellent performance of multiple-GPU
+accelerated HGKS for large-scale DNS of turbulence. HGKS in GPU is also compiled with FP32 precision
+to evaluate the effect of number formats precision. Reasonably, compared to the computation with
+FP64 precision, the efficiency is improved and the memory cost is reduced with FP32 precision. For
+turbulent channel flows, difference in long-time statistical turbulent quantities is acceptable
+between FP32 and FP64 precision solutions. While the obvious discrepancy in instantaneous turbulent
+quantities can be observed, which shows that FP32 precision is not safe for DNS in compressible turbulence.
+The choice of precision should depended on the requirement of accuracy and the available computational
+resources. 

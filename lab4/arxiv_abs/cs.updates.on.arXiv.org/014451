@@ -1,0 +1,20 @@
+Probabilistic model checking is a useful technique for specifying and verifying properties of
+stochastic systems including randomized protocols and the theoretical underpinnings of reinforcement
+learning models. However, these methods rely on the assumed structure and probabilities of certain
+system transitions. These assumptions may be incorrect, and may even be violated in the event that
+an adversary gains control of some or all components in the system. In this paper, motivated by research
+in adversarial machine learning on adversarial examples, we develop a formal framework for adversarial
+robustness in systems defined as discrete time Markov chains (DTMCs), and extend to include deterministic,
+memoryless policies acting in Markov decision processes (MDPs). Our framework includes a flexible
+approach for specifying several adversarial models with different capabilities to manipulate
+the system. We outline a class of threat models under which adversaries can perturb system transitions,
+constrained by an $\varepsilon$ ball around the original transition probabilities and define
+four specific instances of this threat model. We define three main DTMC adversarial robustness
+problems and present two optimization-based solutions, leveraging traditional and parametric
+probabilistic model checking techniques. We then evaluate our solutions on two stochastic protocols
+and a collection of GridWorld case studies, which model an agent acting in an environment described
+as an MDP. We find that the parametric solution results in fast computation for small parameter spaces.
+In the case of less restrictive (stronger) adversaries, the number of parameters increases, and
+directly computing property satisfaction probabilities is more scalable. We demonstrate the
+usefulness of our definitions and solutions by comparing system outcomes over various properties,
+threat models, and case studies. 

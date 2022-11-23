@@ -1,0 +1,20 @@
+High Reynolds Homogeneous Isotropic Turbulence (HIT) is fully described within the Navier-Stocks
+(NS) equations, which are notoriously difficult to solve numerically. Engineers, interested
+primarily in describing turbulence at reduced but sufficiently large range of resolved scales,
+have designed heuristics, known under the name of Large Eddy Simulation (LES). LES is described
+in terms of the evolving in time Eulerian velocity field defined over the points of a spatial grid
+with the mean-spacing correspondent to the resolved scale. This classic Eulerian LES depends on
+assumptions about effects of sub-grid scales on the resolved scales. In this manuscript, we take
+an alternative approach and design novel LES heuristics stated in terms of Lagrangian particles
+moving with the turbulent flow. Lagrangian LES, thus L-LES, is described by equations that generalize
+the Smoothed Particle Hydrodynamics (SPH) formulation with extended parametric and functional
+freedom which is then resolved/fixed via Machine Learning (ML) training on Lagrangian data from
+a Direct Numerical Simulation of the NS equations. The L-LES framework includes parameters which
+are explainable in clear physical terms, e.g. parameters describing effects of eddy-diffusivity
+and smoothing kernels, and Neural Networks (NN) to represent effects of unresolved scales. We utilize
+modern methodology of Differentiable Programming and Deep NN to train the parametric and functional
+degrees of freedom. We experiment with loss functions of different types, including physics-informed
+ones accounting for statistics of Lagrangian particles. We show, through a series of diagnostic
+tests, that the developed Lagrangian model allows to describe turbulence from a unique perspective
+that is inaccessible from Eulerian LES. We also show that the L-LES is capable to reproduce Lagrangian
+and Eulerian statistics of the flow at the resolved scales. 

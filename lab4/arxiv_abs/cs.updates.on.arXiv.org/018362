@@ -1,0 +1,20 @@
+Leveraging parallel hardware (e.g. GPUs) for deep neural network (DNN) training brings high computing
+performance. However, it raises data privacy concerns as GPUs lack a trusted environment to protect
+the data. Trusted execution environments (TEEs) have emerged as a promising solution to achieve
+privacy-preserving learning. Unfortunately, TEEs' limited computing power renders them not
+comparable to GPUs in performance. To improve the trade-off among privacy, computing performance,
+and model accuracy, we propose an \emph{asymmetric} model decomposition framework, \AsymML{},
+to (1) accelerate training using parallel hardware; and (2) achieve a strong privacy guarantee
+using TEEs and differential privacy (DP) with much less accuracy compromised compared to DP-only
+methods. By exploiting the low-rank characteristics in training data and intermediate features,
+\AsymML{} asymmetrically decomposes inputs and intermediate activations into low-rank and residual
+parts. With the decomposed data, the target DNN model is accordingly split into a \emph{trusted}
+and an \emph{untrusted} part. The trusted part performs computations on low-rank data, with low
+compute and memory costs. The untrusted part is fed with residuals perturbed by very small noise.
+Privacy, computing performance, and model accuracy are well managed by respectively delegating
+the trusted and the untrusted part to TEEs and GPUs. We provide a formal DP guarantee that demonstrates
+that, for the same privacy guarantee, combining asymmetric data decomposition and DP requires
+much smaller noise compared to solely using DP without decomposition. This improves the privacy-utility
+trade-off significantly compared to using only DP methods without decomposition. Furthermore,
+we present a rank bound analysis showing that the low-rank structure is preserved after each layer
+across the entire model. 

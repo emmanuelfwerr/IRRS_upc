@@ -1,0 +1,19 @@
+Modern processor designs use a variety of microarchitectural methods to achieve high performance.
+Unfortunately, new side-channels have often been uncovered that exploit these enhanced designs.
+One area that has received little attention from a security perspective is the processor's hard-ware
+prefetcher, a critical component used to mitigate DRAM latency in today's systems. Prefetchers,
+like branch predictors, hold critical state related to the execution of the application, and have
+the potential to leak secret information. But up to now, there has not been a demonstration of a generic
+prefetcher side-channel that could be actively exploited in today's hardware. In this paper, we
+present AfterImage, a new side-channel that exploits the Intel Instruction Pointer-based stride
+prefetcher. We observe that, when the execution of the processor switches between different private
+domains, the prefetcher trained by one domain can be triggered in another. To the best of our knowledge,
+this work is the first to publicly demonstrate a methodology that is both algorithm-agnostic and
+also able to leak kernel data into userspace. AfterImage is different from previous works, as it
+leaks data on the non-speculative path of execution. Because of this, a large class of work that has
+focused on protecting transient, branch-outcome-based data will be unable to block this side-channel.
+By reverse-engineering the IP-stride prefetcher in modern Intel processors, we have successfully
+developed three variants of AfterImage to leak control flow information across code regions, processes
+and the user-kernel boundary. We find a high level of accuracy in leaking information with our methodology
+(from 91%, up to 99%), and propose two mitigation techniques to block this side-channel, one of which
+can be used on hardware systems today. 

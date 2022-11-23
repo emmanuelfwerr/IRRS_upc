@@ -1,0 +1,20 @@
+Recommender systems are software applications that help users find items of interest in situations
+of information overload in a personalized way, using knowledge about the needs and preferences
+of individual users. In conversational recommendation approaches, these needs and preferences
+are acquired by the system in an interactive, multi-turn dialog. A common approach in the literature
+to drive such dialogs is to incrementally ask users about their preferences regarding desired and
+undesired item features or regarding individual items. A central research goal in this context
+is efficiency, evaluated with respect to the number of required interactions until a satisfying
+item is found. This is usually accomplished by making inferences about the best next question to
+ask to the user. Today, research on dialog efficiency is almost entirely empirical, aiming to demonstrate,
+for example, that one strategy for selecting questions is better than another one in a given application.
+With this work, we complement empirical research with a theoretical, domain-independent model
+of conversational recommendation. This model, which is designed to cover a range of application
+scenarios, allows us to investigate the efficiency of conversational approaches in a formal way,
+in particular with respect to the computational complexity of devising optimal interaction strategies.
+Through such a theoretical analysis we show that finding an efficient conversational strategy
+is NP-hard, and in PSPACE in general, but for particular kinds of catalogs the upper bound lowers
+to POLYLOGSPACE. From a practical point of view, this result implies that catalog characteristics
+can strongly influence the efficiency of individual conversational strategies and should therefore
+be considered when designing new strategies. A preliminary empirical analysis on datasets derived
+from a real-world one aligns with our findings. 

@@ -1,0 +1,19 @@
+In a cell-free massive multiple-input multiple-output (CF-mMIMO) network, multiple access points
+(APs) actively cooperate to serve users' equipment (UEs). We consider how the random access (RA)
+problem can be addressed by such a network under the occurrence of pilot collisions. To find a solution,
+we embrace the user-centric perspective, which basically dictates that only a preferred set of
+APs needs to serve a UE. Due to the success of the strongest-user collision resolution (SUCRe) protocol
+for cellular (Ce) mMIMO, we extend it by considering the new setting. Besides, we establish that
+the user-centric perspective naturally equips a CF network with robust fundamentals for resolving
+collisions. We refer to this foundation as spatial separability, which enables multiple colliding
+UEs to access the network simultaneously. We then propose two novel RA protocols for CF-mMIMO: i)
+the baseline cell-free (BCF) that resolves collisions with the concept of spatial separability
+alone, and ii) the cell-free SUCRe (CF-SUCRe) that combines SUCRe and spatial separability principle
+to resolve collisions. We evaluate our proposed RA protocols against the Ce-SUCRe. Respectively,
+the BCF and CF-SUCRe can support 7x and 4x more UEs' access on average compared to the Ce-SUCRe with
+an average energy efficiency gain based on total power consumed (TPC) by the network per access attempt
+of 52x and 340x. Among our procedures, even with a higher overhead, the CF-SUCRe is superior to BCF
+regarding TPC per access attempt. This is because the combination of methods for collision resolution
+allows many APs to be disconnected from the RA process without sacrificing much the performance.
+Finally, our numerical results presented in this work can be reproduced using the code package available
+on: github.com/victorcroisfelt/cf-ra-spatial-separability. 

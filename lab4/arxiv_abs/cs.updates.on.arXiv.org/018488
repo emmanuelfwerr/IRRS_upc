@@ -1,0 +1,19 @@
+By filling in missing values in datasets, imputation allows these datasets to be used with algorithms
+that cannot handle missing values by themselves. However, missing values may in principle contribute
+useful information that is lost through imputation. The missing-indicator approach can be used
+in combination with imputation to instead represent this information as a part of the dataset. There
+are several theoretical considerations why missing-indicators may or may not be beneficial, but
+there has not been any large-scale practical experiment on real-life datasets to test this question
+for machine learning predictions. We perform this experiment for three imputation strategies
+and a range of different classification algorithms, on the basis of twenty real-life datasets.
+We find that on these datasets, missing-indicators generally increase classification performance.
+In addition, we find no evidence for most algorithms that nearest neighbour and iterative imputation
+lead to better performance than simple mean/mode imputation. Therefore, we recommend the use of
+missing-indicators with mean/mode imputation as a safe default, with the caveat that for decision
+trees, pruning is necessary to prevent overfitting. In a follow-up experiment, we determine attribute-specific
+missingness thresholds for each classifier above which missing-indicators are more likely than
+not to increase classification performance, and observe that these thresholds are much lower for
+categorical than for numerical attributes. Finally, we argue that mean imputation of numerical
+attributes may preserve some of the information from missing values, and we show that in the absence
+of missing-indicators, it can similarly be useful to apply mean imputation to one-hot encoded categorical
+attributes instead of mode imputation. 

@@ -1,0 +1,20 @@
+Event-based vision sensors encode local pixel-wise brightness changes in streams of events rather
+than image frames and yield sparse, energy-efficient encodings of scenes, in addition to low latency,
+high dynamic range, and lack of motion blur. Recent progress in object recognition from event-based
+sensors has come from conversions of deep neural networks, trained with backpropagation. However,
+using these approaches for event streams requires a transformation to a synchronous paradigm,
+which not only loses computational efficiency, but also misses opportunities to extract spatio-temporal
+features. In this article we propose a hybrid architecture for end-to-end training of deep neural
+networks for event-based pattern recognition and object detection, combining a spiking neural
+network (SNN) backbone for efficient event-based feature extraction, and a subsequent analog
+neural network (ANN) head to solve synchronous classification and detection tasks. This is achieved
+by combining standard backpropagation with surrogate gradient training to propagate gradients
+through the SNN. Hybrid SNN-ANNs can be trained without conversion, and result in highly accurate
+networks that are substantially more computationally efficient than their ANN counterparts.
+We demonstrate results on event-based classification and object detection datasets, in which
+only the architecture of the ANN heads need to be adapted to the tasks, and no conversion of the event-based
+input is necessary. Since ANNs and SNNs require different hardware paradigms to maximize their
+efficiency, we envision that SNN backbone and ANN head can be executed on different processing units,
+and thus analyze the necessary bandwidth to communicate between the two parts. Hybrid networks
+are promising architectures to further advance machine learning approaches for event-based vision,
+without having to compromise on efficiency. 

@@ -1,0 +1,20 @@
+We review and evaluate a body of deep learning knowledge tracing (DLKT) models with openly available
+and widely-used data sets, and with a novel data set of students learning to program. The evaluated
+knowledge tracing models include Vanilla-DKT, two Long Short-Term Memory Deep Knowledge Tracing
+(LSTM-DKT) variants, two Dynamic Key-Value Memory Network (DKVMN) variants, and Self-Attentive
+Knowledge Tracing (SAKT). As baselines, we evaluate simple non-learning models, logistic regression
+and Bayesian Knowledge Tracing (BKT). To evaluate how different aspects of DLKT models influence
+model performance, we test input and output layer variations found in the compared models that are
+independent of the main architectures. We study maximum attempt count options, including filtering
+out long attempt sequences, that have been implicitly and explicitly used in prior studies. We contrast
+the observed performance variations against variations from non-model properties such as randomness
+and hardware. Performance of models is assessed using multiple metrics, whereby we also contrast
+the impact of the choice of metric on model performance. The key contributions of this work are: Evidence
+that DLKT models generally outperform more traditional models, but not necessarily by much and
+not always; Evidence that even simple baselines with little to no predictive value may outperform
+DLKT models, especially in terms of accuracy -- highlighting importance of selecting proper baselines
+for comparison; Disambiguation of properties that affect performance in DLKT models including
+metric choice, input and output layer variations, common hyperparameters, random seeding and
+hardware; Discussion of issues in replicability when evaluating DLKT models, including discrepancies
+in prior reported results and methodology. Model implementations, evaluation code, and data are
+published as a part of this work. 

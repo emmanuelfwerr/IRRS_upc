@@ -1,0 +1,19 @@
+People and vehicle trajectories embody important information of transportation infrastructures,
+and trajectory similarity computation is functionality in many real-world applications involving
+trajectory data analysis. Recently, deep-learning based trajectory similarity techniques hold
+the potential to offer improved efficiency and adaptability over traditional similarity techniques.
+Nevertheless, the existing trajectory similarity learning proposals emphasize spatial similarity
+over temporal similarity, making them suboptimal for time-aware analyses. To this end, we propose
+ST2Vec, a trajectory-representation-learning based architecture that considers fine-grained
+spatial and temporal correlations between pairs of trajectories for spatio-temporal similarity
+learning in road networks. To the best of our knowledge, this is the first deep-learning proposal
+for spatio-temporal trajectory similarity analytics. Specifically, ST2Vec encompasses three
+phases: (i) training data preparation that selects representative training samples; (ii) spatial
+and temporal modeling that encode spatial and temporal characteristics of trajectories, where
+a generic temporal modeling module (TMM) is designed; and (iii) spatio-temporal co-attention
+fusion (STCF), where a unified fusion (UF) approach is developed to help generating unified spatio-temporal
+trajectory embeddings that capture the spatio-temporal similarity relations between trajectories.
+Further, inspired by curriculum concept, ST2Vec employs the curriculum learning for model optimization
+to improve both convergence and effectiveness. An experimental study offers evidence that ST2Vec
+outperforms all state-of-the-art competitors substantially in terms of effectiveness, efficiency,
+and scalability, while showing low parameter sensitivity and good model robustness. 

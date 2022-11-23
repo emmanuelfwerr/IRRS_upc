@@ -1,0 +1,20 @@
+Document summarization condenses a long document into a short version with salient information
+and accurate semantic descriptions. The main issue is how to make the output summary semantically
+consistent with the input document. To reach this goal, recently, researchers have focused on supervised
+end-to-end hybrid approaches, which contain an extractor module and abstractor module. Among
+them, the extractor identifies the salient sentences from the input document, and the abstractor
+generates a summary from the salient sentences. This model successfully keeps the consistency
+between the generated summary and the reference summary via various strategies (e.g., reinforcement
+learning). There are two semantic gaps when training the hybrid model (one is between document and
+extracted sentences, and the other is between extracted sentences and summary). However, they
+are not explicitly considered in the existing methods, which usually results in a semantic bias
+of summary. To mitigate the above issue, in this paper, a new \textbf{r}einforcing s\textbf{e}mantic-\textbf{sy}mmetry
+learning \textbf{m}odel is proposed for document summarization (\textbf{ReSyM}). ReSyM introduces
+a semantic-consistency reward in the extractor to bridge the first gap. A semantic dual-reward
+is designed to bridge the second gap in the abstractor. The whole document summarization process
+is implemented via reinforcement learning with a hybrid reward mechanism (combining the above
+two rewards). Moreover, a comprehensive sentence representation learning method is presented
+to sufficiently capture the information from the original document. A series of experiments have
+been conducted on two wildly used benchmark datasets CNN/Daily Mail and BigPatent. The results
+have shown the superiority of ReSyM by comparing it with the state-of-the-art baselines in terms
+of various evaluation metrics. 

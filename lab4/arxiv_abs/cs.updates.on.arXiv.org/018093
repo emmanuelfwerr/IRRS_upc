@@ -1,0 +1,19 @@
+Many households include children who use voice personal assistants (VPA) such as Amazon Alexa.
+Children benefit from the rich functionalities of VPAs and third-party apps but are also exposed
+to new risks in the VPA ecosystem. In this paper, we first investigate "risky" child-directed voice
+apps that contain inappropriate content or ask for personal information through voice interactions.
+We build SkillBot - a natural language processing (NLP)-based system to automatically interact
+with VPA apps and analyze the resulting conversations. We find 28 risky child-directed apps and
+maintain a growing dataset of 31,966 non-overlapping app behaviors collected from 3,434 Alexa
+apps. Our findings suggest that although child-directed VPA apps are subject to stricter policy
+requirements and more intensive vetting, children remain vulnerable to inappropriate content
+and privacy violations. We then conduct a user study showing that parents are concerned about the
+identified risky apps. Many parents do not believe that these apps are available and designed for
+families/kids, although these apps are actually published in Amazon's "Kids" product category.
+We also find that parents often neglect basic precautions such as enabling parental controls on
+Alexa devices. Finally, we identify a novel risk in the VPA ecosystem: confounding utterances,
+or voice commands shared by multiple apps that may cause a user to interact with a different app than
+intended. We identify 4,487 confounding utterances, including 581 shared by child-directed and
+non-child-directed apps. We find that 27% of these confounding utterances prioritize invoking
+a non-child-directed app over a child-directed app. This indicates that children are at real risk
+of accidentally invoking non-child-directed apps due to confounding utterances. 

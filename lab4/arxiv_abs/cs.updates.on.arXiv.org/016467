@@ -1,0 +1,18 @@
+Blockchain is an essentially distributed database recording all transactions or digital events
+among participating parties. Each transaction in the records is approved and verified by consensus
+of the participants in the system that requires solving a hard mathematical puzzle, which is known
+as proof-of-work. To make the approved records immutable, the mathematical puzzle is not trivial
+to solve and therefore consumes substantial computing resources. However, it is energy-wasteful
+to have many computational nodes installed in the blockchain competing to approve the records by
+just solving a meaningless puzzle. Here, we pose proof-of-work as a reinforcement-learning problem
+by modeling the blockchain growing as a Markov decision process, in which a learning agent makes
+an optimal decision over the environment's state, whereas a new block is added and verified. Specifically,
+we design the block verification and consensus mechanism as a deep reinforcement-learning iteration
+process. As a result, our method utilizes the determination of state transition and the randomness
+of action selection of a Markov decision process, as well as the computational complexity of a deep
+neural network, collectively to make the blocks not easy to recompute and to preserve the order of
+transactions, while the blockchain nodes are exploited to train the same deep neural network with
+different data samples (state-action pairs) in parallel, allowing the model to experience multiple
+episodes across computing nodes but at one time. Our method is used to design the next generation
+of public blockchain networks, which has the potential not only to spare computational resources
+for industrial applications but also to encourage data sharing and AI model design for common problems.

@@ -1,0 +1,19 @@
+Caching at the wireless edge nodes is a promising way to boost the spatial and spectral efficiency,
+for the sake of alleviating networks from content-related traffic. Coded caching originally introduced
+by Maddah-Ali and Niesen significantly speeds up communication efficiency by transmitting multicast
+messages simultaneously useful to multiple users. Most prior works on coded caching are based on
+the assumption that each user may request all content in the library. However, in many applications
+the users are interested only in a limited set of content that depends on their location. Motivated
+by these considerations, this paper formulates the coded caching problem for location-based content
+with edge cache nodes. The considered problem includes a content server with access to $N$ location-based
+files (e.g., High-Definition maps), $K$ edge cache nodes located at different regions, and $K$
+users (i.e., vehicles) each of which is in the serving region of one cache node and can retrieve the
+cached content of this cache node with negligible cost. Depending on the location, each user only
+requests a file from a location-dependent subset of the library. The objective is to minimize the
+worst-case load. For this novel coded caching problem, we propose a highly non-trivial converse
+bound under uncoded cache placement, which shows that a simple achievable scheme is optimal under
+uncoded cache placement. In addition, this achievable scheme is also proved to be generally order
+optimal within a factor of $3$. Finally, we extend the coded caching problem for location-based
+content to the multiaccess coded caching topology originally proposed by Hachem et al., where each
+user is connected to $L$ nearest cache nodes. When $L \geq 2$, we characterize the exact optimality
+on the worst-case load. 

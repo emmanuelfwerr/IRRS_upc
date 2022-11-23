@@ -1,0 +1,20 @@
+An inverse reinforcement learning (IRL) agent learns to act intelligently by observing expert
+demonstrations and learning the expert's underlying reward function. Although learning the reward
+functions from demonstrations has achieved great success in various tasks, several other challenges
+are mostly ignored. Firstly, existing IRL methods try to learn the reward function from scratch
+without relying on any prior knowledge. Secondly, traditional IRL methods assume the reward functions
+are homogeneous across all the demonstrations. Some existing IRL methods managed to extend to the
+heterogeneous demonstrations. However, they still assume one hidden variable that affects the
+behavior and learn the underlying hidden variable together with the reward from demonstrations.
+To solve these issues, we present Context Hierarchy IRL(CHIRL), a new IRL algorithm that exploits
+the context to scale up IRL and learn reward functions of complex behaviors. CHIRL models the context
+hierarchically as a directed acyclic graph; it represents the reward function as a corresponding
+modular deep neural network that associates each network module with a node of the context hierarchy.
+The context hierarchy and the modular reward representation enable data sharing across multiple
+contexts and state abstraction, significantly improving the learning performance. CHIRL has
+a natural connection with hierarchical task planning when the context hierarchy represents subtask
+decomposition. It enables to incorporate the prior knowledge of causal dependencies of subtasks
+and make it capable of solving large complex tasks by decoupling it into several subtasks and conquering
+each subtask to solve the original task. Experiments on benchmark tasks, including a large scale
+autonomous driving task in the CARLA simulator, show promising results in scaling up IRL for tasks
+with complex reward functions. 

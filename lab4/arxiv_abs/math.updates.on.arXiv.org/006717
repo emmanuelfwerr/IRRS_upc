@@ -1,0 +1,19 @@
+Since the seminal works of Strassen and Valiant it has been a central theme in algebraic complexity
+theory to understand the relative complexity of algebraic problems, that is, to understand which
+algebraic problems (be it bilinear maps like matrix multiplication in Strassen's work, or the determinant
+and permanent polynomials in Valiant's) can be reduced to each other (under the appropriate notion
+of reduction). In this paper we determine precisely how many independent scalar multiplications
+can be reduced to a given bilinear map (this number is called the subrank, and extends the concept
+of matrix diagonalization to tensors), for essentially all (i.e. generic) bilinear maps. Namely,
+we prove for a generic bilinear map $T : V \times V \to V$ where $\dim(V) = n$ that $\theta(\sqrt{n})$
+independent scalar multiplications can be reduced to $T$. Our result significantly improves on
+the previous upper bound from the work of Strassen (1991) and B\"urgisser (1990) which was $n^{2/3
++ o(1)}$. Our full result is much more general and applies not only to bilinear maps and 3-tensors
+but also to $k$-tensors, for which we find that the generic subrank is $\theta(n^{1/(k-1)})$. Moreover,
+as an application we prove that the subrank is not additive under the direct sum. The subrank plays
+a central role in several areas of complexity theory (matrix multiplication algorithms, barrier
+results) and combinatorics (e.g., the cap set problem and sunflower problem). As a consequence
+of our result we obtain several large separations between the subrank and tensor methods that have
+received much interest recently, notably the slice rank (Tao, 2016), analytic rank (Gowers--Wolf,
+2011; Lovett, 2018; Bhrushundi--Harsha--Hatami--Kopparty--Kumar, 2020), geometric rank (Kopparty--Moshkovitz--Zuiddam,
+2020), and G-stable rank (Derksen, 2020). 

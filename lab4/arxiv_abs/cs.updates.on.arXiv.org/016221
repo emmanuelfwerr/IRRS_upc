@@ -1,0 +1,20 @@
+Online adaptive radiotherapy (ART) requires accurate and efficient auto-segmentation of target
+volumes and organs-at-risk (OARs) in mostly cone-beam computed tomography (CBCT) images. Propagating
+expert-drawn contours from the pre-treatment planning CT (pCT) through traditional or deep learning
+(DL) based deformable image registration (DIR) can achieve improved results in many situations.
+Typical DL-based DIR models are population based, that is, trained with a dataset for a population
+of patients, so they may be affected by the generalizability problem. In this paper, we propose a
+method called test-time optimization (TTO) to refine a pre-trained DL-based DIR population model,
+first for each individual test patient, and then progressively for each fraction of online ART treatment.
+Our proposed method is less susceptible to the generalizability problem, and thus can improve overall
+performance of different DL-based DIR models by improving model accuracy, especially for outliers.
+Our experiments used data from 239 patients with head and neck squamous cell carcinoma to test the
+proposed method. Firstly, we trained a population model with 200 patients, and then applied TTO
+to the remaining 39 test patients by refining the trained population model to obtain 39 individualized
+models. We compared each of the individualized models with the population model in terms of segmentation
+accuracy. The number of patients with at least 0.05 DSC improvement or 2 mm HD95 improvement by TTO
+averaged over the 17 selected structures for the state-of-the-art architecture Voxelmorph is
+10 out of 39 test patients. The average time for deriving the individualized model using TTO from
+the pre-trained population model is approximately four minutes. When adapting the individualized
+model to a later fraction of the same patient, the average time is reduced to about one minute and the
+accuracy is slightly improved. 

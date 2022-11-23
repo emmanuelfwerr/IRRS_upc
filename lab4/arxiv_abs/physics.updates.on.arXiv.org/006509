@@ -1,0 +1,20 @@
+We introduce a novel approach to improving the resolution of PIV measurements. The method blends
+information from different snapshots without the need for time-resolved measurements on grounds
+of similarity of flow regions in different snapshots. The main hypothesis is that, with a sufficiently
+large ensemble of statistically-independent snapshots, the identification of flow structures
+that are morphologically similar but occurring at different time instants is feasible. Measured
+individual vectors from different snapshots with similar flow organisation can thus be merged,
+resulting in an artificially increased particle concentration. This allows to refine the interrogation
+region and, consequently, increase the spatial resolution. The measurement domain is split in
+subdomains. The similarity is enforced only on a local scale, i.e. morphologically-similar regions
+are sought only among subdomains corresponding to the same flow region. The identification of locally-similar
+snapshots is based on unsupervised K-nearest neighbours search in a space of significant flow features.
+Such features are defined in terms of a Proper Orthogonal Decomposition, performed in subdomains
+on the original low-resolution data, obtained either with standard cross-correlation or with
+binning of Particle Tracking Velocimetry data with a relatively large bin size. A refined bin size
+is then selected according to the number of "sufficiently close" snapshots identified. The statistical
+dispersion of the velocity vectors within the bin is then used to estimate the uncertainty and to
+select the optimal K which minimises it. The method is tested and validated against datasets with
+a progressively increasing level of complexity: two virtual experiments based on direct simulations
+of the wake of a fluidic pinball and a channel flow and the experimental data collected in a turbulent
+boundary layer. 

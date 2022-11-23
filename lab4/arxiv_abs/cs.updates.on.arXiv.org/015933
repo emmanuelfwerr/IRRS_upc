@@ -1,0 +1,19 @@
+Featuring the fast response and flexibility in control allocation, an electric vehicle with in-wheel
+motors is a good platform for implementing advanced vehicle dynamics control. Among many active
+safety functions of an in-wheel motor driven vehicle (IMDV), lateral stability control is a key
+technology, which can be realized through torque vectoring. To further advance the lateral stabilization
+performance of the IMDV, in this paper a novel data-driven nonlinear model predictive control (NMPC)
+is proposed based the recurrent high-order neural network (RHONN) modelling method. First, the
+new RHONN model is developed to represent vehicle's nonlinear dynamic behaviors. Different from
+the conventional physics-based modelling method, the RHONN model only needs data and forms high-order
+polynomials. Based on the RHONN model, the steady-state responses of vehicle's yaw rate and sideslip
+angle are iteratively optimized and set as the control objectives for low-level controller, aiming
+to improve the system robustness. Besides, a nonlinear model predictive controller is designed
+based on the RHONN, which is expected to improve the prediction accuracy during the receding horizon
+control. Further, a constrained optimization problem is formulated to derive the required yaw
+moment for vehicle lateral dynamics stabilization. Finally, the performance of the developed
+RHONN-based nonlinear MPC is validated on an IMDV in the CarSim/Simulink simulation environment.
+The validation results show that the developed approach outperforms the conventional method,
+and further improves the stable margin of the system. It is able to enhance the lateral stabilization
+performance of the IMDV under various driving scenarios, demonstrating the feasibility and effectiveness
+of the proposed approach. 

@@ -1,0 +1,19 @@
+Quasars can be used to measure baryon acoustic oscillations at high redshift, which are considered
+as direct tracers of the most distant large-scale structures in the Universe. It is fundamental
+to select quasars from observations before implementing the above research. This work focuses
+on creating a catalog of quasar candidates based on photometric data to provide primary priors for
+further object classification with spectroscopic data in the future, such as The Dark Energy Spectroscopic
+Instrument (DESI) Survey. We adopt a machine learning algorithm (Random Forest, RF) for quasar
+identification. The training set includes $651,073$ positives and $1,227,172$ negatives, in
+which the photometric information are from DESI Legacy Imaging Surveys (DESI-LIS) \& Wide-field
+Infrared Survey Explore (WISE), and the labels are from a database of spectroscopically confirmed
+quasars based on Sloan Digital Sky Survey (SDSS) and the Set of Identifications \& Measurements
+and Bibliography for Astronomical Data (SIMBAD). The trained RF model is applied to point-like
+sources in DESI-LIS Data Release 9. To quantify the classifier's performance, we also inject a testing
+set into the to-be-applied data. Eventually, we obtained $1,953,932$ Grade-A quasar candidates
+and $22,486, 884$ Grade-B quasar candidates out of $425,540,269$ sources ($\sim 5.7\%$). The catalog
+covers $\sim 99\%$ of quasars in the to-be-applied data by evaluating the completeness of the classification
+on the testing set. The statistical properties of the candidates agree with that given by the method
+of color-cut selection. Our catalog can intensely decrease the workload for confirming quasars
+with the upcoming DESI data by eliminating enormous non-quasars but remaining high completeness.
+All data in this paper is publicly available online. 

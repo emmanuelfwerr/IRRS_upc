@@ -1,0 +1,18 @@
+Surface cracks on buildings, natural walls and underground mine tunnels can indicate serious structural
+integrity issues that threaten the safety of the structure and people in the environment. Timely
+detection and monitoring of cracks are crucial to managing these risks, especially if the systems
+can be made highly automated through robots. Vision-based crack detection algorithms using deep
+neural networks have exhibited promise for structured surfaces such as walls or civil engineering
+tunnels, but little work has addressed highly unstructured environments such as rock cliffs and
+bare mining tunnels. To address this challenge, this paper presents PointCrack3D, a new 3D-point-cloud-based
+crack detection algorithm for unstructured surfaces. The method comprises three key components:
+an adaptive down-sampling method that maintains sufficient crack point density, a DNN that classifies
+each point as crack or non-crack, and a post-processing clustering method that groups crack points
+into crack instances. The method was validated experimentally on a new large natural rock dataset,
+comprising coloured LIDAR point clouds spanning more than 900 m^2 and 412 individual cracks. Results
+demonstrate a crack detection rate of 97% overall and 100% for cracks with a maximum width of more
+than 3 cm, significantly outperforming the state of the art. Furthermore, for cross-validation,
+PointCrack3D was applied to an entirely new dataset acquired in different locations and not used
+at all in training and shown to detect 100% of its crack instances. We also characterise the relationship
+between detection performance, crack width and number of points per crack, providing a foundation
+upon which to make decisions about both practical deployments and future research directions.

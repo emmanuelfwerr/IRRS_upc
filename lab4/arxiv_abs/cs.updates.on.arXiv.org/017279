@@ -1,0 +1,19 @@
+Distributed optimization concerns the optimization of a common function in a distributed network,
+which finds a wide range of applications ranging from machine learning to vehicle platooning. Its
+key operation is to aggregate all local state information (LSI) at devices to update their states.
+The required extensive message exchange and many iterations cause a communication bottleneck
+when the LSI is high dimensional or at high mobility. To overcome the bottleneck, we propose in this
+work the framework of distributed over-the-air computing (AirComp) to realize a one-step aggregation
+for distributed optimization by exploiting simultaneous multicast beamforming of all devices
+and the property of analog waveform superposition of a multi-access channel. We consider two design
+criteria. The first one is to minimize the sum AirComp error (i.e., sum mean-squared error (MSE))
+with respect to the desired average-functional values. An efficient solution approach is proposed
+by transforming the non-convex beamforming problem into an equivalent concave-convex fractional
+program and solving it by nesting convex programming into a bisection search. The second criterion,
+called zero-forcing (ZF) multicast beamforming, is to force the received over-the-air aggregated
+signals at devices to be equal to the desired functional values. In this case, the optimal beamforming
+admits closed form. Both the MMSE and ZF beamforming exhibit a centroid structure resulting from
+averaging columns of conventional MMSE/ZF precoding. Last, the convergence of a classic distributed
+optimization algorithm is analyzed. The distributed AirComp is found to accelerate convergence
+by dramatically reducing communication latency. Another key finding is that the ZF beamforming
+outperforms the MMSE design as the latter is shown to cause bias in subgradient estimation. 

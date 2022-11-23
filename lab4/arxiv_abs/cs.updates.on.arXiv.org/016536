@@ -1,0 +1,19 @@
+Co-registration of multimodal remote sensing images is still an ongoing challenge because of nonlinear
+radiometric differences (NRD) and significant geometric distortions (e.g., scale and rotation
+changes) between these images. In this paper, a robust matching method based on the Steerable filters
+is proposed consisting of two critical steps. First, to address severe NRD, a novel structural descriptor
+named the Steerable Filters of first- and second-Order Channels (SFOC) is constructed, which combines
+the first- and second-order gradient information by using the steerable filters with a multi-scale
+strategy to depict more discriminative structure features of images. Then, a fast similarity measure
+is established called Fast Normalized Cross-Correlation (Fast-NCCSFOC), which employs the Fast
+Fourier Transform technique and the integral image to improve the matching efficiency. Furthermore,
+to achieve reliable registration performance, a coarse-to-fine multimodal registration system
+is designed consisting of two pivotal modules. The local coarse registration is first conducted
+by involving both detection of interest points (IPs) and local geometric correction, which effectively
+utilizes the prior georeferencing information of RS images to address global geometric distortions.
+In the fine registration stage, the proposed SFOC is used to resist significant NRD, and to detect
+control points between multimodal images by a template matching scheme. The performance of the
+proposed matching method has been evaluated with many different kinds of multimodal RS images.
+The results show its superior matching performance compared with the state-of-the-art methods.
+Moreover, the designed registration system also outperforms the popular commercial software
+in both registration accuracy and computational efficiency. Our system is available at https://github.com/yeyuanxin110.

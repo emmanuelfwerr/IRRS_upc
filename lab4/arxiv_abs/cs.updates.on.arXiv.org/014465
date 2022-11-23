@@ -1,0 +1,20 @@
+In this work we consider a class of non-linear eigenvalue problems that admit a spectrum similar
+to that of a Hamiltonian matrix, in the sense that the spectrum is symmetric with respect to both the
+real and imaginary axis. More precisely, we present a method to iteratively approximate the eigenvalues
+of such non-linear eigenvalue problems closest to a given purely real or imaginary shift, while
+preserving the symmetries of the spectrum. To this end the presented method exploits the equivalence
+between the considered non-linear eigenvalue problem and the eigenvalue problem associated with
+a linear but infinite-dimensional operator. To compute the eigenvalues closest to the given shift,
+we apply a specifically chosen shift-invert transformation to this linear operator and compute
+the eigenvalues with the largest modulus of the new shifted and inverted operator using an (infinite)
+Arnoldi procedure. The advantage of the chosen shift-invert transformation is that the spectrum
+of the transformed operator has a "real skew-Hamiltonian"-like structure. Furthermore, it is
+proven that the Krylov space constructed by applying this operator, satisfies an orthogonality
+property in terms of a specifically chosen bilinear form. By taking this property into account in
+the orthogonalization process, it is ensured that even in the presence of rounding errors, the obtained
+approximation for, e.g., a simple, purely imaginary eigenvalue is simple and purely imaginary.
+The presented work can thus be seen as an extension of [V. Mehrmann and D. Watkins, "Structure-Preserving
+Methods for Computing Eigenpairs of Large Sparse Skew-Hamiltonian/Hamiltonian Pencils", SIAM
+J. Sci. Comput. (22.6), 2001], to the considered class of non-linear eigenvalue problems. Although
+the presented method is initially defined on function spaces, it can be implemented using finite
+dimensional linear algebra operations. 

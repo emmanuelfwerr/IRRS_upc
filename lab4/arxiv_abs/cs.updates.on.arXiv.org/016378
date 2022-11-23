@@ -1,0 +1,19 @@
+Most methods for explaining black-box classifiers (e.g., on tabular data, images, or time series)
+rely on measuring the impact that the removal/perturbation of features has on the model output.
+This forces the explanation language to match the classifier features space. However, when dealing
+with graph data, in which the basic features correspond essentially to the adjacency information
+describing the graph structure (i.e., the edges), this matching between features space and explanation
+language might not be appropriate. In this regard, we argue that (i) a good explanation method for
+graph classification should be fully agnostic with respect to the internal representation used
+by the black-box; and (ii) a good explanation language for graph classification tasks should be
+represented by higher-order structures, such as motifs. The need to decouple the feature space
+(edges) from the explanation space (motifs) is thus a major challenge towards developing actionable
+explanations for graph classification tasks. In this paper we introduce GRAPHSHAP, a Shapley-based
+approach able to provide motif-based explanations for black-box graph classifiers, assuming
+no knowledge whatsoever about the model or its training data: the only requirement is that the black-box
+can be queried at will. Furthermore, we introduce additional auxiliary components such as a synthetic
+graph dataset generator, algorithms for subgraph mining and ranking, a custom graph convolutional
+layer, and a kernel to approximate the explanation scores while maintaining linear time complexity.
+Finally, we test GRAPHSHAP on a real-world brain-network dataset consisting of patients affected
+by Autism Spectrum Disorder and a control group. Our experiments highlight how the classification
+provided by a black-box model can be effectively explained by few connectomics patterns. 

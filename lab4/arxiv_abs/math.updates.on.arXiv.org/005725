@@ -1,0 +1,19 @@
+In this paper, we mainly study the gradient based Jacobi-type algorithms to maximize two classes
+of homogeneous polynomials with orthogonality constraints, and establish their convergence
+properties. For the first class of homogeneous polynomials subject to a constraint on a Stiefel
+manifold, we reformulate it as an optimization problem on a unitary group, which makes it possible
+to apply the gradient based Jacobi-type (Jacobi-G) algorithm. Then, if the subproblem can be always
+represented as a quadratic form, we establish the global convergence of Jacobi-G under any one of
+the three conditions (A1), (A2) and (A3). The convergence result for (A1) is an easy extension of
+the result in [Usevich et al. SIOPT 2020], while (A2) and (A3) are two new ones. This algorithm and
+the convergence properties apply to the well-known joint approximate symmetric tensor diagonalization
+and joint approximate symmetric trace maximization. For the second class of homogeneous polynomials
+subject to constraints on the product of Stiefel manifolds, we similarly reformulate it as an optimization
+problem on the product of unitary groups, and then develop a new gradient based multi-block Jacobi-type
+(Jacobi-MG) algorithm to solve it. We similarly establish the global convergence of Jacobi-MG
+under any one of the three conditions (A1), (A2) and (A3), if the subproblem can be always represented
+as a quadratic form. This algorithm and the convergence properties apply to the well-known joint
+approximate tensor diagonalization and joint approximate tensor compression. As the proximal
+variants of Jacobi-G and Jacobi-MG, we also propose the Jacobi-GP and Jacobi-MGP algorithms, and
+establish their global convergence without any further condition. Some numerical results are
+provided indicating the efficiency of the proposed algorithms. 

@@ -1,0 +1,20 @@
+We present a demonstration of the in-flight polarization angle calibration for the JAXA/ISAS second
+strategic large class mission, LiteBIRD, and estimate its impact on the measurement of the tensor-to-scalar
+ratio parameter, r, using simulated data. We generate a set of simulated sky maps with CMB and polarized
+foreground emission, and inject instrumental noise and polarization angle offsets to the 22 (partially
+overlapping) LiteBIRD frequency channels. Our in-flight angle calibration relies on nulling
+the EB cross correlation of the polarized signal in each channel. This calibration step has been
+carried out by two independent groups with a blind analysis, allowing an accuracy of the order of
+a few arc-minutes to be reached on the estimate of the angle offsets. Both the corrected and uncorrected
+multi-frequency maps are propagated through the foreground cleaning step, with the goal of computing
+clean CMB maps. We employ two component separation algorithms, the Bayesian-Separation of Components
+and Residuals Estimate Tool (B-SeCRET), and the Needlet Internal Linear Combination (NILC). We
+find that the recovered CMB maps obtained with algorithms that do not make any assumptions about
+the foreground properties, such as NILC, are only mildly affected by the angle miscalibration.
+However, polarization angle offsets strongly bias results obtained with the parametric fitting
+method. Once the miscalibration angles are corrected by EB nulling prior to the component separation,
+both component separation algorithms result in an unbiased estimation of the r parameter. While
+this work is motivated by the conceptual design study for LiteBIRD, its framework can be broadly
+applied to any CMB polarization experiment. In particular, the combination of simulation plus
+blind analysis provides a robust forecast by taking into account not only detector sensitivity
+but also systematic effects. 

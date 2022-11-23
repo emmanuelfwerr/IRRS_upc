@@ -1,0 +1,20 @@
+The characterization of an exoplanet's interior is an inverse problem, which requires statistical
+methods such as Bayesian inference in order to be solved. Current methods employ Markov Chain Monte
+Carlo (MCMC) sampling to infer the posterior probability of planetary structure parameters for
+a given exoplanet. These methods are time consuming since they require the calculation of a large
+number of planetary structure models. To speed up the inference process when characterizing an
+exoplanet, we propose to use conditional invertible neural networks (cINNs) to calculate the posterior
+probability of the internal structure parameters. cINNs are a special type of neural network which
+excel in solving inverse problems. We constructed a cINN using FrEIA, which was then trained on a
+database of $5.6\cdot 10^6$ internal structure models to recover the inverse mapping between internal
+structure parameters and observable features (i.e., planetary mass, planetary radius and composition
+of the host star). The cINN method was compared to a Metropolis-Hastings MCMC. For that we repeated
+the characterization of the exoplanet K2-111 b, using both the MCMC method and the trained cINN.
+We show that the inferred posterior probability of the internal structure parameters from both
+methods are very similar, with the biggest differences seen in the exoplanet's water content. Thus
+cINNs are a possible alternative to the standard time-consuming sampling methods. Indeed, using
+cINNs allows for orders of magnitude faster inference of an exoplanet's composition than what is
+possible using an MCMC method, however, it still requires the computation of a large database of
+internal structures to train the cINN. Since this database is only computed once, we found that using
+a cINN is more efficient than an MCMC, when more than 10 exoplanets are characterized using the same
+cINN. 

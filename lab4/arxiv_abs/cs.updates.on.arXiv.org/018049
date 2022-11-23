@@ -1,0 +1,18 @@
+To satisfy varying customer needs, device vendors and OS providers often rely on the open-source
+nature of the Android OS and offer customized versions of the Android OS. When a new version of the
+Android OS is released, device vendors and OS providers need to merge the changes from the Android
+OS into their customizations to account for its bug fixes, security patches, and new features. Because
+developers of customized OSs might have made changes to code locations that were also modified by
+the developers of the Android OS, the merge task can be characterized by conflicts, which can be time-consuming
+and error-prone to resolve. To provide more insight into this critical aspect of the Android ecosystem,
+we present an empirical study that investigates how eight open-source customizations of the Android
+OS merge the changes from the Android OS into their projects. The study analyzes how often the developers
+from the customized OSs merge changes from the Android OS, how often the developers experience textual
+merge conflicts, and the characteristics of these conflicts. Furthermore, to analyze the effect
+of the conflicts, the study also analyzes how the conflicts can affect a randomly selected sample
+of 1,000 apps. After analyzing 1,148 merge operations, we identified that developers perform these
+operations for 9.7\% of the released versions of the Android OS, developers will encounter at least
+one conflict in 41.3\% of the merge operations, 58.1\% of the conflicts required developers to change
+the customized OSs, and 64.4\% of the apps considered use at least one method affected by a conflict.
+In addition to detailing our results, the paper also discusses the implications of our findings
+and provides insights for researchers and practitioners working with Android and its customizations.

@@ -1,0 +1,20 @@
+Mobile sensing-based modeling of behavioral changes could predict an oncoming psychotic relapse
+in schizophrenia patients for timely interventions. Deep learning models could complement existing
+non-deep learning models for relapse prediction by modeling latent behavioral features relevant
+to the prediction. However, given the inter-individual behavioral differences, model personalization
+might be required for a predictive model. In this work, we propose RelapsePredNet, a Long Short-Term
+Memory (LSTM) neural network-based model for relapse prediction. The model is personalized for
+a particular patient by training using data from patients most similar to the given patient. Several
+demographics and baseline mental health scores were considered as personalization metrics to
+define patient similarity. We investigated the effect of personalization on training dataset
+characteristics, learned embeddings, and relapse prediction performance. We compared RelapsePredNet
+with a deep learning-based anomaly detection model for relapse prediction. Further, we investigated
+if RelapsePredNet could complement ClusterRFModel (a random forest model leveraging clustering
+and template features proposed in prior work) in a fusion model, by identifying latent behavioral
+features relevant for relapse prediction. The CrossCheck dataset consisting of continuous mobile
+sensing data obtained from 63 schizophrenia patients, each monitored for up to a year, was used for
+our evaluations. The proposed RelapsePredNet outperformed the deep learning-based anomaly detection
+model for relapse prediction. The F2 score for prediction were 0.21 and 0.52 in the full test set and
+the Relapse Test Set (consisting of data from patients who have had relapse only), respectively.
+These corresponded to a 29.4% and 38.8% improvement compared to the existing deep learning-based
+model for relapse prediction. 

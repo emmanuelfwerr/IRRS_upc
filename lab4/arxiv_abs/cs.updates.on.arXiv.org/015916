@@ -1,0 +1,18 @@
+Assessing the effects of a policy based on observational data from a different policy is a common
+problem across several high-stake decision-making domains, and several off-policy evaluation
+(OPE) techniques have been proposed. However, these methods largely formulate OPE as a problem
+disassociated from the process used to generate the data (i.e. structural assumptions in the form
+of a causal graph). We argue that explicitly highlighting this association has important implications
+on our understanding of the fundamental limits of OPE. First, this implies that current formulation
+of OPE corresponds to a narrow set of tasks, i.e. a specific causal estimand which is focused on prospective
+evaluation of policies over populations or sub-populations. Second, we demonstrate how this association
+motivates natural desiderata to consider a general set of causal estimands, particularly extending
+the role of OPE for counterfactual off-policy evaluation at the level of individuals of the population.
+A precise description of the causal estimand highlights which OPE estimands are identifiable from
+observational data under the stated generative assumptions. For those OPE estimands that are not
+identifiable, the causal perspective further highlights where more experimental data is necessary,
+and highlights situations where human expertise can aid identification and estimation. Furthermore,
+many formalisms of OPE overlook the role of uncertainty entirely in the estimation process.We demonstrate
+how specifically characterising the causal estimand highlights the different sources of uncertainty
+and when human expertise can naturally manage this uncertainty. We discuss each of these aspects
+as actionable desiderata for future OPE research at scale and in-line with practical utility. 

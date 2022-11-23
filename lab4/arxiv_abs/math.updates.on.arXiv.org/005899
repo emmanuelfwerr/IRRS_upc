@@ -1,0 +1,20 @@
+The immersed finite element-finite difference (IFED) method is a computational approach to modeling
+interactions between a fluid and an immersed structure. This method uses a finite element (FE) method
+to approximate the stresses and forces on a structural mesh and a finite difference (FD) method to
+approximate the momentum of the entire fluid-structure system on a Cartesian grid. The fundamental
+approach used by this method follows the immersed boundary framework for modeling fluid-structure
+interaction (FSI), in which a force spreading operator prolongs structural forces to a Cartesian
+grid, and a velocity interpolation operator restricts a velocity field defined on that grid back
+onto the structural mesh. Force spreading and velocity interpolation both require projecting
+data onto the finite element space. Consequently, evaluating either coupling operator requires
+solving a matrix equation at every time step. Mass lumping, in which the projection matrices are
+replaced by diagonal approximations, has the potential to accelerate this method considerably.
+Constructing the coupling operators also requires determining the locations on the structure
+mesh where the forces and velocities are sampled. Here we show that sampling the forces and velocities
+at the nodes of the structural mesh is equivalent to using lumped mass matrices in the coupling operators.
+A key theoretical result of our analysis is that if both of these approaches are used together, the
+IFED method permits the use of lumped mass matrices derived from nodal quadrature rules for any standard
+interpolatory element. This is different from standard FE methods, which require specialized
+treatments to accommodate mass lumping with higher-order shape functions. Our theoretical results
+are confirmed by numerical benchmarks, including standard solid mechanics tests and examination
+of a dynamic model of a bioprosthetic heart valve. 

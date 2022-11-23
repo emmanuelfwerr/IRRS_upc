@@ -1,0 +1,19 @@
+Wireless Capsule Endoscopy(WCE) has been widely used for the screening of gastrointestinal(GI)
+diseases, especially the small intestine, due to its advantages of non-invasive and painless imaging
+of the entire digestive tract.However, the huge amount of image data captured by WCE makes manual
+reading a process that requires a huge amount of tasks and can easily lead to missed detection and
+false detection of lesions.Therefore, In this paper, we propose a \textbf{T}wo-stage \textbf{M}ulti-scale
+\textbf{F}eature-fusion learning network(\textbf{TMFNet}) to automatically detect small
+intestinal polyps and tumors in WCE image sequences. Specifically, TMFNet consists of lesion detection
+network and lesion identification network. Among them, the former improves the feature extraction
+module and detection module based on the traditional Faster R-CNN network, and readjusts the parameters
+of the anchor in the region proposal network(RPN) module;the latter combines residual structure
+and feature pyramid structure are used to build a small intestinal lesion recognition network based
+on feature fusion, for reducing the false positive rate of the former and improve the overall accuracy.We
+used 22,335 WCE images in the experiment, with a total of 123,092 lesion regions used to train the
+detection framework of this paper. In the experiment, the detection framework is trained and tested
+on the real WCE image dataset provided by the hospital gastroenterology department. The sensitivity,
+false positive and accuracy of the final model on the RPM are 98.81$\%$, 7.43$\%$ and 92.57$\%$,
+respectively.Meanwhile,the corresponding results on the lesion images were 98.75$\%$, 5.62$\%$
+and 94.39$\%$. The algorithm model proposed in this paper is obviously superior to other detection
+algorithms in detection effect and performance 

@@ -1,0 +1,18 @@
+Lung cancer is a severe menace to human health, due to which millions of people die because of late
+diagnoses of cancer; thus, it is vital to detect the disease as early as possible. The Computerized
+chest analysis Tomography of scan is assumed to be one of the efficient solutions for detecting and
+classifying lung nodules. The necessity of high accuracy of analyzing C.T. scan images of the lung
+is considered as one of the crucial challenges in detecting and classifying lung cancer. A new long-short-term-memory
+(LSTM) based deep fusion structure, is introduced, where, the texture features computed from lung
+nodules through new volumetric grey-level-co-occurrence-matrices (GLCM) computations are
+applied to classify the nodules into: benign, malignant and ambiguous. An improved Otsu segmentation
+method combined with the water strider optimization algorithm (WSA) is proposed to detect the lung
+nodules. Otsu-WSA thresholding can overcome the restrictions present in previous thresholding
+methods. Extended experiments are run to assess this fusion structure by considering 2D-GLCM computations
+based 2D-slices fusion, and an approximation of this 3D-GLCM with volumetric 2.5D-GLCM computations-based
+LSTM fusion structure. The proposed methods are trained and assessed through the LIDC-IDRI dataset,
+where 94.4%, 91.6%, and 95.8% Accuracy, sensitivity, and specificity are obtained, respectively
+for 2D-GLCM fusion and 97.33%, 96%, and 98%, accuracy, sensitivity, and specificity, respectively,
+for 2.5D-GLCM fusion. The yield of the same are 98.7%, 98%, and 99%, for the 3D-GLCM fusion. The obtained
+results and analysis indicate that the WSA-Otsu method requires less execution time and yields
+a more accurate thresholding process. It is found that 3D-GLCM based LSTM outperforms its counterparts.

@@ -1,0 +1,20 @@
+Bayesian persuasion studies how an informed sender should partially disclose information so as
+to influence the behavior of self-interested receivers. In the last years, a growing attention
+has been devoted to relaxing the assumption that the sender perfectly knows receiver's payoffs.
+The first crucial step towards such an achievement is to study settings where each receiver's payoffs
+depend on their unknown type, which is randomly determined by a known finite-supported probability
+distribution. This begets considerable computational challenges, as computing a sender-optimal
+signaling scheme is inapproximable up to within any constant factor. In this work, we circumvent
+this issue by leveraging ideas from mechanism design. In particular, we introduce a type reporting
+step in which the receiver is asked to report their type to the sender, after the latter has committed
+to a menu defining a signaling scheme for each possible receiver's type. We prove that, with a single
+receiver, the addition of this type reporting stage makes the sender's computational problem tractable.
+Then, we extend our framework to settings with multiple receivers, focusing on the case of no inter-agent
+externalities and binary actions. We show that it is possible to find a sender-optimal solution
+in polynomial-time by means of the ellipsoid method, given access to a suitable polynomial-time
+separation oracle. This can be implemented for supermodular and anonymous sender's utility functions.
+As for the case of submodular sender's utility functions, we first approximately cast the sender's
+problem into a linearly-constrained mathematical program whose objective function is the multi-linear
+extension of the sender's utility. Then, we show how to find in polynomial-time an approximate solution
+to the program by means of a continuous greedy algorithm. This provides a (1 -1/e)-approximation
+to the problem. 

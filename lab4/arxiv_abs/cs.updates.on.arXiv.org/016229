@@ -1,0 +1,20 @@
+Decentralized distributed learning is the key to enabling large-scale machine learning (training)
+on the edge devices utilizing private user-generated local data, without relying on the cloud.
+However, the practical realization of such on-device training is limited by the communication
+and compute bottleneck. In this paper, we propose and show the convergence of low precision decentralized
+training that aims to reduce the computational complexity and communication cost of decentralized
+training. Many feedback-based compression techniques have been proposed in the literature to
+reduce communication costs. To the best of our knowledge, there is no work that applies and shows
+compute efficient training techniques such quantization, pruning, etc., for peer-to-peer decentralized
+learning setups. Since real-world applications have a significant skew in the data distribution,
+we design "Range-EvoNorm" as the normalization activation layer which is better suited for low
+precision training over non-IID data. Moreover, we show that the proposed low precision training
+can be used in synergy with other communication compression methods decreasing the communication
+cost further. Our experiments indicate that 8-bit decentralized training has minimal accuracy
+loss compared to its full precision counterpart even with non-IID data. However, when low precision
+training is accompanied by communication compression through sparsification we observe a 1-2%
+drop in accuracy. The proposed low precision decentralized training decreases computational
+complexity, memory usage, and communication cost by 4x and compute energy by a factor of ~20x, while
+trading off less than a $1\%$ accuracy for both IID and non-IID data. In particular, with higher skew
+values, we observe an increase in accuracy (by ~ 0.5%) with low precision training, indicating the
+regularization effect of the quantization. 

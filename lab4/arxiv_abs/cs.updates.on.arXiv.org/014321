@@ -1,0 +1,19 @@
+The ability to abstract, count, and use System 2 reasoning are well-known manifestations of intelligence
+and understanding. In this paper, we argue, using the example of the ``Look and Say" puzzle, that
+although deep neural networks can exhibit high `competence' (as measured by accuracy) when trained
+on large data sets (2M examples in our case), they do not show any sign on the deeper understanding
+of the problem, or what D. Dennett calls `comprehension'. We report on two sets experiments on the
+``Look and Say" puzzle data. We view the problem as building a translator from one set of tokens to
+another. We apply both standard LSTMs and Transformer/Attention -- based neural networks, using
+publicly available machine translation software. We observe that despite the amazing accuracy
+(on both, training and test data), the performance of the trained programs on the actual L\&S sequence
+is bad. We then discuss a few possible ramifications of this finding and connections to other work,
+experimental and theoretical. First, from the cognitive science perspective, we argue that we
+need better mathematical models of abstraction. Second, the classical and more recent results
+on the universality of neural networks should be re-examined for functions acting on discrete data
+sets. Mapping on discrete sets usually have no natural continuous extensions. This connects the
+results on a simple puzzle to more sophisticated results on modeling of mathematical functions,
+where algebraic functions are more difficult to model than e.g. differential equations. Third,
+we hypothesize that for problems such as ``Look and Say", computing the parity of bitstrings, or
+learning integer addition, it might be worthwhile to introduce concepts from topology, where continuity
+is defined without the reference to the concept of distance. 

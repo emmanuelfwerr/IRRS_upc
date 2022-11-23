@@ -1,0 +1,19 @@
+We study the complexity of graph modification problems with respect to homomorphism-based colouring
+properties of edge-coloured graphs. A homomorphism from edge-coloured graph $G$ to edge-coloured
+graph $H$ is a vertex-mapping from $G$ to $H$ that preserves adjacencies and edge-colours. We consider
+the property of having a homomorphism to a fixed edge-coloured graph $H$. The question we are interested
+in is: given an edge-coloured graph $G$, can we perform $k$ graph operations so that the resulting
+graph admits a homomorphism to $H$? The operations we consider are vertex-deletion, edge-deletion
+and switching (an operation that permutes the colours of the edges incident to a given vertex). Switching
+plays an important role in the theory of signed graphs, that are 2-edge-coloured graphs whose colours
+are the signs $+$ and $-$. We denote the corresponding problems (parameterized by $k$) by VD-$H$-COLOURING,
+ED-$H$-COLOURING and SW-$H$-COLOURING. These problems generalise $H$-COLOURING (to decide
+if an input graph admits a homomorphism to a fixed target $H$). Our main focus is when $H$ is an edge-coloured
+graph with at most two vertices, a case that is already interesting as it includes problems such as
+VERTEX COVER, ODD CYCLE RANSVERSAL and EDGE BIPARTIZATION. For such a graph $H$, we give a P/NP-c
+complexity dichotomy for VD-$H$-COLOURING, ED-$H$-COLOURING and SW-$H$-COLOURING. We then
+address their parameterized complexity. We show that VD-$H$-COLOURING and ED-$H$-COLOURING
+for all such $H$ are FPT. In contrast, already for some $H$ of order 3, unless P=NP, none of the three
+problems is in XP, since 3-COLOURING is NP-c. We show that SW-$H$-COLOURING is different: there
+are three 2-edge-coloured graphs $H$ of order 2 for which SW-$H$-COLOURING is W-hard, and assuming
+the ETH, admits no algorithm in time $f(k)n^{o(k)}$. For the other cases, SW-$H$-COLOURING is FPT.

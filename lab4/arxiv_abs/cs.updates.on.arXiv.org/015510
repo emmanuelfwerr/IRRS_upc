@@ -1,0 +1,20 @@
+Convolutional neural networks (CNNs) are vulnerable to adversarial attack, the phenomenon that
+adding minuscule noise to an image can fool CNNs into misclassifying it. Because this noise is nearly
+imperceptible to human viewers, biological vision is assumed to be robust to adversarial attack.
+Despite this apparent difference in robustness, CNNs are currently the best models of biological
+vision, revealing a gap in explaining how the brain responds to adversarial images. Indeed, sensitivity
+to adversarial attack has not been measured for biological vision under normal conditions, nor
+have attack methods been specifically designed to affect biological vision. We studied the effects
+of adversarial attack on primate vision, measuring both monkey neuronal responses and human behavior.
+Adversarial images were created by modifying images from one category(such as human faces) to look
+like a target category(such as monkey faces), while limiting pixel value change. We tested three
+attack directions via several attack methods, including directly using CNN adversarial images
+and using a CNN-based predictive model to guide monkey visual neuron responses. We considered a
+wide range of image change magnitudes that covered attack success rates up to>90%. We found that
+adversarial images designed for CNNs were ineffective in attacking primate vision. Even when considering
+the best attack method, primate vision was more robust to adversarial attack than an ensemble of
+CNNs, requiring over 100-fold larger image change to attack successfully. The success of individual
+attack methods and images was correlated between monkey neurons and human behavior, but was less
+correlated between either and CNN categorization. Consistently, CNN-based models of neurons,
+when trained on natural images, did not generalize to explain neuronal responses to adversarial
+images. 

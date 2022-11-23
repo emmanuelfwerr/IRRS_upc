@@ -1,0 +1,19 @@
+Autonomous marine vehicles play an essential role in many ocean science and engineering applications.
+Planning time and energy optimal paths for these vehicles to navigate in stochastic dynamic ocean
+environments is essential to reduce operational costs. In some missions, they must also harvest
+solar, wind, or wave energy (modeled as a stochastic scalar field) and move in optimal paths that
+minimize net energy consumption. Markov Decision Processes (MDPs) provide a natural framework
+for sequential decision-making for robotic agents in such environments. However, building a realistic
+model and solving the modeled MDP becomes computationally expensive in large-scale real-time
+applications, warranting the need for parallel algorithms and efficient implementation. In the
+present work, we introduce an efficient end-to-end GPU-accelerated algorithm that (i) builds
+the MDP model (computing transition probabilities and expected one-step rewards); and (ii) solves
+the MDP to compute an optimal policy. We develop methodical and algorithmic solutions to overcome
+the limited global memory of GPUs by (i) using a dynamic reduced-order representation of the ocean
+flows, (ii) leveraging the sparse nature of the state transition probability matrix, (iii) introducing
+a neighbouring sub-grid concept and (iv) proving that it is sufficient to use only the stochastic
+scalar field's mean to compute the expected one-step rewards for missions involving energy harvesting
+from the environment; thereby saving memory and reducing the computational effort. We demonstrate
+the algorithm on a simulated stochastic dynamic environment and highlight that it builds the MDP
+model and computes the optimal policy 600-1000x faster than conventional CPU implementations,
+making it suitable for real-time use. 

@@ -1,0 +1,19 @@
+Aiming at ontology-based data access to temporal data, we design two-dimensional temporal ontology
+and query languages by combining logics from the (extended) DL-Lite family with linear temporal
+logic LTL over discrete time (Z,<). Our main concern is first-order rewritability of ontology-mediated
+queries (OMQs) that consist of a 2D ontology and a positive temporal instance query. Our target languages
+for FO-rewritings are two-sorted FO(<) - first-order logic with sorts for time instants ordered
+by the built-in precedence relation < and for the domain of individuals - its extension FOE with the
+standard congruence predicates t \equiv 0 mod n, for any fixed n > 1, and FO(RPR) that admits relational
+primitive recursion. In terms of circuit complexity, FOE- and FO(RPR)-rewritability guarantee
+answering OMQs in uniform AC0 and NC1, respectively. We proceed in three steps. First, we define
+a hierarchy of 2D DL-Lite/LTL ontology languages and investigate the FO-rewritability of OMQs
+with atomic queries by constructing projections onto 1D LTL OMQs and employing recent results on
+the FO-rewritability of propositional LTL OMQs. As the projections involve deciding consistency
+of ontologies and data, we also consider the consistency problem for our languages. While the undecidability
+of consistency for 2D ontology languages with expressive Boolean role inclusions might be expected,
+we also show that, rather surprisingly, the restriction to Krom and Horn role inclusions leads to
+decidability (and ExpSpace-completeness), even if one admits full Booleans on concepts. As a final
+step, we lift some of the rewritability results for atomic OMQs to OMQs with expressive positive
+temporal instance queries. The lifting results are based on an in-depth study of the canonical models
+and only concern Horn ontologies. 

@@ -1,0 +1,19 @@
+In the institutional research mode, in order to explore which characteristics are the best indicators
+for predicting academic risk from the student behavior data sets that have high-dimensional, unbalanced
+classified small sample, it transforms the academic risk prediction of college students into a
+binary classification task. It predicts academic risk based on the LightGBM model and the interpretable
+machine learning method of Shapley value. The simulation results show that from the global perspective
+of the prediction model, characteristics such as the quality of academic partners, the seating
+position in classroom, the dormitory study atmosphere, the English scores of the college entrance
+examination, the quantity of academic partners, the addiction level of video games, the mobility
+of academic partners, and the degree of truancy are the best 8 predictors for academic risk. It is
+contrary to intuition that characteristics such as living in campus or not, work-study, lipstick
+addiction, student leader or not, lover amount, and smoking have little correlation with university
+academic risk in this experiment. From the local perspective of the sample, the factors affecting
+academic risk vary from person to person. It can perform personalized interpretable analysis through
+Shapley values, which cannot be done by traditional mathematical statistical prediction models.
+The academic contributions of this research are mainly in two aspects: First, the learning interaction
+networks is proposed for the first time, so that social behavior can be used to compensate for the
+one-sided individual behavior and improve the performance of academic risk prediction. Second,
+the introduction of Shapley value calculation makes machine learning that lacks a clear reasoning
+process visualized, and provides intuitive decision support for education managers. 

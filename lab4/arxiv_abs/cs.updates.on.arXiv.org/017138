@@ -1,0 +1,19 @@
+In this study, we evaluated the RNNG, a neural top-down transition based parser, for medication
+information extraction in clinical texts. We evaluated this model on a French clinical corpus.
+The task was to extract the name of a drug (or a drug class), as well as attributes informing its administration:
+frequency, dosage, duration, condition and route of administration. We compared the RNNG model
+that jointly identifies entities, events and their relations with separate BiLSTMs models for
+entities, events and relations as baselines. We call seq-BiLSTMs the baseline models for relations
+extraction that takes as extra-input the output of the BiLSTMs for entities and events. Similarly,
+we evaluated seq-RNNG, a hybrid RNNG model that takes as extra-input the output of the BiLSTMs for
+entities and events. RNNG outperforms seq-BiLSTM for identifying complex relations, with on average
+88.1 [84.4-91.6] % versus 69.9 [64.0-75.4] F-measure. However, RNNG tends to be weaker than the
+baseline BiLSTM on detecting entities, with on average 82.4 [80.8-83.8] versus 84.1 [82.7-85.6]
+% F- measure. RNNG trained only for detecting relations tends to be weaker than RNNG with the joint
+modelling objective, 87.4% [85.8-88.8] versus 88.5% [87.2-89.8]. Seq-RNNG is on par with BiLSTM
+for entities (84.0 [82.6-85.4] % F-measure) and with RNNG for relations (88.7 [87.4-90.0] % F-measure).
+The performance of RNNG on relations can be explained both by the model architecture, which provides
+inductive bias to capture the hierarchy in the targets, and the joint modeling objective which allows
+the RNNG to learn richer representations. RNNG is efficient for modeling relations between entities
+or/and events in medical texts and its performances are close to those of a BiLSTM for entity and event
+detection. 

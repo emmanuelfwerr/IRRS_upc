@@ -1,0 +1,19 @@
+PID control has been the dominant control strategy in the process industry due to its simplicity
+in design and effectiveness in controlling a wide range of processes. However, traditional methods
+on PID tuning often require extensive domain knowledge and field experience. To address the issue,
+this work proposes an automatic PID tuning framework based on reinforcement learning (RL), particularly
+the deterministic policy gradient (DPG) method. Different from existing studies on using RL for
+PID tuning, in this work, we consider the closed-loop stability throughout the RL-based tuning
+process. In particular, we propose a novel episodic tuning framework that allows for an episodic
+closed-loop operation under selected PID parameters where the actor and critic networks are updated
+once at the end of each episode. To ensure the closed-loop stability during the tuning, we initialize
+the training with a conservative but stable baseline PID controller and the resultant reward is
+used as a benchmark score. A supervisor mechanism is used to monitor the running reward (e.g., tracking
+error) at each step in the episode. As soon as the running reward exceeds the benchmark score, the
+underlying controller is replaced by the baseline controller as an early correction to prevent
+instability. Moreover, we use layer normalization to standardize the input to each layer in actor
+and critic networks to overcome the issue of policy saturation at action bounds, to ensure the convergence
+to the optimum. The developed methods are validated through setpoint tracking experiments on a
+second-order plus dead-time system. Simulation results show that with our scheme, the closed-loop
+stability can be maintained throughout RL explorations and the explored PID parameters by the RL
+agent converge quickly to the optimum. 

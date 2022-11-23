@@ -1,0 +1,19 @@
+Modern computing systems have led cyber adversaries to create more sophisticated malware than
+was previously available in the early days of technology. Dated detection techniques such as Anti-Virus
+Software (AVS) based on signature-based methods could no longer keep up with the demand that computer
+systems required of them. The complexity of modern malware has led to the development of contemporary
+detection techniques that use the machine learning field and hardware to boost the detection rates
+of malicious software. These new techniques use Hardware Performance Counters (HPCs) that form
+a digital signature of sorts. After the models are fed training data, they can reference these HPCs
+to classify zero-day malware samples. A problem emerges when malware with no comparable HPC values
+comes into contact with these new techniques. We provide an analysis of several machine learning
+and deep learning models that run zero-day samples and evaluate the results from the conversion
+of C++ algorithms to a hardware description language (HDL) used to begin a hardware implementation.
+Our results present a lack of accuracy from the models when running zero-day malware data as our highest
+detector, decision tree, was only able to reach 91.2% accuracy and had an F1-Score of 91.5% in the
+form of a decision tree. Next, through the Receiver Operating Curve (ROC) and area-under-the-curve
+(AUC), we can also determine that the algorithms did not present significant robustness as the largest
+AUC was only 0.819. In addition, we viewed relatively high overhead for our ensemble learning algorithm
+while also only having an 86.3% accuracy and 86% F1-Score. Finally, as an additional task, we adapted
+the one rule algorithm to fit many rules to make malware classification understandable to everyday
+users by allowing them to view the regulations while maintaining relatively high accuracy. 

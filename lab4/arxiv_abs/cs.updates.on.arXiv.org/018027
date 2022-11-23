@@ -1,0 +1,20 @@
+Investigating the causal relationships between characteristics and expressions plays a critical
+role in healthcare analytics. Effective synthesis for expressions using given characteristics
+can make great contributions to health risk management and medical decision-making. For example,
+predicting the resulting physiological symptoms on patients from given treatment characteristics
+is helpful for the disease prevention and personalized treatment strategy design. Therefore,
+the objective of this study is to effectively synthesize the expressions based on given characteristics.
+However, the mapping from characteristics to expressions is usually from a relatively low dimension
+space to a high dimension space, but most of the existing methods such as regression models could
+not effectively handle such mapping. Besides, the relationship between characteristics and expressions
+may contain not only deterministic patterns, but also stochastic patterns. To address these challenges,
+this paper proposed a novel selective ensemble characteristic-to-expression synthesis (SE-CTES)
+approach inspired by generative adversarial network (GAN). The novelty of the proposed method
+can be summarized into three aspects: (1) GAN-based architecture for deep neural networks are incorporated
+to learn the relatively low dimensional mapping to high dimensional mapping containing both deterministic
+and stochastic patterns; (2) the weights of the two mismatching errors in the GAN-based architecture
+are proposed to be different to reduce the learning bias in the training process; and (3) a selective
+ensemble learning framework is proposed to reduce the prediction bias and improve the synthesis
+stability. To validate the effectiveness of the proposed approach, extensive numerical simulation
+studies and a real-world healthcare case study were applied and the results demonstrated that the
+proposed method is very promising. 

@@ -1,0 +1,20 @@
+Risk-aware urban localization with the Global Navigation Satellite System (GNSS) remains an unsolved
+problem with frequent misdetection of the user's street or side of the street. Significant advances
+in 3D map-aided GNSS use grid-based GNSS shadow matching alongside AI-driven line-of-sight (LOS)
+classifiers and server-based processing to improve localization accuracy, especially in the
+cross-street direction. Our prior work introduces a new paradigm for shadow matching that proposes
+set-valued localization with computationally efficient zonotope set representations. While
+existing literature improved accuracy and efficiency, the current state of shadow matching theory
+does not address the needs of risk-aware autonomous systems. We extend our prior work to propose
+Mosaic Zonotope Shadow Matching (MZSM) that employs a classifier-agnostic polytope mosaic architecture
+to provide risk-awareness and certifiable guarantees on urban positioning. We formulate a recursively
+expanding binary tree that refines an initial location estimate with set operations into smaller
+polytopes. Together, the smaller polytopes form a mosaic. We weight the tree branches with the probability
+that the user is in line of sight of the satellite and expand the tree with each new satellite observation.
+Our method yields an exact shadow matching distribution from which we guarantee uncertainty bounds
+on the user localization. We perform high-fidelity simulations using a 3D building map of San Francisco
+to validate our algorithm's risk-aware improvements. We demonstrate that MZSM provides certifiable
+guarantees across varied data-driven LOS classifier accuracies and yields a more precise understanding
+of the uncertainty over existing methods. We validate that our tree-based construction is efficient
+and tractable, computing a mosaic from 14 satellites in 0.63 seconds and growing quadratically
+in the satellite number. 

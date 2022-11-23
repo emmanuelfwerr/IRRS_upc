@@ -1,0 +1,20 @@
+The mercury constitutive model predicting the strain and stress in the target vessel plays a central
+role in improving the lifetime prediction and future target designs of the mercury targets at the
+Spallation Neutron Source (SNS). We leverage the experiment strain data collected over multiple
+years to improve the mercury constitutive model through a combination of large-scale simulations
+of the target behavior and the use of machine learning tools for parameter estimation. We present
+two interdisciplinary approaches for surrogate-based model calibration of expensive simulations
+using evolutionary neural networks and sparse polynomial expansions. The experiments and results
+of the two methods show a very good agreement for the solid mechanics simulation of the mercury spallation
+target. The proposed methods are used to calibrate the tensile cutoff threshold, mercury density,
+and mercury speed of sound during intense proton pulse experiments. Using strain experimental
+data from the mercury target sensors, the newly calibrated simulations achieve 7\% average improvement
+on the signal prediction accuracy and 8\% reduction in mean absolute error compared to previously
+reported reference parameters, with some sensors experiencing up to 30\% improvement. The proposed
+calibrated simulations can significantly aid in fatigue analysis to estimate the mercury target
+lifetime and integrity, which reduces abrupt target failure and saves a tremendous amount of costs.
+However, an important conclusion from this work points out to a deficiency in the current constitutive
+model based on the equation of state in capturing the full physics of the spallation reaction. Given
+that some of the calibrated parameters that show a good agreement with the experimental data can
+be nonphysical mercury properties, we need a more advanced two-phase flow model to capture bubble
+dynamics and mercury cavitation. 

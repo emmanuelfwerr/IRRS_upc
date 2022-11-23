@@ -1,0 +1,19 @@
+Deep learning models have been widely used for anomaly detection in surveillance videos. Typical
+models are equipped with the capability to reconstruct normal videos and evaluate the reconstruction
+errors on anomalous videos to indicate the extent of abnormalities. However, existing approaches
+suffer from two disadvantages. Firstly, they can only encode the movements of each identity independently,
+without considering the interactions among identities which may also indicate anomalies. Secondly,
+they leverage inflexible models whose structures are fixed under different scenes, this configuration
+disables the understanding of scenes. In this paper, we propose a Hierarchical Spatio-Temporal
+Graph Convolutional Neural Network (HSTGCNN) to address these problems, the HSTGCNN is composed
+of multiple branches that correspond to different levels of graph representations. High-level
+graph representations encode the trajectories of people and the interactions among multiple identities
+while low-level graph representations encode the local body postures of each person. Furthermore,
+we propose to weightedly combine multiple branches that are better at different scenes. An improvement
+over single-level graph representations is achieved in this way. An understanding of scenes is
+achieved and serves anomaly detection. High-level graph representations are assigned higher
+weights to encode moving speed and directions of people in low-resolution videos while low-level
+graph representations are assigned higher weights to encode human skeletons in high-resolution
+videos. Experimental results show that the proposed HSTGCNN significantly outperforms current
+state-of-the-art models on four benchmark datasets (UCSD Pedestrian, ShanghaiTech, CUHK Avenue
+and IITB-Corridor) by using much less learnable parameters. 

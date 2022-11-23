@@ -1,0 +1,19 @@
+This article describes a software package called ROS georegistration intended for use with the
+Robot Operating System (ROS) and the Gazebo 3D simulation environment. ROSgeoregistration provides
+tools for the simulation, test and deployment of aerial georegistration algorithms and is made
+available with a link provided in the paper. A model creation package is provided which downloads
+multi-spectral images from the Google Earth Engine database and, if necessary, incorporates these
+images into a single, possibly very large, reference image. Additionally a Gazebo plugin which
+uses the real-time sensor pose and image formation model to generate simulated imagery using the
+specified reference image is provided along with related plugins for UAV relevant data. The novelty
+of this work is threefold: (1) this is the first system to link the massive multi-spectral imaging
+database of Google's Earth Engine to the Gazebo simulator, (2) this is the first example of a system
+that can simulate geospatially and radiometrically accurate imagery from multiple sensor views
+of the same terrain region, and (3) integration with other UAS tools creates a new holistic UAS simulation
+environment to support UAS system and subsystem development where real-world testing would generally
+be prohibitive. Sensed imagery and ground truth registration information is published to client
+applications which can receive imagery synchronously with telemetry from other payload sensors,
+e.g., IMU, GPS/GNSS, barometer, and windspeed sensor data. To highlight functionality, we demonstrate
+ROSgeoregistration for simulating Electro-Optical (EO) and Synthetic Aperture Radar (SAR) image
+sensors and an example use case for developing and evaluating image-based UAS position feedback,
+i.e., pose for image-based Guidance Navigation and Control (GNC) applications. 

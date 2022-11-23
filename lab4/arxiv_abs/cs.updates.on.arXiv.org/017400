@@ -1,0 +1,20 @@
+Next Point-of-Interest (POI) recommendation has become an indispensable functionality in Location-based
+Social Networks (LBSNs) due to its effectiveness in helping people decide the next POI to visit.
+However, accurate recommendation requires a vast amount of historical check-in data, thus threatening
+user privacy as the location-sensitive data needs to be handled by cloud servers. Although there
+have been several on-device frameworks for privacy-preserving POI recommendations, they are
+still resource-intensive when it comes to storage and computation, and show limited robustness
+to the high sparsity of user-POI interactions. On this basis, we propose a novel decentralized collaborative
+learning framework for POI recommendation (DCLR), which allows users to train their personalized
+models locally in a collaborative manner. DCLR significantly reduces the local models' dependence
+on the cloud for training, and can be used to expand arbitrary centralized recommendation models.
+To counteract the sparsity of on-device user data when learning each local model, we design two self-supervision
+signals to pretrain the POI representations on the server with geographical and categorical correlations
+of POIs. To facilitate collaborative learning, we innovatively propose to incorporate knowledge
+from either geographically or semantically similar users into each local model with attentive
+aggregation and mutual information maximization. The collaborative learning process makes use
+of communications between devices while requiring only minor engagement from the central server
+for identifying user groups, and is compatible with common privacy preservation mechanisms like
+differential privacy. We evaluate DCLR with two real-world datasets, where the results show that
+DCLR outperforms state-of-the-art on-device frameworks and yields competitive results compared
+with centralized counterparts. 

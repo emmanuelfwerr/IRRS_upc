@@ -1,0 +1,19 @@
+The problem of scheduling unrelated machines has been studied since the inception of algorithmic
+mechanism design~\cite{NR99}. It is a resource allocation problem that entails assigning $m$
+tasks to $n$ machines for execution. Machines are regarded as strategic agents who may lie about
+their execution costs so as to minimize their allocated workload. To address the situation when
+monetary payment is not an option to compensate the machines' costs, \citeauthor{DBLP:journals/mst/Koutsoupias14}
+[2014] devised two \textit{truthful} mechanisms, K and P respectively, that achieve an approximation
+ratio of $\frac{n+1}{2}$ and $n$, for social cost minimization. In addition, no truthful mechanism
+can achieve an approximation ratio better than $\frac{n+1}{2}$. Hence, mechanism K is optimal.
+While approximation ratio provides a strong worst-case guarantee, it also limits us to a comprehensive
+understanding of mechanism performance on various inputs. This paper investigates these two scheduling
+mechanisms beyond the worst case. We first show that mechanism K achieves a smaller social cost than
+mechanism P on every input. That is, mechanism K is pointwise better than mechanism P. Next, for each
+task $j$, when machines' execution costs $t_i^j$ are independent and identically drawn from a task-specific
+distribution $F^j(t)$, we show that the average-case approximation ratio of mechanism K converges
+to a constant. This bound is tight for mechanism K. For a better understanding of this distribution
+dependent constant, on the one hand, we estimate its value by plugging in a few common distributions;
+on the other, we show that this converging bound improves a known bound \cite{DBLP:conf/aaai/Zhang18}
+which only captures the single-task setting. Last, we find that the average-case approximation
+ratio of mechanism P converges to the same constant. 

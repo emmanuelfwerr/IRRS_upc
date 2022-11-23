@@ -1,0 +1,19 @@
+Machine Learning methods can learn how to reconstruct Magnetic Resonance Images and thereby accelerate
+acquisition, which is of paramount importance to the clinical workflow. Physics-informed networks
+incorporate the forward model of accelerated MRI reconstruction in the learning process. With
+increasing network complexity, robustness is not ensured when reconstructing data unseen during
+training. We aim to embed data consistency (DC) in deep networks while balancing the degree of network
+complexity. While doing so, we will assess whether either explicit or implicit enforcement of DC
+in varying network architectures is preferred to optimize performance. We propose a scheme called
+Cascades of Independently Recurrent Inference Machines (CIRIM) to assess DC through unrolled
+optimization. Herein we assess DC both implicitly by gradient descent and explicitly by a designed
+term. Extensive comparison of the CIRIM to CS as well as to other methods is performed: the E2EVN,
+CascadeNet, KIKINet, LPDNet, RIM, IRIM, and UNet. Models were trained and evaluated on T1-weighted
+and FLAIR contrast brain data, and T2-weighted knee data. Both 1D and 2D undersampling patterns
+were evaluated. Robustness was tested by reconstructing 7.5x prospectively undersampled 3D FLAIR
+MRI data of Multiple Sclerosis (MS) patients with white matter lesions. The CIRIM performed best
+when implicitly enforcing DC, while the E2EVN required an explicit DC formulation. In reconstructing
+MS patient data, prospectively acquired with a sampling pattern unseen during model training,
+the CIRIM maintained lesion contrast while efficiently denoising the images. The CIRIM showed
+highly promising generalization capabilities maintaining a very fair trade-off between reconstructed
+image quality and fast reconstruction times, which is crucial in the clinical workflow. 

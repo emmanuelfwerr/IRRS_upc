@@ -1,0 +1,19 @@
+\textsc{Directed Token Sliding} asks, given a directed graph and two sets of pairwise nonadjacent
+vertices, whether one can reach from one set to the other by repeatedly applying a local operation
+that exchanges a vertex in the current set with one of its out-neighbors, while keeping the nonadjacency.
+It can be seen as a reconfiguration process where a token is placed on each vertex in the current set,
+and the local operation slides a token along an arc respecting its direction. Previously, such a
+problem was extensively studied on undirected graphs, where the edges have no directions and thus
+the local operation is symmetric. \textsc{Directed Token Sliding} is a generalization of its undirected
+variant since an undirected edge can be simulated by two arcs of opposite directions. In this paper,
+we initiate the algorithmic study of \textsc{Directed Token Sliding}. We first observe that the
+problem is PSPACE-complete even if we forbid parallel arcs in opposite directions and that the problem
+on directed acyclic graphs is NP-complete and W[1]-hard parameterized by the size of the sets in
+consideration. We then show our main result: a linear-time algorithm for the problem on directed
+graphs whose underlying undirected graphs are trees, which are called polytrees. Such a result
+is also known for the undirected variant of the problem on trees~[Demaine et al.~TCS 2015], but the
+techniques used here are quite different because of the asymmetric nature of the directed problem.
+We present a characterization of yes-instances based on the existence of a certain set of directed
+paths, and then derive simple equivalent conditions from it by some observations, which admits
+an efficient algorithm. For the polytree case, we also present a quadratic-time algorithm that
+outputs, if the input is a yes-instance, one of the shortest reconfiguration sequences. 

@@ -1,0 +1,19 @@
+We study the problem of approximating a given tensor with $q$ modes $A \in \mathbb{R}^{n \times \ldots
+\times n}$ with an arbitrary tensor network of rank $k$ -- that is, a graph $G = (V, E)$, where $|V| =
+q$, together with a collection of tensors $\{U_v \mid v \in V\}$ which are contracted in the manner
+specified by $G$ to obtain a tensor $T$. For each mode of $U_v$ corresponding to an edge incident to
+$v$, the dimension is $k$, and we wish to find $U_v$ such that the Frobenius norm distance between
+$T$ and $A$ is minimized. This generalizes a number of well-known tensor network decompositions,
+such as the Tensor Train, Tensor Ring, Tucker, and PEPS decompositions. We approximate $A$ by a binary
+tree network $T'$ with $O(q)$ cores, such that the dimension on each edge of this network is at most
+$\widetilde{O}(k^{O(dt)} \cdot q/\varepsilon)$, where $d$ is the maximum degree of $G$ and $t$
+is its treewidth, such that $\|A - T'\|_F^2 \leq (1 + \varepsilon) \|A - T\|_F^2$. The running time
+of our algorithm is $O(q \cdot \text{nnz}(A)) + n \cdot \text{poly}(k^{dt}q/\varepsilon)$, where
+$\text{nnz}(A)$ is the number of nonzero entries of $A$. Our algorithm is based on a new dimensionality
+reduction technique for tensor decomposition which may be of independent interest. We also develop
+fixed-parameter tractable $(1 + \varepsilon)$-approximation algorithms for Tensor Train and
+Tucker decompositions, improving the running time of Song, Woodruff and Zhong (SODA, 2019) and
+avoiding the use of generic polynomial system solvers. We show that our algorithms have a nearly
+optimal dependence on $1/\varepsilon$ assuming that there is no $O(1)$-approximation algorithm
+for the $2 \to 4$ norm with better running time than brute force. Finally, we give additional results
+for Tucker decomposition with robust loss functions, and fixed-parameter tractable CP decomposition.

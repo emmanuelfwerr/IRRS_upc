@@ -1,0 +1,20 @@
+Recent development of Deep Reinforcement Learning (DRL) has demonstrated superior performance
+of neural networks in solving challenging problems with large or even continuous state spaces.
+One specific approach is to deploy neural networks to approximate value functions by minimising
+the Mean Squared Bellman Error (MSBE) function. Despite great successes of DRL, development of
+reliable and efficient numerical algorithms to minimise the MSBE is still of great scientific interest
+and practical demand. Such a challenge is partially due to the underlying optimisation problem
+being highly non-convex or using incomplete gradient information as done in Semi-Gradient algorithms.
+In this work, we analyse the MSBE from a smooth optimisation perspective and develop an efficient
+Approximate Newton's algorithm. First, we conduct a critical point analysis of the error function
+and provide technical insights on optimisation and design choices for neural networks. When the
+existence of global minima is assumed and the objective fulfils certain conditions, suboptimal
+local minima can be avoided when using over-parametrised neural networks. We construct a Gauss
+Newton Residual Gradient algorithm based on the analysis in two variations. The first variation
+applies to discrete state spaces and exact learning. We confirm theoretical properties of this
+algorithm such as being locally quadratically convergent to a global minimum numerically. The
+second employs sampling and can be used in the continuous setting. We demonstrate feasibility and
+generalisation capabilities of the proposed algorithm empirically using continuous control
+problems and provide a numerical verification of our critical point analysis. We outline the difficulties
+of combining Semi-Gradient approaches with Hessian information. To benefit from second-order
+information complete derivatives of the MSBE must be considered during training. 

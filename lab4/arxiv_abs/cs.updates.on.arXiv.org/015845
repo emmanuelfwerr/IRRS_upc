@@ -1,0 +1,19 @@
+Indicator-based algorithms are gaining prominence as traditional multi-objective optimization
+algorithms based on domination and decomposition struggle to solve many-objective optimization
+problems. However, previous indicator-based multi-objective optimization algorithms suffer
+from the following flaws: 1) The environment selection process takes a long time; 2) Additional
+parameters are usually necessary. As a result, this paper proposed an multi-indicator and multi-objective
+optimization algorithm based on two-archive (SRA3) that can efficiently select good individuals
+in environment selection based on indicators performance and uses an adaptive parameter strategy
+for parental selection without setting additional parameters. Then we normalized the algorithm
+and compared its performance before and after normalization, finding that normalization improved
+the algorithm's performance significantly. We also analyzed how normalizing affected the indicator-based
+algorithm and observed that the normalized $I_{\epsilon+}$ indicator is better at finding extreme
+solutions and can reduce the influence of each objective's different extent of contribution to
+the indicator due to its different scope. However, it also has a preference for extreme solutions,
+which causes the solution set to converge to the extremes. As a result, we give some suggestions for
+normalization. Then, on the DTLZ and WFG problems, we conducted experiments on 39 problems with
+5, 10, and 15 objectives, and the results show that SRA3 has good convergence and diversity while
+maintaining high efficiency. Finally, we conducted experiments on the DTLZ and WFG problems with
+20 and 25 objectives and found that the algorithm proposed in this paper is more competitive than
+other algorithms as the number of objectives increases. 

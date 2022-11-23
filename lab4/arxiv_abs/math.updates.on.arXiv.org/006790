@@ -1,0 +1,19 @@
+This article presents a novel, general, and effective simulation-inspired approach, called {\it
+repro samples method}, to conduct statistical inference. The approach studies the performance
+of artificial samples, referred to as {\it repro samples}, obtained by mimicking the true observed
+sample to achieve uncertainty quantification and construct confidence sets for parameters of
+interest with guaranteed coverage rates. Both exact and asymptotic inferences are developed.
+An attractive feature of the general framework developed is that it does not rely on the large sample
+central limit theorem and is likelihood-free. As such, it is thus effective for complicated inference
+problems which we can not solve using the large sample central limit theorem. The proposed method
+is applicable to a wide range of problems, including many open questions where solutions were previously
+unavailable, for example, those involving discrete or non-numerical parameters. To reduce the
+large computational cost of such inference problems, we develop a unique matching scheme to obtain
+a data-driven candidate set. Moreover, we show the advantages of the proposed framework over the
+classical Neyman-Pearson framework. We demonstrate the effectiveness of the proposed approach
+on various models throughout the paper and provide a case study that addresses an open inference
+question on how to quantify the uncertainty for the unknown number of components in a normal mixture
+model. To evaluate the empirical performance of our repro samples method, we conduct simulations
+and study real data examples with comparisons to existing approaches. Although the development
+pertains to the settings where the large sample central limit theorem does not apply, it also has
+direct extensions to the cases where the central limit theorem does hold. 

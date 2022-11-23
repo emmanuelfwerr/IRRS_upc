@@ -1,0 +1,19 @@
+We study several questions related to diversifying search results. We give improved approximation
+algorithms in each of the following problems, together with some lower bounds. - We give a polynomial-time
+approximation scheme (PTAS) for a diversified search ranking problem [Bansal et al., ICALP 2010]
+whose objective is to minimizes the discounted cumulative gain. Our PTAS runs in time $n^{2^{O(\log(1/\epsilon)/\epsilon)}}
+\cdot m^{O(1)}$ where $n$ denotes the number of elements in the databases. Complementing this,
+we show that no PTAS can run in time $f(\epsilon) \cdot (nm)^{2^{o(1/\epsilon)}}$ assuming Gap-ETH;
+therefore our running time is nearly tight. Both of our bounds answer open questions of Bansal et
+al. - We next consider the Max-Sum Dispersion problem, whose objective is to select $k$ out of $n$
+elements that maximizes the dispersion, which is defined as the sum of the pairwise distances under
+a given metric. We give a quasipolynomial-time approximation scheme for the problem which runs
+in time $n^{O_{\epsilon}(\log n)}$. This improves upon previously known polynomial-time algorithms
+with approximate ratios 0.5 [Hassin et al., Oper. Res. Lett. 1997; Borodin et al., ACM Trans. Algorithms
+2017]. Furthermore, we observe that known reductions rule out approximation schemes that run in
+$n^{\tilde{o}_\epsilon(\log n)}$ time assuming ETH. - We consider a generalization of Max-Sum
+Dispersion called Max-Sum Diversification. In addition to the sum of pairwise distance, the objective
+includes another function $f$. For monotone submodular $f$, we give a quasipolynomial-time algorithm
+with approximation ratio arbitrarily close to $(1 - 1/e)$. This improves upon the best polynomial-time
+algorithm which has approximation ratio $0.5$ by Borodin et al. Furthermore, the $(1 - 1/e)$ factor
+is tight as achieving better-than-$(1 - 1/e)$ approximation is NP-hard [Feige, J. ACM 1998]. 

@@ -1,0 +1,19 @@
+Vehicle classification is a hot computer vision topic, with studies ranging from ground-view up
+to top-view imagery. In remote sensing, the usage of top-view images allows for understanding city
+patterns, vehicle concentration, traffic management, and others. However, there are some difficulties
+when aiming for pixel-wise classification: (a) most vehicle classification studies use object
+detection methods, and most publicly available datasets are designed for this task, (b) creating
+instance segmentation datasets is laborious, and (c) traditional instance segmentation methods
+underperform on this task since the objects are small. Thus, the present research objectives are:
+(1) propose a novel semi-supervised iterative learning approach using GIS software, (2) propose
+a box-free instance segmentation approach, and (3) provide a city-scale vehicle dataset. The iterative
+learning procedure considered: (1) label a small number of vehicles, (2) train on those samples,
+(3) use the model to classify the entire image, (4) convert the image prediction into a polygon shapefile,
+(5) correct some areas with errors and include them in the training data, and (6) repeat until results
+are satisfactory. To separate instances, we considered vehicle interior and vehicle borders,
+and the DL model was the U-net with the Efficient-net-B7 backbone. When removing the borders, the
+vehicle interior becomes isolated, allowing for unique object identification. To recover the
+deleted 1-pixel borders, we proposed a simple method to expand each prediction. The results show
+better pixel-wise metrics when compared to the Mask-RCNN (82% against 67% in IoU). On per-object
+analysis, the overall accuracy, precision, and recall were greater than 90%. This pipeline applies
+to any remote sensing target, being very efficient for segmentation and generating datasets. 

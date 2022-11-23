@@ -1,0 +1,19 @@
+Jin (Phys. Fluids, vol. 31, 2019, p. 125102) proposed a new turbulence simulation method which shows
+better performance than other classic turbulence models. It is composed of a small-eddy-dissipation
+mixing length (SED-ML) model for calculating the reference solution and a parameter extension
+method for correcting the solution. The mechanism of this method is more deeply analyzed in this
+study to find out how to develop a turbulence model with a high accuracy and a low computational cost.
+The turbulent channel flows with Re_tau=821 and 2003 and decaying homogenous and isotropic turbulence
+are simulated to demonstrate how the new turbulence simulation method works. The small-eddy-dissipation
+(SED) mechanism for developing turbulence models has been proposed through our analysis. According
+to this mechanism, the model solution is an asymptotic approximation of the exact solution of the
+Navier-Stokes equations. The modeling term introduces an artificial dissipation which dissipates
+small eddies. The purpose of turbulence modeling is to dissipate more small eddies without changing
+the statistical solution qualitatively. We expect more small eddies can be dissipated where the
+turbulence is stronger. This mechanism is different from RANS which approximates the Reynolds
+stresses and LES which approximates the sub-grid-scale (SGS) motions, while it interprets the
+physics of turbulence modeling more precisely. A modified mixing length with two damping functions
+is developed to identify the characteristic length of turbulence, leading to the SED-ML model.
+The simulation accuracy can be further improved using a linear extension. Our numerical results
+show that the SED-ML model is in accordance with the SED mechanism. This might explain why the new
+method is more accurate than RANS while it requires a lower computational cost than LES. 

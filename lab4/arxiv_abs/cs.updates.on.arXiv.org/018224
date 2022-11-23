@@ -1,0 +1,20 @@
+The human cultural repertoire relies on innovation: our ability to continuously and hierarchically
+explore how existing elements can be combined to create new ones. Innovation is not solitary, it
+relies on collective accumulation and merging of previous solutions. Machine learning approaches
+commonly assume that fully connected multi-agent networks are best suited for innovation. However,
+human laboratory and field studies have shown that hierarchical innovation is more robustly achieved
+by dynamic communication topologies. In dynamic topologies, humans oscillate between innovating
+individually or in small clusters, and then sharing outcomes with others. To our knowledge, the
+role of multi-agent topology on innovation has not been systematically studied in machine learning.
+It remains unclear a) which communication topologies are optimal for which innovation tasks, and
+b) which properties of experience sharing improve multi-level innovation. Here we use a multi-level
+hierarchical problem setting (WordCraft), with three different innovation tasks. We systematically
+design networks of DQNs sharing experiences from their replay buffers in varying topologies (fully
+connected, small world, dynamic, ring). Comparing the level of innovation achieved by different
+experience-sharing topologies across different tasks shows that, first, consistent with human
+findings, experience sharing within a dynamic topology achieves the highest level of innovation
+across tasks. Second, experience sharing is not as helpful when there is a single clear path to innovation.
+Third, two metrics we propose, conformity and diversity of shared experience, can explain the success
+of different topologies on different tasks. These contributions can advance our understanding
+of optimal AI-AI, human-human, and human-AI collaborative networks, inspiring future tools for
+fostering collective innovation in large organizations. 

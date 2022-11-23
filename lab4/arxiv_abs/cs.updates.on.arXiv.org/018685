@@ -1,0 +1,19 @@
+Accurate segmentation of organs or lesions from medical images is crucial for reliable diagnosis
+of diseases and organ morphometry. In recent years, convolutional encoder-decoder solutions
+have achieved substantial progress in the field of automatic medical image segmentation. Due to
+the inherent bias in the convolution operations, prior models mainly focus on local visual cues
+formed by the neighboring pixels, but fail to fully model the long-range contextual dependencies.
+In this paper, we propose a novel Transformer-based Attention Guided Network called TransAttUnet,
+in which the multi-level guided attention and multi-scale skip connection are designed to jointly
+enhance the performance of the semantical segmentation architecture. Inspired by Transformer,
+the self-aware attention (SAA) module with Transformer Self Attention (TSA) and Global Spatial
+Attention (GSA) is incorporated into TransAttUnet to effectively learn the non-local interactions
+among encoder features. Moreover, we also use additional multi-scale skip connections between
+decoder blocks to aggregate the upsampled features with different semantic scales. In this way,
+the representation ability of multi-scale context information is strengthened to generate discriminative
+features. Benefitting from these complementary components, the proposed TransAttUnet can effectively
+alleviate the loss of fine details caused by the stacking of convolution layers and the consecutive
+sampling operations, finally improving the segmentation quality of medical images. Extensive
+experiments on multiple medical image segmentation datasets from different imaging modalities
+demonstrate that the proposed method consistently outperforms the state-of-the-art baselines.
+Our code and pre-trained models are available at: https://github.com/YishuLiu/TransAttUnet.

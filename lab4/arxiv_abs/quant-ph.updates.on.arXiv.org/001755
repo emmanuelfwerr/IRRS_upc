@@ -1,0 +1,20 @@
+Noisy, Intermediate Scale Quantum (NISQ) computers have reached the point where they can show the
+potential for quantum advantage over classical computing. Unfortunately, NISQ machines introduce
+sufficient noise that even for moderate size quantum circuits the results can be unreliable. We
+propose a collaboratively designed superconducting quantum computer using a Superconducting
+Nonlinear Asymmetric Inductive eLement (SNAIL) modulator. The SNAIL modulator is designed by
+considering both the ideal fundamental qubit gate operation while maximizing the qubit coupling
+capabilities. We and others have demonstrated that the $\texttt{iSWAP}$ family, and particularly
+$\sqrt{\texttt{iSWAP}}$, provides an advantage over $\texttt{CNOT}$ as a basis gate. In this
+work, we show how the SNAIL natively implements $\sqrt[n]{\texttt{iSWAP}}$ functions with high-degree
+couplings and implementation of gates realized through proportionally scaled pulse lengths.
+Based on our previously demonstrated SNAIL-based quantum state router we present preliminary
+data extending the SNAIL-based modulator to four qubit modules. Furthermore, in this work, we co-design
+future SNAIL-based quantum computers that utilize the construction of richer interconnections
+based on classical 4-ary tree and hypercubes and compare their advantage to the traditional lattice
+and heavy-hex lattice for a suite of common quantum algorithms. To make our results more general,
+we consider both scenarios in which the total circuit time, for implementations dominated by decoherence,
+or total gate count, for implementations dominated by control imperfections. We demonstrate the
+co-design advantage based on real hardware SNAIL implementations and extrapolate to larger system
+sizes characterized from our real multi $\sqrt[n]{\texttt{iSWAP}}$ qubit system with 4-ary tree
+and hypercube inspired interconnects. 

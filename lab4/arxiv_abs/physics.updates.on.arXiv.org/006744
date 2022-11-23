@@ -1,0 +1,20 @@
+To accurately study chemical reactions in the condensed phase or within enzymes, both a quantum-mechanical
+description and sufficient configurational sampling is required to reach converged estimates.
+Here, quantum mechanics/molecular mechanics (QM/MM) molecular dynamics (MD) simulations play
+an important role, providing QM accuracy for the region of interest at a decreased computational
+cost. However, QM/MM simulations are still too expensive to study large systems on longer time scales.
+Recently, machine learning (ML) models have been proposed to replace the QM description. The main
+limitation of these models lies in the accurate description of long-range interactions present
+in condensed-phase systems. To overcome this issue, a recent workflow has been introduced combining
+a semi-empirical method (i.e. density functional tight binding (DFTB)) and a high-dimensional
+neural network potential (HDNNP) in a $\Delta$-learning scheme. This approach has been shown to
+be capable of correctly incorporating long-range interactions within a cutoff of 1.4 nm. One of
+the promising alternative approaches to efficiently take long-range effects into account is the
+development of graph convolutional neural networks (GCNN) for the prediction of the potential-energy
+surface. In this work, we investigate the use of GCNN models -- with and without a $\Delta$-learning
+scheme -- for (QM)ML/MM MD simulations. We show that the $\Delta$-learning approach using a GCNN
+and DFTB and as baseline achieves competitive performance on our benchmarking set of solutes and
+chemical reactions in water. The method is additionally validated by performing prospective (QM)ML/MM
+MD simulations of retinoic acid in water and S-adenoslymethioniat interacting with cytosine in
+water. The results indicate that the $\Delta$-learning GCNN model is a valuable alternative for
+(QM)ML/MM MD simulations of condensed-phase systems. 

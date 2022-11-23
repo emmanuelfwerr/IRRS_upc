@@ -1,0 +1,20 @@
+Centrality measures identify and rank the most influential entities of complex networks. In this
+paper, we generalize matrix function-based centrality measures, which have been studied extensively
+for single-layer and temporal networks in recent years to layer-coupled multiplex networks. The
+layers of these networks can reflect different relationships and interactions between entities
+or changing interactions over time. We use the supra-adjacency matrix as network representation,
+which has already been used to generalize eigenvector centrality to temporal and multiplex networks.
+With a suitable choice of edge weights, the definition of single-layer matrix function-based centrality
+measures in terms of walks on networks carries over naturally to the multilayer case. In contrast
+to other walk-based centralities, matrix function-based centralities are parameterized measures,
+which have been shown to interpolate between (local) degree and (global) eigenvector centrality
+in the single-layer case. As the explicit evaluation of the involved matrix function expressions
+becomes infeasible for medium to large-scale networks, we present highly efficient approximation
+techniques from numerical linear algebra, which rely on Krylov subspace methods, Gauss quadrature,
+and stochastic trace estimation. We present extensive numerical studies on synthetic and real-world
+multiplex transportation, communication, and collaboration networks. The comparison with established
+multilayer centrality measures shows that our framework produces meaningful rankings of nodes,
+layers, and node-layer pairs. Furthermore, our experiments corroborate the theoretically indicated
+linear computational complexity of the employed numerical methods for sparse supra-adjacency
+matrices, which allows the efficient treatment of large-scale networks with the number of node-layer
+pairs of order $10^7$ or higher. 

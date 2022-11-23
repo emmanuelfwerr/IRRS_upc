@@ -1,0 +1,19 @@
+The chromosphere is a partially ionized layer of the solar atmosphere, the transition between the
+photosphere where the gas is almost neutral and the fully ionized corona. As the collisional coupling
+between neutral and charged particles decreases in the upper part of the chromosphere, the hydrodynamical
+timescales may become comparable to the collisional timescale, and a two-fluid model is needed.
+In this paper we describe the implementation and validation of a two-fluid model which simultaneously
+evolves charges and neutrals, coupled by collisions. The two-fluid equations are implemented
+in the fully open-source MPI-AMRVAC code. In the photosphere and the lower part of the solar atmosphere,
+where collisions between charged and neutral particles are very frequent, an explicit time-marching
+would be too restrictive, since for stability the timestep needs to be proportional to the inverse
+of the collision frequency. This is overcome by evaluating the collisional terms implicitly using
+an explicit-implicit (IMEX) scheme. The cases presented cover very different collisional regimes
+and our results are fully consistent with related literature findings. If collisional time and
+length scales are smaller than the hydrodynamical scales usually considered in the solar chromosphere,
+density structures seen in the neutral and charged fluids are similar, with the effect of elastic
+collisions between charges and neutrals being similar to diffusivity. Otherwise, density structures
+are different and the decoupling in velocity between the two species increases. The use of IMEX schemes
+efficiently avoids the small timestep constraints of fully explicit implementations in strongly
+collisional regimes. Adaptive Mesh Refinement (AMR) greatly decreases the computational cost,
+compared to uniform grid runs at the same effective resolution. 

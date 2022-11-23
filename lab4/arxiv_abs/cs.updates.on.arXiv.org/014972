@@ -1,0 +1,20 @@
+We consider the problem of assigning appearing times to the edges of a digraph in order to maximize
+the (average) temporal reachability between pairs of nodes. Motivated by the application to public
+transit networks, where edges cannot be scheduled independently one of another, we consider the
+setting where the edges are grouped into certain walks (called trips) in the digraph and where assigning
+the appearing time to the first edge of a trip forces the appearing times of the subsequent edges.
+In this setting, we show that, quite surprisingly, it is NP-complete to decide whether there exists
+an assignment of times connecting a given pair of nodes. This result allows us to prove that the problem
+of maximising the temporal reachability cannot be approximated within a factor better than some
+polynomial term in the size of the graph. We thus focus on the case where, for each pair of nodes, there
+exists an assignment of times such that one node is reachable from the other. We call this property
+strong temporalisability. It is a very natural assumption for the application to public transit
+networks. On the negative side, the problem of maximising the temporal reachability remains hard
+to approximate within a factor $\sqrt$ n/12 in that setting. Moreover, we show the existence of collections
+of trips that are strongly temporalisable but for which any assignment of starting times to the trips
+connects at most an O(1/ $\sqrt$ n) fraction of all pairs of nodes. On the positive side, we show that
+there must exist an assignment of times that connects a constant fraction of all pairs in the strongly
+temporalisable and symmetric case, that is, when the set of trips to be scheduled is such that, for
+each trip, there is a symmetric trip visiting the same nodes in reverse order. Keywords:edge labeling
+edge scheduled network network optimisation temporal graph temporal path temporal reachability
+time assignment 

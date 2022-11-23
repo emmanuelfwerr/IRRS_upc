@@ -1,0 +1,19 @@
+In drug discovery, identifying drug-target interactions (DTIs) via experimental approaches
+is a tedious and expensive procedure. Computational methods efficiently predict DTIs and recommend
+a small part of potential interacting pairs for further experimental confirmation, accelerating
+the drug discovery process. Although it has been shown that fusing heterogeneous drug and target
+similarities can improve the prediction ability, the existing similarity combination methods
+ignore the interaction consistency for neighbour entities which is more crucial for the DTI prediction
+model. Furthermore, area under the precision-recall curve (AUPR) that emphasizes the accuracy
+of top-ranked pairs and area under the receiver operating characteristic curve (AUC) that heavily
+punishes the existence of low ranked interacting pairs are two widely used evaluation metrics in
+DTI prediction. However, the two metrics are seldom considered as losses within existing DTI prediction
+methods. This paper first proposes two matrix factorization (MF) methods that optimize AUPR and
+AUC using convex surrogate losses respectively, and then develops an ensemble MF approach takes
+advantage of the two area under the curve metrics by combining the two single metric based MF models.
+Both three proposed approaches incorporate a novel local interaction consistency aware similarity
+interaction method to generate fused drug and target similarities that preserve vital information
+from the more reliable view. Experimental results over five datasets under different prediction
+settings show that the proposed methods outperform various competitors in terms of the metric(s)
+they optimize. In addition, the validation on the top ranked novel predictions confirms the ability
+of our methods to discover potential new DTIs. 

@@ -1,0 +1,19 @@
+Deep neural networks can be roughly divided into deterministic neural networks and stochastic
+neural networks.The former is usually trained to achieve a mapping from input space to output space
+via maximum likelihood estimation for the weights, which leads to deterministic predictions during
+testing. In this way, a specific weights set is estimated while ignoring any uncertainty that may
+occur in the proper weight space. The latter introduces randomness into the framework, either by
+assuming a prior distribution over model parameters (i.e. Bayesian Neural Networks) or including
+latent variables (i.e. generative models) to explore the contribution of latent variables for
+model predictions, leading to stochastic predictions during testing. Different from the former
+that achieves point estimation, the latter aims to estimate the prediction distribution, making
+it possible to estimate uncertainty, representing model ignorance about its predictions. We claim
+that conventional deterministic neural network based dense prediction tasks are prone to overfitting,
+leading to over-confident predictions, which is undesirable for decision making. In this paper,
+we investigate stochastic neural networks and uncertainty estimation techniques to achieve both
+accurate deterministic prediction and reliable uncertainty estimation. Specifically, we work
+on two types of uncertainty estimations solutions, namely ensemble based methods and generative
+model based methods, and explain their pros and cons while using them in fully/semi/weakly-supervised
+framework. Due to the close connection between uncertainty estimation and model calibration,
+we also introduce how uncertainty estimation can be used for deep model calibration to achieve well-calibrated
+models, namely dense model calibration. Code and data are available at https://github.com/JingZhang617/UncertaintyEstimation.

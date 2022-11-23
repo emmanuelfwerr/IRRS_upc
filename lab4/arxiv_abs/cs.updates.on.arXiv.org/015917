@@ -1,0 +1,19 @@
+In this paper, we reveal that metric learning would suffer from serious inseparable problem if without
+informative sample mining. Since the inseparable samples are often mixed with hard samples, current
+informative sample mining strategies used to deal with inseparable problem may bring up some side-effects,
+such as instability of objective function, etc. To alleviate this problem, we propose a novel distance
+metric learning algorithm, named adaptive neighborhood metric learning (ANML). In ANML, we design
+two thresholds to adaptively identify the inseparable similar and dissimilar samples in the training
+procedure, thus inseparable sample removing and metric parameter learning are implemented in
+the same procedure. Due to the non-continuity of the proposed ANML, we develop an ingenious function,
+named \emph{log-exp mean function} to construct a continuous formulation to surrogate it, which
+can be efficiently solved by the gradient descent method. Similar to Triplet loss, ANML can be used
+to learn both the linear and deep embeddings. By analyzing the proposed method, we find it has some
+interesting properties. For example, when ANML is used to learn the linear embedding, current famous
+metric learning algorithms such as the large margin nearest neighbor (LMNN) and neighbourhood
+components analysis (NCA) are the special cases of the proposed ANML by setting the parameters different
+values. When it is used to learn deep features, the state-of-the-art deep metric learning algorithms
+such as Triplet loss, Lifted structure loss, and Multi-similarity loss become the special cases
+of ANML. Furthermore, the \emph{log-exp mean function} proposed in our method gives a new perspective
+to review the deep metric learning methods such as Prox-NCA and N-pairs loss. At last, promising
+experimental results demonstrate the effectiveness of the proposed method. 

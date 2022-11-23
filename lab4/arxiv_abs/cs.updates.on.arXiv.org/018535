@@ -1,0 +1,19 @@
+Machine learning is a field of artificial intelligence (AI) that is becoming essential for several
+critical systems, making it a good target for threat actors. Threat actors exploit different Tactics,
+Techniques, and Procedures (TTPs) against the confidentiality, integrity, and availability
+of Machine Learning (ML) systems. During the ML cycle, they exploit adversarial TTPs to poison data
+and fool ML-based systems. In recent years, multiple security practices have been proposed for
+traditional systems but they are not enough to cope with the nature of ML-based systems. In this paper,
+we conduct an empirical study of threats reported against ML-based systems with the aim to understand
+and characterize the nature of ML threats and identify common mitigation strategies. The study
+is based on 89 real-world ML attack scenarios from the MITRE's ATLAS database, the AI Incident Database,
+and the literature; 854 ML repositories from the GitHub search and the Python Packaging Advisory
+database, selected based on their reputation. Attacks from the AI Incident Database and the literature
+are used to identify vulnerabilities and new types of threats that were not documented in ATLAS.
+Results show that convolutional neural networks were one of the most targeted models among the attack
+scenarios. ML repositories with the largest vulnerability prominence include TensorFlow, OpenCV,
+and Notebook. In this paper, we also report the most frequent vulnerabilities in the studied ML repositories,
+the most targeted ML phases and models, the most used TTPs in ML phases and attack scenarios. This
+information is particularly important for red/blue teams to better conduct attacks/defenses,
+for practitioners to prevent threats during ML development, and for researchers to develop efficient
+defense mechanisms. 

@@ -1,0 +1,19 @@
+Surface roughness and texture are critical to the functional performance of engineering components.
+The ability to analyze roughness and texture effectively and efficiently is much needed to ensure
+surface quality in many surface generation processes, such as machining, surface mechanical treatment,
+etc. Discrete Wavelet Transform (DWT) and Discrete Cosine Transform (DCT) are two commonly used
+signal decomposition tools for surface roughness and texture analysis. Both methods require selecting
+a threshold to decompose a given surface into its three main components: form, waviness, and roughness.
+However, although DWT and DCT are part of the ISO surface finish standards, there exists no systematic
+guidance on how to compute these thresholds, and they are often manually selected on case by case
+basis. This makes utilizing these methods for studying surfaces dependent on the user's judgment
+and limits their automation potential. Therefore, we present two automatic threshold selection
+algorithms based on information theory and signal energy. We use machine learning to validate the
+success of our algorithms both using simulated surfaces as well as digital microscopy images of
+machined surfaces. Specifically, we generate feature vectors for each surface area or profile
+and apply supervised classification. Comparing our results with the heuristic threshold selection
+approach shows good agreement with mean accuracies as high as 95\%. We also compare our results with
+Gaussian filtering (GF) and show that while GF results for areas can yield slightly higher accuracies,
+our results outperform GF for surface profiles. We further show that our automatic threshold selection
+has significant advantages in terms of computational time as evidenced by decreasing the number
+of mode computations by an order of magnitude compared to the heuristic thresholding for DCT. 

@@ -1,0 +1,20 @@
+Despite the success that metric learning based approaches have achieved in few-shot learning,
+recent works reveal the ineffectiveness of their episodic training mode. In this paper, we point
+out two potential reasons for this problem: 1) the random episodic labels can only provide limited
+supervision information, while the relatedness information between the query and support samples
+is not fully exploited; 2) the meta-learner is usually constrained by the limited contextual information
+of the local episode. To overcome these problems, we propose a new Global Relatedness Decoupled-Distillation
+(GRDD) method using the global category knowledge and the Relatedness Decoupled-Distillation
+(RDD) strategy. Our GRDD learns new visual concepts quickly by imitating the habit of humans, i.e.
+learning from the deep knowledge distilled from the teacher. More specifically, we first train
+a global learner on the entire base subset using category labels as supervision to leverage the global
+context information of the categories. Then, the well-trained global learner is used to simulate
+the query-support relatedness in global dependencies. Finally, the distilled global query-support
+relatedness is explicitly used to train the meta-learner using the RDD strategy, with the goal of
+making the meta-learner more discriminative. The RDD strategy aims to decouple the dense query-support
+relatedness into the groups of sparse decoupled relatedness. Moreover, only the relatedness of
+a single support sample with other query samples is considered in each group. By distilling the sparse
+decoupled relatedness group by group, sharper relatedness can be effectively distilled to the
+meta-learner, thereby facilitating the learning of a discriminative meta-learner. We conduct
+extensive experiments on the miniImagenet and CIFAR-FS datasets, which show the state-of-the-art
+performance of our GRDD method. 

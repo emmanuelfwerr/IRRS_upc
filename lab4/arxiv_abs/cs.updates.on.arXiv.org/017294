@@ -1,0 +1,20 @@
+Decomposition-based evolutionary algorithms have become fairly popular for many-objective
+optimization in recent years. However, the existing decomposition methods still are quite sensitive
+to the various shapes of frontiers of many-objective optimization problems (MaOPs). On the one
+hand, the cone decomposition methods such as the penalty-based boundary intersection (PBI) are
+incapable of acquiring uniform frontiers for MaOPs with very convex frontiers. On the other hand,
+the parallel reference lines of the parallel decomposition methods including the normal boundary
+intersection (NBI) might result in poor diversity because of under-sampling near the boundaries
+for MaOPs with concave frontiers. In this paper, a collaborative decomposition method is first
+proposed to integrate the advantages of parallel decomposition and cone decomposition to overcome
+their respective disadvantages. This method inherits the NBI-style Tchebycheff function as a
+convergence measure to heighten the convergence and uniformity of distribution of the PBI method.
+Moreover, this method also adaptively tunes the extent of rotating an NBI reference line towards
+a PBI reference line for every subproblem to enhance the diversity of distribution of the NBI method.
+Furthermore, a collaborative decomposition-based evolutionary algorithm (CoDEA) is presented
+for many-objective optimization. A collaborative decomposition-based environmental selection
+mechanism is primarily designed in CoDEA to rank all the individuals associated with the same PBI
+reference line in the boundary layer and pick out the best ranks. CoDEA is compared with several popular
+algorithms on 85 benchmark test instances. The experimental results show that CoDEA achieves high
+competitiveness benefiting from the collaborative decomposition maintaining a good balance
+among the convergence, uniformity, and diversity of distribution. 

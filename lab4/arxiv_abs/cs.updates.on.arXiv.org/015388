@@ -1,0 +1,19 @@
+Self-supervised learning (SSL) has recently become the favorite among feature learning methodologies.
+It is therefore appealing for domain adaptation approaches to consider incorporating SSL. The
+intuition is to enforce instance-level feature consistency such that the predictor becomes somehow
+invariant across domains. However, most existing SSL methods in the regime of domain adaptation
+usually are treated as standalone auxiliary components, leaving the signatures of domain adaptation
+unattended. Actually, the optimal region where the domain gap vanishes and the instance level constraint
+that SSL peruses may not coincide at all. From this point, we present a particular paradigm of self-supervised
+learning tailored for domain adaptation, i.e., Transferrable Contrastive Learning (TCL), which
+links the SSL and the desired cross-domain transferability congruently. We find contrastive learning
+intrinsically a suitable candidate for domain adaptation, as its instance invariance assumption
+can be conveniently promoted to cross-domain class-level invariance favored by domain adaptation
+tasks. Based on particular memory bank constructions and pseudo label strategies, TCL then penalizes
+cross-domain intra-class domain discrepancy between source and target through a clean and novel
+contrastive loss. The free lunch is, thanks to the incorporation of contrastive learning, TCL relies
+on a moving-averaged key encoder that naturally achieves a temporally ensembled version of pseudo
+labels for target data, which avoids pseudo label error propagation at no extra cost. TCL therefore
+efficiently reduces cross-domain gaps. Through extensive experiments on benchmarks (Office-Home,
+VisDA-2017, Digits-five, PACS and DomainNet) for both single-source and multi-source domain
+adaptation tasks, TCL has demonstrated state-of-the-art performances. 

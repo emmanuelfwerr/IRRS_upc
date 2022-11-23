@@ -1,0 +1,19 @@
+Depth Estimation and Object Detection Recognition play an important role in autonomous driving
+technology under the guidance of deep learning artificial intelligence. We propose a hybrid structure
+called RealNet: a co-design method combining the model-streamlined recognition algorithm, the
+depth estimation algorithm with information fusion, and deploying them on the Jetson-Nano for
+unmanned vehicles with monocular vision sensors. We use ROS for experiment. The method proposed
+in this paper is suitable for mobile platforms with high real-time request. Innovation of our method
+is using information fusion to compensate the problem of insufficient frame rate of output image,
+and improve the robustness of target detection and depth estimation under monocular vision.Object
+Detection is based on YOLO-v5. We have simplified the network structure of its DarkNet53 and realized
+a prediction speed up to 0.01s. Depth Estimation is based on the VNL Depth Estimation, which considers
+multiple geometric constraints in 3D global space. It calculates the loss function by calculating
+the deviation of the virtual normal vector VN and the label, which can obtain deeper depth information.
+We use PnP fusion algorithm to solve the problem of insufficient frame rate of depth map output. It
+solves the motion estimation depth from three-dimensional target to two-dimensional point based
+on corner feature matching, which is faster than VNL calculation. We interpolate VNL output and
+PnP output to achieve information fusion. Experiments show that this can effectively eliminate
+the jitter of depth information and improve robustness. At the control end, this method combines
+the results of target detection and depth estimation to calculate the target position, and uses
+a pure tracking control algorithm to track it. 

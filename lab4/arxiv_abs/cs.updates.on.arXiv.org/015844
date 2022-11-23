@@ -1,0 +1,20 @@
+In this paper, we study code-based signatures constructed from Proof of Knowledge (PoK). This line
+of work can be traced back to Stern who introduces the first efficient PoK for the syndrome decoding
+problem in 1993. Afterward, different variations were proposed in order to reduce signature's
+size. In practice, obtaining a smaller signature size relies on the interaction of two main considerations:
+(i) the underlying protocol and its soundness error and (ii) the type of optimizations which are
+compatible with a given protocol. Over the years, different variations were proposed to improve
+the Stern scheme such as the Veron scheme (with public key a noisy codeword rather than a syndrome),
+the AGS scheme which is a 5-pass protocol with cheating probability asymptotically equal to 1/2
+and more recently the FJR approach which permits to decrease the cheating probability to 1/N but
+induces a performance overhead. Overall the length of the signature depends on a trade-off between:
+the scheme in itself, the possible optimizations and the cost of the implementation. The recent
+approaches which increase the cost of the implementation opens the door to many different type of
+trade-offs. In this paper we propose three new schemes and different trade-offs, which are all interesting
+in themselves, since depending on potential future optimizations a scheme may eventually become
+more efficient than another. All the schemes we propose use a trusted helper: a first scheme permits
+to get a 1/2 cheating probability, a second scheme permits to decrease the cheating probability
+in 1/N but with a different approach than the recent FJR scheme and at last a third scheme propose a
+Veron-like adaptation of the FJR scheme in which the public key is a noisy codeword rather than a syndrome.
+We provide an extensive comparison table which lists various trade-offs between our schemes and
+previous ones. 

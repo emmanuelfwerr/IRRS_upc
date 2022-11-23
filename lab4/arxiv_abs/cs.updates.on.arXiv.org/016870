@@ -1,0 +1,18 @@
+In this work, we study over-parameterization as a necessary condition for having the ability for
+the models to extrapolate outside the convex hull of training set. We specifically, consider classification
+models, e.g., image classification and other applications of deep learning. Such models are classification
+functions that partition their domain and assign a class to each partition \cite{strang2019linear}.
+Partitions are defined by decision boundaries and so is the classification model/function. Convex
+hull of training set may occupy only a subset of the domain, but trained model may partition the entire
+domain and not just the convex hull of training set. This is important because many of the testing
+samples may be outside the convex hull of training set and the way in which a model partitions its domain
+outside the convex hull would be influential in its generalization. Using approximation theory,
+we prove that over-parameterization is a necessary condition for having control over the partitioning
+of the domain outside the convex hull of training set. We also propose a more clear definition for
+the notion of over-parametrization based on the learning task and the training set at hand. We present
+empirical evidence about geometry of datasets, both image and non-image, to provide insights about
+the extent of extrapolation performed by the models. We consider a 64-dimensional feature space
+learned by a ResNet model and investigate the geometric arrangements of convex hulls and decision
+boundaries in that space. We also formalize the notion of extrapolation and relate it to the scope
+of the model. Finally, we review the rich extrapolation literature in pure and applied mathematics,
+e.g., the Whitney's Extension Problem, and place our theory in that context. 

@@ -1,0 +1,20 @@
+Background: Prokaryotic viruses, which infect bacteria and archaea, are the most abundant and
+diverse biological entities in the biosphere. To understand their regulatory roles in various
+ecosystems and to harness the potential of bacteriophages for use in therapy, more knowledge of
+viral-host relationships is required. High-throughput sequencing and its application to the
+microbiome have offered new opportunities for computational approaches for predicting which
+hosts particular viruses can infect. However, there are two main challenges for computational
+host prediction. First, the empirically known virus-host relationships are very limited. Second,
+although sequence similarity between viruses and their prokaryote hosts have been used as a major
+feature for host prediction, the alignment is either missing or ambiguous in many cases. Thus, there
+is still a need to improve the accuracy of host prediction. Results: In this work, we present a semi-supervised
+learning model, named HostG, to conduct host prediction for novel viruses. We construct a knowledge
+graph by utilizing both virus-virus protein similarity and virus-host DNA sequence similarity.
+Then graph convolutional network (GCN) is adopted to exploit viruses with or without known hosts
+in training to enhance the learning ability. During the GCN training, we minimize the expected calibrated
+error (ECE) to ensure the confidence of the predictions. We tested HostG on both simulated and real
+sequencing data and compared its performance with other state-of-the-art methods specifcally
+designed for virus host classification (VHM-net, WIsH, PHP, HoPhage, RaFAH, vHULK, and VPF-Class).
+Conclusion: HostG outperforms other popular methods, demonstrating the efficacy of using a GCN-based
+semi-supervised learning approach. A particular advantage of HostG is its ability to predict hosts
+from new taxa. 

@@ -1,0 +1,20 @@
+Understanding structure-property relations is essential to optimally design materials for specific
+applications. Two-scale simulations are often employed to analyze the effect of the microstructure
+on a component's macroscopic properties. However, they are typically computationally expensive
+and infeasible in multi-query contexts such as optimization and material design. To make such analyses
+amenable, the microscopic simulations can be replaced by surrogate models that must be able to handle
+a wide range of microstructural parameters. This work focuses on extending the methodology of a
+previous work, where an accurate surrogate model was constructed for microstructures under varying
+loading and material parameters using proper orthogonal decomposition and Gaussian process regression,
+to treat geometrical parameters. To this end, a method that transforms different geometries onto
+a parent domain is presented. We propose to solve an auxiliary problem based on linear elasticity
+to obtain the geometrical transformations. Using these transformations, combined with the nonlinear
+microscopic problem, we derive a fast-to-evaluate surrogate model with the following key features:
+(1) the predictions of the effective quantities are independent of the auxiliary problem, (2) the
+predicted stress fields fulfill the microscopic balance laws and are periodic, (3) the method is
+non-intrusive, (4) the stress field for all geometries can be recovered, and (5) the sensitivities
+are available and can be readily used for optimization and material design. The proposed methodology
+is tested on several composite microstructures, where rotations and large variations in the shape
+of inclusions are considered. Finally, a two-scale example is shown, where the surrogate model
+achieves a high accuracy and significant speed up, demonstrating its potential in two-scale shape
+optimization and material design problems. 

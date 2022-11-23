@@ -1,0 +1,20 @@
+Active volcanoes are globally distributed and pose societal risks at multiple geographic scales,
+ranging from local hazards to regional/international disruptions. Many volcanoes do not have
+continuous ground monitoring networks; meaning that satellite observations provide the only
+record of volcanic behavior and unrest. Among these remote sensing observations, thermal imagery
+is inspected daily by volcanic observatories for examining the early signs, onset, and evolution
+of eruptive activity. However, thermal scenes are often obstructed by clouds, meaning that forecasts
+must be made off image sequences whose scenes are only usable intermittently through time. Here,
+we explore forecasting this thermal data stream from a deep learning perspective using existing
+architectures that model sequences with varying spatiotemporal considerations. Additionally,
+we propose and evaluate new architectures that explicitly model intermittent image sequences.
+Using ASTER Kinetic Surface Temperature data for $9$ volcanoes between $1999$ and $2020$, we found
+that a proposed architecture (ConvLSTM + Time-LSTM + U-Net) forecasts volcanic temperature imagery
+with the lowest RMSE ($4.164^{\circ}$C, other methods: $4.217-5.291^{\circ}$C). Additionally,
+we examined performance on multiple time series derived from the thermal imagery and the effect
+of training with data from singular volcanoes. Ultimately, we found that models with the lowest
+RMSE on forecasting imagery did not possess the lowest RMSE on recreating time series derived from
+that imagery and that training with individual volcanoes generally worsened performance relative
+to a multi-volcano data set. This work highlights the potential of data-driven deep learning models
+for volcanic unrest forecasting while revealing the need for carefully constructed optimization
+targets. 

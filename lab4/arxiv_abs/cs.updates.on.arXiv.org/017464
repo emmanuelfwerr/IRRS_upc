@@ -1,0 +1,19 @@
+Despite impressive state-of-the-art performance on a wide variety of machine learning tasks,
+deep learning methods can produce over-confident predictions, particularly with limited training
+data. Therefore, quantifying uncertainty is particularly important in critical applications
+such as lesion detection and clinical diagnosis, where a realistic assessment of uncertainty is
+essential in determining surgical margins, disease status and appropriate treatment. In this
+work, we propose a novel approach that uses quantile regression for quantifying aleatoric uncertainty
+in both supervised and unsupervised lesion detection problems. The resulting confidence intervals
+can be used for lesion detection and segmentation. In the unsupervised setting, we combine quantile
+regression with the Variational AutoEncoder (VAE). Here we address the problem of quantifying
+uncertainty in the images that are reconstructed by the VAE as the basis for principled outlier or
+lesion detection. The VAE models the output as a conditionally independent Gaussian characterized
+by its mean and variance. Unfortunately, joint optimization of both mean and variance in the VAE
+leads to the well-known problem of shrinkage or underestimation of variance. Here we describe an
+alternative Quantile-Regression VAE (QR-VAE) that avoids this variance shrinkage problem by
+directly estimating conditional quantiles for the input image. Using the estimated quantiles,
+we compute the conditional mean and variance for the input image from which we then detect outliers
+by thresholding at a false-discovery-rate corrected p-value. In the supervised setting, we develop
+binary quantile regression (BQR) for the supervised lesion segmentation task. We show how BQR can
+be used to capture uncertainty in lesion boundaries in a manner that characterizes expert disagreement.

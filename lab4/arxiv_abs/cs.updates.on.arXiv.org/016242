@@ -1,0 +1,19 @@
+We present an approximately $C^1$-smooth multi-patch spline construction which can be used in
+isogeometric analysis (IGA). A key property of IGA is that it is simple to achieve high order smoothness
+within a single patch. To represent more complex geometries one often uses a multi-patch construction.
+In this case, the global continuity for the basis functions is in general only $C^0$. Therefore,
+to obtain $C^1$-smooth isogeometric functions, a special construction for the basis is needed.
+Such spaces are of interest when solving numerically fourth-order problems, such as the biharmonic
+equation or Kirchhoff-Love plate/shell formulations, using an isogeometric Galerkin method.
+Isogeometric spaces that are globally $C^1$ over multi-patch domains can be constructed as in (Collin,
+Sangalli, Takacs; CAGD, 2016) and (Kapl, Sangalli, Takacs; CAGD, 2019). The constructions require
+so-called analysis-suitable $G^1$ parametrizations. To allow $C^1$ spaces over more general
+multi-patch parametrizations, we need to increase the polynomial degree and relax the $C^1$ conditions.
+We adopt the approximate $C^1$ construction for two-patch domains, as developed in (Weinm\"uller,
+Takacs; CMAME, 2021), and extend it to more general multi-patch domains. We employ the construction
+for a biharmonic model problem and compare the results with Nitsche's method. We compare both methods
+over complex multi-patch domains with non-trivial interfaces. The numerical tests indicate that
+the proposed construction converges optimally under $h$-refinement, comparable to the solution
+using Nitsche's method. In contrast to weakly imposing coupling conditions, the approximate $C^1$
+construction is explicit and no additional terms need to be introduced to stabilize the method.
+Thus, the new proposed method can be used more easily as no parameters need to be estimated. 

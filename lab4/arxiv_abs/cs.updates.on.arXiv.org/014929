@@ -1,0 +1,20 @@
+Affective computing is very important in the relationship between man and machine. In this paper,
+a system for speech emotion recognition (SER) based on speech signal is proposed, which uses new
+techniques in different stages of processing. The system consists of three stages: feature extraction,
+feature selection, and finally feature classification. In the first stage, a complex set of long-term
+statistics features is extracted from both the speech signal and the glottal-waveform signal using
+a combination of new and diverse features such as prosodic, spectral, and spectro-temporal features.
+One of the challenges of the SER systems is to distinguish correlated emotions. These features are
+good discriminators for speech emotions and increase the SER's ability to recognize similar and
+different emotions. This feature vector with a large number of dimensions naturally has redundancy.
+In the second stage, using classical feature selection techniques as well as a new quantum-inspired
+technique to reduce the feature vector dimensionality, the number of feature vector dimensions
+is reduced. In the third stage, the optimized feature vector is classified by a weighted deep sparse
+extreme learning machine (ELM) classifier. The classifier performs classification in three steps:
+sparse random feature learning, orthogonal random projection using the singular value decomposition
+(SVD) technique, and discriminative classification in the last step using the generalized Tikhonov
+regularization technique. Also, many existing emotional datasets suffer from the problem of data
+imbalanced distribution, which in turn increases the classification error and decreases system
+performance. In this paper, a new weighting method has also been proposed to deal with class imbalance,
+which is more efficient than existing weighting methods. The proposed method is evaluated on three
+standard emotional databases. 

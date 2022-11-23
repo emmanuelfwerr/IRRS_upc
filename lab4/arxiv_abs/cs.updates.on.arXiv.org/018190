@@ -1,0 +1,20 @@
+Reconfigurable Intelligent Surfaces (RISs) are envisioned to play a key role in future wireless
+communications, enabling programmable radio propagation environments. They are usually considered
+as almost passive planar structures that operate as adjustable reflectors, giving rise to a multitude
+of implementation challenges, including the inherent difficulty in estimating the underlying
+wireless channels. In this paper, we focus on the recently conceived concept of Hybrid Reconfigurable
+Intelligent Surfaces (HRISs), which do not solely reflect the impinging waveform in a controllable
+fashion, but are also capable of sensing and processing an adjustable portion of it. We first present
+implementation details for this metasurface architecture and propose a convenient mathematical
+model for characterizing its dual operation. As an indicative application of HRISs in wireless
+communications, we formulate the individual channel estimation problem for the uplink of a multi-user
+HRIS-empowered communication system. Considering first a noise-free setting, we theoretically
+quantify the advantage of HRISs in notably reducing the amount of pilots needed for channel estimation,
+as compared to the case of purely reflective RISs. We then present closed-form expressions for the
+MSE performance in estimating the individual channels at the HRISs and the base station for the noisy
+model. Based on these derivations, we propose an automatic differentiation-based first-order
+optimization approach to efficiently determine the HRIS phase and power splitting configurations
+for minimizing the weighted sum-MSE performance. Our numerical evaluations demonstrate that
+HRISs do not only enable the estimation of the individual channels in HRIS-empowered communication
+systems, but also improve the ability to recover the cascaded channel, as compared to existing methods
+using passive and reflective RISs. 

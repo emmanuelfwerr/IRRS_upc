@@ -1,0 +1,20 @@
+Sentiment quantification is the task of training, by means of supervised learning, estimators
+of the relative frequency (also called ``prevalence'') of sentiment-related classes (such as
+\textsf{Positive}, \textsf{Neutral}, \textsf{Negative}) in a sample of unlabelled texts. This
+task is especially important when these texts are tweets, since the final goal of most sentiment
+classification efforts carried out on Twitter data is actually quantification (and not the classification
+of individual tweets). It is well-known that solving quantification by means of ``classify and
+count'' (i.e., by classifying all unlabelled items by means of a standard classifier and counting
+the items that have been assigned to a given class) is less than optimal in terms of accuracy, and that
+more accurate quantification methods exist. Gao and Sebastiani (2016) carried out a systematic
+comparison of quantification methods on the task of tweet sentiment quantification. In hindsight,
+we observe that the experimental protocol followed in that work was weak, and that the reliability
+of the conclusions that were drawn from the results is thus questionable. We now re-evaluate those
+quantification methods (plus a few more modern ones) on exactly the same same datasets, this time
+following a now consolidated and much more robust experimental protocol (which also involves simulating
+the presence, in the test data, of class prevalence values very different from those of the training
+set). This experimental protocol (even without counting the newly added methods) involves a number
+of experiments 5,775 times larger than that of the original study. The results of our experiments
+are dramatically different from those obtained by Gao and Sebastiani, and they provide a different,
+much more solid understanding of the relative strengths and weaknesses of different sentiment
+quantification methods. 

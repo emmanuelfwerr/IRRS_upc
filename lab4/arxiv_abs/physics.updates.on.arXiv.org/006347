@@ -1,0 +1,20 @@
+This work develops, discretizes, and validates a continuum model of a molybdenum disulfide (MoS$_2$)
+monolayer interacting with a periodic holey silicon nitride substrate via van der Waals (vdW) forces.
+The MoS$_2$ layer is modeled as a geometrically nonlinear Kirchhoff-Love shell, and vdW forces
+are modeled by a Lennard-Jones potential, simplified using approximations for a smooth substrate
+topography. The material parameters of the shell model are calibrated by comparing small-strain
+tensile and bending tests with atomistic simulations. This model is efficiently discretized using
+isogeometric analysis (IGA) for the shell structure and a pseudo-time continuation method for
+energy minimization. The IGA shell model is validated against fully-atomistic calculations for
+several benchmark problems with different substrate geometries. The continuum simulations reproduce
+deflections, strains and curvatures predicted by atomistic simulations, which are known to strongly
+affect the electronic properties of MoS$_2$, with deviations well below the modeling errors suggested
+by differences between the widely-used reactive empirical bond order and Stillinger-Weber interatomic
+potentials. Agreement with atomistic results depends on geometric nonlinearity in some cases,
+but a simple isotropic St. Venant-Kirchhoff model is found to be sufficient to represent material
+behavior. We find that the IGA discretization of the continuum model has a much lower computational
+cost than atomistic simulations, and expect that it will enable efficient design space exploration
+in strain engineering applications. This is demonstrated by studying the dependence of strain
+and curvature in MoS$_2$ over a holey substrate as a function of the hole spacing on scales inaccessible
+to atomistic calculations. The results show an unexpected qualitative change in the deformation
+pattern below a critical hole separation. 

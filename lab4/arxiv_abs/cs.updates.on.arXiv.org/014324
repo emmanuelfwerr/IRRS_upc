@@ -1,0 +1,20 @@
+We present the software design of Gridap, a novel finite element library written exclusively in
+the Julia programming language, which is being used by several research groups world-wide to simulate
+complex physical phenomena such as magnetohydrodynamics, photonics, weather modeling, non-linear
+solid mechanics, and fluid-structure interaction problems. The library provides a feature-rich
+set of discretization techniques for the numerical approximation of a wide range of PDEs, including
+linear, nonlinear, single-field, and multi-field equations. An expressive API allows users to
+define PDEs in weak form by a syntax close to the mathematical notation. While this is also available
+in previous codes, the main novelty of Gridap is that it implements this API without introducing
+a DSL plus a compiler of variational forms. Instead, it leverages the Julia just-in-time compiler
+to build efficient code, specialized for the concrete problem at hand. As a result, there is no need
+to use different languages for the computational back-end and the user front-end anymore, thus
+eliminating the so-called two-language problem. Gridap also provides a low-level API that is modular
+and extensible via the multiple-dispatch paradigm of Julia and provides easy access to the main
+building blocks of the library. The main contribution of this paper is the detailed presentation
+of the novel software abstractions behind the Gridap design that leverages the new software possibilities
+provided by the Julia language. The second main contribution of the article is a performance comparison
+against FEniCS. We measure CPU times needed to assemble discrete systems of linear equations for
+different problem types and show that the performance of Gridap is comparable to FEniCS, demonstrating
+that the new software design does not compromise performance. Gridap is freely available at Github
+and distributed under an MIT license. 

@@ -1,0 +1,19 @@
+Stochastic dynamic matching problems have recently drawn attention in the stochastic-modeling
+community due to their numerous applications, ranging from supply-chain management to kidney
+exchange programs. In this paper, we consider a matching problem in which items of different classes
+arrive according to independent Poisson processes. Unmatched items are stored in a queue, and compatibility
+constraints are described by a simple graph on the classes, so that two items can be matched if their
+classes are neighbors in the graph. We analyze the efficiency of matching policies, not only in terms
+of system stability, but also in terms of matching rates between different classes. Our results
+rely on the observation that, under any stable policy, the matching rates satisfy a conservation
+equation that equates the arrival and departure rates of each item class. Our main contributions
+are threefold. We first introduce a mapping between the dimension of the solution set of this conservation
+equation, the structure of the compatibility graph, and the existence of a stable policy. In particular,
+this allows us to derive a necessary and sufficient stability condition that is verifiable in polynomial
+time. Secondly, we describe the convex polytope of non-negative solutions of the conservation
+equation. When this polytope is reduced to a single point, we give a closed-form expression of the
+solution; in general, we characterize the vertices of this polytope using again the graph structure.
+Lastly, we study the parts of the polytope that can be achieved by a stable policy. We show that greedy
+policies are limited to the interior of the polytope, with a strict inclusion in general. In contrast,
+non-greedy policies can reach any point of the interior of this polytope, and also reach the boundary
+of the polytope depending on a simple condition on the vertices. 

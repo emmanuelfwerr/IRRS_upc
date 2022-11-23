@@ -1,0 +1,20 @@
+The goal of Knowledge Tracing (KT) is to estimate how well students have mastered a concept based
+on their historical learning of related exercises. The benefit of knowledge tracing is that students'
+learning plans can be better organised and adjusted, and interventions can be made when necessary.
+With the recent rise of deep learning, Deep Knowledge Tracing (DKT) has utilised Recurrent Neural
+Networks (RNNs) to accomplish this task with some success. Other works have attempted to introduce
+Graph Neural Networks (GNNs) and redefine the task accordingly to achieve significant improvements.
+However, these efforts suffer from at least one of the following drawbacks: 1) they pay too much attention
+to details of the nodes rather than to high-level semantic information; 2) they struggle to effectively
+establish spatial associations and complex structures of the nodes; and 3) they represent either
+concepts or exercises only, without integrating them. Inspired by recent advances in self-supervised
+learning, we propose a Bi-Graph Contrastive Learning based Knowledge Tracing (Bi-CLKT) to address
+these limitations. Specifically, we design a two-layer contrastive learning scheme based on an
+"exercise-to-exercise" (E2E) relational subgraph. It involves node-level contrastive learning
+of subgraphs to obtain discriminative representations of exercises, and graph-level contrastive
+learning to obtain discriminative representations of concepts. Moreover, we designed a joint
+contrastive loss to obtain better representations and hence better prediction performance. Also,
+we explored two different variants, using RNN and memory-augmented neural networks as the prediction
+layer for comparison to obtain better representations of exercises and concepts respectively.
+Extensive experiments on four real-world datasets show that the proposed Bi-CLKT and its variants
+outperform other baseline models. 

@@ -1,0 +1,19 @@
+This paper investigates the scheduling problem of a fleet of electric vehicles, providing mobility
+as a service to a set of time-specified customers, where the operator needs to solve the routing and
+charging problem jointly for each EV. Hereby we consider incentive-aware customers and propose
+that the operator offers monetary incentives to customers in exchange for time flexibility. In
+this way, the fleet operator can achieve a routing and charging schedule with lower costs, whilst
+the customers receive monetary compensation for their flexibility. Specifically, we first propose
+a bi-level optimization model whereby the fleet operator optimizes the routing and charging schedule
+accounting for the spatio-temporal varying charging price, jointly with a monetary incentive
+to reimburse the delivery time flexibility experienced by the customers. Concurrently the customers
+choose their own time flexibility by minimizing their own cost. Second, we cope with the computational
+burden coming from this nonlinear bi-level optimization model with an accurate reformulation
+approach consisting of the KKT optimality conditions, a Big-M-based linearization method, and
+the zero duality gap of convex optimization problems. This way, we convert the proposed problem
+into a single-level optimization problem, which can be solved by a strengthened generalized Benders
+decomposition method holding a faster convergence rate than the generalized Benders decomposition
+method. To evaluate the effectiveness of the proposed mathematical model, we carry out numerous
+simulation experiments by using the VRP-REP data of Belgium. The numerical results showcase that
+the proposed mathematical model can reduce the delivery fees for the customers together with the
+cost of operation incurred by the fleet operator. 

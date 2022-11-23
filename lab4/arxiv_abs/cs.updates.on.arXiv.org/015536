@@ -1,0 +1,19 @@
+This study proposes a method for efficient delivery of liquefied petroleum gas cylinders based
+on demand forecasts of gas usage. To maintain a liquefied petroleum gas service, gas providers visit
+each customer to check the gas meter and replace the gas cylinder depending on the remaining amount
+of gas. These visits can be categorized into three patterns: non-replacement visit, replacement
+before the customer runs out of gas, and replacement after the customer runs out of gas. The last pattern
+is a crucial problem in sustaining a liquefied petroleum gas service, and it must be reduced. By contrast,
+frequent non-replacement visits are required to prevent the customer from running out of gas, but
+it requires considerable effort. One of the most severe difficulties of this problem is acquiring
+the gas usages of each customer only by visiting. However, with the recent spread of smart sensors,
+the daily gas consumption of each house can be monitored without having to visit customers. Our main
+idea is to categorize all customers into three groups: high-risk, moderate-risk, and low-risk
+by focusing on an urgent need for cylinder replacement based on the demand forecast. Based on this
+idea, we construct an algorithm to maximize the delivery for moderate-risk customers while ensuring
+delivery to high-risk customers. Long-term optimal delivery planning is realized by achieving
+workload balancing per day. The verification experiment in Chiba prefecture in Japan showed the
+effectiveness of our algorithm in reducing the number of out-of-gas cylinders. Moreover, the proposed
+model is a new generic framework for building an optimal vehicle routing plan, consisting of a complementary
+algorithm, demand forecast, delivery list optimization, and delivery route optimization for
+realizing a long-term optimal delivery plan by setting the priority. 

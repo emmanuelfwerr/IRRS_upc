@@ -1,0 +1,19 @@
+Tracking is a highly privacy-invasive data collection practice that has been ubiquitous in mobile
+apps for many years due to its role in supporting advertising-based revenue models. In defence of
+user privacy, Apple introduced two significant changes with iOS 14: App Tracking Transparency
+(ATT), a mandatory opt-in system for enabling tracking on iOS, and Privacy Nutrition Labels, which
+disclose what kinds of data each app processes. This paper studies two versions of 1,759 iOS apps
+from the UK App Store: one version from before iOS 14 and one that has been updated to comply with the
+new rules. We find that Apple's new policies, as promised, prevent the collection of the Identifier
+for Advertisers (IDFA), an identifier used to facilitate cross-app user tracking. However, many
+apps still collect device information that can be used to track users at a group level (cohort tracking)
+or identify individuals probabilistically (fingerprinting). We find real-world evidence of
+apps computing and agreeing on a fingerprinting-derived identifier through the use of server-side
+code, thereby violating Apple's policies and exposing the limits of what ATT can do against tracking
+on iOS. This is especially concerning because we explicitly refused opt-in to tracking in our study,
+and consent is a legal requirement for tracking under EU and UK data protection law. We find that Apple
+itself engages in some forms of tracking and exempts invasive data practices like first-party tracking
+and credit scoring from its new rules, and that the new Privacy Nutrition Labels were often inaccurate.
+Overall, our findings suggest that, while tracking individual users is more difficult now, the
+changes reinforce existing market power of gatekeeper companies with access to large troves of
+first-party data. 

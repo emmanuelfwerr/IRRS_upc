@@ -1,0 +1,20 @@
+The dose delivered to the planning target volume by proton beams is highly conformal, sparing organs
+at risk and normal tissues. New treatment planning systems adapted to spot scanning techniques
+have been recently proposed to simultaneously optimize several fields and thus improve dose delivery.
+In this paper, we investigate a new optimization framework based on a genetic algorithm approach.
+This tool is intended to make it possible to explore new schemes of treatment delivery, possibly
+with future enhanced technologies. The optimization framework is designed to be versatile and
+to account for many degrees of freedom, without any {\it a priori} technological constraint. To
+test the behavior of our algorithm, we propose in this paper, as an example, to optimize beam fluences,
+target points and irradiation directions at the same time. The proposed optimization routine takes
+typically into account several thousands of spots of fixed size. The evolution is carried out by
+the three standard genetic operators: mutation, crossover and selection. The figure-of-merit
+(or fitness) is based on an objective function relative to the dose prescription to the tumor and
+to the limits set for organs at risk and normal tissues. Fluence optimization is carried out via a
+specific scheme based on a plain gradient with analytical solution. Several specific genetic algorithm
+issues are addressed: (i) the mutation rate is tuned to balance the search and selection forces,
+(ii) the initial population is selected using a bootstrap technique and (iii) to scale down the computation
+time, dose calculations are carried out with a fast analytical ray tracing method and are multi-threaded.
+In this paper implementation issues of the optimization framework are thoroughly described. The
+behavior of the proposed genetic algorithm is illustrated in both elementary and clinically-realistic
+test cases. 

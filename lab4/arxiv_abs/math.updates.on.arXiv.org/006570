@@ -1,0 +1,20 @@
+Expressing a matrix as the sum of a low-rank matrix plus a sparse matrix is a flexible model capturing
+global and local features in data popularized as Robust PCA (Candes et al., 2011; Chandrasekaran
+et al., 2009). Compressed sensing, matrix completion, and their variants (Eldar and Kutyniok,
+2012; Foucart and Rauhut, 2013) have established that data satisfying low complexity models can
+be efficiently measured and recovered from a number of measurements proportional to the model complexity
+rather than the ambient dimension. This manuscript develops similar guarantees showing that $m\times
+n$ matrices that can be expressed as the sum of a rank-$r$ matrix and a $s$-sparse matrix can be recovered
+by computationally tractable methods from $\mathcal{O}(r(m+n-r)+s)\log(mn/s)$ linear measurements.
+More specifically, we establish that the low-rank plus sparse matrix set is closed provided the
+incoherence of the low-rank component is upper bounded as $\mu<\sqrt{mn}/(r\sqrt{s})$, and subsequently,
+the restricted isometry constants for the aforementioned matrices remain bounded independent
+of problem size provided $p/mn$, $s/p$, and $r(m+n-r)/p$ remain fixed. Additionally, we show that
+semidefinite programming and two hard threshold gradient descent algorithms, NIHT and NAHT, converge
+to the measured matrix provided the measurement operator's RIC's are sufficiently small. These
+results also provably solve convex and non-convex formulation of Robust PCA with the asymptotically
+optimal fraction of corruptions $\alpha=\mathcal{O}\left(1/(\mu r) \right)$, where $s = \alpha^2
+mn$, and improve the previously best known guarantees by not requiring that the fraction of corruptions
+is spread in every column and row by being upper bounded by $\alpha$. Numerical experiments illustrating
+these results are shown for synthetic problems, dynamic-foreground/static-background separation,
+and multispectral imaging. 

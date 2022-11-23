@@ -1,0 +1,19 @@
+The suffix array $SA[1..n]$ of a text $T$ of length $n$ is a permutation of $\{1,\ldots,n\}$ describing
+the lexicographical ordering of suffixes of $T$, and it is considered to be among of the most important
+data structures in string algorithms, with dozens of applications in data compression, bioinformatics,
+and information retrieval. One of the biggest drawbacks of the suffix array is that it is very difficult
+to maintain under text updates: even a single character substitution can completely change the
+contents of the suffix array. Thus, the suffix array of a dynamic text is modelled using suffix array
+queries, which return the value $SA[i]$ given any $i\in[1..n]$. Prior to this work, the fastest
+dynamic suffix array implementations were by Amir and Boneh. At ISAAC 2020, they showed how to answer
+suffix array queries in $\tilde{O}(k)$ time, where $k\in[1..n]$ is a trade-off parameter, with
+$\tilde{O}(\frac{n}{k})$-time text updates. In a very recent preprint [2021], they also provided
+a solution with $O(\log^5 n)$-time queries and $\tilde{O}(n^{2/3})$-time updates. We propose
+the first data structure that supports both suffix array queries and text updates in $O({\rm polylog}\,n)$
+time (achieving $O(\log^4 n)$ and $O(\log^{3+o(1)} n)$ time, respectively). Our data structure
+is deterministic and the running times for all operations are worst-case. In addition to the standard
+single-character edits (character insertions, deletions, and substitutions), we support (also
+in $O(\log^{3+o(1)} n)$ time) the "cut-paste" operation that moves any (arbitrarily long) substring
+of $T$ to any place in $T$. We complement our structure by a hardness result: unless the Online Matrix-Vector
+Multiplication (OMv) Conjecture fails, no data structure with $O({\rm polylog}\,n)$-time suffix
+array queries can support the "copy-paste" operation in $O(n^{1-\epsilon})$ time for any $\epsilon>0$.

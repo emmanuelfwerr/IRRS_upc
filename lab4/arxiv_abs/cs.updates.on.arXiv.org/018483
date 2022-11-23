@@ -1,0 +1,20 @@
+Differential GNSS (DGNSS) has been demonstrated to provide reliable, high-quality range correction
+information enabling real-time navigation with centimeter to sub-meter accuracy, which is required
+for applications such as connected and autonomous vehicles. However, DGNSS requires a local reference
+station near each user. For a continental or global scale implementation, this information dissemination
+approach would require a dense network of reference stations whose construction and maintenance
+would be prohibitively expensive. Precise Point Positioning affords more flexibility as a public
+service for GNSS receivers, but its State Space Representation format is not supported by most receivers
+in the field or on the market. This article proposes a novel Virtual Network DGNSS (VN-DGNSS) approach
+and an optimization algorithm that is key to its implementation. The approach capitalizes on the
+existing PPP infrastructure without the need for new physical reference stations. By connecting
+to public GNSS SSR data services, a VN-DGNSS server maintains current information about common-mode
+errors. Construction of the RTCM Observation Space Representation messages from this SSR information
+requires both the signal time-of-transmission and the satellite position at that time which are
+consistent with the time-of-reception for each client. This article presents an algorithm to determine
+these quantities. The results of real-time stationary and moving platform evaluations are included,
+using u-blox M8P and ZED-F9P receivers. The performance surpasses the SAE specification (68% of
+horizontal error <= 1.5 m and vertical error <= 3 m) and shows significantly better horizontal performance
+than GNSS Open Service. The moving tests also show better horizontal performance than the ZED-F9P
+receiver with SBAS enabled and achieve the lane-level accuracy (95% of horizontal errors less than
+1 meter). 

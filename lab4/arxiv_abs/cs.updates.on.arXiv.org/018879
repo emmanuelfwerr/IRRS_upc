@@ -1,0 +1,19 @@
+Grassland restoration is a critical means to safeguard grassland ecological degradation. To alleviate
+the extensive human labors and boost the restoration efficiency, UAV is promising for its fully
+automatic capability yet still waits to be exploited. This paper progresses this emerging technology
+by explicitly considering the realistic constraints of the UAV and the grassland degradation while
+planning the grassland restoration. To this end, the UAV-enabled restoration process is first
+mathematically modeled as the maximization of restoration areas of the UAV under the limited battery
+energy of UAV, the grass seeds weight, the number of restored areas, and the corresponding sizes.
+Then we analyze that, by considering these constraints, this original problem emerges two conflict
+objectives, namely the shortest flight path and the optimal areas allocation. As a result, the maximization
+of restoration areas turns out to be a composite of a trajectory design problem and an areas allocation
+problem that are highly coupled. From the perspective of optimization, this requires solving two
+NP-hard problems of both the traveling salesman problem (TSP) and the multidimensional knapsack
+problem (MKP) at the same time. To tackle this complex problem, we propose a cooperative optimization
+algorithm, called CHAPBILM, to solve those two problems interlacedly by utilizing the interdependencies
+between them. Multiple simulations verify the conflicts between the trajectory design and areas
+allocation. The effectiveness of the cooperative optimization algorithm is also supported by
+the comparisons with traditional optimization methods which do not utilize the interdependencies
+between the two problems. As a result, the proposed algorithm successfully solves the multiple
+simulation instances in a near-optimal way. 

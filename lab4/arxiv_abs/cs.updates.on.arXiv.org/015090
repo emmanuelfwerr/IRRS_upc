@@ -1,0 +1,19 @@
+Deep learning's success has been attributed to the training of large, overparameterized models
+on massive amounts of data. As this trend continues, model training has become prohibitively costly,
+requiring access to powerful computing systems to train state-of-the-art networks. A large body
+of research has been devoted to addressing the cost per iteration of training through various model
+compression techniques like pruning and quantization. Less effort has been spent targeting the
+number of iterations. Previous work, such as forget scores and GraNd/EL2N scores, address this
+problem by identifying important samples within a full dataset and pruning the remaining samples,
+thereby reducing the iterations per epoch. Though these methods decrease the training time, they
+use expensive static scoring algorithms prior to training. When accounting for the scoring mechanism,
+the total run time is often increased. In this work, we address this shortcoming with dynamic data
+pruning algorithms. Surprisingly, we find that uniform random dynamic pruning can outperform
+the prior work at aggressive pruning rates. We attribute this to the existence of "sometimes" samples
+-- points that are important to the learned decision boundary only some of the training time. To better
+exploit the subtlety of sometimes samples, we propose two algorithms, based on reinforcement learning
+techniques, to dynamically prune samples and achieve even higher accuracy than the random dynamic
+method. We test all our methods against a full-dataset baseline and the prior work on CIFAR-10 and
+CIFAR-100, and we can reduce the training time by up to 2x without significant performance loss.
+Our results suggest that data pruning should be understood as a dynamic process that is closely tied
+to a model's training trajectory, instead of a static step based solely on the dataset alone. 

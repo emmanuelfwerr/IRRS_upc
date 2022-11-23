@@ -1,0 +1,19 @@
+Recent advances in electron, scanning probe, optical, and chemical imaging and spectroscopy yield
+bespoke data sets containing the information of structure and functionality of complex systems.
+In many cases, the resulting data sets are underpinned by low-dimensional simple representations
+encoding the factors of variability within the data. The representation learning methods seek
+to discover these factors of variability, ideally further connecting them with relevant physical
+mechanisms. However, generally the task of identifying the latent variables corresponding to
+actual physical mechanisms is extremely complex. Here, we explore an approach based on conditioning
+the data on the known (continuous) physical parameters, and systematically compare it with the
+previously introduced approach based on the invariant variational autoencoders. The conditional
+variational autoencoders (cVAE) approach does not rely on the existence of the invariant transforms,
+and hence allows for much greater flexibility and applicability. Interestingly, cVAE allows for
+limited extrapolation outside of the original domain of the conditional variable. However, this
+extrapolation is limited compared to the cases when true physical mechanisms are known, and the
+physical factor of variability can be disentangled in full. We further show that introducing the
+known conditioning results in the simplification of the latent distribution if the conditioning
+vector is correlated with the factor of variability in the data, thus allowing to separate relevant
+physical factors. We initially demonstrate this approach using 1D and 2D examples on a synthetic
+dataset and then extend it to the analysis of experimental data on ferroelectric domain dynamics
+visualized via Piezoresponse Force Microscopy. 

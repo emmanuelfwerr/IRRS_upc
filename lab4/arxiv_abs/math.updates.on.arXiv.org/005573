@@ -1,0 +1,20 @@
+Completely randomized experiments have been the gold standard for drawing causal inference because
+they can balance all potential confounding on average. However, they can often suffer from unbalanced
+covariates for realized treatment assignments. Rerandomization, a design that rerandomizes
+the treatment assignment until a prespecified covariate balance criterion is met, has recently
+got attention due to its easy implementation, improved covariate balance and more efficient inference.
+Researchers have then suggested to use the assignments that minimize the covariate imbalance,
+namely the optimally balanced design. This has caused again the long-time controversy between
+two philosophies for designing experiments: randomization versus optimal and thus almost deterministic
+designs. Existing literature argued that rerandomization with overly balanced observed covariates
+can lead to highly imbalanced unobserved covariates, making it vulnerable to model misspecification.
+On the contrary, rerandomization with properly balanced covariates can provide robust inference
+for treatment effects while sacrificing some efficiency compared to the ideally optimal design.
+In this paper, we show it is possible that, by making the covariate imbalance diminishing at a proper
+rate as the sample size increases, rerandomization can achieve its ideally optimal precision that
+one can expect with perfectly balanced covariates while still maintaining its robustness. In particular,
+we provide the sufficient and necessary condition on the number of covariates for achieving the
+desired optimality. Our results rely on a more dedicated asymptotic analysis for rerandomization.
+The derived theory for rerandomization provides a deeper understanding of its large-sample property
+and can better guide its practical implementation. Furthermore, it also helps reconcile the controversy
+between randomized and optimal designs. 

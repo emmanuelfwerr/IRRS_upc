@@ -1,0 +1,20 @@
+In collaborative learning settings like federated learning, curious parities might be honest
+but are attempting to infer other parties' private data through inference attacks while malicious
+parties might manipulate the learning process for their own purposes through backdoor attacks.
+However, most existing works only consider the federated learning scenario where data are partitioned
+by samples (HFL). The feature-partitioned federated learning (VFL) can be another important scenario
+in many real-world applications. Attacks and defenses in such scenarios are especially challenging
+when the attackers and the defenders are not able to access the features or model parameters of other
+participants. Previous works have only shown that private labels can be reconstructed from per-sample
+gradients. In this paper, we first show that private labels can be reconstructed when only batch-averaged
+gradients are revealed, which is against the common presumption. In addition, we show that a passive
+party in VFL can even replace its corresponding labels in the active party with a target label through
+a gradient-replacement attack. To defend against the first attack, we introduce a novel technique
+termed confusional autoencoder (CoAE), based on autoencoder and entropy regularization. We demonstrate
+that label inference attacks can be successfully blocked by this technique while hurting less main
+task accuracy compared to existing methods. Our CoAE technique is also effective in defending the
+gradient-replacement backdoor attack, making it an universal and practical defense strategy
+with no change to the original VFL protocol. We demonstrate the effectiveness of our approaches
+under both two-party and multi-party VFL settings. To the best of our knowledge, this is the first
+systematic study to deal with label inference and backdoor attacks in the feature-partitioned
+federated learning framework. 

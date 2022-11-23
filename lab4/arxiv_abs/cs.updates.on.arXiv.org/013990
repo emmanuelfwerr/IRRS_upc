@@ -1,0 +1,19 @@
+A high order finite difference method is proposed for unstructured meshes to simulate compressible
+inviscid/viscous flows with/without discontinuities. In this method, based on the strong form
+equation, the divergence of the flux on each vertex is computed directly from fluxes nearby by means
+of high order least-square. In order to capture discontinuities, numerical flux of high order accuracy
+is calculated on each edge and serves as supporting data of the least-square computation of the divergence.
+The high accuracy of the numerical flux depends on the high order WENO interpolation on each edge.
+To reduce the computing cost and complexity, a curvlinear stencil is assembled for each edge so that
+the economical one-dimensional WENO interpolation can be applied. With the derivatives introduced,
+two-dimensional Hermite interpolation on a curvilinear stencil is applied to keep the stencil
+compact and avoids using many supporting points. In smooth region, the Hermite least-square 2D
+interpolation of 5 nodes is adopted directly to achieve the fifth order accuracy. Near a discontinuity,
+three values obtained by means of least-square 2D interpolation of 3 nodes, are weighted to obtain
+one value of the second order accuracy. After obtaining the flow states on both sides of the middle
+point of an edge, numerical flux of high order accuracy along the edge can be calculated. For inviscid
+flux, analytical flux on vertices and numerical flux along edges are used to compute the divergence.
+While for viscous flux, only analytical viscous flux on vertices are used. The divergence of the
+fluxes and their derivatives on each vertex are used to update the conservative variables and their
+derivatives with an explicit Runger-Kutta time scheme. Several canonical numerical cases were
+solved to test the accuracy and the capability of shock capturing of this method. 

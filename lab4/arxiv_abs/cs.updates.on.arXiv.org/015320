@@ -1,0 +1,19 @@
+Longest Increasing Subsequence (LIS) is a fundamental statistic of a sequence, and has been studied
+for decades. While the LIS of a sequence of length $n$ can be computed exactly in time $O(n\log n)$,
+the complexity of estimating the (length of the) LIS in sublinear time, especially when LIS $\ll
+n$, is still open. We show that for any integer $n$ and any $\lambda = o(1)$, there exists a (randomized)
+non-adaptive algorithm that, given a sequence of length $n$ with LIS $\ge \lambda n$, approximates
+the LIS up to a factor of $1/\lambda^{o(1)}$ in $n^{o(1)} / \lambda$ time. Our algorithm improves
+upon prior work substantially in terms of both approximation and run-time: (i) we provide the first
+sub-polynomial approximation for LIS in sub-linear time; and (ii) our run-time complexity essentially
+matches the trivial sample complexity lower bound of $\Omega(1/\lambda)$, which is required to
+obtain any non-trivial approximation of the LIS. As part of our solution, we develop two novel ideas
+which may be of independent interest: First, we define a new Genuine-LIS problem, where each sequence
+element may either be genuine or corrupted. In this model, the user receives unrestricted access
+to actual sequence, but does not know apriori which elements are genuine. The goal is to estimate
+the LIS using genuine elements only, with the minimal number of "genuiness tests". The second idea,
+Precision Forest, enables accurate estimations for composition of general functions from "coarse"
+(sub-)estimates. Precision Forest essentially generalizes classical precision sampling, which
+works only for summations. As a central tool, the Precision Forest is initially pre-processed on
+a set of samples, which thereafter is repeatedly reused by multiple sub-parts of the algorithm,
+improving their amortized complexity. 

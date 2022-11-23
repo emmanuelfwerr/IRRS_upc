@@ -1,0 +1,20 @@
+The XMM Cluster Survey (XCS) have developed a new Python module, X-ray: Generate and Analyse (XGA)
+to provide interactive and automated analyses of X-ray emitting sources observed by the XMM-Newton
+space telescope. XGA only requires that a set of cleaned, processed, event lists has been created,
+and (optionally) that a source detector has generated region lists for the observations. XGA is
+centered around the concept of making all available data easily accessible and analysable. The
+user provides information (e.g. RA, Dec, redshift) on the source they wish to investigate, and XGA
+locates relevant observations and generates required data products. This allows the user to quickly
+and easily complete common analyses using all relevant observations, thus being left free to focus
+on extracting the maximum scientific gain. XGA is centered around source and sample classes, which
+represent different types of X-ray emitting astrophysical objects and have different properties
+and methods relevant to that type of object. XGA also contains product classes, which provide interfaces
+to X-ray data products or information (such as radial profiles) that have been derived from them,
+with built-in methods for fitting, analysis, and visualisation. XGA can fit models to spectra (both
+global and annular) with XSPEC, measuring spectral properties such as temperature, photon index,
+and luminosity. XGA can also measure radial profiles of density and temperature for galaxy clusters,
+allowing the measurement of gas and total mass profiles of galaxy clusters. In the future, we will
+add support for X-ray telescopes other than XMM (e.g. Chandra, eROSITA), as well as the ability to
+perform multi-mission joint analyses. With the advent of new X-ray observatories such as eROSITA,
+XRISM, ATHENA, and Lynx, it is the perfect time for a new, open-source, software package that is open
+for anyone to use and scrutinise. 

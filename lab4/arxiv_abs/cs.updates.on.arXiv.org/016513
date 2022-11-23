@@ -1,0 +1,19 @@
+The population protocol model describes a network of anonymous agents that interact asynchronously
+in pairs chosen at random. Each agent starts in the same initial state $s$. We introduce the *dynamic
+size counting* problem: approximately counting the number of agents in the presence of an adversary
+who at any time can remove any number of agents or add any number of new agents in state $s$. A valid solution
+requires that after each addition/removal event, resulting in population size $n$, with high probability
+each agent "quickly" computes the same constant-factor estimate of the value $\log_2 n$ (how quickly
+is called the *convergence* time), which remains the output of every agent for as long as possible
+(the *holding* time). Since the adversary can remove agents, the holding time is necessarily finite:
+even after the adversary stops altering the population, it is impossible to *stabilize* to an output
+that never again changes. We first show that a protocol solves the dynamic size counting problem
+if and only if it solves the *loosely-stabilizing counting* problem: that of estimating $\log n$
+in a *fixed-size* population, but where the adversary can initialize each agent in an arbitrary
+state, with the same convergence time and holding time. We then show a protocol solving the loosely-stabilizing
+counting problem with the following guarantees: if the population size is $n$, $M$ is the largest
+initial estimate of $\log n$, and s is the maximum integer initially stored in any field of the agents'
+memory, we have expected convergence time $O(\log n + \log M)$, expected polynomial holding time,
+and expected memory usage of $O(\log^2 (s) + (\log \log n)^2)$ bits. Interpreted as a dynamic size
+counting protocol, when changing from population size $n_{prev}$ to $n_{next}$, the convergence
+time is $O(\log n_{next} + \log \log n_{prev})$. 

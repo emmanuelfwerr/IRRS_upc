@@ -1,0 +1,19 @@
+In past years, the world has switched to many-core and multi-core shared memory architectures.
+As a result, there is a growing need to utilize these architectures by introducing shared memory
+parallelization schemes to software applications. OpenMP is the most comprehensive API that implements
+such schemes, characterized by a readable interface. Nevertheless, introducing OpenMP into code
+is challenging due to pervasive pitfalls in management of parallel shared memory. To facilitate
+the performance of this task, many source-to-source (S2S) compilers have been created over the
+years, tasked with inserting OpenMP directives into code automatically. In addition to having
+limited robustness to their input format, these compilers still do not achieve satisfactory coverage
+and precision in locating parallelizable code and generating appropriate directives. In this
+work, we propose leveraging recent advances in ML techniques, specifically in natural language
+processing (NLP), to replace S2S compilers altogether. We create a database (corpus), Open-OMP,
+specifically for this goal. Open-OMP contains over 28,000 code snippets, half of which contain
+OpenMP directives while the other half do not need parallelization at all with high probability.
+We use the corpus to train systems to automatically classify code segments in need of parallelization,
+as well as suggest individual OpenMP clauses. We train several transformer models, named PragFormer,
+for these tasks, and show that they outperform statistically-trained baselines and automatic
+S2S parallelization compilers in both classifying the overall need for an OpenMP directive and
+the introduction of private and reduction clauses. Our source code and database are available at:
+https://github.com/Scientific-Computing-Lab-NRCN/PragFormer. 

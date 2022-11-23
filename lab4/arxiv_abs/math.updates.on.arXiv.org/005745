@@ -1,0 +1,19 @@
+We study controlled filter stability and its effects on the robustness properties of optimal control
+policies designed for systems with incorrect priors applied to a true system. Filter stability
+refers to the correction of an incorrectly initialized filter for a partially observed stochastic
+dynamical system (controlled or control-free) with increasing measurements. This problem has
+been studied extensively in the control-free context, and except for the standard machinery for
+linear Gaussian systems involving the Kalman Filter, few studies exist for the controlled setup.
+One of the main differences between control-free and controlled partially observed Markov chains
+is that the filter is always Markovian under the former, whereas under a controlled model the filter
+process may not be Markovian since the control policy may depend on past measurements in an arbitrary
+(measurable) fashion. This complicates the dependency structure and therefore results from the
+control-free literature do not directly apply to the controlled setup. In this paper, we study the
+filter stability problem for controlled stochastic dynamical systems, and provide sufficient
+conditions for when a falsely initialized filter merges with the correctly initialized filter
+over time. These stability results are applied to robust stochastic control problems: under filter
+stability, we bound the difference in the expected cost incurred for implementing an incorrectly
+designed control policy compared to an optimal policy. A conclusion is that filter stability leads
+to stronger robustness results to incorrect priors (compared with setups without controlled filter
+stability). Furthermore, if the optimum cost is that same for each prior, the cost of mismatch between
+the true prior and the assumed prior is zero. 

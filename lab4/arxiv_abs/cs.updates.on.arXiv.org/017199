@@ -1,0 +1,20 @@
+In recent years, computer vision algorithms have become more powerful. However, current algorithms
+mainly share one limitation: They rely on directly visible objects. This is a significant drawback
+compared to human behavior, where visual cues caused by objects (e.g., shadows) are already used
+intuitively to retrieve information or anticipate occurring objects. While driving at night,
+this performance deficit becomes even more obvious: Humans already process the light artifacts
+caused by the headlamps of oncoming vehicles to estimate where they appear, whereas current object
+detection systems require that the oncoming vehicle is directly visible before it can be detected.
+Based on previous work on this subject, in this paper, we present a complete system that can detect
+light artifacts caused by the headlights of oncoming vehicles so that it detects that a vehicle is
+approaching providently. For that, an entire algorithm architecture is investigated, including
+the detection in the image space, the three-dimensional localization, and the tracking of light
+artifacts. To demonstrate the usefulness of such an algorithm, the proposed algorithm is deployed
+in a test vehicle to use the detected light artifacts to control the glare-free high beam system proactively.
+Using this experimental setting, the provident vehicle detection system's time benefit compared
+to an in-production computer vision system is quantified. Additionally, the glare-free high beam
+use case provides a real-time and real-world visualization interface of the detection results
+by considering the adaptive headlamps as projectors. With this investigation of provident vehicle
+detection, we want to put awareness on the unconventional sensing task of detecting objects providently
+and further close the performance gap between human behavior and computer vision algorithms to
+bring autonomous and automated driving a step forward. 

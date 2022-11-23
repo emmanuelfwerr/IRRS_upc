@@ -1,0 +1,19 @@
+Federated learning (FL), an attractive and promising distributed machine learning paradigm,
+has sparked extensive interest in exploiting tremendous data stored on ubiquitous mobile devices.
+However, conventional FL suffers severely from resource heterogeneity, as clients with weak computational
+and communication capability may be unable to complete local training using the same local training
+hyper-parameters. In this paper, we propose Dap-FL, a deep deterministic policy gradient (DDPG)-assisted
+adaptive FL system, in which local learning rates and local training epochs are adaptively adjusted
+by all resource-heterogeneous clients through locally deployed DDPG-assisted adaptive hyper-parameter
+selection schemes. Particularly, the rationality of the proposed hyper-parameter selection
+scheme is confirmed through rigorous mathematical proof. Besides, due to the thoughtlessness
+of security consideration of adaptive FL systems in previous studies, we introduce the Paillier
+cryptosystem to aggregate local models in a secure and privacy-preserving manner. Rigorous analyses
+show that the proposed Dap-FL system could guarantee the security of clients' private local models
+against chosen-plaintext attacks and chosen-message attacks in a widely used honest-but-curious
+participants and active adversaries security model. In addition, through ingenious and extensive
+experiments, the proposed Dap-FL achieves higher global model prediction accuracy and faster
+convergence rates than conventional FL, and the comprehensiveness of the adjusted local training
+hyper-parameters is validated. More importantly, experimental results also show that the proposed
+Dap-FL achieves higher model prediction accuracy than two state-of-the-art RL-assisted FL methods,
+i.e., 6.03% higher than DDPG-based FL and 7.85% higher than DQN-based FL. 

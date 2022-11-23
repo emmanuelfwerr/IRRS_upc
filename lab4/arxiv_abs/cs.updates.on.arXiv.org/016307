@@ -1,0 +1,19 @@
+The modelling of multiphase flow in a pipe presents a significant challenge for high-resolution
+computational fluid dynamics (CFD) models due to the high aspect ratio (length over diameter) of
+the domain. In subsea applications, the pipe length can be several hundreds of kilometres versus
+a pipe diameter of just a few inches. In this paper, we present a new AI-based non-intrusive reduced-order
+model within a domain decomposition framework (AI-DDNIROM) which is capable of making predictions
+for domains significantly larger than the domain used in training. This is achieved by using domain
+decomposition; dimensionality reduction; training a neural network to make predictions for a
+single subdomain; and by using an iteration-by-subdomain technique to converge the solution over
+the whole domain. To find the low-dimensional space, we explore several types of autoencoder networks,
+known for their ability to compress information accurately and compactly. The performance of the
+autoencoders is assessed on two advection-dominated problems: flow past a cylinder and slug flow
+in a pipe. To make predictions in time, we exploit an adversarial network which aims to learn the distribution
+of the training data, in addition to learning the mapping between particular inputs and outputs.
+This type of network has shown the potential to produce realistic outputs. The whole framework is
+applied to multiphase slug flow in a horizontal pipe for which an AI-DDNIROM is trained on high-fidelity
+CFD simulations of a pipe of length 10 m with an aspect ratio of 13:1, and tested by simulating the flow
+for a pipe of length 98 m with an aspect ratio of almost 130:1. Statistics of the flows obtained from
+the CFD simulations are compared to those of the AI-DDNIROM predictions to demonstrate the success
+of our approach. 

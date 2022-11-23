@@ -1,0 +1,19 @@
+We present a deep learning-based reduced order model (DL-ROM) for predicting the fluid forces and
+unsteady vortex patterns. We consider flow past a sphere to examine the accuracy of our DL-ROM predictions.
+The proposed methodology relies on a three-dimensional convolutional recurrent autoencoder
+network (3D CRAN) to extract the low-dimensional flow features from full-order snapshots. The
+low-dimensional features are evolved in time using a long short-term memory-based recurrent neural
+network and reconstructed back to the full-order as flow voxels. These 3D voxels are introduced
+as static and uniform query probes in the point cloud domain to reduce the unstructured mesh complexity
+while providing convenience in 3D CRAN training. We analyze a novel procedure to recover the interface
+description and the force quantities from the 3D flow voxels. The 3D CRAN methodology is first applied
+to an external flow past a static sphere at a single Reynolds number of Re = 300. We provide an assessment
+of the computing requirements in terms of the memory usage, training costs, and testing times associated
+with the 3D CRAN framework. Subsequently, variable Re-based flow information is infused in one
+3D CRAN to learn a complicated symmetry-breaking flow regime (280 < Re < 460) for the flow past a sphere.
+Effects of transfer learning are analyzed for training this complicated 3D flow regime on a relatively
+smaller time series dataset. The 3D CRAN framework learns the flow regime nearly 20 times faster
+than the parallel full-order model and predicts unsteady flows with an excellent to good accuracy.
+Based on the predicted flow fields, the network demonstrates an R2 accuracy of 98.58% for drag and
+76.43% for lift over the sphere in the chosen flow regime. The proposed framework aligns with the
+development of a digital twin for 3D unsteady flow field with variable Re effects. 

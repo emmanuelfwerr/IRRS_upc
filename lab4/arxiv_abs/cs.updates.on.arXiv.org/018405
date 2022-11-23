@@ -1,0 +1,20 @@
+Recent work has shown the potential of using audio data (eg, cough, breathing, and voice) in the screening
+for COVID-19. However, these approaches only focus on one-off detection and detect the infection
+given the current audio sample, but do not monitor disease progression in COVID-19. Limited exploration
+has been put forward to continuously monitor COVID-19 progression, especially recovery, through
+longitudinal audio data. Tracking disease progression characteristics could lead to more timely
+treatment. The primary objective of this study is to explore the potential of longitudinal audio
+samples over time for COVID-19 progression prediction and, especially, recovery trend prediction
+using sequential deep learning techniques. Crowdsourced respiratory audio data, including breathing,
+cough, and voice samples, from 212 individuals over 5-385 days were analyzed. We developed a deep
+learning-enabled tracking tool using gated recurrent units (GRUs) to detect COVID-19 progression
+by exploring the audio dynamics of the individuals' historical audio biomarkers. The investigation
+comprised 2 parts: (1) COVID-19 detection in terms of positive and negative (healthy) tests, and
+(2) longitudinal disease progression prediction over time in terms of probability of positive
+tests. The strong performance for COVID-19 detection, yielding an AUROC of 0.79, a sensitivity
+of 0.75, and a specificity of 0.71 supported the effectiveness of the approach compared to methods
+that do not leverage longitudinal dynamics. We further examined the predicted disease progression
+trajectory, displaying high consistency with test results with a correlation of 0.75 in the test
+cohort and 0.86 in a subset of the test cohort who reported recovery. Our findings suggest that monitoring
+COVID-19 evolution via longitudinal audio data has potential in the tracking of individuals' disease
+progression and recovery. 

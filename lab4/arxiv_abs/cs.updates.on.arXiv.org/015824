@@ -1,0 +1,20 @@
+Graph problems such as traveling salesman problem, or finding minimal Steiner trees are widely
+studied and used in data engineering and computer science. Typically, in real-world applications,
+the features of the graph tend to change over time, thus, finding a solution to the problem becomes
+challenging. The dynamic version of many graph problems are the key for a plethora of real-world
+problems in transportation, telecommunication, and social networks. In recent years, using deep
+learning techniques to find heuristic solutions for NP-hard graph combinatorial problems has
+gained much interest as these learned heuristics can find near-optimal solutions efficiently.
+However, most of the existing methods for learning heuristics focus on static graph problems. The
+dynamic nature makes NP-hard graph problems much more challenging to learn, and the existing methods
+fail to find reasonable solutions. In this paper, we propose a novel architecture named Graph Temporal
+Attention with Reinforcement Learning (GTA-RL) to learn heuristic solutions for graph-based
+dynamic combinatorial optimization problems. The GTA-RL architecture consists of an encoder
+capable of embedding temporal features of a combinatorial problem instance and a decoder capable
+of dynamically focusing on the embedded features to find a solution to a given combinatorial problem
+instance. We then extend our architecture to learn heuristics for the real-time version of combinatorial
+optimization problems where all input features of a problem are not known a prior, but rather learned
+in real-time. Our experimental results against several state-of-the-art learning-based algorithms
+and optimal solvers demonstrate that our approach outperforms the state-of-the-art learning-based
+approaches in terms of effectiveness and optimal solvers in terms of efficiency on dynamic and real-time
+graph combinatorial optimization. 

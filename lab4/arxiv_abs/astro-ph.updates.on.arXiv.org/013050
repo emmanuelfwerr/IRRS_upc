@@ -1,0 +1,19 @@
+Precise fundamental atmospheric stellar parameters and abundance determination of individual
+elements in stars are important for all stellar population studies. Non-Local Thermodynamic Equilibrium
+(Non-LTE; hereafter NLTE) models are often important for such high precision, however, can be computationally
+complex and expensive, which renders the models less utilized in spectroscopic analyses. To alleviate
+the computational burden of such models, we developed a robust 1D, LTE and NLTE fundamental atmospheric
+stellar parameter derivation tool, $\texttt{LOTUS}$, to determine the effective temperature
+$T_{\mathrm{eff}}$, surface gravity $\log g$, metallicity $\mbox{[Fe/H]}$ and microturbulent
+velocity $v_{\mathrm{mic}}$ for FGK type stars, from equivalent width (EW) measurements of Fe
+I and Fe II lines. We utilize a generalized curve of growth method to take into account the EW dependencies
+of each Fe I and Fe II line on the corresponding atmospheric stellar parameters. A global differential
+evolution optimization algorithm is then used to derive the optimized fundamental parameters.
+Additionally, $\texttt{LOTUS}$ can determine precise uncertainties for each stellar parameter
+using a Markov Chain Monte Carlo (MCMC) algorithm. We test and apply $\texttt{LOTUS}$ on a sample
+of benchmark stars, as well as stars with available asteroseismic surface gravities from the K2
+survey, and metal-poor stars from $R$-process Alliance (RPA) survey. We find very good agreement
+between our NLTE-derived parameters in $\texttt{LOTUS}$ to non-spectroscopic values within
+$T_{\mathrm{eff}}=\pm 30$ K and $\log g=\pm 0.20$ dex for benchmark stars. We provide open access
+of our code, as well as of the interpolated pre-computed NLTE EW grids available on Github, and documentation
+with working examples on Readthedocs. 

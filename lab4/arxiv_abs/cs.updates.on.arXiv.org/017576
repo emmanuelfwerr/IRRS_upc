@@ -1,0 +1,19 @@
+One approach with rising popularity in analyzing time-dependent problems in science and engineering
+is the so-called space-time finite-element method that utilized finiteelements in both space
+and time. A common ansatz in this context is to divide the mesh in temporal direction into so-called
+space-time slabs, which are subsequently weakly connected in time with a Discontinuous Galerkin
+approach. The corresponding jumpterm, which is responsible for imposing the weak continuity across
+space-time slabs can be challenging to compute, in particular in the context of deforming domains.
+Ensuring a conforming discretization of the space-time slab at the top and bottom in time direction
+simplifies the handling of this term immensely. Otherwise, a computationally expensive and error
+prone projection of the solution from one time-level to another is necessary. However, when it comes
+to simulations with deformable domains, e.g. for free-surface flows, ensuring conforming meshes
+is quite laborious. A possible solution to this challenge is to extrude a spatial mesh in time at each
+time-step resulting in the so-called time-discontinuous prismatic space-time (D-PST) method.
+However, this procedure is restricted to finite-elements of 1st order in time. We present a novel
+algorithmic approach for arbitrarily discretized meshes by flipping the mesh in time-direction
+for each time-step. This ansatz allows for a simple evaluation of the jump-term as the mesh is always
+conforming. The cost of flipping the mesh around its symmetry plane in time scales with the number
+of nodes, which makes it computationally cheaper than an additional update of the mesh to enforce
+conformity or the evaluation of a projection. We validate the approach on various physical problems
+with and without deforming domains. 

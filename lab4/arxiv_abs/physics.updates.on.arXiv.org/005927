@@ -1,0 +1,18 @@
+Newtonian machine learning (NML) is a wave-equation inversion method that inverts single-dimensional
+latent space (LS) features of the seismic data for retrieving the subsurface background velocity
+model. The single-dimensional LS features mainly contain the kinematic information of the seismic
+data, which are automatically extracted from the seismic signal by using an autoencoder network.
+Because its LS feature dimension is too small to preserve the dynamic information, such as the waveform
+variations, of the seismic data. Therefore the NML inversion is not able to recover the high-wavenumber
+velocity details. To mitigate this problem, we propose to invert multi-dimensional LS features,
+which can fully represent the entire characters of the seismic data. We denote this method as multi-dimensional
+Newtonian machine learning (MNML). In MNML, we define a new multi-variable connective function
+that works together with the multi-variable implicit function theorem to connect the velocity
+perturbations to the multi-dimensional LS feature perturbations. Numerical tests show that (1)
+the multi-dimensional LS features can preserve more data information than the single-dimensional
+LS features; (2) a higher resolution velocity model can be recovered by inverting the multi-dimensional
+LS features, and the inversion quality is comparable to that of FWI; (3) the MNML method requires
+a much smaller storage space than conventional FWI because only the low-dimensional representations
+of the high-dimensional seismic data are needed to be stored. The disadvantage of MNML is that it
+can more easily get stuck in local minima compared to the NML method. So we suggest a multiscale inversion
+approach that inverts for higher dimensional LS features as the iteration count increase. 

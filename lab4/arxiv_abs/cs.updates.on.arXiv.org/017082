@@ -1,0 +1,18 @@
+Vision Transformers (ViT)s have recently become popular due to their outstanding modeling capabilities,
+in particular for capturing long-range information, and scalability to dataset and model sizes
+which has led to state-of-the-art performance in various computer vision and medical image analysis
+tasks. In this work, we introduce a unified framework consisting of two architectures, dubbed UNetFormer,
+with a 3D Swin Transformer-based encoder and Convolutional Neural Network (CNN) and transformer-based
+decoders. In the proposed model, the encoder is linked to the decoder via skip connections at five
+different resolutions with deep supervision. The design of proposed architecture allows for meeting
+a wide range of trade-off requirements between accuracy and computational cost. In addition, we
+present a methodology for self-supervised pre-training of the encoder backbone via learning to
+predict randomly masked volumetric tokens using contextual information of visible tokens. We
+pre-train our framework on a cohort of $5050$ CT images, gathered from publicly available CT datasets,
+and present a systematic investigation of various components such as masking ratio and patch size
+that affect the representation learning capability and performance of downstream tasks. We validate
+the effectiveness of our pre-training approach by fine-tuning and testing our model on liver and
+liver tumor segmentation task using the Medical Segmentation Decathlon (MSD) dataset and achieve
+state-of-the-art performance in terms of various segmentation metrics. To demonstrate its generalizability,
+we train and test the model on BraTS 21 dataset for brain tumor segmentation using MRI images and outperform
+other methods in terms of Dice score. Code: https://github.com/Project-MONAI/research-contributions

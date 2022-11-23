@@ -1,0 +1,20 @@
+Reaching agreement despite noise in communication is a fundamental problem in multi-agent systems.
+Here we study this problem under an idealized model, where it is assumed that agents can sense the
+general tendency in the system. More specifically, we consider $n$ agents, each being associated
+with a real-valued number. In each round, each agent receives a noisy measurement of the average
+value, and then updates its value, which is in turn perturbed by random drift. We assume that both
+noises in measurements and drift follow Gaussian distributions. What should be the updating policy
+of agents if their goal is to minimize the expected deviation of the agents' values from the average
+value? We prove that a distributed weighted-average algorithm optimally minimizes this deviation
+for each agent, and for any round. Interestingly, this optimality holds even in the centralized
+setting, where a master agent can gather all the agents' measurements and instruct a move to each
+agent.We find this result surprising since it can be shown that the total measurements obtained
+by all agents contain strictly more information about the deviation of Agent $i$ from the average
+value, than the information contained in the measurements obtained by Agent $i$ alone. Although
+this information is relevant for Agent $i$, it is not processed by it when running a weighted-average
+algorithm. Nevertheless, the weighted-average algorithm is optimal, since by running it, other
+agents manage to fully process this information in a way that perfectly benefits Agent $i$.Finally,
+we also analyze the drift of the center of mass and show that no distributed algorithm can achieve
+drift that is as small as the one that can be achieved by the best centralized algorithm. In light of
+this, we also show that the drift associated with our weighted-average algorithm incurs a relatively
+small overhead over the best possible drift in the centralized setting. 

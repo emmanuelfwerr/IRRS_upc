@@ -1,0 +1,20 @@
+In this paper, we address the problem of joint sensing, computation, and communication (SC$^{2}$)
+resource allocation for federated edge learning (FEEL) via a concrete case study of human motion
+recognition based on wireless sensing in ambient intelligence. First, by analyzing the wireless
+sensing process in human motion recognition, we find that there exists a thresholding value for
+the sensing transmit power, exceeding which yields sensing data samples with approximately the
+same satisfactory quality. Then, the joint SC$^{2}$ resource allocation problem is cast to maximize
+the convergence speed of FEEL, under the constraints on training time, energy supply, and sensing
+quality of each edge device. Solving this problem entails solving two subproblems in order: the
+first one reduces to determine the joint sensing and communication resource allocation that maximizes
+the total number of samples that can be sensed during the entire training process; the second one
+concerns the partition of the attained total number of sensed samples over all the communication
+rounds to determine the batch size at each round for convergence speed maximization. The first subproblem
+on joint sensing and communication resource allocation is converted to a single-variable optimization
+problem by exploiting the derived relation between different control variables (resources),
+which thus allows an efficient solution via one-dimensional grid search. For the second subproblem,
+it is found that the number of samples to be sensed (or batch size) at each round is a decreasing function
+of the loss function value attained at the round. Based on this relationship, the approximate optimal
+batch size at each communication round is derived in closed-form as a function of the round index.
+Finally, extensive simulation results are provided to validate the superiority of the proposed
+joint SC$^{2}$ resource allocation scheme. 

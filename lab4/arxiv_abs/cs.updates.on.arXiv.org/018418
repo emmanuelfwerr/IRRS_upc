@@ -1,0 +1,19 @@
+We study constant-cost randomized communication problems and relate them to implicit graph representations
+in structural graph theory. Specifically, constant-cost communication problems correspond
+to hereditary graph families that admit constant-size adjacency sketches, or equivalently constant-size
+probabilistic universal graphs (PUGs), and these graph families are a subset of families that admit
+adjacency labeling schemes of size O(log n), which are the subject of the well-studied implicit
+graph question (IGQ). We initiate the study of the hereditary graph families that admit constant-size
+PUGs, with the two (equivalent) goals of (1) understanding randomized constant-cost communication
+problems, and (2) understanding a probabilistic version of the IGQ. For each family $\mathcal F$
+studied in this paper (including the monogenic bipartite families, product graphs, interval and
+permutation graphs, families of bounded twin-width, and others), it holds that the subfamilies
+$\mathcal H \subseteq \mathcal F$ are either stable (in a sense relating to model theory), in which
+case they admit constant-size PUGs, or they are not stable, in which case they do not. The correspondence
+between communication problems and hereditary graph families allows for a new method of constructing
+adjacency labeling schemes. By this method, we show that the induced subgraphs of any Cartesian
+products are positive examples to the IGQ. We prove that this probabilistic construction cannot
+be derandomized by using an Equality oracle, i.e. the Equality oracle cannot simulate the k-Hamming
+Distance communication protocol. We also obtain constant-size sketches for deciding $\mathsf{dist}(x,
+y) \le k$ for vertices $x$, $y$ in any stable graph family with bounded twin-width. This generalizes
+to constant-size sketches for deciding first-order formulas over the same graphs. 

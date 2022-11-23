@@ -1,0 +1,20 @@
+Sparse convolutional neural networks (CNNs) have gained significant traction over the past few
+years as sparse CNNs can drastically decrease the model size and computations, if exploited befittingly,
+as compared to their dense counterparts. Sparse CNNs often introduce variations in the layer shapes
+and sizes, which can prevent dense accelerators from performing well on sparse CNN models. Recently
+proposed sparse accelerators like SCNN, Eyeriss v2, and SparTen, actively exploit the two-sided
+or full sparsity, that is, sparsity in both weights and activations, for performance gains. These
+accelerators, however, either have inefficient micro-architecture, which limits their performance,
+have no support for non-unit stride convolutions and fully-connected (FC) layers, or suffer massively
+from systematic load imbalance. To circumvent these issues and support both sparse and dense models,
+we propose Phantom, a multi-threaded, dynamic, and flexible neural computational core. Phantom
+uses sparse binary mask representation to actively lookahead into sparse computations, and dynamically
+schedule its computational threads to maximize the thread utilization and throughput. We also
+generate a two-dimensional (2D) mesh architecture of Phantom neural computational cores, which
+we refer to as Phantom-2D accelerator, and propose a novel dataflow that supports all layers of a
+CNN, including unit and non-unit stride convolutions, and FC layers. In addition, Phantom-2D uses
+a two-level load balancing strategy to minimize the computational idling, thereby, further improving
+the hardware utilization. To show support for different types of layers, we evaluate the performance
+of the Phantom architecture on VGG16 and MobileNet. Our simulations show that the Phantom-2D accelerator
+attains a performance gain of 12x, 4.1x, 1.98x, and 2.36x, over dense architectures, SCNN, SparTen,
+and Eyeriss v2, respectively. 

@@ -1,0 +1,19 @@
+The electroencephalogram (EEG) and functional near-infrared spectroscopy (fNIRS) signals,
+highly non-stationary in nature, greatly suffers from motion artifacts while recorded using wearable
+sensors. This paper proposes two robust methods: i) Wavelet packet decomposition (WPD), and ii)
+WPD in combination with canonical correlation analysis (WPD-CCA), for motion artifact correction
+from single-channel EEG and fNIRS signals. The efficacy of these proposed techniques is tested
+using a benchmark dataset and the performance of the proposed methods is measured using two well-established
+performance matrices: i) Difference in the signal to noise ratio ({\Delta}SNR) and ii) Percentage
+reduction in motion artifacts ({\eta}). The proposed WPD-based single-stage motion artifacts
+correction technique produces the highest average {\Delta}SNR (29.44 dB) when db2 wavelet packet
+is incorporated whereas the greatest average {\eta} (53.48%) is obtained using db1 wavelet packet
+for all the available 23 EEG recordings. Our proposed two-stage motion artifacts correction technique
+i.e. the WPD-CCA method utilizing db1 wavelet packet has shown the best denoising performance producing
+an average {\Delta}SNR and {\eta} values of 30.76 dB and 59.51%, respectively for all the EEG recordings.
+On the other hand, the two-stage motion artifacts removal technique i.e. WPD-CCA has produced the
+best average {\Delta}SNR (16.55 dB, utilizing db1 wavelet packet) and largest average {\eta} (41.40%,
+using fk8 wavelet packet). The highest average {\Delta}SNR and {\eta} using single-stage artifacts
+removal techniques (WPD) are found as 16.11 dB and 26.40%, respectively for all the fNIRS signals
+using fk4 wavelet packet. In both EEG and fNIRS modalities, the percentage reduction in motion artifacts
+increases by 11.28% and 56.82%, respectively when two-stage WPD-CCA techniques are employed.

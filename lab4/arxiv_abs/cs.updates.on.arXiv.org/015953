@@ -1,0 +1,19 @@
+Eye movements have long been studied as a window into the attentional mechanisms of the human brain
+and made accessible as novelty style human-machine interfaces. However, not everything that we
+gaze upon, is something we want to interact with; this is known as the Midas Touch problem for gaze
+interfaces. To overcome the Midas Touch problem, present interfaces tend not to rely on natural
+gaze cues, but rather use dwell time or gaze gestures. Here we present an entirely data-driven approach
+to decode human intention for object manipulation tasks based solely on natural gaze cues. We run
+data collection experiments where 16 participants are given manipulation and inspection tasks
+to be performed on various objects on a table in front of them. The subjects' eye movements are recorded
+using wearable eye-trackers allowing the participants to freely move their head and gaze upon the
+scene. We use our Semantic Fovea, a convolutional neural network model to obtain the objects in the
+scene and their relation to gaze traces at every frame. We then evaluate the data and examine several
+ways to model the classification task for intention prediction. Our evaluation shows that intention
+prediction is not a naive result of the data, but rather relies on non-linear temporal processing
+of gaze cues. We model the task as a time series classification problem and design a bidirectional
+Long-Short-Term-Memory (LSTM) network architecture to decode intentions. Our results show that
+we can decode human intention of motion purely from natural gaze cues and object relative position,
+with $91.9\%$ accuracy. Our work demonstrates the feasibility of natural gaze as a Zero-UI interface
+for human-machine interaction, i.e., users will only need to act naturally, and do not need to interact
+with the interface itself or deviate from their natural eye movement patterns. 

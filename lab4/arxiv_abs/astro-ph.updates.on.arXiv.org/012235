@@ -1,0 +1,20 @@
+Reliable extraction of cosmological information from observed cosmic microwave background (CMB)
+maps requires accurate removal of foreground components. Since some regions of the sky are inevitably
+contaminated by strong foreground signals, it may be desired to excise such strongly contaminated
+regions even after a foreground subtraction has been performed. We employ an artificial neural
+network (ANN) to predict the full sky CMB angular power spectrum from the partial sky spectrum obtained
+from masked CMB anisotropy map, at a high pixel resolution. We use a simple ANN with one hidden layer
+containing $895$ neurons. Using $1.2 \times 10^{5}$ training samples of full sky and corresponding
+partial sky spectra at Healpix pixel resolution parameter $N_{side} = 256$, we show that predicted
+spectrum by our ANN agrees well with the target spectrum at each realization for the multipole range
+$2 \leq l \leq 512$. The predicted spectra are statistically unbiased and they preserve the cosmic
+variance accurately. Statistically, the differences between the mean predicted and underlying
+theoretical spectra are within $3\sigma$. Moreover, the probability densities obtained from
+predicted spectra agree very well with those obtained from actual full sky spectra for each multipole.
+Equally interesting is that the correlation matrix calculated from predicted spectra does not
+show any signature of correlation between the spectrum of different multipoles. Our work shows
+that the predicted spectra do not need to be binned even at high resolution to rid of correlations
+due to mode-mode coupling introduced on the partial sky since the ANN learns to effectively recover
+the lost information due to sky cut. The excellent agreement of statistical properties between
+the predicted and the ground-truth demonstrates the importance of using artificial intelligence
+systems in cosmological analysis more widely. 

@@ -1,0 +1,19 @@
+The diffusion of opinions in Social Networks is a relevant process for adopting positions and attracting
+potential voters in political campaigns. Opinion polarization, bias, targeted diffusion, and
+the radicalization of postures are key elements for understanding voting dynamics. In particular,
+social bots are a new element that can have a pronounced effect on the formation of opinions during
+elections by, for instance, creating fake accounts in social networks to manipulate elections.
+Here we propose a voter model incorporating bots and radical or intolerant individuals in the decision-making
+process. The dynamics of the system occur in a multiplex network of interacting agents composed
+of two layers, one for the dynamics of opinions where agents choose between two possible alternatives,
+and the other for the tolerance dynamics, in which agents adopt one of two tolerance levels. The tolerance
+accounts for the likelihood to change opinion in an interaction, with tolerant (intolerant) agents
+switching opinion with probability $1.0$ ($\gamma \le 1$). We find that intolerance leads to a consensus
+of tolerant agents during an initial stage that scales as $\tau^+ \sim \gamma^{-1} \ln N$, who then
+reach an opinion consensus during the second stage in a time that scales as $\tau \sim N$, where $N$
+is the number of agents. Therefore, very intolerant agents ($\gamma \ll 1$) could considerably
+slow down dynamics towards the final consensus state. We also find that the inclusion of a fraction
+$\sigma_{\mathbb{B}}^-$ of bots breaks the symmetry between both opinions, driving the system
+to a consensus of intolerant agents with the bots' opinion. Thus, bots eventually impose their opinion
+to the entire population, in a time that scales as $\tau_B^- \sim \gamma^{-1}$ for $\gamma \ll \sigma_{\mathbb{B}}^-$
+and $\tau_B^- \sim 1/\sigma_{\mathbb{B}}^-$ for $\sigma_{\mathbb{B}}^- \ll \gamma$. 

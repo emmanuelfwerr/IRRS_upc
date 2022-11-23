@@ -1,0 +1,19 @@
+Bokeh effect is a natural shallow depth-of-field phenomenon that blurs the out-of-focus part in
+photography. In pursuit of aesthetically pleasing photos, people usually regard the bokeh effect
+as an indispensable part of the photo. Due to its natural advantage and universality, as well as the
+fact that many visual recognition tasks can already be negatively affected by the `natural bokeh'
+phenomenon, in this work, we systematically study the bokeh effect from a new angle, i.e., adversarial
+bokeh attack (AdvBokeh) that aims to embed calculated deceptive information into the bokeh generation
+and produce a natural adversarial example without any human-noticeable noise artifacts. To this
+end, we first propose a Depth-guided Bokeh Synthesis Network (DebsNet) that is able to flexibly
+synthesis, refocus, and adjust the level of bokeh of the image, with a one-stage training procedure.
+The DebsNet allows us to tap into the bokeh generation process and attack the depth map that is needed
+for generating realistic bokeh (i.e., adversarially tuning the depth map) based on subsequent
+visual tasks. To further improve the realisticity of the adversarial bokeh, we propose depth-guided
+gradient-based attack to regularize the gradient.We validate the proposed method on a popular
+adversarial image classification dataset, i.e., NeurIPS-2017 DEV, and show that the proposed
+method can penetrate four state-of-the-art (SOTA) image classification networks i.e., ResNet50,
+VGG, DenseNet, and MobileNetV2 with a high success rate as well as high image quality. The adversarial
+examples obtained by AdvBokeh also exhibit high level of transferability under black-box settings.
+Moreover, the adversarially generated defocus blur images from the AdvBokeh can actually be capitalized
+to enhance the performance of SOTA defocus deblurring system, i.e., IFAN. 

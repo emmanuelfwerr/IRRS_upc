@@ -1,0 +1,20 @@
+We present a large-scale study of imitating human demonstrations on tasks that require a virtual
+robot to search for objects in new environments -- (1) ObjectGoal Navigation (e.g. 'find & go to a
+chair') and (2) Pick&Place (e.g. 'find mug, pick mug, find counter, place mug on counter'). First,
+we develop a virtual teleoperation data-collection infrastructure -- connecting Habitat simulator
+running in a web browser to Amazon Mechanical Turk, allowing remote users to teleoperate virtual
+robots, safely and at scale. We collect 80k demonstrations for ObjectNav and 12k demonstrations
+for Pick&Place, which is an order of magnitude larger than existing human demonstration datasets
+in simulation or on real robots. Second, we attempt to answer the question -- how does large-scale
+imitation learning (IL) (which hasn't been hitherto possible) compare to reinforcement learning
+(RL) (which is the status quo)? On ObjectNav, we find that IL (with no bells or whistles) using 70k
+human demonstrations outperforms RL using 240k agent-gathered trajectories. The IL-trained
+agent demonstrates efficient object-search behavior -- it peeks into rooms, checks corners for
+small objects, turns in place to get a panoramic view -- none of these are exhibited as prominently
+by the RL agent, and to induce these behaviors via RL would require tedious reward engineering. Finally,
+accuracy vs. training data size plots show promising scaling behavior, suggesting that simply
+collecting more demonstrations is likely to advance the state of art further. On Pick&Place, the
+comparison is starker -- IL agents achieve ${\sim}$18% success on episodes with new object-receptacle
+locations when trained with 9.5k human demonstrations, while RL agents fail to get beyond 0%. Overall,
+our work provides compelling evidence for investing in large-scale imitation learning. Project
+page: https://ram81.github.io/projects/habitat-web. 

@@ -1,0 +1,18 @@
+Recently, video recognition is emerging with the help of multi-modal learning, which focuses on
+integrating multiple modalities to improve the performance or robustness of a model. Although
+various multi-modal learning methods have been proposed and offer remarkable recognition results,
+almost all of these methods rely on high-quality manual annotations and assume that modalities
+among multi-modal data provide relevant semantic information. Unfortunately, most widely used
+video datasets are collected from the Internet and inevitably contain noisy labels and noisy correspondence.
+To solve this problem, we use the audio-visual action recognition task as a proxy and propose a noise-tolerant
+learning framework to find anti-interference model parameters to both noisy labels and noisy correspondence.
+Our method consists of two phases and aims to rectify noise by the inherent correlation between modalities.
+A noise-tolerant contrastive training phase is performed first to learn robust model parameters
+unaffected by the noisy labels. To reduce the influence of noisy correspondence, we propose a cross-modal
+noise estimation component to adjust the consistency between different modalities. Since the
+noisy correspondence existed at the instance level, a category-level contrastive loss is proposed
+to further alleviate the interference of noisy correspondence. Then in the hybrid supervised training
+phase, we calculate the distance metric among features to obtain corrected labels, which are used
+as complementary supervision. In addition, we investigate the noisy correspondence in real-world
+datasets and conduct comprehensive experiments with synthetic and real noise data. The results
+verify the advantageous performance of our method compared to state-of-the-art methods. 

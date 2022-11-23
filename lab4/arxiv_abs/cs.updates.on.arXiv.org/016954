@@ -1,0 +1,19 @@
+Finding efficient means of fingerprinting microstructural information is a critical step towards
+harnessing data-centric machine learning approaches. A statistical framework is systematically
+developed for compressed characterisation of a population of images, which includes some classical
+computer vision methods as special cases. The focus is on materials microstructure. The ultimate
+purpose is to rapidly fingerprint sample images in the context of various high-throughput design/make/test
+scenarios. This includes, but is not limited to, quantification of the disparity between microstructures
+for quality control, classifying microstructures, predicting materials properties from image
+data and identifying potential processing routes to engineer new materials with specific properties.
+Here, we consider microstructure classification and utilise the resulting features over a range
+of related machine learning tasks, namely supervised, semi-supervised, and unsupervised learning.
+The approach is applied to two distinct datasets to illustrate various aspects and some recommendations
+are made based on the findings. In particular, methods that leverage transfer learning with convolutional
+neural networks (CNNs), pretrained on the ImageNet dataset, are generally shown to outperform
+other methods. Additionally, dimensionality reduction of these CNN-based fingerprints is shown
+to have negligible impact on classification accuracy for the supervised learning approaches considered.
+In situations where there is a large dataset with only a handful of images labelled, graph-based
+label propagation to unlabelled data is shown to be favourable over discarding unlabelled data
+and performing supervised learning. In particular, label propagation by Poisson learning is shown
+to be highly effective at low label rates. 

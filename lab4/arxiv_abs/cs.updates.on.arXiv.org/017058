@@ -1,0 +1,19 @@
+Radiology reports are one of the main forms of communication between radiologists and other clinicians
+and contain important information for patient care. In order to use this information for research
+and automated patient care programs, it is necessary to convert the raw text into structured data
+suitable for analysis. State-of-the-art natural language processing (NLP) domain-specific
+contextual word embeddings have been shown to achieve impressive accuracy for these tasks in medicine,
+but have yet to be utilized for section structure segmentation. In this work, we pre-trained a contextual
+embedding BERT model using breast radiology reports and developed a classifier that incorporated
+the embedding with auxiliary global textual features in order to perform section segmentation.
+This model achieved a 98% accuracy at segregating free text reports sentence by sentence into sections
+of information outlined in the Breast Imaging Reporting and Data System (BI-RADS) lexicon, a significant
+improvement over the Classic BERT model without auxiliary information. We then evaluated whether
+using section segmentation improved the downstream extraction of clinically relevant information
+such as modality/procedure, previous cancer, menopausal status, the purpose of the exam, breast
+density, and breast MRI background parenchymal enhancement. Using the BERT model pre-trained
+on breast radiology reports combined with section segmentation resulted in an overall accuracy
+of 95.9% in the field extraction tasks. This is a 17% improvement compared to an overall accuracy
+of 78.9% for field extraction with models using Classic BERT embeddings and not using section segmentation.
+Our work shows the strength of using BERT in radiology report analysis and the advantages of section
+segmentation in identifying key features of patient factors recorded in breast radiology reports.

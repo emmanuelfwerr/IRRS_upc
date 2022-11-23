@@ -1,0 +1,19 @@
+Rapid detection and mitigation of issues that impact performance and reliability is paramount
+for large-scale online services. For real-time detection of such issues, datacenter operators
+use a stream processor and analyze streams of monitoring data collected from servers (referred
+to as data source nodes) and their hosted services. The timely processing of incoming streams requires
+the network to transfer massive amounts of data, and significant compute resources to process it.
+These factors often create bottlenecks for stream analytics. To help overcome these bottlenecks,
+current monitoring systems employ near-data processing by either computing an optimal query partition
+based on a cost model or using model-agnostic heuristics. Optimal partitioning is computationally
+expensive, while model-agnostic heuristics are iterative and search over a large solution space.
+We combine these approaches by using model-agnostic heuristics to improve the partitioning solution
+from a model-based heuristic. Moreover, current systems use operator-level partitioning: if
+a data source does not have sufficient resources to execute an operator on all records, the operator
+is executed only on the stream processor. Instead, we perform data-level partitioning, i.e., we
+allow an operator to be executed both on a stream processor and data sources. We implement our algorithm
+in a system called Jarvis, which enables quick adaptation to dynamic resource conditions. Our evaluation
+on a diverse set of monitoring workloads suggests that Jarvis converges to a stable query partition
+within seconds of a change in node resource conditions. Compared to current partitioning strategies,
+Jarvis handles up to 75% more data sources while improving throughput in resource-constrained
+scenarios by 1.2-4.4x. 

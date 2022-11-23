@@ -1,0 +1,18 @@
+Agents that operate in an unknown environment are bound to make mistakes while learning, including,
+at least occasionally, some that lead to catastrophic consequences. When humans make catastrophic
+mistakes, they are expected to learn never to repeat them, such as a toddler who touches a hot stove
+and immediately learns never to do so again. In this work we consider a novel class of POMDPs, called
+POMDP with Catastrophic Actions (POMDP-CA) in which pairs of states and actions are labeled as catastrophic.
+Agents that act in a POMDP-CA do not have a priori knowledge about which (state, action) pairs are
+catastrophic, thus they are sure to make mistakes when trying to learn any meaningful policy. Rather,
+their aim is to maximize reward while never repeating mistakes. As a first step of avoiding mistake
+repetition, we leverage the concept of a shield which prevents agents from executing specific actions
+from specific states. In particular, we store catastrophic mistakes (unsafe pairs of states and
+actions) that agents make in a database. Agents are then forbidden to pick actions that appear in
+the database. This approach is especially useful in a continual learning setting, where groups
+of agents perform a variety of tasks over time in the same underlying environment. In this setting,
+a task-agnostic shield can be constructed in a way that stores mistakes made by any agent, such that
+once one agent in a group makes a mistake the entire group learns to never repeat that mistake. This
+paper introduces a variant of the PPO algorithm that utilizes this shield, called ShieldPPO, and
+empirically evaluates it in a controlled environment. Results indicate that ShieldPPO outperforms
+PPO, as well as baseline methods from the safe reinforcement learning literature, in a range of settings.

@@ -1,0 +1,20 @@
+We consider the allocation of $m$ balls into $n$ bins with incomplete information. In the classical
+Two-Choice process a ball first queries the load of two randomly chosen bins and is then placed in
+the least loaded bin. In our setting, each ball also samples two random bins but can only estimate
+a bin's load by sending binary queries of the form "Is the load at least the median?" or "Is the load
+at least 100?". For the lightly loaded case $m=O(n)$, Feldheim and Gurel-Gurevich (2021) showed
+that with one query it is possible to achieve a maximum load of $O(\sqrt{\log n/\log \log n})$, and
+posed the question whether a maximum load of $m/n+O(\sqrt{\log n/\log \log n})$ is possible for
+any $m = \Omega(n)$. In this work, we resolve this open problem by proving a lower bound of $m/n+\Omega(
+\sqrt{\log n})$ for a fixed $m=\Theta(n \sqrt{\log n})$, and a lower bound of $m/n+\Omega(\log
+n/\log \log n)$ for some $m$ depending on the used strategy. We complement this negative result by
+proving a positive result for multiple queries. In particular, we show that with only two binary
+queries per chosen bin, there is an oblivious strategy which ensures a maximum load of $m/n+O(\sqrt{\log
+n})$ for any $m \geq 1$. Further, for any number of $k = O(\log \log n)$ binary queries, the upper bound
+on the maximum load improves to $m/n + O(k(\log n)^{1/k})$ for any $m \geq 1$. Further, this result
+for $k$ queries implies (i) new bounds for the $(1+\beta)$-process introduced by Peres et al (2015),
+(ii) new bounds for the graphical balanced allocation process on dense expander graphs, and (iii)
+the bound of $m/n+O(\log \log n)$ on the maximum load achieved by the Two-Choice process, including
+the heavily loaded case $m=\Omega(n)$ derived by Berenbrink et al. (2006). One novel aspect of our
+proofs is the use of multiple super-exponential potential functions, which might be of use in future
+work. 

@@ -1,0 +1,19 @@
+Perovskite photovoltaics (PV) have achieved rapid development in the past decade in terms of power
+conversion efficiency of small-area lab-scale devices; however, successful commercialization
+still requires further development of low-cost, scalable, and high-throughput manufacturing
+techniques. One of the critical challenges of developing a new fabrication technique is the high-dimensional
+parameter space for optimization, but machine learning (ML) can readily be used to accelerate perovskite
+PV scaling. Herein, we present an ML-guided framework of sequential learning for manufacturing
+process optimization. We apply our methodology to the Rapid Spray Plasma Processing (RSPP) technique
+for perovskite thin films in ambient conditions. With a limited experimental budget of screening
+100 process conditions, we demonstrated an efficiency improvement to 18.5% as the best-in-our-lab
+device fabricated by RSPP, and we also experimentally found 10 unique process conditions to produce
+the top-performing devices of more than 17% efficiency, which is 5 times higher rate of success than
+the control experiments with pseudo-random Latin hypercube sampling. Our model is enabled by three
+innovations: (a) flexible knowledge transfer between experimental processes by incorporating
+data from prior experimental data as a probabilistic constraint; (b) incorporation of both subjective
+human observations and ML insights when selecting next experiments; (c) adaptive strategy of locating
+the region of interest using Bayesian optimization first, and then conducting local exploration
+for high-efficiency devices. Furthermore, in virtual benchmarking, our framework achieves faster
+improvements with limited experimental budgets than traditional design-of-experiments methods
+(e.g., one-variable-at-a-time sampling). 

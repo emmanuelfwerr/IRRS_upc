@@ -1,0 +1,19 @@
+This work investigates the usage of batch normalization in neural architecture search (NAS). Specifically,
+Frankle et al. find that training BatchNorm only can achieve nontrivial performance. Furthermore,
+Chen et al. claim that training BatchNorm only can speed up the training of the one-shot NAS supernet
+over ten times. Critically, there is no effort to understand 1) why training BatchNorm only can find
+the perform-well architectures with the reduced supernet-training time, and 2) what is the difference
+between the train-BN-only supernet and the standard-train supernet. We begin by showing that the
+train-BN-only networks converge to the neural tangent kernel regime, obtain the same training
+dynamics as train all parameters theoretically. Our proof supports the claim to train BatchNorm
+only on supernet with less training time. Then, we empirically disclose that train-BN-only supernet
+provides an advantage on convolutions over other operators, cause unfair competition between
+architectures. This is due to only the convolution operator being attached with BatchNorm. Through
+experiments, we show that such unfairness makes the search algorithm prone to select models with
+convolutions. To solve this issue, we introduce fairness in the search space by placing a BatchNorm
+layer on every operator. However, we observe that the performance predictor in Chen et al. is inapplicable
+on the new search space. To this end, we propose a novel composite performance indicator to evaluate
+networks from three perspectives: expressivity, trainability, and uncertainty, derived from
+the theoretical property of BatchNorm. We demonstrate the effectiveness of our approach on multiple
+NAS-benchmarks (NAS-Bench101, NAS-Bench-201) and search spaces (DARTS search space and MobileNet
+search space). 

@@ -1,0 +1,20 @@
+Transformers are neural network models that utilize multiple layers of self-attention heads.
+Attention is implemented in transformers as the contextual embeddings of the 'key' and 'query'.
+Transformers allow the re-combination of attention information from different layers and the
+processing of all inputs at once, which are more convenient than recurrent neural networks when
+dealt with a large number of data. Transformers have exhibited great performances on natural language
+processing tasks in recent years. Meanwhile, there have been tremendous efforts to adapt transformers
+into other fields of machine learning, such as Swin Transformer and Decision Transformer. Swin
+Transformer is a promising neural network architecture that splits image pixels into small patches
+and applies local self-attention operations inside the (shifted) windows of fixed sizes. Decision
+Transformer has successfully applied transformers to off-line reinforcement learning and showed
+that random-walk samples from Atari games are sufficient to let an agent learn optimized behaviors.
+However, it is considerably more challenging to combine online reinforcement learning with transformers.
+In this article, we further explore the possibility of not modifying the reinforcement learning
+policy, but only replacing the convolutional neural network architecture with the self-attention
+architecture from Swin Transformer. Namely, we target at changing how an agent views the world,
+but not how an agent plans about the world. We conduct our experiment on 49 games in Arcade Learning
+Environment. The results show that using Swin Transformer in reinforcement learning achieves
+significantly higher evaluation scores across the majority of games in Arcade Learning Environment.
+Thus, we conclude that online reinforcement learning can benefit from exploiting self-attentions
+with spatial token embeddings. 

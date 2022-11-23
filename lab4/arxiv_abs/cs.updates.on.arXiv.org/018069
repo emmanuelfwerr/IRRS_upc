@@ -1,0 +1,20 @@
+Backdoor attacks have been a critical threat to deep neural network (DNN). However, most existing
+countermeasures focus on source-agnostic backdoor attacks (SABAs) and fail to defeat source-specific
+backdoor attacks (SSBAs). Compared to an SABA, an SSBA activates a backdoor when an input from attacker-chosen
+class(es) is stamped with an attacker-specified trigger, making itself stealthier and thus evade
+most existing backdoor mitigation. Nonetheless, existing SSBAs have trade-offs on attack success
+rate (ASR, a backdoor is activated by a trigger input from a source class as expected) and false positive
+rate (FPR, a backdoor is activated unexpectedly by a trigger input from a non-source class). Significantly,
+they can still be effectively detected by the state-of-the-art (SOTA) countermeasures targeting
+SSBAs. This work overcomes efficiency and effectiveness deficiencies of existing SSBAs, thus
+bypassing the SOTA defences. The key insight is to construct desired poisoned and cover data during
+backdoor training by characterising SSBAs in-depth. Both data are samples with triggers: the cover/poisoned
+data from non-source/source class(es) holds ground-truth/target labels. Therefore, two cover/poisoned
+data enhancements are developed from trigger style and content, respectively, coined CASSOCK.
+First, we leverage trigger patterns with discrepant transparency to craft cover/poisoned data,
+enforcing triggers with heterogeneous sensitivity on different classes. The second enhancement
+chooses the target class features as triggers to craft these samples, entangling trigger features
+with the target class heavily. Compared with existing SSBAs, CASSOCK-based attacks have higher
+ASR and low FPR on four popular tasks: MNIST, CIFAR10, GTSRB, and LFW. More importantly, CASSOCK
+has effectively evaded three defences (SCAn, Februus and extended Neural Cleanse) already defeat
+existing SSBAs effectively. 

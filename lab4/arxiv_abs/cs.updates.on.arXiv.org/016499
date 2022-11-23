@@ -1,0 +1,20 @@
+A four-field mixed variational principle is proposed for large deformation analysis of Kirchhoff
+rods with a $C^0$ mixed FE approximations. The core idea behind the approach is to introduce a one-parameter
+family of points (the centerline) and a separate one-parameter family of orthonormal frames (the
+Cartan moving frame) that are specified independently. The curvature and torsion of the curve are
+related to the relative rotation of neighboring frames. The relationship between the frame and
+the centerline is then enforced at the solution step using a Lagrange multiplier (which plays the
+role of section force). Well known frames like the Frenet-Serret are defined only using the centerline,
+which demands higher-order smoothness for the centerline approximation. Decoupling the frame
+from the position vector of the base curve leads to a description of torsion and curvature that is
+independent of the position information, thus allowing for simpler interpolations. This approach
+is then cast in the language of exterior calculus. In this framework, the strain energy may be interpreted
+as a differential form leading to the natural force-displacement (velocity) pairing. The four-field
+mixed variational principle we propose has frame, differential forms, and position vector as input
+arguments. While the position vector is interpolated linearly, the frames are interpolated as
+piecewise geodesics on the rotation group. Similarly, consistent interpolation schemes are also
+adopted to obtain finite dimensional approximations for other differential forms aswell. Using
+these discrete approximations, a discrete mixed variational principle is laid out which is then
+numerically extremized. The discrete approximation is then applied to benchmark problems, our
+numerical studies reveal an impressive performance of the proposed method without numerical instabilities
+or locking. 

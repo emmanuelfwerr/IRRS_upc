@@ -1,0 +1,20 @@
+We introduce locality: a new property of multi-bidder auctions that formally separates the simplicity
+of optimal single-dimensional multi-bidder auctions from the complexity of optimal multi-dimensional
+multi-bidder auctions. Specifically, consider the revenue-optimal, Bayesian Incentive Compatible
+auction for buyers with valuations drawn from $\vec{D}:=\times_i D_i$, where each distribution
+has support-size $n$. This auction takes as input a valuation profile $\vec{v}$ and produces as
+output an allocation of the items and prices to charge, $Opt_{\vec{D}}(\vec{v})$. When each $D_i$
+is single-dimensional, this mapping is locally-implementable: defining each input $v_i$ requires
+$\Theta(\log n)$ bits, and $Opt_{\vec{D}}(\vec{v})$ can be fully determined using just $\Theta(\log
+n)$ bits from each $D_i$. This follows immediately from Myerson's virtual value theory [Mye81].
+Our main result establishes that optimal multi-dimensional mechanisms are not locally-implementable:
+in order to determine the output $Opt_{\vec{D}}(\vec{v})$ on one particular input $\vec{v}$,
+one still needs to know (essentially) the entire distribution $\vec{D}$. Formally, $\Omega(n)$
+bits from each $D_i$ is necessary: (essentially) enough to fully describe $D_i$, and exponentially
+more than the $\Theta(\log n)$ needed to define the input $v_i$. We show that this phenomenon already
+occurs with just two bidders, even when one bidder is single-dimensional, and when the other bidder
+is barely multi-dimensional. More specifically, the multi-dimensional bidder is ``inter-dimensional''
+from the FedEx setting with just two days [FGKK16]. Our techniques are fairly robust: we additionally
+establish that optimal mechanisms for single-dimensional buyers with budget constraints are
+not locally-implementable. This occurs with just two bidders, even when one has no budget constraint,
+and even when the other's budget is public. 

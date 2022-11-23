@@ -1,0 +1,19 @@
+SQL is the world's most popular declarative language, forming the basis of the multi-billion-dollar
+database industry. Although SQL has been standardized, the full standard is based on ambiguous
+natural language rather than formal specification. Commercial SQL implementations interpret
+the standard in different ways, so that, given the same input data, the same query can yield different
+results depending on the SQL system it is run on. Even for a particular system, mechanically checked
+formalization of all widely-used features of SQL remains an open problem. The lack of a well-understood
+formal semantics makes it very difficult to validate the soundness of database implementations.
+Although formal semantics for fragments of SQL were designed in the past, they usually did not support
+set and bag operations, lateral joins, nested subqueries, and, crucially, null values. Null values
+complicate SQL's semantics in profound ways analogous to null pointers or side-effects in other
+programming languages. Since certain SQL queries are equivalent in the absence of null values,
+but produce different results when applied to tables containing incomplete data, semantics which
+ignore null values are able to prove query equivalences that are unsound in realistic databases.
+A formal semantics of SQL supporting all the aforementioned features was only proposed recently.
+In this paper, we report about our mechanization of SQL semantics covering set/bag operations,
+lateral joins, nested subqueries, and nulls, written in the Coq proof assistant, and describe the
+validation of key metatheoretic properties. Additionally, we are able to use the same framework
+to formalize the semantics of a flat relational calculus (with null values), and show a certified
+translation of its normal forms into SQL. 

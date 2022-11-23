@@ -1,0 +1,20 @@
+Theoretical uncertainty limits our ability to extract cosmological information from baryonic
+fields such as the thermal Sunyaev-Zel'dovich (tSZ) effect. Being sourced by the electron pressure
+field, the tSZ effect depends on baryonic physics that is usually modeled by expensive hydrodynamic
+simulations. We train neural networks on the IllustrisTNG-300 cosmological simulation to predict
+the continuous electron pressure field in galaxy clusters from gravity-only simulations. Modeling
+clusters is challenging for neural networks as most of the gas pressure is concentrated in a handful
+of voxels and even the largest hydrodynamical simulations contain only a few hundred clusters that
+can be used for training. Instead of conventional convolutional neural net (CNN) architectures,
+we choose to employ a rotationally equivariant DeepSets architecture to operate directly on the
+set of dark matter particles. We argue that set-based architectures provide distinct advantages
+over CNNs. For example, we can enforce exact rotational and permutation equivariance, incorporate
+existing knowledge on the tSZ field, and work with sparse fields as are standard in cosmology. We
+compose our architecture with separate, physically meaningful modules, making it amenable to
+interpretation. For example, we can separately study the influence of local and cluster-scale
+environment, determine that cluster triaxiality has negligible impact, and train a module that
+corrects for mis-centering. Our model improves by 70 % on analytic profiles fit to the same simulation
+data. We argue that the electron pressure field, viewed as a function of a gravity-only simulation,
+has inherent stochasticity, and model this property through a conditional-VAE extension to the
+network. This modification yields further improvement by 7 %, it is limited by our small training
+set however. (abridged) 

@@ -1,0 +1,20 @@
+Applications of multilevel models usually result in binary classification within groups or hierarchies
+based on a set of input features. For transparent and ethical applications of such models, sound
+audit frameworks need to be developed. In this paper, an audit framework for technical assessment
+of regression MLMs is proposed. The focus is on three aspects, model, discrimination, and transparency
+and explainability. These aspects are subsequently divided into sub aspects. Contributors, such
+as inter MLM group fairness, feature contribution order, and aggregated feature contribution,
+are identified for each of these sub aspects. To measure the performance of the contributors, the
+framework proposes a shortlist of KPIs. A traffic light risk assessment method is furthermore coupled
+to these KPIs. For assessing transparency and explainability, different explainability methods
+(SHAP and LIME) are used, which are compared with a model intrinsic method using quantitative methods
+and machine learning modelling. Using an open source dataset, a model is trained and tested and the
+KPIs are computed. It is demonstrated that popular explainability methods, such as SHAP and LIME,
+underperform in accuracy when interpreting these models. They fail to predict the order of feature
+importance, the magnitudes, and occasionally even the nature of the feature contribution. For
+other contributors, such as group fairness and their associated KPIs, similar analysis and calculations
+have been performed with the aim of adding profundity to the proposed audit framework. The framework
+is expected to assist regulatory bodies in performing conformity assessments of AI systems using
+multilevel binomial classification models at businesses. It will also benefit businesses deploying
+MLMs to be future proof and aligned with the European Commission proposed Regulation on Artificial
+Intelligence. 

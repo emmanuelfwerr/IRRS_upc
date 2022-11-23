@@ -1,0 +1,22 @@
+How to efficiently and reliably spread information in a system is one of the most fundamental problems
+in distributed computing. Recently, inspired by biological scenarios, several works focused
+on identifying the minimal communication resources necessary to spread information under faulty
+conditions. Here we study the self-stabilizing bit-dissemination problem, introduced by Boczkowski,
+Korman, and Natale in [SODA 2017]. The problem considers a fully-connected network of n agents,
+with a binary world of opinions, one of which is called correct. At any given time, each agent holds
+an opinion bit as its public output. The population contains a source agent which knows which opinion
+is correct. This agent adopts the correct opinion and remains with it throughout the execution.
+We consider the basic PULL model of communication, in which each agent observes relatively few randomly
+chosen agents in each round. The goal of the non-source agents is to quickly converge on the correct
+opinion, despite having an arbitrary initial configuration, i.e., in a self-stabilizing manner.
+Once the population converges on the correct opinion, it should remain with it forever. Motivated
+by biological scenarios in which animals observe and react to the behavior of others, we focus on
+the extremely constrained model of passive communication, which assumes that when observing another
+agent the only information that can be extracted is the opinion bit of that agent. We prove that this
+problem can be solved in a poly-logarithmic in n number of rounds with high probability, while sampling
+a logarithmic number of agents at each round. Previous works solved this problem faster and using
+fewer samples, but they did that by decoupling the messages sent by agents from their output opinion,
+and hence do not fit the framework of passive communication. Moreover, these works use complex recursive
+algorithms with refined clocks that are unlikely to be used by biological entities. In contrast,
+our proposed algorithm has a natural appeal as it is based on letting agents estimate the current
+tendency direction of the dynamics, and then adapt to the emerging trend. 

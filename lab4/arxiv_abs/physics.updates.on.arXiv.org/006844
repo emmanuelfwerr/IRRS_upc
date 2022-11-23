@@ -1,0 +1,20 @@
+A data-driven model augmentation framework, referred to as Weakly-coupled Integrated Inference
+and Machine Learning (IIML), is presented to improve the predictive accuracy of physical models.
+In contrast to parameter calibration, this work seeks corrections to the structure of the model
+by a) inferring augmentation fields that are consistent with the underlying model, and b) transforming
+these fields into corrective model forms. The proposed approach couples the inference and learning
+steps in a weak sense via an alternating optimization approach. This coupling ensures that the augmentation
+fields remain learnable and maintain consistent functional relationships with local modeled
+quantities across the training dataset. An iterative solution procedure is presented in this paper,
+removing the need to embed the augmentation function during the inference process. This framework
+is used to infer an augmentation introduced within a Polymer electrolyte membrane fuel cell (PEMFC)
+model using a small amount of training data (from only 14 training cases.) These training cases belong
+to a dataset consisting of high-fidelity simulation data obtained from a high-fidelity model of
+a first generation Toyota Mirai. All cases in this dataset are characterized by different inflow
+and outflow conditions on the same geometry. When tested on 1224 different configurations, the
+inferred augmentation significantly improves the predictive accuracy for a wide range of physical
+conditions. Predictions and available data for the current density distribution are also compared
+to demonstrate the predictive capability of the model for quantities of interest which were not
+involved in the inference process. The results demonstrate that the weakly-coupled IIML framework
+offers sophisticated and robust model augmentation capabilities without requiring extensive
+changes to the numerical solver. 

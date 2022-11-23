@@ -1,0 +1,20 @@
+In statistical decision theory, a model is said to be Pareto optimal (or admissible) if no other model
+carries less risk for at least one state of nature while presenting no more risk for others. How can
+you rationally aggregate/combine a finite set of Pareto optimal models while preserving Pareto
+efficiency? This question is nontrivial because weighted model averaging does not, in general,
+preserve Pareto efficiency. This paper presents an answer in four logical steps: (1) A rational
+aggregation rule should preserve Pareto efficiency (2) Due to the complete class theorem, Pareto
+optimal models must be Bayesian, i.e., they minimize a risk where the true state of nature is averaged
+with respect to some prior. Therefore each Pareto optimal model can be associated with a prior, and
+Pareto efficiency can be maintained by aggregating Pareto optimal models through their priors.
+(3) A prior can be interpreted as a preference ranking over models: prior $\pi$ prefers model A over
+model B if the average risk of A is lower than the average risk of B. (4) A rational/consistent aggregation
+rule should preserve this preference ranking: If both priors $\pi$ and $\pi'$ prefer model A over
+model B, then the prior obtained by aggregating $\pi$ and $\pi'$ must also prefer A over B. Under these
+four steps, we show that all rational/consistent aggregation rules are as follows: Give each individual
+Pareto optimal model a weight, introduce a weak order/ranking over the set of Pareto optimal models,
+aggregate a finite set of models S as the model associated with the prior obtained as the weighted
+average of the priors of the highest-ranked models in S. This result shows that all rational/consistent
+aggregation rules must follow a generalization of hierarchical Bayesian modeling. Following
+our main result, we present applications to Kernel smoothing, time-depreciating models, and voting
+mechanisms. 

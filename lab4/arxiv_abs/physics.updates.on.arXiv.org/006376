@@ -1,0 +1,18 @@
+Molecular simulation technologies have afforded researchers a unique look into the nanoscale
+interactions driving physical processes. However, a limitation for molecular dynamics (MD) simulations
+is that they must be performed on finite-sized systems in order to map onto computational resources.
+To minimize artifacts arising from finite-sized simulation systems, it is common practice for
+MD simulations to be performed with periodic boundary conditions (PBC). However, in order to calculate
+specific physical properties, such as mean square displacements to calculate diffusion coefficients,
+continuous particle trajectories where the atomic movements are continuous and do not jump between
+cell faces are required. In these cases, modifying atomic coordinates through unwrapping schemes
+are an essential post-processing tool to remove these jumps. Here, two established trajectory
+unwrapping schemes are applied to 1us wrapped trajectories for a small water box. The existing schemes
+can result in spurious diffusion coefficients, long bonds within unwrapped molecules, and inconsistent
+atomic coordinates when coordinates are rewrapped after unwrapping. We determine that prior unwrapping
+schemes do not account for changing periodic box dimensions, and introduce an additional correction
+term to the existing displacement unwrapping scheme by von Bulow et al. to correct for these artifacts.
+We also demonstrate that the resulting algorithm is a hybrid between the existing heuristic and
+displacement unwrapping schemes. After treatment with this new unwrapping scheme, molecular
+geometries are correct even after long simulations. In anticipation for longer molecular dynamics
+trajectories, we develop implementations for this new scheme in multiple PBC handling tools. 

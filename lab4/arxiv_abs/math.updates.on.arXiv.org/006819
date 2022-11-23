@@ -1,0 +1,18 @@
+To efficiently exploit the massive raw data that is pervading generated at mobile edge networks,
+federated learning (FL) has emerged as a promising distributed learning technique that was regarded
+as a substitute for centralized learning operations. By collaboratively training a shared learning
+model at edge devices, the raw data transmission and storage are bypassed via the local computed
+parameters/gradients exchange in FL. Hence, FL can overcome high communication latency and privacy
+issues. While the high dimensionality in iterative updates (millions of parameters/gradients
+may be included in the model training) still conflicts with the scarcity of communication resources.
+Over-the-air computation (AirComp) has come into the spotlight recently which profitably leverages
+the inherent superposition property of wireless channels to perform efficient model aggeration.
+However, the model aggregation accuracy is still severely damaged by the unfavorable wireless
+propagation channels. In this paper, we harness the intelligent reflecting surface (IRS) to program
+the wireless channel, thus acquiring a satisfying learning performance. Specifically, a performance-oriented
+design scheme that directly minimizes the optimality gap of the loss function is proposed to accelerate
+the convergence of AirComp based FL. Firstly, we analyze the convergence behavior of the FL procedure.
+Then, both offline and online design approaches are proposed based on the obtained optimality gap.
+We adopt the block coordinate descent (BCD) method to tackle the highly-intractable problem. Simulation
+results demonstrate that such a performance-oriented design strategy can achieve higher test
+accuracy than the conventional isolated mean square error (MSE) minimization approach in FL. 

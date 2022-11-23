@@ -1,0 +1,18 @@
+In this article we present an algorithm to efficiently evaluate the exchange matrix in periodic
+systems when Gaussian basis set with pseudopotentials are used. The usual algorithm for evaluating
+exchange matrix scales cubically with the system size because one has to perform $O(N^{2})$ fast
+Fourier transforms (FFT). Here we introduce an algorithm that retains the cubic scaling but reduces
+the prefactor significantly by eliminating the need to do FFTs during each exchange build. This
+is accomplished by representing the products of Gaussian basis function using a linear combination
+of an auxiliary basis the number of which scales linearly with the size of the system. We store the
+potential due to these auxiliary functions in memory which allows us to obtain the exchange matrix
+without the need to do FFT, albeit at the cost of additional memory requirement. Although the basic
+idea of using auxiliary functions is not new, our algorithm is cheaper due to a combination of three
+ingredients: (a) we use robust Pseudospectral method that allows us to use a relatively small number
+of auxiliary basis to obtain high accuracy (b) we use occ-RI exchange which eliminates the need to
+construct the full exchange matrix and (c) we use the (interpolative separable density fitting)
+ISDF algorithm to construct these auxiliary basis that are used in the robust pseudospectral method.
+The resulting algorithm is accurate and we note that the error in the final energy decreases exponentially
+rapidly with the number of auxiliary functions. Finally, we find that the wall time of 62 s and 118
+s are needed for a single build of the Coulomb and exchange matrices respectively on 16 nodes for a
+Li$_{256}$H$_{256}$ unit cell that contains 1024 electrons and 4864 basis functions. 

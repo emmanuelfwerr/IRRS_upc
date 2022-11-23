@@ -1,0 +1,20 @@
+Short-time Fourier transform (STFT) phase retrieval refers to the reconstruction of a signal $f$
+from its spectrogram, i.e., the magnitudes of its STFT $$V_gf(x,\omega):=\int_{\mathbb{R}}f(t)\overline{g(t-x)}e^{-2\pi
+it\omega} dt,$$ and appears as a central problem in several applications, including coherent diffraction
+imaging and audio processing. It is known that for several window functions $g$, any function $f\in
+L^2(\mathbb{R})$ can be reconstructed from the full spectrogram $|V_g f(\mathbb{R}^2)|$, but
+in practice the reconstruction needs to be achieved only from discrete samples of $|V_gf(\Lambda)|$,
+typically from a lattice $\Lambda = A\mathbb{Z}^2$. It turns out that the sampled problem becomes
+much more subtle: recently established discretization barriers state that uniqueness via lattice
+sampling is never achievable in $L^2(\mathbb{R})$, irrespective of the window function $g$ and
+the density of the lattice. In the present paper we therefore initiate the study of multi-window
+STFT phase retrieval. We discover a novel connection between multi-window STFT phase retrieval
+and sampling in Fock space, allowing us to establish uniqueness results on the recoverability of
+square-integrable functions from spectrogram samples located on lattices. Precisely, we specify
+conditions on window functions $g_1,\dots,g_4\in L^2(\mathbb{R})$ such that every $f\in\mathbb{R}$
+is determined up to a global phase by $$ \left(|V_{g_1}f(A\mathbb{Z}^2)|,\ldots,|V_{g_4}f(A\mathbb{Z}^2)|\right)$$
+whenever $A\in\mathrm{GL}_2(\mathbb{R})$ satisfies the density condition $|\det A|^{-1} \geq4$.
+For real-valued signals $f\in L^2(\mathbb{R},\mathbb{R})$ it suffices that $|\det A|^{-1}\geq2$.
+Corresponding results for irregular sampling are also shown. Our results thereby overcome the
+aforementioned discretization barriers and constitute the first ever general uniqueness result
+for sampled STFT phase retrieval. 

@@ -1,0 +1,20 @@
+Offline reinforcement learning leverages previously-collected offline datasets to learn optimal
+policies with no necessity to access the real environment. Such a paradigm is also desirable for
+multi-agent reinforcement learning (MARL) tasks, given the increased interactions among agents
+and with the enviroment. Yet, in MARL, the paradigm of offline pre-training with online fine-tuning
+has not been studied, nor datasets or benchmarks for offline MARL research are available. In this
+paper, we facilitate the research by providing large-scale datasets, and use them to examine the
+usage of the Decision Transformer in the context of MARL. We investigate the generalisation of MARL
+offline pre-training in the following three aspects: 1) between single agents and multiple agents,
+2) from offline pretraining to the online fine-tuning, and 3) to that of multiple downstream tasks
+with few-shot and zero-shot capabilities. We start by introducing the first offline MARL dataset
+with diverse quality levels based on the StarCraftII environment, and then propose the novel architecture
+of multi-agent decision transformer (MADT) for effective offline learning. MADT leverages transformer's
+modelling ability of sequence modelling and integrates it seamlessly with both offline and online
+MARL tasks. A crucial benefit of MADT is that it learns generalisable policies that can transfer
+between different types of agents under different task scenarios. On StarCraft II offline dataset,
+MADT outperforms the state-of-the-art offline RL baselines. When applied to online tasks, the
+pre-trained MADT significantly improves sample efficiency, and enjoys strong performance both
+few-short and zero-shot cases. To our best knowledge, this is the first work that studies and demonstrates
+the effectiveness of offline pre-trained models in terms of sample efficiency and generalisability
+enhancements in MARL. 

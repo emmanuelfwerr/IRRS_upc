@@ -1,0 +1,19 @@
+The objective of this study is to develop and test a novel structured deep-learning modeling framework
+for urban flood nowcasting by integrating physics-based and human-sensed features. We present
+a new computational modeling framework including an attention-based spatial-temporal graph
+convolution network (ASTGCN) model and different streams of data that are collected in real-time,
+preprocessed, and fed into the model to consider spatial and temporal information and dependencies
+that improve flood nowcasting. The novelty of the computational modeling framework is threefold;
+first, the model is capable of considering spatial and temporal dependencies in inundation propagation
+thanks to the spatial and temporal graph convolutional modules; second, it enables capturing the
+influence of heterogeneous temporal data streams that can signal flooding status, including physics-based
+features such as rainfall intensity and water elevation, and human-sensed data such as flood reports
+and fluctuations of human activity. Third, its attention mechanism enables the model to direct
+its focus on the most influential features that vary dynamically. We show the application of the
+modeling framework in the context of Harris County, Texas, as the case study and Hurricane Harvey
+as the flood event. Results indicate that the model provides superior performance for the nowcasting
+of urban flood inundation at the census tract level, with a precision of 0.808 and a recall of 0.891,
+which shows the model performs better compared with some other novel models. Moreover, ASTGCN model
+performance improves when heterogeneous dynamic features are added into the model that solely
+relies on physics-based features, which demonstrates the promise of using heterogenous human-sensed
+data for flood nowcasting, 

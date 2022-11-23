@@ -1,0 +1,19 @@
+Driven largely by multiple ground-based radial-velocity (RV) surveys and photometric space missions
+such as Kepler and K2, the discovery of new exoplanets has increased rapidly since the early 2000s.
+However, due to a target selection bias in favor of main-sequence stars, only a handful of transiting
+planets have been found orbiting evolved hosts. These planets, most of which are giants, hold important
+information regarding the formation and evolution of planetary systems. In this thesis, I sought
+to increase the sample of known giant planets orbiting red-giant stars, focusing on data from NASA's
+Transiting Exoplanet Survey Satellite (TESS) mission, and to improve their characterization.
+Specifically, I focused on close-in giant planets orbiting (preferably) oscillating low-luminosity
+red-giant branch (LLRGB) stars. To improve characterization, I developed a method to model planetary
+transits and stellar signals simultaneously, implementing Gaussian processes to model stellar
+granulation and the oscillations envelope in the time domain. My results show that the model enables
+time-domain asteroseismology, inferring the frequency of maximum oscillation amplitude, $\nu_\text{max}$,
+to within 1\%. The method's implementation is open-source and available to the community. Regarding
+the planet search, I assembled a pipeline, mostly comprised of third-party open-source software
+and explored a sample of $\sim$40,000 bright LLRGB stars in the southern hemisphere of TESS's field
+of view. The search identified four planet candidates, two of which are not currently known planets
+and orbit red-giant stars. Radial-velocity follow-up observations of both these candidates have
+tentatively confirmed their planetary nature. Finally, I also confirmed the planetary nature
+of an additional candidate, not part of the above sample, through RV observations. 

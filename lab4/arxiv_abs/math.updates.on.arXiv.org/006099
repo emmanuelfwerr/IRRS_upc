@@ -1,0 +1,20 @@
+Reaction networks (RNs) comprise a set $X$ of species and a set $\mathscr{R}$ of reactions $Y\to
+Y'$, each converting a multiset of educts $Y\subseteq X$ into a multiset $Y'\subseteq X$ of products.
+RNs are equivalent to directed hypergraphs. However, not all RNs necessarily admit a chemical interpretation.
+Instead, they might contradict fundamental principles of physics such as the conservation of energy
+and mass or the reversibility of chemical reactions. The consequences of these necessary conditions
+for the stoichiometric matrix $\mathbf{S} \in \mathbb{R}^{X\times\mathscr{R}}$ have been discussed
+extensively in the literature. Here, we provide sufficient conditions for $\mathbf{S}$ that guarantee
+the interpretation of RNs in terms of balanced sum formulas and structural formulas, respectively.
+Chemically plausible RNs allow neither a perpetuum mobile, i.e., a "futile cycle" of reactions
+with non-vanishing energy production, nor the creation or annihilation of mass. Such RNs are said
+to be thermodynamically sound and conservative. For finite RNs, both conditions can be expressed
+equivalently as properties of $\mathbf{S}$. The first condition is vacuous for reversible networks,
+but it excludes irreversible futile cycles and - in a stricter sense - futile cycles that even contain
+an irreversible reaction. The second condition is equivalent to the existence of a strictly positive
+reaction invariant. Furthermore, it is sufficient for the existence of a realization in terms of
+sum formulas, obeying conservation of "atoms". In particular, these realizations can be chosen
+such that any two species have distinct sum formulas, unless $\mathbf{S}$ implies that they are
+"obligatory isomers". In terms of structural formulas, every compound is a labeled multigraph,
+in essence a Lewis formula, and reactions comprise only a rearrangement of bonds such that the total
+bond order is preserved. 

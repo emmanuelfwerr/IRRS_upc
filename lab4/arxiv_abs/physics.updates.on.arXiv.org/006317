@@ -1,0 +1,20 @@
+A discrete-module-finite element (DMFE) based hydroelasticity method has been proposed and well
+developed. Firstly, a freely floating flexible structure is discretized into several macro-submodules
+in two horizontal directions to perform a multi-rigid-body hydrodynamic analysis. Each macro-submodule
+is then abstracted to a lumped mass at the center of gravity that bears the external forces including
+inertia force, hydrodynamic force and hydrostatic force. Apart from external forces, all lumped
+masses are also subjected to structural forces that reflect the structural deformation features
+of the original flexible structure. The key to calculating the structural forces is derivation
+of the equivalent overall structural stiffness matrix with respect to the displacements of all
+lumped masses, which is tackled following the finite element procedure. More specifically, each
+macro-submodule is discretized into a number of microelements to derive the corresponding structural
+stiffness matrix, which is manipulated to a new one including only the nodes at the position of the
+lumped masses and surrounding boundaries by using the substructure approach, and subsequently
+the target overall stiffness matrix is obtained by combining together all macro-submodules. Finally,
+based on equivalence between external and structural forces, the DMFE method establishes the hydroelastic
+equation on all lumped masses with their displacements as unknown variables. Solving the equation
+gives the displacement response of all lumped masses. Displacement and structural force responses
+are first calculated on the interfaces of every two adjacent macro-submodules, after which at any
+given position of the flexible structure, the recovery of displacement is based on the structural
+stiffness matrix of the corresponding macro-submodule and the recovery of structural force uses
+the spline interpolation scheme. 

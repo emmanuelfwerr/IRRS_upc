@@ -1,0 +1,19 @@
+Teachers often conduct surveys in order to collect data from a predefined group of students to gain
+insights into topics of interest. When analyzing surveys with open-ended textual responses, it
+is extremely time-consuming, labor-intensive, and difficult to manually process all the responses
+into an insightful and comprehensive report. In the analysis step, traditionally, the teacher
+has to read each of the responses and decide on how to group them in order to extract insightful information.
+Even though it is possible to group the responses only using certain keywords, such an approach would
+be limited since it not only fails to account for embedded contexts but also cannot detect polysemous
+words or phrases and semantics that are not expressible in single words. In this work, we present
+a novel end-to-end context-aware framework that extracts, aggregates, and abbreviates embedded
+semantic patterns in open-response survey data. Our framework relies on a pre-trained natural
+language model in order to encode the textual data into semantic vectors. The encoded vectors then
+get clustered either into an optimally tuned number of groups or into a set of groups with pre-specified
+titles. In the former case, the clusters are then further analyzed to extract a representative set
+of keywords or summary sentences that serve as the labels of the clusters. In our framework, for the
+designated clusters, we finally provide context-aware wordclouds that demonstrate the semantically
+prominent keywords within each group. Honoring user privacy, we have successfully built the on-device
+implementation of our framework suitable for real-time analysis on mobile devices and have tested
+it on a synthetic dataset. Our framework reduces the costs at-scale by automating the process of
+extracting the most insightful information pieces from survey data. 

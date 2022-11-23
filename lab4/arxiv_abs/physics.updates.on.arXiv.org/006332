@@ -1,0 +1,19 @@
+The critical heat flux (CHF) is an important thermal-hydraulic parameter that must be determined
+during the design of water-cooled reactors to ensure safety of operation. In this paper, a methodology
+is proposed to predict the CHF in VVER rod bundles. A whole-reactor model of VVER-1000 is implemented
+in RELAP-SCDAPSIM, and, based on the bundle-average approach, the parameters of the hot channel
+are used to assess four CHF predictors (i.e., the 2006 Groeneveld look-up table (LUT), and the Bowring,
+W-3, Biasi, and OKB-Gidropress correlations) upon comparison with the 2011 Bobkov LUT. A brief
+critique is given of the correction factors for both the Groeneveld and Bobkov LUTs. The effects
+of channel diameter and non-uniform axial heat flux on the predicted values of CHF in subcooled conditions
+are also studied. The performance and time complexity of the standard and Bourke trilinear interpolation
+algorithms are assessed for use with LUTs in safety codes. It has been concluded that the non-uniform
+axial heat flux does not affect the CHF in subcooled conditions and that the Groeneveld diameter
+factor exponent gives better predictability of the CHF in VVER rod bundles over the Tanase and Wong
+exponent correlations. Additionally, the Groeneveld LUT has been found to nearly reproduces the
+Bobkov LUT CHF values when used in conjunction with the Bobkov heated length factor. Values of MDNBR
+equal to 1.83 and 1.96 can be used as thermal limits at 12\% overpower when the Bowring and W-3 correlations,
+respectively, are used in subcooled conditions. The standard and Bourke algorithms nearly exhibit
+the same average CPU time. The Bourke algorithm, however, is less affected by noise. Further research
+is needed to ensure the smoothness of the Bobkov LUT and to derive reactor type-dependent correction
+factor formulas for use with the Groeneveld LUT. 

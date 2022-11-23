@@ -1,0 +1,19 @@
+Molecules in molecular junctions are subject to current-induced forces that can break chemical
+bonds, induce reactions, destabilize molecular geometry, and halt the operation of the junction.
+Theories behind current-driven molecular dynamics simulations rely on a perturbative time-scale
+separation within the system with subsequent use of nonequilibrium Green's functions (NEGF) to
+compute conservative, non-conservative, and stochastic forces exerted by electrons on nuclear
+degrees of freedom. We analyze the effectiveness of this approximation, paying particular attention
+to the phenomenon of negative viscosities. The perturbative approximation is directly compared
+to the nonequilibrium Ehrenfest approach. We introduce a novel time-stepping approach to calculate
+the forces present in the Ehrenfest method via exact integration of the equations of motion for the
+nonequilibrium Green's functions, which does not necessitate a time-scale separation within
+the system and provides an exact description for the corresponding classical dynamics. We observe
+that negative viscosities are not artifacts of a perturbative treatment but also emerge in Ehrenfest
+dynamics. However, the effects of negative viscosity have the possibility of being overwhelmed
+by the predominantly positive dissipation due to the higher-order forces unaccounted for by the
+perturbative approach. Additionally, we assess the validity of the white-noise approximation
+for the stochastic forces, finding that it is justifiable in the presence of a clear time-scale separation
+and is more applicable when the current-carrying molecular orbital is moved outside of the voltage
+window. Finally, we demonstrate the method for molecular junction models consisting of one and
+two classical degrees of freedom. 

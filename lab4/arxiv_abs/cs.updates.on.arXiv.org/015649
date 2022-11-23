@@ -1,0 +1,20 @@
+To quantify uncertainties of the inverse problems governed by partial differential equations
+(PDEs), the inverse problems are transformed into statistical inference problems based on Bayes'
+formula. Recently, infinite-dimensional Bayesian analysis methods are introduced to give a rigorous
+characterization and construct dimension-independent algorithms. However, there are three
+major challenges for infinite-dimensional Bayesian methods: prior measures usually only behaves
+like regularizers (can hardly incorporate prior information efficiently); complex noises (e.g.,
+more practical non-identically distributed noises) are rarely considered; many computationally
+expensive forward PDEs need to be solved in order to estimate posterior statistical quantities.
+To address these issues, we propose a general infinite-dimensional inference framework based
+on a detailed analysis on the infinite-dimensional variational inference method and the ideas
+of deep generative models that are popular in the machine learning community. Specifically, by
+introducing some measure equivalence assumptions, we derive the evidence lower bound in the infinite-dimensional
+setting and provide possible parametric strategies that yield a general inference framework named
+variational inverting network (VINet). This inference framework has the ability to encode prior
+and noise information from learning examples. In addition, relying on the power of deep neural networks,
+the posterior mean and variance can be efficiently generated in the inference stage in an explicit
+manner. In numerical experiments, we design specific network structures that yield a computable
+VINet from the general inference framework.Numerical examples of linear inverse problems governed
+by an elliptic equation and the Helmholtz equation are given to illustrate the effectiveness of
+the proposed inference framework. 

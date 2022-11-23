@@ -1,0 +1,19 @@
+During the diagnosis of ischemic strokes, the Circle of Willis and its surrounding vessels are the
+arteries of interest. Their visualization in case of an acute stroke is often enabled by Computed
+Tomography Angiography (CTA). Still, the identification and analysis of the cerebral arteries
+remain time consuming in such scans due to a large number of peripheral vessels which may disturb
+the visual impression. In previous work we proposed VirtualDSA++, an algorithm designed to segment
+and label the cerebrovascular tree on CTA scans. Especially with stroke patients, labeling is a
+delicate procedure, as in the worst case whole hemispheres may not be present due to impeded perfusion.
+Hence, we extended the labeling mechanism for the cerebral arteries to identify occluded vessels.
+In the work at hand, we place the algorithm in a clinical context by evaluating the labeling and occlusion
+detection on stroke patients, where we have achieved labeling sensitivities comparable to other
+works between 92\,\% and 95\,\%. To the best of our knowledge, ours is the first work to address labeling
+and occlusion detection at once, whereby a sensitivity of 67\,\% and a specificity of 81\,\% were
+obtained for the latter. VirtualDSA++ also automatically segments and models the intracranial
+system, which we further used in a deep learning driven follow up work. We present the generic concept
+of iterative systematic search for pathways on all nodes of said model, which enables new interactive
+features. Exemplary, we derive in detail, firstly, the interactive planning of vascular interventions
+like the mechanical thrombectomy and secondly, the interactive suppression of vessel structures
+that are not of interest in diagnosing strokes (like veins). We discuss both features as well as further
+possibilities emerging from the proposed concept. 

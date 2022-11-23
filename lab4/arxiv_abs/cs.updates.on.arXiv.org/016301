@@ -1,0 +1,18 @@
+Development of new algorithms in the area of machine learning, especially clustering, comparative
+studies of such algorithms as well as testing according to software engineering principles requires
+availability of labeled data sets. While standard benchmarks are made available, a broader range
+of such data sets is necessary in order to avoid the problem of overfitting. In this context, theoretical
+works on axiomatization of clustering algorithms, especially axioms on clustering preserving
+transformations are quite a cheap way to produce labeled data sets from existing ones. However,
+the frequently cited axiomatic system of Kleinberg:2002, as we show in this paper, is not applicable
+for finite dimensional Euclidean spaces, in which many algorithms like $k$-means, operate. In
+particular, the so-called outer-consistency axiom fails upon making small changes in datapoint
+positions and inner-consistency axiom is valid only for identity transformation in general settings.
+Hence we propose an alternative axiomatic system, in which Kleinberg's inner consistency axiom
+is replaced by a centric consistency axiom and outer consistency axiom is replaced by motion consistency
+axiom. We demonstrate that the new system is satisfiable for a hierarchical version of $k$-means
+with auto-adjusted $k$, hence it is not contradictory. Additionally, as $k$-means creates convex
+clusters only, we demonstrate that it is possible to create a version detecting concave clusters
+and still the axiomatic system can be satisfied. The practical application area of such an axiomatic
+system may be the generation of new labeled test data from existent ones for clustering algorithm
+testing. %We propose the gravitational consistency as a replacement which does not have this deficiency.

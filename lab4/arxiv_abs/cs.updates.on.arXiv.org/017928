@@ -1,0 +1,18 @@
+Deep subspace clustering has attracted increasing attention in recent years. Almost all the existing
+works are required to load the whole training data into one batch for learning the self-expressive
+coefficients in the framework of deep learning. Although these methods achieve promising results,
+such a learning fashion severely prevents from the usage of deeper neural network architectures
+(e.g., ResNet), leading to the limited representation abilities of the models. In this paper, we
+propose a new deep subspace clustering framework, motivated by the energy-based models. In contrast
+to previous approaches taking the weights of a fully connected layer as the self-expressive coefficients,
+we propose to learn an energy-based network to obtain the self-expressive coefficients by mini-batch
+training. By this means, it is no longer necessary to load all data into one batch for learning, and
+it thus becomes a reality that we can utilize deeper neural network models for subspace clustering.
+Considering the powerful representation ability of the recently popular self-supervised learning,
+we attempt to leverage self-supervised representation learning to learn the dictionary. Finally,
+we propose a joint framework to learn both the self-expressive coefficients and dictionary simultaneously,
+and train the model in an end-to-end manner. The experiments are performed on three publicly available
+datasets, and extensive experimental results demonstrate our method can significantly outperform
+the other related approaches. For instance, on the three datasets, our method can averagely achieve
+$13.8\%$, $15.4\%$, $20.8\%$ improvements in terms of Accuracy, NMI, and ARI over SENet which is
+proposed very recently and obtains the second best results in the experiments. 

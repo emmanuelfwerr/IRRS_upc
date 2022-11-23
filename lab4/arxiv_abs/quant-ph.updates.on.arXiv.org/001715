@@ -1,0 +1,19 @@
+Significant challenges remain with the development of macroscopic quantum computing, hardware
+problems of noise, decoherence, and scaling, software problems of error correction, and, most
+important, algorithm construction. Finding truly quantum algorithms is quite difficult, and
+many quantum algorithms, like Shor prime factoring or phase estimation, require extremely long
+circuit depth for any practical application, necessitating error correction. Machine learning
+can be used as a systematic method to nonalgorithmically program quantum computers. Quantum machine
+learning enables us to perform computations without breaking down an algorithm into its gate building
+blocks, eliminating that difficult step and potentially reducing unnecessary complexity. In
+addition, we have shown that our machine learning approach is robust to both noise and to decoherence,
+which is ideal for running on inherently noisy NISQ devices which are limited in the number of qubits
+available for error correction. We demonstrated this using a fundamentally non classical calculation,
+experimentally estimating the entanglement of an unknown quantum state. Results from this have
+been successfully ported to the IBM hardware and trained using a powerful hybrid reinforcement
+learning technique which is a modified Levenberg Marquardt LM method. The LM method is ideally suited
+to quantum machine learning as it only requires knowledge of the final measured output of the quantum
+computation, not intermediate quantum states which are generally not accessible. Since it processes
+all the learning data simultaneously, it also requires significantly fewer hits on the quantum
+hardware. Machine learning is demonstrated with results from simulations and runs on the IBM Qiskit
+hardware interface. 

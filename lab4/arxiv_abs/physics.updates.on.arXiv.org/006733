@@ -1,0 +1,20 @@
+The stair phase coding patterns have been widely used to determine the fringe order for phase unwrapping
+of the wrapped phase in 3D shape measurement. Although the special coding sequence algorithm can
+achieve with a large number of codewords, it needs current codeword and its adjacent codewords to
+jointly determine the fringe order. If any codeword of the grouped adjacent codewords is incorrectly
+recognized, it will result in false fringe order.Therefore, it is challenging to significantly
+increase the number of codewords. When it is necessary to simultaneously measure more than two isolated
+objects with large size differences, if the fringe frequency is high, the number of fringes on the
+smaller objects is too few to determine the fringe orders. On the other hand, if the fringe frequency
+is low, the image can not contain all isolated objects at the same time. To solve this problem, we propose
+an absolute phase measurement method based on bidirectional coding patterns. The wrapped phase
+of the object is obtained by fou step phase shifting patterns, and the fringe orders is obtained by
+two bidirectional coded patterns. When coding the bidirectional patterns, we code two groups of
+stair phase with different frequency along horizontal direction, which respectively represent
+local fringe order information and partition information, then, we alternately repeated the two
+groups of stair phase along the vertical direction to obtain the bidirectional coding patterns
+in the whole pattern. Each local fringe order information and the corresponding partition information
+in small region jointly determine the fringe order of each position in the wrapped phase. To verify
+the effectiveness of our method, we did simulations and three experiments. Simulation and experimental
+results show that our method is effective for complex surfaces and isolated objects with different
+sizes. 

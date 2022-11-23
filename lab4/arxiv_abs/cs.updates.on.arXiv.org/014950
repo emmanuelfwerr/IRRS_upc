@@ -1,0 +1,19 @@
+In this work we study the orbit recovery problem over $SO(3)$, where the goal is to recover a band-limited
+function on the sphere from noisy measurements of randomly rotated copies of it. This is a natural
+abstraction for the problem of recovering the three-dimensional structure of a molecule through
+cryo-electron tomography. Symmetries play an important role: Recovering the function up to rotation
+is equivalent to solving a system of polynomial equations that comes from the invariant ring associated
+with the group action. Prior work investigated this system through computational algebra tools
+up to a certain size. However many statistical and algorithmic questions remain: How many moments
+suffice for recovery, or equivalently at what degree do the invariant polynomials generate the
+full invariant ring? And is it possible to algorithmically solve this system of polynomial equations?
+We revisit these problems from the perspective of smoothed analysis whereby we perturb the coefficients
+of the function in the basis of spherical harmonics. Our main result is a quasi-polynomial time algorithm
+for orbit recovery over $SO(3)$ in this model. We analyze a popular heuristic called frequency marching
+that exploits the layered structure of the system of polynomial equations by setting up a system
+of {\em linear} equations to solve for the higher-order frequencies assuming the lower-order ones
+have already been found. The main questions are: Do these systems have a unique solution? And how
+fast can the errors compound? Our main technical contribution is in bounding the condition number
+of these algebraically-structured linear systems. Thus smoothed analysis provides a compelling
+model in which we can expand the types of group actions we can handle in orbit recovery, beyond the
+finite and/or abelian case. 

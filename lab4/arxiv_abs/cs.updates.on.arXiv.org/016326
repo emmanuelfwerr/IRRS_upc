@@ -1,0 +1,19 @@
+The first phase of developing an intelligent system is the selection of an ontology of symbols representing
+relevant concepts of the application domain. These symbols are then used to represent the knowledge
+of the domain. This representation should be \emph{elaboration tolerant}, in the sense that it
+should be convenient to modify it to take into account new knowledge or requirements. Unfortunately,
+current formalisms require a significant rewrite of that representation when the new knowledge
+is about the \emph{concepts} themselves: the developer needs to "\emph{reify}" them. This happens,
+for example, when the new knowledge is about the number of concepts that satisfy some conditions.
+The value of expressing knowledge about concepts, or "intensions", has been well-established
+in \emph{modal logic}. However, the formalism of modal logic cannot represent the quantifications
+and aggregates over concepts that some applications need. To address this problem, we developed
+an extension of first order logic that allows referring to the \emph{intension} of a symbol, i.e.,
+to the concept it represents. We implemented this extension in IDP-Z3, a reasoning engine for FO($\cdot$)
+(aka FO-dot), a logic-based knowledge representation language. This extension makes the formalism
+more elaboration tolerant, but also introduces the possibility of syntactically incorrect formula.
+Hence, we developed a guarding mechanism to make formula syntactically correct, and a method to
+verify correctness. The complexity of this method is linear with the length of the formula. This
+paper describes these extensions, how their relate to intensions in modal logic and other formalisms,
+and how they allowed representing the knowledge of four different problem domains in an elaboration
+tolerant way. 

@@ -1,0 +1,19 @@
+This paper presents a novel approach for autonomous cooperating UAVs in search and rescue operations
+in subterranean domains with complex topology. The proposed system was ranked second in the Virtual
+Track of the DARPA SubT Finals as part of the team CTU-CRAS-NORLAB. In contrast to the winning solution
+that was developed specifically for the Virtual Track, the proposed solution also proved to be a
+robust system for deployment onboard physical UAVs flying in the extremely harsh and confined environment
+of the real-world competition. The proposed approach enables fully autonomous and decentralized
+deployment of a UAV team with seamless simulation-to-world transfer, and proves its advantage
+over less mobile UGV teams in the flyable space of diverse environments. The main contributions
+of the paper are present in the mapping and navigation pipelines. The mapping approach employs novel
+map representations -- SphereMap for efficient risk-aware long-distance planning, FacetMap
+for surface coverage, and the compressed topological-volumetric LTVMap for allowing multi-robot
+cooperation under low-bandwidth communication. These representations are used in navigation
+together with novel methods for visibility-constrained informed search in a general 3D environment
+with no assumptions about the environment structure, while balancing deep exploration with sensor-coverage
+exploitation. The proposed solution also includes a visual-perception pipeline for on-board
+detection and localization of objects of interest in four RGB stream at 5 Hz each without a dedicated
+GPU. Apart from participation in the DARPA SubT, the performance of the UAV system is supported by
+extensive experimental verification in diverse environments with both qualitative and quantitative
+evaluation. 

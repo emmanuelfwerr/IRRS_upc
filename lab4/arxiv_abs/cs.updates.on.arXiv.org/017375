@@ -1,0 +1,18 @@
+Creating and maintaining a modern, heterogeneous set of client applications remains an obstacle
+for many businesses and individuals. While simple domain-specific graphical languages and libraries
+can empower a variety of users to create application behaviors and logic, using these languages
+to produce and maintain a set of heterogeneous client applications is a challenge. Primarily because
+each client typically requires the developers to both understand and embed the domain-specific
+logic. This is because application logic must be encoded to some extent in both the server and client
+sides. In this paper, we propose an alternative approach, which allows the specification of application
+logic to reside solely on the cloud. We have built a system where reusable application components
+can be assembled on the cloud in different logical chains and the client is largely decoupled from
+this logic and is solely concerned with how data is displayed and gathered from users of the application.
+In this way, the chaining of requests and responses is done by the cloud and the client side has no knowledge
+of the application logic. An additional effect of our approach is that the client side developer
+is able to immediately see any changes they make, while executing the logic residing on the cloud.
+This further allows more novice programmers to perform these customizations, as they do not need
+to `get the full application working' and are able to see the results of their code as they go, thereby
+lowering the obstacles to businesses and individuals to produce and maintain applications. Furthermore,
+this decoupling enables the quick generation and customization of a variety of application clients,
+ranging from web to mobile devices and personal assistants, while customizing one or more as needed.

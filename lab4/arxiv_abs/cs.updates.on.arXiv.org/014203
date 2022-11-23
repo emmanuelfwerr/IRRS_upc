@@ -1,0 +1,20 @@
+Semi-supervised learning provides great significance in left atrium (LA) segmentation model
+learning with insufficient labelled data. Generalising semi-supervised learning to cross-domain
+data is of high importance to further improve model robustness. However, the widely existing distribution
+difference and sample mismatch between different data domains hinder the generalisation of semi-supervised
+learning. In this study, we alleviate these problems by proposing an Adaptive Hierarchical Dual
+Consistency (AHDC) for the semi-supervised LA segmentation on cross-domain data. The AHDC mainly
+consists of a Bidirectional Adversarial Inference module (BAI) and a Hierarchical Dual Consistency
+learning module (HDC). The BAI overcomes the difference of distributions and the sample mismatch
+between two different domains. It mainly learns two mapping networks adversarially to obtain two
+matched domains through mutual adaptation. The HDC investigates a hierarchical dual learning
+paradigm for cross-domain semi-supervised segmentation based on the obtained matched domains.
+It mainly builds two dual-modelling networks for mining the complementary information in both
+intra-domain and inter-domain. For the intra-domain learning, a consistency constraint is applied
+to the dual-modelling targets to exploit the complementary modelling information. For the inter-domain
+learning, a consistency constraint is applied to the LAs modelled by two dual-modelling networks
+to exploit the complementary knowledge among different data domains. We demonstrated the performance
+of our proposed AHDC on four 3D late gadolinium enhancement cardiac MR (LGE-CMR) datasets from different
+centres and a 3D CT dataset. Compared to other state-of-the-art methods, our proposed AHDC achieved
+higher segmentation accuracy, which indicated its capability in the cross-domain semi-supervised
+LA segmentation. 

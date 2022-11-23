@@ -1,0 +1,18 @@
+As acute climate change impacts weather and climate variability, there is increased demand for
+robust climate impact model predictions from which forecasts of the impacts can be derived. The
+quality of those predictions are limited by the climate drivers for the impact models which are nonlinear
+and highly variable in nature. One way to estimate the uncertainty of the model drivers is to assess
+the distribution of ensembles of climate forecasts. To capture the uncertainty in the impact model
+outputs associated with the distribution of the input climate forecasts, each individual forecast
+ensemble member has to be propagated through the physical model which can imply high computational
+costs. It is therefore desirable to train a surrogate model which allows predictions of the uncertainties
+of the output distribution in ensembles of climate drivers, thus reducing resource demands. This
+study considers a climate driven disease model, the Liverpool Malaria Model (LMM), which predicts
+the malaria transmission coefficient R0. Seasonal ensembles forecasts of temperature and precipitation
+with a 6-month horizon are propagated through the model, predicting the distribution of transmission
+time series. The input and output data is used to train surrogate models in the form of a Random Forest
+Quantile Regression (RFQR) model and a Bayesian Long Short-Term Memory (BLSTM) neural network.
+Comparing the predictive performance, the RFQR better predicts the time series of the individual
+ensemble member, while the BLSTM offers a direct way to construct a combined distribution for all
+ensemble members. An important element of the proposed methodology is that accounting for non-normal
+distributions of climate forecast ensembles can be captured naturally by a Bayesian formulation.

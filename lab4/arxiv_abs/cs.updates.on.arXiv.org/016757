@@ -1,0 +1,20 @@
+In this work, we revisit the semi-supervised learning (SSL) problem from a new perspective of explicitly
+reducing empirical distribution mismatch between labeled and unlabeled samples. Benefited from
+this new perspective, we first propose a new deep semi-supervised learning framework called Semi-supervised
+Learning by Empirical Distribution Alignment (SLEDA), in which existing technologies from the
+domain adaptation community can be readily used to address the semi-supervised learning problem
+through reducing the empirical distribution distance between labeled and unlabeled data. Based
+on this framework, we also develop a new theoretical generalization bound for the research community
+to better understand the semi-supervised learning problem, in which we show the generalization
+error of semi-supervised learning can be effectively bounded by minimizing the training error
+on labeled data and the empirical distribution distance between labeled and unlabeled data. Building
+upon our new framework and the theoretical bound, we develop a simple and effective deep semi-supervised
+learning method called Augmented Distribution Alignment Network (ADA-Net) by simultaneously
+adopting the well-established adversarial training strategy from the domain adaptation community
+and a simple sample interpolation strategy for data augmentation. Additionally, we incorporate
+both strategies in our ADA-Net into two exiting SSL methods to further improve their generalization
+capability, which indicates that our new framework provides a complementary solution for solving
+the SSL problem. Our comprehensive experimental results on two benchmark datasets SVHN and CIFAR-10
+for the semi-supervised image recognition task and another two benchmark datasets ModelNet40
+and ShapeNet55 for the semi-supervised point cloud recognition task demonstrate the effectiveness
+of our proposed framework for SSL. 

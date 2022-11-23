@@ -1,0 +1,19 @@
+Statistical model updating is frequently used in engineering to calculate the uncertainty of some
+unknown latent parameters when a set of measurements on observable quantities is given. Variational
+inference is an alternative approach to sampling methods that has been developed by the machine
+learning community to estimate posterior approximations through an optimization approach. In
+this paper, the Variational Bayesian Monte Carlo (VBMC) method is investigated with the purpose
+of dealing with statistical model updating problems in engineering involving expensive-to-run
+models. This method combines the active-sampling Bayesian quadrature with a Gaussian-process
+based variational inference to yield a non-parametric estimation of the posterior distribution
+of the identified parameters involving few runs of the expensive-to-run model. VBMC can also be
+used for model selection as it produces an estimation of the model's evidence lower bound. In this
+paper, a variant of the VBMC algorithm is developed through the introduction of a cyclical annealing
+schedule into the algorithm. The proposed cyclical VBMC algorithm allows to deal effectively with
+multi-modal posteriors by having multiple cycles of exploration and exploitation phases. Four
+numerical examples are used to compare the standard VBMC algorithm, the monotonic VBMC, the cyclical
+VBMC and the Transitional Ensemble Markov Chain Monte Carlo (TEMCMC). Overall, it is found that
+the proposed cyclical VBMC approach yields accurate results with a very reduced number of model
+runs compared to the state of the art sampling technique TEMCMC. In the presence of potential multi-modal
+problems, the proposed cyclical VBMC algorithm outperforms all the other approaches in terms of
+accuracy of the resulting posterior. 

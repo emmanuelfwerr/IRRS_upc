@@ -1,0 +1,20 @@
+Neural networks are widely deployed models across many scientific disciplines and commercial
+endeavors ranging from edge computing and sensing to large-scale signal processing in data centers.
+The most efficient and well-entrenched method to train such networks is backpropagation, or reverse-mode
+automatic differentiation. To counter an exponentially increasing energy budget in the artificial
+intelligence sector, there has been recent interest in analog implementations of neural networks,
+specifically nanophotonic neural networks for which no analog backpropagation demonstration
+exists. We design mass-manufacturable silicon photonic neural networks that alternately cascade
+our custom designed "photonic mesh" accelerator with digitally implemented nonlinearities.
+These reconfigurable photonic meshes program computationally intensive arbitrary matrix multiplication
+by setting physical voltages that tune the interference of optically encoded input data propagating
+through integrated Mach-Zehnder interferometer networks. Here, using our packaged photonic
+chip, we demonstrate in situ backpropagation for the first time to solve classification tasks and
+evaluate a new protocol to keep the entire gradient measurement and update of physical device voltages
+in the analog domain, improving on past theoretical proposals. Our method is made possible by introducing
+three changes to typical photonic meshes: (1) measurements at optical "grating tap" monitors,
+(2) bidirectional optical signal propagation automated by fiber switch, and (3) universal generation
+and readout of optical amplitude and phase. After training, our classification achieves accuracies
+similar to digital equivalents even in presence of systematic error. Our findings suggest a new
+training paradigm for photonics-accelerated artificial intelligence based entirely on a physical
+analog of the popular backpropagation technique. 

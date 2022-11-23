@@ -1,0 +1,19 @@
+Machine prediction algorithms (e.g., binary classifiers) often are adopted on the basis of claimed
+performance using classic metrics such as sensitivity and predictive value. However, classifier
+performance depends heavily upon the context (workflow) in which the classifier operates. Classic
+metrics do not reflect the realized utility of a predictor unless certain implicit assumptions
+are met, and these assumptions cannot be met in many common clinical scenarios. This often results
+in suboptimal implementations and in disappointment when expected outcomes are not achieved.
+One common failure mode for classic metrics arises when multiple predictions can be made for the
+same event, particularly when redundant true positive predictions produce little additional
+value. This describes many clinical alerting systems. We explain why classic metrics cannot correctly
+represent predictor performance in such contexts, and introduce an improved performance assessment
+technique using utility functions to score predictions based on their utility in a specific workflow
+context. The resulting utility metrics (u-metrics) explicitly account for the effects of temporal
+relationships on prediction utility. Compared to traditional measures, u-metrics more accurately
+reflect the real world costs and benefits of a predictor operating in a live clinical context. The
+improvement can be significant. We also describe a formal approach to snoozing, a mitigation strategy
+in which some predictions are suppressed to improve predictor performance by reducing false positives
+while retaining event capture. Snoozing is especially useful for predictors that generate interruptive
+alarms. U-metrics correctly measure and predict the performance benefits of snoozing, whereas
+traditional metrics do not. 

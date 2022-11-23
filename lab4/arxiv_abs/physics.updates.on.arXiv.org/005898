@@ -1,0 +1,19 @@
+Dye experimentation is a widely used method in experimental fluid mechanics for flow analysis or
+for the study of the transport of particles within a fluid. This technique is particularly useful
+in biomedical diagnostic applications ranging from hemodynamic analysis of cardiovascular systems
+to ocular circulation. However, simulating dyes governed by convection-diffusion partial differential
+equations (PDEs) can also be a useful post-processing analysis approach for computational fluid
+dynamics (CFD) applications. Such simulations can be used to identify the relative significance
+of different spatial subregions in particular time intervals of interest in an unsteady flow field.
+Additionally, dye evolution is closely related to non-discrete particle residence time (PRT)
+calculations that are governed by similar PDEs. PRT is a widely used metric for various fluid dynamics
+applications (e.g., environmental fluids, biological flows) and is a well-accepted biomarker
+for cardiovascular diseases since it is linked to thrombus formation. This contribution introduces
+a pseudo-spectral method based on Fourier continuation (FC) for conducting dye simulations and
+non-discrete particle residence time calculations without numerical diffusion errors. Convergence
+and error analyses are performed with both manufactured and analytical solutions. The methodology
+is applied to three distinct physical/physiological cases: 1) flow over a two-dimensional (2D)
+cavity; 2) pulsatile flow in a simplified partially-grafted aortic dissection model; and 3) non-Newtonian
+blood flow in a Fontan graft. Although velocity data is provided in this work by numerical simulation,
+the proposed approach can also be applied to velocity data collected through experimental techniques
+such as from particle image velocimetry. 

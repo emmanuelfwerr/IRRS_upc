@@ -1,0 +1,19 @@
+Thousands of active artificial objects are orbiting around Earth along with much more non-operational
+ones -- derelict satellites or rocket bodies, collision debris, or spacecraft payloads, significant
+part of them being uncatalogued. They all impact observations of the sky by ground-based telescopes
+by producing a large number of streaks polluting the images, as well as generating false alerts hindering
+the search for new astrophysical transients. While the former threat for astronomy is widely discussed
+nowadays in regard of rapidly growing satellite mega-constellations, the latter one -- false transients
+-- still lacks attention on the similar level. In this work we assess the impact of satellite glints
+-- rapid flashes produced by reflections of a sunlight from flat surfaces of rotating satellites
+-- on current and future deep sky surveys such as the ones conducted by the Zwicky Transient Facility
+(ZTF) and the Vera Rubin Observatory Legacy Survey of Space and Time (LSST). For that, we propose
+a simple routine that detects, in a single exposure, a series of repeated flashes along the trajectories
+of otherwise invisible satellites, and describe its implementation in FINK alert broker. Application
+of the routine to ZTF alert stream revealed about 73,000 individual events polluting 3.6\% of all
+ZTF science images between November 2019 and December 2021 and linked to more than 300 different
+glinting satellites on all kinds of orbits, from low-Earth up to geostationary ones. The timescales
+of individual flashes are as short as $0.1$--$10^{-3}$ seconds, with instant brightness of 4--14
+magnitudes, peak amplitudes of at least 2--4 magnitudes, and generally complex temporal patterns
+of flashing activity. We expect LSST to see much more such satellite glints of even larger amplitudes
+due to its better sensitivity. 

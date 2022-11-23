@@ -1,0 +1,20 @@
+Background: Several studies have highlighted the importance of considering sex differences in
+the diagnosis and treatment of Acute Coronary Syndrome (ACS). However, the identification of sex-specific
+risk markers in ACS sub-populations has been scarcely studied. The present study aims to explore
+machine learning (ML) models to identify in-hospital mortality markers for women and men in ACS
+sub-populations collected from a public database of electronic health records (EHR). Methods:
+We extracted 1,299 patients with ST-elevation myocardial infarction (STEMI) and 2,820 patients
+with non-ST-elevation myocardial infarction (NSTEMI) from the Medical Information Mart for Intensive
+Care (MIMIC)-III database. We trained and validated mortality prediction models and used an interpretability
+technique to identify sex-specific markers for each sub-population. Results: The models based
+on eXtreme Gradient Boosting (XGBoost) achieved the highest performance: area under the curve
+(AUC) = 0.94 (95\% CI:0.84-0.96) for STEMI and AUC = 0.94 (95\% CI:0.80-0.90) for NSTEMI. For STEMI,
+the top markers in women are chronic kidney failure, high heart rate, and age over 70 years. For men,
+the top markers are acute kidney failure, high troponin T levels, and age over 75 years. However,
+for NSTEMI, the top markers in women are low troponin levels, high urea levels, and age over 80 years.
+For men, the top markers are high heart rate, creatinine levels, and age over 70 years. Conclusions:
+Our results show possible significant and coherent sex-specific risk markers of different ACS
+sub-populations by interpreting ML mortality models trained on EHRs. Differences are observed
+in the identified risk markers between women and men, highlighting the importance of considering
+sex-specific markers in implementing more appropriate treatment strategies and better clinical
+outcomes. 

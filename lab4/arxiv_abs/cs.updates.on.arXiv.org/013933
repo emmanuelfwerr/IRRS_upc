@@ -1,0 +1,19 @@
+Systems whose movement is highly dissipative provide an opportunity to both identify models easily
+and quickly optimize motions. Geometric mechanics provides means for reduction of the dynamics
+by environmental homogeneity, while the dissipative nature minimizes the role of second order
+(inertial) features in the dynamics. Here we extend the tools of geometric system identification
+to ``Shape-Underactuated Dissipative Systems (SUDS)'' -- systems whose motions are more dissipative
+than inertial, but whose actuation is restricted to a subset of the body shape coordinates. Many
+animal motions are SUDS, including micro-swimmers such as nematodes and flagellated bacteria,
+and granular locomotors such as snakes and lizards. Many soft robots are also SUDS, particularly
+those robots using highly damped series elastic actuators. Whether involved in locomotion or manipulation,
+these robots are often used to interface less rigidly with the environment. We motivate the use of
+SUDS models, and validate their ability to predict motion of a variety of simulated viscous swimming
+platforms. For a large class of SUDS, we show how the shape velocity actuation inputs can be directly
+converted into torque inputs suggesting that systems with soft pneumatic actuators or dielectric
+elastomers can be modeled with the tools presented. Based on fundamental assumptions in the physics,
+we show how our model complexity scales linearly with the number of passive shape coordinates. This
+offers a large reduction on the number of trials needed to identify the system model from experimental
+data, and may reduce overfitting. The sample efficiency of our method suggests its use in modeling,
+control, and optimization in robotics, and as a tool for the study of organismal motion in friction
+dominated regimes. 

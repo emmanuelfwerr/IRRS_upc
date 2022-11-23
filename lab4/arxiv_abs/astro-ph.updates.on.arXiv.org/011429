@@ -1,0 +1,20 @@
+Forthcoming cosmic microwave background (CMB) polarized anisotropy experiments have the potential
+to revolutionize our understanding of the Universe and fundamental physics. The sought-after,
+tale-telling signatures will be however distributed over voluminous data sets which these experiments
+will collect. These data sets will need to be efficiently processed and unwanted contributions
+due to astrophysical, environmental, and instrumental effects characterized and efficiently
+mitigated in order to uncover the signatures. This poses a significant challenge to data analysis
+methods, techniques, and software tools which will not only have to be able to cope with huge volumes
+of data but to do so with unprecedented precision driven by the demanding science goals posed for
+the new experiments. A keystone of efficient CMB data analysis are solvers of very large linear systems
+of equations. Such systems appear in very diverse contexts throughout CMB data analysis pipelines,
+however they typically display similar algebraic structures and can therefore be solved using
+similar numerical techniques. Linear systems arising in the so-called map-making problem are
+one of the most prominent and common ones. In this work we present a massively parallel, flexible
+and extensible framework, comprised of a numerical library, MIDAPACK, and a high level code, MAPPRAISER,
+which provide tools for solving efficiently such systems. The framework implements iterative
+solvers based on conjugate gradient techniques: enlarged and preconditioned using different
+preconditioners. We demonstrate the framework on simulated examples reflecting basic characteristics
+of the forthcoming data sets issued by ground-based and satellite-borne instruments, executing
+it on as many as 16,384 compute cores. The software is developed as an open source project freely available
+to the community at: https://github.com/B3Dcmb/midapack . 

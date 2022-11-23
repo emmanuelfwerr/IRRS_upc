@@ -1,0 +1,19 @@
+A connected component of a vertex-coloured graph is said to be colourful if all its vertices have
+different colours. By extension, a graph is colourful if all its connected components are colourful.
+Given a vertex-coloured graph $G$ and an integer $p$, the Colourful Components problem asks whether
+there exist at most $p$ edges whose removal makes $G$ colourful and the Colourful Partition problem
+asks whether there exists a partition of $G$ into at most $p$ colourful components. In order to refine
+our understanding of the complexity of the problems on trees, we study both problems on $k$-caterpillars,
+which are trees with a central path $P$ such that every vertex not in $P$ is within distance $k$ from
+a vertex in $P$. We prove that Colourful Components and Colourful Partition are NP-complete on $4$-caterpillars
+with maximum degree $3$, $3$-caterpillars with maximum degree $4$ and $2$-caterpillars with maximum
+degree $5$. On the other hand, we show that the problems are linear-time solvable on $1$-caterpillars.
+Hence, our results imply two complexity dichotomies on trees: Colourful Components and Colourful
+Partition are linear-time solvable on trees with maximum degree $d$ if $d \leq 2$ (that is, on paths),
+and NP-complete otherwise; Colourful Components and Colourful Partition are linear-time solvable
+on $k$-caterpillars if $k \leq 1$, and NP-complete otherwise. We leave three open cases which, if
+solved, would provide a complexity dichotomy for both problems on $k$-caterpillars, for every
+non-negative integer $k$, with respect to the maximum degree. We also show that Colourful Components
+is NP-complete on $5$-coloured planar graphs with maximum degree $4$ and on $12$-coloured planar
+graphs with maximum degree $3$. Our results answer two open questions of Bulteau et al. mentioned
+in [30th Annual Symposium on Combinatorial Pattern Matching, 2019]. 

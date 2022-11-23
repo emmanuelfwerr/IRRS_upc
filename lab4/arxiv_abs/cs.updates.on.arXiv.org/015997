@@ -1,0 +1,19 @@
+Code-based cryptography is one of the main propositions for the post-quantum cryptographic context,
+and several protocols of this kind have been submitted on the NIST platform. Among them, BIKE and
+HQC are part of the five alternate candidates selected in the third round of the NIST standardization
+process in the KEM category. These two schemes make use of multiplication of large polynomials over
+binary rings, and due to the polynomial size (from 10,000 to 60,000 bits), this operation is one of
+the costliest during key generation, encapsulation, or decapsulation mechanisms. In this work,
+we revisit the different existing constant-time algorithms for arbitrary polynomial multiplication.
+We explore the different Karatsuba and Toom-Cook constructions in order to determine the best combinations
+for each polynomial degree range, in the context of AVX2 and AVX512 instruction sets. This leads
+to different kernels and constructions in each case. In particular, in the context of AVX512, we
+use the VPCLMULQDQ instruction, which is a vectorized binary polynomial multiplication instruction.
+This instruction deals with up to four polynomial (of degree up to 63) multiplications, the four
+results being stored in one single 512-bit word. This allows to divide by roughly 3 the retired instruction
+number of the operation in comparison with the AVX2 instruction set implementations, while the
+speedup is up to 39% in terms of processor clock cycles. These results are different than the ones
+estimated in Drucker (Fast multiplication of binary polynomials with the forthcoming vectorized
+vpclmulqdq instruction, 2018). To illustrate the benefit of the new VPCLMULQDQ instruction, we
+used the HQC code to evaluate our approaches. When implemented in the HQC protocol, for the security
+levels 128, 192, and 256, our approaches provide up to 12% speedup, for key pair generation. 

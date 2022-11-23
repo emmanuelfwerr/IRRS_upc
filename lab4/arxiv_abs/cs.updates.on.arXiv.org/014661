@@ -1,0 +1,19 @@
+We present a simple yet potentially devastating and hard-to-detect threat, called Gummy Browsers,
+whereby the browser fingerprinting information can be collected and spoofed without the victim's
+awareness, thereby compromising the privacy and security of any application that uses browser
+fingerprinting. The idea is that attacker A first makes the user U connect to his website (or to a well-known
+site the attacker controls) and transparently collects the information from U that is used for fingerprinting
+purposes. Then, A orchestrates a browser on his own machine to replicate and transmit the same fingerprinting
+information when connecting to W, fooling W to think that U is the one requesting the service rather
+than A. This will allow the attacker to profile U and compromise U's privacy. We design and implement
+the Gummy Browsers attack using three orchestration methods based on script injection, browser
+settings and debugging tools, and script modification, that can successfully spoof a wide variety
+of fingerprinting features to mimic many different browsers (including mobile browsers and the
+Tor browser). We then evaluate the attack against two state-of-the-art browser fingerprinting
+systems, FPStalker and Panopticlick. Our results show that A can accurately match his own manipulated
+browser fingerprint with that of any targeted victim user U's fingerprint for a long period of time,
+without significantly affecting the tracking of U and when only collecting U's fingerprinting
+information only once. The TPR (true positive rate) for the tracking of the benign user in the presence
+of the attack is larger than 0.9 in most cases. The FPR (false positive rate) for the tracking of the
+attacker is also high, larger than 0.9 in all cases. We also argue that the attack can remain completely
+oblivious to the user and the website, thus making it extremely difficult to thwart in practice.

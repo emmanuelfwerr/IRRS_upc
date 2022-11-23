@@ -1,0 +1,19 @@
+Multi-criteria decision-making often requires finding a small representative set from the database.
+A recently proposed method is the regret minimization set (RMS) query. RMS returns a size $r$ subset
+$S$ of dataset $D$ that minimizes the regret-ratio (the difference between the score of top-1 in
+$S$ and the score of top-1 in $D$, for any possible utility function). RMS is not shift invariant,
+causing inconsistency in results. Further, existing work showed that the regret-ratio is often
+a made-up number and users may mistake its absolute value. Instead, users do understand the notion
+of rank. Thus it considered the problem of finding the minimal set $S$ with a rank-regret (the rank
+of top-1 tuple of $S$ in the sorted list of $D$) at most $k$, called the rank-regret representative
+(RRR) problem. Corresponding to RMS, we focus on the min-error version of RRR, called the rank-regret
+minimization (RRM) problem, which finds a size $r$ set to minimize the maximum rank-regret for all
+utility functions. Further, we generalize RRM and propose the restricted RRM (i.e., RRRM) problem
+to optimize the rank-regret for functions restricted in a given space. Previous studies on both
+RMS and RRR did not consider the restricted function space. The solution for RRRM usually has a lower
+regret level and can better serve the specific preferences of some users. Note that RRM and RRRM are
+shift invariant. In 2D space, we design a dynamic programming algorithm 2DRRM to return the optimal
+solution for RRM. In HD space, we propose an algorithm HDRRM that introduces a double approximation
+guarantee on rank-regret. Both 2DRRM and HDRRM are applicable for RRRM. Extensive experiments
+on the synthetic and real datasets verify the efficiency and effectiveness of our algorithms. In
+particular, HDRRM always has the best output quality in experiments. 

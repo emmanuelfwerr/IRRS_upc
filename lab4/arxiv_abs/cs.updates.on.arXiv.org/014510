@@ -1,0 +1,19 @@
+System optimum (SO) routing, wherein the total travel time of all users is minimized, is a holy grail
+for transportation authorities. However, SO routing may discriminate against users who incur
+much larger travel times than others to achieve high system efficiency, i.e., low total travel times.
+To address the inherent unfairness of SO routing, we study the ${\beta}$-fair SO problem whose goal
+is to minimize the total travel time while guaranteeing a ${\beta\geq 1}$ level of unfairness, which
+specifies the maximum possible ratio between the travel times of different users with shared origins
+and destinations. To obtain feasible solutions to the ${\beta}$-fair SO problem while achieving
+high system efficiency, we develop a new convex program, the Interpolated Traffic Assignment Problem
+(I-TAP), which interpolates between a fairness-promoting and an efficiency-promoting traffic-assignment
+objective. We evaluate the efficacy of I-TAP through theoretical bounds on the total system travel
+time and level of unfairness in terms of its interpolation parameter, as well as present a numerical
+comparison between I-TAP and a state-of-the-art algorithm on a range of transportation networks.
+The numerical results indicate that our approach is faster by several orders of magnitude as compared
+to the benchmark algorithm, while achieving higher system efficiency for all desirable levels
+of unfairness. We further leverage the structure of I-TAP to develop two pricing mechanisms to collectively
+enforce the I-TAP solution in the presence of selfish homogeneous and heterogeneous users, respectively,
+that independently choose routes to minimize their own travel costs. We mention that this is the
+first study of pricing in the context of fair routing for general road networks (as opposed to, e.g.,
+parallel road networks). 

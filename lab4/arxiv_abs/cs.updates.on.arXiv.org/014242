@@ -1,0 +1,20 @@
+Software fault localization is one of the most expensive, tedious, and time-consuming activities
+in program debugging. This activity becomes even much more challenging in Software Product Line
+(SPL) systems due to variability of failures. These unexpected behaviors are induced by variability
+faults which can only be exposed under some combinations of system features. The interaction among
+these features causes the failures of the system. Although localizing bugs in single-system engineering
+has been studied in-depth, variability fault localization in SPL systems still remains mostly
+unexplored. In this article, we present VarCop, a novel and effective variability fault localization
+approach. For an SPL system failed by variability bugs, VarCop isolates suspicious code statements
+by analyzing the overall test results of the sampled products and their source code. The isolated
+suspicious statements are the statements related to the interaction among the features which are
+necessary for the visibility of the bugs in the system. The suspiciousness of each isolated statement
+is assessed based on both the overall test results of the products containing the statement as well
+as the detailed results of the test cases executed by the statement in these products. On a large dataset
+of buggy SPL systems, empirical evaluation shows that VarCop significantly improves two state-of-the-art
+fault localization techniques by 33% and 50% in ranking the incorrect statements in the systems
+containing a single bug each. In about two-thirds of the cases, VarCop ranks the buggy statements
+at the top-3 positions in the resulting lists. For multiple-bug cases, VarCop outperforms the state-of-the-art
+approaches 2 times and 10 times in the proportion of bugs localized at the top-1 positions. In 22%
+and 65% of the buggy versions, VarCop correctly ranks at least one bug in a system at the top-1 and top-5
+positions. 

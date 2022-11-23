@@ -1,0 +1,19 @@
+Comparing test suite effectiveness metrics has always been a research hotspot. However, prior
+studies have different conclusions or even contradict each other for comparing different test
+suite effectiveness metrics. The problem we found most troubling to our community is that researchers
+tend to oversimplify the description of the ground truth they use. For example, a common expression
+is that "we studied the correlation between real faults and the metric to evaluate (MTE)". However,
+the meaning of "real faults" is not clear-cut. As a result, there is a need to scrutinize the meaning
+of "real faults". Without this, it will be half-knowledgeable with the conclusions. To tackle this
+challenge, we propose a framework ASSENT (evAluating teSt Suite EffectiveNess meTrics) to guide
+the follow-up research. In nature, ASSENT consists of three fundamental components: ground truth,
+benchmark test suites, and agreement indicator. First, materialize the ground truth for determining
+the real order in effectiveness among test suites. Second, generate a set of benchmark test suites
+and derive their ground truth order in effectiveness. Third, for the benchmark test suites, generate
+the MTE order in effectiveness by the metric to evaluate (MTE). Finally, calculate the agreement
+indicator between the two orders. Under ASSENT, we are able to compare the accuracy of different
+test suite effectiveness metrics. We apply ASSENT to evaluate representative test suite effectiveness
+metrics, including mutation score metrics and code coverage metrics. Our results show that, based
+on the real faults, mutation score and subsuming mutation score are the best metrics to quantify
+test suite effectiveness. Meanwhile, by using mutants instead of real faults, MTEs will be overestimated
+by more than 20% in values. 

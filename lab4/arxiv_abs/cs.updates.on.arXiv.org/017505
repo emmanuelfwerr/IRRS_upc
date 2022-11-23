@@ -1,0 +1,19 @@
+We analyze the Disjoint Path Allocation problem (DPA) in the priority framework. Motivated by the
+problem of traffic regulation in communication networks, DPA consists of allocating edge-disjoint
+paths in a graph. While online algorithms for DPA have been thoroughly studied in the past, we extend
+the analysis of this optimization problem by considering the more powerful class of priority algorithms.
+Like an online algorithm, a priority algorithm receives its input only sequentially and must output
+irrevocable decisions for individual input items before having seen the input in its entirety.
+However, in contrast to the online setting, a priority algorithm may choose an order on the set of
+all possible input items and the actual input is then presented according to this order. A priority
+algorithm is a natural model for the intuitively well-understood concept of a greedy algorithm.
+Apart from analyzing the classical priority setting, we also consider priority algorithms with
+advice. Originally conceived to study online algorithms from an information-theoretic point
+of view, the concept of advice has recently been extended to the priority framework. In this paper,
+we analyze the classical variant of the DPA problem on the graph class of paths, the related problem
+of Length-Weighted DPA, and finally, DPA on the graph class of trees. We show asymptotically matching
+upper and lower bounds on the advice necessary for optimality in LWDPA and generalize the known optimality
+result for DPA on paths to trees with maximal degree at most 3. On trees with maximal degree greater
+than 3, we prove matching upper and lower bounds on the approximation ratio in the advice-free priority
+setting. Finally, we present upper and lower bounds on the advice necessary to achieve optimality
+on such trees. 

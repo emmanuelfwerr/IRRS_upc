@@ -1,0 +1,20 @@
+This paper studies RIS-aided cell-free massive MIMO systems, where multiple RISs are deployed
+to assist the communication between multiple access points (APs) and multiple users, with either
+continuous or discrete phase shifts at the RISs. We formulate the max-min fairness problem that
+maximizes the minimum achievable rate among all users by jointly optimizing the transmit beamforming
+at active APs and the phase shifts at passive RISs, subject to power constraints at the APs. To address
+such a challenging problem, we first study the special single-user scenario and propose an algorithm
+that can transform the optimization problem into semidefinite program (SDP) or integer linear
+program (ILP) for the cases of continuous and discrete phase shifts, respectively. By solving the
+resulting SDP and ILP, we first obtain the optimal phase shifts, and then design the optimal transmit
+beamforming accordingly. To solve the optimization problem for the multi-user scenario and continuous
+phase shifts at RISs, we extend the single-user algorithm and propose an alternating optimization
+algorithm, which can first decompose the max-min fairness problem into two subproblems related
+to transmit beamforming and phase shifts, and then transform the two subproblems into second-order-cone
+program and SDP, respectively. For the multi-user scenario and discrete phase shifts, the max-min
+fairness problem is shown to be a mixed-integer non-linear program (MINLP). To tackle it, we design
+a ZF-based successive refinement algorithm, which can find a suboptimal transmit beamforming
+and phase shifts by means of alternating optimization. Numerical results show that compared with
+benchmark schemes of random phase shifts and without using RISs, the proposed algorithms can significantly
+increase the minimum achievable rate among all users, especially when the number of reflecting
+elements at each RIS is large. 

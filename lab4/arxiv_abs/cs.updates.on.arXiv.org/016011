@@ -1,0 +1,19 @@
+Objective. Insecure Direct Object Reference (IDOR) or Broken Object Level Authorization (BOLA)
+are one of the critical type of access control vulnerabilities for modern applications. As a result,
+an attacker can bypass authorization checks leading to information leakage, account takeover.
+Our main research goal was to help an application security architect to optimize security design
+and testing process by giving an algorithm and tool that allows to automatically analyze system
+API specifications and generate list of possible vulnerabilities and attack vector ready to be
+used as security non-functional requirements. Method. We conducted a multivocal review of research
+and conference papers, bug bounty program reports and other grey sources of literature to outline
+patterns of attacks against IDOR vulnerability. These attacks are collected in groups proceeding
+with further analysis common attributes between these groups and what features compose the group.
+Endpoint properties and attack techniques comprise a group of attacks. Mapping between group features
+and existing OpenAPI specifications is performed to implement a tool for automatic discovery of
+potentially vulnerable endpoints. Results and practical relevance. In this work, we provide systematization
+of IDOR/BOLA attack techniques based on literature review, real cases analysis and derive IDOR/BOLA
+attack groups. We proposed an approach to describe IDOR/BOLA attacks based on OpenAPI specifications
+properties. We develop an algorithm of potential IDOR/BOLA vulnerabilities detection based on
+OpenAPI specification processing. We implemented our novel algorithm using Python and evaluated
+it. The results show that algorithm is resilient and can be used in practice to detect potential IDOR/BOLA
+vulnerabilities. 

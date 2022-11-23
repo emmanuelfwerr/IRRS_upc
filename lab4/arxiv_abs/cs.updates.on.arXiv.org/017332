@@ -1,0 +1,19 @@
+Recently, the enactment of privacy regulations has promoted the rise of the machine unlearning
+paradigm. Existing studies of machine unlearning mainly focus on sample-wise unlearning, such
+that a learnt model will not expose user's privacy at the sample level. Yet we argue that such ability
+of selective removal should also be presented at the attribute level, especially for the attributes
+irrelevant to the main task, e.g., whether a person recognized in a face recognition system wears
+glasses or the age range of that person. Through a comprehensive literature review, it is found that
+existing studies on attribute-related problems like fairness and de-biasing learning cannot
+address the above concerns properly. To bridge this gap, we propose a paradigm of selectively removing
+input attributes from feature representations which we name `attribute unlearning'. In this paradigm,
+certain attributes will be accurately captured and detached from the learned feature representations
+at the stage of training, according to their mutual information. The particular attributes will
+be progressively eliminated along with the training procedure towards convergence, while the
+rest of attributes related to the main task are preserved for achieving competitive model performance.
+Considering the computational complexity during the training process, we not only give a theoretically
+approximate training method, but also propose an acceleration scheme to speed up the training process.
+We validate our method by spanning several datasets and models and demonstrate that our design can
+preserve model fidelity and reach prevailing unlearning efficacy with high efficiency. The proposed
+unlearning paradigm builds a foundation for future machine unlearning system and will become an
+essential component of the latest privacy-related legislation. 

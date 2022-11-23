@@ -1,0 +1,19 @@
+Deep neural networks are being increasingly used for short-term traffic flow prediction, which
+can be generally categorized as convolutional (CNNs) or graph neural networks (GNNs). CNNs are
+preferable for region-wise traffic prediction by taking advantage of localized spatial correlations,
+whilst GNNs achieves better performance for graph-structured traffic data. When applied to region-wise
+traffic prediction, CNNs typically partition an underlying territory into grid-like spatial
+units, and employ standard convolutions to learn spatial dependence among the units. However,
+standard convolutions with fixed geometric structures cannot fully model the nonstationary characteristics
+of local traffic flows. To overcome the deficiency, we introduce deformable convolution that augments
+the spatial sampling locations with additional offsets, to enhance the modeling capability of
+spatial nonstationarity. On this basis, we design a deep deformable convolutional residual network,
+namely DeFlow-Net, that can effectively model global spatial dependence, local spatial nonstationarity,
+and temporal periodicity of traffic flows. Furthermore, to better fit with convolutions, we suggest
+to first aggregate traffic flows according to pre-conceived regions or self-organized regions
+based on traffic flows, then dispose to sequentially organized raster images for network input.
+Extensive experiments on real-world traffic flows demonstrate that DeFlow-Net outperforms GNNs
+and existing CNNs using standard convolutions, and spatial partition by pre-conceived regions
+or self-organized regions further enhances the performance. We also demonstrate the advantage
+of DeFlow-Net in maintaining spatial autocorrelation, and reveal the impacts of partition shapes
+and scales on deep traffic flow prediction. 

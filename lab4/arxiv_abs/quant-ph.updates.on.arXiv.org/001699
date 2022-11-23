@@ -1,0 +1,19 @@
+We explore the cryptographic power of arbitrary shared physical resources. The most general such
+resource is access to a fresh entangled quantum state at the outset of each protocol execution. We
+call this the Common Reference Quantum State (CRQS) model, in analogy to the well-known Common Reference
+String (CRS). The CRQS model is a natural generalization of the CRS model but appears to be more powerful:
+in the two-party setting, a CRQS can sometimes exhibit properties associated with a Random Oracle
+queried once by measuring a maximally entangled state in one of many mutually unbiased bases. We
+formalize this notion as a Weak One-Time Random Oracle (WOTRO), where we only ask of the m-bit output
+to have some randomness when conditioned on the n-bit input. We show that WOTRO with $n - m \in {\omega}(\lg
+n)$ is black-box impossible in the CRQS model, meaning that no protocol can have its security black-box
+reduced to a cryptographic game. We define a (inefficient) quantum adversary against any WOTRO
+protocol that can be efficiently simulated in polynomial time, ruling out any reduction to a secure
+game that only makes black-box queries to the adversary. On the other hand, we introduce a non-game
+quantum assumption for hash functions that implies WOTRO in the CRQ\$ model (where the CRQS consists
+only of EPR pairs). We first build a statistically secure WOTRO protocol where $m = n$, then hash the
+output. The impossibility of WOTRO has the following consequences. First, we show the black-box
+impossibility of a quantum Fiat-Shamir transform, extending the impossibility result of Bitansky
+et al. (TCC '13) to the CRQS model. Second, we show a black-box impossibility result for a strenghtened
+version of quantum lightning (Zhandry, Eurocrypt '19) where quantum bolts have an additional parameter
+that cannot be changed without generating new bolts. 

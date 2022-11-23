@@ -1,0 +1,19 @@
+Predicting the duration of traffic incidents is a challenging task due to the stochastic nature
+of events. The ability to accurately predict how long accidents will last can provide significant
+benefits to both end-users in their route choice and traffic operation managers in handling of non-recurrent
+traffic congestion. This paper presents a novel bi-level machine learning framework enhanced
+with outlier removal and intra-extra joint optimisation for predicting the incident duration
+on three heterogeneous data sets collected for both arterial roads and motorways from Sydney, Australia
+and San-Francisco, U.S.A. Firstly, we use incident data logs to develop a binary classification
+prediction approach, which allows us to classify traffic incidents as short-term or long-term.
+We find the optimal threshold between short-term versus long-term traffic incident duration,
+targeting both class balance and prediction performance while also comparing the binary versus
+multi-class classification approaches. Secondly, for more granularity of the incident duration
+prediction to the minute level, we propose a new Intra-Extra Joint Optimisation algorithm (IEO-ML)
+which extends multiple baseline ML models tested against several regression scenarios across
+the data sets. Final results indicate that: a) 40-45 min is the best split threshold for identifying
+short versus long-term incidents and that these incidents should be modelled separately, b) our
+proposed IEO-ML approach significantly outperforms baseline ML models in $66\%$ of all cases showcasing
+its great potential for accurate incident duration prediction. Lastly, we evaluate the feature
+importance and show that time, location, incident type, incident reporting source and weather
+at among the top 10 critical factors which influence how long incidents will last. 

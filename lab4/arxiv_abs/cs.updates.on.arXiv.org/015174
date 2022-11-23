@@ -1,0 +1,20 @@
+Motivated by the properties of unending real-world cybersecurity streams, we present a new graph
+streaming model: XStream. We maintain a streaming graph and its connected components at single-edge
+granularity. In cybersecurity graph applications, input streams typically consist of edge insertions;
+individual deletions are not explicit. Analysts maintain as much history as possible and will trigger
+customized bulk deletions when necessary Despite a variety of dynamic graph processing systems
+and some canonical literature on theoretical sliding-window graph streaming, XStream is the first
+model explicitly designed to accommodate this usage model. Users can provide Boolean predicates
+to define bulk deletions. Edge arrivals are expected to occur continuously and must always be handled.
+XStream is implemented via a ring of finite-memory processors. We give algorithms to maintain connected
+components on the input stream, answer queries about connectivity, and to perform bulk deletion.
+The system requires bandwidth for internal messages that is some constant factor greater than the
+stream arrival rate. We prove a relationship among four quantities: the proportion of query downtime
+allowed, the proportion of edges that survive an aging event, the proportion of duplicated edges,
+and the bandwidth expansion factor. In addition to presenting the theory behind XStream, we present
+computational results for a single-threaded prototype implementation. Stream ingestion rates
+are bounded by computer architecture. We determine this bound for XStream inter-process message-passing
+rates in Intel TBB applications on Intel Sky Lake processors: between one and five million graph
+edges per second. Our single-threaded prototype runs our full protocols through multiple aging
+events at between one half and one a million edges per second, and we give ideas for speeding this up
+by orders of magnitude. 

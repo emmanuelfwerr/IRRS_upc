@@ -1,0 +1,19 @@
+There has been a wave of interest in applying machine learning to study dynamical systems. In particular,
+neural networks have been applied to solve the equations of motion, and therefore, track the evolution
+of a system. In contrast to other applications of neural networks and machine learning, dynamical
+systems possess invariants such as energy, momentum, and angular momentum, depending on their
+underlying symmetries. Traditional numerical integration methods sometimes violate these conservation
+laws, propagating errors in time, ultimately reducing the predictability of the method. We present
+a data-free Hamiltonian neural network that solves the differential equations that govern dynamical
+systems. This is an equation-driven unsupervised learning method where the optimization process
+of the network depends solely on the predicted functions without using any ground truth data. This
+unsupervised model learns solutions that satisfy identically, up to an arbitrarily small error,
+Hamilton's equations and, therefore, conserve the Hamiltonian invariants. Once the network is
+optimized, the proposed architecture is considered a symplectic unit due to the introduction of
+an efficient parametric form of solutions. In addition, the choice of an appropriate activation
+function drastically improves the predictability of the network. An error analysis is derived
+and states that the numerical errors depend on the overall network performance. The symplectic
+architecture is then employed to solve the equations for the nonlinear oscillator and the chaotic
+Henon-Heiles dynamical system. In both systems, a symplectic Euler integrator requires two orders
+more evaluation points than the Hamiltonian network in order to achieve the same order of the numerical
+error in the predicted phase space trajectories. 

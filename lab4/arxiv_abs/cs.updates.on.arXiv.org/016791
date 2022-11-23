@@ -1,0 +1,19 @@
+In this paper, we focus on the inverse problem of reconstructing distributional brain activity
+with cortical and weakly detectable deep components in non-invasive Electroencephalography.
+In particular, we aim to generalize the previously extensively used conditionally Gaussian prior
+(CGP) formalism to achieve distributional reconstructions with higher focality. For this purpose,
+we introduce as a hierarchical prior, a general exponential distribution, refered to as conditionally
+exponential prior (CEP). The first-degree CEP corresponds to focality enforcing Laplace prior
+that suffers from strong depth bias making the deep activity unrecoverable. We sample over multiple
+resolution levels via RAMUS to reduce this bias as it is known to depend on the resolution of the source
+space. Moreover, we introduce a procedure based on the physiological a priori knowledge of the brain
+activity to obtain the shape and scale parameters of the gamma hyperprior that steer the CEP. The
+posterior estimates are calculated using iterative statistical methods, expectation maximization
+and iterative alternating sequential algorithm, which we show to be algorithmically similar and
+to have a close resemblance to the iterative reweighting methods. The performance of CEP is compared
+with the recent sampling-based dipole localization method Sequential semi-analytic Monte Carlo
+estimation (SESAME) in numerical experiments of simulated somatosensory evoked potentials related
+to the human median nerve stimulation. Our results suggest that a hybrid of the first-degree CEP
+and RAMUS can achieve an accuracy comparable to the second-degree case (CGP) while being more focal.
+Further, the proposed hybrid is shown to be robust to noise effects and compare well to the dipole
+reconstructions obtained with SESAME. 

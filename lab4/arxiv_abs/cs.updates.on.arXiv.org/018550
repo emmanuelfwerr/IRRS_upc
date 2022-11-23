@@ -1,0 +1,20 @@
+Bobkov, Houdr\'e, and the last author [2000] introduced a Poincar\'e-type functional parameter,
+$\lambda_\infty$, of a graph and related it to connectivity of the graph via Cheeger-type inequalities.
+A work by the second author, Raghavendra, and Vempala [2013] related the complexity of $\lambda_\infty$
+to the so-called small-set expansion (SSE) problem and further set forth the desiderata for NP-hardness
+of this optimization problem. We confirm the conjecture that computing $\lambda_\infty$ is NP-hard
+for weighted trees. Beyond measuring connectivity in many applications we want to optimize it.
+This, via convex duality, leads to a problem in machine learning known as the Maximum Variance Embedding
+(MVE). The output is a function from vertices to a low dim Euclidean space, subject to bounds on Euclidean
+distances between neighbors. The objective is to maximize output variance. Special cases of MVE
+into $n$ and $1$ dims lead to absolute algebraic connectivity [1990] and spread constant [1998],
+that measure connectivity of the graph and its Cartesian $n$-power, respectively. MVE has other
+applications in measuring diffusion speed and robustness of networks, clustering, and dimension
+reduction. We show that computing MVE in tree-width dims is NP-hard, while only one additional dim
+beyond width of a given tree-decomposition makes the problem in P. We show that MVE of a tree in 2 dims
+defines a non-convex yet benign optimization landscape, i.e., local=global optima. We further
+develop a linear time combinatorial algorithm for this case. Finally, we denote approximate Maximum
+Variance Embedding is tractable in significantly lower dims. For trees and general graphs, for
+which Maximum Variance Embedding cannot be solved in less than $2$ and $\Omega(n)$ dims, we provide
+$1+\varepsilon$ approximation algorithms for embedding into $1$ and $O(\log n /\varepsilon^2)$
+dims, respectively. 

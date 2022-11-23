@@ -1,0 +1,19 @@
+Despite being a source of rich information, graphs are limited to pairwise interactions. However,
+several real-world networks such as social networks, neuronal networks, etc., involve interactions
+between more than two nodes. Simplicial complexes provide a powerful mathematical framework to
+model such higher-order interactions. It is well known that the spectrum of the graph Laplacian
+is indicative of community structure, and this relation is exploited by spectral clustering algorithms.
+Here we propose that the spectrum of the Hodge Laplacian, a higher-order Laplacian defined on simplicial
+complexes, encodes simplicial communities. We formulate an algorithm to extract simplicial communities
+(of arbitrary dimension). We apply this algorithm to simplicial complex benchmarks and to real
+higher-order network data including social networks and networks extracted using language or
+text processing tools. However, datasets of simplicial complexes are scarce, and for the vast majority
+of datasets that may involve higher-order interactions, only the set of pairwise interactions
+are available. Hence, we use known properties of the data to infer the most likely higher-order interactions.
+In other words, we introduce an inference method to predict the most likely simplicial complex given
+the community structure of its network skeleton. This method identifies as most likely the higher-order
+interactions inducing simplicial communities that maximize the adjusted mutual information
+measured with respect to ground-truth community structure. Finally, we consider higher-order
+networks constructed through thresholding the edge weights of collaboration networks (encoding
+only pairwise interactions) and provide an example of persistent simplicial communities that
+are sustained over a wide range of the threshold. 

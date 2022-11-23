@@ -1,0 +1,19 @@
+The situation calculus logic model is convenient for modelling the actions that can occur in an information
+system application. The interplay of pre-conditions and post-conditions determines a semantically
+justified partial order of the defined actions and serves to enforce integrity constraints. This
+form of specification allows the use of plan-generation algorithms to investigate, before the
+system is adopted, whether the proposed specification allows all desirable use cases, and effectively
+disallows undesirable ones. Especially for legacy applications, implemented without a prior
+specification, Process Mining techniques were employed to derive an implicit Petri net model from
+the analysis of a large number of traces registered in an execution log. However, if the system just
+begins to be used, and has a still empty execution log, this sort of process mining discovery would
+not be feasible. This paper explains how the Petri net model can be directly derived from the situation
+calculus specification rules. The main gist is to provide evidence that the two models are complementary,
+not only because the Petri net model is derivable from the situation calculus model, but also in view
+of the distinct advantages of the two models. While the situation calculus model leads to planning
+and simulated execution prior to implementation, the Petri net model can be designed to run in a restrictive
+mode, allowing an intuitive visualization of the workable sequences. As proof of concept, the paper
+describes a prototype to demonstrate the methods and applies it to two examples: a published request
+processing application used to introduce process mining notions; and an analogously structured
+trial by combat application taken from a popular movie. The prototype includes an interactive dramatization
+component, which enacts the second application. 

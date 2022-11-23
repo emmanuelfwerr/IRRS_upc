@@ -1,0 +1,19 @@
+Resiliency is the ability to quickly recover from a violation and avoid future violations for as
+long as possible. Such a property is of fundamental importance for Cyber-Physical Systems (CPS),
+and yet, to date, there is no widely agreed-upon formal treatment of CPS resiliency. We present an
+STL-based framework for reasoning about resiliency in CPS in which resiliency has a syntactic characterization
+in the form of an STL-based Resiliency Specification (SRS). Given an arbitrary STL formula $\varphi$,
+time bounds $\alpha$ and $\beta$, the SRS of $\varphi$, $R_{\alpha,\beta}(\varphi)$, is the STL
+formula $\neg\varphi\mathbf{U}_{[0,\alpha]}\mathbf{G}_{[0,\beta)}\varphi$, specifying
+that recovery from a violation of $\varphi$ occur within time $\alpha$ (recoverability), and subsequently
+that $\varphi$ be maintained for duration $\beta$ (durability). These $R$-expressions, which
+are atoms in our SRS logic, can be combined using STL operators, allowing one to express composite
+resiliency specifications, e.g., multiple SRSs must hold simultaneously, or the system must eventually
+be resilient. We define a quantitative semantics for SRSs in the form of a Resilience Satisfaction
+Value (ReSV) function $r$ and prove its soundness and completeness w.r.t. STL's Boolean semantics.
+The $r$-value for $R_{\alpha,\beta}(\varphi)$ atoms is a singleton set containing a pair quantifying
+recoverability and durability. The $r$-value for a composite SRS formula results in a set of non-dominated
+recoverability-durability pairs, given that the ReSVs of subformulas might not be directly comparable
+(e.g., one subformula has superior durability but worse recoverability than another). To the best
+of our knowledge, this is the first multi-dimensional quantitative semantics for an STL-based
+logic. Two case studies demonstrate the practical utility of our approach. 

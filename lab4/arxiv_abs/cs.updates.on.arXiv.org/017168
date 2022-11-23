@@ -1,0 +1,19 @@
+We study the approximability of two related problems: $n$-Pairs Shortest Paths ($n$-PSP), where
+the goal is to find a shortest path between $O(n)$ prespecified pairs, and All Node Shortest Cycles
+(ANSC), where the goal is to find the shortest cycle passing through each node. Approximate $n$-PSP
+has been previously studied, mostly in the context of distance oracles. ANSC has also been studied
+previously, but only in terms of exact algorithms, rather than approximation. We provide a thorough
+study of the approximability of $n$-PSP and ANSC, providing a wide array of algorithms and conditional
+lower bounds that trade off between running time and approximation ratio. Our conditional hardness
+results are based on well-established and believable fine-grained hypotheses. A highlight of
+our conditional lower bounds results is that under the $(k,3)$-Hyperclique Hypothesis for any
+integer $k\ge 4$, there is no algorithm for unweighted undirected $n$-PSP with approximation ratio
+better than $3-6/k$ that runs in $O(n^{k/(k-2)-\epsilon})$ time. This is the first known lower
+bound with approximation ratio higher than 2 for any distance problem except for the $ST$-Diameter
+problem, but unlike in $n$-PSP, the number of vertex pairs one considers in $ST$-Diameter is much
+larger than the running time lower bounds. A highlight of our algorithmic results is that one can
+solve both $n$-PSP and ANSC in $\tilde O(m+ n^{3/2+\epsilon})$ time with approximation factor
+$2+\epsilon$ (and additive error that is function of $\epsilon$), for any constant $\epsilon>0$.
+For $n$-PSP, our conditional lower bounds imply that this approximation ratio is nearly optimal
+for any subquadratic-time combinatorial algorithm. We further extend these algorithms for $n$-PSP
+and ANSC to obtain a time/accuracy trade-off that includes near-linear time algorithms. 

@@ -1,0 +1,18 @@
+In this paper, we focus on solving the decentralized optimization problem of minimizing the sum
+of $n$ objective functions over a multi-agent network. The agents are embedded in an undirected
+graph where they can only send/receive information directly to/from their immediate neighbors.
+Assuming smooth and strongly convex objective functions, we propose an Optimal Gradient Tracking
+(OGT) method that achieves the optimal gradient computation complexity $O\left(\sqrt{\kappa}\log\frac{1}{\epsilon}\right)$
+and the optimal communication complexity $O\left(\sqrt{\frac{\kappa}{\theta}}\log\frac{1}{\epsilon}\right)$
+simultaneously, where $\kappa$ and $\frac{1}{\theta}$ denote the condition numbers related
+to the objective functions and the communication graph, respectively. To our knowledge, OGT is
+the first single-loop decentralized gradient-type method that is optimal in both gradient computation
+and communication complexities. The development of OGT involves two building blocks which are
+also of independent interest. The first one is another new decentralized gradient tracking method
+termed "Snapshot" Gradient Tracking (SS-GT), which achieves the gradient computation and communication
+complexities of $O\left(\sqrt{\kappa}\log\frac{1}{\epsilon}\right)$ and $O\left(\frac{\sqrt{\kappa}}{\theta}\log\frac{1}{\epsilon}\right)$,
+respectively. SS-GT can be potentially extended to more general settings compared to OGT. The second
+one is a technique termed Loopless Chebyshev Acceleration (LCA) which can be implemented "looplessly"
+but achieve similar effect with adding multiple inner loops of Chebyshev acceleration in the algorithms.
+In addition to SS-GT, this LCA technique can accelerate many other gradient tracking based methods
+with respect to the graph condition number $\frac{1}{\theta}$. 

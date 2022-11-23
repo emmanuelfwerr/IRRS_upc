@@ -1,0 +1,20 @@
+GPGPU architectures have become established as the dominant parallelization and performance
+platform achieving exceptional popularization and empowering domains such as regular algebra,
+machine learning, image detection and self-driving cars. However, irregular applications struggle
+to fully realize GPGPU performance as a result of control flow divergence and memory divergence
+due to irregular memory access patterns. To ameliorate these issues, programmers are obligated
+to carefully consider architecture features and devote significant efforts to modify the algorithms
+with complex optimization techniques, which shift programmers priorities yet struggle to quell
+the shortcomings. We show that in graph-based GPGPU irregular applications these inefficiencies
+prevail, yet we find that it is possible to relax the strict relationship between thread and data
+processed to empower new optimizations. Based on this key idea, we propose the Irregular accesses
+Reorder Unit (IRU), a novel hardware extension tightly integrated in the GPGPU pipeline. The IRU
+reorders data processed by the threads on irregular accesses which significantly improves memory
+coalescing, and allows increased performance and energy efficiency. Additionally, the IRU is
+capable of filtering and merging duplicated irregular access which further improves graph-based
+irregular applications. Programmers can easily utilize the IRU with a simple API, or compiler optimized
+generated code with the extended ISA instructions provided. We evaluate our proposal for state-of-the-art
+graph-based algorithms and a wide selection of applications. Results show that the IRU achieves
+a memory coalescing improvement of 1.32x and a 46% reduction in the overall traffic in the memory
+hierarchy, which results in 1.33x and 13% improvement in performance and energy savings respectively,
+while incurring in a small 5.6% area overhead. 

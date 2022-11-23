@@ -1,0 +1,20 @@
+Demystifying the delay propagation mechanisms among multiple airports is fundamental to precise
+and interpretable delay prediction, which is crucial during decision-making for all aviation
+industry stakeholders. The principal challenge lies in effectively leveraging the spatiotemporal
+dependencies and exogenous factors related to the delay propagation. However, previous works
+only consider limited spatiotemporal patterns with few factors. To promote more comprehensive
+propagation modeling for delay prediction, we propose SpatioTemporal Propagation Network (STPN),
+a space-time separable graph convolutional network, which is novel in spatiotemporal dependency
+capturing. From the aspect of spatial relation modeling, we propose a multi-graph convolution
+model considering both geographic proximity and airline schedule. From the aspect of temporal
+dependency capturing, we propose a multi-head self-attentional mechanism that can be learned
+end-to-end and explicitly reason multiple kinds of temporal dependency of delay time series. We
+show that the joint spatial and temporal learning models yield a sum of the Kronecker product, which
+factors the spatiotemporal dependence into the sum of several spatial and temporal adjacency matrices.
+By this means, STPN allows cross-talk of spatial and temporal factors for modeling delay propagation.
+Furthermore, a squeeze and excitation module is added to each layer of STPN to boost meaningful spatiotemporal
+features. To this end, we apply STPN to multi-step ahead arrival and departure delay prediction
+in large-scale airport networks. To validate the effectiveness of our model, we experiment with
+two real-world delay datasets, including U.S and China flight delays; and we show that STPN outperforms
+state-of-the-art methods. In addition, counterfactuals produced by STPN show that it learns explainable
+delay propagation patterns. 

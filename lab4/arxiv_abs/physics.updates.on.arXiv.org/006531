@@ -1,0 +1,19 @@
+Coarse-graining offers a means to extend the achievable time and length scales of molecular dynamics
+simulations beyond what is practically possible in the atomistic regime. Sampling molecular configurations
+of interest can be done efficiently using coarse-grained simulations, from which meaningful physicochemical
+information can be inferred if the corresponding all-atom configurations are reconstructed.
+However, this procedure of backmapping to reintroduce the lost atomistic detail into coarse-grain
+structures has proven a challenging task due to the many feasible atomistic configurations that
+can be associated with one coarse-grain structure. Existing backmapping methods are strictly
+frame-based, relying on either heuristics to replace coarse-grain particles with atomic fragments
+and subsequent relaxation, or parameterized models to propose atomic coordinates separately
+and independently for each coarse-grain structure. These approaches neglect information from
+previous trajectory frames that is critical to ensuring temporal coherence of the backmapped trajectory,
+while also offering information potentially helpful to produce higher-fidelity atomic reconstructions.
+In this work we present a deep learning-enabled data-driven approach for temporally coherent backmapping
+that explicitly incorporates information from preceding trajectory structures. Our method trains
+a conditional variational autoencoder to non-deterministically reconstruct atomistic detail
+conditioned on both the target coarse-grain configuration and the previously reconstructed atomistic
+configuration. We demonstrate our backmapping approach on two exemplar biomolecular systems:
+alanine dipeptide and the miniprotein chignolin. We show that our backmapped trajectories accurately
+recover the structural, thermodynamic, and kinetic properties of the atomistic trajectory data.

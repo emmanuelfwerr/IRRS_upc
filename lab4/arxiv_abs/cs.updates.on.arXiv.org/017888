@@ -1,0 +1,19 @@
+Deep transfer learning techniques try to tackle the limitations of deep learning, the dependency
+on extensive training data and the training costs, by reusing obtained knowledge. However, the
+current DTL techniques suffer from either catastrophic forgetting dilemma (losing the previously
+obtained knowledge) or overly biased pre-trained models (harder to adapt to target data) in finetuning
+pre-trained models or freezing a part of the pre-trained model, respectively. Progressive learning,
+a sub-category of DTL, reduces the effect of the overly biased model in the case of freezing earlier
+layers by adding a new layer to the end of a frozen pre-trained model. Even though it has been successful
+in many cases, it cannot yet handle distant source and target data. We propose a new continual/progressive
+learning approach for deep transfer learning to tackle these limitations. To avoid both catastrophic
+forgetting and overly biased-model problems, we expand the pre-trained model by expanding pre-trained
+layers (adding new nodes to each layer) in the model instead of only adding new layers. Hence the method
+is named EXPANSE. Our experimental results confirm that we can tackle distant source and target
+data using this technique. At the same time, the final model is still valid on the source data, achieving
+a promising deep continual learning approach. Moreover, we offer a new way of training deep learning
+models inspired by the human education system. We termed this two-step training: learning basics
+first, then adding complexities and uncertainties. The evaluation implies that the two-step training
+extracts more meaningful features and a finer basin on the error surface since it can achieve better
+accuracy in comparison to regular training. EXPANSE (model expansion and two-step training) is
+a systematic continual learning approach applicable to different problems and DL models. 

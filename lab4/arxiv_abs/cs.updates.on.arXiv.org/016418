@@ -1,0 +1,20 @@
+Medical diagnosis assistant (MDA) aims to build an interactive diagnostic agent to sequentially
+inquire about symptoms for discriminating diseases. However, since the dialogue records used
+to build a patient simulator are collected passively, the data might be deteriorated by some task-unrelated
+biases, such as the preference of the collectors. These biases might hinder the diagnostic agent
+to capture transportable knowledge from the simulator. This work attempts to address these critical
+issues in MDA by taking advantage of the causal diagram to identify and resolve two representative
+non-causal biases, i.e., (i) default-answer bias and (ii) distributional inquiry bias. Specifically,
+Bias (i) originates from the patient simulator which tries to answer the unrecorded inquiries with
+some biased default answers. Consequently, the diagnostic agents cannot fully demonstrate their
+advantages due to the biased answers. To eliminate this bias and inspired by the propensity score
+matching technique with causal diagram, we propose a propensity-based patient simulator to effectively
+answer unrecorded inquiry by drawing knowledge from the other records; Bias (ii) inherently comes
+along with the passively collected data, and is one of the key obstacles for training the agent towards
+"learning how" rather than "remembering what". For example, within the distribution of training
+data, if a symptom is highly coupled with a certain disease, the agent might learn to only inquire
+about that symptom to discriminate that disease, thus might not generalize to the out-of-distribution
+cases. To this end, we propose a progressive assurance agent, which includes the dual processes
+accounting for symptom inquiry and disease diagnosis respectively. The inquiry process is driven
+by the diagnosis process in a top-down manner to inquire about symptoms for enhancing diagnostic
+confidence. 

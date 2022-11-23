@@ -1,0 +1,19 @@
+In recent years, identification of nonlinear dynamical systems from data has become increasingly
+popular. Sparse regression approaches, such as Sparse Identification of Nonlinear Dynamics (SINDy),
+fostered the development of novel governing equation identification algorithms assuming the
+state variables are known a priori and the governing equations lend themselves to sparse, linear
+expansions in a (nonlinear) basis of the state variables. In the context of the identification of
+governing equations of nonlinear dynamical systems, one faces the problem of identifiability
+of model parameters when state measurements are corrupted by noise. Measurement noise affects
+the stability of the recovery process yielding incorrect sparsity patterns and inaccurate estimation
+of coefficients of the governing equations. In this work, we investigate and compare the performance
+of several local and global smoothing techniques to a priori denoise the state measurements and
+numerically estimate the state time-derivatives to improve the accuracy and robustness of two
+sparse regression methods to recover governing equations: Sequentially Thresholded Least Squares
+(STLS) and Weighted Basis Pursuit Denoising (WBPDN) algorithms. We empirically show that, in general,
+global methods, which use the entire measurement data set, outperform local methods, which employ
+a neighboring data subset around a local point. We additionally compare Generalized Cross Validation
+(GCV) and Pareto curve criteria as model selection techniques to automatically estimate near optimal
+tuning parameters, and conclude that Pareto curves yield better results. The performance of the
+denoising strategies and sparse regression methods is empirically evaluated through well-known
+benchmark problems of nonlinear dynamical systems. 

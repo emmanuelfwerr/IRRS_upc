@@ -1,0 +1,20 @@
+The evolution of mobile communication networks has always been accompanied by the advancement
+of inter-symbol interference (ISI) mitigation techniques, from equalization in 2G, spread spectrum
+and RAKE receiver in 3G, to OFDM in 4G and 5G. Looking forward towards 6G, by exploiting the extremely
+large spatial dimension brought by large antenna arrays and multi-path sparsity of millimeter
+wave (mmWave)/Terahertz channels, we propose a novel ISI mitigation technique, termed delay alignment
+modulation (DAM). The key ideas of DAM are path delay pre-compensation and path-based beamforming,
+i.e., by deliberately introducing symbol delays to compensate respective multi-path delays of
+the channel, so that with appropriate per-path-based beamforming, the multi-path signal components
+will arrive at the receiver simultaneously and constructively. To gain some insights, we first
+show that perfect delay alignment can be achieved to transform the time-dispersive channel to time
+non-dispersive channel, without sophisticated channel equalization or multi-carrier processing.
+This thus enables efficient equalization-free single-carrier transmission or CP-free OFDM transmission.
+When perfect DAM is infeasible or undesirable, we propose the generic DAM technique to significantly
+reduce the channel delay spread. This thus provides a new DoF to combat channel time dispersion for
+more efficient single- or multi-carrier signal transmissions. As an illustration, we propose
+the novel DAM-OFDM technique, which may save the CP overhead or mitigate the PAPR and CFO issues suffered
+by conventional OFDM. We show that DAM-OFDM involves joint frequency-domain and time-domain beamforming
+optimization, for which a closed-form solution is derived. Simulation results show that the proposed
+DAM-OFDM achieves significant performance gains over the conventional OFDM, in terms of spectral
+efficiency, BER and PAPR. 

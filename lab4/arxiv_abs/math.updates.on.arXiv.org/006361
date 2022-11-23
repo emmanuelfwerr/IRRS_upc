@@ -1,0 +1,19 @@
+We consider a cell-free wireless system operated in Time Division Duplex (TDD) mode with localized
+user-centric clusters of remote radio units (RUs). Since the uplink pilot dimensions per channel
+coherence slot is limited, co-pilot users might incur mutual pilot contamination. In the current
+literature, it is assumed that the long-term statistical knowledge of all user channels is available.
+This enables MMSE channel estimation or simplified dominant subspace projection, which achieves
+significant pilot decontamination under certain assumptions on the channel covariance matrices.
+However, estimating the channel covariance matrix or even just its dominant subspace at all RUs
+forming a user cluster is not an easy task. In fact, if not properly designed, a piloting scheme for
+such long-term statistics estimation will also be subject to the contamination problem. In this
+paper, we propose a new channel subspace estimation scheme explicitly designed for cell-free wireless
+networks. Our scheme is based on 1) a sounding reference signal (SRS) using latin squares wideband
+frequency hopping, and 2) a subspace estimation method based on robust Principal Component Analysis
+(R-PCA). The SRS hopping scheme ensures that for any user and any RU participating in its cluster,
+only a few pilot measurements will contain strong co-pilot interference. These few heavily contaminated
+measurements are (implicitly) eliminated by R-PCA, which is designed to regularize the estimation
+and discount the "outlier" measurements. Our simulation results show that the proposed scheme
+achieves almost perfect subspace knowledge, which in turns yields system performance very close
+to that with ideal channel state information, thus essentially solving the problem of pilot contamination
+in cell-free user-centric TDD wireless networks. 

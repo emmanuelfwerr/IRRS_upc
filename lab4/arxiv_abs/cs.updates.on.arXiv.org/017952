@@ -1,0 +1,19 @@
+Bolt joints are very common and important in engineering structures. Due to extreme service environment
+and load factors, bolts often get loose or even disengaged. To real-time or timely detect the loosed
+or disengaged bolts is an urgent need in practical engineering, which is critical to keep structural
+safety and service life. In recent years, many bolt loosening detection methods using deep learning
+and machine learning techniques have been proposed and are attracting more and more attention.
+However, most of these studies use bolt images captured in laboratory for deep leaning model training.
+The images are obtained in a well-controlled light, distance, and view angle conditions. Also,
+the bolted structures are well designed experimental structures with brand new bolts and the bolts
+are exposed without any shelter nearby. It is noted that in practical engineering, the above well
+controlled lab conditions are not easy realized and the real bolt images often have blur edges, oblique
+perspective, partial occlusion and indistinguishable colors etc., which make the trained models
+obtained in laboratory conditions loss their accuracy or fails. Therefore, the aim of this study
+is to develop a dataset named NPU-BOLT for bolt object detection in natural scene images and open
+it to researchers for public use and further development. In the first version of the dataset, it
+contains 337 samples of bolt joints images mainly in the natural environment, with image data sizes
+ranging from 400*400 to 6000*4000, totaling approximately 1275 bolt targets. The bolt targets
+are annotated into four categories named blur bolt, bolt head, bolt nut and bolt side. The dataset
+is tested with advanced object detection models including yolov5, Faster-RCNN and CenterNet.
+The effectiveness of the dataset is validated. 

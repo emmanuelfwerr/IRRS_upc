@@ -1,0 +1,20 @@
+Next generation telescopes, such as Euclid, Rubin/LSST, and Roman, will open new windows on the
+Universe, allowing us to infer physical properties for tens of millions of galaxies. Machine learning
+methods are increasingly becoming the most efficient tools to handle this enormous amount of data,
+not only as they are faster to apply to data samples than traditional methods, but because they are
+also often more accurate. Properly understanding their applications and limitations for the exploitation
+of these data is of utmost importance. In this paper we present an exploration of this topic by investigating
+how well redshifts, stellar masses, and star-formation rates can be measured with deep learning
+algorithms for galaxies within data that mimics the Euclid and Rubin/LSST surveys. We find that
+Deep Learning Neural Networks and Convolutional Neutral Networks (CNN), which are dependent on
+the parameter space of the sample used for training, perform well in measuring the properties of
+these galaxies and have an accuracy which is better than traditional methods based on spectral energy
+distribution fitting. CNNs allow the processing of multi-band magnitudes together with $H_{E}$-band
+images. We find that the estimates of stellar masses improve with the use of an image, but those of
+redshift and star-formation rates do not. Our best machine learning results are deriving i) the
+redshift within a normalised error of less than 0.15 for 99.9% of the galaxies in the sample with S/N>3
+in the $H_{E}$-band; ii) the stellar mass within a factor of two ($\sim$0.3 dex) for 99.5% of the considered
+galaxies; iii) the star-formation rates within a factor of two ($\sim$0.3 dex) for $\sim$70% of
+the sample. We discuss the implications of our work for application to surveys, mainly but not limited
+to Euclid and Rubin/LSST, and how measurements of these galaxy parameters can be improved with deep
+learning. 

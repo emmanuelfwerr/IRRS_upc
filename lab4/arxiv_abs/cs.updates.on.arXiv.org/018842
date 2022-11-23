@@ -1,0 +1,19 @@
+Predicting the future states of surrounding traffic participants and planning a safe, smooth,
+and socially compliant trajectory accordingly is crucial for autonomous vehicles. There are two
+major issues with the current autonomous driving system: the prediction module is often decoupled
+from the planning module and the cost function for planning is hard to specify and tune. To tackle
+these issues, we propose an end-to-end differentiable framework that integrates prediction and
+planning modules and is able to learn the cost function from data. Specifically, we employ a differentiable
+nonlinear optimizer as the motion planner, which takes the predicted trajectories of surrounding
+agents given by the neural network as input and optimizes the trajectory for the autonomous vehicle,
+thus enabling all operations in the framework to be differentiable including the cost function
+weights. The proposed framework is trained on a large-scale real-world driving dataset to imitate
+human driving trajectories in the entire driving scene and validated in both open-loop and closed-loop
+manners. The open-loop testing results reveal that the proposed method outperforms the baseline
+methods across a variety of metrics and delivers planning-centric prediction results, allowing
+the planning module to output close-to-human trajectories. In closed-loop testing, the proposed
+method shows the ability to handle complex urban driving scenarios and robustness against the distributional
+shift that imitation learning methods suffer from. Importantly, we find that joint training of
+planning and prediction modules achieves better performance than planning with a separate trained
+prediction module in both open-loop and closed-loop tests. Moreover, the ablation study indicates
+that the learnable components in the framework are essential to ensure planning stability and performance.

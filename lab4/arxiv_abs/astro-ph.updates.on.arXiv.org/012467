@@ -1,0 +1,20 @@
+The detection and characterization of an increasing variety of exoplanets has been in part possible
+thanks to the continuous development of high-resolution, stable spectrographs, and using the
+Doppler radial-velocity (RV) method. The Cross Correlation Function (CCF) method is one of the
+traditional approaches for RV extraction. More recently, template matching was introduced as
+an advantageous alternative for M-dwarf stars. In this paper, we describe a new implementation
+of template matching within a semi-Bayesian framework, providing a more statistically principled
+characterization of the RV measurements. In this context, a common RV shift is used to describe the
+difference between each spectral order of a given stellar spectrum and a template built from the
+available observations. Posterior probability distributions are obtained for the relative RV
+associated with each spectrum, after marginalizing with respect to the continuum. This methodology
+was named S-BART: Semi-Bayesian Approach for RVs with Template-matching, and it can be applied
+to HARPS and ESPRESSO. The application of our method to HARPS archival observations of Barnard's
+star allowed us to validate our implementation against HARPS-TERRA and SERVAL. Then, we applied
+it to 33 ESPRESSO targets, evaluating its performance and comparing it with the CCF method. We found
+a decrease in the median RV scatter of \sim 10\% and \sim 4\% for M- and K-type stars, respectively.
+S-BART yields more precise RV estimates than the CCF method, particularly in the case of M-type stars
+where a median uncertainty of \sim 15 cm/s is achieved over 309 observations. Further, we estimated
+the nightly zero point (NZP) of ESPRESSO, finding a weighted NZP scatter below \sim 0.7 m/s. As this
+includes stellar variability, photon noise, and potential planetary signals, it should be taken
+as an upper limit of the RV precision attainable with ESPRESSO data. 

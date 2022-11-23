@@ -1,0 +1,19 @@
+A Boolean maximum constraint satisfaction problem, Max-CSP($f$), is specified by a predicate
+$f:\{-1,1\}^k\to\{0,1\}$. An $n$-variable instance of Max-CSP($f$) consists of a list of constraints,
+each of which applies $f$ to $k$ distinct literals drawn from the $n$ variables. For $k=2$, Chou,
+Golovnev, and Velusamy [CGV20, FOCS 2020] obtained explicit ratios characterizing the $\sqrt
+n$-space streaming approximability of every predicate. For $k \geq 3$, Chou, Golovnev, Sudan,
+and Velusamy [CGSV21, arXiv:2102.12351] proved a general dichotomy theorem for $\sqrt n$-space
+sketching algorithms: For every $f$, there exists $\alpha(f)\in (0,1]$ such that for every $\epsilon>0$,
+Max-CSP($f$) is $(\alpha(f)-\epsilon)$-approximable by an $O(\log n)$-space linear sketching
+algorithm, but $(\alpha(f)+\epsilon)$-approximation sketching algorithms require $\Omega(\sqrt{n})$
+space. In this work, we give closed-form expressions for the sketching approximation ratios of
+multiple families of symmetric Boolean functions. Letting $\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}$,
+we show that for odd $k \geq 3$, $\alpha(k$AND$) = \alpha'_k$, and for even $k \geq 2$, $\alpha(k$AND$)
+= 2\alpha'_{k+1}$. We also resolve the ratio for the "at-least-$(k-1)$-$1$'s" function for all
+even $k$; the "exactly-$\frac{k+1}2$-$1$'s" function for odd $k \in \{3,\ldots,51\}$; and fifteen
+other functions. We stress here that for general $f$, according to [CGSV21], closed-form expressions
+for $\alpha(f)$ need not have existed a priori. Separately, for all threshold functions, we give
+optimal "bias-based" approximation algorithms generalizing [CGV20] while simplifying [CGSV21].
+Finally, we investigate the $\sqrt n$-space streaming lower bounds in [CGSV21], and show that they
+are incomplete for $3$AND. 

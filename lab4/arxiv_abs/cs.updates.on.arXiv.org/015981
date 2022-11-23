@@ -1,0 +1,19 @@
+Periodic double auctions (PDA) have applications in many areas such as in e-commerce, intra-day
+equity markets, and day-ahead energy markets in smart-grids. While the trades accomplished using
+PDAs are worth trillions of dollars, finding a reliable bidding strategy in such auctions is still
+a challenge as it requires the consideration of future auctions. A participating buyer in a PDA has
+to design its bidding strategy by planning for current and future auctions. Many equilibrium-based
+bidding strategies proposed are complex to use in real-time. In the current exposition, we propose
+a scale-based bidding strategy for buyers participating in PDA. We first present an equilibrium
+analysis for single-buyer single-seller multi-unit single-shot k-Double auctions. Specifically,
+we analyze the situation when a seller and a buyer trade two identical units of quantity in a double
+auction where both the buyer and the seller deploy a simple, scale-based bidding strategy. The equilibrium
+analysis becomes intractable as the number of participants increases. To be useful in more complex
+settings such as wholesale markets in smart-grids, we model equilibrium bidding strategy as a learning
+problem. We develop a deep deterministic policy gradient (DDPG) based learning strategy, DDPGBBS,
+for a participating agent in PDAs to suggest an action at any auction instance. DDPGBBS, which empirically
+follows the obtained theoretical equilibrium, is easily extendable when the number of buyers/sellers
+increases. We take Power Trading Agent Competition's (PowerTAC) wholesale market PDA as a testbed
+to evaluate our novel bidding strategy. We benchmark our DDPG based strategy against several baselines
+and state-of-the-art bidding strategies of the PowerTAC wholesale market PDA and demonstrate
+the efficacy of DDPGBBS against several benchmarked strategies. 

@@ -1,0 +1,19 @@
+Detection of the \hi~ 21-cm power spectrum is one of the key science drivers of several ongoing and
+upcoming low-frequency radio interferometers. However, the major challenge in such observations
+come from bright foregrounds, whose accurate removal or avoidance is key to the success of these
+experiments. In this work, we demonstrate the use of artificial neural networks (ANNs) to extract
+the \hi~ 21-cm power spectrum from synthetic datasets and extract the reionization parameters
+from the \hi~ 21-cm power spectrum. For the first time, using a suite of simulations, we present an
+ANN based framework capable of extracting the \hi~ signal power spectrum directly from the total
+observed sky power spectrum (which contains the 21-cm signal, along with the foregrounds and effects
+of the instrument). To achieve this, we have used a combination of two separate neural networks sequentially.
+As the first step, \texttt{ANN1} predicts the 21-cm power spectrum directly from foreground corrupted
+synthetic datasets. In the second step, \texttt{ANN2} predicts the reionization parameters from
+the predicted \hi~ power spectra from \texttt{ANN1}. Our ANN-based framework is trained at a redshift
+of $9.01$, and for \kk-modes in the range, $\rm{0.17<\kk<0.37~Mpc^{-1}}$. We have tested the network's
+performance with mock datasets that include foregrounds and are corrupted with thermal noise,
+corresponding to $1080$ hrs of observations of the \textsc{ska-1 low} and \textsc{hera}. Using
+our ANN framework, we are able to recover the \hi~ power spectra with an accuracy of $\approx95-99\%$
+for the different test sets. For the predicted astrophysical parameters, we have achieved an accuracy
+of $\approx~81-90\%$ and $\approx~50-60\%$ for the test sets corrupted with thermal noise corresponding
+to the \textsc{ska-1 low} and \textsc{hera}, respectively. 

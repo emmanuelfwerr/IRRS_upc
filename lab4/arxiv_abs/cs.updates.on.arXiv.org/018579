@@ -1,0 +1,20 @@
+Application virtual memory footprints are growing rapidly in all systems from servers down to smartphones.
+To address this growing demand, system integrators are incorporating ever larger amounts of main
+memory, warranting rethinking of memory management. In current systems, applications produce
+page fault exceptions whenever they access virtual memory regions which are not backed by a physical
+page. As application memory footprints grow, they induce more and more minor faults. Handling of
+each minor fault can take few 1000's of CPU-cycles and blocks the application till OS finds a free
+physical frame. These page faults can be detrimental to the performance, when their frequency of
+occurrence is high and spread across application run-time. Specifically, lazy allocation induced
+minor page faults are increasingly impacting application performance. Our evaluation of several
+workloads indicates an overhead due to minor faults as high as 29% of execution time. In this paper,
+we propose to mitigate this problem through a hardware, software co-design approach. Specifically
+we first propose to parallelize portions of the kernel page allocation to run ahead of fault time
+in a separate thread. Then we propose the Minor Fault Offload Engine(MFOE), a per-core HW accelerator
+for minor fault handling. MFOE is equipped with pre-allocated page frame table that it uses to service
+a page fault. On a page fault, MFOE picks a pre-allocated page frame from this table, makes an entry
+for it in the TLB, and updates the page table entry to satisfy the page fault. The pre-allocation frame
+tables are periodically refreshed by a background kernel thread, which also updates the kernel
+memory management data-structures. We evaluate this system in the gem5 architectural simulator
+with a modified Linux kernel. Our results show that MFOE improves the average critical-path fault
+handling latency by 33x. 

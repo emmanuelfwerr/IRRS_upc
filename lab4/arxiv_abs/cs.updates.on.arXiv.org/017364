@@ -1,0 +1,20 @@
+Multi-cloud computing has become increasingly popular with enterprises looking to avoid vendor
+lock-in. While most cloud providers offer similar functionality, they may differ significantly
+in terms of performance and/or cost. A customer looking to benefit from such differences will naturally
+want to solve the multi-cloud configuration problem: given a workload, which cloud provider should
+be chosen and how should its nodes be configured in order to minimize runtime or cost? In this work,
+we consider solutions to this optimization problem. We develop and evaluate possible adaptations
+of state-of-the-art cloud configuration solutions to the multi-cloud domain. Furthermore, we
+identify an analogy between multi-cloud configuration and the selection-configuration problems
+commonly studied in the automated machine learning (AutoML) field. Inspired by this connection,
+we utilize popular optimizers from AutoML to solve multi-cloud configuration. Finally, we propose
+a new algorithm for solving multi-cloud configuration, CloudBandit (CB). It treats the outer problem
+of cloud provider selection as a best-arm identification problem, in which each arm pull corresponds
+to running an arbitrary black-box optimizer on the inner problem of node configuration. Our experiments
+indicate that (a) many state-of-the-art cloud configuration solutions can be adapted to multi-cloud,
+with best results obtained for adaptations which utilize the hierarchical structure of the multi-cloud
+configuration domain, (b) hierarchical methods from AutoML can be used for the multi-cloud configuration
+task and can outperform state-of-the-art cloud configuration solutions and (c) CB achieves competitive
+or lower regret relative to other tested algorithms, whilst also identifying configurations that
+have 65% lower median cost and 20% lower median time in production, compared to choosing a random
+provider and configuration. 

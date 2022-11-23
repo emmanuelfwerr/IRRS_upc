@@ -1,0 +1,19 @@
+The X-ray Integral Field Unit (X-IFU) is the high resolution X-ray spectrometer of ESA's Athena
+X-ray observatory. It will deliver X-ray data in the 0.2-12 keV band with an unprecedented spectral
+resolution of 2.5 eV up to 7 keV. During the observation of very bright X-ray sources, the X-IFU detectors
+will receive high photon rates. The count rate capability of the X-IFU will be improved by using the
+defocusing option, which will enable the observations of extremely bright sources with fluxes
+up to $\simeq 1$ Crab. In the defocused mode, the point spread function (PSF) of the telescope will
+be spread over a large number of pixels. In this case, each pixel receives a small fraction of the overall
+flux. Due to the energy dependence of the PSF, this mode will generate energy dependent artefacts
+increasing with count rate if not analysed properly. To account for the degradation of the energy
+resolution with pulse separation in a pixel, a grading scheme (here four grades) will be defined
+to affect the proper energy response to each event. This will create selection effects preventing
+the use of the nominal Auxiliary Response File (ARF) for all events. We present a new method for the
+reconstruction of the spectra obtained from observations performed with a PSF that varies as a function
+of energy. We apply our method to the case of the X-IFU spectra obtained during the defocused observations.
+We use the end-to-end SIXTE simulator to model defocused X-IFU observations. Then we estimate new
+ARF for each of the grades by calculating the effective area at the level of each pixel. Our method
+allows us to successfully reconstruct the spectra of bright sources when employed in the defocused
+mode, without any bias. Finally, we address how various sources of uncertainty related to our knowledge
+of the PSF as a function of energy affect our results. 

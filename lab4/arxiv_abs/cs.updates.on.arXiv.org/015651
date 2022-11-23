@@ -1,0 +1,19 @@
+In recent years, many backdoor attacks based on training data poisoning have been proposed. However,
+in practice, those backdoor attacks are vulnerable to image compressions. When backdoor instances
+are compressed, the feature of specific backdoor trigger will be destroyed, which could result
+in the backdoor attack performance deteriorating. In this paper, we propose a compression-resistant
+backdoor attack based on feature consistency training. To the best of our knowledge, this is the
+first backdoor attack that is robust to image compressions. First, both backdoor images and their
+compressed versions are input into the deep neural network (DNN) for training. Then, the feature
+of each image is extracted by internal layers of the DNN. Next, the feature difference between backdoor
+images and their compressed versions are minimized. As a result, the DNN treats the feature of compressed
+images as the feature of backdoor images in feature space. After training, the backdoor attack against
+DNN is robust to image compression. Furthermore, we consider three different image compressions
+(i.e., JPEG, JPEG2000, WEBP) in feature consistency training, so that the backdoor attack is robust
+to multiple image compression algorithms. Experimental results demonstrate the effectiveness
+and robustness of the proposed backdoor attack. When the backdoor instances are compressed, the
+attack success rate of common backdoor attack is lower than 10%, while the attack success rate of
+our compression-resistant backdoor is greater than 97%. The compression-resistant attack is
+still robust even when the backdoor images are compressed with low compression quality. In addition,
+extensive experiments have demonstrated that, our compression-resistant backdoor attack has
+the generalization ability to resist image compression which is not used in the training process.

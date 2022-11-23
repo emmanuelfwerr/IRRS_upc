@@ -1,0 +1,19 @@
+Neural networks have achieved impressive results in many medical imaging tasks but often perform
+substantially worse on out-of-distribution datasets originating from different medical centres
+or patient cohorts. Evaluating this lack of ability to generalise and address the underlying problem
+are the two main challenges in developing neural networks intended for clinical practice. In this
+study, we develop a new method for evaluating neural network models' ability to generalise by generating
+a large number of distribution-shifted datasets, which can be used to thoroughly investigate their
+robustness to variability encountered in clinical practice. Compared to external validation,
+\textit{shifted evaluation} can provide explanations for why neural networks fail on a given dataset,
+thus offering guidance on how to improve model robustness. With shifted evaluation, we demonstrate
+that neural networks, trained with state-of-the-art methods, are highly fragile to even small
+distribution shifts from training data, and in some cases lose all discrimination ability. To address
+this fragility, we develop an augmentation strategy, explicitly designed to increase neural networks'
+robustness to distribution shifts. \texttt{StrongAugment} is evaluated with large-scale, heterogeneous
+histopathology data including five training datasets from two tissue types, 274 distribution-shifted
+datasets and 20 external datasets from four countries. Neural networks trained with \texttt{StrongAugment}
+retain similar performance on all datasets, even with distribution shifts where networks trained
+with current state-of-the-art methods lose all discrimination ability. We recommend using strong
+augmentation and shifted evaluation to train and evaluate all neural networks intended for clinical
+practice. 

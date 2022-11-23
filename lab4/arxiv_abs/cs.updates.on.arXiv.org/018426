@@ -1,0 +1,19 @@
+One of the most important and well-studied settings for network design is edge-connectivity requirements.
+This encompasses uniform demands such as the Minimum $k$-Edge-Connected Spanning Subgraph problem
+($k$-ECSS), as well as nonuniform demands such as the Survivable Network Design problem. A weakness
+of these formulations, though, is that we are not able to ask for fault-tolerance larger than the
+connectivity. We introduce and study new variants of these problems under a notion of relative fault-tolerance.
+Informally, we require not that two nodes are connected if there are a bounded number of faults (as
+in the classical setting), but that two nodes are connected if there are a bounded number of faults
+and the two nodes are connected in the underlying graph post-faults. That is, the subgraph we build
+must "behave" identically to the underlying graph with respect to connectivity after bounded faults.
+We define and introduce these problems, and provide the first approximation algorithms: a $(1+4/k)$-approximation
+for the unweighted relative version of $k$-ECSS, a $2$-approximation for the weighted relative
+version of $k$-ECSS, and a $27/4$-approximation for the special case of Relative Survivable Network
+Design with only a single demand with a connectivity requirement of $3$. To obtain these results,
+we introduce a number of technical ideas that may of independent interest. First, we give a generalization
+of Jain's iterative rounding analysis that works even when the cut-requirement function is not
+weakly supermodular, but instead satisfies a weaker definition we introduce and term local weak
+supermodularity. Second, we prove a structure theorem and design an approximation algorithm utilizing
+a new decomposition based on important separators, which are structures commonly used in fixed-parameter
+algorithms that have not commonly been used in approximation algorithms. 

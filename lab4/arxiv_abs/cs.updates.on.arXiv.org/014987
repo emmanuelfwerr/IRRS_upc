@@ -1,0 +1,20 @@
+In the classical contextual bandits problem, in each round $t$, a learner observes some context
+$c$, chooses some action $i$ to perform, and receives some reward $r_{i,t}(c)$. We consider the
+variant of this problem where in addition to receiving the reward $r_{i,t}(c)$, the learner also
+learns the values of $r_{i,t}(c')$ for some other contexts $c'$ in set $\mathcal{O}_i(c)$; i.e.,
+the rewards that would have been achieved by performing that action under different contexts $c'\in
+\mathcal{O}_i(c)$. This variant arises in several strategic settings, such as learning how to
+bid in non-truthful repeated auctions, which has gained a lot of attention lately as many platforms
+have switched to running first-price auctions. We call this problem the contextual bandits problem
+with cross-learning. The best algorithms for the classical contextual bandits problem achieve
+$\tilde{O}(\sqrt{CKT})$ regret against all stationary policies, where $C$ is the number of contexts,
+$K$ the number of actions, and $T$ the number of rounds. We design and analyze new algorithms for the
+contextual bandits problem with cross-learning and show that their regret has better dependence
+on the number of contexts. Under complete cross-learning where the rewards for all contexts are
+learned when choosing an action, i.e., set $\mathcal{O}_i(c)$ contains all contexts, we show that
+our algorithms achieve regret $\tilde{O}(\sqrt{KT})$, removing the dependence on $C$. For any
+other cases, i.e., under partial cross-learning where $|\mathcal{O}_i(c)|< C$ for some context-action
+pair of $(i,c)$, the regret bounds depend on how the sets $\mathcal O_i(c)$ impact the degree to which
+cross-learning between contexts is possible. We simulate our algorithms on real auction data from
+an ad exchange running first-price auctions and show that they outperform traditional contextual
+bandit algorithms. 

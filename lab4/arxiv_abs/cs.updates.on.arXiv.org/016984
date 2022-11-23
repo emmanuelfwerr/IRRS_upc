@@ -1,0 +1,20 @@
+We consider a matching problem in a bipartite graph $G=(A\cup B,E)$ where each node in $A$ is an agent
+having preferences in partial order over her neighbors, while nodes in $B$ are objects with no preferences.
+The size of our matching is more important than node preferences; thus, we are interested in maximum
+matchings only. Any pair of maximum matchings in $G$ (equivalently, perfect matchings or assignments)
+can be compared by holding a head-to-head election between them where agents are voters. The goal
+is to compute an assignment $M$ such that there is no better or "more popular" assignment. This is
+the popular assignment problem and it generalizes the well-studied popular matching problem.
+Popular assignments need not always exist. We show a polynomial-time algorithm that decides if
+the given instance admits one or not, and computes one, if so. In instances with no popular assignment,
+we consider the problem of finding an almost popular assignment, i.e., an assignment with minimum
+unpopularity margin. We show an $O^*(|E|^k)$ time algorithm for deciding if there exists an assignment
+with unpopularity margin at most $k$. We show that this algorithm is essentially optimal by proving
+that the problem is $\mathsf{W}_l[1]$-hard with parameter $k$. We also consider the minimum-cost
+popular assignment problem when there are edge costs, and show its $\mathsf{NP}$-hardness even
+when all edge costs are in $\{0,1\}$ and agents have strict preferences. By contrast, we propose
+a polynomial-time algorithm to the problem of deciding if there exists a popular assignment with
+a given set of forced/forbidden edges (this tractability holds even for partially ordered preferences).
+Our algorithms are combinatorial and based on LP duality. They search for an appropriate witness
+or dual certificate, and when a certificate cannot be found, we prove that the desired assignment
+does not exist in $G$. 

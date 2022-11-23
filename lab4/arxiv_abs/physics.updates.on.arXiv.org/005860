@@ -1,0 +1,19 @@
+In this paper, a unified framework for particulate two-phase flow will be presented with a wide range
+of solid-particle concentration from dilute to dense limit. The two phase flow is simulated by two
+coupled flow solvers, i.e., the gas-kinetic scheme (GKS) for the gas phase and unified gas-kinetic
+wave-particle method (UGKWP) for the particle phase. The GKS is a second-order Navier-Stokes flow
+solver for the continuum flow. The UGKWP is a multiscale method for all flow regimes. The wave and
+particle decomposition in UGKWP depends on the cell's Knudsen number (Kn). At a small Kn number,
+the high concentrated solid particle phase will be modeled by the Eulerian hydrodynamic wave due
+to the intensive particle-particle collisions. At a large Kn number, the dilute solid particle
+will be sampled and followed by the Lagrangian particle formulation to capture the non-equilibrium
+transport. In the transition regime, the distribution and evolution of particle and wave in UGKWP
+are controlled by the local Kn number with a smooth transition between the above limits. In the current
+scheme, the two phase model improves the previous one in all following aspects: drag force model
+for different solid particle concentrations; the frictional pressure in inter-particle contacts
+at high solid-particle concentration; a flux limiting model to avoid solid particles' over-packing;
+additional non-conservative nozzle and work terms for the gas phase. Besides, the inter-particle
+collisions have been refined numerically for the dense particle flow through the discretization
+of the collision term and numerical flux function. The numerical scheme is tested in a series of typical
+gas-particle problems. The results validate the accuracy and reliability of the proposed method
+for gas-particle flow. 

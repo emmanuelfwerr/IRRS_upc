@@ -1,0 +1,19 @@
+Generative Adversarial Networks (GANs) are increasingly adopted by the industry to synthesize
+realistic images. Due to data not being centrally available, Multi-Discriminator (MD)-GANs training
+framework employs multiple discriminators that have direct access to the real data. Distributedly
+training a joint GAN model entails the risk of free-riders, i.e., participants that aim to benefit
+from the common model while only pretending to participate in the training process. In this paper,
+we conduct the first characterization study of the impact of free-riders on MD-GAN. Based on two
+production prototypes of MD-GAN, we find that free-riders drastically reduce the ability of MD-GANs
+to produce images that are indistinguishable from real data, i.e., they increase the FID score --
+the standard measure to assess the quality of generated images. To mitigate the model degradation,
+we propose a defense strategy against free-riders in MD-GAN, termed DFG. DFG distinguishes free-riders
+and benign participants through periodic probing and clustering of discriminators' responses
+based on a reference response of free-riders, which then allows the generator to exclude the detected
+free-riders from the training. Furthermore, we extend our defense, termed DFG+, to enable discriminators
+to filter out free-riders at the variant of MD-GAN that allows peer exchanges of discriminators
+networks. Extensive evaluation on various scenarios of free-riders, MD-GAN architecture, and
+three datasets show that our defenses effectively detect free-riders. With 1 to 5 free-riders,
+DFG and DFG+ averagely decreases FID by 5.22% to 11.53% for CIFAR10 and 5.79% to 13.22% for CIFAR100
+in comparison to an attack without defense. In a shell, the proposed DFG(+) can effectively defend
+against free-riders without affecting benign clients at a negligible computation overhead. 

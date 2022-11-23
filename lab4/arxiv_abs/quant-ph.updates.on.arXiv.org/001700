@@ -1,0 +1,20 @@
+Randomized benchmarking (RB) refers to a collection of protocols that in the past decade have become
+central methods for characterizing quantum gates. These protocols aim at efficiently estimating
+the quality of a set of quantum gates in a way that is resistant to state preparation and measurement
+errors. Over the years many versions have been developed, however, a comprehensive theoretical
+treatment of RB has been missing. In this work, we develop a rigorous framework of RB general enough
+to encompass virtually all known protocols as well as novel, more flexible extensions. Overcoming
+previous limitations on error models and gate sets, this framework allows us, for the first time,
+to formulate realistic conditions under which we can rigorously guarantee that the output of any
+RB experiment is well-described by a linear combination of matrix exponential decays. We complement
+this with a detailed analysis of the fitting problem associated with RB data. We introduce modern
+signal processing techniques to RB, prove analytical sample complexity bounds, and numerically
+evaluate performance and limitations. In order to reduce the resource demands of this fitting problem,
+we introduce novel, scalable post-processing techniques to isolate exponential decays, significantly
+improving the practical feasibility of a large set of RB protocols. These post-processing techniques
+overcome shortcomings in efficiency of several previously proposed methods such as character
+benchmarking and linear-cross entropy benchmarking. Finally, we discuss, in full generality,
+how and when RB decay rates can be used to infer quality measures like the average fidelity. On the
+technical side, our work substantially extends the recently developed Fourier-theoretic perspective
+on RB by making use of the perturbation theory of invariant subspaces, as well as ideas from signal
+processing. 

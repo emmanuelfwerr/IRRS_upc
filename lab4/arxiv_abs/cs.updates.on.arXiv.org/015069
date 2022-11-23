@@ -1,0 +1,20 @@
+We introduce a novel audio processing architecture, the Open Voice Brain Model (OVBM), improving
+detection accuracy for Alzheimer's (AD) longitudinal discrimination from spontaneous speech.
+We also outline the OVBM design methodology leading us to such architecture, which in general can
+incorporate multimodal biomarkers and target simultaneously several diseases and other AI tasks.
+Key in our methodology is the use of multiple biomarkers complementing each other, and when two of
+them uniquely identify different subjects in a target disease we say they are orthogonal. We illustrate
+the methodology by introducing 16 biomarkers, three of which are orthogonal, demonstrating simultaneous
+above state-of-the-art discrimination for apparently unrelated diseases such as AD and COVID-19.
+Inspired by research conducted at the MIT Center for Brain Minds and Machines, OVBM combines biomarker
+implementations of the four modules of intelligence: The brain OS chunks and overlaps audio samples
+and aggregates biomarker features from the sensory stream and cognitive core creating a multi-modal
+graph neural network of symbolic compositional models for the target task. We apply it to AD, achieving
+above state-of-the-art accuracy of 93.8% on raw audio, while extracting a subject saliency map
+that longitudinally tracks relative disease progression using multiple biomarkers, 16 in the
+reported AD task. The ultimate aim is to help medical practice by detecting onset and treatment impact
+so that intervention options can be longitudinally tested. Using the OBVM design methodology,
+we introduce a novel lung and respiratory tract biomarker created using 200,000+ cough samples
+to pre-train a model discriminating cough cultural origin. This cough dataset sets a new benchmark
+as the largest audio health dataset with 30,000+ subjects participating in April 2020, demonstrating
+for the first-time cough cultural bias. 

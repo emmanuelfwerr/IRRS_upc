@@ -1,0 +1,20 @@
+Cloud computing has emerged as a corner stone of today's computing landscape. More and more customers
+who outsource their infrastructure benefit from the manageability, scalability and cost saving
+that come with cloud computing. Those benefits get amplified by the trend towards microservices.
+Instead of renting and maintaining full VMs, customers increasingly leverage container technologies,
+which come with a much more lightweight resource footprint while also removing the need to emulate
+complete systems and their devices. However, privacy concerns hamper many customers from moving
+to the cloud and leveraging its benefits. Furthermore, regulatory requirements prevent the adaption
+of cloud computing in many industries, such as health care or finance. Standard software isolation
+mechanisms have been proven to be insufficient if the host system is not fully trusted, e.g., when
+the cloud infrastructure gets compromised by malicious third-party actors. Consequently, confidential
+computing is gaining increasing relevance in the cloud computing field. We present Trusted Container
+Extensions (TCX), a novel container security architecture, which combines the manageability
+and agility of standard containers with the strong protection guarantees of hardware-enforced
+Trusted Execution Environments (TEEs) to enable confidential computing for container workloads.
+TCX provides significant performance advantages compared to existing approaches while protecting
+container workloads and the data processed by them. Our implementation, based on AMD Secure Encrypted
+Virtualization (SEV), ensures integrity and confidentiality of data and services during deployment,
+and allows secure interaction between protected containers as well as to external entities. Our
+evaluation shows that our implementation induces a low performance overhead of 5.77% on the standard
+SPEC2017 benchmark suite. 

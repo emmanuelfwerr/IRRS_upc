@@ -1,0 +1,20 @@
+Invasive intracranial electroencephalography (iEEG) or electrocorticography (ECoG) measures
+electrical potential directly on the surface of the brain, and, combined with numerical modeling,
+can be used to inform treatment planning for epilepsy surgery. Accurate solution of the iEEG or ECoG
+forward problem, which is a crucial prerequisite for solving the inverse problem in epilepsy seizure
+onset localization, requires accurate representation of the patient's brain geometry and tissue
+electrical conductivity after implantation of electrodes. However, implantation of subdural
+grid electrodes causes the brain to deform, which invalidates preoperatively acquired image data.
+Moreover, postoperative MRI is incompatible with implanted electrodes and CT has insufficient
+range of soft tissue contrast, which precludes both MRI and CT from being used to obtain the deformed
+postoperative geometry. In this paper, we present a biomechanics-based image warping procedure
+using preoperative MRI for tissue classification and postoperative CT for locating implanted
+electrodes to perform non-rigid registration of the preoperative image data to the postoperative
+configuration. We solve the iEEG forward problem on the predicted postoperative geometry using
+the finite element method (FEM) which accounts for patient-specific inhomogeneity and anisotropy
+of tissue conductivity. Results for the simulation of a current source in the brain show large differences
+in electrical potential predicted by the models based on the original images and the deformed images
+corresponding to the brain geometry deformed by placement of invasive electrodes. Computation
+of the leadfield matrix also showed significant differences between the different models. The
+results suggest that significant improvements in source localization accuracy may be realized
+by the application of the proposed modeling methodology. 

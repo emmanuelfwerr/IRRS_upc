@@ -1,0 +1,19 @@
+In the theory of Partially Observed Markov Decision Processes (POMDPs), existence of optimal policies
+have in general been established via converting the original partially observed stochastic control
+problem to a fully observed one on the belief space, leading to a belief-MDP. However, computing
+an optimal policy for this fully observed model, and so for the original POMDP, using classical dynamic
+or linear programming methods is challenging even if the original system has finite state and action
+spaces, since the state space of the fully observed belief-MDP model is always uncountable. Furthermore,
+there exist very few rigorous value function approximation and optimal policy approximation results,
+as regularity conditions needed often require a tedious study involving the spaces of probability
+measures leading to properties such as Feller continuity. In this paper, we study a planning problem
+for POMDPs where the system dynamics and measurement channel model are assumed to be known. We construct
+an approximate belief model by discretizing the belief space using only finite window information
+variables. We then find optimal policies for the approximate model and we rigorously establish
+near optimality of the constructed finite window control policies in POMDPs under mild non-linear
+filter stability conditions and the assumption that the measurement and action sets are finite
+(and the state space is real vector valued). We also establish a rate of convergence result which
+relates the finite window memory size and the approximation error bound, where the rate of convergence
+is exponential under explicit and testable exponential filter stability conditions. While there
+exist many experimental results and few rigorous asymptotic convergence results, an explicit
+rate of convergence result is new in the literature, to our knowledge. 

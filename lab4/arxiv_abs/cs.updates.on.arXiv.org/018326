@@ -1,0 +1,19 @@
+Longitudinal variations and complementary information inherent in longitudinal and multi-modal
+data play an important role in Alzheimer's disease (AD) prediction, particularly in identifying
+subjects with mild cognitive impairment who are about to have AD. However, longitudinal and multi-modal
+data may have missing data, which hinders the effective application of these data. Additionally,
+previous longitudinal studies require existing longitudinal data to achieve prediction, but
+AD prediction is expected to be conducted at patients' baseline visit (BL) in clinical practice.
+Thus, we proposed a multi-view imputation and cross-attention network (MCNet) to integrate data
+imputation and AD prediction in a unified framework and achieve accurate AD prediction. First,
+a multi-view imputation method combined with adversarial learning, which can handle a wide range
+of missing data situations and reduce imputation errors, was presented. Second, two cross-attention
+blocks were introduced to exploit the potential associations in longitudinal and multi-modal
+data. Finally, a multi-task learning model was built for data imputation, longitudinal classification,
+and AD prediction tasks. When the model was properly trained, the disease progression information
+learned from longitudinal data can be leveraged by BL data to improve AD prediction. The proposed
+method was tested on two independent testing sets and single-model data at BL to verify its effectiveness
+and flexibility on AD prediction. Results showed that MCNet outperformed several state-of-the-art
+methods. Moreover, the interpretability of MCNet was presented. Thus, our MCNet is a tool with a
+great application potential in longitudinal and multi-modal data analysis for AD prediction.
+Codes are available at https://github.com/Meiyan88/MCNET. 

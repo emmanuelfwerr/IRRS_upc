@@ -1,0 +1,19 @@
+Goal-oriented semantic communication will be a pillar of next-generation wireless networks.
+Despite significant recent efforts in this area, most prior works are focused on specific data types
+(e.g., image or audio), and they ignore the goal and effectiveness aspects of semantic transmissions.
+In contrast, in this paper, a holistic goal-oriented semantic communication framework is proposed
+to enable a speaker and a listener to cooperatively execute a set of sequential tasks in a dynamic
+environment. A common language based on a hierarchical belief set is proposed to enable semantic
+communications between speaker and listener. The speaker, acting as an observer of the environment,
+utilizes the beliefs to transmit an initial description of its observation (called event) to the
+listener. The listener is then able to infer on the transmitted description and complete it by adding
+related beliefs to the transmitted beliefs of the speaker. As such, the listener reconstructs the
+observed event based on the completed description, and it then takes appropriate action in the environment
+based on the reconstructed event. An optimization problem is defined to determine the perfect and
+abstract description of the events while minimizing the transmission and inference costs with
+constraints on the task execution time and belief efficiency. Then, a novel bottom-up curriculum
+learning (CL) framework based on reinforcement learning is proposed to solve the optimization
+problem and enable the speaker and listener to gradually identify the structure of the belief set
+and the perfect and abstract description of the events. Simulation results show that the proposed
+CL method outperforms traditional RL in terms of convergence time, task execution cost and time,
+reliability, and belief efficiency. 

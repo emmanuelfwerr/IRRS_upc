@@ -1,0 +1,20 @@
+Many animals and humans process the visual field with a varying spatial resolution (foveated vision)
+and use peripheral processing to make eye movements and point the fovea to acquire high-resolution
+information about objects of interest. This architecture results in computationally efficient
+rapid scene exploration. Recent progress in self-attention-based vision Transformers allow
+global interactions between feature locations and result in increased robustness to adversarial
+attacks. However, the Transformer models do not explicitly model the foveated properties of the
+visual system nor the interaction between eye movements and the classification task. We propose
+foveated Transformer (FoveaTer) model, which uses pooling regions and eye movements to perform
+object classification tasks. Our proposed model pools the image features using squared pooling
+regions, an approximation to the biologically-inspired foveated architecture. It decides on
+subsequent fixation locations based on the attention assigned by the Transformer to various locations
+from past and present fixations. It dynamically allocates more fixation/computational resources
+to more challenging images before making the final object category decision. We compare FoveaTer
+against a Full-resolution baseline model, which does not contain any pooling. On the ImageNet dataset,
+the Foveated model with Dynamic-stop achieves an accuracy of $1.9\%$ below the full-resolution
+model with a throughput gain of $51\%$. Using a Foveated model with Dynamic-stop and the Full-resolution
+model, the ensemble outperforms the baseline Full-resolution by $0.2\%$ with a throughput gain
+of $7.7\%$. We also demonstrate our model's robustness against adversarial attacks. Finally,
+we compare the Foveated model to human performance in a scene categorization task and show similar
+dependence of accuracy with number of exploratory fixations. 

@@ -1,0 +1,19 @@
+Proof-labeling schemes are known mechanisms providing nodes of networks with certificates that
+can be verified locally by distributed algorithms. Given a boolean predicate on network states,
+such schemes enable to check whether the predicate is satisfied by the actual state of the network,
+by having nodes interacting with their neighbors only. Proof-labeling schemes are typically designed
+for enforcing fault-tolerance, by making sure that if the current state of the network is illegal
+with respect to some given predicate, then at least one node will detect it. Such a node can raise an
+alarm, or launch a recovery procedure enabling the system to return to a legal state. In this paper,
+we introduce error-sensitive proof-labeling schemes. These are proof-labeling schemes which
+guarantee that the number of nodes detecting illegal states is linearly proportional to the edit-distance
+between the current state and the set of legal states. By using error-sensitive proof-labeling
+schemes, states which are far from satisfying the predicate will be detected by many nodes, enabling
+fast return to legality. We provide a structural characterization of the set of boolean predicates
+on network states for which there exist error-sensitive proof-labeling schemes. This characterization
+allows us to show that classical predicates such as, e.g., acyclicity, and leader admit error-sensitive
+proof-labeling schemes, while others like regular subgraphs don't. We also focus on compact error-sensitive
+proof-labeling schemes. In particular, we show that the known proof-labeling schemes for spanning
+tree and minimum spanning tree, using certificates on $O(\log n)$ bits, and on $O\left(\log^2n\right)$
+bits, respectively, are error-sensitive, as long as the trees are locally represented by adjacency
+lists, and not just by parent pointers. 

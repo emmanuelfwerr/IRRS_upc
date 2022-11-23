@@ -1,0 +1,19 @@
+The increasing availability of data presents an opportunity to calibrate unknown parameters which
+appear in complex models of phenomena in the biomedical, physical and social sciences. However,
+model complexity often leads to parameter-to-data maps which are expensive to evaluate and are
+only available through noisy approximations. This paper is concerned with the use of interacting
+particle systems for the solution of the resulting inverse problems for parameters. Of particular
+interest is the case where the available forward model evaluations are subject to rapid fluctuations,
+in parameter space, superimposed on the smoothly varying large scale parametric structure of interest.
+{A motivating example from climate science is presented, and ensemble Kalman methods (which do
+not use the derivative of the parameter-to-data map) are shown, empirically, to perform well. Multiscale
+analysis is then used to analyze the behaviour of interacting particle system algorithms when rapid
+fluctuations, which we refer to as noise, pollute the large scale parametric dependence of the parameter-to-data
+map. Ensemble Kalman methods and Langevin-based methods} (the latter use the derivative of the
+parameter-to-data map) are compared in this light. The ensemble Kalman methods are shown to behave
+favourably in the presence of noise in the parameter-to-data map, whereas Langevin methods are
+adversely affected. On the other hand, Langevin methods have the correct equilibrium distribution
+in the setting of noise-free forward models, whilst ensemble Kalman methods only provide an uncontrolled
+approximation, except in the linear case. Therefore a new class of algorithms, ensemble Gaussian
+process samplers, which combine the benefits of both ensemble Kalman and Langevin methods, are
+introduced and shown to perform favourably. 

@@ -1,0 +1,20 @@
+We develop biologically plausible training mechanisms for self-supervised learning (SSL) in
+deep networks. SSL, with a contrastive loss, is more natural as it does not require labelled data
+and its robustness to perturbations yields more adaptable embeddings. Moreover the perturbation
+of data required to create positive pairs for SSL is easily produced in a natural environment by observing
+objects in motion and with variable lighting over time. We propose a contrastive hinge based loss
+whose error involves simple local computations as opposed to the standard contrastive losses employed
+in the literature, which do not lend themselves easily to implementation in a network architecture
+due to complex computations involving ratios and inner products. Furthermore we show that learning
+can be performed with one of two more plausible alternatives to backpropagation. The first is difference
+target propagation (DTP), which trains network parameters using target-based local losses and
+employs a Hebbian learning rule, thus overcoming the biologically implausible symmetric weight
+problem in backpropagation. The second is simply layer-wise learning, where each layer is directly
+connected to a layer computing the loss error. The layers are either updated sequentially in a greedy
+fashion (GLL) or in random order (RLL), and each training stage involves a single hidden layer network.
+The one step backpropagation needed for each such network can either be altered with fixed random
+feedback weights as proposed in Lillicrap et al. (2016), or using updated random feedback as in Amit
+(2019). Both methods represent alternatives to the symmetric weight issue of backpropagation.
+By training convolutional neural networks (CNNs) with SSL and DTP, GLL or RLL, we find that our proposed
+framework achieves comparable performance to its implausible counterparts in both linear evaluation
+and transfer learning tasks. 

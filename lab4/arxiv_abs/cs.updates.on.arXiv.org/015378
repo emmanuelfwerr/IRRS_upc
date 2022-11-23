@@ -1,0 +1,19 @@
+In the research, we developed a computer vision solution to support diagnostic radiology in differentiating
+between COVID-19 pneumonia, influenza virus pneumonia, and normal biomarkers. The chest radiograph
+appearance of COVID-19 pneumonia is thought to be nonspecific, having presented a challenge to
+identify an optimal architecture of a convolutional neural network (CNN) that would classify with
+a high sensitivity among the pulmonary inflammation features of COVID-19 and non-COVID-19 types
+of pneumonia. Rahman (2021) states that COVID-19 radiography images observe unavailability and
+quality issues impacting the diagnostic process and affecting the accuracy of the deep learning
+detection models. A significant scarcity of COVID-19 radiography images introduced an imbalance
+in data motivating us to use over-sampling techniques. In the study, we include an extensive set
+of X-ray imaging of human lungs (CXR) with COVID-19 pneumonia, influenza virus pneumonia, and normal
+biomarkers to achieve an extensible and accurate CNN model. In the experimentation phase of the
+research, we evaluated a variety of convolutional network architectures, selecting a sequential
+convolutional network with two traditional convolutional layers and two pooling layers with maximum
+function. In its classification performance, the best performing model demonstrated a validation
+accuracy of 93% and an F1 score of 0.95. We chose the Azure Machine Learning service to perform network
+experimentation and solution deployment. The auto-scaling compute clusters offered a significant
+time reduction in network training. We would like to see scientists across fields of artificial
+intelligence and human biology collaborating and expanding on the proposed solution to provide
+rapid and comprehensive diagnostics, effectively mitigating the spread of the virus 

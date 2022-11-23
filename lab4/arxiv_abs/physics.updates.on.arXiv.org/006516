@@ -1,0 +1,20 @@
+Reconstruction of a stable and reliable solution from noisy incomplete Fourier intensity data
+recorded in a coherent X-ray imaging (CXI) experiment is a challenging problem. The Relaxed Averaged
+Alternating Reflections (RAAR) algorithm that is concluded with a number of Error Reduction (ER)
+iterations is a popular choice. The RAAR-ER algorithm is usually employed for several hundreds
+of times starting with independent random guesses to obtain trial solutions that are then averaged
+to obtain the phase retrieval transfer function (PRTF). In this paper, we examine the phase retrieval
+solution obtained using the RAAR-ER methodology from perspective of the complexity parameter
+that was introduced by us in recent works. We observe that a single run of the RAAR-ER algorithm produces
+a solution with higher complexity compared to what is expected based on the complexity parameter
+as manifested by spurious high frequency grainy artifacts in the solution that do not seem to go away
+completely even after a number of trial solutions are averaged. We then describe a CG-RAAR (Complexity
+Guided RAAR) phase retrieval method that can effectively address this inconsistency problem and
+provides artifact-free solutions. The CG-RAAR methodology is first illustrated with simulated
+unblocked noisy Fourier intensity data and later applied to centrally-blocked noisy cyanobacterium
+data which is available from the CXIDB database. Our simulation and experimental results using
+CG-RAAR suggest two important improvements over the popular RAAR-ER algorithm. The CG-RAAR solutions
+after the averaging procedure is more reliable in the sense that it contains smallest features consistent
+with the resolution estimated by the PRTF curve. Secondly, since the single run of the CG-RAAR solution
+does not have grainy artifacts, the number of trial solutions needed for the averaging process is
+reduced. 

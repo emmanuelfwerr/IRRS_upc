@@ -1,0 +1,19 @@
+Recent performance breakthroughs in Artificial intelligence (AI) and Machine learning (ML),
+especially advances in Deep learning (DL), the availability of powerful, easy-to-use ML libraries
+(e.g., scikit-learn, TensorFlow, PyTorch.), and increasing computational power have led to unprecedented
+interest in AI/ML among nuclear engineers. For physics-based computational models, Verification,
+Validation and Uncertainty Quantification (VVUQ) have been very widely investigated and a lot
+of methodologies have been developed. However, VVUQ of ML models has been relatively less studied,
+especially in nuclear engineering. In this work, we focus on UQ of ML models as a preliminary step
+of ML VVUQ, more specifically, Deep Neural Networks (DNNs) because they are the most widely used
+supervised ML algorithm for both regression and classification tasks. This work aims at quantifying
+the prediction, or approximation uncertainties of DNNs when they are used as surrogate models for
+expensive physical models. Three techniques for UQ of DNNs are compared, namely Monte Carlo Dropout
+(MCD), Deep Ensembles (DE) and Bayesian Neural Networks (BNNs). Two nuclear engineering examples
+are used to benchmark these methods, (1) time-dependent fission gas release data using the Bison
+code, and (2) void fraction simulation based on the BFBT benchmark using the TRACE code. It was found
+that the three methods typically require different DNN architectures and hyperparameters to optimize
+their performance. The UQ results also depend on the amount of training data available and the nature
+of the data. Overall, all these three methods can provide reasonable estimations of the approximation
+uncertainties. The uncertainties are generally smaller when the mean predictions are close to
+the test data, while the BNN methods usually produce larger uncertainties than MCD and DE. 

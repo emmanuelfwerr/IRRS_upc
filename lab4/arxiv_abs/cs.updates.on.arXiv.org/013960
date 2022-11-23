@@ -1,0 +1,19 @@
+Person search aims to simultaneously localize and identify a query person from realistic, uncropped
+images. To achieve this goal, state-of-the-art models typically add a re-id branch upon two-stage
+detectors like Faster R-CNN. Owing to the ROI-Align operation, this pipeline yields promising
+accuracy as re-id features are explicitly aligned with the corresponding object regions, but in
+the meantime, it introduces high computational overhead due to dense object anchors. In this work,
+we present an anchor-free approach to efficiently tackling this challenging task, by introducing
+the following dedicated designs. First, we select an anchor-free detector (i.e., FCOS) as the prototype
+of our framework. Due to the lack of dense object anchors, it exhibits significantly higher efficiency
+compared with existing person search models. Second, when directly accommodating this anchor-free
+detector for person search, there exist several major challenges in learning robust re-id features,
+which we summarize as the misalignment issues in different levels (i.e., scale, region, and task).
+To address these issues, we propose an aligned feature aggregation module to generate more discriminative
+and robust feature embeddings. Accordingly, we name our model as Feature-Aligned Person Search
+Network (AlignPS). Third, by investigating the advantages of both anchor-based and anchor-free
+models, we further augment AlignPS with an ROI-Align head, which significantly improves the robustness
+of re-id features while still keeping our model highly efficient. Extensive experiments conducted
+on two challenging benchmarks (i.e., CUHK-SYSU and PRW) demonstrate that our framework achieves
+state-of-the-art or competitive performance, while displaying higher efficiency. All the source
+codes, data, and trained models are available at: https://github.com/daodaofr/alignps. 

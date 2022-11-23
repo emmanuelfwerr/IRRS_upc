@@ -1,0 +1,19 @@
+Interpretability of deep learning (DL) systems is gaining attention in medical imaging to increase
+experts' trust in the obtained predictions and facilitate their integration in clinical settings.
+We propose a deep visualization method to generate interpretability of DL classification tasks
+in medical imaging by means of visual evidence augmentation. The proposed method iteratively unveils
+abnormalities based on the prediction of a classifier trained only with image-level labels. For
+each image, initial visual evidence of the prediction is extracted with a given visual attribution
+technique. This provides localization of abnormalities that are then removed through selective
+inpainting. We iteratively apply this procedure until the system considers the image as normal.
+This yields augmented visual evidence, including less discriminative lesions which were not detected
+at first but should be considered for final diagnosis. We apply the method to grading of two retinal
+diseases in color fundus images: diabetic retinopathy (DR) and age-related macular degeneration
+(AMD). We evaluate the generated visual evidence and the performance of weakly-supervised localization
+of different types of DR and AMD abnormalities, both qualitatively and quantitatively. We show
+that the augmented visual evidence of the predictions highlights the biomarkers considered by
+experts for diagnosis and improves the final localization performance. It results in a relative
+increase of 11.2+/-2.0% per image regarding sensitivity averaged at 10 false positives/image
+on average, when applied to different classification tasks, visual attribution techniques and
+network architectures. This makes the proposed method a useful tool for exhaustive visual support
+of DL classifiers in medical imaging. 

@@ -1,0 +1,19 @@
+Design optimization of mechanisms is a promising research area as it results in more energy-efficient
+machines without compromising performance. However, machine builders do not actually use the
+design methods described in the literature as these algorithms require too much theoretical analysis.
+Moreover, the design synthesis approaches in the literature predominantly utilize heuristic
+optimizers leading to suboptimal local minima. This research introduces a convenient optimization
+workflow allowing wide industrial adoption, while guaranteeing to reveal the global optimum.
+To guarantee that we find the global optimum, a mathematical expression of the constraints describing
+the feasible region of possible designs is of great importance. Therefore, kinematic analysis
+of the point-to-point (PTP) planar four-bar mechanism is discussed to obtain the static and dynamic
+constraints. Within the feasible region, objective value samples are generated through CAD multi-body
+software. These motion simulations determine the required torque to fulfill the movement for a
+certain combination of design parameters. Sparse interpolation techniques allow minimizing
+the required amount of samples and thus CAD simulations. Moreover, this interpolation of simulation
+results enables the representation of the objective in a mathematical description without in-depth
+analytical design analysis by the machine designer. Subsequently, the mathematical expression
+of the objective allows global optimizers to find a global optimal design within the feasible design
+space. In a case study of a coronaventilator mechanism with three design parameters (DP's), 1870
+CAD motion simulations from which only 618 are used to build a model allowed to reduce the RMS torque
+of the mechanism by 67%. 

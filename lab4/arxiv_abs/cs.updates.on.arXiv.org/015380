@@ -1,0 +1,18 @@
+Fuzzing is one of the prevailing methods for vulnerability detection. However, even state-of-the-art
+fuzzing methods become ineffective after some period of time, i.e., the coverage hardly improves
+as existing methods are ineffective to focus the attention of fuzzing on covering the hard-to-trigger
+program paths. In other words, they cannot generate inputs that can break the bottleneck due to the
+fundamental difficulty in capturing the complex relations between the test inputs and program
+coverage. In particular, existing fuzzers suffer from the following main limitations: 1) lacking
+an overall analysis of the program to identify the most "rewarding" seeds, and 2) lacking an effective
+mutation strategy which could continuously select and mutates the more relevant "bytes" of the
+seeds. In this work, we propose an approach called ATTuzz to address these two issues systematically.
+First, we propose a lightweight dynamic analysis technique which estimates the "reward" of covering
+each basic block and selects the most rewarding seeds accordingly. Second, we mutate the selected
+seeds according to a neural network model which predicts whether a certain "rewarding" block will
+be covered given certain mutation on certain bytes of a seed. The model is a deep learning model equipped
+with attention mechanism which is learned and updated periodically whilst fuzzing. Our evaluation
+shows that ATTuzz significantly outperforms 5 state-of-the-art grey-box fuzzers on 13 popular
+real-world programs at achieving higher edge coverage and finding new bugs. In particular, ATTuzz
+achieved 2X edge coverage and 4X bugs detected than AFL over 24-hour runs. Moreover, ATTuzz persistently
+improves the edge coverage in the long run, i.e., achieving 50% more coverage than AFL in 5 days. 

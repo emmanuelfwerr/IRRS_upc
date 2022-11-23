@@ -1,0 +1,19 @@
+In this case study, we describe the design and assembly of a cyber security testbed at Oak Ridge National
+Laboratory in Oak Ridge, TN, USA. The range is designed to provide agile reconfigurations to facilitate
+a wide variety of experiments for evaluations of cyber security tools -- particularly those involving
+AI/ML. In particular, the testbed provides realistic test environments while permitting control
+and programmatic observations/data collection during the experiments. We have designed in the
+ability to repeat the evaluations, so additional tools can be evaluated and compared at a later time.
+The system is one that can be scaled up or down for experiment sizes. At the time of the conference we
+will have completed two full-scale, national, government challenges on this range. These challenges
+are evaluating the performance and operating costs for AI/ML-based cyber security tools for application
+into large, government-sized networks. These evaluations will be described as examples providing
+motivation and context for various design decisions and adaptations we have made. The first challenge
+measured end-point security tools against 100K file samples (benignware and malware) chosen across
+a range of file types. The second is an evaluation of network intrusion detection systems efficacy
+in identifying multi-step adversarial campaigns -- involving reconnaissance, penetration and
+exploitations, lateral movement, etc. -- with varying levels of covertness in a high-volume business
+network. The scale of each of these challenges requires automation systems to repeat, or simultaneously
+mirror identical the experiments for each ML tool under test. Providing an array of easy-to-difficult
+malicious activity for sussing out the true abilities of the AI/ML tools has been a particularly
+interesting and challenging aspect of designing and executing these challenge events. 

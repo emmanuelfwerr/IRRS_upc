@@ -1,0 +1,18 @@
+We propose an approach to modeling irregularly spaced sequences of discrete events. We begin with
+a continuous-time variant of the Transformer, which was originally formulated (Vaswani et al.,
+2017) for sequences without timestamps. We embed a possible event (or other boolean fact) at time
+$t$ by using attention over the events that occurred at times $< t$ (and the facts that were true when
+they occurred). We control this attention using pattern-matching logic rules that relate events
+and facts that share participants. These rules determine which previous events will be attended
+to, as well as how to transform the embeddings of the events and facts into the attentional queries,
+keys, and values. Other logic rules describe how to change the set of facts in response to events.
+Our approach closely follows Mei et al. (2020a), and adopts their Datalog Through Time formalism
+for logic rules. As in that work, a domain expert first writes a set of logic rules that establishes
+the set of possible events and other facts at each time $t$. Each possible event or other fact is embedded
+using a neural architecture that is derived from the rules that established it. Our only difference
+from Mei et al. (2020a) is that we derive a flatter, attention-based neural architecture whereas
+they used a more serial LSTM architecture. We find that our attention-based approach performs about
+equally well on the RoboCup dataset, where the logic rules play an important role in improving performance.
+We also compared these two methods with two previous attention-based methods (Zuo et al., 2020;
+Zhang et al., 2020a) on simpler synthetic and real domains without logic rules, and found our proposed
+approach to be at least as good, and sometimes better, than each of the other three methods. 

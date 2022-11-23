@@ -1,0 +1,20 @@
+Computer vision enables the development of new approaches to monitor the behavior, health, and
+welfare of animals. Instance segmentation is a high-precision method in computer vision for detecting
+individual animals of interest. This method can be used for in-depth analysis of animals, such as
+examining their subtle interactive behaviors, from videos and images. However, existing deep-learning-based
+instance segmentation methods have been mostly developed based on public datasets, which largely
+omit heavy occlusion problems; therefore, these methods have limitations in real-world applications
+involving object occlusions, such as farrowing pen systems used on pig farms in which the farrowing
+crates often impede the sow and piglets. In this paper, we propose a novel occlusion-resistant Center
+Clustering Network for instance segmentation, dubbed as CClusnet-Inseg. Specifically, CClusnet-Inseg
+uses each pixel to predict object centers and trace these centers to form masks based on clustering
+results, which consists of a network for segmentation and center offset vector map, Density-Based
+Spatial Clustering of Applications with Noise (DBSCAN) algorithm, Centers-to-Mask (C2M) and
+Remain-Centers-to-Mask (RC2M) algorithms, and a pseudo-occlusion generator (POG). In all, 4,600
+images were extracted from six videos collected from six farrowing pens to train and validate our
+method. CClusnet-Inseg achieves a mean average precision (mAP) of 83.6; it outperformed YOLACT++
+and Mask R-CNN, which had mAP values of 81.2 and 74.7, respectively. We conduct comprehensive ablation
+studies to demonstrate the advantages and effectiveness of core modules of our method. In addition,
+we apply CClusnet-Inseg to multi-object tracking for animal monitoring, and the predicted object
+center that is a conjunct output could serve as an occlusion-resistant representation of the location
+of an object. 

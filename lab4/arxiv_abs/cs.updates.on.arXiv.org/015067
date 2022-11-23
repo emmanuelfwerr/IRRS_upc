@@ -1,0 +1,19 @@
+Estimation of riverbed profiles, also known as bathymetry, plays a vital role in many applications,
+such as safe and efficient inland navigation, prediction of bank erosion, land subsidence, and
+flood risk management. The high cost and complex logistics of direct bathymetry surveys, i.e.,
+depth imaging, have encouraged the use of indirect measurements such as surface flow velocities.
+However, estimating high-resolution bathymetry from indirect measurements is an inverse problem
+that can be computationally challenging. Here, we propose a reduced-order model (ROM) based approach
+that utilizes a variational autoencoder (VAE), a type of deep neural network with a narrow layer
+in the middle, to compress bathymetry and flow velocity information and accelerate bathymetry
+inverse problems from flow velocity measurements. In our application, the shallow-water equations
+(SWE) with appropriate boundary conditions (BCs), e.g., the discharge and/or the free surface
+elevation, constitute the forward problem, to predict flow velocity. Then, ROMs of the SWEs are
+constructed on a nonlinear manifold of low dimensionality through a variational encoder. Estimation
+with uncertainty quantification (UQ) is performed on the low-dimensional latent space in a Bayesian
+setting. We have tested our inversion approach on a one-mile reach of the Savannah River, GA, USA.
+Once the neural network is trained (offline stage), the proposed technique can perform the inversion
+operation orders of magnitude faster than traditional inversion methods that are commonly based
+on linear projections, such as principal component analysis (PCA), or the principal component
+geostatistical approach (PCGA). Furthermore, tests show that the algorithm can estimate the bathymetry
+with good accuracy even with sparse flow velocity measurements. 

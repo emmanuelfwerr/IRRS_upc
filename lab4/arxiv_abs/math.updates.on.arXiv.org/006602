@@ -1,0 +1,19 @@
+Testing whether a variable of interest affects the outcome is one of the most fundamental problems
+in statistics. To tackle this problem, the conditional randomization test (CRT) is a design-based
+method that is widely used to test the independence of a variable of interest (X) with an outcome (Y)
+holding some controls (Z) fixed. The CRT relies solely on the random iid sampling of (X,Z) to produce
+exact finite-sample p-values that are constructed using any test statistic. We propose a new method,
+the adaptive randomization test (AdapRT), that similarly tackles the independence problem but
+allows the data to be sequentially sampled. Like the CRT, the AdapRT relies solely on knowing the
+(adaptive) sampling distribution of (X,Z). In this paper, we additionally show the significant
+power increase by adaptively sampling in two illustrative settings. We first showcase the AdapRT
+in a particular multi-arm bandit problem known as the normal-mean model. Under this setting, we
+theoretically characterize the powers of both the iid sampling scheme and the AdapRT and empirically
+find that the AdapRT can uniformly outperform the typical uniform iid sampling scheme that pulls
+all arms with equal probability. We also surprisingly find that the AdapRT can be more powerful than
+even the oracle iid sampling scheme when the signal is relatively strong. We believe that the proposed
+adaptive procedure is successful mainly because it stabilizes arms that may initially look like
+"fake" signal. We additionally showcase the AdapRT to a popular factorial survey design setting
+known as conjoint analysis and find similar results through both simulations and application.
+Lastly, we also provide a power analysis pipeline for practitioners to diagnosis the effectiveness
+of their proposed adaptive procedures and apply the pipeline to the two aforementioned settings.

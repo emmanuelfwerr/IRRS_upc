@@ -1,0 +1,19 @@
+We propose the first general and scalable framework to design certifiable algorithms for robust
+geometric perception in the presence of outliers. Our first contribution is to show that estimation
+using common robust costs, such as truncated least squares (TLS), maximum consensus, Geman-McClure,
+Tukey's biweight, among others, can be reformulated as polynomial optimization problems (POPs).
+By focusing on the TLS cost, our second contribution is to exploit sparsity in the POP and propose
+a sparse semidefinite programming (SDP) relaxation that is much smaller than the standard Lasserre's
+hierarchy while preserving empirical exactness, i.e., the SDP recovers the optimizer of the nonconvex
+POP with an optimality certificate. Our third contribution is to solve the SDP relaxations at an
+unprecedented scale and accuracy by presenting STRIDE, a solver that blends global descent on the
+convex SDP with fast local search on the nonconvex POP. Our fourth contribution is an evaluation
+of the proposed framework on six geometric perception problems including single and multiple rotation
+averaging, point cloud and mesh registration, absolute pose estimation, and category-level object
+pose and shape estimation. Our experiments demonstrate that (i) our sparse SDP relaxation is empirically
+exact with up to 60%-90% outliers across applications; (ii) while still being far from real-time,
+STRIDE is up to 100 times faster than existing SDP solvers on medium-scale problems, and is the only
+solver that can solve large-scale SDPs with hundreds of thousands of constraints to high accuracy;
+(iii) STRIDE safeguards existing fast heuristics for robust estimation (e.g., RANSAC or Graduated
+Non-Convexity), i.e., it certifies global optimality if the heuristic estimates are optimal,
+or detects and allows escaping local optima when the heuristic estimates are suboptimal. 

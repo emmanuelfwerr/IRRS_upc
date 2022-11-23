@@ -1,0 +1,20 @@
+The design of grid-connected distributed energy systems (DES) has been investigated extensively
+as an optimisation problem in the past, but most studies do not include nonlinear constraints associated
+with unbalanced alternating current (AC) power flow in distribution networks. Previous studies
+that do consider AC power flow use either less complex balanced formulations applicable to transmission
+networks, or iterative linearisations derived from local power flow solutions and prior knowledge
+of the design. To address these limitations, this study proposes a new algorithm for obtaining DES
+design decisions subject to nonlinear power flow models. The use of regularised complementarity
+reformulations for operational constraints that contain binary variables is proposed. This allows
+the use of large-scale nonlinear solvers that can find locally optimal solutions, eliminating
+the need for linearisations and prior knowledge while improving accuracy. DES design models with
+either multiphase optimal power flow (MOPF), which captures inherent phase imbalances present
+in distribution networks, or balanced optimal power flow formulations (OPF) are tested using a
+modified version of the unbalanced IEEE EU low-voltage network. Results are compared with a popular
+linear DES design framework, which proposes an infeasible operational schedule when tested with
+MOPF, while the fixed design alone produces the highest annualised costs. Despite the increased
+complexity, DES with MOPF obtains the best solution, enabling a greater integration of solar capacity
+and reducing total annualised cost when compared to DES with OPF. The new algorithm achieves a 19%
+improvement when compared with solving a bi-level model for DES with OPF, where the entire binary
+topology in the nonlinear model is fixed. The study therefore enables the acquisition of DES designs
+that can work symbiotically within distribution networks. 

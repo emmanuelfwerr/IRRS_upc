@@ -1,0 +1,19 @@
+Personal data is an attractive source of insights for a diverse field of research and business. While
+our data is highly valuable, it is often privacy-sensitive. Thus, regulations like the GDPR restrict
+what data can be legally published, and what a buyer may do with this sensitive data. While personal
+data must be protected, we can still sell some insights gathered from our data that do not hurt our
+privacy. A data marketplace is a platform that helps users to sell their data while assisting buyers
+in discovering relevant datasets. The major challenge such a marketplace faces is balancing between
+offering valuable insights into data while preserving privacy requirements. Private data marketplaces
+try to solve this challenge by offering privacy-preserving computations on personal data. Such
+computations allow for calculating statistics or training machine learning models on personal
+data without accessing the data in plain. However, the user selling the data cannot restrict who
+can buy or what type of computation the data is allowed. We close the latter gap by proposing a flexible
+access control architecture for private data marketplaces, which can be applied to existing data
+markets. Our architecture enables data sellers to define detailed policies restricting who can
+buy their data. Furthermore, a seller can control what computation a specific buyer can purchase
+on the data, and make constraints on its parameters to mitigate privacy breaches. The data market's
+computation system then enforces the policies before initiating a computation. To demonstrate
+the feasibility of our approach, we provide an implementation for the KRAKEN marketplace, a distributed
+data market using MPC. We show that our approach is practical since it introduces a negligible performance
+overhead and is secure against several adversaries. 

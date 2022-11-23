@@ -1,0 +1,19 @@
+Most methods for medical image segmentation use U-Net or its variants as they have been successful
+in most of the applications. After a detailed analysis of these "traditional" encoder-decoder
+based approaches, we observed that they perform poorly in detecting smaller structures and are
+unable to segment boundary regions precisely. This issue can be attributed to the increase in receptive
+field size as we go deeper into the encoder. The extra focus on learning high level features causes
+the U-Net based approaches to learn less information about low-level features which are crucial
+for detecting small structures. To overcome this issue, we propose using an overcomplete convolutional
+architecture where we project our input image into a higher dimension such that we constrain the
+receptive field from increasing in the deep layers of the network. We design a new architecture for
+image segmentation- KiU-Net which has two branches: (1) an overcomplete convolutional network
+Kite-Net which learns to capture fine details and accurate edges of the input, and (2) U-Net which
+learns high level features. Furthermore, we also propose KiU-Net 3D which is a 3D convolutional
+architecture for volumetric segmentation. We perform a detailed study of KiU-Net by performing
+experiments on five different datasets covering various image modalities like ultrasound (US),
+magnetic resonance imaging (MRI), computed tomography (CT), microscopic and fundus images. The
+proposed method achieves a better performance as compared to all the recent methods with an additional
+benefit of fewer parameters and faster convergence. Additionally, we also demonstrate that the
+extensions of KiU-Net based on residual blocks and dense blocks result in further performance improvements.
+The implementation of KiU-Net can be found here: https://github.com/jeya-maria-jose/KiU-Net-pytorch

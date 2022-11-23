@@ -1,0 +1,20 @@
+This paper concerns differentially private Bayesian estimation of the parameters of a population
+distribution, when a statistic of a sample from that population is shared in noise to provide differential
+privacy. This work mainly addresses two problems: (1) What statistic of the sample should be shared
+privately? For the first question, i.e., the one about statistic selection, we promote using the
+Fisher information. We find out that, the statistic that is most informative in a non-privacy setting
+may not be the optimal choice under the privacy restrictions. We provide several examples to support
+that point. We consider several types of data sharing settings and propose several Monte Carlo-based
+numerical estimation methods for calculating the Fisher information for those settings. The second
+question concerns inference: (2) Based on the shared statistics, how could we perform effective
+Bayesian inference? We propose several Markov chain Monte Carlo (MCMC) algorithms for sampling
+from the posterior distribution of the parameter given the noisy statistic. The proposed MCMC algorithms
+can be preferred over one another depending on the problem. For example, when the shared statistics
+is additive and added Gaussian noise, a simple Metropolis-Hasting algorithm that utilizes the
+central limit theorem is a decent choice. We propose more advanced MCMC algorithms for several other
+cases of practical relevance. Our numerical examples involve comparing several candidate statistics
+to be shared privately. For each statistic, we perform Bayesian estimation based on the posterior
+distribution conditional on the privatized version of that statistic. We demonstrate that, the
+relative performance of a statistic, in terms of the mean squared error of the Bayesian estimator
+based on the corresponding privatized statistic, is adequately predicted by the Fisher information
+of the privatized statistic. 

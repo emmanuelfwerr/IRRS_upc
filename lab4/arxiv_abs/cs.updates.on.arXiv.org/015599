@@ -1,0 +1,19 @@
+Certain applications that analyze damping effects require the solution of quadratic eigenvalue
+problems (QEPs). We use refined isogeometric analysis (rIGA) to solve quadratic eigenproblems.
+rIGA discretization, while conserving desirable properties of maximum-continuity isogeometric
+analysis (IGA), reduces the interconnection between degrees of freedom by adding low-continuity
+basis functions. This connectivity reduction in rIGA's algebraic system results in faster matrix
+LU factorizations when using multifrontal direct solvers. We compare computational costs of rIGA
+versus those of IGA when employing Krylov eigensolvers to solve quadratic eigenproblems arising
+in 2D vector-valued multifield problems. For large problem sizes, the eigencomputation cost is
+governed by the cost of LU factorization, followed by costs of several matrix-vector and vector-vector
+multiplications, which correspond to Krylov projections. We minimize the computational cost
+by introducing C^0 and C^1 separators at specific element interfaces for our rIGA generalizations
+of the curl-conforming Nedelec and divergence-conforming Raviart-Thomas finite elements. Let
+p be the polynomial degree of basis functions; the LU factorization is up to O((p-1)^2) times faster
+when using rIGA compared to IGA in the asymptotic regime. Thus, rIGA theoretically improves the
+total eigencomputation cost by O((p-1)^2) for sufficiently large problem sizes. Yet, in practical
+cases of moderate-size eigenproblems, the improvement rate deteriorates as the number of computed
+eigenvalues increases because of multiple matrix-vector and vector-vector operations. Our numerical
+tests show that rIGA accelerates the solution of quadratic eigensystems by O(p-1) for moderately
+sized problems when we seek to compute a reasonable number of eigenvalues. 

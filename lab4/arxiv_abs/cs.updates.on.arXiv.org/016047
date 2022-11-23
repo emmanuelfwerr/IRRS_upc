@@ -1,0 +1,20 @@
+Recent approaches of computer vision utilize deep learning methods as they perform quite well if
+training and testing domains follow the same underlying data distribution. However, it has been
+shown that minor variations in the images that occur when using these methods in the real world can
+lead to unpredictable errors. Transfer learning is the area of machine learning that tries to prevent
+these errors. Especially, approaches that augment image data using auxiliary knowledge encoded
+in language embeddings or knowledge graphs (KGs) have achieved promising results in recent years.
+This survey focuses on visual transfer learning approaches using KGs. KGs can represent auxiliary
+knowledge either in an underlying graph-structured schema or in a vector-based knowledge graph
+embedding. Intending to enable the reader to solve visual transfer learning problems with the help
+of specific KG-DL configurations we start with a description of relevant modeling structures of
+a KG of various expressions, such as directed labeled graphs, hypergraphs, and hyper-relational
+graphs. We explain the notion of feature extractor, while specifically referring to visual and
+semantic features. We provide a broad overview of knowledge graph embedding methods and describe
+several joint training objectives suitable to combine them with high dimensional visual embeddings.
+The main section introduces four different categories on how a KG can be combined with a DL pipeline:
+1) Knowledge Graph as a Reviewer; 2) Knowledge Graph as a Trainee; 3) Knowledge Graph as a Trainer;
+and 4) Knowledge Graph as a Peer. To help researchers find evaluation benchmarks, we provide an overview
+of generic KGs and a set of image processing datasets and benchmarks including various types of auxiliary
+knowledge. Last, we summarize related surveys and give an outlook about challenges and open issues
+for future research. 

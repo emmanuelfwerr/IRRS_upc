@@ -1,0 +1,19 @@
+Sparse Representation (SR) of signals or data has a well founded theory with rigorous mathematical
+error bounds and proofs. SR of a signal is given by superposition of very few columns of a matrix called
+Dictionary, implicitly reducing dimensionality. Training dictionaries such that they represent
+each class of signals with minimal loss is called Dictionary Learning (DL). Dictionary learning
+methods like Method of Optimal Directions (MOD) and K-SVD have been successfully used in reconstruction
+based applications in image processing like image "denoising", "inpainting" and others. Other
+dictionary learning algorithms such as Discriminative K-SVD and Label Consistent K-SVD are supervised
+learning methods based on K-SVD. In our experience, one of the drawbacks of current methods is that
+the classification performance is not impressive on datasets like Telugu OCR datasets, with large
+number of classes and high dimensionality. There is scope for improvement in this direction and
+many researchers have used statistical methods to design dictionaries for classification. This
+chapter presents a review of statistical techniques and their application to learning discriminative
+dictionaries. The objective of the methods described here is to improve classification using sparse
+representation. In this chapter a hybrid approach is described, where sparse coefficients of input
+data are generated. We use a simple three layer Multi Layer Perceptron with back-propagation training
+as a classifier with those sparse codes as input. The results are quite comparable with other computation
+intensive methods. Keywords: Statistical modeling, Dictionary Learning, Discriminative Dictionary,
+Sparse representation, Gaussian prior, Cauchy prior, Entropy, Hidden Markov model, Hybrid Dictionary
+Learning 

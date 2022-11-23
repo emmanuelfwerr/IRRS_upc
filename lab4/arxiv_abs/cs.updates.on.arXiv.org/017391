@@ -1,0 +1,20 @@
+Thin-cap fibroatheroma (TCFA) and plaque rupture have been recognized as the most frequent risk
+factor for thrombosis and acute coronary syndrome. Intravascular optical coherence tomography
+(IVOCT) can identify TCFA and assess cap thickness, which provides an opportunity to assess plaque
+vulnerability. We developed an automated method that can detect lipidous plaque and assess fibrous
+cap thickness in IVOCT images. This study analyzed a total of 4,360 IVOCT image frames of 77 lesions
+among 41 patients. To improve segmentation performance, preprocessing included lumen segmentation,
+pixel-shifting, and noise filtering on the raw polar (r, theta) IVOCT images. We used the DeepLab-v3
+plus deep learning model to classify lipidous plaque pixels. After lipid detection, we automatically
+detected the outer border of the fibrous cap using a special dynamic programming algorithm and assessed
+the cap thickness. Our method provided excellent discriminability of lipid plaque with a sensitivity
+of 85.8% and A-line Dice coefficient of 0.837. By comparing lipid angle measurements between two
+analysts following editing of our automated software, we found good agreement by Bland-Altman
+analysis (difference 6.7+/-17 degree; mean 196 degree). Our method accurately detected the fibrous
+cap from the detected lipid plaque. Automated analysis required a significant modification for
+only 5.5% frames. Furthermore, our method showed a good agreement of fibrous cap thickness between
+two analysts with Bland-Altman analysis (4.2+/-14.6 micron; mean 175 micron), indicating little
+bias between users and good reproducibility of the measurement. We developed a fully automated
+method for fibrous cap quantification in IVOCT images, resulting in good agreement with determinations
+by analysts. The method has great potential to enable highly automated, repeatable, and comprehensive
+evaluations of TCFAs. 

@@ -1,0 +1,19 @@
+Two current methods used to train autonomous cars are reinforcement learning and imitation learning.
+This research develops a new learning methodology and systematic approach in both a simulated and
+a smaller real world environment by integrating supervised imitation learning into reinforcement
+learning to make the RL training data collection process more effective and efficient. By combining
+the two methods, the proposed research successfully leverages the advantages of both RL and IL methods.
+First, a real mini-scale robot car was assembled and trained on a 6 feet by 9 feet real world track using
+imitation learning. During the process, a handle controller was used to control the mini-scale
+robot car to drive on the track by imitating a human expert driver and manually recorded the actions
+using Microsoft AirSim's API. 331 accurate human-like reward training samples were able to be generated
+and collected. Then, an agent was trained in the Microsoft AirSim simulator using reinforcement
+learning for 6 hours with the initial 331 reward data inputted from imitation learning training.
+After a 6-hour training period, the mini-scale robot car was able to successfully drive full laps
+around the 6 feet by 9 feet track autonomously while the mini-scale robot car was unable to complete
+one full lap round the track even after 30 hour training pure RL training. With 80% less training time,
+the new methodology produced significantly more average rewards per hour. Thus, the new methodology
+was able to save a significant amount of training time and can be used to accelerate the adoption of
+RL in autonomous driving, which would help produce more efficient and better results in the long
+run when applied to real life scenarios. Key Words: Reinforcement Learning (RL), Imitation Learning
+(IL), Autonomous Driving, Human Driving Data, CNN 

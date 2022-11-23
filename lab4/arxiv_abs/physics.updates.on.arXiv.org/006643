@@ -1,0 +1,20 @@
+For turbulent bubbly flows, multi-phase simulations resolving both the liquid and bubble phases
+are prohibitively expensive in the context of practical engineering design. One such example is
+breaking waves, where the presence of bubbles plays a role in wave impact loads, acoustic emissions,
+and atmospheric-ocean transfer, but detailed simulations in all but the simplest settings are
+infeasible. An alternative is to resolve only the large scales, and model small scale bubbles, which
+may be represented as a set of discrete particles. Here we introduce a large eddy simulation (LES)
+Smoothed Particle Hydrodynamics (SPH) scheme for simulations of bubbly flows with free-surface.
+The continuous liquid phase is resolved with a semi-implicit isothermally compressible SPH framework.
+This is coupled via a discrete Lagrangian bubble model: bubbles and liquid interact via exchanges
+of volume and momentum, and through turbulent closure, bubble breakup and entrainment, and free-surface
+interaction models. By representing bubbles as discrete particles, they can be tracked over their
+lifetimes, allowing closure models for sub-resolution fluctuations, bubble deformation, break-up
+and free-surface interaction to be constructed in integral form, accounting for the finite timescales
+over which these events occur. We use our framework to investigate two flows: bubble plumes, and
+breaking waves, and find close quantitative agreement with published experimental and numerical
+data. In particular, for breaking waves, our framework accurately predicts the Hinze scale, the
+bubble size distribution and growth rate of the entrained bubble population for plunging breakers.
+This is the first coupling of an SPH framework with a discrete bubble model (that we are aware of),
+and has potential for cost effective simulations of wave-structure interactions with more accurate
+predictions of wave impact loads. 

@@ -1,0 +1,20 @@
+We propose predictive models that estimate GBM patients' health status of one-year after treatments
+(Classification task), predict the long-term prognosis of GBM patients at an individual level
+(Survival task). We used total of 467 GBM patients' clinical profile consists of 13 features and
+two follow-up dates. For baseline models of random forest classifier(RFC) and random survival
+forest model (RSF), we introduced generalized linear model (GLM), support vector machine (SVM)
+and Cox proportional hazardous model (COX), accelerated failure time model (AFT) respectively.
+After preprocessing and prefixing stratified 5-fold data set, we generated best performing models
+for model types using recursive feature elimination process. Total 10, 4, and 13 features were extracted
+for best performing one-year survival/progression status RFC models and RSF model via the recursive
+feature elimination process. In classification task, AUROC of best performing RFC recorded 0.6990
+(for one-year survival status classification) and 0.7076 (for one-year progression classification)
+while that of second best baseline models (GLM in both cases) recorded 0.6691 and 0.6997 respectively.
+About survival task, the highest C-index of 0.7157 and the lowest IBS of 0.1038 came from the best
+performing RSF model while that of second best baseline models were 0.6556 and 0.1139 respectively.
+A simplified linear correlation (extracted from LIME and virtual patient group analysis) between
+each feature and prognosis of GBM patient were consistent with proven medical knowledge. Our machine
+learning models suggest that the top three prognostic factors for GBM patient survival were MGMT
+gene promoter, the extent of resection, and age. To the best of our knowledge, this study is the very
+first study introducing a interpretable and medical knowledge consistent GBM prognosis predictive
+models. 

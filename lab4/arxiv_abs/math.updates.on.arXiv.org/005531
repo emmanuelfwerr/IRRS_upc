@@ -1,0 +1,19 @@
+We propose a framework to study the effect of local recovery requirements of codeword symbols on
+the dimension of linear codes, based on a combinatorial proxy that we call \emph{visible rank}.
+The locality constraints of a linear code are stipulated by a matrix $H$ of $\star$'s and $0$'s (which
+we call a "stencil"), whose rows correspond to the local parity checks (with the $\star$'s indicating
+the support of the check). The visible rank of $H$ is the largest $r$ for which there is a $r \times r$
+submatrix in $H$ with a unique generalized diagonal of $\star$'s. The visible rank yields a field-independent
+combinatorial lower bound on the rank of $H$ and thus the co-dimension of the code. We prove a rank-nullity
+type theorem relating visible rank to the rank of an associated construct called \emph{symmetric
+spanoid}, which was introduced by Dvir, Gopi, Gu, and Wigderson~\cite{DGGW20}. Using this connection
+and a construction of appropriate stencils, we answer a question posed in \cite{DGGW20} and demonstrate
+that symmetric spanoid rank cannot improve the currently best known $\widetilde{O}(n^{(q-2)/(q-1)})$
+upper bound on the dimension of $q$-query locally correctable codes (LCCs) of length $n$. We also
+study the $t$-Disjoint Repair Group Property ($t$-DRGP) of codes where each codeword symbol must
+belong to $t$ disjoint check equations. It is known that linear $2$-DRGP codes must have co-dimension
+$\Omega(\sqrt{n})$. We show that there are stencils corresponding to $2$-DRGP with visible rank
+as small as $O(\log n)$. However, we show the second tensor of any $2$-DRGP stencil has visible rank
+$\Omega(n)$, thus recovering the $\Omega(\sqrt{n})$ lower bound for $2$-DRGP. For $q$-LCC, however,
+the $k$'th tensor power for $k\le n^{o(1)}$ is unable to improve the $\widetilde{O}(n^{(q-2)/(q-1)})$
+upper bound on the dimension of $q$-LCCs by a polynomial factor. 

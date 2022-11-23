@@ -1,0 +1,18 @@
+The unit commitment problem is a short-term planning problem in the energy industry. Dantzig-Wolfe
+decomposition is a popular approach to solve the problem. This paper focuses on primal heuristics
+used with Dantzig-Wolfe decomposition. We propose two primal heuristics: one based on decomposition
+and one based on machine learning. The first one uses the fractional solution to the restricted master
+problem to fix a subset of the integer variables. In each iteration of the column generation procedure,
+the primal heuristic obtains the fractional solution, checks whether each binary variable satisfies
+the integrality constraint and fix those which do. The remaining variables are then optimised quickly
+by a solver to find a feasible, near-optimal solution to the original instance. The other primal
+heuristic based on machine learning is of interest when the problems are to be solved repeatedly
+with different demand data but with the same problem structure. The primal heuristic uses a pre-trained
+neural network to fix a subset of the integer variables. In the training phase, a neural network is
+trained to predict for any demand data and for each binary variable how likely it is that the variable
+takes each of two possible values. After the training, given an instance to be solved, the prediction
+of the model is used with a rounding threshold to fix some binary variables. Our numerical experiments
+compare our methods with solving the undecomposed problem and also with other primal heuristics
+from the literature. The experiments reveal that the primal heuristic based on machine learning
+is superior when the suboptimality tolerance is relatively large, such as 0.5% or 0.25%, while the
+decomposition is the best when the tolerance is small, for example 0.1%. 

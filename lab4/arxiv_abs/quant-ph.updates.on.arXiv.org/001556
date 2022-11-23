@@ -1,0 +1,19 @@
+Portfolio optimization is an essential use case in Finance, but its computational complexity forces
+financial institutions to resort to approximated solutions, which are still time consuming. Thus,
+the scientific community is looking at how Quantum Computing can be used for efficient and accurate
+portfolio optimization. Portfolio optimization can be formulated as a quadratic program, with
+the cost function enforcing risk minimization for a targeted return. Of particular interest is
+the mean-variance portfolio optimization problem. Using the method of Lagrange multipliers,
+the program can be converted into a system of linear equations and potentially benefit from the exponential
+speedup provided by the HHL quantum algorithm. However, multiple components in HHL are unsuitable
+for execution on Noisy Intermediate Scale Quantum (NISQ) hardware. This paper introduces NISQ-HHL,
+the first hybrid formulation of HHL suitable for the end-to-end execution of small-scale portfolio-optimization
+problems on NISQ devices. NISQ-HHL extends the hybrid HHL variant with newly available quantum-hardware
+features: mid-circuit measurement, Quantum Conditional Logic (QCL), and qubit reset and reuse.
+To best of our knowledge, NISQ-HHL is the first algorithm incorporating a QCL-enhanced version
+of Phase Estimation that was executed on real hardware. In addition, NISQ-HHL includes a novel method
+for choosing the optimal evolution time for the Hamiltonian simulation. Although this paper focuses
+on portfolio optimization, the techniques it proposes to make HHL more scalable are generally applicable
+to any problem that can be solved via HHL in the NISQ era. We empirically demonstrate the effectiveness
+of NISQ-HHL by presenting the experimental results we obtained on a real quantum device, the trapped-ion
+Honeywell System Model H1. 

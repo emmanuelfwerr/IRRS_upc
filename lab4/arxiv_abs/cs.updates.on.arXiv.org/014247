@@ -1,0 +1,19 @@
+Vertex Integrity is a graph measure which sits squarely between two more well-studied notions,
+namely vertex cover and tree-depth, and that has recently gained attention as a structural graph
+parameter. In this paper we investigate the algorithmic trade-offs involved with this parameter
+from the point of view of algorithmic meta-theorems for First-Order (FO) and Monadic Second Order
+(MSO) logic. Our positive results are the following: (i) given a graph $G$ of vertex integrity $k$
+and an FO formula $\phi$ with $q$ quantifiers, deciding if $G$ satisfies $\phi$ can be done in time
+$2^{O(k^2q+q\log q)}+n^{O(1)}$; (ii) for MSO formulas with $q$ quantifiers, the same can be done
+in time $2^{2^{O(k^2+kq)}}+n^{O(1)}$. Both results are obtained using kernelization arguments,
+which pre-process the input to sizes $2^{O(k^2)}q$ and $2^{O(k^2+kq)}$ respectively. The complexities
+of our meta-theorems are significantly better than the corresponding meta-theorems for tree-depth,
+which involve towers of exponentials. However, they are worse than the roughly $2^{O(kq)}$ and
+$2^{2^{O(k+q)}}$ complexities known for corresponding meta-theorems for vertex cover. To explain
+this deterioration we present two formula constructions which lead to fine-grained complexity
+lower bounds and establish that the dependence of our meta-theorems on $k$ is best possible. More
+precisely, we show that it is not possible to decide FO formulas with $q$ quantifiers in time $2^{o(k^2q)}$,
+and that there exists a constant-size MSO formula which cannot be decided in time $2^{2^{o(k^2)}}$,
+both under the ETH. Hence, the quadratic blow-up in the dependence on $k$ is unavoidable and vertex
+integrity has a complexity for FO and MSO logic which is truly intermediate between vertex cover
+and tree-depth. 

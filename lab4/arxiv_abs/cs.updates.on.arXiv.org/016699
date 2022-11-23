@@ -1,0 +1,19 @@
+We give the first sample complexity characterizations for outcome indistinguishability, a theoretical
+framework of machine learning recently introduced by Dwork, Kim, Reingold, Rothblum, and Yona
+(STOC 2021). In outcome indistinguishability, the goal of the learner is to output a predictor that
+cannot be distinguished from the target predictor by a class $D$ of distinguishers examining the
+outcomes generated according to the predictors' predictions. In the distribution-specific and
+realizable setting where the learner is given the data distribution together with a predictor class
+$P$ containing the target predictor, we show that the sample complexity of outcome indistinguishability
+is characterized by the metric entropy of $P$ w.r.t. the dual Minkowski norm defined by $D$, and equivalently
+by the metric entropy of $D$ w.r.t. the dual Minkowski norm defined by $P$. This equivalence makes
+an intriguing connection to the long-standing metric entropy duality conjecture in convex geometry.
+Our sample complexity characterization implies a variant of metric entropy duality, which we show
+is nearly tight. In the distribution-free setting, we focus on the case considered by Dwork et al.
+where $P$ contains all possible predictors, hence the sample complexity only depends on $D$. In
+this setting, we show that the sample complexity of outcome indistinguishability is characterized
+by the fat-shattering dimension of $D$. We also show a strong sample complexity separation between
+realizable and agnostic outcome indistinguishability in both the distribution-free and the distribution-specific
+settings. This is in contrast to distribution-free (resp. distribution-specific) PAC learning
+where the sample complexity in both the realizable and the agnostic settings can be characterized
+by the VC dimension (resp. metric entropy). 

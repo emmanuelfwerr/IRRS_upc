@@ -1,0 +1,20 @@
+Statistical shape models (SSMs) are a popular tool to conduct morphological analysis of anatomical
+structures which is a crucial step in clinical practices. However, shape representations through
+SSMs are based on shape coefficients and lack an explicit one-to-one relationship with anatomical
+measures of clinical relevance. While a shape coefficient embeds a combination of anatomical measures,
+a formalized approach to find the relationship between them remains elusive in the literature.
+This limits the use of SSMs to subjective evaluations in clinical practices. We propose a novel SSM
+controlled by anatomical parameters derived from morphometric analysis. The proposed anatomically
+parameterized SSM (ANAT-SSM) is based on learning a linear mapping between shape coefficients
+and selected anatomical parameters. This mapping is learned from a synthetic population generated
+by the standard SSM. Determining the pseudo-inverse of the mapping allows us to build the ANAT-SSM.
+We further impose orthogonality constraints to the anatomical parameterization to obtain independent
+shape variation patterns. The proposed contribution was evaluated on two skeletal databases of
+femoral and scapular bone shapes using clinically relevant anatomical parameters. Anatomical
+measures of the synthetically generated shapes exhibited realistic statistics. The learned matrices
+corroborated well with the obtained statistical relationship, while the two SSMs achieved moderate
+to excellent performance in predicting anatomical parameters on unseen shapes. This study demonstrates
+the use of anatomical representation for creating anatomically parameterized SSM and as a result,
+removes the limited clinical interpretability of standard SSMs. The proposed models could help
+analyze differences in relevant bone morphometry between populations, and be integrated in patient-specific
+pre-surgery planning or in-surgery assessment. 

@@ -1,0 +1,19 @@
+A wide variety of Cyber Threat Information (CTI) is used by Security Operation Centres (SOCs) to
+perform validation of security incidents and alerts. Security experts manually define different
+types of rules and scripts based on CTI to perform validation tasks. These rules and scripts need
+to be updated continuously due to evolving threats, changing SOCs' requirements and dynamic nature
+of CTI. The manual process of updating rules and scripts delays the response to attacks. To reduce
+the burden of human experts and accelerate response, we propose a novel Artificial Intelligence
+(AI) based framework, SmartValidator. SmartValidator leverages Machine Learning (ML) techniques
+to enable automated validation of alerts. It consists of three layers to perform the tasks of data
+collection, model building and alert validation. It projects the validation task as a classification
+problem. Instead of building and saving models for all possible requirements, we propose to automatically
+construct the validation models based on SOC's requirements and CTI. We built a Proof of Concept
+(PoC) system with eight ML algorithms, two feature engineering techniques and 18 requirements
+to investigate the effectiveness and efficiency of SmartValidator. The evaluation results showed
+that when prediction models were built automatically for classifying cyber threat data, the F1-score
+of 75\% of the models were above 0.8, which indicates adequate performance of the PoC for use in a real-world
+organization. The results further showed that dynamic construction of prediction models required
+99\% less models to be built than pre-building models for all possible requirements. The framework
+can be followed by various industries to accelerate and automate the validation of alerts and incidents
+based on their CTI and SOC's preferences. 

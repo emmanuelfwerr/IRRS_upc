@@ -1,0 +1,19 @@
+This paper studies the optimal spatiotemporal pricing of autonomous mobility-on-demand (AMoD)
+systems. We consider a platform that operates a fleet of autonomous vehicles (AVs) and determines
+the pricing, rebalancing, and fleet sizing strategies over the transportation network in response
+to demand fluctuations. A network flow model is formulated to characterize the evolution of system
+states over space and time. Fundamental elements in AMoD markets are captured, including demand
+elasticity, passenger waiting time, vehicle-passenger matching, proactive vehicle rebalancing,
+and dynamic fleet sizing. The platform's profit maximization problem is cast as a constrained optimal
+control problem, which is highly nonconvex due to the nonlinear demand model and passenger-vehicle
+matching model. An integrated decomposition and dynamic programming approach is developed to
+tackle this optimal control problem, where we first relax the problem through a change of variables,
+then separate the relaxed problem into a few small-scale subproblems via dual decomposition, and
+finally obtain the exact solution to each relaxed subproblem through dynamic programming. Despite
+the non-convexity, the proposed method establishes a theoretical upper bound to evaluate the optimality
+gap of the obtained solution. The proposed approach is validated with numerical studies using real
+data from New York City. We find that the platform adopts distinct operation strategies in core and
+non-core areas of the city because of the asymmetric demand pattern. Furthermore, we also find that
+low-demand areas are less resilient than high-demand ones when demand surges unexpectedly, because
+the operator prioritizes supporting high-demand areas at the sacrifice of service quality in low-demand
+areas. 

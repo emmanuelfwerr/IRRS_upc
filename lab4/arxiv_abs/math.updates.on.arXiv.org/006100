@@ -1,0 +1,19 @@
+This paper presents local minimax regret lower bounds for adaptively controlling linear-quadratic-Gaussian
+(LQG) systems. We consider smoothly parametrized instances and provide an understanding of when
+logarithmic regret is impossible which is both instance specific and flexible enough to take problem
+structure into account. This understanding relies on two key notions: That of local-uninformativeness;
+when the optimal policy does not provide sufficient excitation for identification of the optimal
+policy, and yields a degenerate Fisher information matrix; and that of information-regret-boundedness,
+when the small eigenvalues of a policy-dependent information matrix are boundable in terms of the
+regret of that policy. Combined with a reduction to Bayesian estimation and application of Van Trees'
+inequality, these two conditions are sufficient for proving regret bounds on order of magnitude
+$\sqrt{T}$ in the time horizon, $T$. This method yields lower bounds that exhibit tight dimensional
+dependencies and scale naturally with control-theoretic problem constants. For instance, we
+are able to prove that systems operating near marginal stability are fundamentally hard to learn
+to control. We further show that large classes of systems satisfy these conditions, among them any
+state-feedback system with both $A$- and $B$-matrices unknown. Most importantly, we also establish
+that a nontrivial class of partially observable systems, essentially those that are over-actuated,
+satisfy these conditions, thus providing a $\sqrt{T}$ lower bound also valid for partially observable
+systems. Finally, we turn to two simple examples which demonstrate that our lower bound captures
+classical control-theoretic intuition: our lower bounds diverge for systems operating near marginal
+stability or with large filter gain -- these can be arbitrarily hard to (learn to) control. 

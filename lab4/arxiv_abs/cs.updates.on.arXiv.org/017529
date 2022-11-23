@@ -1,0 +1,19 @@
+Distracted driving is one of the major reasons for vehicle accidents. Therefore, detecting distracted
+driving behaviors is of paramount importance to reduce the millions of deaths and injuries occurring
+worldwide. Distracted or anomalous driving behaviors are deviations from 'normal' driving that
+need to be identified correctly to alert the driver. However, these driving behaviors do not comprise
+one specific type of driving style and their distribution can be different during the training and
+test phases of a classifier. We formulate this problem as a supervised contrastive learning approach
+to learn a visual representation to detect normal, and seen and unseen anomalous driving behaviors.
+We made a change to the standard contrastive loss function to adjust the similarity of negative pairs
+to aid the optimization. Normally, in a (self) supervised contrastive framework, the projection
+head layers are omitted during the test phase as the encoding layers are considered to contain general
+visual representative information. However, we assert that for a video-based supervised contrastive
+learning task, including a projection head can be beneficial. We showed our results on a driver anomaly
+detection dataset that contains 783 minutes of video recordings of normal and anomalous driving
+behaviors of 31 drivers from the various top and front cameras (both depth and infrared). Out of 9
+video modalities combinations, our proposed contrastive approach improved the ROC AUC on 6 in comparison
+to the baseline models (from 4.23% to 8.91% for different modalities). We performed statistical
+tests that showed evidence that our proposed method performs better than the baseline contrastive
+learning setup. Finally, the results showed that the fusion of depth and infrared modalities from
+the top and front views achieved the best AUC ROC of 0.9738 and AUC PR of 0.9772. 

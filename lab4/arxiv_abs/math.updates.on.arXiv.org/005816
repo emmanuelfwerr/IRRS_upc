@@ -1,0 +1,20 @@
+Given a target distribution $\mu \propto e^{-\mathcal{H}}$ to sample from with Hamiltonian $\mathcal{H}$,
+in this paper we propose and analyze new Metropolis-Hastings sampling algorithms that target an
+alternative distribution $\mu^f_{1,\alpha,c} \propto e^{-\mathcal{H}^{f}_{1,\alpha,c}}$,
+where $\mathcal{H}^{f}_{1,\alpha,c}$ is a landscape-modified Hamiltonian which we introduce
+explicitly. The advantage of the Metropolis dynamics which targets $\pi^f_{1,\alpha,c}$ is that
+it enjoys reduced critical height described by the threshold parameter $c$, function $f$, and a
+penalty parameter $\alpha \geq 0$ that controls the state-dependent effect. First, we investigate
+the case of fixed $\alpha$ and propose a self-normalized estimator that corrects for the bias of
+sampling and prove asymptotic convergence results and Chernoff-type bound of the proposed estimator.
+Next, we consider the case of annealing the penalty parameter $\alpha$. We prove strong ergodicity
+and bounds on the total variation mixing time of the resulting non-homogeneous chain subject to
+appropriate assumptions on the decay of $\alpha$. We illustrate the proposed algorithms by comparing
+their mixing times with the original Metropolis dynamics on statistical physics models including
+the ferromagnetic Ising model on the hypercube or the complete graph and the $q$-state Potts model
+on the two-dimensional torus. In these cases, the mixing times of the classical Glauber dynamics
+are at least exponential in the system size as the critical height grows at least linearly with the
+size, while the proposed annealing algorithm, with appropriate choice of $f$, $c$, and annealing
+schedule on $\alpha$, mixes rapidly with at most polynomial dependence on the size. The crux of the
+proof harnesses on the important observation that the reduced critical height can be bounded independently
+of the size that gives rise to rapid mixing. 

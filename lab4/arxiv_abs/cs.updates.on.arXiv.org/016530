@@ -1,0 +1,19 @@
+Programs are rarely implemented in a single language, and thus questions of type soundness should
+address not only the semantics of a single language, but how it interacts with others. Even between
+type-safe languages, disparate features frustrate interoperability, as invariants from one
+language can easily be violated in the other. In their seminal 2007 paper, Matthews and Findler proposed
+a multi-language construction that augments the interoperating languages with a pair of boundaries
+that allow code from one language to be embedded in the other. While the technique has been widely
+applied, their syntactic source-level interoperability doesn't reflect practical implementations,
+where behavior of interaction is defined after compilation to a common target, and any safety must
+be ensured by target invariants or inserted target-level "glue code." In this paper, we present
+a framework for the design and verification of sound language interoperability that follows an
+interoperation-after-compilation strategy. Language designers specify what data can be converted
+between types of the languages via a relation $\tau_A \sim \tau_B$ and specify target glue code implementing
+conversions. Then, by giving a semantic model of source types as sets of target terms, we can establish
+soundness of conversions: i.e., whenever $\tau_A \sim \tau_B$, the corresponding pair of conversions
+convert target terms that behave as $\tau_A$ to target terms that behave as $\tau_B$, and vice versa.
+We can then prove semantic type soundness for the entire system. We illustrate our framework via
+a series of case studies that demonstrate how our semantic interoperation-after-compilation
+approach allows us both to account for complex differences in language semantics and make efficiency
+trade-offs based on particularities of compilers or targets. 

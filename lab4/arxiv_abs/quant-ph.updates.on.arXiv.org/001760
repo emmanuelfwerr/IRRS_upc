@@ -1,0 +1,19 @@
+Sampling from the stationary distribution is one of the fundamental tasks of Markov chain-based
+algorithms and has important applications in machine learning, combinatorial optimization and
+network science. For the quantum case, qsampling from Markov chains can be constructed as preparing
+quantum states with amplitudes arbitrarily close to the square root of a stationary distribution
+instead of classical sampling from a stationary distribution. In this paper, a new qsampling algorithm
+for all reversible Markov chains is constructed by discrete-time quantum walks and works without
+any limit compared with existing results. In detail, we build a qsampling algorithm that not only
+accelerates non-regular graphs but also keeps the speed-up of existing quantum algorithms for
+regular graphs. In non-regular graphs, the invocation of the quantum fast-forward algorithm accelerates
+existing state-of-the-art qsampling algorithms for both discrete-time and continuous-time
+cases, especially on sparse graphs. Compared to existing algorithms we reduce log n, where n is the
+number of graph vertices. In regular graphs, our result matches other quantum algorithms, and our
+reliance on the gap of Markov chains achieves quadratic speedup compared with classical cases.
+For both cases, we reduce the number of ancilla qubits required compared to the existing results.
+In some widely used graphs and a series of sparse graphs where stationary distributions are difficult
+to reach quickly, our algorithm is the first algorithm to achieve complete quadratic acceleration
+(without log factor) over the classical case without any limit. To enlarge success probability
+amplitude amplification is introduced. We construct a new reflection on stationary state with
+fewer ancilla qubits and think it may have independent application. 

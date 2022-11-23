@@ -1,0 +1,20 @@
+Federated learning (FL) is a collaborative learning paradigm where participants jointly train
+a powerful model without sharing their private data. One desirable property for FL is the implementation
+of the right to be forgotten (RTBF), i.e., a leaving participant has the right to request to delete
+its private data from the global model. However, unlearning itself may not be enough to implement
+RTBF unless the unlearning effect can be independently verified, an important aspect that has been
+overlooked in the current literature. In this paper, we prompt the concept of verifiable federated
+unlearning, and propose VeriFi, a unified framework integrating federated unlearning and verification
+that allows systematic analysis of the unlearning and quantification of its effect, with different
+combinations of multiple unlearning and verification methods. In VeriFi, the leaving participant
+is granted the right to verify (RTV), that is, the participant notifies the server before leaving,
+then actively verifies the unlearning effect in the next few communication rounds. The unlearning
+is done at the server side immediately after receiving the leaving notification, while the verification
+is done locally by the leaving participant via two steps: marking (injecting carefully-designed
+markers to fingerprint the leaver) and checking (examining the change of the global model's performance
+on the markers). Based on VeriFi, we conduct the first systematic and large-scale study for verifiable
+federated unlearning, considering 7 unlearning methods and 5 verification methods. Particularly,
+we propose a more efficient and FL-friendly unlearning method, and two more effective and robust
+non-invasive-verification methods. We extensively evaluate VeriFi on 7 datasets and 4 types of
+deep learning models. Our analysis establishes important empirical understandings for more trustworthy
+federated unlearning. 

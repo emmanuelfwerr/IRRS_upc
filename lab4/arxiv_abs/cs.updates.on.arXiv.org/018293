@@ -1,0 +1,18 @@
+This paper proposes a reinforcement learning framework to enhance the exploration-exploitation
+trade-off by learning a range of policies concerning various confidence bounds. The underestimated
+values provide stable updates but suffer from inefficient exploration behaviors. On the other
+hand, overestimated values can help the agent escape local optima, but it might cause over-exploration
+on low-value areas and function approximation errors accumulation. Algorithms have been proposed
+to mitigate the above contradiction. However, we lack an understanding of how the value bias impact
+performance and a method for efficient exploration while keeping value away from catastrophic
+overestimation bias accumulation. In this paper, we 1) highlight that both under- and overestimation
+bias can improve learning efficiency, and it is a particular form of the exploration-exploitation
+dilemma; 2) propose a unified framework called Realistic Actor-Critic(RAC), which employs Universal
+Value Function Approximators (UVFA) to simultaneously learn policies with different value confidence-bond
+with the same neural network, each with a different under-overestimation trade-off. This allows
+us to perform directed exploration without over-exploration using the upper bounds while still
+avoiding overestimation using the lower bounds. % 3) propose a variant of soft Bellman backup, called
+punished Bellman backup, which provides fine-granular estimation bias control to train policies
+efficiently. Through carefully designed experiments, We empirically verify that RAC achieves
+10x sample efficiency and 25\% performance improvement compared to Soft Actor-Critic on the most
+challenging Humanoid environment. All the source codes are available at \url{https://github.com/ihuhuhu/RAC}.

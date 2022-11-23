@@ -1,0 +1,19 @@
+The bias-variance trade-off is a central concept in supervised learning. In classical statistics,
+increasing the complexity of a model (e.g., number of parameters) reduces bias but also increases
+variance. Until recently, it was commonly believed that optimal performance is achieved at intermediate
+model complexities which strike a balance between bias and variance. Modern Deep Learning methods
+flout this dogma, achieving state-of-the-art performance using "over-parameterized models"
+where the number of fit parameters is large enough to perfectly fit the training data. As a result,
+understanding bias and variance in over-parameterized models has emerged as a fundamental problem
+in machine learning. Here, we use methods from statistical physics to derive analytic expressions
+for bias and variance in two minimal models of over-parameterization (linear regression and two-layer
+neural networks with nonlinear data distributions), allowing us to disentangle properties stemming
+from the model architecture and random sampling of data. In both models, increasing the number of
+fit parameters leads to a phase transition where the training error goes to zero and the test error
+diverges as a result of the variance (while the bias remains finite). Beyond this threshold, the
+test error of the two-layer neural network decreases due to a monotonic decrease in \emph{both}
+the bias and variance in contrast with the classical bias-variance trade-off. We also show that
+in contrast with classical intuition, over-parameterized models can overfit even in the absence
+of noise and exhibit bias even if the student and teacher models match. We synthesize these results
+to construct a holistic understanding of generalization error and the bias-variance trade-off
+in over-parameterized models and relate our results to random matrix theory. 

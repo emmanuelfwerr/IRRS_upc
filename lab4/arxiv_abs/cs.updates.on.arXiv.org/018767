@@ -1,0 +1,19 @@
+Using parallel embedded systems these days is increasing. They are getting more complex due to integrating
+multiple functionalities in one application or running numerous ones concurrently. This concerns
+a wide range of applications, including streaming applications, commonly used in embedded systems.
+These applications must implement adaptable and reliable algorithms to deliver the required performance
+under varying circumstances (e.g., running applications on the platform, input data, platform
+variety, etc.). Given the complexity of streaming applications, target systems, and adaptivity
+requirements, designing such systems with traditional programming models is daunting. This is
+why model-based strategies with an appropriate Model of Computation (MoC) have long been studied
+for embedded system design. This work provides algorithmic adaptivity on top of parallelism for
+dynamic dataflow to express larger sets of variants. We present a multi-Alternative Process Network
+(mAPN), a high-level abstract representation in which several variants of the same application
+coexist in the same graph expressing different implementations. We introduce mAPN properties
+and its formalism to describe various local implementation alternatives. Furthermore, mAPNs
+are enriched with metadata to Provide the alternatives with quantitative annotations in terms
+of a specific metric. To help the user analyze the rich space of variants, we propose a methodology
+to extract feasible variants under user and hardware constraints. At the core of the methodology
+is an algorithm for computing global metrics of an execution of different alternatives from a compact
+mAPN specification. We validate our approach by exploring several possible variants created for
+the Automatic Subtitling Application (ASA) on two hardware platforms. 

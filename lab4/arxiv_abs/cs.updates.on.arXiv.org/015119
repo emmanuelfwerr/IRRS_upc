@@ -1,0 +1,19 @@
+Many different studies have suggested that episodic memory is a generative process, but most computational
+models adopt a storage view. In this work, we propose a computational model for generative episodic
+memory. It is based on the central hypothesis that the hippocampus stores and retrieves selected
+aspects of an episode as a memory trace, which is necessarily incomplete. At recall, the neocortex
+reasonably fills in the missing information based on general semantic information in a process
+we call semantic completion. As episodes we use images of digits (MNIST) augmented by different
+backgrounds representing context. Our model is based on a VQ-VAE which generates a compressed latent
+representation in form of an index matrix, which still has some spatial resolution. We assume that
+attention selects some part of the index matrix while others are discarded, this then represents
+the gist of the episode and is stored as a memory trace. At recall the missing parts are filled in by
+a PixelCNN, modeling semantic completion, and the completed index matrix is then decoded into a
+full image by the VQ-VAE. The model is able to complete missing parts of a memory trace in a semantically
+plausible way up to the point where it can generate plausible images from scratch. Due to the combinatorics
+in the index matrix, the model generalizes well to images not trained on. Compression as well as semantic
+completion contribute to a strong reduction in memory requirements and robustness to noise. Finally
+we also model an episodic memory experiment and can reproduce that semantically congruent contexts
+are always recalled better than incongruent ones, high attention levels improve memory accuracy
+in both cases, and contexts that are not remembered correctly are more often remembered semantically
+congruently than completely wrong. 

@@ -1,0 +1,19 @@
+Synthetic Aperture Radar (SAR) is the main instrument utilized for the detection of oil slicks on
+the ocean surface. In SAR images, some areas affected by ocean phenomena, such as rain cells, upwellings,
+and internal waves, or discharge from oil spills appear as dark spots on images. Dark spot detection
+is the first step in the detection of oil spills, which then become oil slick candidates. The accuracy
+of dark spot segmentation ultimately affects the accuracy of oil slick identification. Although
+some advanced deep learning methods that use pixels as processing units perform well in remote sensing
+image semantic segmentation, detecting some dark spots with weak boundaries from noisy SAR images
+remains a huge challenge. We propose a dark spot detection method based on superpixels deeper graph
+convolutional networks (SGDCN) in this paper, which takes the superpixels as the processing units
+and extracts features for each superpixel. The features calculated from superpixel regions are
+more robust than those from fixed pixel neighborhoods. To reduce the difficulty of learning tasks,
+we discard irrelevant features and obtain an optimal subset of features. After superpixel segmentation,
+the images are transformed into graphs with superpixels as nodes, which are fed into the deeper graph
+convolutional neural network for node classification. This graph neural network uses a differentiable
+aggregation function to aggregate the features of nodes and neighbors to form more advanced features.
+It is the first time using it for dark spot detection. To validate our method, we mark all dark spots
+on six SAR images covering the Baltic Sea and construct a dark spots detection dataset, which has
+been made publicly available (https://drive.google.com/drive/folders/12UavrntkDSPrItISQ8iGefXn2gIZHxJ6?usp=sharing).
+The experimental results demonstrate that our proposed SGDCN is robust and effective. 

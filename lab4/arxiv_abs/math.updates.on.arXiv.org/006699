@@ -1,0 +1,19 @@
+For graphs $G$ and $H$, an $H$-coloring of $G$ is an edge-preserving mapping from $V(G)$ to $V(H)$.
+In the $H$-Coloring problem the graph $H$ is fixed and we ask whether an instance graph $G$ admits
+an $H$-coloring. A generalization of this problem is $H$-ColoringExt, where some vertices of $G$
+are already mapped to vertices of $H$ and we ask if this partial mapping can be extended to an $H$-coloring.
+We study the complexity of variants of $H$-Coloring in $F$-free graphs, i.e., graphs excluding
+a fixed graph $F$ as an induced subgraph. For integers $a,b,c \geq 1$, by $S_{a,b,c}$ we denote the
+graph obtained by identifying one endvertex of three paths on $a+1$, $b+1$, and $c+1$ vertices,
+respectively. For odd $k \geq 5$, by $W_k$ we denote the graph obtained from the $k$-cycle by adding
+a universal vertex. As our main algorithmic result we show that $W_5$-ColoringExt is polynomial-time
+solvable in $S_{2,1,1}$-free graphs. This result exhibits an interesting non-monotonicity of
+$H$-ColoringExt with respect to taking induced subgraphs of $H$. Indeed, $W_5$ contains a triangle,
+and $K_3$-Coloring, i.e., classical 3-coloring, is NP-hard already in claw-free (i.e., $S_{1,1,1}$-free)
+graphs. Our algorithm is based on two main observations: 1. $W_5$-ColoringExt in $S_{2,1,1}$-free
+graphs can be in polynomial time reduced to a variant of the problem of finding an independent set
+intersecting all triangles, and 2. the latter problem can be solved in polynomial time in $S_{2,1,1}$-free
+graphs. We complement this algorithmic result with several negative ones. In particular, we show
+that $W_5$-ColoringExt is NP-hard in $S_{3,3,3}$-free graphs. This is again uncommon, as usually
+problems that are NP-hard in $S_{a,b,c}$-free graphs for some constant $a,b,c$ are already hard
+in claw-free graphs. 

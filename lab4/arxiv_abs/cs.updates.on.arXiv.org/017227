@@ -1,0 +1,20 @@
+Large-amplitude chatter vibrations are one of the most important phenomena in machining processes.
+It is often detrimental in cutting operations causing a poor surface finish and decreased tool life.
+Therefore, chatter detection using machine learning has been an active research area over the last
+decade. Three challenges can be identified in applying machine learning for chatter detection
+at large in industry: an insufficient understanding of the universality of chatter features across
+different processes, the need for automating feature extraction, and the existence of limited
+data for each specific workpiece-machine tool combination. These three challenges can be grouped
+under the umbrella of transfer learning. This paper studies automating chatter detection by evaluating
+transfer learning of prominent as well as novel chatter detection methods. We investigate chatter
+classification accuracy using a variety of features extracted from turning and milling experiments
+with different cutting configurations. The studied methods include Fast Fourier Transform (FFT),
+Power Spectral Density (PSD), the Auto-correlation Function (ACF), Wavelet Packet Transform
+(WPT), and Ensemble Empirical Mode Decomposition (EEMD). We also examine more recent approaches
+based on Topological Data Analysis (TDA) and similarity measures of time series based on Discrete
+Time Warping (DTW). We evaluate the transfer learning potential of each approach by training and
+testing both within and across the turning and milling data sets. Our results show that carefully
+chosen time-frequency features can lead to high classification accuracies albeit at the cost of
+requiring manual pre-processing and the tagging of an expert user. On the other hand, we found that
+the TDA and DTW approaches can provide accuracies and F1 scores on par with the time-frequency methods
+without the need for manual preprocessing. 

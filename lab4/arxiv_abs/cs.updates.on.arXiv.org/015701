@@ -1,0 +1,19 @@
+In online advertising, auto-bidding has become an essential tool for advertisers to optimize their
+preferred ad performance metrics by simply expressing high-level campaign objectives and constraints.
+Previous works designed auto-bidding tools from the view of single-agent, without modeling the
+mutual influence between agents. In this paper, we instead consider this problem from a distributed
+multi-agent perspective, and propose a general $\underline{M}$ulti-$\underline{A}$gent reinforcement
+learning framework for $\underline{A}$uto-$\underline{B}$idding, namely MAAB, to learn the
+auto-bidding strategies. First, we investigate the competition and cooperation relation among
+auto-bidding agents, and propose a temperature-regularized credit assignment to establish a
+mixed cooperative-competitive paradigm. By carefully making a competition and cooperation trade-off
+among agents, we can reach an equilibrium state that guarantees not only individual advertiser's
+utility but also the system performance (i.e., social welfare). Second, to avoid the potential
+collusion behaviors of bidding low prices underlying the cooperation, we further propose bar agents
+to set a personalized bidding bar for each agent, and then alleviate the revenue degradation due
+to the cooperation. Third, to deploy MAAB in the large-scale advertising system with millions of
+advertisers, we propose a mean-field approach. By grouping advertisers with the same objective
+as a mean auto-bidding agent, the interactions among the large-scale advertisers are greatly simplified,
+making it practical to train MAAB efficiently. Extensive experiments on the offline industrial
+dataset and Alibaba advertising platform demonstrate that our approach outperforms several baseline
+methods in terms of social welfare and revenue. 

@@ -1,0 +1,18 @@
+We give a new rapid mixing result for a natural random walk on the independent sets of an input graph
+$G$. Rapid mixing is of interest in approximately sampling a structure, over some underlying set
+or graph, from some target distribution. In the case of independent sets, we show that when $G$ has
+bounded treewidth, this random walk -- known as the hardcore Glauber dynamics -- mixes rapidly for
+all values of the standard parameter $\lambda > 0$, giving a simple alternative to existing sampling
+algorithms for these structures. We also show rapid mixing for Markov chains on dominating sets
+and $b$-edge covers (for fixed $b\geq 1$ and $\lambda > 0$) in the case where treewidth is bounded,
+and for Markov chains on the $b$-matchings (for fixed $b \geq 1$ and $\lambda > 0$), the maximal independent
+sets, and the maximal $b$-matchings of a graph (for fixed $b \geq 1$), in the case where carving width
+is bounded. We prove our results by developing a divide-and-conquer framework using the well-known
+multicommodity flows technique. Using this technique, we additionally show that a similar dynamics
+on the $k$-angulations of a convex set of $n$ points mixes in quasipolynomial time for all $k \geq
+3$. (McShine and Tetali gave a stronger result in the special case $k = 3$.) Our technique also allows
+us to strengthen existing results by Dyer, Goldberg, and Jerrum and by Heinrich for the Glauber dynamics
+on the $q$-colorings of $G$ on graphs of bounded carving width, when $q \geq \Delta + 2$ is bounded.
+Specifically, our technique yields an improvement in the dependence on treewidth when $\Delta
+< 2t$ or when $q < 4t$ and $\Delta < t^2$. We additionally show that the Glauber dynamics on the partial
+$q$-colorings of $G$ mix rapidly for all $\lambda > 0$ when $q \geq \Delta + 2$ is bounded. 

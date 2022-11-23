@@ -1,0 +1,20 @@
+While the concept of Artificial Intelligent Internet of Things\ (AIoT) is booming, computation
+and/or communication-intensive tasks accompanied by several sub-tasks are slowly moving from
+centralized deployment to edge-side deployment. The idea of edge computing also makes intelligent
+services sink locally. But in actual scenarios like dynamic edge computing networks (DECN), due
+to fluctuations in available computing resources of intermediate servers and changes in bandwidth
+during data transmission, service reliability becomes difficult to guarantee. Coupled with changes
+in the amount of data in a service, the above three problems all make the existing reliability evaluation
+methods no longer accurate. To study the effect of distributed service deployment strategies under
+such a background, this paper proposes a reliability evaluation method (REMR) based on lower boundary
+rule under time constraint to study the degree of the rationality of a service deployment plan combined
+with DECN. In this scenario, time delay is the main concern which would be affected by three quantitative
+factors: data packet storing and sending time, data transmission time and the calculation time
+of executing sub-tasks on the node devices, specially while the last two are in dynamic scenarios.
+In actual calculation, based on the idea of the minimal paths, the solution set would to be found that
+can meet requirements in the current deployment. Then the reliability of the service supported
+by the solution sets would be found out based on the principle of inclusion-exclusion combined with
+the distribution of available data transmission bandwidth and the distribution of node available
+computing resources. Besides a illustrative example was provided, to verify the calculated reliability
+of the designed service deployment plan, the NS3 is utilized along with Google cluster data set for
+simulation. 

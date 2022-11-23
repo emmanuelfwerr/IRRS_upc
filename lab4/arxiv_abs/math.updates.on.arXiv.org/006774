@@ -1,0 +1,19 @@
+The payoff in the Chow-Robbins coin-flipping game is the proportion of heads when you stop, and the
+goal is to maximize its expected value, by knowing when to stop. We first establish the exact optimal
+stop rule for positions up to a half billion flips, which suggests a fairly precise result. By using
+simple facts about sums involving Catalan numbers and the Catalan triangle numbers which appear
+in repeated backward induction, we prove that the optimal stop rule differs from the Brownian boundary
+minus one-half, by O(negative one-fourth power of n), and our coefficient for the negative one-fourth
+power for an upper bound is only slightly larger than the precise one suggested by computation. Our
+lower bound has slightly worse constant, but it is on the correct side of 1/2; our result puts the stop
+rule strictly above the Brownian boundary minus 1/2. The O(negative one-fourth power) difference
+was conjectured by Christensen and Fischer, with about the same coefficient, based on results for
+about half a million flips. The proof was motivated by the idea, due to Haggstrom and Wastlund, to
+use backward induction of value bounds from a horizon, which they used numerically to establish
+a few rigorous stop rules, and which we used with much better bounds and efficient computer use, to
+get rigorous stop rules for all cases up to a half billion flips. Then we use the idea algebraically
+instead to get a proof of the numerically-suggested asymptotics. To first get our better bounds,
+we use the well-known Skorohod embedding of a symmetric random walk in Brownian motion, and a fundamental
+Wald identity of Shepp, to give a simple proof of good upper and lower bounds on the optimal stopping
+value in terms of the optimal value for Brownian motion. Our optimal stopping value upper bound was
+already given by Christensen and Fischer. 

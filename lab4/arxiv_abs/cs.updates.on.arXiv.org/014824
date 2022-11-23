@@ -1,0 +1,19 @@
+An external magnetic field can be used to remotely control small-scaled robots, making them promising
+candidates for diverse biomedical and engineering applications. We showed that our magnetically
+actuated millirobot is highly agile and can perform a variety of locomotive tasks such as pivot walking
+and tumbling in a horizontal plane. Here, we focus on controlling the locomotion outcomes of this
+millirobot in the pivot walking mode. A mathematical model of the system is developed and the kinematic
+model is derived. The role of the sweep and tilt angles in the robot's motion is also investigated.
+We propose two controllers to regulate the gait of the pivot walker. The first one is a proportional-geometric
+controller, which determines the correct pivot point that the millirobot should use. Then, it regulates
+the angular velocity proportionally based on the error between the center of the millirobot and
+the reference trajectory. The second controller is based on a gradient descent optimization technique,
+which expresses the control action as an optimization problem. These control algorithms enable
+the millirobot to generate a stable gait while tracking the desired trajectory. We conduct a set
+of different experiments and simulation runs to establish the effectiveness of proposed controllers
+for different sweep and tilt angles in terms of the tracking error. The two controllers exhibit an
+appropriate performance, but it is observed that gradient descent based controller yields faster
+convergence time, smaller tracking error, and fewer number of steps. Finally, we perform an extensive
+experimentally parametric analysis on the effect of the sweep angle, tilt angle, and step time on
+the tracking error. As we expect, the optimization-based controller outperforms the geometric
+based controller. 

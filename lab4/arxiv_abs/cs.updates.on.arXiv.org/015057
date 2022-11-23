@@ -1,0 +1,20 @@
+Traditionally, applications that are used in large and small enterprises were deployed on "bare
+metal" servers installed with operating systems. Recently, the use of multiple virtual machines
+(VMs) on the same physical server was adopted due to cost reduction and flexibility. Nowadays, containers
+have become popular for application deployment due to smaller footprints than the VMs, their ability
+to start and stop more quickly, and their capability to pack the application binaries and their dependencies
+in standalone units for seamless portability. A typical container ecosystem includes a code repository
+(e.g., GitHub) where the container images are built from the codes and libraries and then pushed
+to the image registry (e.g., Docker Hub) for subsequent deployment as application containers.
+However, the pervasive use of containers also leads to a wide-range of security breaches, such as
+stealing credentials and sensitive data from image registry and code repository, carrying out
+DoS attacks, and gaining root access to the underlying host. In this paper, we first perform threat
+modeling on the containers ecosystem using the popular threat modeling framework, called STRIDE.
+Using STRIDE, we identify the vulnerabilities in each system component, and investigate potential
+security threats and their consequences. Then, we conduct a comprehensive survey on the existing
+countermeasures designed against the identified threats and vulnerabilities. In particular,
+we assess the strengths and weaknesses of the existing mitigation strategies designed against
+such threats. We believe that this work will help researchers and practitioners to gain a deeper
+understanding of the threat landscape in containers and the state-of-the-art countermeasures.
+We also discuss open research problems and future research directions in containers security,
+which may ignite further research to be done in this area. 

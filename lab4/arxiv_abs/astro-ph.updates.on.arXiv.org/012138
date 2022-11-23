@@ -1,0 +1,19 @@
+Numerical simulations are at the center of predicting the space debris environment of the upcoming
+decades. In light of debris generating events, such as continued anti-satellite weapon tests and
+planned mega-constellations, accurate predictions of the space debris environment are critical
+to ensure the long-term sustainability of critical satellite orbits. Given the computational
+complexity of accurate long-term trajectory propagation for a large number of particles, numerical
+models usually rely on Monte-Carlo approaches for stochastic conjunction assessment. On the other
+hand, deterministic methods bear the promise of higher accuracy and can serve to validate stochastic
+approaches. However, they pose a substantial challenge to computational feasibility. In this
+work, we present the architecture and proof of concept results for a numerical simulation capable
+of modeling the long term debris evolution over decades with a deterministic conjunction tracking
+model. For the simulation, we developed an efficient propagator in modern C++ accounting for Earth's
+gravitational anomalies, solar radiation pressure, and atmospheric drag. We utilized AutoPAS,
+a sophisticated particle container, which automatically selects the most efficient data structures
+and algorithms. We present results from a simulation of 16 024 particles in low-Earth orbit over
+20 years. Overall, conjunctions are tracked for predicted collisions and close encounters to allow
+a detailed study of both. We analyze the runtime and computational cost of the simulation in detail.
+In summary, the obtained results show that modern computational tools finally enable deterministic
+conjunction tracking and can serve to validate prior results and build higher-fidelity numerical
+simulations of the long-term debris environment. 

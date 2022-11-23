@@ -1,0 +1,19 @@
+INTRODUCTION: Artificial intelligence (AI) has the potential to facilitate the automation of
+CMR analysis for biomarker extraction. However, most AI algorithms are trained on a specific input
+domain (e.g., single scanner vendor or hospital-tailored imaging protocol) and lack the robustness
+to perform optimally when applied to CMR data from other input domains. METHODS: Our proposed framework
+consists of an AI-based algorithm for biventricular segmentation of short-axis images, followed
+by a post-analysis quality control to detect erroneous results. The segmentation algorithm was
+trained on a large dataset of clinical CMR scans from two NHS hospitals (n=2793) and validated on
+additional cases from this dataset (n=441) and on five external datasets (n=6808). The validation
+data included CMR scans of patients with a range of diseases acquired at 12 different centres using
+CMR scanners from all major vendors. RESULTS: Our method yielded median Dice scores over 87%, translating
+into median absolute errors in cardiac biomarkers within the range of inter-observer variability:
+<8.4mL (left ventricle), <9.2mL (right ventricle), <13.3g (left ventricular mass), and <5.9%
+(ejection fraction) across all datasets. Stratification of cases according to phenotypes of cardiac
+disease and scanner vendors showed good agreement. CONCLUSIONS: We show that our proposed tool,
+which combines a state-of-the-art AI algorithm trained on a large-scale multi-domain CMR dataset
+with a post-analysis quality control, allows us to robustly deal with routine clinical data from
+multiple centres, vendors, and cardiac diseases. This is a fundamental step for the clinical translation
+of AI algorithms. Moreover, our method yields a range of additional biomarkers of cardiac function
+(filling and ejection rates, regional wall motion, and strain) at no extra computational cost.

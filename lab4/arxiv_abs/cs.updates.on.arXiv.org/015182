@@ -1,0 +1,18 @@
+Hadron spectral functions carry all the information of hadrons and are encoded in the Euclidean
+two-point correlation functions. The extraction of hadron spectral functions from the correlator
+is a typical ill-posed inverse problem and infinite number of solutions to this problem exists.
+We propose a novel neural network (sVAE) based on the Variation Auto-Encoder (VAE) and Bayesian
+theorem. Inspired by the maximum entropy method (MEM) we construct the loss function of the neural
+work such that it includes a Shannon-Jaynes entropy term and a likelihood term. The sVAE is then trained
+to provide the most probable spectral functions. For the training samples of spectral function
+we used general spectral functions produced from the Gaussian Mixture Model. After the training
+is done we performed the mock data tests with input spectral functions consisting 1) only a free continuum,
+2) only a resonance peak, 3) a resonance peak plus a free continuum and 4) a NRQCD motivated spectral
+function. From the mock data test we find that the sVAE in most cases is comparable to the maximum entropy
+method in the quality of reconstructing spectral functions and even outperforms the MEM in the case
+where the spectral function has sharp peaks with insufficient number of data points in the correlator.
+By applying to temporal correlation functions of charmonium in the pseudoscalar channel obtained
+in the quenched lattice QCD at 0.75 $T_c$ on $128^3\times96$ lattices and $1.5$ $T_c$ on $128^3\times48$
+lattices, we find that the resonance peak of $\eta_c$ extracted from both the sVAE and MEM has a substantial
+dependence on the number of points in the temporal direction ($N_\tau$) adopted in the lattice simulation
+and $N_\tau$ larger than 48 is needed to resolve the fate of $\eta_c$ at 1.5 $T_c$. 

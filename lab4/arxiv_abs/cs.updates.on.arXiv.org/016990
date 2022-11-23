@@ -1,0 +1,19 @@
+The generalisation performance of a convolutional neural network (CNN) is influenced by the quantity,
+quality, and variety of the training images. Training images must be annotated, and this is time
+consuming and expensive. The goal of our work was to reduce the number of annotated images needed
+to train a CNN while maintaining its performance. We hypothesised that the performance of a CNN can
+be improved faster by ensuring that the set of training images contains a large fraction of hard-to-classify
+images. The objective of our study was to test this hypothesis with an active learning method that
+can automatically select the hard-to-classify images. We developed an active learning method
+for Mask Region-based CNN (Mask R-CNN) and named this method MaskAL. MaskAL involved the iterative
+training of Mask R-CNN, after which the trained model was used to select a set of unlabelled images
+about which the model was most uncertain. The selected images were then annotated and used to retrain
+Mask R-CNN, and this was repeated for a number of sampling iterations. In our study, MaskAL was compared
+to a random sampling method on a broccoli dataset with five visually similar classes. MaskAL performed
+significantly better than the random sampling. In addition, MaskAL had the same performance after
+sampling 900 images as the random sampling had after 2300 images. Compared to a Mask R-CNN model that
+was trained on the entire training set (14,000 images), MaskAL achieved 93.9% of that model's performance
+with 17.9% of its training data. The random sampling achieved 81.9% of that model's performance
+with 16.4% of its training data. We conclude that by using MaskAL, the annotation effort can be reduced
+for training Mask R-CNN on a broccoli dataset with visually similar classes. Our software is available
+on https://github.com/pieterblok/maskal. 

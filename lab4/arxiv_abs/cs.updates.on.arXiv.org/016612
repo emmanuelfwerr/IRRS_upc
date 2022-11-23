@@ -1,0 +1,19 @@
+We study the problem of constructing a data structure that can store a two-dimensional polygonal
+curve $P$, such that for any query segment $\overline{ab}$ one can efficiently compute the Fr\'{e}chet
+distance between $P$ and $\overline{ab}$. First we present a data structure of size $O(n \log n)$
+that can compute the Fr\'{e}chet distance between $P$ and a horizontal query segment $\overline{ab}$
+in $O(\log n)$ time, where $n$ is the number of vertices of $P$. In comparison to prior work, this significantly
+reduces the required space. We extend the type of queries allowed, as we allow a query to be a horizontal
+segment $\overline{ab}$ together with two points $s, t \in P$ (not necessarily vertices), and ask
+for the Fr\'{e}chet distance between $\overline{ab}$ and the curve of $P$ in between $s$ and $t$.
+Using $O(n\log^2n)$ storage, such queries take $O(\log^3 n)$ time, simplifying and significantly
+improving previous results. We then generalize our results to query segments of arbitrary orientation.
+We present an $O(nk^{3+\varepsilon}+n^2)$ size data structure, where $k \in [1..n]$ is a parameter
+the user can choose, and $\varepsilon > 0$ is an arbitrarily small constant, such that given any segment
+$\overline{ab}$ and two points $s, t \in P$ we can compute the Fr\'{e}chet distance between $\overline{ab}$
+and the curve of $P$ in between $s$ and $t$ in $O((n/k)\log^2n+\log^4 n)$ time. This is the first result
+that allows efficient exact Fr\'{e}chet distance queries for arbitrarily oriented segments.
+We also present two applications of our data structure: we show that we can compute a local $\delta$-simplification
+(with respect to the Fr\'{e}chet distance) of a polygonal curve in $O(n^{5/2+\varepsilon})$ time,
+and that we can efficiently find a translation of an arbitrary query segment $\overline{ab}$ that
+minimizes the Fr\'{e}chet distance with respect to a subcurve of $P$. 

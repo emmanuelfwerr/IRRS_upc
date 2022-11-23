@@ -1,0 +1,20 @@
+The inverse mechano-electrical problem in cardiac electrophysiology is the attempt to reconstruct
+electrical excitation or action potential wave patterns from the heart's mechanical deformation
+that occurs in response to electrical excitation. Because heart muscle cells contract upon electrical
+excitation due to the excitation-contraction coupling mechanism, the resulting deformation
+of the heart should reflect macroscopic action potential wave phenomena. However, whether the
+relationship between macroscopic electrical and mechanical phenomena is well-defined and furthermore
+unique enough to be utilized for an inverse imaging technique, in which mechanical activation mapping
+is used as a surrogate for electrical mapping, has yet to be determined. Here, we provide a numerical
+proof-of-principle that deep learning can be used to solve the inverse mechano-electrical problem
+in phenomenological two- and three-dimensional computer simulations of the contracting heart
+wall, or in elastic excitable media, with muscle fiber anisotropy. We trained a convolutional autoencoder
+neural network to learn the complex relationship between electrical excitation, active stress,
+and tissue deformation during both focal or reentrant chaotic wave activity, and consequently
+used the network to succesfully estimate or reconstruct electrical excitation wave patterns from
+mechanical deformation in sheets and bulk-shaped tissues, even in the presence of noise and at low
+spatial resolutions. We demonstrate that even complicated three-dimensional electrical excitation
+wave phenomena, such as scroll waves and their vortex filaments, can be computed with very high reconstruction
+accuracies of about 95% from mechanical deformation using autoencoder neural networks, and we
+provide a comparison with results that were obtained previously with a physics- or knowledge-based
+approach. 

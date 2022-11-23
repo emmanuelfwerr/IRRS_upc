@@ -1,0 +1,20 @@
+A Boolean maximum constraint satisfaction problem, Max-CSP($f$), is specified by a constraint
+function $f:\{-1,1\}^k\to\{0,1\}$; an instance on $n$ variables is given by a list of constraints
+applying $f$ on a tuple of "literals" of $k$ distinct variables chosen from the $n$ variables. Chou,
+Golovnev, and Velusamy [CGV20] obtained explicit constants characterizing the streaming approximability
+of all symmetric Max-2CSPs. More recently, Chou, Golovnev, Sudan, and Velusamy [CGSV21] proved
+a general dichotomy theorem tightly characterizing the approximability of Boolean Max-CSPs with
+respect to sketching algorithms. For every $f$, they showed that there exists an optimal approximation
+ratio $\alpha(f)\in (0,1]$ such that for every $\epsilon>0$, Max-CSP($f$) is $(\alpha(f)-\epsilon)$-approximable
+by a linear sketching algorithm in $O(\log n)$ space, but any $(\alpha(f)+\epsilon)$-approximation
+sketching algorithm for Max-CSP($f$) requires $\Omega(\sqrt{n})$ space. In this work, we build
+on the [CGSV21] dichotomy theorem and give closed-form expressions for the sketching approximation
+ratios of multiple families of symmetric Boolean functions. The functions include $k$AND and Th$_k^{k-1}$
+(the ``weight-at-least-$(k-1)$'' threshold function on $k$ variables). In particular, letting
+$\alpha'_k = 2^{-(k-1)} (1-k^{-2})^{(k-1)/2}$, we show that for odd $k \geq 3$, $\alpha(k$AND$
+= \alpha'_k$; for even $k \geq 2$, $\alpha(k$AND$) = 2\alpha'_{k+1}$; and for even $k \geq 2$, $\alpha($Th$_k^{k-1})
+= \frac{k}2\alpha'_{k-1}$. We also resolve the ratio for the ``weight-exactly-$\frac{k+1}2$''
+function for odd $k \in \{3,\ldots,51\}$ as well as fifteen other functions. These closed-form
+expressions need not have existed just given the [CGSV21] dichotomy. For arbitrary threshold functions,
+we also give optimal "bias-based" approximation algorithms generalizing [CGV20] and simplifying
+[CGSV21]. 

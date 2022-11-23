@@ -1,0 +1,18 @@
+\emph{Threshold aggregation} reporting systems collect measurements sent by clients and reveal
+clusters of data of size $\kappa$, while keeping smaller clusters private. In practice and research,
+existing reporting systems incur significant implementation hurdles, including: i) usage of
+trusted servers and hardware; ii) making unrealistic compromises in provided functionality;
+iii) requiring complex and expensive coordination between clients to ensure records are not identifying;
+and iv) are costly in terms of computation, network use, or both. In this work, we present \textsf{STAR}
+(Distributed Secret Sharing for Threshold Aggregation Reporting): a highly efficient protocol
+allowing secure threshold aggregation of collected data by untrusted entities, using techniques
+taken from $\kappa$-out-of-$n$ threshold secret sharing. We propose a two-server model that categorically
+improves on trust assumptions made in prior work, requiring only a single-server to perform aggregation,
+and with leakage that can be eliminated at higher application layers. In terms of performance, server-side
+aggregation takes only $20$ seconds for messages received from $1,000,000$ clients, with per-client
+communication as small as 233 bytes, and no client-to-client interaction. Additionally, \textsf{STAR}{}
+is extensible in allowing arbitrary additional data to be sent with each message, which is only revealed
+if the threshold check is satisfied. Finally, a single-server variant of \textsf{STAR}, known
+as \textsf{STARLite}, can be used for high-entropy client input distributions. In order to construct
+\textsf{STAR}, we develop novel cryptographic contributions in defining and constructing \emph{puncturable}
+partially oblivious PRF (PPOPRF) protocols, which we expect to be useful in wider applications.

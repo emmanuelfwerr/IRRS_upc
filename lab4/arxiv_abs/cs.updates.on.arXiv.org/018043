@@ -1,0 +1,19 @@
+The Locally Competitive Algorithm (LCA) uses local competition between non-spiking leaky integrator
+neurons to infer sparse representations, allowing for potentially real-time execution on massively
+parallel neuromorphic architectures such as Intel's Loihi processor. Here, we focus on the problem
+of inferring sparse representations from streaming video using dictionaries of spatiotemporal
+features optimized in an unsupervised manner for sparse reconstruction. Non-spiking LCA has previously
+been used to achieve unsupervised learning of spatiotemporal dictionaries composed of convolutional
+kernels from raw, unlabeled video. We demonstrate how unsupervised dictionary learning with spiking
+LCA (\hbox{S-LCA}) can be efficiently implemented using accumulator neurons, which combine a
+conventional leaky-integrate-and-fire (\hbox{LIF}) spike generator with an additional state
+variable that is used to minimize the difference between the integrated input and the spiking output.
+We demonstrate dictionary learning across a wide range of dynamical regimes, from graded to intermittent
+spiking, for inferring sparse representations of both static images drawn from the CIFAR database
+as well as video frames captured from a DVS camera. On a classification task that requires identification
+of the suite from a deck of cards being rapidly flipped through as viewed by a DVS camera, we find essentially
+no degradation in performance as the LCA model used to infer sparse spatiotemporal representations
+migrates from graded to spiking. We conclude that accumulator neurons are likely to provide a powerful
+enabling component of future neuromorphic hardware for implementing online unsupervised learning
+of spatiotemporal dictionaries optimized for sparse reconstruction of streaming video from event
+based DVS cameras. 

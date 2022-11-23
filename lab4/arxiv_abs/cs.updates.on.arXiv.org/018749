@@ -1,0 +1,19 @@
+Limited by the memory capacity and computation power, singe-node graph convolutional neural network
+(GCN) accelerators cannot complete the execution of GCNs within a reasonable time, due to explosive
+graphs nowadays. Thus, large-scale GCNs call for a multi-node acceleration system (MultiAccSys)
+like TPU-Pod for large-scale neural network. In this work, we aim to scale the single-node GCN accelerator
+to accelerate GCNs on large-scale graphs. We first identify the communication pattern and challenges
+of the multi-node acceleration for GCNs on large-scale graphs. We observe that (1) the existence
+of the irregular coarse-grained communication pattern exists in the execution of GCNs in MultiAccSys,
+which introduces massive redundant network transmissions and off-chip memory accesses; (2) the
+acceleration of GCNs in MultiAccSys is mainly bounded by network bandwidth but tolerates network
+latency. Guided by the above observations, we then propose MultiGCN, an efficient MultiAccSys
+for large-scale GCNs that trades network latency for network bandwidth. Specifically, by leveraging
+the network latency tolerance, we first propose a topology-aware multicast mechanism with a one
+put per multicast message-passing model to reduce transmissions and alleviate network bandwidth
+requirements. Second, we introduce a scatter-based round execution mechanism which cooperates
+with the multicast mechanism and reduces redundant off-chip memory accesses. Compared to the baseline
+MultiAccSys, MultiGCN achieves 4-12x speedup using only 28%-68% energy, while reducing 32% transmissions
+and 73% off-chip memory accesses on average. Besides, MultiGCN not only achieves 2.5-8x speedup
+over the state-of-the-art multi-GPU solution, but also can scale to large-scale graph compared
+to single-node GCN accelerator. 

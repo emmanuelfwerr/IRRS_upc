@@ -1,0 +1,19 @@
+The canonical polyadic decomposition (CPD) of a low rank tensor plays a major role in data analysis
+and signal processing by allowing for unique recovery of underlying factors. However, it is well
+known that the low rank CPD approximation problem is ill-posed. That is, a tensor may fail to have
+a best rank $R$ CPD approximation when $R>1$. This article gives deterministic bounds for the existence
+of best low rank tensor approximations over $\mathbb{K}=\mathbb{R}$ or $\mathbb{K}=\mathbb{C}$.
+More precisely, given a tensor $\mathcal{T} \in \mathbb{K}^{I \times I \times I}$ of rank $R \leq
+I$, we compute the radius of a Frobenius norm ball centered at $\mathcal{T}$ in which best $\mathbb{K}$-rank
+$R$ approximations are guaranteed to exist. In addition we show that every $\mathbb{K}$-rank $R$
+tensor inside of this ball has a unique canonical polyadic decomposition. This neighborhood may
+be interpreted as a neighborhood of "mathematical truth" in with CPD approximation and computation
+is well-posed. In pursuit of these bounds, we describe low rank tensor decomposition as a ``joint
+generalized eigenvalue" problem. Using this framework, we show that, under mild assumptions,
+a low rank tensor which has rank strictly greater than border rank is defective in the sense of algebraic
+and geometric multiplicities for joint generalized eigenvalues. Bounds for existence of best
+low rank approximations are then obtained by establishing perturbation theoretic results for
+the joint generalized eigenvalue problem. In this way we establish a connection between existence
+of best low rank approximations and the tensor spectral norm. In addition we solve a "tensor Procrustes
+problem" which examines orthogonal compressions for pairs of tensors. The main results of the article
+are illustrated by a variety of numerical experiments. 

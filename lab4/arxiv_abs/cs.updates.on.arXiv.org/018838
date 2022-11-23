@@ -1,0 +1,20 @@
+The classification of airborne laser scanning (ALS) point clouds is a critical task of remote sensing
+and photogrammetry fields. Although recent deep learning-based methods have achieved satisfactory
+performance, they have ignored the unicity of the receptive field, which makes the ALS point cloud
+classification remain challenging for the distinguishment of the areas with complex structures
+and extreme scale variations. In this article, for the objective of configuring multi-receptive
+field features, we propose a novel receptive field fusion-and-stratification network (RFFS-Net).
+With a novel dilated graph convolution (DGConv) and its extension annular dilated convolution
+(ADConv) as basic building blocks, the receptive field fusion process is implemented with the dilated
+and annular graph fusion (DAGFusion) module, which obtains multi-receptive field feature representation
+through capturing dilated and annular graphs with various receptive regions. The stratification
+of the receptive fields with point sets of different resolutions as the calculation bases is performed
+with Multi-level Decoders nested in RFFS-Net and driven by the multi-level receptive field aggregation
+loss (MRFALoss) to drive the network to learn in the direction of the supervision labels with different
+resolutions. With receptive field fusion-and-stratification, RFFS-Net is more adaptable to
+the classification of regions with complex structures and extreme scale variations in large-scale
+ALS point clouds. Evaluated on the ISPRS Vaihingen 3D dataset, our RFFS-Net significantly outperforms
+the baseline approach by 5.3% on mF1 and 5.4% on mIoU, accomplishing an overall accuracy of 82.1%,
+an mF1 of 71.6%, and an mIoU of 58.2%. Furthermore, experiments on the LASDU dataset and the 2019 IEEE-GRSS
+Data Fusion Contest dataset show that RFFS-Net achieves a new state-of-the-art classification
+performance. 

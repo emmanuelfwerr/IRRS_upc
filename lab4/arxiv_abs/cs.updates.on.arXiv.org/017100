@@ -1,0 +1,20 @@
+In this paper, a fault-tolerant approach to mitigate transient and permanent faults of arithmetic
+and logic operations of embedded processors called FT-EALU is proposed. In this method, each operation
+is replicated in time and the derived final results are voted to generate the final output. To consider
+the effect of permanent faults, replicating identical operations in time is not sufficient, and
+diversifying the operands is required. To this aim in FT-EALU, we consider three distinct versions
+of input data and apply the target operation to them serially in time. To avoid high time overhead,
+we employ simple operators such as shift and swap to make an appropriate diversion in input data.
+Our proposed fault tolerance approach passes the replicated and diverse results to a novel weighted
+voter that is designed based on the reward/punishment strategy. For each version of execution,
+based on the proposed weighting approach a corresponding weight according to its correction capability
+confronting several faulty scenarios is defined. This weight defines the reliability of the result
+of each version of execution and determines its effect on the final result. The final result is generated
+bit by bit based on the weight of each execution and its computed result. These weights are determined
+statically through a design-time learning scheme according to applying several types of faults
+on various data bits. Based on the capability of execution versions on mitigating the permanent
+faults, positive or negative scores are assigned to them. These scores are integrated for several
+cases and normalized to derive the appropriate weight of each execution at bit level. Several experiments
+are performed to show the efficiency of our proposed approach and based on them, FT-EALU is capable
+of correcting about 84.93% and 69.71% of permanent injected faults on single and double bits of input
+data. 

@@ -1,0 +1,20 @@
+Rapid advances in sensor, wireless communication, cloud computing and data science have brought
+unprecedented amount of data to assist transportation engineers and researchers in making better
+decisions. However, traffic data in reality often has corrupted or incomplete values due to detector
+and communication malfunctions. Data imputation is thus required to ensure the effectiveness
+of downstream data-driven applications. To this end, numerous tensor-based methods treating
+the imputation problem as the low-rank tensor completion (LRTC) have been attempted in previous
+works. To tackle rank minimization, which is at the core of the LRTC, most of aforementioned methods
+utilize the tensor nuclear norm (NN) as a convex surrogate for the minimization. However, the over-relaxation
+issue in NN refrains it from desirable performance in practice. In this paper, we define an innovative
+nonconvex truncated Schatten p-norm for tensors (TSpN) to approximate tensor rank and impute missing
+spatiotemporal traffic data under the LRTC framework. We model traffic data into a third-order
+tensor structure of (time intervals,locations (sensors),days) and introduce four complicated
+missing patterns, including random missing and three fiber-like missing cases according to the
+tensor mode-n fibers. Despite nonconvexity of the objective function in our model, we derive the
+global optimal solutions by integrating the alternating direction method of multipliers (ADMM)
+with generalized soft-thresholding (GST). In addition, we design a truncation rate decay strategy
+to deal with varying missing rate scenarios. Comprehensive experiments are finally conducted
+using real-world spatiotemporal datasets, which demonstrate that the proposed LRTC-TSpN method
+performs well under various missing cases, meanwhile outperforming other SOTA tensor-based imputation
+models in almost all scenarios. 

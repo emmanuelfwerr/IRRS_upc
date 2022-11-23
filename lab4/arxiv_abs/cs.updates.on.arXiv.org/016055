@@ -1,0 +1,19 @@
+Detection of unwanted (`foreign') objects within products is a common procedure in many branches
+of industry for maintaining production quality. X-ray imaging is a fast, non-invasive and widely
+applicable method for foreign object detection. Deep learning has recently emerged as a powerful
+approach for recognizing patterns in radiographs (i.e., X-ray images), enabling automated X-ray
+based foreign object detection. However, these methods require a large number of training examples
+and manual annotation of these examples is a subjective and laborious task. In this work, we propose
+a Computed Tomography (CT) based method for producing training data for supervised learning of
+foreign object detection, with minimal labour requirements. In our approach, a few representative
+objects are CT scanned and reconstructed in 3D. The radiographs that have been acquired as part of
+the CT-scan data serve as input for the machine learning method. High-quality ground truth locations
+of the foreign objects are obtained through accurate 3D reconstructions and segmentations. Using
+these segmented volumes, corresponding 2D segmentations are obtained by creating virtual projections.
+We outline the benefits of objectively and reproducibly generating training data in this way compared
+to conventional radiograph annotation. In addition, we show how the accuracy depends on the number
+of objects used for the CT reconstructions. The results show that in this workflow generally only
+a relatively small number of representative objects (i.e., fewer than 10) are needed to achieve
+adequate detection performance in an industrial setting. Moreover, for real experimental data
+we show that the workflow leads to higher foreign object detection accuracies than with standard
+radiograph annotation. 

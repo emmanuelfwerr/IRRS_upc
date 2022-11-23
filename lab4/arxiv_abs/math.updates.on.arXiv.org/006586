@@ -1,0 +1,19 @@
+Distributionally robust stochastic optimization (DRSO) is an approach to optimization under
+uncertainty in which, instead of assuming that there is a known true underlying probability distribution,
+one hedges against a chosen set of distributions. In this paper we first point out that the set of distributions
+should be chosen to be appropriate for the application at hand, and that some of the choices that have
+been popular until recently are, for many applications, not good choices. We next consider sets
+of distributions that are within a chosen Wasserstein distance from a nominal distribution. Such
+a choice of sets has two advantages: (1) The resulting distributions hedged against are more reasonable
+than those resulting from other popular choices of sets. (2) The problem of determining the worst-case
+expectation over the resulting set of distributions has desirable tractability properties. We
+derive a strong duality reformulation of the corresponding DRSO problem and construct approximate
+worst-case distributions explicitly via the first-order optimality conditions of the dual problem.
+Our contributions are four-fold. (i) We identify necessary and sufficient conditions for the existence
+of a worst-case distribution, which are naturally related to the growth rate of the objective function.
+(ii) We show that the worst-case distributions resulting from an appropriate Wasserstein distance
+have a concise structure and a clear interpretation. (iii) Using this structure, we show that data-driven
+DRSO problems can be approximated to any accuracy by robust optimization problems, and thereby
+many DRSO problems become tractable by using tools from robust optimization. (iv) Our strong duality
+result holds in a very general setting. As examples, we show that it can be applied to infinite-dimensional
+process control and intensity estimation for point processes. 

@@ -1,0 +1,20 @@
+We consider the approximability of center-based clustering problems where the points to be clustered
+lie in a metric space, and no candidate centers are specified. We call such problems "continuous",
+to distinguish from "discrete" clustering where candidate centers are specified. For many objectives,
+one can reduce the continuous case to the discrete case, and use an $\alpha$-approximation algorithm
+for the discrete case to get a $\beta\alpha$-approximation for the continuous case, where $\beta$
+depends on the objective: e.g. for $k$-median, $\beta = 2$, and for $k$-means, $\beta = 4$. Our motivating
+question is whether this gap of $\beta$ is inherent, or are there better algorithms for continuous
+clustering than simply reducing to the discrete case? In a recent SODA 2021 paper, Cohen-Addad,
+Karthik, and Lee prove a factor-$2$ and a factor-$4$ hardness, respectively, for continuous $k$-median
+and $k$-means, even when the number of centers $k$ is a constant. The discrete case for a constant
+$k$ is exactly solvable in polytime, so the $\beta$ loss seems unavoidable in some regimes. In this
+paper, we approach continuous clustering via the round-or-cut framework. For four continuous
+clustering problems, we outperform the reduction to the discrete case. Notably, for the problem
+$\lambda$-UFL, where $\beta = 2$ and the discrete case has a hardness of $1.27$, we obtain an approximation
+ratio of $2.32 < 2 \times 1.27$ for the continuous case. Also, for continuous $k$-means, where the
+best known approximation ratio for the discrete case is $9$, we obtain an approximation ratio of
+$32 < 4 \times 9$. The key challenge is that most algorithms for discrete clustering, including the
+state of the art, depend on linear programs that become infinite-sized in the continuous case. To
+overcome this, we design new linear programs for the continuous case which are amenable to the round-or-cut
+framework. 

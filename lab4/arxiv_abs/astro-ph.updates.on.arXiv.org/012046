@@ -1,0 +1,20 @@
+Exoplanet observations are currently analysed with Bayesian retrieval techniques. Due to the
+computational load of the models used, a compromise is needed between model complexity and computing
+time. Analysis of data from future facilities, will need more complex models which will increase
+the computational load of retrievals, prompting the search for a faster approach for interpreting
+exoplanet observations. Our goal is to compare machine learning retrievals of exoplanet transmission
+spectra with nested sampling, and understand if machine learning can be as reliable as Bayesian
+retrievals for a statistically significant sample of spectra while being orders of magnitude faster.
+We generate grids of synthetic transmission spectra and their corresponding planetary and atmospheric
+parameters, one using free chemistry models, and the other using equilibrium chemistry models.
+Each grid is subsequently rebinned to simulate both HST/WFC3 and JWST/NIRSpec observations, yielding
+four datasets in total. Convolutional neural networks (CNNs) are trained with each of the datasets.
+We perform retrievals on a 1,000 simulated observations for each combination of model type and instrument
+with nested sampling and machine learning. We also use both methods to perform retrievals on real
+WFC3 transmission spectra. Finally, we test how robust machine learning and nested sampling are
+against incorrect assumptions in our models. CNNs reach a lower coefficient of determination between
+predicted and true values of the parameters. Nested sampling underestimates the uncertainty in
+~8% of retrievals, whereas CNNs estimate them correctly. For real WFC3 observations, nested sampling
+and machine learning agree within $2\sigma$ for ~86% of spectra. When doing retrievals with incorrect
+assumptions, nested sampling underestimates the uncertainty in ~12% to ~41% of cases, whereas
+this is always below ~10% for the CNN. 

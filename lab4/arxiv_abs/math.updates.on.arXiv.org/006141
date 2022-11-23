@@ -1,0 +1,18 @@
+In this work, we present mixed dimensional models for simulating blood flow and transport processes
+in breast tissue and the vascular tree supplying it. These processes are considered, to start from
+the aortic inlet to the capillaries and tissue of the breast. Large variations in biophysical properties
+and flow conditions exist in this system necessitating the use of different flow models for different
+geometries and flow regimes. Large variations in biophysical properties and flow conditions exist
+in this system necessitating the use of different flow models for different geometries and flow
+regimes. In total, we consider four different model types. First, a system of 1D nonlinear hyperbolic
+PDEs is considered to simulate blood flow in larger arteries with highly elastic vessel walls. Second,
+we assign 1D linearized hyperbolic PDEs to model the smaller arteries with stiffer vessel walls.
+The third model type consists of ODE systems (0D models). It is used to model the arterioles and peripheral
+circulation. Finally, homogenized 3D porous media models are considered to simulate flow and transport
+in capillaries and tissue within the breast volume. Sink terms are used to account for the influence
+of the venous and lymphatic systems. Combining the four model types, we obtain two different 1D-0D-3D
+coupled models for simulating blood flow and transport processes: The first 1D-0D-3D model covers
+the whole path from the aorta to the breast, while the second model is a sub-model obtained by restriction
+to breast vasculature and tissue making possible a significant reduction in computational cost.
+Several numerical experiments are conducted that demonstrate realistic flow simulations compared
+to existing data on blood flow in human breast and vascular system. 

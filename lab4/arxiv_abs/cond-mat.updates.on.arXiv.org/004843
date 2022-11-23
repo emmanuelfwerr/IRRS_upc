@@ -1,0 +1,19 @@
+GW approximation is one of the most popular parameter-free many-body methods that goes beyond the
+limitations of the standard density functional theory (DFT) to determine the excitation spectra
+for moderately correlated materials and in particular the semiconductors. It is also the first
+step in developing the diagrammatic Monte Carlo method into an electronic structure tool, which
+would offer a numerically exact solution to the solid-state problem. Currently, most electronic
+structure packages support GW calculations for the band-insulating materials, while the support
+for the metallic system remains limited to only a few implementations. The metallic systems are
+challenging for GW, as it requires one to accurately resolve the Fermi surface singularities, which
+demands a dense momentum mesh. Here we implement GW algorithm within the all-electron Linear Augmented
+Plane Wave framework, where we pay special attention to the metallic systems, the convergence with
+respect to momentum mesh and proper treatment of the deep laying core states, as needed for the future
+variational diagrammatic Monte Carlo implementation. Our improved algorithm for resolving Fermi
+surface singularities allows us a stable and accurate analytic continuation of imaginary axis
+data, which is carried out for GW excitation spectra throughout the Brillouin zone in both the metallic
+and insulating materials, and is compared to numerically more stable contour deformation integration
+technique. We compute band structures for elemental metallic systems Li, Na, and Mg as well as for
+various narrow and wide bandgap insulators such as Si, BN, SiC, MgO, LiF, ZnS, and CdS and compare
+our results with previous GW calculations and available experiments data. Our results are in good
+agreement with the available literature. 

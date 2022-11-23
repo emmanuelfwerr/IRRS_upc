@@ -1,0 +1,19 @@
+A graph $G$ is called self-ordered (a.k.a asymmetric) if the identity permutation is its only automorphism.
+Equivalently, there is a unique isomorphism from $G$ to any graph that is isomorphic to $G$. We say
+that $G=(V,E)$ is robustly self-ordered if the size of the symmetric difference between $E$ and
+the edge-set of the graph obtained by permuting $V$ using any permutation $\pi:V\to V$ is proportional
+to the number of non-fixed-points of $\pi$. In this work, we initiate the study of the structure,
+construction and utility of robustly self-ordered graphs. We show that robustly self-ordered
+bounded-degree graphs exist (in abundance), and that they can be constructed efficiently, in a
+strong sense. Specifically, given the index of a vertex in such a graph, it is possible to find all
+its neighbors in polynomial-time (i.e., in time that is poly-logarithmic in the size of the graph).
+We also consider graphs of unbounded degree, seeking correspondingly unbounded robustness parameters.
+We again demonstrate that such graphs (of linear degree) exist (in abundance), and that they can
+be constructed efficiently, in a strong sense. This turns out to require very different tools. Specifically,
+we show that the construction of such graphs reduces to the construction of non-malleable two-source
+extractors (with very weak parameters but with some additional natural features). We demonstrate
+that robustly self-ordered bounded-degree graphs are useful towards obtaining lower bounds on
+the query complexity of testing graph properties both in the bounded-degree and the dense graph
+models. One of the results that we obtain, via such a reduction, is a subexponential separation between
+the query complexities of testing and tolerant testing of graph properties in the bounded-degree
+graph model. 

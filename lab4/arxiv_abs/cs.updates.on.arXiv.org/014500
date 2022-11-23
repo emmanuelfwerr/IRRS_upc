@@ -1,0 +1,19 @@
+Accurate and automated super-resolution image synthesis is highly desired since it has the great
+potential to circumvent the need for acquiring high-cost medical scans and a time-consuming preprocessing
+pipeline of neuroimaging data. However, existing deep learning frameworks are solely designed
+to predict high-resolution (HR) image from a low-resolution (LR) one, which limits their generalization
+ability to brain graphs (i.e., connectomes). A small body of works has focused on superresolving
+brain graphs where the goal is to predict a HR graph from a single LR graph. Although promising, existing
+works mainly focus on superresolving graphs belonging to the same domain (e.g., functional), overlooking
+the domain fracture existing between multimodal brain data distributions (e.g., morphological
+and structural). To this aim, we propose a novel inter-domain adaptation framework namely, Learn
+to SuperResolve Brain Graphs with Knowledge Distillation Network (L2S-KDnet), which adopts a
+teacher-student paradigm to superresolve brain graphs. Our teacher network is a graph encoder-decoder
+that firstly learns the LR brain graph embeddings, and secondly learns how to align the resulting
+latent representations to the HR ground truth data distribution using an adversarial regularization.
+Ultimately, it decodes the HR graphs from the aligned embeddings. Next, our student network learns
+the knowledge of the aligned brain graphs as well as the topological structure of the predicted HR
+graphs transferred from the teacher. We further leverage the decoder of the teacher to optimize
+the student network. L2S-KDnet presents the first TS architecture tailored for brain graph super-resolution
+synthesis that is based on inter-domain alignment. Our experimental results demonstrate substantial
+performance gains over benchmark methods. 

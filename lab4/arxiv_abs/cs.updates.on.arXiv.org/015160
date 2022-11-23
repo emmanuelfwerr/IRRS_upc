@@ -1,0 +1,20 @@
+This work focuses on an efficient Agile design methodology for domain-specific accelerators.
+We employ feature-by-feature enhancement of a vertical development stack and apply it to the TVM/VTA
+inference accelerator. We have enhanced the VTA design space and enabled end-to-end support for
+additional workloads. This has been accomplished by augmenting the VTA micro-architecture and
+instruction set architecture (ISA), as well as by enhancing the TVM compilation stack to support
+a wide range of VTA configs. The VTA tsim implementation (CHISEL-based) has been enhanced with fully
+pipelined versions of the ALU/GEMM execution units. In tsim, memory width can now range between
+8-64 bytes. Field widths have been made more flexible to support larger scratchpads. New instructions
+have been added: element-wise 8-bit multiplication to support depthwise convolution, and load
+with a choice of pad values to support max pooling. Support for more layers and better double buffering
+has also been added. Fully pipelining ALU/GEMM helps significantly: 4.9x fewer cycles with minimal
+area change to run ResNet-18 under the default config. Configs featuring a further 11.5x decrease
+in cycle count at a cost of 12x greater area can be instantiated. Many points on the area-performance
+pareto curve are shown, showcasing the balance of execution unit sizing, memory interface width,
+and scratchpad sizing. Finally, VTA is now able to run Mobilenet 1.0 and all layers for ResNets, including
+the previously disabled pooling and fully connected layers. The TVM/VTA architecture has always
+featured end-to-end workload evaluation on RTL in minutes. With our modifications, it now offers
+a much greater number of feasible configurations with a wide range of cost vs. performance. All capabilities
+mentioned are available in opensource forks while a subset of these capabilities have already been
+upstreamed. 

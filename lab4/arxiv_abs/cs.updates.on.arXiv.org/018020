@@ -1,0 +1,19 @@
+The increasing prevalence and growing size of data in modern applications have led to high costs
+for computation in traditional processor-centric computing systems. Moving large volumes of
+data between memory devices (e.g., DRAM) and computing elements (e.g., CPUs, GPUs) across bandwidth-limited
+memory channels can consume more than 60% of the total energy in modern systems. To mitigate these
+costs, the processing-in-memory (PIM) paradigm moves computation closer to where the data resides,
+reducing (and in some cases eliminating) the need to move data between memory and the processor.
+There are two main approaches to PIM: (1) processing-near-memory (PnM), where PIM logic is added
+to the same die as memory or to the logic layer of 3D-stacked memory; and (2) processing-using-memory
+(PuM), which uses the operational principles of memory cells to perform computation. Many works
+from academia and industry have shown the benefits of PnM and PuM for a wide range of workloads from
+different domains. However, fully adopting PIM in commercial systems is still very challenging
+due to the lack of tools and system support for PIM architectures across the computer architecture
+stack, which includes: (i) workload characterization methodologies and benchmark suites targeting
+PIM architectures; (ii) frameworks that can facilitate the implementation of complex operations
+and algorithms using the underlying PIM primitives; (iii) compiler support and compiler optimizations
+targeting PIM architectures; (iv) operating system support for PIM-aware virtual memory, memory
+management, data allocation, and data mapping; and (v) efficient data coherence and consistency
+mechanisms. Our goal in this work is to provide tools and system support for PnM and PuM architectures,
+aiming to ease the adoption of PIM in current and future systems. 

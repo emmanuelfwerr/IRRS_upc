@@ -1,0 +1,20 @@
+To account for the massive uncoordinated random access scenario, which is relevant for the Internet
+of Things, Polyanskiy (2017) proposed a novel formulation of the multiple-access problem, commonly
+referred to as unsourced multiple access, where all users employ a common codebook and the receiver
+decodes up to a permutation of the messages. We extend this seminal work to the case where the number
+of active users is random and unknown a priori. We define a random-access code accounting for both
+misdetection (MD) and false alarm (FA), and derive a random-coding achievability bound for the
+Gaussian multiple access channel. Our bound captures the fundamental trade-off between MD and
+FA. It suggests that the lack of knowledge of the number of active users entails a small penalty in
+energy efficiency when the target MD and FA probabilities are high. However, as the target MD and
+FA probabilities decrease, the energy efficiency penalty becomes significant. For example, in
+a typical IoT scenario, the required energy per bit to achieve both MD and FA probabilities below
+0.1, predicted by our bound, is only 0.5-0.7 dB higher than that predicted by the bound in Polyanskiy
+(2017) for a known number of active users. This gap increases to 3-4 dB when the target MD and/or FA
+probability is 0.001. Taking both MD and FA into account, we use our bound to benchmark the energy
+efficiency of slotted ALOHA with multi-packet reception, of a decoder that treats interference
+as noise, and of some recently proposed coding schemes. Numerical results suggest that, when the
+target MD and FA probabilities are high, it is effective to estimate the number of active users, then
+treat this estimate as the true value, and use a coding scheme that performs well for the case of known
+number of active users. However, this approach becomes energy inefficient when the requirements
+on MD and FA probabilities are stringent. 

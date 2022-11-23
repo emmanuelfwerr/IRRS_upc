@@ -1,0 +1,19 @@
+Image restoration of snow scenes in severe weather is a difficult task. Snow images have complex
+degradations and are cluttered over clean images, changing the distribution of clean images. The
+previous methods based on CNNs are challenging to remove perfectly in restoring snow scenes due
+to their local inductive biases' lack of a specific global modeling ability. In this paper, we apply
+the vision transformer to the task of snow removal from a single image. Specifically, we propose
+a parallel network architecture split along the channel, performing local feature refinement
+and global information modeling separately. We utilize a channel shuffle operation to combine
+their respective strengths to enhance network performance. Second, we propose the MSP module,
+which utilizes multi-scale avgpool to aggregate information of different sizes and simultaneously
+performs multi-scale projection self-attention on multi-head self-attention to improve the
+representation ability of the model under different scale degradations. Finally, we design a lightweight
+and simple local capture module, which can refine the local capture capability of the model. In the
+experimental part, we conduct extensive experiments to demonstrate the superiority of our method.
+We compared the previous snow removal methods on three snow scene datasets. The experimental results
+show that our method surpasses the state-of-the-art methods with fewer parameters and computation.
+We achieve substantial growth by 1.99dB and SSIM 0.03 on the CSD test dataset. On the SRRS and Snow100K
+datasets, we also increased PSNR by 2.47dB and 1.62dB compared with the Transweather approach and
+improved by 0.03 in SSIM. In the visual comparison section, our MSP-Former also achieves better
+visual effects than existing methods, proving the usability of our method. 

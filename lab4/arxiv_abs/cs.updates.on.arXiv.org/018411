@@ -1,0 +1,19 @@
+To capture inherent geometric features of many community detection problems, we propose to use
+a new random graph model of communities that we call a \emph{Geometric Block Model}. The geometric
+block model builds on the \emph{random geometric graphs} (Gilbert, 1961), one of the basic models
+of random graphs for spatial networks, in the same way that the well-studied stochastic block model
+builds on the Erd\H{o}s-R\'{en}yi random graphs. It is also a natural extension of random community
+models inspired by the recent theoretical and practical advancements in community detection.
+To analyze the geometric block model, we first provide new connectivity results for \emph{random
+annulus graphs} which are generalizations of random geometric graphs. The connectivity properties
+of geometric graphs have been studied since their introduction, and analyzing them has been difficult
+due to correlated edge formation. We then use the connectivity results of random annulus graphs
+to provide necessary and sufficient conditions for efficient recovery of communities for the geometric
+block model. We show that a simple triangle-counting algorithm to detect communities in the geometric
+block model is near-optimal. For this we consider two regimes of graph density. In the regime where
+the average degree of the graph grows logarithmically with number of vertices, we show that our algorithm
+performs extremely well, both theoretically and practically. In contrast, the triangle-counting
+algorithm is far from being optimum for the stochastic block model in the logarithmic degree regime.
+We also look at the regime where the average degree of the graph grows linearly with the number of vertices
+$n$, and hence to store the graph one needs $\Theta(n^2)$ memory. We show that our algorithm needs
+to store only $O(n \log n)$ edges in this regime to recover the latent communities. 

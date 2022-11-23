@@ -1,0 +1,19 @@
+The Internet was originally defined as "a collection of inter-connected networks". While this
+definition helps us understand what the Internet is, it is silent on when the Internet is not. We provide
+a testable definition of the Internet to clarify where the Internet "ends": disconnection when
+a country or an ISP secedes; persistent partial connectivity when major ISPs refuse to exchange
+traffic, isolating their customers; clarifying corner cases around carrier-grade NAT, unrouted
+public IP addresses, and interpreting conflicting observations from systems that detect Internet
+outages. Our definition identifies peninsulas of persistent, partial connectivity, and clarifies
+that outages are islands, with internal connectivity that is partitioned from the main Internet.
+Our definition is conceptual, defining an ideal asymptote of connectivity, but it enables new algorithms
+that provide an operational estimate of the number of size of peninsulas and islands. We use these
+algorithms to reinterpret data from two existing measurement systems, one covering 5 million /24
+IPv4 networks and the other with 10k observers. A key result is that peninsulas are about as common
+as outages, newly clarifying the importance of this long-observed problem. We examine root causes,
+showing that most peninsula events (45%) are transient routing problems, but a few long-lived peninsulas
+events (7%) account for 90% of all peninsula time, suggesting country- or AS-level policy choices
+that last weeks or more. Finally, our definition confirms the international nature of internet:
+no single country can unilaterally claim to be "the Internet", but countries can chose to leave.
+With islands and peninsulas, our definition helps clarify the spectrum from partial reachability
+to outages in prior work. 

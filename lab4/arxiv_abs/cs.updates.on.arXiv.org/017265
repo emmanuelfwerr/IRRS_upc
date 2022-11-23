@@ -1,0 +1,19 @@
+As an important carrier of human productive activities, the extraction of buildings is not only
+essential for urban dynamic monitoring but also necessary for suburban construction inspection.
+Nowadays, accurate building extraction from remote sensing images remains a challenge due to the
+complex background and diverse appearances of buildings. The convolutional neural network (CNN)
+based building extraction methods, although increased the accuracy significantly, are criticized
+for their inability for modelling global dependencies. Thus, this paper applies the Vision Transformer
+for building extraction. However, the actual utilization of the Vision Transformer often comes
+with two limitations. First, the Vision Transformer requires more GPU memory and computational
+costs compared to CNNs. This limitation is further magnified when encountering large-sized inputs
+like fine-resolution remote sensing images. Second, spatial details are not sufficiently preserved
+during the feature extraction of the Vision Transformer, resulting in the inability for fine-grained
+building segmentation. To handle these issues, we propose a novel Vision Transformer (BuildFormer),
+with a dual-path structure. Specifically, we design a spatial-detailed context path to encode
+rich spatial details and a global context path to capture global dependencies. Besides, we develop
+a window-based linear multi-head self-attention to make the complexity of the multi-head self-attention
+linear with the window size, which strengthens the global context extraction by using large windows
+and greatly improves the potential of the Vision Transformer in processing large-sized remote
+sensing images. The proposed method yields state-of-the-art performance (75.74% IoU) on the Massachusetts
+building dataset. Code will be available. 

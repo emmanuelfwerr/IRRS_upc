@@ -1,0 +1,19 @@
+Classification models are a fundamental component of physical-asset management technologies
+such as structural health monitoring (SHM) systems and digital twins. Previous work introduced
+\textit{risk-based active learning}, an online approach for the development of statistical classifiers
+that takes into account the decision-support context in which they are applied. Decision-making
+is considered by preferentially querying data labels according to \textit{expected value of perfect
+information} (EVPI). Although several benefits are gained by adopting a risk-based active learning
+approach, including improved decision-making performance, the algorithms suffer from issues
+relating to sampling bias as a result of the guided querying process. This sampling bias ultimately
+manifests as a decline in decision-making performance during the later stages of active learning,
+which in turn corresponds to lost resource/utility. The current paper proposes two novel approaches
+to counteract the effects of sampling bias: \textit{semi-supervised learning}, and \textit{discriminative
+classification models}. These approaches are first visualised using a synthetic dataset, then
+subsequently applied to an experimental case study, specifically, the Z24 Bridge dataset. The
+semi-supervised learning approach is shown to have variable performance; with robustness to sampling
+bias dependent on the suitability of the generative distributions selected for the model with respect
+to each dataset. In contrast, the discriminative classifiers are shown to have excellent robustness
+to the effects of sampling bias. Moreover, it was found that the number of inspections made during
+a monitoring campaign, and therefore resource expenditure, could be reduced with the careful selection
+of the statistical classifiers used within a decision-supporting monitoring system. 

@@ -1,0 +1,19 @@
+Recent studies have shown that recommendation systems commonly suffer from popularity bias. Popularity
+bias refers to the problem that popular items (i.e., frequently rated items) are recommended frequently
+while less popular items are recommended rarely or not at all. Researchers adopted two approaches
+to examining popularity bias: (i) from the users' perspective, by analyzing how far a recommendation
+system deviates from user's expectations in receiving popular items, and (ii) by analyzing the
+amount of exposure that long-tail items receive, measured by overall catalog coverage and novelty.
+In this paper, we examine the first point of view in the book domain, although the findings may be applied
+to other domains as well. To this end, we analyze the well-known Book-Crossing dataset and define
+three user groups based on their tendency towards popular items (i.e., Niche, Diverse, Bestseller-focused).
+Further, we evaluate the performance of nine state-of-the-art recommendation algorithms and
+two baselines (i.e., Random, MostPop) from both the accuracy (e.g., NDCG, Precision, Recall) and
+popularity bias perspectives. Our results indicate that most state-of-the-art recommendation
+algorithms suffer from popularity bias in the book domain, and fail to meet users' expectations
+with Niche and Diverse tastes despite having a larger profile size. Conversely, Bestseller-focused
+users are more likely to receive high-quality recommendations, both in terms of fairness and personalization.
+Furthermore, our study shows a tradeoff between personalization and unfairness of popularity
+bias in recommendation algorithms for users belonging to the Diverse and Bestseller groups, that
+is, algorithms with high capability of personalization suffer from the unfairness of popularity
+bias. 

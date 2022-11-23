@@ -1,0 +1,20 @@
+Purpose: Segmentation of liver vessels from CT images is indispensable prior to surgical planning
+and aroused broad range of interests in the medical image analysis community. Due to the complex
+structure and low contrast background, automatic liver vessel segmentation remains particularly
+challenging. Most of the related researches adopt FCN, U-net, and V-net variants as a backbone.
+However, these methods mainly focus on capturing multi-scale local features which may produce
+misclassified voxels due to the convolutional operator's limited locality reception field. Methods:
+We propose a robust end-to-end vessel segmentation network called Inductive BIased Multi-Head
+Attention Vessel Net(IBIMHAV-Net) by expanding swin transformer to 3D and employing an effective
+combination of convolution and self-attention. In practice, we introduce the voxel-wise embedding
+rather than patch-wise embedding to locate precise liver vessel voxels, and adopt multi-scale
+convolutional operators to gain local spatial information. On the other hand, we propose the inductive
+biased multi-head self-attention which learns inductive biased relative positional embedding
+from initialized absolute position embedding. Based on this, we can gain a more reliable query and
+key matrix. To validate the generalization of our model, we test on samples which have different
+structural complexity. Results: We conducted experiments on the 3DIRCADb datasets. The average
+dice and sensitivity of the four tested cases were 74.8% and 77.5%, which exceed results of existing
+deep learning methods and improved graph cuts method. Conclusion: The proposed model IBIMHAV-Net
+provides an automatic, accurate 3D liver vessel segmentation with an interleaved architecture
+that better utilizes both global and local spatial features in CT volumes. It can be further extended
+for other clinical data. 

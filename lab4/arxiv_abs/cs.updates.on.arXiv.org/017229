@@ -1,0 +1,20 @@
+Machine Learning (ML) alleviates the challenges of high-dimensional data analysis and improves
+decision making in critical applications like healthcare. Effective cancer type from high-dimensional
+genetic mutation data can be useful for cancer diagnosis and treatment, if the distinguishable
+patterns between cancer types are identified. At the same time, analysis of high-dimensional data
+is computationally expensive and is often outsourced to cloud services. Privacy concerns in outsourced
+ML, especially in the field of genetics, motivate the use of encrypted computation, like Homomorphic
+Encryption (HE). But restrictive overheads of encrypted computation deter its usage. In this work,
+we explore the challenges of privacy preserving cancer detection using a real-world dataset consisting
+of more than 2 million genetic information for several cancer types. Since the data is inherently
+high-dimensional, we explore smaller ML models for cancer prediction to enable fast inference
+in the privacy preserving domain. We develop a solution for privacy preserving cancer inference
+which first leverages the domain knowledge on somatic mutations to efficiently encode genetic
+mutations and then uses statistical tests for feature selection. Our logistic regression model,
+built using our novel encoding scheme, achieves 0.98 micro-average area under curve with 13% higher
+test accuracy than similar studies. We exhaustively test our model's predictive capabilities
+by analyzing the genes used by the model. Furthermore, we propose a fast matrix multiplication algorithm
+that can efficiently handle high-dimensional data. Experimental results show that, even with
+40,000 features, our proposed matrix multiplication algorithm can speed up concurrent inference
+of multiple individuals by approximately 10x and inference of a single individual by approximately
+550x, in comparison to standard matrix multiplication. 

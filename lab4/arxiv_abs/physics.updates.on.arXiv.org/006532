@@ -1,0 +1,20 @@
+Accurate numerical modeling of compressible flows, particularly in the turbulent regime, requires
+a method that is non-dissipative and stable at high Reynolds ($Re$) numbers. For a compressible
+flow, it is known that discrete conservation of kinetic energy is not a sufficient condition for
+numerical stability, unlike in incompressible flows. In this study, we adopt the recently developed
+conservative diffuse-interface method (Jain, Mani $\&$ Moin, $\textit{J. Comput. Phys.}$, 2020)
+along with the five-equation model for the simulation of compressible two-phase flows. This method
+discretely conserves the mass of each phase, momentum, and total energy of the system. We here propose
+discrete consistency conditions between the numerical fluxes, such that any set of numerical fluxes
+that satisfy these conditions would not spuriously contribute to the kinetic energy and entropy
+of the system. We also present a set of numerical fluxes\textemdash which satisfies these consistency
+conditions\textemdash that results in an exact conservation of kinetic energy and approximate
+conservation of entropy in the absence of pressure work, viscosity, thermal diffusion effects,
+and time-discretization errors. Since the model consistently reduces to the single-phase Navier-Stokes
+system when the properties of the two phases are identical, the proposed consistency conditions
+and numerical fluxes are also applicable for a broader class of single-phase flows. To this end,
+we present coarse-grid numerical simulations of compressible single-phase and two-phase turbulent
+flows at infinite $Re$, to illustrate the stability of the proposed method in canonical test cases,
+such as an isotropic turbulence and Taylor-Green vortex flows. A higher-resolution simulation
+of a droplet-laden compressible decaying isotropic turbulence is also presented, and the effect
+of the presence of droplets on the flow is analyzed. 

@@ -1,0 +1,19 @@
+With tremendous advancements in low-power embedded computing devices and remote sensing instruments,
+the traditional satellite image processing pipeline which includes an expensive data transfer
+step prior to processing data on the ground is being replaced by on-board processing of captured
+data. This paradigm shift enables critical and time-sensitive analytic intelligence to be acquired
+in a timely manner on-board the satellite itself. However, at present, the on-board processing
+of multi-spectral satellite images is limited to classification and segmentation tasks. Extending
+this processing to its next logical level, in this paper we propose a lightweight pipeline for on-board
+panoptic segmentation of multi-spectral satellite images. Panoptic segmentation offers major
+economic and environmental insights, ranging from yield estimation from agricultural lands to
+intelligence for complex military applications. Nevertheless, the on-board intelligence extraction
+raises several challenges due to the loss of temporal observations and the need to generate predictions
+from a single image sample. To address this challenge, we propose a multimodal teacher network based
+on a cross-modality attention-based fusion strategy to improve the segmentation accuracy by exploiting
+data from multiple modes. We also propose an online knowledge distillation framework to transfer
+the knowledge learned by this multi-modal teacher network to a uni-modal student which receives
+only a single frame input, and is more appropriate for an on-board environment. We benchmark our
+approach against existing state-of-the-art panoptic segmentation models using the PASTIS multi-spectral
+panoptic segmentation dataset considering an on-board processing setting. Our evaluations demonstrate
+a substantial increase in accuracy metrics compared to the existing state-of-the-art models.

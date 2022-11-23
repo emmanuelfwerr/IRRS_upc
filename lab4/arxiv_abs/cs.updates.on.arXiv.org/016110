@@ -1,0 +1,18 @@
+In DP-SGD each round communicates a local SGD update which leaks some new information about the underlying
+local data set to the outside world. In order to provide privacy, Gaussian noise with standard deviation
+$\sigma$ is added to local SGD updates after performing a clipping operation. We show that for attaining
+$(\epsilon,\delta)$-differential privacy $\sigma$ can be chosen equal to $\sqrt{2(\epsilon
++\ln(1/\delta))/\epsilon}$ for $\epsilon=\Omega(T/N^2)$, where $T$ is the total number of rounds
+and $N$ is equal to the size of the local data set. In many existing machine learning problems, $N$
+is always large and $T=O(N)$. Hence, $\sigma$ becomes "independent" of any $T=O(N)$ choice with
+$\epsilon=\Omega(1/N)$. This means that our $\sigma$ only depends on $N$ rather than $T$. As shown
+in our paper, this differential privacy characterization allows one to {\it a-priori} select parameters
+of DP-SGD based on a fixed privacy budget (in terms of $\epsilon$ and $\delta$) in such a way to optimize
+the anticipated utility (test accuracy) the most. This ability of planning ahead together with
+$\sigma$'s independence of $T$ (which allows local gradient computations to be split among as many
+rounds as needed, even for large $T$ as usually happens in practice) leads to a {\it proactive DP-SGD
+algorithm} that allows a client to balance its privacy budget with the accuracy of the learned global
+model based on local test data. We notice that the current state-of-the art differential privacy
+accountant method based on $f$-DP has a closed form for computing the privacy loss for DP-SGD. However,
+due to its interpretation complexity, it cannot be used in a simple way to plan ahead. Instead, accountant
+methods are only used for keeping track of how privacy budget has been spent (after the fact). 

@@ -1,0 +1,20 @@
+Processing cores and the accompanying main memory working in tandem enable the modern processors.
+Dissipating heat produced from computation, memory access remains a significant problem for processors.
+Therefore, processor thermal management continues to be an active research topic. Most thermal
+management research takes place using simulations, given the challenges of measuring temperature
+in real processors. Since core and memory are fabricated on separate packages in most existing processors,
+with the memory having lower power densities, thermal management research in processors has primarily
+focused on the cores. Memory bandwidth limitations associated with 2D processors lead to high-density
+2.5D and 3D packaging technology. 2.5D packaging places cores and memory on the same package. 3D
+packaging technology takes it further by stacking layers of memory on the top of cores themselves.
+Such packagings significantly increase the power density, making processors prone to heating.
+Therefore, mitigating thermal issues in high-density processors (packaged with stacked memory)
+becomes an even more pressing problem. However, given the lack of thermal modeling for memories
+in existing interval thermal simulation toolchains, they are unsuitable for studying thermal
+management for high-density processors. To address this issue, we present CoMeT, the first integrated
+Core and Memory interval Thermal simulation toolchain. CoMeT comprehensively supports thermal
+simulation of high- and low-density processors corresponding to four different core-memory configurations
+- off-chip DDR memory, off-chip 3D memory, 2.5D, and 3D. CoMeT supports several novel features that
+facilitate overlying system research. Compared to an equivalent state-of-the-art core-only
+toolchain, CoMeT adds only a ~5% simulation-time overhead. The source code of CoMeT has been made
+open for public use under the MIT license. 

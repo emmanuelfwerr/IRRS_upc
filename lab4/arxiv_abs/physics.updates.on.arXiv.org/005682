@@ -1,0 +1,19 @@
+Solving the wave equation numerically constitutes the majority of the computational cost for applications
+like seismic imaging and full waveform inversion. An alternative approach is to solve the frequency
+domain Helmholtz equation, since it offers a reduction in dimensionality as it can be solved per
+frequency. However, computational challenges with the classical Helmholtz solvers such as the
+need to invert a large stiffness matrix can make these approaches computationally infeasible for
+large 3D models or for modeling high frequencies. Moreover, these methods do not have a mechanism
+to transfer information gained from solving one problem to the next. This becomes a bottleneck for
+applications like full waveform inversion where repeated modeling is necessary. Therefore, recently
+a new approach based on the emerging paradigm of physics informed neural networks (PINNs) has been
+proposed to solve the Helmholtz equation. The method has shown promise in addressing several challenging
+associated with the conventional algorithms, including flexibility to model additional physics
+and the use of transfer learning to speed up computations. However, the approach still needs further
+developments to be fully practicable. Foremost amongst the challenges is the slow convergence
+speed and reduced accuracy, especially in presence of sharp heterogeneities in the velocity model.
+Therefore, with an eye on exploring how improved convergence can be obtained for the PINN Helmholtz
+solvers, we study different activation functions routinely used in the PINN literature, in addition
+to the swish activation function - a variant of ReLU that has shown improved performance on a number
+of data science problems. Through a comparative study, we find that swish yields superior performance
+compared to the other activation functions routinely used in the PINN literature. 

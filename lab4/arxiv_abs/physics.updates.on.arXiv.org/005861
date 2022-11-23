@@ -1,0 +1,19 @@
+We present our approach to modeling over 20 years of the solar wind-magnetosphere-ionosphere system
+using version 5 of the Grand Unified Magnetosphere-Ionosphere Coupling Simulation (GUMICS-5).
+As input we use 16 s magnetic field and 1 min plasma measurements by the Advanced Composition Explorer
+(ACE) satellite from 1998 to 2019. The modeled interval is divided into 28 h simulations, which include
+4 h overlap. We use a maximum magnetospheric resolution of 0.5 Earth radii (R$_E$) up to about 15 R$_E$
+from Earth and decreasing resolution further away. In the ionosphere we use a maximum resolution
+of approximately 100 km poleward of +-58 magnetic latitude and decreasing resolution towards the
+equator. With respect to the previous version GUMICS-4, we have parallelized the magnetosphere
+of GUMICS-5 using the Message Passing Interface and have made several improvements which have e.g.
+decreased its numerical diffusion. In total we have performed nearly 8000 simulations which have
+produced over 10 000 000 ionospheric files and 2 000 000 magnetospheric files requiring over 100
+TB ($10^{14}$ bytes) of disk space. We describe the challenges encountered when working with such
+a large number of simulations and large data set in a shared supercomputer environment. Automating
+most tasks of preparing, running and archiving simulations as well as post-processing the results
+is essential. At this scale the available disk space becomes a larger bottleneck than the available
+processing capacity, since ideally the simulations are stored forever but only have to be executed
+once. We compare the simulation results to several empirical models, as well as geomagnetic indices
+derived from ground magnetic field measurements, and show that GUMICS-5 reproduces many solar
+cycle effects in the magnetosphere and ionosphere. 

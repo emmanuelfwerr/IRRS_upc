@@ -1,0 +1,19 @@
+Background: When neural network emotion and sentiment classifiers are used in public health informatics
+studies, biases present in the classifiers could produce inadvertently misleading results. Objective:
+This study assesses the impact of bias on COVID-19 topics, and demonstrates an automatic algorithm
+for reducing bias when applied to COVID-19 social media texts. This could help public health informatics
+studies produce more timely results during crises, with a reduced risk of misleading results. Methods:
+Emotion and sentiment classifiers were applied to COVID-19 data before and after debiasing the
+classifiers using unsupervised contrastive clustering. Contrastive clustering approximates
+the degree to which tokens exhibit a causal versus correlational relationship with emotion or sentiment,
+by contrasting the tokens' relative salience to topics versus emotions or sentiments. Results:
+Contrastive clustering distinguishes correlation from causation for tokens with an F1 score of
+0.753. Masking bias prone tokens from the classifier input decreases the classifier's overall
+F1 score by 0.02 (anger) and 0.033 (negative sentiment), but improves the F1 score for sentences
+annotated as bias prone by 0.155 (anger) and 0.103 (negative sentiment). Averaging across topics,
+debiasing reduces anger estimates by 14.4% and negative sentiment estimates by 8.0%. Conclusions:
+Contrastive clustering reduces algorithmic bias in emotion and sentiment classification for
+social media text pertaining to the COVID-19 pandemic. Public health informatics studies should
+account for bias, due to its prevalence across a range of topics. Further research is needed to improve
+bias reduction techniques and to explore the adverse impact of bias on public health informatics
+analyses. 

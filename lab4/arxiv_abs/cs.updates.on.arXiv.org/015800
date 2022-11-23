@@ -1,0 +1,19 @@
+Capturing the composition patterns of relations is a vital task in knowledge graph completion.
+It also serves as a fundamental step towards multi-hop reasoning over learned knowledge. Previously,
+several rotation-based translational methods have been developed to model composite relations
+using the product of a series of complex-valued diagonal matrices. However, these methods tend
+to make several oversimplified assumptions on the composite relations, e.g., forcing them to be
+commutative, independent from entities and lacking semantic hierarchy. To systematically tackle
+these problems, we have developed a novel knowledge graph embedding method, named DensE, to provide
+an improved modeling scheme for the complex composition patterns of relations. In particular,
+our method decomposes each relation into an SO(3) group-based rotation operator and a scaling operator
+in the three dimensional (3-D) Euclidean space. This design principle leads to several advantages
+of our method: (1) For composite relations, the corresponding diagonal relation matrices can be
+non-commutative, reflecting a predominant scenario in real world applications; (2) Our model
+preserves the natural interaction between relational operations and entity embeddings; (3) The
+scaling operation provides the modeling power for the intrinsic semantic hierarchical structure
+of entities; (4) The enhanced expressiveness of DensE is achieved with high computational efficiency
+in terms of both parameter size and training time; and (5) Modeling entities in Euclidean space instead
+of quaternion space keeps the direct geometrical interpretations of relational patterns. Experimental
+results on multiple benchmark knowledge graphs show that DensE outperforms the current state-of-the-art
+models for missing link prediction, especially on composite relations. 

@@ -1,0 +1,19 @@
+This paper studies a stochastic variant of the vehicle routing problem (VRP) where both customer
+locations and demands are uncertain. In particular, potential customers are not restricted to
+a predefined customer set but are continuously spatially distributed in a given service area. The
+objective is to maximize the served demands while fulfilling vehicle capacities and time restrictions.
+We call this problem the VRP with stochastic customers and demands (VRPSCD). For this problem, we
+first propose a Markov Decision Process (MDP) formulation representing the classical centralized
+decision-making perspective where one decision-maker establishes the routes of all vehicles.
+While the resulting formulation turns out to be intractable, it provides us with the ground to develop
+a new MDP formulation of the VRPSCD representing a decentralized decision-making framework, where
+vehicles autonomously establish their own routes. This new formulation allows us to develop several
+strategies to reduce the dimension of the state and action spaces, resulting in a considerably more
+tractable problem. We solve the decentralized problem via Reinforcement Learning, and in particular,
+we develop a Q-learning algorithm featuring state-of-the-art acceleration techniques such as
+Replay Memory and Double Q Network. Computational results show that our method considerably outperforms
+two commonly adopted benchmark policies (random and heuristic). Moreover, when comparing with
+existing literature, we show that our approach can compete with specialized methods developed
+for the particular case of the VRPSCD where customer locations and expected demands are known in
+advance. Finally, we show that the value functions and policies obtained by our algorithm can be
+easily embedded in Rollout algorithms, thus further improving their performances. 

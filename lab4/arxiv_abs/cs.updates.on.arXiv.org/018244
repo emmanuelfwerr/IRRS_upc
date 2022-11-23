@@ -1,0 +1,20 @@
+Over the past few years, deep learning (DL) has been continuously expanding its applications and
+becoming a driving force for large-scale source code analysis in the big code era. Distribution
+shift, where the test set follows a different distribution from the training set, has been a longstanding
+challenge for the reliable deployment of DL models due to the unexpected accuracy degradation.
+Although recent progress on distribution shift benchmarking has been made in domains such as computer
+vision and natural language process. Limited progress has been made on distribution shift analysis
+and benchmarking for source code tasks, on which there comes a strong demand due to both its volume
+and its important role in supporting the foundations of almost all industrial sectors. To fill this
+gap, this paper initiates to propose CodeS, a distribution shift benchmark dataset, for source
+code learning. Specifically, CodeS supports 2 programming languages (i.e., Java and Python) and
+5 types of code distribution shifts (i.e., task, programmer, time-stamp, token, and CST). To the
+best of our knowledge, we are the first to define the code representation-based distribution shifts.
+In the experiments, we first evaluate the effectiveness of existing out-of-distribution detectors
+and the reasonability of the distribution shift definitions and then measure the model generalization
+of popular code learning models (e.g., CodeBERT) on classification task. The results demonstrate
+that 1) only softmax score-based OOD detectors perform well on CodeS, 2) distribution shift causes
+the accuracy degradation in all code classification models, 3) representation-based distribution
+shifts have a higher impact on the model than others, and 4) pre-trained models are more resistant
+to distribution shifts. We make CodeS publicly available, enabling follow-up research on the quality
+assessment of code learning models. 

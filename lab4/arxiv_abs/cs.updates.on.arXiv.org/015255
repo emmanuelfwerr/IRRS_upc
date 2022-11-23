@@ -1,0 +1,20 @@
+The use of algorithmic decision making systems in domains which impact the financial, social, and
+political well-being of people has created a demand for these decision making systems to be "fair"
+under some accepted notion of equity. This demand has in turn inspired a large body of work focused
+on the development of fair learning algorithms which are then used in lieu of their conventional
+counterparts. Most analysis of such fair algorithms proceeds from the assumption that the people
+affected by the algorithmic decisions are represented as immutable feature vectors. However,
+strategic agents may possess both the ability and the incentive to manipulate this observed feature
+vector in order to attain a more favorable outcome. We explore the impact that strategic agent behavior
+could have on fair classifiers and derive conditions under which this behavior leads to fair classifiers
+becoming less fair than their conventional counterparts under the same measure of fairness that
+the fair classifier takes into account. These conditions are related to the the way in which the fair
+classifier remedies unfairness on the original unmanipulated data: fair classifiers which remedy
+unfairness by becoming more selective than their conventional counterparts are the ones that become
+less fair than their counterparts when agents are strategic. We further demonstrate that both the
+increased selectiveness of the fair classifier, and consequently the loss of fairness, arises
+when performing fair learning on domains in which the advantaged group is overrepresented in the
+region near (and on the beneficial side of) the decision boundary of conventional classifiers.
+Finally, we observe experimentally, using several datasets and learning methods, that this fairness
+reversal is common, and that our theoretical characterization of the fairness reversal conditions
+indeed holds in most such cases. 

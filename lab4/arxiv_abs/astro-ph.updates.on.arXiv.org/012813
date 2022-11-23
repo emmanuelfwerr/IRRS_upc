@@ -1,0 +1,19 @@
+The solar corona is host to a continuous flow of propagating disturbances (PD). These are continuous
+and ubiquitous across broad regions of the corona, including the quiet Sun. The aim of this paper
+is to present an improved, efficient method to create velocity vector field maps, based on the direction
+and magnitude of the PD as observed in time series of extreme ultraviolet (EUV) images. The method
+is presented here for use with the Atmospheric Imaging Assembly (AIA)/Solar Dynamics Observatory
+(SDO) EUV channels, and takes as input \app2 hours of images at the highest 12s cadence. Data from
+a region near disk center is extracted, and a process called time normalization applied to the co-aligned
+data. Following noise reduction using \atrous\ decomposition, the PD are effectively revealed.
+A modified Lucas Kanade algorithm is then used to map the velocity field. The method described here
+runs comfortably on a desktop computer in a few minutes, and offers an order of magnitude improvement
+in efficiency compared to a previous implementation. Applied to a region of the quiet Sun, we find
+that the velocity field describes a mosaic of cells of coherent outwardly-diverging PD flows, of
+typical size 50 to 100\arcsec\ (36 to 72Mm). The flows originate from points and narrow corridors
+in the cell centres, and end in the narrow boundaries between cells. Visual comparison with ultraviolet
+AIA images shows that the flow sources are correlated with the bright photospheric supergranular
+network boundaries. Assuming that the PD follow the local magnetic field, the velocity flow field
+is a proxy for the plane-of-sky distribution of the coronal magnetic field, and therefore the maps
+offer a unique insight into the topology of the corona. These are particularly valuable for quiet
+Sun regions where the appearance of structures in EUV images is hard to interpret. 

@@ -1,0 +1,19 @@
+We investigate various online packing problems in which convex polygons arrive one by one and have
+to be placed irrevocably into a container before the next piece is revealed; the pieces must not be
+rotated, but only translated. The aim is to minimize the used space depending on the specific problem
+at hand, e.g., the strip length in strip packing, the number of bins in bin packing, etc. We draw interesting
+connections to the following online sorting problem \OnlineSorting{}$[\gamma,n]$: We receive
+a stream of real numbers $s_1,\ldots,s_n$, $s_i\in[0,1]$, one by one. Each real must be placed in
+an array~$A$ with $\gamma n$ initially empty cells without knowing the subsequent reals. The goal
+is to minimize the sum of differences of consecutive reals in $A$. The offline optimum is to place
+the reals in sorted order so the cost is at most $1$. We show that for any $\Delta$-competitive online
+algorithm of \OnlineSorting{}$[\gamma,n]$, it holds that $\gamma \Delta \in\Omega(\log n/\log
+\log n)$. We use this lower bound to prove the non-existence of competitive algorithms for various
+online translational packing problems of convex polygons, among them strip packing, bin packing
+and perimeter packing. This also implies that there exists no online algorithm that can pack all
+streams of pieces of diameter and total area at most $\delta$ into the unit square. These results
+are in contrast to the case when the pieces are restricted to rectangles, for which competitive algorithms
+are known. Likewise, the offline versions of packing convex polygons have constant factor approximation
+algorithms. On the positive side, we present an algorithm with competitive ratio $O(n^{0.59})$
+for online translational strip packing of convex polygons. In the case of \OnlineSorting{}$[C,n]$
+for any constant $C>1$, we present an $O(2^{O(\sqrt{\log n\log\log n})})$-competitive algorithm.

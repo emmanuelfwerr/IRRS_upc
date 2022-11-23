@@ -1,0 +1,18 @@
+In current biological and medical research, statistical shape modeling (SSM) provides an essential
+framework for the characterization of anatomy/morphology. Such analysis is often driven by the
+identification of a relatively small number of geometrically consistent features found across
+the samples of a population. These features can subsequently provide information about the population
+shape variation. Dense correspondence models can provide ease of computation and yield an interpretable
+low-dimensional shape descriptor when followed by dimensionality reduction. However, automatic
+methods for obtaining such correspondences usually require image segmentation followed by significant
+preprocessing, which is taxing in terms of both computation as well as human resources. In many cases,
+the segmentation and subsequent processing require manual guidance and anatomy specific domain
+expertise. This paper proposes a self-supervised deep learning approach for discovering landmarks
+from images that can directly be used as a shape descriptor for subsequent analysis. We use landmark-driven
+image registration as the primary task to force the neural network to discover landmarks that register
+the images well. We also propose a regularization term that allows for robust optimization of the
+neural network and ensures that the landmarks uniformly span the image domain. The proposed method
+circumvents segmentation and preprocessing and directly produces a usable shape descriptor using
+just 2D or 3D images. In addition, we also propose two variants on the training loss function that
+allows for prior shape information to be integrated into the model. We apply this framework on several
+2D and 3D datasets to obtain their shape descriptors, and analyze their utility for various applications.

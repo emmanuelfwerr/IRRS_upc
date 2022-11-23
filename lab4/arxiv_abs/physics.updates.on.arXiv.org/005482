@@ -1,0 +1,20 @@
+We propose the rhoLENT method, an extension of the unstructured Level Set / Front Tracking (LENT)
+method, based on the collocated Finite Volume equation discretization, that recovers exact numerical
+stability for the two-phase momentum convection with a range of density ratios, namely $\rho^-/\rho^+\in
+[1, 10000]$. We provide the theoretical basis for the numerical inconsistency in the collocated
+finite volume equation discretization of the single-field two-phase momentum convection. The
+cause of the numerical inconsistency lies in the way the cell-centered density is computed in the
+new time step ($\rho_c^{n+1}$). Specifically, if $\rho_c^{n+1}$ is computed from the approximation
+of the fluid interface at $t^{n+1}$, and it is not computed by solving a mass conservation equation
+(or its equivalent), the two-phase momentum convection term will automatically be inconsistently
+discretized. We provide the theoretical justification behind using the auxiliary mass conservation
+equation to stabilize flows with strong density ratios. The evaluation of the face-centered (mass
+flux) density we base on the fundamental principle of mass conservation, used to model the single-field
+density, contrary to the use of different weighted averages of cell-centered single-field densities
+and alternative reconstructions of the mass flux density by other contemporary methods. Implicit
+discretization of the two-phase momentum convection term is achieved, removing the CFL stability
+criterion. Numerical stability is demonstrated in terms of the relative $L_\infty$ velocity error
+norm with realistic viscosity and strong surface tension forces. The stabilization technique
+in the rhoLENT method is also applicable to other two-phase flow simulation methods that utilize
+the collocated unstructured Finite Volume Method to discretize single-field two-phase Navier-Stokes
+Equations. 

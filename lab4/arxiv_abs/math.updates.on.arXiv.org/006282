@@ -1,0 +1,19 @@
+Inspired by blockchains, we introduce a dynamically growing model of rooted Directed Acyclic Graphs
+(DAGs) referred to as the asynchronous composition model, subject to i.i.d. random delays $(\xi_t)$
+with finite mean. The new vertex at time $t$ is connected to vertices chosen from the graph $G_{(t-\xi_t)_+}$
+according to a construction function $f$ and the graph is updated by taking union with the graph $G_{t-1}$.
+This process corresponds to adding new blocks in a blockchain, where the delays arise due to network
+communication. The main question of interest is the end structure of the asynchronous limit of the
+graph sequence as time increases to infinity. We consider the following construction functions
+of interest, a) Nakamoto construction $f_{\mathrm{Nak}}$, in which a vertex is uniformly selected
+from those furthest from the root, resulting in a tree, and b) mixture of construction functions
+$(f_k)_{1\le k\le \infty}$, where in $f_k$ a random set of $k$ leaves (all if there are less than $k$
+in total) is chosen without replacement. The main idea behind the analysis is decoupling the time-delay
+process from the DAG process and constructing an appropriate regenerative structure in the time-delay
+process giving rise to Markovian behavior for a functional of the DAG process. We establish that
+the asynchronous limits for $f_\mathrm{Nak}, (f_k)_{k \ge 2}$, and any non-trivial mixture $f$
+are one-ended, while the asynchronous limit for $f_1$ has infinitely many ends, almost surely.
+We also study fundamental growth properties of the longest path for the sequence of graphs for $f_\mathrm{Nak}$.
+In addition, we prove a phase transition on the (time and sample-path dependent) probability of
+choosing $f_1$ such that the asynchronous limit either has one or infinitely many ends. Finally,
+we show that the construction $f_\infty$ is an appropriate limit of the $(f_k)_k$. 

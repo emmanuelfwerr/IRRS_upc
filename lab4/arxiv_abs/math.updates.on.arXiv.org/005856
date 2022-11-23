@@ -1,0 +1,20 @@
+We predict the future course of ongoing susceptible-infected-susceptible (SIS) epidemics on
+regular, Erd\H{o}s-R\'{e}nyi and Barab\'asi-Albert networks. It is known that the contact network
+influences the spread of an epidemic within a population. Therefore, observations of an epidemic,
+in this case at the population-level, contain information about the underlying network. This information,
+in turn, is useful for predicting the future course of an ongoing epidemic. To exploit this in a prediction
+framework, the exact high-dimensional stochastic model of an SIS epidemic on a network is approximated
+by a lower-dimensional surrogate model. The surrogate model is based on a birth-and-death process;
+the effect of the underlying network is described by a parametric model for the birth rates. We demonstrate
+empirically that the surrogate model captures the intrinsic stochasticity of the epidemic once
+it reaches a point from which it will not die out. Bayesian parameter inference allows for uncertainty
+about the model parameters and the class of the underlying network to be incorporated directly into
+probabilistic predictions. An evaluation of a number of scenarios shows that in most cases the resulting
+prediction intervals adequately quantify the prediction uncertainty. As long as the population-level
+data is available over a long-enough period, even if not sampled frequently, the model leads to excellent
+predictions where the underlying network is correctly identified and prediction uncertainty
+mainly reflects the intrinsic stochasticity of the spreading epidemic. For predictions inferred
+from shorter observational periods, uncertainty about parameters and network class dominate
+prediction uncertainty. The proposed method relies on minimal data and is numerically efficient,
+which makes it attractive either as a standalone inference and prediction scheme or in conjunction
+with other methods. 

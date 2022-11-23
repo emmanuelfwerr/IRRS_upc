@@ -1,0 +1,20 @@
+This article offers a new perspective for the mechanics of solids using moving Cartan's frame, specifically
+discussing a mixed variational principle in non-linear elasticity. We treat quantities defined
+on the co-tangent bundles of reference and deformed configurations as additional unknowns. Such
+a treatment invites compatibility of the fields with base-space (configurations of the body),
+so that the configuration can be realised as a subset of the Euclidean space. We first rewrite the
+metric and connection using differential forms, which are further utilised to write the deformation
+gradient and Cauchy-Green deformation tensor in terms of frame and co-frame fields. The geometric
+understanding of stress as a co-vector valued 2-form fits squarely within our overall program.
+We show that, for a hyperelastic solid, an equation similar to the Doyle-Erciksen formula may be
+written for the co-vector part of stress. Using these, we write a mixed energy functional in terms
+of differential forms, whose extremum leads to the compatibility of deformation, constitutive
+rules and equations of equilibrium. Finite element exterior calculus is then utilised to construct
+a finite dimensional approximation for the differential forms appearing in the variational principle.
+These approximations are then used to construct a discrete functional which is then numerically
+extremised. This discertization leads to a mixed method as it uses independent approximations
+for differential forms related to stress and deformation gradient. The mixed variational principle
+is then specialized for 2D case, whose discrete approximation is applied to problems in nonlinear
+elasticity. An important feature of our FE technique is the lack of additional stabilization. From
+the numerical study, it is found that the present discretization also does not suffer form locking
+and related convergence issues. 

@@ -1,0 +1,19 @@
+During the era of global warming and highly urbanized development, extreme and high impact weather
+as well as air pollution incidents influence everyday life and might even cause the incalculable
+loss of life and property. Although with the vast development of numerical simulation of atmosphere,
+there still exists substantial forecast biases objectively. To predict extreme weather, severe
+air pollution, and abrupt climate change accurately, the numerical atmospheric model requires
+not only to simulate meteorology and atmospheric compositions and their impacts simultaneously
+involving many sophisticated physical and chemical processes but also at high spatiotemporal
+resolution. Global atmospheric simulation of meteorology and atmospheric compositions simultaneously
+at spatial resolutions of a few kilometers remains challenging due to its intensive computational
+and input/output (I/O) requirement. Through multi-dimension-parallelism structuring, aggressive
+and finer-grained optimizing, manual vectorizing, and parallelized I/O fragmenting, an integrated
+Atmospheric Model Across Scales (iAMAS) was established on the new Sunway supercomputer platform
+to significantly increase the computational efficiency and reduce the I/O cost. The global 3-km
+atmospheric simulation for meteorology with online integrated aerosol feedbacks with iAMAS was
+scaled to 39,000,000 processor cores and achieved the speed of 0.82 simulation day per hour (SDPH)
+with routine I/O, which enables us to perform 5-day global weather forecast at 3-km horizontal resolution
+with online natural aerosol impacts. The results demonstrate the promising future that the increasing
+of spatial resolution to a few kilometers with online integrated aerosol impacts may significantly
+improve the global weather forecast. 

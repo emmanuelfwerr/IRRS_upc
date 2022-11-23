@@ -1,0 +1,20 @@
+Fault diagnosis plays an essential role in reducing the maintenance costs of rotating machinery
+manufacturing systems. In many real applications of fault detection and diagnosis, data tend to
+be imbalanced, meaning that the number of samples for some fault classes is much less than the normal
+data samples. At the same time, in an industrial condition, accelerometers encounter high levels
+of disruptive signals and the collected samples turn out to be heavily noisy. As a consequence, many
+traditional Fault Detection and Diagnosis (FDD) frameworks get poor classification performances
+when dealing with real-world circumstances. Three main solutions have been proposed in the literature
+to cope with this problem: (1) the implementation of generative algorithms to increase the amount
+of under-represented input samples, (2) the employment of a classifier being powerful to learn
+from imbalanced and noisy data, (3) the development of an efficient data pre-processing including
+feature extraction and data augmentation. This paper proposes a hybrid framework which uses the
+three aforementioned components to achieve an effective signal-based FDD system for imbalanced
+conditions. Specifically, it first extracts the fault features, using Fourier and wavelet transforms
+to make full use of the signals. Then, it employs Wasserstein Generative Adversarial Networks (WGAN)
+to generate synthetic samples to populate the rare fault class and enhance the training set. Moreover,
+to achieve a higher performance a novel combination of Convolutional Long Short-term Memory (CLSTM)
+and Weighted Extreme Learning Machine (WELM) is proposed. To verify the effectiveness of the developed
+framework, different datasets settings on different imbalance severities and noise degrees were
+used. The comparative results demonstrate that in different scenarios GAN-CLSTM-ELM outperforms
+the other state-of-the-art FDD frameworks. 

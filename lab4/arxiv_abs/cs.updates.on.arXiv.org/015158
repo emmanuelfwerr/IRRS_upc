@@ -1,0 +1,19 @@
+Comparator circuits are a natural circuit model for studying bounded fan-out computation whose
+power sits between nondeterministic branching programs and general circuits. Despite having
+been studied for nearly three decades, the first superlinear lower bound against comparator circuits
+was proved only recently by G\'al and Robere (ITCS 2020), who established a $\Omega((n/\log n)^{1.5})$
+lower bound on the size of comparator circuits computing an explicit function of $n$ bits. In this
+paper, we initiate the study of average-case complexity and circuit analysis algorithms for comparator
+circuits. Departing from previous approaches, we exploit the technique of shrinkage under random
+restrictions to obtain a variety of new results for this model. Among them, we show - Average-case
+Lower Bounds. For every $k = k(n)$ with $k \geq \log n$, there exists a polynomial-time computable
+function $f_k$ on $n$ bits such that, for every comparator circuit $C$ with at most $n^{1.5}/O(k\cdot
+\sqrt{\log n})$ gates, we have \[ \text{Pr}_{x\in\left\{ 0,1 \right\}^n}\left[C(x)=f_k(x)\right]\leq
+\frac{1}{2} + \frac{1}{2^{\Omega(k)}}. \] This average-case lower bound matches the worst-case
+lower bound of G\'al and Robere by letting $k=O(\log n)$. - #SAT Algorithms. There is an algorithm
+that counts the number of satisfying assignments of a given comparator circuit with at most $n^{1.5}/O\!\left(k\cdot
+\sqrt{\log n}\right)$ gates, in time $2^{n-k}\cdot\text{poly}(n)$, for any $k\leq n/4$. The
+running time is non-trivial when $k=\omega(\log n)$. - Pseudorandom Generators and MCSP Lower
+Bounds. There is a pseudorandom generator of seed length $s^{2/3+o(1)}$ that fools comparator
+circuits with $s$ gates. Also, using this PRG, we obtain an $n^{1.5-o(1)}$ lower bound for MCSP against
+comparator circuits. 

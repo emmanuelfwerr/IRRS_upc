@@ -1,0 +1,19 @@
+Consensus protocols are widely used in building reliable distributed software systems and its
+correctness is of vital importance. TLA+ is a lightweight formal specification language which
+enables precise specification of system design and exhaustive checking of the design without any
+human effort. The features of TLA+ make it widely used in the specification and model checking of
+consensus protocols, both in academia and industry. However, the application of TLA+ is limited
+by the state explosion problem in model checking. Though compositional model checking is essential
+to tame the state explosion problem, existing compositional checking techniques do not sufficiently
+consider the characteristics of TLA+. In this work, we propose the Interaction-Preserving Abstraction
+(IPA) framework, which leverages the features of TLA+ and enables practical and efficient compositional
+model checking of consensus protocols specified in TLA+. In the IPA framework, system specification
+is partitioned into multiple modules, and each module is divided to the internal part and the interaction
+part. The basic idea of the interaction-preserving abstraction is to omit the internal part of each
+module, such that another module cannot distinguish whether it is interacting with the original
+module or the coarsened abstract one. We use the IPA framework to the compositional checking of the
+TLA+ specification of two consensus protocols Raft and ParallelRaft. Raft is a consensus protocol
+which is originally developed in the academia and then widely used in industry. ParallelRaft is
+the replication protocol in PolarFS, the distributed file system for the commercial database Alibaba
+PoloarDB. We demonstrate that the IPA framework is easy to use in realistic scenarios and at the same
+time significantly reduces the model checking cost. 

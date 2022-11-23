@@ -1,0 +1,20 @@
+Data sharing between online trackers and advertisers is a key component in online behavioral advertising.
+This sharing can be facilitated through a variety of processes, including those not observable
+to the user's browser. The unobservability of these processes limits the ability of researchers
+and auditors seeking to verify compliance with regulations which require complete disclosure
+of data sharing partners. Unfortunately, the applicability of existing techniques to make inferences
+about unobservable data sharing relationships is limited due to their dependence on protocol-
+or case-specific artifacts of the online behavioral advertising ecosystem (e.g., they work only
+when client-side header bidding is used for ad delivery or when advertisers perform ad retargeting).
+As behavioral advertising technologies continue to evolve rapidly, the availability of these
+artifacts and the effectiveness of transparency solutions dependent on them remain ephemeral.
+In this paper, we propose a generalizable technique, called ATOM, to infer data sharing relationships
+between online trackers and advertisers. ATOM is different from prior work in that it is universally
+applicable -- i.e., independent of ad delivery protocols or availability of artifacts. ATOM leverages
+the insight that by the very nature of behavioral advertising, ad creatives themselves can be used
+to infer data sharing between trackers and advertisers -- after all, the topics and brands showcased
+in an ad are dependent on the data available to the advertiser. Therefore, by selectively blocking
+trackers and monitoring changes in the characteristics of ads delivered by advertisers, ATOM is
+able to identify data sharing relationships between trackers and advertisers. The relationships
+discovered by our implementation of ATOM include those not found using prior approaches and are
+validated by external sources. 

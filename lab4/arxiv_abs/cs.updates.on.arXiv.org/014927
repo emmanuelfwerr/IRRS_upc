@@ -1,0 +1,19 @@
+Quantum computing is one of the most promising technology advances of the latest years. Once only
+a conceptual idea to solve physics simulations, quantum computation is today a reality, with numerous
+machines able to execute quantum algorithms. One of the hardest challenges in quantum computing
+is reliability. Qubits are highly sensitive to noise, which can make the output useless. Moreover,
+lately it has been shown that superconducting qubits are extremely susceptible to external sources
+of faults, such as ionizing radiation. When adopted in large scale, radiation-induced errors are
+expected to become a serious challenge for qubits reliability. In this paper, we propose an evaluation
+of the impact of transient faults in the execution of quantum circuits. Inspired by the Architectural
+and Program Vulnerability Factors, widely adopted to characterize the reliability of classical
+computing architectures and algorithms, we propose the Quantum Vulnerability Factor (QVF) as
+a metric to measure the impact that the corruption of a qubit has on the circuit output probability
+distribution. First, we model faults based on the latest studies on real machines and recently performed
+radiation experiments. Then, we design a quantum fault injector, built over Qiskit, and characterize
+the propagation of faults in quantum circuits. We report the finding of more than 15,000,000 fault
+injections, evaluating the reliability of three quantum circuits and identifying the faults and
+qubits that are more likely than others to impact the output. With our results, we give guidelines
+on how to map the qubits in the real quantum computer to reduce the output error and to reduce the probability
+of having a radiation-induced corruption to modify the output. Finally, we compare the simulation
+results with experiments on physical quantum computers. 

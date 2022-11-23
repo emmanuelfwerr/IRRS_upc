@@ -1,0 +1,19 @@
+The pursuit algorithms integrated in multi-layer convolutional sparse coding (ML-CSC) can interpret
+the convolutional neural networks (CNNs). However, many current state-of-art (SOTA) pursuit
+algorithms require multiple iterations to optimize the solution of ML-CSC, which limits their
+applications to deeper CNNs due to high computational cost and large number of resources for getting
+very tiny gain of performance. In this study, we focus on the 0th iteration in pursuit algorithm by
+introducing an effective initialization strategy for each layer, by which the solution for ML-CSC
+can be improved. Specifically, we first propose a novel width-depth synchronous extension-based
+basis pursuit (WSEBP) algorithm which solves the ML-CSC problem without the limitation of the number
+of iterations compared to the SOTA algorithms and maximizes the performance by an effective initialization
+in each layer. Then, we propose a simple and unified ML-CSC-based classification network (ML-CSC-Net)
+which consists of an ML-CSC-based feature encoder and a fully-connected layer to validate the performance
+of WSEBP on image classification task. The experimental results show that our proposed WSEBP outperforms
+SOTA algorithms in terms of accuracy and consumption resources. In addition, the WSEBP integrated
+in CNNs can improve the performance of deeper CNNs and make them interpretable. Finally, taking
+VGG as an example, we propose WSEBP-VGG13 to enhance the performance of VGG13, which achieves competitive
+results on four public datasets, i.e., 87.79% vs. 86.83% on Cifar-10 dataset, 58.01% vs. 54.60%
+on Cifar-100 dataset, 91.52% vs. 89.58% on COVID-19 dataset, and 99.88% vs. 99.78% on Crack dataset,
+respectively. The results show the effectiveness of the proposed WSEBP, the improved performance
+of ML-CSC with WSEBP, and interpretation of the CNNs or deeper CNNs. 

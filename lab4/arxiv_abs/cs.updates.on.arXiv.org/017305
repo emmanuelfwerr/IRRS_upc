@@ -1,0 +1,19 @@
+In this paper, we investigated whether we can 1) detect participants with ataxia-specific gait
+characteristics (risk-prediction), and 2) assess severity of ataxia from gait (severity-assessment)
+using computer vision. We created a dataset of 155 videos from 89 participants, 24 controls and 65
+diagnosed with (or are pre-manifest) spinocerebellar ataxias (SCAs), performing the gait task
+of the Scale for the Assessment and Rating of Ataxia (SARA) from 11 medical sites located in 8 different
+states across the United States. We develop a computer vision pipeline to detect, track, and separate
+out the participants from their surroundings and construct several features from their body pose
+coordinates to capture gait characteristics like step width, step length, swing, stability, speed,
+etc. Our risk-prediction model achieves 83.06% accuracy and an 80.23% F1 score. Similarly, our
+severity-assessment model achieves a mean absolute error (MAE) score of 0.6225 and a Pearson's
+correlation coefficient score of 0.7268. Our models still performed competitively when evaluated
+on data from sites not used during training. Furthermore, through feature importance analysis,
+we found that our models associate wider steps, decreased walking speed, and increased instability
+with greater ataxia severity, which is consistent with previously established clinical knowledge.
+Our models create possibilities for remote ataxia assessment in non-clinical settings in the future,
+which could significantly improve accessibility of ataxia care. Furthermore, our underlying
+dataset was assembled from a geographically diverse cohort, highlighting its potential to further
+increase equity. The code used in this study is open to the public, and the anonymized body pose landmark
+dataset is also available upon request. 

@@ -1,0 +1,19 @@
+In customer support contact centers, every service interaction involves a messaging dialogue
+between a customer and an agent. Both parties depend on one another for information and problem solving,
+hence this interaction defines a co-produced service process. In this paper, we develop and compare
+new stochastic models for service co-production in contact centers. A key observation is that this
+service interaction features cross- and self-exciting dynamics within each conversation. The
+cross-excitation stems from the two parties responding to one another, and the self-excitation
+captures one party sending follow-ups to their own prior message. Hence, messages beget messages,
+and we capture this phenomenon by introducing Hawkes point process models of the conversational
+services, which depend on the conversation's history, on the customer-agent relationships, and
+on the state of the system. To evaluate our service co-production models, we apply them to an industry
+contact center dataset containing nearly 5 million messages. We show that the Hawkes models better
+represent the service dynamics than classic Poisson and phase-type models do. Indeed, we find that
+service interactions are characterized by strong agent-customer dependency and by the centrality
+of the process's cross- and self-excitation attributes. Finally, we use the proposed models to
+improve upon popular routing algorithms used in contact centers. We show how dynamic routing based
+on Hawkes process predictions outperforms well-known concurrency-based routing rules. Large
+data-driven simulation experiments show that this Hawkes-based routing significantly reduces
+customer waiting time, demonstrating how these history-dependent stochastic models can improve
+operational decision making in practice. 

@@ -1,0 +1,19 @@
+The control of cryogenic qubits in today's superconducting quantum computer prototypes presents
+significant scalability challenges due to the massive costs of generating/routing the analog
+control signals that need to be sent from a classical controller at room temperature to the quantum
+chip inside the dilution refrigerator. Thus, researchers in industry and academia have focused
+on designing in-fridge classical controllers in order to mitigate these challenges. Superconducting
+Single Flux Quantum (SFQ) is a classical logic family proposed for large-scale in-fridge controllers.
+SFQ logic has the potential to maximize scalability thanks to its ultra-high speed and very low power
+consumption. However, architecture design for SFQ logic poses challenges due to its unconventional
+pulse-driven nature and lack of dense memory and logic. Thus, research at the architecture level
+is essential to guide architects to design SFQ-based classical controllers for large-scale quantum
+machines. In this paper, we present DigiQ, the first system-level design of a Noisy Intermediate
+Scale Quantum (NISQ)-friendly SFQ-based classical controller. We perform a design space exploration
+of SFQ-based controllers and co-design the quantum gate decompositions and SFQ-based implementation
+of those decompositions to find an optimal SFQ-friendly design point that trades area and power
+for latency and control while ensuring good quantum algorithmic performance. Our co-design results
+in a single instruction, multiple data (SIMD) controller architecture, which has high scalability
+(>42,000-qubit scales), but imposes new challenges on the calibration of control pulses. We present
+software-level solutions to address these challenges, which if unaddressed would degrade quantum
+circuit fidelity given the imperfections of qubit hardware. 

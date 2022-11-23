@@ -1,0 +1,20 @@
+A two-phase, low-Mach-number flow solver is created and verified for variable-density liquid
+and gas with phase change. The interface is captured in a sharp manner using a split Volume-of-Fluid
+method generalized for a non divergence-free liquid velocity and with mass exchange across the
+interface. Mass conservation to machine-error precision is achieved in the limit of incompressible
+liquid. This model is implemented for two-phase mixtures at supercritical pressure but subcritical
+temperature conditions for the liquid, as it is the common case in the early times of liquid hydrocarbon
+injection under real-engine conditions. Under this thermodynamic environment, the dissolution
+of the gas species into the liquid phase is enhanced and vaporization or condensation can occur simultaneously
+at different locations along the liquid-gas interface. The greater numerical challenges that
+appear compared to incompressible two-phase solvers are successfully addressed for the first
+time: (a) local thermodynamic phase equilibrium and jump conditions determine the interface solution
+(e.g., temperature, composition, surface-tension coefficient); (b) a real-fluid thermodynamic
+model is considered; and (c) phase-wise values for certain variables (e.g., velocity) are obtained
+via extrapolation techniques. The increased numerical cost is alleviated by using the split pressure-gradient
+technique to develop a pressure Poisson equation (PPE) for the low-Mach-number flow. Thus, a Fast
+Fourier Transform (FFT) method is implemented, which directly solves the continuity constraint
+without an iterative process. Various verification tests show the accuracy and viability of the
+present approach. Then, the growth of surface instabilities in a binary system composed of liquid
+n-decane and gaseous oxygen at supercritical pressures for n-decane is analyzed. Other features
+of supercritical liquid injection are also shown. 

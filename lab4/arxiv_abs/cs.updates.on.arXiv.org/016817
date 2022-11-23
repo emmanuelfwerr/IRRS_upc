@@ -1,0 +1,18 @@
+We introduce a new approach to computation on encrypted data -- Encrypted Operator Computing (EOC)
+-- as an alternative to Fully Homomorphic Encryption (FHE). EOC can be viewed as a reversible computation
+performed in a transformed (encrypted) frame of reference on transformed (encrypted) data, with
+both the transformation and the data, as well as the function to be computed, hidden from adversaries.
+Encryption is implemented via a fast-scrambling two-stage cipher based on shallow -- ${\cal O}(\log
+n)$ depth -- random reversible circuits of long-ranged 3-bit gates, organized in a hierarchical
+tree structure [1]. Encrypted functions are expressed as a concatenation of a polynomial number
+of "chips", $n$-input/$n$-output reversible functions, the outputs of which are expressed as
+ordered Binary Decision Diagrams (OBDDs). OBDDs are normal forms that only expose the functionality
+of the chip but hide its precise circuit implementation. The ${\cal O}(\log n)$ depth of the cipher
+allows us to prove analytically that the output OBDDs are polynomial in size, establishing individual
+chips as examples of Best Possible Obfuscators introduced by Goldwasser and Rothblum [2]. To extend
+single-chip security to the concatenation of chips we add random pairs of NOT gates, which are split
+apart and distributed across the system, for each recursive step in our construction. This randomization
+process, which is amplified by the nonlinearity of the cipher, scrambles the functionality of individual
+chips but preserves that of the whole circuit, thus enhancing the security of the full computation
+beyond that conferred by Best Possible Obfuscation of individual chips. While the paper focuses
+on symmetric encryption, we also present a generalization to public-private encryption. 

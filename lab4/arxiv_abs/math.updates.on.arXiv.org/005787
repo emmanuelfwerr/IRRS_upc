@@ -1,0 +1,19 @@
+The approximate uniform sampling of graphs with a given degree sequence is a well-known, extensively
+studied problem in theoretical computer science and has significant applications, e.g., in the
+analysis of social networks. In this work we study an extension of the problem, where degree intervals
+are specified rather than a single degree sequence. We are interested in sampling and counting graphs
+whose degree sequences satisfy the degree interval constraints. A natural scenario where this
+problem arises is in hypothesis testing on social networks that are only partially observed. In
+this work, we provide the first fully polynomial almost uniform sampler (FPAUS) as well as the first
+fully polynomial randomized approximation scheme (FPRAS) for sampling and counting, respectively,
+graphs with near-regular degree intervals, in which every node $i$ has a degree from an interval
+not too far away from a given $d \in \N$. In order to design our FPAUS, we rely on various state-of-the-art
+tools from Markov chain theory and combinatorics. In particular, we provide the first non-trivial
+algorithmic application of a breakthrough result of Liebenau and Wormald (2017) regarding an asymptotic
+formula for the number of graphs with a given near-regular degree sequence. Furthermore, we also
+make use of the recent breakthrough of Anari et al. (2019) on sampling a base of a matroid under a strongly
+log-concave probability distribution. As a more direct approach, we also study a natural Markov
+chain recently introduced by Rechner, Strowick and M\"uller-Hannemann (2018), based on three
+simple local operations: Switches, hinge flips, and additions/deletions of a single edge. We obtain
+the first theoretical results for this Markov chain by showing it is rapidly mixing for the case of
+near-regular degree intervals of size at most one. 

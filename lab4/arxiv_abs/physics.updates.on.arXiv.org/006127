@@ -1,0 +1,19 @@
+This study aims at introducing two conservative thermodynamic variables (moist-air entropy potential
+temperature and total water content) into a one-dimensional variational data assimilation system
+(1D-Var) to demonstrate the benefit for future operational assimilation schemes. This system
+is assessed using microwave brightness temperatures from a ground-based radiometer installed
+during the field campaign SOFOG3D dedicated to fog forecast improvement. An underlying objective
+is to ease the specification of background error covariance matrices that are highly dependent
+on weather conditions when using classical variables, making difficult the optimal retrievals
+of cloud and thermodynamic properties during fog conditions. Background error covariance matrices
+for these new conservative variables have thus been computed by an ensemble approach based on the
+French convective scale model AROME, for both all-weather and fog conditions. A first result shows
+that the use of these matrices for the new variables reduces some dependencies to the meteorological
+conditions (diurnal cycle, presence or not of clouds) compared to usual variables (temperature,
+specific humidity). Then, two 1D-Var experiments (classical vs. conservative variables) are
+evaluated over a full diurnal cycle characterized by a stratus-evolving radiative fog situation,
+using hourly brightness temperatures. Results show, as expected, that analysed brightness temperatures
+by the 1D-Var are much closer to the observed ones than background values for both variable choices.
+This is especially the case for channels sensitive to water vapour and liquid water. On the other
+hand, analysis increments in model space (water vapour, liquid water) show significant differences
+between the two sets of variables. 

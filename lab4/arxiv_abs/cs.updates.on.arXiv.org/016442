@@ -1,0 +1,20 @@
+Currently, the computational complexity limits the training of high resolution gigapixel images
+using Convolutional Neural Networks. Therefore, such images are divided into patches or tiles.
+Since, these high resolution patches are encoded with discriminative information therefore;
+CNNs are trained on these patches to perform patch-level predictions. However, the problem with
+patch-level prediction is that pathologist generally annotates at image-level and not at patch
+level. Due to this limitation most of the patches may not contain enough class-relevant features.
+Through this work, we tried to incorporate patch descriptive capability within the deep framework
+by using Bag of Visual Words (BoVW) as a kind of regularisation to improve generalizability. Using
+this hypothesis, we aim to build a patch based classifier to discriminate between four classes of
+breast biopsy image patches (normal, benign, \textit{In situ} carcinoma, invasive carcinoma).
+The task is to incorporate quality deep features using CNN to describe relevant information in the
+images while simultaneously discarding irrelevant information using Bag of Visual Words (BoVW).
+The proposed method passes patches obtained from WSI and microscopy images through pre-trained
+CNN to extract features. BoVW is used as a feature selector to select most discriminative features
+among the CNN features. Finally, the selected feature sets are classified as one of the four classes.
+The hybrid model provides flexibility in terms of choice of pre-trained models for feature extraction.
+The pipeline is end-to-end since it does not require post processing of patch predictions to select
+discriminative patches. We compared our observations with state-of-the-art methods like ResNet50,
+DenseNet169, and InceptionV3 on the BACH-2018 challenge dataset. Our proposed method shows better
+performance than all the three methods. 

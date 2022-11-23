@@ -1,0 +1,20 @@
+We developed an operational solar flare prediction model using deep neural networks, named Deep
+Flare Net (DeFN). DeFN can issue probabilistic forecasts of solar flares in two categories, such
+as >=M-class and <M-class events or >=C-class and <C-class events, occurring in the next 24 h after
+observations and the maximum class of flares occurring in the next 24 h. DeFN is set to run every 6 h
+and has been operated since January 2019. The input database of solar observation images taken by
+the Solar Dynamic Observatory (SDO) is downloaded from the data archive operated by the Joint Science
+Operations Center (JSOC) of Stanford University. Active regions are automatically detected from
+magnetograms, and 79 features are extracted from each region nearly in real time using multiwavelength
+observation data. Flare labels are attached to the feature database, and then, the database is standardized
+and input into DeFN for prediction. DeFN was pretrained using the datasets obtained from 2010 to
+2015. The model was evaluated with the skill score of the true skill statistics (TSS) and achieved
+predictions with TSS = 0.80 for >=M-class flares and TSS = 0.63 for >=C-class flares. For comparison,
+we evaluated the operationally forecast results from January 2019 to June 2020. We found that operational
+DeFN forecasts achieved TSS = 0.70 (0.84) for >=C-class flares with the probability threshold of
+50 (40)%, although there were very few M-class flares during this period and we should continue monitoring
+the results for a longer time. Here, we adopted a chronological split to divide the database into
+two for training and testing. The chronological split appears suitable for evaluating operational
+models. Furthermore, we proposed the use of time-series cross-validation. The procedure achieved
+TSS = 0.70 for >=M-class flares and 0.59 for >=C-class flares using the datasets obtained from 2010
+to 2017. 

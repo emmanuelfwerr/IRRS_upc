@@ -1,0 +1,19 @@
+Graph Neural Networks (GNNs) have achieved great success in processing graph data by extracting
+and propagating structure-aware features. Existing GNN research designs various propagation
+schemes to guide the aggregation of neighbor information. Recently the field has advanced from
+local propagation schemes that focus on local neighbors towards extended propagation schemes
+that can directly deal with extended neighbors consisting of both local and high-order neighbors.
+Despite the impressive performance, existing approaches are still insufficient to build an efficient
+and learnable extended propagation scheme that can adaptively adjust the influence of local and
+high-order neighbors. This paper proposes an efficient yet effective end-to-end framework, namely
+Contrastive Adaptive Propagation Graph Neural Networks (CAPGNN), to address these issues by combining
+Personalized PageRank and attention techniques. CAPGNN models the learnable extended propagation
+scheme with a polynomial of a sparse local affinity matrix, where the polynomial relies on Personalized
+PageRank to provide superior initial coefficients. In order to adaptively adjust the influence
+of both local and high-order neighbors, a coefficient-attention model is introduced to learn to
+adjust the coefficients of the polynomial. In addition, we leverage self-supervised learning
+techniques and design a negative-free entropy-aware contrastive loss to explicitly take advantage
+of unlabeled data for training. We implement CAPGNN as two different versions named CAPGCN and CAPGAT,
+which use static and dynamic sparse local affinity matrices, respectively. Experiments on graph
+benchmark datasets suggest that CAPGNN can consistently outperform or match state-of-the-art
+baselines. The source code is publicly available at https://github.com/hujunxianligong/CAPGNN.

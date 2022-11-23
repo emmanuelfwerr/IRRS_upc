@@ -1,0 +1,20 @@
+Massive Ultra-Reliable and Low-Latency Communications (mURLLC), which integrates URLLC with
+massive access, is emerging as a new and important service class in the next generation (6G) for time-sensitive
+traffics and has recently received tremendous research attention. However, realizing efficient,
+delay-bounded, and reliable communications for a massive number of user equipments (UEs) in mURLLC,
+is extremely challenging as it needs to simultaneously take into account the latency, reliability,
+and massive access requirements. To support these requirements, the third generation partnership
+project (3GPP) has introduced enhanced grant-free (GF) transmission in the uplink (UL), with multiple
+active configured-grants (CGs) for URLLC UEs. With multiple CGs (MCG) for UL, UE can choose any of
+these grants as soon as the data arrives. In addition, non-orthogonal multiple access (NOMA) has
+been proposed to synergize with GF transmission to mitigate the serious transmission delay and
+network congestion problems. In this paper, we develop a novel learning framework for MCG-GF-NOMA
+systems with bursty traffic. We first design the MCG-GF-NOMA model by characterizing each CG using
+the parameters: the number of contention-transmission units (CTUs), the starting slot of each
+CG within a subframe, and the number of repetitions of each CG. Based on the model, the latency and
+reliability performances are characterized. We then formulate the MCG-GF-NOMA resources configuration
+problem taking into account three constraints. Finally, we propose a Cooperative Multi-Agent
+based Double Deep Q-Network (CMA-DDQN) algorithm to allocate the channel resources among MCGs
+so as to maximize the number of successful transmissions under the latency constraint. Our results
+show that the MCG-GF-NOMA framework can simultaneously improve the low latency and high reliability
+performances in massive URLLC. 

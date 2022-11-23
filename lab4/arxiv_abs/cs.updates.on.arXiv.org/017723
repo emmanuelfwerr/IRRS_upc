@@ -1,0 +1,19 @@
+Mechanical assemblies can exhibit complex relative motions, during which collisions between
+moving parts and their surroundings must be avoided. To define feasible design spaces for each part's
+shape, "maximal" collision-free pointsets can be computed using configuration space modeling
+techniques such as Minkowski operations and sweep/unsweep. For example, for a pair of parts undergoing
+a given relative motion, to make the problem well-posed, the geometry of one part (chosen arbitrarily)
+must be fixed to compute the maximal shape of the other part by an unsweep operation. Making such arbitrary
+choices in a multi-component assembly can place unnecessary restrictions on the design space.
+A broader family of collision-free pairs of parts can be explored, if fixing the geometry of a component
+is not required. In this paper, we formalize this family of collision-free shapes and introduce
+a generic method for generating a broad subset of them. Our procedure, which is an extension of the
+unsweep, allows for co-generation of a pair of geometries which are modified incrementally and
+simultaneously to avoid collision. We demonstrate the effectiveness and scalability of our procedure
+in both 2D and 3D by generating a variety of collision-free shapes. Notably, we show that our approach
+can automatically generate freeform cam and follower profiles, gear teeth, and screw threads,
+starting from colliding blocks of materials, solely from a specification of relative motion and
+without the use of any feature-informed heuristics. Moreover, our approach provides continuous
+measures of collision that can be incorporated into standard gradient-descent design optimization,
+allowing for simultaneous collision-free and physics-informed co-design of mechanical parts
+for assembly. 

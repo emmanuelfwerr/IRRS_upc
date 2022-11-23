@@ -1,0 +1,19 @@
+Researchers collect large amounts of user interaction data with the goal of mapping user's workflows
+and behaviors to their higher-level motivations, intuitions, and goals. Although the visual analytics
+community has proposed numerous taxonomies to facilitate this mapping process, no formal methods
+exist for systematically applying these existing theories to user interaction logs. This paper
+seeks to bridge the gap between visualization task taxonomies and interaction log data by making
+the taxonomies more actionable for interaction log analysis. To achieve this, we leverage structural
+parallels between how people express themselves through interactions and language by reformulating
+existing theories as regular grammars. We represent interactions as terminals within a regular
+grammar, similar to the role of individual words in a language, and patterns of interactions or non-terminals
+as regular expressions over these terminals to capture common language patterns. To demonstrate
+our approach, we generate regular grammars for seven visualization taxonomies and develop code
+to apply them to three interaction log datasets. In analyzing our results, we find that existing
+taxonomies at the low-level (i.e., terminals) show mixed results in expressing multiple interaction
+log datasets, and taxonomies at the high-level (i.e., regular expressions) have limited expressiveness,
+due to primarily two challenges: inconsistencies in interaction log dataset granularity and structure,
+and under-expressiveness of certain terminals. Based on our findings, we suggest new research
+directions for the visualization community for augmenting existing taxonomies, developing new
+ones, and building better interaction log recording processes to facilitate the data-driven development
+of user behavior taxonomies. 

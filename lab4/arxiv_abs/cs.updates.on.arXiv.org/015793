@@ -1,0 +1,20 @@
+Third-party libraries with rich functionalities facilitate the fast development of Node.js software,
+but also bring new security threats that vulnerabilities could be introduced through dependencies.
+In particular, the threats could be excessively amplified by transitive dependencies. Existing
+research either considers direct dependencies or reasoning transitive dependencies based on
+reachability analysis, which neglects the NPM-specific dependency resolution rules, resulting
+in wrongly resolved dependencies. Consequently, further fine-grained analysis, such as vulnerability
+propagation and their evolution in dependencies, cannot be carried out precisely at a large scale,
+as well as deriving ecosystem-wide solutions for vulnerabilities in dependencies. To fill this
+gap, we propose a knowledge graph-based dependency resolution, which resolves the dependency
+relations of dependencies as trees (i.e., dependency trees), and investigates the security threats
+from vulnerabilities in dependency trees at a large scale. We first construct a complete dependency-vulnerability
+knowledge graph (DVGraph) that captures the whole NPM ecosystem (over 10 million library versions
+and 60 million well-resolved dependency relations). Based on it, we propose DTResolver to statically
+and precisely resolve dependency trees, as well as transitive vulnerability propagation paths,
+by considering the official dependency resolution rules. Based on that, we carry out an ecosystem-wide
+empirical study on vulnerability propagation and its evolution in dependency trees. Our study
+unveils lots of useful findings, and we further discuss the lessons learned and solutions for different
+stakeholders to mitigate the vulnerability impact in NPM. For example, we implement a dependency
+tree based vulnerability remediation method (DTReme) for NPM packages, and receive much better
+performance than the official tool (npm audit fix). 

@@ -1,0 +1,20 @@
+We design fast algorithms for repeatedly sampling from strongly Rayleigh distributions, which
+include random spanning tree distributions and determinantal point processes. For a graph $G=(V,
+E)$, we show how to approximately sample uniformly random spanning trees from $G$ in $\widetilde{O}(\lvert
+V\rvert)$ time per sample after an initial $\widetilde{O}(\lvert E\rvert)$ time preprocessing.
+For a determinantal point process on subsets of size $k$ of a ground set of $n$ elements, we show how
+to approximately sample in $\widetilde{O}(k^\omega)$ time after an initial $\widetilde{O}(nk^{\omega-1})$
+time preprocessing, where $\omega<2.372864$ is the matrix multiplication exponent. We even improve
+the state of the art for obtaining a single sample from determinantal point processes, from the prior
+runtime of $\widetilde{O}(\min\{nk^2, n^\omega\})$ to $\widetilde{O}(nk^{\omega-1})$. In
+our main technical result, we achieve the optimal limit on domain sparsification for strongly Rayleigh
+distributions. In domain sparsification, sampling from a distribution $\mu$ on $\binom{[n]}{k}$
+is reduced to sampling from related distributions on $\binom{[t]}{k}$ for $t\ll n$. We show that
+for strongly Rayleigh distributions, we can can achieve the optimal $t=\widetilde{O}(k)$. Our
+reduction involves sampling from $\widetilde{O}(1)$ domain-sparsified distributions, all
+of which can be produced efficiently assuming convenient access to approximate overestimates
+for marginals of $\mu$. Having access to marginals is analogous to having access to the mean and covariance
+of a continuous distribution, or knowing "isotropy" for the distribution, the key assumption behind
+the Kannan-Lov\'asz-Simonovits (KLS) conjecture and optimal samplers based on it. We view our
+result as a moral analog of the KLS conjecture and its consequences for sampling, for discrete strongly
+Rayleigh measures. 

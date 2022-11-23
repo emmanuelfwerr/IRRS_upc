@@ -1,0 +1,19 @@
+The rapid finding of effective therapeutics requires the efficient use of available resources
+in clinical trials. The use of covariate adjustment can yield statistical estimates with improved
+precision, resulting in a reduction in the number of participants required to draw futility or efficacy
+conclusions. We focus on time-to-event and ordinal outcomes. A key question for covariate adjustment
+in randomized studies is how to fit a model relating the outcome and the baseline covariates to maximize
+precision. We present a novel theoretical result establishing conditions for asymptotic normality
+of a variety of covariate-adjusted estimators that rely on machine learning (e.g., l1-regularization,
+Random Forests, XGBoost, and Multivariate Adaptive Regression Splines), under the assumption
+that outcome data is missing completely at random. We further present a consistent estimator of
+the asymptotic variance. Importantly, the conditions do not require the machine learning methods
+to converge to the true outcome distribution conditional on baseline variables, as long as they
+converge to some (possibly incorrect) limit. We conducted a simulation study to evaluate the performance
+of the aforementioned prediction methods in COVID-19 trials using longitudinal data from over
+1,500 patients hospitalized with COVID-19 at Weill Cornell Medicine New York Presbyterian Hospital.
+We found that using l1-regularization led to estimators and corresponding hypothesis tests that
+control type 1 error and are more precise than an unadjusted estimator across all sample sizes tested.
+We also show that when covariates are not prognostic of the outcome, l1-regularization remains
+as precise as the unadjusted estimator, even at small sample sizes (n = 100). We give an R package adjrct
+that performs model-robust covariate adjustment for ordinal and time-to-event outcomes. 

@@ -1,0 +1,18 @@
+In the inter-domain network, a route leak occurs when a routing announcement is propagated outside
+of its intended scope, which is a violation of the agreed routing policy. The route leaks can disrupt
+the internet traffic and cause large outages. The accurately detection of route leaks requires
+the share of AS business relationship information of ASes. However, the business relationship
+information between ASes is confidential due to economic issues. Thus, ASes are usually unwilling
+to revealing this information to the other ASes, especially their competitors. Recent advancements
+in federated learning make it possible to share data while maintaining privacy. Motivated by this,
+in this paper we study the route leak problem by considering the privacy of business relationships
+between ASes, and propose a method for route leak detection with privacy guarantee by using blockchain-based
+federated learning framework, in which ASes can train a global detection model without revealing
+their business relationships directly. Moreover, the proposed method provides a self-validation
+scheme by labeling AS triples with local routing policies, which mitigates route leaks' lack of
+ground truth. We evaluate the proposed method under a variety of datasets including unbalanced
+and balanced datasets. The different deployment strategies of the proposed method under different
+topologies are also examined. The results show that the proposed method has a better performance
+in detecting route leaks than a single AS detection regardless of whether using balanced or unbalanced
+datasets. In the analysis of the deployment, the results show that ASes with more peers have more
+possible route leaks and can contribute more on the detection of route leaks with the proposed method.

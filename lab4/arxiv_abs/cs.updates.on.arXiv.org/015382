@@ -1,0 +1,18 @@
+Clustering is an important task with applications in many fields of computer science. We study the
+fully dynamic setting in which we want to maintain good clusters efficiently when input points (from
+a metric space) can be inserted and deleted. Many clustering problems are $\mathsf{APX}$-hard
+but admit polynomial time $O(1)$-approximation algorithms. Thus, it is a natural question whether
+we can maintain $O(1)$-approximate solutions for them in subpolynomial update time, against adaptive
+and oblivious adversaries. Only a few results are known that give partial answers to this question.
+There are dynamic algorithms for $k$-center, $k$-means, and $k$-median that maintain constant
+factor approximations in expected $\tilde{O}(k^{2})$ update time against an oblivious adversary.
+However, for these problems there are no algorithms known with an update time that is subpolynomial
+in $k$, and against an adaptive adversary there are even no (non-trivial) dynamic algorithms known
+at all. In this paper, we complete the picture of the question above for all these clustering problems.
+1. We show that there is no fully dynamic $O(1)$-approximation algorithm for any of the classic clustering
+problems above with an update time in $n^{o(1)}h(k)$ against an adaptive adversary, for an arbitrary
+function $h$. 2. We give a lower bound of $\Omega(k)$ on the update time for each of the above problems,
+even against an oblivious adversary. 3. We give the first $O(1)$-approximate fully dynamic algorithms
+for $k$-sum-of-radii and for $k$-sum-of-diameters with expected update time of $\tilde{O}(k^{O(1)})$
+against an oblivious adversary. 4. Finally, for $k$-center we present a fully dynamic $(6+\epsilon)$-approximation
+algorithm with an expected update time of $\tilde{O}(k)$ against an oblivious adversary. 

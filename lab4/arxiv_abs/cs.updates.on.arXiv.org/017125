@@ -1,0 +1,19 @@
+Penetration testing (PT) is an efficient network testing and vulnerability mining tool by simulating
+a hacker's attack for valuable information applied in some areas. Compared with manual PT, intelligent
+PT has become a dominating mainstream due to less time-consuming and lower labor costs. Unfortunately,
+RL-based PT is still challenged in real exploitation scenarios because the agent's action space
+is usually high-dimensional discrete, thus leading to algorithm convergence difficulty. Besides,
+most PT methods still rely on the decisions of security experts. Addressing the challenges, for
+the first time, we introduce expert knowledge to guide the agent to make better decisions in RL-based
+PT and propose a Generative Adversarial Imitation Learning-based generic intelligent Penetration
+testing framework, denoted as GAIL-PT, to solve the problems of higher labor costs due to the involvement
+of security experts and high-dimensional discrete action space. Specifically, first, we manually
+collect the state-action pairs to construct an expert knowledge base when the pre-trained RL / DRL
+model executes successful penetration testings. Second, we input the expert knowledge and the
+state-action pairs generated online by the different RL / DRL models into the discriminator of GAIL
+for training. At last, we apply the output reward of the discriminator to guide the agent to perform
+the action with a higher penetration success rate to improve PT's performance. Extensive experiments
+conducted on the real target host and simulated network scenarios show that GAIL-PT achieves the
+SOTA penetration performance against DeepExploit in exploiting actual target Metasploitable2
+and Q-learning in optimizing penetration path, not only in small-scale with or without honey-pot
+network environments but also in the large-scale virtual network environment. 

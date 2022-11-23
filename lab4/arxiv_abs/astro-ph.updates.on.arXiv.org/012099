@@ -1,0 +1,19 @@
+We present a new method to obtain the interstellar radiation field (ISRF) of regions that contain
+stars, dust and gas. Starting from stellar spectra, we first run the radiative transfer code Skirt
+to compute the mean intensity field due to the stellar component alone. Then, we import that result
+to the photoionisation code Cloudy to compute the emissivity and opacity of the given mixture of
+gas and dust as a function of wavelength. Finally, we ask Skirt again to compute the mean intensity
+field, adding the total contribution of stars, gas and dust. This process is repeated iteratively,
+calling both codes sequentially in order to obtain increasingly accurate estimates. We have designed
+a first test, reminiscent of an HII region, that consists of a B star, approximated as a black-body,
+surrounded by a spherical shell of gas and dust with uniform density. We find that the results of our
+three-dimensional radiative transfer method are in excellent agreement with a spherically symmetric
+Cloudy simulation. As a realistic scientific application, we calculate the interstellar radiation
+field of a Milky Way-like galaxy based on two different chemical evolution models. Both of them give
+results broadly consistent with previous ones reported in the literature for the interstellar
+radiation field of our Galaxy, albeit they systematically underestimate the mid-infrared emission,
+with significant differences in this range, as well as in the ultraviolet, stemming from the input
+stellar and ISM properties. These results show the feasibility of our method to incorporate radiative
+transfer to chemical evolution models, increasing their predictive power and using this interstellar
+radiation field to further constrain their parameters. Python source code to implement our method
+is publicly available at https://github.com/MarioRomeroC/Mixclask. 

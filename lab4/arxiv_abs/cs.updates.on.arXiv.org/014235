@@ -1,0 +1,19 @@
+We study how to enhance language models (LMs) with textual commonsense knowledge. Previous work
+(e.g., KnowBERT) has focused on the integrating entity knowledge from knowledge graphs. In order
+to introduce the external entity embeddings, they learn to jointly represent the original sentences
+and external knowledge by pre-training on a large scale corpus. However, when switching to textual
+commonsense, unlike the light entity embeddings, the encoding of commonsense descriptions is
+heavy. Therefore, the pre-training for learning to jointly represent the target sentence and external
+commonsense descriptions is unaffordable. On the other hand, since pre-trained LMs for representing
+the target sentences alone are readily available, is it feasible to introduce commonsense knowledge
+in downstream tasks by fine-tuning them only? In this paper, we propose a plug-and-play method for
+large-scale commonsense integration without pre-training. Our method is inspired by the observation
+that in the regular fine-tuning for downstream tasks where no external knowledge was introduced,
+the variation in the parameters of the language model was minor. Our method starts from a pre-trained
+LM that represents the target sentences only (e.g., BERT). We think that the pre-training for joint
+representation learning can be avoided, if the joint representation reduces the impact of parameters
+on the starting LM. Previous methods such as KnowBERT proposed complex modifications to the vanilla
+LM to introduce external knowledge. Our model (Cook-Transformer, COmmOnsense Knowledge-enhanced
+Transformer), on the other hand, hardly changes the vanilla LM except adding a knowledge token in
+each Transformer layer. In a variety of experiments, COOK-Transformer-based BERT/RoBERTa improve
+their effect without any pre-training. 

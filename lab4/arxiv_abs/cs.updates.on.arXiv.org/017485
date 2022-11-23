@@ -1,0 +1,20 @@
+Graph neural networks (GNNs) have recently exploded in popularity thanks to their broad applicability
+to graph-related problems such as quantum chemistry, drug discovery, and high energy physics.
+However, meeting demand for novel GNN models and fast inference simultaneously is challenging
+because of the gap between developing efficient accelerators and the rapid creation of new GNN models.
+Prior art focuses on the acceleration of specific classes of GNNs, such as Graph Convolutional Network
+(GCN), but lacks the generality to support a wide range of existing or new GNN models. Meanwhile,
+most work rely on graph pre-processing to exploit data locality, making them unsuitable for real-time
+applications. To address these limitations, in this work, we propose a generic dataflow architecture
+for GNN acceleration, named FlowGNN, which can flexibly support the majority of message-passing
+GNNs. The contributions are three-fold. First, we propose a novel and scalable dataflow architecture,
+which flexibly supports a wide range of GNN models with message-passing mechanism. The architecture
+features a configurable dataflow optimized for simultaneous computation of node embedding, edge
+embedding, and message passing, which is generally applicable to all models. We also propose a rich
+library of model-specific components. Second, we deliver ultra-fast real-time GNN inference
+without any graph pre-processing, making it agnostic to dynamically changing graph structures.
+Third, we verify our architecture on the Xilinx Alveo U50 FPGA board and measure the on-board end-to-end
+performance. We achieve a speed-up of up to 51-254x against CPU (6226R) and 1.3-477x against GPU
+(A6000) (with batch sizes 1 through 1024); we also outperform the SOTA GNN accelerator I-GCN by 1.03x
+and 1.25x across two datasets. Our implementation code and on-board measurement are publicly available
+on GitHub. 

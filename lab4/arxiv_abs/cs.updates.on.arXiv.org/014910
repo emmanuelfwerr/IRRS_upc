@@ -1,0 +1,18 @@
+This paper develops and investigates a new method for the application of Dirichlet boundary conditions
+for computational models defined by point clouds. Point cloud models often stem from laser or structured-light
+scanners which are used to scan existing mechanical structures for which CAD models either do not
+exist or from which the artifact under investigation deviates in shape or topology. Instead of reconstructing
+a CAD model from point clouds via surface reconstruction and a subsequent boundary conforming mesh
+generation, a direct analysis without pre-processing is possible using embedded domain finite
+element methods. These methods use non-boundary conforming meshes which calls for a weak enforcement
+of Dirichlet boundary conditions. For point cloud based models, Dirichlet boundary conditions
+are usually imposed using a diffuse interface approach. This leads to a significant computational
+overhead due to the necessary computation of domain integrals. Additionally, undesired side effects
+on the gradients of the solution arise which can only be controlled to some extent. This paper develops
+a new sharp interface approach for point cloud based models which avoids both issues. The computation
+of domain integrals is circumvented by an implicit approximation of corresponding Voronoi diagrams
+of higher order and the resulting sharp approximation avoids the side-effects of diffuse approaches.
+Benchmark examples from the graphics as well as the computational mechanics community are used
+to verify the algorithm. All algorithms are implemented in the FCMLab framework and provided at
+https://gitlab.lrz.de/cie_sam_public/fcmlab/. Further, we discuss challenges and limitations
+of point cloud based analysis w.r.t. application of Dirichlet boundary conditions. 

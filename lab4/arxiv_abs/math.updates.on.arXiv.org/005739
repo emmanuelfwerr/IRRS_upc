@@ -1,0 +1,18 @@
+Let $R$ be a commutative ring and $n\geq1$ and $p\geq0$ two integers. Let $h_{k,\ i}$ be an element
+of $R$ for all $k\in\mathbb Z$ and $i\in [n]$. For any $\alpha\in\mathbb Z^n$, we define \[ t_{\alpha}:=\det\begin{pmatrix}
+h_{\alpha_1+1,\ 1} & h_{\alpha_1+2,\ 1} & \cdots & h_{\alpha_1+n,\ 1}\\ h_{\alpha_2+1,\ 2} & h_{\alpha_2+2,\
+2} & \cdots & h_{\alpha_2+n,\ 2}\\ \vdots & \vdots & \ddots & \vdots\\ h_{\alpha_n+1,\ n} & h_{\alpha_n+2,\
+n} & \cdots & h_{\alpha_n+n,\ n} \end{pmatrix} \in R \] (where $\alpha_i$ denotes the $i$-th entry
+of $\alpha$). Then, we have the identity \[ \sum_{\substack{\beta\in\{0,1,2,\ldots\}^n ;\\
+\left|\beta \right|=p}}t_{\alpha+\beta} =\det \begin{pmatrix} h_{\alpha_1+1,\ 1} & h_{\alpha_1+2,\
+1} & \cdots & h_{\alpha_1+(n-1),\ 1} & h_{\alpha_1+(n+p),\ 1}\\ h_{\alpha_2+1,\ 2} & h_{\alpha_2+2,\
+2} & \cdots & h_{\alpha_2+(n-1),\ 2} & h_{\alpha_2+(n+p),\ 2}\\ \vdots & \vdots & \ddots & \vdots
+& \vdots\\ h_{\alpha_n+1,\ n} & h_{\alpha_n+2,\ n} & \cdots & h_{\alpha_n+(n-1),\ n} & h_{\alpha_n+(n+p),\
+n} \end{pmatrix} \] (where $\alpha+\beta$ denotes the entrywise sum of the tuples $\alpha$ and
+$\beta$). Furthermore, if $p\leq n$, then \[ \sum_{\substack{\beta\in\left\{ 0,1\right\} ^n
+;\\\left| \beta \right| =p}}t_{\alpha+\beta}=\det \begin{pmatrix} h_{\alpha_1+\xi_1 ,\ 1}
+& h_{\alpha_1+\xi_2 ,\ 1} & \cdots & h_{\alpha_1+\xi_n ,\ 1}\\ h_{\alpha_2+\xi_1 ,\ 2} & h_{\alpha_2+\xi_2
+,\ 2} & \cdots & h_{\alpha_2+\xi_n ,\ 2}\\ \vdots & \vdots & \ddots & \vdots\\ h_{\alpha_n+\xi_1
+,\ n} & h_{\alpha_n+\xi_2 ,\ n} & \cdots & h_{\alpha_n+\xi_n ,\ n} \end{pmatrix} , \] where $\xi=(1,2,\ldots,n-p,n-p+2,n-p+3,\ldots,n+1)$.
+We prove these two identities (in a slightly more general setting, where $R$ is not assumed commutative)
+and use them to derive some variants of the Pieri rule found in the literature. 

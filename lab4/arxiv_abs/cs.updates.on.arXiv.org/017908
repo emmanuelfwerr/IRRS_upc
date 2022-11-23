@@ -1,0 +1,20 @@
+Closed-loop neural interfaces with on-chip machine learning can detect and suppress disease symptoms
+in neurological disorders or restore lost functions in paralyzed patients. While high-density
+neural recording can provide rich neural activity information for accurate disease-state detection,
+existing systems have low channel count and poor scalability, which could limit their therapeutic
+efficacy. This work presents a highly scalable and versatile closed-loop neural interface SoC
+that can overcome these limitations. A 256-channel time-division multiplexed (TDM) front-end
+with a two-step fast-settling mixed-signal DC servo loop (DSL) is proposed to record high-spatial-resolution
+neural activity and perform channel-selective brain-state inference. A tree-structured neural
+network (NeuralTree) classification processor extracts a rich set of neural biomarkers in a patient-
+and disease-specific manner. Trained with an energy-aware learning algorithm, the NeuralTree
+classifier detects the symptoms of underlying disorders (e.g., epilepsy and movement disorders)
+at an optimal energy-accuracy trade-off. A 16-channel high-voltage (HV) compliant neurostimulator
+closes the therapeutic loop by delivering charge-balanced biphasic current pulses to the brain.
+The proposed SoC was fabricated in 65nm CMOS and achieved a 0.227uJ/class energy efficiency in a
+compact area of 0.014mm^2/channel. The SoC was extensively verified on human electroencephalography
+(EEG) and intracranial EEG (iEEG) epilepsy datasets, obtaining 95.6%/94% sensitivity and 96.8%/96.9%
+specificity, respectively. In-vivo neural recordings using soft uECoG arrays and multi-domain
+biomarker extraction were further performed on a rat model of epilepsy. In addition, for the first
+time in literature, on-chip classification of rest-state tremor in Parkinson's disease from human
+local field potentials (LFPs) was demonstrated. 

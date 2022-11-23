@@ -1,0 +1,19 @@
+The geometric median of a tuple of vectors is the vector that minimizes the sum of Euclidean distances
+to the vectors of the tuple. Classically called the Fermat-Weber problem and applied to facility
+location, it has become a major component of the robust learning toolbox. It is typically used to
+aggregate the (processed) inputs of different data providers, whose motivations may diverge,
+especially in applications like content moderation. Interestingly, as a voting system, the geometric
+median has well-known desirable properties: it is a provably good average approximation, it is
+robust to a minority of malicious voters, and it satisfies the "one voter, one unit force" fairness
+principle. However, what was not known is the extent to which the geometric median is strategyproof.
+Namely, can a strategic voter significantly gain by misreporting their preferred vector? We prove
+in this paper that, perhaps surprisingly, the geometric median is not even $\alpha$-strategyproof,
+where $\alpha$ bounds what a voter can gain by deviating from truthfulness. But we also prove that,
+in the limit of a large number of voters with i.i.d. preferred vectors, the geometric median is asymptotically
+$\alpha$-strategyproof. We show how to compute this bound $\alpha$. We then generalize our results
+to voters who care more about some dimensions. Roughly, we show that, if some dimensions are more
+polarized and regarded as more important, then the geometric median becomes less strategyproof.
+Interestingly, we also show how the skewed geometric medians can improve strategyproofness. Nevertheless,
+if voters care differently about different dimensions, we prove that no skewed geometric median
+can achieve strategyproofness for all. Overall, our results constitute a coherent set of insights
+into the extent to which the geometric median is suitable to aggregate high-dimensional disagreements.

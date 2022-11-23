@@ -1,0 +1,19 @@
+Masked AutoEncoder (MAE) has recently led the trends of visual self-supervision area by an elegant
+asymmetric encoder-decoder design, which significantly optimizes both the pre-training efficiency
+and fine-tuning accuracy. Notably, the success of the asymmetric structure relies on the "global"
+property of Vanilla Vision Transformer (ViT), whose self-attention mechanism reasons over arbitrary
+subset of discrete image patches. However, it is still unclear how the advanced Pyramid-based ViTs
+(e.g., PVT, Swin) can be adopted in MAE pre-training as they commonly introduce operators within
+"local" windows, making it difficult to handle the random sequence of partial vision tokens. In
+this paper, we propose Uniform Masking (UM), successfully enabling MAE pre-training for Pyramid-based
+ViTs with locality (termed "UM-MAE" for short). Specifically, UM includes a Uniform Sampling (US)
+that strictly samples $1$ random patch from each $2 \times 2$ grid, and a Secondary Masking (SM) which
+randomly masks a portion of (usually $25\%$) the already sampled regions as learnable tokens. US
+preserves equivalent elements across multiple non-overlapped local windows, resulting in the
+smooth support for popular Pyramid-based ViTs; whilst SM is designed for better transferable visual
+representations since US reduces the difficulty of pixel recovery pre-task that hinders the semantic
+learning. We demonstrate that UM-MAE significantly improves the pre-training efficiency (e.g.,
+it speeds up and reduces the GPU memory by $\sim 2\times$) of Pyramid-based ViTs, but maintains the
+competitive fine-tuning performance across downstream tasks. For example using HTC++ detector,
+the pre-trained Swin-Large backbone self-supervised under UM-MAE only in ImageNet-1K can even
+outperform the one supervised in ImageNet-22K. The codes are available at https://github.com/implus/UM-MAE.

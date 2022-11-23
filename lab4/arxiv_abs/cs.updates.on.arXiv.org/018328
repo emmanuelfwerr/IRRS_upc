@@ -1,0 +1,19 @@
+Shared-account Cross-domain Sequential Recommendation (SCSR) task aims to recommend the next
+item via leveraging the mixed user behaviors in multiple domains. It is gaining immense research
+attention as more and more users tend to sign up on different platforms and share accounts with others
+to access domain-specific services. Existing works on SCSR mainly rely on mining sequential patterns
+via Recurrent Neural Network (RNN)-based models, which suffer from the following limitations:
+1) RNN-based methods overwhelmingly target discovering sequential dependencies in single-user
+behaviors. They are not expressive enough to capture the relationships among multiple entities
+in SCSR. 2) All existing methods bridge two domains via knowledge transfer in the latent space, and
+ignore the explicit cross-domain graph structure. 3) None existing studies consider the time interval
+information among items, which is essential in the sequential recommendation for characterizing
+different items and learning discriminative representations for them. In this work, we propose
+a new graph-based solution, namely TiDA-GCN, to address the above challenges. Specifically, we
+first link users and items in each domain as a graph. Then, we devise a domain-aware graph convolution
+network to learn userspecific node representations. To fully account for users' domainspecific
+preferences on items, two effective attention mechanisms are further developed to selectively
+guide the message passing process. Moreover, to further enhance item- and account-level representation
+learning, we incorporate the time interval into the message passing, and design an account-aware
+self-attention module for learning items' interactive characteristics. Experiments demonstrate
+the superiority of our proposed method from various aspects. 

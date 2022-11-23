@@ -1,0 +1,20 @@
+With the increased amount of volatile renewable energy sources connected to the electricity grid,
+and the phase-out of fossil fuel based power plants, there is an increased need for frequency regulation.
+On the demand side, frequency regulation services can be offered by buildings or districts that
+are equipped with electric heating or cooling systems, by exploiting their thermal inertia. Existing
+approaches for tapping into this potential typically rely on dynamic building models, which in
+practice can be challenging to obtain and maintain. As a result, practical implementations of such
+systems are scarce. Moreover, actively controlling buildings requires extensive control infrastructure
+and may cause privacy concerns in district energy systems. Motivated by this, we exploit the thermal
+inertia of buffer storage for reserves, reducing the building models to demand forecasts here.
+By combining a control scheme based on Robust Model Predictive Control, with affine policies, and
+heating demand forecasting based on Artificial Neural Networks with online correction methods,
+we offer frequency regulation reserves and maintain user comfort with a system comprising a heat
+pump and buffer storage. While the robust approach ensures occupant comfort, the use of affine policies
+reduces the effect of disturbance uncertainty on the system state. In a first-of-its-kind experiment
+with a real district-like building energy system, we demonstrate that the scheme is able to offer
+reserves in a variety of conditions and track a regulation signal while meeting the heating demand
+of the connected buildings. 13.4% of the consumed electricity is flexible. In additional numerical
+studies, we demonstrate that using affine policies significantly decreases the cost function
+and increases the amount of offered reserves and we investigate the suboptimality in comparison
+to an omniscient control system. 

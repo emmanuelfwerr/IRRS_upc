@@ -1,0 +1,19 @@
+This work presents a triboelectric nanogenerator-based (TENG) therapeutic stress ball to provide
+gesture monitoring and physiological data on patients requiring physical therapy of various degrees.
+The device utilizes a 5-layer stack of silicone and braided silver-coated nylon rope electrodes
+to create a sensor network that monitors 40-points across the surface of a semi-spherical prototype.
+A modified version of a standard ECG circuit was utilized to provide proper loading, noise rejection,
+filtering, and phase of the TENG signals along with multiplexing of the many electrodes. All system
+components were selected with a final embedded system in mind. Testing of the device was conducted
+utilizing an Arduino Uno and an EVAL-AD5940BIOZ evaluation board for electrodermal activity for
+stress and/or pain after exercise. An accelerometer was included for device activation and hand
+tremor detection. Upon testing, the self-powered TENG sensors produce positive impulses upon
+contact and negative impulses upon release of contact from the surface of the ball. Furthermore,
+finger removal detection was demonstrated by capturing the associated negative impulse by maintaining
+the bipolar signal in our conditioning circuit. EDA results indicate silver-coated nylon as a potentially
+good dry-electrode which can be used with even more electrodes for bio-impedance or ECG capture
+to further expand the device functionality. A MATLAB-based GUI was designed to provide the user
+with data tracking and visual monitoring of the data via serial communication from the microcontrollers.
+Finally, it should be noted that this provides a means for low-cost low-power gesture tracking without
+the use of flexible capacitive grid arrays and provides the user with a pleasant tactile experience
+that one expects form a stress ball due to its unique material design. 

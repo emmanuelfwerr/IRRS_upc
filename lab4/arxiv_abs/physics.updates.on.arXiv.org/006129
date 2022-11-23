@@ -1,0 +1,19 @@
+The primary target of this paper is to present novel compounds in view of their possible use as oxidizers
+in propulsion applications using molecular modeling calculations and supersonic flow simulations.
+Carbon-based heterocyclic compounds tend to have strained molecular structures leading to high
+heats of formation and energetic behavior. In the present work, molecular modeling calculations
+for molecules of 37 such potential propellant oxidizers are presented. Density functional theory
+(B3LYP) was employed for the geometry optimization of the proposed molecular structures using
+the 6-311++G(d,p) basis set. Heats of formation of the compounds were calculated using the molecular
+modeling results. Appropriate propellant compositions were considered with the proposed compounds
+as oxidizer components and Ideal specific impulse (Ivac,ideal*) was calculated for each composition
+assuming isentropic flow, computed using the NASA CEA software package. To predict the actual delivered
+specific impulse (Ivac,act*), supersonic nozzle flow simulations of equilibrium product gases
+of each propellant composition have been carried out using OpenFOAM. The standard k-epsilon turbulence
+model for compressible flows including rapid distortion theory (RDT) based compression term,
+has been employed. As the problem is inherently transient in nature, local time stepping (LTS) methodology
+has been further implemented to reach a steady-state solution. These simulations accounted for
+divergence losses, turbulence losses and boundary layer losses and gave a more realistic estimation
+of the specific impulse. It was observed that the Ivac,act* for all propellant compositions lie
+between 88% to 91% of the corresponding ideal value. The newly proposed oxidizers showed considerable
+improvement in propulsion performance as compared to ammonium perchlorate. 

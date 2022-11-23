@@ -1,0 +1,20 @@
+We introduce a new phase field model for tumour growth where viscoelastic effects are taken into
+account. The model is derived from basic thermodynamical principles and consists of a convected
+Cahn--Hilliard equation with source terms for the tumour cells and a convected reaction-diffusion
+equation with boundary supply for the nutrient. Chemotactic terms, which are essential for the
+invasive behaviour of tumours, are taken into account. The model is completed by a viscoelastic
+system constisting of the Navier--Stokes equation for the hydrodynamic quantities, and a general
+constitutive equation with stress relaxation for the left Cauchy--Green tensor associated with
+the elastic part of the total mechanical response of the viscoelastic material. For a specific choice
+of the elastic energy density and with an additional dissipative term accounting for stress diffusion,
+we prove existence of global-in-time weak solutions of the viscoelastic model for tumour growth
+in two space dimensions $d=2$ by the passage to the limit in a fully-discrete finite element scheme
+where a CFL condition, i.e. $\Delta t\leq Ch^2$, is required. Moreover, in arbitrary dimensions
+$d\in\{2,3\}$, we show stability and existence of solutions for the fully-discrete finite element
+scheme, where positive definiteness of the discrete Cauchy--Green tensor is proved with a regularization
+technique that was first introduced by J. W. Barrett, S. Boyaval ("Existence and approximation
+of a (regularized) Oldroyd-B model". In: M3AS. 21.9 (2011), pp. 1783--1837). After that, we improve
+the regularity results in arbitrary dimensions $d\in\{2,3\}$ and in two dimensions $d=2$, where
+a CFL condition is required. Then, for $d=2$, we pass to the limit in the discretization parameters
+and show that subsequences of discrete solutions converge to a global-in-time weak solution. Finally,
+we present numerical results. 

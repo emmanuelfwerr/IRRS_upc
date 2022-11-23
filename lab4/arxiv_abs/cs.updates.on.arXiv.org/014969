@@ -1,0 +1,19 @@
+Animal pose estimation has recently come into the limelight due to its application in biology, zoology,
+and aquaculture. Deep learning methods have effectively been applied to human pose estimation.
+However, the major bottleneck to the application of these methods to animal pose estimation is the
+unavailability of sufficient quantities of labeled data. Though there are ample quantities of
+unlabelled data publicly available, it is economically impractical to label large quantities
+of data for each animal. In addition, due to the wide variety of body shapes in the animal kingdom,
+the transfer of knowledge across domains is ineffective. Given the fact that the human brain is able
+to recognize animal pose without requiring large amounts of labeled data, it is only reasonable
+that we exploit unsupervised learning to tackle the problem of animal pose recognition from the
+available, unlabelled data. In this paper, we introduce a novel architecture that is able to recognize
+the pose of multiple animals fromunlabelled data. We do this by (1) removing background information
+from each image and employing an edge detection algorithm on the body of the animal, (2) Tracking
+motion of the edge pixels and performing agglomerative clustering to segment body parts, (3) employing
+contrastive learning to discourage grouping of distant body parts together. Hence we are able to
+distinguish between body parts of the animal, based on their visual behavior, instead of the underlying
+anatomy. Thus, we are able to achieve a more effective classification of the data than their human-labeled
+counterparts. We test our model on the TigDog and WLD (WildLife Documentary) datasets, where we
+outperform state-of-the-art approaches by a significant margin. We also study the performance
+of our model on other public data to demonstrate the generalization ability of our model. 

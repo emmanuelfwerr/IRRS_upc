@@ -1,0 +1,20 @@
+In a data-driven paradigm, machine learning (ML) is the central component for developing accurate
+and universal exchange-correlation (XC) functionals in density functional theory (DFT). It is
+well known that XC functionals must satisfy several exact conditions and physical constraints,
+such as density scaling, spin scaling, and derivative discontinuity. In this work, we demonstrate
+that contrastive learning is a computationally efficient and flexible method to incorporate a
+physical constraint in ML-based density functional design. We propose a schematic approach to
+incorporate the uniform density scaling property of electron density for exchange energies by
+adopting contrastive representation learning during the pretraining task. The pretrained hidden
+representation is transferred to the downstream task to predict the exchange energies calculated
+by DFT. The electron density encoder transferred from the pretraining task based on contrastive
+learning predicts exchange energies that satisfy the scaling property, while the model trained
+without using contrastive learning gives poor predictions for the scaling-transformed electron
+density systems. Furthermore, the model with pretrained encoder gives a satisfactory performance
+with only small fractions of the whole augmented dataset labeled, comparable to the model trained
+from scratch using the whole dataset. The results demonstrate that incorporating exact constraints
+through contrastive learning can enhance the understanding of density-energy mapping using neural
+network (NN) models with less data labeling, which will be beneficial to generalizing the application
+of NN-based XC functionals in a wide range of scenarios that are not always available experimentally
+but theoretically justified. This work represents a viable pathway toward the machine learning
+design of a universal density functional via representation learning. 

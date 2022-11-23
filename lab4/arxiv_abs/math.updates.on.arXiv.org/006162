@@ -1,0 +1,19 @@
+Change of measures has been an effective method in stochastic control and analysis; in continuous-time
+control this follows Girsanov's theorem applied to both fully observed and partially observed
+models, in decentralized stochastic control (or stochastic dynamic team theory) this is known
+as Witsenhausen's static reduction, and in discrete-time classical stochastic control Borkar
+has considered this method for partially observed Markov Decision processes (POMDPs) generalizing
+Fleming and Pardoux's approach in continuous-time. This method allows for equivalent optimal
+stochastic control or filtering in a new probability space where the measurements form an independent
+exogenous process in both discrete-time and continuous-time and the Radon-Nikodym derivative
+(between the true measure and the reference measure formed via the independent measurement process)
+is pushed to the cost or dynamics. However, for this to be applicable, an absolute continuity condition
+is necessary. This raises the following question: can we perturb any discrete-time sequential
+stochastic control problem by adding some arbitrarily small additive (e.g. Gaussian or otherwise)
+noise to the measurements to make the system measurements absolutely continuous, so that a change-of-measure
+(or static reduction) can be applicable with arbitrarily small error in the optimal cost? That is,
+are all sequential stochastic (single-agent or decentralized multi-agent) problems $\epsilon$-away
+from being static reducible as far as optimal cost is concerned, for any $\epsilon > 0$? We show that
+this is possible when the cost function is bounded and continuous in controllers' actions and the
+action spaces are convex. We also note that the solution and the cost obtained for the perturbed system
+is realizable (under a randomized policy) for the original model. 

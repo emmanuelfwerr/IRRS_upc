@@ -1,0 +1,20 @@
+In order to preserve the possibility of an Internet that is free at the point of use, attention is turning
+to new solutions that would allow targeted advertisement delivery based on behavioral information
+such as user preferences, without compromising user privacy. Recently, explorations in devising
+such systems either take approaches that rely on semantic guarantees like $k$-anonymity -- which
+can be easily subverted when combining with alternative information, and do not take into account
+the possibility that even knowledge of such clusters is privacy-invasive in themselves. Other
+approaches provide full privacy by moving all data and processing logic to clients -- but which is
+prohibitively expensive for both clients and servers. In this work, we devise a new framework called
+PrivateFetch for building practical ad-delivery pipelines that rely on cryptographic hardness
+and best-case privacy, rather than syntactic privacy guarantees or reliance on real-world anonymization
+tools. PrivateFetch utilizes local computation of preferences followed by high-performance
+single-server private information retrieval (PIR) to ensure that clients can pre-fetch ad content
+from servers, without revealing any of their inherent characteristics to the content provider.
+When considering an database of $>1,000,000$ ads, we show that we can deliver $30$ ads to a client
+in 40 seconds, with total communication costs of 192KB. We also demonstrate the feasibility of PrivateFetch
+by showing that the monetary cost of running it is less than 1% of average ad revenue. As such, our system
+is capable of pre-fetching ads for clients based on behavioral and contextual user information,
+before displaying them during a typical browsing session. In addition, while we test PrivateFetch
+as a private ad-delivery, the generality of our approach means that it could also be used for other
+content types. 

@@ -1,0 +1,19 @@
+Network intrusion detection systems (NIDS) are an essential defense for computer networks and
+the hosts within them. Machine learning (ML) nowadays predominantly serves as the basis for NIDS
+decision making, where models are tuned to reduce false alarms, increase detection rates, and detect
+known and unknown attacks. At the same time, ML models have been found to be vulnerable to adversarial
+examples that undermine the downstream task. In this work, we ask the practical question of whether
+real-world ML-based NIDS can be circumvented by crafted adversarial flows, and if so, how can they
+be created. We develop the generative adversarial network (GAN)-based attack algorithm NIDSGAN
+and evaluate its effectiveness against realistic ML-based NIDS. Two main challenges arise for
+generating adversarial network traffic flows: (1) the network features must obey the constraints
+of the domain (i.e., represent realistic network behavior), and (2) the adversary must learn the
+decision behavior of the target NIDS without knowing its model internals (e.g., architecture and
+meta-parameters) and training data. Despite these challenges, the NIDSGAN algorithm generates
+highly realistic adversarial traffic flows that evade ML-based NIDS. We evaluate our attack algorithm
+against two state-of-the-art DNN-based NIDS in whitebox, blackbox, and restricted-blackbox
+threat models and achieve success rates which are on average 99%, 85%, and 70%, respectively. We
+also show that our attack algorithm can evade NIDS based on classical ML models including logistic
+regression, SVM, decision trees and KNNs, with a success rate of 70% on average. Our results demonstrate
+that deploying ML-based NIDS without careful defensive strategies against adversarial flows
+may (and arguably likely will) lead to future compromises. 

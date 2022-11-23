@@ -1,0 +1,19 @@
+Due to the diversity of attack materials, fingerprint recognition systems (AFRSs) are vulnerable
+to malicious attacks. It is of great importance to propose effective Fingerprint Presentation
+Attack Detection (PAD) methods for the safety and reliability of AFRSs. However, current PAD methods
+often have poor robustness under new attack materials or sensor settings. This paper thus proposes
+a novel Channel-wise Feature Denoising fingerprint PAD (CFD-PAD) method by considering handling
+the redundant "noise" information which ignored in previous works. The proposed method learned
+important features of fingerprint images by weighting the importance of each channel and finding
+those discriminative channels and "noise" channels. Then, the propagation of "noise" channels
+is suppressed in the feature map to reduce interference. Specifically, a PA-Adaption loss is designed
+to constrain the feature distribution so as to make the feature distribution of live fingerprints
+more aggregate and spoof fingerprints more disperse. Our experimental results evaluated on LivDet
+2017 showed that our proposed CFD-PAD can achieve 2.53% ACE and 93.83% True Detection Rate when the
+False Detection Rate equals to 1.0% (TDR@FDR=1%) and it outperforms the best single model based
+methods in terms of ACE (2.53% vs. 4.56%) and TDR@FDR=1%(93.83% vs. 73.32\%) significantly, which
+proves the effectiveness of the proposed method. Although we have achieved a comparable result
+compared with the state-of-the-art multiple model based method, there still achieves an increase
+of TDR@FDR=1% from 91.19% to 93.83% by our method. Besides, our model is simpler, lighter and, more
+efficient and has achieved a 74.76% reduction in time-consuming compared with the state-of-the-art
+multiple model based method. Code will be publicly available. 

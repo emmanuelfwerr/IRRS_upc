@@ -1,0 +1,19 @@
+By virtue of the message-passing that implicitly injects collaborative effect into the embedding
+process, Graph Neural Networks (GNNs) have been successfully adopted in recommendation systems.
+Nevertheless, most of existing message-passing mechanisms in recommendation are directly inherited
+from GNNs without any recommendation-tailored modification. Although some efforts have been
+made towards simplifying GNNs to improve the performance/efficiency of recommendation, no study
+has comprehensively scrutinized how message-passing captures collaborative effect and whether
+the captured effect would benefit the prediction of user preferences over items. Therefore, in
+this work we aim to demystify the collaborative effect captured by message-passing in GNNs and develop
+new insights towards customizing message-passing for recommendation. First, we theoretically
+analyze how message-passing captures and leverages the collaborative effect in predicting user
+preferences. Then, to determine whether the captured collaborative effect would benefit the prediction
+of user preferences, we propose a recommendation-oriented topological metric, Common Interacted
+Ratio (CIR), which measures the level of interaction between a specific neighbor of a node with the
+rest of its neighborhood set. Inspired by our theoretical and empirical analysis, we propose a recommendation-tailored
+GNN, Augmented Collaboration-Aware Graph Convolutional Network (CAGCN*), that extends upon
+the LightGCN framework and is able to selectively pass information of neighbors based on their CIR
+via the Collaboration-Aware Graph Convolution. Experimental results on six benchmark datasets
+show that CAGCN* outperforms the most representative GNN-based recommendation model, LightGCN,
+by 9% in Recall@20 and also achieves more than 79% speedup. Our code is publicly available at https://github.com/YuWVandy/CAGCN.

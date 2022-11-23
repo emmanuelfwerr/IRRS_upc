@@ -1,0 +1,20 @@
+Mission critical Machine-type Communication, also referred to as Ultra-reliable Low Latency
+Communication is primarily characterized by communication that provides ultra-high reliability
+and very low latency to concurrently transmit short commands to a massive number of connected devices.
+While the reduction in PHY layer overhead and improvement in channel coding techniques are pivotal
+in reducing latency and improving reliability, the current wireless standards dedicated to support
+mcMTC rely heavily on adopting the bottom layers of general-purpose wireless standards and customizing
+only the upper layers. The mcMTC has a significant technical impact on the design of all layers of
+the communication protocol stack. In this paper, an innovative bottom-up approach has been proposed
+for mcMTC applications through PHY layer targeted at improving the transmission reliability by
+implementing ultra-reliable channel coding scheme in the PHY layer of IEEE 802.11a bearing in mind
+short packet transmission system. To achieve this aim, we analyzed and compared the channel coding
+performance of convolutional codes, LDPC codes, and polar codes in wireless network on the condition
+of short data packet transmission. The Viterbi decoding algorithm, logarithmic belief propagation
+algorithm, and cyclic redundancy check - successive cancellation list decoding algorithm were
+adopted to CC, LDPC codes, and polar codes, respectively. Consequently, a new PHY layer for mcMTC
+has been proposed. The reliability of the proposed approach has been validated by simulation in
+terms of Bit error rate vs. SNR. The simulation results demonstrate that the reliability of IEEE
+802.11a standard has been significantly improved to be at PER less 10e-5 with the implementation
+of polar codes. The results also show that the general-purpose wireless networks are prominent
+in providing short packet mcMTC with the modification needed. 

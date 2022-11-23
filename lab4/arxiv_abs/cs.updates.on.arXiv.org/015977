@@ -1,0 +1,20 @@
+Simulating stiff materials in applications where deformations are either not significant or can
+safely be ignored is a pivotal task across fields. Rigid body modeling has thus long remained a fundamental
+tool and is, by far, the most popular simulation strategy currently employed for modeling stiff
+solids. At the same time, numerical models of a rigid body continue to pose a number of known challenges
+and trade-offs including intersections, instabilities, inaccuracies, and/or slow performances
+that grow with contact-problem complexity. In this paper we revisit this problem and present ABD,
+a simple and highly effective affine body dynamics framework, which significantly improves state-of-the-art
+stiff simulations. We trace the challenges in the rigid-body IPC (incremental potential contact)
+method to the necessity of linearizing piecewise-rigid (SE(3)) trajectories and subsequent constraints.
+ABD instead relaxes the unnecessary (and unrealistic) constraint that each body's motion be exactly
+rigid with a stiff orthogonality potential, while preserving the rigid body model's key feature
+of a small coordinate representation. In doing so ABD replaces piecewise linearization with piecewise
+linear trajectories. This, in turn, combines the best from both parties: compact coordinates ensure
+small, sparse system solves, while piecewise-linear trajectories enable efficient and accurate
+constraint (contact and joint) evaluations. Beginning with this simple foundation, ABD preserves
+all guarantees of the underlying IPC model e.g., solution convergence, guaranteed non-intersection,
+and accurate frictional contact. Over a wide range and scale of simulation problems we demonstrate
+that ABD brings orders of magnitude performance gains (two- to three-order on the CPU and an order
+more utilizing the GPU, which is 10,000x speedups) over prior IPC-based methods with a similar or
+higher simulation quality. 

@@ -1,0 +1,19 @@
+Cybersecurity has become one of the focuses of organisations. The number of cyberattacks keeps
+increasing as Internet usage continues to grow. An intrusion detection system (IDS) is an alarm
+system that helps to detect cyberattacks. As new types of cyberattacks continue to emerge, researchers
+focus on developing machine learning (ML) based IDS to detect zero-day attacks. Researchers usually
+remove some or all attack samples from the training dataset and only include them in the testing dataset
+when evaluating the performance of an IDS on detecting zero-day attacks. Although this method may
+show the ability of an IDs to detect unknown attacks; however, it does not reflect the long-term performance
+of the IDS as it only shows the changes in the type of attacks. In this paper, we focus on evaluating
+the long-term performance of ML based IDS. To achieve this goal, we propose evaluating the ML-based
+IDS using a dataset that is created later than the training dataset. The proposed method can better
+assess the long-term performance of an ML-based IDS, as the testing dataset reflects the changes
+in the type of attack and the changes in network infrastructure over time. We have implemented six
+of the most popular ML models that are used for IDS, including decision tree (DT), random forest (RF),
+support vector machine (SVM), na\"ive Bayes (NB), artificial neural network (ANN) and deep neural
+network (DNN). Our experiments using the CIC-IDS2017 and the CSE-CIC-IDS2018 datasets show that
+SVM and ANN are most resistant to overfitting. Besides that, our experiment results also show that
+DT and RF suffer the most from overfitting, although they perform well on the training dataset. On
+the other hand, our experiments using the LUFlow dataset have shown that all models can perform well
+when the difference between the training and testing datasets is small. 

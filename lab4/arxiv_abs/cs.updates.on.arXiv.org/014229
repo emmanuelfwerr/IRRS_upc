@@ -1,0 +1,20 @@
+The success of deep learning in many real-world tasks has triggered an intense effort to understand
+the power and limitations of deep learning in the training and generalization of complex tasks,
+so far with limited progress. In this work, we study the statistical mechanics of learning in Deep
+Linear Neural Networks (DLNNs) in which the input-output function of an individual unit is linear.
+Despite the linearity of the units, learning in DLNNs is nonlinear, hence studying its properties
+reveals some of the features of nonlinear Deep Neural Networks (DNNs). Importantly, we solve exactly
+the network properties following supervised learning using an equilibrium Gibbs distribution
+in the weight space. To do this, we introduce the Back-Propagating Kernel Renormalization (BPKR),
+which allows for the incremental integration of the network weights starting from the network output
+layer and progressing backward until the first layer's weights are integrated out. This procedure
+allows us to evaluate important network properties, such as its generalization error, the role
+of network width and depth, the impact of the size of the training set, and the effects of weight regularization
+and learning stochasticity. BPKR does not assume specific statistics of the input or the task's
+output. Furthermore, by performing partial integration of the layers, the BPKR allows us to compute
+the properties of the neural representations across the different hidden layers. We have proposed
+an extension of the BPKR to nonlinear DNNs with ReLU. Surprisingly, our numerical simulations reveal
+that despite the nonlinearity, the predictions of our theory are largely shared by ReLU networks
+in a wide regime of parameters. Our work is the first exact statistical mechanical study of learning
+in a family of DNNs, and the first successful theory of learning through successive integration
+of DoFs in the learned weight space. 

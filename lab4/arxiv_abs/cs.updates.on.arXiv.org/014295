@@ -1,0 +1,19 @@
+Accurately segmenting teeth and identifying the corresponding anatomical landmarks on dental
+mesh models are essential in computer-aided orthodontic treatment. Manually performing these
+two tasks is time-consuming, tedious, and, more importantly, highly dependent on orthodontists'
+experiences due to the abnormality and large-scale variance of patients' teeth. Some machine learning-based
+methods have been designed and applied in the orthodontic field to automatically segment dental
+meshes (e.g., intraoral scans). In contrast, the number of studies on tooth landmark localization
+is still limited. This paper proposes a two-stage framework based on mesh deep learning (called
+TS-MDL) for joint tooth labeling and landmark identification on raw intraoral scans. Our TS-MDL
+first adopts an end-to-end \emph{i}MeshSegNet method (i.e., a variant of the existing MeshSegNet
+with both improved accuracy and efficiency) to label each tooth on the downsampled scan. Guided
+by the segmentation outputs, our TS-MDL further selects each tooth's region of interest (ROI) on
+the original mesh to construct a light-weight variant of the pioneering PointNet (i.e., PointNet-Reg)
+for regressing the corresponding landmark heatmaps. Our TS-MDL was evaluated on a real-clinical
+dataset, showing promising segmentation and localization performance. Specifically, \emph{i}MeshSegNet
+in the first stage of TS-MDL reached an averaged Dice similarity coefficient (DSC) at $0.953\pm0.076$,
+significantly outperforming the original MeshSegNet. In the second stage, PointNet-Reg achieved
+a mean absolute error (MAE) of $0.623\pm0.718 \, mm$ in distances between the prediction and ground
+truth for $44$ landmarks, which is superior compared with other networks for landmark detection.
+All these results suggest the potential usage of our TS-MDL in clinical practices. 

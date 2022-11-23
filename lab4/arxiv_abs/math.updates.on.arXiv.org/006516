@@ -1,0 +1,19 @@
+The fact that the millimeter-wave (mmWave) multiple-input multiple-output (MIMO) channel has
+sparse support in the spatial domain has motivated recent compressed sensing (CS)-based mmWave
+channel estimation methods, where the angles of arrivals (AoAs) and angles of departures (AoDs)
+are quantized using angle dictionary matrices. However, the existing CS-based methods usually
+obtain the estimation result through one-stage channel sounding that have two limitations: (i)
+the requirement of large-dimensional dictionary and (ii) unresolvable quantization error. These
+two drawbacks are irreconcilable; improvement of the one implies deterioration of the other. To
+address these challenges, we propose, in this paper, a two-stage method to estimate the AoAs and
+AoDs of mmWave channels. In the proposed method, the channel estimation task is divided into two
+stages, Stage I and Stage II. Specifically, in Stage I, the AoAs are estimated by solving a multiple
+measurement vectors (MMV) problem. In Stage II, based on the estimated AoAs, the receive sounders
+are designed to estimate AoDs. The dimension of the angle dictionary in each stage can be reduced,
+which in turn reduces the computational complexity substantially. We then analyze the successful
+recovery probability (SRP) of the proposed method, revealing the superiority of the proposed framework
+over the existing one-stage CS-based methods. We further enhance the reconstruction performance
+by performing resource allocation between the two stages. We also overcome the unresolvable quantization
+error issue present in the prior techniques by applying the atomic norm minimization method to each
+stage of the proposed two-stage approach. The simulation results illustrate the substantially
+improved performance with low complexity of the proposed two-stage method. 

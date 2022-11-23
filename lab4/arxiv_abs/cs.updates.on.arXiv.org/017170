@@ -1,0 +1,20 @@
+Previous work has shown that taint analyses are only useful if correctly customized to the context
+in which they are used. Existing domain-specific languages (DSLs) allow such customization through
+the definition of deny-listing data-flow rules that describe potentially vulnerable taint-flows.
+These languages, however, are designed primarily for security experts who are knowledgeable in
+taint analysis. Software developers consider these languages to be complex. This paper presents
+fluentTQL, a query language particularly for taint-flow. fluentTQL is internal Java DSL and uses
+a fluent-interface design. fluentTQL queries can express various taint-style vulnerability
+types, e.g. injections, cross-site scripting or path traversal. This paper describes fluentTQL's
+abstract and concrete syntax and defines its runtime semantics. The semantics are independent
+of any underlying analysis and allows evaluation of fluentTQL queries by a variety of taint analyses.
+Instantiations of fluentTQL, on top of two taint analysis solvers, Boomerang and FlowDroid, show
+and validate fluentTQL expressiveness. Based on existing examples from the literature, we implemented
+queries for 11 popular security vulnerability types in Java. Using our SQL injection specification,
+the Boomerang-based taint analysis found all 17 known taint-flows in the OWASP WebGoat application,
+whereas with FlowDroid 13 taint-flows were found. Similarly, in a vulnerable version of the Java
+PetClinic application, the Boomerang-based taint analysis found all seven expected taint-flows.
+In seven real-world Android apps with 25 expected taint-flows, 18 were detected. In a user study
+with 26 software developers, fluentTQL reached a high usability score. In comparison to CodeQL,
+the state-of-the-art DSL by Semmle/GitHub, participants found fluentTQL more usable and with
+it they were able to specify taint analysis queries in shorter time. 

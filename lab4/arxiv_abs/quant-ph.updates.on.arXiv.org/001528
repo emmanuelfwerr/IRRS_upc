@@ -1,0 +1,20 @@
+The Gaussian noise stability of a function $f:\mathbb{R}^n \to \{-1, 1\}$ is the expected value
+of $f(\boldsymbol{x}) \cdot f(\boldsymbol{y})$ over $\rho$-correlated Gaussian random variables
+$\boldsymbol{x}$ and $\boldsymbol{y}$. Borell's inequality states that for $-1 \leq \rho \leq
+0$, this is minimized by the halfspace $f(x) = \mathrm{sign}(x_1)$. In this work, we generalize
+this result to hold for functions $f:\mathbb{R}^n \to S^{k-1}$ which output $k$-dimensional unit
+vectors. Our main result shows that the expected value of $\langle f(\boldsymbol{x}), f(\boldsymbol{y})\rangle$
+over $\rho$-correlated Gaussians $\boldsymbol{x}$ and $\boldsymbol{y}$ is minimized by the
+function $f(x) = x_{\leq k} / \Vert x_{\leq k} \Vert$, where $x_{\leq k} = (x_1, \ldots, x_k)$. As
+an application, we show several hardness of approximation results for Quantum Max-Cut, a special
+case of the local Hamiltonian problem related to the anti-ferromagnetic Heisenberg model. Quantum
+Max-Cut is a natural quantum analogue of classical Max-Cut and has become testbed for designing
+quantum approximation algorithms. We show the following: (1) The integrality gap of the basic SDP
+is $0.498$, matching an existing rounding algorithm. Combined with existing approximation results
+for Quantum Max-Cut, this shows that the basic SDP does not achieve the optimal approximation ratio.
+(2) It is Unique Games-hard (UG-hard) to compute a $(0.956+\varepsilon)$-approximation to the
+value of the best product state, matching an existing approximation algorithm. This result may
+be viewed as applying to a generalization of Max-Cut where one seeks to assign $3$-dimensional unit
+vectors to each vertex; we also give tight hardness results for the analogous $k$-dimensional generalization
+of Max-Cut. (3) It is UG-hard to compute a $(0.956+\varepsilon)$-approximation to the value of
+the best (possibly entangled) state. 

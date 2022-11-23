@@ -1,0 +1,19 @@
+Pricing financial derivatives, in particular European-style options at different time-maturities
+and strikes, means a relevant problem in finance. The dynamics describing the price of vanilla options
+when constant volatilities and interest rates are assumed, is governed by the Black-Scholes model,
+a linear parabolic partial differential equation with terminal value given by the pay-off of the
+option contract and no additional boundary conditions. Here, we present a digital quantum algorithm
+to solve Black-Scholes equation on a quantum computer by mapping it to the Schr\"odinger equation.
+The non-Hermitian nature of the resulting Hamiltonian is solved by embedding its propagator into
+an enlarged Hilbert space by using only one additional ancillary qubit. Moreover, due to the election
+of periodic boundary conditions, which are needed for an efficient diagonalization of the discretized
+momentum operator, we duplicate the initial condition, which substantially improves the stability
+and performance of the protocol. The algorithm shows a feasible approach for using Hamiltonian
+simulation techniques to solve the price dynamics of financial derivatives on a digital quantum
+computer. Our approach differs from those based on Monte Carlo integration, exclusively focused
+on sampling the solution assuming the dynamics is known. Assuming a bounded truncation error, our
+algorithm remarkably provides an exponential speedup with respect to classical numerical methods
+when simulating the dynamics, reducing the complexity from $\mathcal{O}(2^{n})$ to $\mathcal{O}(\text{poly}(n))$.
+We report expected accuracy levels comparable to classical numerical algorithms by using 10 qubits
+and 94 entangling gates to simulate its dynamics on a fault-tolerant quantum computer, and an expected
+success probability of the post-selection procedure due to the embedding protocol above 60%. 

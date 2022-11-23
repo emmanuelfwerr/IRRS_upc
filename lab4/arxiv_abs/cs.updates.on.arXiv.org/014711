@@ -1,0 +1,20 @@
+Dynamical systems models for controlling multi-agent swarms have demonstrated advances toward
+resilient, decentralized navigation algorithms. We previously introduced the NeuroSwarms controller,
+in which agent-based interactions were modeled by analogy to neuronal network interactions, including
+attractor dynamics and phase synchrony, that have been theorized to operate within hippocampal
+place-cell circuits in navigating rodents. This complexity precludes linear analyses of stability,
+controllability, and performance typically used to study conventional swarm models. Further,
+tuning dynamical controllers by hand or grid search is often inadequate due to the complexity of
+objectives, dimensionality of model parameters, and computational costs of simulation-based
+sampling. Here, we present a framework for tuning dynamical controller models of autonomous multi-agent
+systems based on Bayesian Optimization (BayesOpt). Our approach utilizes a task-dependent objective
+function to train Gaussian Processes (GPs) as surrogate models to achieve adaptive and efficient
+exploration of a dynamical controller model's parameter space. We demonstrate this approach by
+studying an objective function selecting for NeuroSwarms behaviors that cooperatively localize
+and capture spatially distributed rewards under time pressure. We generalized task performance
+across environments by combining scores for simulations in distinct geometries. To validate search
+performance, we compared high-dimensional clustering for high- vs. low-likelihood parameter
+points by visualizing sample trajectories in Uniform Manifold Approximation and Projection (UMAP)
+embeddings. Our findings show that adaptive, sample-efficient evaluation of the self-organizing
+behavioral capacities of complex systems, including dynamical swarm controllers, can accelerate
+the translation of neuroscientific theory to applied domains. 

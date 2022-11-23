@@ -1,0 +1,20 @@
+The approximate vanishing ideal of a set of points $X = \{\mathbf{x}_1, \ldots, \mathbf{x}_m\}\subseteq
+[0,1]^n$ is the set of polynomials that approximately evaluate to $0$ over all points $\mathbf{x}
+\in X$ and admits an efficient representation by a finite set of polynomials called generators.
+Algorithms that construct this set of generators are extensively studied but ultimately find little
+practical application because their computational complexities are thought to be superlinear
+in the number of samples $m$. In this paper, we focus on scaling up the Oracle Approximate Vanishing
+Ideal algorithm (OAVI), one of the most powerful of these methods. We prove that the computational
+complexity of OAVI is not superlinear but linear in the number of samples $m$ and polynomial in the
+number of features $n$, making OAVI an attractive preprocessing technique for large-scale machine
+learning. To further accelerate OAVI's training time, we propose two changes: First, as the name
+suggests, OAVI makes repeated oracle calls to convex solvers throughout its execution. By replacing
+the Pairwise Conditional Gradients algorithm, one of the standard solvers used in OAVI, with the
+faster Blended Pairwise Conditional Gradients algorithm, we illustrate how OAVI directly benefits
+from advancements in the study of convex solvers. Second, we propose Inverse Hessian Boosting (IHB):
+IHB exploits the fact that OAVI repeatedly solves quadratic convex optimization problems that
+differ only by very little and whose solutions can be written in closed form using inverse Hessian
+information. By efficiently updating the inverse of the Hessian matrix, the convex optimization
+problems can be solved almost instantly, accelerating OAVI's training time by up to multiple orders
+of magnitude. We complement our theoretical analysis with extensive numerical experiments on
+data sets whose sample numbers are in the millions. 

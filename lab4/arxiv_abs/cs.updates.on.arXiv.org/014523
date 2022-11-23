@@ -1,0 +1,19 @@
+Human shape estimation has become increasingly important both theoretically and practically,
+for instance, in 3D mesh estimation, distance garment production and computational forensics,
+to mention just a few examples. As a further specialization, \emph{Human Body Dimensions Estimation}
+(HBDE) focuses on estimating human body measurements like shoulder width or chest circumference
+from images or 3D meshes usually using supervised learning approaches. The main obstacle in this
+context is the data scarcity problem, as collecting this ground truth requires expensive and difficult
+procedures. This obstacle can be overcome by obtaining realistic human measurements from 3D human
+meshes. However, a) there are no well established methods to calculate HBDs from 3D meshes and b)
+there are no benchmarks to fairly compare results on the HBDE task. Our contribution is twofold.
+On the one hand, we present a method to calculate right and left arm length, shoulder width, and inseam
+(crotch height) from 3D meshes with focus on potential medical, virtual try-on and distance tailoring
+applications. On the other hand, we use four additional body dimensions calculated using recently
+published methods to assemble a set of eight body dimensions which we use as a supervision signal
+to our Neural Anthropometer: a convolutional neural network capable of estimating these dimensions.
+To assess the estimation, we train the Neural Anthropometer with synthetic images of 3D meshes,
+from which we calculated the HBDs and observed that the network's overall mean estimate error is
+$20.89$ mm (relative error of 2.84\%). The results we present are fully reproducible and establish
+a fair baseline for research on the task of HBDE, therefore enabling the community with a valuable
+method. 

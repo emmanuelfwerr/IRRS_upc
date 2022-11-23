@@ -1,0 +1,19 @@
+Few-shot learning (FSL) aims to address the data-scarce problem. A standard FSL framework is composed
+of two components: (1) Pre-train. Employ the base data to generate a CNN-based feature extraction
+model (FEM). (2) Meta-test. Apply the trained FEM to acquire the novel data's features and recognize
+them. FSL relies heavily on the design of the FEM. However, various FEMs have distinct emphases.
+For example, several may focus more attention on the contour information, whereas others may lay
+particular emphasis on the texture information. The single-head feature is only a one-sided representation
+of the sample. Besides the negative influence of cross-domain (e.g., the trained FEM can not adapt
+to the novel class flawlessly), the distribution of novel data may have a certain degree of deviation
+compared with the ground truth distribution, which is dubbed as distribution-shift-problem (DSP).
+To address the DSP, we propose Multi-Head Feature Collaboration (MHFC) algorithm, which attempts
+to project the multi-head features (e.g., multiple features extracted from a variety of FEMs) to
+a unified space and fuse them to capture more discriminative information. Typically, first, we
+introduce a subspace learning method to transform the multi-head features to aligned low-dimensional
+representations. It corrects the DSP via learning the feature with more powerful discrimination
+and overcomes the problem of inconsistent measurement scales from different head features. Then,
+we design an attention block to update combination weights for each head feature automatically.
+It comprehensively considers the contribution of various perspectives and further improves the
+discrimination of features. We evaluate the proposed method on five benchmark datasets (including
+cross-domain experiments) and achieve significant improvements of 2.1%-7.8% compared with state-of-the-arts.

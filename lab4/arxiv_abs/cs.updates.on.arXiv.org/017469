@@ -1,0 +1,20 @@
+To develop an automated workflow for rectal cancer three-dimensional conformal radiotherapy
+treatment planning that combines deep-learning(DL) aperture predictions and forward-planning
+algorithms. We designed an algorithm to automate the clinical workflow for planning with field-in-field.
+DL models were trained, validated, and tested on 555 patients to automatically generate aperture
+shapes for primary and boost fields. Network inputs were digitally reconstructed radiography,
+gross tumor volume(GTV), and nodal GTV. A physician scored each aperture for 20 patients on a 5-point
+scale(>3 acceptable). A planning algorithm was then developed to create a homogeneous dose using
+a combination of wedges and subfields. The algorithm iteratively identifies a hotspot volume,
+creates a subfield, and optimizes beam weight all without user intervention. The algorithm was
+tested on 20 patients using clinical apertures with different settings, and the resulting plans(4
+plans/patient) were scored by a physician. The end-to-end workflow was tested and scored by a physician
+on 39 patients using DL-generated apertures and planning algorithms. The predicted apertures
+had Dice scores of 0.95, 0.94, and 0.90 for posterior-anterior, laterals, and boost fields, respectively.
+100%, 95%, and 87.5% of the posterior-anterior, laterals, and boost apertures were scored as clinically
+acceptable, respectively. Wedged and non-wedged plans were clinically acceptable for 85% and
+50% of patients, respectively. The final plans hotspot dose percentage was reduced from 121%($\pm$
+14%) to 109%($\pm$ 5%) of prescription dose. The integrated end-to-end workflow of automatically
+generated apertures and optimized field-in-field planning gave clinically acceptable plans
+for 38/39(97%) of patients. We have successfully automated the clinical workflow for generating
+radiotherapy plans for rectal cancer for our institution. 

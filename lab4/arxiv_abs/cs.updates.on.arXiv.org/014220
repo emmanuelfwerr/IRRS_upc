@@ -1,0 +1,18 @@
+We show that the `optimal' use of the parallel composition theorem corresponds to finding the size
+of the largest subset of queries that `overlap' on the data domain, a quantity we call the \emph{maximum
+overlap} of the queries. It has previously been shown that a certain instance of this problem, formulated
+in terms of determining the sensitivity of the queries, is NP-hard, but also that it is possible to
+use graph-theoretic algorithms, such as finding the maximum clique, to approximate query sensitivity.
+In this paper, we consider a significant generalization of the aforementioned instance which encompasses
+both a wider range of differentially private mechanisms and a broader class of queries. We show that
+for a particular class of predicate queries, determining if they are disjoint can be done in time
+polynomial in the number of attributes. For this class, we show that the maximum overlap problem
+remains NP-hard as a function of the number of queries. However, we show that efficient approximate
+solutions exist by relating maximum overlap to the clique and chromatic numbers of a certain graph
+determined by the queries. The link to chromatic number allows us to use more efficient approximate
+algorithms, which cannot be done for the clique number as it may underestimate the privacy budget.
+Our approach is defined in the general setting of $f$-differential privacy, which subsumes standard
+pure differential privacy and Gaussian differential privacy. We prove the parallel composition
+theorem for $f$-differential privacy. We evaluate our approach on synthetic and real-world data
+sets of queries. We show that the approach can scale to large domain sizes (up to $10^{20000}$), and
+that its application can reduce the noise added to query answers by up to 60\%. 

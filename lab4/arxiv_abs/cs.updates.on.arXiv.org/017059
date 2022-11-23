@@ -1,0 +1,20 @@
+We propose and analyze a new dynamical system with \textit{a closed-loop control law} in a Hilbert
+space $\mathcal{H}$, aiming to shed light on the acceleration phenomenon for \textit{monotone
+inclusion} problems, which unifies a broad class of optimization, saddle point and variational
+inequality (VI) problems under a single framework. Given an operator $A: \mathcal{H} \rightrightarrows
+\mathcal{H}$ that is maximal monotone, we study a closed-loop control system that is governed by
+the operator $I - (I + \lambda(t)A)^{-1}$ where $\lambda(\cdot)$ is tuned by the resolution of the
+algebraic equation $\lambda(t)\|(I + \lambda(t)A)^{-1}x(t) - x(t)\|^{p-1} = \theta$ for some
+$\theta > 0$. Our first contribution is to prove the existence and uniqueness of a global solution
+via the Cauchy-Lipschitz theorem. We present a Lyapunov function that allows for establishing
+the weak convergence of trajectories and strong convergence results under additional conditions.
+We establish a global ergodic rate of $O(t^{-(p+1)/2})$ in terms of a gap function and a global pointwise
+rate of $O(t^{-p/2})$ in terms of a residue function. Local linear convergence is established in
+terms of a distance function under an error bound condition. Further, we provide an algorithmic
+framework based on implicit discretization of our system in a Euclidean setting, generalizing
+the large-step HPE framework of~\citet{Monteiro-2012-Iteration}. While the discrete-time
+analysis is a simplification and generalization of the previous analysis for bounded domain, it
+is motivated by the aforementioned continuous-time analysis, illustrating the fundamental role
+that the closed-loop control plays in acceleration in monotone inclusion. A highlight of our analysis
+is set of new results concerning $p$-th order tensor algorithms for monotone inclusion problems,
+which complement the recent analysis for saddle point and VI problems. 

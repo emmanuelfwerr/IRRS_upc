@@ -1,0 +1,19 @@
+Let $N$ be a positive integer. A sequence $X=(x_1,x_2,\ldots,x_N)$ of points in the unit interval
+$[0,1)$ is piercing if $\{x_1,x_2,\ldots,x_n\}\cap \left[\frac{i}{n},\frac{i+1}{n} \right)
+\neq\emptyset$ holds for every $n=1,2,\ldots, N$ and every $i=0,1,\ldots,n-1$. In 1958 Steinhaus
+asked whether piercing sequences can be arbitrarily long. A negative answer was provided by Schinzel,
+who proved that any such sequence may have at most $74$ elements. This was later improved to the best
+possible value of $17$ by Warmus, and independently by Berlekamp and Graham. In this paper we study
+a more general variant of piercing sequences. Let $f(n)\geq n$ be an infinite nondecreasing sequence
+of positive integers. A sequence $X=(x_1,x_2,\ldots,x_{f(N)})$ is $f$-piercing if $\{x_1,x_2,\ldots,x_{f(n)}\}\cap
+\left[\frac{i}{n},\frac{i+1}{n} \right) \neq\emptyset$ holds for every $n=1,2,\ldots, N$
+and every $i=0,1,\ldots,n-1$. A special case of $f(n)=n+d$, with $d$ a fixed nonnegative integer,
+was studied by Berlekamp and Graham. They noticed that for each $d\geq 0$, the maximum length of any
+$(n+d)$-piercing sequence is finite. Expressing this maximum length as $s(d)+d$, they obtained
+an exponential upper bound on the function $s(d)$, which was later improved to $s(d)=O(d^3)$ by
+Graham and Levy. Recently, Konyagin proved that $2d\leqslant s(d)< 200d$ holds for all sufficiently
+big $d$. Using a different technique based on the Farey fractions and stick-breaking games, we prove
+here that the function $s(d)$ satisfies $\left\lfloor{}c_1d\right\rfloor{}\leqslant s(d)\leqslant
+c_2d+o(d)$, where $c_1=\frac{\ln 2}{1-\ln 2}\approx2.25$ and $c_2=\frac{1+\ln2}{1-\ln2}\approx5.52$.
+We also prove that there exists an infinite $f$-piercing sequence with $f(n)= \gamma n+o(n)$ if
+and only if $\gamma\geq\frac{1}{\ln 2}\approx 1.44$. 

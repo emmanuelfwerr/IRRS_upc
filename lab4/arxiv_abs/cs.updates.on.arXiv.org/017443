@@ -1,0 +1,19 @@
+Analyzing medical data to find abnormalities is a time-consuming and costly task, particularly
+for rare abnormalities, requiring tremendous efforts from medical experts. Artificial intelligence
+has become a popular tool for the automatic processing of medical data, acting as a supportive tool
+for doctors. However, the machine learning models used to build these tools are highly dependent
+on the data used to train them. Large amounts of data can be difficult to obtain in medicine due to privacy,
+expensive and time-consuming annotations, and a general lack of data samples for infrequent lesions.
+Here, we present a novel synthetic data generation pipeline, called SinGAN-Seg, to produce synthetic
+medical images with corresponding masks using a single training image. Our method is different
+from the traditional GANs because our model needs only a single image and the corresponding ground
+truth to train. Our method produces alternative artificial segmentation datasets with ground
+truth masks when real datasets are not allowed to share. The pipeline is evaluated using qualitative
+and quantitative comparisons between real and synthetic data to show that the style transfer technique
+used in our pipeline significantly improves the quality of the generated data and our method is better
+than other state-of-the-art GANs to prepare synthetic images when the size of training datasets
+are limited. By training UNet++ using both real and the synthetic data generated from the SinGAN-Seg
+pipeline, we show that models trained with synthetic data have very close performances to those
+trained on real data when the datasets have a considerable amount of data. In contrast, Synthetic
+data generated from the SinGAN-Seg pipeline can improve the performance of segmentation models
+when training datasets do not have a considerable amount of data. The code is available on GitHub.

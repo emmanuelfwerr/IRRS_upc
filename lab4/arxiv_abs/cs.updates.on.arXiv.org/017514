@@ -1,0 +1,19 @@
+Convolutional Neural Networks (CNNs) are one of the most studied family of deep learning models
+for signal classification, including modulation, technology, detection, and identification.
+In this work, we focus on technology classification based on raw I/Q samples collected from multiple
+synchronized receivers. As an example use case, we study protocol identification of Wi-Fi, LTE-LAA,
+and 5G NR-U technologies that coexist over the 5 GHz Unlicensed National Information Infrastructure
+(U-NII) bands. Designing and training accurate CNN classifiers involve significant time and effort
+that goes into fine-tuning a model's architectural settings and determining the appropriate hyperparameter
+configurations, such as learning rate and batch size. We tackle the former by defining architectural
+settings themselves as hyperparameters. We attempt to automatically optimize these architectural
+parameters, along with other preprocessing (e.g., number of I/Q samples within each classifier
+input) and learning hyperparameters, by forming a Hyperparameter Optimization (HyperOpt) problem,
+which we solve in a near-optimal fashion using the Hyperband algorithm. The resulting near-optimal
+CNN (OCNN) classifier is then used to study classification accuracy for OTA as well as simulations
+datasets, considering various SNR values. We show that the number of receivers to construct multi-channel
+inputs for CNNs should be defined as a preprocessing hyperparameter to be optimized via Hyperband.
+OTA results reveal that our OCNN classifiers improve classification accuracy by 24.58% compared
+to manually tuned CNNs. We also study the effect of min-max normalization of I/Q samples within each
+classifier's input on generalization accuracy over simulated datasets with SNRs other than training
+set's SNR and show an average of 108.05% improvement when I/Q samples are normalized. 

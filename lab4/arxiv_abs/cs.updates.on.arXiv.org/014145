@@ -1,0 +1,19 @@
+We prove two results that shed new light on the monotone complexity of the spanning tree polynomial,
+a classic polynomial in algebraic complexity and beyond. First, we show that the spanning tree polynomials
+having $n$ variables and defined over constant-degree expander graphs, have monotone arithmetic
+complexity $2^{\Omega(n)}$. This yields the first strongly exponential lower bound on the monotone
+arithmetic circuit complexity for a polynomial in VP. Before this result, strongly exponential
+size monotone lower bounds were known only for explicit polynomials in VNP (Gashkov-Sergeev'12,
+Raz-Yehudayoff'11, Srinivasan'20, Cavalar-Kumar-Rossman'20, Hrubes-Yehudayoff'21). Recently,
+Hrubes'20 initiated a program to prove lower bounds against general arithmetic circuits by proving
+$\epsilon$-sensitive lower bounds for monotone arithmetic circuits for a specific range of values
+for $\epsilon \in (0,1)$. We consider the spanning tree polynomial $ST_{n}$ defined over the complete
+graph on $n$ vertices and show that the polynomials $F_{n-1,n} - \epsilon \cdot ST_{n}$ and $F_{n-1,n}
++ \epsilon \cdot ST_{n}$ defined over $n^2$ variables, have monotone circuit complexity $2^{\Omega(n)}$
+if $\epsilon \geq 2^{-\Omega(n)}$ and $F_{n-1,n} = \prod_{i=2}^n (x_{i,1} +\cdots + x_{i,n})$
+is the complete set-multilinear polynomial. This provides the first $\epsilon$-sensitive exponential
+lower bound for a family of polynomials inside VP. En-route, we consider a problem in 2-party, best
+partition communication complexity of deciding whether two sets of oriented edges distributed
+among Alice and Bob form a spanning tree or not. We prove that there exists a fixed distribution, under
+which the problem has low discrepancy with respect to every nearly-balanced partition. This result
+could be of interest beyond algebraic complexity. 

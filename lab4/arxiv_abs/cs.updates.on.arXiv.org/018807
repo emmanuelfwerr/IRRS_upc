@@ -1,0 +1,19 @@
+Deploying deep convolutional neural network (CNN) models on ubiquitous Internet of Things (IoT)
+devices has attracted much attention from industry and academia since it greatly facilitates our
+lives by providing various rapid-response services. Due to the limited resources of IoT devices,
+cloud-assisted training of CNN models has become the mainstream. However, most existing related
+works suffer from a large amount of model parameter transmission and weak model robustness. To this
+end, this paper proposes a cloud-assisted CNN training framework with low model parameter transmission
+and strong model robustness. In the proposed framework, we first introduce MonoCNN, which contains
+only a few learnable filters, and other filters are nonlearnable. These nonlearnable filter parameters
+are generated according to certain rules, i.e., the filter generation function (FGF), and can be
+saved and reproduced by a few random seeds. Thus, the cloud server only needs to send these learnable
+filters and a few seeds to the IoT device. Compared to transmitting all model parameters, sending
+several learnable filter parameters and seeds can significantly reduce parameter transmission.
+Then, we investigate multiple FGFs and enable the IoT device to use the FGF to generate multiple filters
+and combine them into MonoCNN. Thus, MonoCNN is affected not only by the training data but also by
+the FGF. The rules of the FGF play a role in regularizing the MonoCNN, thereby improving its robustness.
+Experimental results show that compared to state-of-the-art methods, our proposed framework
+can reduce a large amount of model parameter transfer between the cloud server and the IoT device
+while improving the performance by approximately 2.2% when dealing with corrupted data. The code
+is available at https://github.com/evoxlos/mono-cnn-pytorch. 

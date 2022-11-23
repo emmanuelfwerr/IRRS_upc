@@ -1,0 +1,18 @@
+Knowing "what is happening" and "what will happen" of the mobility in a city is the building block
+of a data-driven smart city system. In recent years, mobility digital twin that makes a virtual replication
+of human mobility and predicting or simulating the fine-grained movements of the subjects in a virtual
+space at a metropolitan scale in near real-time has shown its great potential in modern urban intelligent
+systems. However, few studies have provided practical solutions. The main difficulties are four-folds.
+1) The daily variation of human mobility is hard to model and predict; 2) the transportation network
+enforces a complex constraints on human mobility; 3) generating a rational fine-grained human
+trajectory is challenging for existing machine learning models; and 4) making a fine-grained prediction
+incurs high computational costs, which is challenging for an online system. Bearing these difficulties
+in mind, in this paper we propose a two-stage human mobility predictor that stratifies the coarse
+and fine-grained level predictions. In the first stage, to encode the daily variation of human mobility
+at a metropolitan level, we automatically extract citywide mobility trends as crowd contexts and
+predict long-term and long-distance movements at a coarse level. In the second stage, the coarse
+predictions are resolved to a fine-grained level via a probabilistic trajectory retrieval method,
+which offloads most of the heavy computations to the offline phase. We tested our method using a real-world
+mobile phone GPS dataset in the Kanto area in Japan, and achieved good prediction accuracy and a time
+efficiency of about 2 min in predicting future 1h movements of about 220K mobile phone users on a single
+machine to support more higher-level analysis of mobility prediction. 

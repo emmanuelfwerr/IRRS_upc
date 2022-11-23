@@ -1,0 +1,20 @@
+We consider the implementation of two-qubit gates when the physical systems used to realize the
+qubits possess additional quantum states in the accessible energy range. We use optimal control
+theory to determine the maximum achievable gate speed for two-qubit gates in the qubit subspace
+of the many-level Hilbert space, and we analyze the effect of the additional quantum states on the
+gate speed. We identify two competing mechanisms. On one hand, higher energy levels are generally
+more strongly coupled to each other. Under suitable conditions, this stronger coupling can be utilized
+to make two-qubit gates significantly faster than the reference value based on simple qubits. On
+the other hand, a weak anharmonicity constrains the speed at which the system can be adequately controlled:
+according to the intuitive picture, faster operations require stronger control fields, which
+are more likely to excite higher levels in a weakly anharmonic system, which in turn leads to faster
+decoherence and uncontrolled leakage outside the qubit space. In order to account for this constraint,
+we modify the pulse optimization algorithm to avoid pulses that lead to appreciable population
+of the higher levels. In this case we find that the presence of the higher levels can lead to a significant
+reduction in the maximum achievable gate speed. We also compare the optimal-control gate speeds
+with those obtained using the cross-resonance/selective-darkening gate protocol. We find that
+the latter, with some parameter optimization, can be used to achieve a relatively fast implementation
+of the CNOT gate. These results can help the search for optimized gate implementations in realistic
+quantum computing architectures, such as those based on superconducting circuits. They also provide
+guidelines for desirable conditions on anharmonicity that allow optimal utilization of the higher
+levels to achieve fast quantum gates. 

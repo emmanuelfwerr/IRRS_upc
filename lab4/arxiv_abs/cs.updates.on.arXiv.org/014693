@@ -1,0 +1,18 @@
+Item-based collaborative filtering (ICF) enjoys the advantages of high recommendation accuracy
+and ease in online penalization and thus is favored by the industrial recommender systems. ICF recommends
+items to a target user based on their similarities to the previously interacted items of the user.
+Great progresses have been achieved for ICF in recent years by applying advanced machine learning
+techniques (e.g., deep neural networks) to learn the item similarity from data. The early methods
+simply treat all the historical items equally and recently proposed methods attempt to distinguish
+the different importance of historical items when recommending a target item. Despite the progress,
+we argue that those ICF models neglect the diverse intents of users on adopting items (e.g., watching
+a movie because of the director, leading actors, or the visual effects). As a result, they fail to
+estimate the item similarity on a finer-grained level to predict the user's preference to an item,
+resulting in sub-optimal recommendation. In this work, we propose a general feature-level attention
+method for ICF models. The key of our method is to distinguish the importance of different factors
+when computing the item similarity for a prediction. To demonstrate the effectiveness of our method,
+we design a light attention neural network to integrate both item-level and feature-level attention
+for neural ICF models. It is model-agnostic and easy-to-implement. We apply it to two baseline ICF
+models and evaluate its effectiveness on six public datasets. Extensive experiments show the feature-level
+attention enhanced models consistently outperform their counterparts, demonstrating the potential
+of differentiating user intents on the feature-level for ICF recommendation models. 

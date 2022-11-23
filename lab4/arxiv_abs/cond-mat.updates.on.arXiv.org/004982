@@ -1,0 +1,19 @@
+Discovering new materials is a long-standing challenging task that is crucial to the progress of
+human society. Conventional approaches based on trial-and-error experiments and computational
+simulations are labor-intensive or costly with success heavily depending on experts' heuristic
+knowledge. Recently, deep generative models have been proposed for generative design of materials
+by learning implicit knowledge from known materials datasets. However, these models are either
+applicable to a specific material system or the performance is low due to their failure to incorporate
+physical rules into their model training process. Here, we propose a deep learning based Physics
+Guided Crystal Generative Model (PGCGM) for efficient generative materials design with high structural
+diversity (up to 20 different space groups). The high performance of our model manifests its capability
+to capture and exploit the symmetric constraints of crystals and the pairwise atomic distance constraints
+among neighbor atoms. Using data augmentation and spatial atom clustering and merging, our PGCGM
+model increases the overall generation validity performance by more than 700\% compared to FTCP,
+one of the state-of-the-art structure generators and by more than 45\% compared to our previous
+CubicGAN model. The newly generated crystal materials also show higher quality in terms of atomic
+spatial distribution and composition diversity. We further validated the new crystal structures
+by Density Functional Theory (DFT) calculations. 1,869 materials out of 2,000 were successfully
+optimized, of which 39.6\% have negative formation energy and 5.3\% have energy-above-hull less
+than 0.25 eV/atom, indicating their thermodynamic stability and potential synthesizability.
+The 1,869 crystal structures have been deposited to the Carolina Materials Database \url{www.carolinamatdb.org}.

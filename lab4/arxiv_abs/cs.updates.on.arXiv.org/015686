@@ -1,0 +1,19 @@
+The difficulties in both data acquisition and annotation substantially restrict the sample sizes
+of training datasets for 3D medical imaging applications. As a result, constructing high-performance
+3D convolutional neural networks from scratch remains a difficult task in the absence of a sufficient
+pre-training parameter. Previous efforts on 3D pre-training have frequently relied on self-supervised
+approaches, which use either predictive or contrastive learning on unlabeled data to build invariant
+3D representations. However, because of the unavailability of large-scale supervision information,
+obtaining semantically invariant and discriminative representations from these learning frameworks
+remains problematic. In this paper, we revisit an innovative yet simple fully-supervised 3D network
+pre-training framework to take advantage of semantic supervisions from large-scale 2D natural
+image datasets. With a redesigned 3D network architecture, reformulated natural images are used
+to address the problem of data scarcity and develop powerful 3D representations. Comprehensive
+experiments on four benchmark datasets demonstrate that the proposed pre-trained models can effectively
+accelerate convergence while also improving accuracy for a variety of 3D medical imaging tasks
+such as classification, segmentation and detection. In addition, as compared to training from
+scratch, it can save up to 60% of annotation efforts. On the NIH DeepLesion dataset, it likewise achieves
+state-of-the-art detection performance, outperforming earlier self-supervised and fully-supervised
+pre-training approaches, as well as methods that do training from scratch. To facilitate further
+development of 3D medical models, our code and pre-trained model weights are publicly available
+at https://github.com/urmagicsmine/CSPR. 

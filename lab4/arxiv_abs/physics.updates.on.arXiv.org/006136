@@ -1,0 +1,20 @@
+Most research aimed at measuring biomarkers on the skin is only concerned with sensing chemicals
+in sweat using electrical signals, but these methods are not truly non-invasive nor non-intrusive
+because they require substantial amounts of sweat to get a reading. This project aims to create a
+truly non-invasive wearable sensor that continuously detects the gaseous acetone (a biomarker
+related to metabolic disorders) that ambiently comes out of the skin. Composite films of polyaniline
+and cellulose acetate, exhibiting chemo-mechanical actuation upon exposure to gaseous acetone,
+were tested in the headspaces above multiple solutions containing acetone, ethanol, and water
+to gauge response sensitivity, selectivity, and repeatability. The bending of the films in response
+to exposures to these environments was tracked by an automatic video processing code, which was
+found to out-perform an off-the-shelf deep neural network-based tracker. Using principal component
+analysis, we showed that the film bending is low dimensional with over 90% of the shape changes being
+captured with just two parameters. We constructed forward models to predict shape changes from
+the known exposure history and found that a linear model can explain 40% of the observed variance
+in film tip angle changes. We constructed inverse models, going from third order fits of shape changes
+to acetone concentrations where about 45% of the acetone variation and about 30% of ethanol variation
+are captured by linear models, and non-linear models did not perform substantially better. This
+suggests there is sufficient sensitivity and inherent selectivity of the films. These models,
+however, provide evidence for substantial hysteretic or long-time-scale responses of the PANI
+films, seemingly due to the presence of water. Further experiments will allow more accurate discrimination
+of unknown exposure environments. 

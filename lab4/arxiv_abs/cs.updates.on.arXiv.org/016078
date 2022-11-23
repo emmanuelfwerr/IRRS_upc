@@ -1,0 +1,20 @@
+We exhibit a randomized algorithm which given a matrix $A\in \mathbb{C}^{n\times n}$ with $\|A\|\le
+1$ and $\delta>0$, computes with high probability an invertible $V$ and diagonal $D$ such that $\|A-VDV^{-1}\|\le
+\delta$ using $O(T_{MM}(n)\log^2(n/\delta))$ arithmetic operations, in finite arithmetic
+with $O(\log^4(n/\delta)\log n)$ bits of precision. Here $T_{MM}(n)$ is the number of arithmetic
+operations required to multiply two $n\times n$ complex matrices numerically stably, known to
+satisfy $T_{MM}(n)=O(n^{\omega+\eta})$ for every $\eta>0$ where $\omega$ is the exponent of
+matrix multiplication (Demmel et al., Numer. Math., 2007). Our result significantly improves
+the previously best known provable running times of $O(n^{10}/\delta^2)$ arithmetic operations
+for diagonalization of general matrices (Armentano et al., J. Eur. Math. Soc., 2018), and (with
+regards to the dependence on $n$) $O(n^3)$ arithmetic operations for Hermitian matrices (Dekker
+and Traub, Lin. Alg. Appl., 1971). It is the first algorithm to achieve nearly matrix multiplication
+time for diagonalization in any model of computation (real arithmetic, rational arithmetic, or
+finite arithmetic), thereby matching the complexity of other dense linear algebra operations
+such as inversion and $QR$ factorization up to polylogarithmic factors. The proof rests on two new
+ingredients. (1) We show that adding a small complex Gaussian perturbation to any matrix splits
+its pseudospectrum into $n$ small well-separated components. In particular, this implies that
+the eigenvalues of the perturbed matrix have a large minimum gap, a property of independent interest
+in random matrix theory. (2) We give a rigorous analysis of Roberts' Newton iteration method (Roberts,
+Int. J. Control, 1980) for computing the sign function of a matrix in finite arithmetic, itself an
+open problem in numerical analysis since at least 1986. 

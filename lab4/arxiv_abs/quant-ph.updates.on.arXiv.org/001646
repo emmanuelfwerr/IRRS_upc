@@ -1,0 +1,20 @@
+Molecular vibronic spectra is an essential property of molecules, which is an important tool to
+analyze chemical components and study molecular structures. Computing molecular vibronic spectra
+has been a challenging task, and its best-known classical algorithm scales combinatorially in
+the system size. Recently, a quantum simulator, specifically Gaussian boson sampling, has been
+proposed to generate the spectra efficiently. Thus, molecular vibronic spectra is a candidate
+of tasks for which a quantum device provides a computational advantage. In this work, we propose
+a quantum-inspired classical algorithm for molecular vibronic spectra. We find an exact solution
+of the Fourier components of molecular vibronic spectra at zero temperature using the positive
+$P$-representation method. Thus, we can obtain the molecular vibronic spectra exactly by the inverse
+Fourier transformation for the solution for a given resolution. We also show that the same method
+applies to a finite temperature case. Therefore, computing molecular vibronic spectra, which
+can be mapped to a Gaussian boson sampling, does not require a quantum device. We then generalize
+the method beyond the Gaussian framework and find that the Fourier components are written as a loop
+hafnian, the exact computation of which is known to be \#P-hard. It presents an interesting theoretical
+separation between non-Gaussian boson sampling and Gaussian boson sampling. Meanwhile, since
+running an actual boson sampling circuit would incur an $1/\text{poly}(N)$ additive error for
+$N$ samples, we also study the possibility of achieving the same accuracy using a classical algorithm.
+Interestingly, when there is no squeezing in the process, one may use Gurvits's algorithm to compute
+the Fourier components within an additive error. We finally provide possible approaches to approximate
+the Fourier components and discuss their limitations. 

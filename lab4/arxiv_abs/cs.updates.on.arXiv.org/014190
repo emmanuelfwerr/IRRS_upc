@@ -1,0 +1,19 @@
+Associative memories in the brain receive and store patterns of activity registered by the sensory
+neurons, and are able to retrieve them when necessary. Due to their importance in human intelligence,
+computational models of associative memories have been developed for several decades now. They
+include autoassociative memories, which allow for storing data points and retrieving a stored
+data point $s$ when provided with a noisy or partial variant of $s$, and heteroassociative memories,
+able to store and recall multi-modal data. In this paper, we present a novel neural model for realizing
+associative memories, based on a hierarchical generative network that receives external stimuli
+via sensory neurons. This model is trained using predictive coding, an error-based learning algorithm
+inspired by information processing in the cortex. To test the capabilities of this model, we perform
+multiple retrieval experiments from both corrupted and incomplete data points. In an extensive
+comparison, we show that this new model outperforms in retrieval accuracy and robustness popular
+associative memory models, such as autoencoders trained via backpropagation, and modern Hopfield
+networks. In particular, in completing partial data points, our model achieves remarkable results
+on natural image datasets, such as ImageNet, with a surprisingly high accuracy, even when only a
+tiny fraction of pixels of the original images is presented. Furthermore, we show that this method
+is able to handle multi-modal data, retrieving images from descriptions, and vice versa. We conclude
+by discussing the possible impact of this work in the neuroscience community, by showing that our
+model provides a plausible framework to study learning and retrieval of memories in the brain, as
+it closely mimics the behavior of the hippocampus as a memory index and generative model. 

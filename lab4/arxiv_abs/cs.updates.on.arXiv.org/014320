@@ -1,0 +1,20 @@
+State-of-the-art techniques for addressing scaling-related main memory errors identify and
+repair bits that are at risk of error from within the memory controller. Unfortunately, modern main
+memory chips internally use on-die error correcting codes (on-die ECC) that obfuscate the memory
+controller's view of errors, complicating the process of identifying at-risk bits (i.e., error
+profiling). To understand the problems that on-die ECC causes for error profiling, we analytically
+study how on-die ECC changes the way that memory errors appear outside of the memory chip (e.g., to
+the memory controller). We show that on-die ECC introduces statistical dependence between errors
+in different bit positions, raising three key challenges for practical and effective error profiling.
+To address the three challenges, we introduce Hybrid Active-Reactive Profiling (HARP), a new error
+profiling algorithm that rapidly achieves full coverage of at-risk bits in memory chips that use
+on-die ECC. HARP separates error profiling into two phases: (1) using existing profiling techniques
+with the help of small modifications to the on-die ECC mechanism to quickly identify a subset of at-risk
+bits; and (2) using a secondary ECC within the memory controller to safely identify the remaining
+at-risk bits, if and when they fail. Our evaluations show that HARP achieves full coverage of all
+at-risk bits faster (e.g., 99th-percentile coverage 20.6%/36.4%/52.9%/62.1% faster, on average,
+given 2/3/4/5 raw bit errors per ECC word) than two state-of-the-art baseline error profiling algorithms,
+which sometimes fail to achieve full coverage. We perform a case study of how each profiler impacts
+the system's overall bit error rate (BER) when using a repair mechanism to tolerate DRAM data-retention
+errors. We show that HARP outperforms the best baseline algorithm (e.g., by 3.7x for a raw per-bit
+error probability of 0.75). 

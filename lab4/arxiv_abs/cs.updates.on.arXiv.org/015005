@@ -1,0 +1,19 @@
+Cryo-Electron Tomography (cryo-ET) is a 3D imaging technology that enables the visualization
+of subcellular structures in situ at near-atomic resolution. Cellular cryo-ET images help in resolving
+the structures of macromolecules and determining their spatial relationship in a single cell,
+which has broad significance in cell and structural biology. Subtomogram classification and recognition
+constitute a primary step in the systematic recovery of these macromolecular structures. Supervised
+deep learning methods have been proven to be highly accurate and efficient for subtomogram classification,
+but suffer from limited applicability due to scarcity of annotated data. While generating simulated
+data for training supervised models is a potential solution, a sizeable difference in the image
+intensity distribution in generated data as compared to real experimental data will cause the trained
+models to perform poorly in predicting classes on real subtomograms. In this work, we present Cryo-Shift,
+a fully unsupervised domain adaptation and randomization framework for deep learning-based cross-domain
+subtomogram classification. We use unsupervised multi-adversarial domain adaption to reduce
+the domain shift between features of simulated and experimental data. We develop a network-driven
+domain randomization procedure with `warp' modules to alter the simulated data and help the classifier
+generalize better on experimental data. We do not use any labeled experimental data to train our
+model, whereas some of the existing alternative approaches require labeled experimental samples
+for cross-domain classification. Nevertheless, Cryo-Shift outperforms the existing alternative
+approaches in cross-domain subtomogram classification in extensive evaluation studies demonstrated
+herein using both simulated and experimental data. 

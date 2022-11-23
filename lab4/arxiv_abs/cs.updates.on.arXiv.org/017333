@@ -1,0 +1,20 @@
+Automatic and accurate lesion segmentation is critical for clinically estimating the lesion statuses
+of stroke diseases and developing appropriate diagnostic systems. Although existing methods
+have achieved remarkable results, further adoption of the models is hindered by: (1) inter-class
+indistinction, the normal brain tissue resembles the lesion in appearance. (2) intra-class inconsistency,
+large variability exists between different areas of the lesion. To solve these challenges in stroke
+segmentation, we propose a novel method, namely Attention Guided Multiscale Recovery framework
+(AGMR-Net) in this paper. Firstly, a coarse-grained patch attention module in the encoding is adopted
+to get a patch-based coarse-grained attention map in a multi-stage explicitly supervised way,
+enabling target spatial context saliency representation with a patch-based weighting technique
+that eliminates the effect of intra-class inconsistency. Secondly, to obtain a more detailed boundary
+partitioning to solve the challenge of the inter-class indistinction, a newly designed cross-dimensional
+feature fusion module is used to capture global contextual information to further guide the selective
+aggregation of 2D and 3D features, which can compensate for the lack of boundary learning capability
+of 2D convolution. Lastly, in the decoding stage, an innovative designed multi-scale deconvolution
+upsampling instead of linear interpolation enhances the recovery of target space and boundary
+information. The AGMR-Net is evaluated on the open dataset Anatomical Tracings of Lesions-After-Stroke
+(ATLAS), achieving the highest dice similarity coefficient (DSC) score of 0.594, Hausdorff distance
+of 27.005 mm, and average symmetry surface distance of 7.137 mm, which demonstrate that our proposed
+method outperforms other state-of-the-art methods and has great potential in the diagnosis of
+stroke. 

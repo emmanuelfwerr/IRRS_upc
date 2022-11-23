@@ -1,0 +1,20 @@
+Dose volume histogram (DVH) metrics are widely accepted evaluation criteria in the clinic. However,
+incorporating these metrics into deep learning dose prediction models is challenging due to their
+non-convexity and non-differentiability. We propose a novel moment-based loss function for predicting
+3D dose distribution for the challenging conventional lung intensity modulated radiation therapy
+(IMRT) plans. The moment-based loss function is convex and differentiable and can easily incorporate
+DVH metrics in any deep learning framework without computational overhead. The moments can also
+be customized to reflect the clinical priorities in 3D dose prediction. For instance, using high-order
+moments allows better prediction in high-dose areas for serial structures. We used a large dataset
+of 360 (240 for training, 50 for validation and 70 for testing) conventional lung patients with 2Gy
+$\times$ 30 fractions to train the deep learning (DL) model using clinically treated plans at our
+institution. We trained a UNet like CNN architecture using computed tomography (CT), planning
+target volume (PTV) and organ-at-risk contours (OAR) as input to infer corresponding voxel-wise
+3D dose distribution. We evaluated three different loss functions: (1) The popular Mean Absolute
+Error (MAE) Loss, (2) the recently developed MAE + DVH Loss, and (3) the proposed MAE + Moments Loss.
+The quality of the predictions was compared using different DVH metrics as well as dose-score and
+DVH-score, recently introduced by the AAPM knowledge-based planning grand challenge. Model with
+(MAE + Moment) loss function outperformed the model with MAE loss by significantly improving the
+DVH-score (11%, p$<$0.01) while having similar computational cost. It also outperformed the model
+trained with (MAE+DVH) by significantly improving the computational cost (48%) and the DVH-score
+(8%, p$<$0.01). 

@@ -1,0 +1,19 @@
+Statistical model checking is a class of sequential algorithms that can verify specifications
+of interest on an ensemble of cyber-physical systems (e.g., whether 99% of cars from a batch meet
+a requirement on their energy efficiency). These algorithms infer the probability that given specifications
+are satisfied by the systems with provable statistical guarantees by drawing sufficient numbers
+of independent and identically distributed samples. During the process of statistical model checking,
+the values of the samples (e.g., a user's car energy efficiency) may be inferred by intruders, causing
+privacy concerns in consumer-level applications (e.g., automobiles and medical devices). This
+paper addresses the privacy of statistical model checking algorithms from the point of view of differential
+privacy. These algorithms are sequential, drawing samples until a condition on their values is
+met. We show that revealing the number of the samples drawn can violate privacy. We also show that
+the standard exponential mechanism that randomizes the output of an algorithm to achieve differential
+privacy fails to do so in the context of sequential algorithms. Instead, we relax the conservative
+requirement in differential privacy that the sensitivity of the output of the algorithm should
+be bounded to any perturbation for any data set. We propose a new notion of differential privacy which
+we call expected differential privacy. Then, we propose a novel expected sensitivity analysis
+for the sequential algorithm and proposed a corresponding exponential mechanism that randomizes
+the termination time to achieve the expected differential privacy. We apply the proposed mechanism
+to statistical model checking algorithms to preserve the privacy of the samples they draw. The utility
+of the proposed algorithm is demonstrated in a case study. 

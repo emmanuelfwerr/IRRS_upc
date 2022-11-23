@@ -1,0 +1,20 @@
+We study the problem of multiple agents learning concurrently in a multi-objective environment.
+Specifically, we consider two agents that repeatedly play a multi-objective normal-form game.
+In such games, the payoffs resulting from joint actions are vector valued. Taking a utility-based
+approach, we assume a utility function exists that maps vectors to scalar utilities and consider
+agents that aim to maximise the utility of expected payoff vectors. As agents do not necessarily
+know their opponent's utility function or strategy, they must learn optimal policies to interact
+with each other. To aid agents in arriving at adequate solutions, we introduce four novel preference
+communication protocols for both cooperative as well as self-interested communication. Each
+approach describes a specific protocol for one agent communicating preferences over their actions
+and how another agent responds. These protocols are subsequently evaluated on a set of five benchmark
+games against baseline agents that do not communicate. We find that preference communication can
+drastically alter the learning process and lead to the emergence of cyclic Nash equilibria which
+had not been previously observed in this setting. Additionally, we introduce a communication scheme
+where agents must learn when to communicate. For agents in games with Nash equilibria, we find that
+communication can be beneficial but difficult to learn when agents have different preferred equilibria.
+When this is not the case, agents become indifferent to communication. In games without Nash equilibria,
+our results show differences across learning rates. When using faster learners, we observe that
+explicit communication becomes more prevalent at around 50% of the time, as it helps them in learning
+a compromise joint policy. Slower learners retain this pattern to a lesser degree, but show increased
+indifference. 

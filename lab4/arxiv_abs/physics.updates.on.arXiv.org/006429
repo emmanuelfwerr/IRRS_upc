@@ -1,0 +1,20 @@
+Contours are used in radiotherapy treatment planning to identify regions to be irradiated with
+high dose and regions to be spared. Therefore, any contouring uncertainty influences the whole
+treatment. Even though this is the biggest remaining source of uncertainty when daily IGRT or adaptation
+is used, it has not been accounted for quantitatively in treatment planning. Using probabilistic
+planning allows to directly account for contouring uncertainties in plan optimisation. The first
+step is to create an algorithm that can generate many realistic contours with variation matching
+actual inter-observer variation. We propose a methodology to generate random contours, based
+on measured spatial inter-observer variation, IOV, and a single parameter that controls its geometrical
+dependency: alpha, the width of the 3D Gaussian used as point spread function (PSF). We used a level
+set formulation of the median shape, with the level set function defined as the signed distance transform.
+To create a new contour, we added the median level set and a noise map which was weighted with the IOV
+map and then convolved with the PSF. Thresholding the level set function reconstructs the newly
+generated contour. We used data from 18 patients from the golden atlas, consisting of five prostate
+delineations on T2-w MRI scans. To evaluate the similarity between the contours, we calculated
+the maximum distance to agreement to the median shape (maxDTA), and the minimum dose of the contours
+using an ideal dose distribution. We used the two-sample Kolmogorov-Smirnov test to compare the
+distributions for maxDTA and minDose between the generated and manually delineated contours.
+Only alpha=0.75cm produced maxDTA and minDose distributions that were not significantly different
+from the manually delineated structures. Accounting for the PSF is essential to correctly simulate
+inter-observer variation. 

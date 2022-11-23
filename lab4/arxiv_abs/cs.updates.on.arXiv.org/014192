@@ -1,0 +1,20 @@
+While in two-player zero-sum games the Nash equilibrium is a well-established prescriptive notion
+of optimal play, its applicability as a prescriptive tool beyond that setting is limited. Consequently,
+the study of decentralized learning dynamics that guarantee convergence to correlated solution
+concepts in multiplayer, general-sum extensive-form (i.e., tree-form) games has become an important
+topic of active research. The per-iteration complexity of the currently known learning dynamics
+depends on the specific correlated solution concept considered. For example, in the case of extensive-form
+correlated equilibrium (EFCE), all known dynamics require, as an intermediate step at each iteration,
+to compute the stationary distribution of multiple Markov chains, an expensive operation in practice.
+Oppositely, in the case of normal-form coarse correlated equilibrium (NFCCE), simple no-external-regret
+learning dynamics that amount to a linear-time traversal of the tree-form decision space of each
+agent suffice to guarantee convergence. This paper focuses on extensive-form coarse correlated
+equilibrium (EFCCE), an intermediate solution concept that is a subset of NFCCE and a superset of
+EFCE. Being a superset of EFCE, any learning dynamics for EFCE automatically guarantees convergence
+to EFCCE. However, since EFCCE is a simpler solution concept, this begs the question: do learning
+dynamics for EFCCE that avoid the expensive computation of stationary distributions exist? This
+paper answers the previous question in the positive. Our learning dynamics only require the orchestration
+of no-external-regret minimizers, thus showing that EFCCE is more akin to NFCCE than to EFCE from
+a learning perspective. Our dynamics guarantees that the empirical frequency of play after $T$
+iteration is a $O(1/\sqrt{T})$-approximate EFCCE with high probability, and an EFCCE almost surely
+in the limit. 

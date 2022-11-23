@@ -1,0 +1,18 @@
+We show that to approximate the integral $\int_{\mathbb{R}^d} f(\boldsymbol{x}) \mathrm{d}
+\boldsymbol{x}$ one can simply use scaled lattice rules from the unit cube $[0,1]^d$ to properly
+sized boxes on $\mathbb{R}^d$, achieving higher-order convergence that matches the smoothness
+of the integrand function $f$ in a certain Sobolev space of dominating mixed smoothness. Our method
+only assumes that we can evaluate the integrand function $f$ and does not assume a particular density
+nor the ability to sample from it. In particular, for the analysis we show that the method of adding
+Bernoulli polynomials to a function to make it ``periodic'' on a box without changing its integral
+value over the box, is equivalent to an orthogonal projection from a well chosen Sobolev space of
+dominating mixed smoothness to an associated periodic Sobolev space of the same dominating mixed
+smoothness, which we call a Korobov space. We note that the Bernoulli polynomial method is often
+not used because of its computational complexity and also here we completely avoid applying it.
+Instead, we use it as a theoretical tool in the error analysis of applying a scaled lattice rule to
+increasing boxes in order to approximate integrals over the $d$-dimensional Euclidean space.
+Such a method would not work on the unit cube since then the committed error caused by non-periodicity
+of the integrand would be constant, but for integration on the Euclidean space we can use the certain
+decay towards zero when the boxes grow. Hence we can bound the truncation error as well as the projection
+error and show higher-order convergence in applying scaled lattice rules for integration on Euclidean
+space. We illustrate our theoretical analysis by numerical experiments which confirm our findings.

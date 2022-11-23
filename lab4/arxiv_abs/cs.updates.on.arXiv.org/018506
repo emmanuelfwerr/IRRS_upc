@@ -1,0 +1,19 @@
+Algorithms and models are increasingly deployed to inform decisions about people, inevitably
+affecting their lives. As a consequence, those in charge of developing these models must carefully
+evaluate their impact on different groups of people and favour group fairness, that is, ensure that
+groups determined by sensitive demographic attributes, such as race or sex, are not treated unjustly.
+To achieve this goal, the availability (awareness) of these demographic attributes to those evaluating
+the impact of these models is fundamental. Unfortunately, collecting and storing these attributes
+is often in conflict with industry practices and legislation on data minimisation and privacy.
+For this reason, it can be hard to measure the group fairness of trained models, even from within the
+companies developing them. In this work, we tackle the problem of measuring group fairness under
+unawareness of sensitive attributes, by using techniques from quantification, a supervised learning
+task concerned with directly providing group-level prevalence estimates (rather than individual-level
+class labels). We show that quantification approaches are particularly suited to tackle the fairness-under-unawareness
+problem, as they are robust to inevitable distribution shifts while at the same time decoupling
+the (desirable) objective of measuring group fairness from the (undesirable) side effect of allowing
+the inference of sensitive attributes of individuals. More in detail, we show that fairness under
+unawareness can be cast as a quantification problem and solved with proven methods from the quantification
+literature. We show that these methods outperform previous approaches to measure demographic
+parity in five experimental protocols, corresponding to important challenges that complicate
+the estimation of classifier fairness under unawareness. 

@@ -1,0 +1,19 @@
+Flexible, goal-directed behavior is a fundamental aspect of human life. Based on the free energy
+minimization principle, the theory of active inference formalizes the generation of such behavior
+from a computational neuroscience perspective. Based on the theory, we introduce an output-probabilistic,
+temporally predictive, modular artificial neural network architecture, which processes sensorimotor
+information, infers behavior-relevant aspects of its world, and invokes highly flexible, goal-directed
+behavior. We show that our architecture, which is trained end-to-end to minimize an approximation
+of free energy, develops latent states that can be interpreted as affordance maps. That is, the emerging
+latent states signal which actions lead to which effects dependent on the local context. In combination
+with active inference, we show that flexible, goal-directed behavior can be invoked, incorporating
+the emerging affordance maps. As a result, our simulated agent flexibly steers through continuous
+spaces, avoids collisions with obstacles, and prefers pathways that lead to the goal with high certainty.
+Additionally, we show that the learned agent is highly suitable for zero-shot generalization across
+environments: After training the agent in a handful of fixed environments with obstacles and other
+terrains affecting its behavior, it performs similarly well in procedurally generated environments
+containing different amounts of obstacles and terrains of various sizes at different locations.
+To improve and focus model learning further, we plan to invoke active inference-based, information-gain-oriented
+behavior also while learning the temporally predictive model itself in the near future. Moreover,
+we intend to foster the development of both deeper event-predictive abstractions and compact,
+habitual behavioral primitives. 

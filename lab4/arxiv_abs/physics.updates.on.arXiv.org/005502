@@ -1,0 +1,20 @@
+Although supervised convolutional neural networks (CNNs) often outperform conventional alternatives
+for denoising positron emission tomography (PET) images, they require many low- and high-quality
+reference PET image pairs. Herein, we propose an unsupervised 3D PET image denoising method based
+on an anatomical information-guided attention mechanism. The proposed magnetic resonance-guided
+deep decoder (MR-GDD) utilizes the spatial details and semantic features of MR-guidance image
+more effectively by introducing encoder-decoder and deep decoder subnetworks. Moreover, the
+specific shapes and patterns of the guidance image do not affect the denoised PET image, because
+the guidance image is input to the network through an attention gate. In a Monte Carlo simulation
+of [$^{18}$F]fluoro-2-deoxy-D-glucose (FDG), the proposed method achieved the highest peak
+signal-to-noise ratio and structural similarity (27.92 $\pm$ 0.44 dB/0.886 $\pm$ 0.007), as compared
+with Gaussian filtering (26.68 $\pm$ 0.10 dB/0.807 $\pm$ 0.004), image guided filtering (27.40
+$\pm$ 0.11 dB/0.849 $\pm$ 0.003), deep image prior (DIP) (24.22 $\pm$ 0.43 dB/0.737 $\pm$ 0.017),
+and MR-DIP (27.65 $\pm$ 0.42 dB/0.879 $\pm$ 0.007). Furthermore, we experimentally visualized
+the behavior of the optimization process, which is often unknown in unsupervised CNN-based restoration
+problems. For preclinical (using [$^{18}$F]FDG and [$^{11}$C]raclopride) and clinical (using
+[$^{18}$F]florbetapir) studies, the proposed method demonstrates state-of-the-art denoising
+performance while retaining spatial resolution and quantitative accuracy, despite using a common
+network architecture for various noisy PET images with 1/10th of the full counts. These results
+suggest that the proposed MR-GDD can reduce PET scan times and PET tracer doses considerably without
+impacting patients. 

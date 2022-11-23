@@ -1,0 +1,18 @@
+In this paper, we show that the time complexity of monotone min-plus product of two $n\times n$ matrices
+is $\tilde{O}(n^{(3+\omega)/2})=\tilde{O}(n^{2.687})$, where $\omega < 2.373$ is the fast
+matrix multiplication exponent [Alman and Vassilevska Williams 2021]. That is, when $A$ is an arbitrary
+integer matrix and $B$ is either row-monotone or column-monotone with integer elements bounded
+by $O(n)$, computing the min-plus product $C$ where $C_{i,j}=\min_k\{A_{i,k}+B_{k,j}\}$ takes
+$\tilde{O}(n^{(3+\omega)/2})$ time, which greatly improves the previous time bound of $\tilde{O}(n^{(12+\omega)/5})=\tilde{O}(n^{2.875})$
+[Gu, Polak, Vassilevska Williams and Xu 2021]. Then by simple reductions, this means the following
+problems also have $\tilde{O}(n^{(3+\omega)/2})$ time algorithms: (1) $A$ and $B$ are both bounded-difference,
+that is, the difference between any two adjacent entries is a constant. The previous results give
+time complexities of $\tilde{O}(n^{2.824})$ [Bringmann, Grandoni, Saha and Vassilevska Williams
+2016] and $\tilde{O}(n^{2.779})$ [Chi, Duan and Xie 2022]. (2) $A$ is arbitrary and the columns
+or rows of $B$ are bounded-difference. Previous result gives time complexity of $\tilde{O}(n^{2.922})$
+[Bringmann, Grandoni, Saha and Vassilevska Williams 2016]. (3) The problems reducible to these
+problems, such as language edit distance, RNA-folding, scored parsing problem on BD grammars.
+[Bringmann, Grandoni, Saha and Vassilevska Williams 2016]. Finally, we also consider the problem
+of min-plus convolution between two integral sequences which are monotone and bounded by $O(n)$,
+and achieve a running time upper bound of $\tilde{O}(n^{1.5})$. Previously, this task requires
+running time $\tilde{O}(n^{(9+\sqrt{177})/12}) = O(n^{1.859})$ [Chan and Lewenstein 2015].

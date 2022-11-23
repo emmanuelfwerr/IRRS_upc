@@ -1,0 +1,19 @@
+Deep neural networks generalize well despite being exceedingly overparameterized and being trained
+without explicit regularization. This curious phenomenon has inspired extensive research activity
+in establishing its statistical principles: Under what conditions is it observed? How do these
+depend on the data and on the training algorithm? When does regularization benefit generalization?
+While such questions remain wide open for deep neural nets, recent works have attempted gaining
+insights by studying simpler, often linear, models. Our paper contributes to this growing line
+of work by examining binary linear classification under a generative Gaussian mixture model. Motivated
+by recent results on the implicit bias of gradient descent, we study both max-margin SVM classifiers
+(corresponding to logistic loss) and min-norm interpolating classifiers (corresponding to least-squares
+loss). First, we leverage an idea introduced in [V. Muthukumar et al., arXiv:2005.08054, (2020)]
+to relate the SVM solution to the min-norm interpolating solution. Second, we derive novel non-asymptotic
+bounds on the classification error of the latter. Combining the two, we present novel sufficient
+conditions on the covariance spectrum and on the signal-to-noise ratio (SNR) under which interpolating
+estimators achieve asymptotically optimal performance as overparameterization increases.
+Interestingly, our results extend to a noisy model with constant probability noise flips. Contrary
+to previously studied discriminative data models, our results emphasize the crucial role of the
+SNR and its interplay with the data covariance. Finally, via a combination of analytical arguments
+and numerical demonstrations we identify conditions under which the interpolating estimator
+performs better than corresponding regularized estimates. 

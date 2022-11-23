@@ -1,0 +1,19 @@
+The design and operation of modern energy systems are heavily influenced by time-dependent and
+uncertain parameters, e.g., renewable electricity generation, load-demand, and electricity
+prices. These are typically represented by a set of discrete realizations known as scenarios. A
+popular scenario generation approach uses deep generative models (DGM) that allow scenario generation
+without prior assumptions about the data distribution. However, the validation of generated scenarios
+is difficult, and a comprehensive discussion about appropriate validation methods is currently
+lacking. To start this discussion, we provide a critical assessment of the currently used validation
+methods in the energy scenario generation literature. In particular, we assess validation methods
+based on probability density, auto-correlation, and power spectral density. Furthermore, we
+propose using the multifractal detrended fluctuation analysis (MFDFA) as an additional validation
+method for non-trivial features like peaks, bursts, and plateaus. As representative examples,
+we train generative adversarial networks (GANs), Wasserstein GANs (WGANs), and variational autoencoders
+(VAEs) on two renewable power generation time series (photovoltaic and wind from Germany in 2013
+to 2015) and an intra-day electricity price time series form the European Energy Exchange in 2017
+to 2019. We apply the four validation methods to both the historical and the generated data and discuss
+the interpretation of validation results as well as common mistakes, pitfalls, and limitations
+of the validation methods. Our assessment shows that no single method sufficiently characterizes
+a scenario but ideally validation should include multiple methods and be interpreted carefully
+in the context of scenarios over short time periods. 

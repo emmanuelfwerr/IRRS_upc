@@ -1,0 +1,18 @@
+Modern face recognition systems (FRS) still fall short when the subjects are wearing facial masks,
+a common theme in the age of respiratory pandemics. An intuitive partial remedy is to add a mask detector
+to flag any masked faces so that the FRS can act accordingly for those low-confidence masked faces.
+In this work, we set out to investigate the potential vulnerability of such FRS equipped with a mask
+detector, on large-scale masked faces, which might trigger a serious risk, e.g., letting a suspect
+evade the FRS where both facial identity and mask are undetected. As existing face recognizers and
+mask detectors have high performance in their respective tasks, it is significantly challenging
+to simultaneously fool them and preserve the transferability of the attack. We formulate the new
+task as the generation of realistic & adversarial-faced mask and make three main contributions:
+First, we study the naive Delanunay-based masking method (DM) to simulate the process of wearing
+a faced mask that is cropped from a template image, which reveals the main challenges of this new task.
+Second, we further equip the DM with the adversarial noise attack and propose the adversarial noise
+Delaunay-based masking method (AdvNoise-DM) that can fool the face recognition and mask detection
+effectively but make the face less natural. Third, we propose the adversarial filtering Delaunay-based
+masking method denoted as MF2M by employing the adversarial filtering for AdvNoise-DM and obtain
+more natural faces. With the above efforts, the final version not only leads to significant performance
+deterioration of the state-of-the-art (SOTA) deep learning-based FRS, but also remains undetected
+by the SOTA facial mask detector, thus successfully fooling both systems at the same time. 

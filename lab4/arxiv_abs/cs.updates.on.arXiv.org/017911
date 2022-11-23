@@ -1,0 +1,20 @@
+Functional magnetic resonance imaging (fMRI) enables examination of inter-regional interactions
+in the brain via functional connectivity (FC) analyses that measure the synchrony between the temporal
+activations of separate regions. Given their exceptional sensitivity, deep-learning methods
+have received growing interest for FC analyses of high-dimensional fMRI data. In this domain, models
+that operate directly on raw time series as opposed to pre-computed FC features have the potential
+benefit of leveraging the full scale of information present in fMRI data. However, previous models
+are based on architectures suboptimal for temporal integration of representations across multiple
+time scales. Here, we present BolT, blood-oxygen-level-dependent transformer, for analyzing
+multi-variate fMRI time series. BolT leverages a cascade of transformer encoders equipped with
+a novel fused window attention mechanism. Transformer encoding is performed on temporally-overlapped
+time windows within the fMRI time series to capture short time-scale representations. To integrate
+information across windows, cross-window attention is computed between base tokens in each time
+window and fringe tokens from neighboring time windows. To transition from local to global representations,
+the extent of window overlap and thereby number of fringe tokens is progressively increased across
+the cascade. Finally, a novel cross-window regularization is enforced to align the high-level
+representations of global $CLS$ features across time windows. Comprehensive experiments on public
+fMRI datasets clearly illustrate the superior performance of BolT against state-of-the-art methods.
+Posthoc explanatory analyses to identify landmark time points and regions that contribute most
+significantly to model decisions corroborate prominent neuroscientific findings from recent
+fMRI studies. 

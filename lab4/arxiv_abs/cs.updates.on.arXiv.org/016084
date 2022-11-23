@@ -1,0 +1,19 @@
+Information technology system (ITS), informally, consists of hardware and software infrastructure
+(e.g., workstations, servers, laptops, installed software packages, databases, LANs, firewalls,
+etc.), along with physical and logical connections and inter-dependencies between various items.
+Nowadays, every company owns and operates an ITS, but detailed information about the system is rarely
+publicly available. However, there are many situations where the availability of such data would
+be beneficial. For example, cyber ranges need descriptions of complex realistic IT systems in order
+to provide an effective training and education platform. Furthermore, various algorithms in cybersecurity,
+in particular attack tree generation, need to be validated on realistic models of IT systems. In
+this paper, we describe a system we call the Generator that, based on the high-level requirements
+such as the number of employees and the business area the target company belongs to, generates a model
+of an ITS that satisfies the given requirements. We put special emphasis on the following two criteria:
+the generated ITS models a large amount of details, and ideally resembles a real system. Our survey
+of related literature found no sufficiently similar prior works, so we believe that this is the first
+attempt of building something like this. We created a proof-of-concept implementation of the Generator,
+validated it by generating ITS models for a simplified fictional financial institution, and analyzed
+the Generators performance with respect to the problem size. The research was done in an iterative
+manner, with coauthors continuously providing feedback on intermediate results. (...) We intend
+to extend this prototype to allow probabilistic generation of IT systems when only a subset of parameters
+is explicitly defined, and further develop and validate our approach with the help of domain experts.

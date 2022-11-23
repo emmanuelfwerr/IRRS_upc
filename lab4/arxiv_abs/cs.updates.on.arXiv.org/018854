@@ -1,0 +1,19 @@
+Clinically significant prostate cancer has a better chance to be sampled during ultrasound-guided
+biopsy procedures, if suspected lesions found in pre-operative magnetic resonance (MR) images
+are used as targets. However, the diagnostic accuracy of the biopsy procedure is limited by the operator-dependent
+skills and experience in sampling the targets, a sequential decision making process that involves
+navigating an ultrasound probe and placing a series of sampling needles for potentially multiple
+targets. This work aims to learn a reinforcement learning (RL) policy that optimises the actions
+of continuous positioning of 2D ultrasound views and biopsy needles with respect to a guiding template,
+such that the MR targets can be sampled efficiently and sufficiently. We first formulate the task
+as a Markov decision process (MDP) and construct an environment that allows the targeting actions
+to be performed virtually for individual patients, based on their anatomy and lesions derived from
+MR images. A patient-specific policy can thus be optimised, before each biopsy procedure, by rewarding
+positive sampling in the MDP environment. Experiment results from fifty four prostate cancer patients
+show that the proposed RL-learned policies obtained a mean hit rate of 93% and an average cancer core
+length of 11 mm, which compared favourably to two alternative baseline strategies designed by humans,
+without hand-engineered rewards that directly maximise these clinically relevant metrics. Perhaps
+more interestingly, it is found that the RL agents learned strategies that were adaptive to the lesion
+size, where spread of the needles was prioritised for smaller lesions. Such a strategy has not been
+previously reported or commonly adopted in clinical practice, but led to an overall superior targeting
+performance when compared with intuitively designed strategies. 

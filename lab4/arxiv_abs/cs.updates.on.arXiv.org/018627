@@ -1,0 +1,19 @@
+Self-supervised learning methods overcome the key bottleneck for building more capable AI: limited
+availability of labeled data. However, one of the drawbacks of self-supervised architectures
+is that the representations that they learn are implicit and it is hard to extract meaningful information
+about the encoded world states, such as 3D structure of the visual scene encoded in a depth map. Moreover,
+in the visual domain such representations only rarely undergo evaluations that may be critical
+for downstream tasks, such as vision for autonomous cars. Herein, we propose a framework for evaluating
+visual representations for illumination invariance in the context of depth perception. We develop
+a new predictive coding-based architecture and a hybrid fully-supervised/self-supervised learning
+method. We propose a novel architecture that extends the predictive coding approach: PRedictive
+Lateral bottom-Up and top-Down Encoder-decoder Network (PreludeNet), which explicitly learns
+to infer and predict depth from video frames. In PreludeNet, the encoder's stack of predictive coding
+layers is trained in a self-supervised manner, while the predictive decoder is trained in a supervised
+manner to infer or predict the depth. We evaluate the robustness of our model on a new synthetic dataset,
+in which lighting conditions (such as overall illumination, and effect of shadows) can be be parametrically
+adjusted while keeping all other aspects of the world constant. PreludeNet achieves both competitive
+depth inference performance and next frame prediction accuracy. We also show how this new network
+architecture, coupled with the hybrid fully-supervised/self-supervised learning method, achieves
+balance between the said performance and invariance to changes in lighting. The proposed framework
+for evaluating visual representations can be extended to diverse task domains and invariance tests.

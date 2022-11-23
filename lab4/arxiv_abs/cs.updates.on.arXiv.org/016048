@@ -1,0 +1,18 @@
+Microblogging sites, like Twitter, have emerged as ubiquitous sources of information. Two important
+tasks related to the automatic extraction and analysis of information in Microblogs are Entity
+Mention Detection (EMD) and Entity Detection (ED). The state-of-the-art EMD systems aim to model
+the non-literary nature of microblog text by training upon offline static datasets. They extract
+a combination of surface-level features -- orthographic, lexical, and semantic -- from individual
+messages for noisy text modeling and entity extraction. But given the constantly evolving nature
+of microblog streams, detecting all entity mentions from such varying yet limited context of short
+messages remains a difficult problem. To this end, we propose a framework named EMD Globalizer,
+better suited for the execution of EMD learners on microblog streams. It deviates from the processing
+of isolated microblog messages by existing EMD systems, where learned knowledge from the immediate
+context of a message is used to suggest entities. After an initial extraction of entity candidates
+by an EMD system, the proposed framework leverages occurrence mining to find additional candidate
+mentions that are missed during this first detection. Aggregating the local contextual representations
+of these mentions, a global embedding is drawn from the collective context of an entity candidate
+within a stream. The global embeddings are then utilized to separate entities within the candidates
+from false positives. All mentions of said entities from the stream are produced in the framework's
+final outputs. Our experiments show that EMD Globalizer can enhance the effectiveness of all existing
+EMD systems that we tested (on average by 25.61%) with a small additional computational overhead.

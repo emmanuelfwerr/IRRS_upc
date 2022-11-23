@@ -1,0 +1,18 @@
+An adequate classification of proximal femur fractures from X-ray images is crucial for the treatment
+choice and the patients' clinical outcome. We rely on the commonly used AO system, which describes
+a hierarchical knowledge tree classifying the images into types and subtypes according to the fracture's
+location and complexity. In this paper, we propose a method for the automatic classification of
+proximal femur fractures into 3 and 7 AO classes based on a Convolutional Neural Network (CNN). As
+it is known, CNNs need large and representative datasets with reliable labels, which are hard to
+collect for the application at hand. In this paper, we design a curriculum learning (CL) approach
+that improves over the basic CNNs performance under such conditions. Our novel formulation reunites
+three curriculum strategies: individually weighting training samples, reordering the training
+set, and sampling subsets of data. The core of these strategies is a scoring function ranking the
+training samples. We define two novel scoring functions: one from domain-specific prior knowledge
+and an original self-paced uncertainty score. We perform experiments on a clinical dataset of proximal
+femur radiographs. The curriculum improves proximal femur fracture classification up to the performance
+of experienced trauma surgeons. The best curriculum method reorders the training set based on prior
+knowledge resulting into a classification improvement of 15%. Using the publicly available MNIST
+dataset, we further discuss and demonstrate the benefits of our unified CL formulation for three
+controlled and challenging digit recognition scenarios: with limited amounts of data, under class-imbalance,
+and in the presence of label noise. The code of our work is available at: https://github.com/ameliajimenez/curriculum-learning-prior-uncertainty.

@@ -1,0 +1,20 @@
+Mutual exclusion is one of the most commonly used techniques to handle contention in concurrent
+systems. Traditionally, mutual exclusion algorithms have been designed under the assumption
+that a process does not fail while acquiring/releasing a lock or while executing its critical section.
+However, failures do occur in real life, potentially leaving the lock in an inconsistent state.
+This gives rise to the problem of recoverable mutual exclusion (RME) that involves designing a mutual
+exclusion (ME) algorithm that can tolerate failures, while maintaining safety and liveness properties.
+In this work, we present a framework that transforms any algorithm that solves the RME problem into
+an algorithm that can also simultaneously adapt to (1) the number of processes competing for the
+lock, as well as (2) the number of failures that have occurred in the recent past, while maintaining
+the correctness and performance properties of the underlying RME algorithm. Additionally, the
+algorithm constructed as a result of this transformation adds certain desirable properties like
+fairness (a variation of FCFS) and bounded recovery. Assume that the worst-case RMR complexity
+of a critical section request in the underlying RME algorithm is $R(n)$. Then, our framework yields
+an RME algorithm for which the worst-case RMR complexity of a critical section request is given by
+$\mathcal{O}(\min \{\ddot{c}, \sqrt{F+1}, R(n)\})$, where $\ddot{c}$ denotes the point contention
+of the request and $F$ denotes the number of failures in the recent past of the request. We further
+extend our framework by presenting a novel memory reclamation algorithm to bound the worst-case
+space complexity of the RME algorithm. The memory reclamation techniques maintain the fairness,
+performance and correctness properties of our transformation and is general enough to be employed
+to bound the space of other RME algorithms. 

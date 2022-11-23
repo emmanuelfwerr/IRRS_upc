@@ -1,0 +1,18 @@
+Starting from 2021, the International Maritime Organization significantly tightened the $\text{NO}_\text{x}$
+emission requirements for ships entering the Baltic and the North Sea waters. Since all methods
+currently used for the ships' compliance monitoring are costly and require proximity to the ship,
+the performance of global and continuous monitoring of the emission standards' fulfillment has
+been impossible up to now. A promising approach is the use of remote sensing with the recently launched
+TROPOMI/S5P satellite. Due to its unprecedentedly high spatial resolution, it allows for the visual
+distinction of $\text{NO}_\text{2}$ plumes of individual ships. To successfully deploy a compliance
+monitoring system that is based on TROPOMI data, an automated procedure for the attribution of $\text{NO}_\text{2}$
+to individual ships has to be developed. However, due to the extremely low signal-to-noise ratio,
+interference with the signal from other - often stronger - sources, and the absence of ground truth,
+the task is very challenging. This is the first study proposing an application of supervised learning
+for the segmentation of emission plumes produced by individual ships. As such, it is the first step
+towards an automated procedure for global ship compliance monitoring using remote sensing data.
+To this end, we developed a feature construction method allowing the application of multivariate
+models on spatial data. We applied several supervised-learning models and benchmark them towards
+existing unsupervised solutions of ship-plume segmentation with TROPOMI satellite data. We showed
+that the proposed approach leads to significant plume segmentation improvement and a high correlation
+with the theoretically derived measure of the ship's emission potential. 

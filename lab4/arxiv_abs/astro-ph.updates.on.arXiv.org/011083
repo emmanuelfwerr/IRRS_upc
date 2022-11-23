@@ -1,0 +1,20 @@
+Hot Jupiters are very good targets for transmission spectroscopy analysis. Their atmospheres
+have a large scale height implying a high signal to noise ratio. As these planets orbit close to their
+stars, they often present strong thermal and chemical hetereogeneities between the day and the
+night side of their atmosphere. For the hottest ones, the thermal dissociation of several species
+occurs in their atmospheres which leads to a stronger chemical dichotomy between the two hemispheres.
+It has already been shown that the current retrieval algorithms, which are using 1D forward models,
+find biased molecular abundances in ultra hot Jupiters. Here, we quantify the effective temperature
+domain over which these biases are present. We use a set of 12 simulations of typical Hot Jupiters
+from Teq = 1000 K to Teq = 2100 K performed with the Substellar and Planetary Atmospheric Radiation
+and Circulation global climate model and generate transmission spectra that fully account for
+the 3D structure of the atmosphere with Pytmosph3R. These spectra are then analyzed using the 1D
+TauREx retrieval code. We find that for JWST-like data, accounting for non-isothermal vertical
+temperature profiles is required over the whole temperature range. We further find that 1D retrieval
+codes start to estimate wrong parameter values for planets with equilibrium temperatures greater
+than 1400 K if there are absorbers in the visible able to create a hot stratosphere. The high temperatures
+at low pressures indeed entail a thermal dissociation of species which creates a strong chemical
+day-night dichotomy. As a by-product, we demonstrate that when using synthetic observations to
+assess the detectability of a given feature or process using a Bayesian framework, it is valid to
+use non-randomized input data, as long as the anticipated observational uncertainties are correctly
+taken into account. 

@@ -1,0 +1,20 @@
+Disentanglement learning aims to construct independent and interpretable latent variables in
+which generative models are a popular strategy. InfoGAN is a classic method via maximizing Mutual
+Information (MI) to obtain interpretable latent variables mapped to the target space. However,
+it did not emphasize independent characteristic. To explicitly infer latent variables with inter-independence,
+we propose a novel GAN-based disentanglement framework via embedding Orthogonal Basis Expansion
+(OBE) into InfoGAN network (Inference-InfoGAN) in an unsupervised way. Under the OBE module, one
+set of orthogonal basis can be adaptively found to expand arbitrary data with independence property.
+To ensure the target-wise interpretable representation, we add a consistence constraint between
+the expansion coefficients and latent variables on the base of MI maximization. Additionally,
+we design an alternating optimization step on the consistence constraint and orthogonal requirement
+updating, so that the training of Inference-InfoGAN can be more convenient. Finally, experiments
+validate that our proposed OBE module obtains adaptive orthogonal basis, which can express better
+independent characteristics than fixed basis expression of Discrete Cosine Transform (DCT).
+To depict the performance in downstream tasks, we compared with the state-of-the-art GAN-based
+and even VAE-based approaches on different datasets. Our Inference-InfoGAN achieves higher disentanglement
+score in terms of FactorVAE, Separated Attribute Predictability (SAP), Mutual Information Gap
+(MIG) and Variation Predictability (VP) metrics without model fine-tuning. All the experimental
+results illustrate that our method has inter-independence inference ability because of the OBE
+module, and provides a good trade-off between it and target-wise interpretability of latent variables
+via jointing the alternating optimization. 

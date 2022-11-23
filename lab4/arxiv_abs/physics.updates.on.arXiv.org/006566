@@ -1,0 +1,18 @@
+The $GW$-Bethe-Salpeter Equation (BSE) method is promising for calculating the low-lying excited
+states of molecular systems. However, so far it has only been applied to rather small molecules,
+and in the commonly implemented diagonal approximations to the electronic self-energy it depends
+on a mean-field starting point. We describe here an implementation of the self-consistent and starting-point
+independent quasiparticle self-consistent (qs$GW$)-BSE approach which is suitable for calculations
+on large molecules. We herein show that self-consistency in the eigenvalues only leads to an unfaithful
+description of certain excitonic states for Chlorophyll dimers while the qs$GW$-BSE excitation
+energies are in excellent agreement with experiment. We use the new implementation to calculate
+the lowest excitation energies of the six chromophores of the photosystem II (PSII) reaction center
+(RC) with nearly 2000 correlated electrons in total. Primary charge separation in the PSII RC occurs
+along the D1 branch via initial formation of Chl\textsubscript{D1}\textsuperscript{+} -Pheo\textsubscript{D1}\textsuperscript{-}
+and subsequent hole transfer leading to P\textsubscript{D1}\textsuperscript{+} -Pheo\textsubscript{D1}\textsuperscript{-}.
+We find the Chl\textsubscript{D1}\textsuperscript{+} -P\textsubscript{D1}\textsuperscript{-}
+charge transfer (CT) state to be lowest excited state, but do not observe the Chl\textsubscript{D1}\textsuperscript{+}
+-Pheo\textsubscript{D1}\textsuperscript{-} CT state at low energy. This is most likely to the
+neglect of the protein environment. Notwithstanding this discrepancy, our results are in closer
+agreement to experiment than the ones of previous calculations based on range-separated hybrid
+kernels which only predicted local excitations among the lowest excited states of the PSII RC. 

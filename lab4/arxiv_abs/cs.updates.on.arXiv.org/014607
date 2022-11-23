@@ -1,0 +1,20 @@
+Promising solutions exist today that can accurately track mobile entities indoor using visual
+inertial odometry in favorable visual conditions, or by leveraging fine-grained ranging (RF,
+ultrasonic, IR, etc.) to reference anchors. However, they are unable to directly cater to "dynamic"
+indoor environments (e.g. first responder scenarios, multi-player AR/VR gaming in everyday spaces,
+etc.) that are devoid of such favorable conditions. Indeed, we show that the need for "infrastructure-free",
+and robustness to "node mobility" and "visual conditions" in such environments, motivates a robust
+RF-based approach along with the need to address a novel and challenging variant of its infrastructure-free
+(i.e. peer-to-peer) localization problem that is latency-bounded - accurate tracking of mobile
+entities imposes a latency budget that not only affects the solution computation but also the collection
+of peer-to-peer ranges themselves. In this work, we present the design and deployment of DynoLoc
+that addresses this latency-bounded infrastructure-free RF localization problem. To this end,
+DynoLoc unravels the fundamental tradeoff between latency and localization accuracy and incorporates
+design elements that judiciously leverage the available ranging resources to adaptively estimate
+the joint topology of nodes, coupled with robust algorithm that maximizes the localization accuracy
+even in the face of practical environmental artifacts (wireless connectivity and multipath, node
+mobility, etc.). This allows DynoLoc to track (every second) a network of few tens of mobile entities
+even at speeds of 1-2 m/s with median accuracies under 1-2 m (compared to 5m+ with baselines), without
+infrastructure support. We demonstrate DynoLoc's potential in a real-world firefighters' drill,
+as well as two other use cases of (i) multi-player AR/VR gaming, and (ii) active shooter tracking
+by first responders. 

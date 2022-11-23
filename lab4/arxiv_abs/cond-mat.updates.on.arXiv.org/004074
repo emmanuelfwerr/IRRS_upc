@@ -1,0 +1,19 @@
+Machine learning has the potential to revolutionize the field of molecular simulation through
+the development of efficient and accurate models of interatomic interactions. In particular,
+neural network models can describe interactions at the level of accuracy of quantum mechanics-based
+calculations, but with a fraction of the cost, enabling the simulation of large systems over long
+timescales with ab initio accuracy. However, implicit in the construction of neural network potentials
+is an assumption of locality, wherein atomic arrangements on the scale of about a nanometer are used
+to learn interatomic interactions. Because of this assumption, the resulting neural network models
+cannot describe long-range interactions that play critical roles in dielectric screening and
+chemical reactivity. To address this issue, we introduce the self-consistent field neural network
+(SCFNN) model -- a general approach for learning the long-range response of molecular systems in
+neural network potentials. The SCFNN model relies on a physically meaningful separation of the
+interatomic interactions into short- and long-range components, with a separate network to handle
+each component. We demonstrate the success of the SCFNN approach in modeling the dielectric properties
+of bulk liquid water, and show that the SCFNN model accurately predicts long-range polarization
+correlations and the response of water to applied electrostatic fields. Importantly, because
+of the separation of interactions inherent in our approach, the SCFNN model can be combined with
+many existing approaches for building neural network potentials. Therefore, we expect the SCFNN
+model to facilitate the proper description of long-range interactions in a wide-variety of machine
+learning-based force fields. 

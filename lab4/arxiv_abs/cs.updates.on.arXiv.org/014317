@@ -1,0 +1,19 @@
+Structures matter in single image super-resolution (SISR). Benefiting from generative adversarial
+networks (GANs), recent studies have promoted the development of SISR by recovering photo-realistic
+images. However, there are still undesired structural distortions in the recovered images. In
+this paper, we propose a structure-preserving super-resolution (SPSR) method to alleviate the
+above issue while maintaining the merits of GAN-based methods to generate perceptual-pleasant
+details. Firstly, we propose SPSR with gradient guidance (SPSR-G) by exploiting gradient maps
+of images to guide the recovery in two aspects. On the one hand, we restore high-resolution gradient
+maps by a gradient branch to provide additional structure priors for the SR process. On the other
+hand, we propose a gradient loss to impose a second-order restriction on the super-resolved images,
+which helps generative networks concentrate more on geometric structures. Secondly, since the
+gradient maps are handcrafted and may only be able to capture limited aspects of structural information,
+we further extend SPSR-G by introducing a learnable neural structure extractor (NSE) to unearth
+richer local structures and provide stronger supervision for SR. We propose two self-supervised
+structure learning methods, contrastive prediction and solving jigsaw puzzles, to train the NSEs.
+Our methods are model-agnostic, which can be potentially used for off-the-shelf SR networks. Experimental
+results on five benchmark datasets show that the proposed methods outperform state-of-the-art
+perceptual-driven SR methods under LPIPS, PSNR, and SSIM metrics. Visual results demonstrate
+the superiority of our methods in restoring structures while generating natural SR images. Code
+is available at https://github.com/Maclory/SPSR. 

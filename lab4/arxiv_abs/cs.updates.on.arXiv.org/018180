@@ -1,0 +1,19 @@
+Recently, deep learning-based image denoising methods have achieved promising performance on
+test data with the same distribution as training set, where various denoising models based on synthetic
+or collected real-world training data have been learned. However, when handling real-world noisy
+images, the denoising performance is still limited. In this paper, we propose a simple yet effective
+Bayesian deep ensemble (BDE) method for real-world image denoising, where several representative
+deep denoisers pre-trained with various training data settings can be fused to improve robustness.
+The foundation of BDE is that real-world image noises are highly signal-dependent, and heterogeneous
+noises in a real-world noisy image can be separately handled by different denoisers. In particular,
+we take well-trained CBDNet, NBNet, HINet, Uformer and GMSNet into denoiser pool, and a U-Net is
+adopted to predict pixel-wise weighting maps to fuse these denoisers. Instead of solely learning
+pixel-wise weighting maps, Bayesian deep learning strategy is introduced to predict weighting
+uncertainty as well as weighting map, by which prediction variance can be modeled for improving
+robustness on real-world noisy images. Extensive experiments have shown that real-world noises
+can be better removed by fusing existing denoisers instead of training a big denoiser with expensive
+cost. On DND dataset, our BDE achieves +0.28~dB PSNR gain over the state-of-the-art denoising method.
+Moreover, we note that our BDE denoiser based on different Gaussian noise levels outperforms state-of-the-art
+CBDNet when applying to real-world noisy images. Furthermore, our BDE can be extended to other image
+restoration tasks, and achieves +0.30dB, +0.18dB and +0.12dB PSNR gains on benchmark datasets
+for image deblurring, image deraining and single image super-resolution, respectively. 

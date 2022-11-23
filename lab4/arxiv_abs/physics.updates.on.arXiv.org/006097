@@ -1,0 +1,19 @@
+NISQ era devices suffer from a number of challenges like limited qubit connectivity, short coherence
+times and sizable gate error rates. Thus, quantum algorithms are desired that require shallow circuit
+depths and low qubit counts to take advantage of these devices. We attempt to realize this with the
+help of classical quantum chemical theories of canonical transformation and explicit correlation.
+In this work, compact ab initio Hamiltonians are generated classically through an approximate
+similarity transformation of the Hamiltonian with a) an explicitly correlated two-body unitary
+operator with generalized pair excitations that remove the Coulombic electron-electron singularities
+from the Hamiltonian and b) a unitary one-body operator to efficiently capture the orbital relaxation
+effects required for accurate description of the excited states. The resulting transcorelated
+Hamiltonians are able to describe both ground and excited states of molecular systems in a balanced
+manner. Using the fermionic-ADAPT-VQE method based on the unitary coupled cluster with singles
+and doubles (UCCSD) ansatz and only a minimal basis set (ANO-RCC-MB), we demonstrate that the transcorrelated
+Hamiltonians can produce ground state energies comparable to the much larger cc-pVTZ basis. This
+leads to a potential reduction in the number of required CNOT gates by more than three orders of magnitude
+for the chemical species studied in this work. Furthermore, using the qEOM formalism in conjunction
+with the transcorrelated Hamiltonian, we reduce the errors in excitation energies by an order of
+magnitude. The transcorrelated Hamiltonians developed here are Hermitian and contain only one-
+and two-body interaction terms and thus can be easily combined with any quantum algorithm for accurate
+electronic structure simulations. 

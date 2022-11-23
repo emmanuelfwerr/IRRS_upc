@@ -1,0 +1,20 @@
+Since sparse neural networks usually contain many zero weights, these unnecessary network connections
+can potentially be eliminated without degrading network performance. Therefore, well-designed
+sparse neural networks have the potential to significantly reduce FLOPs and computational resources.
+In this work, we propose a new automatic pruning method - Sparse Connectivity Learning (SCL). Specifically,
+a weight is re-parameterized as an element-wise multiplication of a trainable weight variable
+and a binary mask. Thus, network connectivity is fully described by the binary mask, which is modulated
+by a unit step function. We theoretically prove the fundamental principle of using a straight-through
+estimator (STE) for network pruning. This principle is that the proxy gradients of STE should be
+positive, ensuring that mask variables converge at their minima. After finding Leaky ReLU, Softplus,
+and Identity STEs can satisfy this principle, we propose to adopt Identity STE in SCL for discrete
+mask relaxation. We find that mask gradients of different features are very unbalanced, hence,
+we propose to normalize mask gradients of each feature to optimize mask variable training. In order
+to automatically train sparse masks, we include the total number of network connections as a regularization
+term in our objective function. As SCL does not require pruning criteria or hyper-parameters defined
+by designers for network layers, the network is explored in a larger hypothesis space to achieve
+optimized sparse connectivity for the best performance. SCL overcomes the limitations of existing
+automatic pruning methods. Experimental results demonstrate that SCL can automatically learn
+and select important network connections for various baseline network structures. Deep learning
+models trained by SCL outperform the SOTA human-designed and automatic pruning methods in sparsity,
+accuracy, and FLOPs reduction. 

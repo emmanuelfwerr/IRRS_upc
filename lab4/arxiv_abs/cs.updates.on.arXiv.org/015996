@@ -1,0 +1,20 @@
+Notions of fair machine learning that seek to control various kinds of error across protected groups
+generally are cast as constrained optimization problems over a fixed model class. For such problems,
+tradeoffs arise: asking for various kinds of technical fairness requires compromising on overall
+error, and adding more protected groups increases error rates across all groups. Our goal is to break
+though such accuracy-fairness tradeoffs. We develop a simple algorithmic framework that allows
+us to deploy models and then revise them dynamically when groups are discovered on which the error
+rate is suboptimal. Protected groups don't need to be pre-specified: At any point, if it is discovered
+that there is some group on which our current model performs substantially worse than optimally,
+then there is a simple update operation that improves the error on that group without increasing
+either overall error or the error on previously identified groups. We do not restrict the complexity
+of the groups that can be identified, and they can intersect in arbitrary ways. The key insight that
+allows us to break through the tradeoff barrier is to dynamically expand the model class as new groups
+are identified. The result is provably fast convergence to a model that can't be distinguished from
+the Bayes optimal predictor, at least by those tasked with finding high error groups. We explore
+two instantiations of this framework: as a "bias bug bounty" design in which external auditors are
+invited to discover groups on which our current model's error is suboptimal, and as an algorithmic
+paradigm in which the discovery of groups on which the error is suboptimal is posed as an optimization
+problem. In the bias bounty case, when we say that a model cannot be distinguished from Bayes optimal,
+we mean by any participant in the bounty program. We provide both theoretical analysis and experimental
+validation. 

@@ -1,0 +1,20 @@
+We introduce a Markovian framework for load balancing where classical algorithms such as Power-of-$d$
+are combined with asynchronous auto-scaling features. These allow the net service capacity to
+scale up or down in response to the current load within the same timescale of job dynamics. This is
+inspired by serverless frameworks such as Knative, used among others by Google Cloud Run, where
+servers are software functions that can be flexibly instantiated in milliseconds according to
+user-defined scaling rules. In this context, load balancing and auto-scaling are employed together
+to optimize both user-perceived delay performance and energy consumption. In the literature,
+these mechanisms are synchronous or rely on a central queue. The architectural novelty of our work
+is to consider an asynchronous and decentralized system, as in Knative, which takes scalability
+to the next level. Under a general assumption on the auto-scaling process, we prove a mean-field
+limit theorem that provides an accurate approximation for the system dynamics when the mean demand
+and nominal service capacity grow large in proportion. We characterize the fixed points of the mean-field
+limit model and provide a simple condition telling whether or not all the available servers need
+to be turned on to handle the incoming demand. Then, we investigate how to design optimal auto-scaling
+rules and find a general condition able to drive the mean-field dynamics to delay and relative energy
+optimality, a situation where the user-perceived delay and the relative energy wastage induced
+by idle servers vanish. The proposed optimality condition suggests to scale up capacity if and only
+if the mean demand exceeds the overall rate at which servers become idle and active. This yields the
+definition of tractable optimization frameworks to trade off between energy and performance,
+which we show as an application of our work. 

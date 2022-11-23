@@ -1,0 +1,20 @@
+We study the distribution over measurement outcomes of noisy random quantum circuits in the low-fidelity
+regime. We show that, for local noise that is sufficiently weak and unital, correlations (measured
+by the linear cross-entropy benchmark) between the output distribution $p_{\text{noisy}}$ of
+a generic noisy circuit instance and the output distribution $p_{\text{ideal}}$ of the corresponding
+noiseless instance shrink exponentially with the expected number of gate-level errors, as $F=\text{exp}(-2s\epsilon
+\pm O(s\epsilon^2))$, where $\epsilon$ is the probability of error per circuit location and $s$
+is the number of two-qubit gates. Furthermore, if the noise is incoherent, the output distribution
+approaches the uniform distribution $p_{\text{unif}}$ at precisely the same rate and can be approximated
+as $p_{\text{noisy}} \approx Fp_{\text{ideal}} + (1-F)p_{\text{unif}}$, that is, local errors
+are scrambled by the random quantum circuit and contribute only white noise (uniform output). Importantly,
+we upper bound the total variation error (averaged over random circuit instance) in this approximation
+as $O(F\epsilon \sqrt{s})$, so the "white-noise approximation" is meaningful when $\epsilon
+\sqrt{s} \ll 1$, a quadratically weaker condition than the $\epsilon s\ll 1$ requirement to maintain
+high fidelity. The bound applies when the circuit size satisfies $s \geq \Omega(n\log(n))$ and
+the inverse error rate satisfies $\epsilon^{-1} \geq \tilde{\Omega}(n)$. The white-noise approximation
+is useful for salvaging the signal from a noisy quantum computation; it was an underlying assumption
+in complexity-theoretic arguments that low-fidelity random quantum circuits cannot be efficiently
+sampled classically. Our method is based on a map from second-moment quantities in random quantum
+circuits to expectation values of certain stochastic processes for which we compute upper and lower
+bounds. 

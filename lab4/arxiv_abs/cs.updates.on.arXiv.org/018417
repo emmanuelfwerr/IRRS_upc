@@ -1,0 +1,20 @@
+Previous human parsing models are limited to parsing humans into pre-defined classes, which is
+inflexible for practical fashion applications that often have new fashion item classes. In this
+paper, we define a novel one-shot human parsing (OSHP) task that requires parsing humans into an
+open set of classes defined by any test example. During training, only base classes are exposed,
+which only overlap with part of the test-time classes. To address three main challenges in OSHP,
+i.e., small sizes, testing bias, and similar parts, we devise an End-to-end One-shot human Parsing
+Network (EOP-Net). Firstly, an end-to-end human parsing framework is proposed to parse the query
+image into both coarse-grained and fine-grained human classes, which builds a strong embedding
+network with rich semantic information shared across different granularities, facilitating
+identifying small-sized human classes. Then, we propose learning momentum-updated prototypes
+by gradually smoothing the training time static prototypes, which helps stabilize the training
+and learn robust features. Moreover, we devise a dual metric learning scheme which encourages the
+network to enhance features' both representational capability and transferability. Therefore,
+our EOP-Net can learn representative features that can quickly adapt to the novel classes and mitigate
+the testing bias issue. In addition, we employ a contrastive loss at the prototype level, thereby
+enforcing the distances among the classes in the fine-grained metric space to discriminate similar
+parts. We tailor three existing popular human parsing benchmarks to the OSHP task. Experiments
+on the new benchmarks demonstrate that EOP-Net outperforms representative one-shot segmentation
+models by large margins, which serves as a strong baseline for further research on this new task.
+The source code is available at https://github.com/Charleshhy/One-shot-Human-Parsing. 

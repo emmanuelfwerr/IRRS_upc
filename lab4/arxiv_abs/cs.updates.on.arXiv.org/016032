@@ -1,0 +1,20 @@
+FPGA-based accelerators are becoming more popular for deep neural network due to the ability to
+scale performance with increasing degree of specialization with dataflow architectures or custom
+data types. To reduce the barrier for software engineers and data scientists to adopt FPGAs, C++-
+and OpenCL-based design entries with high-level synthesis (HLS) have been introduced. They provide
+higher abstraction compared to register-transfer level (RTL)-based design. HLS offers faster
+development time, better maintainability and more flexibility in code exploration, when evaluating
+options for multi-dimension tensors, convolutional layers or parallelism. Thus, HLS has been
+adopted by DNN accelerator generation frameworks such as FINN and hls4ml. In this paper, we present
+an alternative backend RTL library for FINN. We investigate and evaluate, across a spectrum of design
+dimensions, an RTL-based implementation versus the original HLS variant. We show that for smaller
+design parameters, RTL produces significantly smaller circuits. For larger circuits, however,
+the look-up table (LUT) count of RTL-based design is slightly higher, up to around $15\%$. On the
+other hand, HLS consistently requires more flip-flops (FFs) (orders-of-magnitude increase)
+and block RAMs (BRAMs) ($2\times$ more). This also impacts the critical path delay, with RTL producing
+significantly faster circuits, up to $80\%$. Furthermore, RTL also benefits from at-least a $10\times$
+reduction in synthesis time. Finally the results were practically validated using a real-world
+use case of a multi-layer perceptron (MLP) network used in network intrusion detection. Overall,
+since HLS frameworks code-generate the hardware design, the benefits of the ease in the design entry
+is less important as compared to synthesis time reduction togther with resource benefits, this
+might make the RTL abstraction an attractive alternative. 

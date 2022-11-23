@@ -1,0 +1,19 @@
+Motivated by the proliferation of real-time applications in multimedia communication systems,
+tactile Internet, networked controlled systems, and cyber-physical systems, supporting delay-constrained
+traffic becomes critical for such systems. In delay-constrained traffic, each packet has a hard
+deadline; when it is not delivered before its deadline is up, it becomes useless and will be removed
+from the system. In this work, we focus on designing the random access schemes for delay-constrained
+wireless communications. We first investigate three ALOHA-based random access schemes and prove
+that the system timely throughput of all three schemes under corresponding optimal transmission
+probabilities asymptotically converges to $1/e$, same as the well-know throughput limit for delay-unconstrained
+ALOHA systems. The fundamental reason why ALOHA-based schemes cannot achieve asymptotical system
+timely throughput beyond $1/e$ is that all active ALOHA stations access the channel with the same
+probability in any slot. Therefore, to go beyond $1/e$, we have to differentiate active stations'
+transmission probabilities to reduce the competition level. However, since all stations work
+in a distributed manner without any coordination, we should deploy the same policy (i.e., same piece
+of codes in practice) to all stations under which they will automatically differentiate their transmission
+probabilities. Toward that end, we propose a Reinforcement-Learning-based Random Access scheme
+for Delay-Constrained communications, called RLRA-DC, under which different stations collaboratively
+attain different transmission probabilities by only interacting with the access point. Our numerical
+result shows that the system timely throughput of RLRA-DC can be as high as 0.8 for tens of stations
+and can still reach 0.6 even for thousands of stations, much larger than $1/e$. 

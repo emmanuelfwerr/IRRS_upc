@@ -1,0 +1,20 @@
+Motivated by the rise of quantum computers, existing public-key cryptosystems are expected to
+be replaced by post-quantum schemes in the next decade in billions of devices. To facilitate the
+transition, NIST is running a standardization process which is currently in its final Round. Only
+three digital signature schemes are left in the competition, among which Dilithium and Falcon are
+the ones based on lattices. Classical fault attacks on signature schemes make use of pairs of faulty
+and correct signatures to recover the secret key which only works on deterministic schemes. To counter
+such attacks, Dilithium offers a randomized version which makes each signature unique, even when
+signing identical messages. In this work, we introduce a novel Signature Correction Attack which
+not only applies to the deterministic version but also to the randomized version of Dilithium and
+is effective even on constant-time implementations using AVX2 instructions. The Signature Correction
+Attack exploits the mathematical structure of Dilithium to recover the secret key bits by using
+faulty signatures and the public-key. It can work for any fault mechanism which can induce single
+bit-flips. For demonstration, we are using Rowhammer induced faults. Thus, our attack does not
+require any physical access or special privileges, and hence could be also implemented on shared
+cloud servers. We perform a thorough classical and quantum security analysis of Dilithium and successfully
+recover 1,851 bits out of 3,072 bits of secret key $s_1$ for security level 2. The lattice strength
+against quantum attackers is reduced from $2^{128}$ to $2^{81}$ while the strength against classical
+attackers is reduced from $2^{141}$ to $2^{89}$. Hence, the Signature Correction Attack may be
+employed to achieve a practical attack on Dilithium (security level 2) as proposed in Round 3 of the
+NIST post-quantum standardization process. 

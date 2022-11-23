@@ -1,0 +1,20 @@
+LoRaWAN deployments follow an ad-hoc deployment model that has organically led to overlapping
+communication networks, sharing the wireless spectrum, and completely unaware of each other.
+LoRaWAN uses ALOHA-style communication where it is almost impossible to schedule transmission
+between networks belonging to different owners properly. The inability to schedule overlapping
+networks will cause inter-network interference, which will increase node-to-gateway message
+losses and gateway-to-node acknowledgement failures. This problem is likely to get worse as the
+number of LoRaWAN networks increase. In response to this problem, we propose IRONWAN, a wireless
+overlay network that shares communication resources without modifications to underlying protocols.
+It utilises the broadcast nature of radio communication and enables gateway-to-gateway communication
+to facilitate the search for failed messages and transmit failed acknowledgements already received
+and cached in overlapping network's gateways. IRONWAN uses two novel algorithms, a Real-time Message
+Inter-arrival Predictor, to highlight when a server has not received an expected uplink message.
+The Interference Predictor ensures that extra gateway-to-gateway communication does not negatively
+impact communication bandwidth. We evaluate IRONWAN on a 1000-node simulator with up to ten gateways
+and a 10-node testbed with 2-gateways. Results show that IRONWAN can achieve up to 12\% higher packet
+delivery ratio (PDR) and total messages received per node while increasing the minimum PDR by up
+to 28\%. These improvements save up to 50\% node's energy. Finally, we demonstrate that IRONWAN
+has comparable performance to an optimal solution (wired, centralised) but with 2-32 times lower
+communication costs. IRONWAN also has up to 14\% better PDR when compared to FLIP, a wired-distributed
+gateway-to-gateway protocol in certain scenarios. 

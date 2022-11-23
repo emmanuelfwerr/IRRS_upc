@@ -1,0 +1,19 @@
+Constraints solvers play a significant role in the analysis, synthesis, and formal verification
+of complex embedded and cyber-physical systems. In this paper, we study the problem of designing
+a scalable constraints solver for an important class of constraints named polynomial constraint
+inequalities (also known as non-linear real arithmetic theory). In this paper, we introduce a solver
+named PolyARBerNN that uses convex polynomials as abstractions for highly nonlinear polynomials.
+Such abstractions were previously shown to be powerful to prune the search space and restrict the
+usage of sound and complete solvers to small search spaces. Compared with the previous efforts on
+using convex abstractions, PolyARBerNN provides three main contributions namely (i) a neural
+network guided abstraction refinement procedure that helps selecting the right abstraction out
+of a set of pre-defined abstractions, (ii) a Bernstein polynomial-based search space pruning mechanism
+that can be used to compute tight estimates of the polynomial maximum and minimum values which can
+be used as an additional abstraction of the polynomials, and (iii) an optimizer that transforms
+polynomial objective functions into polynomial constraints (on the gradient of the objective
+function) whose solutions are guaranteed to be close to the global optima. These enhancements together
+allowed the PolyARBerNN solver to solve complex instances and scales more favorably compared to
+the state-of-art non-linear real arithmetic solvers while maintaining the soundness and completeness
+of the resulting solver. In particular, our test benches show that PolyARBerNN achieved 100X speedup
+compared with Z3 8.9, Yices 2.6, and NASALib (a solver that uses Bernstein expansion to solve multivariate
+polynomial constraints) on a variety of standard test benches. 

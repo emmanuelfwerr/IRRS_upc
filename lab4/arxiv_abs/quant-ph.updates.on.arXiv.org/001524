@@ -1,0 +1,19 @@
+In a breakthrough work, Kawarabayashi and Thorup (J.~ACM'19) gave a near-linear time deterministic
+algorithm for minimum cut in a simple graph $G = (V,E)$. A key component is finding the $(1+\varepsilon)$-KT
+partition of $G$, the coarsest partition $\{P_1, \ldots, P_k\}$ of $V$ such that for every non-trivial
+$(1+\varepsilon)$-near minimum cut with sides $\{S, \bar{S}\}$ it holds that $P_i$ is contained
+in either $S$ or $\bar{S}$, for $i=1, \ldots, k$. Here we give a near-linear time randomized algorithm
+to find the $(1+\varepsilon)$-KT partition of a weighted graph. Our algorithm is quite different
+from that of Kawarabayashi and Thorup and builds on Karger's framework of tree-respecting cuts
+(J.~ACM'00). We describe applications of the algorithm. (i) The algorithm makes progress towards
+a more efficient algorithm for constructing the polygon representation of the set of near-minimum
+cuts in a graph. This is a generalization of the cactus representation initially described by Bencz\'ur
+(FOCS'95). (ii) We improve the time complexity of a recent quantum algorithm for minimum cut in a
+simple graph in the adjacency list model from $\widetilde O(n^{3/2})$ to $\widetilde O(\sqrt{mn})$.
+(iii) We describe a new type of randomized algorithm for minimum cut in simple graphs with complexity
+$O(m + n \log^6 n)$. For slightly dense graphs this matches the complexity of the current best $O(m
++ n \log^2 n)$ algorithm which uses a different approach based on random contractions. The key technical
+contribution of our work is the following. Given a weighted graph $G$ with $m$ edges and a spanning
+tree $T$, consider the graph $H$ whose nodes are the edges of $T$, and where there is an edge between
+two nodes of $H$ iff the corresponding 2-respecting cut of $T$ is a non-trivial near-minimum cut
+of $G$. We give a $O(m \log^4 n)$ time deterministic algorithm to compute a spanning forest of $H$.

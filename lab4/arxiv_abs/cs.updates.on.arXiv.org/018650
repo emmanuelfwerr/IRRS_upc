@@ -1,0 +1,19 @@
+When comparing the performance of multi-armed bandit algorithms, the potential impact of missing
+data is often overlooked. In practice, it also affects their implementation where the simplest
+approach to overcome this is to continue to sample according to the original bandit algorithm, ignoring
+missing outcomes. We investigate the impact on performance of this approach to deal with missing
+data for several bandit algorithms through an extensive simulation study assuming the rewards
+are missing at random. We focus on two-armed bandit algorithms with binary outcomes in the context
+of patient allocation for clinical trials with relatively small sample sizes. However, our results
+apply to other applications of bandit algorithms where missing data is expected to occur. We assess
+the resulting operating characteristics, including the expected reward. Different probabilities
+of missingness in both arms are considered. The key finding of our work is that when using the simplest
+strategy of ignoring missing data, the impact on the expected performance of multi-armed bandit
+strategies varies according to the way these strategies balance the exploration-exploitation
+trade-off. Algorithms that are geared towards exploration continue to assign samples to the arm
+with more missing responses (which being perceived as the arm with less observed information is
+deemed more appealing by the algorithm than it would otherwise be). In contrast, algorithms that
+are geared towards exploitation would rapidly assign a high value to samples from the arms with a
+current high mean irrespective of the level observations per arm. Furthermore, for algorithms
+focusing more on exploration, we illustrate that the problem of missing responses can be alleviated
+using a simple mean imputation approach. 

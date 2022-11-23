@@ -1,0 +1,19 @@
+This work addresses the problem of recognizing action categories in videos for which no training
+examples are available. The current state-of-the-art enables such a zero-shot recognition by
+learning universal mappings from videos to a shared semantic space, either trained on large-scale
+seen actions or on objects. While effective, we find that universal action and object mappings are
+biased to their seen categories. Such biases are further amplified due to biases between seen and
+unseen categories in the semantic space. The compounding biases result in many unseen action categories
+simply never being selected during inference, hampering zero-shot progress. We seek to address
+this limitation and introduce universal prototype transport for zero-shot action recognition.
+The main idea is to re-position the semantic prototypes of unseen actions through transduction,
+i.e. by using the distribution of the unlabelled test set. For universal action models, we first
+seek to find a hyperspherical optimal transport mapping from unseen action prototypes to the set
+of all projected test videos. We then define a target prototype for each unseen action as the weighted
+Fr\'echet mean over the transport couplings. Equipped with a target prototype, we propose to re-position
+unseen action prototypes along the geodesic spanned by the original and target prototypes, acting
+as a form of semantic regularization. For universal object models, we outline a variant that defines
+target prototypes based on an optimal transport between unseen action prototypes and semantic
+object prototypes. Empirically, we show that universal prototype transport diminishes the biased
+selection of unseen action prototypes and boosts both universal action and object models, resulting
+in state-of-the-art performance for zero-shot classification and spatio-temporal localization.

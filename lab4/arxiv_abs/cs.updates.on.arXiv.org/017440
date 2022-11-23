@@ -1,0 +1,19 @@
+Self-driving vehicles have their own intelligence to drive on open roads. However, vehicle managers,
+e.g., government or industrial companies, still need a way to tell these self-driving vehicles
+what behaviors are encouraged or forbidden. Unlike human drivers, current self-driving vehicles
+cannot understand the traffic laws, thus rely on the programmers manually writing the corresponding
+principles into the driving systems. It would be less efficient and hard to adapt some temporary
+traffic laws, especially when the vehicles use data-driven decision-making algorithms. Besides,
+current self-driving vehicle systems rarely take traffic law modification into consideration.
+This work aims to design a road traffic law adaptive decision-making method. The decision-making
+algorithm is designed based on reinforcement learning, in which the traffic rules are usually implicitly
+coded in deep neural networks. The main idea is to supply the adaptability to traffic laws of self-driving
+vehicles by a law-adaptive backup policy. In this work, the natural language-based traffic laws
+are first translated into a logical expression by the Linear Temporal Logic method. Then, the system
+will try to monitor in advance whether the self-driving vehicle may break the traffic laws by designing
+a long-term RL action space. Finally, a sample-based planning method will re-plan the trajectory
+when the vehicle may break the traffic rules. The method is validated in a Beijing Winter Olympic
+Lane scenario and an overtaking case, built in CARLA simulator. The results show that by adopting
+this method, the self-driving vehicles can comply with new issued or updated traffic laws effectively.
+This method helps self-driving vehicles governed by digital traffic laws, which is necessary for
+the wide adoption of autonomous driving. 

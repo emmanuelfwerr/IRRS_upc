@@ -1,0 +1,18 @@
+Training of object detection models using less data is currently the focus of existing N-shot learning
+models in computer vision. Such methods use object-level labels and takes hours to train on unseen
+classes. There are many cases where we have large amount of image-level labels available for training
+but cannot be utilized by few shot object detection models for training. There is a need for a machine
+learning framework that can be used for training any unseen class and can become useful in real-time
+situations. In this paper, we proposed an "Unseen Class Detector" that can be trained within a very
+short time for any possible unseen class without bounding boxes with competitive accuracy. We build
+our approach on "Strong" and "Weak" baseline detectors, which we trained on existing object detection
+and image classification datasets, respectively. Unseen concepts are fine-tuned on the strong
+baseline detector using only image-level labels and further adapted by transferring the classifier-detector
+knowledge between baselines. We use semantic as well as visual similarities to identify the source
+class (i.e. Sheep) for the fine-tuning and adaptation of unseen class (i.e. Goat). Our model (UnseenNet)
+is trained on the ImageNet classification dataset for unseen classes and tested on an object detection
+dataset (OpenImages). UnseenNet improves the mean average precision (mAP) by 10% to 30% over existing
+baselines (semi-supervised and few-shot) of object detection on different unseen class splits.
+Moreover, training time of our model is <10 min for each unseen class. Qualitative results demonstrate
+that UnseenNet is suitable not only for few classes of Pascal VOC but for unseen classes of any dataset
+or web. Code is available at https://github.com/Asra-Aslam/UnseenNet. 

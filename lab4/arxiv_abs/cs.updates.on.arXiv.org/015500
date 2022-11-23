@@ -1,0 +1,20 @@
+Merge Resolution (MRes [Beyersdorff et al. J. Autom. Reason.'2021]) is a recently introduced proof
+system for false QBFs. It stores the countermodels as merge maps. Merge maps are deterministic branching
+programs in which isomorphism checking is efficient making MRes a polynomial time verifiable proof
+system. In this paper, we introduce a family of proof systems MRes-R in which, the countermodels
+are stored in any pre-fixed complete representation R, instead of merge maps. Hence corresponding
+to each such R, we have a sound and refutationally complete QBF-proof system in MRes-R. To handle
+arbitrary representations for the strategies, we introduce consistency checking rules in MRes-R
+instead of isomorphism checking. As a result these proof systems are not polynomial time verifiable.
+Consequently, the paper shows that using merge maps is too restrictive and can be replaced with arbitrary
+representations leading to several interesting proof systems. Exploring proof theoretic properties
+of MRes-R, we show that eFrege+$\forall$red simulates all valid refutations from proof systems
+in MRes-R. In order to simulate arbitrary representations in MRes-R, we first represent the steps
+used by the proof systems as a new complete structure. Consequently, the corresponding proof system
+belonging to MRes-R is able to simulate all proof systems in MRes-R. Finally, we simulate this proof
+system via eFrege+$\forall$red using the ideas from [Chew et al. ECCC.'2021]. On the lower bound
+side, we show that the completion principle formulas from [Jonata et al. Theor. Comput. Sci.'2015]
+which are shown to be hard for regular MRes in [Beyersdorff et al. FSTTCS.'2020], are also hard for
+any regular proof system in MRes-R. Thereby, the paper lifts the lower bound of regular MRes to an
+entire class of proof systems, which use some complete representation, including those undiscovered,
+instead of merge maps. 

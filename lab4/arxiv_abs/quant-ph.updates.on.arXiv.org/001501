@@ -1,0 +1,19 @@
+There is currently a large interest in understanding the potential advantages quantum devices
+can offer for probabilistic modelling. In this work we investigate, within two different oracle
+models, the probably approximately correct (PAC) learnability of quantum circuit Born machines,
+i.e., the output distributions of local quantum circuits. We first show a negative result, namely,
+that the output distributions of super-logarithmic depth Clifford circuits are not sample-efficiently
+learnable in the statistical query model, i.e., when given query access to empirical expectation
+values of bounded functions over the sample space. This immediately implies the hardness, for both
+quantum and classical algorithms, of learning from statistical queries the output distributions
+of local quantum circuits using any gate set which includes the Clifford group. As many practical
+generative modelling algorithms use statistical queries -- including those for training quantum
+circuit Born machines -- our result is broadly applicable and strongly limits the possibility of
+a meaningful quantum advantage for learning the output distributions of local quantum circuits.
+As a positive result, we show that in a more powerful oracle model, namely when directly given access
+to samples, the output distributions of local Clifford circuits are computationally efficiently
+PAC learnable by a classical learner. Our results are equally applicable to the problems of learning
+an algorithm for generating samples from the target distribution (generative modelling) and learning
+an algorithm for evaluating its probabilities (density modelling). They provide the first rigorous
+insights into the learnability of output distributions of local quantum circuits from the probabilistic
+modelling perspective. 

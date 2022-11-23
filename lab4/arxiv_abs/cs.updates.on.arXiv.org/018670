@@ -1,0 +1,20 @@
+RGB-D SOD uses depth information to handle challenging scenes and obtain high-quality saliency
+maps. Existing state-of-the-art RGB-D saliency detection methods overwhelmingly rely on the
+strategy of directly fusing depth information. Although these methods improve the accuracy of
+saliency prediction through various cross-modality fusion strategies, misinformation provided
+by some poor-quality depth images can affect the saliency prediction result. To address this issue,
+a novel RGB-D salient object detection model (SiaTrans) is proposed in this paper, which allows
+training on depth image quality classification at the same time as training on SOD. In light of the
+common information between RGB and depth images on salient objects, SiaTrans uses a Siamese transformer
+network with shared weight parameters as the encoder and extracts RGB and depth features concatenated
+on the batch dimension, saving space resources without compromising performance. SiaTrans uses
+the Class token in the backbone network (T2T-ViT) to classify the quality of depth images without
+preventing the token sequence from going on with the saliency detection task. Transformer-based
+cross-modality fusion module (CMF) can effectively fuse RGB and depth information. And in the testing
+process, CMF can choose to fuse cross-modality information or enhance RGB information according
+to the quality classification signal of the depth image. The greatest benefit of our designed CMF
+and decoder is that they maintain the consistency of RGB and RGB-D information decoding: SiaTrans
+decodes RGB-D or RGB information under the same model parameters according to the classification
+signal during testing. Comprehensive experiments on nine RGB-D SOD benchmark datasets show that
+SiaTrans has the best overall performance and the least computation compared with recent state-of-the-art
+methods. 

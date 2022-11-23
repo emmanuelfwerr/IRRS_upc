@@ -1,0 +1,19 @@
+Uncovering rationales behind predictions of graph neural networks (GNNs) has received increasing
+attention over recent years. Instance-level GNN explanation aims to discover critical input elements,
+like nodes or edges, that the target GNN relies upon for making predictions. These identified sub-structures
+can provide interpretations of GNN's behavior. Though various algorithms are proposed, most of
+them formalize this task by searching the minimal subgraph which can preserve original predictions.
+An inductive bias is deep-rooted in this framework: the same output cannot guarantee that two inputs
+are processed under the same rationale. Consequently, they have the danger of providing spurious
+explanations and fail to provide consistent explanations. Applying them to explain weakly-performed
+GNNs would further amplify these issues. To address the issues, we propose to obtain more faithful
+and consistent explanations of GNNs. After a close examination on predictions of GNNs from the causality
+perspective, we attribute spurious explanations to two typical reasons: confounding effect of
+latent variables like distribution shift, and causal factors distinct from the original input.
+Motivated by the observation that both confounding effects and diverse causal rationales are encoded
+in internal representations, we propose a simple yet effective countermeasure by aligning embeddings.
+This new objective can be incorporated into existing GNN explanation algorithms with no effort.
+We implement both a simplified version based on absolute distance and a distribution-aware version
+based on anchors. Experiments on $5$ datasets validate its effectiveness, and theoretical analysis
+shows that it is in effect optimizing a more faithful explanation objective in design, which further
+justifies the proposed approach. 

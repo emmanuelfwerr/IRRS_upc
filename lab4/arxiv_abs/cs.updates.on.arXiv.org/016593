@@ -1,0 +1,20 @@
+With the rapid development of smart manufacturing, data-driven machinery health management has
+received a growing attention. As one of the most popular methods in machinery health management,
+deep learning (DL) has achieved remarkable successes. However, due to the issues of limited samples
+and poor separability of different cavitation states of acoustic signals, which greatly hinder
+the eventual performance of DL modes for cavitation intensity recognition and cavitation detection.
+In this work, a novel multi-task learning framework for simultaneous cavitation detection and
+cavitation intensity recognition framework using 1-D double hierarchical residual networks
+(1-D DHRN) is proposed for analyzing valves acoustic signals. Firstly, a data augmentation method
+based on sliding window with fast Fourier transform (Swin-FFT) is developed to alleviate the small-sample
+issue confronted in this study. Secondly, a 1-D double hierarchical residual block (1-D DHRB) is
+constructed to capture sensitive features from the frequency domain acoustic signals of valve.
+Then, a new structure of 1-D DHRN is proposed. Finally, the devised 1-D DHRN is evaluated on two datasets
+of valve acoustic signals without noise (Dataset 1 and Dataset 2) and one dataset of valve acoustic
+signals with realistic surrounding noise (Dataset 3) provided by SAMSON AG (Frankfurt). Our method
+has achieved state-of-the-art results. The prediction accurcies of 1-D DHRN for cavitation intensitys
+recognition are as high as 93.75%, 94.31% and 100%, which indicates that 1-D DHRN outperforms other
+DL models and conventional methods. At the same time, the testing accuracies of 1-D DHRN for cavitation
+detection are as high as 97.02%, 97.64% and 100%. In addition, 1-D DHRN has also been tested for different
+frequencies of samples and shows excellent results for frequency of samples that mobile phones
+can accommodate. 

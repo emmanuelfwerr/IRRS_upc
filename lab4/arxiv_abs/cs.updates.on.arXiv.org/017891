@@ -1,0 +1,19 @@
+We present an algorithm for synchronous deterministic Byzantine consensus, tolerant to links
+failures and links asynchrony. It cares for a class of networks with specific needs, where both safety
+and liveness are essential, and timely irrevocable consensus has priority over highest throughput.
+The algorithm operates with redundant delivery of messages via indirect paths of up to 3 hops, aims
+all correct processes to obtain a coherent view of the system state within a bounded time, and establishes
+consensus with no need of leader. Consensus involves exchange of 2*n*n*n asymmetrically authenticated
+messages and tolerates up to < n/2 faulty processes. We show that in a consensus system with known
+members: 1) The existing concepts for delivery over a fraction of links and gossip-based reliable
+multicast can be extended to also circumvent asynchronous links and thereby convert the reliable
+delivery into a reliable bounded delivery. 2) A system of synchronous processes with bounded delivery
+does not need a leader - all correct processes from connected majority derive and propose the same
+consensus value from atomically consistent individual views on system state. 3) The required for
+bounded delivery asymmetric authentication of messages is sufficient for safety of the consensus
+algorithm. Key finding: the impossibility of safety and liveness of consensus in partial synchrony
+is not valid in the entire space between synchrony and asynchrony. A system of synchronized synchronous
+processes, which communicate with asymmetrically authenticated messages over a medium susceptible
+to asynchrony and faults, can operate with: 1) defined tolerance to number of asynchronous and/or
+faulty links per number of stop-failed and/or Byzantine processes; 2) leaderless algorithm with
+bounded termination; and 3) conceptually ensured simultaneous safety and bounded liveness. 

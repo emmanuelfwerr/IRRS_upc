@@ -1,0 +1,20 @@
+Optimal linear feedback control design is a valuable but challenging problem due to nonconvexity
+of the underlying optimization and infinite dimensionality of the Hardy space of stabilizing controllers.
+A powerful class of techniques for solving optimal control problems involves using reparameterization
+to transform the control design to a convex but infinite dimensional optimization. To make the problem
+tractable, historical work focuses on Galerkin-type finite dimensional approximations to Hardy
+space, especially those involving Lorentz series approximations such as the finite impulse response
+appproximation. However, Lorentz series approximations can lead to infeasibility, difficulty
+incorporating prior knowledge, deadbeat control in the case of finite impulse response, and increased
+suboptimality, especially for systems with large separation of time scales. The goal of this two-part
+article is to introduce a new Galerkin-type method based on approximation by transfer functions
+with a selection of simple poles, and to apply this simple pole approximation for optimal control
+design. In Part I, error bounds for approximating arbitrary transfer functions in Hardy space are
+provided based on the geometry of the pole selection. It is shown that the space of transfer functions
+with these simple poles converges to the full Hardy space, and a uniform convergence rate is provided
+based purely on the geometry of the pole selection. This is then specialized to derive a convergence
+rate for a particularly interesting pole selection based on an Archimedes spiral. In Part II, the
+simple pole approximation is combined with system level synthesis, a recent reparameterization
+approach, to develop a new control design method. This technique is convex and tractable, always
+feasible, can include prior knowledge, does not result in deadbeat control, and works well for systems
+with large separation of tim 

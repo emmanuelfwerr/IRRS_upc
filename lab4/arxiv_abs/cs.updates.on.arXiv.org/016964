@@ -1,0 +1,19 @@
+We consider the allocation of $m$ balls (jobs) into $n$ bins (servers). In the Two-Choice process,
+for each of $m$ sequentially arriving balls, two randomly chosen bins are sampled and the ball is
+placed in the least loaded bin. It is well-known that the maximum load is $m/n+\log_2 \log n + O(1)$
+w.h.p. Berenbrink, Czumaj, Englert, Friedetzky and Nagel (2012) introduced a parallel version
+of this process, where $m$ balls arrive in consecutive batches of size $b=n$ each. Balls within the
+same batch are allocated in parallel, using the load information of the bins at the beginning of the
+batch. They proved that the gap of this process is $O(\log n)$ with high probability. In this work,
+we present a new analysis of this setting, which is based on exponential potential functions. This
+allows us to both simplify and generalize the analysis of [BCE12] in different ways: $\quad 1.$ Our
+analysis covers a broad class of processes. This includes not only Two-Choice, but also processes
+with fewer bin samples like $(1+\beta)$, processes which can only receive one bit of information
+from each bin sample and graphical allocation, where bins correspond to vertices in a graph. $\quad
+2.$ Balls may be of different weights, as long as their weights are independent samples from a distribution
+satisfying a technical condition on its moment generating function. $\quad 3.$ For arbitrary batch
+sizes $b \geq n$, we prove a gap of $O(b/n \cdot \log n)$. For any $b \in [n , n^3]$, we improve this to
+$O(b/n + \log n)$ and show that it is tight for a family of processes. This implies the unexpected result
+that for e.g. $(1+\beta)$ with constant $\beta \in (0, 1]$, the gap is $\Theta(\log n)$ for all $b
+\in [n,n \log n]$. We also conduct experiments which support our theoretical results, and even hint
+at a superiority of less powerful processes like $(1+\beta)$ for large batch sizes. 

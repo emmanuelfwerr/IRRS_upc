@@ -1,0 +1,18 @@
+We introduce a new modified Navier-Stokes model in $3$ dimensions by modifying the convection term
+in the ordinary Navier-Stokes equations. This is done by replacing the convective term $(\textbf{u}\cdot
+\nabla) \textbf{u}$ by $(\textbf{v}\cdot \nabla)\textbf{u}$ with $\textbf{v}=c\textbf{u}/\sqrt{c^2+|\textbf{u}|^2}$
+where $c$ is the speed of light. Thus we have that $|\textbf{v}|\leq c$ and for $|\textbf{u}|\ll
+c$ we have $\textbf{v} \approx \textbf{u}$. Thus the solutions to this system should yield a good
+approximation to the solutions of the ordinary Navier-Stokes equations under physically reasonable
+conditions. The modification of the convective term is a natural progression of the work done in
+\cite{JaraczLee}. The property that $|\textbf{v}|\leq c$ embodies the notion that in relativity
+matter can't travel faster than the speed of light, giving the model its name. We prove that there
+exists a strong solution $\textbf{u} \in L^2(0, T; \textbf{H}^2) \cap L^{\infty}(0, T; \textbf{V})$
+with $\textbf{u}' \in L^2(0, T; \textbf{L}^2)$ to our system of equations on either a smooth bounded
+domain $U\subset \textbf{R}^3$ or the flat $3$-torus $\mathbb{T}$ for any initial velocity $\textbf{u}_0
+\in \textbf{V}$ and any forcing function $\textbf{f}\in L^2(0, T; \textbf{L}^2)$. No assumption
+on the smallness of the data is necessary. Here $\textbf{V}$ is the space of weakly divergence free
+vector fields with components in $H^1$ which vanish on the boundary. We also prove the uniqueness
+of this strong solution. Though our modification is somewhat ad-hoc, it suggests that though more
+complicated, equations incorporating aspects of special and general relativity might have better
+existence and uniqueness properties than the ordinary Navier-Stokes equations. 

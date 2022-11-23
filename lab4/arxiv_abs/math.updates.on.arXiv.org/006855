@@ -1,0 +1,18 @@
+In this paper, we investigate the robust resource allocation design for secure communication in
+an integrated sensing and communication (ISAC) system. A multi-antenna dual-functional radar-communication
+(DFRC) base station (BS) serves multiple single-antenna legitimate users and senses for targets
+simultaneously, where already identified targets are treated as potential single-antenna eavesdroppers.
+The DFRC BS scans a sector with a sequence of dedicated beams, and the ISAC system takes a snapshot
+of the environment during the transmission of each beam. Based on the sensing information, the DFRC
+BS can acquire the channel state information (CSI) of the potential eavesdroppers. Different from
+existing works that focused on the resource allocation design for a single snapshot, in this paper,
+we propose a novel optimization framework that jointly optimizes the communication and sensing
+resources over a sequence of snapshots with adjustable durations. To this end, we jointly optimize
+the duration of each snapshot, the beamforming vector, and the covariance matrix of the AN for maximization
+of the system sum secrecy rate over a sequence of snapshots while guaranteeing a minimum required
+average achievable rate and a maximum information leakage constraint for each legitimate user.
+The resource allocation algorithm design is formulated as a non-convex optimization problem,
+where we account for the imperfect CSI of both the legitimate users and the potential eavesdroppers.
+To make the problem tractable, we derive a bound for the uncertainty region of the potential eavesdroppers'
+small-scale fading based on a safe approximation, which facilitates the development of a block
+coordinate descent-based iterative algorithm for obtaining an efficient suboptimal solution.

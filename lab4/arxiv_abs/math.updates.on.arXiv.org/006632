@@ -1,0 +1,19 @@
+The design of a compact high-speed and wide field of view (FOV) receiver is challenging due to the
+presence of two well-known trade-offs. The first one is the area-bandwidth trade-off of photodetectors
+(PDs) and the second one is the gain-FOV trade-off due to the use of optics. The combined effects of
+these two trade-offs imply that the achievable data rate of an imaging optical receiver is limited
+by its FOV, i.e., a rate-FOV trade-off. To control the area-bandwidth trade-off, an array of small
+PDs can be used instead of a single PD. Moreover, in practice, a large-area lens is required to ensure
+sufficient power collection, which in turn limits the receiver FOV (i.e., gain-FOV trade-off).
+We propose an imaging receiver design in the form of an array of arrays. To achieve a reasonable receiver
+FOV, we use individual focusing lens for each PD array rather than a single collection lens for the
+whole receiver. The proposed array of arrays structure provides an effective method to control
+both gain-FOV trade-off (via an array of lenses) and area-bandwidth trade-off (via arrays of PDs).
+We first derive a tractable analytical model for the SNR of an array of PDs where the maximum ratio
+combining has been employed. Then, we extend the model for the proposed array of arrays structure
+and the accuracy of the analytical model is verified based on several Optic Studio-based simulations.
+Next, we formulate an optimization problem to maximize the achievable data rate of the imaging receiver
+subject to a minimum required FOV. The optimization problem is solved for two commonly used modulation
+techniques, namely, OOK and direct current biased optical orthogonal frequency division multiplexing
+with variable rate quadrature amplitude modulation. It is demonstrated that a data rate of ~ 24 Gbps
+with a FOV of 15 is achievable using OOK with a total receiver size of 2 cm by 2 cm. 

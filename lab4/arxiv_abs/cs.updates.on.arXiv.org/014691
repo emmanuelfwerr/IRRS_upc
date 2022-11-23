@@ -1,0 +1,19 @@
+Overparameterization in deep learning is powerful: Very large models fit the training data perfectly
+and yet often generalize well. This realization brought back the study of linear models for regression,
+including ordinary least squares (OLS), which, like deep learning, shows a "double-descent" behavior:
+(1) The risk (expected out-of-sample prediction error) can grow arbitrarily when the number of
+parameters $p$ approaches the number of samples $n$, and (2) the risk decreases with $p$ for $p>n$,
+sometimes achieving a lower value than the lowest risk for $p<n$. The divergence of the risk for OLS
+can be avoided with regularization. In this work, we show that for some data models it can also be avoided
+with a PCA-based dimensionality reduction (PCA-OLS, also known as principal component regression).
+We provide non-asymptotic bounds for the risk of PCA-OLS by considering the alignments of the population
+and empirical principal components. We show that dimensionality reduction improves robustness
+while OLS is arbitrarily susceptible to adversarial attacks, particularly in the overparameterized
+regime. We compare PCA-OLS theoretically and empirically with a wide range of projection-based
+methods, including random projections, partial least squares (PLS), and certain classes of linear
+two-layer neural networks. These comparisons are made for different data generation models to
+assess the sensitivity to signal-to-noise and the alignment of regression coefficients with the
+features. We find that methods in which the projection depends on the training data can outperform
+methods where the projections are chosen independently of the training data, even those with oracle
+knowledge of population quantities, another seemingly paradoxical phenomenon that has been identified
+previously. This suggests that overparameterization may not be necessary for good generalization.

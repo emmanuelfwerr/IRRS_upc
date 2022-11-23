@@ -1,0 +1,19 @@
+There is a great demand for vision-based robotics solutions that can operate using Global Positioning
+Systems (GPS), but are also robust against GPS signal loss and gyroscope failure. This paper investigates
+the estimation and tracking control in application to a Vertical Take-Off and Landing (VTOL) Unmanned
+Aerial Vehicle (UAV) in six degrees of freedom (6 DoF). A full state observer for the estimation of
+VTOL-UAV motion parameters (attitude, angular velocity, position, and linear velocity) is proposed
+on the Lie Group of $\mathbb{SE}_{2}\left(3\right)\times\mathbb{R}^{3}$ $=\mathbb{SO}\left(3\right)\times\mathbb{R}^{9}$
+with almost globally exponentially stable closed loop error signals. Thereafter, a full state
+observer-based controller for the VTOL-UAV motion parameters is proposed on the Lie Group with
+a guaranteed almost global exponential stability. The proposed approach produces good results
+without the need for angular and linear velocity measurements (without a gyroscope and GPS signals)
+utilizing only a set of known landmarks obtained by a vision-aided unit (monocular or stereo camera).
+The equivalent quaternion representation on $\mathbb{S}^{3}\times\mathbb{R}^{9}$ is provided
+in the Appendix. The observer-based controller is presented in a continuous form while its discrete
+version is tested using a VTOL-UAV simulation that incorporates large initial error and uncertain
+measurements. The proposed observer is additionally tested experimentally on a real-world UAV
+flight dataset. Keywords: Unmanned aerial vehicle, nonlinear filter algorithm, autonomous navigation,
+tracking control, feature measurement, observer-based controller, localization, exponential
+stability, asymptotic stability, inertial measurement unit (IMU), Global Positioning Systems
+(GPS), vision aided inertial navigation system. 

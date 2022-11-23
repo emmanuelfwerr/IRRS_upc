@@ -1,0 +1,20 @@
+Multi-label classification has attracted much attention in the machine learning community to
+address the problem of assigning single samples to more than one class at the same time. We propose
+an evolving multi-label fuzzy classifier (EFC-ML) which is able to self-adapt and self-evolve
+its structure with new incoming multi-label samples in an incremental, single-pass manner. It
+is based on a multi-output Takagi-Sugeno type architecture, where for each class a separate consequent
+hyper-plane is defined. The learning procedure embeds a locally weighted incremental correlation-based
+algorithm combined with (conventional) recursive fuzzily weighted least squares and Lasso-based
+regularization. The correlation-based part ensures that the interrelations between class labels,
+a specific well-known property in multi-label classification for improved performance, are preserved
+properly; the Lasso-based regularization reduces the curse of dimensionality effects in the case
+of a higher number of inputs. Antecedent learning is achieved by product-space clustering and conducted
+for all class labels together, which yields a single rule base, allowing a compact knowledge view.
+Furthermore, our approach comes with an online active learning (AL) strategy for updating the classifier
+on just a number of selected samples, which in turn makes the approach applicable for scarcely labelled
+streams in applications, where the annotation effort is typically expensive. Our approach was
+evaluated on several data sets from the MULAN repository and showed significantly improved classification
+accuracy compared to (evolving) one-versus-rest or classifier chaining concepts. A significant
+result was that, due to the online AL method, a 90\% reduction in the number of samples used for classifier
+updates had little effect on the accumulated accuracy trend lines compared to a full update in most
+data set cases. 

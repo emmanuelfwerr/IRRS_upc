@@ -1,0 +1,20 @@
+Longitudinal interaction studies with Socially Assistive Robots are crucial to ensure that the
+robot is relevant for long-term use and its perceptions are not prone to the novelty effect. In this
+paper, we present a dynamic Bayesian network (DBN) to capture the longitudinal interactions participants
+had with a teleoperated robot coach (RC) delivering mindfulness sessions. The DBN model is used
+to study complex, temporal interactions between the participants self-reported personality
+traits, weekly baseline wellbeing scores, session ratings, and facial AUs elicited during the
+sessions in a 5-week longitudinal study. DBN modelling involves learning a graphical representation
+that facilitates intuitive understanding of how multiple components contribute to the longitudinal
+changes in session ratings corresponding to the perceptions of the RC, and participants relaxation
+and calm levels. The learnt model captures the following within and between sessions aspects of
+the longitudinal interaction study: influence of the 5 personality dimensions on the facial AU
+states and the session ratings, influence of facial AU states on the session ratings, and the influences
+within the items of the session ratings. The DBN structure is learnt using first 3 time points and
+the obtained model is used to predict the session ratings of the last 2 time points of the 5-week longitudinal
+data. The predictions are quantified using subject-wise RMSE and R2 scores. We also demonstrate
+two applications of the model, namely, imputation of missing values in the dataset and estimation
+of longitudinal session ratings of a new participant with a given personality profile. The obtained
+DBN model thus facilitates learning of conditional dependency structure between variables in
+the longitudinal data and offers inferences and conceptual understanding which are not possible
+through other regression methodologies. 

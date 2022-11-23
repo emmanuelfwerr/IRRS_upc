@@ -1,0 +1,20 @@
+Video analytics systems critically rely on video cameras, which capture high-quality video frames,
+to achieve high analytics accuracy. Although modern video cameras often expose tens of configurable
+parameter settings that can be set by end-users, deployment of surveillance cameras today often
+uses a fixed set of parameter settings because the end-users lack the skill or understanding to reconfigure
+these parameters. In this paper, we first show that in a typical surveillance camera deployment,
+environmental condition changes can significantly affect the accuracy of analytics units such
+as person detection, face detection and face recognition, and how such adverse impact can be mitigated
+by dynamically adjusting camera settings. We then propose CAMTUNER, a framework that can be easily
+applied to an existing video analytics pipeline (VAP) to enable automatic and dynamic adaptation
+of complex camera settings to changing environmental conditions, and autonomously optimize the
+accuracy of analytics units (AUs) in the VAP. CAMTUNER is based on SARSA reinforcement learning
+(RL) and it incorporates two novel components: a light-weight analytics quality estimator and
+a virtual camera. CAMTUNER is implemented in a system with AXIS surveillance cameras and several
+VAPs (with various AUs) that processed day-long customer videos captured at airport entrances.
+Our evaluations show that CAMTUNER can adapt quickly to changing environments. We compared CAMTUNER
+with two alternative approaches where either static camera settings were used, or a strawman approach
+where camera settings were manually changed every hour (based on human perception of quality).
+We observed that for the face detection and person detection AUs, CAMTUNER is able to achieve up to
+13.8% and 9.2% higher accuracy, respectively, compared to the best of the two approaches (average
+improvement of 8% for both AUs). 

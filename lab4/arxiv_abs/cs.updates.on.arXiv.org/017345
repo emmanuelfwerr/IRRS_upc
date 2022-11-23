@@ -1,0 +1,20 @@
+Domain adaptive semantic segmentation attempts to make satisfactory dense predictions on an unlabeled
+target domain by utilizing the model trained on a labeled source domain. One solution is self-training,
+which retrains models with target pseudo labels. Many methods tend to alleviate noisy pseudo labels,
+however, they ignore intrinsic connections among cross-domain pixels with similar semantic concepts.
+Thus, they would struggle to deal with the semantic variations across domains, leading to less discrimination
+and poor generalization. In this work, we propose Semantic-Guided Pixel Contrast (SePiCo), a novel
+one-stage adaptation framework that highlights the semantic concepts of individual pixel to promote
+learning of class-discriminative and class-balanced pixel embedding space across domains. Specifically,
+to explore proper semantic concepts, we first investigate a centroid-aware pixel contrast that
+employs the category centroids of the entire source domain or a single source image to guide the learning
+of discriminative features. Considering the possible lack of category diversity in semantic concepts,
+we then blaze a trail of distributional perspective to involve a sufficient quantity of instances,
+namely distribution-aware pixel contrast, in which we approximate the true distribution of each
+semantic category from the statistics of labeled source data. Moreover, such an optimization objective
+can derive a closed-form upper bound by implicitly involving an infinite number of (dis)similar
+pairs. Extensive experiments show that SePiCo not only helps stabilize training but also yields
+discriminative features, making significant progress in both daytime and nighttime scenarios.
+Most notably, SePiCo establishes excellent results on tasks of GTAV/SYNTHIA-to-Cityscapes and
+Cityscapes-to-Dark Zurich, improving by 12.8, 8.8, and 9.2 mIoUs compared to the previous best
+method, respectively. 

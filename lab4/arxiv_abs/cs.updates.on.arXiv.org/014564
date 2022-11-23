@@ -1,0 +1,19 @@
+Context: Software metrics, as one form of static analyses, is a commonly used approach in software
+engineering in order to understand the state of a software system, in particular to identify potential
+areas prone to defects. Family-based techniques extract variability information from code artifacts
+in Software Product Lines (SPLs) to perform static analysis for all available variants. Many different
+types of metrics with numerous variants have been defined in literature. When counting all metrics
+including such variants, easily thousands of metrics can be defined. Computing all of them for large
+product lines can be an extremely expensive process in terms of performance and resource consumption.
+Objective: We address these performance and resource challenges while supporting customizable
+metric suites, which allow running both, single system and variability-aware code metrics. Method:
+In this paper, we introduce a partial parsing approach used for the efficient measurement of more
+than 42,000 code metric variations. The approach covers variability information and restricts
+parsing to the relevant parts of the Abstract Syntax Tree (AST). Conclusions: This partial parsing
+approach is designed to cover all relevant information to compute a broad variety of variability-aware
+code metrics on code artifacts containing annotation-based variability, e.g., realized with
+C-preprocessor statements. It allows for the flexible combination of single system and variability-aware
+metrics, which is not supported by existing tools. This is achieved by a novel representation of
+partially parsed product line code artifacts, which is tailored to the computation of the metrics.
+Our approach consumes considerably less resources, especially when computing many metric variants
+in parallel. 

@@ -1,0 +1,19 @@
+Gravitational microlensing method is a powerful method to detect isolated black holes in the Milky
+Way. During a microlensing event brightness of the source increases and this feature is used by many
+photometric surveys to alert on potential events. A typical microlensing event shows a characteristic
+light curve, however, some outbursting variable stars may show similar light curves to microlensing
+events especially when the cadence of observations is not dense enough. Our aim is to device a method
+for distinguishing candidates for microlensing events from any other types of alerts using solely
+their archival photometric multi-wavelength data. The most common contaminants in the microlensing
+event search are Classical Be-type stars, Young Stellar Objects and Asymptotic Giant Branch stars
+such as Miras. We build a training set using thousands of examples for the main classes of alerting
+stars combining optical to mid-infrared magnitudes from Gaia, 2MASS and AllWISE catalogues. We
+used supervised machine learning techniques to build models for classification of alerts. We verified
+our method on 120 microlensing events reported by Gaia Science Alerts which were studied spectroscopically
+and photometrically. With the use of only archival information at 90% probability threshold we
+correctly identified one-third of the microlensing events. We also run our classifier on positions
+of 368 Gaia alerts which were flagged as potential candidates for microlensing events. At the 90%
+probability threshold we classified 38 microlensing events and 29 other types of variables. The
+machine learning supported method we developed can be universally used for current and future alerting
+surveys in order to quickly assess the classification of galactic transients and help decide on
+further follow-up observations. 

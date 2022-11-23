@@ -1,0 +1,20 @@
+This book is a graduate-level introduction to probabilistic programming. It not only provides
+a thorough background for anyone wishing to use a probabilistic programming system, but also introduces
+the techniques needed to design and build these systems. It is aimed at people who have an undergraduate-level
+understanding of either or, ideally, both probabilistic machine learning and programming languages.
+We start with a discussion of model-based reasoning and explain why conditioning is a foundational
+computation central to the fields of probabilistic machine learning and artificial intelligence.
+We then introduce a first-order probabilistic programming language (PPL) whose programs correspond
+to graphical models with a known, finite, set of random variables. In the context of this PPL we introduce
+fundamental inference algorithms and describe how they can be implemented. We then turn to higher-order
+probabilistic programming languages. Programs in such languages can define models with dynamic
+computation graphs, which may not instantiate the same set of random variables in each execution.
+Inference requires methods that generate samples by repeatedly evaluating the program. Foundational
+algorithms for this kind of language are discussed in the context of an interface between program
+executions and an inference controller. Finally we consider the intersection of probabilistic
+and differentiable programming. We begin with a discussion of automatic differentiation, and
+how it can be used to implement efficient inference methods based on Hamiltonian Monte Carlo. We
+then discuss gradient-based maximum likelihood estimation in programs that are parameterized
+using neural networks, how to amortize inference using by learning neural approximations to the
+program posterior, and how language features impact the design of deep probabilistic programming
+systems. 

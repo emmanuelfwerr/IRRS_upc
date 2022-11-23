@@ -1,0 +1,19 @@
+Optimal treatment regimes are personalized policies for making a treatment decision based on subject
+characteristics, with the policy chosen to maximize some value. It is common to aim to maximize the
+mean outcome in the population, via a regime assigning treatment only to those whose mean outcome
+is higher under treatment versus control. However, the mean can be an unstable measure of centrality,
+resulting in imprecise statistical procedures, as well as unrobust decisions that can be overly
+influenced by a small fraction of subjects. In this work, we propose a new median optimal treatment
+regime that instead treats individuals whose conditional median is higher under treatment. This
+ensures that optimal decisions for individuals from the same group are not overly influenced either
+by (i) a small fraction of the group (unlike the mean criterion), or (ii) unrelated subjects from
+different groups (unlike marginal median/quantile criteria). We introduce a new measure of value,
+the Average Conditional Median Effect (ACME), which summarizes across-group median treatment
+outcomes of a policy, and which the median optimal treatment regime maximizes. After developing
+key motivating examples that distinguish median optimal treatment regimes from mean and marginal
+median optimal treatment regimes, we give a nonparametric efficiency bound for estimating the
+ACME of a policy, and propose a new doubly robust-style estimator that achieves the efficiency bound
+under weak conditions. To construct the median optimal treatment regime, we introduce a new doubly
+robust-style estimator for the conditional median treatment effect. Finite-sample properties
+are explored via numerical simulations and the proposed algorithm is illustrated using data from
+a randomized clinical trial in patients with HIV. 

@@ -1,0 +1,20 @@
+One approach to reduce the cost to simulate transitional compressible boundary layer flow is to
+adopt a near body reduced domain with boundary conditions enforced to be compatible with a computationally
+cheaper 3D RANS simulation. In such an approach it is desirable to enforce a consistent pressure
+distribution which is not typically the case when using the standard Riemann inflow boundary condition.
+We revisit the Riemann problem adopted in many DG based high fidelity formulations. Through analysis
+of the 1D linearised Euler equations it is demonstrated that maintaining entropy compatibility
+with the RANS simulation is important for a stable solution. The maintenance of Riemann invariant
+at outflow leaves one condition that can be imposed at the inflow. Therefore the entropy-pressure
+enforcement is the only stable boundary condition to enforce a known pressure distribution. We
+further demonstrate that all the entropy compatible inflow Riemann boundary conditions are stable
+providing the invariant compatible Riemann outflow boundary condition is also respected. Although
+the entropy-pressure compatible Riemann inflow boundary condition is stable from the 1D analysis,
+2D tests highlight divergence in the inviscid problem and neutrally stable wiggles in the velocity
+fields in viscous simulations around the stagnation point. A 2D analysis about a non-uniform baseflow
+assumption provides insight into this stability issue (ill-posedness) and motivate the use of
+a mix of inflow boundary conditions in this region of the flow. As a validation we apply the proposed
+boundary conditions to a reduced domain of a wing section normal to the leading-edge of the CRM-NLF
+model taken out of a full 3D RANS simulation at Mach 0.86 and a Reynolds number of 8.5 million. The results
+show that the entropy-pressure compatible Riemann inflow boundary condition leads to a good agreement
+in pressure distribution. 

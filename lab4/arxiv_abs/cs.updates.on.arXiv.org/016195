@@ -1,0 +1,19 @@
+There has been an increased interest in the use of deep learning approaches for software analytics
+tasks. State-of-the-art techniques leverage modern deep learning techniques such as LSTMs, yielding
+competitive performance, albeit at the price of longer training times. Recently, Galke and Scherp
+[18] showed that at least for image recognition, a decades-old feedforward neural network can match
+the performance of modern deep learning techniques. This motivated us to try the same in the SE literature.
+Specifically, in this paper, we apply feedforward networks with some preprocessing to two analytics
+tasks: issue close time prediction, and vulnerability detection. We test the hypothesis laid by
+Galke and Scherp [18], that feedforward networks suffice for many analytics tasks (which we call,
+the "Old but Gold" hypothesis) for these two tasks. For three out of five datasets from these tasks,
+we achieve new high-water mark results (that out-perform the prior state-of-the-art results)
+and for a fourth data set, Old but Gold performed as well as the recent state of the art. Furthermore,
+the old but gold results were obtained orders of magnitude faster than prior work. For example, for
+issue close time, old but gold found good predictors in 90 seconds (as opposed to the newer methods,
+which took 6 hours to run). Our results supports the "Old but Gold" hypothesis and leads to the following
+recommendation: try simpler alternatives before more complex methods. At the very least, this
+will produce a baseline result against which researchers can compare some other, supposedly more
+sophisticated, approach. And in the best case, they will obtain useful results that are as good as
+anything else, in a small fraction of the effort. To support open science, all our scripts and data
+are available on-line at https://github.com/fastidiouschipmunk/simple. 

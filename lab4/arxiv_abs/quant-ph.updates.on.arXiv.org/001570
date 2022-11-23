@@ -1,0 +1,20 @@
+Demonstrating quantum advantage requires experimental implementation of a computational task
+that is hard to achieve using state-of-the-art classical systems. One approach is to perform sampling
+from a probability distribution associated with a class of highly entangled many-body wavefunctions.
+It has been suggested that this approach can be certified with the Linear Cross-Entropy Benchmark
+(XEB). We critically examine this notion. First, in a "benign" setting where an honest implementation
+of noisy quantum circuits is assumed, we characterize the conditions under which the XEB approximates
+the fidelity. Second, in an "adversarial" setting where all possible classical algorithms are
+considered for comparison, we show that achieving relatively high XEB values does not imply faithful
+simulation of quantum dynamics. We present an efficient classical algorithm that, with 1 GPU within
+2s, yields high XEB values, namely 2-12% of those obtained in experiments. By identifying and exploiting
+several vulnerabilities of the XEB, we achieve high XEB values without full simulation of quantum
+circuits. Remarkably, our algorithm features better scaling with the system size than noisy quantum
+devices for commonly studied random circuit ensembles. To quantitatively explain the success
+of our algorithm and the limitations of the XEB, we use a theoretical framework in which the average
+XEB and fidelity are mapped to statistical models. We illustrate the relation between the XEB and
+the fidelity for quantum circuits in various architectures, with different gate choices, and in
+the presence of noise. Our results show that XEB's utility as a proxy for fidelity hinges on several
+conditions, which must be checked in the benign setting but cannot be assumed in the adversarial
+setting. Thus, the XEB alone has limited utility as a benchmark for quantum advantage. We discuss
+ways to overcome these limitations. 

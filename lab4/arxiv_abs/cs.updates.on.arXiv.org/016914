@@ -1,0 +1,19 @@
+A MasterFace is a face image that can successfully match against a large portion of the population.
+Since their generation does not require access to the information of the enrolled subjects, MasterFace
+attacks represent a potential security risk for widely-used face recognition systems. Previous
+works proposed methods for generating such images and demonstrated that these attacks can strongly
+compromise face recognition. However, previous works followed evaluation settings consisting
+of older recognition models, limited cross-dataset and cross-model evaluations, and the use of
+low-scale testing data. This makes it hard to state the generalizability of these attacks. In this
+work, we comprehensively analyse the generalizability of MasterFace attacks in empirical and
+theoretical investigations. The empirical investigations include the use of six state-of-the-art
+FR models, cross-dataset and cross-model evaluation protocols, and utilizing testing datasets
+of significantly higher size and variance. The results indicate a low generalizability when MasterFaces
+are training on a different face recognition model than the one used for testing. In these cases,
+the attack performance is similar to zero-effort imposter attacks. In the theoretical investigations,
+we define and estimate the face capacity and the maximum MasterFace coverage under the assumption
+that identities in the face space are well separated. The current trend of increasing the fairness
+and generalizability in face recognition indicates that the vulnerability of future systems might
+further decrease. We conclude that MasterFaces should not be seen as a threat to face recognition
+systems but, on the contrary, seen as a tool to understand and enhance the robustness of face recognition
+models. 

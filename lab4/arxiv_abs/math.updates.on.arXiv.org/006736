@@ -1,0 +1,20 @@
+In this paper we consider a class of structured monotone inclusion (MI) problems that consist of
+finding a zero in the sum of two monotone operators, in which one is maximal monotone while another
+is locally Lipschitz continuous. In particular, we first propose a primal-dual extrapolation
+(PDE) method for solving a structured strongly MI problem by modifying the classical forward-backward
+splitting method by using a point and operator extrapolation technique, in which the parameters
+are adaptively updated by a backtracking line search scheme. The proposed PDE method is almost parameter-free,
+equipped with a verifiable termination criterion, and enjoys an operation complexity of ${\cal
+O}(\log \epsilon^{-1})$, measured by the amount of fundamental operations consisting only of
+evaluations of one operator and resolvent of another operator, for finding an $\epsilon$-residual
+solution of the structured strongly MI problem. We then propose another PDE method for solving a
+structured non-strongly MI problem by applying the above PDE method to approximately solve a sequence
+of structured strongly MI problems. The resulting PDE method is parameter-free, equipped with
+a verifiable termination criterion, and enjoys an operation complexity of ${\cal O}(\epsilon^{-1}\log
+\epsilon^{-1})$ for finding an $\epsilon$-residual solution of the structured non-strongly
+MI problem. As a consequence, we apply the latter PDE method to convex conic optimization, conic
+constrained saddle point, and variational inequality problems, and obtain complexity results
+for finding an $\epsilon$-KKT or $\epsilon$-residual solution of them under local Lipschitz continuity.
+To the best of our knowledge, no prior studies were conducted to investigate methods with complexity
+guarantees for solving the aforementioned problems under local Lipschitz continuity. All the
+complexity results obtained in this paper are entirely new. 

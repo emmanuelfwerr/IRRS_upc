@@ -1,0 +1,20 @@
+By concisely representing a joint function of many variables as the combination of small functions,
+discrete graphical models (GMs) provide a powerful framework to analyze stochastic and deterministic
+systems of interacting variables. One of the main queries on such models is to identify the extremum
+of this joint function. This is known as the Weighted Constraint Satisfaction Problem (WCSP) on
+deterministic Cost Function Networks and as Maximum a Posteriori (MAP) inference on stochastic
+Markov Random Fields. Algorithms for approximate WCSP inference typically rely on local consistency
+algorithms or belief propagation. These methods are intimately related to linear programming
+(LP) relaxations and often coupled with reparametrizations defined by the dual solution of the
+associated LP. Since the seminal work of Goemans and Williamson, it is well understood that convex
+SDP relaxations can provide superior guarantees to LP. But the inherent computational cost of interior
+point methods has limited their application. The situation has improved with the introduction
+of non-convex Burer-Monteiro style methods which are well suited to handle the SDP relaxation of
+combinatorial problems with binary variables (such as MAXCUT, MaxSAT or MAP/Ising). We compute
+low rank SDP upper and lower bounds for discrete pairwise graphical models with arbitrary number
+of values and arbitrary binary cost functions by extending a Burer-Monteiro style method based
+on row-by-row updates. We consider a traditional dualized constraint approach and a dedicated
+Block Coordinate Descent approach which avoids introducing large penalty coefficients to the
+formulation. On increasingly hard and dense WCSP/CFN instances, we observe that the BCD approach
+can outperform the dualized approach and provide tighter bounds than local consistencies/convergent
+message passing approaches. 

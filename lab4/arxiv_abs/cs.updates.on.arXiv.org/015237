@@ -1,0 +1,20 @@
+As enterprises embrace blockchain technology, many real-world applications have been developed
+and deployed using permissioned blockchain platforms (access to network is controlled and given
+to only nodes with known identities). Such blockchain platforms heavily depend on cryptography
+to provide a layer of trust within the network, thus verification of cryptographic signatures often
+becomes the bottleneck. The Elliptic Curve Digital Signature Algorithm (ECDSA) is the most commonly
+used cryptographic scheme in permissioned blockchains. In this paper, we propose an efficient
+implementation of ECDSA signature verification on an FPGA, in order to improve the performance
+of permissioned blockchains that aim to use FPGA-based hardware accelerators. We propose several
+optimizations for modular arithmetic (e.g., custom multipliers and fast modular reduction) and
+point arithmetic (e.g., reduced number of point double and addition operations, and optimal width
+NAF representation). Based on these optimized modular and point arithmetic modules, we propose
+an ECDSA verification engine that can be used by any application for fast verification of ECDSA signatures.
+We further optimize our ECDSA verification engine for Hyperledger Fabric (one of the most widely
+used permissioned blockchain platforms) by moving carefully selected operations to a precomputation
+block, thus simplifying the critical path of ECDSA signature verification. From our implementation
+on Xilinx Alveo U250 accelerator board with target frequency of 250MHz, our ECDSA verification
+engine can perform a single verification in $760\mu s$ resulting in a throughput of 1,315 verifications
+per second, which is ~2.5x faster than state-of-the-art FPGA-based implementations. Our Hyperledger
+Fabric-specific ECDSA engine can perform a single verification in $368\mu s$ with a throughput
+of 2,717 verifications per second. 

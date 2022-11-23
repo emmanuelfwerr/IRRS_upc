@@ -1,0 +1,20 @@
+Detailed understanding of the coupling between fluid flow and solid deformation in porous media
+is crucial for the development biomedical devices and novel energy technologies relating to a wide
+range of geological and biological processes. Well established models based on poroelasticity
+theory exist for describing coupled fluid-solid mechanics. However, these models are not adapted
+to describe systems with multiple fluid phases or 'hybrid-scale' systems containing both solid-free
+regions and porous matrices. To address this problem, we present a novel computational fluid dynamics
+approach based on a unique set of volume-averaged partial differential equations that asymptotically
+approach the Navier-Stokes Volume-of-Fluid equations in solid-free-regions and Biot's Poroelasticity
+Theory in porous regions. Unlike existing multiscale multiphase solvers, it can match analytical
+predictions of capillary, relative permeability, and gravitational effects at both the pore and
+Darcy scales. Through careful consideration of interfacial dynamics and extensive benchmarking,
+we show that our model accurately captures the strong two-way coupling that is often exhibited between
+multiple fluids and deformable porous media during processes such as swelling, compression, and
+fracturing. The versatility of the approach is illustrated through studies that 1) quantified
+the effects of microporosity on sedimentary rock permeability, 2) identified the governing non-dimensional
+parameters that predict capillary and viscous fracturing in porous media, 3) characterised the
+effects of cracking on hydraulic fracture formation, and 4) described wave absorption and propagation
+in poroelastic coastal barriers. The approach's open-source numerical implementation 'hybridBiotInterFoam',
+marks the extension of computational fluid dynamics simulation packages into deformable, multi-phase,
+multiscale porous systems. 

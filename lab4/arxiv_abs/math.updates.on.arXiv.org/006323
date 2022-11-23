@@ -1,0 +1,20 @@
+The optimistic gradient method has seen increasing popularity as an efficient first-order method
+for solving convex-concave saddle point problems. To analyze its iteration complexity, a recent
+work [arXiv:1901.08511] proposed an interesting perspective that interprets the optimistic
+gradient method as an approximation to the proximal point method. In this paper, we follow this approach
+and distill the underlying idea of optimism to propose a generalized optimistic method, which encompasses
+the optimistic gradient method as a special case. Our general framework can handle constrained
+saddle point problems with composite objective functions and can work with arbitrary norms with
+compatible Bregman distances. Moreover, we also develop an adaptive line search scheme to select
+the stepsizes without knowledge of the smoothness coefficients. We instantiate our method with
+first-order, second-order and higher-order oracles and give sharp global iteration complexity
+bounds. When the objective function is convex-concave, we show that the averaged iterates of our
+$p$-th-order method ($p\geq 1$) converge at a rate of $\mathcal{O}(1/N^\frac{p+1}{2})$. When
+the objective function is further strongly-convex-strongly-concave, we prove a complexity bound
+of $\mathcal{O}(\frac{L_1}{\mu}\log\frac{1}{\epsilon})$ for our first-order method and a
+bound of $\mathcal{O}((L_p D^\frac{p-1}{2}/\mu)^{\frac{2}{p+1}}+\log\log\frac{1}{\epsilon})$
+for our $p$-th-order method ($p\geq 2$) respectively, where $L_p$ ($p\geq 1$) is the Lipschitz
+constant of the $p$-th-order derivative, $\mu$ is the strongly-convex parameter, and $D$ is the
+initial Bregman distance to the saddle point. Moreover, our line search scheme provably only requires
+an almost constant number of calls to a subproblem solver per iteration on average, making our first-order
+and second-order methods particularly amenable to implementation. 

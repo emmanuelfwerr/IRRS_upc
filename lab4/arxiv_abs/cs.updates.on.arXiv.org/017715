@@ -1,0 +1,19 @@
+The dictionary learning problem, representing data as a combination of a few atoms, has long stood
+as a popular method for learning representations in statistics and signal processing. The most
+popular dictionary learning algorithm alternates between sparse coding and dictionary update
+steps, and a rich literature has studied its theoretical convergence. The success of dictionary
+learning relies on access to a ``good'' initial estimate of the dictionary and the ability of the
+sparse coding step to provide an unbiased estimate of the code. The growing popularity of unrolled
+sparse coding networks has led to the empirical finding that backpropagation through such networks
+performs dictionary learning. We offer the first theoretical analysis of these empirical results
+through PUDLE, a Provable Unrolled Dictionary LEarning method. We provide conditions on the network
+initialization and data distribution sufficient to recover and preserve the support of the latent
+sparse representation. Additionally, we address two challenges; first, the vanilla unrolled
+sparse coding computes a biased code estimate, and second, gradients during backpropagated learning
+can become unstable. We show approaches to reduce the bias of the code estimate in the forward pass,
+and that of the dictionary estimate in the backward pass. We propose strategies to resolve the learning
+instability. This is achieved by tuning network parameters and modifying the loss function. Overall,
+we highlight the impact of loss, unrolling, and backpropagation on convergence. We complement
+our findings through synthetic and image denoising experiments. Finally, we demonstrate PUDLE's
+interpretability, a driving factor in designing deep networks based on iterative optimizations,
+by building a mathematical relation between network weights, its output, and the training set.

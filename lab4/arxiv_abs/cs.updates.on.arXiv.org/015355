@@ -1,0 +1,20 @@
+The misunderstanding and incorrect configurations of cryptographic primitives have exposed
+severe security vulnerabilities to attackers. Due to the pervasiveness and diversity of cryptographic
+misuses, a comprehensive and accurate understanding of how cryptographic misuses can undermine
+the security of an Android app is critical to the subsequent mitigation strategies but also challenging.
+Although various approaches have been proposed to detect cryptographic misuses in Android apps,
+seldom studies have focused on estimating the security risks introduced by cryptographic misuses.
+To address this problem, we present an extensible framework for deciding the threat level of cryptographic
+misuses in Android apps. Firstly, we propose a unified specification for representing cryptographic
+misuses to make our framework extensible and develop adapters to unify the detection results of
+the state-of-the-art cryptographic misuse detectors, resulting in an adapter-based detection
+toolchain for a more comprehensive list of cryptographic misuses. Secondly, we employ a misuse-originating
+data-flow analysis to connect each cryptographic misuse to a set of data-flow sinks in an app, based
+on which we propose a quantitative data-flow-driven metric for assessing the overall risk of the
+app introduced by cryptographic misuses. To make the per-app assessment more useful in the app vetting
+at the app-store level, we apply unsupervised learning to predict and classify the top risky threats,
+to guide more efficient subsequent mitigations. In the experiments on an instantiated implementation
+of the framework, we evaluate the accuracy of our detection and the effect of data-flow-driven risk
+assessment of our framework. Our empirical study on over 40,000 apps as well as the analysis of popular
+apps reveals important security observations on the real threats of cryptographic misuses in Android
+apps. 

@@ -1,0 +1,20 @@
+Over-the-air computation (AirComp) has emerged as a new analog power-domain non-orthogonal multiple
+access (NOMA) technique for low-latency model/gradient-updates aggregation in federated edge
+learning (FEEL). By integrating communication and computation into a joint design, AirComp can
+significantly enhance the communication efficiency, but at the cost of aggregation errors caused
+by channel fading and noise. This paper studies a particular type of FEEL with federated averaging
+(FedAvg) and AirComp-based model-update aggregation, namely over-the-air FedAvg (Air-FedAvg).
+We investigate the transmission power control to combat against the AirComp aggregation errors
+for enhancing the training accuracy and accelerating the training speed of Air-FedAvg. Towards
+this end, we first analyze the convergence behavior (in terms of the optimality gap) of Air-FedAvg
+with aggregation errors at different outer iterations. Then, to enhance the training accuracy,
+we minimize the optimality gap by jointly optimizing the transmission power control at edge devices
+and the denoising factors at edge server, subject to a series of power constraints at individual
+edge devices. Furthermore, to accelerate the training speed, we also minimize the training latency
+of Air-FedAvg with a given targeted optimality gap, in which learning hyper-parameters including
+the numbers of outer iterations and local training epochs are jointly optimized with the power control.
+Finally, numerical results show that the proposed transmission power control policy achieves
+significantly faster convergence for Air-FedAvg, as compared with benchmark policies with fixed
+power transmission or per-iteration mean squared error (MSE) minimization. It is also shown that
+the Air-FedAvg achieves an order-of-magnitude shorter training latency than the conventional
+FedAvg with digital orthogonal multiple access (OMA-FedAvg). 

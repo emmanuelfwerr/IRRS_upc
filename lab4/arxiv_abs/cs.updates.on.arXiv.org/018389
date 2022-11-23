@@ -1,0 +1,19 @@
+Various cryptographic techniques are used in outsourced database systems to ensure data privacy
+while allowing for efficient querying. This work proposes a definition and components of a new secure
+and efficient outsourced database system, which answers various types of queries, with different
+privacy guarantees in different security models. This work starts with the survey of five order-revealing
+encryption schemes that can be used directly in many database indices and five range query protocols
+with various security / efficiency tradeoffs. The survey systematizes the state-of-the-art range
+query solutions in a snapshot adversary setting and offers some non-obvious observations regarding
+the efficiency of the constructions. In $\mathcal{E}\text{psolute}$, a secure range query engine,
+security is achieved in a setting with a much stronger adversary where she can continuously observe
+everything on the server, and leaking even the result size can enable a reconstruction attack. $\mathcal{E}\text{psolute}$
+proposes a definition, construction, analysis, and experimental evaluation of a system that provably
+hides both access pattern and communication volume while remaining efficient. The work concludes
+with $k\text{-a}n\text{o}n$ -- a secure similarity search engine in a snapshot adversary model.
+The work presents a construction in which the security of $k\text{NN}$ queries is achieved similarly
+to OPE / ORE solutions -- encrypting the input with an approximate Distance Comparison Preserving
+Encryption scheme so that the inputs, the points in a hyperspace, are perturbed, but the query algorithm
+still produces accurate results. We use TREC datasets and queries for the search, and track the rank
+quality metrics such as MRR and nDCG. For the attacks, we build an LSTM model that trains on the correlation
+between a sentence and its embedding and then predicts words from the embedding. 

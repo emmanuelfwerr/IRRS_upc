@@ -1,0 +1,19 @@
+Current treatment planning of patients diagnosed with a brain tumor, such as glioma, could significantly
+benefit by accessing the spatial distribution of tumor cell concentration. Existing diagnostic
+modalities, e.g. magnetic resonance imaging (MRI), contrast sufficiently well areas of high cell
+density. In gliomas, however, they do not portray areas of low cell concentration, which can often
+serve as a source for the secondary appearance of the tumor after treatment. To estimate tumor cell
+densities beyond the visible boundaries of the lesion, numerical simulations of tumor growth could
+complement imaging information by providing estimates of full spatial distributions of tumor
+cells. Over recent years a corpus of literature on medical image-based tumor modeling was published.
+It includes different mathematical formalisms describing the forward tumor growth model. Alongside,
+various parametric inference schemes were developed to perform an efficient tumor model personalization,
+i.e. solving the inverse problem. However, the unifying drawback of all existing approaches is
+the time complexity of the model personalization which prohibits a potential integration of the
+modeling into clinical settings. In this work, we introduce a deep learning based methodology for
+inferring the patient-specific spatial distribution of brain tumors from T1Gd and FLAIR MRI medical
+scans. Coined as Learn-Morph-Infer the method achieves real-time performance in the order of minutes
+on widely available hardware and the compute time is stable across tumor models of different complexity,
+such as reaction-diffusion and reaction-advection-diffusion models. We believe the proposed
+inverse solution approach not only bridges the way for clinical translation of brain tumor personalization
+but can also be adopted to other scientific and engineering domains. 

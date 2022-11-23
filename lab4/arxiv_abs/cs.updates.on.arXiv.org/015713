@@ -1,0 +1,20 @@
+In this work, we study empirical risk minimization (ERM) within a federated learning framework,
+where a central server minimizes an ERM objective function using training data that is stored across
+$m$ clients. In this setting, the Federated Averaging (FedAve) algorithm is the staple for determining
+$\epsilon$-approximate solutions to the ERM problem. Similar to standard optimization algorithms,
+the convergence analysis of FedAve only relies on smoothness of the loss function in the optimization
+parameter. However, loss functions are often very smooth in the training data too. To exploit this
+additional smoothness, we propose the Federated Low Rank Gradient Descent (FedLRGD) algorithm.
+Since smoothness in data induces an approximate low rank structure on the loss function, our method
+first performs a few rounds of communication between the server and clients to learn weights that
+the server can use to approximate clients' gradients. Then, our method solves the ERM problem at
+the server using inexact gradient descent. To show that FedLRGD can have superior performance to
+FedAve, we present a notion of federated oracle complexity as a counterpart to canonical oracle
+complexity. Under some assumptions on the loss function, e.g., strong convexity in parameter,
+$\eta$-H\"older smoothness in data, etc., we prove that the federated oracle complexity of FedLRGD
+scales like $\phi m(p/\epsilon)^{\Theta(d/\eta)}$ and that of FedAve scales like $\phi m(p/\epsilon)^{3/4}$
+(neglecting sub-dominant factors), where $\phi\gg 1$ is a "communication-to-computation ratio,"
+$p$ is the parameter dimension, and $d$ is the data dimension. Then, we show that when $d$ is small
+and the loss function is sufficiently smooth in the data, FedLRGD beats FedAve in federated oracle
+complexity. Finally, in the course of analyzing FedLRGD, we also establish a result on low rank approximation
+of latent variable models. 

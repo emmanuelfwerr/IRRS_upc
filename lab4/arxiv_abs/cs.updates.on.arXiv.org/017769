@@ -1,0 +1,20 @@
+Global Positioning Systems (GPS) have played a crucial role in various navigation applications.
+Nevertheless, localizing the perfect destination within the last few meters remains an important
+but unresolved problem. Limited by the GPS positioning accuracy, navigation systems always show
+users a vicinity of a destination, but not its exact location. Street view images (SVI) in maps as
+an immersive media technology have served as an aid to provide the physical environment for human
+last-meters wayfinding. However, due to the large diversity of geographic context and acquisition
+conditions, the captured SVI always contains various distracting objects (e.g., pedestrians
+and vehicles), which will distract human visual attention from efficiently finding the destination
+in the last few meters. To address this problem, we highlight the importance of reducing visual distraction
+in image-based wayfinding by proposing a saliency-guided image inpainting framework. It aims
+at redirecting human visual attention from distracting objects to destination-related objects
+for more efficient and accurate wayfinding in the last meters. Specifically, a context-aware distracting
+object detection method driven by deep salient object detection has been designed to extract distracting
+objects from three semantic levels in SVI. Then we employ a large-mask inpainting method with fast
+Fourier convolutions to remove the detected distracting objects. Experimental results with both
+qualitative and quantitative analysis show that our saliency-guided inpainting method can not
+only achieve great perceptual quality in street view images but also redirect the human's visual
+attention to focus more on static location-related objects than distracting ones. The human-based
+evaluation also justified the effectiveness of our method in improving the efficiency of locating
+the target destination. 

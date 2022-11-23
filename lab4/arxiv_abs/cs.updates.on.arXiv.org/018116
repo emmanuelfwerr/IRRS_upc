@@ -1,0 +1,20 @@
+Scaling up model depth and size is now a common approach to raise accuracy in many deep learning (DL)
+applications, as evidenced by the widespread success of multi-billion or even trillion parameter
+models in natural language processing (NLP) research. Despite success in DL research and at major
+technology companies, broader practical adoption of such large models among domain scientists
+and businesses is still bottlenecked by GPU memory limits, high training costs, and low GPU availability,
+even on public clouds. Model selection needs further compound these resource challenges: users
+often need to compare dozens of models with different hyper-parameters or neural architectures
+to suit their specific task and dataset. In this paper, we present Hydra, a system designed to tackle
+such challenges by enabling out-of-the-box scaling for multi-large-model DL workloads on even
+commodity GPUs in a resource-efficient manner. Hydra is the first approach to holistically optimize
+the execution of multi-model workloads for large DL models. We do this by adapting prior "model-parallel"
+execution schemes to work with scalable parameter offloading across the memory hierarchy and further
+hybridizing this approach with task-parallel job scheduling techniques. Hydra decouples scalability
+of model parameters from parallelism of execution, thus enabling DL users to train even a 6-billion
+parameter model on a single commodity GPU. It also fully exploits the speedup potential of task parallelism
+in multi-GPU setups, yielding near-linear strong scaling and making rigorous model selection
+perhaps more practical for such models. We evaluate end-to-end performance by fine-tuning GPT-2
+for language modeling. We find that Hydra offers between 50% and 100% higher training throughput
+than even the best settings of state-of-the-art industrial frameworks such as DeepSpeed and GPipe
+for multi-large-model training. 

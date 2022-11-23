@@ -1,0 +1,19 @@
+When software evolves, opportunities for introducing faults appear. Therefore, it is important
+to test the evolved program behaviors during each evolution cycle. We conduct an exploratory study
+to investigate the properties of commit-relevant mutants, i.e., the test elements of commit-aware
+mutation testing, by offering a general definition and an experimental approach to identify them.
+We thus, aim at investigating the prevalence, location, comparative advantages of commit-aware
+mutation testing over time (i.e., the program evolution) and the predictive power of several commit-related
+features to understand the essential properties for its best-effort application case. Our approach
+utilizes the impact of mutants and the effects of one mutant on another in capturing and analyzing
+the implicit interactions between the changed and unchanged code parts. The study analyses millions
+of mutants (over 10 million), 288 commits, five (5) different open-source software projects involving
+over 68,213 CPU days of computation and sets a ground truth where we perform our analysis. Our analysis
+shows that commit-relevant mutants are located mainly outside of program commit change (81%),
+while an effective selection of commit-relevant mutants can reduce the number of mutants by up to
+93%. In addition, we demonstrate that commit relevant mutation testing is significantly more effective
+and efficient than state-of-the-art baselines. Our analysis of the predictive power of mutants
+and commit-related features in predicting commit-relevant mutants found that most proxy features
+do not reliably predict commit-relevant mutants. This empirical study highlights the properties
+of commit-relevant mutants and demonstrates the importance of identifying and selecting commit-relevant
+mutants when testing evolving software systems. 

@@ -1,0 +1,19 @@
+With the rapid development of smart manufacturing, data-driven machinery health management has
+been of growing attention. In situations where some classes are more difficult to be distinguished
+compared to others and where classes might be organised in a hierarchy of categories, current DL
+methods can not work well. In this study, a novel hierarchical cavitation intensity recognition
+framework using Sub-Main Transfer Network, termed SMTNet, is proposed to classify acoustic signals
+of valve cavitation. SMTNet model outputs multiple predictions ordered from coarse to fine along
+a network corresponding to a hierarchy of target cavitation states. Firstly, a data augmentation
+method based on Sliding Window with Fast Fourier Transform (Swin-FFT) is developed to solve few-shot
+problem. Secondly, a 1-D double hierarchical residual block (1-D DHRB) is presented to capture
+sensitive features of the frequency domain valve acoustic signals. Thirdly, hierarchical multi-label
+tree is proposed to assist the embedding of the semantic structure of target cavitation states into
+SMTNet. Fourthly, experience filtering mechanism is proposed to fully learn a prior knowledge
+of cavitation detection model. Finally, SMTNet has been evaluated on two cavitation datasets without
+noise (Dataset 1 and Dataset 2), and one cavitation dataset with real noise (Dataset 3) provided
+by SAMSON AG (Frankfurt). The prediction accurcies of SMTNet for cavitation intensity recognition
+are as high as 95.32%, 97.16% and 100%, respectively. At the same time, the testing accuracies of
+SMTNet for cavitation detection are as high as 97.02%, 97.64% and 100%. In addition, SMTNet has also
+been tested for different frequencies of samples and has achieved excellent results of the highest
+frequency of samples of mobile phones. 

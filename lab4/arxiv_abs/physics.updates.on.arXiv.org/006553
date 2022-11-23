@@ -1,0 +1,19 @@
+This thesis presents a novel multiphysics solver, named gtawFoam, for Gas Tungsten Arc Welding
+(GTAW) that is applied to simulate orbital GTAW on ultra-thin-walled titanium tubing. In this thesis,
+ultra-thin-walled tubing refers to tubing where the wall thicknesses are less than 500 $\mu m$.
+Orbital welding of tubing with this wall thickness requires both a sufficient heat input to weld
+the tubing and an internal buttressing gas flow to ensure the tube retains its geometrical integrity.
+The specific use case is for the commercially pure grade 2 titanium tubing used in the ATLAS ITk cooling
+system which is 2.275 $mm$ outer diameter and 300 $\mu m$ wall thickness at the weld. The solver is
+created using the open source computational fluid dynamics library OpenFOAM and each component
+of the solver is benchmarked against an appropriate case. With the solver established, it is used
+to simulate a series of welding procedures that were performed experimentally on the aforementioned
+titanium tubing. Both the experimental and simulation results show a `goldilocks' region where
+the weld heat input and inner buttressing gas flow are moderated to a level where a fully penetrating
+weld is created but the geometric integrity of the tube is not compromised. gtawFoam is then used
+to simulate hypothetical tubing with larger and smaller wall thicknesses between 250 $\mu m$ and
+350 $\mu m$. The results suggest that the required buttressing gas pressure once achieved is relatively
+transferable between wall thickness changes but applying enough heat so as to achieve full penetration
+is critical. These results are then used to predict effective welding procedures for this hypothetical
+tubing. gtawFoam is subsequently applied to the welding of turbine blades. This includes the addition
+of multiple layers of filler metal to mimic additive manufacturing. 

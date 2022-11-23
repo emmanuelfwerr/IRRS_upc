@@ -1,0 +1,19 @@
+Federated Learning (FL) enables numerous participants to train deep learning models collaboratively
+without exposing their personal, potentially sensitive data, making it a promising solution for
+data privacy in collaborative training. The distributed nature of FL and unvetted data, however,
+makes it inherently vulnerable to backdoor attacks: In this scenario, an adversary injects backdoor
+functionality into the centralized model during training, which can be triggered to cause the desired
+misclassification for a specific adversary-chosen input. A range of prior work establishes successful
+backdoor injection in an FL system; however, these backdoors are not demonstrated to be long-lasting.
+The backdoor functionality does not remain in the system if the adversary is removed from the training
+process since the centralized model parameters continuously mutate during successive FL training
+rounds. Therefore, in this work, we propose PerDoor, a persistent-by-construction backdoor injection
+technique for FL, driven by adversarial perturbation and targeting parameters of the centralized
+model that deviate less in successive FL rounds and contribute the least to the main task accuracy.
+An exhaustive evaluation considering an image classification scenario portrays on average $10.5\times$
+persistence over multiple FL rounds compared to traditional backdoor attacks. Through experiments,
+we further exhibit the potency of PerDoor in the presence of state-of-the-art backdoor prevention
+techniques in an FL system. Additionally, the operation of adversarial perturbation also assists
+PerDoor in developing non-uniform trigger patterns for backdoor inputs compared to uniform triggers
+(with fixed patterns and locations) of existing backdoor techniques, which are prone to be easily
+mitigated. 

@@ -1,0 +1,20 @@
+Objective: The bidomain model and the finite element method are an established standard to mathematically
+describe cardiac electrophysiology, but are both suboptimal choices for fast and large-scale
+simulations due to high computational costs. We investigate to what extent simplified approaches
+for propagation models (monodomain, reaction-eikonal and eikonal) and forward calculation (boundary
+element and infinite volume conductor) deliver markedly accelerated, yet physiologically accurate
+simulation results in atrial electrophysiology. Methods: We compared action potential durations,
+local activation times (LATs), and electrocardiograms (ECGs) for sinus rhythm simulations on
+healthy and fibrotically infiltrated atrial models. Results: All simplified model solutions
+yielded LATs and P waves in accurate accordance with the bidomain results. Only for the eikonal model
+with pre-computed action potential templates shifted in time to derive transmembrane voltages,
+repolarization behavior notably deviated from the bidomain results. ECGs calculated with the
+boundary element method were characterized by correlation coefficients >0.9 compared to the finite
+element method. The infinite volume conductor method led to lower correlation coefficients caused
+predominantly by systematic overestimations of P wave amplitudes in the precordial leads. Conclusion:
+Our results demonstrate that the eikonal model yields accurate LATs and combined with the boundary
+element method precise ECGs compared to markedly more expensive full bidomain simulations. However,
+for an accurate representation of atrial repolarization dynamics, diffusion terms must be accounted
+for in simplified models. Significance: Simulations of atrial LATs and ECGs can be notably accelerated
+to clinically feasible time frames at high accuracy by resorting to the eikonal and boundary element
+methods. 

@@ -1,0 +1,19 @@
+The scientific interest in studying high-energy transient phenomena in the Universe has largely
+grown for the last decade. Now, multiple ground-based survey projects have emerged to continuously
+monitor the optical (and multi-messenger) transient sky at higher image cadences and cover always
+larger portions of the sky every night. These novel approaches lead to a huge increase of the global
+alert rates which need to be handled with care especially by keeping the false alarms as low as possible.
+Therefore, the standard transient detection pipelines previously designed for narrow field of
+view instruments must now integrate more sophisticated tools to deal with the growing number and
+diversity of alerts and false alarms. Deep machine learning algorithms have now proven their efficiency
+in recognizing patterns in images. We explore this method to provide a robust and flexible algorithm
+that could be included in any kind of transient detection pipeline. We built a Convolutional Neural
+Network (CNN) algorithm in order to perform a real/bogus classification task on transient candidate
+cutouts (subtraction residuals) provided by different kinds of optical telescopes. The training
+involved human-supervised labeling of the cutouts, which had been split in two balanced data sets
+with \textit{True} and \textit{False} point-like source candidates. We tested our CNN model on
+the candidates produced by two different transient detection pipelines. We show that our CNN algorithm
+can be successfully trained on a large diversity of images having very different pixel scales. Tested
+on optical images from four different telescopes and utilising two different transient detection
+pipelines, our CNN model provides robust real/bogus classification performance accuracy from
+93% up to 98% of well classified candidates. 

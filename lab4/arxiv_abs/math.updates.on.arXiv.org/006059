@@ -1,0 +1,20 @@
+Neumann series underlie both Krylov methods and algebraic multigrid smoothers. A low-synch modified
+Gram-Schmidt (MGS)-GMRES algorithm is described that employs a Neumann series to accelerate the
+projection step. A corollary to the backward stability result of Paige et al. (2006) demonstrates
+that the truncated Neumann series approximation is sufficient for convergence of GMRES. The lower
+triangular solver associated with the correction matrix $T_m = (\: I + L_m \:)^{-1}$ may then be replaced
+by a matrix-vector product with $T_m = I - L_m$. Next, Neumann series are applied to accelerate the
+classical R\"uge-Stuben algebraic multigrid preconditioner using both a polynomial Gauss-Seidel
+or incomplete ILU smoother. The sparse triangular solver employed in these smoothers is replaced
+by an inner iteration based upon matrix-vector products. Henrici's departure from normality of
+the associated iteration matrices leads to a better understanding of these series. Connections
+are made between the (non)normality of the $L$ and $U$ factors and nonlinear stability analysis,
+as well as the pseudospectra of the coefficient matrix. Furthermore, re-orderings that preserve
+structural symmetry also reduce the departure from normality of the upper triangular factor and
+improve the relative residual of the triangular solves. To demonstrate the effectiveness of this
+approach on many-core architectures, the proposed solver and preconditioner are applied to the
+pressure continuity equation for the incompressible Navier-Stokes equations of fluid motion.
+The pressure solve time is reduced considerably with no change in the convergence rate and the polynomial
+Gauss-Seidel smoother is compared with a Jacobi smoother. Numerical and timing results are presented
+for Nalu-Wind and the PeleLM combustion codes, where ILU with iterative triangular solvers is shown
+to be much more effective than polynomial Gauss-Seidel. 

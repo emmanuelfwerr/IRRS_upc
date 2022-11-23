@@ -1,0 +1,20 @@
+Efficient representation of source code is essential for various software engineering tasks such
+as code classification and code clone detection. Existing approaches for representing source
+code primarily use AST, and many do not focus on semantic graphs such as CFG and PDG, which contain
+essential information about source code that AST does not have. Even though some works tried to utilize
+multiple representations, they use hand-crafted program features to solve a specific task and
+have limited use cases. The primary goal of this paper is to discuss the implications of utilizing
+multiple code representations, specifically AST, CFG, and PDG, and how each of them affects the
+performance of a task. In this process, we propose an approach that can extract and use program features
+from multiple code graphs while not specifically coupling this approach to a specific task or a programming
+language. Our approach stems from the idea of modeling AST as a set of paths and using a learning model
+to capture program properties. Code2vec is one such path-based approach that uses an attention-based
+neural network to learn code embeddings. Even though code2vec has an advantage in not hand-crafting
+features for a task, it uses only AST. However, leveraging semantic graphs such as CFG and PDG may
+improve this approach by extracting program features not captured in AST. Hence, we extend this
+path-based approach to include the semantic graphs CFG and PDG while also benefitting code2vec's
+advantages. We evaluate our approach on three tasks: Method Naming, Program Classification, and
+Code Clone Detection. Our approach increases the performance on these three tasks by 11.4% (F1),
+15.7% (Accuracy), and 9% (F1), respectively, over the baseline. We also discuss how the semantic
+features from the CFG and PDG paths affect the performance and the additional overheads incurred
+through our approach. 

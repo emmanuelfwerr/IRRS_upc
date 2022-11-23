@@ -1,0 +1,18 @@
+We consider a G/G/1 queueing system with a single server, where updates arrive from different sources
+stochastically with possibly different update inter-generation time distributions. The server
+can transmit/serve at most one update at any time, with potentially different transmission/service
+times for updates belonging to distinct sources. The age of information (AoI) of any source is a function
+of the time difference between the departure time of successive updates of that source. Each fully/partially
+transmitted update incurs a fixed (energy) cost, and the goal of the scheduler is to minimize the
+linear combination of the sum of the age of information across all sources and the total energy cost.
+We propose a simple non-preemptive randomized scheduling algorithm that randomly marks arriving
+updates from a source to be eligible for transmission with a fixed probability and discards them
+otherwise. Every time the server becomes free, it chooses a source for transmission randomly with
+another fixed probability and begins to transmit the most recently marked update of the chosen source.
+Both the respective probabilities are chosen by solving a convex program. The competitive ratio
+of the proposed algorithm (against a non-preemptive offline optimal algorithm) is shown to be 3
+plus the maximum of the ratio of the variance and the mean of the inter-arrival time distribution
+of sources. For several common distributions such as exponential, uniform and Rayleigh, the competitive
+ratio is at most 4. For preemptive policies, a G/M/1 system is considered and a non-preemptive policy
+is shown to have competitive ratio (against a preemptive offline optimal algorithm) at most 5 plus
+the maximum of the ratio of the variance and the mean of the inter-arrival time distribution of sources.

@@ -1,0 +1,19 @@
+This paper concerns quasi-stochastic approximation (QSA) to solve root finding problems commonly
+found in applications to optimization and reinforcement learning. The general constant gain algorithm
+may be expressed as the time-inhomogeneous ODE $ \frac{d}{dt} \Theta_t= \alpha f_t (\Theta_t)$,
+with state process $\Theta$ evolving on $\mathbb{R}^n$. Theory is based on an almost periodic vector
+field, so that in particular the time average of $f_t(\theta)$ defines the time-homogeneous mean
+vector field $\bar{f} \colon \mathbb{R}^d \to \mathbb{R}^d$. Under smoothness assumptions on
+the functions involved, the following exact representation is obtained: \[ \frac{d}{dt} \Theta_t=
+\alpha \bar{f}(\Theta_t) + \sum_{i=0}^2 \alpha^{3-i} \frac{d^i}{dt^i} \mathcal{W}_t^i \]
+along with formulae for the smooth signals $\{ \mathcal{W}_t^i : i=0, 1, 2\}$. This new representation,
+combined with new conditions for ultimate boundedness, has many applications for furthering the
+theory of QSA and its applications, including the following implications developed in this paper:
+(i) A proof that bias is of order $O(\alpha)$, but can be reduced to $O(\alpha^2)$ using a second order
+linear filter. (ii) The mean target bias is zero, for each initial condition: $0= \bar{f}^\infty
+\mathbin{:=} \displaystyle \lim_{T\to\infty} \frac{1}{T} \int_0^T \bar{f} (\Theta_t) \, dt
+$. (iii) In application to extremum seeking control, it is found that the results do not apply because
+the standard algorithms are not Lipschitz continuous. A new approach is presented to ensure that
+the required Lipschitz bounds hold, and from this we obtain stability, transient bounds, and asymptotic
+bias of order $O(\alpha^2)$. (iv) It is not impossible in general to obtain $O(\alpha)$ bounds on
+bias or target bias in traditional stochastic approximation when there is Markovian noise. 

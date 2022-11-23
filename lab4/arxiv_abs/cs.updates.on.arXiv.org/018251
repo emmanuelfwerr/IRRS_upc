@@ -1,0 +1,19 @@
+Crowd localization is to predict each instance head position in crowd scenarios. Since the distance
+of instances being to the camera are variant, there exists tremendous gaps among scales of instances
+within an image, which is called the intrinsic scale shift. The core reason of intrinsic scale shift
+being one of the most essential issues in crowd localization is that it is ubiquitous in crowd scenes
+and makes scale distribution chaotic. To this end, the paper concentrates on access to tackle the
+chaos of the scale distribution incurred by intrinsic scale shift. We propose Gaussian Mixture
+Scope (GMS) to regularize the chaotic scale distribution. Concretely, the GMS utilizes a Gaussian
+mixture distribution to adapt to scale distribution and decouples the mixture model into sub-normal
+distributions to regularize the chaos within the sub-distributions. Then, an alignment is introduced
+to regularize the chaos among sub-distributions. However, despite that GMS is effective in regularizing
+the data distribution, it amounts to dislodging the hard samples in training set, which incurs overfitting.
+We assert that it is blamed on the block of transferring the latent knowledge exploited by GMS from
+data to model. Therefore, a Scoped Teacher playing a role of bridge in knowledge transform is proposed.
+What' s more, the consistency regularization is also introduced to implement knowledge transform.
+To that effect, the further constraints are deployed on Scoped Teacher to derive feature consistence
+between teacher and student end. With proposed GMS and Scoped Teacher implemented on five mainstream
+datasets of crowd localization, the extensive experiments demonstrate the superiority of our
+work. Moreover, comparing with existing crowd locators, our work achieves state-of-the-art via
+F1-meansure comprehensively on five datasets. 

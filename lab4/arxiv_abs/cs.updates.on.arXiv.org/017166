@@ -1,0 +1,20 @@
+NextG networks are intended to provide the flexibility of sharing the spectrum with incumbent users
+and support various spectrum monitoring tasks such as anomaly detection, fault diagnostics, user
+equipment identification, and authentication. A network of wireless sensors is needed to monitor
+the spectrum for signal transmissions of interest over a large deployment area. Each sensor receives
+signals under a specific channel condition depending on its location and trains an individual model
+of a deep neural network (DNN) accordingly to classify signals. To improve the accuracy, individual
+sensors may exchange sensing data or sensor results with each other or with a fusion center (such
+as in cooperative spectrum sensing). In this paper, distributed federated learning over a multi-hop
+wireless network is considered to collectively train a DNN for signal identification. In distributed
+federated learning, each sensor broadcasts its trained model to its neighbors, collects the DNN
+models from its neighbors, and aggregates them to initialize its own model for the next round of training.
+Without exchanging any spectrum data, this process is repeated over time such that a common DNN is
+built across the network while preserving the privacy associated with signals collected at different
+locations. Signal classification accuracy and convergence time are evaluated for different network
+topologies (including line, star, ring, grid, and random networks) and packet loss events. Then,
+the reduction of communication overhead and energy consumption is considered with random participation
+of sensors in model updates. The results show the feasibility of extending cooperative spectrum
+sensing over a general multi-hop wireless network through federated learning and indicate its
+robustness to wireless network effects, thereby sustaining high accuracy with low communication
+overhead and energy consumption. 

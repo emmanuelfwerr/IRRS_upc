@@ -1,0 +1,19 @@
+We analyze the robustness of Grover's quantum search algorithm performed by a quantum register
+under a possibly time-correlated noise acting locally on the qubits. We model the noise as originating
+from arbitrary but fixed unitary evolution by $U$ of some noisy qubits. The noise occurs with some
+probability in the interval between every consecutive noiseless Grover evolutions. This general
+noise reproduces some well-known decoherence models when the time-correlations are absent. We
+derive a set of $U$'s, called the 'good noises,' for which the success probability of the algorithm
+remains unchanged with respect to varying the non-trivial total number ($m$) of noisy qubits in
+the register. The result holds irrespective of the presence of any time-correlations in the noise.
+We show that only when $U$ is either of the Pauli matrices $\sigma_x$ and $\sigma_z$ (which give rise
+to $m$-qubit bit-flip and phase-damping channels respectively in the memory-less case), the algorithm's
+success probability stays unchanged when increasing or decreasing $m$. In contrast, when $U$ is
+the third Pauli matrix $\sigma_y$ (giving rise to $m$-qubit bit-phase flip channel in the memory-less
+case), the success probability at all times stays unaltered as long as the parity (even or odd) of
+the total number $m$ remains the same. This asymmetry between the Pauli operators stems from the
+inherent symmetry-breaking existing within the Grover circuit. We further show that the positions
+of the noisy sites are irrelevant in the case of any of the Pauli matrices as noise. The results are
+illustrated in case of both types of noise: with and without time-correlations. We find that the
+former case leads to a better performance of the noisy algorithm. In this paper, the time-correlations
+have been restricted to be Markovian. 

@@ -1,0 +1,20 @@
+Mining processes of Bitcoin and similar cryptocurrencies are currently incentivized with voluntary
+transaction fees and fixed block rewards which will halve gradually to zero. In the setting where
+optional and arbitrary transaction fee becomes the prominent/remaining incentive, Carlsten
+et al. [CCS 2016] find that an undercutting attack can become the equilibrium strategy for miners.
+In undercutting, the attacker deliberately forks an existing chain by leaving wealthy transactions
+unclaimed to attract petty complaint miners to its fork. We observe that two simplifying assumptions
+in [CCS 2016] of fees arriving at fixed rates and miners collecting all accumulated fees regardless
+of block size limit are often infeasible in practice, thus inaccurately inflating its profitability.
+The intuition is that the fees deliberately left out by an undercutter may not be attractive to other
+miners (hence to the attacker itself): the left-out transactions may not fit into a block without
+"squeezing out" other to-be transactions, and thus claimable fees in the next round cannot be raised
+arbitrarily. This work views undercutting and shifting among chains as mining strategies of rational
+miners. We model profitability of undercutting strategy with block size limit present, which bounds
+the claimable fees in a round and gives rise to a pending transaction set. In the proposed model, we
+first identify conditions necessary to make undercutting profitable. We then present an easy-to-deploy
+defense against undercutting by selectively assembling transactions into a new block to invalidate
+the identified conditions. Indeed, in a typical setting with undercutters present, applying the
+avoidance technique is a Nash Equilibrium. Finally, we complement the analytical results with
+an experimental analysis using both artificial data of normally distributed fee rates and actual
+transactions in Bitcoin and Monero. 

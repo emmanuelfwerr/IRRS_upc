@@ -1,0 +1,19 @@
+In this paper, we develop a recommender system for a game that suggests potential items to players
+based on their interactive behaviors to maximize revenue for the game provider. Our approach is
+built on a reinforcement learning-based technique and is trained on an offline data set that is publicly
+available on an IEEE Big Data Cup challenge. The limitation of the offline data set and the curse of
+high dimensionality pose significant obstacles to solving this problem. Our proposed method focuses
+on improving the total rewards and performance by tackling these main difficulties. More specifically,
+we utilized sparse PCA to extract important features of user behaviors. Our Q-learning-based system
+is then trained from the processed offline data set. To exploit all possible information from the
+provided data set, we cluster user features to different groups and build an independent Q-table
+for each group. Furthermore, to tackle the challenge of unknown formula for evaluation metrics,
+we design a metric to self-evaluate our system's performance based on the potential value the game
+provider might achieve and a small collection of actual evaluation metrics that we obtain from the
+live scoring environment. Our experiments show that our proposed metric is consistent with the
+results published by the challenge organizers. We have implemented the proposed training pipeline,
+and the results show that our method outperforms current state-of-the-art methods in terms of both
+total rewards and training speed. By addressing the main challenges and leveraging the state-of-the-art
+techniques, we have achieved the best public leaderboard result in the challenge. Furthermore,
+our proposed method achieved an estimated score of approximately 20% better and can be trained faster
+by 30 times than the best of the current state-of-the-art methods. 

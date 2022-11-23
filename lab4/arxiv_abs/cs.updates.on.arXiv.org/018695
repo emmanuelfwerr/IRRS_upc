@@ -1,0 +1,19 @@
+Open-set recognition (OSR) aims to simultaneously detect unknown-class samples and classify
+known-class samples. Most of the existing OSR methods are inductive methods, which generally suffer
+from the domain shift problem that the learned model from the known-class domain might be unsuitable
+for the unknown-class domain. Addressing this problem, inspired by the success of transductive
+learning for alleviating the domain shift problem in many other visual tasks, we propose an Iterative
+Transductive OSR framework, called IT-OSR, which implements three explored modules iteratively,
+including a reliability sampling module, a feature generation module, and a baseline update module.
+Specifically, at each iteration, a dual-space consistent sampling approach is presented in the
+explored reliability sampling module for selecting some relatively more reliable ones from the
+test samples according to their pseudo labels assigned by a baseline method, which could be an arbitrary
+inductive OSR method. Then, a conditional dual-adversarial generative network under an orthogonal
+coding condition is designed in the feature generation module to generate discriminative sample
+features of both known and unknown classes according to the selected test samples with their pseudo
+labels. Finally, the baseline method is updated for sample re-prediction in the baseline update
+module by jointly utilizing the generated features, the selected test samples with pseudo labels,
+and the training samples. Extensive experimental results on both the standard-dataset and the
+cross-dataset settings demonstrate that the derived transductive methods, by introducing two
+typical inductive OSR methods into the proposed IT-OSR framework, achieve better performances
+than 15 state-of-the-art methods in most cases. 

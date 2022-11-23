@@ -1,0 +1,19 @@
+With the discovery of topological semimetals, it has been found that the band touching points near
+the Fermi level are of great importance. They give rise to many exciting phenomena in these materials.
+Moreover, these points, commonly known as nodes, are related to several properties of these semimetals.
+Thus, the proper estimation of their coordinates is extremely needed for better understanding
+of the properties of these materials. We have designed a Python 3 based code named PY-Nodes for efficiently
+finding the nodes present in a given material using first-principle approach. The present version
+of the code is interfaced with the WIEN2k package. For benchmarking the code, it has been tested on
+some famous materials which possess characteristic nodes. These include - TaAs, a well-known Weyl
+semimetal, Na$_3$Bi, which is categorized as Dirac semimetal, CaAgAs, classified as a nodal-line
+semimetal and YAuPb, which is claimed to be non-trivial topological semimetal. In case of TaAs,
+24 nodes are obtained from our calculations. On computing their chiralities, it is found that 12
+pairs of nodes having equal and opposite chirality are obtained. Furthermore, for Na$_3$Bi, a pair
+of nodes are obtained on the either side of $\Gamma$-point in the $\boldsymbol{k_3}$ direction.
+In case of CaAgAs, several nodes are obtained in the $k_z$=0 plane. These nodes, when plotted in the
+$k_x$-$k_y$ plane, form a closed loop which is generally referred to as nodal-line. Finally, in
+the case of YAuPb, large number of nodes are obtained in the vicinity of $\Gamma$-point. The results
+obtained for these materials are in good match with the previous works carried out by different research
+groups. This assures the reliability and the efficiency of the PY-Nodes code for estimating the
+nodes present in a given material. 

@@ -1,0 +1,19 @@
+Insects, such as fruit flies and honey bees, can solve simple associative learning tasks and learn
+abstract concepts such as "sameness" and "difference", which is viewed as a higher-order cognitive
+function and typically thought to depend on top-down neocortical processing. Empirical research
+with fruit flies strongly supports that a randomized representational architecture is used in
+olfactory processing in insect brains. Based on these results, we propose a Randomly Weighted Feature
+Network (RWFN) that incorporates randomly drawn, untrained weights in an encoder that uses an adapted
+linear model as a decoder. The randomized projections between input neurons and higher-order processing
+centers in the input brain is mimicked in RWFN by a single-hidden-layer neural network that specially
+structures latent representations in the hidden layer using random Fourier features that better
+represent complex relationships between inputs using kernel approximation. Because of this special
+representation, RWFNs can effectively learn the degree of relationship among inputs by training
+only a linear decoder model. We compare the performance of RWFNs to LTNs for Semantic Image Interpretation
+(SII) tasks that have been used as a representative example of how LTNs utilize reasoning over first-order
+logic to surpass the performance of solely data-driven methods. We demonstrate that compared to
+LTNs, RWFNs can achieve better or similar performance for both object classification and detection
+of the part-of relations between objects in SII tasks while using much far fewer learnable parameters
+(1:62 ratio) and a faster learning process (1:2 ratio of running speed). Furthermore, we show that
+because the randomized weights do not depend on the data, several decoders can share a single randomized
+encoder, giving RWFNs a unique economy of spatial scale for simultaneous classification tasks.

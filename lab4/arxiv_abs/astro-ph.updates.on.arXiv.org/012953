@@ -1,0 +1,20 @@
+As engineered systems grow in complexity, there is an increasing need for automatic methods that
+can detect, diagnose, and even correct transient anomalies that inevitably arise and can be difficult
+or impossible to diagnose and fix manually. Among the most sensitive and complex systems of our civilization
+are the detectors that search for incredibly small variations in distance caused by gravitational
+waves -- phenomena originally predicted by Albert Einstein to emerge and propagate through the
+universe as the result of collisions between black holes and other massive objects in deep space.
+The extreme complexity and precision of such detectors causes them to be subject to transient noise
+issues that can significantly limit their sensitivity and effectiveness. In this work, we present
+a demonstration of a method that can detect and characterize emergent transient anomalies of such
+massively complex systems. We illustrate the performance, precision, and adaptability of the
+automated solution via one of the prevalent issues limiting gravitational-wave discoveries:
+noise artifacts of terrestrial origin that contaminate gravitational wave observatories' highly
+sensitive measurements and can obscure or even mimic the faint astrophysical signals for which
+they are listening. Specifically, we demonstrate how a highly interpretable convolutional classifier
+can automatically learn to detect transient anomalies from auxiliary detector data without needing
+to observe the anomalies themselves. We also illustrate several other useful features of the model,
+including how it performs automatic variable selection to reduce tens of thousands of auxiliary
+data channels to only a few relevant ones; how it identifies behavioral signatures predictive of
+anomalies in those channels; and how it can be used to investigate individual anomalies and the channels
+associated with them. 

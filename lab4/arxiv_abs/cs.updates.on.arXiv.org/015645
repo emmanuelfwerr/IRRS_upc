@@ -1,0 +1,20 @@
+Synchronous reactive data flow is a paradigm that provides a high-level abstract programming model
+for embedded and cyber-physical systems, including the locally synchronous components of IoT
+systems. Security in such systems is severely compromised due to low-level programming, ill-defined
+interfaces and inattention to security classification of data. By incorporating a Denning-style
+lattice-based secure information flow framework into a synchronous reactive data flow language,
+we provide a framework in which correct-and-secure-by-construction implementations for such
+systems may be specified and derived. In particular, we propose an extension of the Lustre programming
+framework with a security type system. The novelty of our type system lies in a symbolic formulation
+of constraints over security type variables, in particular the treatment of node calls, which allows
+us to reason about secure flow with respect to any security class lattice. The main theorem is the
+soundness of our type system with respect to the co-inductive operational semantics of Lustre,
+which we prove by showing that well-typed programs exhibit non-interference. Rather than tackle
+the full language, we first prove the non-interference result for a well-behaved sub-language
+called "Normalised Lustre" (NLustre), for which our type system is far simpler. We then show that
+Bourke et al.'s semantics-preserving "normalisation" transformations from Lustre to NLustre
+are security-preserving as well. This preservation of security types by the normalisation transformations
+is a property akin to "subject reduction" but at the level of compiler transformations. The main
+result that well-security-typed Lustre programs are non-interfering follows from a reduction
+to our earlier result of non-interference for NLustre via the semantics-preservation (of Bourke
+et al.) and type preservation results. 

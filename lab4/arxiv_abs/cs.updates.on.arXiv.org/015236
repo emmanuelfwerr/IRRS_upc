@@ -1,0 +1,19 @@
+Deep learning and hardware for it has garnered immense academic and industry interest in the past
+5 years -- including almost 100 startups, more than $5B of VC investment -- and a re-relevance of the
+role of architecture. However, the state-of-art remains NVIDIA's TensorCore-based systems that
+provide i) top-of-line performance, ii) turnkey software stack, and iii) coverage across a wide-spectrum
+of DL network styles (DL-architecture in AI parlance). Other academic and industry efforts have
+included novel approaches like spatial dataflow, CGRAs, systolic arrays, blended FPGA LUTs with
+fixed function units and more. These have all necessitated their own innovations in architecture,
+compiler, and software stack integration. However, none of these have yet satisfied all the 3 metrics
+that NVIDIA's TensorCore and software stack provides, and generally seem to perform worse. In this
+paper, we systematically investigate the behavior of DL workloads and imputed needs on hardware/compiler/software.
+We show that SIMD/short-vector, caching, and synchronization in a fairly well-understood multicore
+chip organization we call UPCYCLE can achieve day-zero software maturity, and provide big integer
+factor speedups over the state-of-art NVIDIA solutions. Compared to an A100, UPCYCLE at small-batch
+size is geo-mean 3.8X faster for inference, geo-mean 4.2X faster at training, while consuming only
+half the power. Second, the UPCYCLE architecture requires no new compiler or software stack innovation.
+Third, it provides full DL-architecture coverage, and can be instantiated to provide training-optimized,
+inference-optimized, or balanced training and inference systems. Overall, this paper motivates
+the treatment of software maturity as a first class design constraint in developing new architectures
+for DL. This is achieved by revisiting well understood ideas, upcycling them for future DL architectures...

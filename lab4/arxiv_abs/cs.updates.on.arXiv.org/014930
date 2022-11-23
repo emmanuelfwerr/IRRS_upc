@@ -1,0 +1,20 @@
+We propose MC-CIM, a compute-in-memory (CIM) framework for robust, yet low power, Bayesian edge
+intelligence. Deep neural networks (DNN) with deterministic weights cannot express their prediction
+uncertainties, thereby pose critical risks for applications where the consequences of mispredictions
+are fatal such as surgical robotics. To address this limitation, Bayesian inference of a DNN has
+gained attention. Using Bayesian inference, not only the prediction itself, but the prediction
+confidence can also be extracted for planning risk-aware actions. However, Bayesian inference
+of a DNN is computationally expensive, ill-suited for real-time and/or edge deployment. An approximation
+to Bayesian DNN using Monte Carlo Dropout (MC-Dropout) has shown high robustness along with low
+computational complexity. Enhancing the computational efficiency of the method, we discuss a
+novel CIM module that can perform in-memory probabilistic dropout in addition to in-memory weight-input
+scalar product to support the method. We also propose a compute-reuse reformulation of MC-Dropout
+where each successive instance can utilize the product-sum computations from the previous iteration.
+Even more, we discuss how the random instances can be optimally ordered to minimize the overall MC-Dropout
+workload by exploiting combinatorial optimization methods. Application of the proposed CIM-based
+MC-Dropout execution is discussed for MNIST character recognition and visual odometry (VO) of
+autonomous drones. The framework reliably gives prediction confidence amidst non-idealities
+imposed by MC-CIM to a good extent. Proposed MC-CIM with 16x31 SRAM array, 0.85 V supply, 16nm low-standby
+power (LSTP) technology consumes 27.8 pJ for 30 MC-Dropout instances of probabilistic inference
+in its most optimal computing and peripheral configuration, saving 43% energy compared to typical
+execution. 

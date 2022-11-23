@@ -1,0 +1,19 @@
+Most people struggle with prioritizing work. While inexact heuristics have been developed over
+time, there is still no tractable principled algorithm for deciding which of the many possible tasks
+one should tackle in any given day, month, week, or year. Additionally, some people suffer from cognitive
+biases such as the present bias, leading to prioritization of their immediate experience over long-term
+consequences which manifests itself as procrastination and inefficient task prioritization.
+Our method utilizes optimal gamification to help people overcome these problems by incentivizing
+each task by a number of points that convey how valuable it is in the long-run. We extend the previous
+version of our optimal gamification method with added services for helping people decide which
+tasks should and should not be done when there is not enough time to do everything. To improve the efficiency
+and scalability of the to-do list solver, we designed a hierarchical procedure that tackles the
+problem from the top-level goals to fine-grained tasks. We test the accuracy of the incentivised
+to-do list by comparing the performance of the strategy with the points computed exactly using Value
+Iteration for a variety of case studies. These case studies were specifically designed to cover
+the corner cases to get an accurate judge of performance. Our method yielded the same performance
+as the exact method for all case studies. To demonstrate its functionality, we released an API that
+makes it easy to deploy our method in Web and app services. We assessed the scalability of our method
+by applying it to to-do lists with increasingly larger numbers of goals, sub-goals per goal, hierarchically
+nested levels of subgoals. We found that the method provided through our API is able to tackle fairly
+large to-do lists having a 576 tasks. This indicates that our method is suitable for real-world applications.

@@ -1,0 +1,20 @@
+Lung nodule detection from 3D Computed Tomography scans plays a vital role in efficient lung cancer
+screening. Despite the SOTA performance obtained by recent anchor-based detectors using CNNs
+for this task, they require predetermined anchor parameters such as the size, number, and aspect
+ratio of anchors, and have limited robustness when dealing with lung nodules with a massive variety
+of sizes. To overcome these problems, we propose a 3D sphere representation-based center-points
+matching detection network that is anchor-free and automatically predicts the position, radius,
+and offset of nodules without the manual design of nodule/anchor parameters. The SCPM-Net consists
+of two novel components: sphere representation and center points matching. First, to match the
+nodule annotation in clinical practice, we replace the commonly used bounding box with our proposed
+bounding sphere to represent nodules with the centroid, radius, and local offset in 3D space. A compatible
+sphere-based intersection over-union loss function is introduced to train the lung nodule detection
+network stably and efficiently. Second, we empower the network anchor-free by designing a positive
+center-points selection and matching process, which naturally discards pre-determined anchor
+boxes. An online hard example mining and re-focal loss subsequently enable the CPM process to be
+more robust, resulting in more accurate point assignment and mitigation of class imbalance. In
+addition, to better capture spatial information and 3D context for the detection, we propose to
+fuse multi-level spatial coordinate maps with the feature extractor and combine them with 3D squeeze-and-excitation
+attention modules. Experimental results on the LUNA16 dataset showed that our proposed framework
+achieves superior performance compared with existing anchor-based and anchor-free methods for
+lung nodule detection. 

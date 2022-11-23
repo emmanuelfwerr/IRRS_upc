@@ -1,0 +1,19 @@
+In this work, we design provably (more) efficient imitation learning algorithms that directly
+optimize policies from expert demonstrations. Firstly, when the transition function is known,
+we build on the nearly minimax optimal algorithm MIMIC-MD and relax a projection operator in it.
+Based on this change, we develop an adversarial imitation learning (AIL) algorithm named \emph{TAIL}
+with a gradient-based optimization procedure. Accordingly, TAIL has the same sample complexity
+(i.e., the number of expert trajectories) $\widetilde{\mathcal{O}}(H^{3/2} |\mathcal{S}|/\varepsilon)$
+with MIMIC-MD, where $H$ is the planning horizon, $|\mathcal{S}|$ is the state space size and $\varepsilon$
+is desired policy value gap. In addition, TAIL is more practical than MIMIC-MD as the former has a
+space complexity $\mathcal{O} (|\mathcal{S}||\mathcal{A}|H)$ while the latter's is about $\mathcal{O}
+(|\mathcal{S}|^2 |\mathcal{A}|^2 H^2)$. Secondly, under the scenario where the transition function
+is unknown but the interaction is allowed, we present an extension of TAIL named \emph{MB-TAIL}.
+The sample complexity of MB-TAIL is still $\widetilde{\mathcal{O}}(H^{3/2} |\mathcal{S}|/\varepsilon)$
+while the interaction complexity (i.e., the number of interaction episodes) is $\widetilde{\mathcal{O}}
+(H^3 |\mathcal{S}|^2 |\mathcal{A}| / \varepsilon^2)$. In particular, MB-TAIL is significantly
+better than the best-known OAL algorithm, which has a sample complexity $\widetilde{\mathcal{O}}(H^{2}
+|\mathcal{S}|/\varepsilon^2)$ and interaction complexity $\widetilde{\mathcal{O}} (H^4
+|\mathcal{S}|^2 |\mathcal{A}| / \varepsilon^2)$. The advances in MB-TAIL are based on a new framework
+that connects reward-free exploration and AIL. To our understanding, MB-TAIL is the first algorithm
+that shifts the advances in the known transition setting to the unknown transition setting. 

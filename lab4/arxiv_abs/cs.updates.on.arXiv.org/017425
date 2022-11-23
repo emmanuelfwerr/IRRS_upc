@@ -1,0 +1,19 @@
+Explainability is crucial for probing graph neural networks (GNNs), answering questions like
+"Why the GNN model makes a certain prediction?". Feature attribution is a prevalent technique of
+highlighting the explanatory subgraph in the input graph, which plausibly leads the GNN model to
+make its prediction. Various attribution methods exploit gradient-like or attention scores as
+the attributions of edges, then select the salient edges with top attribution scores as the explanation.
+However, most of these works make an untenable assumption - the selected edges are linearly independent
+- thus leaving the dependencies among edges largely unexplored, especially their coalition effect.
+We demonstrate unambiguous drawbacks of this assumption - making the explanatory subgraph unfaithful
+and verbose. To address this challenge, we propose a reinforcement learning agent, Reinforced
+Causal Explainer (RC-Explainer). It frames the explanation task as a sequential decision process
+- an explanatory subgraph is successively constructed by adding a salient edge to connect the previously
+selected subgraph. Technically, its policy network predicts the action of edge addition, and gets
+a reward that quantifies the action's causal effect on the prediction. Such reward accounts for
+the dependency of the newly-added edge and the previously-added edges, thus reflecting whether
+they collaborate together and form a coalition to pursue better explanations. As such, RC-Explainer
+is able to generate faithful and concise explanations, and has a better generalization power to
+unseen graphs. When explaining different GNNs on three graph classification datasets, RC-Explainer
+achieves better or comparable performance to SOTA approaches w.r.t. predictive accuracy and contrastivity,
+and safely passes sanity checks and visual inspections. Codes are available at https://github.com/xiangwang1223/reinforced_causal_explainer.

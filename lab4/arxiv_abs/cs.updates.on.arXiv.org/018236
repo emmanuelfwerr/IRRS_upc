@@ -1,0 +1,20 @@
+Ultrasound is the second most used modality in medical imaging. It is cost effective, hazardless,
+portable and implemented routinely in numerous clinical procedures. Nonetheless, image quality
+is characterized by granulated appearance, poor SNR and speckle noise. Specific for malignant
+tumors, the margins are blurred and indistinct. Thus, there is a great need for improving ultrasound
+image quality. We hypothesize that this can be achieved, using neural networks, by translation
+into a more realistic display which mimics an anatomical cut through the tissue. In order to achieve
+this goal, the preferable approach would be to use a set of paired images. However, this is practically
+impossible in our case. Therefore, Cycle Generative Adversarial Network (CycleGAN) was used,
+in order to learn each domain properties separately and enforce cross domain cycle consistency.
+The two datasets which were used for training the model were "Breast Ultrasound Images" (BUSI) and
+a set of optic images of poultry breast tissue samples acquired at our lab. The generated pseudo anatomical
+images provide improved visual discrimination of the lesions with clearer border definition and
+pronounced contrast. In order to evaluate the preservation of the anatomical features, the lesions
+in the ultrasonic images and the generated pseudo anatomical images were both automatically segmented
+and compared. This comparison yielded median dice score of 0.91 for the benign tumors and 0.70 for
+the malignant ones. The median lesion center error was 0.58% and 3.27% for the benign and malignancies
+respectively and the median area error index was 0.40% and 4.34% for the benign and malignancies
+respectively. In conclusion, these generated pseudo anatomical images, which are presented in
+a more intuitive way, enhance tissue anatomy and can potentially simplify the diagnosis and improve
+the clinical outcome. 

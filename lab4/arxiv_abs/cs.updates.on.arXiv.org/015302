@@ -1,0 +1,20 @@
+We study the problem of eliciting the preferences of a decision-maker through a moderate number
+of pairwise comparison queries to make them a high quality recommendation for a specific problem.
+We are motivated by applications in high stakes domains, such as when choosing a policy for allocating
+scarce resources to satisfy basic needs (e.g., kidneys for transplantation or housing for those
+experiencing homelessness) where a consequential recommendation needs to be made from the (partially)
+elicited preferences. We model uncertainty in the preferences as being set based and} investigate
+two settings: a) an offline elicitation setting, where all queries are made at once, and b) an online
+elicitation setting, where queries are selected sequentially over time in an adaptive fashion.
+We propose robust optimization formulations of these problems which integrate the preference
+elicitation and recommendation phases with aim to either maximize worst-case utility or minimize
+worst-case regret, and study their complexity. For the offline case, where active preference elicitation
+takes the form of a two and half stage robust optimization problem with decision-dependent information
+discovery, we provide an equivalent reformulation in the form of a mixed-binary linear program
+which we solve via column-and-constraint generation. For the online setting, where active preference
+learning takes the form of a multi-stage robust optimization problem with decision-dependent
+information discovery, we propose a conservative solution approach. Numerical studies on synthetic
+data demonstrate that our methods outperform state-of-the art approaches from the literature
+in terms of worst-case rank, regret, and utility. We showcase how our methodology can be used to assist
+a homeless services agency in choosing a policy for allocating scarce housing resources of different
+types to people experiencing homelessness. 

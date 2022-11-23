@@ -1,0 +1,19 @@
+Query-based video grounding is an important yet challenging task in video understanding, which
+aims to localize the target segment in an untrimmed video according to a sentence query. Most previous
+works achieve significant progress by addressing this task in a fully-supervised manner with segment-level
+labels, which require high labeling cost. Although some recent efforts develop weakly-supervised
+methods that only need the video-level knowledge, they generally match multiple pre-defined segment
+proposals with query and select the best one, which lacks fine-grained frame-level details for
+distinguishing frames with high repeatability and similarity within the entire video. To alleviate
+the above limitations, we propose a self-contrastive learning framework to address the query-based
+video grounding task under a weakly-supervised setting. Firstly, instead of utilizing redundant
+segment proposals, we propose a new grounding scheme that learns frame-wise matching scores referring
+to the query semantic to predict the possible foreground frames by only using the video-level annotations.
+Secondly, since some predicted frames (i.e., boundary frames) are relatively coarse and exhibit
+similar appearance to their adjacent frames, we propose a coarse-to-fine contrastive learning
+paradigm to learn more discriminative frame-wise representations for distinguishing the false
+positive frames. In particular, we iteratively explore multi-scale hard negative samples that
+are close to positive samples in the representation space for distinguishing fine-grained frame-wise
+details, thus enforcing more accurate segment grounding. Extensive experiments on two challenging
+benchmarks demonstrate the superiority of our proposed method compared with the state-of-the-art
+methods. 

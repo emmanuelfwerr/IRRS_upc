@@ -1,0 +1,18 @@
+Keplerian-Stacker is an algorithm able to combine multiple observations acquired at different
+epochs taking into account the orbital motion of a potential planet present in the images to boost
+the ultimate detection limit. In 2019, a total of 100 hours of observation were allocated to VLT VISIR-NEAR,
+a collaboration between ESO and Breakthrough Initiatives, to search for low mass planets in the
+habitable zone of the Alpha Cen AB binary system. A weak signal (S/N = 3) was reported around Alpha
+Cen A, at a separation of 1.1 a.u. which corresponds to the habitable zone. We have re-analysed the
+NEAR data using K-Stacker. This algorithm is a brute-force method able to find planets in time series
+of observations and to constrain their orbital parameters, even if they remain undetected in a single
+epoch. We scanned a total of about 3.5e+5 independent orbits, among which about 15 % correspond to
+fast moving orbits on which planets cannot be detected without taking into account the orbital motion.
+We find only a single planet candidate, which matches the C1 detection reported in Wagner et al. 2021.
+Despite the significant amount of time spent on this target, the orbit of this candidate remains
+poorly constrained due to these observations being closely distributed in 34 days. We argue that
+future single-target deep surveys would benefit from a K-Stacker based strategy, where the observations
+would be split over a significant part of the expected orbital period to better constrain the orbital
+parameters. This application of K-Stacker on high contrast imaging data in the mid-infrared demonstrates
+the capability of this algorithm to aid in the search for Earth-like planets in the habitable zone
+of the nearest stars with future instruments of the E-ELT such as METIS. 

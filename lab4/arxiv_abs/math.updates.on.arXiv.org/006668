@@ -1,0 +1,19 @@
+\emph{Full-bond percolation} with parameter $p$ is the process in which, given a graph, for every
+edge independently, we delete the edge with probability $1-p$. Bond percolation is motivated by
+problems in mathematical physics and it is studied in parallel computing and network science to
+understand the resilience of distributed systems to random link failure and the spread of information
+in networks through unreliable links. Full-bond percolation is also equivalent to the \emph{Reed-Frost
+process}, a network version of \emph{SIR} epidemic spreading, in which the graph represents contacts
+among people and $p$ corresponds to the probability that a contact between an infected person and
+a susceptible one causes a transmission of the infection. We consider \emph{one-dimensional power-law
+small-world graphs} with parameter $\alpha$ obtained as the union of a cycle with additional long-range
+random edges: each pair of nodes $(u,v)$ at distance $L$ on the cycle is connected by a long-range
+edge $(u,v)$, with probability proportional to $1/L^\alpha$. Our analysis determines three phases
+for the percolation subgraph $G_p$ of the small-world graph, depending on the value of $\alpha$.
+1) If $\alpha < 1$, there is a $p<1$ such that, with high probability, there are $\Omega(n)$ nodes
+that are reachable in $G_p$ from one another in $O(\log n)$ hops; 2) If $1 < \alpha < 2$, there is a $p<1$
+such that, with high probability, there are $\Omega(n)$ nodes that are reachable in $G_p$ from one
+another in $\log^{O(1)}(n)$ hops; 3) If $\alpha > 2$, for every $p<1$, with high probability all
+connected components of $G_p$ have size $O(\log n)$. The setting of full-bond percolation in finite
+graphs studied in this paper, which is the one that corresponds to the network SIR model of epidemic
+spreading, had not been analyzed before. 

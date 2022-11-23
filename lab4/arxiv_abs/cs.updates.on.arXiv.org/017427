@@ -1,0 +1,18 @@
+Recent years have seen the emergence of many new neural network structures (architectures and layers).
+To solve a given task, a network requires a certain set of abilities reflected in its structure. The
+required abilities depend on each task. There is so far no systematic study of the real capacities
+of the proposed neural structures. The question of what each structure can and cannot achieve is
+only partially answered by its performance on common benchmarks. Indeed, natural data contain
+complex unknown statistical cues. It is therefore impossible to know what cues a given neural structure
+is taking advantage of in such data. In this work, we sketch a methodology to measure the effect of
+each structure on a network's ability, by designing ad hoc synthetic datasets. Each dataset is tailored
+to assess a given ability and is reduced to its simplest form: each input contains exactly the amount
+of information needed to solve the task. We illustrate our methodology by building three datasets
+to evaluate each of the three following network properties: a) the ability to link local cues to distant
+inferences, b) the translation covariance and c) the ability to group pixels with the same characteristics
+and share information among them. Using a first simplified depth estimation dataset, we pinpoint
+a serious nonlocal deficit of the U-Net. We then evaluate how to resolve this limitation by embedding
+its structure with nonlocal layers, which allow computing complex features with long-range dependencies.
+Using a second dataset, we compare different positional encoding methods and use the results to
+further improve the U-Net on the depth estimation task. The third introduced dataset serves to demonstrate
+the need for self-attention-like mechanisms for resolving more realistic depth estimation tasks.

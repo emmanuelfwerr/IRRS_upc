@@ -1,0 +1,18 @@
+We prove several new tight distributed lower bounds for classic symmetry breaking graph problems.
+As a basic tool, we first provide a new insightful proof that any deterministic distributed algorithm
+that computes a $\Delta$-coloring on $\Delta$-regular trees requires $\Omega(\log_\Delta n)$
+rounds and any randomized algorithm requires $\Omega(\log_\Delta\log n)$ rounds. We prove this
+result by showing that a natural relaxation of the $\Delta$-coloring problem is a fixed point in
+the round elimination framework. As a first application, we show that our $\Delta$-coloring lower
+bound proof directly extends to arbdefective colorings. We exactly characterize which variants
+of the arbdefective coloring problem are "easy", and which of them instead are "hard". As a second
+application, which we see as our main contribution, we use the structure of the fixed point as a building
+block to prove lower bounds as a function of $\Delta$ for a large class of distributed symmetry breaking
+problems. For example, we obtain a tight lower bound for the fundamental problem of computing a $(2,\beta)$-ruling
+set. This is an exponential improvement over the best existing lower bound for the problem, which
+was proven in [FOCS '20]. Our lower bound even applies to a much more general family of problems that
+allows for almost arbitrary combinations of natural constraints from coloring problems, orientation
+problems, and independent set problems, and provides a single unified proof for known and new lower
+bound results for these types of problems. Our lower bounds as a function of $\Delta$ also imply lower
+bounds as a function of $n$. We obtain, for example, that maximal independent set, on trees, requires
+$\Omega(\log n / \log \log n)$ rounds for deterministic algorithms, which is tight. 

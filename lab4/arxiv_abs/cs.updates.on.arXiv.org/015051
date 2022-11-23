@@ -1,0 +1,19 @@
+Most state of the art exploratory data analysis frameworks fall into one of the two extremes: they
+either focus on the high-performance computational, or on the interactive and open-ended aspects
+of the analysis. Arkouda is a framework that attempts to integrate the interactive approach with
+the high performance computation by using a novel client-server architecture, with a Python interpreter
+on the client side for the interactions with the scientist and a Chapel server for performing the
+demanding high-performance computations. The Arkouda Python interpreter overloads the Python
+operators and transforms them into messages to the Chapel server that performs the actual computation.
+In this paper, we are proposing several client-side optimization techniques for the Arkouda framework
+that maintain the interactive nature of the Arkouda framework, but at the same time significantly
+improve the performance of the programs that perform operations running on the high-performance
+Chapel server. We do this by intercepting the Python operations in the interpreter, and delaying
+their execution until the user requires the data, or we fill out the instruction buffer. We implement
+caching and reuse of the Arkouda arrays on the Chapel server side (thus saving on the allocation,
+initialization and deallocation of the Chapel arrays), tracking and caching the results of function
+calls on the Arkouda arrays (thus avoiding repeated computation) and reusing the results of array
+operations by performing common subexpression elimination. We evaluate our approach on several
+Arkouda benchmarks and a large collection of real-world and synthetic data inputs and show significant
+performance improvements between 20% and 120% across the board, while fully maintaining the interactive
+nature of the Arkouda framework. 

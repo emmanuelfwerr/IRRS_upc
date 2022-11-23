@@ -1,0 +1,19 @@
+We consider the design of sublinear space and query complexity algorithms for estimating the cost
+of a minimum spanning tree (MST) and the cost of a minimum traveling salesman (TSP) tour in a metric
+on $n$ points. We first consider the $o(n)$-space regime and show that, when the input is a stream
+of all $\binom{n}{2}$ entries of the metric, for any $\alpha \ge 2$, both MST and TSP cost can be $\alpha$-approximated
+using $\tilde{O}(n/\alpha)$ space, and that $\Omega(n/\alpha^2)$ space is necessary for this
+task. Moreover, we show that even if the streaming algorithm is allowed $p$ passes over a metric stream,
+it still requires $\tilde{\Omega}(\sqrt{n/\alpha p^2})$ space. We next consider the semi-streaming
+regime, where computing even the exact MST cost is easy and the main challenge is to estimate TSP cost
+to within a factor that is strictly better than $2$. We show that, if the input is a stream of all edges
+of the weighted graph that induces the underlying metric, for any $\varepsilon > 0$, any one-pass
+$(2-\varepsilon)$-approximation of TSP cost requires $\Omega(\varepsilon^2 n^2)$ space; on
+the other hand, there is an $\tilde{O}(n)$ space two-pass algorithm that approximates the TSP cost
+to within a factor of 1.96. Finally, we consider the query complexity of estimating metric TSP cost
+to within a factor that is strictly better than $2$, when the algorithm is given access to a matrix
+that specifies pairwise distances between all points. For MST estimation in this model, it is known
+that a $(1+\varepsilon)$-approximation is achievable with $\tilde{O}(n/\varepsilon^{O(1)})$
+queries. We design an algorithm that performs $\tilde{O}(n^{1.5})$ distance queries and achieves
+a strictly better than $2$-approximation when either the metric is known to contain a spanning tree
+supported on weight-$1$ edges or the algorithm is given access to a minimum spanning tree of the graph.

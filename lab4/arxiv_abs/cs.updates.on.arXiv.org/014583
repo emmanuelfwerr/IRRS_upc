@@ -1,0 +1,19 @@
+Designing complex architectures has been an essential cogwheel in the revolution deep learning
+has brought about in the past decade. When solving difficult problems in a datadriven manner, a well-tried
+approach is to take an architecture discovered by renowned deep learning scientists as a basis (e.g.
+Inception) and try to apply it to a specific problem. This might be sufficient, but as of now, achieving
+very high accuracy on a complex or yet unsolved task requires the knowledge of highly-trained deep
+learning experts. In this work, we would like to contribute to the area of Automated Machine Learning
+(AutoML), specifically Neural Architecture Search (NAS), which intends to make deep learning
+methods available for a wider range of society by designing neural topologies automatically. Although
+several different approaches exist (e.g. gradient-based or evolutionary algorithms), our focus
+is on one of the most promising research directions, reinforcement learning. In this scenario,
+a recurrent neural network (controller) is trained to create problem-specific neural network
+architectures (child). The validation accuracies of the child networks serve as a reward signal
+for training the controller with reinforcement learning. The basis of our proposed work is Efficient
+Neural Architecture Search (ENAS), where parameter sharing is applied among the child networks.
+ENAS, like many other RL-based algorithms, emphasize the learning of child networks as increasing
+their convergence result in a denser reward signal for the controller, therefore significantly
+reducing training times. The controller was originally trained with REINFORCE. In our research,
+we propose to modify this to a more modern and complex algorithm, PPO, which has demonstrated to be
+faster and more stable in other environments. Then, we briefly discuss and evaluate our results.

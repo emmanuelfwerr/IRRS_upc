@@ -1,0 +1,19 @@
+While fine-tuning pre-trained networks has become a popular way to train image segmentation models,
+such backbone networks for image segmentation are frequently pre-trained using image classification
+source datasets, e.g., ImageNet. Though image classification datasets could provide the backbone
+networks with rich visual features and discriminative ability, they are incapable of fully pre-training
+the target model (i.e., backbone+segmentation modules) in an end-to-end manner. The segmentation
+modules are left to random initialization in the fine-tuning process due to the lack of segmentation
+labels in classification datasets. In our work, we propose a method that leverages Pseudo Semantic
+Segmentation Labels (PSSL), to enable the end-to-end pre-training for image segmentation models
+based on classification datasets. PSSL was inspired by the observation that the explanation results
+of classification models, obtained through explanation algorithms such as CAM, SmoothGrad and
+LIME, would be close to the pixel clusters of visual objects. Specifically, PSSL is obtained for
+each image by interpreting the classification results and aggregating an ensemble of explanations
+queried from multiple classifiers to lower the bias caused by single models. With PSSL for every
+image of ImageNet, the proposed method leverages a weighted segmentation learning procedure to
+pre-train the segmentation network en masse. Experiment results show that, with ImageNet accompanied
+by PSSL as the source dataset, the proposed end-to-end pre-training strategy successfully boosts
+the performance of various segmentation models, i.e., PSPNet-ResNet50, DeepLabV3-ResNet50,
+and OCRNet-HRNetW18, on a number of segmentation tasks, such as CamVid, VOC-A, VOC-C, ADE20K, and
+CityScapes, with significant improvements. The source code is availabel at https://github.com/PaddlePaddle/PaddleSeg.

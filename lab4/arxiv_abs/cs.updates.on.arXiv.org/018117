@@ -1,0 +1,20 @@
+Generating high-performance code for diverse hardware and application domains is challenging.
+Functional array programming languages with patterns like map and reduce have been successfully
+combined with term rewriting to define and explore optimization spaces. However, deciding what
+sequence of rewrites to apply is hard and has a huge impact on the performance of the rewritten program.
+Equality saturation avoids the issue by exploring many possible ways to apply rewrites, efficiently
+representing many equivalent programs in an e-graph data structure. Equality saturation has some
+limitations when rewriting functional language terms, as currently naive encodings of the lambda
+calculus are used. We present new techniques for encoding polymorphically typed lambda calculi,
+and show that the efficient encoding reduces the runtime and memory consumption of equality saturation
+by orders of magnitude. Moreover, equality saturation does not yet scale to complex compiler optimizations.
+These emerge from long rewrite sequences of thousands of rewrite steps, and may use pathological
+combinations of rewrite rules that cause the e-graph to quickly grow too large. This paper introduces
+\emph{sketch-guided equality saturation}, a semi-automatic technique that allows programmers
+to provide program sketches to guide rewriting. Sketch-guided equality saturation is evaluated
+for seven complex matrix multiplication optimizations, including loop blocking, vectorization,
+and multi-threading. Even with efficient lambda calculus encoding, unguided equality saturation
+can locate only the two simplest of these optimizations, the remaining five are undiscovered even
+with an hour of compilation time and 60GB of RAM. By specifying three or fewer sketch guides all seven
+optimizations are found in seconds of compilation time, using under 1GB of RAM, and generating high
+performance code. 

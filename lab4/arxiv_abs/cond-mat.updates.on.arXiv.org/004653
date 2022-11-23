@@ -1,0 +1,19 @@
+Implementing time evolution operators on quantum circuits is important for quantum simulation.
+However, the standard way, Trotterization, requires a huge numbers of gates to achieve desirable
+accuracy. Here, we propose a local variational quantum compilation (LVQC) algorithm, which allows
+to accurately and efficiently compile a time evolution operators on a large-scale quantum system
+by the optimization with smaller-size quantum systems. LVQC utilizes a subsystem cost function,
+which approximates the fidelity of the whole circuit, defined for each subsystem as large as approximate
+causal cones brought by the Lieb-Robinson (LR) bound. We rigorously derive its scaling property
+with respect to the subsystem size, and show that the optimization conducted on the subsystem size
+leads to the compilation of whole-system time evolution operators. As a result, LVQC runs with limited-size
+quantum computers or classical simulators that can handle such smaller quantum systems. For instance,
+finite-ranged and short-ranged interacting $L$-size systems can be compiled with $O(L^0)$- or
+$O(\log L)$-size quantum systems depending on observables of interest. Furthermore, since this
+formalism relies only on the LR bound, it can efficiently construct time evolution operators of
+various systems in generic dimension involving finite-, short-, and long-ranged interactions.
+We also numerically demonstrate the LVQC algorithm for one-dimensional systems. Employing classical
+simulation by time-evolving block decimation, we succeed in compressing the depth of a time evolution
+operators up to $40$ qubits by the compilation for $20$ qubits. LVQC not only provides classical
+protocols for designing large-scale quantum circuits, but also will shed light on applications
+of intermediate-scale quantum devices in implementing algorithms in larger-scale quantum devices.

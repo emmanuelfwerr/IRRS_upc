@@ -1,0 +1,19 @@
+Quality-Diversity (QD) optimization algorithms are a well-known approach to generate large collections
+of diverse and high-quality solutions. However, derived from evolutionary computation, QD algorithms
+are population-based methods which are known to be data-inefficient and requires large amounts
+of computational resources. This makes QD algorithms slow when used in applications where solution
+evaluations are computationally costly. A common approach to speed up QD algorithms is to evaluate
+solutions in parallel, for instance by using physical simulators in robotics. Yet, this approach
+is limited to several dozen of parallel evaluations as most physics simulators can only be parallelized
+more with a greater number of CPUs. With recent advances in simulators that run on accelerators,
+thousands of evaluations can now be performed in parallel on single GPU/TPU. In this paper, we present
+QDax, an accelerated implementation of MAP-Elites which leverages massive parallelism on accelerators
+to make QD algorithms more accessible. We show that QD algorithms are ideal candidates to take advantage
+of progress in hardware acceleration. We demonstrate that QD algorithms can scale with massive
+parallelism to be run at interactive timescales without any significant effect on the performance.
+Results across standard optimization functions and four neuroevolution benchmark environments
+shows that experiment runtimes are reduced by two factors of magnitudes, turning days of computation
+into minutes. More surprising, we observe that reducing the number of generations by two orders
+of magnitude, and thus having significantly shorter lineage does not impact the performance of
+QD algorithms. These results show that QD can now benefit from hardware acceleration, which contributed
+significantly to the bloom of deep learning. 

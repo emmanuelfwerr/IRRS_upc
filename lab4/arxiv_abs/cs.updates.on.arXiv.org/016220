@@ -1,0 +1,18 @@
+We present a machine learning based long-term cough monitoring system by detecting patient's bed
+occupancy from a bed-attached smartphone-inbuilt accelerometer automatically. Previously
+this system was used to detect cough events successfully and long-term cough monitoring requires
+bed occupancy detection, as the initial experiments show that patients leave their bed very often
+for long period of time and using video-monitoring or pressure sensors are not patient-favourite
+alternatives. We have compiled a 249-hour dataset of manually-labelled acceleration signals
+gathered from seven adult male patients undergoing treatment for tuberculosis (TB). The bed occupancy
+detection process consists of three detectors, among which the first one classifies occupancy-change
+with high sensitivity, low specificity and the second one classifies occupancy-interval with
+high specificity, low sensitivity. The final state detector corrects the miss-classified sections.
+After using a leave-one-patient-out cross-validation scheme to train and evaluate four classifiers
+such as LR, MLP, CNN and LSTM; LSTM produces the highest area under the curve (AUC) of 0.94 while comparing
+the predicted bed occupancy as the output from the final state detector with the actual bed occupancy
+sample by sample. We have also calculated colony forming unit and time to positivity of the sputum
+samples of TB positive patients who were monitored for 14 days and the proposed system was used to
+predict daily cough rates. The results show that patients who improve under TB treatment have decreasing
+daily cough rates, indicating the proposed automatic, quick, non-invasive, non-intrusive, cost-effective
+long-term cough monitoring system can be extremely useful in monitoring patients' recovery rate.

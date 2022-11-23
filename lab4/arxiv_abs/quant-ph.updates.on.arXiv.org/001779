@@ -1,0 +1,19 @@
+Quantum algorithms allow to outperform their classical counterparts in various tasks, most prominent
+example being Shor's algorithm for efficient prime factorization on a quantum computer. It is clear
+that one of the reasons for the speedup is the superposition principle of quantum mechanics, which
+allows a quantum processor to be in a superposition of different states at the same time. While such
+superposition can lead to entanglement across different qubits of the processors, there also exists
+quantum algorithms which outperform classical ones using superpositions of individual qubits
+without entangling them. As an example, the Bernstein-Vazirani algorithm allows one to determine
+a bit string encoded into an oracle. While the classical version of the algorithm requires multiple
+calls of the oracle to learn the bit string, a single query of the oracle is enough in the quantum case.
+In this Letter, we analyze in detail the quantum resources in the Bernstein-Vazirani algorithm.
+For this, we introduce and study its probabilistic version, where the goal is to guess the bit string
+after a single call of the oracle. We show that in the absence of entanglement, the performance of
+the algorithm is directly related to the amount of quantum coherence in the initial state. We further
+demonstrate that a large amount of entanglement in the initial state prevents the algorithm from
+achieving optimal performance. We also apply our methods to quantum computation with mixed states,
+proving that pseudopure states achieve optimal performance for a given purity in the Bernstein-Vazirani
+algorithm. We further investigate quantum resources in the one clean qubit model, showing that
+the model can exhibit speedup over any known classical algorithm even with arbitrary little amount
+of multipartite entanglement, general quantum correlations, and coherence. 

@@ -1,0 +1,19 @@
+This paper tackles two problems that are relevant to coding for insertions and deletions. These
+problems are motivated by several applications, among them is reconstructing strands in DNA-based
+storage systems. Under this paradigm, a word is transmitted over some fixed number of identical
+independent channels and the goal of the decoder is to output the transmitted word or some close approximation
+of it. The first part of this paper studies the deletion channel that deletes a symbol with some fixed
+probability $p$, while focusing on two instances of this channel. Since operating the maximum likelihood
+(ML) decoder in this case is computationally unfeasible, we study a slightly degraded version of
+this decoder for two channels and its expected normalized distance. We identify the dominant error
+patterns and based on these observations, it is derived that the expected normalized distance of
+the degraded ML decoder is roughly $\frac{3q-1}{q-1}p^2$, when the transmitted word is any $q$-ary
+sequence and $p$ is the channel's deletion probability. We also study the cases when the transmitted
+word belongs to the Varshamov Tenengolts (VT) code or the shifted VT code. Additionally, the insertion
+channel is studied as well as the case of two insertion channels. These theoretical results are verified
+by corresponding simulations. The second part of the paper studies optimal decoding for a special
+case of the deletion channel, the $k$-deletion channel, which deletes exactly $k$ symbols of the
+transmitted word uniformly at random. In this part, the goal is to understand how an optimal decoder
+operates in order to minimize the expected normalized distance. A full characterization of an efficient
+optimal decoder for this setup, referred to as the maximum likelihood* (ML*) decoder, is given for
+a channel that deletes one or two symbols. 

@@ -1,0 +1,19 @@
+This paper studies a new design of the optimization algorithm for training deep learning models
+with a fixed architecture of the classification network in a continual learning framework. The
+training data is non-stationary and the non-stationarity is imposed by a sequence of distinct tasks.
+We first analyze a deep model trained on only one learning task in isolation and identify a region
+in network parameter space, where the model performance is close to the recovered optimum. We provide
+empirical evidence that this region resembles a cone that expands along the convergence direction.
+We study the principal directions of the trajectory of the optimizer after convergence and show
+that traveling along a few top principal directions can quickly bring the parameters outside the
+cone but this is not the case for the remaining directions. We argue that catastrophic forgetting
+in a continual learning setting can be alleviated when the parameters are constrained to stay within
+the intersection of the plausible cones of individual tasks that were so far encountered during
+training. Based on this observation we present our direction-constrained optimization (DCO)
+method, where for each task we introduce a linear autoencoder to approximate its corresponding
+top forbidden principal directions. They are then incorporated into the loss function in the form
+of a regularization term for the purpose of learning the coming tasks without forgetting. Furthermore,
+in order to control the memory growth as the number of tasks increases, we propose a memory-efficient
+version of our algorithm called compressed DCO (DCO-COMP) that allocates a memory of fixed size
+for storing all autoencoders. We empirically demonstrate that our algorithm performs favorably
+compared to other state-of-art regularization-based continual learning methods. 

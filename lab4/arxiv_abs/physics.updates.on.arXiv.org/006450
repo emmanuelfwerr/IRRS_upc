@@ -1,0 +1,19 @@
+An extreme event is a sudden and violent change in the state of a nonlinear system. In fluid dynamics,
+extreme events can have adverse effects on the system's optimal design and operability, which calls
+for accurate methods for their prediction and control. In this paper, we propose a data-driven methodology
+for the prediction and control of extreme events in a chaotic shear flow. The approach is based on
+echo state networks, which are a type of reservoir computing that learn temporal correlations within
+a time-dependent dataset. The objective is five-fold. First, we exploit ad-hoc metrics from binary
+classification to analyse (i) how many of the extreme events predicted by the network actually occur
+in the test set (precision), and (ii) how many extreme events are missed by the network (recall).
+We apply a principled strategy for optimal hyperparameter selection, which is key to the networks'
+performance. Second, we focus on the time-accurate prediction of extreme events. We show that echo
+state networks are able to predict extreme events well beyond the predictability time, i.e., up
+to more than five Lyapunov times. Third, we focus on the long-term prediction of extreme events from
+a statistical point of view. By training the networks with datasets that contain non-converged
+statistics, we show that the networks are able to learn and extrapolate the flow's long-term statistics.
+In other words, the networks are able to extrapolate in time from relatively short time series. Fourth,
+we design a simple and effective control strategy to prevent extreme events from occurring. The
+control strategy decreases the occurrence of extreme events up to one order of magnitude with respect
+to the uncontrolled system. Finally, we analyse the robustness of the results for a range of Reynolds
+numbers. We show that the networks perform well across a wide range of regimes. 

@@ -1,0 +1,19 @@
+The enormous space and diversity of natural images is usually represented by a few small-scale human-rated
+image quality assessment (IQA) datasets. This casts great challenges to deep neural network (DNN)
+based blind IQA (BIQA), which requires large-scale training data that is representative of the
+natural image distribution. It is extremely difficult to create human-rated IQA datasets composed
+of millions of images due to constraints of subjective testing. While a number of efforts have focused
+on design innovations to enhance the performance of DNN based BIQA, attempts to address the scarcity
+of labeled IQA data remain surprisingly missing. To address this data challenge, we construct so
+far the largest IQA database, namely Waterloo Exploration-II, which contains 3,570 pristine reference
+and around 3.45 million singly and multiply distorted images. Since subjective testing for such
+a large dataset is nearly impossible, we develop a novel mechanism that synthetically assigns perceptual
+quality labels to the distorted images. We construct a DNN-based BIQA model called EONSS, train
+it on Waterloo Exploration-II, and test it on nine subject-rated IQA datasets, without any retraining
+or fine-tuning. The results show that with a straightforward DNN architecture, EONSS is able to
+outperform the very state-of-the-art in BIQA, both in terms of quality prediction performance
+and execution speed. This study strongly supports the view that the quantity and quality of meaningfully
+annotated training data, rather than a sophisticated network architecture or training strategy,
+is the dominating factor that determines the performance of DNN-based BIQA models. (Note: Since
+this is an ongoing project, the final versions of Waterloo Exploration-II database, quality annotations,
+and EONSS, will be made publicly available in the future when it culminates.) 

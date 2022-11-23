@@ -1,0 +1,19 @@
+R\'enyi's information provides a theoretical foundation for tractable and data-efficient non-parametric
+density estimation, based on pair-wise evaluations in a reproducing kernel Hilbert space (RKHS).
+This paper extends this framework to parametric probabilistic modeling, motivated by the fact
+that R\'enyi's information can be estimated in closed-form for Gaussian mixtures. Based on this
+special connection, a novel generative model framework called the structured generative model
+(SGM) is proposed that makes straightforward optimization possible, because costs are scale-invariant,
+avoiding high gradient variance while imposing less restrictions on absolute continuity, which
+is a huge advantage in parametric information theoretic optimization. The implementation employs
+a single neural network driven by an orthonormal input appended to a single white noise source adapted
+to learn an infinite Gaussian mixture model (IMoG), which provides an empirically tractable model
+distribution in low dimensions. To train SGM, we provide three novel variational cost functions,
+based on R\'enyi's second-order entropy and divergence, to implement minimization of cross-entropy,
+minimization of variational representations of $f$-divergence, and maximization of the evidence
+lower bound (conditional probability). We test the framework for estimation of mutual information
+and compare the results with the mutual information neural estimation (MINE), for density estimation,
+for conditional probability estimation in Markov models as well as for training adversarial networks.
+Our preliminary results show that SGM significantly improves MINE estimation in terms of data efficiency
+and variance, conventional and variational Gaussian mixture models, as well as the performance
+of generative adversarial networks. 

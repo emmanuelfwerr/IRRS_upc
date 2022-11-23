@@ -1,0 +1,19 @@
+We present SSAG, an efficient and scalable method for computing a lossy graph summary that retains
+the essential structure of the original graph. SSAG computes a sparse representation (summary)
+of the input graph and also caters for graphs with node attributes. The summary of a graph $G$ is stored
+as a graph on supernodes (subset of vertices of $G$) and two supernodes are connected by a weighted
+superedge. The proposed method constructs a summary graph on $k$ supernodes that minimizes the
+reconstruction error (difference between the original graph and the graph reconstructed from
+the summary) and maximum homogeneity with respect to attribute values. We construct the summary
+by iteratively merging a pair of nodes. We derive a closed-form expression to efficiently compute
+the reconstruction error after merging a pair and approximate this score in constant time. To reduce
+the search space for selecting the best pair for merging, we assign a weight to each supernode that
+closely quantifies the contribution of the node in the score of the pairs containing it. We choose
+the best pair for merging from a random sample made up of supernodes selected with probability proportional
+to their weights. With weighted sampling, a logarithmic-sized sample yields a comparable summary
+based on various quality measures. We propose a sparsification step for the constructed summary
+to reduce the storage cost to a given target size with a marginal increase in reconstruction error.
+Empirical evaluation on several real-world graphs and comparison with state-of-the-art methods
+shows that SSAG is up to $5\times$ faster and generates summaries of comparable quality. We further
+demonstrate the goodness of SSAG by accurately and efficiently answering the queries related to
+the graph structure and attribute information using the summary only. 

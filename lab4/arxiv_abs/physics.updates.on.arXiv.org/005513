@@ -1,0 +1,19 @@
+High dose-rate brachytherapy (HDRBT) is widely used for gynecological cancer treatment. Although
+commercial treatment planning systems (TPSs) have inverse optimization modules, it takes several
+iterations to adjust planning objectives to achieve a satisfactory plan. Interactive plan-modification
+modules enable modifying the plan and visualizing results in real time, but they update plans based
+on simple geometrical or heuristic algorithms, which cannot ensure resulting plan optimality.
+This project develops an interactive plan optimization module for HDRBT of gynecological cancer.
+By efficiently solving an optimization problem in real time, it allows a user to visualize a plan
+and interactively modify it to improve quality. We formulated an optimization problem with an objective
+function containing a weighted sum of doses to normal organs subject to user-specified target coverage.
+A user interface was developed that allows a user to adjust organ weights using scroll bars. With
+a simple mouse click, the optimization problem is solved in seconds with a highly efficient alternating-direction
+method of multipliers and a warm start optimization strategy. Resulting clinically relevant D2cc
+of organs are displayed immediately. This allows a user to intuitively adjust plans with satisfactory
+quality. We tested the effectiveness of our development in cervix cancer cases treated with a tandem-and-ovoid
+applicator. It took a maximum of 3 seconds to solve the optimization problem in each instance. With
+interactive optimization capability, a satisfactory plan can be obtained in <1 min. In our clinic,
+although the time for plan adjustment was typically <10min with simple interactive plan modification
+tools in TPS, the resulting plans do not ensure optimality. Our plans achieved on average 5% lower
+D2cc than clinical plans, while maintaining target coverage. 

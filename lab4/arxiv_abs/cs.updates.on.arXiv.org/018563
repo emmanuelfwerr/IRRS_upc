@@ -1,0 +1,19 @@
+Gradient descent optimizations and backpropagation are the most common methods for training neural
+networks, but they are computationally expensive for real time applications, need high memory
+resources, and are difficult to converge for many networks and large datasets. [Pseudo]inverse
+models for training neural network have emerged as powerful tools to overcome these issues. In order
+to effectively implement these methods, structured pruning maybe be applied to produce sparse
+neural networks. Although sparse neural networks are efficient in memory usage, most of their algorithms
+use the same fully loaded matrix calculation methods which are not efficient for sparse matrices.
+Tridiagonal matrices are one of the frequently used candidates for structuring neural networks,
+but they are not flexible enough to handle underfitting and overfitting problems as well as generalization
+properties. In this paper, we introduce a nonsymmetric, tridiagonal matrix with offdiagonal sparse
+entries and offset sub and super-diagonals as well algorithms for its [pseudo]inverse and determinant
+calculations. Traditional algorithms for matrix calculations, specifically inversion and determinant,
+of these forms are not efficient specially for large matrices, e.g. larger datasets or deeper networks.
+A decomposition for lower triangular matrices is developed and the original matrix is factorized
+into a set of matrices where their inverse matrices are calculated. For the cases where the matrix
+inverse does not exist, a least square type pseudoinverse is provided. The present method is a direct
+routine, i.e., executes in a predictable number of operations which is tested for randomly generated
+matrices with varying size. The results show significant improvement in computational costs specially
+when the size of matrix increases. 

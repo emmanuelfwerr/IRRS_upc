@@ -1,0 +1,19 @@
+We study the online influence maximization (OIM) problem in social networks, where in multiple
+rounds the learner repeatedly chooses seed nodes to generate cascades, observes the cascade feedback,
+and gradually learns the best seeds that generate the largest cascade. We focus on two major challenges
+in this paper. First, we work with node-level feedback instead of edge-level feedback. The edge-level
+feedback reveals all edges that pass through information in a cascade, where the node-level feedback
+only reveals the activated nodes with timestamps. The node-level feedback is arguably more realistic
+since in practice it is relatively easy to observe who is influenced but very difficult to observe
+from which relationship (edge) the influence comes from. Second, we use standard offline oracle
+instead of offline pair-oracle. To compute a good seed set for the next round, an offline pair-oracle
+finds the best seed set and the best parameters within the confidence region simultaneously, and
+such an oracle is difficult to compute due to the combinatorial core of OIM problem. So we focus on
+how to use the standard offline influence maximization oracle which finds the best seed set given
+the edge parameters as input. In this paper, we resolve these challenges for the two most popular
+diffusion models, the independent cascade (IC) and the linear threshold (LT) model. For the IC model,
+the past research only achieves edge-level feedback, while we present the first $\widetilde{O}(\sqrt{T})$-regret
+algorithm for the node-level feedback. Besides, the algorithm only invokes standard offline oracles.
+For the LT model, a recent study only provides an OIM solution that meets the first challenge but still
+requires a pair-oracle. In this paper, we apply a similar technique as in the IC model to replace the
+pair-oracle with a standard oracle while maintaining $\widetilde{O}(\sqrt{T})$-regret. 

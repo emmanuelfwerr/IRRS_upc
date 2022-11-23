@@ -1,0 +1,19 @@
+Purpose: To introduce a widely applicable workflow for pulmonary lobe segmentation of MR images
+using a recurrent neural network (RNN) trained with chest computed tomography (CT) datasets. The
+feasibility is demonstrated for 2D coronal ultra-fast balanced steady-state free precession
+(ufSSFP) MRI. Methods: Lung lobes of 250 publicly accessible CT datasets of adults were segmented
+with an open-source CT-specific algorithm. To match 2D ufSSFP MRI data of pediatric patients, both
+CT data and segmentations were translated into pseudo-MR images, masked to suppress anatomy outside
+the lung. Network-1 was trained with pseudo-MR images and lobe segmentations, and applied to 1000
+masked ufSSFP images to predict lobe segmentations. These outputs were directly used as targets
+to train Network-2 and Network-3 with non-masked ufSSFP data as inputs, and an additional whole-lung
+mask as input for Network-2. Network predictions were compared to reference manual lobe segmentations
+of ufSSFP data in twenty pediatric cystic fibrosis patients. Manual lobe segmentations were performed
+by splitting available whole-lung segmentations into lobes. Results: Network-1 was able to segment
+the lobes of ufSSFP images, and Network-2 and Network-3 further increased segmentation accuracy
+and robustness. The average all-lobe Dice similarity coefficients were 95.0$\pm$2.8 (mean$\pm$pooled
+SD [%]), 96.4$\pm$2.0, 93.0$\pm$2.0, and the average median Hausdorff distances were 6.1$\pm$0.9
+(mean$\pm$SD [mm]), 5.3$\pm$1.1, 7.1$\pm$1.3, for Network-1, Network-2, and Network-3, respectively.
+Conclusions: RNN lung lobe segmentation of 2D ufSSFP imaging is feasible, in good agreement with
+manual segmentations. The proposed workflow might provide access to automated lobe segmentations
+for various lung MRI examinations and quantitative analyses. 

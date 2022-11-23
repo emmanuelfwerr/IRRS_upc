@@ -1,0 +1,19 @@
+A key-value cache is a key component of many services to provide low-latency and high-throughput
+data accesses to a huge amount of data. To improve the end-to-end performance of such services, a
+key-value cache must achieve a high cache hit ratio with high throughput. In this paper, we propose
+a new cache replacement algorithm, multi-step LRU, which achieves high throughput by efficiently
+exploiting SIMD instructions without using per-item additional memory (LRU metadata) to record
+information such as the last access timestamp. For a small set of items that can fit within a vector
+register, SIMD-based LRU management without LRU metadata is known (in-vector LRU). It remembers
+the access history by reordering items in one vector using vector shuffle instruction. In-vector
+LRU alone cannot be used for a caching system since it can manage only few items. Set-associative
+cache is a straightforward way to build a large cache using in-vector LRU as a building block. However,
+a naive set-associative cache based on in-vector LRU has a poorer cache hit ratio than the original
+LRU although it can achieve a high throughput. Our multi-step LRU enhances naive set-associative
+cache based on in-vector LRU for improving cache accuracy by taking both access frequency and access
+recency of items into account while keeping the efficiency by SIMD instructions. Our results indicate
+that multi-step LRU outperforms the original LRU and GCLOCK algorithms in terms of both execution
+speed and cache hit ratio. Multi-step LRU improves the cache hit ratios over the original LRU by implicitly
+taking access frequency of items as well as access recency into account. The cache hit ratios of multi-step
+LRU are similar to those of ARC, which achieves a higher a cache hit ratio in a tradeoff for using more
+LRU metadata. 

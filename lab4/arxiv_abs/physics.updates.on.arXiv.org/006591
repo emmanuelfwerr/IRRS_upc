@@ -1,0 +1,20 @@
+Magnetic resonance imaging (MRI) is increasingly utilized for image-guided radiotherapy due
+to its outstanding soft-tissue contrast and lack of ionizing radiation. However, geometric distortions
+caused by gradient nonlinearity (GNL) limit anatomical accuracy, potentially compromising the
+quality of tumour treatments. In addition, slow MR acquisition and reconstruction limit the potential
+for real-time image guidance. Here, we demonstrate a deep learning-based method that rapidly reconstructs
+distortion-corrected images from raw k-space data for real-time MR-guided radiotherapy applications.
+We leverage recent advances in interpretable unrolling networks to develop a Distortion-Corrected
+Reconstruction Network (DCReconNet) that applies convolutional neural networks (CNNs) to learn
+effective regularizations and nonuniform fast Fourier transforms for GNL-encoding. DCReconNet
+was trained on a public MR brain dataset from eleven healthy volunteers for fully sampled and accelerated
+techniques including parallel imaging (PI) and compressed sensing (CS). The performance of DCReconNet
+was tested on phantom and volunteer brain data acquired on a 1.0T MRI-Linac. The DCReconNet, CS-
+and PI-based reconstructed image quality was measured by structural similarity (SSIM) and root-mean-squared
+error (RMSE) for numerical comparisons. The computation time for each method was also reported.
+Phantom and volunteer results demonstrated that DCReconNet better preserves image structure
+when compared to CS- and PI-based reconstruction methods. DCReconNet resulted in highest SSIM
+(0.95 median value) and lowest RMSE (<0.04) on simulated brain images with four times acceleration.
+DCReconNet is over 100-times faster than iterative, regularized reconstruction methods. DCReconNet
+provides fast and geometrically accurate image reconstruction and has potential for real-time
+MRI-guided radiotherapy applications. 

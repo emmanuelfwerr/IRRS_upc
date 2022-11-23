@@ -1,0 +1,19 @@
+Fetal alcohol syndrome (FAS) caused by prenatal alcohol exposure can result in a series of cranio-facial
+anomalies, and behavioral and neurocognitive problems. Current diagnosis of FAS is typically
+done by identifying a set of facial characteristics, which are often obtained by manual examination.
+Anatomical landmark detection, which provides rich geometric information, is important to detect
+the presence of FAS associated facial anomalies. This imaging application is characterized by
+large variations in data appearance and limited availability of labeled data. Current deep learning-based
+heatmap regression methods designed for facial landmark detection in natural images assume availability
+of large datasets and are therefore not wellsuited for this application. To address this restriction,
+we develop a new regularized transfer learning approach that exploits the knowledge of a network
+learned on large facial recognition datasets. In contrast to standard transfer learning which
+focuses on adjusting the pre-trained weights, the proposed learning approach regularizes the
+model behavior. It explicitly reuses the rich visual semantics of a domain-similar source model
+on the target task data as an additional supervisory signal for regularizing landmark detection
+optimization. Specifically, we develop four regularization constraints for the proposed transfer
+learning, including constraining the feature outputs from classification and intermediate layers,
+as well as matching activation attention maps in both spatial and channel levels. Experimental
+evaluation on a collected clinical imaging dataset demonstrate that the proposed approach can
+effectively improve model generalizability under limited training samples, and is advantageous
+to other approaches in the literature. 

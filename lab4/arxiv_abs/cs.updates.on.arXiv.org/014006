@@ -1,0 +1,19 @@
+Glioma is a common malignant brain tumor that shows distinct survival among patients. The isocitrate
+dehydrogenase (IDH) gene mutation status provides critical diagnostic and prognostic value for
+glioma and is now accepted as the standard of care. A non-invasive prediction of IDH mutation based
+on the pre-treatment MRI has crucial clinical significance. Machine learning and deep learning
+models show reasonable performance in predicting IDH mutation status. However, most models neglect
+the systematic brain alterations caused by tumor invasion, where the infiltration along white
+matter tracts throughout the brain is identified as a hallmark of glioma. Structural brain network
+provides an effective tool to characterise brain organisation, which could be captured by the graph
+neural networks (GNN) for a more accurate prediction of IDH mutation status. Here we propose a method
+to predict the IDH mutation using GNN, based on the structural brain network of patients. Specifically,
+we firstly construct a network template of healthy subjects, which consists of atlases of edges
+(white matter tracts) and nodes (cortical and subcortical brain regions) to provide regions of
+interest (ROI). Next, we employ autoencoders to extract the latent multi-modal MRI features from
+the ROIs of the edge and node in patients. These features of edge and node of brain networks are used
+to train a GNN architecture in predicting IDH mutation status. The results show that the proposed
+method outperforms the baseline models using 3D-CNN and 3D-DenseNet. In addition, the model interpretation
+suggests its ability to identify the tracts infiltrated by tumor and corresponds to clinical prior
+knowledge. In conclusion, integrating brain networks with GNN offers a new avenue to study brain
+lesions using computational neuroscience and computer vision approaches. 

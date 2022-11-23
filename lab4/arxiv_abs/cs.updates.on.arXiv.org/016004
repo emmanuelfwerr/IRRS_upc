@@ -1,0 +1,20 @@
+Presently, the practice of distributed computing is such that problems exist in a mathematical
+realm different from their solutions: a problem is presented as a set of requirements on possible
+process or system behaviors, and the solution is presented as algorithmic pseudocode satisfying
+the requirements. Here, we present a novel mathematical realm, termed \emph{multiagent transition
+systems}, that aims to accommodate both distributed computing problems and their solutions. A
+problem is presented as a specification -- a multiagent transition system -- and a solution as an
+implementation of the specification by another, lower-level multiagent transition systems.
+This duality of roles of a multiagent transition system can be exploited all the way from a high-level
+distributed computing problem description down to an agreed-upon base layer, say TCP/IP, resulting
+in a mathematical protocol stack where each protocol is implemented by the one below it. Correct
+implementations are compositional and thus provide also an implementation of the protocol stack
+as a whole. The framework also offers a formal, yet natural, notion of faults and their resilience.
+We present two illustrations of the power of the approach: A multiagent transition systems specifying
+a centralized single-chain protocol and a distributed longest-chain protocol, show an implementation
+of this protocol by the longest-chain protocol, and conclude -- via the compositionality of correct
+implementations -- that the distributed longest-chain protocol is universal for centralized
+multiagent transition systems. Second, we describe a DAG-based blockchain consensus protocol
+stack that addresses each of the key tasks of a blockchain protocol -- dissemination, equivocation-exclusion,
+and ordering -- by a different layer of the stack. Additional applications of this mathematical
+framework are underway. 

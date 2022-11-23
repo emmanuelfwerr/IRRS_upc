@@ -1,0 +1,18 @@
+In secure machine learning inference, most current schemes assume that the server is semi-honest
+and honestly follows the protocol but attempts to infer additional information. However, in real-world
+scenarios, the server may behave maliciously, e.g., using low-quality model parameters as inputs
+or deviating from the protocol. Although a few studies consider the security against the malicious
+server, they do not guarantee the model accuracy while preserving the privacy of both server's model
+and the client's inputs. Furthermore, a curious client may perform model extraction attacks to
+steal the server's model. To address these issues, we propose Fusion, an efficient and privacy-preserving
+inference scheme that is secure against the malicious server, and a curious client who may perform
+model extraction attacks. Without leveraging expensive cryptographic techniques, a novel mix-and-check
+method is designed to ensure that the server uses a well-trained model as input and correctly performs
+the inference computations. On the basis of this method, Fusion can be used as a general compiler
+for converting any semi-honest inference scheme into a maliciously secure one. The experimental
+results indicate that Fusion is 93.51$\times$ faster and uses 30.90$\times$ less communication
+than the existing maliciously secure inference protocol. We conduct ImageNet-scale inference
+on practical ResNet50 model and it costs less than 5.5 minutes and 10.117 Gb of communication, which
+only brings additional 29% runtime and has 2.643$\times$ less communication than that of semi-honest
+CrypTFlow2. Moreover, Fusion mitigates the client's model extraction attacks, e.g., degrading
+the accuracy of the stolen model by up to 42.7% while maintaining the utility of the server's model.

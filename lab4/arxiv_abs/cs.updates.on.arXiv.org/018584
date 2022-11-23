@@ -1,0 +1,19 @@
+In satellite layout design, heat source layout optimization (HSLO) is an effective technique to
+decrease the maximum temperature and improve the heat management of the whole system. Recently,
+deep learning surrogate assisted HSLO has been proposed, which learns the mapping from layout to
+its corresponding temperature field, so as to substitute the simulation during optimization to
+decrease the computational cost largely. However, it faces two main challenges: 1) the neural network
+surrogate for the certain task is often manually designed to be complex and requires rich debugging
+experience, which is challenging for the designers in the engineering field; 2) existing algorithms
+for HSLO could only obtain a near optimal solution in single optimization and are easily trapped
+in local optimum. To address the first challenge, considering reducing the total parameter numbers
+and ensuring the similar accuracy as well as, a neural architecture search (NAS) method combined
+with Feature Pyramid Network (FPN) framework is developed to realize the purpose of automatically
+searching for a small deep learning surrogate model for HSLO. To address the second challenge, a
+multimodal neighborhood search based layout optimization algorithm (MNSLO) is proposed, which
+could obtain more and better approximate optimal design schemes simultaneously in single optimization.
+Finally, two typical two-dimensional heat conduction optimization problems are utilized to demonstrate
+the effectiveness of the proposed method. With the similar accuracy, NAS finds models with 80% fewer
+parameters, 64% fewer FLOPs and 36% faster inference time than the original FPN. Besides, with the
+assistance of deep learning surrogate by automatic search, MNSLO could achieve multiple near optimal
+design schemes simultaneously to provide more design diversities for designers. 

@@ -1,0 +1,19 @@
+The order/dimension of models derived on the basis of data is commonly restricted by the number of
+observations, or in the context of monitored systems, sensing nodes. This is particularly true
+for structural systems (e.g. civil or mechanical structures), which are typically high-dimensional
+in nature. In the scope of physics-informed machine learning, this paper proposes a framework -
+termed Neural Modal ODEs - to integrate physics-based modeling with deep learning (particularly,
+Neural Ordinary Differential Equations -- Neural ODEs) for modeling the dynamics of monitored
+and high-dimensional engineered systems. In this initiating exploration, we restrict ourselves
+to linear or mildly nonlinear systems. We propose an architecture that couples a dynamic version
+of variational autoencoders with physics-informed Neural ODEs (Pi-Neural ODEs). An encoder,
+as a part of the autoencoder, learns the abstract mappings from the first few items of observational
+data to the initial values of the latent variables, which drive the learning of embedded dynamics
+via physics-informed Neural ODEs, imposing a \textit{modal model} structure to that latent space.
+The decoder of the proposed model adopts the eigenmodes derived from an eigen-analysis applied
+to the linearized portion of a physics-based model: a process implicitly carrying the spatial relationship
+between degrees-of-freedom (DOFs). The framework is validated on a numerical example, and an experimental
+dataset of a scaled cable-stayed bridge, where the learned hybrid model is shown to outperform a
+purely physics-based approach to modeling. We further show the functionality of the proposed scheme
+within the context of virtual sensing, i.e., the recovery of generalized response quantities in
+unmeasured DOFs from spatially sparse data. 

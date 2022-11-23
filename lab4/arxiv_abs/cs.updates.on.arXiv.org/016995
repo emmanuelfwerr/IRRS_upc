@@ -1,0 +1,20 @@
+Two-sided platforms rely on their recommendation algorithms to help visitors successfully find
+a match. However, on platforms such as VolunteerMatch (VM) -- which has facilitated millions of
+connections between volunteers and nonprofits -- a sizable fraction of website traffic arrives
+directly to a nonprofit's volunteering page via an external link, thus bypassing the platform's
+recommendation algorithm. We study how such platforms should account for this external traffic
+in the design of their recommendation algorithms, given the goal of maximizing successful matches.
+We model the platform's problem as a special case of online matching, where (using VM terminology)
+volunteers arrive sequentially and probabilistically match with one opportunity, each of which
+has finite need for volunteers. In our framework, external traffic is interested only in their targeted
+opportunity; by contrast, internal traffic may be interested in many opportunities, and the platform's
+online algorithm selects which opportunity to recommend. In evaluating different algorithms,
+we parameterize the competitive ratio based on the amount of external traffic. After demonstrating
+the shortcomings of a commonly-used algorithm that is optimal in the absence of external traffic,
+we propose a new algorithm -- Adaptive Capacity (AC) -- which accounts for matches differently based
+on whether they originate from internal or external traffic. We provide a lower bound on AC's competitive
+ratio that is increasing in the amount of external traffic and that is close to the parameterized
+upper bound we establish on the competitive ratio of any online algorithm. Our analysis utilizes
+a path-based, pseudo-rewards approach, which we further generalize to settings where the platform
+can recommend a ranked set of opportunities. Beyond our theoretical results, we show the strong
+performance of AC in a case study motivated by VM data. 

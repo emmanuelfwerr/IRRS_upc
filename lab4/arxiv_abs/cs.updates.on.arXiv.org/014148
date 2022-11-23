@@ -1,0 +1,19 @@
+Deep learning-based time series models are being extensively utilized in engineering and manufacturing
+industries for process control and optimization, asset monitoring, diagnostic and predictive
+maintenance. These models have shown great improvement in the prediction of the remaining useful
+life (RUL) of industrial equipment but suffer from inherent vulnerability to adversarial attacks.
+These attacks can be easily exploited and can lead to catastrophic failure of critical industrial
+equipment. In general, different adversarial perturbations are computed for each instance of
+the input data. This is, however, difficult for the attacker to achieve in real time due to higher
+computational requirement and lack of uninterrupted access to the input data. Hence, we present
+the concept of universal adversarial perturbation, a special imperceptible noise to fool regression
+based RUL prediction models. Attackers can easily utilize universal adversarial perturbations
+for real-time attack since continuous access to input data and repetitive computation of adversarial
+perturbations are not a prerequisite for the same. We evaluate the effect of universal adversarial
+attacks using NASA turbofan engine dataset. We show that addition of universal adversarial perturbation
+to any instance of the input data increases error in the output predicted by the model. To the best
+of our knowledge, we are the first to study the effect of the universal adversarial perturbation
+on time series regression models. We further demonstrate the effect of varying the strength of perturbations
+on RUL prediction models and found that model accuracy decreases with the increase in perturbation
+strength of the universal adversarial attack. We also showcase that universal adversarial perturbation
+can be transferred across different models. 

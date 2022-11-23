@@ -1,0 +1,20 @@
+In recent years, photogrammetry has been widely used in many areas to create photorealistic 3D virtual
+data representing the physical environment. The innovation of small unmanned aerial vehicles
+(sUAVs) has provided additional high-resolution imaging capabilities with low cost for mapping
+a relatively large area of interest. These cutting-edge technologies have caught the US Army and
+Navy's attention for the purpose of rapid 3D battlefield reconstruction, virtual training, and
+simulations. Our previous works have demonstrated the importance of information extraction from
+the derived photogrammetric data to create semantic-rich virtual environments (Chen et al., 2019).
+For example, an increase of simulation realism and fidelity was achieved by segmenting and replacing
+photogrammetric trees with game-ready tree models. In this work, we further investigated the semantic
+information extraction problem and focused on the ground material segmentation and object detection
+tasks. The main innovation of this work was that we leveraged both the original 2D images and the derived
+3D photogrammetric data to overcome the challenges faced when using each individual data source.
+For ground material segmentation, we utilized an existing convolutional neural network architecture
+(i.e., 3DMV) which was originally designed for segmenting RGB-D sensed indoor data. We improved
+its performance for outdoor photogrammetric data by introducing a depth pooling layer in the architecture
+to take into consideration the distance between the source images and the reconstructed terrain
+model. To test the performance of our improved 3DMV, a ground truth ground material database was
+created using data from the One World Terrain (OWT) data repository. Finally, a workflow for importing
+the segmented ground materials into a virtual simulation scene was introduced, and visual results
+are reported in this paper. 

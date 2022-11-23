@@ -1,0 +1,20 @@
+Reducing the intensity of wind excitation via aerodynamic shape modification is a major strategy
+to mitigate the reaction forces on supertall buildings, reduce construction and maintenance costs,
+and improve the comfort of future occupants. To this end, computational fluid dynamics (CFD) combined
+with state-of-the-art stochastic optimization algorithms is more promising than the trial and
+error approach adopted by the industry. The present study proposes and investigates a novel approach
+to risk-averse shape optimization of tall building structures that incorporates site-specific
+uncertainties in the wind velocity, terrain conditions, and wind flow direction. A body-fitted
+finite element approximation is used for the CFD with different wind directions incorporated by
+re-meshing the fluid domain. The bending moment at the base of the building is minimized, resulting
+in a building with reduced cost, material, and hence, a reduced carbon footprint. Both risk-neutral
+and risk-averse optimization of the twist and tapering of a representative building are presented
+under uncertain inflow wind conditions that have been calibrated to fit freely-available site-specific
+data from Basel, Switzerland. The risk-averse strategy uses the conditional value-at-risk to
+optimize for the low-probability high-consequence events appearing in the worst 10% of loading
+conditions. Adaptive sampling is used to accelerate the gradient-based stochastic optimization
+pipeline. The adaptive method is easy to implement and particularly helpful for compute-intensive
+simulations because the number of gradient samples grows only as the optimal design algorithm converges.
+The performance of the final risk-averse building geometry is exceptionally favorable when compared
+to the risk-neutral optimized geometry, thus, demonstrating the effectiveness of the risk-averse
+design approach in computational wind engineering. 

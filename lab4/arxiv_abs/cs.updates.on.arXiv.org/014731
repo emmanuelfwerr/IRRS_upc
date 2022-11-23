@@ -1,0 +1,19 @@
+The Deep Space Network is NASA's international array of antennas that support interplanetary spacecraft
+missions. A track is a block of multi-dimensional time series from the beginning to end of DSN communication
+with the target spacecraft, containing thousands of monitor data items lasting several hours at
+a frequency of 0.2-1Hz. Monitor data on each track reports on the performance of specific spacecraft
+operations and the DSN itself. DSN is receiving signals from 32 spacecraft across the solar system.
+DSN has pressure to reduce costs while maintaining the quality of support for DSN mission users.
+DSN Link Control Operators need to simultaneously monitor multiple tracks and identify anomalies
+in real time. DSN has seen that as the number of missions increases, the data that needs to be processed
+increases over time. In this project, we look at the last 8 years of data for analysis. Any anomaly
+in the track indicates a problem with either the spacecraft, DSN equipment, or weather conditions.
+DSN operators typically write Discrepancy Reports for further analysis. It is recognized that
+it would be quite helpful to identify 10 similar historical tracks out of the huge database to quickly
+find and match anomalies. This tool has three functions: (1) identification of the top 10 similar
+historical tracks, (2) detection of anomalies compared to the reference normal track, and (3) comparison
+of statistical differences between two given tracks. The requirements for these features were
+confirmed by survey responses from 21 DSN operators and engineers. The preliminary machine learning
+model has shown promising performance (AUC=0.92). We plan to increase the number of data sets and
+perform additional testing to improve performance further before its planned integration into
+the track visualizer interface to assist DSN field operators and engineers. 

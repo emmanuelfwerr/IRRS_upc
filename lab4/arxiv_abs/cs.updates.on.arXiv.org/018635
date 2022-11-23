@@ -1,0 +1,19 @@
+In this work, we investigate novel algorithmic growth processes. In particular, we propose three
+growth operations, full doubling, RC doubling and doubling, and explore the algorithmic and structural
+properties of their resulting processes under a geometric setting. In terms of modeling, our system
+runs on a 2-dimensional grid and operates in discrete time-steps. The process begins with an initial
+shape $S_I=S_0$ and, in every time-step $t \geq 1$, by applying (in parallel) one or more growth operations
+of a specific type to the current shape-instance $S_{t-1}$, generates the next instance $S_t$,
+always satisfying $|S_t| > |S_{t-1}|$. Our goal is to characterize the classes of shapes that can
+be constructed in $O(\log n)$ or polylog $n$ time-steps and determine whether a final shape $S_F$
+can be constructed from an initial shape $S_I$ using a finite sequence of growth operations of a given
+type, called a constructor of $S_F$. For full doubling, in which, in every time-step, every node
+generates a new node in a given direction, we completely characterize the structure of the class
+of shapes that can be constructed from a given initial shape. For RC doubling, in which complete columns
+or rows double, our main contribution is a linear-time centralized algorithm that for any pair of
+shapes $S_I$, $S_F$ decides if $S_F$ can be constructed from $S_I$ and, if the answer is yes, returns
+an $O(\log n)$-time-step constructor of $S_F$ from $S_I$. For the most general doubling operation,
+where up to individual nodes can double, we show that some shapes cannot be constructed in sub-linear
+time-steps and give two universal constructors of any $S_F$ from a singleton $S_I$, which are efficient
+(i.e., up to polylogarithmic time-steps) for large classes of shapes. Both constructors can be
+computed by polynomial-time centralized algorithms for any shape $S_F$. 

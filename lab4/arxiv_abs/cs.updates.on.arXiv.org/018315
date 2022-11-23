@@ -1,0 +1,19 @@
+Mobile edge computing (MEC) has been regarded as a promising wireless access architecture to alleviate
+the burden of performing computation for large content size tasks at resource limited mobile terminals.
+By allowing the mobile terminals to offload the computation tasks to MEC servers, the task processing
+delay can be significantly decreased. As the resources at the MEC and user are limited, performing
+reasonable resources allocation optimization can improve the performance, especially for a multi-user
+offloading system. In this study, with an aim to minimize the task computation delay, we jointly
+optimize the local content splitting ratio, the transmission/computation power allocation,
+and the MEC server selection under a dynamic environment with stochastic task arrivals and time-varying
+wireless channels. To address the challenging dynamic joint optimization problem, we formulate
+it as a reinforcement learning (RL) problem. We design the computational offloading policies to
+minimize the long-term average delay cost. Two deep RL strategies, that is, deep Q-learning network
+(DQN) and deep deterministic policy gradient (DDPG), are adopted to efficiently learn the computational
+offloading policies adaptively. The proposed DQN strategy takes the MEC selection as a unique action
+while using convex optimization approach to obtain the local content splitting ratio and the transmission/computation
+power allocation. Simultaneously, the actions of DDPG strategy are selected as all dynamic variables
+including the local content splitting ratio, the transmission/computation power allocation,
+and the MEC server selection. Our numerical results demonstrate that both proposed strategies
+perform better than the traditional non-learning scheme, and the DDPG strategy is superior to the
+DQN strategy as it can online learn all variables although it requires large complexity. 

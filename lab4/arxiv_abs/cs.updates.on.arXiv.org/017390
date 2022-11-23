@@ -1,0 +1,19 @@
+Face benchmarks empower the research community to train and evaluate high-performance face recognition
+systems. In this paper, we contribute a new million-scale recognition benchmark, containing uncurated
+4M identities/260M faces (WebFace260M) and cleaned 2M identities/42M faces (WebFace42M) training
+data, as well as an elaborately designed time-constrained evaluation protocol. Firstly, we collect
+4M name lists and download 260M faces from the Internet. Then, a Cleaning Automatically utilizing
+Self-Training (CAST) pipeline is devised to purify the tremendous WebFace260M, which is efficient
+and scalable. To the best of our knowledge, the cleaned WebFace42M is the largest public face recognition
+training set and we expect to close the data gap between academia and industry. Referring to practical
+deployments, Face Recognition Under Inference Time conStraint (FRUITS) protocol and a new test
+set with rich attributes are constructed. Besides, we gather a large-scale masked face sub-set
+for biometrics assessment under COVID-19. For a comprehensive evaluation of face matchers, three
+recognition tasks are performed under standard, masked and unbiased settings, respectively.
+Equipped with this benchmark, we delve into million-scale face recognition problems. A distributed
+framework is developed to train face recognition models efficiently without tampering with the
+performance. Enabled by WebFace42M, we reduce 40% failure rate on the challenging IJB-C set and
+rank 3rd among 430 entries on NIST-FRVT. Even 10% data (WebFace4M) shows superior performance compared
+with the public training sets. Furthermore, comprehensive baselines are established under the
+FRUITS-100/500/1000 milliseconds protocols. The proposed benchmark shows enormous potential
+on standard, masked and unbiased face recognition scenarios. Our WebFace260M website is https://www.face-benchmark.org.

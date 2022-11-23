@@ -1,0 +1,20 @@
+The Vera Rubin Observatory Legacy Survey of Space and Time (LSST) is expected to process ${\sim}10^6$
+transient detections per night. For precision measurements of cosmological parameters and rates,
+it is critical to understand the detection efficiency, magnitude limits, artifact contamination
+levels, and biases in the selection and photometry. Here we rigorously test the LSST Difference
+Image Analysis (DIA) pipeline using simulated images from the Rubin Observatory LSST Dark Energy
+Science Collaboration (DESC) Data Challenge (DC2) simulation for the Wide-Fast-Deep (WFD) survey
+area. DC2 is the first large-scale (300 deg$^2$) image simulation of a transient survey that includes
+realistic cadence, variable observing conditions, and CCD image artifacts. We analyze ${\sim}$15
+deg$^2$ of DC2 over a 5-year time-span in which artificial point-sources from Type Ia Supernovae
+(SNIa) light curves have been overlaid onto the images. We measure the detection efficiency as a
+function of Signal-to-Noise Ratio (SNR) and find a $50\%$ efficiency at $\rm{SNR}=5.8$. The magnitude
+limits for each filter are: $u=23.66$, $g=24.69$, $r=24.06$, $i=23.45$, $z=22.54$, $y=21.62$
+$\rm{mag}$. The artifact contamination is $\sim90\%$ of detections, corresponding to $\sim1000$
+artifacts/deg$^2$ in $g$ band, and falling to 300 per deg$^2$ in $y$ band. The photometry has biases
+$<1\%$ for magnitudes $19.5 < m <23$. Our DIA performance on simulated images is similar to that of
+the Dark Energy Survey pipeline applied to real images. We also characterize DC2 image properties
+to produce catalog-level simulations needed for distance bias corrections. We find good agreement
+between DC2 data and simulations for distributions of SNR, redshift, and fitted light-curve properties.
+Applying a realistic SNIa-cosmology analysis for redshifts $z<1$, we recover the input cosmology
+parameters to within statistical uncertainties. 

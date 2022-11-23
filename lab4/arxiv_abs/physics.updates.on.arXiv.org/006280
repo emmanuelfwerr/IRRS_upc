@@ -1,0 +1,20 @@
+As charged particle bunches become shorter and more intense, the effects of nonlinear intra-bunch
+collective interactions such as space charge forces and bunch-to-bunch influences such as wakefields
+and coherent synchrotron radiation also increase. Shorter more intense bunches are also more difficult
+to accurately image because their dimensions are beyond the resolution of existing diagnostics
+and they may be destructive to intercepting diagnostics. The limited availability of detailed
+diagnostics for intense high energy beams is a fundamental challenge for the accelerator community
+because both beams and accelerators are time-varying systems that change in unpredictable ways.
+The detailed 6D (x,y,z,px,py,pz) distributions of beams emerging from sources vary with time due
+to factors such as evolving photocathode laser intensity profiles and the quantum efficiency of
+photocathodes. Accelerator magnets, RF amplifiers, and control systems are perturbed by external
+disturbances, beam-loading effects, temperature variations, and misalignments. Although machine
+learning (ML) methods have grown in popularity in the accelerator community in recently years,
+they are fundamentally limited when it comes to time-varying systems for which most current approaches
+are to simply collect large new data sets and perform re-training, something which is not feasible
+for busy accelerator user facilities because detailed beam measurements usually interrupt operations.
+New adaptive machine learning (AML) methods designed for time-varying systems are needed to aid
+in the diagnostics and control of high-intensity, ultrashort beams by combining deep learning
+tools such as convolutional neural network-based encoder-decoder architectures, model-independent
+feedback, physics constraints, and online models with real time non-invasive beam data, to provide
+a detailed virtual view of intense bunch dynamics. 

@@ -1,0 +1,20 @@
+Inexpensive numerical methods are key to enable simulations of systems of a large number of particles
+of different shapes in Stokes flow. Several approximate methods have been introduced for this purpose.
+We study the accuracy of the multiblob method for solving the Stokes mobility problem in free space,
+where the 3D geometry of a particle surface is discretised with spherical blobs and the pair-wise
+interaction between blobs is described by the RPY-tensor. The paper aims to investigate and improve
+on the magnitude of the error in the solution velocities of the Stokes mobility problem using a combination
+of two different techniques: an optimally chosen grid of blobs and a pair-correction inspired by
+Stokesian dynamics. Optimisation strategies to determine a grid with a certain number of blobs
+are presented with the aim of matching the hydrodynamic response of a single accurately described
+ideal particle, alone in the fluid. Small errors in this self-interaction are essential as they
+determine the basic error level in a system of well-separated particles. With a good match, reasonable
+accuracy can be obtained even with coarse blob-resolutions of the particle surfaces. The error
+in the self-interaction is however sensitive to the exact choice of grid parameters and simply hand-picking
+a suitable blob geometry can lead to errors several orders of magnitude larger in size. The pair-correction
+is local and cheap to apply, and reduces on the error for more closely interacting particles. Two
+different types of geometries are considered: spheres and axisymmetric rods with smooth caps.
+The error in solutions to mobility problems is quantified for particles of varying inter-particle
+distances for systems containing a few particles, comparing to an accurate solution based on a second
+kind BIE-formulation where the quadrature error is controlled by employing quadrature by expansion
+(QBX). 

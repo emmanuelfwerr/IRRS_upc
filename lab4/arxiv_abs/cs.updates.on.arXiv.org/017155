@@ -1,0 +1,19 @@
+The MPC in the head introduced in [IKOS07] has established itself as an important paradigm in order
+to design efficient digital signatures. In particular, it has been leveraged in the Picnic scheme
+[CDG+ 20] that is currently considered in the third round of NIST Post-Quantum Standardization
+process. In addition, it has been used in [Beu20] to introduce the Proof of Knowledge (PoK) with Helper
+paradigm. This construction permits to design shorter signatures but induces a non negligible
+performance overhead. In this paper, our contributions are twofold. Firstly, we introduce a new
+PoK with Helper for the Syndrome Decoding (SD) problem. This construction relies on ideas from [BGKM22]
+and [FJR21] and improve the latter using a new technique that can be seen as performing the cut and
+choose with a meet in the middle approach. Secondly and most importantly, we introduce a new paradigm
+to design PoK that brings improvements over the PoK with Helper one. Indeed, we show how one can substitute
+the Helper in these constructions by leveraging the underlying structure of the considered problem.
+This new approach does not suffer from the performance overhead inherent to the PoK with Helper paradigm
+hence offers different trade-offs between signature sizes and performances. Interestingly,
+our new approach is quite generic and can be applied to many problems and their associated PoK. In
+order to demonstrate this versatility, we provide new PoK related to the SD, MQ, PKP and RSD problems.
+In practice, these PoK lead to shorter signatures for the aforementioned problems. Indeed, considering
+(public key + signature), we get sizes below 12 kB for our signature related to the SD problem, below
+8 kB for our signature related to the MQ problem, below 9 kB for our signature related to the PKP problem
+and below 7 kB for our signature related to the RSD problem. 

@@ -1,0 +1,19 @@
+The study of statistical models of network structure, pursued across numerous disciplines and
+contexts, is fundamentally challenging because of (often high-order) dependence between connections.
+A common approach assigns each person in the graph to a position on a low-dimensional manifold. Distance
+between individuals in this (latent) space is inversely proportional to the likelihood of forming
+a connection. The choice of the latent geometry (the manifold class, dimension, and curvature)
+has consequential impacts on the substantive conclusions drawn from the model. More positive curvature
+in the manifold, for example, encourages more and tighter communities; negative curvature induces
+repulsion among nodes. Currently, however, the choice of the latent geometry is an a priori modeling
+assumption and there is limited guidance about how to make these choices in a data-driven way. In
+this work, we present a method to consistently estimate the manifold type, dimension, and curvature
+from an empirically relevant class of latent spaces: simply connected, complete Riemannian manifolds
+of constant curvature. Our core insight comes by representing the graph as a noisy distance matrix
+based on the ties between groups of nodes: either cliques, or in the case where the researcher observes
+traits, trait-groups. Leveraging results from statistical geometry, we develop hypothesis tests
+to determine whether the observed distances could plausibly be embedded isometrically in each
+of the candidate geometries. The method applies when the researcher observes the full graph and
+also to empirically relevant cases where only partial data is observed. We explore the accuracy
+of our approach with simulations and then apply our approach to data-sets from economics and sociology
+as well as neuroscience. 

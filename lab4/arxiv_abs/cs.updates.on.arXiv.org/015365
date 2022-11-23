@@ -1,0 +1,20 @@
+Judging by popular and generic computer vision challenges, such as the ImageNet or PASCAL VOC, neural
+networks have proven to be exceptionally accurate in recognition tasks. However, state-of-the-art
+accuracy often comes at a high computational price, requiring hardware acceleration to achieve
+real-time performance, while use cases, such as smart cities, require images from fixed cameras
+to be analyzed in real-time. Due to the amount of network bandwidth these streams would generate,
+we cannot rely on offloading compute to a centralized cloud. Thus, a distributed edge cloud is expected
+to process images locally. However, the edge is, by nature, resource-constrained, which puts a
+limit on the computational complexity that can execute. Yet, there is a need for a meeting point between
+the edge and accurate real-time video analytics. Specializing lightweight models on a per-camera
+basis may help but it quickly becomes unfeasible as the number of cameras grows unless the process
+is automated. In this paper, we present and evaluate COVA (Contextually Optimized Video Analytics),
+a framework to assist in the automatic specialization of models for video analytics in edge cameras.
+COVA automatically improves the accuracy of lightweight models through their specialization.
+Moreover, we discuss and review each step involved in the process to understand the different trade-offs
+that each one entails. Additionally, we show how the sole assumption of static cameras allows us
+to make a series of considerations that greatly simplify the scope of the problem. Finally, experiments
+show that state-of-the-art models, i.e., able to generalize to unseen environments, can be effectively
+used as teachers to tailor smaller networks to a specific context, boosting accuracy at a constant
+computational cost. Results show that our COVA can automatically improve accuracy of pre-trained
+models by an average of 21%. 

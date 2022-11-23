@@ -1,0 +1,19 @@
+Cold-start problem is a fundamental challenge for recommendation tasks. The recent self-supervised
+learning (SSL) on Graph Neural Networks (GNNs) model, PT-GNN, pre-trains the GNN model to reconstruct
+the cold-start embeddings and has shown great potential for cold-start recommendation. However,
+due to the over-smoothing problem, PT-GNN can only capture up to 3-order relation, which can not
+provide much useful auxiliary information to depict the target cold-start user or item. Besides,
+the embedding reconstruction task only considers the intra-correlations within the subgraph
+of users and items, while ignoring the inter-correlations across different subgraphs. To solve
+the above challenges, we propose a multi-strategy based pre-training method for cold-start recommendation
+(MPT), which extends PT-GNN from the perspective of model architecture and pretext tasks to improve
+the cold-start recommendation performance. Specifically, in terms of the model architecture,
+in addition to the short-range dependencies of users and items captured by the GNN encoder, we introduce
+a Transformer encoder to capture long-range dependencies. In terms of the pretext task, in addition
+to considering the intra-correlations of users and items by the embedding reconstruction task,
+we add embedding contrastive learning task to capture inter-correlations of users and items. We
+train the GNN and Transformer encoders on these pretext tasks under the meta-learning setting to
+simulate the real cold-start scenario, making the model easily and rapidly being adapted to new
+cold-start users and items. Experiments on three public recommendation datasets show the superiority
+of the proposed MPT model against the vanilla GNN models, the pre-training GNN model on user/item
+embedding inference and the recommendation task. 

@@ -1,0 +1,20 @@
+Data-driven constitutive modeling is an emerging field in computational solid mechanics with
+the prospect of significantly relieving the computational costs of hierarchical computational
+methods. Traditionally, these surrogates have been trained using datasets which map strain inputs
+to stress outputs directly. Data-driven constitutive models for elastic and inelastic materials
+have commonly been developed based on artificial neural networks (ANNs), which recently enabled
+the incorporation of physical laws in the construction of these models. However, ANNs do not offer
+convergence guarantees and are reliant on user-specified parameters. In contrast to ANNs, Gaussian
+process regression (GPR) is based on nonparametric modeling principles as well as on fundamental
+statistical knowledge and hence allows for strict convergence guarantees. GPR however has the
+major disadvantage that it scales poorly as datasets get large. In this work we present a physics-informed
+data-driven constitutive modeling approach for isostropic and anisotropic materials based on
+probabilistic machine learning that can be used in the big data context. The trained GPR surrogates
+are able to respect physical principles such as material frame indifference, material symmetry,
+thermodynamic consistency, stress-free undeformed configuration, and the local balance of angular
+momentum. Furthermore, this paper presents the first sampling approach that directly generates
+space-filling points in the invariant space corresponding to bounded domain of the gradient deformation
+tensor. Overall, the presented approach is tested on synthetic data from isotropic and anisotropic
+constitutive laws and shows surprising accuracy even far beyond the limits of the training domain,
+indicating that the resulting surrogates can efficiently generalize as they incorporate knowledge
+about the underlying physics. 

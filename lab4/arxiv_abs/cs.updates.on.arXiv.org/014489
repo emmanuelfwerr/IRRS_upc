@@ -1,0 +1,20 @@
+Human-machine interfaces (HMI) play a pivotal role in the rehabilitation and daily assistance
+of lower-limb amputees. The brain of such interfaces is a control model that detects the user's intention
+using sensor input and generates corresponding output (control commands). With recent advances
+in technology, AI-based policies have gained attention as control models for HMIs. However, supervised
+learning techniques require affluent amounts of labeled training data from the user, which is challenging
+in the context of lower-limb rehabilitation. Moreover, a static pre-trained model does not take
+the temporal variations in the motion of the amputee (e.g., due to speed, terrain) into account.
+In this study, we aimed to address both of these issues by creating an incremental training approach
+for a torque prediction model using incomplete user-specific training data and biologically inspired
+temporal patterns of human gait. To reach this goal, we created a hybrid of two distinct approaches,
+a generic inter-individual and an adapting individual-specific model that exploits the inter-limb
+synergistic coupling during human gait to learn a function that predicts the torque at the ankle
+joint continuously based on the kinematic sequences of the hip, knee, and shank. An inter-individual
+generic base model learns temporal patterns of gait from a set of able-bodied individuals and predicts
+the gait patterns for a new individual, while the individual-specific adaptation model learns
+and predicts the temporal patterns of gait specific to a particular individual. The iterative training
+using the hybrid model was validated on eight able-bodied and five transtibial amputee subjects.
+It was found that, with the addition of estimators fitted to individual-specific data, the accuracy
+significantly increased from the baseline inter-individual model and plateaued within two to
+three iterations. 

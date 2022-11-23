@@ -1,0 +1,20 @@
+The Illinois Express Quantum Network (IEQNET) is a program to realize metropolitan scale quantum
+networking over deployed optical fiber using currently available technology. IEQNET consists
+of multiple sites that are geographically dispersed in the Chicago metropolitan area. Each site
+has one or more quantum nodes (Q-nodes) representing the communication parties in a quantum network.
+Q-nodes generate or measure quantum signals such as entangled photons and communicate the measurement
+results via standard, classical signals and conventional networking processes. The entangled
+photons in IEQNET nodes are generated at multiple wavelengths, and are selectively distributed
+to the desired users via transparent optical switches. Here we describe the network architecture
+of IEQNET, including the Internet-inspired layered hierarchy that leverages software-defined
+networking (SDN) technology to perform traditional wavelength routing and assignment between
+the Q-nodes. Specifically, SDN decouples the control and data planes, with the control plane being
+entirely implemented in the classical domain. We also discuss the IEQNET processes that address
+issues associated with synchronization, calibration, network monitoring, and scheduling. An
+important goal of IEQNET is to demonstrate the extent to which the control plane classical signals
+can co-propagate with the data plane quantum signals in the same fiber lines (quantum-classical
+signal "coexistence"). This goal is furthered by the use of tunable narrow-band optical filtering
+at the receivers and, at least in some cases, a wide wavelength separation between the quantum and
+classical channels. We envision IEQNET to aid in developing robust and practical quantum networks
+by demonstrating metro-scale quantum communication tasks such as entanglement distribution
+and quantum-state teleportation. 

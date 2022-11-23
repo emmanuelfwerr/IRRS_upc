@@ -1,0 +1,19 @@
+Inpainting shadowed regions cast by superficial blood vessels in retinal optical coherence tomography
+(OCT) images is critical for accurate and robust machine analysis and clinical diagnosis. Traditional
+sequence-based approaches such as propagating neighboring information to gradually fill in the
+missing regions are cost-effective. But they generate less satisfactory outcomes when dealing
+with larger missing regions and texture-rich structures. Emerging deep learning-based methods
+such as encoder-decoder networks have shown promising results in natural image inpainting tasks.
+However, they typically need a long computational time for network training in addition to the high
+demand on the size of datasets, which makes it difficult to be applied on often small medical datasets.
+To address these challenges, we propose a novel multi-scale shadow inpainting framework for OCT
+images by synergically applying sparse representation and deep learning: sparse representation
+is used to extract features from a small amount of training images for further inpainting and to regularize
+the image after the multi-scale image fusion, while convolutional neural network (CNN) is employed
+to enhance the image quality. During the image inpainting, we divide preprocessed input images
+into different branches based on the shadow width to harvest complementary information from different
+scales. Finally, a sparse representation-based regularizing module is designed to refine the
+generated contents after multi-scale feature aggregation. Experiments are conducted to compare
+our proposal versus both traditional and deep learning-based techniques on synthetic and real-world
+shadows. Results demonstrate that our proposed method achieves favorable image inpainting in
+terms of visual quality and quantitative metrics, especially when wide shadows are presented.

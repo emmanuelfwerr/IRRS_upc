@@ -1,0 +1,20 @@
+In deep learning with differential privacy (DP), the neural network achieves the privacy usually
+at the cost of slower convergence (and thus lower performance) than its non-private counterpart.
+This work gives the first convergence analysis of the DP deep learning, through the lens of training
+dynamics and the neural tangent kernel (NTK). Our convergence theory successfully characterizes
+the effects of two key components in the DP training: the per-sample clipping and the noise addition.
+Our analysis not only initiates a general principled framework to understand the DP deep learning
+with any network architecture and loss function, but also motivates a new clipping method -- the
+global clipping, that significantly improves the convergence, as well as preserves the same DP
+guarantee and computational efficiency as the existing method, which we term as local clipping.
+Theoretically speaking, we precisely characterize the effect of per-sample clipping on the NTK
+matrix and show that the noise level of DP optimizers does not affect the convergence in the gradient
+flow regime. In particular, the local clipping almost certainly breaks the positive semi-definiteness
+of NTK, which can be preserved by our global clipping. Consequently, DP gradient descent (GD) with
+global clipping converge monotonically to zero loss, which is often violated by the existing DP-GD.
+Notably, our analysis framework easily extends to other optimizers, e.g., DP-Adam. We demonstrate
+through numerous experiments that DP optimizers equipped with global clipping perform strongly
+on classification and regression tasks. In addition, our global clipping is surprisingly effective
+at learning calibrated classifiers, in contrast to the existing DP classifiers which are oftentimes
+over-confident and unreliable. Implementation-wise, the new clipping can be realized by inserting
+one line of code into the Pytorch Opacus library. 

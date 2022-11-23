@@ -1,0 +1,19 @@
+We revisit the classic regular expression matching problem, that is, given a regular expression
+$R$ and a string $Q$, decide if $Q$ matches any of the strings specified by $R$. A standard textbook
+solution [Thompson, CACM 1968] solves this problem in $O(nm)$ time, where $n$ is the length of $Q$
+and $m$ is the number of characters in $R$. More recently, several results that improve this bound
+by polylogarithmic factor have appeared. All of these solutions are essentially based on constructing
+and simulation a non-deterministic finite automaton. On the other hand, assuming the strong exponential
+time hypotheses we cannot solve regular expression $O((nm)^{1-\epsilon})$ [Backurs and Indyk,
+FOCS 2016]. Hence, a natural question is if we can design algorithms that can take advantage of other
+parameters of the problem to obtain more fine-grained bounds. We present the first algorithm for
+regular expression matching that can take advantage of sparsity of the automaton simulation. More
+precisely, we define the \emph{density}, $\Delta$, of the instance to be the total number of states
+in a simulation of a natural automaton for $R$. The density is always at most $nm+1$ but may be significantly
+smaller for many typical scenarios, e.g., when a string only matches a small part of the regular expression.
+Our main result is a new algorithm that solves the problem in $$O\left(\Delta \log \log \frac{nm}{\Delta}
++ n + m\right)$$ time. This result essentially replaces $nm$ with $\Delta$ in the complexity of regular
+expression matching. Prior to this work no non-trivial bound in terms of $\Delta$ was known. The
+key technical contribution is a new linear space representation of the classic position automaton
+that supports fast state-set transition computation in near-linear time in the size of the input
+and output state sets. 

@@ -1,0 +1,19 @@
+To accelerate software development, developers frequently search and reuse existing code snippets
+from a large-scale codebase, e.g., GitHub. Over the years, researchers proposed many information
+retrieval based models for code search, but they fail to connect the semantic gap between query and
+code. An early successful deep learning based model DeepCS solved this issue by learning the relationship
+between pairs of code methods and corresponding natural language descriptions. Two major advantages
+of DeepCS are the capability of understanding irrelevant/noisy keywords and capturing sequential
+relationships between words in query and code. In this paper, we proposed an IR-based model CodeMatcher
+that inherits the advantages of DeepCS, while it can leverage the indexing technique in the IR-based
+model to accelerate the search response time substantially. CodeMatcher first collects metadata
+for query words to identify irrelevant/noisy ones, then iteratively performs fuzzy search with
+important query words on the codebase that is indexed by the Elasticsearch tool, and finally reranks
+a set of returned candidate code according to how the tokens in the candidate code snippet sequentially
+matched the important words in a query. We verified its effectiveness on a large-scale codebase
+with ~41k repositories. Experimental results showed that CodeMatcher achieves an MRR of 0.60,
+outperforming DeepCS, CodeHow, and UNIF by 82%, 62%, and 46% respectively. Our proposed model is
+over 1.2k times faster than DeepCS. Moreover, CodeMatcher outperforms GitHub and Google search
+by 46% and 33% respectively in terms of MRR. We also observed that: fusing the advantages of IR-based
+and DL-based models is promising; improving the quality of method naming helps code search, since
+method name plays an important role in connecting query and code. 

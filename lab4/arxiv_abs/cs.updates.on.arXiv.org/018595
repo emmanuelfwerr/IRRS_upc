@@ -1,0 +1,19 @@
+Federated learning (FL) provides autonomy and privacy by design to participating peers, who cooperatively
+build a machine learning (ML) model while keeping their private data in their devices. However,
+that same autonomy opens the door for malicious peers to poison the model by conducting either untargeted
+or targeted poisoning attacks. The label-flipping (LF) attack is a targeted poisoning attack where
+the attackers poison their training data by flipping the labels of some examples from one class (i.e.,
+the source class) to another (i.e., the target class). Unfortunately, this attack is easy to perform
+and hard to detect and it negatively impacts on the performance of the global model. Existing defenses
+against LF are limited by assumptions on the distribution of the peers' data and/or do not perform
+well with high-dimensional models. In this paper, we deeply investigate the LF attack behavior
+and find that the contradicting objectives of attackers and honest peers on the source class examples
+are reflected in the parameter gradients corresponding to the neurons of the source and target classes
+in the output layer, making those gradients good discriminative features for the attack detection.
+Accordingly, we propose a novel defense that first dynamically extracts those gradients from the
+peers' local updates, and then clusters the extracted gradients, analyzes the resulting clusters
+and filters out potential bad updates before model aggregation. Extensive empirical analysis
+on three data sets shows the proposed defense's effectiveness against the LF attack regardless
+of the data distribution or model dimensionality. Also, the proposed defense outperforms several
+state-of-the-art defenses by offering lower test error, higher overall accuracy, higher source
+class accuracy, lower attack success rate, and higher stability of the source class accuracy. 

@@ -1,0 +1,19 @@
+Remote photoplethysmography (rPPG) monitors heart rate without requiring physical contact,
+which allows for a wide variety of applications. Deep learning-based rPPG have demonstrated superior
+performance over the traditional approaches in controlled context. However, the lighting situation
+in indoor space is typically complex, with uneven light distribution and frequent variations in
+illumination. It lacks a fair comparison of different methods under different illuminations using
+the same dataset. In this paper, we present a public dataset, namely the BH-rPPG dataset, which contains
+data from thirty five subjects under three illuminations: low, medium, and high illumination.
+We also provide the ground truth heart rate measured by an oximeter. We evaluate the performance
+of three deep learning-based methods (Deepphys, rPPGNet, and Physnet) to that of four traditional
+methods (CHROM, GREEN, ICA, and POS) using two public datasets: the UBFC-rPPG dataset and the BH-rPPG
+dataset. The experimental results demonstrate that traditional methods are generally more resistant
+to fluctuating illuminations. We found that the Physnet achieves lowest mean absolute error (MAE)
+among deep learning-based method under medium illumination, whereas the CHROM achieves 1.04 beats
+per minute (BPM), outperforming the Physnet by 80$\%$. Additionally, we investigate potential
+methods for improving performance of deep learning-based methods. We find that brightness augmentation
+make model more robust to variation illumination. These findings suggest that while developing
+deep learning-based heart rate estimation algorithms, illumination variation should be taken
+into account. This work serves as a benchmark for rPPG performance evaluation and it opens a pathway
+for future investigation into deep learning-based rPPG under illumination variations. 

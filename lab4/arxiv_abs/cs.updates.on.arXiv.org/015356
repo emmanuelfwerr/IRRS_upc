@@ -1,0 +1,19 @@
+The main objective of this paper is to outline a theoretical framework to characterise humans' decision-making
+strategies under uncertainty, in particular active learning in a black-box optimization task
+and trading-off between information gathering (exploration) and reward seeking (exploitation).
+Humans' decisions making according to these two objectives can be modelled in terms of Pareto rationality.
+If a decision set contains a Pareto efficient strategy, a rational decision maker should always
+select the dominant strategy over its dominated alternatives. A distance from the Pareto frontier
+determines whether a choice is Pareto rational. To collect data about humans' strategies we have
+used a gaming application that shows the game field, with previous decisions and observations,
+as well as the score obtained. The key element in this paper is the representation of behavioural
+patterns of human learners as a discrete probability distribution. This maps the problem of the
+characterization of humans' behaviour into a space whose elements are probability distributions
+structured by a distance between histograms, namely the Wasserstein distance (WST). The distributional
+analysis gives new insights about human search strategies and their deviations from Pareto rationality.
+Since the uncertainty is one of the two objectives defining the Pareto frontier, the analysis has
+been performed for three different uncertainty quantification measures to identify which better
+explains the Pareto compliant behavioural patterns. Beside the analysis of individual patterns
+WST has also enabled a global analysis computing the barycenters and WST k-means clustering. A further
+analysis has been performed by a decision tree to relate non-Paretian behaviour, characterized
+by exasperated exploitation, to the dynamics of the evolution of the reward seeking process. 

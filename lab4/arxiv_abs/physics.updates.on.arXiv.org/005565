@@ -1,0 +1,19 @@
+A large eddy simulation wall model is developed based on a formal interpretation of quasi-equilibrium
+that governs the momentum balance integrated in the wall-normal direction. The model substitutes
+the law-of-the-wall velocity profile for a smooth surface into the wall-normal integrated momentum
+balance, leading to a Lagrangian relaxation towards equilibrium (LaRTE) transport equation for
+the friction velocity vector $\mathbf{u}_\tau(x,z,t)$. This partial differential equation
+includes a relaxation timescale governing the rate at which the wall stress can respond to imposed
+fluctuations due to the inertia of the fluid layer from the wall to the wall-model height. A-priori
+tests based on channel flow direct numerical simulation (DNS) data show that the identified relaxation
+timescale ensures self-consistency with assumed quasi-equilibrium conditions. The new approach
+enables us to formally distinguish quasi-equilibrium from additional, non-equilibrium contributions
+to the wall stress. A particular model for non-equilibrium contributions is derived, motivated
+by laminar Stokes layer dynamics in the viscous sublayer when applying fast varying pressure gradients.
+The new wall modeling approach is first tested in standard equilibrium channel flow in order to document
+various properties of the approach. The model is then applied in LES of channel flow with a suddenly
+applied spanwise pressure gradient (SSPG). The resulting mean wall stress evolution is compared
+to DNS with good agreement. At the onset of the SSPG, the laminar Stokes layer develops rapidly while
+the LaRTE portion of the stress has a delayed response due to its inherent relaxation dynamics. Results
+also highlight open challenges such as modeling the response of near-wall turbulence occurring
+above the viscous sublayer and at timescales faster than quasi-equilibrium conditions. 

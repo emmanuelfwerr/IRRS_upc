@@ -1,0 +1,19 @@
+This paper is concerned with the real structured controllability, stabilizability, and stability
+radii (RSCR, RSSZR, and RSSR, respectively) of linear time invariant systems, i.e., the problems
+of determining the distance (in terms of matrix norms) between a system to its nearest uncontrollable,
+unstabilizable, and unstable systems with a prescribed {\emph{affine}} structure. The main contributions
+of this paper lie in two aspects. First, assuming that the involved real perturbations have a general
+affine parameterization, we prove that determining the RSCR and RSSZR are NP-hard by showing that
+even checking their feasibilities are NP-hard. This means the hardness results are irrespective
+of what matrix norm is utilized. The NP-hardness of the $2$-norm based RSSR can be obtained from an
+existing result in robust stability analysis. Second, we develop {\emph{unified}} rank-relaxation
+based algorithms towards these problems, which share two notable features: they are valid both
+for the Frobenius norm and the $2$-norm based problems, and they share the same framework for the
+RSCR, RSSZR, and RSSR problems. These algorithms exploit the low-rank structure of the original
+problems and relax the corresponding rank constraints with a regularized truncated nuclear norm
+term. This leads to problems of difference of convex programs (DC), which can be solved via the sequential
+convex relaxations with guaranteed convergence to stationary points of the relaxed problems.
+Moreover, under suitable conditions, a modified version of those algorithms is given to find local
+optima with performance specification on the corresponding perturbations. Finally, simulations
+suggest that, our proposed methods, though in a simple framework, may find local optima as good as
+several existing methods. 

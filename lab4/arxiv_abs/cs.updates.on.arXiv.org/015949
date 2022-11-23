@@ -1,0 +1,20 @@
+A decentralized approach for joint frequency and phase synchronization in distributed antenna
+arrays is presented. The nodes in the array share their frequencies and phases with their neighboring
+nodes to align these parameters across the array. Our signal model includes the frequency drifts
+and phase jitters of the local oscillators as well as the frequency and phase estimation errors at
+the nodes and models them using practical statistics. A decentralized frequency and phase consensus
+(DFPC) algorithm is proposed which uses an average consensus method in which each node in the array
+iteratively updates its frequency and phase by computing an average of the frequencies and phases
+of their neighboring nodes. Simulation results show that upon convergence the DFPC algorithm can
+align the frequencies and phases of all the nodes up to a residual phase error that is governed by the
+oscillators and the estimation errors. To reduce this residual phase error and thus improve the
+synchronization between the nodes, a Kalman filter based decentralized frequency and phase consensus
+(KF-DFPC) algorithm is presented. The total residual phase error at the convergence of the KF-DFPC
+and DFPC algorithms is derived theoretically. The synchronization performances of these algorithms
+are compared to each other in light of this theoretical residual phase error by varying the duration
+of the signals, connectivity of the nodes, the number of nodes in the array, and signal to noise ratio
+of the transmitted signals. Simulation results demonstrate that the proposed KF-DFPC algorithm
+converges in fewer iterations than the DFPC algorithm. Furthermore, for shorter intervals between
+local information broadcasts, the KF-DFPC algorithm significantly outperforms the DFPC algorithm
+in reducing the residual total phase error, irrespective of the signal to noise ratio of the received
+signals. 

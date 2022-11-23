@@ -1,0 +1,19 @@
+Advances in machine learning (ML) techniques have enabled the development of interatomic potentials
+that promise both the accuracy of first principles methods and the low-cost, linear scaling, and
+parallel efficiency of empirical potentials. Despite rapid progress in the last few years, ML-based
+potentials often struggle to achieve transferability, that is, to provide consistent accuracy
+across configurations that significantly differ from those used to train the model. In order to
+truly realize the promise of ML-based interatomic potentials, it is therefore imperative to develop
+systematic and scalable approaches for the generation of diverse training sets that ensure broad
+coverage of the space of atomic environments. This work explores a diverse-by-construction approach
+that leverages the optimization of the entropy of atomic descriptors to create a very large ($>2\cdot10^{5}$
+configurations, $>7\cdot10^{6}$ atomic environments) training set for tungsten in an automated
+manner, i.e., without any human intervention. This dataset is used to train polynomial as well as
+multiple neural network potentials with different architectures. For comparison, a corresponding
+family of potentials were also trained on an expert-curated dataset for tungsten. The models trained
+to entropy-optimized data exhibited vastly superior transferability compared to the expert-curated
+models. Furthermore, while the models trained with heavy user input (i.e., domain expertise) yield
+the lowest errors when tested on similar configurations, out-sample predictions are dramatically
+more robust when the models are trained on a deliberately diverse set of training data. Herein we
+demonstrate the development of both accurate and transferable ML potentials using automated and
+data-driven approaches for generating large and diverse training sets. 

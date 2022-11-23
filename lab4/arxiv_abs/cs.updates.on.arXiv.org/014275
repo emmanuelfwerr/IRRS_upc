@@ -1,0 +1,20 @@
+While quantitative automation related to trading crypto-assets such as ERC-20 tokens has become
+relatively commonplace, with services such as 3Commas and Shrimpy offering user-friendly web-driven
+services for even the average crypto trader, we have not yet seen the emergence of on-chain trading
+as a phenomenon. We hypothesize that just like decentralized exchanges (DEXes) that by now are by
+some measures more popular than traditional exchanges, process in the space of decentralized finance
+(DeFi) may enable attractive online trading automation options. In this paper we present ChainBot,
+an approach for creating algorithmic trading bots with the help of blockchain technology. We show
+how to partition the computation into on- and off-chain components in a way that provides a measure
+of end-to-end integrity, while preserving the algorithmic "secret sauce". Our system is enabled
+with a careful use of algorithm partitioning, zero-knowledge proofs and smart contracts. We also
+show that with layer-2 (L2) technologies, trades can be kept private, which means that algorithmic
+parameters are difficult to recover by a chain observer. Our approach offers more transparent access
+to liquidity and better censorship-resistance compared to traditional off-chain trading approaches.
+We develop a sample ChainBot and train it on historical data, resulting in returns that are up to 2.4x
+the buy-and-hold strategy, which we use as our baseline. Our measurements show that across 1000
+runs, the end-to-end average execution time for our system is 48.4 seconds. We demonstrate that
+the frequency of trading does not significantly affect the rate of return and Sharpe ratio, which
+indicates that we do not have to trade at every block, thereby significantly saving in terms of gas
+fees. In our implementation, a user who invests \$1,000 would earn \$105, and spend \$3 on gas; assuming
+a user pool of 1,000 subscribers. 

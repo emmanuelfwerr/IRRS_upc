@@ -1,0 +1,19 @@
+A dynamic set of size up to K is a set in which elements can be inserted and deleted and which at any moment
+in its history has at most K elements. In dynamic matching in a bipartite graph, each element, when
+it is inserted in a dynamic subset of left nodes, makes a request to be matched with one of its neighbors,
+and the request has to be satisfied on-the-fly without knowing future insertions and deletions
+and without revoking past matchings. We consider a relaxation of dynamic matching in which each
+matching can survive at most T insertions, and a right node can be assigned to more than one node of
+the dynamic set. We show that a bipartite graph satisfying the condition in Hall Marriage Theorem
+up to K has fast T-surviving dynamic matching for dynamic sets of size up to K, in which every right
+node can be assigned to at most O(log(KT)) left nodes. Fast matching means that each matching is done
+in time poly(log N, log T, D), where N is the number of left nodes, and D is the left degree. We obtain
+a similar result for epsilon-rich matching, in which a left node needs to be assigned (1-epsilon)
+fraction of its neighbors. By taking O(log (KT)) clones of the right set, one obtains T-surviving
+dynamic standard matching (with no sharing of right nodes). We construct explicit bipartite graphs
+admitting T-surviving dynamic matching up to K with small left degree D and small right set R, and
+similarly for $\epsilon$-rich matching. Specifically, D and |R|/K are polynomial in log N and log
+T, and for $\epsilon$-rich the dependency is quasipolynomial. Previous constructions, both non-explicit
+and explicit, did not require the T-surviving restriction, but had only slow matching algorithms
+running in time exponential in K log N. We give two applications. The first one is in the area of non-blocking
+networks, and the second one is about one-probe storage schemes for dynamic sets. 

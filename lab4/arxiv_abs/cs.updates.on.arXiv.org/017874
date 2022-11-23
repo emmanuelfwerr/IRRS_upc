@@ -1,0 +1,19 @@
+While China has become the biggest online market in the world with around 1 billion internet users,
+Baidu runs the world largest Chinese search engine serving more than hundreds of millions of daily
+active users and responding billions queries per day. To handle the diverse query requests from
+users at web-scale, Baidu has done tremendous efforts in understanding users' queries, retrieve
+relevant contents from a pool of trillions of webpages, and rank the most relevant webpages on the
+top of results. Among these components used in Baidu search, learning to rank (LTR) plays a critical
+role and we need to timely label an extremely large number of queries together with relevant webpages
+to train and update the online LTR models. To reduce the costs and time consumption of queries/webpages
+labeling, we study the problem of Activ Learning to Rank (active LTR) that selects unlabeled queries
+for annotation and training in this work. Specifically, we first investigate the criterion -- Ranking
+Entropy (RE) characterizing the entropy of relevant webpages under a query produced by a sequence
+of online LTR models updated by different checkpoints, using a Query-By-Committee (QBC) method.
+Then, we explore a new criterion namely Prediction Variances (PV) that measures the variance of
+prediction results for all relevant webpages under a query. Our empirical studies find that RE may
+favor low-frequency queries from the pool for labeling while PV prioritizing high-frequency queries
+more. Finally, we combine these two complementary criteria as the sample selection strategies
+for active learning. Extensive experiments with comparisons to baseline algorithms show that
+the proposed approach could train LTR models achieving higher Discounted Cumulative Gain (i.e.,
+the relative improvement {\Delta}DCG4=1.38%) with the same budgeted labeling efforts. 

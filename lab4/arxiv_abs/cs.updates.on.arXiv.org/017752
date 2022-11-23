@@ -1,0 +1,18 @@
+Many software systems, such as online social networks enable users to share information about themselves.
+While the action of sharing is simple, it requires an elaborate thought process on privacy: what
+to share, with whom to share, and for what purposes. Thinking about these for each piece of content
+to be shared is tedious. Recent approaches to tackle this problem build personal assistants that
+can help users by learning what is private over time and recommending privacy labels such as private
+or public to individual content that a user considers sharing. However, privacy is inherently ambiguous
+and highly personal. Existing approaches to recommend privacy decisions do not address these aspects
+of privacy sufficiently. Ideally, a personal assistant should be able to adjust its recommendation
+based on a given user, considering that user's privacy understanding. Moreover, the personal assistant
+should be able to assess when its recommendation would be uncertain and let the user make the decision
+on her own. Accordingly, this paper proposes a personal assistant that uses evidential deep learning
+to classify content based on its privacy label. An important characteristic of the personal assistant
+is that it can model its uncertainty in its decisions explicitly, determine that it does not know
+the answer, and delegate from making a recommendation when its uncertainty is high. By factoring
+in the user's own understanding of privacy, such as risk factors or own labels, the personal assistant
+can personalize its recommendations per user. We evaluate our proposed personal assistant using
+a well-known data set. Our results show that our personal assistant can accurately identify uncertain
+cases, personalize them to its user's needs, and thus helps users preserve their privacy well. 

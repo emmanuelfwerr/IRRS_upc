@@ -1,0 +1,20 @@
+The high-volume manufacturing of the next generation of semiconductor devices requires advances
+in measurement signal analysis. Many in the semiconductor manufacturing community have reservations
+about the adoption of deep learning; they instead prefer other model-based approaches for some
+image regression problems, and according to the 2021 IEEE International Roadmap for Devices and
+Systems (IRDS) report on Metrology a SEMI standardization committee may endorse this philosophy.
+The semiconductor manufacturing community does, however, communicate a need for state-of-the-art
+statistical analyses to reduce measurement uncertainty. Prediction intervals which characterize
+the reliability of the predictive performance of regression models can impact decisions, build
+trust in machine learning, and be applied to other regression models. However, we are not aware of
+effective and sufficiently simple distribution-free approaches that offer valid coverage for
+important classes of image data, so we consider the distribution-free conformal prediction and
+conformalized quantile regression framework.The image regression problem that is the focus of
+this paper pertains to line edge roughness (LER) estimation from noisy scanning electron microscopy
+images. LER affects semiconductor device performance and reliability as well as the yield of the
+manufacturing process; the 2021 IRDS emphasizes the crucial importance of LER by devoting a white
+paper to it in addition to mentioning or discussing it in the reports of multiple international focus
+teams. It is not immediately apparent how to effectively use normalized conformal prediction and
+quantile regression for LER estimation. The modeling techniques we apply appear to be novel for
+finding distribution-free prediction intervals for image data and will be presented at the 2022
+SEMI Advanced Semiconductor Manufacturing Conference. 

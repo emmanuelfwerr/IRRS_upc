@@ -1,0 +1,20 @@
+Training a deep learning model on source code has gained significant traction recently. Since such
+models reason about vectors of numbers, source code needs to be converted to a code representation
+before vectorization. Numerous approaches have been proposed to represent source code, from sequences
+of tokens to abstract syntax trees. However, there is no systematic study to understand the effect
+of code representation on learning performance. Through a controlled experiment, we examine the
+impact of various code representations on model accuracy and usefulness in deep learning-based
+program repair. We train 21 different generative models that suggest fixes for name-based bugs,
+including 14 different homogeneous code representations, four mixed representations for the
+buggy and fixed code, and three different embeddings. We assess if fix suggestions produced by the
+model in various code representations are automatically patchable, meaning they can be transformed
+to a valid code that is ready to be applied to the buggy code to fix it. We also conduct a developer study
+to qualitatively evaluate the usefulness of inferred fixes in different code representations.
+Our results highlight the importance of code representation and its impact on learning and usefulness.
+Our findings indicate that (1) while code abstractions help the learning process, they can adversely
+impact the usefulness of inferred fixes from a developer's point of view; this emphasizes the need
+to look at the patches generated from the practitioner's perspective, which is often neglected
+in the literature, (2) mixed representations can outperform homogeneous code representations,
+(3) bug type can affect the effectiveness of different code representations; although current
+techniques use a single code representation for all bug types, there is no single best code representation
+applicable to all bug types. 

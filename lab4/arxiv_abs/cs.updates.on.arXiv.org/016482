@@ -1,0 +1,20 @@
+Advertisers usually enjoy the flexibility to choose criteria like target audience, geographic
+area and bid price when planning an campaign for online display advertising, while they lack forecast
+information on campaign performance to optimize delivery strategies in advance, resulting in
+a waste of labour and budget for feedback adjustments. In this paper, we aim to forecast key performance
+indicators for new campaigns given any certain criteria. Interpretable and accurate results could
+enable advertisers to manage and optimize their campaign criteria. There are several challenges
+for this very task. First, platforms usually offer advertisers various criteria when they plan
+an advertising campaign, it is difficult to estimate campaign performance unifiedly because of
+the great difference among bidding types. Furthermore, complex strategies applied in bidding
+system bring great fluctuation on campaign performance, making estimation accuracy an extremely
+tough problem. To address above challenges, we propose a novel Campaign Performance Forecasting
+framework, which firstly reproduces campaign performance on historical logs under various bidding
+types with a unified replay algorithm, in which essential auction processes like match and rank
+are replayed, ensuring the interpretability on forecast results. Then, we innovatively introduce
+a multi-task learning method to calibrate the deviation of estimation brought by hard-to-reproduce
+bidding strategies in replay. The method captures mixture calibration patterns among related
+forecast indicators to map the estimated results to the true ones, improving both accuracy and efficiency
+significantly. Experiment results on a dataset from Taobao.com demonstrate that the proposed
+framework significantly outperforms other baselines by a large margin, and an online A/B test verifies
+its effectiveness in the real world. 

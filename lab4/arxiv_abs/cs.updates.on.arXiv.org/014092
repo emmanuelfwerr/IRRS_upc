@@ -1,0 +1,20 @@
+Recent studies indicate that hierarchical Vision Transformer with a macro architecture of interleaved
+non-overlapped window-based self-attention \& shifted-window operation is able to achieve state-of-the-art
+performance in various visual recognition tasks, and challenges the ubiquitous convolutional
+neural networks (CNNs) using densely slid kernels. Most follow-up works attempt to replace the
+shifted-window operation with other kinds of cross-window communication paradigms, while treating
+self-attention as the de-facto standard for window-based information aggregation. In this manuscript,
+we question whether self-attention is the only choice for hierarchical Vision Transformer to attain
+strong performance, and the effects of different kinds of cross-window communication. To this
+end, we replace self-attention layers with embarrassingly simple linear mapping layers, and the
+resulting proof-of-concept architecture termed as LinMapper can achieve very strong performance
+in ImageNet-1k image recognition. Moreover, we find that LinMapper is able to better leverage the
+pre-trained representations from image recognition and demonstrates excellent transfer learning
+properties on downstream dense prediction tasks such as object detection and instance segmentation.
+We also experiment with other alternatives to self-attention for content aggregation inside each
+non-overlapped window under different cross-window communication approaches, which all give
+similar competitive results. Our study reveals that the \textbf{macro architecture} of Swin model
+families, other than specific aggregation layers or specific means of cross-window communication,
+may be more responsible for its strong performance and is the real challenger to the ubiquitous CNN's
+dense sliding window paradigm. Code and models will be publicly available to facilitate future
+research. 

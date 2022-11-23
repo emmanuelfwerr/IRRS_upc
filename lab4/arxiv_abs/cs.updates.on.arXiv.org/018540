@@ -1,0 +1,18 @@
+The fog-radio-access-network (F-RAN) has been proposed to address the strict latency requirements,
+which offloads computation tasks generated in user equipments (UEs) to the edge to reduce the processing
+latency. However, it incorporates the task transmission latency, which may become the bottleneck
+of latency requirements. Data compression (DC) has been considered as one of the promising techniques
+to reduce the transmission latency. By compressing the computation tasks before transmitting,
+the transmission delay is reduced due to the shrink transmitted data size, and the original computing
+task can be retrieved by employing data decompressing (DD) at the edge nodes or the centre cloud.
+Nevertheless, the DC and DD incorporate extra processing latency, and the latency performance
+has not been investigated in the large-scale DC-enabled F-RAN. Therefore, in this work, the successful
+data compression probability (SDCP) is defined to analyse the latency performance of the F-RAN.
+Moreover, to analyse the effect of compression offloading ratio (COR), a novel hybrid compression
+mode is proposed based on the queueing theory. Based on this, the closed-form result of SDCP in the
+large-scale DC-enabled F-RAN is derived by combining the Matern cluster process and M/G/1 queueing
+model, and validated by Monte Carlo simulations. Based on the derived SDCP results, the effects
+of COR on the SDCP is analysed numerically. The results show that the SDCP with the optimal COR can
+be enhanced with a maximum value of 0.3 and 0.55 as compared with the cases of compressing all computing
+tasks at the edge and at the UE, respectively. Moreover, for the system requiring the minimal latency,
+the proposed hybrid compression mode can alleviate the requirement on the backhaul capacity. 

@@ -1,0 +1,19 @@
+A key concept towards reliable, robust, and safe AI systems is the idea to implement fallback strategies
+when predictions of the AI cannot be trusted. Certifiers for neural networks have made great progress
+towards provable robustness guarantees against evasion attacks using adversarial examples.
+These methods guarantee for some predictions that a certain class of manipulations or attacks could
+not have changed the outcome. For the remaining predictions without guarantees, the method abstains
+from making a prediction and a fallback strategy needs to be invoked, which is typically more costly,
+less accurate, or even involves a human operator. While this is a key concept towards safe and secure
+AI, we show for the first time that this strategy comes with its own security risks, as such fallback
+strategies can be deliberately triggered by an adversary. In particular, we conduct the first systematic
+analysis of training-time attacks against certifiers in practical application pipelines, identifying
+new threat vectors that can be exploited to degrade the overall system. Using these insights, we
+design two backdoor attacks against network certifiers, which can drastically reduce certified
+robustness. For example, adding 1% poisoned data during training is sufficient to reduce certified
+robustness by up to 95 percentage points, effectively rendering the certifier useless. We analyze
+how such novel attacks can compromise the overall system's integrity or availability. Our extensive
+experiments across multiple datasets, model architectures, and certifiers demonstrate the wide
+applicability of these attacks. A first investigation into potential defenses shows that current
+approaches are insufficient to mitigate the issue, highlighting the need for new, more specific
+solutions. 

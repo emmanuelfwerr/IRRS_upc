@@ -1,0 +1,20 @@
+DNA-encoded library (DEL) screening and quantitative structure-activity relationship (QSAR)
+modeling are two techniques used in drug discovery to find small molecules that bind a protein target.
+Applying QSAR modeling to DEL data can facilitate the selection of compounds for off-DNA synthesis
+and evaluation. Such a combined approach has been shown recently by training binary classifiers
+to learn DEL enrichments of aggregated "disynthons" to accommodate the sparse and noisy nature
+of DEL data. However, a binary classifier cannot distinguish between different levels of enrichment,
+and information is potentially lost during disynthon aggregation. Here, we demonstrate a regression
+approach to learning DEL enrichments of individual molecules using a custom negative log-likelihood
+loss function that effectively denoises DEL data and introduces opportunities for visualization
+of learned structure-activity relationships (SAR). Our approach explicitly models the Poisson
+statistics of the sequencing process used in the DEL experimental workflow under a frequentist
+view. We illustrate this approach on a dataset of 108k compounds screened against CAIX, and a dataset
+of 5.7M compounds screened against sEH and SIRT2. Due to the treatment of uncertainty in the data
+through the negative log-likelihood loss function, the models can ignore low-confidence outliers.
+While our approach does not demonstrate a benefit for extrapolation to novel structures, we expect
+our denoising and visualization pipeline to be useful in identifying SAR trends and enriched pharmacophores
+in DEL data. Further, this approach to uncertainty-aware regression is applicable to other sparse
+or noisy datasets where the nature of stochasticity is known or can be modeled; in particular, the
+Poisson enrichment ratio metric we use can apply to other settings that compare sequencing count
+data between two experimental conditions. 

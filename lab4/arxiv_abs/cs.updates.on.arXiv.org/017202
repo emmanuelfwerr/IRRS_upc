@@ -1,0 +1,20 @@
+We study active sampling algorithms for linear regression, which aim to query only a few entries
+of a target vector $b\in\mathbb R^n$ and output a near minimizer to $\min_{x\in\mathbb R^d} \|Ax-b\|$,
+for a design matrix $A\in\mathbb R^{n \times d}$ and loss $\|\cdot\|$. For $p$ norm regression for
+any $0<p<\infty$, we give an algorithm based on Lewis weight sampling outputting a $(1+\epsilon)$-approximate
+solution using just $\tilde O(d/\epsilon^2)$ queries to $b$ for $p\in(0,1)$, $\tilde{O}(d/\epsilon)$
+queries for $1<p<2$, and $\tilde{O}(d^{p/2}/\epsilon^p)$ queries for $2<p<\infty$. For $0<p<2$,
+our bounds are optimal up to log factors, settling the query complexity for this range. For $2<p<\infty$,
+our dependence on $d$ is optimal, while our dependence on $\epsilon$ is off by at most $\epsilon$,
+up to log factors. Our result resolves an open question of [CD21], who gave near optimal bounds for
+the $1$ norm, but required $d^2/\epsilon^2$ samples for $\ell_p$ regression with $1<p<2$, and
+gave no bounds for $2<p<\infty$ or $0<p<1$. We also give the first total sensitivity bound of $O(d^{\max\{1,p/2\}}\log^2n)$
+for loss functions of degree $p$ polynomial growth, improving a result of [TMF20]. By combining
+this with our techniques for $\ell_p$ regression, we obtain an active regression algorithm making
+$\tilde O(d^{1+\max\{1,p/2\}}/\mathrm{poly}(\epsilon))$ queries for such loss functions,
+including the Tukey and Huber losses, answering another question of [CD21]. For the Huber loss,
+we further improve our bound to $\tilde O(d^{4-2\sqrt2}/\mathrm{poly}(\epsilon))$ samples.
+Our sensitivity bounds also have many applications, including Orlicz norm subspace embeddings,
+robust subspace approximation, and dimension reduction for smoothed $p$-norms. Finally, our
+active sampling results give the first sublinear time algorithms for Kronecker product regression
+under every $p$ norm. 

@@ -1,0 +1,19 @@
+The increasingly dense traffic is becoming a challenge in our local settings, urging the need for
+a better traffic monitoring and management system. Fine-grained vehicle classification appears
+to be a challenging task as compared to vehicle coarse classification. Exploring a robust approach
+for vehicle detection and classification into fine-grained categories is therefore essentially
+required. Existing Vehicle Make and Model Recognition (VMMR) systems have been developed on synchronized
+and controlled traffic conditions. Need for robust VMMR in complex, urban, heterogeneous, and
+unsynchronized traffic conditions still remain an open research area. In this paper, vehicle detection
+and fine-grained classification are addressed using deep learning. To perform fine-grained classification
+with related complexities, local dataset THS-10 having high intra-class and low interclass variation
+is exclusively prepared. The dataset consists of 4250 vehicle images of 10 vehicle models, i.e.,
+Honda City, Honda Civic, Suzuki Alto, Suzuki Bolan, Suzuki Cultus, Suzuki Mehran, Suzuki Ravi,
+Suzuki Swift, Suzuki Wagon R and Toyota Corolla. This dataset is available online. Two approaches
+have been explored and analyzed for classification of vehicles i.e, fine-tuning, and feature extraction
+from deep neural networks. A comparative study is performed, and it is demonstrated that simpler
+approaches can produce good results in local environment to deal with complex issues such as dense
+occlusion and lane departures. Hence reducing computational load and time, e.g. fine-tuning Inception-v3
+produced highest accuracy of 97.4% with lowest misclassification rate of 2.08%. Fine-tuning MobileNet-v2
+and ResNet-18 produced 96.8% and 95.7% accuracies, respectively. Extracting features from fc6
+layer of AlexNet produces an accuracy of 93.5% with a misclassification rate of 6.5%. 

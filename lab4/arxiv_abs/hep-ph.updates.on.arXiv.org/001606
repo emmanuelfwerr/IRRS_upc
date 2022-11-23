@@ -1,0 +1,19 @@
+With the increasing precision requirements and growing spectrum of applications of Monte Carlo
+simulations the evaluation of different components of such simulations and their systematic ambiguities
+become of utmost interest. In the following, we will address the question of systematic errors for
+Photos Monte Carlo for simulation of bremsstrahlung corrections in final states, which can not,
+in principle, be identified as a decay of resonances. It is possible, because the program features
+explicit and exact parametrization of phase space for multi-body plus multi-photon final states.
+The Photos emission kernel for some processes consist of complete matrix element, in the remaining
+cases appropriate approximation is used. Comparisons with results of simulations, from generators
+based on exact phase space and exact fixed order matrix elements, can be used. For the purpose of such
+validations Photos provides an option to restrict emissions to single photon only. In the current
+work we concentrate on final state bremsstrahlung in $q \bar{q}(e^+e^-) \to l^+l^- l^+l^- \gamma$
+and $\gamma\gamma \to l^+l^- \gamma$ processes. The reference distributions used as a cross-check
+are obtained from the fixed-order MadGraph Monte Carlo simulations. For the purpose of validation
+we concentrate on those phase space regions where Photos is not expected to work on the basis of its
+design alone. These phase space regions of hard, non-collinear photons, do not contribute to large
+logarithmic terms. We find that in these phase space regions the differences between Photos and
+MadGraph results do not surpass a few percent and these regions, in turn, contribute about 10% to
+the observed process rates. This is encouraging in view of the possible ambiguities for precise
+calculation of realistic observables. 

@@ -1,0 +1,19 @@
+This paper proposes a fully decentralized federated learning (FL) scheme for Internet of Everything
+(IoE) devices that are connected via multi-hop networks. Because FL algorithms hardly converge
+the parameters of machine learning (ML) models, this paper focuses on the convergence of ML models
+in function spaces. Considering that the representative loss functions of ML tasks e.g, mean squared
+error (MSE) and Kullback-Leibler (KL) divergence, are convex functionals, algorithms that directly
+update functions in function spaces could converge to the optimal solution. The key concept of this
+paper is to tailor a consensus-based optimization algorithm to work in the function space and achieve
+the global optimum in a distributed manner. This paper first analyzes the convergence of the proposed
+algorithm in a function space, which is referred to as a meta-algorithm, and shows that the spectral
+graph theory can be applied to the function space in a manner similar to that of numerical vectors.
+Then, consensus-based multi-hop federated distillation (CMFD) is developed for a neural network
+(NN) to implement the meta-algorithm. CMFD leverages knowledge distillation to realize function
+aggregation among adjacent devices without parameter averaging. An advantage of CMFD is that it
+works even with different NN models among the distributed learners. Although CMFD does not perfectly
+reflect the behavior of the meta-algorithm, the discussion of the meta-algorithm's convergence
+property promotes an intuitive understanding of CMFD, and simulation evaluations show that NN
+models converge using CMFD for several tasks. The simulation results also show that CMFD achieves
+higher accuracy than parameter aggregation for weakly connected networks, and CMFD is more stable
+than parameter aggregation methods. 

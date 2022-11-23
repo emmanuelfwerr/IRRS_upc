@@ -1,0 +1,20 @@
+Devising dynamic pricing policy with always valid online statistical learning procedure is an
+important and as yet unresolved problem. Most existing dynamic pricing policy, which focus on the
+faithfulness of adopted customer choice models, exhibit a limited capability for adapting the
+online uncertainty of learned statistical model during pricing process. In this paper, we propose
+a novel approach for designing dynamic pricing policy based regularized online statistical learning
+with theoretical guarantees. The new approach overcomes the challenge of continuous monitoring
+of online Lasso procedure and possesses several appealing properties. In particular, we make the
+decisive observation that the always-validity of pricing decisions builds and thrives on the online
+regularization scheme. Our proposed online regularization scheme equips the proposed optimistic
+online regularized maximum likelihood pricing (OORMLP) pricing policy with three major advantages:
+encode market noise knowledge into pricing process optimism; empower online statistical learning
+with always-validity over all decision points; envelop prediction error process with time-uniform
+non-asymptotic oracle inequalities. This type of non-asymptotic inference results allows us
+to design more sample-efficient and robust dynamic pricing algorithms in practice. In theory,
+the proposed OORMLP algorithm exploits the sparsity structure of high-dimensional models and
+secures a logarithmic regret in a decision horizon. These theoretical advances are made possible
+by proposing an optimistic online Lasso procedure that resolves dynamic pricing problems at the
+process level, based on a novel use of non-asymptotic martingale concentration. In experiments,
+we evaluate OORMLP in different synthetic and real pricing problem settings, and demonstrate that
+OORMLP advances the state-of-the-art methods. 

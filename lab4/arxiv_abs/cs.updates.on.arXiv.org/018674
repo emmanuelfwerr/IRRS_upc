@@ -1,0 +1,19 @@
+Recently, physiological signal-based biometric systems have received wide attention. Unlike
+traditional biometric features, physiological signals can not be easily compromised (usually
+unobservable to human eyes). Photoplethysmography (PPG) signal is easy to measure, making it more
+attractive than many other physiological signals for biometric authentication. However, with
+the advent of remote PPG (rPPG), unobservability has been challenged when the attacker can remotely
+steal the rPPG signals by monitoring the victim's face, subsequently posing a threat to PPG-based
+biometrics. In PPG-based biometric authentication, current attack approaches mandate the victim's
+PPG signal, making rPPG-based attacks neglected. In this paper, we firstly analyze the security
+of PPG-based biometrics, including user authentication and communication protocols. We evaluate
+the signal waveforms, heart rate and inter-pulse-interval information extracted by five rPPG
+methods, including four traditional optical computing methods (CHROM, POS, LGI, PCA) and one deep
+learning method (CL_rPPG). We conducted experiments on five datasets (PURE, UBFC_rPPG, UBFC_Phys,
+LGI_PPGI, and COHFACE) to collect a comprehensive set of results. Our empirical studies show that
+rPPG poses a serious threat to the authentication system. The success rate of the rPPG signal spoofing
+attack in the user authentication system reached 0.35. The bit hit rate is 0.6 in inter-pulse-interval-based
+security protocols. Further, we propose an active defence strategy to hide the physiological signals
+of the face to resist the attack. It reduces the success rate of rPPG spoofing attacks in user authentication
+to 0.05. The bit hit rate was reduced to 0.5, which is at the level of a random guess. Our strategy effectively
+prevents the exposure of PPG signals to protect users' sensitive physiological data. 

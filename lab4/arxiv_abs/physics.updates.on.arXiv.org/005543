@@ -1,0 +1,19 @@
+This paper proposes a task-driven computational framework for assessing diffusion MRI experimental
+designs which, rather than relying on parameter-estimation metrics, directly measures quantitative
+task performance. Traditional computational experimental design (CED) methods may be ill-suited
+to experimental tasks, such as clinical classification, where outcome does not depend on parameter-estimation
+accuracy or precision alone. Current assessment metrics evaluate experiments' ability to faithfully
+recover microstructural parameters rather than their task performance. The method we propose
+addresses this shortcoming. For a given MRI experimental design, experiments are simulated start-to-finish
+and task performance is computed from ROC curves and associated summary metrics (e.g. AUC). Two
+experiments were performed: first, a validation of the pipeline's task performance predictions
+against clinical results, comparing in-silico predictions to real-world ROC/AUC; and second,
+a demonstration of the pipeline's advantages over traditional CED approaches, using two simulated
+clinical classification tasks. Comparison with clinical datasets validates our method's predictions
+of (a) the qualitative form of ROC curves, (b) the relative task performance of different experimental
+designs, and (c) the absolute performance of each experimental design. Furthermore, we show that
+our method outperforms traditional task-agnostic assessment methods, enabling improved, more
+useful experimental design. Compared to current approaches, such task-driven assessment is more
+likely to identify experimental designs that perform well in practice. Our method is not limited
+to diffusion MRI; the pipeline generalises to any task-based quantitative MRI application, and
+provides the foundation for developing future task-driven end-to end CED frameworks. 

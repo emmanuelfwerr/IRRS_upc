@@ -1,0 +1,19 @@
+A well-known result of Banaszczyk in discrepancy theory concerns the prefix discrepancy problem
+(also known as the signed series problem): given a sequence of $T$ unit vectors in $\mathbb{R}^d$,
+find $\pm$ signs for each of them such that the signed sum vector along any prefix has a small $\ell_\infty$-norm?
+This problem is central to proving upper bounds for the Steinitz problem, and the popular Koml\'os
+problem is a special case where one is only concerned with the final signed sum vector instead of all
+prefixes. Banaszczyk gave an $O(\sqrt{\log d+ \log T})$ bound for the prefix discrepancy problem.
+We investigate the tightness of Banaszczyk's bound and consider natural generalizations of prefix
+discrepancy: We first consider a smoothed analysis setting, where a small amount of additive noise
+perturbs the input vectors. We show an exponential improvement in $T$ compared to Banaszczyk's
+bound. Using a primal-dual approach and a careful chaining argument, we show that one can achieve
+a bound of $O(\sqrt{\log d+ \log\!\log T})$ with high probability in the smoothed setting. Moreover,
+this smoothed analysis bound is the best possible without further improvement on Banaszczyk's
+bound in the worst case. We also introduce a generalization of the prefix discrepancy problem where
+the discrepancy constraints correspond to paths on a DAG on $T$ vertices. We show that an analog of
+Banaszczyk's $O(\sqrt{\log d+ \log T})$ bound continues to hold in this setting for adversarially
+given unit vectors and that the $\sqrt{\log T}$ factor is unavoidable for DAGs. We also show that
+the dependence on $T$ cannot be improved significantly in the smoothed case for DAGs. We conclude
+by exploring a more general notion of vector balancing, which we call combinatorial vector balancing.
+We obtain near-optimal bounds in this setting, up to poly-logarithmic factors. 

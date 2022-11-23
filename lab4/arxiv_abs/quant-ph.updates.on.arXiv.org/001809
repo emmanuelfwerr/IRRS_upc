@@ -1,0 +1,20 @@
+In Bayesian estimation theory, the estimator ${\hat \theta} = E[\theta|l]$ attains the minimum
+mean squared error (MMSE) for estimating a scalar parameter of interest $\theta$ from the observation
+of $l$ through a noisy channel $P_{l|\theta}$, given a prior $P_\theta$ on $\theta$. In quantum
+sensing tasks, the user gets $\rho_\theta$, the quantum state that encodes $\theta$. They choose
+a measurement, a positive-operator valued measure (POVM) $\Pi_l$, which induces the channel $P_{l|\theta}
+= {\rm Tr}(\rho_\theta \Pi_l)$ to the measurement outcome $l$, on which the aforesaid classical
+MMSE estimator is employed. Personick found the optimum POVM $\Pi_l$ that minimizes the MMSE over
+all possible measurements, and that MMSE. This result from 1971 is less-widely known than the quantum
+Fisher information (QFI), which lower bounds the variance of an unbiased estimator over all measurements,
+when $P_\theta$ is unavailable. For multi-parameter estimation, i.e., when $\theta$ is a vector,
+in Fisher quantum estimation theory, the inverse of the QFI matrix provides an operator lower bound
+to the covariance of an unbiased estimator. However, there has been little work on quantifying quantum
+limits and measurement designs, for multi-parameter quantum estimation in the {\em Bayesian}
+setting. In this paper, we build upon Personick's result to construct a Bayesian adaptive measurement
+scheme for multi-parameter estimation when $N$ copies of $\rho_\theta$ are available. We illustrate
+an application to localizing a cluster of point emitters in a highly sub-Rayleigh angular field-of-view,
+an important problem in fluorescence microscopy and astronomy. Our algorithm translates to a multi-spatial-mode
+transformation prior to a photon-detection array, with electro-optic feedback to adapt the mode
+sorter. We show that this receiver performs far superior to quantum-noise-limited focal-plane
+direct imaging. 

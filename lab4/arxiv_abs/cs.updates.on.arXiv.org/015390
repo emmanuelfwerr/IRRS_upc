@@ -1,0 +1,19 @@
+While various covert botnets were proposed in the past, they still lack complete anonymization
+for their servers/botmasters or suffer from slow communication between the botmaster and the bots.
+In this paper, we first propose a new generation hybrid botnet that covertly and efficiently communicates
+over Bitcoin Lightning Network (LN), called LNBot. Exploiting various anonymity features of LN,
+we show the feasibility of a scalable two-layer botnet which completely anonymizes the identity
+of the botmaster. In the first layer, the botmaster anonymously sends the commands to the command
+and control (C&C) servers through regular LN payments. Specifically, LNBot allows botmaster's
+commands to be sent in the form of surreptitious multi-hop LN payments, where the commands are either
+encoded with the payments or attached to the payments to provide covert communications. In the second
+layer, C&C servers further relay those commands to the bots in their mini-botnets to launch any type
+of attacks to victim machines. We further improve on this design by introducing D-LNBot; a distributed
+version of LNBot that generates its C&C servers by infecting users on the Internet and forms the C&C
+connections by opening channels to the existing nodes on LN. In contrary to the LNBot, the whole botnet
+formation phase is distributed and the botmaster is never involved in the process. By utilizing
+Bitcoin's Testnet and the new message attachment feature of LN, we show that D-LNBot can be run for
+free and commands are propagated faster to all the C&C servers compared to LNBot. We presented proof-of-concept
+implementations for both LNBot and D-LNBot on the actual LN and extensively analyzed their delay
+and cost performance. Finally, we also provide and discuss a list of potential countermeasures
+to detect LNBot and D-LNBot activities and minimize their impacts. 

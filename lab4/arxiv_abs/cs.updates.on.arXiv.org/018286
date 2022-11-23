@@ -1,0 +1,19 @@
+Peripherally inserted central catheters (PICCs) have been widely used as one of the representative
+central venous lines (CVCs) due to their long-term intravascular access with low infectivity.
+However, PICCs have a fatal drawback of a high frequency of tip mispositions, increasing the risk
+of puncture, embolism, and complications such as cardiac arrhythmias. To automatically and precisely
+detect it, various attempts have been made by using the latest deep learning (DL) technologies.
+However, even with these approaches, it is still practically difficult to determine the tip location
+because the multiple fragments phenomenon (MFP) occurs in the process of predicting and extracting
+the PICC line required before predicting the tip. This study aimed to develop a system generally
+applied to existing models and to restore the PICC line more exactly by removing the MFs of the model
+output, thereby precisely localizing the actual tip position for detecting its disposition. To
+achieve this, we proposed a multi-stage DL-based framework post-processing the PICC line extraction
+result of the existing technology. The performance was compared by each root mean squared error
+(RMSE) and MFP incidence rate according to whether or not MFCN is applied to five conventional models.
+In internal validation, when MFCN was applied to the existing single model, MFP was improved by an
+average of 45%. The RMSE was improved by over 63% from an average of 26.85mm (17.16 to 35.80mm) to 9.72mm
+(9.37 to 10.98mm). In external validation, when MFCN was applied, the MFP incidence rate decreased
+by an average of 32% and the RMSE decreased by an average of 65\%. Therefore, by applying the proposed
+MFCN, we observed the significant/consistent detection performance improvement of PICC tip location
+compared to the existing model. 

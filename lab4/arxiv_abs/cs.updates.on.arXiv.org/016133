@@ -1,0 +1,20 @@
+In 2021, Google announced they would disable third-party cookies in the Chrome browser in order
+to improve user privacy. In order to continue to enable interest-based advertising while mitigating
+risks of individualized user tracking, they proposed FLoC. The FLoC algorithm assigns users to
+"cohorts" that represent groups of users with similar browsing behaviors so that third-parties
+can serve users ads based on their cohort. After testing FLoC in a real world trial, Google canceled
+the proposal, with little explanation, in favor of another alternative to enable interest-based
+advertising. In this work, we offer a post-mortem analysis of how FLoC handled balancing utility
+and privacy. In particular, we analyze two potential problems raised by privacy advocates: (1)
+Contrary to its privacy goals, FLoC enables individual user tracking, and (2) FLoC risks revealing
+sensitive user demographic information. We test these problems by implementing FLoC and compute
+cohorts for users in a dataset of browsing histories collected from more than 90,000 U.S. devices
+over a one-year period. For (1) we investigate the uniqueness of users' cohort ID sequences over
+time. We find that more than 95% of user devices are uniquely identifiable after 4 weeks. We show how
+these risks increase when cohort IDs are combined with fingerprinting data. While these risks may
+be mitigated by frequently clearing first-party cookies and increasing cohort sizes, such changes
+would degrade utility for users and advertisers, respectively. For (2), we find a statistically
+significant relationship between domain visits and racial background, but do not find that FLoC
+risks correlating cohort IDs with race. However, alternative clustering techniques could elevate
+this risk. Our contributions provide insights and example analyses for future novel approaches
+that seek to protect user privacy while monetizing the web. 

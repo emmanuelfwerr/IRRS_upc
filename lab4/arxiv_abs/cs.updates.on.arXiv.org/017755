@@ -1,0 +1,19 @@
+Sensors embedded in mobile smart devices can monitor users' activity with high accuracy to provide
+a variety of services to end-users ranging from precise geolocation, health monitoring, and handwritten
+word recognition. However, this involves the risk of accessing and potentially disclosing sensitive
+information of individuals to the apps that may lead to privacy breaches. In this paper, we aim to
+minimize privacy leakages that may lead to user identification on mobile devices through user tracking
+and distinguishability while preserving the functionality of apps and services. We propose a privacy-preserving
+mechanism that effectively handles the sensor data fluctuations (e.g., inconsistent sensor readings
+while walking, sitting, and running at different times) by formulating the data as time-series
+modeling and forecasting. The proposed mechanism also uses the notion of correlated noise-series
+against noise filtering attacks from an adversary, which aims to filter out the noise from the perturbed
+data to re-identify the original data. Unlike existing solutions, our mechanism keeps running
+in isolation without the interaction of a user or a service provider. We perform rigorous experiments
+on benchmark datasets and show that our proposed mechanism limits user tracking and distinguishability
+threats to a significant extent compared to the original data while maintaining a reasonable level
+of utility of functionalities. In general, we show that our obfuscation mechanism reduces the user
+trackability threat by 60\% across all the datasets while maintaining the utility loss below 0.5
+Mean Absolute Error (MAE). We also observe that our mechanism is more effective in large datasets.
+For example, with the Swipes dataset, the distinguishability risk is reduced by 60\% on average
+while the utility loss is below 0.5 MAE. 

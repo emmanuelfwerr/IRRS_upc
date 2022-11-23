@@ -1,0 +1,20 @@
+Does everyone equally benefit from computer vision systems? Answers to this question become more
+and more important as computer vision systems are deployed at large scale, and can spark major concerns
+when they exhibit vast performance discrepancies between people from various demographic and
+social backgrounds. Systematic diagnosis of fairness, harms, and biases of computer vision systems
+is an important step towards building socially responsible systems. To initiate an effort towards
+standardized fairness audits, we propose three fairness indicators, which aim at quantifying
+harms and biases of visual systems. Our indicators use existing publicly available datasets collected
+for fairness evaluations, and focus on three main types of harms and bias identified in the literature,
+namely harmful label associations, disparity in learned representations of social and demographic
+traits, and biased performance on geographically diverse images from across the world.We define
+precise experimental protocols applicable to a wide range of computer vision models. These indicators
+are part of an ever-evolving suite of fairness probes and are not intended to be a substitute for a
+thorough analysis of the broader impact of the new computer vision technologies. Yet, we believe
+it is a necessary first step towards (1) facilitating the widespread adoption and mandate of the
+fairness assessments in computer vision research, and (2) tracking progress towards building
+socially responsible models. To study the practical effectiveness and broad applicability of
+our proposed indicators to any visual system, we apply them to off-the-shelf models built using
+widely adopted model training paradigms which vary in their ability to whether they can predict
+labels on a given image or only produce the embeddings. We also systematically study the effect of
+data domain and model size. 

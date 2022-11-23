@@ -1,0 +1,20 @@
+Controlling chaos is a long-standing problem in engineering. Here, we introduce Physics-Informed
+Deep Operator Control (PIDOC), by encoding control signal and initial position into the losses
+of a Physics-Informed Neural Network (PINN), the nonlinear system exhibits the desired route given
+the control signal. The framework has a clear application scenario: receiving signals as physics
+commands and learning chaotic data from the nonlinear van der Pol system, PIDOC is able to execute
+the controlled signal as the output of the PINN. PIDOC is first applied to a benchmark problem, unveils
+a fluctuating behavior of the acceleration that seemingly behave in the same frequency of the desired
+signal, indicating the learning of neural networks (NN) elicit stochasticity for higher-order
+terms, yet still successfully impose the control that enforces the system behave as in the same frequency
+of the control signal. PIDOC is also proved capable of converging to different desired trajectories
+based on case studies. Initial positions slightly affect the control accuracy at the beginning
+stage yet still converge to the control signal based on numerical experiments. To note, for highly
+nonlinear systems, PIDOC is not able to execute control as high accuracies compared with the benchmark
+problem, yet still, PIDOC converges to decent trajectories corresponding to given signals with
+fair predictable behavior. The depth and width of the NN structure did not heavily variate the convergence
+of PIDOC based on case studies on van der Pol systems with low and high nonlinearities. Surprisingly,
+by enlarging the control signal by multiplying a Lagrangian multiplier, PIDOC failed to converge
+to the desired trajectory, indicating enlarging the control signal does not increase control quality,
+which is not intuitive. The proposed framework can be potentially applied to many nonlinear systems
+for controlling chaos. 

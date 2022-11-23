@@ -1,0 +1,19 @@
+Sleep posture is linked to several health conditions such as nocturnal cramps and more serious musculoskeletal
+issues. However, in-clinic sleep assessments are often limited to vital signs (e.g. brain waves).
+Wearable sensors with embedded inertial measurement units have been used for sleep posture classification;
+nonetheless, previous works consider only few (commonly four) postures, which are inadequate
+for advanced clinical assessments. Moreover, posture learning algorithms typically require
+longitudinal data collection to function reliably, and often operate on raw inertial sensor readings
+unfamiliar to clinicians. This paper proposes a new framework for sleep posture classification
+based on a minimal set of joint angle measurements. The proposed framework is validated on a rich
+set of twelve postures in two experimental pipelines: computer animation to obtain synthetic postural
+data, and human participant pilot study using custom-made miniature wearable sensors. Through
+fusing raw geo-inertial sensor measurements to compute a filtered estimate of relative segment
+orientations across the wrist and ankle joints, the body posture can be characterised in a way comprehensible
+to medical experts. The proposed sleep posture learning framework offers plug-and-play posture
+classification by capitalising on a novel kinematic data augmentation method that requires only
+one training example per posture. Additionally, a new metric together with data visualisations
+are employed to extract meaningful insights from the postures dataset, demonstrate the added value
+of the data augmentation method, and explain the classification performance. The proposed framework
+attained promising overall accuracy as high as 100% on synthetic data and 92.7% on real data, on par
+with state of the art data-hungry algorithms available in the literature. 

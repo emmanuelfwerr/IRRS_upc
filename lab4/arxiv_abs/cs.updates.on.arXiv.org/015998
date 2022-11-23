@@ -1,0 +1,19 @@
+It is nowadays widely acknowledged that optimal structural design should be robust with respect
+to the uncertainties in loads and material parameters. However, there are several alternatives
+to consider such uncertainties in structural optimization problems. This paper presents a comprehensive
+comparison between the results of three different approaches to topology optimization under uncertain
+loading, considering stress constraints: 1) the robust formulation, which requires only the mean
+and standard deviation of stresses at each element; 2) the reliability-based formulation, which
+imposes a reliability constraint on computed stresses; 3) the non-probabilistic formulation,
+which considers a worst-case scenario for the stresses caused by uncertain loads. The information
+required by each method, regarding the uncertain loads, and the uncertainty propagation approach
+used in each case is quite different. The robust formulation requires only mean and standard deviation
+of uncertain loads; stresses are computed via a first-order perturbation approach. The reliability-based
+formulation requires full probability distributions of random loads, reliability constraints
+are computed via a first-order performance measure approach. The non-probabilistic formulation
+is applicable for bounded uncertain loads; only lower and upper bounds are used, and worst-case
+stresses are computed via a nested optimization with anti-optimization. The three approaches
+are quite different in the handling of uncertainties; however, the basic topology optimization
+framework is the same: the traditional density approach is employed for material parameterization,
+while the augmented Lagrangian method is employed to solve the resulting problem, in order to handle
+the large number of stress constraints. 

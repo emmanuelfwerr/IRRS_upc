@@ -1,0 +1,20 @@
+Traffic forecasting plays an indispensable role in the intelligent transportation system, which
+makes daily travel more convenient and safer. However, the dynamic evolution of spatio-temporal
+correlations makes accurate traffic forecasting very difficult. Existing work mainly employs
+graph neural netwroks (GNNs) and deep time series models (e.g., recurrent neural networks) to capture
+complex spatio-temporal patterns in the dynamic traffic system. For the spatial patterns, it is
+difficult for GNNs to extract the global spatial information, i.e., remote sensors information
+in road networks. Although we can use the self-attention to extract global spatial information
+as in the previous work, it is also accompanied by huge resource consumption. For the temporal patterns,
+traffic data have not only easy-to-recognize daily and weekly trends but also difficult-to-recognize
+short-term noise caused by accidents (e.g., car accidents and thunderstorms). Prior traffic models
+are difficult to distinguish intricate temporal patterns in time series and thus hard to get accurate
+temporal dependence. To address above issues, we propose a novel noise-aware efficient spatio-temporal
+Transformer architecture for accurate traffic forecasting, named STformer. STformer consists
+of two components, which are the noise-aware temporal self-attention (NATSA) and the graph-based
+sparse spatial self-attention (GBS3A). NATSA separates the high-frequency component and the
+low-frequency component from the time series to remove noise and capture stable temporal dependence
+by the learnable filter and the temporal self-attention, respectively. GBS3A replaces the full
+query in vanilla self-attention with the graph-based sparse query to decrease the time and memory
+usage. Experiments on four real-world traffic datasets show that STformer outperforms state-of-the-art
+baselines with lower computational cost. 

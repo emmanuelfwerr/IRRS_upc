@@ -1,0 +1,19 @@
+Fixed-point fast sweeping methods are a class of explicit iterative methods developed in the literature
+to efficiently solve steady state solutions of hyperbolic partial differential equations (PDEs).
+As other types of fast sweeping schemes, fixed-point fast sweeping methods use the Gauss-Seidel
+iterations and alternating sweeping strategy to cover characteristics of hyperbolic PDEs in a
+certain direction simultaneously in each sweeping order. The resulting iterative schemes have
+fast convergence rate to steady state solutions. Moreover, an advantage of fixed-point fast sweeping
+methods over other types of fast sweeping methods is that they are explicit and do not involve inverse
+operation of any nonlinear local system. Hence they are robust and flexible, and have been combined
+with high order accurate weighted essentially non-oscillatory (WENO) schemes to solve various
+hyperbolic PDEs in the literature. For multidimensional nonlinear problems, high order fixed-point
+fast sweeping WENO methods still require quite large amount of computational costs. In this technical
+note, we apply sparse-grid techniques, an effective approximation tool for multidimensional
+problems, to fixed-point fast sweeping WENO method for reducing its computational costs. Here
+we focus on a robust Runge-Kutta (RK) type fixed-point fast sweeping WENO scheme with third order
+accuracy (Zhang et al. 2006 [33]), for solving Eikonal equations, an important class of static Hamilton-Jacobi
+(H-J) equations. Numerical experiments on solving multidimensional Eikonal equations and a more
+general static H-J equation are performed to show that the sparse grid computations of the fixed-point
+fast sweeping WENO scheme achieve large savings of CPU times on refined meshes, and at the same time
+maintain comparable accuracy and resolution with those on corresponding regular single grids.

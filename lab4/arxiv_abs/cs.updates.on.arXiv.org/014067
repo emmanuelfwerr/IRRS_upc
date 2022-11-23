@@ -1,0 +1,19 @@
+We consider the classical problems of estimating the mean of an $n$-dimensional normally (with
+identity covariance matrix) or Poisson distributed vector under the squared loss. In a Bayesian
+setting the optimal estimator is given by the prior-dependent conditional mean. In a frequentist
+setting various shrinkage methods were developed over the last century. The framework of empirical
+Bayes, put forth by Robbins (1956), combines Bayesian and frequentist mindsets by postulating
+that the parameters are independent but with an unknown prior and aims to use a fully data-driven
+estimator to compete with the Bayesian oracle that knows the true prior. The central figure of merit
+is the regret, namely, the total excess risk over the Bayes risk in the worst case (over the priors).
+Although this paradigm was introduced more than 60 years ago, little is known about the asymptotic
+scaling of the optimal regret in the nonparametric setting. We show that for the Poisson model with
+compactly supported and subexponential priors, the optimal regret scales as $\Theta((\frac{\log
+n}{\log\log n})^2)$ and $\Theta(\log^3 n)$, respectively, both attained by the original estimator
+of Robbins. For the normal mean model, the regret is shown to be at least $\Omega((\frac{\log n}{\log\log
+n})^2)$ and $\Omega(\log^2 n)$ for compactly supported and subgaussian priors, respectively,
+the former of which resolves the conjecture of Singh (1979) on the impossibility of achieving bounded
+regret; before this work, the best regret lower bound was $\Omega(1)$. %Analogous results for subgaussian
+or subexponential priors are also obtained. In addition to the empirical Bayes setting, these results
+are shown to hold in the compound setting where the parameters are deterministic. As a side application,
+the construction in this paper also leads to improved or new lower bounds for mixture density estimation.

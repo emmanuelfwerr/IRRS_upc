@@ -1,0 +1,19 @@
+Virtual Research Environments (VREs) provide user-centric support in the lifecycle of research
+activities, e.g., discovering and accessing research assets, or composing and executing application
+workflows. A typical VRE is often implemented as an integrated environment, which includes a catalog
+of research assets, a workflow management system, a data management framework, and tools for enabling
+collaboration among users. Notebook environments, such as Jupyter, allow researchers to rapidly
+prototype scientific code and share their experiments as online accessible notebooks. Jupyter
+can support several popular languages that are used by data scientists, such as Python, R, and Julia.
+However, such notebook environments do not have seamless support for running heavy computations
+on remote infrastructure or finding and accessing software code inside notebooks. This paper investigates
+the gap between a notebook environment and a VRE and proposes an embedded VRE solution for the Jupyter
+environment called Notebook-as-a-VRE (NaaVRE). The NaaVRE solution provides functional components
+via a component marketplace and allows users to create a customized VRE on top of the Jupyter environment.
+From the VRE, a user can search research assets (data, software, and algorithms), compose workflows,
+manage the lifecycle of an experiment, and share the results among users in the community. We demonstrate
+how such a solution can enhance a legacy workflow that uses Light Detection and Ranging (LiDAR) data
+from country-wide airborne laser scanning surveys for deriving geospatial data products of ecosystem
+structure at high resolution over broad spatial extents. This enables users to scale out the processing
+of multi-terabyte LiDAR point clouds for ecological applications to more data sources in a distributed
+cloud environment. 

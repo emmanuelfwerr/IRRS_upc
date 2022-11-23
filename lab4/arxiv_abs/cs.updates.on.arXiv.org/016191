@@ -1,0 +1,19 @@
+Click-through rate prediction is a critical task in online advertising. Currently, many existing
+methods attempt to extract user potential interests from historical click behavior sequences.
+However, it is difficult to handle sparse user behaviors or broaden interest exploration. Recently,
+some researchers incorporate the item-item co-occurrence graph as an auxiliary. Due to the elusiveness
+of user interests, those works still fail to determine the real motivation of user click behaviors.
+Besides, those works are more biased towards popular or similar commodities. They lack an effective
+mechanism to break the diversity restrictions. In this paper, we point out two special properties
+of triangles in the item-item graphs for recommendation systems: Intra-triangle homophily and
+Inter-triangle heterophiy. Based on this, we propose a novel and effective framework named Triangle
+Graph Interest Network (TGIN). For each clicked item in user behavior sequences, we introduce the
+triangles in its neighborhood of the item-item graphs as a supplement. TGIN regards these triangles
+as the basic units of user interests, which provide the clues to capture the real motivation for a
+user clicking an item. We characterize every click behavior by aggregating the information of several
+interest units to alleviate the elusive motivation problem. The attention mechanism determines
+users' preference for different interest units. By selecting diverse and relative triangles,
+TGIN brings in novel and serendipitous items to expand exploration opportunities of user interests.
+Then, we aggregate the multi-level interests of historical behavior sequences to improve CTR prediction.
+Extensive experiments on both public and industrial datasets clearly verify the effectiveness
+of our framework. 

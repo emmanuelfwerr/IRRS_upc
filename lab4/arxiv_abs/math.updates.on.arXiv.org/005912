@@ -1,0 +1,19 @@
+Magnetic Resonance Imaging (MRI) is a kind of medical imaging technology used for diagnostic imaging
+of diseases, but its image quality may be suffered by the long acquisition time. The compressive
+sensing (CS) based strategy may decrease the reconstruction time greatly, but it needs efficient
+reconstruction algorithms to produce high-quality and reliable images. This paper focuses on
+the algorithmic improvement for the sparse reconstruction of CS-MRI, especially considering
+a non-smooth convex minimization problem which is composed of the sum of a total variation regularization
+term and a $\ell_1$-norm term of the wavelet transformation. The partly motivation of targeting
+the dual problem is that the dual variables are involved in relatively low-dimensional subspace.
+Instead of solving the primal model as usual, we turn our attention to its associated dual model composed
+of three variable blocks and two separable non-smooth function blocks. However, the directly extended
+alternating direction method of multipliers (ADMM) must be avoided because it may be divergent,
+although it usually performs well numerically. In order to solve the problem, we employ a symmetric
+Gauss-Seidel (sGS) technique based ADMM. Compared with the directly extended ADMM, this method
+only needs one additional iteration, but its convergence can be guaranteed theoretically. Besides,
+we also propose a generalized variant of ADMM because this method has been illustrated to be efficient
+for solving semidefinite programming in the past few years. Finally, we do extensive experiments
+on MRI reconstruction using some simulated and real MRI images under different sampling patterns
+and ratios. The numerical results demonstrate that the proposed algorithms significantly achieve
+high reconstruction accuracies with fast computational speed. 

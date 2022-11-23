@@ -1,0 +1,19 @@
+This study presents an open source method for detecting 3D printing anomalies by comparing images
+of printed layers from a stationary monocular camera with G-code-based reference images of an ideal
+process generated with Blender, a physics rendering engine. Recognition of visual deviations
+was accomplished by analyzing the similarity of histograms of oriented gradients (HOG) of local
+image areas. The developed technique requires preliminary modeling of the working environment
+to achieve the best match for orientation, color rendering, lighting, and other parameters of the
+printed part. The output of the algorithm is a level of mismatch between printed and synthetic reference
+layers. Twelve similarity and distance measures were implemented and compared for their effectiveness
+at detecting 3D printing errors on six different representative failure types and their control
+error-free print images. The results show that although Kendall tau, Jaccard, and Sorensen similarities
+are the most sensitive, Pearson r, Spearman rho, cosine, and Dice similarities produce the more
+reliable results. This open source method allows the program to notice critical errors in the early
+stages of their occurrence and either pause manufacturing processes for further investigation
+by an operator or in the future AI-controlled automatic error correction. The implementation of
+this novel method does not require preliminary data for training, and the greatest efficiency can
+be achieved with the mass production of parts by either additive or subtractive manufacturing of
+the same geometric shape. It can be concluded this open source method is a promising means of enabling
+smart distributed recycling for additive manufacturing using complex feedstocks as well as other
+challenging manufacturing environments. 

@@ -1,0 +1,19 @@
+We give an overview and describe the rationale, methods, and testing of the Hubble Space Telescope
+(HST) Archival Legacy project "SKYSURF." SKYSURF uses HST's unique capability as an absolute photometer
+to measure the ~0.2-1.7 $\mu$m sky surface brightness (SB) from 249,861 WFPC2, ACS, and WFC3 exposures
+in ~1400 independent HST fields. SKYSURF's panchromatic dataset is designed to constrain the discrete
+and diffuse UV to near-IR sky components: Zodiacal Light (ZL; inner Solar System), Kuiper Belt Objects
+(KBOs; outer Solar System), Diffuse Galactic Light (DGL), and the discrete plus diffuse Extragalactic
+Background Light (EBL). We outline SKYSURF's methods to: (1) measure sky-SB levels between its
+detected objects; (2) measure the integrated discrete EBL, most of which comes from AB$\simeq$17-22
+mag galaxies; and (3) estimate how much diffuse light may exist in addition to the extrapolated discrete
+galaxy counts. Simulations of HST WFC3/IR images with known sky-values and gradients, realistic
+cosmic ray (CR) distributions, and star plus galaxy counts were processed with nine different algorithms
+to measure the "Lowest Estimated Sky-SB" (LES) in each image between the discrete objects. The best
+algorithms recover the inserted LES values within 0.2% when there are no image gradients, and within
+0.2-0.4% when there are 5-10% gradients. SKYSURF requires non-standard re-processing of these
+HST images that includes restoring the lowest sky-level from each visit into each drizzled image.
+We provide a proof of concept of our methods from the WFC3/IR F125W images, where any residual diffuse
+light that HST sees in excess of the Kelsall et al. (1998) Zodiacal model prediction does not depend
+on the total object flux that each image contains. This enables us to present our first SKYSURF results
+on diffuse light in Carleton et al. (2022). 

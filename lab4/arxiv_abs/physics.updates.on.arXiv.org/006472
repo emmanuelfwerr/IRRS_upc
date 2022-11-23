@@ -1,0 +1,19 @@
+Objective: Model based deep learning (MBDL) has been challenging to apply to the reconstruction
+of 3D non-Cartesian MRI acquisitions due to extreme GPU memory demand (>250 GB using traditional
+backpropagation) primarily because the entire volume is needed for data-consistency steps embedded
+in the model. The goal of this work is to develop and apply a memory efficient method called block-wise
+learning that combines gradient checkpointing with patch-wise training to allow for fast and high-quality
+3D non-Cartesian reconstructions using MBDL. Approach: Block-wise learning applied to a single
+unroll decomposes the input volume into smaller patches, gradient checkpoints each patch, passes
+each patch iteratively through a neural network regularizer, and then rebuilds the full volume
+from these output patches for data-consistency. This method is applied across unrolls during training.
+Block-wise learning significantly reduces memory requirements by tying GPU memory to user selected
+patch size instead of the full volume. This algorithm was used to train a MBDL architecture to reconstruct
+highly undersampled, 1.25mm isotropic, pulmonary magnetic resonance angiography volumes with
+matrix sizes varying from 300-450 x 200-300 x 300-450 on a single GPU. We compared block-wise learning
+reconstructions against L1 wavelet compressed reconstructions and proxy ground truth images.
+Main results: MBDL with block-wise learning significantly improved image quality relative to
+L1 wavelet compressed sensing while simultaneously reducing average reconstruction time 38x.
+Significance: Block-wise learning allows for MBDL to be applied to high spatial resolution, 3D
+non-Cartesian datasets with improved image quality and significant reductions in reconstruction
+time relative to traditional iterative methods 

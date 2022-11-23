@@ -1,0 +1,20 @@
+One of the easiest ways to diagnose cardiovascular conditions is Electrocardiogram (ECG) analysis.
+ECG databases usually have highly imbalanced distributions due to the abundance of Normal ECG and
+scarcity of abnormal cases which are equally, if not more, important for arrhythmia detection.
+As such, DL classifiers trained on these datasets usually perform poorly, especially on minor classes.
+One solution to address the imbalance is to generate realistic synthetic ECG signals mostly using
+Generative Adversarial Networks (GAN) to augment and the datasets. In this study, we designed an
+experiment to investigate the impact of data augmentation on arrhythmia classification. Using
+the MIT-BIH Arrhythmia dataset, we employed two ways for ECG beats generation: (i) an unconditional
+GAN, i.e., Wasserstein GAN with gradient penalty (WGAN-GP) is trained on each class individually;
+(ii) a conditional GAN model, i.e., Auxiliary Classifier Wasserstein GAN with gradient penalty
+(AC-WGAN-GP) is trained on all the available classes to train one single generator. Two scenarios
+are defined for each case: i) unscreened where all the generated synthetic beats were used directly
+without any post-processing, and ii) screened where a portion of generated beats are selected based
+on their Dynamic Time Warping (DTW) distance with a designated template. A ResNet classifier is
+trained on each of the four augmented datasets and the performance metrics of precision, recall
+and F1-Score as well as the confusion matrices were compared with the reference case, i.e., when
+the classifier is trained on the imbalanced original dataset. The results show that in all four cases
+augmentation achieves impressive improvements in metrics particularly on minor classes (typically
+from 0 or 0.27 to 0.99). The quality of the generated beats is also evaluated using DTW distance function
+compared with real data. 

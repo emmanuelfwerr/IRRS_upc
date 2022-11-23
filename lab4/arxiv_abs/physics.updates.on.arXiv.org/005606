@@ -1,0 +1,19 @@
+Data-driven methods have increasingly been applied to the development of optical systems as inexpensive
+and effective inverse design approaches. Optical properties (e.g., band-gap properties) of photonic
+crystals (PCs) are closely associated with characteristics of their light reflection spectra.
+Finding optimal PC constructions (within a pre-specified parameter space) that generate reflection
+spectra closest to a targeted spectrum is thus an interesting and meaningful inverse design problem,
+although relevant studies are still limited. Here we report a generally effective machine learning-based
+inverse design approach for one-dimensional photonic crystals (1DPCs), focusing on visible light
+spectra which are of high practical relevance. For a given class of 1DPC system, a deep neural network
+(DNN) in a unified structure is first trained over data from sizeable forward calculations (from
+layer thicknesses to spectrum). An iterative optimization scheme is then developed based on a coherent
+integration of DNN backward predictions (from spectrum to layer thicknesses), forward calculations,
+and Monte Carlo moves. We employ this new approach to four representative 1DPC systems including
+periodic structures with two-, three-, and four-layer repeating units and a heterostructure.
+The approach successfully converges to solutions of optimal 1DPC constructions for various targeted
+spectra regardless of their exact achievability. As two demonstrating examples, inverse designs
+toward a specially constructed "rectangle-shaped" green-light or red-light reflection spectrum
+are presented and discussed in detail. Remarkably, the results show that the approach can efficiently
+find out optimal layer thicknesses even when they are far outside the range covered by the original
+training data of DNN. 

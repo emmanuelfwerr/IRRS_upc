@@ -1,0 +1,20 @@
+Savitch's theorem states that NPSPACE computations can be simulated in PSPACE. We initiate the
+study of a quantum analogue of NPSPACE, denoted Streaming-QCMASPACE (SQCMASPACE), where an exponentially
+long classical proof is streamed to a poly-space quantum verifier. Besides two main results, we
+also show that a quantum analogue of Savitch's theorem is unlikely to hold, as SQCMASPACE=NEXP.
+For completeness, we introduce Streaming-QMASPACE (SQMASPACE) with an exponentially long streamed
+quantum proof, and show SQMASPACE=QMA_EXP (quantum analogue of NEXP). Our first main result shows,
+in contrast to the classical setting, the solution space of a quantum constraint satisfaction problem
+(i.e. a local Hamiltonian) is always connected when exponentially long proofs are permitted. For
+this, we show how to simulate any Lipschitz continuous path on the unit hypersphere via a sequence
+of local unitary gates, at the expense of blowing up the circuit size. This shows quantum error-correcting
+codes can be unable to detect one codeword erroneously evolving to another if the evolution happens
+sufficiently slowly, and answers an open question of [Gharibian, Sikora, ICALP 2015] regarding
+the Ground State Connectivity problem. Our second main result is that any SQCMASPACE computation
+can be embedded into "unentanglement", i.e. into a quantum constraint satisfaction problem with
+unentangled provers. Formally, we show how to embed SQCMASPACE into the Sparse Separable Hamiltonian
+problem of [Chailloux, Sattath, CCC 2012] (QMA(2)-complete for 1/poly promise gap), at the expense
+of scaling the promise gap with the streamed proof size. As a corollary, we obtain the first systematic
+construction for obtaining QMA(2)-type upper bounds on arbitrary multi-prover interactive proof
+systems, where the QMA(2) promise gap scales exponentially with the number of bits of communication
+in the interactive proof. 

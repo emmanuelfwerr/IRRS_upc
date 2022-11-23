@@ -1,0 +1,19 @@
+A multitude of studies have been conducted on graph drawing, but many existing methods only focus
+on optimizing particular aesthetic aspects of graph layout. Given a graph, generating a good layout
+that satisfies certain human aesthetic preference remains a challenging task, especially if such
+preference can not be expressed as a differentiable objective function. In this paper, we propose
+a student-teacher GAN-based graph drawing framework, SmartGD, which learns to draw graphs just
+like how humans learn to perform tasks. The student network in the SmartGD learns graph drawing by
+imitating good layout examples, while the teacher network in SmartGD is responsible for providing
+ratings regarding the goodness of the generated layouts. When there is a lack of concrete aesthetic
+criteria to specify what constitutes a good layout, the student network can learn from the good layout
+examples. On the other hand, when the goodness of a layout can be assessed by quantitative criteria
+(even if not differentiable), the student network can use it as a concrete goal to optimize the target
+aesthetics. To accomplish the goal, we propose a novel variant of GAN, self-challenging GAN, to
+learn the optimal layout distribution with respect to any aesthetic criterion, whether the criterion
+is differentiable or not. The proposed graph drawing framework can not only draw graphs in a similar
+style as the good layout examples but also optimize the graph layouts according to any given aesthetic
+criteria when available. Once the model is trained, it can be used to visualize arbitrary graphs
+according to the style of the example layouts or the chosen aesthetic criteria. The comprehensive
+experimental studies show that SmartGD outperforms 12 benchmark methods according to the commonly
+agreed metrics. 

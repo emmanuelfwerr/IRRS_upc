@@ -1,0 +1,19 @@
+Understanding the abundance and distribution of fish in tidal energy streams is important for assessing
+the risk presented by the introduction of tidal energy devices into the habitat. However, the impressive
+tidal currents that make sites favorable for tidal energy development are often highly turbulent
+and entrain air into the water, complicating the interpretation of echosounder data. The portion
+of the water column contaminated by returns from entrained air must be excluded from data used for
+biological analyses. Application of a single algorithm to identify the depth-of-penetration
+of entrained-air is insufficient for a boundary that is discontinuous, depth-dynamic, porous,
+and widely variable across the tidal flow speeds which can range from 0 to 5m/s. Using a case study
+at a tidal energy demonstration site in the Bay of Fundy, we describe the development and application
+of deep learning models that produce a pronounced, consistent, substantial, and measurable improvement
+of the automated detection of the extent to which entrained-air has penetrated the water column.
+Our model, Echofilter, was highly responsive to the dynamic range of turbulence conditions and
+sensitive to the fine-scale nuances in the boundary position, producing an entrained-air boundary
+line with an average error of 0.32m on mobile downfacing and 0.5-1.0m on stationary upfacing data.
+The model's annotations had a high level of agreement with the human segmentation (mobile downfacing
+Jaccard index: 98.8%; stationary upfacing: 93-95%). This resulted in a 50% reduction in the time
+required for manual edits compared to the time required to manually edit the line placed by currently
+available algorithms. Because of the improved initial automated placement, the implementation
+of the models generated a marked increase in the standardization and repeatability of line placement.

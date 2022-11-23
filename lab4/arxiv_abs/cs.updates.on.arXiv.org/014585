@@ -1,0 +1,20 @@
+After deploying a clinical prediction model, subsequently collected data can be used to fine-tune
+its predictions and adapt to temporal shifts. Because model updating carries risks of over-updating/fitting,
+we study online methods with performance guarantees. We introduce two procedures for continual
+recalibration or revision of an underlying prediction model: Bayesian logistic regression (BLR)
+and a Markov variant that explicitly models distribution shifts (MarBLR). We perform empirical
+evaluation via simulations and a real-world study predicting COPD risk. We derive "Type I and II"
+regret bounds, which guarantee the procedures are non-inferior to a static model and competitive
+with an oracle logistic reviser in terms of the average loss. Both procedures consistently outperformed
+the static model and other online logistic revision methods. In simulations, the average estimated
+calibration index (aECI) of the original model was 0.828 (95%CI 0.818-0.938). Online recalibration
+using BLR and MarBLR improved the aECI, attaining 0.265 (95%CI 0.230-0.300) and 0.241 (95%CI 0.216-0.266),
+respectively. When performing more extensive logistic model revisions, BLR and MarBLR increased
+the average AUC (aAUC) from 0.767 (95%CI 0.765-0.769) to 0.800 (95%CI 0.798-0.802) and 0.799 (95%CI
+0.797-0.801), respectively, in stationary settings and protected against substantial model
+decay. In the COPD study, BLR and MarBLR dynamically combined the original model with a continually-refitted
+gradient boosted tree to achieve aAUCs of 0.924 (95%CI 0.913-0.935) and 0.925 (95%CI 0.914-0.935),
+compared to the static model's aAUC of 0.904 (95%CI 0.892-0.916). Despite its simplicity, BLR is
+highly competitive with MarBLR. MarBLR outperforms BLR when its prior better reflects the data.
+BLR and MarBLR can improve the transportability of clinical prediction models and maintain their
+performance over time. 

@@ -1,0 +1,20 @@
+Electroencephalogram (EEG) based emotional analysis has been employed in medical science, security
+and human-computer interaction with good success. In the recent past, deep learning-based approaches
+have significantly improved the classification accuracy when compared to classical signal processing
+and machine learning based frameworks. But most of them were subject-dependent studies which were
+not able to generalize on the subject-independent tasks due to the inter-subject variability present
+in EEG data. In this work, a novel deep learning framework capable of doing subject-independent
+emotion recognition is presented, consisting of two parts. First, an unsupervised Long Short-Term
+Memory (LSTM) with channel-attention autoencoder is proposed for getting a common latent vector
+subspace i.e., intrinsic variables present in the EEG data of each individual. Secondly, a convolutional
+neural network (CNN) with attention framework is presented for performing the task of subject-independent
+emotion recognition on the encoded lower dimensional latent space representations obtained from
+the proposed LSTM with channel-attention autoencoder. With the attention mechanism, the proposed
+approach could highlight the significant time-segments of the EEG signal, which contributes to
+the emotion under consideration as validated by the results. The proposed approach has been validated
+using publicly available datasets for EEG signals such as DEAP dataset, SEED dataset and CHB-MIT
+dataset. With the proposed methodology, average subject independent accuracies of 65.9%, 69.5%
+for valence and arousal classification in the DEAP dataset and 76.7% for positive-negative classification
+in SEED dataset are obtained. Further for the CHB-MIT dataset, average subject independent accuracies
+of 69.1%, 67.6%, 72.3% for Pre-Ictal Vs Ictal, Inter-Ictal Vs Ictal, Pre-Ictal Vs Inter-Ictal classification
+are obtained. 

@@ -1,0 +1,20 @@
+Missing data is a recurrent problem in remote sensing, mainly due to cloud coverage for multispectral
+images and acquisition problems. This can be a critical issue for crop monitoring, especially for
+applications relying on machine learning techniques, which generally assume that the feature
+matrix does not have missing values. This paper proposes a Gaussian Mixture Model (GMM) for the reconstruction
+of parcel-level features extracted from multispectral images. A robust version of the GMM is also
+investigated, since datasets can be contaminated by inaccurate samples or features (e.g., wrong
+crop type reported, inaccurate boundaries, undetected clouds, etc). Additional features extracted
+from Synthetic Aperture Radar (SAR) images using Sentinel-1 data are also used to provide complementary
+information and improve the imputations. The robust GMM investigated in this work assigns reduced
+weights to the outliers during the estimation of the GMM parameters, which improves the final reconstruction.
+These weights are computed at each step of an Expectation-Maximization (EM) algorithm by using
+outlier scores provided by the isolation forest algorithm. Experimental validation is conducted
+on rapeseed and wheat parcels located in the Beauce region (France). Overall, we show that the GMM
+imputation method outperforms other reconstruction strategies. A mean absolute error (MAE) of
+0.013 (resp. 0.019) is obtained for the imputation of the median Normalized Difference Index (NDVI)
+of the rapeseed (resp. wheat) parcels. Other indicators (e.g., Normalized Difference Water Index)
+and statistics (for instance the interquartile range, which captures heterogeneity among the
+parcel indicator) are reconstructed at the same time with good accuracy. In a dataset contaminated
+by irrelevant samples, using the robust GMM is recommended since the standard GMM imputation can
+lead to inaccurate imputed values. 

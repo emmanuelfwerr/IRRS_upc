@@ -1,0 +1,20 @@
+Cold-start issues have been more and more challenging for providing accurate recommendations
+with the fast increase of users and items. Most existing approaches attempt to solve the intractable
+problems via content-aware recommendations based on auxiliary information and/or cross-domain
+recommendations with transfer learning. Their performances are often constrained by the extremely
+sparse user-item interactions, unavailable side information, or very limited domain-shared
+users. Recently, meta-learners with meta-augmentation by adding noises to labels have been proven
+to be effective to avoid overfitting and shown good performance on new tasks. Motivated by the idea
+of meta-augmentation, in this paper, by treating a user's preference over items as a task, we propose
+a so-called Diverse Preference Augmentation framework with multiple source domains based on meta-learning
+(referred to as MetaDPA) to i) generate diverse ratings in a new domain of interest (known as target
+domain) to handle overfitting on the case of sparse interactions, and to ii) learn a preference model
+in the target domain via a meta-learning scheme to alleviate cold-start issues. Specifically,
+we first conduct multi-source domain adaptation by dual conditional variational autoencoders
+and impose a Multi-domain InfoMax (MDI) constraint on the latent representations to learn domain-shared
+and domain-specific preference properties. To avoid overfitting, we add a Mutually-Exclusive
+(ME) constraint on the output of decoders to generate diverse ratings given content data. Finally,
+these generated diverse ratings and the original ratings are introduced into the meta-training
+procedure to learn a preference meta-learner, which produces good generalization ability on cold-start
+recommendation tasks. Experiments on real-world datasets show our proposed MetaDPA clearly outperforms
+the current state-of-the-art baselines. 

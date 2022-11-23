@@ -1,0 +1,20 @@
+We study elective surgery planning in flexible operating rooms (ORs) where emergency patients
+are accommodated in the existing elective surgery schedule. Specifically, elective surgeries
+can be scheduled weeks or months in advance. In contrast, an emergency surgery arrives randomly
+and must be performed on the day of arrival. Probability distributions of the actual durations of
+elective and emergency surgeries are unknown, and only a possibly small set of historical realizations
+may be available. To address distributional uncertainty, we first construct an ambiguity set that
+encompasses all possible distributions of surgery durations within a 1-Wasserstein distance
+from the empirical distribution. We then define a distributionally robust surgery assignment
+(DSA) problem to determine optimal elective surgery assignment decisions to available surgical
+blocks in multiple ORs, considering the capacity needed for emergency cases. The objective is to
+minimize the total cost consisting of the fixed cost related to scheduling or rejecting elective
+surgery plus the maximum expected cost associated with OR overtime and idle time over all distributions
+defined in the ambiguity set. Using the DSA model's structural properties, we derive an equivalent
+mixed-integer linear programming (MILP) reformulation that can be implemented and solved efficiently
+using off-the-shelf optimization software. In addition, we extend the proposed model to determine
+the number of ORs needed to serve the two competing surgery classes and derive a MILP reformulation
+of this extension. We conduct extensive numerical experiments based on real-world surgery data,
+demonstrating our proposed model's computational efficiency and superior out-of-sample operational
+performance over two state-of-the-art approaches. In addition, we derive insights into surgery
+scheduling in flexible ORs. 

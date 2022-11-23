@@ -1,0 +1,20 @@
+With the explosive growth of data and wireless devices, federated learning (FL) has emerged as a
+promising technology for large-scale intelligent systems. Utilizing the analog superposition
+of electromagnetic waves, over-the-air computation is an appealing approach to reduce the burden
+of communication in the FL model aggregation. However, with the urgent demand for intelligent systems,
+the training of multiple tasks with over-the-air computation further aggravates the scarcity
+of communication resources. This issue can be alleviated to some extent by training multiple tasks
+simultaneously with shared communication resources, but the latter inevitably brings about the
+problem of inter-task interference. In this paper, we study over-the-air multi-task FL (OA-MTFL)
+over the multiple-input multiple-output (MIMO) interference channel. We propose a novel model
+aggregation method for the alignment of local gradients for different devices, which alleviates
+the straggler problem that exists widely in over-the-air computation due to the channel heterogeneity.
+We establish a unified communication-computation analysis framework for the proposed OA-MTFL
+scheme by considering the spatial correlation between devices, and formulate an optimization
+problem of designing transceiver beamforming and device selection. We develop an algorithm by
+using alternating optimization (AO) and fractional programming (FP) to solve this problem, which
+effectively relieves the impact of inter-task interference on the FL learning performance. We
+show that due to the use of the new model aggregation method, device selection is no longer essential
+to our scheme, thereby avoiding the heavy computational burden caused by implementing device selection.
+The numerical results demonstrate the correctness of the analysis and the outstanding performance
+of the proposed scheme. 

@@ -1,0 +1,19 @@
+Ethereum is one of the most popular platforms for the development of blockchain-powered applications.
+These applications are known as Dapps. When engineering Dapps, developers need to translate requests
+captured in the front-end of their application into one or more smart contract transactions. Developers
+need to pay for these transactions and, the more they pay (i.e., the higher the gas price), the faster
+the transaction is likely to be processed. Therefore developers need to optimize the balance between
+cost (transaction fees) and user experience (transaction processing times). Online services
+have been developed to provide transaction issuers (e.g., Dapp developers) with an estimate of
+how long transactions will take to be processed given a certain gas price. These estimation services
+are crucial in the Ethereum domain and several popular wallets such as Metamask rely on them. However,
+their accuracy has not been empirically investigated so far. In this paper, we quantify the transaction
+processing times in Ethereum, investigate the relationship between processing times and gas prices,
+and determine the accuracy of state-of-the-practice estimation services. We find that transactions
+are processed in a median of 57s and that 90% of the transactions are processed within 8m. The higher
+gas prices result in faster transaction processing times with diminishing returns. In particular,
+we observe no practical difference in processing time between expensive and very expensive transactions.
+In terms of accuracy of processing time estimation services, we note that they are equivalent. However,
+when stratifying transactions by gas prices, Etherscan's Gas Tracker is the most accurate estimation
+service for very cheap and cheap transaction. EthGasStation's Gas Price API, in turn, is the most
+accurate estimation service for regular, expensive, and very expensive transactions. 

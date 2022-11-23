@@ -1,0 +1,19 @@
+The last generation of X-ray focusing telescopes operating outside the Earth's radiation belt
+discovered that optics were able to focus not only astrophysical X-ray photons, but also low-energy
+heliophysical protons entering the Field of View (FOV). This "soft proton" contamination affects
+around 40\% of the observation time of XMM-Newton. The ATHENA Charged Particle Diverter (CPD) was
+designed to use magnetic fields to move these soft protons away from the FOV of the detectors, separating
+the background-contributing ions in the focused beam from the photons of interest. These magnetically
+deflected protons can hit other parts of the payload and scatter back to the focal plane instruments.
+Evaluating the impact of this secondary scattering with accurate simulations is essential for
+the CPD scientific assessment. However, while Geant4 simulations of grazing soft proton scattering
+on X-ray mirrors have been recently validated, the scattering on the unpolished surfaces of the
+payload (e.g. the baffle or the diverter itself) is still to be verified with experimental results.
+Moreover, the roughness structure can affect the energy and angle of the scattered protons, with
+a scattering efficiency depending on the specific target volume. Using Atomic Force Microscopy
+to take nanometer-scale surface roughness measurements from different materials and coating
+samples, we use Geant4 together with the CADMesh library to shoot protons at these very detailed
+surface roughness models to understand the effects of different material surface roughnesses,
+coatings, and compositions on proton energy deposition and scattering angles. We compare and validate
+the simulation results with laboratory experiments, and propose a framework for future proton
+scattering experiments. 

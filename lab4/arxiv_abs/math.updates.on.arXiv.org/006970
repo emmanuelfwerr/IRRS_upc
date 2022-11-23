@@ -1,0 +1,19 @@
+Closed-loop reservoir management (CLRM), in which history matching and production optimization
+are performed multiple times over the life of an asset, can provide significant improvement in the
+specified objective. These procedures are computationally expensive due to the large number of
+flow simulations required for data assimilation and optimization. Existing CLRM procedures are
+applied asset by asset, without utilizing information that could be useful over a range assets.
+Here, we develop a CLRM framework for multiple assets with varying numbers of wells. We use deep reinforcement
+learning to train a single global control policy that is applicable for all assets considered. The
+new framework is an extension of a recently introduced control policy methodology for individual
+assets. Embedding layers are incorporated into the representation to handle the different numbers
+of decision variables that arise for the different assets. Because the global control policy learns
+a unified representation of useful features from multiple assets, it is less expensive to construct
+than asset-by-asset training (we observe about 3x speedup in our examples). The production optimization
+problem includes a relative-change constraint on the well settings, which renders the results
+suitable for practical use. We apply the multi-asset CLRM framework to 2D and 3D water-flooding
+examples. In both cases, four assets with different well counts, well configurations, and geostatistical
+descriptions are considered. Numerical experiments demonstrate that the global control policy
+provides objective function values, for both the 2D and 3D cases, that are nearly identical to those
+from control policies trained individually for each asset. This promising finding suggests that
+multi-asset CLRM may indeed represent a viable practical strategy. 

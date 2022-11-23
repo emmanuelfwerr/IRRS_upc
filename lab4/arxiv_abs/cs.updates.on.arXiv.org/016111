@@ -1,0 +1,19 @@
+Efficient asynchronous Byzantine agreement (BA) protocols were mostly studied with private setups,
+e.g., pre-setup threshold cryptosystem. Challenges remain to reduce the large communication
+in the absence of such setups. Recently, Abraham et al. (PODC'21) presented the first asynchronous
+validated BA (VBA) with expected $O(n^3)$ messages and $O(1)$ rounds, relying on only public key
+infrastructure (PKI) setup, but the design still costs $O({\lambda}n^3 \log n)$ bits. Here $n$
+is the number of parties, and $\lambda$ is a cryptographic security parameter. In this paper, we
+reduce the communication of private-setup free asynchronous BA to expected $O(\lambda n^3)$ bits.
+At the core of our design, we give a systematic treatment of common randomness protocols in the asynchronous
+network, and proceed as: - We give an efficient reasonably fair common coin protocol in the asynchronous
+setting with only PKI setup. It costs only $O(\lambda n^3)$ bits and $O(1)$ rounds, and ensures that
+with at least 1/3 probability, all honest parties can output a common bit that is as if randomly flipped.
+This directly renders more efficient private-setup free asynchronous binary agreement (ABA)
+with expected $O(\lambda n^3)$ bits and $O(1)$ rounds. - Then, we lift our common coin to attain perfect
+agreement by using a single ABA. This gives us a reasonably fair random leader election protocol
+with expected $O(\lambda n^3)$ communication and expected constant rounds. It is pluggable in
+all existing VBA protocols (Cachin et al., CRYPTO'01; Abraham et al., PODC'19; Lu et al., PODC'20)
+to remove the needed private setup or distributed key generation (DKG). As such, the communication
+of private-setup free VBA is reduced to expected $O(\lambda n^3)$ bits while preserving fast termination
+in expected $O(1)$ rounds. 

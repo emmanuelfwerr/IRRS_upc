@@ -1,0 +1,20 @@
+Monocular 3D human pose estimation has made progress in recent years. Most of the methods focus on
+single persons, which estimate the poses in the person-centric coordinates, i.e., the coordinates
+based on the center of the target person. Hence, these methods are inapplicable for multi-person
+3D pose estimation, where the absolute coordinates (e.g., the camera coordinates) are required.
+Moreover, multi-person pose estimation is more challenging than single pose estimation, due to
+inter-person occlusion and close human interactions. Existing top-down multi-person methods
+rely on human detection (i.e., top-down approach), and thus suffer from the detection errors and
+cannot produce reliable pose estimation in multi-person scenes. Meanwhile, existing bottom-up
+methods that do not use human detection are not affected by detection errors, but since they process
+all persons in a scene at once, they are prone to errors, particularly for persons in small scales.
+To address all these challenges, we propose the integration of top-down and bottom-up approaches
+to exploit their strengths. Our top-down network estimates human joints from all persons instead
+of one in an image patch, making it robust to possible erroneous bounding boxes. Our bottom-up network
+incorporates human-detection based normalized heatmaps, allowing the network to be more robust
+in handling scale variations. Finally, the estimated 3D poses from the top-down and bottom-up networks
+are fed into our integration network for final 3D poses. To address the common gaps between training
+and testing data, we do optimization during the test time, by refining the estimated 3D human poses
+using high-order temporal constraint, re-projection loss, and bone length regularizations.
+Our evaluations demonstrate the effectiveness of the proposed method. Code and models are available:
+https://github.com/3dpose/3D-Multi-Person-Pose. 

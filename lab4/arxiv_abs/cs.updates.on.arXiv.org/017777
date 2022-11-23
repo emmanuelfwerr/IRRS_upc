@@ -1,0 +1,19 @@
+Recent period of pandemic has brought person identification even with occluded face image a great
+importance with increased number of mask usage. This paper aims to recognize the occlusion of one
+of four types in face images. Various transfer learning methods were tested, and the results show
+that MobileNet V2 with Gated Recurrent Unit(GRU) performs better than any other Transfer Learning
+methods, with a perfect accuracy of 99% in classification of images as with or without occlusion
+and if with occlusion, then the type of occlusion. In parallel, identifying the Region of interest
+from the device captured image is done. This extracted Region of interest is utilised in face identification.
+Such a face identification process is done using the ResNet model with its Caffe implementation.
+To reduce the execution time, after the face occlusion type was recognized the person was searched
+to confirm their face image in the registered database. The face label of the person obtained from
+both simultaneous processes was verified for their matching score. If the matching score was above
+90, the recognized label of the person was logged into a file with their name, type of mask, date, and
+time of recognition. MobileNetV2 is a lightweight framework which can also be used in embedded or
+IoT devices to perform real time detection and identification in suspicious areas of investigations
+using CCTV footages. When MobileNetV2 was combined with GRU, a reliable accuracy was obtained.
+The data provided in the paper belong to two categories, being either collected from Google Images
+for occlusion classification, face recognition, and facial landmarks, or collected in fieldwork.
+The motive behind this research is to identify and log person details which could serve surveillance
+activities in society-based e-governance. 

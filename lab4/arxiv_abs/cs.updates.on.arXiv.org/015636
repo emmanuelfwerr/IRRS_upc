@@ -1,0 +1,18 @@
+This paper studies optimal motion planning subject to motion and environment uncertainties. By
+modeling the system as a probabilistic labeled Markov decision process (PL-MDP), the control objective
+is to synthesize a finite-memory policy, under which the agent satisfies complex high-level tasks
+expressed as linear temporal logic (LTL) with desired satisfaction probability. In particular,
+the cost optimization of the trajectory that satisfies infinite horizon tasks is considered, and
+the trade-off between reducing the expected mean cost and maximizing the probability of task satisfaction
+is analyzed. Instead of using traditional Rabin automata, the LTL formulas are converted to limit-deterministic
+B\"uchi automata (LDBA) with a reachability acceptance condition and a compact graph structure.
+The novelty of this work lies in considering the cases where LTL specifications can be potentially
+infeasible and developing a relaxed product MDP between PL-MDP and LDBA. The relaxed product MDP
+allows the agent to revise its motion plan whenever the task is not fully feasible and quantify the
+revised plan's violation measurement. A multi-objective optimization problem is then formulated
+to jointly consider the probability of task satisfaction, the violation with respect to original
+task constraints, and the implementation cost of the policy execution. The formulated problem
+can be solved via coupled linear programs. To the best of our knowledge, this work first bridges the
+gap between probabilistic planning revision of potential infeasible LTL specifications and optimal
+control synthesis of both plan prefix and plan suffix of the trajectory over the infinite horizons.
+Experimental results are provided to demonstrate the effectiveness of the proposed framework.

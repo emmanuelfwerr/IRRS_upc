@@ -1,0 +1,19 @@
+The NTRU lattice is a promising candidate to construct practical cryptosystems resistant to quantum
+computing attacks, and particularly plays a leading role in the ongoing NIST post-quantum cryptography
+standardization. On the one hand, it is benefited from a strong security guarantee since it has essentially
+not been broken over 24 years. On the other hand, all the known patent threats against NTRU have expired,
+which is deemed a critical factor for consideration when deploying PQC algorithms in reality. Nevertheless,
+there are still some obstacles to the computational efficiency and bandwidth complexity of NTRU-based
+constructions of key encapsulation mechanisms (KEM). To address these issues, we propose a compact
+and efficient KEM based on the NTRU lattice, called CTRU, by introducing a scalable ciphertext compression
+technique. It demonstrates a new approach to decrypting NTRU ciphertext, where the plaintext message
+is recovered with the aid of our decoding algorithm in the scalable ${E}_8$ lattice. The instantiation
+of CTRU is over the NTT-friendly rings of the form $\mathbb{Z}_q[x]/(x^{n}-x^{n/2}+1)$. To our
+knowledge, our CTRU is the most bandwidth efficient KEM based on the NTRU lattice up to now. In addition,
+compared to other NTRU-based KEM schemes, CTRU has stronger security against known attacks, enjoys
+more robust CCA security reduction (starting from IND-CPA rather than OW-CPA), and its encapsulation
+and decapsulation processes are also among the most efficient. When compared to the NIST Round 3
+finalist NTRU-HRSS, our CTRU-768 has $15\%$ smaller ciphertext size and its security is strengthened
+by $(45,40)$ bits for classical and quantum security respectively. When compared to the NIST Round
+3 finalist Kyber that is based on the Module-LWE assumption, CTRU has both smaller bandwidth and
+lower error probabilities at about the same security level. 

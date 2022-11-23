@@ -1,0 +1,19 @@
+In the field of deep learning, various architectures have been developed. However, most studies
+are limited to specific tasks or datasets due to their fixed layer structure. This paper does not
+express the structure delivering information as a network model but as a data structure called an
+association tree(AT). And we propose two artificial association networks(AANs) designed to solve
+the problems of existing networks by analyzing the structure of human neural networks. Defining
+the starting and ending points of the path in a single graph is difficult, and a tree cannot express
+the relationship among sibling nodes. On the contrary, an AT can express leaf and root nodes as the
+starting and ending points of the path and the relationship among sibling nodes. Instead of using
+fixed sequence layers, we create an AT for each data and train AANs according to the tree's structure.
+AANs are data-driven learning in which the number of convolutions varies according to the depth
+of the tree. Moreover, AANs can simultaneously learn various types of datasets through the recursive
+learning. Depth-first convolution (DFC) encodes the interaction result from leaf nodes to the
+root node in a bottom-up approach, and depth-first deconvolution (DFD) decodes the interaction
+result from the root node to the leaf nodes in a top-down approach. We conducted three experiments.
+The first experiment verified whether it could be processed by combining AANs and feature extraction
+networks. In the second, we compared the performance of networks that separately learned image,
+sound, and tree, graph structure datasets with the performance simultaneously learned by connecting
+these networks. In the third, we verified whether the output of AANs can embed all data in the AT. As
+a result, AATs learned without significant performance degradation. 

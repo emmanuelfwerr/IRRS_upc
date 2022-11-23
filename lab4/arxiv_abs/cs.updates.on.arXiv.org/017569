@@ -1,0 +1,19 @@
+Gradual dependent types can help with the incremental adoption of dependently typed code by providing
+a principled semantics for imprecise types and proofs, where some parts have been omitted. Current
+theories of gradual dependent types, though, lack a central feature of type theory: propositional
+equality. Lennon-Bertrand et al. show that, when the reflexive proof $\mathit{refl}$ is the only
+closed value of an equality type, a gradual extension of CIC with propositional equality violates
+static observational equivalences. Extensionally-equal functions should be indistinguishable
+at run time, but the combination of equality and type imprecision allows for contexts that distinguish
+extensionally-equal but syntactically-different functions. This work presents a gradually
+typed language that supports propositional equality. We avoid the above issues by devising an equality
+type where $\mathit{refl}$ is not the only closed inhabitant. Instead, each equality proof carries
+a term that is at least as precise as the equated terms, acting as a witness of their plausible equality.
+These witnesses track partial type information as a program runs, raising errors when that information
+shows that two equated terms are undeniably inconsistent. Composition of type information is internalized
+as a construct of the language, and is deferred for function bodies whose evaluation is blocked by
+variables. By deferring, we ensure that extensionally equal functions compose without error,
+thereby preventing contexts from distinguishing them. We describe the challenges of designing
+consistency and precision relations for this system, along with solutions to these challenges.
+Finally, we prove important metatheory: type-safety, conservative embedding of CIC, canonicity,
+and the gradual guarantees of Siek et al. 

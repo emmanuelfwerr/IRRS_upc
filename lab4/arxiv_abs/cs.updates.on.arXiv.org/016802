@@ -1,0 +1,19 @@
+In the discrete $k$-center problem, we are given a metric space $(P,\texttt{dist})$ where $|P|=n$
+and the goal is to select a set $C\subseteq P$ of $k$ centers which minimizes the maximum distance
+of a point in $P$ from its nearest center. For any $\epsilon>0$, Agarwal and Procopiuc [SODA '98,
+Algorithmica '02] designed an $(1+\epsilon)$-approximation algorithm for this problem in $d$-dimensional
+Euclidean space which runs in $O(dn\log k) + \left(\dfrac{k}{\epsilon}\right)^{O\left(k^{1-1/d}\right)}\cdot
+n^{O(1)}$ time. In this paper we show that their algorithm is essentially optimal: if for some $d\geq
+2$ and some computable function $f$, there is an $f(k)\cdot \left(\dfrac{1}{\epsilon}\right)^{o\left(k^{1-1/d}\right)}
+\cdot n^{o\left(k^{1-1/d}\right)}$ time algorithm for $(1+\epsilon)$-approximating the discrete
+$k$-center on $n$ points in $d$-dimensional Euclidean space then the Exponential Time Hypothesis
+(ETH) fails. We obtain our lower bound by designing a gap reduction from a $d$-dimensional constraint
+satisfaction problem (CSP) defined by Marx and Sidiropoulos [SoCG '14] to discrete $d$-dimensional
+$k$-center. As a byproduct of our reduction, we also obtain that the exact algorithm of Agarwal and
+Procopiuc [SODA '98, Algorithmica '02] which runs in $n^{O\left(d\cdot k^{1-1/d}\right)}$ time
+for discrete $k$-center on $n$ points in $d$-dimensional Euclidean space is asymptotically optimal.
+Formally, we show that if for some $d\geq 2$ and some computable function $f$, there is an $f(k)\cdot
+n^{o\left(k^{1-1/d}\right)}$ time exact algorithm for the discrete $k$-center problem on $n$
+points in $d$-dimensional Euclidean space then the Exponential Time Hypothesis (ETH) fails. Previously,
+such a lower bound was only known for $d=2$ and was implicit in the work of Marx [IWPEC '06]. [see paper
+for full abstract] 

@@ -1,0 +1,19 @@
+Computing Nash equilibrium in multi-agent games is a longstanding challenge at the interface of
+game theory and computer science. It is well known that a general normal form game in N players and
+k strategies requires exponential space simply to write down. This Curse of Multi-Agents prompts
+the study of succinct games which can be written down efficiently. A canonical example of a succinct
+game is the graphical game which models players as nodes in a graph interacting with only their neighbors
+in direct analogy with markov random fields. Graphical games have found applications in wireless,
+financial, and social networks. However, computing the nash equilbrium of graphical games has
+proven challenging. Even for polymatrix games, a model where payoffs to an agent can be written as
+the sum of payoffs of interactions with the agent's neighbors, it has been shown that computing an
+epsilon approximate nash equilibrium is PPAD hard for epsilon smaller than a constant. The focus
+of this work is to circumvent this computational hardness by considering average case graph models
+i.e random graphs. We provide a quasipolynomial time approximation scheme (QPTAS) for computing
+an epsilon approximate nash equilibrium of polymatrix games on random graphs with edge density
+greater than poly(k, 1/epsilon, ln(N))$ with high probability. Furthermore, with the same runtime
+we can compute an epsilon-approximate Nash equilibrium that epsilon-approximates the maximum
+social welfare of any nash equilibrium of the game. Our primary technical innovation is an "accelerated
+rounding" of a novel hierarchical convex program for the nash equilibrium problem. Our accelerated
+rounding also yields faster algorithms for Max-2CSP on the same family of random graphs, which may
+be of independent interest. 

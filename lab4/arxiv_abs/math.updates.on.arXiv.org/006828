@@ -1,0 +1,20 @@
+We give the first polynomial time algorithm for \emph{list-decodable covariance estimation}.
+For any $\alpha > 0$, our algorithm takes input a sample $Y \subseteq \mathbb{R}^d$ of size $n\geq
+d^{\mathsf{poly}(1/\alpha)}$ obtained by adversarially corrupting an $(1-\alpha)n$ points
+in an i.i.d. sample $X$ of size $n$ from the Gaussian distribution with unknown mean $\mu_*$ and covariance
+$\Sigma_*$. In $n^{\mathsf{poly}(1/\alpha)}$ time, it outputs a constant-size list of $k = k(\alpha)=
+(1/\alpha)^{\mathsf{poly}(1/\alpha)}$ candidate parameters that, with high probability,
+contains a $(\hat{\mu},\hat{\Sigma})$ such that the total variation distance $TV(\mathcal{N}(\mu_*,\Sigma_*),\mathcal{N}(\hat{\mu},\hat{\Sigma}))<1-O_{\alpha}(1)$.
+This is the statistically strongest notion of distance and implies multiplicative spectral and
+relative Frobenius distance approximation for parameters with dimension independent error.
+Our algorithm works more generally for $(1-\alpha)$-corruptions of any distribution $D$ that
+possesses low-degree sum-of-squares certificates of two natural analytic properties: 1) anti-concentration
+of one-dimensional marginals and 2) hypercontractivity of degree 2 polynomials. Prior to our work,
+the only known results for estimating covariance in the list-decodable setting were for the special
+cases of list-decodable linear regression and subspace recovery due to Karmarkar, Klivans, and
+Kothari (2019), Raghavendra and Yau (2019 and 2020) and Bakshi and Kothari (2020). These results
+need superpolynomial time for obtaining any subconstant error in the underlying dimension. Our
+result implies the first polynomial-time \emph{exact} algorithm for list-decodable linear regression
+and subspace recovery that allows, in particular, to obtain $2^{-\mathsf{poly}(d)}$ error in
+polynomial-time. Our result also implies an improved algorithm for clustering non-spherical
+mixtures. 

@@ -1,0 +1,20 @@
+In model-based medical image analysis, three features of interest are the shape of structures of
+interest, their relative pose, and image intensity profiles representative of some physical property.
+Often, these are modelled separately through statistical models by decomposing the object's features
+into a set of basis functions through principal geodesic analysis or principal component analysis.
+This study presents a statistical modelling method for automatic learning of shape, pose and intensity
+features in medical images which we call the Dynamic multi feature-class Gaussian process models
+(DMFC-GPM). A DMFC-GPM is a Gaussian process (GP)-based model with a shared latent space that encodes
+linear and non-linear variation. Our method is defined in a continuous domain with a principled
+way to represent shape, pose and intensity feature classes in a linear space, based on deformation
+fields. A deformation field-based metric is adapted in the method for modelling shape and intensity
+feature variation as well as for comparing rigid transformations (pose). Moreover, DMFC-GPMs
+inherit properties intrinsic to GPs including marginalisation and regression. Furthermore,
+they allow for adding additional pose feature variability on top of those obtained from the image
+acquisition process; what we term as permutation modelling. For image analysis tasks using DMFC-GPMs,
+we adapt Metropolis-Hastings algorithms making the prediction of features fully probabilistic.
+We validate the method using controlled synthetic data and we perform experiments on bone structures
+from CT images of the shoulder to illustrate the efficacy of the model for pose and shape feature prediction.
+The model performance results suggest that this new modelling paradigm is robust, accurate, accessible,
+and has potential applications including the management of musculoskeletal disorders and clinical
+decision making 

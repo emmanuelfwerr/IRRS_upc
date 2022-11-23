@@ -1,0 +1,19 @@
+Recent progress in Medical Artificial Intelligence (AI) has delivered systems that can reach clinical
+expert level performance. However, such systems tend to demonstrate sub-optimal "out-of-distribution"
+performance when evaluated in clinical settings different from the training environment. A common
+mitigation strategy is to develop separate systems for each clinical setting using site-specific
+data [1]. However, this quickly becomes impractical as medical data is time-consuming to acquire
+and expensive to annotate [2]. Thus, the problem of "data-efficient generalization" presents
+an ongoing difficulty for Medical AI development. Although progress in representation learning
+shows promise, their benefits have not been rigorously studied, specifically for out-of-distribution
+settings. To meet these challenges, we present REMEDIS, a unified representation learning strategy
+to improve robustness and data-efficiency of medical imaging AI. REMEDIS uses a generic combination
+of large-scale supervised transfer learning with self-supervised learning and requires little
+task-specific customization. We study a diverse range of medical imaging tasks and simulate three
+realistic application scenarios using retrospective data. REMEDIS exhibits significantly improved
+in-distribution performance with up to 11.5% relative improvement in diagnostic accuracy over
+a strong supervised baseline. More importantly, our strategy leads to strong data-efficient generalization
+of medical imaging AI, matching strong supervised baselines using between 1% to 33% of retraining
+data across tasks. These results suggest that REMEDIS can significantly accelerate the life-cycle
+of medical imaging AI development thereby presenting an important step forward for medical imaging
+AI to deliver broad impact. 

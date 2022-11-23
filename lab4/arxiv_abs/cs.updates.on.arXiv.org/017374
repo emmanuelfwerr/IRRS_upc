@@ -1,0 +1,19 @@
+We examine the prospect of learning ice sheet damage models from observational data. Our approach,
+implemented in CRIKit (the Constitutive Relation Inference Toolkit), is to model the material
+time derivative of damage as a frame-invariant neural network, and to optimize the parameters of
+the model from simulations of the flow of an ice dome. Using the model of Albrecht and Levermann as
+the ground truth to generate synthetic observations, we measure the difference of optimized neural
+network models from that model to try to understand how well this process generates models that can
+then transfer to other ice sheet simulations. The use of so-called "deep-learning" models for constitutive
+equations, equations of state, sub-grid-scale processes, and other pointwise relations that
+appear in systems of PDEs has been successful in other disciplines, yet our inference setting has
+some confounding factors. The first is the type of observations that are available: we compare the
+quality of the inferred models when the loss of the numerical simulations includes observation
+misfits throughout the ice, which is unobtainable in real settings, to losses that include only
+combinations of surface and borehole observations. The second confounding factor is the evolution
+of damage in an ice sheet, which is advection dominated. The non-local effect of perturbations in
+a damage models results in loss functions that have both many local minima and many parameter configurations
+for which the system is unsolvable. Our experience suggests that basic neural networks have several
+deficiencies that affect the quality of the optimized models. We suggest several approaches to
+incorporating additional inductive biases into neural networks which may lead to better performance
+in future work. 

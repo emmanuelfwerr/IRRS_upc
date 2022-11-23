@@ -1,0 +1,19 @@
+Recent experimental studies have shown that the relaxation time ($T_1$) and the dephasing time
+($T_2$) of superconducting qubits fluctuate considerably over time. To appropriately consider
+this time-varying nature of the $T_1$ and $T_2$ parameters, a new class of quantum channels, known
+as Time-Varying Quantum Channels (TVQCs), has been proposed. In previous works, realizations
+of multi-qubit TVQCs have been assumed to be equal for all the qubits of an error correction block,
+implying that the random variables that describe the fluctuations of $T_1$ and $T_2$ are block-to-block
+uncorrelated, but qubit-wise perfectly correlated for the same block. Physically, the fluctuations
+of these decoherence parameters are explained by the incoherent coupling of the qubits with unstable
+near-resonant two-level-systems (TLS), which indicates that such variations may be local to each
+of the qubits of the system. In this article, we perform a correlation analysis of the fluctuations
+of the relaxation times of multi-qubit quantum processors ibmq\_quito, ibmq\_belem, ibmq\_lima,
+ibmq\_santiago and ibmq\_bogota. Our results show that it is reasonable to assume that the fluctuations
+of the relaxation and dephasing times of superconducting qubits are local to each of the qubits of
+the system. Based on these results, we discuss the multi-qubit TVQCs when the fluctuations of the
+decoherence parameters for an error correction block are qubit-wise uncorrelated (as well as from
+block-to-block), a scenario we have named the Fast Time-Varying Quantum Channel (FTVQC). Furthermore,
+we lower bound the quantum capacity of general FTVQCs based on a quantity we refer to as the ergodic
+quantum capacity. Finally, we use numerical simulations to study the performance of quantum error
+correction codes (QECC) when they operate over FTVQCs. 

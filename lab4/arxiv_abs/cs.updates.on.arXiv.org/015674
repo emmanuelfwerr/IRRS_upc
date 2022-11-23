@@ -1,0 +1,20 @@
+One principal impediment in the successful deployment of AI-based Computer-Aided Diagnosis (CAD)
+systems in clinical workflows is their lack of transparent decision making. Although commonly
+used eXplainable AI methods provide some insight into opaque algorithms, such explanations are
+usually convoluted and not readily comprehensible except by highly trained experts. The explanation
+of decisions regarding the malignancy of skin lesions from dermoscopic images demands particular
+clarity, as the underlying medical problem definition is itself ambiguous. This work presents
+ExAID (Explainable AI for Dermatology), a novel framework for biomedical image analysis, providing
+multi-modal concept-based explanations consisting of easy-to-understand textual explanations
+supplemented by visual maps justifying the predictions. ExAID relies on Concept Activation Vectors
+to map human concepts to those learnt by arbitrary Deep Learning models in latent space, and Concept
+Localization Maps to highlight concepts in the input space. This identification of relevant concepts
+is then used to construct fine-grained textual explanations supplemented by concept-wise location
+information to provide comprehensive and coherent multi-modal explanations. All information
+is comprehensively presented in a diagnostic interface for use in clinical routines. An educational
+mode provides dataset-level explanation statistics and tools for data and model exploration to
+aid medical research and education. Through rigorous quantitative and qualitative evaluation
+of ExAID, we show the utility of multi-modal explanations for CAD-assisted scenarios even in case
+of wrong predictions. We believe that ExAID will provide dermatologists an effective screening
+tool that they both understand and trust. Moreover, it will be the basis for similar applications
+in other biomedical imaging fields. 

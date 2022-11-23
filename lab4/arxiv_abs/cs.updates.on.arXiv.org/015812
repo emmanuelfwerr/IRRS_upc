@@ -1,0 +1,20 @@
+As technology process node scales down, on-chip SRAM caches lose their efficiency because of their
+low scalability, high leakage power, and increasing rate of soft errors. Among emerging memory
+technologies, Spin-Transfer Torque Magnetic RAM (STT-MRAM) is known as the most promising replacement
+for SRAM-based cache memories. The main advantages of STT-MRAM are its non-volatility, near-zero
+leakage power, higher density, soft-error immunity, and higher scalability. Despite these advantages,
+the high error rate in STT-MRAM cells due to retention failure, write failure, and read disturbance
+threatens the reliability of cache memories built upon STT-MRAM technology. The error rate is significantly
+increased in higher temperatures, which further affects the reliability of STT-MRAM-based cache
+memories. The major source of heat generation and temperature increase in STT-MRAM cache memories
+is write operations, which are managed by cache replacement policy. In this paper, we first analyze
+the cache behavior in the conventional LRU replacement policy and demonstrate that the majority
+of consecutive write operations (more than 66%) are committed to adjacent cache blocks. These adjacent
+write operations cause accumulated heat and increased temperature, which significantly increases
+the cache error rate. To eliminate heat accumulation and the adjacency of consecutive writes, we
+propose a cache replacement policy, named Thermal-Aware Least-Recently Written (TA-LRW), to
+smoothly distribute the generated heat by conducting consecutive write operations in distant
+cache blocks. TA-LRW guarantees the distance of at least three blocks for each two consecutive write
+operations in an 8-way associative cache. This distant write scheme reduces the temperature-induced
+error rate by 94.8%, on average, compared with the conventional LRU policy, which results in 6.9x
+reduction in cache error rate. 

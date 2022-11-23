@@ -1,0 +1,19 @@
+Algorithms based on deep network models are being used for many pattern recognition and decision-making
+tasks in robotics and AI. Training these models requires a large labeled dataset and considerable
+computational resources, which are not readily available in many domains. Also, it is difficult
+to explore the internal representations and reasoning mechanisms of these models. As a step towards
+addressing the underlying knowledge representation, reasoning, and learning challenges, the
+architecture described in this paper draws inspiration from research in cognitive systems. As
+a motivating example, we consider an assistive robot trying to reduce clutter in any given scene
+by reasoning about the occlusion of objects and stability of object configurations in an image of
+the scene. In this context, our architecture incrementally learns and revises a grounding of the
+spatial relations between objects and uses this grounding to extract spatial information from
+input images. Non-monotonic logical reasoning with this information and incomplete commonsense
+domain knowledge is used to make decisions about stability and occlusion. For images that cannot
+be processed by such reasoning, regions relevant to the tasks at hand are automatically identified
+and used to train deep network models to make the desired decisions. Image regions used to train the
+deep networks are also used to incrementally acquire previously unknown state constraints that
+are merged with the existing knowledge for subsequent reasoning. Experimental evaluation performed
+using simulated and real-world images indicates that in comparison with baselines based just on
+deep networks, our architecture improves reliability of decision making and reduces the effort
+involved in training data-driven deep network models. 

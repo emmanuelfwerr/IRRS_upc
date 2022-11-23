@@ -1,0 +1,20 @@
+In this work we present a systematic empirical study focused on the suitability of the state-of-the-art
+multilingual encoders for cross-lingual document and sentence retrieval tasks across a number
+of diverse language pairs. We first treat these models as multilingual text encoders and benchmark
+their performance in unsupervised ad-hoc sentence- and document-level CLIR. In contrast to supervised
+language understanding, our results indicate that for unsupervised document-level CLIR -- a setup
+with no relevance judgments for IR-specific fine-tuning -- pretrained multilingual encoders
+on average fail to significantly outperform earlier models based on CLWEs. For sentence-level
+retrieval, we do obtain state-of-the-art performance: the peak scores, however, are met by multilingual
+encoders that have been further specialized, in a supervised fashion, for sentence understanding
+tasks, rather than using their vanilla 'off-the-shelf' variants. Following these results, we
+introduce localized relevance matching for document-level CLIR, where we independently score
+a query against document sections. In the second part, we evaluate multilingual encoders fine-tuned
+in a supervised fashion (i.e., we learn to rank) on English relevance data in a series of zero-shot
+language and domain transfer CLIR experiments. Our results show that supervised re-ranking rarely
+improves the performance of multilingual transformers as unsupervised base rankers. Finally,
+only with in-domain contrastive fine-tuning (i.e., same domain, only language transfer), we manage
+to improve the ranking quality. We uncover substantial empirical differences between cross-lingual
+retrieval results and results of (zero-shot) cross-lingual transfer for monolingual retrieval
+in target languages, which point to "monolingual overfitting" of retrieval models trained on monolingual
+data. 

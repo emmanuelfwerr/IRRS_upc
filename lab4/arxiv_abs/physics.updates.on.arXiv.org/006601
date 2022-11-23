@@ -1,0 +1,20 @@
+There is a growing interest in measuring the cell wall mechanical property at different locations
+in single walled cells. We present an inference scheme that maps relative surface elastic modulus
+distributions along the cell wall based on tracking the location of material marker points along
+the turgid and relaxed cell wall outline. A primary scheme provides a step-function inference of
+surface elastic moduli by computing the tensions and elastic stretches between material marker
+points. We perform stability analysis for the primary scheme against perturbations on the marker-point
+locations, which may occur due to image acquisition and processing from experiments. The perturbation
+analysis shows that the primary scheme is more stable to noise when the spacing between the marker
+points is coarser, and has been confirmed by the numerical experiments where we apply the primary
+scheme to synthetic cell outlines from simulations of hyper-elastic membrane deformation with
+random noise on the marker-point locations. To improve the spatial resolution of elastic modulus
+distribution of the primary scheme with noise, we propose two optimization schemes that convert
+the step-function inferences of elastic moduli into smooth-curve inferences. The first scheme
+infers a canonical elastic modulus distribution based on marker-point locations from multiple
+cell samples of the same cell type. The second scheme is a simplified cost-effective version that
+infers the elastic moduli based on marker-point locations from a single cell. The numerical experiments
+show that the first scheme significantly improves the inference precision for the underlying canonical
+elastic modulus distributions and can even capture some degree of nonlinearity when the underlying
+elastic modulus gradients are nonlinear. The second cost-effective scheme can predict the trend
+of the elastic modulus gradients consistently. 

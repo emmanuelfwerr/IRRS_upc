@@ -1,0 +1,18 @@
+Success of deep neural networks in diverse tasks across domains of computer vision, speech recognition
+and natural language processing, has necessitated understanding the dynamics of training process
+and also working of trained models. Two independent contributions of this paper are 1) Novel activation
+function for faster training convergence 2) Systematic pruning of filters of models trained irrespective
+of activation function. We analyze the topological transformation of the space of training samples
+as it gets transformed by each successive layer during training, by changing the activation function.
+The impact of changing activation function on the convergence during training is reported for the
+task of binary classification. A novel activation function aimed at faster convergence for classification
+tasks is proposed. Here, Betti numbers are used to quantify topological complexity of data. Results
+of experiments on popular synthetic binary classification datasets with large Betti numbers(>150)
+using MLPs are reported. Results show that the proposed activation function results in faster convergence
+requiring fewer epochs by a factor of 1.5 to 2, since Betti numbers reduce faster across layers with
+the proposed activation function. The proposed methodology was verified on benchmark image datasets:
+fashion MNIST, CIFAR-10 and cat-vs-dog images, using CNNs. Based on empirical results, we propose
+a novel method for pruning a trained model. The trained model was pruned by eliminating filters that
+transform data to a topological space with large Betti numbers. All filters with Betti numbers greater
+than 300 were removed from each layer without significant reduction in accuracy. This resulted
+in faster prediction time and reduced memory size of the model. 

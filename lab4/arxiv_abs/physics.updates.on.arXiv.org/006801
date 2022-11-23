@@ -1,0 +1,19 @@
+In this paper, we overview, evaluate, and demonstrate the sparse processing particle image velocimetry
+(SPPIV) as a real-time flow field estimation method using the particle image velocimetry (PIV),
+whereas SPPIV was previously proposed with its feasibility study and its real-time demonstration
+is conducted for the first time in this study. In the wind tunnel test, the PIV measurement and real-time
+measurement using SPPIV were conducted for the flow velocity field around the NACA0015 airfoil
+model. The off-line analysis results of the test show that the flow velocity field can be estimated
+from a small number of processing points by applying SPPIV, and also illustrates the following characteristics
+of SPPIV. The estimation accuracy improves as the number of processing points increases, whereas
+the processing time per step increases in proportion to the number of processing points. Therefore,
+it is necessary to set an optimal number of processing points. In addition, the application of the
+Kalman filter significantly improves the estimation accuracy with a small number of processing
+points while suppressing the processing time. When the flow velocity fields with different angles
+of attack are used as the training data with that of test data, the estimation using SPPIV is found
+to be reasonable if the difference in angle of attack between the training and test data is equal to
+or less than 2 deg and the flow phenomena of the training data are similar to that of the test data. For
+this reason, training data should be prepared at least every 4 deg. Finally, the demonstration of
+SPPIV as a real-time flow observation was conducted for the first time. In this demonstration, the
+real-time measurement is found to be possible at a sampling rate of 2000 Hz at 20 or less processing
+points in the top 10 modes estimation as expected by the off-line analyses. 

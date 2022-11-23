@@ -1,0 +1,19 @@
+Aeroengine performance is determined by temperature and pressure profiles along various axial
+stations within an engine. Given limited sensor measurements both along and between axial stations,
+we require a statistically principled approach to inferring these profiles. In this paper we detail
+a Bayesian methodology for interpolating the spatial temperature or pressure profile at axial
+stations within an aeroengine. The profile at any given axial station is represented as a spatial
+Gaussian random field on an annulus, with circumferential variations modelled using a Fourier
+basis and radial variations modelled with a squared exponential kernel. This Gaussian random field
+is extended to ingest data from multiple axial measurement planes, with the aim of transferring
+information across the planes. To facilitate this type of transfer learning, a novel planar covariance
+kernel is proposed, with hyperparameters that characterise the correlation between any two measurement
+planes. In the scenario where precise frequencies comprising the temperature field are unknown,
+we utilise a sparsity-promoting prior on the frequencies to encourage sparse representations.
+This easily extends to cases with multiple engine planes whilst accommodating frequency variations
+between the planes. The main quantity of interest, the spatial area average is readily obtained
+in closed form. We term this the Bayesian area average and demonstrate how this metric offers far
+more precise averages than a sector area average -- a widely used area averaging approach. Furthermore,
+the Bayesian area average naturally decomposes the posterior uncertainty into terms characterising
+insufficient sampling and sensor measurement error respectively. This too provides a significant
+improvement over prior standard deviation based uncertainty breakdowns. 

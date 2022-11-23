@@ -1,0 +1,18 @@
+We use the panchromatic SED-fitting code Prospector to measure the galaxy logM$^*$-logSFR relationship
+(the `star-forming sequence') across $0.2 < z < 3.0$ using the COSMOS-2015 and 3D-HST UV-IR photometric
+catalogs. We demonstrate that the chosen method of identifying star-forming galaxies introduces
+a systematic uncertainty in the inferred normalization and width of the star-forming sequence,
+peaking for massive galaxies at $\sim 0.5$ dex and $\sim0.2$ dex respectively. To avoid this systematic,
+we instead parameterize the density of the full galaxy population in the logM$^*$-logSFR-redshift
+plane using a flexible neural network known as a normalizing flow. The resulting star-forming sequence
+has a low-mass slope near unity and a much flatter slope at higher masses, with a normalization $0.2-0.5$
+dex lower than typical inferences in the literature. We show this difference is due to the sophistication
+of the Prospector stellar populations modeling: the nonparametric star formation histories naturally
+produce higher masses while the combination of individualized metallicity, dust, and star formation
+history constraints produce lower star formation rates than typical UV+IR formulae. We introduce
+a simple formalism to understand the difference between SFRs inferred from spectral energy distribution
+fitting and standard template-based approaches such as UV+IR SFRs. Finally, we demonstrate the
+inferred star-forming sequence is consistent with predictions from theoretical models of galaxy
+formation, resolving a long-standing $\sim0.2-0.5$ dex offset with observations at $0.5<z<3$.
+The fully trained normalizing flow including a nonparametric description of $\rho(\log{\rm M}^*,\log{\rm
+SFR},z)$ is made available online to facilitate straightforward comparisons with future work.

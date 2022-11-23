@@ -1,0 +1,19 @@
+Trace reconstruction considers the task of recovering an unknown string $x \in \{0,1\}^n$ given
+a number of independent "traces", i.e., subsequences of $x$ obtained by randomly and independently
+deleting every symbol of $x$ with some probability $p$. The information-theoretic limit of the
+number of traces needed to recover a string of length $n$ is still unknown. This limit is essentially
+the same as the number of traces needed to determine, given strings $x$ and $y$ and traces of one of
+them, which string is the source. The most-studied class of algorithms for the worst-case version
+of the problem are "mean-based" algorithms. These are a restricted class of distinguishers that
+only use the mean value of each coordinate on the given samples. In this work we study limitations
+of mean-based algorithms on strings at small Hamming or edit distance. We show that, on the one hand,
+distinguishing strings that are nearby in Hamming distance is "easy" for such distinguishers.
+On the other hand, we show that distinguishing strings that are nearby in edit distance is "hard"
+for mean-based algorithms. Along the way, we also describe a connection to the famous Prouhet-Tarry-Escott
+(PTE) problem, which shows a barrier to finding explicit hard-to-distinguish strings: namely
+such strings would imply explicit short solutions to the PTE problem, a well-known difficult problem
+in number theory. Furthermore, we show that the converse is also true, thus, finding explicit solutions
+to the PTE problem is equivalent to the problem of finding explicit strings that are hard-to-distinguish
+by mean-based algorithms. Our techniques rely on complex analysis arguments that involve careful
+trigonometric estimates, and algebraic techniques that include applications of Descartes' rule
+of signs for polynomials over the reals. 

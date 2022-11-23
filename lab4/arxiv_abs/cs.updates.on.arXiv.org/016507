@@ -1,0 +1,18 @@
+The many-light formulation provides a general framework for rendering various illumination effects
+using hundreds of thousands of virtual point lights (VPLs). To efficiently gather the contributions
+of the VPLs, lightcuts and its extensions cluster the VPLs, which implicitly approximates the lighting
+matrix with some representative blocks similar to vector quantization. In this paper, we propose
+a new approximation method based on the previous lightcut method and a low-rank matrix factorization
+model. As many researchers pointed out, the lighting matrix is low rank, which implies that it can
+be completed from a small set of known entries. We first generate a conservative global light cut
+with bounded error and partition the lighting matrix into slices by the coordinate and normal of
+the surface points using the method of lightslice. Then we perform two passes of randomly sampling
+on each matrix slice. In the first pass, uniformly distributed random entries are sampled to coarsen
+the global light cut, further clustering the similar light for the spatially localized surface
+points of the slices. In the second pass, more entries are sampled according to the possibility distribution
+function estimated from the first sampling result. Then each matrix slice is factorized into a product
+of two smaller low-rank matrices constrained by the sampled entries, which delivers a completion
+of the lighting matrix. The factorized form provides an additional speedup for adding up the matrix
+columns which is more GPU friendly. Compared with the previous lightcut based methods, we approximate
+the lighting matrix with some signal specialized bases via factorization. The experimental results
+shows that we can achieve significant acceleration than the state of the art many-light methods.

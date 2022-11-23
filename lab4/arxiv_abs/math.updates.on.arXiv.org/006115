@@ -1,0 +1,19 @@
+Entropy-Stable (ES) schemes, specifically those built from [Tadmor \textit{Math. Comput.} 49
+(1987) 91], have been gaining interest over the past decade, especially in the context of under-resolved
+simulations of compressible turbulent flows using high-order methods. These schemes are attractive
+because they can provide stability in a global and nonlinear sense (consistency with thermodynamics).
+However, fully realizing the potential of ES schemes requires a better grasp of their local behavior.
+Entropy-stability itself does not imply good local behavior [Gouasmi \textit{et al.} \textit{J.
+Sci. Comp.} 78 (2019) 971, Gouasmi \textit{et al.} \textit{Comput. Methd. Appl. M.} 363 (2020)
+112912]. In this spirit, we studied ES schemes in problems where \textit{global stability is not
+the core issue}. In the present work, we consider the accuracy degradation issues typically encountered
+by upwind-type schemes in the low-Mach-number regime [Turkel \textit{Annu. Rev. Fluid Mech.}
+31 (1999) 285] and their treatment using \textit{Flux-Preconditioning} [Turkel \textit{J. Comput.
+Phys.} 72 (1987) 277, Miczek \textit{et al.} \textit{A \& A} 576 (2015) A50]. ES schemes suffer from
+the same issues and Flux-Preconditioning can improve their behavior without interfering with
+entropy-stability. This is first demonstrated analytically: using similarity and congruence
+transforms we were able to establish conditions for a preconditioned flux to be ES, and introduce
+the ES variants of the Miczek's and Turkel's preconditioned fluxes. This is then demonstrated numerically
+through first-order simulations of two simple test problems representative of the incompressible
+and acoustic limits, the Gresho Vortex and a right-moving acoustic wave. The results are overall
+consistent with previous studies [...] 

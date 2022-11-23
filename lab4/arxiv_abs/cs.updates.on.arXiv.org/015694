@@ -1,0 +1,19 @@
+Advances in deep learning have enabled a wide range of promising applications. However, these systems
+are vulnerable to Adversarial Machine Learning (AML) attacks; adversarially crafted perturbations
+to their inputs could cause them to misclassify. Several state-of-the-art adversarial attacks
+have demonstrated that they can reliably fool classifiers making these attacks a significant threat.
+Adversarial attack generation algorithms focus primarily on creating successful examples while
+controlling the noise magnitude and distribution to make detection more difficult. The underlying
+assumption of these attacks is that the adversarial noise is generated offline, making their execution
+time a secondary consideration. However, recently, just-in-time adversarial attacks where an
+attacker opportunistically generates adversarial examples on the fly have been shown to be possible.
+This paper introduces a new problem: how do we generate adversarial noise under real-time constraints
+to support such real-time adversarial attacks? Understanding this problem improves our understanding
+of the threat these attacks pose to real-time systems and provides security evaluation benchmarks
+for future defenses. Therefore, we first conduct a run-time analysis of adversarial generation
+algorithms. Universal attacks produce a general attack offline, with no online overhead, and can
+be applied to any input; however, their success rate is limited because of their generality. In contrast,
+online algorithms, which work on a specific input, are computationally expensive, making them
+inappropriate for operation under time constraints. Thus, we propose ROOM, a novel Real-time Online-Offline
+attack construction Model where an offline component serves to warm up the online algorithm, making
+it possible to generate highly successful attacks under time constraints. 

@@ -1,0 +1,19 @@
+Multiple objective assessment of image-quality-based studies have reported that several deep-learning-based
+denoising methods show limited performance on signal-detection tasks. Our goal was to investigate
+the reasons for this limited performance. To achieve this goal, we conducted a task-based characterization
+of a DL-based denoising approach for individual signal properties. We conducted this study in the
+context of evaluating a DL-based approach for denoising SPECT images. The training data consisted
+of signals of different sizes and shapes within a clustered-lumpy background, imaged with a 2D parallel-hole-collimator
+SPECT system. The projections were generated at normal and 20% low count level, both of which were
+reconstructed using an OSEM algorithm. A CNN-based denoiser was trained to process the low-count
+images. The performance of this CNN was characterized for five different signal sizes and four different
+SBR by designing each evaluation as an SKE/BKS signal-detection task. Performance on this task
+was evaluated using an anthropomorphic CHO. As in previous studies, we observed that the DL-based
+denoising method did not improve performance on signal-detection tasks. Evaluation using the
+idea of observer-study-based characterization demonstrated that the DL-based denoising approach
+did not improve performance on the signal-detection task for any of the signal types. Overall, these
+results provide new insights on the performance of the DL-based denoising approach as a function
+of signal size and contrast. More generally, the observer study-based characterization provides
+a mechanism to evaluate the sensitivity of the method to specific object properties and may be explored
+as analogous to characterizations such as modulation transfer function for linear systems. Finally,
+this work underscores the need for objective task-based evaluation of DL-based denoising approaches.

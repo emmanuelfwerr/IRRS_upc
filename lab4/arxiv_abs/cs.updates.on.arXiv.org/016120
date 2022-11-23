@@ -1,0 +1,18 @@
+The problem of automated car damage assessment presents a major challenge in the auto repair and
+damage assessment industry. The domain has several application areas ranging from car assessment
+companies such as car rentals and body shops to accidental damage assessment for car insurance companies.
+In vehicle assessment, the damage can take any form including scratches, minor and major dents to
+missing parts. More often, the assessment area has a significant level of noise such as dirt, grease,
+oil or rush that makes an accurate identification challenging. Moreover, the identification of
+a particular part is the first step in the repair industry to have an accurate labour and part assessment
+where the presence of different car models, shapes and sizes makes the task even more challenging
+for a machine-learning model to perform well. To address these challenges, this research explores
+and applies various instance segmentation methodologies to evaluate the best performing models.
+The scope of this work focusses on two genres of real-time instance segmentation models due to their
+industrial significance, namely SipMask and Yolact. These methodologies are evaluated against
+a previously reported car parts dataset (DSMLR) and an internally curated dataset extracted from
+local car repair workshops. The Yolact-based part localization and segmentation method performed
+well when compared to other real-time instance mechanisms with a mAP of 66.5. For the workshop repair
+dataset, SipMask++ reported better accuracies for object detection with a mAP of 57.0 with outcomes
+for AP_IoU=.50and AP_IoU=.75 reporting 72.0 and 67.0 respectively while Yolact was found to be
+a better performer for AP_s with 44.0 and 2.6 for object detection and segmentation categories respectively.

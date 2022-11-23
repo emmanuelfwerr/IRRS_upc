@@ -1,0 +1,20 @@
+Supervised deep learning-based methods yield accurate results for medical image segmentation.
+However, they require large labeled datasets for this, and obtaining them is a laborious task that
+requires clinical expertise. Semi/self-supervised learning-based approaches address this
+limitation by exploiting unlabeled data along with limited annotated data. Recent self-supervised
+learning methods use contrastive loss to learn good global level representations from unlabeled
+images and achieve high performance in classification tasks on popular natural image datasets
+like ImageNet. In pixel-level prediction tasks such as segmentation, it is crucial to also learn
+good local level representations along with global representations to achieve better accuracy.
+However, the impact of the existing local contrastive loss-based methods remains limited for learning
+good local representations because similar and dissimilar local regions are defined based on random
+augmentations and spatial proximity; not based on the semantic label of local regions due to lack
+of large-scale expert annotations in the semi/self-supervised setting. In this paper, we propose
+a local contrastive loss to learn good pixel level features useful for segmentation by exploiting
+semantic label information obtained from pseudo-labels of unlabeled images alongside limited
+annotated images. In particular, we define the proposed loss to encourage similar representations
+for the pixels that have the same pseudo-label/ label while being dissimilar to the representation
+of pixels with different pseudo-label/label in the dataset. We perform pseudo-label based self-training
+and train the network by jointly optimizing the proposed contrastive loss on both labeled and unlabeled
+sets and segmentation loss on only the limited labeled set. We evaluated on three public cardiac
+and prostate datasets, and obtain high segmentation performance. 

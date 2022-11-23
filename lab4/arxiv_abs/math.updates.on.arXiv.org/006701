@@ -1,0 +1,20 @@
+Deep reinforcement learning (DRL) has become a dominant deep-learning paradigm for various tasks
+in which complex policies are learned within reactive systems. In parallel, there has recently
+been significant research on verifying deep neural networks. However, to date, there has been little
+work demonstrating the use of modern verification tools on real, DRL-controlled systems. In this
+case-study paper, we attempt to begin bridging this gap, and focus on the important task of mapless
+robotic navigation -- a classic robotics problem, in which a robot, usually controlled by a DRL agent,
+needs to efficiently and safely navigate through an unknown arena towards a desired target. We demonstrate
+how modern verification engines can be used for effective model selection, i.e., the process of
+selecting the best available policy for the robot in question from a pool of candidate policies.
+Specifically, we use verification to detect and rule out policies that may demonstrate suboptimal
+behavior, such as collisions and infinite loops. We also apply verification to identify models
+with overly conservative behavior, thus allowing users to choose superior policies that are better
+at finding an optimal, shorter path to a target. To validate our work, we conducted extensive experiments
+on an actual robot, and confirmed that the suboptimal policies detected by our method were indeed
+flawed. We also compared our verification-driven approach to state-of-the-art gradient attacks,
+and our results demonstrate that gradient-based methods are inadequate in this setting. Our work
+is the first to demonstrate the use of DNN verification backends for recognizing suboptimal DRL
+policies in real-world robots, and for filtering out unwanted policies. We believe that the methods
+presented in this work can be applied to a large range of application domains that incorporate deep-learning-based
+agents. 

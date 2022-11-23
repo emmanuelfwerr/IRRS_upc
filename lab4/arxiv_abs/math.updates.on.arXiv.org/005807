@@ -1,0 +1,19 @@
+We consider a novel graph-structured change point problem. We observe a random vector with piecewise
+constant mean and whose independent, sub-Gaussian coordinates correspond to the $n$ nodes of a
+fixed graph. We are interested in recovering the partition of the nodes associated to the constancy
+regions of the mean vector. Although graph-valued signals of this type have been previously studied
+in the literature for the different tasks of testing for the presence of an anomalous cluster and
+of estimating the mean vector, no localisation results are known outside the classical case of chain
+graphs. When the partition $\mathcal{S}$ consists of only two elements, we characterise the difficulty
+of the localisation problem in terms of: the maximal noise variance $\sigma^2$, the size $\Delta$
+of the smaller element of the partition, the magnitude $\kappa$ of the difference in the signal values
+and the sum of the effective resistance edge weights $|\partial_r(\mathcal{S})|$ of the corresponding
+cut. We demonstrate an information theoretical lower bound implying that, in the low signal-to-noise
+ratio regime $\kappa^2 \Delta \sigma^{-2} |\partial_r(\mathcal{S})|^{-1} \lesssim 1$, no consistent
+estimator of the true partition exists. On the other hand, when $\kappa^2 \Delta \sigma^{-2} |\partial_r(\mathcal{S})|^{-1}
+\gtrsim \zeta_n \log\{r(|E|)\}$, with $r(|E|)$ being the sum of effective resistance weighted
+edges and $\zeta_n$ being any diverging sequence in $n$, we show that a polynomial-time, approximate
+$\ell_0$-penalised least squared estimator delivers a localisation error of order $ \kappa^{-2}
+\sigma^2 |\partial_r(\mathcal{S})| \log\{r(|E|)\}$. Aside from the $\log\{r(|E|)\}$ term,
+this rate is minimax optimal. Finally, we provide upper bounds on the localisation error for more
+general partitions of unknown sizes. 

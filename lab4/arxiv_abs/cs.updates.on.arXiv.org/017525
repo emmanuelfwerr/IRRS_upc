@@ -1,0 +1,20 @@
+For patients suffering from brain tumor, prognosis estimation and treatment decisions are made
+by a multidisciplinary team based on a set of preoperative MR scans. Currently, the lack of standardized
+and automatic methods for tumor detection and generation of clinical reports represents a major
+hurdle. In this study, we investigate glioblastomas, lower grade gliomas, meningiomas, and metastases,
+through four cohorts of up to 4000 patients. Tumor segmentation models were trained using the AGU-Net
+architecture with different preprocessing steps and protocols. Segmentation performances were
+assessed in-depth using a wide-range of voxel and patient-wise metrics covering volume, distance,
+and probabilistic aspects. Finally, two software solutions have been developed, enabling an easy
+use of the trained models and standardized generation of clinical reports: Raidionics and Raidionics-Slicer.
+Segmentation performances were quite homogeneous across the four different brain tumor types,
+with an average true positive Dice ranging between 80% and 90%, patient-wise recall between 88%
+and 98%, and patient-wise precision around 95%. With our Raidionics software, running on a desktop
+computer with CPU support, tumor segmentation can be performed in 16 to 54 seconds depending on the
+dimensions of the MRI volume. For the generation of a standardized clinical report, including the
+tumor segmentation and features computation, 5 to 15 minutes are necessary. All trained models
+have been made open-access together with the source code for both software solutions and validation
+metrics computation. In the future, an automatic classification of the brain tumor type would be
+necessary to replace manual user input. Finally, the inclusion of post-operative segmentation
+in both software solutions will be key for generating complete post-operative standardized clinical
+reports. 

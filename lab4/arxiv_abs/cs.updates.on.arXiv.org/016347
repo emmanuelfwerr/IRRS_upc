@@ -1,0 +1,19 @@
+Background and Objective: The contrast of cryo-EM images vary from one to another, primarily due
+to the uneven thickness of ice layers. The variation of contrast can affect the quality of 2-D class
+averaging, 3-D ab-initio modeling, and 3-D heterogeneity analysis. Contrast estimation is currently
+performed during 3-D iterative refinement. As a result, the estimates are not available for class
+averaging and ab-initio modeling. However, these methods require good initial estimates of 3-D
+volumes and 3-D rotations of molecules. This paper aims to solve the contrast estimation problem
+in the ab-initio stage, without estimating the 3-D volume. Methods: The key observation underlying
+our analysis is that the 2-D covariance matrix of the raw images is related to the covariance of the
+underlying clean images, the noise variance, and the contrast variability between images. We show
+that the contrast variability can be derived from the 2-D covariance matrix and use the existing
+Covariance Wiener Filtering (CWF) framework to estimate it. We also demonstrate a modification
+of CWF to estimate the contrast of individual images. Results: Our method improves the contrast
+estimation by a large margin, compared to the previous CWF method. Its estimation accuracy is often
+comparable to that of an oracle that knows the ground truth covariance of the clean images. The more
+accurate contrast estimation also improves the quality of image denoising as demonstrated in both
+synthetic and experimental datasets. Conclusions: This paper proposes an effective method for
+contrast estimation directly from noisy images without using any 3-D volume information. It enables
+contrast correction in the earlier stage of single particle analysis, and may improve the accuracy
+of downstream processing. 

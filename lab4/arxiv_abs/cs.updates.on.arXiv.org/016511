@@ -1,0 +1,18 @@
+Organ motion poses an unresolved challenge in image-guided interventions. In the pursuit of solving
+this problem, the research field of time-resolved volumetric magnetic resonance imaging (4D MRI)
+has evolved. However, current techniques are unsuitable for most interventional settings because
+they lack sufficient temporal and/or spatial resolution or have long acquisition times. In this
+work, we propose a novel approach for real-time, high-resolution 4D MRI with large fields of view
+for MR-guided interventions. To this end, we trained a convolutional neural network (CNN) end-to-end
+to predict a 3D liver MRI that correctly predicts the liver's respiratory state from a live 2D navigator
+MRI of a subject. Our method can be used in two ways: First, it can reconstruct near real-time 4D MRI
+with high quality and high resolution (209x128x128 matrix size with isotropic 1.8mm voxel size
+and 0.6s/volume) given a dynamic interventional 2D navigator slice for guidance during an intervention.
+Second, it can be used for retrospective 4D reconstruction with a temporal resolution of below 0.2s/volume
+for motion analysis and use in radiation therapy. We report a mean target registration error (TRE)
+of 1.19 $\pm$0.74mm, which is below voxel size. We compare our results with a state-of-the-art retrospective
+4D MRI reconstruction. Visual evaluation shows comparable quality. We show that small training
+sizes with short acquisition times down to 2min can already achieve promising results and 24min
+are sufficient for high quality results. Because our method can be readily combined with earlier
+methods, acquisition time can be further decreased while also limiting quality loss. We show that
+an end-to-end, deep learning formulation is highly promising for 4D MRI reconstruction. 

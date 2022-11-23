@@ -1,0 +1,19 @@
+Designing new heterostructure electrodes has many challenges associated with interface engineering.
+Demanding simulation resources and lack of heterostructure databases continue to be a barrier
+in understanding the chemistry and mechanics of complex interfaces using simulations. Mixed-dimensional
+heterostructures composed of two-dimensional (2D) and three-dimensional (3D) materials are
+undisputed next-generation materials for engineered devices due to their changeable properties.
+The present work computationally investigates the interface between 2D graphene and 3D tin (Sn)
+systems with density functional theory (DFT) method and uses the computationally demanding simulation
+data to develop machine learning (ML) based potential energy surface (PES). Developed PES can be
+used to model graphene-tin interface systems from ML with close to DFT accuracies. To develop PES,
+high dimensional neural networks (HDNN) that rely on atom-centered symmetry function to represent
+structural information have been used. HDNN are modified to train on the total energies of the interface
+system rather than atomic energies. The performance of modified HDNN trained on 5789 interface
+structures of graphene|Sn is tested on unfamiliar interfaces of the same material pair with varying
+levels of structural deviations from the training dataset, including new Sn bulk phase, defects,
+and interfacial atomic diffusion. The highest RMSE obtained for the prediction on test interfaces
+is 0.458 eV/atom. The modified HDNN approach is shown to be more accurate in predicting energies
+of complex polymorphing interfaces such as graphene and tin. Improved accuracy in ML-based modeling
+approach promises cost-effective means of designing interfaces in heterostructure energy storage
+systems with higher cycle life and stability. 

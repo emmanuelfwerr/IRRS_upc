@@ -1,0 +1,19 @@
+A cloud service provider strives to provide a high Quality of Service (QoS) to client jobs. Such jobs
+vary in computational and Service-Level-Agreement (SLA) obligations, as well as differ with respect
+to tolerating delays and SLA violations. The job scheduling plays a critical role in servicing cloud
+demands by allocating appropriate resources to execute client jobs. The response to such jobs is
+optimized by the cloud provider on a multi-tier cloud computing environment. Typically, the complex
+and dynamic nature of multi-tier environments incurs difficulties in meeting such demands, because
+tiers are dependent on each other which in turn makes bottlenecks of a tier shift to escalate in subsequent
+tiers. However, the optimization process of existing approaches produces single-tier-driven
+schedules that do not employ the differential impact of SLA violations in executing client jobs.
+Furthermore, the impact of schedules optimized at the tier level on the performance of schedules
+formulated in subsequent tiers tends to be ignored, resulting in a less than optimal performance
+when measured at the multi-tier level. Thus, failing in committing job obligations incurs SLA penalties
+that often take the form of either financial compensations, or losing future interests and motivations
+of unsatisfied clients in the service provided. In this paper, a scheduling and allocation approach
+is proposed to formulate schedules that account for differential impacts of SLA violation penalties
+and, thus, produce schedules that are optimal in financial performance. A queue virtualization
+scheme is designed to facilitate the formulation of optimal schedules at the tier and multi-tier
+levels of the cloud environment. Because the scheduling problem is NP-hard, a biologically inspired
+approach is proposed to mitigate the complexity of finding optimal schedules. 

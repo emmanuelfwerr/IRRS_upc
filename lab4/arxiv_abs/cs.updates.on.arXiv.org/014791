@@ -1,0 +1,19 @@
+Facial Expression Recognition from static images is a challenging problem in computer vision applications.
+Convolutional Neural Network (CNN), the state-of-the-art method for various computer vision
+tasks, has had limited success in predicting expressions from faces having extreme poses, illumination,
+and occlusion conditions. To mitigate this issue, CNNs are often accompanied by techniques like
+transfer, multi-task, or ensemble learning that often provide high accuracy at the cost of increased
+computational complexity. In this work, we propose a Part-based Ensemble Transfer Learning network
+that models how humans recognize facial expressions by correlating the spatial orientation pattern
+of the facial features with a specific expression. It consists of 5 sub-networks, and each sub-network
+performs transfer learning from one of the five subsets of facial landmarks: eyebrows, eyes, nose,
+mouth, or jaw to expression classification. We show that our proposed ensemble network uses visual
+patterns emanating from facial muscles' motor movements to predict expressions and demonstrate
+the usefulness of transfer learning from Facial Landmark Localization to Facial Expression Recognition.
+We test the proposed network on the CK+, JAFFE, and SFEW datasets, and it outperforms the benchmark
+for CK+ and JAFFE datasets by 0.51% and 5.34%, respectively. Additionally, the proposed ensemble
+network consists of only 1.65M model parameters, ensuring computational efficiency during training
+and real-time deployment. Grad-CAM visualizations of our proposed ensemble highlight the complementary
+nature of its sub-networks, a key design parameter of an effective ensemble network. Lastly, cross-dataset
+evaluation results reveal that our proposed ensemble has a high generalization capacity, making
+it suitable for real-world usage. 

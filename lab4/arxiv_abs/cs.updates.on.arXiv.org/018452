@@ -1,0 +1,20 @@
+Vision Transformer (ViT) has shown its advantages over the convolutional neural network (CNN)
+with its ability to capture global long-range dependencies for visual representation learning.
+Besides ViT, contrastive learning is another popular research topic recently. While previous
+contrastive learning works are mostly based on CNNs, some latest studies have attempted to jointly
+model the ViT and the contrastive learning for enhanced self-supervised learning. Despite the
+considerable progress, these combinations of ViT and contrastive learning mostly focus on the
+instance-level contrastiveness, which often overlook the contrastiveness of the global clustering
+structures and also lack the ability to directly learn the clustering result (e.g., for images).
+In view of this, this paper presents an end-to-end deep image clustering approach termed Vision
+Transformer for Contrastive Clustering (VTCC), which for the first time, to the best of our knowledge,
+unifies the Transformer and the contrastive learning for the image clustering task. Specifically,
+with two random augmentations performed on each image in a mini-batch, we utilize a ViT encoder with
+two weight-sharing views as the backbone to learn the representations for the augmented samples.
+To remedy the potential instability of the ViT, we incorporate a convolutional stem, which uses
+multiple stacked small convolutions instead of a big convolution in the patch projection layer,
+to split each augmented sample into a sequence of patches. With representations learned via the
+backbone, an instance projector and a cluster projector are further utilized for the instance-level
+contrastive learning and the global clustering structure learning, respectively. Extensive
+experiments on eight image datasets demonstrate the stability (during the training-from-scratch)
+and the superiority (in clustering performance) of VTCC over the state-of-the-art. 

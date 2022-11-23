@@ -1,0 +1,20 @@
+Functional connectivity (FC) for quantifying interactions between regions of the brain is commonly
+estimated from functional magnetic resonance imaging (fMRI). There has been increasing interest
+in the potential of multimodal imaging to obtain more robust estimates of FC in high-dimensional
+settings. Recent work has found uses for graphical algorithms in combining fMRI signals with structural
+connectivity estimated from diffusion tensor imaging (DTI) for FC estimation. At the same time
+new algorithms focused on de novo identification of graphical subnetworks with significant levels
+of connectivity are finding other biological applications with great success. Such algorithms
+develop notions of graphical influence that aid in revealing subnetworks of interest while maintaining
+rigorous statistical control on discoveries. We develop a novel algorithm adapting some of these
+methods to FC estimation with computational efficiency and scalability. Our proposed algorithm
+leverages a graphical random walk on DTI data to define a new measure of structural influence that
+highlights connected components of maximal interest. The subnetwork topology is then compared
+to a suitable null hypothesis using permutation testing. Finally, individual discovered components
+are tested for significance. Extensive simulations show our method is comparable in power to those
+currently in use while being fast, robust, and simple to implement. We also analyze task-fMRI data
+from the Human Connectome Project database and find novel insights into brain interactions during
+the performance of a motor task. It is anticipated that the transparency and flexibility of our approach
+will prove valuable as further understanding of the structure-function relationship informs
+the future of network estimation. Scalability will also only become more important as neurological
+data become more granular and grow in dimension. 

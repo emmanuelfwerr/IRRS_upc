@@ -1,0 +1,19 @@
+In package-handling facilities, boxes of varying sizes are used to ship products. Improperly sized
+boxes with box dimensions much larger than the product dimensions create wastage and unduly increase
+the shipping costs. Since it is infeasible to make unique, tailor-made boxes for each of the $N$ products,
+the fundamental question that confronts e-commerce companies is: How many $K << N$ cuboidal boxes
+need to manufactured and what should be their dimensions? In this paper, we propose a solution for
+the single-count shipment containing one product per box in two steps: (i) reduce it to a clustering
+problem in the $3$ dimensional space of length, width and height where each cluster corresponds
+to the group of products that will be shipped in a particular size variant, and (ii) present an efficient
+forward-backward decision tree based clustering method with low computational complexity on
+$N$ and $K$ to obtain these $K$ clusters and corresponding box dimensions. Our algorithm has multiple
+constituent parts, each specifically designed to achieve a high-quality clustering solution.
+As our method generates clusters in an incremental fashion without discarding the present solution,
+adding or deleting a size variant is as simple as stopping the backward pass early or executing it
+for one more iteration. We tested the efficacy of our approach by simulating actual single-count
+shipments that were transported during a month by Amazon using the proposed box dimensions. Even
+by just modifying the existing box dimensions and not adding a new size variant, we achieved a reduction
+of $4.4\%$ in the shipment volume, contributing to the decrease in non-utilized, air volume space
+by $2.2\%$. The reduction in shipment volume and air volume improved significantly to $10.3\%$
+and $6.1\%$ when we introduced $4$ additional boxes. 

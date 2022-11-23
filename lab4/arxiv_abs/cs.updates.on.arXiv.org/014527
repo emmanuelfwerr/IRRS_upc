@@ -1,0 +1,20 @@
+Consider a wireless network where each communication link has transmission reliability and real-time
+guarantee. Certain pairs of wireless links interfere with each others and this interference is
+modeled by a interference model which enable predictable link reliability. Given the conflict
+graph and link QoS requirements, the objective is to determine whether and how the demands of all
+links can be satisfied. Prior studies have considered probabilistic per-packet real-time guarantees
+for single-cell, single-channel networks with implicit deadline constraints, but they have not
+considered real-world complexities such as inter-cell interference and multiple communication
+channels. Towards ensuring URLLC in multi-cell, multi-channel wireless networks, we propose
+a real-time scheduling algorithm based on \emph{local-deadline-partition (LDP)}. The LDP algorithm
+is suitable for distributed implementation, and it ensures probabilistic per-packet real-time
+guarantee for multi-cell, multi-channel networks with general deadline constraints. We also
+address the associated challenge of the schedulability test of URLLC traffic. In particular, we
+propose the concept of \emph{feasible set} and identify a closed-form sufficient condition for
+the schedulability of URLLC traffic. We propose a distributed algorithm for the schedulability
+test, and the algorithm includes a procedure for finding the minimum sum work density of feasible
+sets which is of interest by itself. We also identify a necessary condition for the schedulability
+of URLLC traffic, and use numerical studies to understand a lower bound on the approximation ratio
+of the LDP algorithm. We experimentally study the properties of the LDP algorithm and observe that
+the URLLC traffic supportable by the LDP algorithm is significantly higher than that of a state-of-the-art
+algorithm. 

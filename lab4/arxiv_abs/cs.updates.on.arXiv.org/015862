@@ -1,0 +1,19 @@
+In the paper, we propose a class of accelerated zeroth-order and first-order momentum methods for
+both nonconvex mini-optimization and minimax-optimization. Specifically, we propose a new accelerated
+zeroth-order momentum (Acc-ZOM) method for black-box mini-optimization where only function
+values can be obtained. Moreover, we prove that our Acc-ZOM method achieves a lower query complexity
+of $\tilde{O}(d^{3/4}\epsilon^{-3})$ for finding an $\epsilon$-stationary point, which improves
+the best known result by a factor of $O(d^{1/4})$ where $d$ denotes the variable dimension. In particular,
+our Acc-ZOM does not need large batches required in the existing zeroth-order stochastic algorithms.
+Meanwhile, we propose an accelerated zeroth-order momentum descent ascent (Acc-ZOMDA) method
+for black-box minimax optimization, where only function values can be obtained. Our Acc-ZOMDA
+obtains a low query complexity of $\tilde{O}((d_1+d_2)^{3/4}\kappa_y^{4.5}\epsilon^{-3})$
+without requiring large batches for finding an $\epsilon$-stationary point, where $d_1$ and $d_2$
+denote variable dimensions and $\kappa_y$ is condition number. Moreover, we propose an accelerated
+first-order momentum descent ascent (Acc-MDA) method for minimax optimization, whose explicit
+gradients are accessible. Our Acc-MDA achieves a low gradient complexity of $\tilde{O}(\kappa_y^{4.5}\epsilon^{-3})$
+without requiring large batches for finding an $\epsilon$-stationary point. In particular, our
+Acc-MDA can obtain a lower gradient complexity of $\tilde{O}(\kappa_y^{2.5}\epsilon^{-3})$
+with a batch size $O(\kappa_y^4)$, which improves the best known result by a factor of $O(\kappa_y^{1/2})$.
+Extensive experimental results on black-box adversarial attack to deep neural networks and poisoning
+attack to logistic regression demonstrate efficiency of our algorithms. 

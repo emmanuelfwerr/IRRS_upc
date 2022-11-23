@@ -1,0 +1,19 @@
+Here we present a structural similarity index measure (SSIM) guided conditional Generative Adversarial
+Network (cGAN) that generatively performs image-to-image (i2i) synthesis to generate photo-accurate
+protein channels in multiplexed spatial proteomics images. This approach can be utilized to accurately
+generate missing spatial proteomics channels that were not included during experimental data
+collection either at the bench or the clinic. Experimental spatial proteomic data from the Human
+BioMolecular Atlas Program (HuBMAP) was used to generate spatial representations of missing proteins
+through a U-Net based image synthesis pipeline. HuBMAP channels were hierarchically clustered
+by the (SSIM) as a heuristic to obtain the minimal set needed to recapitulate the underlying biology
+represented by the spatial landscape of proteins. We subsequently prove that our SSIM based architecture
+allows for scaling of generative image synthesis to slides with up to 100 channels, which is better
+than current state of the art algorithms which are limited to data with 11 channels. We validate these
+claims by generating a new experimental spatial proteomics data set from human lung adenocarcinoma
+tissue sections and show that a model trained on HuBMAP can accurately synthesize channels from
+our new data set. The ability to recapitulate experimental data from sparsely stained multiplexed
+histological slides containing spatial proteomic will have tremendous impact on medical diagnostics
+and drug development, and also raises important questions on the medical ethics of utilizing data
+produced by generative image synthesis in the clinical setting. The algorithm that we present in
+this paper will allow researchers and clinicians to save time and costs in proteomics based histological
+staining while also increasing the amount of data that they can generate through their experiments.

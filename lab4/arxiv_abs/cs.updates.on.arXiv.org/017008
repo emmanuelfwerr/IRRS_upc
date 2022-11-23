@@ -1,0 +1,19 @@
+Common AI music composition algorithms based on artificial neural networks are to train a machine
+by feeding a large number of music pieces and create artificial neural networks that can produce
+music similar to the input music data. This approach is a blackbox optimization, that is, the underlying
+composition algorithm is, in general, not known to users. In this paper, we present a way of machine
+composition that trains a machine the composition principle embedded in the given music data instead
+of directly feeding music pieces. We propose this approach by using the concept of {\color{black}{Overlap}}
+matrix proposed in \cite{TPJ}. In \cite{TPJ}, a type of Korean music, so-called the {\it Dodeuri}
+music such as Suyeonjangjigok has been analyzed using topological data analysis (TDA), particularly
+using persistent homology. As the raw music data is not suitable for TDA analysis, the music data
+is first reconstructed as a graph. The node of the graph is defined as a two-dimensional vector composed
+of the pitch and duration of each music note. The edge between two nodes is created when those nodes
+appear consecutively in the music flow. Distance is defined based on the frequency of such appearances.
+Through TDA on the constructed graph, a unique set of cycles is found for the given music. In \cite{TPJ},
+the new concept of the {\it {\color{black}{Overlap}} matrix} has been proposed, which visualizes
+how those cycles are interconnected over the music flow, in a matrix form. In this paper, we explain
+how we use the {\color{black}{Overlap}} matrix for machine composition. The {\color{black}{Overlap}}
+matrix makes it possible to compose a new music piece algorithmically and also provide a seed music
+towards the desired artificial neural network. In this paper, we use the {\it Dodeuri} music and
+explain detailed steps. 

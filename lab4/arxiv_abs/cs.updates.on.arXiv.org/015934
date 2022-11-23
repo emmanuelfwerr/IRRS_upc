@@ -1,0 +1,20 @@
+Deep learning models have been shown to be vulnerable to recent backdoor attacks. A backdoored model
+behaves normally for inputs containing no attacker-secretly-chosen trigger and maliciously
+for inputs with the trigger. To date, backdoor attacks and countermeasures mainly focus on image
+classification tasks. And most of them are implemented in the digital world with digital triggers.
+Besides the classification tasks, object detection systems are also considered as one of the basic
+foundations of computer vision tasks. However, there is no investigation and understanding of
+the backdoor vulnerability of the object detector, even in the digital world with digital triggers.
+For the first time, this work demonstrates that existing object detectors are inherently susceptible
+to physical backdoor attacks. We use a natural T-shirt bought from a market as a trigger to enable
+the cloaking effect--the person bounding-box disappears in front of the object detector. We show
+that such a backdoor can be implanted from two exploitable attack scenarios into the object detector,
+which is outsourced or fine-tuned through a pretrained model. We have extensively evaluated three
+popular object detection algorithms: anchor-based Yolo-V3, Yolo-V4, and anchor-free CenterNet.
+Building upon 19 videos shot in real-world scenes, we confirm that the backdoor attack is robust
+against various factors: movement, distance, angle, non-rigid deformation, and lighting. Specifically,
+the attack success rate (ASR) in most videos is 100% or close to it, while the clean data accuracy of
+the backdoored model is the same as its clean counterpart. The latter implies that it is infeasible
+to detect the backdoor behavior merely through a validation set. The averaged ASR still remains
+sufficiently high to be 78% in the transfer learning attack scenarios evaluated on CenterNet. See
+the demo video on https://youtu.be/Q3HOF4OobbY. 

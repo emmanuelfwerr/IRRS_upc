@@ -1,0 +1,20 @@
+Deep neural networks (DNNs) often rely on massive labelled data for training, which is inaccessible
+in many applications. Data augmentation (DA) tackles data scarcity by creating new labelled data
+from available ones. Different DA methods have different mechanisms and therefore using their
+generated labelled data for DNN training may help improving DNN's generalisation to different
+degrees. Combining multiple DA methods, namely multi-DA, for DNN training, provides a way to boost
+generalisation. Among existing multi-DA based DNN training methods, those relying on knowledge
+distillation (KD) have received great attention. They leverage knowledge transfer to utilise
+the labelled data sets created by multiple DA methods instead of directly combining them for training
+DNNs. However, existing KD-based methods can only utilise certain types of DA methods, incapable
+of utilising the advantages of arbitrary DA methods. We propose a general multi-DA based DNN training
+framework capable to use arbitrary DA methods. To train a DNN, our framework replicates a certain
+portion in the latter part of the DNN into multiple copies, leading to multiple DNNs with shared blocks
+in their former parts and independent blocks in their latter parts. Each of these DNNs is associated
+with a unique DA and a newly devised loss that allows comprehensively learning from the data generated
+by all DA methods and the outputs from all DNNs in an online and adaptive way. The overall loss, i.e.,
+the sum of each DNN's loss, is used for training the DNN. Eventually, one of the DNNs with the best validation
+performance is chosen for inference. We implement the proposed framework by using three distinct
+DA methods and apply it for training representative DNNs. Experiments on the popular benchmarks
+of image classification demonstrate the superiority of our method to several existing single-DA
+and multi-DA based training methods. 

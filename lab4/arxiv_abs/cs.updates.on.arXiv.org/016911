@@ -1,0 +1,20 @@
+This paper introduces a methodology for improving the accuracy and efficiency of reduced order
+models (ROMs) constructed using the least-squares Petrov-Galerkin (LSPG) projection method
+through the introduction of preconditioning. Unlike prior related work, which focuses on preconditioning
+the linear systems arising within the ROM numerical solution procedure to improve linear solver
+performance, our approach leverages a preconditioning matrix directly within the LSPG minimization
+problem. Applying preconditioning in this way can improve ROM accuracy for several reasons. First,
+preconditioning the LSPG formulation changes the norm defining the residual minimization, which
+can improve the residual-based stability constant bounding the ROM solution's error. The incorporation
+of a preconditioner into the LSPG formulation can have the additional effect of scaling the components
+of the residual being minimized, which can be beneficial for problems with disparate scales. Importantly,
+we demonstrate that an 'ideal preconditioned' LSPG ROM (a ROM preconditioned with the inverse of
+the Jacobian of its corresponding full order model, or FOM) emulates projection of the FOM solution
+increment onto the reduced basis, a lower bound on the ROM solution error for a given reduced basis.
+By designing preconditioners that approximate the Jacobian inverse, a ROM whose error approaches
+this lower bound can be obtained. The proposed approach is evaluated in the predictive regime on
+several mechanical and thermo-mechanical problems within the Albany HPC code. We demonstrate
+numerically that the introduction of simple Jacobi, Gauss-Seidel and ILU preconditioners into
+the Proper Orthogonal Decomposition/LSPG formulation reduces significantly the ROM solution
+error, the reduced Jacobian condition number, the number of nonlinear iterations required to reach
+convergence, and the wall time. 

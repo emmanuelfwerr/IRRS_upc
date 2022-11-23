@@ -1,0 +1,19 @@
+Despite the recent progress in light field super-resolution (LFSR) achieved by convolutional
+neural networks, the correlation information of light field (LF) images has not been sufficiently
+studied and exploited due to the complexity of 4D LF data. To cope with such high-dimensional LF data,
+most of the existing LFSR methods resorted to decomposing it into lower dimensions and subsequently
+performing optimization on the decomposed sub-spaces. However, these methods are inherently
+limited as they neglected the characteristics of the decomposition operations and only utilized
+a limited set of LF sub-spaces ending up failing to comprehensively extract spatio-angular features
+and leading to a performance bottleneck. To overcome these limitations, in this paper, we thoroughly
+discover the potentials of LF decomposition and propose a novel concept of decomposition kernels.
+In particular, we systematically unify the decomposition operations of various sub-spaces into
+a series of such decomposition kernels, which are incorporated into our proposed Decomposition
+Kernel Network (DKNet) for comprehensive spatio-angular feature extraction. The proposed DKNet
+is experimentally verified to achieve substantial improvements by 1.35 dB, 0.83 dB, and 1.80 dB
+PSNR in 2x, 3x and 4x LFSR scales, respectively, when compared with the state-of-the-art methods.
+To further improve DKNet in producing more visually pleasing LFSR results, based on the VGG network,
+we propose a LFVGG loss to guide the Texture-Enhanced DKNet (TE-DKNet) to generate rich authentic
+textures and enhance LF images' visual quality significantly. We also propose an indirect evaluation
+metric by taking advantage of LF material recognition to objectively assess the perceptual enhancement
+brought by the LFVGG loss. 

@@ -1,0 +1,19 @@
+We describe the correction procedure for Analog-to-Digital Converter (ADC) differential non-linearities
+(DNL) adopted in the Bayesian end-to-end BeyondPlanck analysis framework. This method is nearly
+identical to that developed for the official LFI Data Processing Center (DPC) analysis, and relies
+on the binned rms noise profile of each detector data stream. However, rather than building the correction
+profile directly from the raw rms profile, we first fit a Gaussian to each significant ADC-induced
+rms decrement, and then derive the corresponding correction model from this smooth model. The main
+advange of this approach is that only samples which are significantly affected by ADC DNLs are corrected.
+The new corrections are only applied to data for which there is a clear detection of the non-linearities,
+and for which they perform at least comparably with the DPC corrections. Out of a total of 88 LFI data
+streams (sky and reference load for each of the 44 detectors) we apply the new minimal ADC corrections
+in 25 cases, and maintain the DPC corrections in 8 cases. All these correctsion are applited to 44
+or 70 GHz channels, while, as in previous analyses, none of the 30 GHz ADCs show significant evidence
+of non-linearity. By comparing the BeyondPlanck and DPC ADC correction methods, we estimate that
+the residual ADC uncertainty is about two orders of magnitude below the total noise of both the 44
+and 70 GHz channels, and their impact on current cosmological parameter estimation is small. However,
+we also show that non-idealities in the ADC corrections can generate sharp stripes in the final frequency
+maps, and these could be important for future joint analyses with HFI, WMAP, or other datasets. We
+therefore conclude that, although the existing corrections are adequate for LFI-based cosmological
+parameter analysis, further work on LFI ADC corrections is still warranted. 

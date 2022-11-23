@@ -1,0 +1,19 @@
+Bus system is a critical component of sustainable urban transportation. However, the operation
+of a bus fleet is unstable in nature, and bus bunching has become a common phenomenon that undermines
+the efficiency and reliability of bus systems. Recently research has demonstrated the promising
+application of multi-agent reinforcement learning (MARL) to achieve efficient vehicle holding
+control to avoid bus bunching. However, existing studies essentially overlook the robustness
+issue resulting from various events, perturbations and anomalies in a transit system, which is
+of utmost importance when transferring the models for real-world deployment/application. In
+this study, we integrate implicit quantile network and meta-learning to develop a distributional
+MARL framework -- IQNC-M -- to learn continuous control. The proposed IQNC-M framework achieves
+efficient and reliable control decisions through better handling various uncertainties/events
+in real-time transit operations. Specifically, we introduce an interpretable meta-learning
+module to incorporate global information into the distributional MARL framework, which is an effective
+solution to circumvent the credit assignment issue in the transit system. In addition, we design
+a specific learning procedure to train each agent within the framework to pursue a robust control
+policy. We develop simulation environments based on real-world bus services and passenger demand
+data and evaluate the proposed framework against both traditional holding control models and state-of-the-art
+MARL models. Our results show that the proposed IQNC-M framework can effectively handle the various
+extreme events, such as traffic state perturbations, service interruptions, and demand surges,
+thus improving both efficiency and reliability of the system. 

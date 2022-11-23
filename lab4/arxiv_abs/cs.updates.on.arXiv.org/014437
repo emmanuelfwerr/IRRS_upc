@@ -1,0 +1,19 @@
+The use of large-scale machine learning methods is becoming ubiquitous in many applications ranging
+from business intelligence to self-driving cars. These methods require a complex computation
+pipeline consisting of various types of operations, e.g., relational operations for pre-processing
+or post-processing the dataset, and matrix operations for core model computations. Many existing
+systems focus on efficiently processing matrix-only operations, and assume that the inputs to
+the relational operators are already pre-computed and are materialized as intermediate matrices.
+However, the input to a relational operator may be complex in machine learning pipelines, and may
+involve various combinations of matrix operators. Hence, it is critical to realize scalable and
+efficient relational query processors that directly operate on big matrix data. This paper presents
+new efficient and scalable relational query processing techniques on big matrix data for in-memory
+distributed clusters. The proposed techniques leverage algebraic transformation rules to rewrite
+query execution plans into ones with lower computation costs. A distributed query plan optimizer
+exploits the sparsity-inducing property of merge functions as well as Bloom join strategies for
+efficiently evaluating various flavors of the join operation. Furthermore, optimized partitioning
+schemes for the input matrices are developed to facilitate the performance of join operations based
+on a cost model that minimizes the communication overhead.The proposed relational query processing
+techniques are prototyped in Apache Spark. Experiments on both real and synthetic data demonstrate
+that the proposed techniques achieve up to two orders of magnitude performance improvement over
+state-of-the-art systems on a wide range of applications. 

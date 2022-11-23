@@ -1,0 +1,20 @@
+We consider quantile estimation in a semi-supervised setting, characterized by two available
+data sets: (i) a small or moderate sized labeled data set containing observations for a response
+and a set of possibly high dimensional covariates, and (ii) a much larger unlabeled data set where
+only the covariates are observed. We propose a family of semi-supervised estimators for the response
+quantile(s) based on the two data sets, to improve the estimation accuracy compared to the supervised
+estimator, i.e., the sample quantile from the labeled data. These estimators use a flexible imputation
+strategy applied to the estimating equation along with a debiasing step that allows for full robustness
+against misspecification of the imputation model. Further, a one-step update strategy is adopted
+to enable easy implementation of our method and handle the complexity from the non-linear nature
+of the quantile estimating equation. Under mild assumptions, our estimators are fully robust to
+the choice of the nuisance imputation model, in the sense of always maintaining root-n consistency
+and asymptotic normality, while having improved efficiency relative to the supervised estimator.
+They also attain semi-parametric optimality if the relation between the response and the covariates
+is correctly specified via the imputation model. As an illustration of estimating the nuisance
+imputation function, we consider kernel smoothing type estimators on lower dimensional and possibly
+estimated transformations of the high dimensional covariates, and we establish novel results
+on their uniform convergence rates in high dimensions, involving responses indexed by a function
+class and usage of dimension reduction techniques. These results may be of independent interest.
+Numerical results on both simulated and real data confirm our semi-supervised approach's improved
+performance, in terms of both estimation and inference. 

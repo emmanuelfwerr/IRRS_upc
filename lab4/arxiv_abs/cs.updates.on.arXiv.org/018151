@@ -1,0 +1,19 @@
+As artificial intelligence (AI) and machine learning (ML) technologies disrupt a wide range of
+industries, cloud datacenters face ever-increasing demand in inference workloads. However,
+conventional CPU-based servers cannot handle excessive computational requirements of deep neural
+network (DNN) models, while GPU-based servers suffer from huge power consumption and high operating
+cost. In this paper, we present a scalable systolic-vector architecture that can cope with dynamically
+changing DNN workloads in cloud datacenters. We first devise a lightweight DNN model description
+format called unified model format (UMF) that enables general model representation and fast decoding
+in hardware accelerator. Based on this model format, we propose a heterogeneous architecture that
+features a load balancer that performs a high-level workload distribution and multiple systolic-vector
+clusters, in which each cluster consists of a programmable scheduler, throughput-oriented systolic
+arrays, and function-oriented vector processors. We also propose a heterogeneity-aware scheduling
+algorithm that enables concurrent execution of multiple DNN workloads while maximizing heterogeneous
+hardware utilization based on computation and memory access time estimation. Finally, we build
+an architecture simulation framework based on actual synthesis and place-and-route implementation
+results and conduct design space exploration for the proposed architecture. As a result, the proposed
+systolic-vector architecture achieves 10.9x higher throughput performance and 30.17x higher
+energy efficiency than a compatible GPU on realistic ML workloads. The proposed heterogeneity-aware
+scheduling algorithm improves the throughput and energy efficiency by 81% and 20%, respectively,
+compared to a standard round-robin scheduling. 

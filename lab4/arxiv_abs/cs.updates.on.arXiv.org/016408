@@ -1,0 +1,20 @@
+Session-based recommendation (SBR) aims at predicting the next item for an ongoing anonymous session.
+The major challenge of SBR is how to capture richer relations in between items and learn ID-based
+item embeddings to capture such relations. Recent studies propose to first construct an item graph
+from sessions and employ a Graph Neural Network (GNN) to encode item embedding from the graph. Although
+such graph-based approaches have achieved performance improvements, their GNNs are not suitable
+for ID-based embedding learning for the SBR task. In this paper, we argue that the objective of such
+ID-based embedding learning is to capture a kind of \textit{neighborhood affinity} in that the
+embedding of a node is similar to that of its neighbors' in the embedding space. We propose a new graph
+neural network, called Graph Spring Network (GSN), for learning ID-based item embedding on an item
+graph to optimize neighborhood affinity in the embedding space. Furthermore, we argue that even
+stacking multiple GNN layers may not be enough to encode potential relations for two item nodes far-apart
+in a graph. In this paper, we propose a strategy that first selects some informative item anchors
+and then encode items' potential relations to such anchors. In summary, we propose a GSN-IAS model
+(Graph Spring Network and Informative Anchor Selection) for the SBR task. We first construct an
+item graph to describe items' co-occurrences in all sessions. We design the GSN for ID-based item
+embedding learning and propose an \textit{item entropy} measure to select informative anchors.
+We then design an unsupervised learning mechanism to encode items' relations to anchors. We next
+employ a shared gated recurrent unit (GRU) network to learn two session representations and make
+two next item predictions. Finally, we design an adaptive decision fusion strategy to fuse two predictions
+to make the final recommendation. 

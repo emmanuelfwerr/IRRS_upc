@@ -1,0 +1,19 @@
+Given the ubiquity of memory in commodity electronic devices, fingerprinting memory is a compelling
+proposition, especially for low-end Internet of Things (IoT) devices where cryptographic modules
+are often unavailable. However, the use of fingerprints in security functions is challenged by
+the inexact reproductions of fingerprints from the same device at different time instances due
+to various noise sources causing, small, but unpredictable variations in fingerprint measurements.
+Our study formulates a novel and \textit{pragmatic} approach to achieve the elusive goal of affording
+highly reliable fingerprints from device memories. We investigate the transformation of raw fingerprints
+into a noise-tolerant space where the generation of fingerprints from memory biometrics is intrinsically
+highly reliable. Further, we derive formal performance bounds to support practitioners to adopt
+our methods for practical applications. Subsequently, we demonstrate the expressive power of
+our formalization by using it to investigate the practicability of extracting noise-tolerant
+fingerprints from commodity devices. We have employed a set of 38 memory chips including SRAM (69,206,016
+cells), Flash (3,902,976 cells) and EEPROM (32,768 cells) ubiquitously embedded in low-end commodity
+devices from 6 different manufacturers for extensive experimental validations. Our results demonstrate
+that noise-tolerant fingerprints -- achieving a key failure rate less than $10^{-6}$ -- can always
+be efficiently afforded from tested memories with a solely fingerprint snap-shot enrollment.
+Further, we employ a low-cost wearable Bluetooth inertial sensor and demonstrate a practical,
+end-to-end implementation of a remote attestation security function built upon a root key from
+noise-tolerant SRAM fingerprints generated on demand and at run-time. 

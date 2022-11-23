@@ -1,0 +1,20 @@
+In this work, we perform semantic segmentation of multiple defect types in electron microscopy
+images of irradiated FeCrAl alloys using a deep learning Mask Regional Convolutional Neural Network
+(Mask R-CNN) model. We conduct an in-depth analysis of key model performance statistics, with a
+focus on quantities such as predicted distributions of defect shapes, defect sizes, and defect
+areal densities relevant to informing modeling and understanding of irradiated Fe-based materials
+properties. To better understand the performance and present limitations of the model, we provide
+examples of useful evaluation tests which include a suite of random splits, and dataset size-dependent
+and domain-targeted cross validation tests. Overall, we find that the current model is a fast, effective
+tool for automatically characterizing and quantifying multiple defect types in microscopy images,
+with a level of accuracy on par with human domain expert labelers. More specifically, the model can
+achieve average defect identification F1 scores as high as 0.8, and, based on random cross validation,
+have low overall average (+/- standard deviation) defect size and density percentage errors of
+7.3 (+/- 3.8)% and 12.7 (+/- 5.3)%, respectively. Further, our model predicts the expected material
+hardening to within 10-20 MPa (about 10% of total hardening), which is about the same error level
+as experiments. Our targeted evaluation tests also suggest the best path toward improving future
+models is not expanding existing databases with more labeled images but instead data additions
+that target weak points of the model domain, such as images from different microscopes, imaging
+conditions, irradiation environments, and alloy types. Finally, we discuss the first phase of
+an effort to provide an easy-to-use, open-source object detection tool to the broader community
+for identifying defects in new images. 

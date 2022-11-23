@@ -1,0 +1,20 @@
+Red-lesions, microaneurysms (MAs) and hemorrhages (HMs), are the early signs of diabetic retinopathy
+(DR). The automatic detection of MAs and HMs on retinal fundus images is a challenging task. Most
+of the existing methods detect either only MAs or only HMs because of the difference in their texture,
+sizes, and morphology. Though some methods detect both MAs and HMs, they suffer from the curse of
+dimensionality of shape and colors features and fail to detect all shape variations of HMs such as
+flame-shaped. Leveraging the progress in deep learning, we proposed a two-stream red lesions detection
+system dealing simultaneously with small and large red lesions. For this system, we introduced
+a new ROIs candidates generation method for large red lesions on fundus images; it is based on blood
+vessel segmentation and morphological operations, and reduces the computational complexity,
+and enhances the detection accuracy by generating a small number of potential candidates. For detection,
+we proposed a framework with two streams. We used pretrained VGGNet as a backbone model and carried
+out several extensive experiments to tune it for vessels segmentation and candidates generation,
+and finally learning the appropriate mapping, which yields better detection of the red lesions
+comparing with the state-of-the-art methods. The experimental results validated the effectiveness
+of the system in the detection of both MAs and HMs; it yields higher performance for per lesion detection;
+its sensitivity equals 0.8589 and good FROC score under 8 FPIs on DiaretDB1-MA reports FROC=0.7518,
+and with SN=0.7552 and good FROC score under 2,4and 8 FPIs on DiaretDB1-HM, and SN=0.8157 on e-ophtha
+with overall FROC=0.4537 and on ROCh dataset with FROC=0.3461 which is higher than the state-of-the
+art methods. For DR screening, the system performs well with good AUC on DiaretDB1-MA, DiaretDB1-HM,
+and e-ophtha datasets. 

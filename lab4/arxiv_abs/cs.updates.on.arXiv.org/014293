@@ -1,0 +1,20 @@
+Predicting the next interaction of a short-term sequence is a challenging task in session-based
+recommendation (SBR).Multi-behavior session recommendation considers session sequence with
+multiple interaction types, such as click and purchase, to capture more effective user intention
+representation sufficiently.Despite the superior performance of existing multi-behavior based
+methods for SBR, there are still several severe limitations:(i) Almost all existing works concentrate
+on single target type of next behavior and fail to model multiplex behavior sessions uniformly.(ii)
+Previous methods also ignore the semantic relations between various next behavior and historical
+behavior sequence, which are significant signals to obtain current latent intention for SBR.(iii)
+The global cross-session item-item graph established by some existing models may incorporate
+semantics and context level noise for multi-behavior session-based recommendation. To overcome
+the limitations (i) and (ii), we propose two novel tasks for SBR, which require the incorporation
+of both historical behaviors and next behaviors into unified multi-behavior recommendation modeling.
+To this end, we design a Multi-behavior Graph Contextual Aware Network (MGCNet) for multi-behavior
+session-based recommendation for the two proposed tasks. Specifically, we build a multi-behavior
+global item transition graph based on all sessions involving all interaction types. Based on the
+global graph, MGCNet attaches the global interest representation to final item representation
+based on local contextual intention to address the limitation (iii). In the end, we utilize the next
+behavior information explicitly to guide the learning of general interest and current intention
+for SBR. Experiments on three public benchmark datasets show that MGCNet can outperform state-of-the-art
+models for multi-behavior session-based recommendation. 

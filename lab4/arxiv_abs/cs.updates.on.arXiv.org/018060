@@ -1,0 +1,19 @@
+Self-driving cars and trucks, autonomous vehicles (AVs), should not be accepted by regulatory
+bodies and the public until they have much higher confidence in their safety and reliability -- which
+can most practically and convincingly be achieved by testing. But existing testing methods are
+inadequate for checking the end-to-end behaviors of AV controllers against complex, real-world
+corner cases involving interactions with multiple independent agents such as pedestrians and
+human-driven vehicles. While test-driving AVs on streets and highways fails to capture many rare
+events, existing simulation-based testing methods mainly focus on simple scenarios and do not
+scale well for complex driving situations that require sophisticated awareness of the surroundings.
+To address these limitations, we propose a new fuzz testing technique, called AutoFuzz, which can
+leverage widely-used AV simulators' API grammars to generate semantically and temporally valid
+complex driving scenarios (sequences of scenes). To efficiently search for traffic violations-inducing
+scenarios in a large search space, we propose a constrained neural network (NN) evolutionary search
+method to optimize AutoFuzz. Evaluation of our prototype on one state-of-the-art learning-based
+controller, two rule-based controllers, and one industrial-grade controller in five scenarios
+shows that AutoFuzz efficiently finds hundreds of traffic violations in high-fidelity simulation
+environments. For each scenario, AutoFuzz can find on average 10-39% more unique traffic violations
+than the best-performing baseline method. Further, fine-tuning the learning-based controller
+with the traffic violations found by AutoFuzz successfully reduced the traffic violations found
+in the new version of the AV controller software. 

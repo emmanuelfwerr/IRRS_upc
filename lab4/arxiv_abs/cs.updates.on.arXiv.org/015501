@@ -1,0 +1,19 @@
+Coflow is a recently proposed networking abstraction to help improve the communication performance
+of data-parallel computing jobs. In multi-stage jobs, each job consists of multiple coflows and
+is represented by a Directed Acyclic Graph (DAG). Efficiently scheduling coflows is critical to
+improve the data-parallel computing performance in data centers. Compared with hand-tuned scheduling
+heuristics, existing work DeepWeave [1] utilizes Reinforcement Learning (RL) framework to generate
+highly-efficient coflow scheduling policies automatically. It employs a graph neural network
+(GNN) to encode the job information in a set of embedding vectors, and feeds a flat embedding vector
+containing the whole job information to the policy network. However, this method has poor scalability
+as it is unable to cope with jobs represented by DAGs of arbitrary sizes and shapes, which requires
+a large policy network for processing a high-dimensional embedding vector that is difficult to
+train. In this paper, we first utilize a directed acyclic graph neural network (DAGNN) to process
+the input and propose a novel Pipelined-DAGNN, which can effectively speed up the feature extraction
+process of the DAGNN. Next, we feed the embedding sequence composed of schedulable coflows instead
+of a flat embedding of all coflows to the policy network, and output a priority sequence, which makes
+the size of the policy network depend on only the dimension of features instead of the product of dimension
+and number of nodes in the job's DAG.Furthermore, to improve the accuracy of the priority scheduling
+policy, we incorporate the Self-Attention Mechanism into a deep RL model to capture the interaction
+between different parts of the embedding sequence to make the output priority scores relevant.
+Based on this model, we then develop a coflow scheduling algorithm for online multi-stage jobs.

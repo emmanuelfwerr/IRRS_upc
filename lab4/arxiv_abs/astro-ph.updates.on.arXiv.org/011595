@@ -1,0 +1,18 @@
+We discuss an implementation of a deep learning framework to gain insight into the dark matter structure
+formation. We investigate the impact of velocity and density field information on the construction
+of halo mass function through cosmological $N$-body simulations. In this direction, we train a
+Convolutional Neural Network (CNN) on the initial snapshot of an only dark matter simulation to
+predict the halo mass that individual particles fall into at $z=0$, in the halo mass range of $10.5<
+\log(M / M_{\odot})<14$. Our results show a negligible improvement from including the velocity
+in addition to the density information when considering simulations based on the standard model
+of cosmology ($\Lambda$CDM) with the amplitude of initial scalar perturbations $A_s = 2\times10^{-9}$.
+In order to investigate the ellipsoidal collapse models and to study the effect of velocity in smaller
+mass ranges, we increase the initial power spectrum such that we see the effect of velocities in larger
+halos which are in the resolution of our simulation. The CNN model trained on the simulation snapshots
+with large $A_s$ shows a considerable improvement in the halo mass prediction when adding the velocity
+field information. Eventually, for the simulation with $A_s = 8 \times 10^{-8}$, the model trained
+with only density information shows at least $80\%$ increase in the mean squared error relative
+to the model with both velocity and density information at almost all mass scales, which indicates
+the failure of the density-only model to predict the halo masses in this case. Our results indicate
+that the effect of velocity field on the halo collapse is scale-dependent with a negligible effect
+for the standard model of cosmology in mass scales $10.5 < \log(M/ M_{\odot}) < 14$. 

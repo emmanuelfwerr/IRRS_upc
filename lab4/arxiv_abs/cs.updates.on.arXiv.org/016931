@@ -1,0 +1,19 @@
+Consensus is one of the most thoroughly studied problems in distributed computing, yet there are
+still complexity gaps that have not been bridged for decades. In particular, in the classical message-passing
+setting with processes' crashes, since the seminal works of Bar-Joseph and Ben-Or [1998] \cite{Bar-JosephB98}
+and Aspnes and Waarts [1996, 1998] \cite{AspnesW-SICOMP-96,Aspnes-JACM-98} in the previous
+century, there is still a fundamental unresolved question about communication complexity of fast
+randomized Consensus against a (strong) adaptive adversary crashing processes arbitrarily online.
+The best known upper bound on the number of communication bits is $\Theta(\frac{n^{3/2}}{\sqrt{\log{n}}})$
+per process, while the best lower bound is $\Omega(1)$. This is in contrast to randomized Consensus
+against a (weak) oblivious adversary, for which time-almost-optimal algorithms guarantee amortized
+$O(1)$ communication bits per process \cite{GK-SODA-10}. We design an algorithm against adaptive
+adversary that reduces the communication gap by nearly linear factor to $O(\sqrt{n}\cdot\text{polylog
+} n)$ bits per process, while keeping almost-optimal (up to factor $O(\log^3 n)$) time complexity
+$O(\sqrt{n}\cdot\log^{5/2} n)$. More surprisingly, we show this complexity indeed can be lowered
+further, but at the expense of increasing time complexity, i.e., there is a {\em trade-off} between
+communication complexity and time complexity. More specifically, our main Consensus algorithm
+allows to reduce communication complexity per process to any value from $\text{polylog } n$ to $O(\sqrt{n}\cdot\text{polylog
+} n)$, as long as Time $\times$ Communication $= O(n\cdot \text{polylog } n)$. Similarly, reducing
+time complexity requires more random bits per process, i.e., Time $\times$ Randomness $=O(n\cdot
+\text{polylog } n)$. 

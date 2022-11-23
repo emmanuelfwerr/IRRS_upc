@@ -1,0 +1,19 @@
+Deep-unfolding neural networks (NNs) have received great attention since they achieve satisfactory
+performance with relatively low complexity. Typically, these deep-unfolding NNs are restricted
+to a fixed-depth for all inputs. However, the optimal number of layers required for convergence
+changes with different inputs. In this paper, we first develop a framework of deep deterministic
+policy gradient (DDPG)-driven deep-unfolding with adaptive depth for different inputs, where
+the trainable parameters of deep-unfolding NN are learned by DDPG, rather than updated by the stochastic
+gradient descent algorithm directly. Specifically, the optimization variables, trainable parameters,
+and architecture of deep-unfolding NN are designed as the state, action, and state transition of
+DDPG, respectively. Then, this framework is employed to deal with the channel estimation problem
+in massive multiple-input multiple-output systems. Specifically, first of all we formulate the
+channel estimation problem with an off-grid basis and develop a sparse Bayesian learning (SBL)-based
+algorithm to solve it. Secondly, the SBL-based algorithm is unfolded into a layer-wise structure
+with a set of introduced trainable parameters. Thirdly, the proposed DDPG-driven deep-unfolding
+framework is employed to solve this channel estimation problem based on the unfolded structure
+of the SBL-based algorithm. To realize adaptive depth, we design the halting score to indicate when
+to stop, which is a function of the channel reconstruction error. Furthermore, the proposed framework
+is extended to realize the adaptive depth of the general deep neural networks (DNNs). Simulation
+results show that the proposed algorithm outperforms the conventional optimization algorithms
+and DNNs with fixed depth with much reduced number of layers. 

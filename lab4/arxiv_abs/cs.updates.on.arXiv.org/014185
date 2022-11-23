@@ -1,0 +1,19 @@
+Cine cardiac MRI is routinely acquired for the assessment of cardiac health, but the imaging process
+is slow and typically requires several breath-holds to acquire sufficient k-space profiles to
+ensure good image quality. Several undersampling-based reconstruction techniques have been
+proposed during the last decades to speed up cine cardiac MRI acquisition. However, the undersampling
+factor is commonly fixed to conservative values before acquisition to ensure diagnostic image
+quality, potentially leading to unnecessarily long scan times. In this paper, we propose an end-to-end
+quality-aware cine short-axis cardiac MRI framework that combines image acquisition and reconstruction
+with downstream tasks such as segmentation, volume curve analysis and estimation of cardiac functional
+parameters. The goal is to reduce scan time by acquiring only a fraction of k-space data to enable
+the reconstruction of images that can pass quality control checks and produce reliable estimates
+of cardiac functional parameters. The framework consists of a deep learning model for the reconstruction
+of 2D+t cardiac cine MRI images from undersampled data, an image quality-control step to detect
+good quality reconstructions, followed by a deep learning model for bi-ventricular segmentation,
+a quality-control step to detect good quality segmentations and automated calculation of cardiac
+functional parameters. To demonstrate the feasibility of the proposed approach, we perform simulations
+using a cohort of selected participants from the UK Biobank (n=270), 200 healthy subjects and 70
+patients with cardiomyopathies. Our results show that we can produce quality-controlled images
+in a scan time reduced from 12 to 4 seconds per slice, enabling reliable estimates of cardiac functional
+parameters such as ejection fraction within 5% mean absolute error. 

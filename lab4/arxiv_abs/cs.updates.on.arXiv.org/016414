@@ -1,0 +1,20 @@
+Image quality assessment (IQA) in medical imaging can be used to ensure that downstream clinical
+tasks can be reliably performed. Quantifying the impact of an image on the specific target tasks,
+also named as task amenability, is needed. A task-specific IQA has recently been proposed to learn
+an image-amenability-predicting controller simultaneously with a target task predictor. This
+allows for the trained IQA controller to measure the impact an image has on the target task performance,
+when this task is performed using the predictor, e.g. segmentation and classification neural networks
+in modern clinical applications. In this work, we propose an extension to this task-specific IQA
+approach, by adding a task-agnostic IQA based on auto-encoding as the target task. Analysing the
+intersection between low-quality images, deemed by both the task-specific and task-agnostic
+IQA, may help to differentiate the underpinning factors that caused the poor target task performance.
+For example, common imaging artefacts may not adversely affect the target task, which would lead
+to a low task-agnostic quality and a high task-specific quality, whilst individual cases considered
+clinically challenging, which can not be improved by better imaging equipment or protocols, is
+likely to result in a high task-agnostic quality but a low task-specific quality. We first describe
+a flexible reward shaping strategy which allows for the adjustment of weighting between task-agnostic
+and task-specific quality scoring. Furthermore, we evaluate the proposed algorithm using a clinically
+challenging target task of prostate tumour segmentation on multiparametric magnetic resonance
+(mpMR) images, from 850 patients. The proposed reward shaping strategy, with appropriately weighted
+task-specific and task-agnostic qualities, successfully identified samples that need re-acquisition
+due to defected imaging process. 

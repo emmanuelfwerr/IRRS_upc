@@ -1,0 +1,19 @@
+Large genomic datasets are now created through numerous activities, including recreational genealogical
+investigations, biomedical research, and clinical care. At the same time, genomic data has become
+valuable for reuse beyond their initial point of collection, but privacy concerns often hinder
+access. Over the past several years, Beacon services have emerged to broaden accessibility to such
+data. These services enable users to query for the presence of a particular minor allele in a private
+dataset, information that can help care providers determine if genomic variation is spurious or
+has some known clinical indication. However, various studies have shown that even this limited
+access model can leak if individuals are members in the underlying dataset. Several approaches
+for mitigating this vulnerability have been proposed, but they are limited in that they 1) typically
+rely on heuristics and 2) offer probabilistic privacy guarantees, but neglect utility. In this
+paper, we present a novel algorithmic framework to ensure privacy in a Beacon service setting with
+a minimal number of query response flips (e.g., changing a positive response to a negative). Specifically,
+we represent this problem as combinatorial optimization in both the batch setting (where queries
+arrive all at once), as well as the online setting (where queries arrive sequentially). The former
+setting has been the primary focus in prior literature, whereas real Beacons allow sequential queries,
+motivating the latter investigation. We present principled algorithms in this framework with
+both privacy and, in some cases, worst-case utility guarantees. Moreover, through an extensive
+experimental evaluation, we show that the proposed approaches significantly outperform the state
+of the art in terms of privacy and utility. 

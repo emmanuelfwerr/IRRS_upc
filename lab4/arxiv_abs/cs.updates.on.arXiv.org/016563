@@ -1,0 +1,19 @@
+Generic Boundary Detection (GBD) aims at locating general boundaries that divide videos into semantically
+coherent and taxonomy-free units, and could server as an important pre-processing step for long-form
+video understanding. Previous research separately handle these different-level generic boundaries
+with specific designs of complicated deep networks from simple CNN to LSTM. Instead, in this paper,
+our objective is to develop a general yet simple architecture for arbitrary boundary detection
+in videos. To this end, we present Temporal Perceiver, a general architecture with Transformers,
+offering a unified solution to the detection of arbitrary generic boundaries. The core design is
+to introduce a small set of latent feature queries as anchors to compress the redundant input into
+fixed dimension via cross-attention blocks. Thanks to this fixed number of latent units, it reduces
+the quadratic complexity of attention operation to a linear form of input frames. Specifically,
+to leverage the coherence structure of videos, we construct two types of latent feature queries:
+boundary queries and context queries, which handle the semantic incoherence and coherence regions
+accordingly. Moreover, to guide the learning of latent feature queries, we propose an alignment
+loss on cross-attention to explicitly encourage the boundary queries to attend on the top possible
+boundaries. Finally, we present a sparse detection head on the compressed representations and
+directly output the final boundary detection results without any post-processing module. We test
+our Temporal Perceiver on a variety of detection benchmarks, ranging from shot-level, event-level,
+to scene-level GBD. Our method surpasses the previous state-of-the-art methods on all benchmarks,
+demonstrating the generalization ability of our temporal perceiver. 

@@ -1,0 +1,19 @@
+Since the mid-1980s it has been known that Byzantine Agreement can be solved with probability 1 asynchronously,
+even against an omniscient, computationally unbounded adversary that can adaptively \emph{corrupt}
+up to $f<n/3$ parties. Moreover, the problem is insoluble with $f\geq n/3$ corruptions. However,
+Bracha's 1984 protocol achieved $f<n/3$ resilience at the cost of exponential expected latency
+$2^{\Theta(n)}$, a bound that has never been improved in this model with $f=\lfloor (n-1)/3 \rfloor$
+corruptions. In this paper we prove that Byzantine Agreement in the asynchronous, full information
+model can be solved with probability 1 against an adaptive adversary that can corrupt $f<n/3$ parties,
+while incurring only polynomial latency with high probability. Our protocol follows earlier polynomial
+latency protocols of King and Saia and Huang, Pettie, and Zhu, which had suboptimal resilience,
+namely $f \approx n/10^9$ and $f<n/4$, respectively. Resilience $f=(n-1)/3$ is uniquely difficult
+as this is the point at which the influence of the Byzantine and honest players are of roughly equal
+strength. The core technical problem we solve is to design a collective coin-flipping protocol
+that eventually lets us flip a coin with an unambiguous outcome. In the beginning the influence of
+the Byzantine players is too powerful to overcome and they can essentially fix the coin's behavior
+at will. We guarantee that after just a polynomial number of executions of the coin-flipping protocol,
+either (a) the Byzantine players fail to fix the behavior of the coin (thereby ending the game) or
+(b) we can ``blacklist'' players such that the blacklisting rate for Byzantine players is at least
+as large as the blacklisting rate for good players. The blacklisting criterion is based on a simple
+statistical test of fraud detection. 

@@ -1,0 +1,20 @@
+Deep neural networks (DNNs) are vulnerable to adversarial noises, which motivates the benchmark
+of model robustness. Existing benchmarks mainly focus on evaluating the defenses, but there are
+no comprehensive studies of how architecture design and general training techniques affect robustness.
+Comprehensively benchmarking their relationships will be highly beneficial for better understanding
+and developing robust DNNs. Thus, we propose RobustART, the first comprehensive Robustness investigation
+benchmark on ImageNet (including open-source toolkit, pre-trained model zoo, datasets, and analyses)
+regarding ARchitecture design (44 human-designed off-the-shelf architectures and 1200+ networks
+from neural architecture search) and Training techniques (10+ general techniques, e.g., data
+augmentation) towards diverse noises (adversarial, natural, and system noises). Extensive experiments
+revealed and substantiated several insights for the first time, for example: (1) adversarial training
+largely improves the clean accuracy and all types of robustness for Transformers and MLP-Mixers;
+(2) with comparable sizes, CNNs > Transformers > MLP-Mixers on robustness against natural and system
+noises; Transformers > MLP-Mixers > CNNs on adversarial robustness; (3) for some light-weight
+architectures (e.g., EfficientNet, MobileNetV2, and MobileNetV3), increasing model sizes or
+using extra training data cannot improve robustness. Our benchmark this http URL : (1) presents
+an open-source platform for conducting comprehensive evaluation on diverse robustness types;
+(2) provides a variety of pre-trained models with different training techniques to facilitate
+robustness evaluation; (3) proposes a new view to better understand the mechanism towards designing
+robust DNN architectures, backed up by the analysis. We will continuously contribute to building
+this ecosystem for the community. 

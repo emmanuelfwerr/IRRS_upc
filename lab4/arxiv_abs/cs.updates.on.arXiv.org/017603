@@ -1,0 +1,19 @@
+Brain metastases occur frequently in patients with metastatic cancer. Early and accurate detection
+of brain metastases is very essential for treatment planning and prognosis in radiation therapy.
+To improve brain metastasis detection performance with deep learning, a custom detection loss
+called volume-level sensitivity-specificity (VSS) is proposed, which rates individual metastasis
+detection sensitivity and specificity in (sub-)volume levels. As sensitivity and precision are
+always a trade-off in a metastasis level, either a high sensitivity or a high precision can be achieved
+by adjusting the weights in the VSS loss without decline in dice score coefficient for segmented
+metastases. To reduce metastasis-like structures being detected as false positive metastases,
+a temporal prior volume is proposed as an additional input of DeepMedic. The modified network is
+called DeepMedic+ for distinction. Our proposed VSS loss improves the sensitivity of brain metastasis
+detection for DeepMedic, increasing the sensitivity from 85.3% to 97.5%. Alternatively, it improves
+the precision from 69.1% to 98.7%. Comparing DeepMedic+ with DeepMedic with the same VSS loss, 44.4%
+of the false positive metastases are reduced in the high sensitivity model and the precision reaches
+99.6% for the high specificity model. The mean dice coefficient for all metastases is about 0.81.
+With the ensemble of the high sensitivity and high specificity models, on average only 1.5 false
+positive metastases per patient needs further check, while the majority of true positive metastases
+are confirmed. The ensemble learning is able to distinguish high confidence true positive metastases
+from metastases candidates that require special expert review or further follow-up, being particularly
+well-fit to the requirements of expert support in real clinical practice. 

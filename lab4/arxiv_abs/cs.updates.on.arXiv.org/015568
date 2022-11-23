@@ -1,0 +1,20 @@
+Explainable Artificial Intelligence (XAI) has been identified as a viable method for determining
+the importance of features when making predictions using Machine Learning (ML) models. In this
+study, we created models that take an individual's health information (e.g. their drug history
+and comorbidities) as inputs, and predict the probability that the individual will have an Acute
+Coronary Syndrome (ACS) adverse outcome. Using XAI, we quantified the contribution that specific
+drugs had on these ACS predictions, thus creating an XAI-based technique for pharmacovigilance
+monitoring, using ACS as an example of the adverse outcome to detect. Individuals aged over 65 who
+were supplied Musculo-skeletal system (anatomical therapeutic chemical (ATC) class M) or Cardiovascular
+system (ATC class C) drugs between 1993 and 2009 were identified, and their drug histories, comorbidities,
+and other key features were extracted from linked Western Australian datasets. Multiple ML models
+were trained to predict if these individuals would have an ACS related adverse outcome (i.e., death
+or hospitalisation with a discharge diagnosis of ACS), and a variety of ML and XAI techniques were
+used to calculate which features -- specifically which drugs -- led to these predictions. The drug
+dispensing features for rofecoxib and celecoxib were found to have a greater than zero contribution
+to ACS related adverse outcome predictions (on average), and it was found that ACS related adverse
+outcomes can be predicted with 72% accuracy. Furthermore, the XAI libraries LIME and SHAP were found
+to successfully identify both important and unimportant features, with SHAP slightly outperforming
+LIME. ML models trained on linked administrative health datasets in tandem with XAI algorithms
+can successfully quantify feature importance, and with further development, could potentially
+be used as pharmacovigilance monitoring techniques. 

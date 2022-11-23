@@ -1,0 +1,19 @@
+When sharing sensitive databases with other parties, a database owner aims to (i) have privacy guarantees
+for its shared database, (ii) have liability guarantees in case of unauthorized sharing of its database
+by the recipients, and (iii) provide a high quality (utility) database to the recipients. We observe
+that sharing a database under differential privacy and database fingerprinting are orthogonal
+objectives. The former aims to inject noise into a database to prevent inference of the original
+data values, whereas, the latter aims to hide unique marks inside a database to trace malicious parties
+who leak the data without the authorization. In this paper, we achieve these two objectives simultaneously
+by proposing a novel differentially-private fingerprinting mechanism for databases. Specifically,
+we first devise a bit-level random response scheme to achieve differential privacy for sharing
+entire databases, and then, based on this, we develop an {\epsilon}-differentially private fingerprinting
+mechanism. Next, we theoretically analyze the relationships among differential privacy guarantee,
+fingerprint robustness, and database utility by deriving closed form expressions to characterize
+the privacy-utility coupling and privacy-fingerprint robustness coupling. Furthermore, we
+propose a sparse vector technique (SVT)-based solution to control the cumulative privacy loss
+when fingerprinted copies of a database are shared with multiple recipients. We experimentally
+show that our mechanism achieves stronger fingerprint robustness than the state-of-the-art fingerprinting
+mechanisms, and higher database utility than the simple composition of database perturbation
+under differential privacy followed by fingerprinting (e.g., statistical utility of the shared
+database by the proposed scheme is more than 10x higher than perturbation followed by fingerprinting).

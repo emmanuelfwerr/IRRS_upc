@@ -1,0 +1,20 @@
+Causal analysis and classification of injury severity applying non-parametric methods for traffic
+crashes has received limited attention. This study presents a methodological framework for causal
+inference, using Granger causality analysis, and injury severity classification of traffic crashes,
+occurring on interstates, with different machine learning techniques including decision trees
+(DT), random forest (RF), extreme gradient boosting (XGBoost), and deep neural network (DNN).
+The data used in this study were obtained for traffic crashes on all interstates across the state
+of Texas from a period of six years between 2014 and 2019. The output of the proposed severity classification
+approach includes three classes for fatal and severe injury (KA) crashes, non-severe and possible
+injury (BC) crashes, and property damage only (PDO) crashes. While Granger Causality helped identify
+the most influential factors affecting crash severity, the learning-based models predicted the
+severity classes with varying performance. The results of Granger causality analysis identified
+the speed limit, surface and weather conditions, traffic volume, presence of workzones, workers
+in workzones, and high occupancy vehicle (HOV) lanes, among others, as the most important factors
+affecting crash severity. The prediction performance of the classifiers yielded varying results
+across the different classes. Specifically, while decision tree and random forest classifiers
+provided the greatest performance for PDO and BC severities, respectively, for the KA class, the
+rarest class in the data, deep neural net classifier performed superior than all other algorithms,
+most likely due to its capability of approximating nonlinear models. This study contributes to
+the limited body of knowledge pertaining to causal analysis and classification prediction of traffic
+crash injury severity using non-parametric approaches. 

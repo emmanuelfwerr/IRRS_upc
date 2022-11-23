@@ -1,0 +1,20 @@
+The Dyck language, which consists of well-balanced sequences of parentheses, is one of the most
+fundamental context-free languages. The Dyck edit distance quantifies the number of edits (character
+insertions, deletions, and substitutions) required to make a given parenthesis sequence well-balanced.
+RNA Folding involves a similar problem, where a closing parenthesis can match an opening parenthesis
+of the same type irrespective of their ordering. For example, in RNA Folding, both $\tt{()}$ and
+$\tt{)(}$ are valid matches, whereas the Dyck language only allows $\tt{()}$ as a match. Using fast
+matrix multiplication, it is possible to compute their exact solutions of both problems in time
+$O(n^{2.824})$. Whereas combinatorial algorithms would be more desirable, the two problems are
+known to be at least as hard as Boolean matrix multiplication. In terms of fast approximation algorithms
+that are combinatorial in nature, both problems admit an $\epsilon n$-additive approximation
+in $\tilde{O}(\frac{n^2}{\epsilon})$ time. Further, there is a $O(\log n)$-factor approximation
+algorithm for Dyck edit distance in near-linear time. In this paper, we design a constant-factor
+approximation algorithm for Dyck edit distance that runs in $O(n^{1.971})$ time. Moreover, we
+develop a $(1+\epsilon)$-factor approximation algorithm running in $\tilde{O}(\frac{n^2}{\epsilon})$
+time, which improves upon the earlier additive approximation. Finally, we design a $(3+\epsilon)$-approximation
+that takes $\tilde{O}(\frac{nd}{\epsilon})$ time, where $d\ge 1$ is an upper bound on the sought
+distance. As for RNA folding, for any $s\ge1$, we design a factor-$s$ approximation algorithm that
+runs in $O(n+(\frac{n}{s})^3)$ time. To the best of our knowledge, this is the first nontrivial
+approximation algorithm for RNA Folding that can go below the $n^2$ barrier. All our algorithms
+are combinatorial. 

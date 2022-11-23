@@ -1,0 +1,19 @@
+Assistive robot arms try to help their users perform everyday tasks. One way robots can provide this
+assistance is shared autonomy. Within shared autonomy, both the human and robot maintain control
+over the robot's motion: as the robot becomes confident it understands what the human wants, it intervenes
+to automate the task. But how does the robot know these tasks in the first place? State-of-the-art
+approaches to shared autonomy often rely on prior knowledge. For instance, the robot may need to
+know the human's potential goals beforehand. During long-term interaction these methods will
+inevitably break down -- sooner or later the human will attempt to perform a task that the robot does
+not expect. Accordingly, in this paper we formulate an alternate approach to shared autonomy that
+learns assistance from scratch. Our insight is that operators repeat important tasks on a daily
+basis (e.g., opening the fridge, making coffee). Instead of relying prior knowledge, we therefore
+take advantage of these repeated interactions to learn assistive policies. We formalize an algorithm
+that recognizes the human's task, replicates similar demonstrations, and returns control when
+unsure. We then combine learning with control to demonstrate that the error of our approach is uniformly
+ultimately bounded. We perform simulations to support this error bound, compare our approach to
+imitation learning baselines, and explore its capacity to assist for an increasing number of tasks.
+Finally, we conduct a user study with industry-standard methods and shared autonomy baselines.
+Our results indicate that learning shared autonomy across repeated interactions (SARI) matches
+existing approaches for known goals, and outperforms the baselines on tasks that were never specified
+beforehand. 

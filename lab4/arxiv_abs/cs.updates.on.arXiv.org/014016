@@ -1,0 +1,20 @@
+Radiomics is an active area of research focusing on high throughput feature extraction from medical
+images with a wide array of applications in clinical practice, such as clinical decision support
+in oncology. However, noise in low dose computed tomography (CT) scans can impair the accurate extraction
+of radiomic features. In this article, we investigate the possibility of using deep learning generative
+models to improve the performance of radiomics from low dose CTs. We used two datasets of low dose
+CT scans -NSCLC Radiogenomics and LIDC-IDRI - as test datasets for two tasks - pre-treatment survival
+prediction and lung cancer diagnosis. We used encoder-decoder networks and conditional generative
+adversarial networks (CGANs) trained in a previous study as generative models to transform low
+dose CT images into full dose CT images. Radiomic features extracted from the original and improved
+CT scans were used to build two classifiers - a support vector machine (SVM) and a deep attention based
+multiple instance learning model - for survival prediction and lung cancer diagnosis respectively.
+Finally, we compared the performance of the models derived from the original and improved CT scans.
+Encoder-decoder networks and CGANs improved the area under the curve (AUC) of survival prediction
+from 0.52 to 0.57 (p-value<0.01). On the other hand, Encoder-decoder network and CGAN can improve
+the AUC of lung cancer diagnosis from 0.84 to 0.88 and 0.89 respectively (p-value<0.01). Moreover,
+there are no statistically significant differences in improving AUC by using encoder-decoder
+network and CGAN (p-value=0.34) when networks trained at 75 and 100 epochs. Generative models can
+improve the performance of low dose CT-based radiomics in different tasks. Hence, denoising using
+generative models seems to be a necessary pre-processing step for calculating radiomic features
+from low dose CTs. 

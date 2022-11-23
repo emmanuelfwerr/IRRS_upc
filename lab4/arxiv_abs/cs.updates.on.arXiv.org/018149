@@ -1,0 +1,20 @@
+In this thesis, I investigated and enhanced the visual counting task, which automatically estimates
+the number of objects in still images or video frames. Recently, due to the growing interest in it,
+several CNN-based solutions have been suggested by the scientific community. These artificial
+neural networks provide a way to automatically learn effective representations from raw visual
+data and can be successfully employed to address typical challenges characterizing this task,
+such as different illuminations and object scales. But apart from these difficulties, I targeted
+some other crucial limitations in the adoption of CNNs, proposing solutions that I experimentally
+evaluated in the context of the counting task which turns out to be particularly affected by these
+shortcomings. In particular, I tackled the problem related to the lack of data needed for training
+current CNN-based solutions. Given that the budget for labeling is limited, data scarcity still
+represents an open problem, particularly evident in tasks such as the counting one, where the objects
+to be labeled are thousands per image. Specifically, I introduced synthetic datasets gathered
+from virtual environments, where the training labels are automatically collected. I proposed
+Domain Adaptation strategies aiming at mitigating the domain gap existing between the training
+and test data distributions. I presented a counting strategy where I took advantage of the redundant
+information characterizing datasets labeled by multiple annotators. Moreover, I tackled the
+engineering challenges coming out of the adoption of CNN techniques in environments with limited
+power resources. I introduced solutions for counting vehicles directly onboard embedded vision
+systems. Finally, I designed an embedded modular Computer Vision-based system that can carry out
+several tasks to help monitor individual and collective human safety rules. 

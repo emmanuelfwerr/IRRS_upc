@@ -1,0 +1,19 @@
+Given quantum hardware that enables sampling from a family of natively implemented Hamiltonians,
+how well can one use that hardware to sample from a Hamiltonian outside that family? A common approach
+is to minor embed the desired Hamiltonian in a native Hamiltonian. In Phys. Rev. Research 2, 023020
+(2020) it was shown that minor embedding can be detrimental for classical thermal sampling. Here,
+we generalize these results by considering quantum thermal sampling in the transverse-field Ising
+model, i.e. sampling a Hamiltonian with non-zero off diagonal terms. To study these systems numerically
+we introduce a modification to standard cluster update quantum Monte-Carlo (QMC) techniques,
+which allows us to much more efficiently obtain thermal samples of an embedded Hamiltonian, enabling
+us to simulate systems of much larger sizes and larger transverse-field strengths than would otherwise
+be possible. Our numerics focus on models that can be implemented on current quantum devices using
+planar two-dimensional lattices, which exhibit finite-temperature quantum phase transitions.
+Our results include: i) An estimate on the probability to sample the logical subspace directly as
+a function of transverse-field, temperature, and total system size, which agrees with QMC simulations.
+ii) We show that typically measured observables (diagonal energy and magnetization) are biased
+by the embedding process, in the regime of intermediate transverse field strength, meaning that
+the extracted values are not the same as in the native model. iii) By considering individual embedding
+realizations akin to 'realizations of disorder', we provide numerical evidence suggesting that
+as the embedding size is increased, the critical point shifts to increasingly large values of the
+transverse-field. 

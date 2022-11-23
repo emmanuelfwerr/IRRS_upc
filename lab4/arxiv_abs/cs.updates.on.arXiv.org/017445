@@ -1,0 +1,19 @@
+For distributed protocols involving many servers, assuming that they do not collude with each other
+makes some secrecy problems solvable and reduces overheads and computational hardness assumptions
+in others. While the non-collusion assumption is pervasive among privacy-preserving systems,
+it remains highly susceptible to covert, undetectable collusion among computing parties. This
+work stems from an observation that if the number of available computing parties is much higher than
+the number of parties required to perform a secure computation, collusion attempts could be deterred.
+We focus on the standard problem of multi-server private information retrieval (PIR) that inherently
+assumes that servers do not collude. For PIR application scenarios, such as those for blockchain
+light clients, where the available servers are plentiful, a single server's deviating action is
+not tremendously beneficial to itself. We can make deviations undesired through small amounts
+of rewards and penalties, thus {\em raising the bar} for collusion significantly. For any given
+multi-server 1-private PIR (i.e., the base PIR scheme is constructed assuming no pairwise collusion),
+we provide a collusion mitigation mechanism. We first define a two-stage sequential game that captures
+how rational servers interact with each other during collusion, then determine the payment rules
+such that the game realizes the unique sequential equilibrium: a non-collusion outcome. We also
+offer privacy protection for an extended period after the query executions, and guarantee user
+compensation in case of a reported privacy breach. Overall, we conjecture that the incentive structure
+for collusion mitigation to be functional towards relaxing the strong non-collusion assumptions
+across a variety of multi-party computation tasks. 

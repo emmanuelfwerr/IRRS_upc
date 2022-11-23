@@ -1,0 +1,19 @@
+Recent advances in deep learning have allowed neural networks (NNs) to successfully replace traditional
+numerical solvers in many applications, thus enabling impressive computing gains. One such application
+is time domain simulation, which is indispensable for the design, analysis and operation of many
+engineering systems. Simulating dynamical systems with implicit Newton-based solvers is a computationally
+heavy task, as it requires the solution of a parameterized system of differential and algebraic
+equations at each time step. A variety of NN-based methodologies have been shown to successfully
+approximate the trajectories computed by numerical solvers at a fraction of the time. However,
+few previous works have used NNs to model the numerical solver itself. For the express purpose of
+accelerating time domain simulation speeds, this paper proposes and explores two complementary
+alternatives for modeling numerical solvers. First, we use a NN to mimic the linear transformation
+provided by the inverse Jacobian in a single Newton step. Using this procedure, we evaluate and project
+the exact, physics-based residual error onto the NN mapping, thus leaving physics ``in the loop''.
+The resulting tool, termed the Physics-pRojected Neural-Newton Solver (PRoNNS), is able to achieve
+an extremely high degree of numerical accuracy at speeds which were observed to be up to 31% faster
+than a Newton-based solver. In the second approach, we model the Newton solver at the heart of an implicit
+Runge-Kutta integrator as a contracting map iteratively seeking a fixed point on a time domain trajectory.
+The associated recurrent NN simulation tool, termed the Contracting Neural-Newton Solver (CoNNS),
+is embedded with training constraints (via CVXPY Layers) which guarantee the mapping provided
+by the NN satisfies the Banach fixed-point theorem. 

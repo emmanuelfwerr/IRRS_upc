@@ -1,0 +1,20 @@
+The jamming transition is ubiquitous. It is present in granular matter, foams, colloids, structural
+glasses, and many other systems. Yet, it defines a critical point whose properties still need to
+be fully understood. Recently, a major breakthrough came about when the replica formalism was extended
+to build a mean-field theory that provides an exact description of the jamming transition of spherical
+particles in the infinite-dimensional limit. While such theory explains the jamming critical
+behavior of both soft and hard spheres (HS), investigating these two kinds of particles in finite
+dimensions poses very different problems, particularly from the numerical point of view. Soft
+particles are modeled by a continuous potential; thus, their jamming point can be reached through
+efficient energy minimization algorithms. In contrast, such methods are inapplicable in HS systems
+because the interaction energy among the particles is always zero by construction. To overcome
+this difficulty, here we recast HS jamming as a constrained optimization problem and introduce
+the CALiPPSO algorithm, capable of readily producing jammed packings of HS without including any
+effective potential. This algorithm brings a HS configuration of arbitrary dimensions to its jamming
+point by solving a chain of linear optimization problems. We show that there is a strict correspondence
+between the force balance conditions of jammed packings and the properties of the optimal solutions
+of CALiPPSO, whence we prove analytically that our packings are always isostatic and in mechanical
+equilibrium. Furthermore, using extensive numerical simulations, we show that our algorithm
+is able to probe the complex structure of the free energy landscape, finding qualitative agreement
+with mean-field predictions. We also characterize the algorithmic complexity of CALiPPSO and
+provide an open-source implementation of it. 

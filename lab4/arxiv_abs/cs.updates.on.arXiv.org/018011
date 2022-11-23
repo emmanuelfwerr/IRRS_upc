@@ -1,0 +1,20 @@
+Given an edge-weighted graph and a set of known seed vertices, a network scientist often desires
+to understand the graph relationships to explain connections between the seed vertices. When the
+seed set is 3 or larger Steiner minimal tree - min-weight acyclic connected subgraph (of the input
+graph) that contains all the seed vertices - is an attractive generalization of shortest weighted
+paths. In general, computing a Steiner minimal tree is NP-hard, but several polynomial-time algorithms
+have been designed and proven to yield Steiner trees whose total weight is bounded within 2 times
+the Steiner minimal tree. In this paper, we present a parallel 2-approximation Steiner minimal
+tree algorithm and its MPI-based distributed implementation. In place of distance computation
+between all pairs of seed vertices, an expensive phase in many algorithms, our solution exploits
+Voronoi cell computation. Also, this approach has higher parallel efficiency than others that
+involve minimum spanning tree computation on the entire graph. Furthermore, our distributed design
+exploits asynchronous processing and a message prioritization scheme to accelerate convergence
+of distance computation, and harnesses both vertex and edge centric processing to offer fast time-to-solution.
+We demonstrate scalability and performance of our solution using real-world graphs with up to 128
+billion edges and 512 compute nodes (8K processes). We compare our solution with the state-of-the-art
+exact Steiner minimal tree solver, SCIP-Jack, and two serial algorithms. Our solution comfortably
+outperforms these related works on graphs with 10s million edges and offers decent strong scaling
+- up to 90% efficient. We empirically show that, on average, the total distance of the Steiner tree
+identified by our solution is 1.0527 times greater than the Steiner minimal tree - well within the
+theoretical bound of less than equal to 2. 

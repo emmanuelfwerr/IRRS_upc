@@ -1,0 +1,19 @@
+Data-driven forecasts of air quality have recently achieved more accurate short-term predictions.
+Despite their success, most of the current data-driven solutions lack proper quantifications
+of model uncertainty that communicate how much to trust the forecasts. Recently, several practical
+tools to estimate uncertainty have been developed in probabilistic deep learning. However, there
+have not been empirical applications and extensive comparisons of these tools in the domain of air
+quality forecasts. Therefore, this work applies state-of-the-art techniques of uncertainty
+quantification in a real-world setting of air quality forecasts. Through extensive experiments,
+we describe training probabilistic models and evaluate their predictive uncertainties based
+on empirical performance, reliability of confidence estimate, and practical applicability.
+We also propose improving these models using "free" adversarial training and exploiting temporal
+and spatial correlation inherent in air quality data. Our experiments demonstrate that the proposed
+models perform better than previous works in quantifying uncertainty in data-driven air quality
+forecasts. Overall, Bayesian neural networks provide a more reliable uncertainty estimate but
+can be challenging to implement and scale. Other scalable methods, such as deep ensemble, Monte
+Carlo (MC) dropout, and stochastic weight averaging-Gaussian (SWAG), can perform well if applied
+correctly but with different tradeoffs and slight variations in performance metrics. Finally,
+our results show the practical impact of uncertainty estimation and demonstrate that, indeed,
+probabilistic models are more suitable for making informed decisions. Code and dataset are available
+at \url{https://github.com/Abdulmajid-Murad/deep_probabilistic_forecast} 

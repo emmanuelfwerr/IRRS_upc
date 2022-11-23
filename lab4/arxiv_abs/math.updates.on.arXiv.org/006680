@@ -1,0 +1,20 @@
+Dynamic Mode Decomposition (DMD) describes complex dynamic processes through a hierarchy of simpler
+coherent features. DMD is regularly used to understand the fundamental characteristics of turbulence
+and is closely related to Koopman operators. However, verifying the decomposition, equivalently
+the computed spectral features of Koopman operators, remains a major challenge due to the infinite-dimensional
+nature of Koopman operators. Challenges include spurious (unphysical) modes, and dealing with
+continuous spectra, both of which occur regularly in turbulent flows. Residual Dynamic Mode Decomposition
+(ResDMD), introduced by (Colbrook & Townsend 2021), overcomes some of these challenges through
+the data-driven computation of residuals associated with the full infinite-dimensional Koopman
+operator. ResDMD computes spectra and pseudospectra of general Koopman operators with error control,
+and computes smoothed approximations of spectral measures (including continuous spectra) with
+explicit high-order convergence theorems. ResDMD thus provides robust and verified Koopmanism.
+We implement ResDMD and demonstrate its application in a variety of fluid dynamic situations, at
+varying Reynolds numbers, arising from both numerical and experimental data. Examples include:
+vortex shedding behind a cylinder; hot-wire data acquired in a turbulent boundary layer; particle
+image velocimetry data focusing on a wall-jet flow; and acoustic pressure signals of laser-induced
+plasma. We present some advantages of ResDMD, namely, the ability to verifiably resolve non-linear,
+transient modes, and spectral calculation with reduced broadening effects. We also discuss how
+a new modal ordering based on residuals enables greater accuracy with a smaller dictionary than
+the traditional modulus ordering. This paves the way for greater dynamic compression of large datasets
+without sacrificing accuracy. 

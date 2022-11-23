@@ -1,0 +1,19 @@
+Different people have different habits of describing their intents in conversations. Some people
+tend to deliberate their intents in several successive utterances, i.e., they use several consistent
+messages for readability instead of a long sentence to express their question. This creates a predicament
+faced by the application of dialogue systems, especially in real-world industry scenarios, in
+which the dialogue system is unsure whether it should answer the query of user immediately or wait
+for further supplementary input. Motivated by such an interesting predicament, we define a novel
+Wait-or-Answer task for dialogue systems. We shed light on a new research topic about how the dialogue
+system can be more intelligent to behave in this Wait-or-Answer quandary. Further, we propose a
+predictive approach named Predict-then-Decide (PTD) to tackle this Wait-or-Answer task. More
+specifically, we take advantage of a decision model to help the dialogue system decide whether to
+wait or answer. The decision of decision model is made with the assistance of two ancillary prediction
+models: a user prediction and an agent prediction. The user prediction model tries to predict what
+the user would supplement and uses its prediction to persuade the decision model that the user has
+some information to add, so the dialogue system should wait. The agent prediction model tries to
+predict the answer of the dialogue system and convince the decision model that it is a superior choice
+to answer the query of user immediately since the input of user has come to an end. We conduct our experiments
+on two real-life scenarios and three public datasets. Experimental results on five datasets show
+our proposed PTD approach significantly outperforms the existing models in solving this Wait-or-Answer
+problem. 

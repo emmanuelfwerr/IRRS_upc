@@ -1,0 +1,20 @@
+Enterprises have paid attention to consortium blockchains like Hyperledger Fabric, which is one
+of the most promising platforms, for efficient decentralized transactions without depending
+on any particular organization. A consortium blockchain-based system will be typically built
+across multiple organizations. In such blockchain-based systems, system operations across multiple
+organizations in a decentralized manner are essential to maintain the value of introducing consortium
+blockchains. Decentralized system operations have recently been becoming realistic with the
+evolution of consortium blockchains. For instance, the release of Hyperledger Fabric v2.x, in
+which individual operational tasks for a blockchain network, such as command execution of configuration
+change of channels (Fabric's sub-networks) and upgrade of chaincodes (Fabric's smart contracts),
+can be partially executed in a decentralized manner. However, the operations workflows also include
+the preceding procedure of pre-sharing, coordinating, and pre-agreeing the operational information
+(e.g., configuration parameters) among organizations, after which operation executions can
+be conducted, and this preceding procedure relies on costly manual tasks. To realize efficient
+decentralized operations workflows for consortium blockchain-based systems in general, we propose
+a decentralized inter-organizational operations method that we call Operations Smart Contract
+(OpsSC), which defines an operations workflow as a smart contract. Furthermore, we design and implement
+OpsSC for blockchain network operations with Hyperledger Fabric v2.x. This paper presents OpsSC
+for operating channels and chaincodes, which are essential for managing the blockchain networks,
+through clarifying detailed workflows of those operations. The implementation of OpsSC has been
+open-sourced and registered as one of Hyperledger Labs projects. 

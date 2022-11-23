@@ -1,0 +1,20 @@
+Despite the growing number of gamma-ray sources detected by Fermi-LAT, about one third of the sources
+in each survey remains of uncertain type. We present a new deep neural network approach for the classification
+of unidentified or unassociated gamma-ray sources in the last release of the Fermi-LAT catalogue
+(4FGL-DR2) obtained with 10 years of data. In contrast to previous work, our method directly uses
+the measurements of the photon energy spectrum and time series as input for the classification,
+instead of specific, human-crafted features. Dense neural networks, and for the first time in the
+context of gamma-ray source classification recurrent neural networks, are studied in depth. We
+focus on the separation between extragalactic sources, i.e.\ Active Galactic Nuclei, and Galactic
+pulsars, and on the further classification of pulsars into young and millisecond pulsars. Our neural
+network architectures provide powerful classifiers, with a performance that is comparable to
+previous analyses based on human-crafted features. Our benchmark neural network predicts that
+of the sources of uncertain type in the 4FGL-DR2, 1050 are Active Galactic Nuclei and 78 are Galactic
+pulsars, with both classes following the expected sky distribution and the clustering in the variability-curvature
+plane. We investigate the problem of sample selection bias by testing our architectures against
+a cross-match test data set using an older catalogue, and propose a feature selection algorithm
+using autoencoders. Our list of high-confidence candidate sources labelled by the neural networks
+provides a set of targets for further multiwavelength observations addressed to identify their
+nature. The deep neural network architectures we develop can be easily extended to include specific
+features, as well as multiwavelength data on the source photon energy and time spectra coming from
+different instruments. 

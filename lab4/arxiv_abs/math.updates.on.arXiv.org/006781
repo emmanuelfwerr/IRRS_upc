@@ -1,0 +1,19 @@
+In this paper, an intelligent reflecting surface (IRS) is introduced to assist an unmanned aerial
+vehicle (UAV) communication system based on non-orthogonal multiple access (NOMA) for serving
+multiple ground users. We aim to minimize the average total system energy consumption by jointly
+designing the resource allocation strategy, the three dimensional (3D) trajectory of the UAV,
+as well as the phase control at the IRS. The design is formulated as a non-convex optimization problem
+taking into account the maximum tolerable outage probability constraint and the individual minimum
+data rate requirement. To circumvent the intractability of the design problem due to the altitude-dependent
+Rician fading in UAV-to-user links, we adopt the deep neural network (DNN) approach to accurately
+approximate the corresponding effective channel gains, which facilitates the development of
+a low-complexity suboptimal iterative algorithm via dividing the formulated problem into two
+subproblems and address them alternatingly. Numerical results demonstrate that the proposed
+algorithm can converge to an effective solution within a small number of iterations and illustrate
+some interesting insights: (1) IRS enables a highly flexible UAV's 3D trajectory design via recycling
+the dissipated radio signal for improving the achievable system data rate and reducing the flight
+power consumption of the UAV; (2) IRS provides a rich array gain through passive beamforming in the
+reflection link, which can substantially reduce the required communication power for guaranteeing
+the required quality-of-service (QoS); (3) Optimizing the altitude of UAV's trajectory can effectively
+exploit the outage-guaranteed effective channel gain to save the total required communication
+power enabling power-efficient UAV communications. 

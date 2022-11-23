@@ -1,0 +1,19 @@
+We update the method of describing and assessing the process of the study of an abstract environment
+by a system, proposed earlier. We do not model any biological cognition mechanisms and consider
+the system as an agent equipped with an information processor (or a group of such agents), which makes
+a move in the environment, consumes information supplied by the environment, and gives out the next
+move (hence, the process is considered as a game). The system moves in an unknown environment and
+should recognize new objects located in it. In this case, the system should build comprehensive
+images of visible things and memorize them if necessary (and it should also choose the current goal
+set). The main problems here are object recognition, and the informational reward rating in the
+game. Thus, the main novelty of the paper is a new method of evaluating the amount of visual information
+about the object as the reward. In such a system, we suggest using a minimally pre-trained neural
+network to be responsible for the recognition: at first, we train the network only for Biederman
+geons (geometrical primitives). The geons are generated programmatically and we demonstrate
+that such a trained network recognizes geons in real objects quite well. We also offer to generate,
+procedurally, new objects from geon schemes (geon combinations in images) obtained from the environment
+and to store them in a database. In this case, we do not obtain new information about an object (i.e.,
+our reward is maximal, thus the game and the object cognition process stop) when we stop getting new
+schemes of this kind. These schemes are generated from geons connected with the object. In the case
+of a possibly known item, the informational reward is maximal when we have no more detection uncertainty
+for any of the objects. 

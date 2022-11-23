@@ -1,0 +1,20 @@
+Medical tasks are prone to inter-rater variability due to multiple factors such as image quality,
+professional experience and training, or guideline clarity. Training deep learning networks
+with annotations from multiple raters is a common practice that mitigates the model's bias towards
+a single expert. Reliable models generating calibrated outputs and reflecting the inter-rater
+disagreement are key to the integration of artificial intelligence in clinical practice. Various
+methods exist to take into account different expert labels. We focus on comparing three label fusion
+methods: STAPLE, average of the rater's segmentation, and random sampling of each rater's segmentation
+during training. Each label fusion method is studied using both the conventional training framework
+and the recently published SoftSeg framework that limits information loss by treating the segmentation
+task as a regression. Our results, across 10 data splittings on two public datasets, indicate that
+SoftSeg models, regardless of the ground truth fusion method, had better calibration and preservation
+of the inter-rater rater variability compared with their conventional counterparts without impacting
+the segmentation performance. Conventional models, i.e., trained with a Dice loss, with binary
+inputs, and sigmoid/softmax final activate, were overconfident and underestimated the uncertainty
+associated with inter-rater variability. Conversely, fusing labels by averaging with the SoftSeg
+framework led to underconfident outputs and overestimation of the rater disagreement. In terms
+of segmentation performance, the best label fusion method was different for the two datasets studied,
+indicating this parameter might be task-dependent. However, SoftSeg had segmentation performance
+systematically superior or equal to the conventionally trained models and had the best calibration
+and preservation of the inter-rater variability. 

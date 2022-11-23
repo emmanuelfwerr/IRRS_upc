@@ -1,0 +1,18 @@
+In the standard Gaussian linear measurement model $Y=X\mu_0+\xi \in \mathbb{R}^m$ with a fixed
+noise level $\sigma>0$, we consider the problem of estimating the unknown signal $\mu_0$ under
+a convex constraint $\mu_0 \in K$, where $K$ is a closed convex set in $\mathbb{R}^n$. We show that
+the risk of the natural convex constrained least squares estimator (LSE) $\hat{\mu}(\sigma)$
+can be characterized exactly in high dimensional limits, by that of the convex constrained LSE $\hat{\mu}_K^{\mathsf{seq}}$
+in the corresponding Gaussian sequence model at a different noise level. The characterization
+holds (uniformly) for risks in the maximal regime that ranges from constant order all the way down
+to essentially the parametric rate, as long as certain necessary non-degeneracy condition is satisfied
+for $\hat{\mu}(\sigma)$. The precise risk characterization reveals a fundamental difference
+between noiseless (or low noise limit) and noisy linear inverse problems in terms of the sample complexity
+for signal recovery. A concrete example is given by the isotonic regression problem: While exact
+recovery of a general monotone signal requires $m\gg n^{1/3}$ samples in the noiseless setting,
+consistent signal recovery in the noisy setting requires as few as $m\gg \log n$ samples. Such a discrepancy
+occurs when the low and high noise risk behavior of $\hat{\mu}_K^{\mathsf{seq}}$ differ significantly.
+In statistical languages, this occurs when $\hat{\mu}_K^{\mathsf{seq}}$ estimates $0$ at a faster
+`adaptation rate' than the slower `worst-case rate' for general signals. Several other examples,
+including non-negative least squares and generalized Lasso (in constrained forms), are also worked
+out to demonstrate the concrete applicability of the theory in problems of different types. 

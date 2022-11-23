@@ -1,0 +1,19 @@
+In this work we study orbit recovery over $SO(3)$, where the goal is to recover a function on the sphere
+from noisy, randomly rotated copies of it. We assume that the function is a linear combination of
+low-degree spherical harmonics. This is a natural abstraction for the problem of recovering the
+three-dimensional structure of a molecule through cryo-electron tomography. For provably learning
+the parameters of a generative model, the method of moments is the standard workhorse of theoretical
+machine learning. It turns out that there is a natural incarnation of the method of moments for orbit
+recovery based on invariant theory. Bandeira et al. [BBSK+18] used invariant theory to give tight
+bounds on the sample complexity in terms of the noise level. However many of the key challenges remain:
+Can we prove bounds on the sample complexity that are polynomial in $n$, the dimension of the signal?
+The bounds in [BBSK+18] hide constants that have an unspecified dependence on $n$ and only hold in
+the limit as $\sigma^2 \rightarrow \infty$ where $\sigma^2$ is the variance of the noise. Moreover
+can we give efficient algorithms? We revisit these challenges from the perspective of smoothed
+analysis, where we assume that the coefficients of the signal, in the basis of spherical harmonics,
+are subject to small random perturbations. Our main result is a quasi-polynomial time algorithm
+for orbit recovery over $SO(3)$ in this model. Our approach is based on frequency marching, which
+sequentially solves linear systems to find higher degree coefficients. Our main technical contribution
+is to show that these linear systems have unique solutions, are well-conditioned, and that the error
+can be made to compound over at most a logarithmic number of rounds. We believe that our work takes
+an important first step towards uncovering the algorithmic implications of invariant theory.

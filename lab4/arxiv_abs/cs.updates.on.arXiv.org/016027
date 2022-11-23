@@ -1,0 +1,20 @@
+Registration of unmanned aerial vehicle laser scanning (ULS) and ground light detection and ranging
+(LiDAR) point clouds in forests is critical to create a detailed representation of a forest structure
+and an accurate inversion of forest parameters. However, forest occlusion poses challenges for
+marker-based registration methods, and some marker-free automated registration methods have
+low efficiency due to the process of object (e.g., tree, crown) segmentation. Therefore, we use
+a divide-and-conquer strategy and propose an automated and efficient method to register ULS and
+ground LiDAR point clouds in forests. Registration involves coarse alignment and fine registration,
+where the coarse alignment of point clouds is divided into vertical and horizontal alignment. The
+vertical alignment is achieved by ground alignment, which is achieved by the transformation relationship
+between normal vectors of the ground point cloud and the horizontal plane, and the horizontal alignment
+is achieved by canopy projection image matching. During image matching, vegetation points are
+first distinguished by the ground filtering algorithm, and then, vegetation points are projected
+onto the horizontal plane to obtain two binary images. To match the two images, a matching strategy
+is used based on canopy shape context features, which are described by a two-point congruent set
+and canopy overlap. Finally, we implement coarse alignment of ULS and ground LiDAR datasets by combining
+the results of ground alignment and image matching and finish fine registration. Also, the effectiveness,
+accuracy, and efficiency of the proposed method are demonstrated by field measurements of forest
+plots. Experimental results show that the ULS and ground LiDAR data in different plots are registered,
+of which the horizontal alignment errors are less than 0.02 m, and the average runtime of the proposed
+method is less than 1 second. 

@@ -1,0 +1,20 @@
+This work examines adaptive distributed learning strategies designed to operate under communication
+constraints. We consider a network of agents that must solve an online optimization problem from
+continual observation of streaming data. The agents implement a distributed cooperative strategy
+where each agent is allowed to perform local exchange of information with its neighbors. In order
+to cope with communication constraints, the exchanged information must be unavoidably compressed.
+We propose a diffusion strategy nicknamed as ACTC (Adapt-Compress-Then-Combine), which relies
+on the following steps: i) an adaptation step where each agent performs an individual stochastic-gradient
+update with constant step-size; ii) a compression step that leverages a recently introduced class
+of stochastic compression operators; and iii) a combination step where each agent combines the
+compressed updates received from its neighbors. The distinguishing elements of this work are as
+follows. First, we focus on adaptive strategies, where constant (as opposed to diminishing) step-sizes
+are critical to respond in real time to nonstationary variations. Second, we consider the general
+class of directed graphs and left-stochastic combination policies, which allow us to enhance the
+interplay between topology and learning. Third, in contrast with related works that assume strong
+convexity for all individual agents' cost functions, we require strong convexity only at a network
+level, a condition satisfied even if a single agent has a strongly-convex cost and the remaining
+agents have non-convex costs. Fourth, we focus on a diffusion (as opposed to consensus) strategy.
+Under the demanding setting of compressed information, we establish that the ACTC iterates fluctuate
+around the desired optimizer, achieving remarkable savings in terms of bits exchanged between
+neighboring agents. 

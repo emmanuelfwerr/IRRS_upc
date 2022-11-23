@@ -1,0 +1,18 @@
+Many currently available universal approximation theorems affirm that deep feedforward networks
+defined using any suitable activation function can approximate any integrable function locally
+in $L^1$-norm. Though different approximation rates are available for deep neural networks defined
+using other classes of activation functions, there is little explanation for the empirically confirmed
+advantage that ReLU networks exhibit over their classical (e.g. sigmoidal) counterparts. Our
+main result demonstrates that deep networks with piecewise linear activation (e.g. ReLU or PReLU)
+are fundamentally more expressive than deep feedforward networks with analytic (e.g. sigmoid,
+Swish, GeLU, or Softplus). More specifically, we construct a strict refinement of the topology
+on the space $L^1_{\operatorname{loc}}(\mathbb{R}^d,\mathbb{R}^D)$ of locally Lebesgue-integrable
+functions, in which the set of deep ReLU networks with (bilinear) pooling $\operatorname{NN}^{\operatorname{ReLU}
++ \operatorname{Pool}}$ is dense (i.e. universal) but the set of deep feedforward networks defined
+using any combination of analytic activation functions with (or without) pooling layers $\operatorname{NN}^{\omega+\operatorname{Pool}}$
+is not dense (i.e. not universal). Our main result is further explained by \textit{quantitatively}
+demonstrating that this "separation phenomenon" between the networks in $\operatorname{NN}^{\operatorname{ReLU}+\operatorname{Pool}}$
+and those in $\operatorname{NN}^{\omega+\operatorname{Pool}}$ by showing that the networks
+in $\operatorname{NN}^{\operatorname{ReLU}}$ are capable of approximate any compactly supported
+Lipschitz function while \textit{simultaneously} approximating its essential support; whereas,
+the networks in $\operatorname{NN}^{\omega+\operatorname{pool}}$ cannot. 

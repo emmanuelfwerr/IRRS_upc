@@ -1,0 +1,20 @@
+Computer assisted diagnosis in digital pathology is becoming ubiquitous as it can provide more
+efficient and objective healthcare diagnostics. Recent advances have shown that the convolutional
+Neural Network (CNN) architectures, a well-established deep learning paradigm, can be used to
+design a Computer Aided Diagnostic (CAD) System for breast cancer detection. However, the challenges
+due to stain variability and the effect of stain normalization with such deep learning frameworks
+are yet to be well explored. Moreover, performance analysis with arguably more efficient network
+models, which may be important for high throughput screening, is also not well explored.To address
+this challenge, we consider some contemporary CNN models for binary classification of breast histopathology
+images that involves (1) the data preprocessing with stain normalized images using an adaptive
+colour deconvolution (ACD) based color normalization algorithm to handle the stain variabilities;
+and (2) applying transfer learning based training of some arguably more efficient CNN models, namely
+Visual Geometry Group Network (VGG16), MobileNet and EfficientNet. We have validated the trained
+CNN networks on a publicly available BreaKHis dataset, for 200x and 400x magnified histopathology
+images. The experimental analysis shows that pretrained networks in most cases yield better quality
+results on data augmented breast histopathology images with stain normalization, than the case
+without stain normalization. Further, we evaluated the performance and efficiency of popular
+lightweight networks using stain normalized images and found that EfficientNet outperforms VGG16
+and MobileNet in terms of test accuracy and F1 Score. We observed that efficiency in terms of test
+time is better in EfficientNet than other networks; VGG Net, MobileNet, without much drop in the
+classification accuracy. 

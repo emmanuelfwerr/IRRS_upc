@@ -1,0 +1,19 @@
+Computed tomography is widely used as an imaging tool to visualize three-dimensional structures
+with expressive bone-soft tissue contrast. However, CT resolution and radiation dose are tightly
+entangled, highlighting the importance of low-dose CT combined with sophisticated denoising
+algorithms. Most data-driven denoising techniques are based on deep neural networks and, therefore,
+contain hundreds of thousands of trainable parameters, making them incomprehensible and prone
+to prediction failures. Developing understandable and robust denoising algorithms achieving
+state-of-the-art performance helps to minimize radiation dose while maintaining data integrity.
+This work presents an open-source CT denoising framework based on the idea of bilateral filtering.
+We propose a bilateral filter that can be incorporated into a deep learning pipeline and optimized
+in a purely data-driven way by calculating the gradient flow toward its hyperparameters and its
+input. Denoising in pure image-to-image pipelines and across different domains such as raw detector
+data and reconstructed volume, using a differentiable backprojection layer, is demonstrated.
+Although only using three spatial parameters and one range parameter per filter layer, the proposed
+denoising pipelines can compete with deep state-of-the-art denoising architectures with several
+hundred thousand parameters. Competitive denoising performance is achieved on x-ray microscope
+bone data (0.7053 and 33.10) and the 2016 Low Dose CT Grand Challenge dataset (0.9674 and 43.07) in
+terms of SSIM and PSNR. Due to the extremely low number of trainable parameters with well-defined
+effect, prediction reliance and data integrity is guaranteed at any time in the proposed pipelines,
+in contrast to most other deep learning-based denoising architectures. 

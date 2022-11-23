@@ -1,0 +1,20 @@
+As in-vehicle communication becomes more complex, the automotive community is exploring various
+architectural options such as centralized and zonal architectures for their numerous benefits.
+Zonal architecture reduces the wiring cost by physically locating related operations and ECUs
+near their intended functions and the number of physical ECUs through function consolidation.
+Centralized architectures consolidate the number of ECUs into few, powerful compute units. Common
+characteristics of these architectures include the need for high-bandwidth communication and
+security, which have been elusive with standard automotive architectures. Further, as automotive
+communication technologies evolve, it is also likely that multiple link-layer technologies such
+as CAN and Automotive Ethernet will co-exist. These alternative architectures promise to integrate
+these diverse sets of technologies. However, architectures that allow such co-existence have
+not been adequately explored. In this work we explore a new network architecture called Named Data
+Networking (NDN) to achieve multiple goals: provide a foundational security infrastructure and
+bridge different link layer protocols such as CAN, LIN, and automotive Ethernet into a unified communication
+system. We created a proof-of-concept bench-top testbed using CAN HATS and Raspberry PIs that replay
+real traffic over CAN and Ethernet to demonstrate how NDN can provide a secure, high-speed bridge
+between different automotive link layers. We also show how NDN can support communication between
+centralized or zonal high-power compute components. Security is achieved through digitally signing
+all Data packets between these components, preventing unauthorized ECUs from injecting arbitrary
+data into the network. We also demonstrate NDN's ability to prevent DoS and replay attacks between
+different network segments connected through NDN. 

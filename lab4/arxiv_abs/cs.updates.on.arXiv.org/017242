@@ -1,0 +1,20 @@
+The weighted nearest neighbors (WNN) estimator has been popularly used as a flexible and easy-to-implement
+nonparametric tool for mean regression estimation. The bagging technique is an elegant way to form
+WNN estimators with weights automatically generated to the nearest neighbors; we name the resulting
+estimator as the distributional nearest neighbors (DNN) for easy reference. Yet, there is a lack
+of distributional results for such estimator, limiting its application to statistical inference.
+Moreover, when the mean regression function has higher-order smoothness, DNN does not achieve
+the optimal nonparametric convergence rate, mainly because of the bias issue. In this work, we provide
+an in-depth technical analysis of the DNN, based on which we suggest a bias reduction approach for
+the DNN estimator by linearly combining two DNN estimators with different subsampling scales,
+resulting in the novel two-scale DNN (TDNN) estimator. The two-scale DNN estimator has an equivalent
+representation of WNN with weights admitting explicit forms and some being negative. We prove that,
+thanks to the use of negative weights, the two-scale DNN estimator enjoys the optimal nonparametric
+rate of convergence in estimating the regression function under the fourth-order smoothness condition.
+We further go beyond estimation and establish that the DNN and two-scale DNN are both asymptotically
+normal as the subsampling scales and sample size diverge to infinity. For the practical implementation,
+we also provide variance estimators and a distribution estimator using the jackknife and bootstrap
+techniques for the two-scale DNN. These estimators can be exploited for constructing valid confidence
+intervals for nonparametric inference of the regression function. The theoretical results and
+appealing finite-sample performance of the suggested two-scale DNN method are illustrated with
+several numerical examples. 

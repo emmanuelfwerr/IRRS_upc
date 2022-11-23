@@ -1,0 +1,20 @@
+In this paper, we consider a general class of two-stage distributionally robust optimization (DRO)
+problems which includes prominent problem instances such as task scheduling, the assemble-to-order
+system, and supply chain network design. The ambiguity set is constrained by fixed marginal distributions
+that are not necessarily discrete. We develop a numerical algorithm for computing approximately
+optimal solutions of such problems. Through replacing the marginal constraints by a finite collection
+of linear constraints, we derive a relaxed-version of the two-stage DRO problem which serves as
+its upper bound. We can control the error incurred by the relaxation to be arbitrarily close to 0.
+Subsequently, we develop duality results tailored to this setting and transform the inf-sup problem
+into an inf-inf problem. This leads to a numerical algorithm for two-stage DRO problems with marginal
+constraints which solves a linear semi-infinite optimization problem via a cutting-plane method.
+Besides an approximately optimal solution, the proposed algorithm computes both an upper bound
+and a lower bound for the optimal value of the problem. The difference between the computed bounds
+provides us with a direct estimate of the sub-optimality of the computed solution. Most importantly,
+one is able to choose the inputs of the algorithm such that the sub-optimality is controlled to be
+arbitrarily small. In our numerical examples, we apply the proposed algorithm to task scheduling,
+the assemble-to-order system, and supply chain network design. The ambiguity sets in these problems
+involve a large number of marginals, which include both discrete and continuous distributions.
+The numerical results showcase that the proposed algorithm computes high-quality robust decisions
+along with their corresponding sub-optimality estimates with practically reasonable magnitudes
+that are not over-conservative. 

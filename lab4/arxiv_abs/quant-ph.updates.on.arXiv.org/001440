@@ -1,0 +1,20 @@
+In this work, we prove a hypercontractive inequality for matrix-valued functions defined over
+large alphabets, generalizing a result of Ben-Aroya, Regev, de Wolf (FOCS'08) for the Boolean alphabet.
+To obtain our result we generalize the powerful $2$-uniform convexity inequality for trace norms
+of Ball, Carlen, Lieb (Inventiones Mathematicae'94). We give two applications of this hypercontractive
+inequality. Locally decodable codes (LDC): we present a lower bound for LDCs over large alphabets.
+An LDC $C:\mathbb{Z}_r^n\to \mathbb{Z}_r^N$ encodes $x\in\mathbb{Z}_r^n$ into a codeword $C(x)$
+such that one can recover any $x_i$ (with probability at least $1/r+\varepsilon$) by making a few
+queries to a corrupted codeword. The main question is the trade-off between $N$ and $n$. By using
+hypercontractivity, we prove that $N=2^{\Omega(\varepsilon^4 n/r^4)}$ for $2$-query (possibly
+non-linear) LDCs over $\mathbb{Z}_r$. Previously exponential lower bounds were known for $r=2$
+(Kerenidis and de Wolf (JCSS'04)) and for linear codes (Dvir and Shpilka (SICOMP'07)). Streaming
+algorithms: we present upper and lower bounds for the communication complexity of the Hidden Hypermatching
+problem when defined over large alphabets, which generalizes the well-known Boolean Hidden Matching
+problem. We then consider streaming algorithms for approximating the value of Unique Games on a
+$t$-hyperedge hypergraph: a simple edge-counting argument gives an $r$-approximation with $O(\log{n})$
+space. On the other hand, we use our communication lower bound to show that any streaming algorithm
+in the adversarial model achieving a $(r-\varepsilon)$-approximation requires $\Omega(n^{1-1/t})$
+classical or $\Omega(n^{1-2/t})$ quantum space. In this setting, these results simplify and generalize
+the seminal work of Kapralov, Khanna and Sudan (SODA'15) and Kapravol and Krachun (STOC'19) when
+$r=2$. 

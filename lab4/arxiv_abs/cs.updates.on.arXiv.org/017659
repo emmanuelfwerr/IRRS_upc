@@ -1,0 +1,20 @@
+Object detection in low-light conditions remains a challenging but important problem with many
+practical implications. Some recent works show that, in low-light conditions, object detectors
+using raw image data are more robust than detectors using image data processed by a traditional ISP
+pipeline. To improve detection performance in low-light conditions, one can fine-tune the detector
+to use raw image data or use a dedicated low-light neural pipeline trained with paired low- and normal-light
+data to restore and enhance the image. However, different camera sensors have different spectral
+sensitivity and learning-based models using raw images process data in the sensor-specific color
+space. Thus, once trained, they do not guarantee generalization to other camera sensors. We propose
+to improve generalization to unseen camera sensors by implementing a minimal neural ISP pipeline
+for machine cognition, named GenISP, that explicitly incorporates Color Space Transformation
+to a device-independent color space. We also propose a two-stage color processing implemented
+by two image-to-parameter modules that take down-sized image as input and regress global color
+correction parameters. Moreover, we propose to train our proposed GenISP under the guidance of
+a pre-trained object detector and avoid making assumptions about perceptual quality of the image,
+but rather optimize the image representation for machine cognition. At the inference stage, GenISP
+can be paired with any object detector. We perform extensive experiments to compare our method to
+other low-light image restoration and enhancement methods in an extrinsic task-based evaluation
+and validate that GenISP can generalize to unseen sensors and object detectors. Finally, we contribute
+a low-light dataset of 7K raw images annotated with 46K bounding boxes for task-based benchmarking
+of future low-light image restoration and object detection. 

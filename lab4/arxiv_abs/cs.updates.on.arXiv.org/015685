@@ -1,0 +1,19 @@
+Federated learning (FL) is a widely adopted distributed learning paradigm in practice, which intends
+to preserve users' data privacy while leveraging the entire dataset of all participants for training.
+In FL, multiple models are trained independently on the users and aggregated centrally to update
+a global model in an iterative process. Although this approach is excellent at preserving privacy
+by design, FL still tends to suffer from quality issues such as attacks or byzantine faults. Some
+recent attempts have been made to address such quality challenges on the robust aggregation techniques
+for FL. However, the effectiveness of state-of-the-art (SOTA) robust FL techniques is still unclear
+and lacks a comprehensive study. Therefore, to better understand the current quality status and
+challenges of these SOTA FL techniques in the presence of attacks and faults, in this paper, we perform
+a large-scale empirical study to investigate the SOTA FL's quality from multiple angles of attacks,
+simulated faults (via mutation operators), and aggregation (defense) methods. In particular,
+we perform our study on two generic image datasets and one real-world federated medical image dataset.
+We also systematically investigate the effect of the distribution of attacks/faults over users
+and the independent and identically distributed (IID) factors, per dataset, on the robustness
+results. After a large-scale analysis with 496 configurations, we find that most mutators on each
+individual user have a negligible effect on the final model. Moreover, choosing the most robust
+FL aggregator depends on the attacks and datasets. Finally, we illustrate that it is possible to
+achieve a generic solution that works almost as well or even better than any single aggregator on
+all attacks and configurations with a simple ensemble model of aggregators. 

@@ -1,0 +1,19 @@
+Numerical models used in weather and climate prediction take into account a comprehensive set of
+atmospheric processes such as the resolved and unresolved fluid dynamics, radiative transfer,
+cloud and aerosol life cycles, and mass or energy exchanges with the Earth's surface. In order to
+identify model deficiencies and improve predictive skills, it is important to obtain process-level
+understanding of the interactions between different processes. Conditional sampling and budget
+analysis are powerful tools for process-oriented model evaluation, but they often require tedious
+ad hoc coding and large amounts of instantaneous model output, resulting in inefficient use of human
+and computing resources. This paper presents an online diagnostic tool that addresses this challenge
+by monitoring model variables in a generic manner as they evolve within the time integration cycle.
+The tool is convenient to use. It allows users to select sampling conditions and specify monitored
+variables at run time. Both the evolving values of the model variables and their increments caused
+by different atmospheric processes can be monitored and archived. Online calculation of vertical
+integrals is also supported. Multiple sampling conditions can be monitored in a single simulation
+in combination with unconditional sampling. The paper explains in detail the design and implementation
+of the tool in the Energy Exascale Earth System Model (E3SM) version 1. The usage is demonstrated
+through three examples: a global budget analysis of dust aerosol mass concentration, a composite
+analysis of sea salt emission and its dependency on surface wind speed, and a conditionally sampled
+relative humidity budget. The tool is expected to be easily portable to closely related atmospheric
+models that use the same or similar data structures and time integration methods. 

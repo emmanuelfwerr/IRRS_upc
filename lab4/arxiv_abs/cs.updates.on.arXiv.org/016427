@@ -1,0 +1,20 @@
+Currently, there is a burgeoning demand for deploying deep learning (DL) models on ubiquitous edge
+Internet of Things (IoT) devices attributed to their low latency and high privacy preservation.
+However, DL models are often large in size and require large-scale computation, which prevents
+them from being placed directly onto IoT devices, where resources are constrained and 32-bit floating-point
+(float-32) operations are unavailable. Commercial framework (i.e., a set of toolkits) empowered
+model quantization is a pragmatic solution that enables DL deployment on mobile devices and embedded
+systems by effortlessly post-quantizing a large high-precision model (e.g., float-32) into a
+small low-precision model (e.g., int-8) while retaining the model inference accuracy. However,
+their usability might be threatened by security vulnerabilities. This work reveals that the standard
+quantization toolkits can be abused to activate a backdoor. We demonstrate that a full-precision
+backdoored model which does not have any backdoor effect in the presence of a trigger -- as the backdoor
+is dormant -- can be activated by the default i) TensorFlow-Lite (TFLite) quantization, the only
+product-ready quantization framework to date, and ii) the beta released PyTorch Mobile framework.
+When each of the float-32 models is converted into an int-8 format model through the standard TFLite
+or Pytorch Mobile framework's post-training quantization, the backdoor is activated in the quantized
+model, which shows a stable attack success rate close to 100% upon inputs with the trigger, while
+it behaves normally upon non-trigger inputs. This work highlights that a stealthy security threat
+occurs when an end user utilizes the on-device post-training model quantization frameworks, informing
+security researchers of cross-platform overhaul of DL models post quantization even if these models
+pass front-end backdoor inspections. 

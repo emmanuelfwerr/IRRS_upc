@@ -1,0 +1,19 @@
+Encoding models that predict brain response patterns to stimuli are one way to capture this relationship
+between variability in bottom-up neural systems and individual's behavior or pathological state.
+However, they generally need a large amount of training data to achieve optimal accuracy. Here,
+we propose and test an alternative personalized ensemble encoding model approach to utilize existing
+encoding models, to create encoding models for novel individuals with relatively little stimuli-response
+data. We show that these personalized ensemble encoding models trained with small amounts of data
+for a specific individual, i.e. ~400 image-response pairs, achieve accuracy not different from
+models trained on ~24,000 image-response pairs for the same individual. Importantly, the personalized
+ensemble encoding models preserve patterns of inter-individual variability in the image-response
+relationship. Additionally, we use our personalized ensemble encoding model within the recently
+developed NeuroGen framework to generate optimal stimuli designed to maximize specific regions'
+activations for a specific individual. We show that the inter-individual differences in face area
+responses to images of dog vs human faces observed previously is replicated using NeuroGen with
+the ensemble encoding model. Finally, and most importantly, we show the proposed approach is robust
+against domain shift by validating on a prospectively collected set of image-response data in novel
+individuals with a different scanner and experimental setup. Our approach shows the potential
+to use previously collected, deeply sampled data to efficiently create accurate, personalized
+encoding models and, subsequently, personalized optimal synthetic images for new individuals
+scanned under different experimental conditions. 

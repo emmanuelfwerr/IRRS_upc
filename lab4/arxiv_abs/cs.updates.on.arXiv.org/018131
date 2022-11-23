@@ -1,0 +1,19 @@
+In order to trust machine learning for high-stakes problems, we need models to be both reliable and
+interpretable. Recently, there has been a growing body of work on interpretable machine learning
+which generates human understandable insights into data, models, or predictions. At the same time,
+there has been increased interest in quantifying the reliability and uncertainty of machine learning
+predictions, often in the form of confidence intervals for predictions using conformal inference.
+Yet, there has been relatively little attention given to the reliability and uncertainty of machine
+learning interpretations, which is the focus of this paper. Our goal is to develop confidence intervals
+for a widely-used form of machine learning interpretation: feature importance. We specifically
+seek to develop universal model-agnostic and assumption-light confidence intervals for feature
+importance that will be valid for any machine learning model and for any regression or classification
+task. We do so by leveraging a form of random observation and feature subsampling called minipatch
+ensembles and show that our approach provides assumption-light asymptotic coverage for the feature
+importance score of any model. Further, our approach is fast as computations needed for inference
+come nearly for free as part of the ensemble learning process. Finally, we also show that our same
+procedure can be leveraged to provide valid confidence intervals for predictions, hence providing
+fast, simultaneous quantification of the uncertainty of both model predictions and interpretations.
+We validate our intervals on a series of synthetic and real data examples, showing that our approach
+detects the correct important features and exhibits many computational and statistical advantages
+over existing methods. 

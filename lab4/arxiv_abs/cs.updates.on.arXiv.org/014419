@@ -1,0 +1,20 @@
+Physical Unclonable Function (PUF) is a hardware security primitive with a desirable feature of
+low-cost. Based on the space of challenge-response pairs (CRPs), it has two categories:weak PUF
+and strong PUF. Though designing a reliable and secure lightweight strong PUF is challenging, there
+is continuing efforts to fulfill this gap due to wide range of applications enabled by strong PUF.
+It was prospected that the combination of MAX and MIN bit-wise operation is promising for improving
+the modeling resilience when MAX and MIN are employed in the PUF recomposition. The main rationale
+lies on the fact that each bit-wise might be mainly vulnerable to one specific type of modeling attack,
+combining them can have an improved holistic resilience. This work is to first evaluate the main
+PUF performance, in particular,uniformity and reliability of the OR-AND-XOR-PUF(OAX-PUF)-(x,
+y, z)-OAX-PUF. Compared with the most used l-XOR-PUF, the (x, y, z)-OAX-PUF eventually exhibits
+better reliability given l=x+y+z without degrading the uniformity retaining to be 50%. We further
+examine the modeling resilience of the (x, y, z)-OAX-PUF with four powerful attacking strategies
+to date, which are Logistic Regression (LR) attack, reliability assisted CMA-ES attack, multilayer
+perceptron (MLP) attack, and the most recent hybrid LR-reliability attack. In comparison with
+the XOR-APUF, the OAX-APUF successfully defeats the CAM-ES attack. However, it shows no notable
+modeling accuracy drop against other three attacks, though the attacking times have been greatly
+prolonged to LR and hybrid LR-reliability attacks. Overall, the OAX recomposition could be an alternative
+lightweight recomposition method compared to XOR towards constructing strong PUFs if the underlying
+PUF, e.g., FF-APUF, has exhibited improved resilience to modeling attack, because the OAX incurs
+smaller reliability degradation compared to XOR. 

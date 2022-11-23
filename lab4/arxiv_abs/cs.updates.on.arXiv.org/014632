@@ -1,0 +1,20 @@
+Clinicians are often very sceptical about applying automatic image processing approaches, especially
+deep learning based methods, in practice. One main reason for this is the black-box nature of these
+approaches and the inherent problem of missing insights of the automatically derived decisions.
+In order to increase trust in these methods, this paper presents approaches that help to interpret
+and explain the results of deep learning algorithms by depicting the anatomical areas which influence
+the decision of the algorithm most. Moreover, this research presents a unified framework, TorchEsegeta,
+for applying various interpretability and explainability techniques for deep learning models
+and generate visual interpretations and explanations for clinicians to corroborate their clinical
+findings. In addition, this will aid in gaining confidence in such methods. The framework builds
+on existing interpretability and explainability techniques that are currently focusing on classification
+models, extending them to segmentation tasks. In addition, these methods have been adapted to 3D
+models for volumetric analysis. The proposed framework provides methods to quantitatively compare
+visual explanations using infidelity and sensitivity metrics. This framework can be used by data
+scientists to perform post-hoc interpretations and explanations of their models, develop more
+explainable tools and present the findings to clinicians to increase their faith in such models.
+The proposed framework was evaluated based on a use case scenario of vessel segmentation models
+trained on Time-of-fight (TOF) Magnetic Resonance Angiogram (MRA) images of the human brain. Quantitative
+and qualitative results of a comparative study of different models and interpretability methods
+are presented. Furthermore, this paper provides an extensive overview of several existing interpretability
+and explainability methods. 

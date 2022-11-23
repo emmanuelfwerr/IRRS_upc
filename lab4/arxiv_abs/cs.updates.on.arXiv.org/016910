@@ -1,0 +1,19 @@
+Automatic segmentation of vertebral bodies (VBs) and intervertebral discs (IVDs) in 3D magnetic
+resonance (MR) images is vital in diagnosing and treating spinal diseases. However, segmenting
+the VBs and IVDs simultaneously is not trivial. Moreover, problems exist, including blurry segmentation
+caused by anisotropy resolution, high computational cost, inter-class similarity and intra-class
+variability, and data imbalances. We proposed a two-stage algorithm, named semi-supervised hybrid
+spine network (SSHSNet), to address these problems by achieving accurate simultaneous VB and IVD
+segmentation. In the first stage, we constructed a 2D semi-supervised DeepLabv3+ by using cross
+pseudo supervision to obtain intra-slice features and coarse segmentation. In the second stage,
+a 3D full-resolution patch-based DeepLabv3+ was built. This model can be used to extract inter-slice
+information and combine the coarse segmentation and intra-slice features provided from the first
+stage. Moreover, a cross tri-attention module was applied to compensate for the loss of inter-slice
+and intra-slice information separately generated from 2D and 3D networks, thereby improving feature
+representation ability and achieving satisfactory segmentation results. The proposed SSHSNet
+was validated on a publicly available spine MR image dataset, and remarkable segmentation performance
+was achieved. Moreover, results show that the proposed method has great potential in dealing with
+the data imbalance problem. Based on previous reports, few studies have incorporated a semi-supervised
+learning strategy with a cross attention mechanism for spine segmentation. Therefore, the proposed
+method may provide a useful tool for spine segmentation and aid clinically in spinal disease diagnoses
+and treatments. Codes are publicly available at: https://github.com/Meiyan88/SSHSNet. 

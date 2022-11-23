@@ -1,0 +1,18 @@
+We propose a Visual Teach and Repeat (VTR) algorithm using semantic landmarks extracted from environmental
+objects for ground robots with fixed mount monocular cameras. The proposed algorithm is robust
+to changes in the starting pose of the camera/robot, where a pose is defined as the planar position
+plus the orientation around the vertical axis. VTR consists of a teach phase in which a robot moves
+in a prescribed path, and a repeat phase in which the robot tries to repeat the same path starting from
+the same or a different pose. Most available VTR algorithms are pose dependent and cannot perform
+well in the repeat phase when starting from an initial pose far from that of the teach phase. To achieve
+more robust pose independency, the key is to generate a 3D semantic map of the environment containing
+the camera trajectory and the positions of surrounding objects during the teach phase. For specific
+implementation, we use ORB-SLAM to collect the camera poses and the 3D point clouds of the environment,
+and YOLOv3 to detect objects in the environment. We then combine the two outputs to build the semantic
+map. In the repeat phase, we relocalize the robot based on the detected objects and the stored semantic
+map. The robot is then able to move toward the teach path, and repeat it in both forward and backward
+directions. We have tested the proposed algorithm in different scenarios and compared it with two
+most relevant recent studies. Also, we compared our algorithm with two image-based relocalization
+methods. One is purely based on ORB-SLAM and the other combines Superglue and RANSAC. The results
+show that our algorithm is much more robust with respect to pose variations as well as environmental
+alterations. Our code and data are available at the following Github page: https://github.com/mmahdavian/semantic_visual_teach_repeat.

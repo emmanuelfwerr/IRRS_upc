@@ -1,0 +1,19 @@
+Automatic surgical instrument segmentation of endoscopic images is a crucial building block of
+many computer-assistance applications for minimally invasive surgery. So far, state-of-the-art
+approaches completely rely on the availability of a ground-truth supervision signal, obtained
+via manual annotation, thus expensive to collect at large scale. In this paper, we present FUN-SIS,
+a Fully-UNsupervised approach for binary Surgical Instrument Segmentation. FUN-SIS trains a
+per-frame segmentation model on completely unlabelled endoscopic videos, by solely relying on
+implicit motion information and instrument shape-priors. We define shape-priors as realistic
+segmentation masks of the instruments, not necessarily coming from the same dataset/domain as
+the videos. The shape-priors can be collected in various and convenient ways, such as recycling
+existing annotations from other datasets. We leverage them as part of a novel generative-adversarial
+approach, allowing to perform unsupervised instrument segmentation of optical-flow images during
+training. We then use the obtained instrument masks as pseudo-labels in order to train a per-frame
+segmentation model; to this aim, we develop a learning-from-noisy-labels architecture, designed
+to extract a clean supervision signal from these pseudo-labels, leveraging their peculiar noise
+properties. We validate the proposed contributions on three surgical datasets, including the
+MICCAI 2017 EndoVis Robotic Instrument Segmentation Challenge dataset. The obtained fully-unsupervised
+results for surgical instrument segmentation are almost on par with the ones of fully-supervised
+state-of-the-art approaches. This suggests the tremendous potential of the proposed method to
+leverage the great amount of unlabelled data produced in the context of minimally invasive surgery.

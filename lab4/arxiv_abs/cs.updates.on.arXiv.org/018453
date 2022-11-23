@@ -1,0 +1,18 @@
+In the past couple of decades, significant research efforts are devoted to the prediction of software
+bugs (i.e., defects). These works leverage a diverse set of metrics, tools, and techniques to predict
+which classes, methods, lines, or commits are buggy. However, most existing work in this domain
+treats all bugs the same, which is not the case in practice. The more severe the bugs the higher their
+consequences. Therefore, it is important for a defect prediction method to estimate the severity
+of the identified bugs, so that the higher severity ones get immediate attention. In this paper,
+we provide a quantitative and qualitative study on two popular datasets (Defects4J and Bugs.jar),
+using 10 common source code metrics, and also two popular static analysis tools (SpotBugs and Infer)
+for analyzing their capability in predicting defects and their severity. We studied 3,358 buggy
+methods with different severity labels from 19 Java open-source projects. Results show that although
+code metrics are powerful in predicting the buggy code (Lines of the Code, Maintainable Index, FanOut,
+and Effort metrics are the best), they cannot estimate the severity level of the bugs. In addition,
+we observed that static analysis tools have weak performance in both predicting bugs (F1 score range
+of 3.1%-7.1%) and their severity label (F1 score under 2%). We also manually studied the characteristics
+of the severe bugs to identify possible reasons behind the weak performance of code metrics and static
+analysis tools in estimating the severity. Also, our categorization shows that Security bugs have
+high severity in most cases while Edge/Boundary faults have low severity. Finally, we show that
+code metrics and static analysis methods can be complementary in terms of estimating bug severity.

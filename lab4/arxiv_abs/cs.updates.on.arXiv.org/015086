@@ -1,0 +1,20 @@
+Deep learning based virtual try-on system has achieved some encouraging progress recently, but
+there still remain several big challenges that need to be solved, such as trying on arbitrary clothes
+of all types, trying on the clothes from one category to another and generating image-realistic
+results with few artifacts. To handle this issue, we in this paper first collect a new dataset with
+all types of clothes, \ie tops, bottoms, and whole clothes, each one has multiple categories with
+rich information of clothing characteristics such as patterns, logos, and other details. Based
+on this dataset, we then propose the Arbitrary Virtual Try-On Network (AVTON) that is utilized for
+all-type clothes, which can synthesize realistic try-on images by preserving and trading off characteristics
+of the target clothes and the reference person. Our approach includes three modules: 1) Limbs Prediction
+Module, which is utilized for predicting the human body parts by preserving the characteristics
+of the reference person. This is especially good for handling cross-category try-on task (\eg long
+sleeves \(\leftrightarrow\) short sleeves or long pants \(\leftrightarrow\) skirts, \etc),
+where the exposed arms or legs with the skin colors and details can be reasonably predicted; 2) Improved
+Geometric Matching Module, which is designed to warp clothes according to the geometry of the target
+person. We improve the TPS based warping method with a compactly supported radial function (Wendland's
+\(\Psi\)-function); 3) Trade-Off Fusion Module, which is to trade off the characteristics of the
+warped clothes and the reference person. This module is to make the generated try-on images look
+more natural and realistic based on a fine-tune symmetry of the network structure. Extensive simulations
+are conducted and our approach can achieve better performance compared with the state-of-the-art
+virtual try-on methods. 

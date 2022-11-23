@@ -1,0 +1,20 @@
+Vehicle-to-Everything (V2X) network has enabled collaborative perception in autonomous driving,
+which is a promising solution to the fundamental defect of stand-alone intelligence including
+blind zones and long-range perception. However, the lack of datasets has severely blocked the development
+of collaborative perception algorithms. In this work, we release DOLPHINS: Dataset for cOllaborative
+Perception enabled Harmonious and INterconnected Self-driving, as a new simulated large-scale
+various-scenario multi-view multi-modality autonomous driving dataset, which provides a ground-breaking
+benchmark platform for interconnected autonomous driving. DOLPHINS outperforms current datasets
+in six dimensions: temporally-aligned images and point clouds from both vehicles and Road Side
+Units (RSUs) enabling both Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I) based
+collaborative perception; 6 typical scenarios with dynamic weather conditions make the most various
+interconnected autonomous driving dataset; meticulously selected viewpoints providing full
+coverage of the key areas and every object; 42376 frames and 292549 objects, as well as the corresponding
+3D annotations, geo-positions, and calibrations, compose the largest dataset for collaborative
+perception; Full-HD images and 64-line LiDARs construct high-resolution data with sufficient
+details; well-organized APIs and open-source codes ensure the extensibility of DOLPHINS. We also
+construct a benchmark of 2D detection, 3D detection, and multi-view collaborative perception
+tasks on DOLPHINS. The experiment results show that the raw-level fusion scheme through V2X communication
+can help to improve the precision as well as to reduce the necessity of expensive LiDAR equipment
+on vehicles when RSUs exist, which may accelerate the popularity of interconnected self-driving
+vehicles. DOLPHINS is now available on https://dolphins-dataset.net/. 

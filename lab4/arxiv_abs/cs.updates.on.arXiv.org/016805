@@ -1,0 +1,19 @@
+In next-generation wireless networks, reconfigurable intelligent surface (RIS)-assisted multiple-input
+multiple-output (MIMO) systems are foreseeable to support a large number of antennas at the transceiver
+as well as a large number of reflecting elements at the RIS. To fully unleash the potential of RIS,
+the phase shifts of RIS elements should be carefully designed, resulting in a high-dimensional
+non-convex optimization problem that is hard to solve with affordable computational complexity.
+In this paper, we address this scalability issue by partitioning RIS into sub-surfaces, so as to
+optimize the phase shifts in sub-surface levels to reduce complexity. Specifically, each sub-surface
+employs a linear phase variation structure to anomalously reflect the incident signal to a desired
+direction, and the sizes of sub-surfaces can be adaptively adjusted according to channel conditions.
+We formulate the achievable rate maximization problem by jointly optimizing the transmit covariance
+matrix and the RIS phase shifts. Then, we characterize the asymptotic behavior of the system with
+an infinitely large number of transceiver antennas and RIS elements. The asymptotic analysis provides
+useful insights on the understanding of the fundamental performance-complexity tradeoff in RIS
+partitioning design. We show that the achievable rate maximization problem has a rather simple
+form in the asymptotic regime, and we develop an efficient algorithm to find the optimal solution
+via one-dimensional (1D) search. Moreover, we discuss the insights and impacts of the asymptotically
+optimal solution on finite-size system design. By applying the asymptotic result to a finite-size
+system with necessary modifications, we show by numerical results that the proposed design achieves
+a favorable tradeoff between system performance and computational complexity. 

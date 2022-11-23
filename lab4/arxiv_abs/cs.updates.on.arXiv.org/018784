@@ -1,0 +1,18 @@
+In recent years, hardware accelerators based on field-programmable gate arrays (FPGAs) have been
+widely adopted, thanks to FPGAs' extraordinary flexibility. However, with the high flexibility
+comes the difficulty in design and optimization. Conventionally, these accelerators are designed
+with low-level hardware descriptive languages, which means creating large designs with complex
+behavior is extremely difficult. Therefore, high-level synthesis (HLS) tools were created to
+simplify hardware designs for FPGAs. They enable the user to create hardware designs using high-level
+languages and provide various optimization directives to help to improve the performance of the
+synthesized hardware. However, applying these optimizations to achieve high performance is time-consuming
+and usually requires expert knowledge. To address this difficulty, we present an automated design
+space exploration tool for applying HLS optimization directives, called Chimera, which significantly
+reduces the human effort and expertise needed for creating high-performance HLS designs. It utilizes
+a novel multi-objective exploration method that seamlessly integrates active learning, evolutionary
+algorithm, and Thompson sampling, making it capable of finding a set of optimized designs on a Pareto
+curve with only a small number of design points evaluated during the exploration. In the experiments,
+in less than 24 hours, this hybrid method explored design points that have the same or superior performance
+compared to highly optimized hand-tuned designs created by expert HLS users from the Rosetta benchmark
+suite. In addition to discovering the extreme points, it also explores a Pareto frontier, where
+the elbow point can potentially save up to 26\% of Flip-Flop resource with negligibly higher latency.

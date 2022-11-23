@@ -1,0 +1,20 @@
+De-homogenization is becoming an effective method to significantly expedite the design of high-resolution
+multiscale structures, but existing methods have thus far been confined to simple static compliance
+minimization. There are two critical challenges to be addressed in accommodating general cases:
+enabling the design of unit-cell orientation and using free-form microstructures. In this paper,
+we propose a data-driven de-homogenization method that allows effective design of the unit-cell
+orientation angles and conformal mapping of spatially varying, complex microstructures. We devise
+a parameterized microstructure composed of rods in different directions to provide more diversity
+in stiffness while retaining geometrical simplicity. The microstructural geometry-property
+relationship is then surrogated by a neural network to avoid costly homogenization. A Cartesian
+representation of the unit-cell orientation is incorporated into homogenization-based optimization
+to design the angles. Corresponding high-resolution multiscale structures are obtained from
+the homogenization-based designs through a conformal mapping constructed with sawtooth function
+fields. This allows us to assemble complex microstructures with an oriented and compatible tiling
+pattern, while preserving the local homogenized properties. To demonstrate our method with a specific
+application, we optimize the frequency response of structures under harmonic excitations within
+a given frequency range. It is the first time that a sawtooth function is applied in a de-homogenization
+framework for complex design scenarios beyond static compliance minimization. The examples illustrate
+that multiscale structures can be generated with high efficiency and much better dynamic performance
+compared with the macroscale-only optimization. Beyond frequency response design, our proposed
+framework can be applied to other general problems. 

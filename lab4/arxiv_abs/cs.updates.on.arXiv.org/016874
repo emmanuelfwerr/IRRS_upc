@@ -1,0 +1,19 @@
+We propose a modification of the standard linear implicit Euler integrator for the weak approximation
+of parabolic semilinear stochastic PDEs driven by additive space-time white noise. The new method
+can easily be combined with a finite difference method for the spatial discretization. The proposed
+method is shown to have improved qualitative properties compared with the standard method. First,
+for any time-step size, the spatial regularity of the solution is preserved, at all times. Second,
+the proposed method preserves the Gaussian invariant distribution of the infinite dimensional
+Ornstein--Uhlenbeck process obtained when the nonlinearity is absent, for any time-step size.
+The weak order of convergence of the proposed method is shown to be equal to $1/2$ in a general setting,
+like for the standard Euler scheme. A stronger weak approximation result is obtained when considering
+the approximation of a Gibbs invariant distribution, when the nonlinearity is a gradient: one obtains
+an approximation in total variation distance of order $1/2$, which does not hold for the standard
+method. This is the first result of this type in the literature. A key point in the analysis is the interpretation
+of the proposed modified Euler scheme as the accelerated exponential Euler scheme applied to a modified
+stochastic evolution equation. Finally, it is shown that the proposed method can be applied to design
+an asymptotic preserving scheme for a class of slow-fast multiscale systems, and to construct a
+Markov Chain Monte Carlo method which is well-defined in infinite dimension. We also revisit the
+analysis of the standard and the accelerated exponential Euler scheme, and we prove new results
+with approximation in the total variation distance, which serve to illustrate the behavior of the
+proposed modified Euler scheme. 

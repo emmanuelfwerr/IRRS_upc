@@ -1,0 +1,19 @@
+This work studies a fundamental trade-off between privacy and welfare in aggregation of privatized
+preferences of individuals. It presents the precise rate at which welfare decreases with increasing
+levels of privacy. Trade-offs in achieving privacy while maintaining accuracy or more recently
+in maintaining fairness have been studied so far in prior works. Social choice functions help aggregate
+individual preferences while differentially private mechanisms provide formal privacy guarantees
+to release answers of queries operating on data. However, once differential privacy inducing noise
+is introduced into a voting system, the deterministic social choice function used to release an
+aggregated choice may not be ideal anymore. It might change the power balances between the voters.
+It could be the case that an alternate social choice function becomes more ideal to aggregate the
+preferences. There could be a constraint to operate the voting system at a specific level of either
+privacy or influence or welfare, and one would like to know the effects on rest of the unconstrained
+choices. In this paper, we introduce notions of welfare and probabilistic influence of privatization
+mechanisms to help precisely answer such questions through the proposed results. Throughout the
+paper, we restrict our work to social choice functions where several voters vote for either of two
+candidates. We present two different ways of proving each of our results that connects privacy with
+welfare & probabilistic influence: i.) by using first principles from combinatorics/probability,
+ii.) by using Fourier analysis of Boolean functions. Finally, we analyze the accuracy of the private
+mechanism on various social choice functions. The results in this paper thereby help bridge two
+prominent fields of social choice theory and differential privacy. 

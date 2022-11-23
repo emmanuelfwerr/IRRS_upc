@@ -1,0 +1,18 @@
+Transformer-based supervised pre-training achieves great performance in person re-identification
+(ReID). However, due to the domain gap between ImageNet and ReID datasets, it usually needs a larger
+pre-training dataset (e.g. ImageNet-21K) to boost the performance because of the strong data fitting
+ability of the transformer. To address this challenge, this work targets to mitigate the gap between
+the pre-training and ReID datasets from the perspective of data and model structure, respectively.
+We first investigate self-supervised learning (SSL) methods with Vision Transformer (ViT) pretrained
+on unlabelled person images (the LUPerson dataset), and empirically find it significantly surpasses
+ImageNet supervised pre-training models on ReID tasks. To further reduce the domain gap and accelerate
+the pre-training, the Catastrophic Forgetting Score (CFS) is proposed to evaluate the gap between
+pre-training and fine-tuning data. Based on CFS, a subset is selected via sampling relevant data
+close to the down-stream ReID data and filtering irrelevant data from the pre-training dataset.
+For the model structure, a ReID-specific module named IBN-based convolution stem (ICS) is proposed
+to bridge the domain gap by learning more invariant features. Extensive experiments have been conducted
+to fine-tune the pre-training models under supervised learning, unsupervised domain adaptation
+(UDA), and unsupervised learning (USL) settings. We successfully downscale the LUPerson dataset
+to 50% with no performance degradation. Finally, we achieve state-of-the-art performance on Market-1501
+and MSMT17. For example, our ViT-S/16 achieves 91.3%/89.9%/89.6% mAP accuracy on Market1501 for
+supervised/UDA/USL ReID. Codes and models will be released to https://github.com/michuanhaohao/TransReID-SSL.

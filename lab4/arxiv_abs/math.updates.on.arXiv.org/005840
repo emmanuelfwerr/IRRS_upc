@@ -1,0 +1,19 @@
+We provide a novel framework to compute a discrete vector potential of a given discrete vector field
+on arbitrary polyhedral meshes. The framework exploits the concept of acyclic matching, a combinatorial
+tool at the core of discrete Morse theory. We introduce the new concept of complete acyclic matchings
+and we show that they give the same end result of Gaussian elimination. Basically, instead of doing
+costly row and column operations on a sparse matrix, we compute equivalent cheap combinatorial
+operations that preserve the underlying sparsity structure. Currently, the most efficient algorithms
+proposed in literature to find discrete vector potentials make use of tree-cotree techniques.
+We show that they compute a special type of complete acyclic matchings. Moreover, we show that the
+problem of computing them is equivalent to the problem of deciding whether a given mesh has a topological
+property called collapsibility. This fact gives a topological characterization of well-known
+termination problems of tree-cotree techniques. We propose a new recursive algorithm to compute
+discrete vector potentials. It works directly on basis elements of $1$- and $2$-chains by performing
+elementary Gaussian operations on them associated with acyclic matchings. However, the main novelty
+is that it can be applied recursively. Indeed, the recursion process allows us to sidetrack termination
+problems of the standard tree-cotree techniques. We tested the algorithm on pathological triangulations
+with known topological obstructions. In all tested problems we observe linear computational complexity
+as a function of mesh size. Moreover, the algorithm is purely graph-based so it is straightforward
+to implement and does not require specialized external procedures. We believe that our framework
+could offer new perspectives to sparse matrix computations. 

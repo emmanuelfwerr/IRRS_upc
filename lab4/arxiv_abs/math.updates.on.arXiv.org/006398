@@ -1,0 +1,19 @@
+A nested Karlin's occupancy scheme is a symbiosis of classical Karlin's balls-in-boxes scheme
+and a weighted branching process. To define it, imagine a deterministic weighted branching process
+in which weights of the first generation individuals are given by the elements of a discrete probability
+distribution. For each positive integer $j$, identify the $j$th generation individuals with the
+$j$th generation boxes. The collection of balls is one and the same for all generations, and each
+ball starts at the root of the weighted branching process tree and moves along the tree according
+to the following rule: transition from a mother box to a daughter box occurs with probability given
+by the ratio of the daughter and mother weights. Assume that there are $n$ balls and that the discrete
+probability distribution responsible for the first generation is Weibull-like. Denote by $\mathcal{K}_n^{(j)}(l)$
+and $\mathcal{K}_n^{*(j)}(l)$ the number of the $j$th generation boxes which contain at least
+$l$ balls and exactly $l$ balls, respectively. We prove functional limit theorems (FLTs) for the
+matrix-valued processes $\big(\mathcal{K}_{[{\rm e}^{T+\cdot}]}^{(j)}(l)\big)_{j,l\in\mathbb{N}}$
+and $\big(\mathcal{ K}_{[{\rm e}^{T+\cdot}]}^{*(j)}(l)\big)_{j,l\in\mathbb{N}}$, properly
+normalized and centered, as $T\to \infty$. The present FLTs are an extension of a FLT proved by Iksanov,
+Kabluchko and Kotelnikova (2022) for the vector-valued process $\big(\mathcal{K}_{[{\rm e}^{T+\cdot}]}^{(j)}(1)\big)_{j\in\mathbb{N}}$.
+While the rows of each of the limit matrix-valued processes are independent and identically distributed,
+the entries within each row are stationary Gaussian processes with explicitly given covariances
+and cross-covariances. We provide an integral representation for each row. The results obtained
+are new even for Karlin's occupancy scheme. 

@@ -1,0 +1,20 @@
+This study established a feature-enhanced adversarial semi-supervised semantic segmentation
+model to automatically annotate pulmonary embolism lesion areas in computed tomography pulmonary
+angiogram (CTPA) images. In current studies, all of the PE CTPA image segmentation methods are trained
+by supervised learning. However, the supervised learning models need to be retrained and the images
+need to be relabeled when the CTPA images come from different hospitals. This study proposed a semi-supervised
+learning method to make the model applicable to different datasets by adding a small amount of unlabeled
+images. By training the model with both labeled and unlabeled images, the accuracy of unlabeled
+images can be improved and the labeling cost can be reduced. Our semi-supervised segmentation model
+includes a segmentation network and a discriminator network. We added feature information generated
+from the encoder of segmentation network to the discriminator so that it can learn the similarity
+between predicted mask and ground truth mask. This HRNet-based architecture can maintain a higher
+resolution for convolutional operations so the prediction of small PE lesion areas can be improved.
+We used the labeled open-source dataset and the unlabeled National Cheng Kung University Hospital
+(NCKUH) (IRB number: B-ER-108-380) dataset to train the semi-supervised learning model, and the
+resulting mean intersection over union (mIOU), dice score, and sensitivity achieved 0.3510, 0.4854,
+and 0.4253, respectively on the NCKUH dataset. Then, we fine-tuned and tested the model with a small
+amount of unlabeled PE CTPA images from China Medical University Hospital (CMUH) (IRB number: CMUH110-REC3-173)
+dataset. Comparing the results of our semi-supervised model with the supervised model, the mIOU,
+dice score, and sensitivity improved from 0.2344, 0.3325, and 0.3151 to 0.3721, 0.5113, and 0.4967,
+respectively. 

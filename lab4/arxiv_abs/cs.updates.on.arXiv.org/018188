@@ -1,0 +1,19 @@
+Recent years have witnessed the rapid development of image storage and transmission systems, in
+which image compression plays an important role. Generally speaking, image compression algorithms
+are developed to ensure good visual quality at limited bit rates. However, due to the different compression
+optimization methods, the compressed images may have different levels of quality, which needs
+to be evaluated quantificationally. Nowadays, the mainstream full-reference (FR) metrics are
+effective to predict the quality of compressed images at coarse-grained levels (the bit rates differences
+of compressed images are obvious), however, they may perform poorly for fine-grained compressed
+images whose bit rates differences are quite subtle. Therefore, to better improve the Quality of
+Experience (QoE) and provide useful guidance for compression algorithms, we propose a full-reference
+image quality assessment (FR-IQA) method for compressed images of fine-grained levels. Specifically,
+the reference images and compressed images are first converted to $YCbCr$ color space. The gradient
+features are extracted from regions that are sensitive to compression artifacts. Then we employ
+the Log-Gabor transformation to further analyze the texture difference. Finally, the obtained
+features are fused into a quality score. The proposed method is validated on the fine-grained compression
+image quality assessment (FGIQA) database, which is especially constructed for assessing the
+quality of compressed images with close bit rates. The experimental results show that our metric
+outperforms mainstream FR-IQA metrics on the FGIQA database. We also test our method on other commonly
+used compression IQA databases and the results show that our method obtains competitive performance
+on the coarse-grained compression IQA databases as well. 

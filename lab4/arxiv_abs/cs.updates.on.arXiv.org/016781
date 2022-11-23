@@ -1,0 +1,20 @@
+Molecular subtypes of breast cancer are important references to personalized clinical treatment.
+For cost and labor savings, only one of the patient's paraffin blocks is usually selected for subsequent
+immunohistochemistry (IHC) to obtain molecular subtypes. Inevitable sampling error is risky
+due to tumor heterogeneity and could result in a delay in treatment. Molecular subtype prediction
+from conventional H&E pathological whole slide images (WSI) using AI method is useful and critical
+to assist pathologists pre-screen proper paraffin block for IHC. It's a challenging task since
+only WSI level labels of molecular subtypes can be obtained from IHC. Gigapixel WSIs are divided
+into a huge number of patches to be computationally feasible for deep learning. While with coarse
+slide-level labels, patch-based methods may suffer from abundant noise patches, such as folds,
+overstained regions, or non-tumor tissues. A weakly supervised learning framework based on discriminative
+patch selecting and multi-instance learning was proposed for breast cancer molecular subtype
+prediction from H&E WSIs. Firstly, co-teaching strategy was adopted to learn molecular subtype
+representations and filter out noise patches. Then, a balanced sampling strategy was used to handle
+the imbalance in subtypes in the dataset. In addition, a noise patch filtering algorithm that used
+local outlier factor based on cluster centers was proposed to further select discriminative patches.
+Finally, a loss function integrating patch with slide constraint information was used to finetune
+MIL framework on obtained discriminative patches and further improve the performance of molecular
+subtyping. The experimental results confirmed the effectiveness of the proposed method and our
+models outperformed even senior pathologists, with potential to assist pathologists to pre-screen
+paraffin blocks for IHC in clinic. 

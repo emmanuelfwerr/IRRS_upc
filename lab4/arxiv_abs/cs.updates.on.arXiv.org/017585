@@ -1,0 +1,19 @@
+We, humans, are entering into a virtual era and indeed want to bring animals to the virtual world as
+well for companion. Yet, computer-generated (CGI) furry animals are limited by tedious off-line
+rendering, let alone interactive motion control. In this paper, we present ARTEMIS, a novel neural
+modeling and rendering pipeline for generating ARTiculated neural pets with appEarance and Motion
+synthesIS. Our ARTEMIS enables interactive motion control, real-time animation, and photo-realistic
+rendering of furry animals. The core of our ARTEMIS is a neural-generated (NGI) animal engine, which
+adopts an efficient octree-based representation for animal animation and fur rendering. The animation
+then becomes equivalent to voxel-level deformation based on explicit skeletal warping. We further
+use a fast octree indexing and efficient volumetric rendering scheme to generate appearance and
+density features maps. Finally, we propose a novel shading network to generate high-fidelity details
+of appearance and opacity under novel poses from appearance and density feature maps. For the motion
+control module in ARTEMIS, we combine state-of-the-art animal motion capture approach with recent
+neural character control scheme. We introduce an effective optimization scheme to reconstruct
+the skeletal motion of real animals captured by a multi-view RGB and Vicon camera array. We feed all
+the captured motion into a neural character control scheme to generate abstract control signals
+with motion styles. We further integrate ARTEMIS into existing engines that support VR headsets,
+providing an unprecedented immersive experience where a user can intimately interact with a variety
+of virtual animals with vivid movements and photo-realistic appearance. We make available our
+ARTEMIS model and dynamic furry animal dataset at https://haiminluo.github.io/publication/artemis/.

@@ -1,0 +1,20 @@
+User modeling plays a fundamental role in industrial recommender systems, either in the matching
+stage and the ranking stage, in terms of both the customer experience and business revenue. How to
+extract users' multiple interests effectively from their historical behavior sequences to improve
+the relevance and personalization of the recommend results remains an open problem for user modeling.Most
+existing deep-learning based approaches exploit item-ids and category-ids but neglect fine-grained
+features like color and mate-rial, which hinders modeling the fine granularity of users' interests.In
+the paper, we present Multiple interest and Fine granularity Net-work (MFN), which tackle users'
+multiple and fine-grained interests and construct the model from both the similarity relationship
+and the combination relationship among the users' multiple interests.Specifically, for modeling
+the similarity relationship, we leverage two sets of embeddings, where one is the fixed embedding
+from pre-trained models (e.g. Glove) to give the attention weights and the other is trainable embedding
+to be trained with MFN together.For modeling the combination relationship, self-attentive layers
+are exploited to build the higher order combinations of different interest representations. In
+the construction of network, we design an interest-extract module using attention mechanism to
+capture multiple interest representations from user historical behavior sequences and leverage
+an auxiliary loss to boost the distinction of the interest representations. Then a hierarchical
+network is applied to model the attention relation between the multiple interest vectors of different
+granularities and the target item. We evaluate MFNon both public and industrial datasets. The experimental
+results demonstrate that the proposed MFN achieves superior performance than other existed representing
+methods. 

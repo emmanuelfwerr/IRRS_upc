@@ -1,0 +1,20 @@
+Click-Through Rate (CTR) prediction is a crucial component in the online advertising industry.
+In order to produce a personalized CTR prediction, an industry-level CTR prediction model commonly
+takes a high-dimensional (e.g., 100 or 1000 billions of features) sparse vector (that is encoded
+from query keywords, user portraits, etc.) as input. As a result, the model requires Terabyte scale
+parameters to embed the high-dimensional input. Hierarchical distributed GPU parameter server
+has been proposed to enable GPU with limited memory to train the massive network by leveraging CPU
+main memory and SSDs as secondary storage. We identify two major challenges in the existing GPU training
+framework for massive-scale ad models and propose a collection of optimizations to tackle these
+challenges: (a) the GPU, CPU, SSD rapidly communicate with each other during the training. The connections
+between GPUs and CPUs are non-uniform due to the hardware topology. The data communication route
+should be optimized according to the hardware topology; (b) GPUs in different computing nodes frequently
+communicates to synchronize parameters. We are required to optimize the communications so that
+the distributed system can become scalable. In this paper, we propose a hardware-aware training
+workflow that couples the hardware topology into the algorithm design. To reduce the extensive
+communication between computing nodes, we introduce a $k$-step model merging algorithm for the
+popular Adam optimizer and provide its convergence rate in non-convex optimization. To the best
+of our knowledge, this is the first application of $k$-step adaptive optimization method in industrial-level
+CTR model training. The numerical results on real-world data confirm that the optimized system
+design considerably reduces the training time of the massive model, with essentially no loss in
+accuracy. 

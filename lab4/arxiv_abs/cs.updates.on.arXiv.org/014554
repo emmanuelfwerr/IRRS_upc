@@ -1,0 +1,18 @@
+It is anticipated that the era of fully autonomous vehicle operations will be preceded by a lengthy
+"Transition Period" where the traffic stream will be mixed, that is, consisting of connected autonomous
+vehicles (CAVs), human-driven vehicles (HDVs) and connected human-driven vehicles (CHDVs).
+In recognition of the fact that public acceptance of CAVs will hinge on safety performance of automated
+driving systems, and that there will likely be safety challenges in the early part of the transition
+period, significant research efforts have been expended in the development of safety-conscious
+automated driving systems. Yet still, there appears to be a lacuna in the literature regarding the
+handling of the crash-imminent situations that are caused by errant human driven vehicles (HDVs)
+in the vicinity of the CAV during operations on the roadway. In this paper, we develop a simple model-based
+Reinforcement Learning (RL) based system that can be deployed in the CAV to generate trajectories
+that anticipate and avoid potential collisions caused by drivers of the HDVs. The model involves
+an end-to-end data-driven approach that contains a motion prediction model based on deep learning,
+and a fast trajectory planning algorithm based on model predictive control (MPC). The proposed
+system requires no prior knowledge or assumption about the physical environment including the
+vehicle dynamics, and therefore represents a general approach that can be deployed on any type of
+vehicle (e.g., truck, buse, motorcycle, etc.). The framework is trained and tested in the CARLA
+simulator with multiple collision imminent scenarios, and the results indicate the proposed model
+can avoid the collision at high successful rate (>85%) even in highly compact and dangerous situations.

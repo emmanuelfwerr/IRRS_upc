@@ -1,0 +1,19 @@
+Point cloud sequences of 3D human actions exhibit unordered intra-frame spatial information and
+ordered interframe temporal information. In order to capture the spatiotemporal structures of
+the point cloud sequences, cross-frame spatio-temporal local neighborhoods around the centroids
+are usually constructed. However, the computationally expensive construction procedure of spatio-temporal
+local neighborhoods severely limits the parallelism of models. Moreover, it is unreasonable to
+treat spatial and temporal information equally in spatio-temporal local learning, because human
+actions are complicated along the spatial dimensions and simple along the temporal dimension.
+In this paper, to avoid spatio-temporal local encoding, we propose a strong parallelized point
+cloud sequence network referred to as SequentialPointNet for 3D action recognition. SequentialPointNet
+is composed of two serial modules, i.e., an intra-frame appearance encoding module and an inter-frame
+motion encoding module. For modeling the strong spatial structures of human actions, each point
+cloud frame is processed in parallel in the intra-frame appearance encoding module and the feature
+vector of each frame is output to form a feature vector sequence that characterizes static appearance
+changes along the temporal dimension. For modeling the weak temporal changes of human actions,
+in the inter-frame motion encoding module, the temporal position encoding and the hierarchical
+pyramid pooling strategy are implemented on the feature vector sequence. In addition, in order
+to better explore spatio-temporal content, multiple level features of human movements are aggregated
+before performing the end-to-end 3D action recognition. Extensive experiments conducted on three
+public datasets show that SequentialPointNet outperforms stateof-the-art approaches. 

@@ -1,0 +1,20 @@
+Despite the promise of Convolutional neural network (CNN) based classification models for histopathological
+images, it is infeasible to quantify its uncertainties. Moreover, CNNs may suffer from overfitting
+when the data is biased. We show that Bayesian-CNN can overcome these limitations by regularizing
+automatically and by quantifying the uncertainty. We have developed a novel technique to utilize
+the uncertainties provided by the Bayesian-CNN that significantly improves the performance on
+a large fraction of the test data (about 6% improvement in accuracy on 77% of test data). Further,
+we provide a novel explanation for the uncertainty by projecting the data into a low dimensional
+space through a nonlinear dimensionality reduction technique. This dimensionality reduction
+enables interpretation of the test data through visualization and reveals the structure of the
+data in a low dimensional feature space. We show that the Bayesian-CNN can perform much better than
+the state-of-the-art transfer learning CNN (TL-CNN) by reducing the false negative and false positive
+by 11% and 7.7% respectively for the present data set. It achieves this performance with only 1.86
+million parameters as compared to 134.33 million for TL-CNN. Besides, we modify the Bayesian-CNN
+by introducing a stochastic adaptive activation function. The modified Bayesian-CNN performs
+slightly better than Bayesian-CNN on all performance metrics and significantly reduces the number
+of false negatives and false positives (3% reduction for both). We also show that these results are
+statistically significant by performing McNemar's statistical significance test. This work
+shows the advantages of Bayesian-CNN against the state-of-the-art, explains and utilizes the
+uncertainties for histopathological images. It should find applications in various medical image
+classifications. 

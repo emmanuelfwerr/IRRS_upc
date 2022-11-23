@@ -1,0 +1,20 @@
+The record-breaking performance of deep neural networks (DNNs) comes with heavy parameterization,
+leading to external dynamic random-access memory (DRAM) for storage. The prohibitive energy of
+DRAM accesses makes it non-trivial to deploy DNN on resource-constrained devices, calling for
+minimizing the weight and data movements to improve the energy efficiency. We present SmartDeal
+(SD), an algorithm framework to trade higher-cost memory storage/access for lower-cost computation,
+in order to aggressively boost the storage and energy efficiency, for both inference and training.
+The core of SD is a novel weight decomposition with structural constraints, carefully crafted to
+unleash the hardware efficiency potential. Specifically, we decompose each weight tensor as the
+product of a small basis matrix and a large structurally sparse coefficient matrix whose non-zeros
+are quantized to power-of-2. The resulting sparse and quantized DNNs enjoy greatly reduced energy
+for data movement and weight storage, incurring minimal overhead to recover the original weights
+thanks to the sparse bit-operations and cost-favorable computations. Beyond inference, we take
+another leap to embrace energy-efficient training, introducing innovative techniques to address
+the unique roadblocks arising in training while preserving the SD structures. We also design a dedicated
+hardware accelerator to fully utilize the SD structure to improve the real energy efficiency and
+latency. We conduct experiments on both multiple tasks, models and datasets in different settings.
+Results show that: 1) applied to inference, SD achieves up to 2.44x energy efficiency as evaluated
+via real hardware implementations; 2) applied to training, SD leads to 10.56x and 4.48x reduction
+in the storage and training energy, with negligible accuracy loss compared to state-of-the-art
+training baselines. Our source codes are available online. 

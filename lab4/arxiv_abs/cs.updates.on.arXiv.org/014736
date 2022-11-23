@@ -1,0 +1,19 @@
+To detect saliency in video is a fundamental step in many computer vision systems. Saliency is the
+significant target(s) in the video. The object of interest is further analyzed for high-level applications.
+The segregation of saliency and the background can be made if they exhibit different visual cues.
+Therefore, saliency detection is often formulated as background subtraction. However, saliency
+detection is challenging. For instance, dynamic background can result in false positive errors.
+In another scenario, camouflage will lead to false negative errors. With moving camera, the captured
+scenes are even more complicated to handle. We propose a new framework, called saliency detection
+via background model completion (SD-BMC), that comprises of a background modeler and the deep learning
+background/foreground segmentation network. The background modeler generates an initial clean
+background image from a short image sequence. Based on the idea of video completion, a good background
+frame can be synthesized with the co-existence of changing background and moving objects. We adopt
+the background/foreground segmenter, although pre-trained with a specific video dataset, can
+also detect saliency in unseen videos. The background modeler can adjust the background image dynamically
+when the background/foreground segmenter output deteriorates during processing of a long video.
+To the best of our knowledge, our framework is the first one to adopt video completion for background
+modeling and saliency detection in videos captured by moving camera. The results, obtained from
+the PTZ videos, show that our proposed framework outperforms some deep learning-based background
+subtraction models by 11% or more. With more challenging videos, our framework also outperforms
+many high ranking background subtraction methods by more than 3%. 

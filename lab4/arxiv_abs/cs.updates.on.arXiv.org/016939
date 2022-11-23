@@ -1,0 +1,20 @@
+Stack Overflow is often viewed as the most influential Software Question \& Answer (SQA) website
+with millions of programming-related questions and answers. Tags play a critical role in efficiently
+structuring the contents in Stack Overflow and are vital to support a range of site operations, e.g.,
+querying relevant contents. Poorly selected tags often introduce extra noise and redundancy,
+which leads to tag synonym and tag explosion problems. Thus, an \textit{automated tag recommendation
+technique} that can accurately recommend high-quality tags is desired to alleviate the problems
+mentioned above. Inspired by the recent success of pre-trained language models (PTMs) in natural
+language processing (NLP), we present \toolnamenospace, a {\em tag recommendation framework}
+for Stack Overflow posts that utilize PTMs with a triplet architecture, which models the components
+of a post, i.e., Title, Description, and Code with independent language models. To the best of our
+knowledge, this is the first work that leverages PTMs in the tag recommendation task of SQA sites.
+We comparatively evaluate the performance of \toolname based on five popular pre-trained models:
+BERT, RoBERTa, ALBERT, CodeBERT, and BERTOverflow. Our results show that leveraging the software
+engineering (SE) domain-specific PTM CodeBERT in \toolname achieves the best performance among
+the five considered PTMs and outperforms the state-of-the-art deep learning (Convolutional Neural
+Network-based) approach by a large margin in terms of average $Precision@k$, $Recall@k$, and $F1$-$score@k$.
+We conduct an ablation study to quantify the contribution of a post's constituent components (Title,
+Description, and Code Snippets) to the performance of \toolnamenospace. Our results show that
+Title is the most important in predicting the most relevant tags, and utilizing all the components
+achieves the best performance. 

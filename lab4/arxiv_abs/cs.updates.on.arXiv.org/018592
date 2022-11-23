@@ -1,0 +1,20 @@
+The prosperity of decentralized finance motivates many investors to profit via trading their crypto
+assets on decentralized applications (DApps for short) of the Ethereum ecosystem. Apart from Ether
+(the native cryptocurrency of Ethereum), many ERC20 (a widely used token standard on Ethereum)
+tokens obtain vast market value in the ecosystem. Specifically, the approval mechanism is used
+to delegate the privilege of spending users' tokens to DApps. By doing so, the DApps can transfer
+these tokens to arbitrary receivers on behalf of the users. To increase the usability, unlimited
+approval is commonly adopted by DApps to reduce the required interaction between them and their
+users. However, as shown in existing security incidents, this mechanism can be abused to steal users'
+tokens. In this paper, we present the first systematic study to quantify the risk of unlimited approval
+of ERC20 tokens on Ethereum. Specifically, by evaluating existing transactions up to 31st July
+2021, we find that unlimited approval is prevalent (60%, 15.2M/25.4M) in the ecosystem, and 22%
+of users have a high risk of their approved tokens for stealing. After that, we investigate the security
+issues that are involved in interacting with the UIs of 22 representative DApps and 9 famous wallets
+to prepare the approval transactions. The result reveals the worrisome fact that all DApps request
+unlimited approval from the front-end users and only 10% (3/31) of UIs provide explanatory information
+for the approval mechanism. Meanwhile, only 16% (5/31) of UIs allow users to modify their approval
+amounts. Finally, we take a further step to characterize the user behavior into five modes and formalize
+the good practice, i.e., on-demand approval and timely spending, towards securely spending approved
+tokens. However, the evaluation result suggests that only 0.2% of users follow the good practice
+to mitigate the risk. 

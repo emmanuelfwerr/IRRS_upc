@@ -1,0 +1,19 @@
+A fundamental challenge in interactive learning and decision making, ranging from bandit problems
+to reinforcement learning, is to provide sample-efficient, adaptive learning algorithms that
+achieve near-optimal regret. This question is analogous to the classical problem of optimal (supervised)
+statistical learning, where there are well-known complexity measures (e.g., VC dimension and
+Rademacher complexity) that govern the statistical complexity of learning. However, characterizing
+the statistical complexity of interactive learning is substantially more challenging due to the
+adaptive nature of the problem. The main result of this work provides a complexity measure, the Decision-Estimation
+Coefficient, that is proven to be both necessary and sufficient for sample-efficient interactive
+learning. In particular, we provide: 1. a lower bound on the optimal regret for any interactive decision
+making problem, establishing the Decision-Estimation Coefficient as a fundamental limit. 2.
+a unified algorithm design principle, Estimation-to-Decisions (E2D), which transforms any algorithm
+for supervised estimation into an online algorithm for decision making. E2D attains a regret bound
+matching our lower bound, thereby achieving optimal sample-efficient learning as characterized
+by the Decision-Estimation Coefficient. Taken together, these results constitute a theory of
+learnability for interactive decision making. When applied to reinforcement learning settings,
+the Decision-Estimation Coefficient recovers essentially all existing hardness results and
+lower bounds. More broadly, the approach can be viewed as a decision-theoretic analogue of the classical
+Le Cam theory of statistical estimation; it also unifies a number of existing approaches -- both
+Bayesian and frequentist. 

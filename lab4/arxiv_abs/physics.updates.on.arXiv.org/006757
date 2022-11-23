@@ -1,0 +1,20 @@
+In this paper we consider the machine learning (ML) task of predicting tipping point transitions
+and long-term post-tipping-point behavior associated with the time evolution of an unknown (or
+partially unknown), non-stationary, potentially noisy and chaotic, dynamical system. We focus
+on the particularly challenging situation where the past dynamical state time series that is available
+for ML training predominantly lies in a restricted region of the state space, while the behavior
+to be predicted evolves on a larger state space set not fully observed by the ML model during training.
+In this situation, it is required that the ML prediction system have the ability to extrapolate to
+different dynamics past that which is observed during training. We investigate the extent to which
+ML methods are capable of accomplishing useful results for this task, as well as conditions under
+which they fail. In general, we found that the ML methods were surprisingly effective even in situations
+that were extremely challenging, but do (as one would expect) fail when ``too much" extrapolation
+is required. For the latter case, we investigate the effectiveness of combining the ML approach
+with conventional modeling based on scientific knowledge, thus forming a hybrid prediction system
+which we find can enable useful prediction even when its ML-based and knowledge-based components
+fail when acting alone. We also found that achieving useful results may require using very carefully
+selected ML hyperparameters and we propose a hyperparameter optimization strategy to address
+this problem. The main conclusion of this paper is that ML-based approaches are promising tools
+for predicting the behavior of non-stationary dynamical systems even in the case where the future
+evolution (perhaps due to the crossing of a tipping point) includes dynamics on a set outside of that
+explored by the training data. 

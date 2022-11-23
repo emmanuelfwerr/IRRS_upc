@@ -1,0 +1,20 @@
+We consider the classical contention resolution problem where nodes arrive over time, each with
+a message to send. In each synchronous slot, each node can send or remain idle. If in a slot one node
+sends alone, it succeeds; otherwise, if multiple nodes send simultaneously, messages collide
+and none succeeds. Nodes can differentiate collision and silence only if collision detection is
+available. Ideally, a contention resolution algorithm should satisfy three criteria: low time
+complexity (or high throughput); low energy complexity, meaning each node does not make too many
+broadcast attempts; strong robustness, meaning the algorithm can maintain good performance even
+if slots can be jammed. Previous work has shown, with collision detection, there are "perfect" contention
+resolution algorithms satisfying all three criteria. On the other hand, without collision detection,
+it was not until 2020 that an algorithm was discovered which can achieve optimal time complexity
+and low energy cost, assuming there is no jamming. More recently, the trade-off between throughput
+and robustness was studied. However, an intriguing and important question remains unknown: without
+collision detection, are there robust algorithms achieving both low total time complexity and
+low per-node energy cost? In this paper, we answer the above question affirmatively. Specifically,
+we develop a new randomized algorithm for robust contention resolution without collision detection.
+Lower bounds show that it has both optimal time and energy complexity. If all nodes start execution
+simultaneously, we design another algorithm that is even faster, with similar energy complexity
+as the first algorithm. The separation on time complexity suggests for robust contention resolution
+without collision detection, ``batch'' instances (nodes start simultaneously) are inherently
+easier than ``scattered'' ones (nodes arrive over time). 

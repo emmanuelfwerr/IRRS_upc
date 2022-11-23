@@ -1,0 +1,20 @@
+Dynamic Mode Decomposition (DMD) is an unsupervised machine learning method that has attracted
+considerable attention in recent years owing to its equation-free structure, ability to easily
+identify coherent spatio-temporal structures in data, and effectiveness in providing reasonably
+accurate predictions for certain problems. Despite these successes, the application of DMD to
+certain problems featuring highly nonlinear transient dynamics remains challenging. In such
+cases, DMD may not only fail to provide acceptable predictions but may indeed fail to recreate the
+data in which it was trained, restricting its application to diagnostic purposes. For many problems
+in the biological and physical sciences, the structure of the system obeys a compartmental framework,
+in which the transfer of mass within the system moves within states. In these cases, the behavior
+of the system may not be accurately recreated by applying DMD to a single quantity within the system,
+as proper knowledge of the system dynamics, even for a single compartment, requires that the behavior
+of other compartments is taken into account in the DMD process. In this work, we demonstrate, theoretically
+and numerically, that, when performing DMD on a fully coupled PDE system with compartmental structure,
+one may recover useful predictive behavior, even when DMD performs poorly when acting compartment-wise.
+We also establish that important physical quantities, as mass conservation, are maintained in
+the coupled-DMD extrapolation. The mathematical and numerical analysis suggests that DMD may
+be a powerful tool when applied to this common class of problems. In particular, we show interesting
+numerical applications to a continuous delayed-SIRD model for Covid-19, and to a problem from additive
+manufacturing considering a nonlinear temperature field and the resulting change of material
+phase from powder, liquid, and solid states. 

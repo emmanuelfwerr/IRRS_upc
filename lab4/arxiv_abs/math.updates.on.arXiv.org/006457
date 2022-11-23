@@ -1,0 +1,19 @@
+For $2\le k\in\mathbb{N}$, we consider the following adaptation of the classical secretary problem,
+which corresponds to $k=1$. There are $k$ items at each of $n$ distinguishable ranks. The $nk$ items
+are revealed, one item at a time, to an observer whose objective is to select an item with the highest
+rank. The order of the items is uniformly random. At each stage the observer only knows the relative
+ranks of the items that have arrived thus far, and must either select the current item, in which case
+the process terminates, or reject it and continue to the next item. For $M\in\{0,1,\cdots, nk-1\}$,
+let $\mathcal{S}(n,k;M)$ denote the strategy whereby one allows the first $M$ items to pass, and
+then chooses the first later arriving item whose rank is \it either equal to or greater than\rm\ the
+highest rank of the first $M$ items (if such an item exists). Let $P_{n,k}(\mathcal{S}(n,k;M))$
+denote the probability of selecting an item of highest rank using strategy $\mathcal{S}(n,k;M)$.
+We obtain an exact formula for $P_{n,k}(\mathcal{S}(n,k;M))$, and an exact formula for $\lim_{n\to\infty}P_{n,k}(\mathcal{S}(n,k,M_n))$,
+when $M_n\sim ckn$, with $c\in(0,1)$. As is very well known, in the classical secretary problem
+($k=1$), the asymptotically optimal strategy $M_n\sim cn$ occurs with $c=\frac1e\approx0.368$,
+and the corresponding asymptotic probability of success is $\frac1e\approx 0.368$. For $k=2$,
+the asymptotically optimal strategy $M_n\sim ckn$ occurs with $c\approx 0.368$ -- almost exactly
+(but not exactly) the same $c$ as in the classical case, and the corresponding asymptotic probability
+of success jumps dramatically to about 0.701. For $k=3$, the optimal probability is above 0.85,
+for $k=7$, that probability exceeds 0.99, and for $k=10$, it is approximately 0.999. The optimal
+value of $c$ stabilizes around 0.486 for $n\ge20$. 

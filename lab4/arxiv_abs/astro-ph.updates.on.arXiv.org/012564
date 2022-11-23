@@ -1,0 +1,20 @@
+The direct imaging of potentially habitable Exoplanets is one prime science case for the next generation
+of high contrast imaging instruments on ground-based extremely large telescopes. To reach this
+demanding science goal, the instruments are equipped with eXtreme Adaptive Optics (XAO) systems
+which will control thousands of actuators at a framerate of kilohertz to several kilohertz. Most
+of the habitable exoplanets are located at small angular separations from their host stars, where
+the current XAO systems' control laws leave strong residuals.Current AO control strategies like
+static matrix-based wavefront reconstruction and integrator control suffer from temporal delay
+error and are sensitive to mis-registration, i.e., to dynamic variations of the control system
+geometry. We aim to produce control methods that cope with these limitations, provide a significantly
+improved AO correction and, therefore, reduce the residual flux in the coronagraphic point spread
+function. We extend previous work in Reinforcement Learning for AO. The improved method, called
+PO4AO, learns a dynamics model and optimizes a control neural network, called a policy. We introduce
+the method and study it through numerical simulations of XAO with Pyramid wavefront sensing for
+the 8-m and 40-m telescope aperture cases. We further implemented PO4AO and carried out experiments
+in a laboratory environment using MagAO-X at the Steward laboratory. PO4AO provides the desired
+performance by improving the coronagraphic contrast in numerical simulations by factors 3-5 within
+the control region of DM and Pyramid WFS, in simulation and in the laboratory. The presented method
+is also quick to train, i.e., on timescales of typically 5-10 seconds, and the inference time is sufficiently
+small (< ms) to be used in real-time control for XAO with currently available hardware even for extremely
+large telescopes. 

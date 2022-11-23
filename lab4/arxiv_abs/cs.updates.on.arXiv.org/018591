@@ -1,0 +1,18 @@
+Finding Nash equilibrial policies for two-player differential games requires solving Hamilton-Jacobi-Isaacs
+PDEs. Recent studies achieved success in circumventing the curse of dimensionality in solving
+such PDEs with underlying applications to human-robot interactions (HRI), by adopting self-supervised
+(physics-informed) neural networks as universal value approximators. This paper extends from
+previous SOTA on zero-sum games with continuous values to general-sum games with discontinuous
+values, where the discontinuity is caused by that of the players' losses. We show that due to its lack
+of convergence proof and generalization analysis on discontinuous losses, the existing self-supervised
+learning technique fails to generalize and raises safety concerns in an autonomous driving application.
+Our solution is to first pre-train the value network on supervised Nash equilibria, and then refine
+it by minimizing a loss that combines the supervised data with the PDE and boundary conditions. Importantly,
+the demonstrated advantage of the proposed learning method against purely supervised and self-supervised
+approaches requires careful choice of the neural activation function: Among $\texttt{relu}$,
+$\texttt{sin}$, and $\texttt{tanh}$, we show that $\texttt{tanh}$ is the only choice that achieves
+optimal generalization and safety performance. Our conjecture is that $\texttt{tanh}$ (similar
+to $\texttt{sin}$) allows continuity of value and its gradient, which is sufficient for the convergence
+of learning, and at the same time is expressive enough (similar to $\texttt{relu}$) at approximating
+discontinuous value landscapes. Lastly, we apply our method to approximating control policies
+for an incomplete-information interaction and demonstrate its contribution to safe interactions.

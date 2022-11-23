@@ -1,0 +1,19 @@
+MeTTa (Meta Type Talk) is a novel programming language created for use in the OpenCog Hyperon AGI
+system. It is designed as a meta-language with very basic and general facilities for handling symbols,
+groundings, variables, types, substitutions and pattern matching. Primitives exist for creating
+new type systems and associated DSLs. IInformally, MeTTa is Hyperon's lowest-level "language
+of thought" -- the meta-language in which algorithms for learning more particular knowledge representations,
+will operate, and in which these algorithms themselves may be represented. Here we explain how one
+might go about formalizing the MeTTa language as a system of metagraph rewrite rules, an approach
+that fits in naturally to the Hyperon framework given that the latter's core component is a distributed
+metagraph knowledge store (the Atomspace). The metagraph rewrite rules constituting MeTTa programs
+can also be represented as metagraphs, giving a natural model for MeTTa reflection and self-modifying
+code. Considering MeTTa programs that compute equivalences between execution traces of other
+MeTTa programs allows us to model spaces of MeTTa execution traces using Homotopy Type Theory. Considering
+the limit of MeTTa programs mapping between execution traces of MeTTa programs that map between
+execution traces of MeTTa programs that ..., we find that a given MeTTa codebase is effectively modeled
+as an infinity-groupoid, and the space of all MeTTa codebases as an (infinity,1)-topis This topos
+is basically the same as the so-called "Ruliad" previously derived from rewrite rules on hypergraphs,
+in a discrete physics context. The formalization of MeTTA as metagraph rewrite rules may also provide
+a useful framework for structuring the implementation of efficient methods for pattern matching
+and equality inference within the MeTTa interpreter. 

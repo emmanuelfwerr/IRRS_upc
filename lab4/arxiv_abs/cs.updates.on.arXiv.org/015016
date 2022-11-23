@@ -1,0 +1,19 @@
+The Poisson equation is critical to get a self-consistent solution in plasma fluid simulations
+used for Hall effect thrusters and streamer discharges, since the Poisson solution appears as a
+source term of the unsteady nonlinear flow equations. As a first step, solving the 2D Poisson equation
+with zero Dirichlet boundary conditions using a deep neural network is investigated using multiple-scale
+architectures, defined in terms of number of branches, depth and receptive field. One key objective
+is to better understand how neural networks learn the Poisson solutions and provide guidelines
+to achieve optimal network configurations, especially when coupled to the time-varying Euler
+equations with plasma source terms. Here, the Receptive Field is found critical to correctly capture
+large topological structures of the field. The investigation of multiple architectures, losses,
+and hyperparameters provides an optimal network to solve accurately the steady Poisson problem.
+The performance of the optimal neural network solver, called PlasmaNet, is then monitored on meshes
+with increasing number of nodes, and compared with classical parallel linear solvers. Next, PlasmaNet
+is coupled with an unsteady Euler plasma fluid equations solver in the context of the electron plasma
+oscillation test case. In this time-evolving problem, a physical loss is necessary to produce a
+stable simulation. PlasmaNet is finally tested on a more complex case of discharge propagation
+involving chemistry and advection. The guidelines established in previous sections are applied
+to build the CNN to solve the same Poisson equation in cylindrical coordinates with different boundary
+conditions. Results reveal good CNN predictions and pave the way to new computational strategies
+using modern GPU-based hardware to predict unsteady problems involving a Poisson equation. 

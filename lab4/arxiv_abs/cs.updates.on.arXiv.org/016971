@@ -1,0 +1,20 @@
+The importance of quality measures in process mining has increased. One of the key quality aspects,
+generalization, is concerned with measuring the degree of overfitting of a process model w.r.t.
+an event log, since the recorded behavior is just an example of the true behavior of the underlying
+business process. Existing generalization measures exhibit several shortcomings that severely
+hinder their applicability in practice. For example, they assume the event log fully fits the discovered
+process model, and cannot deal with large real-life event logs and complex process models. More
+significantly, current measures neglect generalizations for clear patterns that demand a certain
+construct in the model. For example, a repeating sequence in an event log should be generalized with
+a loop structure in the model. We address these shortcomings by proposing a framework of measures
+that generalize a set of patterns discovered from an event log with representative traces and check
+the corresponding control-flow structures in the process model via their trace alignment. We instantiate
+the framework with a generalization measure that uses tandem repeats to identify repetitive patterns
+that are compared to the loop structures and a concurrency oracle to identify concurrent patterns
+that are compared to the parallel structures of the process model. In an extensive qualitative and
+quantitative evaluation using 74 log-model pairs using against two baseline generalization measures,
+we show that the proposed generalization measure consistently ranks process models that fulfil
+the observed patterns with generalizing control-flow structures higher than those which do not,
+while the baseline measures disregard those patterns. Further, we show that our measure can be efficiently
+computed for datasets two orders of magnitude larger than the largest dataset the baseline generalization
+measures can handle. 

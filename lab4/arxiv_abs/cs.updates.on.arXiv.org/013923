@@ -1,0 +1,19 @@
+Unsupervised domain adaptation (UDA) aims to transfer knowledge from a well-labeled source domain
+to a different but related unlabeled target domain with identical label space. Currently, the main
+workhorse for solving UDA is domain alignment, which has proven successful. However, it is often
+difficult to find an appropriate source domain with identical label space. A more practical scenario
+is so-called partial domain adaptation (PDA) in which the source label set or space subsumes the
+target one. Unfortunately, in PDA, due to the existence of the irrelevant categories in the source
+domain, it is quite hard to obtain a perfect alignment, thus resulting in mode collapse and negative
+transfer. Although several efforts have been made by down-weighting the irrelevant source categories,
+the strategies used tend to be burdensome and risky since exactly which irrelevant categories are
+unknown. These challenges motivate us to find a relatively simpler alternative to solve PDA. To
+achieve this, we first provide a thorough theoretical analysis, which illustrates that the target
+risk is bounded by both model smoothness and between-domain discrepancy. Considering the difficulty
+of perfect alignment in solving PDA, we turn to focus on the model smoothness while discard the riskier
+domain alignment to enhance the adaptability of the model. Specifically, we instantiate the model
+smoothness as a quite simple intra-domain structure preserving (IDSP). To our best knowledge,
+this is the first naive attempt to address the PDA without domain alignment. Finally, our empirical
+results on multiple benchmark datasets demonstrate that IDSP is not only superior to the PDA SOTAs
+by a significant margin on some benchmarks (e.g., +10% on Cl->Rw and +8% on Ar->Rw ), but also complementary
+to domain alignment in the standard UDA 

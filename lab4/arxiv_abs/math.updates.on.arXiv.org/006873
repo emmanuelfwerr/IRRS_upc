@@ -1,0 +1,19 @@
+Phase-field models are a leading approach for realistic fracture problems. They treat the crack
+as a second phase and use gradient terms to smear out the crack faces, enabling the use of standard
+numerical methods for simulations. This regularization causes cracks to occupy a finite volume
+in the reference, and leads to the inability to appropriately model the closing or contacting --
+without healing -- of crack faces. Specifically, the classical idealized crack face tractions
+are that the shear component is zero, and that the normal component is zero when the crack opens and
+identical to the intact material when the crack closes. Phase-field fracture models do not replicate
+this behavior. This work addresses this shortcoming by introducing an effective crack energy density
+that endows the regularized (finite volume) phase-field crack with the effective properties of
+an idealized sharp crack. The approach is based on applying the QR (upper triangular) decomposition
+of the deformation gradient tensor in the basis of the crack, enabling a transparent identification
+of the crack deformation modes. By then relaxing over those modes that do not cost energy, an effective
+energy is obtained that has the intact response when the crack faces close and zero energy when the
+crack faces are open. A highlight of this approach is that it lies completely in the setting of finite
+deformation, enabling potential application to soft materials and other settings with large deformation
+or rotations. The model is applied to numerically study representative complex loadings, including
+(1) cyclic loading on a cavity in a soft solid that shows the growth and closing of cracks in complex
+stress states; and (2) cyclic shear that shows a complex pattern of crack branching driven by the
+closure of cracks. 

@@ -1,0 +1,19 @@
+Not only automation of manufacturing processes but also automation of automation procedures itself
+become increasingly relevant to automation research. In this context, automated capability assessment,
+mainly leveraged by deep learning systems driven from 3D CAD data, have been presented. Current
+assessment systems may be able to assess CAD data with regards to abstract features, e.g. the ability
+to automatically separate components from bulk goods, or the presence of gripping surfaces. Nevertheless,
+they suffer from the factor of black box systems, where an assessment can be learned and generated
+easily, but without any geometrical indicator about the reasons of the system's decision. By utilizing
+explainable AI (xAI) methods, we attempt to open up the black box. Explainable AI methods have been
+used in order to assess whether a neural network has successfully learned a given task or to analyze
+which features of an input might lead to an adversarial attack. These methods aim to derive additional
+insights into a neural network, by analyzing patterns from a given input and its impact to the network
+output. Within the NeuroCAD Project, xAI methods are used to identify geometrical features which
+are associated with a certain abstract feature. Within this work, a sensitivity analysis (SA),
+the layer-wise relevance propagation (LRP), the Gradient-weighted Class Activation Mapping
+(Grad-CAM) method as well as the Local Interpretable Model-Agnostic Explanations (LIME) have
+been implemented in the NeuroCAD environment, allowing not only to assess CAD models but also to
+identify features which have been relevant for the network decision. In the medium run, this might
+enable to identify regions of interest supporting product designers to optimize their models with
+regards to assembly processes. 

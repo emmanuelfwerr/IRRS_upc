@@ -1,0 +1,19 @@
+Nowadays, targeted attacks like Advanced Persistent Threats (APTs) has become one of the major
+concern of many enterprise networks. As a common approach to counter these attacks, security staff
+deploy a variety of security and non-security sensors at different lines of defense (Network, Host,
+and Application) to track the attacker's behaviors during their kill chain. However, one of the
+drawbacks of this approach is the huge amount of events raised by heterogeneous security and non-security
+sensors which makes it difficult to analyze logged events for later processing i.e. event correlation
+for timely detection of APT attacks. Till now, some research papers have been published on event
+aggregation for reducing the volume of logged low-level events. However, most research works have
+been provided a method to aggregate the events of a single-type and homogeneous event source i.e.
+NIDS. In addition, their main focus is only on the degree to which the event volume is reduced, while
+the amount of security information lost during the event aggregation process is also very important.
+In this paper, we propose a three-phase event aggregation method to reduce the volume of logged heterogeneous
+events during APT attacks considering the lowest rate of loss of security information. To this aim,
+at first, low-level events of the sensors are clustered into some similar event groups and then,
+after filtering noisy event clusters, the remained clusters are summarized based on an Attribute-Oriented
+Induction (AOI) method in a controllable manner to reduce the unimportant or duplicated events.
+The method has been evaluated on the three publicly available datasets: SotM34, Bryant, and LANL.
+The experimental results show that the method is efficient enough in event aggregation and can reduce
+events volume up to 99.7\% with an acceptable level of information loss ratio (ILR). 

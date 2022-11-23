@@ -1,0 +1,20 @@
+The release of SOSTOOLS v4.00 comes as we approach the 20th anniversary of the original release of
+SOSTOOLS v1.00 back in April, 2002. SOSTOOLS was originally envisioned as a flexible tool for parsing
+and solving polynomial optimization problems, using the SOS tightening of polynomial positivity
+constraints, and capable of adapting to the ever-evolving fauna of applications of SOS. There are
+now a variety of SOS programming parsers beyond SOSTOOLS, including YALMIP, Gloptipoly, SumOfSquares,
+and others. We hope SOSTOOLS remains the most intuitive, robust and adaptable toolbox for SOS programming.
+Recent progress in Semidefinite programming has opened up new possibilities for solving large
+Sum of Squares programming problems, and we hope the next decade will be one where SOS methods will
+find wide application in different areas. In SOSTOOLS v4.00, we implement a parsing approach that
+reduces the computational and memory requirements of the parser below that of the SDP solver itself.
+We have re-developed the internal structure of our polynomial decision variables. Specifically,
+polynomial and SOS variable declarations made using sossosvar, sospolyvar, sosmatrixvar, etc
+now return a new polynomial structure, dpvar. This new polynomial structure, is documented in the
+enclosed dpvar guide, and isolates the scalar SDP decision variables in the SOS program from the
+independent variables used to construct the SOS program. As a result, the complexity of the parser
+scales almost linearly in the number of decision variables. As a result of these changes, almost
+all users will notice a significant increase in speed, with large-scaleproblems experiencing
+the most dramatic speedups. Parsing time is now always less than 10% of time spent in the SDP solver.
+Finally, SOSTOOLS now provides support for the MOSEK solver interface as well as the SeDuMi, SDPT3,
+CSDP, SDPNAL, SDPNAL+, and SDPA solvers. 

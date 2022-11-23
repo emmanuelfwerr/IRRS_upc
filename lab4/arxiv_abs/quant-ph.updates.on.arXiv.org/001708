@@ -1,0 +1,19 @@
+The quantum approximate optimization algorithm (QAOA) conceived for solving combinatorial optimization
+problems has attracted significant interest since it can be run on the existing noisy intermediate-scale
+quantum (NISQ) devices. A primary step of using the QAOA is the efficient Hamiltonian construction
+based on different problem instances. Hence, we solve the maximum likelihood (ML) detection problem
+for general constellations by appropriately adapting the QAOA, which gives rise to a new paradigm
+in communication systems. We first transform the ML detection problem into a weighted minimum $N$-satisfiability
+(WMIN-$N$-SAT) problem, where we formulate the objective function of the WMIN-$N$-SAT as a pseudo
+Boolean function. Furthermore, we formalize the connection between the degree of the objective
+function and the Gray-labelled modulation constellations. Explicitly, we show a series of results
+exploring the connection between the coefficients of the monomials and the patterns of the associated
+constellation points, which substantially simplifies the objective function with respect to
+the problem Hamiltonian of the QAOA. In particular, for an M-ary Gray-mapped quadrature amplitude
+modulation (MQAM) constellation, we show that the specific qubits encoding the in-phase components
+and those encoding the quadrature components are independent in the quantum system of interest,
+which allows the in-phase and quadrature components to be detected separately using the QAOA. Furthermore,
+we characterize the degree of the objective function in the WMIN-$N$-SAT problem corresponding
+to the ML detection of multiple-input and multiple-output (MIMO) channels. Finally, we evaluate
+the approximation ratio of the QAOA for the ML detection problem of quadrature phase shift keying
+(QPSK) relying on QAOA circuits of different depths. 

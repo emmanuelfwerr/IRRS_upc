@@ -1,0 +1,19 @@
+Subjective cognitive decline (SCD) is a preclinical stage of Alzheimer's disease (AD) which occurs
+even before mild cognitive impairment (MCI). Progressive SCD will convert to MCI with the potential
+of further evolving to AD. Therefore, early identification of progressive SCD with neuroimaging
+techniques (e.g., structural MRI) is of great clinical value for early intervention of AD. However,
+existing MRI-based machine/deep learning methods usually suffer the small-sample-size problem
+which poses a great challenge to related neuroimaging analysis. The central question we aim to tackle
+in this paper is how to leverage related domains (e.g., AD/NC) to assist the progression prediction
+of SCD. Meanwhile, we are concerned about which brain areas are more closely linked to the identification
+of progressive SCD. To this end, we propose an attention-guided autoencoder model for efficient
+cross-domain adaptation which facilitates the knowledge transfer from AD to SCD. The proposed
+model is composed of four key components: 1) a feature encoding module for learning shared subspace
+representations of different domains, 2) an attention module for automatically locating discriminative
+brain regions of interest defined in brain atlases, 3) a decoding module for reconstructing the
+original input, 4) a classification module for identification of brain diseases. Through joint
+training of these four modules, domain invariant features can be learned. Meanwhile, the brain
+disease related regions can be highlighted by the attention mechanism. Extensive experiments
+on the publicly available ADNI dataset and a private CLAS dataset have demonstrated the effectiveness
+of the proposed method. The proposed model is straightforward to train and test with only 5-10 seconds
+on CPUs and is suitable for medical tasks with small datasets. 

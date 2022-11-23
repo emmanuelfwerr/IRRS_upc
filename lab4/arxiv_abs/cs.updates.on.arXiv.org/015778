@@ -1,0 +1,19 @@
+With the development of new technologies and applications, such as the Internet of Things, smart
+cities, 5G, and edge computing, traditional Internet Protocol-based (IP-based) networks have
+been exposed as having many problems. Information-Centric Networking (ICN), Named Data Networking
+(NDN), and Content-Centric Networking (CCN) are therefore proposed as an alternative for future
+networks. However, unlike IP-based networks, CCN routing is nondeterministic and difficult to
+optimize due to frequent in-network caching replacement. This paper presents a novel probe-based
+routing algorithm that explores real-time in-network caching to ensure the routing table storing
+the optimal paths to the nearest content provider is up-to-date. Effective probe-selections,
+Pending Interest Table (PIT) probe, and Forwarding Information Base (FIB) probe are discussed
+and analyzed by simulation with different performance measurements. Compared with the basic CCN,
+in terms of qualitative analysis, the additional computational overhead of our approach is O(*)
+and O(*) on processing interest packets and data packets, respectively. However, in terms of quantitative
+analysis, our approach reduces the number of timeout interests by 6% and the average response time
+by 0.6 s. Furthermore, although basic CCN and our approach belong to the same Quality of Service category,
+our approach outperforms basic CCN in terms of real values. Additionally, our probe-based approach
+performs better than * and *. Owing to speedup FIB updating by probes, our approach provides more
+reliable interest packet routing when accounting for router failures. In summary, the results
+demonstrate that compared to basic CCN, our probe-based routing approach raises FIB accuracy and
+reduces network congestion and response time, resulting in efficient routing. 

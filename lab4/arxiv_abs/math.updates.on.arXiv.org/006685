@@ -1,0 +1,18 @@
+Let $H$ be a directed acyclic graph other than a rooted star. It is known that there are constants $c(H)$
+and $C(H)$ such that the following holds for the complete directed graph $D_n$. There are at most
+$C\log n$ directed acyclic subgraphs of $D_n$ that cover every $H$-copy of $D_n$, while fewer than
+$c\log n$ directed acyclic subgraphs of $D_n$ do not cover all $H$-copies. Here this dichotomy is
+considerably strengthened. Let ${\vec G}(n,p)$ denote the random directed graph. The {\em fractional
+arboricity} of $H$ is $a(H) = max \{\frac{|E(H')|}{|V(H')|-1}\}$, where the maximum is over all
+non-singleton subgraphs of $H$. If $a(H) = \frac{|E(H)|}{|V(H)|-1}$ then $H$ is {\em totally balanced}.
+Complete graphs, complete multipartite graphs, cycles, trees, and, in fact, almost all graphs,
+are totally balanced. It is proved: 1) Let $H$ be a dag with $h$ vertices and $m$ edges other than a rooted
+star. For every $a^* > a(H)$ there exists $c^* = c^*(a^*,H) > 0$ such that almost surely $G \sim {\vec
+G}(n,n^{-1/a^*})$ has the property that every set $X$ of at most $c^*\log n$ directed acyclic subgraphs
+of $G$ does not cover all $H$-copies of $G$. Moreover, there exists $s(H) = m/2 + O(m^{4/5}h^{1/5})$
+such that the following stronger assertion holds for any such $X$: There is an $H$-copy in $G$ that
+has no more than $s(H)$ of its edges covered by each element of $X$. 2) If $H$ is totally balanced then
+for every $0 < a^* < a(H)$, almost surely $G \sim {\vec G}(n,n^{-1/a^*})$ has a single directed acyclic
+subgraph that covers all its $H$-copies. As for the first result, note that if $h=o(m)$ then $s(H)=(1+o_m(1))m/2$
+is about half of the edges of $H$. In fact, for infinitely many $H$ it holds that $s(H)=m/2$, optimally.
+As for the second result, the requirement that $H$ is totally balanced cannot, generally, be relaxed.

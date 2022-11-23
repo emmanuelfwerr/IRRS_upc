@@ -1,0 +1,19 @@
+For sufficiently wide ranges of applied control signals (control voltages), MEMS and piezoelectric
+Deformable Mirrors (DMs), exhibit nonlinear behavior. The nonlinear behavior manifests itself
+in nonlinear actuator couplings, nonlinear actuator deformation characteristics, and in the
+case of piezoelectric DMs, hysteresis. Furthermore, in a number of situations, DM behavior can
+change over time, and this requires a procedure for updating the DM models on the basis of the observed
+data. If not properly modeled and if not taken into account when designing control algorithms, nonlinearities,
+and time-varying DM behavior, can significantly degrade the achievable closed-loop performance
+of Adaptive Optics (AO) systems. Widely used approaches for DM control are based on pre-estimated
+linear time-invariant DM models in the form of influence matrices. Often, these models are not being
+updated during system operation. Consequently, when the nonlinear DM behavior is excited by control
+signals with wide operating ranges, or when the DM behavior changes over time, the state-of-the-art
+DM control approaches relying upon linear control methods, might not be able to produce a satisfactory
+closed-loop performance of an AO system. Motivated by these key facts, we present a novel method
+for data-driven DM control. Our approach combines a simple open-loop control method with a recursive
+least squares method for dynamically updating the DM model. The DM model is constantly being updated
+on the basis of the dynamically changing DM operating points. That is, the proposed method updates
+both the control actions and the DM model during the system operation. We experimentally verify
+this approach on a Boston Micromachines MEMS DM with 140 actuators. Preliminary experimental results
+reported in this manuscript demonstrate good potential for using the developed method for DM control.

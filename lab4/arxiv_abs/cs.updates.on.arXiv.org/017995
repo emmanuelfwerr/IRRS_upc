@@ -1,0 +1,20 @@
+Fully Homomorphic Encryption (FHE) allows for secure computation on encrypted data. We present
+BASALISC, an architecture family of FHE hardware accelerators that aims to substantially accelerate
+FHE computations in the cloud. BASALISC implements the BGV scheme, targets a range of parameter
+sets, and directly supports and implements BGV bootstrapping. We propose a new generalized version
+of bootstrapping that can be implemented with optimized Montgomery multipliers that cost 46% less
+in silicon area and 40% less in power consumption. BASALISC is a RISC architecture with a four-layer
+memory hierarchy, including a two-dimensional conflict-free inner memory layer that enables
+32 Tb/s radix-256 NTT computations without pipeline stalls. Our conflict-resolution data permutation
+hardware is re-used to compute BGV automorphisms without additional hardware and without throughput
+penalty. BASALISC additionally includes a custom multiply-accumulate unit familiar in DSP architectures,
+with which we accelerate tight BGV key switching loops. The BASALISC computation units and inner
+memory layers are designed in asynchronous logic, allowing them to run at different speeds to optimize
+each function. BASALISC is designed for ASIC implementation with a 1 GHz operational frequency,
+and is already underway toward tape-out with a 150mm2 die size in a 12nm Global Foundries process.The
+BASALISC toolchain comprises both a custom compiler and a joint performance and correctness simulator.
+We evaluate BASALISC in multiple ways: we study its physical realizability; we emulate and formally
+verify its core functional units; and we study its performance on a single iteration of logistic
+regression training over encrypted data. For this application, comprising from up to 900K high-level
+BASALISC instructions down to 27B low-level instructions, we show a speedup of at least 2,025x over
+HElib. 

@@ -1,0 +1,20 @@
+The immersed boundary (IB) method is a non-body conforming approach to fluid-structure interaction
+(FSI) that uses an Eulerian description of the momentum, viscosity, and incompressibility of a
+coupled fluid-structure system and a Lagrangian description of the deformations, stresses, and
+resultant forces of the immersed structure. Integral transforms with Dirac delta function kernels
+couple the Eulerian and Lagrangian variables, and in practice, discretizations of these integral
+transforms use regularized delta function kernels. Many different kernel functions have been
+proposed, but prior numerical work investigating the impact of the choice of kernel function on
+the accuracy of the methodology has been limited. This work systematically studies the effect of
+the choice of regularized delta function in several FSI benchmark tests using the immersed finite
+element/difference (IFED) method, which is an extension of the IB method that uses a finite element
+structural discretizations combined with a Cartesian grid finite difference method for the incompressible
+Navier-Stokes equations. The IFED formulation evaluates the regularized delta function on a collection
+of interaction points that can be chosen to be denser than the nodes of the Lagrangian mesh, and this
+study investigates the effect of varying the relative mesh widths of the Lagrangian and Eulerian
+discretizations. Our results indicate that kernels satisfying a commonly imposed even-odd condition
+require higher resolution to achieve similar accuracy as kernels that do not satisfy. We also find
+that narrower kernels are more robust and that structural meshes that are substantially coarser
+than the Cartesian grid can yield high accuracy for shear-dominated cases but not for cases with
+large normal forces. We verify our results in a large-scale FSI model of a bovine pericardial bioprosthetic
+heart valve in a pulse duplicator. 

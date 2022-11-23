@@ -1,0 +1,19 @@
+The task of instance segmentation in remote sensing images, aiming at performing per-pixel labeling
+of objects at instance level, is of great importance for various civil applications. Despite previous
+successes, most existing instance segmentation methods designed for natural images encounter
+sharp performance degradations when they are directly applied to top-view remote sensing images.
+Through careful analysis, we observe that the challenges mainly come from the lack of discriminative
+object features due to severe scale variations, low contrasts, and clustered distributions. In
+order to address these problems, a novel context aggregation network (CATNet) is proposed to improve
+the feature extraction process. The proposed model exploits three lightweight plug-and-play
+modules, namely dense feature pyramid network (DenseFPN), spatial context pyramid (SCP), and
+hierarchical region of interest extractor (HRoIE), to aggregate global visual context at feature,
+spatial, and instance domains, respectively. DenseFPN is a multi-scale feature propagation module
+that establishes more flexible information flows by adopting inter-level residual connections,
+cross-level dense connections, and feature re-weighting strategy. Leveraging the attention
+mechanism, SCP further augments the features by aggregating global spatial context into local
+regions. For each instance, HRoIE adaptively generates RoI features for different downstream
+tasks. We carry out extensive evaluations of the proposed scheme on the challenging iSAID, DIOR,
+NWPU VHR-10, and HRSID datasets. The evaluation results demonstrate that the proposed approach
+outperforms state-of-the-arts under similar computational costs. Source code and pre-trained
+models are available at https://github.com/yeliudev/CATNet. 

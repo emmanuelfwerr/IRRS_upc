@@ -1,0 +1,20 @@
+Biomechanical models often need to describe very complex systems, organs or diseases, and hence
+also include a large number of parameters. One of the attractive features of physics-based models
+is that in those models (most) parameters have a clear physical meaning. Nevertheless, the determination
+of these parameters is often very elaborate and costly and shows a large scatter within the population.
+Hence, it is essential to identify the most important parameter for a particular problem at hand.
+In order to distinguish parameters which have a significant influence on a specific model output
+from non-influential parameters, we use sensitivity analysis, in particular the Sobol method
+as a global variance-based method. However, the Sobol method requires a large number of model evaluations,
+which is prohibitive for computationally expensive models. We therefore employ Gaussian processes
+as a metamodel for the underlying full model. Metamodelling introduces further uncertainty, which
+we also quantify. We demonstrate the approach by applying it to two different problems: nanoparticle-mediated
+drug delivery in a multiphase tumour-growth model, and arterial growth and remodelling. Even relatively
+small numbers of evaluations of the full model suffice to identify the influential parameters in
+both cases and to separate them from non-influential parameters. The approach also allows the quantification
+of higher-order interaction effects. We thus show that a variance-based global sensitivity analysis
+is feasible for computationally expensive biomechanical models. Different aspects of sensitivity
+analysis are covered including a transparent declaration of the uncertainties involved in the
+estimation process. Such a global sensitivity analysis not only helps to massively reduce costs
+for experimental determination of parameters but is also highly beneficial for inverse analysis
+of such complex models. 

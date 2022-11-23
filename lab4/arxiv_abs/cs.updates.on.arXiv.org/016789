@@ -1,0 +1,19 @@
+Benchmarks offer a scientific way to compare algorithms using objective performance metrics.
+Good benchmarks have two features: (a) they should be widely useful for many research groups; (b)
+and they should produce reproducible findings. In robotic manipulation research, there is a trade-off
+between reproducibility and broad accessibility. If the benchmark is kept restrictive (fixed
+hardware, objects), the numbers are reproducible but the setup becomes less general. On the other
+hand, a benchmark could be a loose set of protocols (e.g. object sets) but the underlying variation
+in setups make the results non-reproducible. In this paper, we re-imagine benchmarking for robotic
+manipulation as state-of-the-art algorithmic implementations, alongside the usual set of tasks
+and experimental protocols. The added baseline implementations will provide a way to easily recreate
+SOTA numbers in a new local robotic setup, thus providing credible relative rankings between existing
+approaches and new work. However, these local rankings could vary between different setups. To
+resolve this issue, we build a mechanism for pooling experimental data between labs, and thus we
+establish a single global ranking for existing (and proposed) SOTA algorithms. Our benchmark,
+called Ranking-Based Robotics Benchmark (RB2), is evaluated on tasks that are inspired from clinically
+validated Southampton Hand Assessment Procedures. Our benchmark was run across two different
+labs and reveals several surprising findings. For example, extremely simple baselines like open-loop
+behavior cloning, outperform more complicated models (e.g. closed loop, RNN, Offline-RL, etc.)
+that are preferred by the field. We hope our fellow researchers will use RB2 to improve their research's
+quality and rigor. 

@@ -1,0 +1,19 @@
+In this paper, we refine the (almost) \emph{existentially optimal} distributed Laplacian solver
+recently developed by Forster, Goranci, Liu, Peng, Sun, and Ye (FOCS `21) into an (almost) \emph{universally
+optimal} distributed Laplacian solver. Specifically, when the topology is known, we show that
+any Laplacian system on an $n$-node graph with \emph{shortcut quality} $\text{SQ}(G)$ can be solved
+within $n^{o(1)} \text{SQ}(G) \log(1/\varepsilon)$ rounds, where $\varepsilon$ is the required
+accuracy. This almost matches our lower bound which guarantees that any correct algorithm on $G$
+requires $\widetilde{\Omega}(\text{SQ}(G))$ rounds, even for a crude solution with $\varepsilon
+\le 1/2$. Even in the unknown-topology case (i.e., standard CONGEST), the same bounds also hold
+in most networks of interest. Furthermore, conditional on conjectured improvements in state-of-the-art
+constructions of low-congestion shortcuts, the CONGEST results will match the known-topology
+ones. Moreover, following a recent line of work in distributed algorithms, we consider a hybrid
+communication model which enhances CONGEST with limited global power in the form of the node-capacitated
+clique (NCC) model. In this model, we show the existence of a Laplacian solver with round complexity
+$n^{o(1)} \log(1/\varepsilon)$. The unifying thread of these results, and our main technical
+contribution, is the study of novel \emph{congested} generalization of the standard \emph{part-wise
+aggregation} problem. We develop near-optimal algorithms for this primitive in the Supported-CONGEST
+model, almost-optimal algorithms in (standard) CONGEST, as well as a very simple algorithm for
+bounded-treewidth graphs with slightly worse bounds. This primitive can be readily used to accelerate
+the FOCS`21 Laplacian solver. We believe this primitive will find further independent applications.

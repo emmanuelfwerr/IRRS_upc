@@ -1,0 +1,19 @@
+Semiconductor materials provide a compelling platform for quantum technologies (QT), and the
+properties of a vast amount of materials can be found in databases containing information from both
+experimental and theoretical explorations. However, searching these databases to find promising
+candidate materials for quantum technology applications is a major challenge. Therefore, we have
+developed a framework for the automated discovery of semiconductor host platforms for QT using
+material informatics and machine learning methods, resulting in a dataset consisting of over $25.000$
+materials and nearly $5000$ physics-informed features. Three approaches were devised, named
+the Ferrenti, extended Ferrenti and the empirical approach, to label data for the supervised machine
+learning (ML) methods logistic regression, decision trees, random forests and gradient boosting.
+We find that of the three, the empirical approach relying exclusively on findings from the literature
+predicted substantially fewer candidates than the other two approaches with a clear distinction
+between suitable and unsuitable candidates when comparing the two largest eigenvalues in the covariance
+matrix. In contrast to expectations from the literature and that found for the Ferrenti and extended
+Ferrenti approaches focusing on band gap and ionic character, the ML methods from the empirical
+approach highlighted features related to symmetry and crystal structure, including bond length,
+orientation and radial distribution, as influential when predicting a material as suitable for
+QT. All three approaches and all four ML methods agreed on a subset of $47$ eligible candidates %(to
+a probability of $>50 \ \%$) of $8$ elemental, $29$ binary, and $10$ tertiary compounds, and provide
+a basis for further material explorations towards quantum technology. 

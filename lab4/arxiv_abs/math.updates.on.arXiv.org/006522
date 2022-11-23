@@ -1,0 +1,19 @@
+We study online convex optimization with switching costs, a practically important but also extremely
+challenging problem due to the lack of complete offline information. By tapping into the power of
+machine learning (ML) based optimizers, ML-augmented online algorithms (also referred to as expert
+calibration in this paper) have been emerging as state of the art, with provable worst-case performance
+guarantees. Nonetheless, by using the standard practice of training an ML model as a standalone
+optimizer and plugging it into an ML-augmented algorithm, the average cost performance can be even
+worse than purely using ML predictions. In order to address the "how to learn" challenge, we propose
+EC-L2O (expert-calibrated learning to optimize), which trains an ML-based optimizer by explicitly
+taking into account the downstream expert calibrator. To accomplish this, we propose a new differentiable
+expert calibrator that generalizes regularized online balanced descent and offers a provably
+better competitive ratio than pure ML predictions when the prediction error is large. For training,
+our loss function is a weighted sum of two different losses -- one minimizing the average ML prediction
+error for better robustness, and the other one minimizing the post-calibration average cost. We
+also provide theoretical analysis for EC-L2O, highlighting that expert calibration can be even
+beneficial for the average cost performance and that the high-percentile tail ratio of the cost
+achieved by EC-L2O to that of the offline optimal oracle (i.e., tail cost ratio) can be bounded. Finally,
+we test EC-L2O by running simulations for sustainable datacenter demand response. Our results
+demonstrate that EC-L2O can empirically achieve a lower average cost as well as a lower competitive
+ratio than the existing baseline algorithms. 

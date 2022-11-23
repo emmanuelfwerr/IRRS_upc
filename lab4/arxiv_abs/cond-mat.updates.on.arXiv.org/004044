@@ -1,0 +1,19 @@
+We propose a versatile, user-friendly approach, named (Computing Debye's scattering formula
+for Extraordinary Formfactors) (CDEF), to approximately calculate scattering profiles of arbitrarily
+shaped nanoparticles for small-angle X-ray scattering (SAXS) using Debye's scattering formula.
+This equation generally allows to compute the scattering pattern of an ensemble of scatterers with
+a known form factor in the kinematic limit. The ensemble can hereby consist of atoms, atomic nuclei
+or larger shapes. In the method proposed in this paper, a quasi-randomly distributed point cloud
+in the desired particle shape is generated. Then, Debye's formula is applied to this ensemble of
+point scatterers to calculate the SAXS pattern of a single particle with random orientation. The
+quasi-random distribution ensures faster convergence compared to a true random distribution
+of scatterers, especially in the higher region of the momentum transfer. In order to compute realistic
+SAXS curves of polydisperse nanoparticle ensembles with a given size distribution, the single
+particle master curve is rescaled and convolved with the size distribution. This allows us to fit
+measured data in reasonable time. We have used the method to evaluate scattering data of Au nanocubes
+with truncated or rounded edges. Our implementation of this method is fast enough to run on a single
+desktop computer and perform model fits within minutes. The accuracy of the method was analyzed
+by comparison with analytically known form factors and another implementation, the SPONGE, based
+on a similiar principle but with fewer assumptions. Additionally, the SPONGE coupled to McSAS3
+allows us to further retrieve information on the uncertainty of the size distribution using a Monte-Carlo
+uncertainty estimation algorithm. 

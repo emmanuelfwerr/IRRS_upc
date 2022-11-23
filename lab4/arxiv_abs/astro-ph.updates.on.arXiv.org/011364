@@ -1,0 +1,18 @@
+X-ray spectra of active galactic nuclei (AGN) consist of several different emission and absorption
+components. To determine the spectral parameters, these components are often fitted manually
+with models chosen on a case-by-case basis. However, this approach has two problems. First, it becomes
+very hard for a survey with a large number of sources. Second, in the case of low signal-to-noise ratio
+(S/N), there is a tendency to adopt an overly simplistic model, biasing the parameters and making
+their uncertainties unrealistic. We develop here a Bayesian method to automatically fit AGN X-ray
+spectra obtained by XMM-Newton with a consistent and physically motivated model. We use a physical
+model for the X-ray background, and an empirical one for the non X-ray background. Non-informative
+priors are applied on the parameters of interest, the photon index and the hydrogen column density
+($N_\mathrm{H}$), while informative priors obtained from deep surveys are used to marginalize
+over the parameter space of the nuisance parameters. To improve speed, we develop a specific spectral
+extraction and fitting procedure. We test this method using a realistic sample of 5000 spectra simulated
+based on our source model, reproducing typical population properties. Spectral parameters are
+randomly drawn from the priors taking into account the luminosity function. Well-constrained
+or meaningful posterior PDFs are obtained for the most relevant spectral parameters, e.g., $N_\mathrm{H}$,
+$\Gamma$ and $L_\mathrm{X}$. As a comparison, a maximum-likelihood approach with model selection
+among six models of different complexities is also applied to this sample. We find clear failures
+in the measurement of $\Gamma$ in most cases, and of $N_\mathrm{H}$ when the source is unabsorbed.

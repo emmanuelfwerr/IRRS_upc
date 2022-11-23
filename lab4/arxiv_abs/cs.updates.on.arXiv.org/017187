@@ -1,0 +1,19 @@
+To achieve minimum DNA input and tumor purity requirements for next-generation sequencing (NGS),
+pathologists visually estimate macrodissection and slide count decisions. Misestimation may
+cause tissue waste and increased laboratory costs. We developed an AI-augmented smart pathology
+review system (SmartPath) to empower pathologists with quantitative metrics for determining
+tissue extraction parameters. Using digitized H&E-stained FFPE slides as inputs, SmartPath segments
+tumors, extracts cell-based features, and suggests macrodissection areas. To predict DNA yield
+per slide, the extracted features are correlated with known DNA yields. Then, a pathologist-defined
+target yield divided by the predicted DNA yield/slide gives the number of slides to scrape. Following
+model development, an internal validation trial was conducted within the Tempus Labs molecular
+sequencing laboratory. We evaluated our system on 501 clinical colorectal cancer slides, where
+half received SmartPath-augmented review and half traditional pathologist review. The SmartPath
+cohort had 25% more DNA yields within a desired target range of 100-2000ng. The SmartPath system
+recommended fewer slides to scrape for large tissue sections, saving tissue in these cases. Conversely,
+SmartPath recommended more slides to scrape for samples with scant tissue sections, helping prevent
+costly re-extraction due to insufficient extraction yield. A statistical analysis was performed
+to measure the impact of covariates on the results, offering insights on how to improve future applications
+of SmartPath. Overall, the study demonstrated that AI-augmented histopathologic review using
+SmartPath could decrease tissue waste, sequencing time, and laboratory costs by optimizing DNA
+yields and tumor purity. 

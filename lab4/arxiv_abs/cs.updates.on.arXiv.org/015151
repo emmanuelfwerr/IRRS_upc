@@ -1,0 +1,19 @@
+The maximum matching problem in dynamic graphs subject to edge updates (insertions and deletions)
+has received much attention over the last few years; a multitude of approximation/time tradeoffs
+were obtained, improving upon the folklore algorithm, which maintains a maximal (and hence $2$-approximate)
+matching in $O(n)$ worst-case update time in $n$-node graphs. We present the first deterministic
+algorithm which outperforms the folklore algorithm in terms of {\em both} approximation ratio
+and worst-case update time. Specifically, we give a $(2-\Omega(1))$-approximate algorithm with
+$O(m^{3/8})=O(n^{3/4})$ worst-case update time in $n$-node, $m$-edge graphs. For sufficiently
+small constant $\epsilon>0$, no deterministic $(2+\epsilon)$-approximate algorithm with worst-case
+update time $O(n^{0.99})$ was known. Our second result is the first deterministic $(2+\epsilon)$-approximate
+weighted matching algorithm with $O_\epsilon(1)\cdot O(\sqrt[4]{m}) = O_\epsilon(1)\cdot
+O(\sqrt{n})$ worst-case update time. Our main technical contributions are threefold: first,
+we characterize the tight cases for \emph{kernels}, which are the well-studied matching sparsifiers
+underlying much of the $(2+\epsilon)$-approximate dynamic matching literature. This characterization,
+together with multiple ideas -- old and new -- underlies our result for breaking the approximation
+barrier of $2$. Our second technical contribution is the first example of a dynamic matching algorithm
+whose running time is improved due to improving the \emph{recourse} of other dynamic matching algorithms.
+Finally, we show how to use dynamic bipartite matching algorithms as black-box subroutines for
+dynamic matching in general graphs without incurring the natural $\frac{3}{2}$ factor in the approximation
+ratio which such approaches naturally incur. 

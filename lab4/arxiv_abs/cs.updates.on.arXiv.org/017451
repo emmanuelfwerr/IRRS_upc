@@ -1,0 +1,19 @@
+We present two distributed algorithms for the {\em Byzantine counting problem}, which is concerned
+with estimating the size of a network in the presence of a large number of Byzantine nodes. In an $n$-node
+network ($n$ is unknown), our first algorithm, which is {\em deterministic}, finishes in $O(\log{n})$
+rounds and is time-optimal. This algorithm can tolerate up to $O(n^{1 - \gamma})$ arbitrarily (adversarially)
+placed Byzantine nodes for any arbitrarily small (but fixed) positive constant $\gamma$. It outputs
+a (fixed) constant factor estimate of $\log{n}$ that would be known to all but $o(1)$ fraction of
+the good nodes. This algorithm works for \emph{any} bounded degree expander network. However,
+this algorithms assumes that good nodes can send arbitrarily large-sized messages in a round. Our
+second algorithm is {\em randomized} and most good nodes send only small-sized messages (Throughout
+this paper, a small-sized message is defined to be one that contains $O(\log{n})$ bits in addition
+to at most a constant number of node IDs.). This algorithm works in \emph{almost all} $d$-regular
+graphs. It tolerates up to $B(n) = n^{\frac{1}{2} - \xi}$ (note that $n$ and $B(n)$ are unknown to
+the algorithm) arbitrarily (adversarially) placed Byzantine nodes, where $\xi$ is any arbitrarily
+small (but fixed) positive constant. This algorithm takes $O(B(n)\log^2{n})$ rounds and outputs
+a (fixed) constant factor estimate of $\log{n}$ with probability at least $1 - o(1)$. The said estimate
+is known to most nodes, i.e., $\geq (1 - \beta)n$ nodes for any arbitrarily small (but fixed) positive
+constant $\beta$. To complement our algorithms, we also present an impossibility result that shows
+that it is impossible to estimate the network size with any reasonable approximation with any non-trivial
+probability of success if the network does not have sufficient vertex expansion. 

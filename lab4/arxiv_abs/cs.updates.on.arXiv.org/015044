@@ -1,0 +1,20 @@
+The visualization and detection of anomalies (outliers) are of crucial importance to many fields,
+particularly cybersecurity. Several approaches have been proposed in these fields, yet to the
+best of our knowledge, none of them has fulfilled both objectives, simultaneously or cooperatively,
+in one coherent framework. The visualization methods of these approaches were introduced for explaining
+the output of a detection algorithm, not for data exploration that facilitates a standalone visual
+detection. This is our point of departure: UN-AVOIDS, an unsupervised and nonparametric approach
+for both visualization (a human process) and detection (an algorithmic process) of outliers, that
+assigns invariant anomalous scores (normalized to $[0,1]$), rather than hard binary-decision.
+The main aspect of novelty of UN-AVOIDS is that it transforms data into a new space, which is introduced
+in this paper as neighborhood cumulative density function (NCDF), in which both visualization
+and detection are carried out. In this space, outliers are remarkably visually distinguishable,
+and therefore the anomaly scores assigned by the detection algorithm achieved a high area under
+the ROC curve (AUC). We assessed UN-AVOIDS on both simulated and two recently published cybersecurity
+datasets, and compared it to three of the most successful anomaly detection methods: LOF, IF, and
+FABOD. In terms of AUC, UN-AVOIDS was almost an overall winner. The article concludes by providing
+a preview of new theoretical and practical avenues for UN-AVOIDS. Among them is designing a visualization
+aided anomaly detection (VAAD), a type of software that aids analysts by providing UN-AVOIDS' detection
+algorithm (running in a back engine), NCDF visualization space (rendered to plots), along with
+other conventional methods of visualization in the original feature space, all of which are linked
+in one interactive environment. 

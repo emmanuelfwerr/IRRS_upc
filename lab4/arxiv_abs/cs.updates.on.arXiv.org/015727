@@ -1,0 +1,20 @@
+Artificial Neural Networks (ANNs) can be viewed as nonlinear sieves that can approximate complex
+functions of high dimensional variables more effectively than linear sieves. We investigate the
+computational performance of various ANNs in nonparametric instrumental variables (NPIV) models
+of moderately high dimensional covariates that are relevant to empirical economics. We present
+two efficient procedures for estimation and inference on a weighted average derivative (WAD):
+an orthogonalized plug-in with optimally-weighted sieve minimum distance (OP-OSMD) procedure
+and a sieve efficient score (ES) procedure. Both estimators for WAD use ANN sieves to approximate
+the unknown NPIV function and are root-n asymptotically normal and first-order equivalent. We
+provide a detailed practitioner's recipe for implementing both efficient procedures. This involves
+the choice of tuning parameters for the unknown NPIV, the conditional expectations and the optimal
+weighting function that are present in both procedures but also the choice of tuning parameters
+for the unknown Riesz representer in the ES procedure. We compare their finite-sample performances
+in various simulation designs that involve smooth NPIV function of up to 13 continuous covariates,
+different nonlinearities and covariate correlations. Some Monte Carlo findings include: 1) tuning
+and optimization are more delicate in ANN estimation; 2) given proper tuning, both ANN estimators
+with various architectures can perform well; 3) easier to tune ANN OP-OSMD estimators than ANN ES
+estimators; 4) stable inferences are more difficult to achieve with ANN (than spline) estimators;
+5) there are gaps between current implementations and approximation theories. Finally, we apply
+ANN NPIV to estimate average partial derivatives in two empirical demand examples with multivariate
+covariates. 

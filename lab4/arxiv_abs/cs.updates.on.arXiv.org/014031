@@ -1,0 +1,19 @@
+Prediction of Overall Survival (OS) of brain cancer patients from multi-modal MRI is a challenging
+field of research. Most of the existing literature on survival prediction is based on Radiomic features,
+which does not consider either non-biological factors or the functional neurological status of
+the patient(s). Besides, the selection of an appropriate cut-off for survival and the presence
+of censored data create further problems. Application of deep learning models for OS prediction
+is also limited due to the lack of large annotated publicly available datasets. In this scenario
+we analyse the potential of two novel neuroimaging feature families, extracted from brain parcellation
+atlases and spatial habitats, along with classical radiomic and geometric features; to study their
+combined predictive power for analysing overall survival. A cross validation strategy with grid
+search is proposed to simultaneously select and evaluate the most predictive feature subset based
+on its predictive power. A Cox Proportional Hazard (CoxPH) model is employed for univariate feature
+selection, followed by the prediction of patient-specific survival functions by three multivariate
+parsimonious models viz. Coxnet, Random survival forests (RSF) and Survival SVM (SSVM). The brain
+cancer MRI data used for this research was taken from two open-access collections TCGA-GBM and TCGA-LGG
+available from The Cancer Imaging Archive (TCIA). Corresponding survival data for each patient
+was downloaded from The Cancer Genome Atlas (TCGA). A high cross validation $C-index$ score of $0.82\pm.10$
+was achieved using RSF with the best $24$ selected features. Age was found to be the most important
+biological predictor. There were $9$, $6$, $6$ and $2$ features selected from the parcellation,
+habitat, radiomic and region-based feature groups respectively. 

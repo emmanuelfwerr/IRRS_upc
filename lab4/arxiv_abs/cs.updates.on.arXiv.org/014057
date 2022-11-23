@@ -1,0 +1,19 @@
+Analog over-the-air computation (OAC) is an efficient solution to a class of uplink data aggregation
+tasks over a multiple-access channel (MAC), wherein the receiver, dubbed the fusion center, aims
+to reconstruct a function of the data distributed at edge devices rather than the individual data
+themselves. Existing OAC relies exclusively on the maximum likelihood (ML) estimation at the fusion
+center to recover the arithmetic sum of the transmitted signals from different devices. ML estimation,
+however, is much susceptible to noise. In particular, in the misaligned OAC where there are channel
+misalignments among transmitted signals, ML estimation suffers from severe error propagation
+and noise enhancement. To address these challenges, this paper puts forth a Bayesian approach for
+OAC by letting each edge device transmit two pieces of prior information to the fusion center. Three
+OAC systems are studied: the aligned OAC with perfectly-aligned signals; the synchronous OAC with
+misaligned channel gains among the received signals; and the asynchronous OAC with both channel-gain
+and time misalignments. Using the prior information, we devise linear minimum mean squared error
+(LMMSE) estimators and a sum-product maximum a posteriori (SP-MAP) estimator for the three OAC
+systems. Numerical results verify that, 1) For the aligned and synchronous OAC, our LMMSE estimator
+significantly outperforms the ML estimator. In the low signal-to-noise ratio (SNR) regime, the
+LMMSE estimator reduces the mean squared error (MSE) by at least 6 dB; in the high SNR regime, the LMMSE
+estimator lowers the error floor on the MSE by 86.4%; 2) For the asynchronous OAC, our LMMSE and SP-MAP
+estimators are on an equal footing in terms of the MSE performance, and are significantly better
+than the ML estimator. 

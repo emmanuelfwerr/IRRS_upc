@@ -1,0 +1,19 @@
+Most differentially private (DP) algorithms assume a central model in which a reliable third party
+inserts noise to queries made on datasets, or a local model where the users locally perturb their
+data. However, the central model is vulnerable via a single point of failure, and in the local model,
+the utility of the data deteriorates significantly. The recently proposed shuffle model is an intermediate
+framework between the central and the local paradigms where the users send their locally privatized
+data to a server where messages are shuffled, effacing the link between a privatized message and
+the corresponding user, giving a better trade-off between privacy and utility than the local model,
+as its privacy gets amplified without adding more noise. In this paper, we theoretically derive
+the strictest known bound for DP guarantee for the shuffle models with $k$-Randomized Response
+local randomizers. There on, we focus on the utility of the shuffle model for histogram queries.
+Leveraging on the matrix inversion method, which is used to approximate the original distribution
+from the empirical one produced by the $k$-RR mechanism, we de-noise the histogram produced by the
+shuffle model to evaluate the total variation distance of the resulting histogram from the true
+one, which we regard as the measure of utility of the privacy mechanism. We perform experiments on
+both synthetic and real data to compare the privacy-utility trade-off of the shuffle model with
+that of the central one privatized by adding the state-of-the-art Gaussian noise to each bin. Although
+the experimental results stay consistent with the literature that favour the central model, we
+see that, the difference in statistical utilities between the central and the shuffle models is
+very small, showing that they are almost comparable under the same level of DP. 

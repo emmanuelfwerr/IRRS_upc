@@ -1,0 +1,19 @@
+We study the fundamental problem of learning a single neuron, i.e., a function of the form $\mathbf{x}\mapsto\sigma(\mathbf{w}\cdot\mathbf{x})$
+for monotone activations $\sigma:\mathbb{R}\mapsto\mathbb{R}$, with respect to the $L_2^2$-loss
+in the presence of adversarial label noise. Specifically, we are given labeled examples from a distribution
+$D$ on $(\mathbf{x}, y)\in\mathbb{R}^d \times \mathbb{R}$ such that there exists $\mathbf{w}^\ast\in\mathbb{R}^d$
+achieving $F(\mathbf{w}^\ast)=\epsilon$, where $F(\mathbf{w})=\mathbf{E}_{(\mathbf{x},y)\sim
+D}[(\sigma(\mathbf{w}\cdot \mathbf{x})-y)^2]$. The goal of the learner is to output a hypothesis
+vector $\mathbf{w}$ such that $F(\mathbb{w})=C\, \epsilon$ with high probability, where $C>1$
+is a universal constant. As our main contribution, we give efficient constant-factor approximate
+learners for a broad class of distributions (including log-concave distributions) and activation
+functions. Concretely, for the class of isotropic log-concave distributions, we obtain the following
+important corollaries: For the logistic activation, we obtain the first polynomial-time constant
+factor approximation (even under the Gaussian distribution). Our algorithm has sample complexity
+$\widetilde{O}(d/\epsilon)$, which is tight within polylogarithmic factors. For the ReLU activation,
+we give an efficient algorithm with sample complexity $\tilde{O}(d\, \polylog(1/\epsilon))$.
+Prior to our work, the best known constant-factor approximate learner had sample complexity $\tilde{\Omega}(d/\epsilon)$.
+In both of these settings, our algorithms are simple, performing gradient-descent on the (regularized)
+$L_2^2$-loss. The correctness of our algorithms relies on novel structural results that we establish,
+showing that (essentially all) stationary points of the underlying non-convex loss are approximately
+optimal. 

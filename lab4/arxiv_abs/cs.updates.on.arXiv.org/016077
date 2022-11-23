@@ -1,0 +1,19 @@
+An efficient and reliable multi-agent decision-making system is highly demanded for the safe and
+efficient operation of connected autonomous vehicles in intelligent transportation systems.
+Current researches mainly focus on the Deep Reinforcement Learning (DRL) methods. However, utilizing
+DRL methods in interactive traffic scenarios is hard to represent the mutual effects between different
+vehicles and model the dynamic traffic environments due to the lack of interactive information
+in the representation of the environments, which results in low accuracy of cooperative decisions
+generation. To tackle these difficulties, this research proposes a framework to enable different
+Graph Reinforcement Learning (GRL) methods for decision-making, and compares their performance
+in interactive driving scenarios. GRL methods combinate the Graph Neural Network (GNN) and DRL
+to achieve the better decisions generation in interactive scenarios of autonomous vehicles, where
+the features of interactive scenarios are extracted by the GNN, and cooperative behaviors are generated
+by DRL framework. Several GRL approaches are summarized and implemented in the proposed framework.
+To evaluate the performance of the proposed GRL methods, an interactive driving scenarios on highway
+with two ramps is constructed, and simulated experiment in the SUMO platform is carried out to evaluate
+the performance of different GRL approaches. Finally, results are analyzed in multiple perspectives
+and dimensions to compare the characteristic of different GRL approaches in intelligent transportation
+scenarios. Results show that the implementation of GNN can well represents the interaction between
+vehicles, and the combination of GNN and DRL is able to improve the performance of the generation
+of lane-change behaviors. The source code of our work can be found at https://github.com/Jacklinkk/TorchGRL.

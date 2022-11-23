@@ -1,0 +1,19 @@
+The paradigm of reservoir computing exploits the nonlinear dynamics of a physical reservoir to
+perform complex time-series processing tasks such as speech recognition and forecasting. Unlike
+other machine-learning approaches, reservoir computing relaxes the need for optimization of
+intra-network parameters, and is thus particularly attractive for near-term hardware-efficient
+quantum implementations. However, the complete description of practical quantum reservoir computers
+requires accounting for their placement in a quantum measurement chain, and its conditional evolution
+under measurement. Consequently, training and inference has to be performed using finite samples
+from obtained measurement records. Here we describe a framework for reservoir computing with nonlinear
+quantum reservoirs under continuous heterodyne measurement. Using an efficient truncated-cumulants
+representation of the complete measurement chain enables us to sample stochastic measurement
+trajectories from reservoirs of several coupled nonlinear bosonic modes under strong excitation.
+This description also offers a mathematical basis to directly compare the computational capabilities
+of a given physical reservoir operated across classical and quantum regimes. Applying this framework
+to the classification of quantum states of systems that are part of the same measurement chain as
+the quantum reservoir computer, we assess and explain measurement-contingent advantages and
+disadvantages of reservoir processing in quantum regimes. Our results also identify the vicinity
+of bifurcation points as presenting optimal nonlinear processing regimes of an oscillator-based
+quantum reservoir. The considered models are directly realizable in modern circuit QED experiments,
+while the framework is applicable to more general quantum nonlinear reservoirs. 

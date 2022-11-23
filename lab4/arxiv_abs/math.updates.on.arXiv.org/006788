@@ -1,0 +1,20 @@
+We study the Unbalanced Optimal Transport (UOT) between two measures of possibly different masses
+with at most $n$ components, where marginal constraints of the standard Optimal Transport (OT)
+are relaxed via Kullback-Leibler divergence with regularization factor $\tau$. Although only
+Sinkhorn-based UOT solvers have been analyzed in the literature with the complexity $O\big(\tfrac{\tau
+n^2\log(n)}{\varepsilon}\log\big(\tfrac{\log(n)}{{\varepsilon}}\big)\big)$ for achieving
+the error $\varepsilon$, their incompatibility with certain deep learning models and dense output
+transportation plan strongly hinder the practicality. While being vastly used as heuristics for
+computing UOT in modern deep learning applications and having shown success in sparse OT, gradient
+methods for UOT have not been formally studied. To fill this gap, we propose a novel algorithm based
+on Gradient Extrapolation Method (GEM-UOT) to find an $\varepsilon$-approximate solution to
+the UOT problem in $O\big(\kappa n^2\log\big(\frac{\tau n}{\varepsilon}\big)\big)$, where
+$\kappa$ is the condition number depending on the two input measures. Our algorithm is designed
+by optimizing a new dual formulation of the squared $\ell_2$-norm UOT objective, filling in the
+lack of sparse UOT literature. Finally, we establish a novel characterization of approximation
+error between UOT and OT in terms of both the transportation plan and transport distance. This result
+sheds light on a new major bottleneck neglected by the robust OT literature: though relaxing OT as
+UOT admits robustness to outliers, the computed UOT distance far deviates from the original OT distance.
+We address such limitation via a principled approach of OT retrieval from UOT based on GEM-UOT with
+fine tuned $\tau$ and a post-process projection step. Experiments on synthetic and real datasets
+validate our theories and demonstrate our methods' favorable performance. 

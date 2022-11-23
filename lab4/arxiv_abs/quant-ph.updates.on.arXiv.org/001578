@@ -1,0 +1,20 @@
+We propose quantum algorithms for projective ground-state preparation and calculations of the
+many-body Green's functions directly in frequency domain. The algorithms are based on the linear
+combination of unitary (LCU) operations and essentially only use quantum resources. To prepare
+the ground state, we construct the operator ${\exp}(-\tau \hat{H}^2)$ using Hubbard-Stratonovich
+transformation by LCU and apply it on an easy-to-prepare initial state. Our projective state preparation
+procedure saturates the near-optimal scaling, $\mathcal{O}(\frac{1}{\gamma\Delta} \log \frac{1}{\gamma\eta})$,
+of other currently known algorithms, in terms of the spectral-gap lower bound $\Delta$, the additive
+error $\eta$ in the state vector, and the overlap lower bound $\gamma$ between the initial state
+and the exact ground state. It is straightforward to combine our algorithm with spectral-gap amplification
+technique to achieve quadratically improved scaling $\mathcal{O}(1/\sqrt{\Delta})$ for ground-state
+preparation of frustration-free Hamiltonians, which we demonstrate with numerical results of
+the $q$-deformed XXZ chain. To compute the Green's functions, including the single-particle and
+other response functions, we act on the prepared ground state with the retarded resolvent operator
+$R(\omega + i\Gamma; \hat{H})$ in the LCU form derived from the Fourier-Laplace integral transform
+(FIT). Our resolvent algorithm has $\mathcal{O}(\frac{1}{\Gamma^2} \log\frac{1}{\Gamma\epsilon})$
+complexity scaling for the frequency resolution $\Gamma$ of the response functions and the targeted
+error $\epsilon$, while classical algorithms for FIT usually have polynomial scaling over the
+error $\epsilon$. To illustrate the complexity scaling of our algorithms, we provide numerical
+results for their application to the paradigmatic Fermi-Hubbard model on a one-dimensional lattice
+with different numbers of sites. 

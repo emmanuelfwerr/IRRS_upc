@@ -1,0 +1,19 @@
+Let $G$ be a graph with vertex set $V$. {Two disjoint sets $V_1, V_2 \subseteq V$ form a coalition in
+$G$ if none of them is a dominating set of $G$ but their union $V_1\cup V_2$ is. A vertex partition $\Psi=\{V_1,\ldots,
+V_k\}$ of $V$ is called a coalition partition of $G$ if every set~$V_i\in \Psi$ is either a dominating
+set of $G$ with the cardinality $|V_i|=1$, or is not a dominating set but for some $V_j\in \Psi$, $V_i$
+and $V_j$ form a coalition.} The maximum cardinality of a coalition partition of $G$ is called the
+coalition number of $G$, denoted by $\mathcal{C}(G)$. A $\mathcal{C}(G)$-partition is a coalition
+partition of $G$ with cardinality $\mathcal{C}(G)$. Given a coalition partition $\Psi=\{V_1,
+V_2,\ldots, V_r\}$ of~$G$, a coalition graph $CG(G, \Psi)$ is associated on $\Psi$ such that there
+is a one-to-one correspondence between its vertices and the members of $\Psi$. Two vertices of $CG(G,
+\Psi)$ are adjacent if and only if the corresponding sets form a coalition in $G$. In this paper, we
+first show that for any graph $G$ with $\delta(G)=1$, $\mathcal{C}(G)\leq 2\Delta(G)+2$, where
+$\delta(G)$ and $\Delta(G)$ are the minimum degree and the maximum degree of $G$, respectively.
+Moreover, we characterize all graphs~$G$ with $\delta(G)\leq 1$ and $\mathcal{C}(G)=n$, where
+$n$ is the number of vertices of $G$. Furthermore, we characterize all trees $T$ with $\mathcal{C}(T)=n$
+and all trees $T$ with $\mathcal{C}(T)=n-1$. This solves partially one of the open problem posed
+in~\cite{coal0}. On the other hand, we theoretically and empirically determine the number of coalition
+graphs that can be defined by all coalition partitions of a given path $P_k$. Furthermore, we show
+that there is no universal coalition path, a path whose coalition partitions defines all possible
+coalition graphs. These solve two open problems posed by Haynes et al.~\cite{coal1}. 

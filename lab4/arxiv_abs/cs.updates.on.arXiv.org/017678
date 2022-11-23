@@ -1,0 +1,19 @@
+With the popularity of Internet of Things (IoT), edge computing and cloud computing, more and more
+stream analytics applications are being developed including real-time trend prediction and object
+detection on top of IoT sensing data. One popular type of stream analytics is the recurrent neural
+network (RNN) deep learning model based time series or sequence data prediction and forecasting.
+Different from traditional analytics that assumes data to be processed are available ahead of time
+and will not change, stream analytics deals with data that are being generated continuously and
+data trend/distribution could change (aka concept drift), which will cause prediction/forecasting
+accuracy to drop over time. One other challenge is to find the best resource provisioning for stream
+analytics to achieve good overall latency. In this paper, we study how to best leverage edge and cloud
+resources to achieve better accuracy and latency for RNN-based stream analytics. We propose a novel
+edge-cloud integrated framework for hybrid stream analytics that support low latency inference
+on the edge and high capacity training on the cloud. We study the flexible deployment of our hybrid
+learning framework, namely edge-centric, cloud-centric and edge-cloud integrated. Further,
+our hybrid learning framework can dynamically combine inference results from an RNN model pre-trained
+based on historical data and another RNN model re-trained periodically based on the most recent
+data. Using real-world and simulated stream datasets, our experiments show the proposed edge-cloud
+deployment is the best among all three deployment types in terms of latency. For accuracy, the experiments
+show our dynamic learning approach performs the best among all learning approaches for all three
+concept drift scenarios. 

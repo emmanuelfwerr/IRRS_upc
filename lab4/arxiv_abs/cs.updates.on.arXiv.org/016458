@@ -1,0 +1,20 @@
+The study of Markov processes and broadcasting on trees has deep connections to a variety of areas
+including statistical physics, graphical models, phylogenetic reconstruction, MCMC algorithms,
+and community detection in random graphs. Notably, the celebrated Belief Propagation (BP) algorithm
+achieves optimal performance for the reconstruction problem of predicting the value of the Markov
+process at the root of the tree from its values at the leaves. Recently, the analysis of low-degree
+polynomials has emerged as a valuable tool for predicting computational-to-statistical gaps.
+In this work, we investigate the performance of low-degree polynomials for the reconstruction
+problem. Perhaps surprisingly, we show that there are simple tree models of fixed arity $d$ and growing
+depth $\ell$ (so $N = 2^{\ell \log_2(d)}$ leaves) where (1) nontrivial reconstruction of the root
+value is possible with a simple polynomial time algorithm and with robustness to noise, but not with
+any polynomial of degree $2^{c \ell} = N^{c/\log_2(d)}$ for $c > 0$ a constant, and (2) when the tree
+is unknown and given multiple samples with correlated root assignments, nontrivial reconstruction
+of the root value is possible with a simple, noise-robust, and computationally efficient SQ algorithm
+but not with any polynomial of degree $2^{c \ell}$. These results clarify limitations of low-degree
+polynomials vs. polynomial time algorithms for Bayesian estimation problems. They also complement
+recent work of Moitra, Mossel, and Sandon who studied the circuit complexity of Belief Propagation.
+As a consequence of our main result, we show that for some $c' > 0$, $\exp(2^{c'\ell}) = \exp(N^{c'/\log_2(d)})$
+many samples are needed for RBF kernel regression to obtain nontrivial correlation with the true
+regression function (BP). We pose related open questions about low-degree polynomials and the
+Kesten-Stigum threshold. 

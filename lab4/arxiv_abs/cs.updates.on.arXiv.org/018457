@@ -1,0 +1,19 @@
+Communication complexity is the amount of communication needed to compute a function when the function
+inputs are distributed over multiple parties. In its simplest form, one-way communication complexity,
+Alice and Bob compute a function $f(x,y)$, where $x$ is given to Alice and $y$ is given to Bob, and only
+one message from Alice to Bob is allowed. A fundamental question in quantum information is the relationship
+between one-way quantum and classical communication complexities, i.e., how much shorter the
+message can be if Alice is sending a quantum state instead of bit strings? We make some progress towards
+this question with the following results. Let $f: \mathcal{X} \times \mathcal{Y} \rightarrow
+\mathcal{Z} \cup \{\bot\}$ be a partial function and $\mu$ be a distribution with support contained
+in $f^{-1}(\mathcal{Z})$. Denote $d=|\mathcal{Z}|$. Let $\mathsf{R}^{1,\mu}_\epsilon(f)$
+be the classical one-way communication complexity of $f$; $\mathsf{Q}^{1,\mu}_\epsilon(f)$
+be the quantum one-way communication complexity of $f$ and $\mathsf{Q}^{1,\mu, *}_\epsilon(f)$
+be the entanglement-assisted quantum one-way communication complexity of $f$, each with distributional
+error (average error over $\mu$) at most $\epsilon$. We show: 1) If $\mu$ is a product distribution,
+$\eta > 0$ and $0 \leq \epsilon \leq 1-1/d$, then, $$\mathsf{R}^{1,\mu}_{2\epsilon -d\epsilon^2/(d-1)+
+\eta}(f) \leq 2\mathsf{Q}^{1,\mu, *}_{\epsilon}(f) + O(\log\log (1/\eta))\enspace.$$ 2)If
+$\mu$ is a non-product distribution and $\mathcal{Z}=\{ 0,1\}$, then $\forall \epsilon, \eta
+> 0$ such that $\epsilon/\eta + \eta < 0.5$, $$\mathsf{R}^{1,\mu}_{3\eta}(f) = O(\mathsf{Q}^{1,\mu}_{{\epsilon}}(f)
+\cdot \mathsf{CS}(f)/\eta^3)\enspace,$$ where \[\mathsf{CS}(f) = \max_{y} \min_{z\in\{0,1\}}
+\vert \{x~|~f(x,y)=z\} \vert \enspace.\] 

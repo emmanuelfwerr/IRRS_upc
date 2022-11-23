@@ -1,0 +1,19 @@
+As post hoc explanation methods are increasingly being leveraged to explain complex models in high-stakes
+settings, it becomes critical to ensure that the quality of the resulting explanations is consistently
+high across various population subgroups including the minority groups. For instance, it should
+not be the case that explanations associated with instances belonging to a particular gender subgroup
+(e.g., female) are less accurate than those associated with other genders. However, there is little
+to no research that assesses if there exist such group-based disparities in the quality of the explanations
+output by state-of-the-art explanation methods. In this work, we address the aforementioned gaps
+by initiating the study of identifying group-based disparities in explanation quality. To this
+end, we first outline the key properties which constitute explanation quality and where disparities
+can be particularly problematic. We then leverage these properties to propose a novel evaluation
+framework which can quantitatively measure disparities in the quality of explanations output
+by state-of-the-art methods. Using this framework, we carry out a rigorous empirical analysis
+to understand if and when group-based disparities in explanation quality arise. Our results indicate
+that such disparities are more likely to occur when the models being explained are complex and highly
+non-linear. In addition, we also observe that certain post hoc explanation methods (e.g., Integrated
+Gradients, SHAP) are more likely to exhibit the aforementioned disparities. To the best of our knowledge,
+this work is the first to highlight and study the problem of group-based disparities in explanation
+quality. In doing so, our work sheds light on previously unexplored ways in which explanation methods
+may introduce unfairness in real world decision making. 

@@ -1,0 +1,20 @@
+With the increasing adoption of data-hungry machine learning algorithms, personal data privacy
+has emerged as one of the key concerns that could hinder the success of digital transformation. As
+such, Privacy-Preserving Machine Learning (PPML) has received much attention from both academia
+and industry. However, organizations are faced with the dilemma that, on the one hand, they are encouraged
+to share data to enhance ML performance, but on the other hand, they could potentially be breaching
+the relevant data privacy regulations. Practical PPML typically allows multiple participants
+to individually train their ML models, which are then aggregated to construct a global model in a
+privacy-preserving manner, e.g., based on multi-party computation or homomorphic encryption.
+Nevertheless, in most important applications of large-scale PPML, e.g., by aggregating clients'
+gradients to update a global model for federated learning, such as consumer behavior modeling of
+mobile application services, some participants are inevitably resource-constrained mobile
+devices, which may drop out of the PPML system due to their mobility nature. Therefore, the resilience
+of privacy-preserving aggregation has become an important problem to be tackled. In this paper,
+we propose a scalable privacy-preserving aggregation scheme that can tolerate dropout by participants
+at any time, and is secure against both semi-honest and active malicious adversaries by setting
+proper system parameters. By replacing communication-intensive building blocks with a seed homomorphic
+pseudo-random generator, and relying on the additive homomorphic property of Shamir secret sharing
+scheme, our scheme outperforms state-of-the-art schemes by up to 6.37$\times$ in runtime and provides
+a stronger dropout-resilience. The simplicity of our scheme makes it attractive both for implementation
+and for further improvements. 

@@ -1,0 +1,19 @@
+Many force-gradient explicit symplectic integration algorithms have been designed for the Hamiltonian
+$H=T (\mathbf{p})+V(\mathbf{q})$ with kinetic energy $T(\mathbf{p})=\mathbf{p}^2/2$ in the
+existing references. When the force-gradient operator is appropriately adjusted as a new operator,
+they are still suitable for a class of Hamiltonian problems $H=K(\mathbf{p},\mathbf{q})+V(\mathbf{q})$
+with \emph{integrable} part $K(\mathbf{p},\mathbf{q}) = \sum_{i=1}^{n} \sum_{j=1}^{n}a_{ij}p_ip_j+\sum_{i=1}^{n}
+b_ip_i$, where $a_{ij}=a_{ij}(\textbf{q})$ and $b_i=b_i(\textbf{q})$ are functions of coordinates
+$\textbf{q}$. The newly adjusted operator is not a force-gradient operator but is similar to the
+momentum-version operator associated to the potential $V$. The newly extended (or adjusted) algorithms
+are no longer solvers of the original Hamiltonian, but are solvers of slightly modified Hamiltonians.
+They are explicit symplectic integrators with symmetry or time-reversibility. Numerical tests
+show that the standard symplectic integrators without the new operator are generally poorer than
+the corresponding extended methods with the new operator in computational accuracies and efficiencies.
+The optimized methods have better accuracies than the corresponding non-optimized counterparts.
+Among the tested symplectic methods, the two extended optimized seven-stage fourth-order methods
+of Omelyan, Mryglod and Folk exhibit the best numerical performance. As a result, one of the two optimized
+algorithms is used to study the orbital dynamical features of a modified H\'{e}non-Heiles system
+and a spring pendulum. These extended integrators allow for integrations in Hamiltonian problems,
+such as the spiral structure in self-consistent models of rotating galaxies and the spiral arms
+in galaxies. 

@@ -1,0 +1,19 @@
+Early identification and prevention of various plant diseases in commercial farms and orchards
+is a key feature of precision agriculture technology. This paper presents a high-performance real-time
+fine-grain object detection framework that addresses several obstacles in plant disease detection
+that hinder the performance of traditional methods, such as, dense distribution, irregular morphology,
+multi-scale object classes, textural similarity, etc. The proposed model is built on an improved
+version of the You Only Look Once (YOLOv4) algorithm. The modified network architecture maximizes
+both detection accuracy and speed by including the DenseNet in the back-bone to optimize feature
+transfer and reuse, two new residual blocks in the backbone and neck enhance feature extraction
+and reduce computing cost; the Spatial Pyramid Pooling (SPP) enhances receptive field, and a modified
+Path Aggregation Network (PANet) preserves fine-grain localized information and improve feature
+fusion. Additionally, the use of the Hard-Swish function as the primary activation improved the
+model's accuracy due to better nonlinear feature extraction. The proposed model is tested in detecting
+four different diseases in tomato plants under various challenging environments. The model outperforms
+the existing state-of-the-art detection models in detection accuracy and speed. At a detection
+rate of 70.19 FPS, the proposed model obtained a precision value of $90.33 \%$, F1-score of $93.64
+\%$, and a mean average precision ($mAP$) value of $96.29 \%$. Current work provides an effective
+and efficient method for detecting different plant diseases in complex scenarios that can be extended
+to different fruit and crop detection, generic disease detection, and various automated agricultural
+detection processes. 

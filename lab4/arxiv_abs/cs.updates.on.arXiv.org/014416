@@ -1,0 +1,20 @@
+Citrus juices and fruits are commodities with great economic potential in the international market,
+but productivity losses caused by mites and other pests are still far from being a good mark. Despite
+the integrated pest mechanical aspect, only a few works on automatic classification have handled
+images with orange mite characteristics, which means tiny and noisy regions of interest. On the
+computational side, attention-based models have gained prominence in deep learning research,
+and, along with weakly supervised learning algorithms, they have improved tasks performed with
+some label restrictions. In agronomic research of pests and diseases, these techniques can improve
+classification performance while pointing out the location of mites and insects without specific
+labels, reducing deep learning development costs related to generating bounding boxes. In this
+context, this work proposes an attention-based activation map approach developed to improve the
+classification of tiny regions called Two-Weighted Activation Mapping, which also produces locations
+using feature map scores learned from class labels. We apply our method in a two-stage network process
+called Attention-based Multiple Instance Learning Guided by Saliency Maps. We analyze the proposed
+approach in two challenging datasets, the Citrus Pest Benchmark, which was captured directly in
+the field using magnifying glasses, and the Insect Pest, a large pest image benchmark. In addition,
+we evaluate and compare our models with weakly supervised methods, such as Attention-based Deep
+MIL and WILDCAT. The results show that our classifier is superior to literature methods that use
+tiny regions in their classification tasks, surpassing them in all scenarios by at least 16 percentage
+points. Moreover, our approach infers bounding box locations for salient insects, even training
+without any location labels. 

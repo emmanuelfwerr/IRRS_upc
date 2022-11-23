@@ -1,0 +1,19 @@
+Relative vehicle positioning methods can contribute to safer and more efficient autonomous driving
+in the future by enabling collision avoidance and platooning applications. For full automation,
+these applications require cm-level positioning accuracy and greater than 50 Hz update rate. Since
+sensor-based methods (e.g., LIDAR, cameras) have not been able to reliably satisfy these requirements
+under all conditions so far, complementary methods are sought. Recently, alternative methods
+that use visible light communication (VLC) signals from vehicle head/tail LED lights for positioning
+(VLP) have shown significant promise, attaining cm-level accuracy and near-kHz rate in realistic
+driving scenarios. These methods estimate position in two steps: 1) Relative transmitter bearings
+(angle) or ranges (distance) are measured based on received VLC signals, and 2) these measurements
+are combined to estimate relative positions of transmitters (i.e., head/tail lights). In this
+survey paper, we first review existing bearing/range measurement techniques and positioning
+algorithms for vehicular VLP. Next, we formulate two new positioning algorithms: One based on consecutive
+range measurements from a single receiver, and another one based on differential bearing measurements
+from two receivers. We analyze the performance of all methods by deriving their respective Cramer-Rao
+lower bounds on positioning accuracy (CRLB) and simulating them in realistic driving scenarios
+with challenging noise and weather conditions. Our results show that VLP methods can indeed satisfy
+the accuracy and rate requirements for localization in collision avoidance and platooning applications.
+Finally, we discuss remaining open challenges that are faced for the deployment of VLP solutions
+in the automotive sector. 

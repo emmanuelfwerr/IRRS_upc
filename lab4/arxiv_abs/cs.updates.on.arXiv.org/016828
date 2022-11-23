@@ -1,0 +1,19 @@
+Managers often believe that collecting more data will continually improve the accuracy of their
+machine learning models. However, we argue in this paper that when data lose relevance over time,
+it may be optimal to collect a limited amount of recent data instead of keeping around an infinite
+supply of older (less relevant) data. In addition, we argue that increasing the stock of data by including
+older datasets may, in fact, damage the model's accuracy. Expectedly, the model's accuracy improves
+by increasing the flow of data (defined as data collection rate); however, it requires other tradeoffs
+in terms of refreshing or retraining machine learning models more frequently. Using these results,
+we investigate how the business value created by machine learning models scales with data and when
+the stock of data establishes a sustainable competitive advantage. We argue that data's time-dependency
+weakens the barrier to entry that the stock of data creates. As a result, a competing firm equipped
+with a limited (yet sufficient) amount of recent data can develop more accurate models. This result,
+coupled with the fact that older datasets may deteriorate models' accuracy, suggests that created
+business value doesn't scale with the stock of available data unless the firm offloads less relevant
+data from its data repository. Consequently, a firm's growth policy should incorporate a balance
+between the stock of historical data and the flow of new data. We complement our theoretical results
+with an experiment. In the experiment, we empirically measure the loss in the accuracy of a next word
+prediction model trained on datasets from various time periods. Our empirical measurements confirm
+the economic significance of the value decline over time. For example, 100MB of text data, after
+seven years, becomes as valuable as 50MB of current data for the next word prediction task. 

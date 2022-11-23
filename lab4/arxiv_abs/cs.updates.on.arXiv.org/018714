@@ -1,0 +1,20 @@
+Occlusions are universal disruptions constantly present in the real world. Especially for sparse
+representations, such as human skeletons, a few occluded points might destroy the geometrical
+and temporal continuity critically affecting the results. Yet, the research of data-scarce recognition
+from skeleton sequences, such as one-shot action recognition, does not explicitly consider occlusions
+despite their everyday pervasiveness. In this work, we explicitly tackle body occlusions for Skeleton-based
+One-shot Action Recognition (SOAR). We mainly consider two occlusion variants: 1) random occlusions
+and 2) more realistic occlusions caused by diverse everyday objects, which we generate by projecting
+the existing IKEA 3D furniture models into the camera coordinate system of the 3D skeletons. We leverage
+the proposed pipeline to blend out portions of skeleton sequences of the three popular action recognition
+datasets (NTU-120, NTU-60 and Toyota Smart Home) and formalize the first benchmark for SOAR from
+partially occluded body poses. This is the first benchmark which considers occlusions for data-scarce
+action recognition. Another key property of our benchmark are the more realistic occlusions generated
+by everyday objects, as even in standard recognition from 3D skeletons, only randomly missing joints
+were considered. We re-evaluate state-of-the-art frameworks in the light of this new task and further
+introduce Trans4SOAR, a new transformer-based model which leverages three data streams and mixed
+attention fusion mechanism to alleviate the adverse effects caused by occlusions. While our experiments
+demonstrate a clear decline in accuracy with missing skeleton portions, this effect is smaller
+with Trans4SOAR, which outperforms other architectures on all datasets. Trans4SOAR additionally
+yields state-of-the-art in the standard SOAR, surpassing the best published approach by 2.85%
+on NTU-120. 

@@ -1,0 +1,20 @@
+In the past two decades, several Machine Learning (ML) libraries have become freely available.
+Many studies have used such libraries to carry out empirical investigations on predictive Software
+Engineering (SE) tasks. However, the differences stemming from using one library over another
+have been overlooked, implicitly assuming that using any of these libraries would provide the user
+with the same or very similar results. This paper aims at raising awareness of the differences incurred
+when using different ML libraries for software development effort estimation (SEE), one of most
+widely studied SE prediction tasks. To this end, we investigate 4 deterministic machine learners
+as provided by 3 of the most popular ML open-source libraries written in different languages (namely,
+Scikit-Learn, Caret and Weka). We carry out a thorough empirical study comparing the performance
+of the machine learners on 5 SEE datasets in the two most common SEE scenarios (i.e., out-of-the-box-ml
+and tuned-ml) as well as an in-depth analysis of the documentation and code of their APIs. The results
+of our study reveal that the predictions provided by the 3 libraries differ in 95% of the cases on average
+across a total of 105 cases studied. These differences are significantly large in most cases and
+yield misestimations of up to approx. 3,000 hours per project. Moreover, our API analysis reveals
+that these libraries provide the user with different levels of control on the parameters one can
+manipulate, and a lack of clarity and consistency, overall, which might mislead users. Our findings
+highlight that the ML library is an important design choice for SEE studies, which can lead to a difference
+in performance. However, such a difference is under-documented. We conclude by highlighting open-challenges
+with suggestions for the developers of libraries as well as for the researchers and practitioners
+using them. 

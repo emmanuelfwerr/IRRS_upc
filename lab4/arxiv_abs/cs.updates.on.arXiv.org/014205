@@ -1,0 +1,20 @@
+Steer-by-Wire (SBW) systems are being adapted widely in semi-autonomous and fully autonomous
+vehicles. The main control challenge in a SBW system is to follow the steering commands in the face
+of parametric uncertainties, external disturbances and actuator delay; crucially, perturbations
+in inertial parameters and damping forces give rise to state-dependent uncertainties, which cannot
+be bounded a priori by a constant. However, the state-of-the-art control methods of SBW system rely
+on a priori bounded uncertainties, and thus, become inapplicable when state-dependent dynamics
+become unknown. In addition, ensuring tracking accuracy under actuator delay is always a challenging
+task. This work proposes two control frameworks to overcome these challenges. Firstly, an adaptive
+controller is proposed to tackle the state-dependent uncertainties and external disturbances
+in a typical SBW system without any a priori knowledge of their structures and of their bounds. The
+stability of the closed-loop system is studied analytically via uniformly ultimately bounded
+notion and the effectiveness of the proposed solution is verified via simulations against the state-of-the-art
+solution. While this proposed controller handles the uncertainties and external perturbations,
+it does not consider the actuator delay which sometimes result in decreased accuracy. Therefore,
+a new adaptive-robust control framework is devised to tackle the same control problem of an SBW system
+under the influence of time-varying input delay. In comparison to the existing strategies, the
+proposed framework removes the conservative assumption of a priori bounded uncertainty and, in
+addition, the Razumikhin theorem based stability analysis allows the proposed scheme to deal with
+arbitrary variation in input delay. The effectiveness of the both controllers is proved using comparative
+simulation studies. 

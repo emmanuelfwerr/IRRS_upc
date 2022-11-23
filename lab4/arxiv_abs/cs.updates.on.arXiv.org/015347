@@ -1,0 +1,18 @@
+In two-alternative forced choice tasks, prior knowledge can improve performance, especially
+when operating near the psychophysical threshold. For instance, if subjects know that one choice
+is much more likely than the other, they can make that choice when evidence is weak. A common hypothesis
+for these kinds of tasks is that the prior is stored in neural activity. Here we propose a different
+hypothesis: the prior is stored in synaptic strengths. We study the International Brain Laboratory
+task, in which a grating appears on either the right or left side of a screen, and a mouse has to move
+a wheel to bring the grating to the center. The grating is often low in contrast which makes the task
+relatively difficult, and the prior probability that the grating appears on the right is either
+80% or 20%, in (unsignaled) blocks of about 50 trials. We model this as a reinforcement learning task,
+using a feedforward neural network to map states to actions, and adjust the weights of the network
+to maximize reward, learning via policy gradient. Our model uses an internal state that stores an
+estimate of the grating and confidence, and follows Bayesian updates, and can switch between engaged
+and disengaged states to mimic animal behavior. This model reproduces the main experimental finding
+- that the psychometric curve with respect to contrast shifts after a block switch in about 10 trials.
+Also, as seen in the experiments, in our model the difference in neuronal activity in the right and
+left blocks is small - it is virtually impossible to decode block structure from activity on single
+trials if noise is about 2%. The hypothesis that priors are stored in weights is difficult to test,
+but the technology to do so should be available in the not so distant future. 

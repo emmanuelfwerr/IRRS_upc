@@ -1,0 +1,19 @@
+It is challenging to derive explainability for unsupervised or statistical-based face image quality
+assessment (FIQA) methods. In this work, we propose a novel set of explainability tools to derive
+reasoning for different FIQA decisions and their face recognition (FR) performance implications.
+We avoid limiting the deployment of our tools to certain FIQA methods by basing our analyses on the
+behavior of FR models when processing samples with different FIQA decisions. This leads to explainability
+tools that can be applied for any FIQA method with any CNN-based FR solution using activation mapping
+to exhibit the network's activation derived from the face embedding. To avoid the low discrimination
+between the general spatial activation mapping of low and high-quality images in FR models, we build
+our explainability tools in a higher derivative space by analyzing the variation of the FR activation
+maps of image sets with different quality decisions. We demonstrate our tools and analyze the findings
+on four FIQA methods, by presenting inter and intra-FIQA method analyses. Our proposed tools and
+the analyses based on them point out, among other conclusions, that high-quality images typically
+cause consistent low activation on the areas outside of the central face region, while low-quality
+images, despite general low activation, have high variations of activation in such areas. Our explainability
+tools also extend to analyzing single images where we show that low-quality images tend to have an
+FR model spatial activation that strongly differs from what is expected from a high-quality image
+where this difference also tends to appear more in areas outside of the central face region and does
+correspond to issues like extreme poses and facial occlusions. The implementation of the proposed
+tools is accessible here [link]. 

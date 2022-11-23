@@ -1,0 +1,19 @@
+Given an order of the underlying alphabet we can lift it to the states of a finite deterministic automaton:
+to compare states we use the order of the strings reaching them. When the order on strings is the co-lexicographic
+one \emph{and} this order turns out to be total, the DFA is called Wheeler. This recently introduced
+class of automata -- the \emph{Wheeler automata} -- constitute an important data-structure for
+languages, since it allows the design and implementation of a very efficient tool-set of storage
+mechanisms for the transition function, supporting a large variety of substring queries. In this
+context it is natural to consider the class of regular languages accepted by Wheeler automata, i.e.
+the Wheeler languages. An inspiring result in this area is the following: it has been shown that,
+as opposed to the general case, the classic determinization by powerset construction is \emph{polynomial}
+on Wheeler automata. As a consequence, most classical problems, when considered on this class of
+automata, turn out to be "easy" -- that is, solvable in polynomial time. In this paper we consider
+computational problems related to Wheelerness, but starting from non-deterministic automata.
+We also consider the case of \emph{reduced} non-deterministic ones -- a class of NFA where recognizing
+Wheelerness is still polynomial, as for DFA's. Our collection of results shows that moving towards
+non-determinism is, in most cases, a dangerous path leading quickly to intractability. Moreover,
+we start a study of "state complexity" related to Wheeler DFA and languages, proving that the classic
+construction for the intersection of languages turns out to be computationally simpler on Wheeler
+DFA than in the general case. We also provide a construction for the minimum Wheeler DFA recognizing
+a given Wheeler language. 

@@ -1,0 +1,20 @@
+This work presents a machine learning approach to predict peak-stress clusters in heterogeneous
+polycrystalline materials. Prior work on using machine learning in the context of mechanics has
+largely focused on predicting the effective response and overall structure of stress fields. However,
+their ability to predict peak stresses -- which are of critical importance to failure -- is unexplored,
+because the peak-stress clusters occupy a small spatial volume relative to the entire domain, and
+hence requires computationally expensive training. This work develops a deep-learning based
+Convolutional Encoder-Decoder method that focuses on predicting peak-stress clusters, specifically
+on the size and other characteristics of the clusters in the framework of heterogeneous linear elasticity.
+This method is based on convolutional filters that model local spatial relations between microstructures
+and stress fields using spatially weighted averaging operations. The model is first trained against
+linear elastic calculations of stress under applied macroscopic strain in synthetically-generated
+microstructures, which serves as the ground truth. The trained model is then applied to predict
+the stress field given a (synthetically-generated) microstructure and then to detect peak-stress
+clusters within the predicted stress field. The accuracy of the peak-stress predictions is analyzed
+using the cosine similarity metric and by comparing the geometric characteristics of the peak-stress
+clusters against the ground-truth calculations. It is observed that the model is able to learn and
+predict the geometric details of the peak-stress clusters and, in particular, performed better
+for higher (normalized) values of the peak stress as compared to lower values of the peak stress.
+These comparisons showed that the proposed method is well-suited to predict the characteristics
+of peak-stress clusters. 

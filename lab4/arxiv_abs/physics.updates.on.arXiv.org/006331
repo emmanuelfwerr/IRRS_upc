@@ -1,0 +1,19 @@
+Deep learning methods have become the state of the art for undersampled MR reconstruction. Particularly
+for cases where it is infeasible or impossible for ground truth, fully sampled data to be acquired,
+self-supervised machine learning methods for reconstruction are becoming increasingly used.
+However potential issues in the validation of such methods, as well as their generalizability,
+remain underexplored. In this paper, we investigate important aspects of the validation of self-supervised
+algorithms for reconstruction of undersampled MR images: quantitative evaluation of prospective
+reconstructions, potential differences between prospective and retrospective reconstructions,
+suitability of commonly used quantitative metrics, and generalizability. Two self-supervised
+algorithms based on self-supervised denoising and the deep image prior were investigated. These
+methods are compared to a least squares fitting and a compressed sensing reconstruction using in-vivo
+and phantom data. Their generalizability was tested with prospectively under-sampled data from
+experimental conditions different to the training. We show that prospective reconstructions
+can exhibit significant distortion relative to retrospective reconstructions/ground truth.
+Furthermore, pixel-wise quantitative metrics may not capture differences in perceptual quality
+accurately, in contrast to a perceptual metric. In addition, all methods showed potential for generalization;
+however, generalizability is more affected by changes in anatomy/contrast than other changes.
+We further showed that no-reference image metrics correspond well with human rating of image quality
+for studying generalizability. Finally, we showed that a well-tuned compressed sensing reconstruction
+and learned denoising perform similarly on all data. 

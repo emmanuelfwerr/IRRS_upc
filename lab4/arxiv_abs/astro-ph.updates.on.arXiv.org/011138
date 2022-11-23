@@ -1,0 +1,19 @@
+Multi-band images of galaxies reveal a huge amount of information about their morphology and structure.
+However, inferring properties of the underlying stellar populations such as age, metallicity
+or kinematics from those images is notoriously difficult. Traditionally such information is best
+extracted from expensive spectroscopic observations. Here we present the $Painting\, IntrinsiC\,
+Attributes\, onto\, SDSS\, Objects$ (PICASSSO) project and test the information content of photometric
+multi-band images of galaxies. We train a convolutional neural network on 27,558 galaxy image pairs
+to establish a connection between broad-band images and the underlying physical stellar and gaseous
+galaxy property maps. We test our machine learning (ML) algorithm with SDSS $ugriz$ mock images
+for which uncertainties and systematics are exactly known. We show that multi-band galaxy images
+contain enough information to reconstruct 2d maps of stellar mass, metallicity, age and gas mass,
+metallicity as well as star formation rate. We recover the true stellar properties on a pixel by pixel
+basis with only little scatter, $\lesssim20\%$ compared to $\sim50\%$ statistical uncertainty
+from traditional mass-to-light-ratio based methods. We further test for any systematics of our
+algorithm with image resolution, training sample size or wavelength coverage. We find that galaxy
+morphology alone constrains stellar properties to better than $\sim20\%$ thus highlighting the
+benefits of including morphology into the parameter estimation. The machine learning approach
+can predict maps of high resolution, only limited by the resolution of the input bands, thus achieving
+higher resolution than IFU observations. The network architecture and all code is publicly available
+on GitHub. 

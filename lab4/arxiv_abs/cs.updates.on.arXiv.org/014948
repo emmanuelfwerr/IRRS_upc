@@ -1,0 +1,20 @@
+Recently, subsampling or refining images generated from unconditional generative adversarial
+networks (GANs) has been actively studied to improve the overall image quality. Unfortunately,
+these methods are often observed less effective or inefficient in handling conditional GANs (cGANs)
+-- conditioning on a class (aka class-conditional GANs) or a continuous variable (aka continuous
+cGANs or CcGANs). In this work, we introduce an effective and efficient subsampling scheme, named
+conditional density ratio-guided rejection sampling (cDR-RS), to sample high-quality images
+from cGANs. Specifically, we first develop a novel conditional density ratio estimation method,
+termed cDRE-F-cSP, by proposing the conditional Softplus (cSP) loss and an improved feature extraction
+mechanism. We then derive the error bound of a density ratio model trained with the cSP loss. Finally,
+we accept or reject a fake image in terms of its estimated conditional density ratio. A filtering
+scheme is also developed to increase fake images' label consistency without losing diversity when
+sampling from CcGANs. We extensively test the effectiveness and efficiency of cDR-RS in sampling
+from both class-conditional GANs and CcGANs on five benchmark datasets. When sampling from class-conditional
+GANs, cDR-RS outperforms modern state-of-the-art methods by a large margin (except DRE-F-SP+RS)
+in terms of effectiveness. Although the effectiveness of cDR-RS is often comparable to that of DRE-F-SP+RS,
+cDR-RS is substantially more efficient. When sampling from CcGANs, the superiority of cDR-RS is
+even more noticeable in terms of both effectiveness and efficiency. Notably, with the consumption
+of reasonable computational resources, cDR-RS can substantially reduce Label Score without decreasing
+the diversity of CcGAN-generated images, while other methods often need to trade much diversity
+for slightly improved Label Score. 

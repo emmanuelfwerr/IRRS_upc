@@ -1,0 +1,19 @@
+We introduce a higher order phase averaging method for nonlinear oscillatory systems. Phase averaging
+is a technique to filter fast motions from the dynamics whilst still accounting for their effect
+on the slow dynamics. Phase averaging is useful for deriving reduced models that can be solved numerically
+with more efficiency, since larger timesteps can be taken. Recently, Haut and Wingate (2014) introduced
+the idea of computing finite window numerical phase averages in parallel as the basis for a coarse
+propagator for a parallel-in-time algorithm. In this contribution, we provide a framework for
+higher order phase averages that aims to better approximate the unaveraged system whilst still
+filtering fast motions. Whilst the basic phase average assumes that the solution independent of
+changes of phase, the higher order method expands the phase dependency in a basis which the equations
+are projected onto. In this new framework, the original numerical phase averaging formulation
+arises as the lowest order version of this expansion. Our new projection onto functions that are
+$k$th degree polynomials in the phase gives rise to higher order corrections to the phase averaging
+formulation. We illustrate the properties of this method on an ODE that describes the dynamics of
+a swinging spring due to Lynch (2002). Although idealized, this model shows an interesting analogy
+to geophysical flows as it exhibits a slow dynamics that arises through the resonance between fast
+oscillations. On this example, we show convergence to the non-averaged (exact) solution with increasing
+approximation order also for finite averaging windows. At zeroth order, our method coincides with
+a standard phase average, but at higher order it is more accurate in the sense that solutions of the
+phase averaged model track the solutions of the unaveraged equations more accurately. 

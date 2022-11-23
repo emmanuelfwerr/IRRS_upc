@@ -1,0 +1,19 @@
+We introduce a new framework that leverages machine learning models known as generative models
+to solve optimization problems. Our Generator-Enhanced Optimization (GEO) strategy is flexible
+to adopt any generative model, from quantum to quantum-inspired or classical, such as Generative
+Adversarial Networks, Variational Autoencoders, or Quantum Circuit Born Machines, to name a few.
+Here, we focus on a quantum-inspired version of GEO relying on tensor-network Born machines and
+referred to hereafter as TN-GEO. We present two prominent strategies for using TN-GEO. The first
+uses data points previously evaluated by any quantum or classical optimizer, and we show how TN-GEO
+improves the performance of the classical solver as a standalone strategy in hard-to-solve instances.
+The second strategy uses TN-GEO as a standalone solver, i.e., when no previous observations are
+available. Here, we show its superior performance when the goal is to find the best minimum given
+a fixed budget for the number of function calls. This might be ideal in situations where the cost function
+evaluation can be very expensive. To illustrate our results, we run these benchmarks in the context
+of the portfolio optimization problem by constructing instances from the S\&P 500 and several other
+financial stock indexes. We also comprehensively compare state-of-the-art algorithms in a generalized
+version of the portfolio optimization problem. The results show that TN-GEO is among the best compared
+to these state-of-the-art algorithms; a remarkable outcome given the solvers used in the comparison
+have been fine-tuned for decades in this real-world industrial application. We see this as an important
+step toward a practical advantage with quantum-inspired models and, subsequently, with quantum
+generative models. 

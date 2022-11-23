@@ -1,0 +1,19 @@
+As an essential prerequisite for developing a medical intelligent assistant system, medical image
+segmentation has received extensive research and concentration from the neural network community.
+A series of UNet-like networks with encoder-decoder architecture has achieved extraordinary
+success, in which UNet2+ and UNet3+ redesign skip connections, respectively proposing dense skip
+connection and full-scale skip connection and dramatically improving compared with UNet in medical
+image segmentation. However, UNet2+ lacks sufficient information explored from the full scale,
+which will affect the learning of organs' location and boundary. Although UNet3+ can obtain the
+full-scale aggregation feature map, owing to the small number of neurons in the structure, it does
+not satisfy the segmentation of tiny objects when the number of samples is small. This paper proposes
+a novel network structure combining dense skip connections and full-scale skip connections, named
+UNet-sharp (UNet\#) for its shape similar to symbol \#. The proposed UNet\# can aggregate feature
+maps of different scales in the decoder sub-network and capture fine-grained details and coarse-grained
+semantics from the full scale, which benefits learning the exact location and accurately segmenting
+the boundary of organs or lesions. We perform deep supervision for model pruning to speed up testing
+and make it possible for the model to run on mobile devices; furthermore, designing two classification-guided
+modules to reduce false positives achieves more accurate segmentation results. Various experiments
+of semantic segmentation and instance segmentation on different modalities (EM, CT, MRI) and dimensions
+(2D, 3D) datasets, including the nuclei, brain tumor, liver, and lung, demonstrate that the proposed
+method outperforms state-of-the-art models. 

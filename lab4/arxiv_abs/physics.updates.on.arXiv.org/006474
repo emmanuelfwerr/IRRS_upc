@@ -1,0 +1,20 @@
+Fracture surfaces provide various types of information about fracture. The fracture toughness
+$K_{{\rm I}c}$, which represents the resistance to fracture, can be estimated using the three-dimensional
+(3D) information of a fracture surface, i.e., its roughness. However, this is time-consuming and
+expensive to obtain the 3D information of a fracture surface; thus, it is desirable to estimate $K_{{\rm
+I}c}$ from a two-dimensional (2D) image, which can be easily obtained. In recent years, methods
+of estimating a 3D structure from its 2D image using deep learning have been rapidly developed. In
+this study, we propose a framework for fractography that directly estimates $K_{{\rm I}c}$ from
+a 2D fracture surface image using deep neural networks (DNNs). Typically, image recognition using
+a DNN requires a tremendous amount of image data, which is difficult to acquire for fractography
+owing to the high experimental cost. To compensate for the limited data, in this study, we used the
+transfer learning (TL) method, and constructed high-performance prediction models even with
+a small dataset by transferring machine learning models trained using other large datasets. We
+found that the regression model obtained using our proposed framework can predict $K_{{\rm I}c}$
+in the range of approximately 1-5 [MPa$\sqrt{m}$] with a standard deviation of the estimation error
+of approximately $\pm$0.37 [MPa$\sqrt{m}$]. The present results demonstrate that the DNN trained
+with TL opens a new route for quantitative fractography by which parameters of fracture process
+can be estimated from a fracture surface even with a small dataset. The proposed framework also enables
+the building of regression models in a few hours. Therefore, our framework enables us to screen a
+large number of image datasets available in the field of materials science and find candidates that
+are worth expensive machine learning analysis. 

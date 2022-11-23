@@ -1,0 +1,19 @@
+Accurate modeling of sea ice dynamics is critical for predicting environmental variables and is
+important in applications such as navigating ice breaker ships. Research for both modeling and
+simulating sea ice dynamics is ongoing, with the most widely accepted model based on the viscous-plastic
+(VP) formulation introduced by Hibler in 1979. Due to its highly nonlinear features, this model
+is intrinsically challenging for computational solvers. In particular, sea ice simulations often
+significantly differ from satellite observations. This study therefore focuses on improving
+the numerical accuracy of the VP sea ice model. Since the poor convergence observed in existing numerical
+simulations stems from the nonlinear nature of the VP formulation, this investigation proposes
+using the celebrated weighted essentially non-oscillatory (WENO) scheme -- as opposed to the frequently
+employed centered difference (CD) scheme -- for the spatial derivatives in the VP sea ice model.
+We then proceed to numerically demonstrate that WENO yields higher-order convergence for smooth
+solutions, and that furthermore it is able to resolve the discontinuities in the sharp features
+of sea ice covers -- something that is not possible using CD methods. Finally, our proposed framework
+integrates a potential function method that utilizes the phase field method to naturally incorporates
+the physical restrictions of ice thickness and ice concentration in transport equations, resulting
+in a modified transport equations which includes additional forcing terms. Our method does not
+require post-processing, thereby avoiding the possible introduction of discontinuities and
+corresponding negative impact on the solution behavior. Numerical experiments are provided to
+demonstrate the efficacy of our new methodology. 

@@ -1,0 +1,19 @@
+Many high-dimensional practical data sets have hierarchical structures induced by graphs or time
+series. Such data sets are hard to process in Euclidean spaces and one often seeks low-dimensional
+embeddings in other space forms to perform the required learning tasks. For hierarchical data,
+the space of choice is a hyperbolic space because it guarantees low-distortion embeddings for tree-like
+structures. The geometry of hyperbolic spaces has properties not encountered in Euclidean spaces
+that pose challenges when trying to rigorously analyze algorithmic solutions. We propose a unified
+framework for learning scalable and simple hyperbolic linear classifiers with provable performance
+guarantees. The gist of our approach is to focus on Poincar\'e ball models and formulate the classification
+problems using tangent space formalisms. Our results include a new hyperbolic perceptron algorithm
+as well as an efficient and highly accurate convex optimization setup for hyperbolic support vector
+machine classifiers. Furthermore, we adapt our approach to accommodate second-order perceptrons,
+where data is preprocessed based on second-order information (correlation) to accelerate convergence,
+and strategic perceptrons, where potentially manipulated data arrives in an online manner and
+decisions are made sequentially. The excellent performance of the Poincar\'e second-order and
+strategic perceptrons shows that the proposed framework can be extended to general machine learning
+problems in hyperbolic spaces. Our experimental results, pertaining to synthetic, single-cell
+RNA-seq expression measurements, CIFAR10, Fashion-MNIST and mini-ImageNet, establish that
+all algorithms provably converge and have complexity comparable to those of their Euclidean counterparts.
+Accompanying codes can be found at: https://github.com/thupchnsky/PoincareLinearClassification.

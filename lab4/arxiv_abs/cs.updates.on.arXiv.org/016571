@@ -1,0 +1,20 @@
+Purpose: To develop a neural ordinary differential equation (ODE) model for visualizing deep neural
+network (DNN) behavior during multi-parametric MRI (mp-MRI) based glioma segmentation as a method
+to enhance deep learning explainability. Methods: By hypothesizing that deep feature extraction
+can be modeled as a spatiotemporally continuous process, we designed a novel deep learning model,
+neural ODE, in which deep feature extraction was governed by an ODE without explicit expression.
+The dynamics of 1) MR images after interactions with DNN and 2) segmentation formation can be visualized
+after solving ODE. An accumulative contribution curve (ACC) was designed to quantitatively evaluate
+the utilization of each MRI by DNN towards the final segmentation results. The proposed neural ODE
+model was demonstrated using 369 glioma patients with a 4-modality mp-MRI protocol: T1, contrast-enhanced
+T1 (T1-Ce), T2, and FLAIR. Three neural ODE models were trained to segment enhancing tumor (ET),
+tumor core (TC), and whole tumor (WT). The key MR modalities with significant utilization by DNN
+were identified based on ACC analysis. Segmentation results by DNN using only the key MR modalities
+were compared to the ones using all 4 MR modalities. Results: All neural ODE models successfully
+illustrated image dynamics as expected. ACC analysis identified T1-Ce as the only key modality
+in ET and TC segmentations, while both FLAIR and T2 were key modalities in WT segmentation. Compared
+to the U-Net results using all 4 MR modalities, Dice coefficient of ET (0.784->0.775), TC (0.760->0.758),
+and WT (0.841->0.837) using the key modalities only had minimal differences without significance.
+Conclusion: The neural ODE model offers a new tool for optimizing the deep learning model inputs
+with enhanced explainability. The presented methodology can be generalized to other medical image-related
+deep learning applications. 

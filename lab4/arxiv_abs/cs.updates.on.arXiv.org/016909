@@ -1,0 +1,19 @@
+Many modern cyber physical systems incorporate computer vision technologies, complex sensors
+and advanced control software, allowing them to interact with the environment autonomously. Testing
+such systems poses numerous challenges: not only should the system inputs be varied, but also the
+surrounding environment should be accounted for. A number of tools have been developed to test the
+system model for the possible inputs falsifying its requirements. However, they are not directly
+applicable to autonomous cyber physical systems, as the inputs to their models are generated while
+operating in a virtual environment. In this paper, we aim to design a search based framework, named
+AmbieGen, for generating diverse fault revealing test scenarios for autonomous cyber physical
+systems. The scenarios represent an environment in which an autonomous agent operates. The framework
+should be applicable to generating different types of environments. To generate the test scenarios,
+we leverage the NSGA II algorithm with two objectives. The first objective evaluates the deviation
+of the observed system behaviour from its expected behaviour. The second objective is the test case
+diversity, calculated as a Jaccard distance with a reference test case. We evaluate AmbieGen on
+three scenario generation case studies, namely a smart-thermostat, a robot obstacle avoidance
+system, and a vehicle lane keeping assist system. We compared three configurations of AmbieGen:
+based on a single objective genetic algorithm, multi objective, and random search. Both single
+and multi objective configurations outperform the random search. Multi objective configuration
+can find the individuals of the same quality as the single objective, producing more unique test
+scenarios in the same time budget. 

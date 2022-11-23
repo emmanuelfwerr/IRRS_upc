@@ -1,0 +1,20 @@
+Operational networks commonly rely on machine learning models for many tasks, including detecting
+anomalies, inferring application performance, and forecasting demand. Yet, unfortunately,
+model accuracy can degrade due to concept drift, whereby the relationship between the features
+and the target prediction changes due to reasons ranging from software upgrades to seasonality
+to changes in user behavior. Mitigating concept drift is thus an essential part of operationalizing
+machine learning models, and yet despite its importance, concept drift has not been extensively
+explored in the context of networking -- or regression models in general. Thus, it is not well-understood
+how to detect or mitigate it for many common network management tasks that currently rely on machine
+learning models. As we show, concept drift cannot always be mitigated by periodic retraining models
+using newly available data, and doing so can even degrade model accuracy. In this paper, we characterize
+concept drift in a large cellular network for a metropolitan area in the United States. We find that
+concept drift occurs across key performance indicators (KPIs), regardless of model, training
+set size, and time interval -- thus necessitating practical approaches to detect, explain, and
+mitigate it. To do so, we develop Local Error Approximation of Features (LEAF). LEAF detects drift;
+explains features and time intervals that most contribute to drift; and mitigates drift using resampling,
+augmentation, or ensembling. We evaluate LEAF against industry-standard mitigations (i.e.,
+periodic retraining) with more than three years of cellular data from Verizon. LEAF consistently
+outperforms periodic retraining on a variety of KPIs and models, while reducing costly retrains
+by an order of magnitude. Due to its effectiveness, a major cellular carrier is now integrating LEAF
+into its forecasting and provisioning processes. 

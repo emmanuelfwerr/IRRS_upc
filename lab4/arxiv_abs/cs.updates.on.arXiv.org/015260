@@ -1,0 +1,20 @@
+Self-adaptation enables a software system to deal with uncertainties that are difficult to anticipate
+before deployment, such as dynamic availability of resources and fluctuating workloads. Self-adaptation
+is realized by adding a feedback loop to the system that collects runtime data to resolve the uncertainties
+and adapts the system to realize its goals (i.e., adaptation goals). A common approach to ensure
+that the system complies with the adaptation goals is using formal techniques at runtime. Yet, existing
+approaches have three limitations that affect their practical applicability: (i) they ignore
+correctness of the behavior of the feedback loop, (ii) they rely on exhaustive verification at runtime
+to select adaptation options to realize the adaptation goals, which is time and resource demanding,
+and (iii) they provide limited or no support for changing adaptation goals at runtime. To tackle
+these shortcomings, we contribute ActivFORMS (Active FORmal Models for Self-adaptation), a reusable
+end-to-end approach for engineering self-adaptive systems that spans the design, deployment,
+runtime adaptation, and evolution of a feedback loop. We also contribute ActivFORMSi, a tool-supported
+instance of ActivFORMS. The approach relies on formally verified models that are directly deployed
+and executed using a model execution engine. At runtime the feedback loop selects adaptation options
+that realize the adaptation goals in an efficient manner using statistical model checking. The
+approach offers basic support for changing adaptation goals and evolving verified models of the
+feedback. We validate the approach for an IoT application for building security monitoring deployed
+in Leuven. The results demonstrate that the approach supports correct behavior of the feedback
+loop, efficiently achieves the adaptation goals, and supports changing adaptation goals at runtime,
+for a practical system. 

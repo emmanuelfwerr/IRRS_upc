@@ -1,0 +1,19 @@
+A biased dataset is a dataset that generally has attributes with an uneven class distribution. These
+biases have the tendency to propagate to the models that train on them, often leading to a poor performance
+in the minority class. In this project, we will explore the extent to which various data augmentation
+methods alleviate intrinsic biases within the dataset. We will apply several augmentation techniques
+on a sample of the UTKFace dataset, such as undersampling, geometric transformations, variational
+autoencoders (VAEs), and generative adversarial networks (GANs). We then trained a classifier
+for each of the augmented datasets and evaluated their performance on the native test set and on external
+facial recognition datasets. We have also compared their performance to the state-of-the-art
+attribute classifier trained on the FairFace dataset. Through experimentation, we were able to
+find that training the model on StarGAN-generated images led to the best overall performance. We
+also found that training on geometrically transformed images lead to a similar performance with
+a much quicker training time. Additionally, the best performing models also exhibit a uniform performance
+across the classes within each attribute. This signifies that the model was also able to mitigate
+the biases present in the baseline model that was trained on the original training set. Finally,
+we were able to show that our model has a better overall performance and consistency on age and ethnicity
+classification on multiple datasets when compared with the FairFace model. Our final model has
+an accuracy on the UTKFace test set of 91.75%, 91.30%, and 87.20% for the gender, age, and ethnicity
+attribute respectively, with a standard deviation of less than 0.1 between the accuracies of the
+classes of each attribute. 

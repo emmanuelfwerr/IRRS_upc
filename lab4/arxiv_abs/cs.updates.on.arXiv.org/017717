@@ -1,0 +1,20 @@
+The development of data-informed predictive models for dynamical systems is of widespread interest
+in many disciplines. We present a unifying framework for blending mechanistic and machine-learning
+approaches to identify dynamical systems from noisily and partially observed data. We compare
+pure data-driven learning with hybrid models which incorporate imperfect domain knowledge. Our
+formulation is agnostic to the chosen machine learning model, is presented in both continuous-
+and discrete-time settings, and is compatible both with model errors that exhibit substantial
+memory and errors that are memoryless. First, we study memoryless linear (w.r.t. parametric-dependence)
+model error from a learning theory perspective, defining excess risk and generalization error.
+For ergodic continuous-time systems, we prove that both excess risk and generalization error are
+bounded above by terms that diminish with the square-root of T, the time-interval over which training
+data is specified. Secondly, we study scenarios that benefit from modeling with memory, proving
+universal approximation theorems for two classes of continuous-time recurrent neural networks
+(RNNs): both can learn memory-dependent model error. In addition, we connect one class of RNNs to
+reservoir computing, thereby relating learning of memory-dependent error to recent work on supervised
+learning between Banach spaces using random features. Numerical results are presented (Lorenz
+'63, Lorenz '96 Multiscale systems) to compare purely data-driven and hybrid approaches, finding
+hybrid methods less data-hungry and more parametrically efficient. Finally, we demonstrate numerically
+how data assimilation can be leveraged to learn hidden dynamics from noisy, partially-observed
+data, and illustrate challenges in representing memory by this approach, and in the training of
+such models. 

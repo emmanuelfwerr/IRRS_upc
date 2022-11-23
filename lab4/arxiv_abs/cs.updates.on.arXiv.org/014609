@@ -1,0 +1,19 @@
+Efficient collaboration between collaborative machine learning and wireless communication
+technology, forming a Federated Edge Learning (FEEL), has spawned a series of next-generation
+intelligent applications. However, due to the openness of network connections, the FEEL framework
+generally involves hundreds of remote devices (or clients), resulting in expensive communication
+costs, which is not friendly to resource-constrained FEEL. To address this issue, we propose a distributed
+approximate Newton-type algorithm with fast convergence speed to alleviate the problem of FEEL
+resource (in terms of communication resources) constraints. Specifically, the proposed algorithm
+is improved based on distributed L-BFGS algorithm and allows each client to approximate the high-cost
+Hessian matrix by computing the low-cost Fisher matrix in a distributed manner to find a "better"
+descent direction, thereby speeding up convergence. Second, we prove that the proposed algorithm
+has linear convergence in strongly convex and non-convex cases and analyze its computational and
+communication complexity. Similarly, due to the heterogeneity of the connected remote devices,
+FEEL faces the challenge of heterogeneous data and non-IID (Independent and Identically Distributed)
+data. To this end, we design a simple but elegant training scheme, namely FedOVA, to solve the heterogeneous
+statistical challenge brought by heterogeneous data. In this way, FedOVA first decomposes a multi-class
+classification problem into more straightforward binary classification problems and then combines
+their respective outputs using ensemble learning. In particular, the scheme can be well integrated
+with our communication efficient algorithm to serve FEEL. Numerical results verify the effectiveness
+and superiority of the proposed algorithm. 

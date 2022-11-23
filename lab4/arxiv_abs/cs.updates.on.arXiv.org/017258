@@ -1,0 +1,20 @@
+Ocean surface monitoring, especially oil slick detection, has become mandatory due to its importance
+for oil exploration and risk prevention on ecosystems. For years, the detection task has been performed
+manually by photo-interpreters using Synthetic Aperture Radar (SAR) images with the help of contextual
+data such as wind. This tedious manual work cannot handle the increasing amount of data collected
+by the available sensors and thus requires automation. Literature reports conventional and semi-automated
+detection methods that generally focus either on oil slicks originating from anthropogenic (spills)
+or natural (seeps) sources on limited data collections. As an extension, this paper presents the
+automation of offshore oil slicks on an extensive database with both kinds of slicks. It builds upon
+the slick annotations of specialized photo-interpreters on Sentinel-1 SAR data for 4 years over
+3 exploration and monitoring areas worldwide. All the considered SAR images and related annotation
+relate to real oil slick monitoring scenarios. Further, wind estimation is systematically computed
+to enrich the data collection. Paper contributions are the following : (i) a performance comparison
+of two deep learning approaches: semantic segmentation using FC-DenseNet and instance segmentation
+using Mask-RCNN. (ii) the introduction of meteorological information (wind speed) is deemed valuable
+for oil slick detection in the performance evaluation. The main results of this study show the effectiveness
+of slick detection by deep learning approaches, in particular FC-DenseNet, which captures more
+than 92% of oil instances in our test set. Furthermore, a strong correlation between model performances
+and contextual information such as slick size and wind speed is demonstrated in the performance
+evaluation. This work opens perspectives to design models that can fuse SAR and wind information
+to reduce the false alarm rate. 

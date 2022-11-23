@@ -1,0 +1,19 @@
+We consider the problem of the variational quantum circuit synthesis into a gate set consisting
+of the CNOT gate and arbitrary single-qubit (1q) gates with the primary target being the minimization
+of the CNOT count. First we note that along with the discrete architecture search suffering from
+the combinatorial explosion of complexity, optimization over 1q gates can also be a crucial roadblock
+due to the omnipresence of local minimums (well known in the context of variational quantum algorithms
+but apparently underappreciated in the context of the variational compiling). Taking the issue
+seriously, we make an extensive search over the initial conditions an essential part of our approach.
+Another key idea we propose is to use parametrized two-qubit (2q) controlled phase gates, which
+can interpolate between the identity gate and the CNOT gate, and allow a continuous relaxation of
+the discrete architecture search, which can be executed jointly with the optimization over 1q gates.
+This coherent optimization of the architecture together with 1q gates appears to work surprisingly
+well in practice, sometimes even outperforming optimization over 1q gates alone (for fixed optimal
+architectures). As illustrative examples and applications we derive 8 CNOT and T depth 3 decomposition
+of the 3q Toffoli gate on the nearest-neighbor topology, rediscover known best decompositions
+of the 4q Toffoli gate on all 4q topologies including a 1 CNOT gate improvement on the star-shaped
+topology, and propose decomposition of the 5q Toffoli gate on the nearest-neighbor topology with
+48 CNOT gates. We also benchmark the performance of our approach on a number of 5q quantum circuits
+from the ibm_qx_mapping database showing that it is highly competitive with the existing software.
+The algorithm developed in this work is available as a Python package CPFlow. 

@@ -1,0 +1,19 @@
+Motion estimation is a fundamental step in dynamic medical image processing for the assessment
+of target organ anatomy and function. However, existing image-based motion estimation methods,
+which optimize the motion field by evaluating the local image similarity, are prone to produce implausible
+estimation, especially in the presence of large motion. In this study, we provide a novel motion
+estimation framework of Dense-Sparse-Dense (DSD), which comprises two stages. In the first stage,
+we process the raw dense image to extract sparse landmarks to represent the target organ anatomical
+topology and discard the redundant information that is unnecessary for motion estimation. For
+this purpose, we introduce an unsupervised 3D landmark detection network to extract spatially
+sparse but representative landmarks for the target organ motion estimation. In the second stage,
+we derive the sparse motion displacement from the extracted sparse landmarks of two images of different
+time points. Then, we present a motion reconstruction network to construct the motion field by projecting
+the sparse landmarks displacement back into the dense image domain. Furthermore, we employ the
+estimated motion field from our two-stage DSD framework as initialization and boost the motion
+estimation quality in light-weight yet effective iterative optimization. We evaluate our method
+on two dynamic medical imaging tasks to model cardiac motion and lung respiratory motion, respectively.
+Our method has produced superior motion estimation accuracy compared to existing comparative
+methods. Besides, the extensive experimental results demonstrate that our solution can extract
+well representative anatomical landmarks without any requirement of manual annotation. Our code
+is publicly available online. 

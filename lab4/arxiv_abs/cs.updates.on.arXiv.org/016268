@@ -1,0 +1,18 @@
+The amount of training-data is one of the key factors which determines the generalization capacity
+of learning algorithms. Intuitively, one expects the error rate to decrease as the amount of training-data
+increases. Perhaps surprisingly, natural attempts to formalize this intuition give rise to interesting
+and challenging mathematical questions. For example, in their classical book on pattern recognition,
+Devroye, Gyorfi, and Lugosi (1996) ask whether there exists a {monotone} Bayes-consistent algorithm.
+This question remained open for over 25 years, until recently Pestov (2021) resolved it for binary
+classification, using an intricate construction of a monotone Bayes-consistent algorithm. We
+derive a general result in multiclass classification, showing that every learning algorithm A
+can be transformed to a monotone one with similar performance. Further, the transformation is efficient
+and only uses a black-box oracle access to A. This demonstrates that one can provably avoid non-monotonic
+behaviour without compromising performance, thus answering questions asked by Devroye et al (1996),
+Viering, Mey, and Loog (2019), Viering and Loog (2021), and by Mhammedi (2021). Our transformation
+readily implies monotone learners in a variety of contexts: for example it extends Pestov's result
+to classification tasks with an arbitrary number of labels. This is in contrast with Pestov's work
+which is tailored to binary classification. In addition, we provide uniform bounds on the error
+of the monotone algorithm. This makes our transformation applicable in distribution-free settings.
+For example, in PAC learning it implies that every learnable class admits a monotone PAC learner.
+This resolves questions by Viering, Mey, and Loog (2019); Viering and Loog (2021); Mhammedi (2021).

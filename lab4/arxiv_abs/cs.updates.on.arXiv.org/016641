@@ -1,0 +1,20 @@
+User-facing applications running in modern datacenters exhibit irregular request patterns and
+are implemented using a multitude of services with tight latency requirements. These characteristics
+render ineffective existing energy conserving techniques when processors are idle due to the long
+transition time from a deep idle power state (C-state). While prior works propose management techniques
+to mitigate this inefficiency, we tackle it at its root with AgileWatts (AW): a new deep C-state architecture
+optimized for datacenter server processors targeting latency-sensitive applications. AW is
+based on three key ideas. First, AW eliminates the latency overhead of saving/restoring the core
+context (i.e., micro-architectural state) when powering-off/-on the core in a deep idle power
+state by i) implementing medium-grained power-gates, carefully distributed across the CPU core,
+and ii) retaining context in the power-ungated domain. Second, AW eliminates the flush latency
+overhead (several tens of microseconds) of the L1/L2 caches when entering a deep idle power state
+by keeping L1/L2 cache content power-ungated. A minimal control logic also remains power-ungated
+to serve cache coherence traffic (i.e., snoops) seamlessly. AW implements sleep-mode in caches
+to reduce caches leakage power consumption and lowers a core voltage to the minimum operational
+voltage level to minimize the leakage power of the power-ungated domain. Third, using a state-of-the-art
+power efficient all-digital phase-locked loop (ADPLL) clock generator, AW keeps the PLL active
+and locked during the idle state, further cutting precious microseconds of wake-up latency at a
+negligible power cost. Our evaluation with an accurate simulator calibrated against an Intel Skylake
+server shows that AW reduces the energy consumption of Memcached by up to 71% (35% on average) with
+up to 1% performance degradation. 

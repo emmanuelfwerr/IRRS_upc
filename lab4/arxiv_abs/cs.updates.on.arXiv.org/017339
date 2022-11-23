@@ -1,0 +1,20 @@
+Due to the current horizontal business model that promotes increasing reliance on untrusted third-party
+Intellectual Properties (IPs), CAD tools, and design facilities, hardware Trojan attacks have
+become a serious threat to the semiconductor industry. Development of effective countermeasures
+against hardware Trojan attacks requires: (1) fast and reliable exploration of the viable Trojan
+attack space for a given design and (2) a suite of high-quality Trojan-inserted benchmarks that
+meet specific standards. The latter has become essential for the development and evaluation of
+design/verification solutions to achieve quantifiable assurance against Trojan attacks. While
+existing static benchmarks provide a baseline for comparing different countermeasures, they
+only enumerate a limited number of handcrafted Trojans from the complete Trojan design space. To
+accomplish these dual objectives, in this paper, we present MIMIC, a novel AI-guided framework
+for automatic Trojan insertion, which can create a large population of valid Trojans for a given
+design by mimicking the properties of a small set of known Trojans. While there exist tools to automatically
+insert Trojan instances using fixed Trojan templates, they cannot analyze known Trojan attacks
+for creating new instances that accurately capture the threat model. MIMIC works in two major steps:
+(1) it analyzes structural and functional features of existing Trojan populations in a multi-dimensional
+space to train machine learning models and generate a large number of "virtual Trojans" of the given
+design, (2) next, it binds them into the design by matching their functional/structural properties
+with suitable nets of the internal logic structure. We have developed a complete tool flow for MIMIC,
+extensively evaluated the framework by exploring several use-cases, and quantified its effectiveness
+to demonstrate highly promising results. 

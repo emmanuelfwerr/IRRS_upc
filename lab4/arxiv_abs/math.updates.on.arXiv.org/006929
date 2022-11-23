@@ -1,0 +1,19 @@
+In 1926, G. Udny Yule,considered the following: given a sequence of pairs of random variables $\{X_k,Y_k
+\}$ ($k=1,2, \ldots, n$), and letting $X_i = S_i$ and $Y_ i= S'_i$ where $S_i$ and $S'_i$ are the partial
+sums of two independent random walks, what is the distribution of the empirical correlation coefficient
+\begin{equation*} \rho_n = \frac{\sum_{i=1}^n S_i S^\prime_i - \frac{1}{n}(\sum_{i=1}^n S_i)(\sum_{i=1}^n
+S^\prime_i)}{\sqrt{\sum_{i=1}^n S^2_i - \frac{1}{n}(\sum_{i=1}^n S_i)^2}\sqrt{\sum_{i=1}^n
+(S^\prime_i)^2 - \frac{1}{n}(\sum_{i=1}^n S^\prime_i)^2}}? \end{equation*} Yule empirically
+observed the distribution of this statistic to be heavily dispersed and frequently large in absolute
+value, leading him to call it "nonsense correlation." This unexpected finding led to his formulation
+of two concrete questions, each of which would remain open for more than ninety years: (i) Find (analytically)
+the variance of $\rho_n$ as $n \rightarrow \infty$ and (ii): Find (analytically) the higher order
+moments and the density of $\rho_n$ as $n \rightarrow \infty$. In 2017, \cite{ernst2017yule} considered
+the empirical correlation coefficient \begin{equation*} \rho:= \frac{\int_0^1W_1(t)W_2(t)
+dt - \int_0^1W_1(t) dt \int_0^1 W_2(t) dt}{\sqrt{\int_0^1 W^2_1(t) dt - \parens{\int_0^1W_1(t)
+dt}^2} \sqrt{\int_0^1 W^2_2(t) dt - \parens{\int_0^1W_2(t) dt}^2}} \end{equation*} of two \textit{independent}
+Wiener processes $W_1,W_2$, the limit to which $\rho_n$ converges weakly, as was first shown by
+the author of \cite{phil}. Using tools from integral equation theory, \cite{ernst2017yule} closed
+question (i) by explicitly calculating the second moment of $\rho$ to be .240522. This paper begins
+where \cite{ernst2017yule} leaves off. We succeed in closing question (ii) by explicitly calculating
+all moments of $\rho$ (up to order 16). 

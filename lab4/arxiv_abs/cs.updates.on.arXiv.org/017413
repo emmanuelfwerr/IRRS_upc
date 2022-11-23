@@ -1,0 +1,19 @@
+We revisit the design of self-adjusting single-source tree networks. The problem can be seen as
+a generalization of the classic list update problem to trees, and finds applications in reconfigurable
+datacenter networks. We are given a fixed balanced binary tree T connecting n nodes V = {v_1, ... ,
+v_n}. A source node v_0, attached to the root of the tree, issues communication requests to nodes
+in V, in an online and adversarial manner; the access cost of a request to a node v, is given by the current
+depth of v in T. The online algorithm can try to reduce the access cost by performing swap operations,
+with which the position of a node is exchanged with the position of its parent in the tree; a swap operation
+costs one unit. The objective is to design an online algorithm which minimizes the total access cost
+plus adjustment cost (swapping). Avin et al. recently presented Random-Push, a constant competitive
+online algorithm for this problem, based on random walks, together with an analysis exploiting
+the most recently used (MRU) property of random walks. We study analytically and empirically, online
+algorithms for this problem. In particular, we explore how to derandomize Random-Push. We consider
+a simple derandomized algorithm which we call Rotor-Push, as its behavior is reminiscent of rotor
+walks. We first prove that Rotor-Push is constant competitive: its competitive ratio is 12 and hence
+by a factor of five lower than the best existing competitive ratio. In contrast to Random-Push, the
+algorithm does not feature the MRU property, which requires a new analysis. We present a significantly
+improved and simpler analysis for the randomized algorithm, showing that it is 16-competitive.
+We compare empirically all self-adjusting single-source tree networks, using synthetic and real
+data with varying locality and observe that Rotor-Push and Random-Push have almost identical performance.

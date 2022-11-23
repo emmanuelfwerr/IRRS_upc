@@ -1,0 +1,18 @@
+We explore a new way to handle flux boundary conditions imposed on level sets. The proposed approach
+is a diffuse interface version of the shifted boundary method (SBM) for continuous Galerkin discretizations
+of conservation laws in embedded domains. We impose the interface conditions weakly and approximate
+surface integrals by volume integrals. The discretized weak form of the governing equation has
+the structure of an immersed boundary finite element method. That is, integration is performed
+over a fixed fictitious domain. Source terms are included to account for interface conditions and
+extend the boundary data into the complement of the embedded domain. The calculation of these extra
+terms requires (i) construction of an approximate delta function and (ii) extrapolation of embedded
+boundary data into quadrature points. We accomplish these tasks using a level set function, which
+is given analytically or evolved numerically. A globally defined averaged gradient of this approximate
+signed distance function is used to construct a simple map to the closest point on the interface.
+The normal and tangential derivatives of the numerical solution at that point are calculated using
+the interface conditions and/or interpolation on uniform stencils. Similarly to SBM, extrapolation
+back to the quadrature points is performed using Taylor expansions. The same strategy is used to
+construct ghost penalty functions and extension velocities. Computations that require extrapolation
+are restricted to a narrow band around the interface. Numerical results are presented for elliptic,
+parabolic, and hyperbolic test problems, which are specifically designed to assess the error caused
+by the numerical treatment of interface conditions on fixed and moving boundaries in 2D. 

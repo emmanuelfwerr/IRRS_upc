@@ -1,0 +1,19 @@
+In this paper, we present an algorithm which lies in the domain of task allocation for a set of static
+autonomous radars with rotating antennas. It allows a set of radars to allocate in a fully decentralized
+way a set of active tracking tasks according to their location, considering that a target can be tracked
+by several radars, in order to improve accuracy with which the target is tracked. The allocation
+algorithm proceeds through a collaborative and fully decentralized auction protocol, using a
+collaborative auction protocol (Consensus Based Bundle Auction algorithm). Our algorithm is
+based on a double use of our allocation protocol among the radars. The latter begin by allocating
+targets, then launch a second round of allocation if theyhave resources left, in order to improve
+accuracy on targets already tracked. Our algorithm is also able to adapt to dynamism, i.e. to take
+into account the fact that the targets are moving and that the radar(s) most suitable for Tracking
+them changes as the mission progresses. To do this, the algorithm is restarted on a regular basis,
+to ensure that a bid made by a radar can decrease when the target moves away from it. Since our algorithm
+is based on collaborative auctions, it does not plan the following rounds, assuming that the targets
+are not predictable enough for this. Our algorithm is however based on radars capable of anticipating
+the positions of short-term targets, thanks to a Kalman filter. The algorithm will be illustrated
+based on a multi-radar tracking scenario where the radars, autonomous, must follow a set of targets
+in order to reduce the position uncertainty of the targets. Standby aspects will not be considered
+in this scenario. It is assumed that the radars can pick up targets in active pursuit, with an area
+ofuncertainty corresponding to their distance. 

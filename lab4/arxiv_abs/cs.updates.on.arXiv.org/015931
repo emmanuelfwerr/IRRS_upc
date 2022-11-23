@@ -1,0 +1,20 @@
+Recently, large pre-trained models have significantly improved the performance of various Natural
+LanguageProcessing (NLP) tasks but they are expensive to serve due to long serving latency and large
+memory usage. To compress these models, knowledge distillation has attracted an increasing amount
+of interest as one of the most effective methods for model compression. However, existing distillation
+methods have not yet addressed the unique challenges of model serving in datacenters, such as handling
+fast evolving models, considering serving performance, and optimizing for multiple objectives.
+To solve these problems, we propose AutoDistill, an end-to-end model distillation framework integrating
+model architecture exploration and multi-objective optimization for building hardware-efficient
+NLP pre-trained models. We use Bayesian Optimization to conduct multi-objective Neural Architecture
+Search for selecting student model architectures. The proposed search comprehensively considers
+both prediction accuracy and serving latency on target hardware. The experiments on TPUv4i show
+the finding of seven model architectures with better pre-trained accuracy (up to 3.2% higher) and
+lower inference latency (up to 1.44x faster) than MobileBERT. By running downstream NLP tasks in
+the GLUE benchmark, the model distilled for pre-training by AutoDistill with 28.5M parameters
+achieves an 81.69 average score, which is higher than BERT_BASE, DistillBERT, TinyBERT, NAS-BERT,
+and MobileBERT. The most compact model found by AutoDistill contains only 20.6M parameters but
+still outperform BERT_BASE(109M), DistillBERT(67M), TinyBERT(67M), and MobileBERT(25.3M)
+regarding the average GLUE score. By evaluating on SQuAD, a model found by AutoDistill achieves
+an 88.4% F1 score with 22.8M parameters, which reduces parameters by more than 62% while maintaining
+higher accuracy than DistillBERT, TinyBERT, and NAS-BERT. 

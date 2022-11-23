@@ -1,0 +1,20 @@
+Human-AI collaborative policy synthesis is a procedure in which (1) a human initializes an autonomous
+agent's behavior, (2) Reinforcement Learning improves the human specified behavior, and (3) the
+agent can explain the final optimized policy to the user. This paradigm leverages human expertise
+and facilitates a greater insight into the learned behaviors of an agent. Existing approaches to
+enabling collaborative policy specification involve black box methods which are unintelligible
+and are not catered towards non-expert end-users. In this paper, we develop a novel collaborative
+framework to enable humans to initialize and interpret an autonomous agent's behavior, rooted
+in principles of human-centered design. Through our framework, we enable humans to specify an initial
+behavior model in the form of unstructured, natural language, which we then convert to lexical decision
+trees. Next, we are able to leverage these human-specified policies, to warm-start reinforcement
+learning and further allow the agent to optimize the policies through reinforcement learning.
+Finally, to close the loop on human-specification, we produce explanations of the final learned
+policy, in multiple modalities, to provide the user a final depiction about the learned policy of
+the agent. We validate our approach by showing that our model can produce >80% accuracy, and that
+human-initialized policies are able to successfully warm-start RL. We then conduct a novel human-subjects
+study quantifying the relative subjective and objective benefits of varying XAI modalities(e.g.,
+Tree, Language, and Program) for explaining learned policies to end-users, in terms of usability
+and interpretability and identify the circumstances that influence these measures. Our findings
+emphasize the need for personalized explainable systems that can facilitate user-centric policy
+explanations for a variety of end-users. 

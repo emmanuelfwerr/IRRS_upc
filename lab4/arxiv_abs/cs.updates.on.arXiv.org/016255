@@ -1,0 +1,19 @@
+Runtime Exceptions (REs) are an important class of bugs that occur frequently during code development.
+Traditional Automatic Program Repair (APR) tools are of limited use in this "in-development" use
+case, since they require a test-suite to be available as a patching oracle. Thus, developers typically
+tend to manually resolve their in-development REs, often by referring to technical forums, such
+as Stack Overflow (SO). To automate this manual process we extend our previous work, MAESTRO, to
+provide real-time assistance to developers for repairing Java REs by recommending a relevant patch-suggesting
+SO post and synthesizing a repair patch from this post to fix the RE in the developer's code. MAESTRO
+exploits a library of Runtime Exception Patterns (REPs) semi-automatically mined from SO posts,
+through a relatively inexpensive, one-time, incremental process. An REP is an abstracted sequence
+of statements that triggers a given RE. REPs are used to index SO posts, retrieve a post most relevant
+to the RE instance exhibited by a developer's code and then mediate the process of extracting a concrete
+repair from the SO post, abstracting out post-specific details, and concretizing the repair to
+the developer's buggy code. We evaluate MAESTRO on a published RE benchmark comprised of 78 instances.
+MAESTRO is able to generate a correct repair patch at the top position in 27% of the cases, within the
+top-3 in 40% of the cases and overall return a useful artifact in 81% of the cases. Further, the use
+of REPs proves instrumental to all aspects of MAESTRO's performance, from ranking and searching
+of SO posts to synthesizing patches from a given post. In particular, 45% of correct patches generated
+by MAESTRO could not be produced by a baseline technique not using REPs, even when provided with MAESTRO's
+SO-post ranking. MAESTRO is also fast, needing around 1 second, on average, to generate its output.

@@ -1,0 +1,20 @@
+In this paper, we propose PATO-a producibility-aware topology optimization (TO) framework to
+help efficiently explore the design space of components fabricated using metal additive manufacturing
+(AM), while ensuring manufacturability with respect to cracking. Specifically, parts fabricated
+through Laser Powder Bed Fusion are prone to defects such as warpage or cracking due to high residual
+stress values generated from the steep thermal gradients produced during the build process. Maturing
+the design for such parts and planning their fabrication can span months to years, often involving
+multiple handoffs between design and manufacturing engineers. PATO is based on the a priori discovery
+of crack-free designs, so that the optimized part can be built defect-free at the outset. To ensure
+that the design is crack free during optimization, producibility is explicitly encoded within
+the standard formulation of TO, using a crack index. Multiple crack indices are explored and using
+experimental validation, maximum shear strain index (MSSI) is shown to be an accurate crack index.
+Simulating the build process is a coupled, multi-physics computation and incorporating it in the
+TO loop can be computationally prohibitive. We leverage the current advances in deep convolutional
+neural networks and present a high-fidelity surrogate model based on an Attention-based U-Net
+architecture to predict the MSSI values as a spatially varying field over the part's domain. Further,
+we employ automatic differentiation to directly compute the gradient of maximum MSSI with respect
+to the input design variables and augment it with the performance-based sensitivity field to optimize
+the design while considering the trade-off between weight, manufacturability, and functionality.
+We demonstrate the effectiveness of the proposed method through benchmark studies in 3D as well
+as experimental validation. 

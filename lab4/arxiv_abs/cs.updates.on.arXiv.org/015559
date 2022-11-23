@@ -1,0 +1,19 @@
+Background: The increasing adoption of electronic health records (EHR) across the US has created
+troves of computable data, to which machine learning methods have been applied to extract useful
+insights. EHR data, represented as a three-dimensional analogue of a matrix (tensor), is decomposed
+into two-dimensional factors that can be interpreted as computational phenotypes. Methods: We
+apply constrained tensor factorization to derive computational phenotypes and predict mortality
+in cohorts of patients with breast, prostate, colorectal, or lung cancer in the Northwestern Medicine
+Enterprise Data Warehouse from 2000 to 2015. In our experiments, we examined using a supervised
+term in the factorization algorithm, filtering tensor co-occurrences by medical indication,
+and incorporating additional social determinants of health (SDOH) covariates in the factorization
+process. We evaluated the resulting computational phenotypes qualitatively and by assessing
+their ability to predict five-year mortality using the area under the curve (AUC) statistic. Results:
+Filtering by medical indication led to more concise and interpretable phenotypes. Mortality prediction
+performance (AUC) varied under the different experimental conditions and by cancer type (breast:
+0.623 - 0.694, prostate: 0.603 - 0.750, colorectal: 0.523 - 0.641, and lung: 0.517 - 0.623). Generally,
+prediction performance improved with the use of a supervised term and the incorporation of SDOH
+covariates. Conclusion: Constrained tensor factorization, applied to sparse EHR data of patients
+with cancer, can discover computational phenotypes predictive of five-year mortality. The incorporation
+of SDOH variables into the factorization algorithm is an easy-to-implement and effective way to
+improve prediction performance. 

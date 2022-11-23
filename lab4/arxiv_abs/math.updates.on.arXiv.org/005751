@@ -1,0 +1,19 @@
+We study the smooth minimax optimization problem of the form $\min_{\bf x}\max_{\bf y} f({\bf x},{\bf
+y})$, where the objective function is strongly-concave in ${\bf y}$ but possibly nonconvex in ${\bf
+x}$. This problem includes a lot of applications in machine learning such as regularized GAN, reinforcement
+learning and adversarial training. Most of existing theory related to gradient descent accent
+focus on establishing the convergence result for achieving the first-order stationary point of
+$f({\bf x},{\bf y})$ or primal function $P({\bf x})\triangleq \max_{\bf y} f({\bf x},{\bf y})$.
+In this paper, we design a new optimization method via cubic Newton iterations, which could find
+an ${\mathcal O}\left(\varepsilon,\kappa^{1.5}\sqrt{\rho\varepsilon}\right)$-second-order
+stationary point of $P({\bf x})$ with ${\mathcal O}\left(\kappa^{1.5}\sqrt{\rho}\varepsilon^{-1.5}\right)$
+second-order oracle calls and $\tilde{\mathcal O}\left(\kappa^{2}\sqrt{\rho}\varepsilon^{-1.5}\right)$
+first-order oracle calls, where $\kappa$ is the condition number and $\rho$ is the Hessian smoothness
+coefficient of $f({\bf x},{\bf y})$. For high-dimensional problems, we propose an variant algorithm
+to avoid expensive cost form second-order oracle, which solves the cubic sub-problem inexactly
+via gradient descent and matrix Chebyshev expansion. This strategy still obtains desired approximate
+second-order stationary point with high probability but only requires $\tilde{\mathcal O}\left(\kappa^{1.5}\ell\varepsilon^{-2}\right)$
+Hessian-vector oracle and $\tilde{\mathcal O}\left(\kappa^{2}\sqrt{\rho}\varepsilon^{-1.5}\right)$
+first-order oracle calls. To the best of our knowledge, this is the first work considers non-asymptotic
+convergence behavior of finding second-order stationary point for minimax problem without convex-concave
+assumption. 

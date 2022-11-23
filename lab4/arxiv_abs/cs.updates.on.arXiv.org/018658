@@ -1,0 +1,20 @@
+Currently, under supervised learning, a model pretrained by a large-scale nature scene dataset
+and then fine-tuned on a few specific task labeling data is the paradigm that has dominated the knowledge
+transfer learning. It has reached the status of consensus solution for task-aware model training
+in remote sensing domain (RSD). Unfortunately, due to different categories of imaging data and
+stiff challenges of data annotation, there is not a large enough and uniform remote sensing dataset
+to support large-scale pretraining in RSD. Moreover, pretraining models on large-scale nature
+scene datasets by supervised learning and then directly fine-tuning on diverse downstream tasks
+seems to be a crude method, which is easily affected by inevitable labeling noise, severe domain
+gaps and task-aware discrepancies. Thus, in this paper, considering the self-supervised pretraining
+and powerful vision transformer (ViT) architecture, a concise and effective knowledge transfer
+learning strategy called ConSecutive PreTraining (CSPT) is proposed based on the idea of not stopping
+pretraining in natural language processing (NLP), which can gradually bridge the domain gap and
+transfer knowledge from the nature scene domain to the RSD. The proposed CSPT also can release the
+huge potential of unlabeled data for task-aware model training. Finally, extensive experiments
+are carried out on twelve datasets in RSD involving three types of downstream tasks (e.g., scene
+classification, object detection and land cover classification) and two types of imaging data
+(e.g., optical and SAR). The results show that by utilizing the proposed CSPT for task-aware model
+training, almost all downstream tasks in RSD can outperform the previous method of supervised pretraining-then-fine-tuning
+and even surpass the state-of-the-art (SOTA) performance without any expensive labeling consumption
+and careful model design. 

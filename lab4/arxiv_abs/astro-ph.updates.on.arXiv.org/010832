@@ -1,0 +1,20 @@
+For ExAO instruments for the Giant Segmented Mirror Telescopes (GSMTs), alternative architectures
+of WFS are under consideration because there is a tradeoff between detector size, speed, and noise
+that reduces the performance of GSMT-ExAO wavefront control. One option under consideration for
+a GSMT-ExAO wavefront sensor is a three-sided PWFS (3PWFS). The 3PWFS creates three copies of the
+telescope pupil for wavefront sensing, compared to the conventional four-sided PWFS (4PWFS) which
+uses four pupils. The 3PWFS uses fewer detector pixels than the 4PWFS and should therefore be less
+sensitive to read noise. Here we develop a mathematical formalism based on the diffraction theory
+description of the Foucault knife edge test that predicts the intensity pattern after the PWFS.
+Our formalism allows us to calculate the intensity in the pupil images formed by the PWFS in the presence
+of phase errors corresponding to arbitrary Fourier modes. We then use the Object Oriented MATLAB
+Adaptive Optics toolbox (OOMAO) to simulate an end-to-end model of an adaptive optics system using
+a PWFS with modulation and compare the performance of the 3PWFS to the 4PWFS. In the case of a low read
+noise detector, the Strehl ratios of the 3PWFS and 4PWFS are within 0.01. When we included higher
+read noise in the simulation, we found a Strehl ratio gain of 0.036 for the 3PWFS using Raw Intensity
+over the 4PWFS using Slopes Maps at a stellar magnitude of 10. At the same magnitude, the 4PWFS RI also
+outperformed the 4PWFS SM, but the gain was only 0.012 Strehl. This is significant because 4PWFS
+using Slopes Maps is how the PWFS is conventionally used for AO wavefront sensing. We have found that
+the 3PWFS is a viable wavefront sensor that can fully reconstruct a wavefront and produce a stable
+closed-loop with correction comparable to that of a 4PWFS, with modestly better performance for
+high read-noise detectors. 

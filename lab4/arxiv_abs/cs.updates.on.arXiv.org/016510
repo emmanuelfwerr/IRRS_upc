@@ -1,0 +1,19 @@
+Objective. Deep neural networks (DNN) have shown unprecedented success in various brain-machine
+interface (BCI) applications such as epileptic seizure prediction. However, existing approaches
+typically train models in a patient-specific fashion due to the highly personalized characteristics
+of epileptic signals. Therefore, only a limited number of labeled recordings from each subject
+can be used for training. As a consequence, current DNN based methods demonstrate poor generalization
+ability to some extent due to the insufficiency of training data. On the other hand, patient-independent
+models attempt to utilize more patient data to train a universal model for all patients by pooling
+patient data together. Despite different techniques applied, results show that patient-independent
+models perform worse than patient-specific models due to high individual variation across patients.
+A substantial gap thus exists between patient-specific and patient-independent models. In this
+paper, we propose a novel training scheme based on knowledge distillation which makes use of a large
+amount of data from multiple subjects. It first distills informative features from signals of all
+available subjects with a pre-trained general model. A patient-specific model can then be obtained
+with the help of distilled knowledge and additional personalized data. Significance. The proposed
+training scheme significantly improves the performance of patient-specific seizure predictors
+and bridges the gap between patient-specific and patient-independent predictors. Five state-of-the-art
+seizure prediction methods are trained on the CHB-MIT sEEG database with our proposed scheme. The
+resulting accuracy, sensitivity, and false prediction rate show that our proposed training scheme
+consistently improves the prediction performance of state-of-the-art methods by a large margin.

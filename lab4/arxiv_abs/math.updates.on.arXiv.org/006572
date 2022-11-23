@@ -1,0 +1,19 @@
+Computational homogenization is the gold standard for concurrent multi-scale simulations (e.g.,
+FE2) in scale-bridging applications. Experimental and synthetic material microstructures are
+often represented by 3D image data. The computational complexity of simulations operating on such
+three-dimensional high-resolution voxel data comprising billions of unknowns induces the need
+for algorithmically and numerically efficient solvers. The inability of voxelized 3D geometries
+to capture smooth material interfaces accurately, along with the necessity for complexity reduction,
+motivates a special local coarse-graining technique called composite voxels [Kabel,M. et al.
+(2015)]. Composite voxels condense multiple fine-scale voxels into a single voxel obeying a theory-inspired
+constitutive model by employing laminate theory. Composite voxels enhance local field quality
+at a modest computational cost. Our contribution comprises the generalization towards composite
+boxels (ComBo) that are nonequiaxed, a feature that can pay off for materials with a preferred direction.
+A novel image-based normal detection algorithm is devised which improves the accuracy by around
+30\% against the orientation cf. [Kabel,M. et al. (2015) ]. Further, the use of ComBo for finite strain
+simulations is studied in detail. An efficient implementation is proposed, and an essential back-projection
+algorithm preventing physically inadmissible states is developed, which improves robustness.
+Various examples show the efficiency of ComBo and the proposed algorithmic enhancements for nonlinear
+mechanical problems. The general usability is emphasized by examining and comparing the performance
+of myriad Fast Fourier Transform (FFT) based solvers including a detailed description of the new
+Doubly-Fine Material Grid (DFMG). All of the employed schemes benefit from the ComBo discretization.

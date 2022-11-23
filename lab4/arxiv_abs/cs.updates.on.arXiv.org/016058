@@ -1,0 +1,20 @@
+We introduce an online convex optimization algorithm using projected subgradient descent with
+optimal adaptive learning rates, with sequential and efficient first-order updates. Our method
+provides a subgradient adaptive minimax optimal dynamic regret guarantee for a sequence of general
+convex functions with no known additional properties such as strong-convexity, smoothness, exp-concavity
+or even Lipschitz-continuity. The guarantee is against any comparator decision sequence with
+bounded "complexity", defined by the cumulative distance traveled via changes between successive
+decisions. We show optimality by generating a lower bound of the worst-case second-order dynamic
+regret, which incorporates actual subgradient norms and matches with our guarantees within a constant
+factor. We also derive the extension for independent learning in each decision coordinate separately.
+Additionally, we demonstrate how to best preserve our guarantees when the bound on total successive
+changes in the dynamic comparator sequence grows in time or the feedback regarding such bound arrives
+partially with time, both in a truly online manner. Then, as a major contribution, we examine the
+scenario when we receive no information regarding the successive changes, but instead, by a unique
+re-purposing of the expert mixture framework with novel additions, we eliminate the need of such
+information in, again, a truly online manner. Moreover, we show the ability to compete against all
+dynamic comparator sequences simultaneously (universally) with minimax optimality, where the
+guarantees depend on the "complexity" of each comparator separately. We also discuss potential
+modifications to our approach which addresses further complexity reductions for time, computation,
+memory, and we also further the universal competitiveness via guarantees taking into account concentrations
+of a comparator sequence in the decision set. 

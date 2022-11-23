@@ -1,0 +1,19 @@
+Nowadays, 3D data plays an indelible role in the computer vision field. However, extensive studies
+have proved that deep neural networks (DNNs) fed with 3D data, such as point clouds, are susceptible
+to adversarial examples, which aim to misguide DNNs and might bring immeasurable losses. Currently,
+3D adversarial point clouds are chiefly generated in three fashions, i.e., point shifting, point
+adding, and point dropping. These point manipulations would modify geometrical properties and
+local correlations of benign point clouds more or less. Motivated by this basic fact, we propose
+to defend such adversarial examples with the aid of 3D steganalysis techniques. Specifically,
+we first introduce an adversarial attack and defense model adapted from the celebrated Prisoners'
+Problem in steganography to help us comprehend 3D adversarial attack and defense more generally.
+Then we rethink two significant but vague concepts in the field of adversarial example, namely,
+active defense and passive defense, from the perspective of steganalysis. Most importantly, we
+design a 3D adversarial point cloud detector through the lens of 3D steganalysis. Our detector is
+double-blind, that is to say, it does not rely on the exact knowledge of the adversarial attack means
+and victim models. To enable the detector to effectively detect malicious point clouds, we craft
+a 64-D discriminant feature set, including features related to first-order and second-order local
+descriptions of point clouds. To our knowledge, this work is the first to apply 3D steganalysis to
+3D adversarial example defense. Extensive experimental results demonstrate that the proposed
+3D adversarial point cloud detector can achieve good detection performance on multiple types of
+3D adversarial point clouds. 

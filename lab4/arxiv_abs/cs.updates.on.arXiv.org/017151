@@ -1,0 +1,20 @@
+Introduction: Background field removal (BFR) is a critical step required for successful quantitative
+susceptibility mapping (QSM). However, eliminating the background field in brains containing
+significant susceptibility sources, such as intracranial hemorrhages, is challenging due to
+the relatively large scale of the field induced by these pathological susceptibility sources.
+Method: This study proposes a new deep learning-based method, BFRnet, to remove background field
+in healthy and hemorrhagic subjects. The network is built with the dual-frequency octave convolutions
+on the U-net architecture, trained with synthetic field maps containing significant susceptibility
+sources. The BFRnet method is compared with three conventional BFR methods and one previous deep
+learning method using simulated and in vivo brains from 4 healthy and 2 hemorrhagic subjects. Robustness
+against acquisition field-of-view (FOV) orientation and brain masking are also investigated.
+Results: For both simulation and in vivo experiments, BFRnet led to the best visually appealing
+results in the local field and QSM results with the minimum contrast loss and the most accurate hemorrhage
+susceptibility measurements among all five methods. In addition, BFRnet produced the most consistent
+local field and susceptibility maps between different sizes of brain masks, while conventional
+methods depend drastically on precise brain extraction and further brain edge erosions. It is also
+observed that BFRnet performed the best among all BFR methods for acquisition FOVs oblique to the
+main magnetic field. Conclusion: The proposed BFRnet improved the accuracy of local field reconstruction
+in the hemorrhagic subjects compared with conventional BFR algorithms. The BFRnet method was effective
+for acquisitions of titled orientations and retained whole brains without edge erosion as often
+required by traditional BFR methods. 

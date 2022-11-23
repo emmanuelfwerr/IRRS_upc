@@ -1,0 +1,20 @@
+Disease prediction is a well-known classification problem in medical applications. GCNs provide
+a powerful tool for analyzing the patients' features relative to each other. This can be achieved
+by modeling the problem as a graph node classification task, where each node is a patient. Due to the
+nature of such medical datasets, class imbalance is a prevalent issue in the field of disease prediction,
+where the distribution of classes is skewed. When the class imbalance is present in the data, the
+existing graph-based classifiers tend to be biased towards the major class(es) and neglect the
+samples in the minor class(es). On the other hand, the correct diagnosis of the rare positive cases
+among all the patients is vital in a healthcare system. In conventional methods, such imbalance
+is tackled by assigning appropriate weights to classes in the loss function which is still dependent
+on the relative values of weights, sensitive to outliers, and in some cases biased towards the minor
+class(es). In this paper, we propose a Re-weighted Adversarial Graph Convolutional Network (RA-GCN)
+to prevent the graph-based classifier from emphasizing the samples of any particular class. This
+is accomplished by associating a graph-based neural network to each class, which is responsible
+for weighting the class samples and changing the importance of each sample for the classifier. Therefore,
+the classifier adjusts itself and determines the boundary between classes with more attention
+to the important samples. The parameters of the classifier and weighting networks are trained by
+an adversarial approach. We show experiments on synthetic and three publicly available medical
+datasets. RA-GCN demonstrates the superiority compared to recent methods in identifying the patient's
+status on all three datasets. The detailed analysis is provided as quantitative and qualitative
+experiments on synthetic datasets. 

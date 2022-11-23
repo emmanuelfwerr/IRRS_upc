@@ -1,0 +1,20 @@
+The objective of this study is to develop a robust deep learning-based framework to distinguish
+COVID-19, Community-Acquired Pneumonia (CAP), and Normal cases based on chest CT scans acquired
+in different imaging centers using various protocols, and radiation doses. We showed that while
+our proposed model is trained on a relatively small dataset acquired from only one imaging center
+using a specific scanning protocol, the model performs well on heterogeneous test sets obtained
+by multiple scanners using different technical parameters. We also showed that the model can be
+updated via an unsupervised approach to cope with the data shift between the train and test sets and
+enhance the robustness of the model upon receiving a new external dataset from a different center.
+We adopted an ensemble architecture to aggregate the predictions from multiple versions of the
+model. For initial training and development purposes, an in-house dataset of 171 COVID-19, 60 CAP,
+and 76 Normal cases was used, which contained volumetric CT scans acquired from one imaging center
+using a constant standard radiation dose scanning protocol. To evaluate the model, we collected
+four different test sets retrospectively to investigate the effects of the shifts in the data characteristics
+on the model's performance. Among the test cases, there were CT scans with similar characteristics
+as the train set as well as noisy low-dose and ultra-low dose CT scans. In addition, some test CT scans
+were obtained from patients with a history of cardiovascular diseases or surgeries. The entire
+test dataset used in this study contained 51 COVID-19, 28 CAP, and 51 Normal cases. Experimental
+results indicate that our proposed framework performs well on all test sets achieving total accuracy
+of 96.15% (95%CI: [91.25-98.74]), COVID-19 sensitivity of 96.08% (95%CI: [86.54-99.5]), CAP
+sensitivity of 92.86% (95%CI: [76.50-99.19]). 

@@ -1,0 +1,19 @@
+During the past decade, neural networks have become prominent in Natural Language Processing (NLP),
+notably for their capacity to learn relevant word representations from large unlabeled corpora.
+These word embeddings can then be transferred and finetuned for diverse end applications during
+a supervised training phase. More recently, in 2018, the transfer of entire pretrained Language
+Models and the preservation of their contextualization capacities enabled to reach unprecedented
+performance on virtually every NLP benchmark, sometimes even outperforming human baselines.
+However, as models reach such impressive scores, their comprehension abilities still appear as
+shallow, which reveal limitations of benchmarks to provide useful insights on their factors of
+performance and to accurately measure understanding capabilities. In this thesis, we study the
+behaviour of state-of-the-art models regarding generalization to facts unseen during training
+in two important Information Extraction tasks: Named Entity Recognition (NER) and Relation Extraction
+(RE). Indeed, traditional benchmarks present important lexical overlap between mentions and
+relations used for training and evaluating models, whereas the main interest of Information Extraction
+is to extract previously unknown information. We propose empirical studies to separate performance
+based on mention and relation overlap with the training set and find that pretrained Language Models
+are mainly beneficial to detect unseen mentions, in particular out-of-domain. While this makes
+them suited for real use cases, there is still a gap in performance between seen and unseen mentions
+that hurts generalization to new facts. In particular, even state-of-the-art ERE models rely on
+a shallow retention heuristic, basing their prediction more on arguments surface forms than context.

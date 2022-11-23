@@ -1,0 +1,19 @@
+We present two novel Volume-of-Solid (VoS) formulations for micro-continuum simulation of mineral
+dissolution at the pore-scale. The traditional VoS formulation (VoS-psi) uses a diffuse interface
+localization function psi to ensure stability and limit diffusion of the reactive surface. The
+main limitation of this formulation is that accuracy is strongly dependent on the choice of the localization
+function. Our first novel improved formulation (iVoS) uses the divergence of a reactive flux to
+localize the reaction at the fluid-solid interface, so no localization function is required. Our
+second novel formulation (VoS-psi') uses a localization function with a parameter that is fitted
+to ensure that the reactive surface area is conserved globally. Both novel methods are validated
+by comparison with experiments, numerical simulations using an interface tracking method based
+on the Arbitrary Eulerian Lagrangian (ALE) framework, and numerical simulations using the VoS-psi.
+All numerical methods are implemented in GeoChemFoam, our reactive transport toolbox and three
+benchmark test cases in both synthetic and real pore geometries are considered: (1) dissolution
+of a calcite post by acid injection in a microchannel and experimental comparison, (2) dissolution
+in a 2D polydisperse disc micromodel at different dissolution regimes and (3) dissolution in a Ketton
+carbonate rock sample and comparison to \textit{in-situ} micro-CT experiments. We find that the
+iVoS results match accurately experimental results and simulation results obtained with the ALE
+method, while the VoS-psi method leads to inaccuracies that are mostly corrected by the VoS-psi'
+formulation. In addition, the VoS methods are significantly faster than the ALE method, with a speed-up
+factor of between 2 and 12. 

@@ -1,0 +1,18 @@
+Estimating the frequency of sub-graphs is of importance for many tasks, including sub-graph isomorphism,
+kernel-based anomaly detection, and network structure analysis. While multiple algorithms were
+proposed for full enumeration or sampling-based estimates, these methods fail in very large graphs.
+Recent advances in parallelization allow for estimates of total sub-graphs counts in very large
+graphs. The task of counting the frequency of each sub-graph associated with each vertex also received
+excellent solutions for undirected graphs. However, there is currently no good solution for very
+large directed graphs. We here propose VDMC (Vertex specific Distributed Motif Counting) -- a fully
+distributed algorithm to optimally count all the 3 and 4 vertices connected directed graphs (sub-graph
+motifs) associated with each vertex of a graph. VDMC counts each motif only once and its efficacy
+is linear in the number of counted motifs. It is fully parallelized to be efficient in GPU-based computation.
+VDMC is based on three main elements: 1) Ordering the vertices and only counting motifs containing
+increasing order vertices, 2) sub-ordering motifs based on the average length of the BFS composing
+the motif, and 3) removing isomorphisms only once for the entire graph. We here compare VDMC to analytical
+estimates of the expected number of motifs and show its accuracy. VDMC is available as a highly efficient
+CPU and GPU code with a novel data structure for efficient graph manipulation. We show the efficacy
+of VDMC and real-world graphs. VDMC allows for the precise analysis of sub-graph frequency around
+each vertex in large graphs and opens the way for the extension of methods until now limited to graphs
+of thousands of edges to graphs with millions of edges and above. GIT: https://github.com/louzounlab/graph-measures

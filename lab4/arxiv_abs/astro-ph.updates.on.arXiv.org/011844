@@ -1,0 +1,19 @@
+We study the impact of an Upwind scheme on the numerical convergence of simulations of the Hall and
+Ohmic effect in neutron stars crusts. While simulations of these effects have explored a variety
+of geometries and wide ranges of physical parameters, they are limited to relatively low values
+of the Hall parameter, playing the role of the magnetic Reynolds number, which should be not exceed
+a few hundred for numerical convergence. We study the evolution of the magnetic field in a plane-parallel
+Cartesian geometry. We discretise the induction equation using a finite difference scheme and
+then integrate it via the Euler forward method. Two different approaches are used for the integration
+of the advective terms appearing in the equation: a Forward Time and Central in Space (FTCS) and an
+Upwind scheme. We compare them in terms of accuracy and performance. We explore the impact of the
+Upwind method on convergence according to the ratio of planar to vertical field and the Hall parameter.
+In the limit of a low strength planar field the use of an Upwind scheme provides a vast improvement
+leading to the convergence of simulations where the Hall parameter is 2 orders of magnitude higher
+than that of the FTCS. Upwind is still better if the planar field is stronger, yet, the difference
+of the maximum value of the Hall parameter reached is within a factor of 10 or a few. Moreover, we notice
+if the schemes diverge their behaviour is very different, with FTCS producing infinite energy,
+while the Upwind scheme only temporarily increasing the overall magnetic field energy. Overall,
+the Upwind scheme enhances the efficiency of the simulations allowing the exploration of environments
+with higher value of electric conductivity getting us closer than before to realistic environmental
+conditions of magnetars. 

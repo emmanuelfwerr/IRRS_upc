@@ -1,0 +1,19 @@
+Event analysis in untrimmed videos has attracted increasing attention due to the application of
+cutting-edge techniques such as CNN. As a well studied property for CNN-based models, the receptive
+field is a measurement for measuring the spatial range covered by a single feature response, which
+is crucial in improving the image categorization accuracy. In video domain, video event semantics
+are actually described by complex interaction among different concepts, while their behaviors
+vary drastically from one video to another, leading to the difficulty in concept-based analytics
+for accurate event categorization. To model the concept behavior, we study temporal concept receptive
+field of concept-based event representation, which encodes the temporal occurrence pattern of
+different mid-level concepts. Accordingly, we introduce temporal dynamic convolution (TDC)
+to give stronger flexibility to concept-based event analytics. TDC can adjust the temporal concept
+receptive field size dynamically according to different inputs. Notably, a set of coefficients
+are learned to fuse the results of multiple convolutions with different kernel widths that provide
+various temporal concept receptive field sizes. Different coefficients can generate appropriate
+and accurate temporal concept receptive field size according to input videos and highlight crucial
+concepts. Based on TDC, we propose the temporal dynamic concept modeling network (TDCMN) to learn
+an accurate and complete concept representation for efficient untrimmed video analysis. Experiment
+results on FCVID and ActivityNet show that TDCMN demonstrates adaptive event recognition ability
+conditioned on different inputs, and improve the event recognition performance of Concept-based
+methods by a large margin. Code is available at https://github.com/qzhb/TDCMN. 

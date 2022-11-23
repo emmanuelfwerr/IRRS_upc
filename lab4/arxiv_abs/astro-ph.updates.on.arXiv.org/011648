@@ -1,0 +1,20 @@
+Studying the cosmological sources at their cosmological rest-frames is crucial to track the cosmic
+history and properties of compact objects. In view of the increasing data volume of existing and
+upcoming telescopes/detectors, we here construct a 1--dimensional convolutional neural network
+(CNN) with a residual neural network (ResNet) structure to estimate the redshift of quasars in Sloan
+Digital Sky Survey IV (SDSS-IV) catalog from DR16 quasar-only (DR16Q) of eBOSS on a broad range of
+signal-to-noise ratios, named \code{FNet}. Owing to its $24$ convolutional layers and the ResNet
+structure with different kernel sizes of $500$, $200$ and $15$, FNet is able to discover the "\textit{local}"
+and "\textit{global}" patterns in the whole sample of spectra by a self-learning procedure. It
+reaches the accuracy of 97.0$\%$ for the velocity difference for redshift, $|\Delta\nu|< 6000~
+\rm km/s$ and 98.0$\%$ for $|\Delta\nu|< 12000~ \rm km/s$. While \code{QuasarNET}, which is a standard
+CNN adopted in the SDSS routine and is constructed by 4 convolutional layers (no ResNet structure),
+with kernel sizes of $10$, to measure the redshift via identifying seven emission lines (\textit{local}
+patterns), fails in estimating redshift of $\sim 1.3\%$ of visually inspected quasars in DR16Q
+catalog, and it gives 97.8$\%$ for $|\Delta\nu|< 6000~ \rm km/s$ and 97.9$\%$ for $|\Delta\nu|<
+12000~ \rm km/s$. Hence, FNet provides similar accuracy to \code{QuasarNET}, but it is applicable
+for a wider range of SDSS spectra, especially for those missing the clear emission lines exploited
+by \code{QuasarNET}. These properties of \code{FNet}, together with the fast predictive power
+of machine learning, allow \code{FNet} to be a more accurate alternative for the pipeline redshift
+estimator and can make it practical in the upcoming catalogs to reduce the number of spectra to visually
+inspect. 

@@ -1,0 +1,20 @@
+Byzantine consensus is a classical problem in distributed computing. Each node in a synchronous
+system starts with a binary input. The goal is to reach agreement in the presence of Byzantine faulty
+nodes. We consider the setting where communication between nodes is modelled via a directed hypergraph.
+In the classical point-to-point communication model, the communication between nodes is modelled
+as a simple graph where all messages sent on an edge are private between the two endpoints of the edge.
+This allows a faulty node to equivocate, i.e., lie differently to its different neighbors. Different
+models have been proposed in the literature that weaken equivocation. In the local broadcast model,
+every message transmitted by a node is received identically and correctly by all of its neighbors.
+In the hypergraph model, every message transmitted by a node on a hyperedge is received identically
+and correctly by all nodes on the hyperedge. Tight network conditions are known for each of the three
+cases for undirected (hyper)graphs. For the directed models, tight conditions are known for the
+point-to-point and local broadcast models. In this work, we consider the directed hypergraph model
+that encompasses all the models above. Each directed hyperedge consists of a single head (sender)
+and at least one tail (receiver), This models a local multicast channel where messages transmitted
+by the sender are received identically by all the receivers in the hyperedge. For this model, we identify
+tight network conditions for consensus. We observe how the directed hypergraph model reduces to
+each of the three models above under specific conditions. In each case, we relate our network condition
+to the corresponding known tight conditions. The directed hypergraph model also encompasses other
+practical network models of interest that have not been explored previously, as elaborated in the
+paper. 

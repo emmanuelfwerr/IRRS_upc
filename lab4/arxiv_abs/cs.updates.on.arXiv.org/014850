@@ -1,0 +1,20 @@
+This paper is an initial endeavor to bridge the gap between powerful Deep Reinforcement Learning
+methodologies and the problem of exploration/coverage of unknown terrains. Within this scope,
+MarsExplorer, an openai-gym compatible environment tailored to exploration/coverage of unknown
+areas, is presented. MarsExplorer translates the original robotics problem into a Reinforcement
+Learning setup that various off-the-shelf algorithms can tackle. Any learned policy can be straightforwardly
+applied to a robotic platform without an elaborate simulation model of the robot's dynamics to apply
+a different learning/adaptation phase. One of its core features is the controllable multi-dimensional
+procedural generation of terrains, which is the key for producing policies with strong generalization
+capabilities. Four different state-of-the-art RL algorithms (A3C, PPO, Rainbow, and SAC) are
+trained on the MarsExplorer environment, and a proper evaluation of their results compared to the
+average human-level performance is reported. In the follow-up experimental analysis, the effect
+of the multi-dimensional difficulty setting on the learning capabilities of the best-performing
+algorithm (PPO) is analyzed. A milestone result is the generation of an exploration policy that
+follows the Hilbert curve without providing this information to the environment or rewarding directly
+or indirectly Hilbert-curve-like trajectories. The experimental analysis is concluded by evaluating
+PPO learned policy algorithm side-by-side with frontier-based exploration strategies. A study
+on the performance curves revealed that PPO-based policy was capable of performing adaptive-to-the-unknown-terrain
+sweeping without leaving expensive-to-revisit areas uncovered, underlying the capability of
+RL-based methodologies to tackle exploration tasks efficiently. The source code can be found at:
+https://github.com/dimikout3/MarsExplorer. 

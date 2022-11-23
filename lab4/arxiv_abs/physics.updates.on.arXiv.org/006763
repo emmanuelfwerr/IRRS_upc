@@ -1,0 +1,20 @@
+Due to the irregular space-time sampling of sea surface observations, the reconstruction of sea
+surface dynamics is a challenging inverse problem. While satellite altimetry provides a direct
+observation of the sea surface height (SSH), which relates to the divergence-free component of
+sea surface currents, the associated sampling pattern prevents from retrieving fine-scale sea
+surface dynamics, typically below a 10-day time scale. By contrast, other satellite sensors provide
+higher-resolution observations of sea surface tracers such as sea surface temperature (SST).
+Multimodal inversion schemes then arise as an appealing strategy. Though theoretical evidence
+supports the existence of an explicit relationship between sea surface temperature and sea surface
+dynamics under specific dynamical regimes, the generalization to the variety of upper ocean dynamical
+regimes is complex. Here, we investigate this issue from a physics-informed learning perspective.
+We introduce a trainable multimodal inversion scheme for the reconstruction of sea surface dynamics
+from multi-source satellite-derived observations. The proposed 4DVarNet schemes combine a variational
+formulation involving trainable observation and a priori terms with a trainable gradient-based
+solver. We report an application to the reconstruction of the divergence-free component of sea
+surface dynamics from satellite-derived SSH and SST data. An observing system simulation experiment
+for a Gulf Stream region supports the relevance of our approach compared with state-of-the-art
+schemes. We report relative improvement greater than 50% compared with the operational altimetry
+product in terms of root mean square error and resolved space-time scales. We discuss further the
+application and extension of the proposed approach for the reconstruction and forecasting of geophysical
+dynamics from irregularly-sampled satellite observations. 

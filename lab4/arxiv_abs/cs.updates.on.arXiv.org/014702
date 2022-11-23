@@ -1,0 +1,19 @@
+In this contribution we investigate in mathematical modeling and efficient simulation of biological
+cells with a particular emphasis on effective modeling of structural properties that originate
+from active forces generated from polymerization and depolymerization of cytoskeletal components.
+In detail, we propose a nonlinear continuum approach to model microtubule-based forces which have
+recently been established as central components of cell mechanics during early fruit fly wing development.
+The model is discretized in space using the finite-element method. Although the individual equations
+are decoupled by a semi-implicit time discretization, the discrete model is still computationally
+demanding. In addition, the parameters needed for the effective model equations are not easily
+available and have to be estimated or determined by repeatedly solving the model and fitting the
+results to measurements. This drastically increases the computational cost. Reduced basis methods
+have been used successfully to speed up such repeated solves, often by several orders of magnitude.
+However, for the complex nonlinear models regarded here, the application of these model order reduction
+methods is not always straight-forward and comes with its own set of challenges. In particular,
+subspace construction using the Proper Orthogonal Decomposition (POD) becomes prohibitively
+expensive for reasonably fine grids. We thus propose to combine the Hierarchical Approximate POD,
+which is a general, easy-to-implement approach to compute an approximate POD, with an Empirical
+Interpolation Method to efficiently generate a fast to evaluate reduced order model. Numerical
+experiments are given to demonstrate the applicability and efficiency of the proposed modeling
+and simulation approach. 

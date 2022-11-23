@@ -1,0 +1,20 @@
+Parallel computing in Gaussian process calculations becomes necessary for avoiding computational
+and memory restrictions associated with large-scale environmental data science applications.
+The evaluation of the Gaussian log-likelihood function requires O(n^2) storage and O(n^3) operations
+where n is the number of geographical locations. Thus, computing the log-likelihood function with
+a large number of locations requires exploiting the power of existing parallel computing hardware
+systems, such as shared-memory, possibly equipped with GPUs, and distributed-memory systems,
+to solve this computational complexity. In this paper, we advocate the use of ExaGeoStatR, a package
+for exascale Geostatistics in R that supports a parallel computation of the exact maximum likelihood
+function on a wide variety of parallel architectures. Parallelization in ExaGeoStatR depends
+on breaking down the numerical linear algebra operations in the log-likelihood function into a
+set of tasks and rendering them for a task-based programming model. The package can be used directly
+through the R environment on parallel systems. Currently, ExaGeoStatR supports several maximum
+likelihood computation variants such as exact, Diagonal Super Tile (DST), Tile Low-Rank (TLR)
+approximations, and Mixed-Precision (MP). ExaGeoStatR also provides a tool to simulate large-scale
+synthetic datasets. These datasets can help to assess different implementations of the maximum
+log-likelihood approximation methods. Here, we demonstrate ExaGeoStatR by illustrating its
+implementation details, analyzing its performance on various parallel architectures, and assessing
+its accuracy using synthetic datasets with up to 250K observations. We provide a hands-on tutorial
+to analyze a sea surface temperature real dataset. The performance evaluation involves comparisons
+with the popular packages geoR and fields for exact likelihood evaluation. 

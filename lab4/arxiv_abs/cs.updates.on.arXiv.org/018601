@@ -1,0 +1,20 @@
+Neuromorphic vision is a bio-inspired technology that has triggered a paradigm shift in the computer-vision
+community and is serving as a key-enabler for a multitude of applications. This technology has offered
+significant advantages including reduced power consumption, reduced processing needs, and communication
+speed-ups. However, neuromorphic cameras suffer from significant amounts of measurement noise.
+This noise deteriorates the performance of neuromorphic event-based perception and navigation
+algorithms. In this paper, we propose a novel noise filtration algorithm to eliminate events which
+do not represent real log-intensity variations in the observed scene. We employ a Graph Neural Network
+(GNN)-driven transformer algorithm, called GNN-Transformer, to classify every active event
+pixel in the raw stream into real-log intensity variation or noise. Within the GNN, a message-passing
+framework, called EventConv, is carried out to reflect the spatiotemporal correlation among the
+events, while preserving their asynchronous nature. We also introduce the Known-object Ground-Truth
+Labeling (KoGTL) approach for generating approximate ground truth labels of event streams under
+various illumination conditions. KoGTL is used to generate labeled datasets, from experiments
+recorded in chalenging lighting conditions. These datasets are used to train and extensively test
+our proposed algorithm. When tested on unseen datasets, the proposed algorithm outperforms existing
+methods by 8.8% in terms of filtration accuracy. Additional tests are also conducted on publicly
+available datasets to demonstrate the generalization capabilities of the proposed algorithm
+in the presence of illumination variations and different motion dynamics. Compared to existing
+solutions, qualitative results verified the superior capability of the proposed algorithm to
+eliminate noise while preserving meaningful scene events. 

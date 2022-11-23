@@ -1,0 +1,19 @@
+Random constraint satisfaction problems can exhibit a phase where the number of constraints per
+variable $\alpha$ makes the system solvable in theory on the one hand, but also makes the search for
+a solution hard, meaning that common algorithms such as Monte-Carlo method fail to find a solution.
+The onset of this hardness is deeply linked to the appearance of a dynamical phase transition where
+the phase space of the problem breaks into an exponential number of clusters. The exact position
+of this dynamical phase transition is not universal with respect to the details of the Hamiltonian
+one chooses to represent a given problem. In this paper, we develop some theoretical tools in order
+to find a systematic way to build a Hamiltonian that maximizes the dynamic $\alpha_{\rm d}$ threshold.
+To illustrate our techniques, we will concentrate on the problem of continuous coloring, where
+one tries to set an angle $x_i \in [0;2\pi]$ on each node of a network in such a way that no adjacent nodes
+are closer than some threshold angle $\theta$, that is $\cos(x_i - x_j) \leq \cos\theta$. This problem
+can be both seen as a continuous version of the discrete graph coloring problem or as a one-dimensional
+version of the the Mari-Krzakala-Kurchan (MKK) model. The relevance of this model stems from the
+fact that continuous constraint satisfaction problems on sparse random graphs remain largely
+unexplored in statistical physics. We show that for sufficiently small angle $\theta$ this model
+presents a random first order transition and compute the dynamical, condensation and Kesten-Stigum
+transitions; we also compare the analytical predictions with Monte Carlo simulations for values
+of $\theta = 2\pi/q$, $q \in \mathbb{N}$. Choosing such values of $q$ allows us to easily compare
+our results with the renowned problem of discrete coloring. 

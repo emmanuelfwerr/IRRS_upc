@@ -1,0 +1,20 @@
+Federated learning (FL) trains a global model across a number of decentralized participants, each
+with a local dataset. Compared to traditional centralized learning, FL does not require direct
+local datasets access and thus mitigates data security and privacy concerns. However, data privacy
+concerns for FL still exist due to inference attacks, including known membership inference, property
+inference, and data inversion. In this work, we reveal a new type of privacy inference attack, coined
+Preference Profiling Attack (PPA), that accurately profiles private preferences of a local user.
+In general, the PPA can profile top-k, especially for top-1, preferences contingent on the local
+user's characteristics. Our key insight is that the gradient variation of a local user's model has
+a distinguishable sensitivity to the sample proportion of a given class, especially the majority/minority
+class. By observing a user model's gradient sensitivity to a class, the PPA can profile the sample
+proportion of the class in the user's local dataset and thus the user's preference of the class is
+exposed. The inherent statistical heterogeneity of FL further facilitates the PPA. We have extensively
+evaluated the PPA's effectiveness using four datasets from the image domains of MNIST, CIFAR10,
+Products-10K and RAF-DB. Our results show that the PPA achieves 90% and 98% top-1 attack accuracy
+to the MNIST and CIFAR10, respectively. More importantly, in the real-world commercial scenarios
+of shopping (i.e., Products-10K) and the social network (i.e., RAF-DB), the PPA gains a top-1 attack
+accuracy of 78% in the former case to infer the most ordered items, and 88% in the latter case to infer
+a victim user's emotions. Although existing countermeasures such as dropout and differential
+privacy protection can lower the PPA's accuracy to some extent, they unavoidably incur notable
+global model deterioration. 

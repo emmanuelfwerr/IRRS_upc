@@ -1,0 +1,20 @@
+We present a design space exploration for synthesizing optimized, high-throughput implementations
+of multiple multi-dimensional tridiagonal system solvers on FPGAs. Re-evaluating the characteristics
+of algorithms for the direct solution of tridiagonal systems, we develop a new tridiagonal solver
+library aimed at implementing high-performance computing applications on Xilinx FPGA hardware.
+Key new features of the library are (1) the unification of standard state-of-the-art techniques
+for implementing implicit numerical solvers with a number of novel high-gain optimizations such
+as vectorization and batching, motivated by multi-dimensional systems in real-world applications,
+(2) data-flow techniques that provide application specific optimizations for both 2D and 3D problems,
+including integration of explicit loops commonplace in real workloads, and (3) the development
+of an analytic model to explore the design space, and obtain rapid performance estimates. The new
+library provide an order of magnitude better performance for solving large batches of systems compared
+to Xilinx's current tridiagonal solver library. Two representative applications are implemented
+using the new solver on a Xilinx Alveo U280 FPGA, demonstrating over 85% predictive model accuracy.
+These are compared with a current state-of-the-art GPU library for solving multi-dimensional
+tridiagonal systems on an Nvidia V100 GPU, analyzing time to solution, bandwidth, and energy consumption.
+Results show the FPGAs achieving competitive or better runtime performance for a range of multi-dimensional
+problems compared to the V100 GPU. Additionally, the significant energy savings offered by FPGA
+implementations, over 30% for the most complex application, are quantified. We discuss the algorithmic
+trade-offs required to obtain good performance on FPGAs, giving insights into the feasibility
+and profitability of FPGA implementations. 

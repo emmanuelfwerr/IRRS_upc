@@ -1,0 +1,19 @@
+A high sensitivity Cardiac SPECT system using curved crystals with pinhole collimation was proposed
+previously (Dey, IEEE TNS 2012, Bhusal et al, Med. Phys. 2019). Here, we hypothesize that a high curvature
+hemi-ellipsoid detector results in measurable differences in light distribution from events
+at different depths in the crystal. This was tested by analyzing the scintillation light in hemi-ellipsoid
+detector using Monte-Carlo (Geant4) and evaluation of both the localization error at detector
+and the back-projected errors in object-space. We used Geant4 to simulate the propagation of scintillation
+light in a monolithic hemi-ellipsoidal CsI crystal. A look-up table (LUT) was created to map the
+points inside the crystal to the expected light pattern on the crystal surface using Geant4. In thirteen
+zones across the crystal, gamma-rays were simulated and the resulting scintillator light intensity
+on the surface was captured, serving as our experimental interactions. A Poisson-statistics-based
+algorithm was developed to limit the search of the gamma-ray event locations into small regions
+of the LUT and fine-tuned by interpolating between selected LUT points by comparing the light distribution
+of the gamma interactions and LUT light patterns. The localized events were individually back-projected
+to the object mid-plane, and the errors recorded. Excluding some outliers (up to 2%), the localized
+errors averaged over all the zones was 0.71 (+/-0.44) mm with a worse case of 1.36 (+/-0.67) mm at the
+apex. When back-projected to the midplane of the object for Cardiac SPECT, the errors were <1mm and
+average error was 0.4(+/-0.22) mm, due to the high system magnification afforded by the detector.
+Thus, for our high sensitivity system, we were also able to achieve high resolution, assuming perfect
+pinhole collimator resolution recovery for Cardiac SPECT application. 

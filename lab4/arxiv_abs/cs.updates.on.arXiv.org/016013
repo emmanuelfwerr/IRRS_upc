@@ -1,0 +1,19 @@
+With the growth of 5G, Internet of Things (IoT), edge computing and cloud computing technologies,
+the infrastructure (compute and network) available to emerging applications (AR/VR, autonomous
+driving, industry 4.0, etc.) has become quite complex. There are multiple tiers of computing (IoT
+devices, near edge, far edge, cloud, etc.) that are connected with different types of networking
+technologies (LAN, LTE, 5G, MAN, WAN, etc.). Deployment and management of applications in such
+an environment is quite challenging. In this paper, we propose ROMA, which performs resource orchestration
+for microservices-based 5G applications in a dynamic, heterogeneous, multi-tiered compute and
+network fabric. We assume that only application-level requirements are known, and the detailed
+requirements of the individual microservices in the application are not specified. As part of our
+solution, ROMA identifies and leverages the coupling relationship between compute and network
+usage for various microservices and solves an optimization problem in order to appropriately identify
+how each microservice should be deployed in the complex, multi-tiered compute and network fabric,
+so that the end-to-end application requirements are optimally met. We implemented two real-world
+5G applications in video surveillance and intelligent transportation system (ITS) domains. Through
+extensive experiments, we show that ROMA is able to save up to 90%, 55% and 44% compute and up to 80%,
+95% and 75% network bandwidth for the surveillance (watchlist) and transportation application
+(person and car detection), respectively. This improvement is achieved while honoring the application
+performance requirements, and it is over an alternative scheme that employs a static and overprovisioned
+resource allocation strategy by ignoring the resource coupling relationships. 

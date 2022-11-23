@@ -1,0 +1,19 @@
+In the Reinforcement Learning (RL) framework, the learning is guided through a reward signal. This
+means that in situations of sparse rewards the agent has to focus on exploration, in order to discover
+which action, or set of actions leads to the reward. RL agents usually struggle with this. Exploration
+is the focus of Quality-Diversity (QD) methods. In this thesis, we approach the problem of sparse
+rewards with these algorithms, and in particular with Novelty Search (NS). This is a method that
+only focuses on the diversity of the possible policies behaviors. The first part of the thesis focuses
+on learning a representation of the space in which the diversity of the policies is evaluated. In
+this regard, we propose the TAXONS algorithm, a method that learns a low-dimensional representation
+of the search space through an AutoEncoder. While effective, TAXONS still requires information
+on when to capture the observation used to learn said space. For this, we study multiple ways, and
+in particular the signature transform, to encode information about the whole trajectory of observations.
+The thesis continues with the introduction of the SERENE algorithm, a method that can efficiently
+focus on the interesting parts of the search space. This method separates the exploration of the
+search space from the exploitation of the reward through a two-alternating-steps approach. The
+exploration is performed through NS. Any discovered reward is then locally exploited through emitters.
+The third and final contribution combines TAXONS and SERENE into a single approach: STAX. Throughout
+this thesis, we introduce methods that lower the amount of prior information needed in sparse rewards
+settings. These contributions are a promising step towards the development of methods that can
+autonomously explore and find high-performance policies in a variety of sparse rewards settings.

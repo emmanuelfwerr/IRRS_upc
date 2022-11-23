@@ -1,0 +1,19 @@
+Artificial intelligence, and particularly machine learning (ML), is increasingly developed
+and deployed to support healthcare in a variety of settings. However, clinical decision support
+(CDS) technologies based on ML need to be portable if they are to be adopted on a broad scale. In this
+respect, models developed at one institution should be reusable at another. Yet there are numerous
+examples of portability failure, particularly due to naive application of ML models. Portability
+failure can lead to suboptimal care and medical errors, which ultimately could prevent the adoption
+of ML-based CDS in practice. One specific healthcare challenge that could benefit from enhanced
+portability is the prediction of 30-day readmission risk. Research to date has shown that deep learning
+models can be effective at modeling such risk. In this work, we investigate the practicality of model
+portability through a cross-site evaluation of readmission prediction models. To do so, we apply
+a recurrent neural network, augmented with self-attention and blended with expert features, to
+build readmission prediction models for two independent large scale claims datasets. We further
+present a novel transfer learning technique that adapts the well-known method of born-again network
+(BAN) training. Our experiments show that direct application of ML models trained at one institution
+and tested at another institution perform worse than models trained and tested at the same institution.
+We further show that the transfer learning approach based on the BAN produces models that are better
+than those trained on just a single institution's data. Notably, this improvement is consistent
+across both sites and occurs after a single retraining, which illustrates the potential for a cheap
+and general model transfer mechanism of readmission risk prediction. 

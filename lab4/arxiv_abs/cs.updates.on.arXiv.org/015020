@@ -1,0 +1,20 @@
+Federated learning (FL) is a distributed machine learning technology for next-generation AI systems
+that allows a number of workers, i.e., edge devices, collaboratively learn a shared global model
+while keeping their data locally to prevent privacy leakage. Enabling FL over wireless multi-hop
+networks can democratize AI and make it accessible in a cost-effective manner. However, the noisy
+bandwidth-limited multi-hop wireless connections can lead to delayed and nomadic model updates,
+which significantly slows down the FL convergence speed. To address such challenges, this paper
+aims to accelerate FL convergence over wireless edge by optimizing the multi-hop federated networking
+performance. In particular, the FL convergence optimization problem is formulated as a Markov
+decision process (MDP). To solve such MDP, multi-agent reinforcement learning (MA-RL) algorithms
+along with domain-specific action space refining schemes are developed, which online learn the
+delay-minimum forwarding paths to minimize the model exchange latency between the edge devices
+(i.e., workers) and the remote server. To validate the proposed solutions, FedEdge is developed
+and implemented, which is the first experimental framework in the literature for FL over multi-hop
+wireless edge computing networks. FedEdge allows us to fast prototype, deploy, and evaluate novel
+FL algorithms along with RL-based system optimization methods in real wireless devices. Moreover,
+a physical experimental testbed is implemented by customizing the widely adopted Linux wireless
+routers and ML computing nodes.Finally, our experimentation results on the testbed show that the
+proposed network-accelerated FL system can practically and significantly improve FL convergence
+speed, compared to the FL system empowered by the production-grade commercially available wireless
+networking protocol, BATMAN-Adv. 

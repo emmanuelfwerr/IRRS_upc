@@ -1,0 +1,19 @@
+The rendezvous task calls for two mobile agents, starting from different nodes of a network modeled
+as a graph to meet at the same node. Agents have different labels which are integers from a set $\{1,\dots,L\}$.
+They wake up at possibly different times and move in synchronous rounds. In each round, an agent can
+either stay idle or move to an adjacent node. We consider deterministic rendezvous algorithms.
+The time of such an algorithm is the number of rounds since the wakeup of the earlier agent till the
+meeting. In this paper we consider rendezvous in infinite trees. Our main goal is to study the impact
+of orientation of a tree on the time of rendezvous. We first design a rendezvous algorithm working
+for unoriented regular trees, whose time is in $O(z(D) \log L)$, where $z(D)$ is the size of the ball
+of radius $D$, i.e, the number of nodes at distance at most $D$ from a given node. The algorithm works
+for arbitrary delay between waking times of agents and does not require any initial information
+about parameters $L$ or $D$. Its disadvantage is its complexity: $z(D)$ is exponential in $D$ for
+any degree $d>2$ of the tree. We prove that this high complexity is inevitable: $\Omega(z(D))$ turns
+out to be a lower bound on rendezvous time in unoriented regular trees, even for simultaneous start
+and even when agents know $L$ and $D$. Then we turn attention to oriented trees. While for arbitrary
+delay between waking times of agents the lower bound $\Omega(z(D))$ still holds, for simultaneous
+start the time of rendezvous can be dramatically shortened. We show that if agents know either a polynomial
+upper bound on $L$ or a linear upper bound on $D$, then rendezvous can be accomplished in oriented
+trees in time $O(D\log L)$, which is optimal. When no such extra knowledge is available, we design
+an algorithm working in time $O(D^2+\log ^2L)$. 

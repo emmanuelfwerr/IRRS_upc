@@ -1,0 +1,19 @@
+Software testing assures that code changes do not adversely affect existing functionality. However,
+a test case can be flaky, i.e., passing and failing across executions, even for the same version of
+the source code. Flaky tests introduce overhead to software development as they can lead to unnecessary
+attempts to debug production or testing code. Besides rerunning test cases multiple times, which
+is time-consuming and computationally expensive, flaky tests can be predicted using machine learning
+(ML) models. However, the state-of-the-art ML-based flaky test predictors rely on pre-defined
+sets of features that are either project-specific, i.e., inapplicable to other projects, or require
+access to production code, which is not always available to software test engineers. Moreover,
+given the non-deterministic behavior of flaky tests, it can be challenging to determine a complete
+set of features that could potentially be associated with test flakiness. Therefore, in this paper,
+we propose Flakify, a black-box, language model-based predictor for flaky tests. Flakify does
+not require to (a) rerun test cases, (b) pre-define features, or (c) access to production code. To
+this end, we employ CodeBERT, a pre-trained language model, and fine-tune it to predict flaky tests
+by relying exclusively on the source code of test cases. We evaluated Flakify on a publicly available
+dataset and compared our results with FlakeFlagger, the best state-of-the-art ML-based, white-box
+predictor for flaky tests. Flakify surpasses FlakeFlagger by 10 and 18 percentage points (pp) in
+terms of precision and recall, respectively, thus reducing the effort bound to be wasted on unnecessarily
+debugging test cases and production code by the same percentages, respectively. Our results further
+show that a black-box version of FlakeFlagger is not a viable option for predicting flaky tests.

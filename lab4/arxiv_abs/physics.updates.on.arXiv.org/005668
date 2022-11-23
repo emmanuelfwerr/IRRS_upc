@@ -1,0 +1,19 @@
+This serial effort investigates the nuances in the sampling of the Dynamic Mode Decomposition (DMD)
+with an engineering-oriented emphasis. In Part I, the parametric study established the convergence
+of sampling range and resolution. In this Part II, we examined the effects of the input variable,
+truncation, and data interpolation on the integrity and output of the DMD. Results showed that the
+selection of input variable, even when the fluctuating, mean, or instantaneous velocity fields
+root from the same fluid mechanical origin, significantly affects the dynamical content of the
+input series, thus the aptness of the DMD modeling. We proved that the DMD yields the optimal Koopman
+representation when the input system appeals to clear periodicity, such as turbulence. Truncation,
+though frequently applied for the Proper Orthogonal Decomposition (POD), can radically shift
+the stability and causality of the linearly time-invariant (LTI) representation the DMD generates.
+Results also reinforced the existence of dynamical low-energy POD states. A small degree of truncation
+maintains the integrity of low-order dynamics but sacrifices reconstruction accuracy, and it
+is the inverse when the truncation order is substantial. Pre-DMD data interpolation inevitably
+introduces numerical noise. However, the DMD can distinguish the pseudo-dynamics from a system's
+intrinsic dynamics with the tested high-order interpolation scheme. Finally, we cross-validated
+previous findings with the cylinder wake, proving the universality and generality of the convergence
+states, namely the Initialization, Transition, Stabilization, and Divergence. Bi-parametric
+cross-validation reinforced the mutual independence in the convergence of range and resolution
+and supported the practical recommendation of 15 frames per cycle. 

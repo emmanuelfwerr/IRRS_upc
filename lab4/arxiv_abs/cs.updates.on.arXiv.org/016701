@@ -1,0 +1,20 @@
+Purpose: To accelerate brain 3D MRI scans by using a deep learning method for reconstructing images
+from highly-undersampled multi-coil k-space data Methods: DL-Speed, an unrolled optimization
+architecture with dense skip-layer connections, was trained on 3D T1-weighted brain scan data
+to reconstruct complex-valued images from highly-undersampled k-space data. The trained model
+was evaluated on 3D MPRAGE brain scan data retrospectively-undersampled with a 10-fold acceleration,
+compared to a conventional parallel imaging method with a 2-fold acceleration. Scores of SNR, artifacts,
+gray/white matter contrast, resolution/sharpness, deep gray-matter, cerebellar vermis, anterior
+commissure, and overall quality, on a 5-point Likert scale, were assessed by experienced radiologists.
+In addition, the trained model was tested on retrospectively-undersampled 3D T1-weighted LAVA
+(Liver Acquisition with Volume Acceleration) abdominal scan data, and prospectively-undersampled
+3D MPRAGE and LAVA scans in three healthy volunteers and one, respectively. Results: The qualitative
+scores for DL-Speed with a 10-fold acceleration were higher than or equal to those for the parallel
+imaging with 2-fold acceleration. DL-Speed outperformed a compressed sensing method in quantitative
+metrics on retrospectively-undersampled LAVA data. DL-Speed was demonstrated to perform reasonably
+well on prospectively-undersampled scan data, realizing a 2-5 times reduction in scan time. Conclusion:
+DL-Speed was shown to accelerate 3D MPRAGE and LAVA with up to a net 10-fold acceleration, achieving
+2-5 times faster scans compared to conventional parallel imaging and acceleration, while maintaining
+diagnostic image quality and real-time reconstruction. The brain scan data-trained DL-Speed
+also performed well when reconstructing abdominal LAVA scan data, demonstrating versatility
+of the network. 

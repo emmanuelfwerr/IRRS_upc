@@ -1,0 +1,19 @@
+In $d$ dimensions, approximating an arbitrary function oscillating with frequency $\lesssim
+k$ requires $\sim k^d$ degrees of freedom. A numerical method for solving the Helmholtz equation
+(with wavenumber $k$) suffers from the pollution effect if, as $k\to \infty$, the total number of
+degrees of freedom needed to maintain accuracy grows faster than this natural threshold. While
+the $h$-version of the finite element method (FEM) (where accuracy is increased by decreasing the
+meshwidth $h$ and keeping the polynomial degree $p$ fixed) suffers from the pollution effect, the
+celebrated papers [Melenk, Sauter 2010], [Melenk, Sauter 2011], [Esterhazy, Melenk 2012], and
+[Melenk, Parsania, Sauter 2013] showed that the $hp$-FEM (where accuracy is increased by decreasing
+the meshwidth $h$ and increasing the polynomial degree $p$) applied to a variety of constant-coefficient
+Helmholtz problems does not suffer from the pollution effect. The heart of the proofs of these results
+is a PDE result splitting the solution of the Helmholtz equation into "high" and "low" frequency
+components. In this expository paper we prove this splitting for the constant-coefficient Helmholtz
+equation in full space (i.e., in $\mathbb{R}^d$) using only integration by parts and elementary
+properties of the Fourier transform; this is in contrast to the proof for this set-up in [Melenk,
+Sauter 2010] which uses somewhat-involved bounds on Bessel and Hankel functions. The proof in this
+paper is motivated by the recent proof in [Lafontaine, Spence, Wunsch 2020] of this splitting for
+the variable-coefficient Helmholtz equation in full space; indeed, the proof in [Lafontaine,
+Spence, Wunsch 2020] uses more-sophisticated tools that reduce to the elementary ones above for
+constant coefficients. 

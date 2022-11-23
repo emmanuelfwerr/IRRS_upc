@@ -1,0 +1,19 @@
+An ensemble of decision trees is known as Random Forest. As suggested by Breiman, the strength of
+unstable learners and the diversity among them are the ensemble models' core strength. In this paper,
+we propose two approaches known as oblique and rotation double random forests. In the first approach,
+we propose a rotation based double random forest. In rotation based double random forests, transformation
+or rotation of the feature space is generated at each node. At each node different random feature
+subspace is chosen for evaluation, hence the transformation at each node is different. Different
+transformations result in better diversity among the base learners and hence, better generalization
+performance. With the double random forest as base learner, the data at each node is transformed
+via two different transformations namely, principal component analysis and linear discriminant
+analysis. In the second approach, we propose oblique double random forest. Decision trees in random
+forest and double random forest are univariate, and this results in the generation of axis parallel
+split which fails to capture the geometric structure of the data. Also, the standard random forest
+may not grow sufficiently large decision trees resulting in suboptimal performance. To capture
+the geometric properties and to grow the decision trees of sufficient depth, we propose oblique
+double random forest. The oblique double random forest models are multivariate decision trees.
+At each non-leaf node, multisurface proximal support vector machine generates the optimal plane
+for better generalization performance. Also, different regularization techniques (Tikhonov
+regularisation and axis-parallel split regularisation) are employed for tackling the small sample
+size problems in the decision trees of oblique double random forest. 

@@ -1,0 +1,19 @@
+There remains an open question about the usefulness and the interpretation of Machine learning
+(MLE) approaches for discrimination of spatial patterns of brain images between samples or activation
+states. In the last few decades, these approaches have limited their operation to feature extraction
+and linear classification tasks for between-group inference. In this context, statistical inference
+is assessed by randomly permuting image labels or by the use of random effect models that consider
+between-subject variability. These multivariate MLE-based statistical pipelines, whilst potentially
+more effective for detecting activations than hypotheses-driven methods, have lost their mathematical
+elegance, ease of interpretation, and spatial localization of the ubiquitous General linear Model
+(GLM). Recently, the estimation of the conventional GLM has been demonstrated to be connected to
+an univariate classification task when the design matrix is expressed as a binary indicator matrix.
+In this paper we explore the complete connection between the univariate GLM and MLE \emph{regressions}.
+To this purpose we derive a refined statistical test with the GLM based on the parameters obtained
+by a linear Support Vector Regression (SVR) in the \emph{inverse} problem (SVR-iGLM). Subsequently,
+random field theory (RFT) is employed for assessing statistical significance following a conventional
+GLM benchmark. Experimental results demonstrate how parameter estimations derived from each
+model (mainly GLM and SVR) result in different experimental design estimates that are significantly
+related to the predefined functional task. Moreover, using real data from a multisite initiative
+the proposed MLE-based inference demonstrates statistical power and the control of false positives,
+outperforming the regular GLM. 

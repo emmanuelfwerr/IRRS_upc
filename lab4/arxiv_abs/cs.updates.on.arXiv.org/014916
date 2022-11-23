@@ -1,0 +1,18 @@
+We revisit the (block-angular) min-max resource sharing problem, which is a well-known generalization
+of fractional packing and the maximum concurrent flow problem. It consists of finding an $\ell_{\infty}$-minimal
+element in a Minkowski sum $\mathcal{X}= \sum_{C \in \mathcal{C}} X_C$ of non-empty closed convex
+sets $X_C \subseteq \mathbb{R}^{\mathcal{R}}_{\geq 0}$, where $\mathcal{C}$ and $\mathcal{R}$
+are finite sets. We assume that an oracle for approximate linear minimization over $X_C$ is given.
+In this setting, the currently fastest known FPTAS is due to M\"uller, Radke, and Vygen. For $\delta
+\in (0,1]$, it computes a $\sigma(1+\delta)$-approximately optimal solution using $\mathcal{O}((|\mathcal{C}|+|\mathcal{R}|)\log
+|\mathcal{R}| (\delta^{-2} + \log \log |\mathcal{R}|))$ oracle calls, where $\sigma$ is the approximation
+ratio of the oracle. We describe an extension of their algorithm and improve on previous results
+in various ways. Our FPTAS, which, as previous approaches, is based on the multiplicative weight
+update method, computes close to optimal primal and dual solutions using $\mathcal{O}\left(\frac{|\mathcal{C}|+
+|\mathcal{R}|}{\delta^2} \log |\mathcal{R}|\right)$ oracle calls. We prove that our running
+time is optimal under certain assumptions, implying that no warm-start analysis of the algorithm
+is possible. A major novelty of our analysis is the concept of local weak duality, which illustrates
+that the algorithm optimizes (close to) independent parts of the instance separately. Interestingly,
+this implies that the computed solution is not only approximately $\ell_{\infty}$-minimal, but
+among such solutions, also its second-highest entry is approximately minimal. We prove that this
+statement cannot be extended to the third-highest entry. 

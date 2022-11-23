@@ -1,0 +1,20 @@
+When learning cybersecurity, operating systems, or networking, students perform practical tasks
+using a broad range of command-line tools. Collecting and analyzing data about the command usage
+can reveal valuable insights into how students progress and where they make mistakes. However,
+few learning environments support recording and inspecting command-line inputs, and setting
+up an efficient infrastructure for this purpose is challenging. To aid engineering and computing
+educators, we share the design and implementation of an open-source toolset for logging commands
+that students execute on Linux machines. Compared to basic solutions, such as shell history files,
+the toolset's added value is threefold. 1) Its configuration is automated so that it can be easily
+used in classes on different topics. 2) It collects metadata about the command execution, such as
+a timestamp, hostname, and IP address. 3) Data are instantly forwarded to central storage in a unified,
+semi-structured format. This enables automated processing, both in real-time and post hoc, to
+enhance the instructors' understanding of student actions. The toolset works independently of
+the teaching content, the training network's topology, or the number of students working in parallel.
+We demonstrated the toolset's value in two learning environments at four training sessions. Over
+two semesters, 50 students played educational cybersecurity games using a Linux command-line
+interface. Each training session lasted approximately two hours, during which we recorded 4439
+shell commands. The semi-automated data analysis revealed solution patterns, used tools, and
+misconceptions of students. Our insights from creating the toolset and applying it in teaching
+practice are relevant for instructors, researchers, and developers of learning environments.
+We provide the software and data resulting from this work so that others can use them. 

@@ -1,0 +1,20 @@
+This paper presents karma mechanisms, a novel approach to the repeated allocation of a scarce resource
+among competing agents over an infinite time. Examples of such resource allocation problems include
+deciding which trip requests to serve in a ride-hailing platform during peak demand, granting the
+right of way in intersections, or admitting internet content to a fast channel for improved quality
+of service. We study a simplified yet insightful formulation of these problems where at every time
+two agents from a large population get randomly matched to compete over the resource. The intuitive
+interpretation of a karma mechanism is "If I give in now, I will be rewarded in the future." Agents
+compete in an auction-like setting where they bid units of karma, which circulates directly among
+them and is self-contained in the system. We demonstrate that this allows a society of self-interested
+agents to achieve high levels of efficiency without resorting to a (possibly problematic) monetary
+pricing of the resource. We model karma mechanisms as dynamic population games, in which agents
+have private states - their urgency to acquire the resource and how much karma they have - that vary
+in time based on their strategic decisions. We adopt the stationary Nash equilibrium as the solution
+concept and prove its existence. We then analyze the performance at the stationary Nash equilibrium
+numerically. For the case where the agents have homogeneous preferences, we compare different
+mechanism design choices which allow to strike trade-offs between efficiency and fairness metrics,
+showing how it is possible to achieve an efficient and ex-post fair allocation when the agents are
+future aware. Finally, we test the robustness of the mechanisms against heterogeneity in the urgency
+processes and the future awareness of the agents and propose remedies to some of the observed phenomena
+via karma redistribution. 

@@ -1,0 +1,19 @@
+During the training of machine learning models, they may store or "learn" more information about
+the training data than what is actually needed for the prediction or classification task. This is
+exploited by property inference attacks which aim at extracting statistical properties from the
+training data of a given model without having access to the training data itself. These properties
+may include the quality of pictures to identify the camera model, the age distribution to reveal
+the target audience of a product, or the included host types to refine a malware attack in computer
+networks. This attack is especially accurate when the attacker has access to all model parameters,
+i.e., in a white-box scenario. By defending against such attacks, model owners are able to ensure
+that their training data, associated properties, and thus their intellectual property stays private,
+even if they deliberately share their models, e.g., to train collaboratively, or if models are leaked.
+In this paper, we introduce property unlearning, an effective defense mechanism against white-box
+property inference attacks, independent of the training data type, model task, or number of properties.
+Property unlearning mitigates property inference attacks by systematically changing the trained
+weights and biases of a target model such that an adversary cannot extract chosen properties. We
+empirically evaluate property unlearning on three different data sets, including tabular and
+image data, and two types of artificial neural networks. Our results show that property unlearning
+is both efficient and reliable to protect machine learning models against property inference attacks,
+with a good privacy-utility trade-off. Furthermore, our approach indicates that this mechanism
+is also effective to unlearn multiple properties. 

@@ -1,0 +1,20 @@
+We propose to apply non-linear representation learning to voxelwise rs-fMRI data. Learning the
+non-linear representations is done using a variational autoencoder (VAE). The VAE is trained on
+voxelwise rs-fMRI data and performs non-linear dimensionality reduction that retains meaningful
+information. The retention of information in the model's representations is evaluated using downstream
+age regression and sex classification tasks. The results on these tasks are highly encouraging
+and a linear regressor trained with the representations of our unsupervised model performs almost
+as well as a supervised neural network, trained specifically for age regression on the same dataset.
+The model is also evaluated with a schizophrenia diagnosis prediction task, to assess its feasibility
+as a dimensionality reduction method for neuropsychiatric datasets. These results highlight
+the potential for pre-training on a larger set of individuals who do not have mental illness, to improve
+the downstream neuropsychiatric task results. The pre-trained model is fine-tuned for a variable
+number of epochs on a schizophrenia dataset and we find that fine-tuning for 1 epoch yields the best
+results. This work therefore not only opens up non-linear dimensionality reduction for voxelwise
+rs-fMRI data but also shows that pre-training a deep learning model on voxelwise rs-fMRI datasets
+greatly increases performance even on smaller datasets. It also opens up the ability to look at the
+distribution of rs-fMRI time series in the latent space of the VAE for heterogeneous neuropsychiatric
+disorders like schizophrenia in future work. This can be complemented with the generative aspect
+of the model that allows us to reconstruct points from the model's latent space back into brain space
+and obtain an improved understanding of the relation that the VAE learns between subjects, timepoints,
+and a subject's characteristics. 

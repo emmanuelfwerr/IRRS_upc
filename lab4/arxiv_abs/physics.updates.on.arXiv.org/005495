@@ -1,0 +1,20 @@
+Errors in the representation of clouds in convection-permitting numerical weather prediction
+models can be introduced by different sources. These can be the forcing and boundary conditions,
+the representation of orography, the accuracy of the numerical schemes determining the evolution
+of humidity and temperature, but large contributions are due to the parametrization of microphysics
+and the parametrization of processes in the surface and boundary layers. These schemes typically
+contain several tunable parameters that are either not physical or only crudely known, leading
+to model errors. Traditionally, the numerical values of these model parameters are chosen by manual
+model tuning. More objectively, they can be estimated from observations by the augmented state
+approach during the data assimilation. Alternatively, in this work, we look at the problem of parameter
+estimation through an artificial intelligence lens by training two types of artificial neural
+networks (ANNs) to estimate several parameters of the one-dimensional modified shallow-water
+model as a function of the observations or analysis of the atmospheric state. Through perfect model
+experiments, we show that Bayesian neural networks (BNNs) and Bayesian approximations of point
+estimate neural networks (NNs) are able to estimate model parameters and their relevant statistics.
+The estimation of parameters combined with data assimilation for the state decreases the initial
+state errors even when assimilating sparse and noisy observations. The sensitivity to the number
+of ensemble members, observation coverage, and neural network size is shown. Additionally, we
+use the method of layer-wise relevance propagation to gain insight into how the ANNs are learning
+and discover that they naturally select only a few gridpoints that are subject to strong winds and
+rain to make their predictions of chosen parameters. 

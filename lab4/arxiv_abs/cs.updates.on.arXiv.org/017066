@@ -1,0 +1,20 @@
+In classical planning, the goal is to derive a course of actions that allows an intelligent agent
+to move from any situation it finds itself in to one that satisfies its goals. Classical planning
+is considered domain-independent, i.e., it is not limited to a particular application and can be
+used to solve different types of reasoning problems. In practice, however, some properties of a
+planning problem at hand require an expressive extension of the standard classical planning formalism
+to capture and model them. Although the importance of many of these extensions is well known, most
+planners, especially optimal planners, do not support these extended planning formalisms. The
+lack of support not only limits the use of these planners for certain problems, but even if it is possible
+to model the problems without these extensions, it often leads to increased effort in modeling or
+makes modeling practically impossible as the required problem encoding size increases exponentially.
+In this thesis, we propose to use symbolic search for cost-optimal planning for different expressive
+extensions of classical planning, all capturing different aspects of the problem. In particular,
+we study planning with axioms, planning with state-dependent action costs, oversubscription
+planning, and top-k planning. For all formalisms, we present complexity and compilability results,
+highlighting that it is desirable and even necessary to natively support the corresponding features.
+We analyze symbolic heuristic search and show that the search performance does not always benefit
+from the use of a heuristic and that the search performance can exponentially deteriorate even under
+the best possible circumstances, namely the perfect heuristic. This reinforces that symbolic
+blind search is the dominant symbolic search strategy nowadays, on par with other state-of-the-art
+cost-optimal planning strategies... 

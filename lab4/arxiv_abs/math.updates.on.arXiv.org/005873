@@ -1,0 +1,19 @@
+We say that a random variable is $light$-$tailed$ if moments of order $2+\epsilon$ are finite for
+some $\epsilon>0$; otherwise, we say that it is $heavy$-$tailed$. We study queueing networks that
+operate under the Max-Weight scheduling policy, for the case where some queues receive heavy-tailed
+traffic, while some other queues receive light-tailed traffic. We say that a queue is $delay$ $stable$
+if its expected size (and hence its expected delay) is uniformly bounded over time. It is well-known
+that a queue with heavy-tailed arrivals is always delay unstable. Queues with light-tailed arrivals
+are often delay stable, as long as their arrival rate does not exceed the service capacity, but can
+also become delay unstable because of resource-sharing with other delay unstable queues. Within
+this context, and for any given "tail exponents" of the input traffic, we develop tight (necessary
+and sufficient) conditions under which a queue with light-tailed arrivals is robustly delay stable,
+in terms of $jumping$ $fluid$ (JF) models-an extension of traditional fluid models that allows
+for jumps along coordinates associated with heavy-tailed flows. In particular, we show that a queue
+is robustly delay stable if and only if all JF trajectories in a certain class, and whose number of
+jumps is limited by a certain "budget," keep the queue of interest at zero. This result elucidates
+the precise mechanism that leads to delay instability, through a coordination of multiple abnormally
+large arrivals at possibly different times and queues. Moreover, it shows that traditional fluid
+models are intrinsically unable to provide tight conditions for delay stability and settles an
+earlier open question on the sufficiency of a particular fluid-based criterion. We also explore
+the power of Lyapunov functions in the study of robust delay stability. 

@@ -1,0 +1,20 @@
+Citizen science datasets can be very large and promise to improve species distribution modelling,
+but detection is imperfect, risking bias when fitting models. In particular, observers may not
+detect species that are actually present. Occupancy models can estimate and correct for this observation
+process, and multi-species occupancy models exploit similarities in the observation process,
+which can improve estimates for rare species. However, the computational methods currently used
+to fit these models do not scale to large datasets. We develop approximate Bayesian inference methods
+and use graphics processing units (GPUs) to scale multi-species occupancy models to very large
+citizen science data. We fit multi-species occupancy models to one month of data from the eBird project
+consisting of 186,811 checklist records comprising 430 bird species. We evaluate the predictions
+on a spatially separated test set of 59,338 records, comparing two different inference methods
+-- Markov chain Monte Carlo (MCMC) and variational inference (VI) -- to occupancy models fitted
+to each species separately using maximum likelihood. We fitted models to the entire dataset using
+VI, and up to 32,000 records with MCMC. VI fitted to the entire dataset performed best, outperforming
+single-species models on both AUC (90.4% compared to 88.7%) and on log likelihood (-0.080 compared
+to -0.085). We also evaluate how well range maps predicted by the model agree with expert maps. We
+find that modelling the detection process greatly improves agreement and that the resulting maps
+agree as closely with expert maps as ones estimated using high quality survey data. Our results demonstrate
+that multi-species occupancy models are a compelling approach to model large citizen science datasets,
+and that, once the observation process is taken into account, they can model species distributions
+accurately. 

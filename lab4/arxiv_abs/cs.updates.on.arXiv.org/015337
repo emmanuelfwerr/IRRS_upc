@@ -1,0 +1,19 @@
+Let $P$ be a set of points in $\mathbb{R}^d$, where each point $p\in P$ has an associated transmission
+range $\rho(p)$. The range assignment $\rho$ induces a directed communication graph $\mathcal{G}_{\rho}(P)$
+on $P$, which contains an edge $(p,q)$ iff $|pq| \leq \rho(p)$. In the broadcast range-assignment
+problem, the goal is to assign the ranges such that $\mathcal{G}_{\rho}(P)$ contains an arborescence
+rooted at a designated node and whose cost $\sum_{p \in P} \rho(p)^2$ is minimized. We study trade-offs
+between the stability of the solution -- the number of ranges that are modified when a point is inserted
+into or deleted from $P$ -- and its approximation ratio. We introduce $k$-stable algorithms, which
+are algorithms that modify the range of at most $k$ points when they update the solution. We also introduce
+the concept of a stable approximation scheme (SAS). A SAS is an update algorithm that, for any given
+fixed parameter $\varepsilon>0$, is $k(\epsilon)$-stable and maintains a solution with approximation
+ratio $1+\varepsilon$, where the stability parameter $k(\varepsilon)$ only depends on $\varepsilon$
+and not on the size of $P$. We study such trade-offs in three settings. - In $\mathbb{R}^1$, we present
+a SAS with $k(\varepsilon)=O(1/\varepsilon)$, which we show is tight in the worst case. We also
+present a 1-stable $(6+2\sqrt{5})$-approximation algorithm, a $2$-stable 2-approximation
+algorithm, and a $3$-stable $1.97$-approximation algorithm. - In $\mathbb{S}^1$ (where the underlying
+space is a circle) we prove that no SAS exists, even though an optimal solution can always be obtained
+by cutting the circle at an appropriate point and solving the resulting problem in $\mathbb{R}^1$.
+- In $\mathbb{R}^2$, we also prove that no SAS exists, and we present a $O(1)$-stable $O(1)$-approximation
+algorithm. 

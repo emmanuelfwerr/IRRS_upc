@@ -1,0 +1,19 @@
+Flaky tests are defined as tests that manifest non-deterministic behaviour by passing and failing
+intermittently for the same version of the code. These tests cripple continuous integration with
+false alerts that waste developers' time and break their trust in regression testing. To mitigate
+the effects of flakiness, both researchers and industrial experts proposed strategies and tools
+to detect and isolate flaky tests. However, flaky tests are rarely fixed as developers struggle
+to localise and understand their causes. Additionally, developers working with large codebases
+often need to know the sources of non-determinism to preserve code quality, i.e., avoid introducing
+technical debt linked with non-deterministic behaviour, and to avoid introducing new flaky tests.
+To aid with these tasks, we propose re-targeting Fault Localisation techniques to the flaky component
+localisation problem, i.e., pinpointing program classes that cause the non-deterministic behaviour
+of flaky tests. In particular, we employ Spectrum-Based Fault Localisation (SBFL), a coverage-based
+fault localisation technique commonly adopted for its simplicity and effectiveness. We also utilise
+other data sources, such as change history and static code metrics, to further improve the localisation.
+Our results show that augmenting SBFL with change and code metrics ranks flaky classes in the top-1
+and top-5 suggestions, in 26% and 47% of the cases. Overall, we successfully reduced the average
+number of classes inspected to locate the first flaky class to 19% of the total number of classes covered
+by flaky tests. Our results also show that localisation methods are effective in major flakiness
+categories, such as concurrency and asynchronous waits, indicating their general ability to identify
+flaky components. 

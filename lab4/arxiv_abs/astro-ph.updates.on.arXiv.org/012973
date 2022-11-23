@@ -1,0 +1,19 @@
+The behaviour of molecules in space is to a large extent governed by where they freeze out or sublimate.
+The molecular binding energy is thus an important parameter for many astrochemical studies. This
+parameter is usually determined with time-consuming experiments, computationally expensive
+quantum chemical calculations, or the inexpensive, but inaccurate, linear addition method. In
+this work we propose a new method based on machine learning for predicting binding energies that
+is accurate, yet computationally inexpensive. A machine learning model based on Gaussian Process
+Regression is created and trained on a database of binding energies of molecules collected from
+laboratory experiments presented in the literature. The molecules in the database are categorized
+by their features, such as mono- or multilayer coverage, binding surface, functional groups, valence
+electrons, and H-bond acceptors and donors. The performance of the model is assessed with five-fold
+and leave-one-molecule-out cross validation. Predictions are generally accurate, with differences
+between predicted and literature binding energies values of less than $\pm$20\%. The validated
+model is used to predict the binding energies of twenty one molecules that have recently been detected
+in the interstellar medium, but for which binding energy values are not known. A simplified model
+is used to visualize where the snowlines of these molecules would be located in a protoplanetary
+disk. This work demonstrates that machine learning can be employed to accurately and rapidly predict
+binding energies of molecules. Machine learning complements current laboratory experiments
+and quantum chemical computational studies. The predicted binding energies will find use in the
+modelling of astrochemical and planet-forming environments. 

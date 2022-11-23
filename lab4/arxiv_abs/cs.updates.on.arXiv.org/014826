@@ -1,0 +1,19 @@
+Due to the globalization of Integrated Circuit (IC) supply chain, hardware trojans and the attacks
+that can trigger them have become an important security issue. One type of hardware Trojans leverages
+the don't care transitions in Finite State Machines (FSMs) of hardware designs. In this paper, we
+present a symbolic approach to detecting don't care transitions and the hidden Trojans. Our detection
+approach works at both RTL and gate-level, does not require a golden design, and works in three stages.
+In the first stage, it explores the reachable states. In the second stage, it performs an approximate
+analysis to find the don't care transitions. In the third stage, it performs a state-space exploration
+from reachable states that have incoming don't care transitions to find behavioral discrepancies
+with respect to what has been observed in the first stage. We also present a pruning technique based
+on the reachability of FSM states. We present a methodology that leverages both RTL and gate-level
+for soundness and efficiency. Specifically, we show that don't care transitions must be detected
+at the gate-level, i.e., after synthesis has been performed, for soundness. However, under specific
+conditions, Trojan detection can be performed more efficiently at RTL. Evaluation of our approach
+on a set of benchmarks from OpenCores and TrustHub and using gate-level representation generated
+by two synthesis tools, Yosys and Synopsis Design Compiler (SDC), shows that our approach is both
+efficient (up to 10X speedup w.r.t. no pruning) and precise (0% false positives) in detecting don't
+care transitions and the Trojans that leverage them. Additionally, the total analysis time can
+achieve up to 3.40X (using Yosys) and 2.52X (SDC) speedup when synthesis preserves the FSM structure
+and the Trojan detection is performed at RTL. 

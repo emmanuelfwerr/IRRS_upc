@@ -1,0 +1,20 @@
+Extensive research has been performed on continuous, non-invasive, cuffless blood pressure (BP)
+measurement using artificial intelligence algorithms. This approach involves extracting certain
+features from physiological signals like ECG, PPG, ICG, BCG, etc. as independent variables and
+extracting features from Arterial Blood Pressure (ABP) signals as dependent variables, and then
+using machine learning algorithms to develop a blood pressure estimation model based on these data.
+The greatest challenge of this field is the insufficient accuracy of estimation models. This paper
+proposes a novel blood pressure estimation method with a clustering step for accuracy improvement.
+The proposed method involves extracting Pulse Transit Time (PTT), PPG Intensity Ratio (PIR), and
+Heart Rate (HR) features from Electrocardiogram (ECG) and Photoplethysmogram (PPG) signals as
+the inputs of clustering and regression, extracting Systolic Blood Pressure (SBP) and Diastolic
+Blood Pressure (DBP) features from ABP signals as dependent variables, and finally developing
+regression models by applying Gradient Boosting Regression (GBR), Random Forest Regression (RFR),
+and Multilayer Perceptron Regression (MLP) on each cluster. The method was implemented using the
+MIMICII dataset with the silhouette criterion used to determine the optimal number of clusters.
+The results showed that because of the inconsistency, high dispersion, and multi-trend behavior
+of the extracted features vectors, the accuracy can be significantly improved by running a clustering
+algorithm and then developing a regression model on each cluster, and finally weighted averaging
+of the results based on the error of each cluster. When implemented with 5 clusters and GBR, this approach
+yielded an MAE of 2.56 for SBP estimates and 2.23 for DBP estimates, which were significantly better
+than the best results without clustering (DBP: 6.27, SBP: 6.36). 

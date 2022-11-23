@@ -1,0 +1,19 @@
+Many problems that can be solved in quadratic time have bit-parallel speed-ups with factor $w$,
+where $w$ is the computer word size. For example, edit distance of two strings of length $n$ can be
+solved in $O(n^2/w)$ time. In a reasonable classical model of computation, one can assume $w=\Theta(\log
+n)$. There are conditional lower bounds for such problems stating that speed-ups with factor $n^\epsilon$
+for any $\epsilon>0$ would lead to breakthroughs in complexity theory. However, these conditional
+lower bounds do not cover quantum models of computing. Indeed, Boroujeni et al. (J. ACM, 2021) showed
+that edit distance can be approximated within a factor $3$ in sub-quadratic time $O(n^{1.81})$
+using quantum computing. They also showed that, in their chosen model of quantum computing, the
+approximation factor cannot be improved using sub-quadractic time. To break through the aforementioned
+classical conditional lower bounds and this latest quantum lower bound, we enrich the model of computation
+with a quantum random access memory (QRAM), obtaining what we call the word QRAM model. Under this
+model, we show how to convert the bit-parallelism of quadratic time solvable problems into quantum
+algorithms that attain speed-ups with factor $n$. The technique we use is simple and general enough
+to apply to many bit-parallel algorithms that use Boolean logics and bit-shifts. To apply it to edit
+distance, we first show that the famous $O(n^2/w)$ time bit-parallel algorithm of Myers (J. ACM,
+1999) can be adjusted to work without arithmetic + operations. As a direct consequence of applying
+our technique to this variant, we obtain linear time edit distance algorithm under the word QRAM
+model for constant alphabet. We give further results on a restricted variant of the word QRAM model
+to give more insights to the limits of the model. 

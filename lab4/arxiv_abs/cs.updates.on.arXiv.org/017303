@@ -1,0 +1,20 @@
+Holonomic functions play an essential role in Computer Algebra since they allow the application
+of many symbolic algorithms. Among all algorithmic attempts to find formulas for power series,
+the holonomic property remains the most important requirement to be satisfied by the function under
+consideration. The targeted functions mainly summarize that of meromorphic functions. However,
+expressions like $\tan(z)$, $z/(\exp(z)-1)$, $\sec(z)$, etc., particularly, reciprocals,
+quotients and compositions of holonomic functions, are generally not holonomic. Therefore their
+power series are inaccessible by the holonomic framework. From the mathematical dictionaries,
+one can observe that most of the known closed-form formulas of non-holonomic power series involve
+another sequence whose evaluation depends on some finite summations. In the case of $\tan(z)$ and
+$\sec(z)$ the corresponding sequences are the Bernoulli and Euler numbers, respectively. Thus
+providing a symbolic approach that yields complete representations when linear summations for
+power series coefficients of non-holonomic functions appear, might be seen as a step forward towards
+the representation of non-holonomic power series. By adapting the method of ansatz with undetermined
+coefficients, we build an algorithm that computes least-order quadratic differential equations
+with polynomial coefficients for a large class of non-holonomic functions. A differential equation
+resulting from this procedure is converted into a recurrence equation by applying the Cauchy product
+formula and rewriting powers into polynomials and derivatives into shifts. Finally, using enough
+initial values we are able to give normal form representations to characterize several non-holonomic
+power series and prove non-trivial identities. We discuss this algorithm and its implementation
+for Maple 2022. 

@@ -1,0 +1,20 @@
+The framework of distribution testing is currently ubiquitous in the field of property testing.
+In this model, the input is a probability distribution accessible via independently drawn samples
+from an oracle. The testing task is to distinguish a distribution that satisfies some property from
+a distribution that is far from satisfying it in the $\ell_1$ distance. The task of tolerant testing
+imposes a further restriction, that distributions close to satisfying the property are also accepted.
+This work focuses on the connection of the sample complexities of non-tolerant ("traditional")
+testing of distributions and tolerant testing thereof. When limiting our scope to label-invariant
+(symmetric) properties of distribution, we prove that the gap is at most quadratic. Conversely,
+the property of being the uniform distribution is indeed known to have an almost-quadratic gap.
+When moving to general, not necessarily label-invariant properties, the situation is more complicated,
+and we show some partial results. We show that if a property requires the distributions to be non-concentrated,
+then it cannot be non-tolerantly tested with $o(\sqrt{n})$ many samples, where $n$ denotes the
+universe size. Clearly, this implies at most a quadratic gap, because a distribution can be learned
+(and hence tolerantly tested against any property) using $\mathcal{O}(n)$ many samples. Being
+non-concentrated is a strong requirement on the property, as we also prove a close to linear lower
+bound against their tolerant tests. To provide evidence for other general cases (where the properties
+are not necessarily label-invariant), we show that if an input distribution is very concentrated,
+in the sense that it is mostly supported on a subset of size $s$ of the universe, then it can be learned
+using only $\mathcal{O}(s)$ many samples. The learning procedure adapts to the input, and works
+without knowing $s$ in advance. 

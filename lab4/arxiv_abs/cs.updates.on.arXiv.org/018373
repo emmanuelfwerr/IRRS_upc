@@ -1,0 +1,18 @@
+Recent work has shown potential in using Mixed Integer Programming (MIP) solvers to optimize certain
+aspects of neural networks (NNs). However the intriguing approach of training NNs with MIP solvers
+is under-explored. State-of-the-art-methods to train NNs are typically gradient-based and require
+significant data, computation on GPUs, and extensive hyper-parameter tuning. In contrast, training
+with MIP solvers does not require GPUs or heavy hyper-parameter tuning, but currently cannot handle
+anything but small amounts of data. This article builds on recent advances that train binarized
+NNs using MIP solvers. We go beyond current work by formulating new MIP models which improve training
+efficiency and which can train the important class of integer-valued neural networks (INNs). We
+provide two novel methods to further the potential significance of using MIP to train NNs. The first
+method optimizes the number of neurons in the NN while training. This reduces the need for deciding
+on network architecture before training. The second method addresses the amount of training data
+which MIP can feasibly handle: we provide a batch training method that dramatically increases the
+amount of data that MIP solvers can use to train. We thus provide a promising step towards using much
+more data than before when training NNs using MIP models. Experimental results on two real-world
+data-limited datasets demonstrate that our approach strongly outperforms the previous state
+of the art in training NN with MIP, in terms of accuracy, training time and amount of data. Our methodology
+is proficient at training NNs when minimal training data is available, and at training with minimal
+memory requirements -- which is potentially valuable for deploying to low-memory devices. 

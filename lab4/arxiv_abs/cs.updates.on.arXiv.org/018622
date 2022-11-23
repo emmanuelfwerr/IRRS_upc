@@ -1,0 +1,20 @@
+We propose Universal Causality, an overarching framework based on category theory that defines
+the universal property that underlies causal inference independent of the underlying representational
+formalism used. More formally, universal causal models are defined as categories consisting of
+objects and morphisms between them representing causal influences, as well as structures for carrying
+out interventions (experiments) and evaluating their outcomes (observations). Functors map
+between categories, and natural transformations map between a pair of functors across the same
+two categories. Abstract causal diagrams in our framework are built using universal constructions
+from category theory, including the limit or co-limit of an abstract causal diagram, or more generally,
+the Kan extension. We present two foundational results in universal causal inference. The first
+result, called the Universal Causality Theorem (UCT), pertains to the universality of diagrams,
+which are viewed as functors mapping both objects and relationships from an indexing category of
+abstract causal diagrams to an actual causal model whose nodes are labeled by random variables,
+and edges represent functional or probabilistic relationships. UCT states that any causal inference
+can be represented in a canonical way as the co-limit of an abstract causal diagram of representable
+objects. UCT follows from a basic result in the theory of sheaves. The second result, the Causal Reproducing
+Property (CRP), states that any causal influence of a object X on another object Y is representable
+as a natural transformation between two abstract causal diagrams. CRP follows from the Yoneda Lemma,
+one of the deepest results in category theory. The CRP property is analogous to the reproducing property
+in Reproducing Kernel Hilbert Spaces that served as the foundation for kernel methods in machine
+learning. 

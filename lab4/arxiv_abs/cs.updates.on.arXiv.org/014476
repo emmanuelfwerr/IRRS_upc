@@ -1,0 +1,20 @@
+Safety is a top priority for civil aviation. New anomaly detection methods, primarily clustering
+methods, have been developed to monitor pilot operations and detect any risks from such flight data.
+However, all existing anomaly detection methods are offlline learning - the models are trained
+once using historical data and used for all future predictions. In practice, new flight data are
+accumulated continuously and analyzed every month at airlines. Clustering such dynamically growing
+data is challenging for an offlline method because it is memory and time intensive to re-train the
+model every time new data come in. If the model is not re-trained, false alarms or missed detections
+may increase since the model cannot reflect changes in data patterns. To address this problem, we
+propose a novel incremental anomaly detection method based on Gaussian Mixture Model (GMM) to identify
+common patterns and detect outliers in flight operations from digital flight data. It is a probabilistic
+clustering model of flight operations that can incrementally update its clusters based on new data
+rather than to re-cluster all data from scratch. It trains an initial GMM model based on historical
+offlline data. Then, it continuously adapts to new incoming data points via an expectation-maximization
+(EM) algorithm. To track changes in flight operation patterns, only model parameters need to be
+saved. The proposed method was tested on three sets of simulation data and two sets of real-world
+flight data. Compared with the traditional offline GMM method, the proposed method can generate
+similar clustering results with significantly reduced processing time (57 % - 99 % time reduction
+in testing sets) and memory usage (91 % - 95 % memory usage reduction in testing sets). Preliminary
+results indicate that the incremental learning scheme is effective in dealing with dynamically
+growing data in flight data analytics. 

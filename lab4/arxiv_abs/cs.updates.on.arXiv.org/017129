@@ -1,0 +1,20 @@
+Session-based recommendation is a practical recommendation task that predicts the next item based
+on an anonymous behavior sequence, and its performance relies heavily on the transition information
+between items in the sequence. The SOTA methods in SBR employ GNN to model neighboring item transitions
+from global (i.e, other sessions) and local (i.e, current session) contexts. However, most existing
+methods treat neighbors from different sessions equally without considering that the neighbor
+items from different sessions may share similar features with the target item on different aspects
+and may have different contributions. In other words, they have not explored finer-granularity
+transition information between items in the global context, leading to sub-optimal performance.
+In this paper, we fill this gap by proposing a novel Transition Information Enhanced Disentangled
+Graph Neural Network (TIE-DGNN) model to capture finer-granular transition information between
+items and try to interpret the reason of the transition by modeling the various factors of the item.
+Specifically, we propose a position-aware global graph, which utilizes the relative position
+information to model the neighboring item transition. Then, we slice item embeddings into blocks,
+each of which represents a factor, and use disentangling module to separately learn the factor embeddings
+over the global graph. For local context, we train item embeddings by using attention mechanisms
+to capture transition information from the current session. To this end, our model considers two
+levels of transition information. Especially in global text, we not only consider finer-granularity
+transition information between items but also take user intents at factor-level into account to
+interpret the key reason for the transition. Extensive experiments on three datasets demonstrate
+the superiority of our method over the SOTA methods. 

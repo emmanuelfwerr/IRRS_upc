@@ -1,0 +1,20 @@
+Desert locust outbreaks threaten the food security of a large part of Africa and have affected the
+livelihoods of millions of people over the years. Machine learning (ML) has been demonstrated as
+an effective approach to locust distribution modelling which could assist in early warning. ML
+requires a significant amount of labelled data to train. Most publicly available labelled data
+on locusts are presence-only data, where only the sightings of locusts being present at a location
+are recorded. Therefore, prior work using ML have resorted to pseudo-absence generation methods
+as a way to circumvent this issue. The most commonly used approach is to randomly sample points in
+a region of interest while ensuring that these sampled pseudo-absence points are at least a specific
+distance away from true presence points. In this paper, we compare this random sampling approach
+to more advanced pseudo-absence generation methods, such as environmental profiling and optimal
+background extent limitation, specifically for predicting desert locust breeding grounds in
+Africa. Interestingly, we find that for the algorithms we tested, namely logistic regression,
+gradient boosting, random forests and maximum entropy, all popular in prior work, the logistic
+model performed significantly better than the more sophisticated ensemble methods, both in terms
+of prediction accuracy and F1 score. Although background extent limitation combined with random
+sampling boosted performance for ensemble methods, for LR this was not the case, and instead, a significant
+improvement was obtained when using environmental profiling. In light of this, we conclude that
+a simpler ML approach such as logistic regression combined with more advanced pseudo-absence generation,
+specifically environmental profiling, can be a sensible and effective approach to predicting
+locust breeding grounds across Africa. 

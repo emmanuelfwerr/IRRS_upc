@@ -1,0 +1,20 @@
+Considering the rapidly increasing number of academic papers, searching for and citing appropriate
+references has become a non-trial task during the wiring of papers. Recommending a handful of candidate
+papers to a manuscript before publication could ease the burden of the authors, and help the reviewers
+to check the completeness of the cited resources. Conventional approaches on citation recommendation
+generally consider recommending one ground-truth citation for a query context from an input manuscript,
+but lack of consideration on co-citation recommendations. However, a piece of context often needs
+to be supported by two or more co-citation pairs. Here, we propose a novel scientific paper modeling
+for citation recommendations, namely Multi-Positive BERT Model for Citation Recommendation
+(MP-BERT4CR), complied with a series of Multi-Positive Triplet objectives to recommend multiple
+positive citations for a query context. The proposed approach has the following advantages: First,
+the proposed multi-positive objectives are effective to recommend multiple positive candidates.
+Second, we adopt noise distributions which are built based on the historical co-citation frequencies,
+so that MP-BERT4CR is not only effective on recommending high-frequent co-citation pairs; but
+also the performances on retrieving the low-frequent ones are significantly improved. Third,
+we propose a dynamic context sampling strategy which captures the ``macro-scoped'' citing intents
+from a manuscript and empowers the citation embeddings to be content-dependent, which allow the
+algorithm to further improve the performances. Single and multiple positive recommendation experiments
+testified that MP-BERT4CR delivered significant improvements. In addition, MP-BERT4CR are also
+effective in retrieving the full list of co-citations, and historically low-frequent co-citation
+pairs compared with the prior works. 

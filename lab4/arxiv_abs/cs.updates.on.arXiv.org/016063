@@ -1,0 +1,19 @@
+Casting nonlocal problems in variational form and discretizing them with the finite element (FE)
+method facilitates the use of nonlocal vector calculus to prove well-posedeness, convergence,
+and stability of such schemes. Employing an FE method also facilitates meshing of complicated domain
+geometries and coupling with FE methods for local problems. However, nonlocal weak problems involve
+the computation of a double-integral, which is computationally expensive and presents several
+challenges. In particular, the inner integral of the variational form associated with the stiffness
+matrix is defined over the intersections of FE mesh elements with a ball of radius $\delta$, where
+$\delta$ is the range of nonlocal interaction. Identifying and parameterizing these intersections
+is a nontrivial computational geometry problem. In this work, we propose a quadrature technique
+where the inner integration is performed using quadrature points distributed over the full ball,
+without regard for how it intersects elements, and weights are computed based on the generalized
+moving least squares method. Thus, as opposed to all previously employed methods, our technique
+does not require element-by-element integration and fully circumvents the computation of element-ball
+intersections. This paper considers one- and two-dimensional implementations of piecewise linear
+continuous FE approximations, focusing on the case where the element size h and the nonlocal radius
+$\delta$ are proportional, as is typical of practical computations. When boundary conditions
+are treated carefully and the outer integral of the variational form is computed accurately, the
+proposed method is asymptotically compatible in the limit of $h \sim \delta \to 0$, featuring at
+least first-order convergence in L^2 for all dimensions, using both uniform and nonuniform grids.

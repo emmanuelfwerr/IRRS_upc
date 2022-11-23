@@ -1,0 +1,18 @@
+Much of modern learning theory has been split between two regimes: the classical offline setting,
+where data arrive independently, and the online setting, where data arrive adversarially. While
+the former model is often both computationally and statistically tractable, the latter requires
+no distributional assumptions. In an attempt to achieve the best of both worlds, previous work proposed
+the smooth online setting where each sample is drawn from an adversarially chosen distribution,
+which is smooth, i.e., it has a bounded density with respect to a fixed dominating measure. We provide
+tight bounds on the minimax regret of learning a nonparametric function class, with nearly optimal
+dependence on both the horizon and smoothness parameters. Furthermore, we provide the first oracle-efficient,
+no-regret algorithms in this setting. In particular, we propose an oracle-efficient improper
+algorithm whose regret achieves optimal dependence on the horizon and a proper algorithm requiring
+only a single oracle call per round whose regret has the optimal horizon dependence in the classification
+setting and is sublinear in general. Both algorithms have exponentially worse dependence on the
+smoothness parameter of the adversary than the minimax rate. We then prove a lower bound on the oracle
+complexity of any proper learning algorithm, which matches the oracle-efficient upper bounds
+up to a polynomial factor, thus demonstrating the existence of a statistical-computational gap
+in smooth online learning. Finally, we apply our results to the contextual bandit setting to show
+that if a function class is learnable in the classical setting, then there is an oracle-efficient,
+no-regret algorithm for contextual bandits in the case that contexts arrive in a smooth manner.

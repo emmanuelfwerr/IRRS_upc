@@ -1,0 +1,19 @@
+In real life, acoustic scenes and audio events are naturally correlated. Humans instinctively
+rely on fine-grained audio events as well as the overall sound characteristics to distinguish diverse
+acoustic scenes. Yet, most previous approaches treat acoustic scene classification (ASC) and
+audio event classification (AEC) as two independent tasks. A few studies on scene and event joint
+classification either use synthetic audio datasets that hardly match the real world, or simply
+use the multi-task framework to perform two tasks at the same time. Neither of these two ways makes
+full use of the implicit and inherent relation between fine-grained events and coarse-grained
+scenes. To this end, this paper proposes a relation-guided ASC (RGASC) model to further exploit
+and coordinate the scene-event relation for the mutual benefit of scene and event recognition.
+The TUT Urban Acoustic Scenes 2018 dataset (TUT2018) is annotated with pseudo labels of events by
+a simple and efficient audio-related pre-trained model PANN, which is one of the state-of-the-art
+AEC models. Then, a prior scene-event relation matrix is defined as the average probability of the
+presence of each event type in each scene class. Finally, the two-tower RGASC model is jointly trained
+on the real-life dataset TUT2018 for both scene and event classification. The following results
+are achieved. 1) RGASC effectively coordinates the true information of coarse-grained scenes
+and the pseudo information of fine-grained events. 2) The event embeddings learned from pseudo
+labels under the guidance of prior scene-event relations help reduce the confusion between similar
+acoustic scenes. 3) Compared with other (non-ensemble) methods, RGASC improves the scene classification
+accuracy on the real-life dataset. 

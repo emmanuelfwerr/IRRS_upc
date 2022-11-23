@@ -1,0 +1,19 @@
+A heapable sequence is a sequence of numbers that can be arranged in a "min-heap data structure".
+Finding a longest heapable subsequence of a given sequence was proposed by Byers, Heeringa, Mitzenmacher,
+and Zervas (ANALCO 2011) as a generalization of the well-studied longest increasing subsequence
+problem and its complexity still remains open. An equivalent formulation of the longest heapable
+subsequence problem is that of finding a maximum-sized binary tree in a given permutation directed
+acyclic graph (permutation DAG). In this work, we study parameterized algorithms for both longest
+heapable subsequence as well as maximum-sized binary tree. We show the following results: 1. The
+longest heapable subsequence problem can be solved in $k^{O(\log{k})}n$ time, where $k$ is the
+number of distinct values in the input sequence. We introduce the "alphabet size" as a new parameter
+in the study of computational problems in permutation DAGs. Our result on longest heapable subsequence
+implies that the maximum-sized binary tree problem in a given permutation DAG is fixed-parameter
+tractable when parameterized by the alphabet size. 2. We show that the alphabet size with respect
+to a fixed topological ordering can be computed in polynomial time, admits a min-max relation, and
+has a polyhedral description. 3. We design a fixed-parameter algorithm with run-time $w^{O(w)}n$
+for the maximum-sized binary tree problem in undirected graphs when parameterized by treewidth
+$w$. Our results make progress towards understanding the complexity of the longest heapable subsequence
+and maximum-sized binary tree in permutation DAGs from the perspective of parameterized algorithms.
+We believe that the parameter alphabet size that we introduce is likely to be useful in the context
+of optimization problems defined over permutation DAGs. 

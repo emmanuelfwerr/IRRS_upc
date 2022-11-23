@@ -1,0 +1,20 @@
+Data-driven approaches for medium-range weather forecasting are recently shown extraordinarily
+promising for ensemble forecasting for their fast inference speed compared to traditional numerical
+weather prediction (NWP) models, but their forecast accuracy can hardly match the state-of-the-art
+operational ECMWF Integrated Forecasting System (IFS) model. Previous data-driven attempts
+achieve ensemble forecast using some simple perturbation methods, like initial condition perturbation
+and Monte Carlo dropout. However, they mostly suffer unsatisfactory ensemble performance, which
+is arguably attributed to the sub-optimal ways of applying perturbation. We propose a Swin Transformer-based
+Variational Recurrent Neural Network (SwinVRNN), which is a stochastic weather forecasting model
+combining a SwinRNN predictor with a perturbation module. SwinRNN is designed as a Swin Transformer-based
+recurrent neural network, which predicts future states deterministically. Furthermore, to model
+the stochasticity in prediction, we design a perturbation module following the Variational Auto-Encoder
+paradigm to learn multivariate Gaussian distributions of a time-variant stochastic latent variable
+from data. Ensemble forecasting can be easily achieved by perturbing the model features leveraging
+noise sampled from the learned distribution. We also compare four categories of perturbation methods
+for ensemble forecasting, i.e. fixed distribution perturbation, learned distribution perturbation,
+MC dropout, and multi model ensemble. Comparisons on WeatherBench dataset show the learned distribution
+perturbation method using our SwinVRNN model achieves superior forecast accuracy and reasonable
+ensemble spread due to joint optimization of the two targets. More notably, SwinVRNN surpasses
+operational IFS on surface variables of 2-m temperature and 6-hourly total precipitation at all
+lead times up to five days. 

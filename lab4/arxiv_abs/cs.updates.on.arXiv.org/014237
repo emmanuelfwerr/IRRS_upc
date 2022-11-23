@@ -1,0 +1,20 @@
+The impacts of channel estimation errors, inter-cell interference, phase adjustment cost, and
+computation cost on an intelligent reflecting surface (IRS)-assisted system are severe in practice
+but have been ignored for simplicity in most existing works. In this paper, we investigate a multi-antenna
+base station (BS) serving a single-antenna user with the help of a multi-element IRS in a multi-cell
+network with inter-cell interference. We consider imperfect channel state information (CSI)
+at the BS, i.e., imperfect CSIT, and focus on the robust optimization of the BS's instantaneous CSI-adaptive
+beamforming and the IRS's quasi-static phase shifts in two scenarios. In the scenario of coding
+over many slots, we formulate a robust optimization problem to maximize the user's ergodic rate.
+In the scenario of coding within each slot, we formulate a robust optimization problem to maximize
+the user's average goodput under the successful transmission probability constraints. The robust
+optimization problems are challenging two-timescale stochastic non-convex problems. In both
+scenarios, we obtain closed-form robust beamforming designs for any given phase shifts and more
+tractable stochastic non-convex approximate problems only for the phase shifts. Besides, we propose
+an iterative algorithm to obtain a Karush-Kuhn-Tucker (KKT) point of each of the stochastic problems
+for the phase shifts. It is worth noting that the proposed methods offer closed-form robust instantaneous
+CSI-adaptive beamforming designs which can promptly adapt to rapid CSI changes over slots and robust
+quasi-static phase shift designs of low computation and phase adjustment costs in the presence
+of imperfect CSIT and inter-cell interference. Numerical results further demonstrate the notable
+gains of the proposed robust joint designs over existing ones and reveal the practical values of
+the proposed solutions. 

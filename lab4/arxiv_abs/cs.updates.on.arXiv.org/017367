@@ -1,0 +1,19 @@
+In-utero fetal MRI is emerging as an important tool in the diagnosis and analysis of the developing
+human brain. Automatic segmentation of the developing fetal brain is a vital step in the quantitative
+analysis of prenatal neurodevelopment both in the research and clinical context. However, manual
+segmentation of cerebral structures is time-consuming and prone to error and inter-observer variability.
+Therefore, we organized the Fetal Tissue Annotation (FeTA) Challenge in 2021 in order to encourage
+the development of automatic segmentation algorithms on an international level. The challenge
+utilized FeTA Dataset, an open dataset of fetal brain MRI reconstructions segmented into seven
+different tissues (external cerebrospinal fluid, grey matter, white matter, ventricles, cerebellum,
+brainstem, deep grey matter). 20 international teams participated in this challenge, submitting
+a total of 21 algorithms for evaluation. In this paper, we provide a detailed analysis of the results
+from both a technical and clinical perspective. All participants relied on deep learning methods,
+mainly U-Nets, with some variability present in the network architecture, optimization, and image
+pre- and post-processing. The majority of teams used existing medical imaging deep learning frameworks.
+The main differences between the submissions were the fine tuning done during training, and the
+specific pre- and post-processing steps performed. The challenge results showed that almost all
+submissions performed similarly. Four of the top five teams used ensemble learning methods. However,
+one team's algorithm performed significantly superior to the other submissions, and consisted
+of an asymmetrical U-Net network architecture. This paper provides a first of its kind benchmark
+for future automatic multi-tissue segmentation algorithms for the developing human brain in utero.

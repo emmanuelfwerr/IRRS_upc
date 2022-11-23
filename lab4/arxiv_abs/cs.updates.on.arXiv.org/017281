@@ -1,0 +1,18 @@
+In recent years, neural networks and especially deep architectures have received substantial
+attention for EEG signal analysis in the field of brain-computer interfaces (BCIs). In this ongoing
+research area, the end-to-end models are more favoured than traditional approaches requiring
+signal transformation pre-classification. They can eliminate the need for prior information
+from experts and the extraction of handcrafted features. However, although several deep learning
+algorithms have been already proposed in the literature, achieving high accuracies for classifying
+motor movements or mental tasks, they often face a lack of interpretability and therefore are not
+quite favoured by the neuroscience community. The reasons behind this issue can be the high number
+of parameters and the sensitivity of deep neural networks to capture tiny yet unrelated discriminative
+features. We propose an end-to-end deep learning architecture called EEG-ITNet and a more comprehensible
+method to visualise the network learned patterns. Using inception modules and causal convolutions
+with dilation, our model can extract rich spectral, spatial, and temporal information from multi-channel
+EEG signals with less complexity (in terms of the number of trainable parameters) than other existing
+end-to-end architectures, such as EEG-Inception and EEG-TCNet. By an exhaustive evaluation on
+dataset 2a from BCI competition IV and OpenBMI motor imagery dataset, EEG-ITNet shows up to 5.9\%
+improvement in the classification accuracy in different scenarios with statistical significance
+compared to its competitors. We also comprehensively explain and support the validity of network
+illustration from a neuroscientific perspective. We have also made our code open at https://github.com/AbbasSalami/EEG-ITNet

@@ -1,0 +1,18 @@
+Cities around the world vary in terms of their transportation networks and travel demand patterns;
+these variations affect the viability of shared mobility services. This study proposes metrics
+to quantify the shareability of person-trips in a city, as a function of two inputs--the road network
+structure and origin-destination (OD) travel demand. The study first conceptualizes a fundamental
+shareability unit, 'flow overlap'. Flow overlap denotes, for a person-trip traversing a given
+path, the weighted (by link distance) average number of other trips sharing the links along the original
+person's path. The study extends this concept to the network level and formulates the Maximum Network
+Flow Overlap Problem (MNFLOP) to assign all OD trips to paths that maximize network-wide flow overlap.
+The study utilizes the MNFLOP output to calculate metrics of shareability at various levels of aggregation:
+person-trip level, OD level, origin or destination level, network level, and link level. The study
+applies the MNFLOP and associated shareability metrics to different OD demand scenarios in the
+Sioux Falls network. The computational results verify that (i) MNFLOP assigns person-trips to
+paths such that flow overlaps significantly increase relative to shortest path assignment, (ii)
+MNFLOP and its associated shareability metrics can meaningfully differentiate between different
+OD trip matrices in terms of shareability, and (iii) an MNFLOP-based metric can quantify demand
+dispersion--a metric of the directionality of demand--in addition to the magnitude of demand,
+for trips originating or terminating from a single node in the network. The paper also includes an
+extensive discussion of potential future uses of the MNFLOP and its associated shareability metrics.

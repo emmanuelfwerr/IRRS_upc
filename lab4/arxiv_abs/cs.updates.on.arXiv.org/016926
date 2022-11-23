@@ -1,0 +1,20 @@
+Unified Virtual Memory (UVM) relieves the developers from the onus of maintaining complex data
+structures and explicit data migration by enabling on-demand data movement between CPU memory
+and GPU memory. However, on-demand paging soon becomes a performance bottleneck of UVM due to the
+high latency caused by page table walks and data migration over interconnect. Prefetching is considered
+a promising solution to this problem given its ability to leverage the locality of program memory
+access patterns. However, existing locality-based prefetching schemes can not handle all the
+situations. %Data structures like arrays tend to be stored in contiguous blocks, and accessed repeatedly.
+An ideal prefetcher should not only look at narrow regions of the requested address space but also
+capture global context to deliver a good prediction of the memory access pattern. This paper proposes
+a novel approach for page prefetching for UVM through deep learning. We first show that a powerful
+Transformer learning model can provide high accuracy for UVM page prefetching. We then perform
+analysis to interpret this Transformer model and derive several insights that allow us to design
+a simpler model to match the unconstrained model's accuracy with orders of magnitude lower cost.
+We evaluate this simplified model on a set of 11 memory-intensive benchmarks from popular benchmark
+suites. Our solution outperforms the state-of-the-art UVM framework, improving the performance
+by 10.89%, improving the device memory page hit rate by 16.98% (89.02% vs. 76.10% for prior art),
+and reducing the CPU-GPU interconnect traffic by 11.05%. According to our proposed unified metric,
+which combines the accuracy, coverage, and page hit rate, our solution is approaching the ideal
+prefetching scheme more than the state-of-the-art design (0.90 vs. 0.85, with the perfect prefetcher
+of 1.0). 

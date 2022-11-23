@@ -1,0 +1,20 @@
+Manually annotating complex scene point cloud datasets is both costly and error-prone. To reduce
+the reliance on labeled data, a new model called SnapshotNet is proposed as a self-supervised feature
+learning approach, which directly works on the unlabeled point cloud data of a complex 3D scene.
+The SnapshotNet pipeline includes three stages. In the snapshot capturing stage, snapshots, which
+are defined as local collections of points, are sampled from the point cloud scene. A snapshot could
+be a view of a local 3D scan directly captured from the real scene, or a virtual view of such from a large
+3D point cloud dataset. Snapshots could also be sampled at different sampling rates or fields of
+view (FOVs), thus multi-FOV snapshots, to capture scale information from the scene. In the feature
+learning stage, a new pre-text task called multi-FOV contrasting is proposed to recognize whether
+two snapshots are from the same object or not, within the same FOV or across different FOVs. Snapshots
+go through two self-supervised learning steps: the contrastive learning step with both part and
+scale contrasting, followed by a snapshot clustering step to extract higher level semantic features.
+Then a weakly-supervised segmentation stage is implemented by first training a standard SVM classifier
+on the learned features with a small fraction of labeled snapshots. The trained SVM is used to predict
+labels for input snapshots and predicted labels are converted into point-wise label assignments
+for semantic segmentation of the entire scene using a voting procedure. The experiments are conducted
+on the Semantic3D dataset and the results have shown that the proposed method is capable of learning
+effective features from snapshots of complex scene data without any labels. Moreover, the proposed
+method has shown advantages when comparing to the SOA method on weakly-supervised point cloud semantic
+segmentation. 

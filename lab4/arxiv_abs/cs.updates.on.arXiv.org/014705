@@ -1,0 +1,20 @@
+Edge computing hosts applications close to the end users and enables low-latency real-time applications.
+Modern applications inturn have adopted the microservices architecture which composes applications
+as loosely coupled smaller components, or services. This complements edge computing infrastructure
+that are often resource constrained and may not handle monolithic applications. Instead, edge
+servers can independently deploy application service components, although at the cost of communication
+overheads. Consistently meeting application service level objectives while also optimizing
+application deployment (placement and migration of services) cost and communication overheads
+in mobile edge cloud environment is non-trivial. In this paper we propose and evaluate three dynamic
+placement strategies, two heuristic (greedy approximation based on set cover, and integer programming
+based optimization) and one learning-based algorithm. Their goal is to satisfy the application
+constraints, minimize infrastructure deployment cost, while ensuring availability of services
+to all clients and User Equipment (UE) in the network coverage area. The algorithms can be extended
+to any network topology and microservice based edge computing applications. For the experiments,
+we use the drone swarm navigation as a representative application for edge computing use cases.
+Since access to real-world physical testbed for such application is difficult, we demonstrate
+the efficacy of our algorithms as a simulation. We also contrast these algorithms with respect to
+placement quality, utilization of clusters, and level of determinism. Our evaluation not only
+shows that the learning-based algorithm provides solutions of better quality; it also provides
+interesting conclusions regarding when the (more traditional) heuristic algorithms are actually
+better suited. 

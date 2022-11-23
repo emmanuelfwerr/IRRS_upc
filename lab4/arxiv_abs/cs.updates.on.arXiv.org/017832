@@ -1,0 +1,18 @@
+Deep neural networks (DNNs) are vulnerable to adversarial noises. By adding adversarial noises
+to training samples, adversarial training can improve the model's robustness against adversarial
+noises. However, adversarial training samples with excessive noises can harm standard accuracy,
+which may be unacceptable for many medical image analysis applications. This issue has been termed
+the trade-off between standard accuracy and adversarial robustness. In this paper, we hypothesize
+that this issue may be alleviated if the adversarial samples for training are placed right on the
+decision boundaries. Based on this hypothesis, we design an adaptive adversarial training method,
+named IMA. For each individual training sample, IMA makes a sample-wise estimation of the upper
+bound of the adversarial perturbation. In the training process, each of the sample-wise adversarial
+perturbations is gradually increased to match the margin. Once an equilibrium state is reached,
+the adversarial perturbations will stop increasing. IMA is evaluated on publicly available datasets
+under two popular adversarial attacks, PGD and IFGSM. The results show that: (1) IMA significantly
+improves adversarial robustness of DNN classifiers, which achieves the state-of-the-art performance;
+(2) IMA has a minimal reduction in clean accuracy among all competing defense methods; (3) IMA can
+be applied to pretrained models to reduce time cost; (4) IMA can be applied to the state-of-the-art
+medical image segmentation networks, with outstanding performance. We hope our work may help to
+lift the trade-off between adversarial robustness and clean accuracy and facilitate the development
+of robust applications in the medical field. The source code will be released when this paper is published.

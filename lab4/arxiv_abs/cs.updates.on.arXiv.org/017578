@@ -1,0 +1,20 @@
+Eye-tracking technology is an integral component of new display devices such as virtual and augmented
+reality headsets. Applications of gaze information range from new interaction techniques exploiting
+eye patterns to gaze-contingent digital content creation. However, system latency is still a significant
+issue in many of these applications because it breaks the synchronization between the current and
+measured gaze positions. Consequently, it may lead to unwanted visual artifacts and degradation
+of user experience. In this work, we focus on foveated rendering applications where the quality
+of an image is reduced towards the periphery for computational savings. In foveated rendering,
+the presence of latency leads to delayed updates to the rendered frame, making the quality degradation
+visible to the user. To address this issue and to combat system latency, recent work proposes to use
+saccade landing position prediction to extrapolate the gaze information from delayed eye-tracking
+samples. While the benefits of such a strategy have already been demonstrated, the solutions range
+from simple and efficient ones, which make several assumptions about the saccadic eye movements,
+to more complex and costly ones, which use machine learning techniques. Yet, it is unclear to what
+extent the prediction can benefit from accounting for additional factors. \revcorr{This paper
+presents a series of experiments investigating the importance of different factors for saccades
+prediction in common virtual and augmented reality applications. In particular, we investigate
+the effects of saccade orientation in 3D space and smooth pursuit eye-motion (SPEM) and how their
+influence compares to the variability across users. We also present a simple yet efficient correction
+method that adapts the existing saccade prediction methods to handle these factors without performing
+extensive data collection. 

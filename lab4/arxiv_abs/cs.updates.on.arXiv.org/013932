@@ -1,0 +1,19 @@
+Fundamental limits and optimal mechanisms of privacy-preserving data release that aim to minimize
+the privacy leakage under utility constraints of non-specific tasks are investigated. While the
+private feature is typically determined and known by the users who release their data, the specific
+task in which the released data is utilized is usually unknown. To address the lack of information
+of the specific task, utility constraints laid on a set of possible tasks are considered. The mechanism
+protects the privacy while satisfying utility of all possible tasks in the set. First, the single-letter
+characterization of the rate-leakage-distortion region is derived. Characterization of the
+minimum leakage under log-loss distortion and unconstrained released rate turns out to be a non-convex
+problem. Second, focusing on the case where the raw data consists of independent components, we
+show that the above problem can be decomposed into multiple parallel privacy funnel (PF) problems
+with different weightings. We explicitly derive the solution to each PF problem when the private
+feature is a deterministic function of a data component. The solution is characterized by a leakage-free
+threshold, and the minimum leakage is zero while the utility constraint is below the threshold.
+Finally, we show that the optimal weighting of each PF problem can be found by solving a linear program
+(LP). A sufficient released rate to achieve the minimum leakage is also derived. Numerical results
+are shown to illustrate the robustness of our approach against the task non-specificity. Our results
+can also be extended to the differential privacy metric. We show that the problem with multiple constraints
+can also be decomposed into multiple single-constraint problems. However, the solution to each
+single-constraint problem remains open and can only be solved by numerical methods. 

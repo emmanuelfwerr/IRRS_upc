@@ -1,0 +1,20 @@
+Matching markets involve heterogeneous agents (typically from two parties) who are paired for
+mutual benefit. During the last decade, matching markets have emerged and grown rapidly through
+the medium of the Internet. They have evolved into a new format, called Online Matching Markets (OMMs),
+with examples ranging from crowdsourcing to online recommendations to ridesharing. There are
+two features distinguishing OMMs from traditional matching markets. One is the dynamic arrival
+of one side of the market: we refer to these as online agents while the rest are offline agents. Examples
+of online and offline agents include keywords (online) and sponsors (offline) in Google Advertising;
+workers (online) and tasks (offline) in Amazon Mechanical Turk (AMT); riders (online) and drivers
+(offline when restricted to a short time window) in ridesharing. The second distinguishing feature
+of OMMs is the real-time decision-making element. However, studies have shown that the algorithms
+making decisions in these OMMs leave disparities in the match rates of offline agents. For example,
+tasks in neighborhoods of low socioeconomic status rarely get matched to gig workers, and drivers
+of certain races/genders get discriminated against in matchmaking. In this paper, we propose online
+matching algorithms which optimize for either individual or group-level fairness among offline
+agents in OMMs. We present two linear-programming (LP) based sampling algorithms, which achieve
+online competitive ratios at least 0.725 for individual fairness maximization (IFM) and 0.719
+for group fairness maximization (GFM), respectively. We conduct extensive numerical experiments
+and results show that our boosted version of sampling algorithms are not only conceptually easy
+to implement but also highly effective in practical instances of fairness-maximization-related
+models. 

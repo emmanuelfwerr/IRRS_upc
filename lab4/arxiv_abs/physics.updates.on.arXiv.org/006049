@@ -1,0 +1,20 @@
+MRI scan time reduction is commonly achieved by Parallel Imaging methods, typically based on uniform
+undersampling of the inverse image space (a.k.a. k-space) and simultaneous signal reception with
+multiple receiver coils. The GRAPPA method interpolates missing k-space signals by linear combination
+of adjacent, acquired signals across all coils, and can be described by a convolution in k-space.
+Recently, a more generalized method called RAKI was introduced. RAKI is a deep-learning method
+that generalizes GRAPPA with additional convolution layers, on which a non-linear activation
+function is applied. This enables non-linear estimation of missing signals by convolutional neural
+networks. In analogy to GRAPPA, the convolution kernels in RAKI are trained using scan-specific
+training samples obtained from auto-calibration-signals (ACS). RAKI provides superior reconstruction
+quality compared to GRAPPA, however, often requires much more ACS due to its increased number of
+unknown parameters. In order to overcome this limitation, this study investigates the influence
+of training data on the reconstruction quality for standard 2D imaging, with particular focus on
+its amount and contrast information. Furthermore, an iterative k-space interpolation approach
+(iRAKI) is evaluated, which includes training data augmentation via an initial GRAPPA reconstruction,
+and refinement of convolution filters by iterative training. Using only 18, 20 and 25 ACS lines (8%),
+iRAKI outperforms RAKI by suppressing residual artefacts occurring at accelerations factors
+R=4 and R=5, and yields strong noise suppression in comparison to GRAPPA, underlined by quantitative
+quality metrics. Combination with a phase-constraint yields further improvement. Additionally,
+iRAKI shows better performance than GRAPPA and RAKI in case of pre-scan calibration and strongly
+varying contrast between training- and undersampled data. 

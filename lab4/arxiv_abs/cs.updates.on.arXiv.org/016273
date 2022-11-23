@@ -1,0 +1,19 @@
+Cooperative learning, that enables two or more data owners to jointly train a model, has been widely
+adopted to solve the problem of insufficient training data in machine learning. Nowadays, there
+is an urgent need for institutions and organizations to train a model cooperatively while keeping
+each other's data privately. To address the issue of privacy-preserving in collaborative learning,
+secure outsourced computation and federated learning are two typical methods. Nevertheless,
+there are many drawbacks for these two methods when they are leveraged in cooperative learning.
+For secure outsourced computation, semi-honest servers need to be introduced. Once the outsourced
+servers collude or perform other active attacks, the privacy of data will be disclosed. For federated
+learning, it is difficult to apply to the scenarios where vertically partitioned data are distributed
+over multiple parties. In this work, we propose a multi-party mixed protocol framework, ABG$^n$,
+which effectively implements arbitrary conversion between Arithmetic sharing (A), Boolean sharing
+(B) and Garbled-Circuits sharing (G) for $n$-party scenarios. Based on ABG$^n$, we design a privacy-preserving
+multi-party cooperative learning system, which allows different data owners to cooperate in machine
+learning in terms of data security and privacy-preserving. Additionally, we design specific privacy-preserving
+computation protocols for some typical machine learning methods such as logistic regression and
+neural networks. Compared with previous work, the proposed method has a wider scope of application
+and does not need to rely on additional servers. Finally, we evaluate the performance of ABG$^n$
+on the local setting and on the public cloud setting. The experiments indicate that ABG$^n$ has excellent
+performance, especially in the network environment with low latency. 

@@ -1,0 +1,19 @@
+We study the matching problem of regular tree languages, that is, "$\exists \sigma:\sigma(L)\subseteq
+R$?" where $L,R$ are regular tree languages over the union of finite ranked alphabets $\Sigma$ and
+$\mathcal{X}$ where $\mathcal{X}$ is an alphabet of variables and $\sigma$ is a substitution such
+that $\sigma(x)$ is a set of trees in $T(\Sigma\cup H)\setminus H$ for all $x\in \mathcal{X}$. Here,
+$H$ denotes a set of "holes" which are used to define a "sorted" concatenation of trees. Conway studied
+this problem in the special case for languages of finite words in his classical textbook "Regular
+algebra and finite machines" published in 1971. He showed that if $L$ and $R$ are regular, then the
+problem "$\exists \sigma \forall x\in \mathcal{X}: \sigma(x)\neq \emptyset\wedge \sigma(L)\subseteq
+R$?" is decidable. Moreover, there are only finitely many maximal solutions, the maximal solutions
+are regular substitutions, and they are effectively computable. We extend Conway's results when
+$L,R$ are regular languages of finite and infinite trees, and language substitution is applied
+inside-out, in the sense of Engelfriet and Schmidt (1977/78). More precisely, we show that if $L\subseteq
+T(\Sigma\cup\mathcal{X})$ and $R\subseteq T(\Sigma)$ are regular tree languages over finite
+or infinite trees, then the problem "$\exists \sigma \forall x\in \mathcal{X}: \sigma(x)\neq
+\emptyset\wedge \sigma_{\mathrm{io}}(L)\subseteq R$?" is decidable. Here, the subscript "$\mathrm{io}$"
+in $\sigma_{\mathrm{io}}(L)$ refers to "inside-out". Moreover, there are only finitely many
+maximal solutions $\sigma$, the maximal solutions are regular substitutions and effectively
+computable. The corresponding question for the outside-in extension $\sigma_{\mathrm{oi}}$
+remains open, even in the restricted setting of finite trees. 

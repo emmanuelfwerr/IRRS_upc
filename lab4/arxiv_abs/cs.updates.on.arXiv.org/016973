@@ -1,0 +1,19 @@
+Deep Learning (DL) algorithms are becoming increasingly popular for the reconstruction of high-resolution
+turbulent flows (aka super-resolution). However, current DL approaches perform spatially uniform
+super-resolution - a key performance limiter for scalability of DL-based surrogates for Computational
+Fluid Dynamics (CFD). To address the above challenge, we introduce NUNet, a deep learning-based
+adaptive mesh refinement (AMR) framework for non-uniform super-resolution of turbulent flows.
+NUNet divides the input low-resolution flow field into patches, scores each patch, and predicts
+their target resolution. As a result, it outputs a spatially non-uniform flow field, adaptively
+refining regions of the fluid domain to achieve the target accuracy. We train NUNet with Reynolds-Averaged
+Navier-Stokes (RANS) solutions from three different canonical flows, namely turbulent channel
+flow, flat plate, and flow around ellipses. NUNet shows remarkable discerning properties, refining
+areas with complex flow features, such as near-wall domains and the wake region in flow around solid
+bodies, while leaving areas with smooth variations (such as the freestream) in the low-precision
+range. Hence, NUNet demonstrates an excellent qualitative and quantitative alignment with the
+traditional OpenFOAM AMR solver. Moreover, it reaches the same convergence guarantees as the AMR
+solver while accelerating it by 3.2-5.5x, including unseen-during-training geometries and boundary
+conditions, demonstrating its generalization capacities. Due to NUNet's ability to super-resolve
+only regions of interest, it predicts the same target 1024x1024 spatial resolution 7-28.5x faster
+than state-of-the-art DL methods and reduces the memory usage by 4.4-7.65x, showcasing improved
+scalability. 

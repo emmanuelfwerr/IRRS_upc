@@ -1,0 +1,20 @@
+DeepFakes are raising significant social concerns. Although various DeepFake detectors have
+been developed as forensic countermeasures, these detectors are still vulnerable to attacks.
+Recently, a few attacks, principally adversarial attacks, have succeeded in cloaking DeepFake
+images to evade detection. However, these attacks have typical detector-specific designs, which
+require prior knowledge about the detector, leading to poor transferability. Moreover, these
+attacks only consider simple security scenarios. Less is known about how effective they are in high-level
+scenarios where either the detectors or the attacker's knowledge varies. In this paper, we solve
+the above challenges with presenting a novel detector-agnostic trace removal attack for DeepFake
+anti-forensics. Instead of investigating the detector side, our attack looks into the original
+DeepFake creation pipeline, attempting to remove all detectable natural DeepFake traces to render
+the fake images more "authentic". To implement this attack, first, we perform a DeepFake trace discovery,
+identifying three discernible traces. Then a trace removal network (TR-Net) is proposed based
+on an adversarial learning framework involving one generator and multiple discriminators. Each
+discriminator is responsible for one individual trace representation to avoid cross-trace interference.
+These discriminators are arranged in parallel, which prompts the generator to remove various traces
+simultaneously. To evaluate the attack efficacy, we crafted heterogeneous security scenarios
+where the detectors were embedded with different levels of defense and the attackers' background
+knowledge of data varies. The experimental results show that the proposed attack can significantly
+compromise the detection accuracy of six state-of-the-art DeepFake detectors while causing only
+a negligible loss in visual quality to the original DeepFake samples. 

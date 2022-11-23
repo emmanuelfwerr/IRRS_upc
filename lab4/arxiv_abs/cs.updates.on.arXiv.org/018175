@@ -1,0 +1,19 @@
+A mobile robot's precise location information is critical for navigation and task processing,
+especially for a multi-robot system (MRS) to collaborate and collect valuable data from the field.
+However, a robot in situations where it does not have access to GPS signals, such as in an environmentally
+controlled, indoor, or underground environment, finds it difficult to locate using its sensor
+alone. As a result, robots sharing their local information to improve their localization estimates
+benefit the entire MRS team. There have been several attempts to model-based multi-robot localization
+using Radio Signal Strength Indicator (RSSI) as a source to calculate bearing information. We also
+utilize the RSSI for wireless networks generated through the communication of multiple robots
+in a system and aim to localize agents with high accuracy and efficiency in a dynamic environment
+for shared information fusion to refine the localization estimation. This estimator structure
+reduces one source of measurement correlation while appropriately incorporating others. This
+paper proposes a decentralized Multi-robot Synergistic Localization System (MRSL) for a dense
+and dynamic environment. Robots update their position estimation whenever new information receives
+from their neighbors. When the system senses the presence of other robots in the region, it exchanges
+position estimates and merges the received data to improve its localization accuracy. Our approach
+uses Bayesian rule-based integration, which has shown to be computationally efficient and applicable
+to asynchronous robotics communication. We have performed extensive simulation experiments
+with a varying number of robots to analyze the algorithm. MRSL's localization accuracy with RSSI
+outperformed other algorithms from the literature, showing a significant promise for future development.

@@ -1,0 +1,19 @@
+Deep learning has recently been widely applied to many applications across different domains,
+e.g., image classification and audio recognition. However, the quality of Deep Neural Networks
+(DNNs) still raises concerns in the practical operational environment, which calls for systematic
+testing, especially in safety-critical scenarios. Inspired by software testing, a number of structural
+coverage criteria are designed and proposed to measure the test adequacy of DNNs. However, due to
+the blackbox nature of DNN, the existing structural coverage criteria are difficult to interpret,
+making it hard to understand the underlying principles of these criteria. The relationship between
+the structural coverage and the decision logic of DNNs is unknown. Moreover, recent studies have
+further revealed the non-existence of correlation between the structural coverage and DNN defect
+detection, which further posts concerns on what a suitable DNN testing criterion should be. In this
+paper, we propose the interpretable coverage criteria through constructing the decision structure
+of a DNN. Mirroring the control flow graph of the traditional program, we first extract a decision
+graph from a DNN based on its interpretation, where a path of the decision graph represents a decision
+logic of the DNN. Based on the control flow and data flow of the decision graph, we propose two variants
+of path coverage to measure the adequacy of the test cases in exercising the decision logic. The higher
+the path coverage, the more diverse decision logic the DNN is expected to be explored. Our large-scale
+evaluation results demonstrate that: the path in the decision graph is effective in characterizing
+the decision of the DNN, and the proposed coverage criteria are also sensitive with errors including
+natural errors and adversarial examples, and strongly correlated with the output impartiality.

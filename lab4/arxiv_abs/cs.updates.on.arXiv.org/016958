@@ -1,0 +1,20 @@
+The fight between discriminative versus generative goes deep, in both the study of artificial and
+natural intelligence. In our view, both camps have complementary value, so, we sought to synergistic
+combine them. Here, we propose a methodology to convert deep discriminative networks to kernel
+generative networks. We leveraged the fact that deep models, including both random forests and
+deep networks, learn internal representations which are unions of polytopes with affine activation
+functions to conceptualize them both as generalized partitioning rules. From that perspective,
+we used foundational results on the relationship between histogram rules and kernel density estimators
+to obtain class conditional kernel density estimators from the deep models. We then studied the
+trade-offs we observed from implementing this strategy in low-dimensional settings, both theoretically
+and empirically, as a first step towards understanding. Theoretically, we show conditions under
+which our generative models are more efficient than the corresponding discriminative approaches.
+Empirically, when sample sizes are relatively high, the discriminative models tend to perform
+as well or better on discriminative metrics, such as classification rates and posterior calibration.
+However, when sample sizes are relatively low, the generative models outperform the discriminative
+ones even on discriminative metrics. Moreover, the generative ones can also sample from the distribution,
+obtain smoother posteriors, and extrapolate beyond the convex hull of the training data to handle
+OOD inputs more reasonably. Via human experiments we illustrate that our kernel generative networks
+(Kragen) behave more like humans than deep discriminative networks. We believe this approach may
+be an important step in unifying the thinking and approaches across the discriminative and generative
+divide. 

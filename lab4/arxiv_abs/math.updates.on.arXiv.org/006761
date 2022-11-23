@@ -1,0 +1,19 @@
+The performance of Emergency Departments (EDs) is of great importance for any health care system,
+as they serve as the entry point for many patients. However, among other factors, the variability
+of patient acuity levels and corresponding treatment requirements of patients visiting EDs imposes
+significant challenges on decision makers. Balancing waiting times of patients to be first seen
+by a physician with the overall length of stay over all acuity levels is crucial to maintain an acceptable
+level of operational performance for all patients. To address those requirements when assigning
+idle resources to patients, several methods have been proposed in the past, including the Accumulated
+Priority Queuing (APQ) method. The APQ method linearly assigns priority scores to patients with
+respect to their time in the system and acuity level. Hence, selection decisions are based on a simple
+system representation that is used as an input for a selection function. This paper investigates
+the potential of an Machine Learning (ML) based patient selection method. It assumes that for a large
+set of training data, including a multitude of different system states, (near) optimal assignments
+can be computed by a (heuristic) optimizer, with respect to a chosen performance metric, and aims
+to imitate such optimal behavior when applied to new situations. Thereby, it incorporates a comprehensive
+state representation of the system and a complex non-linear selection function. The motivation
+for the proposed approach is that high quality selection decisions may depend on a variety of factors
+describing the current state of the ED, not limited to waiting times, which can be captured and utilized
+by the ML model. Results show that the proposed method significantly outperforms the APQ method
+for a majority of evaluated settings 

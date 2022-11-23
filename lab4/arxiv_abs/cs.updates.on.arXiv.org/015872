@@ -1,0 +1,19 @@
+Scene flow estimation is the task to predict the point-wise or pixel-wise 3D displacement vector
+between two consecutive frames of point clouds or images, which has important application in fields
+such as service robots and autonomous driving. Although many previous works have explored greatly
+on scene flow estimation based on point clouds, there are two problems that have not been noticed
+or well solved before: 1) Points of adjacent frames in repetitive patterns may be wrongly associated
+due to similar spatial structure in their neighbourhoods; 2) Scene flow between adjacent frames
+of point clouds with long-distance movement may be inaccurately estimated. To solve the first problem,
+a novel context-aware set convolution layer is proposed in this paper to exploit contextual structure
+information of Euclidean space and learn soft aggregation weights for local point features. This
+design is inspired by human perception of contextual structure information during scene understanding
+with repetitive patterns. The context-aware set convolution layer is incorporated in a context-aware
+point feature pyramid module of 3D point clouds for scene flow estimation. For the second problem,
+an explicit residual flow learning structure is proposed in the residual flow refinement layer
+to cope with long-distance movement. The experiments and ablation study on FlyingThings3D and
+KITTI scene flow datasets demonstrate the effectiveness of each proposed component. The qualitative
+results show that the problems of ambiguous inter-frame association and long-distance movement
+estimation are well handled. Quantitative results on both FlyingThings3D and KITTI scene flow
+datasets show that the proposed method achieves state-of-the-art performance, surpassing all
+other previous works to the best of our knowledge by at least 25%. 

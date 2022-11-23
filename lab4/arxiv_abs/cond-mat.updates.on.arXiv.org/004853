@@ -1,0 +1,19 @@
+In this paper we consider diffusion in a domain $\Omega$ containing a partially absorbing target
+$\calM$ with position and occupation time resetting. The occupation time $A_t$ is a Brownian functional
+that determines the amount of time that the particle spends in $ \calM$ over the time interval $[0,t]$.
+We assume that there exists some internal state $\calU_t$ of the particle at time $t$ which is modified
+whenever the particle is diffusing within $\calM $. The state $\calU_t$ is taken to be a monotonically
+increasing function of $A_t$, and absorption occurs as soon as $\calU_t$ crosses some fixed threshold.
+We first show how to analyze threshold absorption in terms of the joint probability density or generalized
+propagator $P(\x,a,t|\x_0)$ for the pair $(\X_t,A_t)$ in the case of a non-absorbing substrate
+$\calM$, where $\X_t$ is the particle position at time $t$ and $\x_0$ is the initial position. We
+then introduce a generalized stochastic resetting protocol in which both the position $\X_t$ and
+the internal state $\calU_t$ are reset to their initial values, $\X_t\rightarrow \x_0$ and $\calU_t\rightarrow
+0$, at a Poisson rate $r$. The latter is mathematically equivalent to resetting the occupation time,
+$A_t\rightarrow 0$. Since resetting is governed by a renewal process, the survival probability
+with resetting can be expressed in terms of the survival probability without resetting, which means
+that the statistics of absorption can be determined by calculating the double Laplace transform
+of $P(\x,a,t|\x_0)$ with respect to $t$ and $a$. In order to develop the basic theory, we focus on
+one-dimensional (1D) diffusion with $\calM$ given by a finite or semi-infinite interval, and explore
+how the MFPT with resetting depends on various model parameters. We also compare the threshold mechanism
+with the classical case of a constant absorption rate. 

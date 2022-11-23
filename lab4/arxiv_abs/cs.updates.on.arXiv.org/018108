@@ -1,0 +1,20 @@
+Convolutional Neural Network (CNN) have been widely used in image classification. Over the years,
+they have also benefited from various enhancements and they are now considered as state of the art
+techniques for image like data. However, when they are used for regression to estimate some function
+value from images, fewer recommendations are available. In this study, a novel CNN regression model
+is proposed. It combines convolutional neural layers to extract high level features representations
+from images with a soft labelling technique. More specifically, as the deep regression task is challenging,
+the idea is to account for some uncertainty in the targets that are seen as distributions around their
+mean. The estimations are carried out by the model in the form of distributions. Building from earlier
+work, a specific histogram loss function based on the Kullback-Leibler (KL) divergence is applied
+during training. The model takes advantage of the CNN feature representation and is able to carry
+out estimation from multi-channel input images. To assess and illustrate the technique, the model
+is applied to Global Navigation Satellite System (GNSS) multi-path estimation where multi-path
+signal parameters have to be estimated from correlator output images from the I and Q channels. The
+multi-path signal delay, magnitude, Doppler shift frequency and phase parameters are estimated
+from synthetically generated datasets of satellite signals. Experiments are conducted under
+various receiving conditions and various input images resolutions to test the estimation performances
+quality and robustness. The results show that the proposed soft labelling CNN technique using distributional
+loss outperforms classical CNN regression under all conditions. Furthermore, the extra learning
+performance achieved by the model allows the reduction of input image resolution from 80x80 down
+to 40x40 or sometimes 20x20. 

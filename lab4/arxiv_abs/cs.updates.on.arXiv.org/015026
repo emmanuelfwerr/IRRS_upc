@@ -1,0 +1,19 @@
+Data-hungry deep neural networks have established themselves as the standard for many NLP tasks
+including the traditional sequence tagging ones. Despite their state-of-the-art performance
+on high-resource languages, they still fall behind of their statistical counter-parts in low-resource
+scenarios. One methodology to counter attack this problem is text augmentation, i.e., generating
+new synthetic training data points from existing data. Although NLP has recently witnessed a load
+of textual augmentation techniques, the field still lacks a systematic performance analysis on
+a diverse set of languages and sequence tagging tasks. To fill this gap, we investigate three categories
+of text augmentation methodologies which perform changes on the syntax (e.g., cropping sub-sentences),
+token (e.g., random word insertion) and character (e.g., character swapping) levels. We systematically
+compare them on part-of-speech tagging, dependency parsing and semantic role labeling for a diverse
+set of language families using various models including the architectures that rely on pretrained
+multilingual contextualized language models such as mBERT. Augmentation most significantly
+improves dependency parsing, followed by part-of-speech tagging and semantic role labeling.
+We find the experimented techniques to be effective on morphologically rich languages in general
+rather than analytic languages such as Vietnamese. Our results suggest that the augmentation techniques
+can further improve over strong baselines based on mBERT. We identify the character-level methods
+as the most consistent performers, while synonym replacement and syntactic augmenters provide
+inconsistent improvements. Finally, we discuss that the results most heavily depend on the task,
+language pair, and the model type. 

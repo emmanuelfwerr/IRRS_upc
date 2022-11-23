@@ -1,0 +1,20 @@
+Machine Learning-based techniques have shown success in cyber intelligence. However, they are
+increasingly becoming targets of sophisticated data-driven adversarial attacks resulting in
+misprediction, eroding their ability to detect threats on network devices. In this paper, we present
+AdIoTack, a system that highlights vulnerabilities of decision trees against adversarial attacks,
+helping cybersecurity teams quantify and refine the resilience of their trained models for monitoring
+IoT networks. To assess the model for the worst-case scenario, AdIoTack performs white-box adversarial
+learning to launch successful volumetric attacks that decision tree ensemble models cannot flag.
+Our first contribution is to develop a white-box algorithm that takes a trained decision tree ensemble
+model and the profile of an intended network-based attack on a victim class as inputs. It then automatically
+generates recipes that specify certain packets on top of the indented attack packets (less than
+15% overhead) that together can bypass the inference model unnoticed. We ensure that the generated
+attack instances are feasible for launching on IP networks and effective in their volumetric impact.
+Our second contribution develops a method to monitor the network behavior of connected devices
+actively, inject adversarial traffic (when feasible) on behalf of a victim IoT device, and successfully
+launch the intended attack. Our third contribution prototypes AdIoTack and validates its efficacy
+on a testbed consisting of a handful of real IoT devices monitored by a trained inference model. We
+demonstrate how the model detects all non-adversarial volumetric attacks on IoT devices while
+missing many adversarial ones. The fourth contribution develops systematic methods for applying
+patches to trained decision tree ensemble models, improving their resilience against adversarial
+volumetric attacks. 

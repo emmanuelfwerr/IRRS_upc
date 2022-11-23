@@ -1,0 +1,19 @@
+Bi-clustering refers to the task of finding sub-matrices (indexed by a group of columns and a group
+of rows) within a matrix of data such that the elements of each sub-matrix (data and features) are
+related in a particular way, for instance, that they are similar with respect to some metric. In this
+paper, after analyzing the well-known Cheng and Church (CC) bi-clustering algorithm which has
+been proved to be an effective tool for mining co-expressed genes. However, Cheng and Church bi-clustering
+algorithm and summarizing its limitations (such as interference of random numbers in the greedy
+strategy; ignoring overlapping bi-clusters), we propose a novel enhancement of the adaptive bi-clustering
+algorithm, where a shielding complex sub-matrix is constructed to shield the bi-clusters that
+have been obtained and to discover the overlapping bi-clusters. In the shielding complex sub-matrix,
+the imaginary and the real parts are used to shield and extend the new bi-clusters, respectively,
+and to form a series of optimal bi-clusters. To assure that the obtained bi-clusters have no effect
+on the bi-clusters already produced, a unit impulse signal is introduced to adaptively detect and
+shield the constructed bi-clusters. Meanwhile, to effectively shield the null data (zero-size
+data), another unit impulse signal is set for adaptive detecting and shielding. In addition, we
+add a shielding factor to adjust the mean squared residue score of the rows (or columns), which contains
+the shielded data of the sub-matrix, to decide whether to retain them or not. We offer a thorough analysis
+of the developed scheme. The experimental results are in agreement with the theoretical analysis.
+The results obtained on a publicly available real microarray dataset show the enhancement of the
+bi-clusters performance thanks to the proposed method. 

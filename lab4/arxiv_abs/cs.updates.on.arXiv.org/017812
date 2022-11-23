@@ -1,0 +1,19 @@
+The curation of large-scale medical datasets from multiple institutions necessary for training
+deep learning models is challenged by the difficulty in sharing patient data with privacy-preserving.
+Federated learning (FL), a paradigm that enables privacy-protected collaborative learning among
+different institutions, is a promising solution to this challenge. However, FL generally suffers
+from performance deterioration due to heterogeneous data distributions across institutions
+and the lack of quality labeled data. In this paper, we present a robust and label-efficient self-supervised
+FL framework for medical image analysis. Specifically, we introduce a novel distributed self-supervised
+pre-training paradigm into the existing FL pipeline (i.e., pre-training the models directly on
+the decentralized target task datasets). Built upon the recent success of Vision Transformers,
+we employ masked image encoding tasks for self-supervised pre-training, to facilitate more effective
+knowledge transfer to downstream federated models. Extensive empirical results on simulated
+and real-world medical imaging federated datasets show that self-supervised pre-training largely
+benefits the robustness of federated models against various degrees of data heterogeneity. Notably,
+under severe data heterogeneity, our method, without relying on any additional pre-training data,
+achieves an improvement of 5.06%, 1.53% and 4.58% in test accuracy on retinal, dermatology and chest
+X-ray classification compared with the supervised baseline with ImageNet pre-training. Moreover,
+we show that our self-supervised FL algorithm generalizes well to out-of-distribution data and
+learns federated models more effectively in limited label scenarios, surpassing the supervised
+baseline by 10.36% and the semi-supervised FL method by 8.3% in test accuracy. 

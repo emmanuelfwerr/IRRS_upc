@@ -1,0 +1,19 @@
+Video streams are utilised to guide minimally-invasive surgery and diagnostic procedures in a
+wide range of procedures, and many computer assisted techniques have been developed to automatically
+analyse them. These approaches can provide additional information to the surgeon such as lesion
+detection, instrument navigation, or anatomy 3D shape modeling. However, the necessary image
+features to recognise these patterns are not always reliably detected due to the presence of irregular
+light patterns such as specular highlight reflections. In this paper, we aim at removing specular
+highlights from endoscopic videos using machine learning. We propose using a temporal generative
+adversarial network (GAN) to inpaint the hidden anatomy under specularities, inferring its appearance
+spatially and from neighbouring frames where they are not present in the same location. This is achieved
+using in-vivo data of gastric endoscopy (Hyper-Kvasir) in a fully unsupervised manner that relies
+on automatic detection of specular highlights. System evaluations show significant improvements
+to traditional methods through direct comparison as well as other machine learning techniques
+through an ablation study that depicts the importance of the network's temporal and transfer learning
+components. The generalizability of our system to different surgical setups and procedures was
+also evaluated qualitatively on in-vivo data of gastric endoscopy and ex-vivo porcine data (SERV-CT,
+SCARED). We also assess the effect of our method in computer vision tasks that underpin 3D reconstruction
+and camera motion estimation, namely stereo disparity, optical flow, and sparse point feature
+matching. These are evaluated quantitatively and qualitatively and results show a positive effect
+of specular highlight inpainting on these tasks in a novel comprehensive analysis. 

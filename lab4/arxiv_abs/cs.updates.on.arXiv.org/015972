@@ -1,0 +1,20 @@
+Many additive manufacturing (AM) technologies rely on powder feedstock, which is fused to form
+the final part either by melting or by chemical binding with subsequent sintering. In both cases,
+process stability and resulting part quality depend on dynamic interactions between powder particles
+and a fluid phase, i.e., molten metal or liquid binder. The present work proposes a versatile computational
+modeling framework for simulating such coupled microfluid-powder dynamics problems involving
+thermo-capillary flow and reversible phase transitions. In particular, a liquid and a gas phase
+are interacting with a solid phase that consists of a substrate and mobile powder particles while
+simultaneously considering temperature-dependent surface tension and wetting effects. In case
+of laser-metal interactions, the effect of rapid evaporation is incorporated through additional
+mechanical and thermal interface fluxes. All phase domains are spatially discretized using smoothed
+particle hydrodynamics. The method's Lagrangian nature is beneficial in the context of dynamically
+changing interface topologies. Special care is taken in the formulation of phase transitions,
+which is crucial for the robustness of the computational scheme. While the underlying model equations
+are of a very general nature, the proposed framework is especially suitable for the mesoscale modeling
+of various AM processes. To this end, the generality and robustness of the computational modeling
+framework is demonstrated by several application-motivated examples representing the specific
+AM processes binder jetting, material jetting, directed energy deposition, and powder bed fusion.
+Among others, it is shown how the dynamic impact of droplets in binder jetting or the evaporation-induced
+recoil pressure in powder bed fusion leads to powder motion, distortion of the powder packing structure,
+and powder particle ejection. 

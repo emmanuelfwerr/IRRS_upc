@@ -1,0 +1,19 @@
+In this paper, we develop a unified dynamic intelligent reflecting surface (IRS) beamforming framework
+to boost the sum computation rate of an IRS-aided mobile edge computing (MEC) system, where each
+device follows a binary offloading policy. Specifically, the task of each device has to be either
+executed locally or offloaded to MEC servers as a whole with the aid of given number of IRS beamforming
+vectors available. By flexibly controlling the number of IRS reconfiguration times, the system
+can achieve a balance between the performance and associated signalling overhead. We aim to maximize
+the sum computation rate by jointly optimizing the computational mode selection for each device,
+offloading time allocation, and IRS beamforming vectors across time. Since the resulting optimization
+problem is non-convex and NP-hard, there are generally no standard methods to solve it optimally.
+To tackle this problem, we first propose a penalty-based successive convex approximation algorithm,
+where all the associated variables in the inner-layer iterations are optimized simultaneously
+and the obtained solution is guaranteed to be locally optimal. Then, we further derive the offloading
+activation condition for each device by deeply exploiting the intrinsic structure of the original
+optimization problem. According to the offloading activation condition, a low-complexity algorithm
+based on the successive refinement method is proposed to obtain high-quality solutions, which
+is more appealing for practical systems with a large number of devices and IRS elements. Moreover,
+the optimal condition for the proposed low-complexity algorithm is revealed. Numerical results
+demonstrate the effectiveness of our proposed algorithms and also unveil the fundamental performance-cost
+tradeoff of the proposed dynamic IRS beamforming framework. 

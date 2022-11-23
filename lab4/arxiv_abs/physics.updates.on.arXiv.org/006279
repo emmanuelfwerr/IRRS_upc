@@ -1,0 +1,19 @@
+Image registration is the process of bringing different images into a common coordinate system
+- a technique widely used in various applications of computer vision, such as remote sensing, image
+retrieval, and most commonly in medical imaging. Deep Learning based techniques have been applied
+successfully to tackle various complex medical image processing problems, including medical
+image registration. Over the years, several image registration techniques have been proposed
+using deep learning. Deformable image registration techniques such as Voxelmorph have been successful
+in capturing finer changes and providing smoother deformations. However, Voxelmorph, as well
+as ICNet and FIRE, do not explicitly encode global dependencies (i.e. the overall anatomical view
+of the supplied image) and therefore can not track large deformations. In order to tackle the aforementioned
+problems, this paper extends the Voxelmorph approach in three different ways. To improve the performance
+in case of small as well as large deformations, supervision of the model at different resolutions
+have been integrated using a multi-scale UNet. To support the network to learn and encode the minute
+structural co-relations of the given image-pairs, a self-constructing graph network (SCGNet)
+has been used as the latent of the multi-scale UNet - which can improve the learning process of the
+model and help the model to generalise better. And finally, to make the deformations inverse-consistent,
+cycle consistency loss has been employed. On the task of registration of brain MRIs, the proposed
+method achieved significant improvements over ANTs and VoxelMorph, obtaining a Dice score of 0.8013$\pm$0.0243
+for intramodal and 0.6211$\pm$0.0309 for intermodal, while VoxelMorph achieved 0.7747$\pm$0.0260
+and 0.6071$\pm$0.0510, respectively. 

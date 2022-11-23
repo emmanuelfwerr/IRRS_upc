@@ -1,0 +1,19 @@
+The wide availability of data coupled with the computational advances in artificial intelligence
+and machine learning promise to enable many future technologies such as autonomous driving. While
+there has been a variety of successful demonstrations of these technologies, critical system failures
+have repeatedly been reported. Even if rare, such system failures pose a serious barrier to adoption
+without a rigorous risk assessment. This paper presents a framework for the systematic and rigorous
+risk verification of systems. We consider a wide range of system specifications formulated in signal
+temporal logic (STL) and model the system as a stochastic process, permitting discrete-time and
+continuous-time stochastic processes. We then define the STL robustness risk as the risk of lacking
+robustness against failure. This definition is motivated as system failures are often caused by
+missing robustness to modeling errors, system disturbances, and distribution shifts in the underlying
+data generating process. Within the definition, we permit general classes of risk measures and
+focus on tail risk measures such as the value-at-risk and the conditional value-at-risk. While
+the STL robustness risk is in general hard to compute, we propose the approximate STL robustness
+risk as a more tractable notion that upper bounds the STL robustness risk. We show how the approximate
+STL robustness risk can accurately be estimated from system trajectory data. For discrete-time
+stochastic processes, we show under which conditions the approximate STL robustness risk can even
+be computed exactly. We illustrate our verification algorithm in the autonomous driving simulator
+CARLA and show how a least risky controller can be selected among four neural network lane keeping
+controllers for five meaningful system specifications. 

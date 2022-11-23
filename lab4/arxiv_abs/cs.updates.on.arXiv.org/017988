@@ -1,0 +1,20 @@
+Training deep learning-based change detection (CD) model heavily depends on labeled data. Contemporary
+transfer learning-based methods to alleviate the CD label insufficiency mainly upon ImageNet
+pre-training. A recent trend is using remote sensing (RS) data to obtain in-domain representations
+via supervised or self-supervised learning (SSL). Here, different from traditional supervised
+pre-training that learns the mapping from image to label, we leverage semantic supervision in a
+contrastive manner. There are typically multiple objects of interest (e.g., buildings) distributed
+in varying locations in RS images. We propose dense semantic-aware pre-training for RS image CD
+via sampling multiple class-balanced points. Instead of manipulating image-level representations
+that lack spatial information, we constrain pixel-level cross-view consistency and cross-semantic
+discrimination to learn spatially-sensitive features, thus benefiting downstream dense CD.
+Apart from learning illumination invariant features, we fulfill consistent foreground features
+insensitive to irrelevant background changes via a synthetic view using background swapping.
+We additionally achieve discriminative representations to distinguish foreground land-covers
+and others. We collect large-scale image-mask pairs freely available in the RS community for pre-training.
+Extensive experiments on three CD datasets verify the effectiveness of our method. Ours significantly
+outperforms ImageNet, in-domain supervision, and several SSL methods. Empirical results indicate
+ours well alleviates data insufficiency in CD. Notably, we achieve competitive results using only
+20% training data than baseline (random) using 100% data. Both quantitative and qualitative results
+demonstrate the generalization ability of our pre-trained model to downstream images even remaining
+domain gaps with the pre-training data. Our Code will make public. 

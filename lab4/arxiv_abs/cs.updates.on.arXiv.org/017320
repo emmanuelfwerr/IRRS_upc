@@ -1,0 +1,20 @@
+Super-Resolution is the process of generating a high-resolution image from a low-resolution image.
+A picture may be of lower resolution due to smaller spatial resolution, poor camera quality, as a
+result of blurring, or due to other possible degradations. Super-Resolution is the technique to
+improve the quality of a low-resolution photo by boosting its plausible resolution. The computer
+vision community has extensively explored the area of Super-Resolution. However, the previous
+Super-Resolution methods require vast amounts of data for training. This becomes problematic
+in domains where very few low-resolution, high-resolution pairs might be available. One of such
+areas is statistical downscaling, where super-resolution is increasingly being used to obtain
+high-resolution climate information from low-resolution data. Acquiring high-resolution climate
+data is extremely expensive and challenging. To reduce the cost of generating high-resolution
+climate information, Super-Resolution algorithms should be able to train with a limited number
+of low-resolution, high-resolution pairs. This paper tries to solve the aforementioned problem
+by introducing a semi-supervised way to perform super-resolution that can generate sharp, high-resolution
+images with as few as 500 paired examples. The proposed semi-supervised technique can be used as
+a plug-and-play module with any supervised GAN-based Super-Resolution method to enhance its performance.
+We quantitatively and qualitatively analyze the performance of the proposed model and compare
+it with completely supervised methods as well as other unsupervised techniques. Comprehensive
+evaluations show the superiority of our method over other methods on different metrics. We also
+offer the applicability of our approach in statistical downscaling to obtain high-resolution
+climate images. 

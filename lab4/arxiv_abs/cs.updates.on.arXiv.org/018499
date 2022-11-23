@@ -1,0 +1,18 @@
+In modern databases, transaction processing technology provides ACID (Atomicity, Consistency,
+Isolation, Durability) features. Consistency refers to the correctness of databases and is a crucial
+property for many applications, such as financial and banking services. However, there exist typical
+challenges for consistency. Theoretically, the current two definitions of consistency express
+quite different meanings, which are causal and sometimes controversial. Practically, it is notorious
+to check the consistency of databases, especially in terms of the verification cost. This paper
+proposes Coo, a framework to check the consistency of databases. Specifically, Coo has the following
+advancements. First, Coo proposes partial order pair (POP) graph, which has a better expressiveness
+on transaction conflicts in a schedule by considering stateful information like Commit and Abort.
+By POP graph with no cycle, Coo defines consistency completely. Secondly, Coo can construct inconsistent
+test cases based on POP cycles. These test cases can be used to check the consistency of databases
+in accurate (all types of anomalies), user-friendly (SQL-based test), and cost-effective (one-time
+checking in a few minutes) ways. We evaluate Coo with eleven databases, both centralized and distributed,
+under all supported isolation levels. The evaluation shows that databases did not completely follow
+the ANSI SQL standard (e.g., Oracle claimed to be serializable but appeared in some inconsistent
+cases), and have different implementation methods and behaviors for concurrent controls (e.g.,
+PostgreSQL, MySQL, and SQL Server performed quite differently at Repeatable Read level). Coo aids
+to comprehend the gap between coarse levels, finding more detailed and complete inconsistent behaviors.

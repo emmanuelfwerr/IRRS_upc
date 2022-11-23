@@ -1,0 +1,19 @@
+Quantum state tomography (QST) for reconstructing pure states requires exponentially increasing
+resources and measurements with the number of qubits by using state-of-the-art quantum compressive
+sensing (CS) methods. In this article, QST reconstruction for any pure state composed of the superposition
+of $K$ different computational basis states of $n$ qubits in a specific measurement set-up, i.e.,
+denoted as $K$-sparse, is achieved without any initial knowledge and with quantum polynomial-time
+complexity of resources based on the assumption of the existence of polynomial size quantum circuits
+for implementing exponentially large powers of a specially designed unitary operator. The algorithm
+includes $\mathcal{O}(2 \, / \, \vert c_{k}\vert^2)$ repetitions of conventional phase estimation
+algorithm depending on the probability $\vert c_{k}\vert^2$ of the least possible basis state
+in the superposition and $\mathcal{O}(d \, K \,(log K)^c)$ measurement settings with conventional
+quantum CS algorithms independent from the number of qubits while dependent on $K$ for constant
+$c$ and $d$. Quantum phase estimation algorithm is exploited based on the favorable eigenstructure
+of the designed operator to represent any pure state as a superposition of eigenvectors. Linear
+optical set-up is presented for realizing the special unitary operator which includes beam splitters
+and phase shifters where propagation paths of single photon are tracked with which-path-detectors.
+Quantum circuit implementation is provided by using only CNOT, phase shifter and $- \pi \, / \, 2$
+rotation gates around X-axis in Bloch sphere, i.e., $R_{X}(- \pi \, / \, 2)$, allowing to be realized
+in NISQ devices. Open problems are discussed regarding the existence of the unitary operator and
+its practical circuit implementation. 

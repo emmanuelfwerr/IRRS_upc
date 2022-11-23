@@ -1,0 +1,20 @@
+Dynamic algorithm selection can be beneficial for solving numerical black-box problems, in which
+we implement an online switching mechanism between optimization algorithms. In this approach,
+we need to decide when a switch should take place and which algorithm to pick for the switching. Intuitively,
+this approach chains the algorithms for combining the well-performing segments from the performance
+profile of the algorithms. To realize efficient chaining, we investigate two important aspects
+- how the switching point influences the overall performance and how to warm-start an algorithm
+with information stored in its predecessor. To delve into those aspects, we manually construct
+a portfolio comprising five state-of-the-art optimization algorithms and only consider a single
+switch between each algorithm pair. After benchmarking those algorithms with the BBOB problem
+set, we choose the switching point for each pair by maximizing the theoretical performance gain.
+The theoretical gain is compared to the actual gain obtained by executing the switching procedure
+with the corresponding switching point. Moreover, we devise algorithm-specific warm-starting
+methods for initializing the algorithm after the switching with the information learned from its
+predecessor. Our empirical results show that on some BBOB problems, the theoretical gain is realized
+or even surpassed by the actual gain. More importantly, this approach discovers a chain that outperforms
+the single best algorithm on many problem instances. Also, we show that a proper warm-starting procedure
+is crucial to achieving high actual performance gain for some algorithm pairs. Lastly, with a sensitivity
+analysis, we find the actual performance gain is hugely affected by the switching point, and in some
+cases, the switching point yielding the best actual performance differs from the one computed from
+the theoretical gain. 

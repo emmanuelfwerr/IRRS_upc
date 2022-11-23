@@ -1,0 +1,19 @@
+This work explores a new approach for optimization in the field of microfluidics, using the combination
+of CFD (Computational Fluid Dynamics), and Machine Learning techniques. The objective of this
+combination is to enable global optimization with lower computational cost. The initial geometry
+is inspired in a Y-type micromixer with cylindrical grooves on the surface of the main channel and
+obstructions inside it. Simulations for circular obstructions were carried out using the OpenFOAM
+software to observe the influences of obstacles. The effects of obstruction diameter (OD), and
+offset (OF) in the range of [20,140] mm and [10,160] mm, respectively, on percentage of mixing ($\varphi$),
+pressure drop ($\Delta P$) and energy cost ($\Delta P/\varphi$) were investigated. Numerical
+experiments were analyzed using machine learning. Firstly, a neural network was used to train the
+dataset composed by the inputs OD and OF and outputs $\varphi$ and $\Delta P$. The objective functions
+(ObF) chosen to numerically optimize the performance of micromixers with grooves and obstructions
+were $\varphi$, $\Delta P$, $\Delta P/\varphi$. The genetic algorithm obtained the geometry that
+offers the maximum value of $\varphi$ and the minimum value of $\Delta P_s$. The results show that
+$\varphi$ increases monotonically with increasing OD at all values of OF. The inverse is observed
+with increasing offset. Furthermore, the results reveal that $\Delta P$ e $\Delta P/\varphi$ also
+increase with OD. On the other hand, the pressure drop and the cost of mixing energy present a maximum
+close to the lowest values of OF. Finally, the optimal value obtained for the diameter was OD=131
+mm and for the offset OF=10 mm, which corresponds to obstruction of medium size close to the channel
+wall. 

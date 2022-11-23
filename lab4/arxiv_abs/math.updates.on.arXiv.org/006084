@@ -1,0 +1,19 @@
+Joint spectral embeddings facilitate analysis of multiple network data by simultaneously mapping
+vertices in each network to points in Euclidean space where statistical inference is then performed.
+In this work, we consider one such joint embedding technique, the omnibus embedding of arXiv:1705.09355
+, which has been successfully used for community detection, anomaly detection, and hypothesis
+testing tasks. To date the theoretical properties of this method have only been established under
+the strong assumption that the networks are conditionally i.i.d. random dot product graphs. Herein,
+we take a first step in characterizing the theoretical properties of the omnibus embedding in the
+presence of heterogeneous network data. Under a latent position model, we show the omnibus embedding
+implicitly regularizes its latent position estimates which induces a finite-sample bias-variance
+tradeoff for latent position estimation. We establish an explicit bias expression, derive a uniform
+concentration bound on the residual, and prove a central limit theorem characterizing the distributional
+properties of these estimates. These explicit bias and variance expressions enable us to state
+sufficient conditions for exact recovery in community detection tasks and develop a pivotal test
+statistic to determine whether two graphs share the same set of latent positions; demonstrating
+that accurate inference is achievable despite the estimator's inconsistency. These results are
+demonstrated in several experimental settings where statistical procedures utilizing the omnibus
+embedding are competitive, and oftentimes preferable, to comparable embedding techniques. These
+observations accentuate the viability of the omnibus embedding for multiple graph inference beyond
+the homogeneous network setting. 

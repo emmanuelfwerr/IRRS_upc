@@ -1,0 +1,18 @@
+For soft robots to work effectively in human-centered environments, they need to be able to estimate
+their state and external interactions based on (proprioceptive) sensors. Estimating disturbances
+allows a soft robot to perform desirable force control. Even in the case of rigid manipulators, force
+estimation at the end-effector is seen as a non-trivial problem. And indeed, other current approaches
+to address this challenge have shortcomings that prevent their general application. They are often
+based on simplified soft dynamic models, such as the ones relying on a piece-wise constant curvature
+(PCC) approximation or matched rigid-body models that do not represent enough details of the problem.
+Thus, the applications needed for complex human-robot interaction can not be built. Finite element
+methods (FEM) allow for predictions of soft robot dynamics in a more generic fashion. Here, using
+the soft robot modeling capabilities of the framework SOFA, we build a detailed FEM model of a multi-segment
+soft continuum robotic arm composed of compliant deformable materials and fiber-reinforced pressurized
+actuation chambers with a model for sensors that provide orientation output. This model is used
+to establish a state observer for the manipulator. Model parameters were calibrated to match imperfections
+of the manual fabrication process using physical experiments. We then solve a quadratic programming
+inverse dynamics problem to compute the components of external force that explain the pose error.
+Our experiments show an average force estimation error of around 1.2%. As the methods proposed are
+generic, these results are encouraging for the task of building soft robots exhibiting complex,
+reactive, sensor-based behavior that can be deployed in human-centered environments. 

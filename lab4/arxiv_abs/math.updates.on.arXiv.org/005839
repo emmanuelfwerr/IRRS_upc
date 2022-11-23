@@ -1,0 +1,19 @@
+Finite element methods based on cut-cells are becoming increasingly popular because of their advantages
+over formulations based on body-fitted meshes for problems with moving interfaces. In such methods,
+the cells (or elements) which are cut by the interface between two different domains need to be integrated
+using special techniques in order to obtain optimal convergence rates and accurate fluxes across
+the interface. Adaptive integration technique in which the cells are recursively subdivided is
+one of the popular techniques for the numerical integration of cut-cells due to its advantages over
+tessellation, particularly for problems involving complex geometries in three dimensions. Although
+adaptive integration does not impose any limitations on the representation of the geometry of immersed
+solids as it requires only point location algorithms, it becomes computationally expensive for
+recovering optimal convergence rates. This paper presents a comprehensive assessment of the adaptive
+integration of cut-cells for applications in computational fluid dynamics and fluid-structure
+interaction. We assess the effect of the accuracy of integration of cut cells on convergence rates
+in velocity and pressure fields, and then on forces and displacements for fluid-structure interaction
+problems by studying several examples in two and three dimensions. By taking the computational
+cost and the accuracy of forces and displacements into account, we demonstrate that numerical results
+of acceptable accuracy for FSI problems involving laminar flows can be obtained with only fewer
+levels of refinement. In particular, we show that three levels of adaptive refinement are sufficient
+for obtaining force and displacement values of acceptable accuracy for laminar fluid-structure
+interaction problems. 

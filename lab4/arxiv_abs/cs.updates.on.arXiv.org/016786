@@ -1,0 +1,19 @@
+The Dynamic Time Warping (DTW) distance is a popular measure of similarity for a variety of sequence
+data. For comparing polygonal curves $\pi, \sigma$ in $\mathbb{R}^d$, it provides a robust, outlier-insensitive
+alternative to the Fr\'echet distance. However, like the Fr\'echet distance, the DTW distance
+is not invariant under translations. Can we efficiently optimize the DTW distance of $\pi$ and $\sigma$
+under arbitrary translations, to compare the curves' shape irrespective of their absolute location?
+There are surprisingly few works in this direction, which may be due to its computational intricacy:
+For the Euclidean norm, this problem contains as a special case the geometric median problem, which
+is known not to have an exact algebraic algorithm (that is, an algorithm using only addition, multiplication,
+and $k$-th roots). We thus investigate exact algorithms for non-Euclidean norms as well as approximation
+algorithms for the Euclidean norm: - For the $L_1$ norm in $\mathbb{R}^d$, we provide an $O(n^{2(d+1)})$-time
+algorithm, i.e., an exact polynomial-time algorithm for constant $d$. Here and below, $n$ bounds
+the curves' complexities. - For the Euclidean norm in $\mathbb{R}^2$, we show that a simple problem-specific
+insight leads to a $(1+\epsilon)$-approximation in time $O(n^3/\epsilon^2)$. We then show how
+to obtain a subcubic $\tilde O(n^{8/3}/\epsilon^2)$ time algorithm with significant new ideas;
+this time comes close to the well-known quadratic time barrier for computing DTW for fixed translations.
+Technically, the algorithm is obtained by speeding up repeated DTW distance estimations using
+a dynamic data structure for maintaining shortest paths in weighted planar digraphs. Crucially,
+we show how to traverse a candidate set of translations using space-filling curves in a way that incurs
+only few updates to the data structure. 

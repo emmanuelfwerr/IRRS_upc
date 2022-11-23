@@ -1,0 +1,19 @@
+We consider the rooted prize-collecting walks (PCW) problem, wherein we seek a collection $C$ of
+rooted walks having minimum prize-collecting cost, which is the (total cost of walks in $C$) + (total
+node-reward of nodes not visited by any walk in $C$). This problem arises naturally as the Lagrangian
+relaxation of both orienteering, where we seek a length-bounded walk of maximum reward, and the
+$\ell$-stroll problem, where we seek a minimum-length walk covering at least $\ell$ nodes. Our
+main contribution is to devise a simple, combinatorial algorithm for the PCW problem in directed
+graphs that returns a rooted tree whose prize-collecting cost is at most the optimum value of the
+prize-collecting walks problem. We utilize our algorithm to develop combinatorial approximation
+algorithms for two fundamental vehicle-routing problems (VRPs): (1) orienteering; and (2) $k$-minimum-latency
+problem ($k$-MLP), wherein we seek to cover all nodes using $k$ paths starting at a prescribed root
+node, so as to minimize the sum of the node visiting times. Our combinatorial algorithm allows us
+to sidestep the part where we solve a preflow-based LP in the LP-rounding algorithms of Friggstand
+and Swamy (2017) for orienteering, and in the state-of-the-art $7.183$-approximation algorithm
+for $k$-MP in Post and Swamy (2015). Consequently, we obtain combinatorial implementations of
+these algorithms with substantially improved running times compared with the current-best approximation
+factors. We report computational results for our resulting (combinatorial implementations of)
+orienteering algorithms, which show that the algorithms perform quite well in practice, both in
+terms of the quality of the solution they return, as also the upper bound they yield on the orienteering
+optimum (which is obtained by leveraging the workings of our PCW algorithm). 

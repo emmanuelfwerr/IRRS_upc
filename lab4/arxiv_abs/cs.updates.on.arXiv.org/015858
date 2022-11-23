@@ -1,0 +1,18 @@
+Action recognition is a key algorithmic part of emerging on-the-edge smart video surveillance
+and security systems. Skeleton-based action recognition is an attractive approach which, instead
+of using RGB pixel data, relies on human pose information to classify appropriate actions. However,
+existing algorithms often assume ideal conditions that are not representative of real-world limitations,
+such as noisy input, latency requirements, and edge resource constraints. To address the limitations
+of existing approaches, this paper presents Real-World Graph Convolution Networks (RW-GCNs),
+an architecture-level solution for meeting the domain constraints of Real World Skeleton-based
+Action Recognition. Inspired by the presence of feedback connections in the human visual cortex,
+RW-GCNs leverage attentive feedback augmentation on existing near state-of-the-art (SotA) Spatial-Temporal
+Graph Convolution Networks (ST-GCNs). The ST-GCNs' design choices are derived from information
+theory-centric principles to address both the spatial and temporal noise typically encountered
+in end-to-end real-time and on-the-edge smart video systems. Our results demonstrate RW-GCNs'
+ability to serve these applications by achieving a new SotA accuracy on the NTU-RGB-D-120 dataset
+at 94.1%, and achieving 32X less latency than baseline ST-GCN applications while still achieving
+90.4% accuracy on the Northwestern UCLA dataset in the presence of spatial keypoint noise. RW-GCNs
+further show system scalability by running on the 10X cost effective NVIDIA Jetson Nano (as opposed
+to NVIDIA Xavier NX), while still maintaining a respectful range of throughput (15.6 to 5.5 Actions
+per Second) on the resource constrained device. The code is available here: https://github.com/TeCSAR-UNCC/RW-GCN.

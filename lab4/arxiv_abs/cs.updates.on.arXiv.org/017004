@@ -1,0 +1,19 @@
+As a well-known physical unclonable function that can provide huge number of challenge response
+pairs (CRP) with a compact design and fully compatibility with current electronic fabrication
+process, the arbiter PUF (APUF) has attracted great attention. To improve its resilience against
+modeling attacks, many APUF variants have been proposed so far. Though the modeling resilience
+of response obfuscated APUF variants such as XOR-APUF and lightweight secure APUF (LSPUF) have
+been well studied, the challenge obfuscated APUFs (CO-APUFs) such as feed-forward APUF (FF-APUF),
+and XOR-FF-APUF are less elucidated, especially, with the deep learning (DL) methods. This work
+systematically evaluates five CO-APUFs including three influential designs of FF-APUF, XOR-FF-APUF,
+iPUF, one very recently design and our newly optimized design (dubbed as OAX-FF-APUF), in terms
+of their reliability, uniformity (related to uniqueness), and modeling resilience. Three DL techniques
+of GRU, TCN and MLP are employed to examine these CO-APUFs' modeling resilience -- the first two are
+newly explored. With computation resource of a common personal computer, we show that all five CO-APUFs
+with relatively large scale can be successfully modeled -- attacking accuracy higher or close to
+its reliability. The hyper-parameter tuning of DL technique is crucial for implementing efficient
+attacks. Increasing the scale of the CO-APUF is validated to be able to improve the resilience but
+should be done with minimizing the reliability degradation. As the powerful capability of DL technique
+affirmed by us, we recommend the DL, specifically the MLP technique always demonstrating best efficacy,
+to be always considered for examining the modeling resilience when newly composited APUFs are devised
+or to a large extent, other strong PUFs are constructed. 

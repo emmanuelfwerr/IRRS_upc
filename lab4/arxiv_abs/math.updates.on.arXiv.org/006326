@@ -1,0 +1,19 @@
+In this article we consider min-min type of problems or minimization by two groups of variables.
+Min-min problems may occur in case if some groups of variables in convex optimization have different
+dimensions or if these groups have different domains. Such problem structure gives us an ability
+to split the main task to subproblems, and allows to tackle it with mixed oracles. However existing
+articles on this topic cover only zeroth and first order oracles, in our work we consider high-order
+tensor methods to solve inner problem and fast gradient method to solve outer problem. We assume,
+that outer problem is constrained to some convex compact set, and for the inner problem we consider
+both unconstrained case and being constrained to some convex compact set. By definition, tensor
+methods use high-order derivatives, so the time per single iteration of the method depends a lot
+on the dimensionality of the problem it solves. Therefore, we suggest, that the dimension of the
+inner problem variable is not greater than 1000. Additionally, we need some specific assumptions
+to be able to use mixed oracles. Firstly, we assume, that the objective is convex in both groups of
+variables and its gradient by both variables is Lipschitz continuous. Secondly, we assume the inner
+problem is strongly convex and its gradient is Lipschitz continuous. Also, since we are going to
+use tensor methods for inner problem, we need it to be $p$-th order Lipschitz continuous ($p > 1$).
+Finally, we assume strong convexity of the outer problem to be able to use fast gradient method for
+strongly convex functions. We need to emphasize, that we use superfast tensor method to tackle inner
+subproblem in unconstrained case. And when we solve inner problem on compact set, we use accelerated
+high-order composite proximal method. 

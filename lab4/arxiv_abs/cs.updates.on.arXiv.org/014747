@@ -1,0 +1,20 @@
+Physical unclonable functions provide a unique 'fingerprint' to a physical entity by exploiting
+the inherent physical randomness. With the help of quantum information theory, this paper proposes
+solutions to protect PUFs against machine learning-based attacks. Here, based on the querying
+capability, we first divide the adversaries into two classes, namely adaptive and weak adversaries.
+We also modify an existing security notion, universal unforgeability, to capture the power of those
+two classes of adversaries. We then introduce the notion of a hybrid PUF, using a classical PUF and
+quantum conjugate coding. This construction encodes the output of a classical PUF in non-orthogonal
+quantum states. We show that the indistinguishability of those states can significantly enhance
+the security of the classical PUFs against weak adversaries. Moreover, we show that learning the
+underlying classical PUF from the outputs of our HPUF construction is at least as hard as learning
+the classical PUF from its random noisy outputs. To prevent the adversaries from querying the PUFs
+adaptively, we borrow ideas from a classical lockdown technique and apply them to our hybrid PUF.
+We show that the hybrid PUFs, together with the lockdown technique, termed as hybrid locked PUF,
+can provide a secure client authentication protocol against adaptive adversaries and are implementable
+with the current day quantum communication technology. Moreover, we show that HLPUF allows the
+server to reuse the challenges for further client authentication, providing an efficient solution
+for running a PUF-based client authentication protocol for a longer period while maintaining a
+small-sized challenge-response pairs database on the server-side. Finally, we explore the lockdown
+technique with quantum PUF and show that the direct adaptation of the classical lockdown technique
+will not work with the fully quantum PUFs. 

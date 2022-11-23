@@ -1,0 +1,19 @@
+Artificial barriers in Learning Automata (LA) is a powerful and yet under-explored concept although
+it was first proposed in the 1980s. Introducing artificial non-absorbing barriers makes the LA
+schemes resilient to being trapped in absorbing barriers, a phenomenon which is often referred
+to as lock in probability leading to an exclusive choice of one action after convergence. Within
+the field of LA and reinforcement learning in general, there is a sacristy of theoretical works and
+applications of schemes with artificial barriers. In this paper, we devise a LA with artificial
+barriers for solving a general form of stochastic bimatrix game. Classical LA systems possess properties
+of absorbing barriers and they are a powerful tool in game theory and were shown to converge to game's
+of Nash equilibrium under limited information. However, the stream of works in LA for solving game
+theoretical problems can merely solve the case where the Saddle Point of the game exists in a pure
+strategy and fail to reach mixed Nash equilibrium when no Saddle Point exists for a pure strategy.
+In this paper, by resorting to the powerful concept of artificial barriers, we suggest a LA that converges
+to an optimal mixed Nash equilibrium even though there may be no Saddle Point when a pure strategy
+is invoked. Our deployed scheme is of Linear Reward-Inaction ($L_{R-I}$) flavor which is originally
+an absorbing LA scheme, however, we render it non-absorbing by introducing artificial barriers
+in an elegant and natural manner, in the sense that that the well-known legacy $L_{R-I}$ scheme can
+be seen as an instance of our proposed algorithm for a particular choice of the barrier. Furthermore,
+we present an $S$ Learning version of our LA with absorbing barriers that is able to handle $S$-Learning
+environment in which the feedback is continuous and not binary as in the case of the $L_{R-I}$. 

@@ -1,0 +1,20 @@
+For $k\ge2$, consider the following variation of the classical secretary problem. There are $k$
+items at each of $n$ ranks. The $kn$ items are revealed, one by one in a uniformly random order, to an
+observer whose objective is to select an item with the highest rank. At each stage the observer only
+knows the relative ranks of the items that have arrived thus far, and must either select the current
+item, or reject it and continue to the next item. Let $\mathcal{S}(n,k;M)$ denote the strategy whereby
+one allows the first $M$ items to pass, and then chooses the first later arriving item whose rank is
+either equal to or greater than the highest rank of the first $M$ items (if such an item exists). Let
+$P_{n,k}(\mathcal{S}(n,k;M))$ denote the probability of selecting an item of highest rank using
+strategy $\mathcal{S}(n,k;M)$. We obtain a formula for $P_{n,k}(\mathcal{S}(n,k;M))$, and
+a formula for $\lim_{n\to\infty}P_{n,k}(\mathcal{S}(n,k,M_n))$, when $M_n\sim ckn$, with
+$c\in(0,1)$. In the classical secretary problem, the asymptotically optimal strategy $M_n\sim
+cn$ occurs with $c=\frac1e\approx0.368$, and the corresponding asymptotic probability of success
+is $\frac1e\approx 0.368$. For $k=2$, the asymptotically optimal strategy $M_n\sim ckn$ occurs
+with $c\approx 0.368$ -- almost exactly the same $c$ as in the classical case, and the corresponding
+asymptotic probability of success jumps dramatically to 0.701. For $k=10$, the optimal probability
+is above 0.999. The optimal value of $c$ stabilizes around 0.486 for $n\ge20$. We also consider the
+strategies $\mathcal{S}^+(n,k;M)$, whereby one allows the first $M$ items to pass, and then chooses
+the first later arriving item whose rank is strictly greater than the highest rank of the first $M$
+items (if such an item exists). These strategies turn the problem into one that is essentially equivalent
+to the classical secretary problem. 

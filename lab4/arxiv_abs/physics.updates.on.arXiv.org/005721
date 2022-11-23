@@ -1,0 +1,20 @@
+Well placement optimization is commonly performed using population-based global stochastic
+search algorithms. These optimizations are computationally expensive due to the large number
+of multiphase flow simulations that must be conducted. In this work, we present an optimization
+framework in which these simulations are performed with low-fidelity (LF) models. These LF models
+are constructed from the underlying high-fidelity (HF) geomodel using a global transmissibility
+upscaling procedure. Tree-based machine-learning methods, specifically random forest and light
+gradient boosting machine, are applied to estimate the error in objective function value (in this
+case net present value, NPV) associated with the LF models. In the offline (preprocessing) step,
+preliminary optimizations are performed using LF models, and a clustering procedure is applied
+to select a representative set of 100--150 well configurations to use for training. HF simulation
+is then performed for these configurations, and the tree-based models are trained using an appropriate
+set of features. In the online (runtime) step, optimization with LF models, with the machine-learning
+correction, is conducted. Differential evolution is used for all optimizations. Results are presented
+for two example cases involving the placement of vertical wells in 3D bimodal channelized geomodels.
+We compare the performance of our procedure to optimization using HF models. In the first case, 25
+optimization runs are performed with both approaches. Our method provides an overall speedup factor
+of 46 relative to optimization using HF models, with the best-case NPV within 1% of the HF result.
+In the second case fewer HF optimization runs are conducted (consistent with actual practice),
+and the overall speedup factor with our approach is about 8. In this case, the best-case NPV from our
+procedure exceeds the HF result by 3.8% 

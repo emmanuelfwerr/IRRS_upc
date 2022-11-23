@@ -1,0 +1,19 @@
+The accuracy of binary classification systems is defined as the proportion of correct predictions
+- both positive and negative - made by a classification model or computational algorithm. A value
+between 0 (no accuracy) and 1 (perfect accuracy), the accuracy of a classification model is dependent
+on several factors, notably: the classification rule or algorithm used, the intrinsic characteristics
+of the tool used to do the classification, and the relative frequency of the elements being classified.
+Several accuracy metrics exist, each with its own advantages in different classification scenarios.
+In this manuscript, we show that relative to a perfect accuracy of 1, the positive prevalence threshold
+($\phi_e$), a critical point of maximum curvature in the precision-prevalence curve, bounds the
+$F{_{\beta}}$ score between 1 and 1.8/1.5/1.2 for $\beta$ values of 0.5/1.0/2.0, respectively;
+the $F_1$ score between 1 and 1.5, and the Fowlkes-Mallows Index (FM) between 1 and $\sqrt{2} \approx
+1.414$. We likewise describe a novel $negative$ prevalence threshold ($\phi_n$), the level of
+sharpest curvature for the negative predictive value-prevalence curve, such that $\phi_n$ $>$
+$\phi_e$. The area between both these thresholds bounds the Matthews Correlation Coefficient
+(MCC) between $\sqrt{2}/2$ and $\sqrt{2}$. Conversely, the ratio of the maximum possible accuracy
+to that at any point below the prevalence threshold, $\phi_e$, goes to infinity with decreasing
+prevalence. Though applications are numerous, the ideas herein discussed may be used in computational
+complexity theory, artificial intelligence, and medical screening, amongst others. Where computational
+time is a limiting resource, attaining the prevalence threshold in binary classification systems
+may be sufficient to yield levels of accuracy comparable to that under maximum prevalence. 

@@ -1,0 +1,20 @@
+Abdominal Aortic Aneurysm (AAA) is an enlargement in the lower part of the main artery Aorta by 1.5
+times its normal diameter. AAA can cause death if rupture occurs. Elective surgeries are recommended
+to prevent rupture based on geometrical measurements of AAA diameter and diameter growth rate.
+Reliability of these geometric parameters to predict the AAA rupture risk has been questioned,
+and biomechanical assessment has been proposed to distinguish between patients with high and low
+risk of rupture. Stress in aneurysm wall is the main variable of interest in such assessment. Most
+studies use finite element method to compute AAA stress. This requires discretising patient-specific
+geometry (aneurysm wall and intraluminal thrombus ILT) into finite elements/meshes. Tetrahedral
+elements are most commonly used as they can be generated in seemingly automated and effortless way.
+In practice, however, due to complex aneurysm geometry, the process tends to require time consuming
+mesh optimisation to ensure sufficiently high quality of tetrahedral elements. Furthermore,
+ensuring solution convergence requires large number of tetrahedral elements, which leads to long
+computation times. In this study, we focus on generation of hexahedral meshes as they are known to
+provide converged solution for smaller number of elements than tetrahedral meshes. Generation
+of hexahedral meshes for continua with complex/irregular geometry, such as aneurysms, requires
+analyst interaction. We propose a procedure for generating high quality patient-specific hexahedral
+discretisation of aneurysm wall using the algorithms available in commercial software package
+for mesh generation. For aneurysm cases, we demonstrate that the procedure facilitates patient-specific
+mesh generation within timeframe consistent with clinical workflow constraints while requiring
+only limited input from the analyst. 

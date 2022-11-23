@@ -1,0 +1,19 @@
+To further reduce the cost of semi-supervised domain adaptation (SSDA) labeling, a more effective
+way is to use active learning (AL) to annotate a selected subset with specific properties. However,
+domain adaptation tasks are always addressed in two interactive aspects: domain transfer and the
+enhancement of discrimination, which requires the selected data to be both uncertain under the
+model and diverse in feature space. Contrary to active learning in classification tasks, it is usually
+challenging to select pixels that contain both the above properties in segmentation tasks, leading
+to the complex design of pixel selection strategy. To address such an issue, we propose a novel Active
+Domain Adaptation scheme with Multi-level Contrastive Units (ADA-MCU) for semantic image segmentation.
+A simple pixel selection strategy followed with the construction of multi-level contrastive units
+is introduced to optimize the model for both domain adaptation and active supervised learning.
+In practice, MCUs are constructed from intra-image, cross-image, and cross-domain levels by using
+both labeled and unlabeled pixels. At each level, we define contrastive losses from center-to-center
+and pixel-to-pixel manners, with the aim of jointly aligning the category centers and reducing
+outliers near the decision boundaries. In addition, we also introduce a categories correlation
+matrix to implicitly describe the relationship between categories, which are used to adjust the
+weights of the losses for MCUs. Extensive experimental results on standard benchmarks show that
+the proposed method achieves competitive performance against state-of-the-art SSDA methods
+with 50% fewer labeled pixels and significantly outperforms state-of-the-art with a large margin
+by using the same level of annotation cost. 

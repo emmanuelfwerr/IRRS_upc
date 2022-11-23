@@ -1,0 +1,20 @@
+Predictions of the mean and covariance matrix of summary statistics are critical for confronting
+cosmological theories with observations, not least for likelihood approximations and parameter
+inference. The price to pay for accurate estimates is the extreme cost of running a large number of
+$N$-body and hydrodynamics simulations. Approximate solvers, or surrogates, greatly reduce
+the computational cost but can introduce significant biases, for example in the non-linear regime
+of cosmic structure growth. We adopt a Bayesian approach to solve the estimation problem for both
+the means and covariances using a combination of simulations and surrogates. Our framework allows
+incorporating prior information for the mean and covariance. We derive closed-form solutions
+for Maximum A Posteriori covariance estimates that are efficient Bayesian shrinkage estimators,
+guarantee positive semi-definiteness, and can optionally leverage analytical covariance approximations.
+We discuss choices of the prior and propose a simple procedure for obtaining optimal prior hyperparameter
+values with a small set of test simulations. We test our method by estimating the covariances of clustering
+statistics of GADGET-III $N$-body simulations at redshift $z=0.5$ using surrogates from a 100-1000$\times$
+faster particle-mesh code. Taking the sample covariance from 15,000 simulations as the truth,
+and using an empirical Bayes prior with diagonal blocks, our estimator produces nearly identical
+Fisher matrix contours for $\Lambda$CDM parameters using only $15$ simulations of the non-linear
+dark matter power spectrum. In this case the number of simulations is so small that the sample covariance
+would be degenerate. We show cases where even with a na\"ive prior our method still improves the estimate.
+Our framework is applicable to a wide range of cosmological and astrophysical problems where fast
+surrogates are available. 

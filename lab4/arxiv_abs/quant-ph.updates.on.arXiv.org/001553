@@ -1,0 +1,20 @@
+The goal of generative machine learning is to model the probability distribution underlying a given
+data set. This probability distribution helps to characterize the generation process of the data
+samples. While classical generative machine learning is solely based on classical resources,
+generative quantum machine learning can also employ quantum resources - such as parameterized
+quantum channels and quantum operators - to learn and sample from the probability model of interest.
+Applications of generative (quantum) models are multifaceted. The trained model can generate
+new samples that are compatible with the given data and extend the data set. Additionally, learning
+a model for the generation process of a data set may provide interesting information about the corresponding
+properties. With the help of quantum resources, the respective generative models have access to
+functions that are difficult to evaluate with a classical computer and may improve the performance
+or lead to new insights. Furthermore, generative quantum machine learning can be applied to efficient,
+approximate loading of classical data into a quantum state which may help to avoid - potentially
+exponentially - expensive, exact quantum data loading. The aim of this doctoral thesis is to develop
+new generative quantum machine learning algorithms, demonstrate their feasibility, and analyze
+their performance. Additionally, we outline their potential application to efficient, approximate
+quantum data loading. More specifically, we introduce a quantum generative adversarial network
+and a quantum Boltzmann machine implementation, both of which can be realized with parameterized
+quantum circuits. These algorithms are compatible with first-generation quantum hardware and,
+thus, enable us to study proof of concept implementations not only with numerical quantum simulations
+but also real quantum hardware available today. 

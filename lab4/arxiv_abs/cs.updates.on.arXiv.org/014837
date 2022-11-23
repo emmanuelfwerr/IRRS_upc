@@ -1,0 +1,19 @@
+The Bluetooth standard specifies two transports: Bluetooth Classic (BT) for high-throughput
+wireless services and Bluetooth Low Energy (BLE) for very low-power scenarios. BT and BLE have dedicated
+pairing protocols and devices have to pair over BT and BLE to use both securely. In 2014, the Bluetooth
+standard (v4.2) addressed this usability issue by introducing Cross-Transport Key Derivation
+(CTKD). CTKD allows establishing BT and BLE pairing keys just by pairing over one of the two transports.
+While CTKD crosses the security boundary between BT and BLE, little is known about the internals
+of CTKD and its security implications. In this work, we present the first complete description of
+CTKD obtained by merging the scattered information from the Bluetooth standard with the results
+from our reverse-engineering experiments. Then, we perform a security evaluation of CTKD and uncover
+four cross-transport issues in its specification. We leverage these issues to design four standard-compliant
+attacks on CTKD enabling new ways to exploit Bluetooth (e.g., exploiting BT and BLE by targeting
+only one of the two). Our attacks work even if the strongest security mechanism for BT and BLE are in
+place, including Numeric Comparison and Secure Connections. They allow to impersonate, man-in-the-middle,
+and establish unintended sessions with arbitrary devices. We refer to our attacks as BLUR attacks,
+as they blur the security boundary between BT and BLE. We provide a low-cost implementation of the
+BLUR attacks and we successfully evaluate them on 14 devices with 16 unique Bluetooth chips from
+popular vendors. We discuss the attacks' root causes and present effective countermeasures to
+fix them. We disclosed our findings and countermeasures to the Bluetooth SIG in May 2020 (CVE-2020-15802),
+and we reported additional unmitigated issues in May 2021. 

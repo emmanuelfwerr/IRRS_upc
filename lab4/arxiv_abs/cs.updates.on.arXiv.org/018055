@@ -1,0 +1,19 @@
+We study the problem of Regularized Unconstrained Submodular Maximization (RegularizedUSM)
+as defined by Bodek and Feldman [BF22]. In this problem, you are given a non-monotone non-negative
+submodular function $f:2^{\mathcal N}\to \mathbb R_{\ge 0}$ and a linear function $\ell:2^{\mathcal
+N}\to \mathbb R$ over the same ground set $\mathcal N$, and the objective is to output a set $T\subseteq
+\mathcal N$ approximately maximizing the sum $f(T)+\ell(T)$. Specifically, an algorithm is said
+to provide an $(\alpha,\beta)$-approximation for RegularizedUSM if it outputs a set $T$ such that
+$\mathbb E[f(T)+\ell(T)]\ge \max_{S\subseteq \mathcal N}[\alpha \cdot f(S)+\beta\cdot \ell(S)]$.
+We also study the setting where $S$ and $T$ are subject to a matroid constraint, which we refer to as
+Regularized Constrained Submodular Maximization (RegularizedCSM). For both RegularizedUSM
+and RegularizedCSM, we provide improved $(\alpha,\beta)$-approximation algorithms for the
+cases of non-positive $\ell$, non-negative $\ell$, and unconstrained $\ell$. In particular,
+for the case of unconstrained $\ell$, we are the first to provide nontrivial $(\alpha,\beta)$-approximations
+for RegularizedCSM, and the $\alpha$ we obtain for RegularizedUSM is superior to that of [BF22]
+for all $\beta\in (0,1)$. In addition to approximation algorithms, we provide improved inapproximability
+results for all of the aforementioned cases. In particular, we show that the $\alpha$ our algorithm
+obtains for RegularizedCSM with unconstrained $\ell$ is tight for $\beta\ge \frac{e}{e+1}$.
+We also show 0.478-inapproximability for maximizing a submodular function where $S$ and $T$ are
+subject to a cardinality constraint, improving the long-standing 0.491-inapproximability result
+due to Gharan and Vondrak [GV10]. 

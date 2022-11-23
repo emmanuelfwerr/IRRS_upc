@@ -1,0 +1,20 @@
+Detecting human interactions is crucial for human behavior analysis. Many methods have been proposed
+to deal with Human-to-Object Interaction (HOI) detection, i.e., detecting in an image which person
+and object interact together and classifying the type of interaction. However, Human-to-Human
+Interactions, such as social and violent interactions, are generally not considered in available
+HOI training datasets. As we think these types of interactions cannot be ignored and decorrelated
+from HOI when analyzing human behavior, we propose a new interaction dataset to deal with both types
+of human interactions: Human-to-Human-or-Object (H2O). In addition, we introduce a novel taxonomy
+of verbs, intended to be closer to a description of human body attitude in relation to the surrounding
+targets of interaction, and more independent of the environment. Unlike some existing datasets,
+we strive to avoid defining synonymous verbs when their use highly depends on the target type or requires
+a high level of semantic interpretation. As H2O dataset includes V-COCO images annotated with this
+new taxonomy, images obviously contain more interactions. This can be an issue for HOI detection
+methods whose complexity depends on the number of people, targets or interactions. Thus, we propose
+DIABOLO (Detecting InterActions By Only Looking Once), an efficient subject-centric single-shot
+method to detect all interactions in one forward pass, with constant inference time independent
+of image content. In addition, this multi-task network simultaneously detects all people and objects.
+We show how sharing a network for these tasks does not only save computation resource but also improves
+performance collaboratively. Finally, DIABOLO is a strong baseline for the new proposed challenge
+of H2O Interaction detection, as it outperforms all state-of-the-art methods when trained and
+evaluated on HOI dataset V-COCO. 

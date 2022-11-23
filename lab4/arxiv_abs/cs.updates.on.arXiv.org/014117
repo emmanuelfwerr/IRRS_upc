@@ -1,0 +1,20 @@
+In predictive tasks, real-world datasets often present different degrees of imbalanced (i.e.,
+long-tailed or skewed) distributions. While the majority (the head) classes have sufficient samples,
+the minority (the tail) classes can be under-represented by a rather limited number of samples.
+Data pre-processing has been shown to be very effective in dealing with such problems. On one hand,
+data re-sampling is a common approach to tackling class imbalance. On the other hand, dimension
+reduction, which reduces the feature space, is a conventional technique for reducing noise and
+inconsistencies in a dataset. However, the possible synergy between feature selection and data
+re-sampling for high-performance imbalance classification has rarely been investigated before.
+To address this issue, we carry out a comprehensive empirical study on the joint influence of feature
+selection and re-sampling on two-class imbalance classification. Specifically, we study the
+performance of two opposite pipelines for imbalance classification by applying feature selection
+before or after data re-sampling. We conduct a large number of experiments, with a total of 9225 tests,
+on 52 publicly available datasets, using 9 feature selection methods, 6 re-sampling approaches
+for class imbalance learning, and 3 well-known classification algorithms. Experimental results
+show that there is no constant winner between the two pipelines; thus both of them should be considered
+to derive the best performing model for imbalance classification. We find that the performance
+of an imbalance classification model not only depends on the classifier adopted and the ratio between
+the number of majority and minority samples, but also depends on the ratio between the number of samples
+and features. Overall, this study should provide new reference value for researchers and practitioners
+in imbalance learning. 

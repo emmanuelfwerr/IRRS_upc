@@ -1,0 +1,20 @@
+Treatment effect estimation from observational data is a fundamental problem in causal inference.
+There are two very different schools of thought that have tackled this problem. On one hand, Pearlian
+framework commonly assumes structural knowledge (provided by an expert) in form of directed acyclic
+graphs and provides graphical criteria such as back-door criterion to identify valid adjustment
+sets. On other hand, potential outcomes (PO) framework commonly assumes that all observed features
+satisfy ignorability (i.e., no hidden confounding), which in general is untestable. In prior works
+that attempted to bridge these frameworks, there is an observational criteria to identify an anchor
+variable and if a subset of covariates (not involving the anchor variable) passes a suitable conditional
+independence criteria, then that subset is a valid back-door. Our main result strengthens these
+prior results by showing that under a different expert-driven structural knowledge -- that one
+variable is a direct causal parent of treatment variable -- remarkably, testing for subsets (not
+involving the known parent variable) that are valid back-doors is equivalent to an invariance test.
+Importantly, we also cover the non-trivial case where entire set of observed features is not ignorable
+(generalizing the PO framework) without requiring knowledge of all parents of treatment variable.
+Our key technical idea involves generation of a synthetic sub-sampling (or environment) variable
+that is a function of the known parent variable. In addition to designing an invariance test, this
+sub-sampling variable allows us to leverage Invariant Risk Minimization, and thus, connects finding
+valid adjustments (in non-ignorable observational setting) to representation learning. We demonstrate
+effectiveness and tradeoffs of our approaches on a variety of synthetic data as well as real causal
+effect estimation benchmarks. 

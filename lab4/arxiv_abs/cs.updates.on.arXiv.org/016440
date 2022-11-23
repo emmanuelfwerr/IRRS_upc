@@ -1,0 +1,19 @@
+In the clinical settings, during digital examination of histopathological slides, the pathologist
+annotate the slides by marking the rough boundary around the suspected tumour region. The marking
+or annotation is generally represented as a polygonal boundary that covers the extent of the tumour
+in the slide. These polygonal markings are difficult to imitate through CAD techniques since the
+tumour regions are heterogeneous and hence segmenting them would require exhaustive pixel wise
+ground truth annotation. Therefore, for CAD analysis, the ground truths are generally annotated
+by pathologist explicitly for research purposes. However, this kind of annotation which is generally
+required for semantic or instance segmentation is time consuming and tedious. In this proposed
+work, therefore, we have tried to imitate pathologist like annotation by segmenting tumour extents
+by polygonal boundaries. For polygon like annotation or segmentation, we have used Active Contours
+whose vertices or snake points move towards the boundary of the object of interest to find the region
+of minimum energy. To penalize the Active Contour we used modified U-Net architecture for learning
+penalization values. The proposed hybrid deep learning model fuses the modern deep learning segmentation
+algorithm with traditional Active Contours segmentation technique. The model is tested against
+both state-of-the-art semantic segmentation and hybrid models for performance evaluation against
+contemporary work. The results obtained show that the pathologist like annotation could be achieved
+by developing such hybrid models that integrate the domain knowledge through classical segmentation
+methods like Active Contours and global knowledge through semantic segmentation deep learning
+models. 

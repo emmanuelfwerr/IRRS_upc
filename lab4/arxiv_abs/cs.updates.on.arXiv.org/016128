@@ -1,0 +1,19 @@
+We propose a novel solution to addressing a long-standing dilemma in the representation learning
+of graph neural networks (GNNs): how to effectively capture and represent useful information embedded
+in long-distance nodes to improve the performance of nodes with low homophily without leading to
+performance degradation in nodes with high homophily. This dilemma limits the generalization
+capability of existing GNNs. Intuitively, interactions with distant nodes introduce more noise
+for a node than those with close neighbors. However, in most existing works, messages being passed
+among nodes are mingled together, which is inefficient from a communication perspective. Our solution
+is based on a novel, simple, yet effective aggregation scheme, resulting in a ladder-style GNN architecture,
+namely LADDER-GNN. Specifically, we separate messages from different hops, assign different
+dimensions for them, and then concatenate them to obtain node representations. Such disentangled
+representations facilitate improving the information-to-noise ratio of messages passed from
+different hops. To explore an effective hop-dimension relationship, we develop a conditionally
+progressive neural architecture search strategy. Based on the searching results, we further propose
+an efficient approximate hop-dimension relation function to facilitate the rapid configuration
+of the proposed LADDER-GNN. We verify the proposed LADDER-GNN on seven diverse semi-supervised
+node classification datasets. Experimental results show that our solution achieves better performance
+than most existing GNNs. We further analyze our aggregation scheme with two commonly used GNN architectures,
+and the results corroborate that our scheme outperforms existing schemes in classifying low homophily
+nodes by a large margin. 

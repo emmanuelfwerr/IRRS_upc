@@ -1,0 +1,19 @@
+A large fraction of data generated via human activities such as online purchases, health records,
+spatial mobility etc. can be represented as a sequence of events over a continuous-time. Learning
+deep learning models over these continuous-time event sequences is a non-trivial task as it involves
+modeling the ever-increasing event timestamps, inter-event time gaps, event types, and the influences
+between different events within and across different sequences. In recent years neural enhancements
+to marked temporal point processes (MTPP) have emerged as a powerful framework to model the underlying
+generative mechanism of asynchronous events localized in continuous time. However, most existing
+models and inference methods in the MTPP framework consider only the complete observation scenario
+i.e. the event sequence being modeled is completely observed with no missing events -- an ideal setting
+that is rarely applicable in real-world applications. A recent line of work which considers missing
+events while training MTPP utilizes supervised learning techniques that require additional knowledge
+of missing or observed label for each event in a sequence, which further restricts its practicability
+as in several scenarios the details of missing events is not known apriori. In this work, we provide
+a novel unsupervised model and inference method for learning MTPP in presence of event sequences
+with missing events. Specifically, we first model the generative processes of observed events
+and missing events using two MTPP, where the missing events are represented as latent random variables.
+Then, we devise an unsupervised training method that jointly learns both the MTPP by means of variational
+inference. Such a formulation can effectively impute the missing data among the observed events
+and can identify the optimal position of missing events in a sequence. 

@@ -1,0 +1,19 @@
+Quantitative measures of dopamine transporter (DaT) uptake in caudate, putamen, and globus pallidus
+(GP) have potential as biomarkers for measuring the severity of Parkinson disease. Reliable quantification
+of this uptake requires accurate segmentation of the considered regions. However, segmentation
+of these regions from DaT-SPECT images is challenging, a major reason being partial-volume effects
+(PVEs), which arise from the limited system resolution and reconstruction of images over finite-sized
+voxel grids. The latter leads to tissue-fraction effects (TFEs). Thus, there is an important need
+for methods that can account for the PVEs, including the TFEs, and accurately segment DaT-SPECT
+images. The purpose of this study is to design and objectively evaluate a fully automated tissue-fraction
+estimation-based segmentation method that segments the caudate, putamen, and GP from DaT-SPECT
+images. The proposed method estimates the posterior mean of the fractional volumes occupied by
+the caudate, putamen, and GP within each voxel of a 3-D DaT-SPECT image. The estimate is obtained
+by minimizing a cost function based on the binary cross-entropy loss between the true and estimated
+fractional volumes over a population of SPECT images. Evaluations using clinically guided highly
+realistic simulation studies show that the proposed method accurately segmented the caudate,
+putamen, and GP with high mean Dice similarity coefficients ~ 0.80 and significantly outperformed
+(p < 0.01) all other considered segmentation methods. Further, objective evaluation of the proposed
+method on the task of quantifying regional uptake shows that the method yielded reliable quantification
+with low ensemble normalized root mean square error (NRMSE) < 20% for all the considered regions.
+The results motivate further evaluation of the method with physical-phantom and patient studies.

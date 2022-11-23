@@ -1,0 +1,19 @@
+Few-shot classification (FSC) is one of the most concerned hot issues in recent years. The general
+setting consists of two phases: (1) Pre-train a feature extraction model (FEM) with base data (has
+large amounts of labeled samples). (2) Use the FEM to extract the features of novel data (with few
+labeled samples and totally different categories from base data), then classify them with the to-be-designed
+classifier. The adaptability of pre-trained FEM to novel data determines the accuracy of novel
+features, thereby affecting the final classification performances. To this end, how to appraise
+the pre-trained FEM is the most crucial focus in the FSC community. It sounds like traditional Class
+Activate Mapping (CAM) based methods can achieve this by overlaying weighted feature maps. However,
+due to the particularity of FSC (e.g., there is no backpropagation when using the pre-trained FEM
+to extract novel features), we cannot activate the feature map with the novel classes. To address
+this challenge, we propose a simple, flexible method, dubbed as Class-Irrelevant Mapping (CIM).
+Specifically, first, we introduce dictionary learning theory and view the channels of the feature
+map as the bases in a dictionary. Then we utilize the feature map to fit the feature vector of an image
+to achieve the corresponding channel weights. Finally, we overlap the weighted feature map for
+visualization to appraise the ability of pre-trained FEM on novel data. For fair use of CIM in evaluating
+different models, we propose a new measurement index, called Feature Localization Accuracy (FLA).
+In experiments, we first compare our CIM with CAM in regular tasks and achieve outstanding performances.
+Next, we use our CIM to appraise several classical FSC frameworks without considering the classification
+results and discuss them. 

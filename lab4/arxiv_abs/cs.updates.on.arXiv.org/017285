@@ -1,0 +1,19 @@
+Objective: To comparatively evaluate several transformer model architectures at identifying
+protected health information (PHI) in the i2b2/UTHealth 2014 clinical text de-identification
+challenge corpus. Methods: The i2b2/UTHealth 2014 corpus contains N=1304 clinical notes obtained
+from N=296 patients. Using a transfer learning framework, we fine-tune several transformer model
+architectures on the corpus, including: BERT-base, BERT-large, ROBERTA-base, ROBERTA-large,
+ALBERT-base and ALBERT-xxlarge. During fine-tuning we vary the following model hyper-parameters:
+batch size, number training epochs, learning rate and weight decay. We fine tune models on a training
+data set, we evaluate and select optimally performing models on an independent validation dataset,
+and lastly assess generalization performance on a held-out test dataset. We assess model performance
+in terms of accuracy, precision (positive predictive value), recall (sensitivity) and F1 score
+(harmonic mean of precision and recall). We are interested in overall model performance (PHI identified
+vs. PHI not identified), as well as PHI-specific model performance. Results: We observe that the
+ROBERTA-large models perform best at identifying PHI in the i2b2/UTHealth 2014 corpus, achieving
+>99% overall accuracy and 96.7% recall/precision on the heldout test corpus. Performance was good
+across many PHI classes; however, accuracy/precision/recall decreased for identification of
+the following entity classes: professions, organizations, ages, and certain locations. Conclusions:
+Transformers are a promising model class/architecture for clinical text de-identification.
+With minimal hyper-parameter tuning transformers afford researchers/clinicians the opportunity
+to obtain (near) state-of-the-art performance. 

@@ -1,0 +1,19 @@
+Given the counters of vehicles that traverse the roads of a traffic network, we aim at reconstructing
+the travel demand that generated them expressed in terms of the number of origin-destination trips
+made by users. We model the problem as a bi-level optimization problem. In the inner level, given
+a tentative travel demand, we solve a dynamic traffic assignment problem to decide the routing of
+the users between their origins and destinations. In the outer level, we adjust the number of trips
+and their origins and destinations, aiming at minimizing the discrepancy between the consequent
+counters generated in the inner level and the given vehicle counts measured by sensors in the traffic
+network. We solve the dynamic traffic assignment problem employing a mesoscopic model implemented
+by the traffic simulator SUMO. Thus, the outer problem becomes an optimization problem that minimizes
+a black-box objective function determined by the results of the simulation, which is a costly computation.
+We study different approaches to the outer level problem categorized as gradient-based and derivative-free
+approaches. Among the gradient-based approaches, we study an assignment matrix-based approach
+and an assignment matrix-free approach that uses the Simultaneous Perturbation Stochastic Approximation
+(SPSA) algorithm. Among the derivative-free approaches, we study machine learning algorithms
+to learn a model of the simulator that can then be used as a surrogated objective function in the optimization
+problem. We compare these approaches computationally on an artificial network. The gradient-based
+approaches perform the best in terms of archived solution quality and computational requirements,
+while the results obtained by the machine learning approach are currently less satisfactory but
+provide an interesting avenue of future research. 

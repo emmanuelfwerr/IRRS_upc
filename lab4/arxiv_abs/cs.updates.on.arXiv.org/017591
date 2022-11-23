@@ -1,0 +1,20 @@
+In today's production machine learning (ML) systems, models are continuously trained, improved,
+and deployed. ML design and training are becoming a continuous workflow of various tasks that have
+dynamic resource demands. Serverless computing is an emerging cloud paradigm that provides transparent
+resource management and scaling for users and has the potential to revolutionize the routine of
+ML design and training. However, hosting modern ML workflows on existing serverless platforms
+has non-trivial challenges due to their intrinsic design limitations such as stateless nature,
+limited communication support across function instances, and limited function execution duration.
+These limitations result in a lack of an overarching view and adaptation mechanism for training
+dynamics and an amplification of existing problems in ML workflows. To address the above challenges,
+we propose SMLT, an automated, scalable, and adaptive serverless framework to enable efficient
+and user-centric ML design and training. SMLT employs an automated and adaptive scheduling mechanism
+to dynamically optimize the deployment and resource scaling for ML tasks during training. SMLT
+further enables user-centric ML workflow execution by supporting user-specified training deadlines
+and budget limits. In addition, by providing an end-to-end design, SMLT solves the intrinsic problems
+in serverless platforms such as the communication overhead, limited function execution duration,
+need for repeated initialization, and also provides explicit fault tolerance for ML training.
+SMLT is open-sourced and compatible with all major ML frameworks. Our experimental evaluation
+with large, sophisticated modern ML models demonstrate that SMLT outperforms the state-of-the-art
+VM based systems and existing serverless ML training frameworks in both training speed (up to 8X)
+and monetary cost (up to 3X) 

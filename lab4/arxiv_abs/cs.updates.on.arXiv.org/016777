@@ -1,0 +1,20 @@
+Consider an actor making selection decisions using a series of classifiers, which we term a sequential
+screening process. The early stages filter out some applicants, and in the final stage an expensive
+but accurate test is applied to the individuals that make it to the final stage. Since the final stage
+is expensive, if there are multiple groups with different fractions of positives at the penultimate
+stage (even if a slight gap), then the firm may naturally only choose to the apply the final (interview)
+stage solely to the highest precision group which would be clearly unfair to the other groups. Even
+if the firm is required to interview all of those who pass the final round, the tests themselves could
+have the property that qualified individuals from some groups pass more easily than qualified individuals
+from others. Thus, we consider requiring Equality of Opportunity (qualified individuals from
+each each group have the same chance of reaching the final stage and being interviewed). We then examine
+the goal of maximizing quantities of interest to the decision maker subject to this constraint,
+via modification of the probabilities of promotion through the screening process at each stage
+based on performance at the previous stage. We exhibit algorithms for satisfying Equal Opportunity
+over the selection process and maximizing precision (the fraction of interview that yield qualified
+candidates) as well as linear combinations of precision and recall (recall determines the number
+of applicants needed per hire) at the end of the final stage. We also present examples showing that
+the solution space is non-convex, which motivate our exact and (FPTAS) approximation algorithms
+for maximizing the linear combination of precision and recall. Finally, we discuss the `price of'
+adding additional restrictions, such as not allowing the decision maker to use group membership
+in its decision process. 

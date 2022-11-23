@@ -1,0 +1,19 @@
+Vision-based segmentation of the robotic tool during robot-assisted surgery enables downstream
+applications, such as augmented reality feedback, while allowing for inaccuracies in robot kinematics.
+With the introduction of deep learning, many methods were presented to solve instrument segmentation
+directly and solely from images. While these approaches made remarkable progress on benchmark
+datasets, fundamental challenges pertaining to their robustness remain. We present CaRTS, a causality-driven
+robot tool segmentation algorithm, that is designed based on a complementary causal model of the
+robot tool segmentation task. Rather than directly inferring segmentation masks from observed
+images, CaRTS iteratively aligns tool models with image observations by updating the initially
+incorrect robot kinematic parameters through forward kinematics and differentiable rendering
+to optimize image feature similarity end-to-end. We benchmark CaRTS with competing techniques
+on both synthetic as well as real data from the dVRK, generated in precisely controlled scenarios
+to allow for counterfactual synthesis. On training-domain test data, CaRTS achieves a Dice score
+of 93.4 that is preserved well (Dice score of 91.8) when tested on counterfactually altered test
+data, exhibiting low brightness, smoke, blood, and altered background patterns. This compares
+favorably to Dice scores of 95.0 and 86.7, respectively, of the SOTA image-based method. Future
+work will involve accelerating CaRTS to achieve video framerate and estimating the impact occlusion
+has in practice. Despite these limitations, our results are promising: In addition to achieving
+high segmentation accuracy, CaRTS provides estimates of the true robot kinematics, which may benefit
+applications such as force estimation. Code is available at: https://github.com/hding2455/CaRTS

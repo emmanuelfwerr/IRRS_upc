@@ -1,0 +1,20 @@
+When a patient is admitted to the intensive care unit (ICU) after a traumatic brain injury (TBI),
+an early prognosis is essential for baseline risk adjustment and shared decision making. TBI outcomes
+are commonly categorised by the Glasgow Outcome Scale-Extended (GOSE) into 8, ordered levels of
+functional recovery at 6 months after injury. Existing ICU prognostic models predict binary outcomes
+at a certain threshold of GOSE (e.g., prediction of survival [GOSE>1] or functional independence
+[GOSE>4]). We aimed to develop ordinal prediction models that concurrently predict probabilities
+of each GOSE score. From a prospective cohort (n=1,550, 65 centres) in the ICU stratum of the Collaborative
+European NeuroTrauma Effectiveness Research in TBI (CENTER-TBI) patient dataset, we extracted
+all clinical information within 24 hours of ICU admission (1,151 predictors) and 6-month GOSE scores.
+We analysed the effect of 2 design elements on ordinal model performance: (1) the baseline predictor
+set, ranging from a concise set of 10 validated predictors to a token-embedded representation of
+all possible predictors, and (2) the modelling strategy, from ordinal logistic regression to multinomial
+deep learning. With repeated k-fold cross-validation, we found that expanding the baseline predictor
+set significantly improved ordinal prediction performance while increasing analytical complexity
+did not. Half of these gains could be achieved with the addition of 8 high-impact predictors (2 demographic
+variables, 4 protein biomarkers, and 2 severity assessments) to the concise set. At best, ordinal
+models achieved 0.76 (95% CI: 0.74-0.77) ordinal discrimination ability (ordinal c-index) and
+57% (95% CI: 54%-60%) explanation of ordinal variation in 6-month GOSE (Somers' D). Our results
+motivate the search for informative predictors for higher GOSE and the development of ordinal dynamic
+prediction models. 

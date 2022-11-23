@@ -1,0 +1,20 @@
+The research on developing CNN-based fully-automated Brain-Tumor-Segmentation systems has
+been progressed rapidly. For the systems to be applicable in practice, a good The research on developing
+CNN-based fully-automated Brain-Tumor-Segmentation systems has been progressed rapidly. For
+the systems to be applicable in practice, a good processing quality and reliability are the must.
+Moreover, for wide applications of such systems, a minimization of computation complexity is desirable,
+which can also result in a minimization of randomness in computation and, consequently, a better
+performance consistency. To this end, the CNN in the proposed system has a unique structure with
+2 distinguished characters. Firstly, the three paths of its feature extraction block are designed
+to extract, from the multi-modality input, comprehensive feature information of mono-modality,
+paired-modality and cross-modality data, respectively. Also, it has a particular three-branch
+classification block to identify the pixels of 4 classes. Each branch is trained separately so that
+the parameters are updated specifically with the corresponding ground truth data of a target tumor
+areas. The convolution layers of the system are custom-designed with specific purposes, resulting
+in a very simple config of 61,843 parameters in total. The proposed system is tested extensively
+with BraTS2018 and BraTS2019 datasets. The mean Dice scores, obtained from the ten experiments
+on BraTS2018 validation samples, are 0.787+0.003, 0.886+0.002, 0.801+0.007, for enhancing tumor,
+whole tumor and tumor core, respectively, and 0.751+0.007, 0.885+0.002, 0.776+0.004 on BraTS2019.
+The test results demonstrate that the proposed system is able to perform high-quality segmentation
+in a consistent manner. Furthermore, its extremely low computation complexity will facilitate
+its implementation/application in various environments. 

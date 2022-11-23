@@ -1,0 +1,19 @@
+To design efficient parallel algorithms, some recent papers showed that many sequential iterative
+algorithms can be directly parallelized but there are still challenges in achieving work-efficiency
+and high-parallelism. Work-efficiency can be hard for certain problems where the number of dependences
+is asymptotically more than optimal sequential work bound. To achieve high-parallelism, we want
+to process as many objects as possible in parallel. The goal is to achieve $\tilde{O}(D)$ span for
+a problem with the deepest dependence length $D$. We refer to this property as round-efficiency.
+In this paper, we show work-efficient and round-efficient algorithms for a variety of classic problems
+and propose general approaches to do so. To efficiently parallelize many sequential iterative
+algorithms, we propose the phase-parallel framework. The framework assigns a rank to each object
+and processes them accordingly. All objects with the same rank can be processed in parallel. To enable
+work-efficiency and high parallelism, we use two types of general techniques. Type 1 algorithms
+aim to use range queries to extract all objects with the same rank, such that we avoid evaluating all
+the dependences. We discuss activity selection, unlimited knapsack, and more using Type 1 framework.
+Type 2 algorithms aim to wake up an object when the last object it depends on is finished. We discuss
+activity selection, longest increasing subsequence (LIS), and many other algorithms using Type
+2 framework. All of our algorithms are (nearly) work-efficient and round-efficient. Many of them
+improve previous best bounds, and some of them are the first to achieve work-efficiency with round-efficiency.
+We also implement many of them. On inputs with reasonable dependence depth, our algorithms are highly
+parallelized and significantly outperform their sequential counterparts. 

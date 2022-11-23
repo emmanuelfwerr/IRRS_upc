@@ -1,0 +1,19 @@
+Vision transformers (ViTs) have pushed the state-of-the-art for various visual recognition tasks
+by patch-wise image tokenization followed by stacked self-attention operations. Employing self-attention
+modules results in a quadratic complexity in both computation and memory usage. Various attempts
+on approximating the self-attention computation with linear complexity have thus been made in
+Natural Language Processing. However, an in-depth analysis in this work reveals that they are either
+theoretically flawed or empirically ineffective for visual recognition. We identify that their
+limitations are rooted in retaining the softmax self-attention during approximations. Specifically,
+conventional self-attention is computed by normalizing the scaled dot-product between token
+feature vectors. Preserving the softmax operation challenges any subsequent linearization efforts.
+Under this insight, a SOftmax-Free Transformer (abbreviated as SOFT) is proposed for the first
+time. To eliminate the softmax operator in self-attention, a Gaussian kernel function is adopted
+to replace the dot-product similarity. This enables a full self-attention matrix to be approximated
+via a low-rank matrix decomposition. The robustness of our approximation is achieved by calculating
+its Moore-Penrose inverse using a Newton-Raphson method. Further, an efficient symmetric normalization
+is introduced on the low-rank self-attention for enhancing model generalizability and transferability.
+Extensive experiments on ImageNet, COCO and ADE20K show that our SOFT significantly improves the
+computational efficiency of existing ViT variants. Crucially, with a linear complexity, much
+longer token sequences are permitted in SOFT, resulting in superior trade-off between accuracy
+and complexity. 

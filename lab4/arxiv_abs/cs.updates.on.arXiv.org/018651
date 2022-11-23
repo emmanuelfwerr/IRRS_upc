@@ -1,0 +1,18 @@
+We propose a new, unifying framework that yields an array of cryptographic primitives with {\em
+certified deletion}. These primitives enable a party in possession of a quantum ciphertext to generate
+a classical certificate that the encrypted plaintext has been information-theoretically deleted,
+and cannot be recovered even given unbounded computational resources. For any $X \in \{\mathsf{public}\text{-}\mathsf{key},\mathsf{attribute\text{-}based},\mathsf{fully\text{-}homomorphic},\mathsf{witness},\mathsf{timed}\text{-}\mathsf{release}\}$,
+our compiler yields post-quantum $X$ encryption with certified deletion, assuming post-quantum
+$X$ encryption. In addition, assuming the existence of statistically binding commitments, our
+compiler yields statistically binding commitments with certified everlasting hiding as well
+as statistically sound zero-knowledge proofs for QMA with certified everlasting zero-knowledge.
+We also introduce and construct information-theoretic secret sharing with certified deletion.
+While encryption with certified deletion was first introduced by [BI20] in the context of an information-theoretic
+one-time pad, existing proposals [Unr14,HMNY21,HMNY22,Por22] for {\em public-key} primitives
+with certified deletion (1) have complex tailored constructions and non-generic proofs, (2) are
+not known to satisfy everlasting security after deletion in the plain model, and in many cases (3)
+resort to idealized models or stronger cryptographic assumptions like obfuscation. We remedy
+this situation by developing a novel proof technique to argue that a bit $b$ has been {\em information-theoretically
+deleted} from an adversary's view once they produce a valid deletion certificate, despite having
+been previously {\em information-theoretically determined} by the ciphertext they held in their
+view. This may be of independent interest. 

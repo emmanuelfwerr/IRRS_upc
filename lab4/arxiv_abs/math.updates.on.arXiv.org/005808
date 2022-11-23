@@ -1,0 +1,19 @@
+Effective properties of materials with random heterogeneous structures are typically determined
+by homogenising the mechanical quantity of interest in a window of observation. The entire problem
+setting encompasses the solution of a local PDE and some averaging formula for the quantity of interest
+in such domain. There are relatively standard methods in the literature to completely determine
+the formulation except for two choices: i) the local domain itself and the ii) boundary conditions.
+Hence, the modelling errors are governed by the quality of these two choices. The choice i) relates
+to the degree of representativeness of a microscale sample, i.e., it is essentially a statistical
+characteristic. Naturally, its reliability is higher as the size of the observation window becomes
+larger and/or the number of samples increases. On the other hand, excepting few special cases there
+is no automatic guideline to handle ii). Although it is known that the overall effect of boundary
+condition becomes less important with the size of the microscale domain, the computational cost
+to simulate such large problem several times might be prohibitive even for relatively small accuracy
+requirements. Here we introduce a machine learning procedure to select most suitable boundary
+conditions for multiscale problems, particularly those arising in solid mechanics. We propose
+the combination Reduced-Order Models and Deep Neural Networks in an offline phase, whilst the online
+phase consists in the very same homogenisation procedure plus one (cheap) evaluation of the trained
+model for boundary conditions. Hence, the method allows an implementation with minimal changes
+in existing codes and the use of relatively small domains without losing accuracy, which reduces
+the computational cost by several orders of magnitude. 

@@ -1,0 +1,19 @@
+Abridged abstract: despite the long history of garbage collection (GC) and its prevalence in modern
+programming languages, there is surprisingly little clarity about its true cost. Without understanding
+their cost, crucial tradeoffs made by garbage collectors (GCs) go unnoticed. This can lead to misguided
+design constraints and evaluation criteria used by GC researchers and users, hindering the development
+of high-performance, low-cost GCs. In this paper, we develop a methodology that allows us to empirically
+estimate the cost of GC for any given set of metrics. By distilling out the explicitly identifiable
+GC cost, we estimate the intrinsic application execution cost using different GCs. The minimum
+distilled cost forms a baseline. Subtracting this baseline from the total execution costs, we can
+then place an empirical lower bound on the absolute costs of different GCs. Using this methodology,
+we study five production GCs in OpenJDK 17, a high-performance Java runtime. We measure the cost
+of these collectors, and expose their respective key performance tradeoffs. We find that with a
+modestly sized heap, production GCs incur substantial overheads across a diverse suite of modern
+benchmarks, spending at least 7-82% more wall-clock time and 6-92% more CPU cycles relative to the
+baseline cost. We show that these costs can be masked by concurrency and generous provisioning of
+memory/compute. In addition, we find that newer low-pause GCs are significantly more expensive
+than older GCs, and, surprisingly, sometimes deliver worse application latency than stop-the-world
+GCs. Our findings reaffirm that GC is by no means a solved problem and that a low-cost, low-latency
+GC remains elusive. We recommend adopting the distillation methodology together with a wider range
+of cost metrics for future GC evaluations. 

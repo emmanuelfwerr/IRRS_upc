@@ -1,0 +1,20 @@
+With its growing use in safety/security-critical applications, Deep Learning (DL) has raised
+increasing concerns regarding its dependability. In particular, DL has a notorious problem of
+lacking robustness. Despite recent efforts made in detecting Adversarial Examples (AEs) via state-of-the-art
+attacking and testing methods, they are normally input distribution agnostic and/or disregard
+the perception quality of AEs. Consequently, the detected AEs are irrelevant inputs in the application
+context or unnatural/unrealistic that can be easily noticed by humans. This may lead to a limited
+effect on improving the DL model's dependability, as the testing budget is likely to be wasted on
+detecting AEs that are encountered very rarely in its real-life operations. In this paper, we propose
+a new robustness testing approach for detecting AEs that considers both the input distribution
+and the perceptual quality of inputs. The two considerations are encoded by a novel hierarchical
+mechanism. First, at the feature level, the input data distribution is extracted and approximated
+by data compression techniques and probability density estimators. Such quantified feature level
+distribution, together with indicators that are highly correlated with local robustness, are
+considered in selecting test seeds. Given a test seed, we then develop a two-step genetic algorithm
+for local test case generation at the pixel level, in which two fitness functions work alternatively
+to control the quality of detected AEs. Finally, extensive experiments confirm that our holistic
+approach considering hierarchical distributions at feature and pixel levels is superior to state-of-the-arts
+that either disregard any input distribution or only consider a single (non-hierarchical) distribution,
+in terms of not only the quality of detected AEs but also improving the overall robustness of the DL
+model under testing. 

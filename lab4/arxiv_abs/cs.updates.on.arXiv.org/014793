@@ -1,0 +1,19 @@
+Motivated by the Matrix Spencer conjecture, we study the problem of finding signed sums of matrices
+with a small matrix norm. A well-known strategy to obtain these signs is to prove, given matrices
+$A_1, \dots, A_n \in \mathbb{R}^{m \times m}$, a Gaussian measure lower bound of $2^{-O(n)}$ for
+a scaling of the discrepancy body $\{x \in \mathbb{R}^n: \| \sum_{i=1}^n x_i A_i\| \leq 1\}$. We
+show this is equivalent to covering its polar with $2^{O(n)}$ translates of the cube $\frac{1}{n}
+B^n_\infty$, and construct such a cover via mirror descent. As applications of our framework, we
+show: $\bullet$ Matrix Spencer for Low-Rank Matrices. If the matrices satisfy $\|A_i\|_{\mathrm{op}}
+\leq 1$ and $\mathrm{rank}(A_i) \leq r$, we can efficiently find a coloring $x \in \{\pm 1\}^n$ with
+discrepancy $\|\sum_{i=1}^n x_i A_i \|_{\mathrm{op}} \lesssim \sqrt{n \log (\min(rm/n, r))}$.
+This improves upon the naive $O(\sqrt{n \log r})$ bound for random coloring and proves the matrix
+Spencer conjecture when $r m \leq n$. $\bullet$ Matrix Spencer for Block Diagonal Matrices. For
+block diagonal matrices with $\|A_i\|_{\mathrm{op}} \leq 1$ and block size $h$, we can efficiently
+find a coloring $x \in \{\pm 1\}^n$ with $\|\sum_{i=1}^n x_i A_i \|_{\mathrm{op}} \lesssim \sqrt{n
+\log (hm/n)}$. Using our proof, we reduce the matrix Spencer conjecture to the existence of a $O(\log(m/n))$
+quantum relative entropy net on the spectraplex. $\bullet$ Matrix Discrepancy for Schatten Norms.
+We generalize our discrepancy bound for matrix Spencer to Schatten norms $2 \le p \leq q$. Given $\|A_i\|_{S_p}
+\leq 1$ and $\mathrm{rank}(A_i) \leq r$, we can efficiently find a partial coloring $x \in [-1,1]^n$
+with $|\{i : |x_i| = 1\}| \ge n/2$ and $\|\sum_{i=1}^n x_i A_i\|_{S_q} \lesssim \sqrt{n \min(p,
+\log(rk))} \cdot k^{1/p-1/q}$, where $k := \min(1,m/n)$. 

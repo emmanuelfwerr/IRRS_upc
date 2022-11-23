@@ -1,0 +1,19 @@
+Since many safety-critical systems, such as surgical robots and autonomous driving cars operate
+in unstable environments with sensor noise and incomplete data, it is desirable for object detectors
+to take the localization uncertainty into account. However, there are several limitations of the
+existing uncertainty estimation methods for anchor-based object detection. 1) They model the
+uncertainty of the heterogeneous object properties with different characteristics and scales,
+such as location (center point) and scale (width, height), which could be difficult to estimate.
+2) They model box offsets as Gaussian distributions, which is not compatible with the ground truth
+bounding boxes that follow the Dirac delta distribution. 3) Since anchor-based methods are sensitive
+to anchor hyperparameters, the localization uncertainty for them could be also highly sensitive
+to the choice of hyperparameters as well. To tackle these limitations, we propose a new localization
+uncertainty estimation method called UAD for anchor-free object detection. Our method captures
+the uncertainty in four directions of box offsets~(left, right, top, bottom) that are homogeneous,
+so that it can tell which direction is uncertain, and provides a quantitative value of uncertainty
+in $[0, 1]$. To enable such uncertainty estimation, we design a new uncertainty loss, negative power
+log-likelihood loss, to measure the localization uncertainty by weighting the likelihood loss
+by its IoU, which alleviates the model misspecification problem. Furthermore, we propose an uncertainty-aware
+focal loss for reflecting the estimated uncertainty to the classification score. Experimental
+results on COCO datasets demonstrate that our method significantly improves FCOS, by up to 1.8 points,
+without sacrificing computational efficiency. 

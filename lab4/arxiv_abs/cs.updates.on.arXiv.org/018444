@@ -1,0 +1,20 @@
+The performance properties of byte-addressable persistent memory (PMEM) have the potential to
+significantly improve system performance over a wide spectrum of applications. But persistent
+memory brings considerable new challenges to the programmer: only 8-byte write atomicity, out
+of order flush and availability limited by node failure. It's possible to work with the atomicity
+and ordering constraints of PMEM directly by carefully sequencing the order of store operations
+and inserting explicit flush and fence operations at each ordering point. But this is tedious and
+error-prone: too many flush operations defeat the performance benefits of PMEM, and even with generous
+use, it is difficult to prove that a given program is crash-consistent. Logging is a great abstraction
+to deal with these issues but prior work on PMEM logging has not successfully hidden the idiosyncrasies
+of PMEM. Moreover, shortcomings in the log interface and design have prevented attainment of full
+PMEM performance. We believe that a log design that hides the idiosyncrasies from programmers while
+delivering full performance is key to success. In this paper, we present the design and implementation
+of Arcadia, a generic replicated log on PMEM to address these problems. Arcadia handles atomicity,
+integrity, and replication of log records to reduce programmer burden. Our design has several novel
+aspects including concurrent log writes with in-order commit, atomicity and integrity primitives
+for local and remote PMEM writes, and a frequency-based log force policy for providing low overhead
+persistence with guaranteed bounded loss of uncommitted records. Our evaluation shows that Arcadia
+outperforms state-of-the-art PMEM logs, such as PMDK's libpmemlog, FLEX, and Query Fresh by several
+times while providing stronger log record durability guarantees. We expect Arcadia to become the
+leading off-the-shelf PMEM log design. 

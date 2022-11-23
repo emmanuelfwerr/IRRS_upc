@@ -1,0 +1,18 @@
+The recently proposed CP language adopts Compositional Programming: a new modular programming
+style that solves challenging problems such as the Expression Problem. CP is implemented on top
+of a polymorphic core language with disjoint intersection types called Fi+. The semantics of Fi+
+employs an elaboration to a target language and relies on a sophisticated proof technique to prove
+the coherence of the elaboration. Unfortunately, the proof technique is technically challenging
+and hard to scale to many common features, including recursion or impredicative polymorphism.
+Thus, the original formulation of Fi+ does not support the two later features, which creates a gap
+between theory and practice, since CP fundamentally relies on them. This paper presents a new formulation
+of Fi+ based on a type-directed operational semantics (TDOS). The TDOS approach was recently proposed
+to model the semantics of languages with disjoint intersection types (but without polymorphism).
+Our work shows that the TDOS approach can be extended to languages with disjoint polymorphism and
+model the full Fi+ calculus. Unlike the elaboration semantics, which gives the semantics to Fi+
+indirectly via a target language, the TDOS approach gives a semantics to Fi+ directly. With a TDOS,
+there is no need for a coherence proof. Instead, we can simply prove that the semantics is deterministic.
+The proof of determinism only uses simple reasoning techniques, such as straightforward induction,
+and is able to handle problematic features such as recursion and impredicative polymorphism. This
+removes the gap between theory and practice and validates the original proofs of correctness for
+CP. We formalized the TDOS variant of the Fi+ calculus and all its proofs in the Coq proof assistant.

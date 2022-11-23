@@ -1,0 +1,19 @@
+Neuroevolution is one of the methodologies that can be used for learning optimal architecture during
+training. It uses evolutionary algorithms to generate the topology of artificial neural networks
+and its parameters. The main benefits are that it is scalable and can be fully or partially non gradient
+method. In this work, a modified neuroevolution technique is presented which incorporates multi-level
+optimisation. The presented approach adapts evolution strategies for evolving an ensemble model
+based on the bagging technique, using genetic operators for optimising single anomaly detection
+models, reducing the training dataset to speedup the search process and perform non-gradient fine
+tuning. Multivariate anomaly detection as an unsupervised learning task is the case study upon
+which the presented approach is tested. Single model optimisation is based on mutation and crossover
+operators and is focused on finding optimal window sizes, the number of layers, layer depths, hyperparameters
+etc. to boost the anomaly detection scores of new and already known models. The proposed framework
+and its protocol shows that it is possible to find architecture within a reasonable time frame which
+can boost all well known multivariate anomaly detection deep learning architectures. The work
+concentrates on improvements to the multi-level neuroevolution approach for anomaly detection.
+The main modifications are in the methods of mixing groups and single model evolution, non-gradient
+fine tuning and a voting mechanism. The presented framework can be used as an efficient learning
+network architecture method for any different unsupervised task where autoencoder architectures
+can be used. The tests were run on SWAT and WADI datasets and the presented approach evolved the architectures
+that achieved the best scores among other deep learning models. 

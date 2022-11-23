@@ -1,0 +1,19 @@
+Accurate three-dimensional perception is a fundamental task in several computer vision applications.
+Recently, commercial RGB-depth (RGB-D) cameras have been widely adopted as single-view depth-sensing
+devices owing to their efficient depth-sensing abilities. However, the depth quality of most RGB-D
+sensors remains insufficient owing to the inherent noise from a single-view environment. Recently,
+several studies have focused on the single-view depth enhancement of RGB-D cameras. Recent research
+has proposed deep-learning-based approaches that typically train networks using high-quality
+supervised depth datasets, which indicates that the quality of the ground-truth (GT) depth dataset
+is a top-most important factor for accurate system; however, such high-quality GT datasets are
+difficult to obtain. In this study, we developed a novel method for high-quality GT depth generation
+based on an RGB-D stream dataset. First, we defined consecutive depth frames in a local spatial region
+as a local frame set. Then, the depth frames were aligned to a certain frame in the local frame set using
+an unsupervised point cloud registration scheme. The registration parameters were trained based
+on an overfit-training scheme, which was primarily used to construct a single GT depth image for
+each frame set. The final GT depth dataset was constructed using several local frame sets, and each
+local frame set was trained independently. The primary advantage of this study is that a high-quality
+GT depth dataset can be constructed under various scanning environments using only the RGB-D stream
+dataset. Moreover, our proposed method can be used as a new benchmark GT dataset for accurate performance
+evaluations. We evaluated our GT dataset on previously benchmarked GT depth datasets and demonstrated
+that our method is superior to state-of-the-art depth enhancement frameworks. 

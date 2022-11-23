@@ -1,0 +1,20 @@
+Dynamic MRI may capture temporal anatomical changes in soft tissue organs with high contrast but
+the obtained sequences usually suffer from limited volume coverage which makes the high resolution
+reconstruction of organ shape trajectories a major challenge in temporal studies. Because of the
+variability of abdominal organ shapes across time and subjects, the objective of this study is to
+go towards 3D dense velocity measurements to fully cover the entire surface and to extract meaningful
+features characterizing the observed organ deformations and enabling clinical action or decision.
+We present a pipeline for characterization of bladder surface dynamics during deep respiratory
+movements. For a compact shape representation, the reconstructed temporal volumes were first
+used to establish subject-specific dynamical 4D mesh sequences using the LDDMM framework. Then,
+we performed a statistical characterization of organ dynamics from mechanical parameters such
+as mesh elongations and distortions. Since we refer to organs as non flat surfaces, we have also used
+the mean curvature changes as metric to quantify surface evolution. However, the numerical computation
+of curvature is strongly dependant on the surface parameterization. To cope with this dependency,
+we employed a new method for surface deformation analysis. Independent of parameterization and
+minimizing the length of the geodesic curves, it stretches smoothly the surface curves towards
+a sphere by minimizing a Dirichlet energy. An Eulerian PDE approach is used to derive a shape descriptor
+from the curve-shortening flow. Intercorrelations between individual motion patterns are computed
+using the Laplace Beltrami operator eigenfunctions for spherical mapping. Application to extracting
+characterization correlation curves for locally controlled simulated shape trajectories demonstrates
+the stability of the proposed shape descriptor. 

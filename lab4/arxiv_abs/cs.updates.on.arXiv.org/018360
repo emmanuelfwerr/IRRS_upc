@@ -1,0 +1,20 @@
+Nested dropout is a variant of dropout operation that is able to order network parameters or features
+based on the pre-defined importance during training. It has been explored for: I. Constructing
+nested nets: the nested nets are neural networks whose architectures can be adjusted instantly
+during testing time, e.g., based on computational constraints. The nested dropout implicitly
+ranks the network parameters, generating a set of sub-networks such that any smaller sub-network
+forms the basis of a larger one. II. Learning ordered representation: the nested dropout applied
+to the latent representation of a generative model (e.g., auto-encoder) ranks the features, enforcing
+explicit order of the dense representation over dimensions. However, the dropout rate is fixed
+as a hyper-parameter during the whole training process. For nested nets, when network parameters
+are removed, the performance decays in a human-specified trajectory rather than in a trajectory
+learned from data. For generative models, the importance of features is specified as a constant
+vector, restraining the flexibility of representation learning. To address the problem, we focus
+on the probabilistic counterpart of the nested dropout. We propose a variational nested dropout
+(VND) operation that draws samples of multi-dimensional ordered masks at a low cost, providing
+useful gradients to the parameters of nested dropout. Based on this approach, we design a Bayesian
+nested neural network that learns the order knowledge of the parameter distributions. We further
+exploit the VND under different generative models for learning ordered latent distributions.
+In experiments, we show that the proposed approach outperforms the nested network in terms of accuracy,
+calibration, and out-of-domain detection in classification tasks. It also outperforms the related
+generative models on data generation tasks. 

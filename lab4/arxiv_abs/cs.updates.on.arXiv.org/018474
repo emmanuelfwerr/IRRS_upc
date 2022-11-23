@@ -1,0 +1,26 @@
+Context: Gradually-typed languages allow typed and untyped code to interoperate, but typically
+come with significant drawbacks. In some languages, the types are unreliable; in others, communication
+across type boundaries can be extremely expensive; and still others allow only limited forms of
+interoperability. The research community is actively seeking a sound, fast, and expressive approach
+to gradual typing. Inquiry: This paper describes Static Python, a language developed by engineers
+at Instagram that has proven itself sound, fast, and reasonably expressive in production. Static
+Python's approach to gradual types is essentially a programmer-tunable combination of the concrete
+and transient approaches from the literature. Concrete types provide full soundness and low performance
+overhead, but impose nonlocal constraints. Transient types are sound in a shallow sense and easier
+to use; they help to bridge the gap between untyped code and typed concrete code. Approach: We evaluate
+the language in its current state and develop a model that captures the essence of its approach to
+gradual types. We draw upon personal communication, bug reports, and the Static Python regression
+test suite to develop this model. Knowledge: Our main finding is that the gradual soundness that
+arises from a mix of concrete and transient types is an effective way to lower the maintenance cost
+of the concrete approach. We also find that method-based JIT technology can eliminate the costs
+of the transient approach. On a more technical level, this paper describes two contributions: a
+model of Static Python and a performance evaluation of Static Python. The process of formalization
+found several errors in the implementation, including fatal errors. Grounding: Our model of Static
+Python is implemented in PLT Redex and tested using property-based soundness tests and 265 tests
+from the Static Python regression suite. This paper includes a small core of the model to convey the
+main ideas of the Static Python approach and its soundness. Our performance claims are based on production
+experience in the Instagram web server. Migrations to Static Python in the server have caused a 3.7\%
+increase in requests handled per second at maximum CPU load. Importance: Static Python is the first
+sound gradual language whose piece-meal application to a realistic codebase has consistently
+improved performance. Other language designers may wish to replicate its approach, especially
+those who currently maintain unsound gradual languages and are seeking a path to soundness. 

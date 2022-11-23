@@ -1,0 +1,19 @@
+Model-based approaches to the verification of non-terminating Cyber-Physical Systems (CPSs)
+usually rely on numerical simulation of the System Under Verification (SUV) model under input scenarios
+of possibly varying duration, chosen among those satisfying given constraints. Such constraints
+typically stem from requirements (or assumptions) on the SUV inputs and its operational environment
+as well as from the enforcement of additional conditions aiming at, e.g., prioritising the (often
+extremely long) verification activity, by, e.g., focusing on scenarios explicitly exercising
+selected requirements, or avoiding vacuity in their satisfaction. In this setting, the possibility
+to efficiently sample at random (with a known distribution, e.g., uniformly) within, or to efficiently
+enumerate (possibly in a uniformly random order) scenarios among those satisfying the given constraints
+is a key enabler for the viability of the verification process, e.g., via simulation-based statistical
+model checking. Unfortunately, in case of non-trivial combinations of constraints, iterative
+approaches like Markovian random walks in the space of sequences of inputs in general fail in extracting
+scenarios according to a given distribution, and can be very inefficient to produce legal scenarios
+of interest. We show how, given a set of constraints on the input scenarios succinctly defined by
+finite memory monitors, a data structure (scenario generator) can be synthesised, from which any-horizon
+scenarios satisfying the input constraints can be efficiently extracted by (possibly uniform)
+random sampling or (randomised) enumeration. Our approach enables seamless support to virtually
+all simulation-based approaches to CPS verification, ranging from simple random testing to statistical
+model checking and formal (i.e., exhaustive) verification. 

@@ -1,0 +1,20 @@
+Recent advances in unsupervised domain adaptation have significantly improved the recognition
+accuracy of CNNs by alleviating the domain shift between (labeled) source and (unlabeled) target
+data distributions. While the problem of single-target domain adaptation (STDA) for object detection
+has recently received much attention, multi-target domain adaptation (MTDA) remains largely
+unexplored, despite its practical relevance in several real-world applications, such as multi-camera
+video surveillance. Compared to the STDA problem that may involve large domain shifts between complex
+source and target distributions, MTDA faces additional challenges, most notably the computational
+requirements and catastrophic forgetting of previously-learned targets, which can depend on
+the order of target adaptations. STDA for detection can be applied to MTDA by adapting one model per
+target, or one common model with a mixture of data from target domains. However, these approaches
+are either costly or inaccurate. The only state-of-art MTDA method specialized for detection learns
+targets incrementally, one target at a time, and mitigates the loss of knowledge by using a duplicated
+detection model for knowledge distillation, which is computationally expensive and does not scale
+well to many domains. In this paper, we introduce an efficient approach for incremental learning
+that generalizes well to multiple target domains. Our MTDA approach is more suitable for real-world
+applications since it allows updating the detection model incrementally, without storing data
+from previous-learned target domains, nor retraining when a new target domain becomes available.
+Our proposed method, MTDA-DTM, achieved the highest level of detection accuracy compared against
+state-of-the-art approaches on several MTDA detection benchmarks and Wildtrack, a benchmark
+for multi-camera pedestrian detection. 

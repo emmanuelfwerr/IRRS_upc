@@ -1,0 +1,20 @@
+Cross-Modal Retrieval (CMR) is an important research topic across multimodal computing and information
+retrieval, which takes one type of data as the query to retrieve relevant data of another type. It
+has been widely used in many real-world applications. Recently, the vision-language pre-trained
+models represented by CLIP demonstrate its superiority in learning the visual and textual representations
+and gain impressive performance on various vision and language related tasks. Although CLIP as
+well as the previous pre-trained models have shown great performance improvement in the unsupervised
+CMR, the performance and impact of these pre-trained models on the supervised CMR were rarely explored
+due to the lack of common representation for the multimodal class-level associations. In this paper,
+we take CLIP as the current representative vision-language pre-trained model to conduct a comprehensive
+empirical study. We evaluate its performance and impact on the supervised CMR, and attempt to answer
+several key research questions. To this end, we first propose a novel model CLIP4CMR (CLIP enhanced
+network for Cross-Modal Retrieval) that employs the pre-trained CLIP as backbone network to perform
+the supervised CMR. Then by means of the CLIP4CMR framework, we revisit the design of different learning
+objectives in current CMR methods to provide new insights on model design. Moreover, we investigate
+the most concerned aspects in applying CMR, including the robustness to modality imbalance and
+sensitivity to hyper-parameters, to provide new perspectives for practical applications. Through
+extensive experiments, we show that CLIP4CMR achieves the SOTA results with prominent improvements
+on the benchmark datasets, and can be used as a fundamental framework to empirically study the key
+research issues of the supervised CMR, with significant implications for model design and practical
+considerations. 

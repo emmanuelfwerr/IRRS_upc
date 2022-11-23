@@ -1,0 +1,19 @@
+We introduce HUMAN4D, a large and multimodal 4D dataset that contains a variety of human activities
+simultaneously captured by a professional marker-based MoCap, a volumetric capture and an audio
+recording system. By capturing 2 female and $2$ male professional actors performing various full-body
+movements and expressions, HUMAN4D provides a diverse set of motions and poses encountered as part
+of single- and multi-person daily, physical and social activities (jumping, dancing, etc.), along
+with multi-RGBD (mRGBD), volumetric and audio data. Despite the existence of multi-view color
+datasets captured with the use of hardware (HW) synchronization, to the best of our knowledge, HUMAN4D
+is the first and only public resource that provides volumetric depth maps with high synchronization
+precision due to the use of intra- and inter-sensor HW-SYNC. Moreover, a spatio-temporally aligned
+scanned and rigged 3D character complements HUMAN4D to enable joint research on time-varying and
+high-quality dynamic meshes. We provide evaluation baselines by benchmarking HUMAN4D with state-of-the-art
+human pose estimation and 3D compression methods. For the former, we apply 2D and 3D pose estimation
+algorithms both on single- and multi-view data cues. For the latter, we benchmark open-source 3D
+codecs on volumetric data respecting online volumetric video encoding and steady bit-rates. Furthermore,
+qualitative and quantitative visual comparison between mesh-based volumetric data reconstructed
+in different qualities showcases the available options with respect to 4D representations. HUMAN4D
+is introduced to the computer vision and graphics research communities to enable joint research
+on spatio-temporally aligned pose, volumetric, mRGBD and audio data cues. The dataset and its code
+are available https://tofis.github.io/myurls/human4d. 

@@ -1,0 +1,19 @@
+The Strong Lottery Ticket Hypothesis (SLTH) stipulates the existence of a subnetwork within a sufficiently
+overparameterized (dense) neural network that -- when initialized randomly and without any training
+-- achieves the accuracy of a fully trained target network. Recent work by \citet{da2022proving}
+demonstrates that the SLTH can also be extended to translation equivariant networks -- i.e. CNNs
+-- with the same level of overparametrization as needed for SLTs in dense networks. However, modern
+neural networks are capable of incorporating more than just translation symmetry, and developing
+general equivariant architectures such as rotation and permutation has been a powerful design
+principle. In this paper, we generalize the SLTH to functions that preserve the action of the group
+$G$ -- i.e. $G$-equivariant network -- and prove, with high probability, that one can prune a randomly
+initialized overparametrized $G$-equivariant network to a $G$-equivariant subnetwork that
+approximates another fully trained $G$-equivariant network of fixed width and depth. We further
+prove that our prescribed overparametrization scheme is also optimal as a function of the error
+tolerance. We develop our theory for a large range of groups, including important ones such as subgroups
+of the Euclidean group $\text{E}(n)$ and subgroups of the symmetric group $G \leq \mathcal{S}_n$
+-- allowing us to find SLTs for MLPs, CNNs, $\text{E}(2)$-steerable CNNs, and permutation equivariant
+networks as specific instantiations of our unified framework which completely extends prior work.
+Empirically, we verify our theory by pruning overparametrized $\text{E}(2)$-steerable CNNs
+and message passing GNNs to match the performance of trained target networks within a given error
+tolerance. 

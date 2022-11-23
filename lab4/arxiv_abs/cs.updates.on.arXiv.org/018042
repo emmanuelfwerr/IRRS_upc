@@ -1,0 +1,19 @@
+Deep learning self-supervised algorithms that can segment an image in a fixed number of hard labels
+such as the k-means algorithm and relying only on deep learning techniques are still lacking. Here,
+we introduce the k-textures algorithm which provides self-supervised segmentation of a 4-band
+image (RGB-NIR) for a $k$ number of classes. An example of its application on high resolution Planet
+satellite imagery is given. Our algorithm shows that discrete search is feasible using convolutional
+neural networks (CNN) and gradient descent. The model detects $k$ hard clustering classes represented
+in the model as $k$ discrete binary masks and their associated $k$ independently generated textures,
+that combined are a simulation of the original image. The similarity loss is the mean squared error
+between the features of the original and the simulated image, both extracted from the penultimate
+convolutional block of Keras 'imagenet' pretrained VGG-16 model and a custom feature extractor
+made with Planet data. The main advances of the k-textures model are: first, the $k$ discrete binary
+masks are obtained inside the model using gradient descent. The model allows for the generation
+of discrete binary masks using a novel method using a hard sigmoid activation function. Second,
+it provides hard clustering classes -- each pixels has only one class. Finally, in comparison to
+k-means, where each pixel is considered independently, here, contextual information is also considered
+and each class is not associated only to similar values in the color channels but also to a texture.
+Our approach is designed to ease the production of training samples for satellite image segmentation
+and the k-textures architecture could be adapted to support different number of bands and for more
+complex tasks, such as object self-segmentation. The model codes and weights are available at https://doi.org/10.5281/zenodo.6359859

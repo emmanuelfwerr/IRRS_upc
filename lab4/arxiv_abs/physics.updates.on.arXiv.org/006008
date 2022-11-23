@@ -1,0 +1,19 @@
+Cardiac pulsation is a physiological confound of functional magnetic resonance imaging (fMRI)
+time-series that introduces spurious signal fluctuations in proximity to blood vessels. fMRI
+alone is not sufficiently fast to resolve cardiac pulsation. Depending on the ratio between the
+instantaneous heart-rate and the acquisition sampling frequency (1/TR, with TR being the repetition
+time), the cardiac signal may alias into the frequency band of neural activation. The introduction
+of simultaneous multi-slice (SMS) imaging has significantly reduced the chances of cardiac aliasing.
+However, the necessity of covering the entire brain at high spatial resolution restrain the shortest
+TR to just over 0.5 seconds, which is in turn not sufficiently short to resolve cardiac pulsation
+beyond 60 beats per minute. Recently, hyper-sampling of the fMRI time-series has been introduced
+to overcome this issue. While each anatomical location is sampled every TR seconds, the time between
+consecutive excitations is shorter and thus adequate to resolve cardiac pulsation. In this study,
+we show that it is feasible to temporally and spatially resolve cardiac waveforms at each voxel location
+by combining a dedicated hyper-sampling decomposition scheme with SMS. We developed the technique
+on 774 healthy subjects selected from the Human Connectome Project (HCP) and validated the technology
+against the RETROICOR method. The proposed approach, which we name Data-driven WHOle-brain CArdiac
+signal REgression from highly accelerated simultaneous multi-Slice fMRI acquisitions (WHOCARES),
+is fully data-driven, does not make specific assumptions on cardiac pulsatility, and is independent
+from external physiological recordings so that the retrospective correction of fMRI data becomes
+possible when such measurements are not available. WHOCARES is freely available at https://github.com/gferrazzi/WHOCARES.

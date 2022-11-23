@@ -1,0 +1,19 @@
+Accelerating the design of materials with targeted properties is one of the key materials informatics
+tasks. The most common approach takes a data-driven motivation, where the underlying knowledge
+is incorporated in the form of domain-inspired input features. Machine learning (ML) models are
+then built to establish the input-output relationships. An alternative approach involves leveraging
+mechanistic models, where the domain knowledge is incorporated in a predefined functional form.
+These mechanistic models are meticulously formulated through observations to validate specific
+hypotheses, and incorporate elements of causality missing from data-driven ML approaches. In
+this work, we demonstrate a computational approach that integrates mechanistic models with phenomenological
+and ML models to rapidly predict the temperature-dependent yield strength of high entropy alloys
+(HEAs) that form in the single-phase face-centered cubic (FCC) structure. Our main contribution
+is in establishing a quantitative relationship between the HEA compositions and temperature-dependent
+elastic constants. This allows us to improve the treatment of elastic constant mismatch to the solid
+solution strengthening effect in the mechanistic model, which is important for reliable prediction
+of yield strength as a function of temperature in single-phase FCC-based HEAs. We accomplish this
+by combining Bayesian inference with ensemble ML methods. The outcome is a probability distribution
+of elastic constants which, when propagated through the mechanistic model, yields a prediction
+of temperature-dependent yield strength, along with the uncertainties. The predicted yield strength
+shows good agreement with published experimental data, giving us confidence in applying the developed
+approach for the rapid search of novel FCC-based HEAs with excellent yield strength at various temperatures.

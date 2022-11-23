@@ -1,0 +1,20 @@
+Quantum computers solve ever more complex tasks using steadily growing system sizes. Characterizing
+these quantum systems is vital, yet becoming increasingly challenging. The gold-standard is quantum
+state tomography (QST), capable of fully reconstructing a quantum state without prior knowledge.
+Measurement and classical computing costs, however, increase exponentially in the system size
+- a bottleneck given the scale of existing and near-term quantum devices. Here, we demonstrate a
+scalable and practical QST approach that uses a single measurement setting, namely symmetric informationally
+complete (SIC) positive operator-valued measures (POVM). We implement these nonorthogonal measurements
+on an ion trap device by utilizing more energy levels in each ion - without ancilla qubits. More precisely,
+we locally map the SIC POVM to orthogonal states embedded in a higher-dimensional system, which
+we read out using repeated in-sequence detections, providing full tomographic information in
+every shot. Combining this SIC tomography with the recently developed randomized measurement
+toolbox ("classical shadows") proves to be a powerful combination. SIC tomography alleviates
+the need for choosing measurement settings at random ("derandomization"), while classical shadows
+enable the estimation of arbitrary polynomial functions of the density matrix orders of magnitudes
+faster than standard methods. The latter enables in-depth entanglement studies, which we experimentally
+showcase on a 5-qubit absolutely maximally entangled (AME) state. Moreover, the fact that the full
+tomography information is available in every shot enables online QST in real time. We demonstrate
+this on an 8-qubit entangled state, as well as for fast state identification. All in all, these features
+single out SIC-based classical shadow estimation as a highly scalable and convenient tool for quantum
+state characterization. 

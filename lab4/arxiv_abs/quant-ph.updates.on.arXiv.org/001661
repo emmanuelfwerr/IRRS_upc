@@ -1,0 +1,19 @@
+Predictor importance is a crucial part of data preprocessing pipelines in classical and quantum
+machine learning (QML). This work presents the first study of its kind in which feature importance
+for QML models has been explored and contrasted against their classical machine learning (CML)
+equivalents. We developed a hybrid quantum-classical architecture where QML models are trained
+and feature importance values are calculated from classical algorithms on a real-world dataset.
+This architecture has been implemented on ESPN Fantasy Football data using Qiskit statevector
+simulators and IBM quantum hardware such as the IBMQ Mumbai and IBMQ Montreal systems. Even though
+we are in the Noisy Intermediate-Scale Quantum (NISQ) era, the physical quantum computing results
+are promising. To facilitate current quantum scale, we created a data tiering, model aggregation,
+and novel validation methods. Notably, the feature importance magnitudes from the quantum models
+had a much higher variation when contrasted to classical models. We can show that equivalent QML
+and CML models are complementary through diversity measurements. The diversity between QML and
+CML demonstrates that both approaches can contribute to a solution in different ways. Within this
+paper we focus on Quantum Support Vector Classifiers (QSVC), Variational Quantum Circuit (VQC),
+and their classical counterparts. The ESPN and IBM fantasy footballs Trade Assistant combines
+advanced statistical analysis with the natural language processing of Watson Discovery to serve
+up personalized trade recommendations that are fair and proposes a trade. Here, player valuation
+data of each player has been considered and this work can be extended to calculate the feature importance
+of other QML models such as Quantum Boltzmann machines. 

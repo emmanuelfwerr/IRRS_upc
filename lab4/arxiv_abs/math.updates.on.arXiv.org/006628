@@ -1,0 +1,20 @@
+Sparse principal component analysis with global support (SPCAgs), is the problem of finding the
+top-$r$ leading principal components such that all these principal components are linear combinations
+of a common subset of at most $k$ variables. SPCAgs is a popular dimension reduction tool in statistics
+that enhances interpretability compared to regular principal component analysis (PCA). Methods
+for solving SPCAgs in the literature are either greedy heuristics (in the special case of $r = 1$)
+with guarantees under restrictive statistical models or algorithms with stationary point convergence
+for some regularized reformulation of SPCAgs. Crucially, none of the existing computational methods
+can efficiently guarantee the quality of the solutions obtained by comparing them against dual
+bounds. In this work, we first propose a convex relaxation based on operator norms that provably
+approximates the feasible region of SPCAgs within a $c_1 + c_2 \sqrt{\log r} = O(\sqrt{\log r})$
+factor for some constants $c_1, c_2$. To prove this result, we use a novel random sparsification
+procedure that uses the Pietsch-Grothendieck factorization theorem and may be of independent
+interest. We also propose a simpler relaxation that is second-order cone representable and gives
+a $(2\sqrt{r})$-approximation for the feasible region. Using these relaxations, we then propose
+a convex integer program that provides a dual bound for the optimal value of SPCAgs. Moreover, it
+also has worst-case guarantees: it is within a multiplicative/additive factor of the original
+optimal value, and the multiplicative factor is $O(\log r)$ or $O(r)$ depending on the relaxation
+used. Finally, we conduct computational experiments that show that our convex integer program
+provides, within a reasonable time, good upper bounds that are typically significantly better
+than the natural baselines. 

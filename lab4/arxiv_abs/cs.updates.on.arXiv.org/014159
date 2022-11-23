@@ -1,0 +1,19 @@
+The ability to extract generative parameters from high-dimensional fields of data in an unsupervised
+manner is a highly desirable yet unrealized goal in computational physics. This work explores the
+use of variational autoencoders (VAEs) for non-linear dimension reduction with the aim of disentangling
+the low-dimensional latent variables to identify independent physical parameters that generated
+the data. A disentangled decomposition is interpretable and can be transferred to a variety of tasks
+including generative modeling, design optimization, and probabilistic reduced order modelling.
+A major emphasis of this work is to characterize disentanglement using VAEs while minimally modifying
+the classic VAE loss function (i.e. the ELBO) to maintain high reconstruction accuracy. Disentanglement
+is shown to be highly sensitive to rotations of the latent space, hyperparameters, random initializations
+and the learning schedule. The loss landscape is characterized by over-regularized local minima
+which surrounds desirable solutions. We illustrate comparisons between disentangled and entangled
+representations by juxtaposing learned latent distributions and the 'true' generative factors
+in a model porous flow problem. Implementing hierarchical priors (HP) is shown to better facilitate
+the learning of disentangled representations over the classic VAE. The choice of the prior distribution
+is shown to have a dramatic effect on disentanglement. In particular, the regularization loss is
+unaffected by latent rotation when training with rotationally-invariant priors, and thus learning
+non-rotationally-invariant priors aids greatly in capturing the properties of generative factors,
+improving disentanglement. Some issues inherent to training VAEs, such as the convergence to over-regularized
+local minima are illustrated and investigated, and potential techniques for mitigation are presented.

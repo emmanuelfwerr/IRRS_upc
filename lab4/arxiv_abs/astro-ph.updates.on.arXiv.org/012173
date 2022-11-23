@@ -1,0 +1,20 @@
+We investigate the performance of the Metacalibration shear calibration framework using simulated
+imaging data for the Nancy Grace Roman Space Telescope (Roman) reference High-Latitude Imaging
+Survey (HLIS). The weak lensing program of the Roman mission requires the mean weak lensing shear
+estimate to be calibrated within about 0.03%. To reach this goal, we can test our calibration process
+with various simulations and ultimately isolate the sources of residual shear biases in order to
+improve our methods. In this work, we build on the Roman HLIS image simulation pipeline in Troxel
+et al. 2021 to incorporate several new realistic processing-pipeline updates necessary to more
+accurately process the imaging data and calibrate the shear. We show the first results of this calibration
+for six deg$^2$ of the simulated reference HLIS using Metacalibration and compare these results
+to measurements on more simple, faster Roman-like image simulations. In both cases, we neglect
+the impact of blending of objects. We find that in the simplified simulations, Metacalibration
+can calibrate shapes to be within $m=(-0.01\pm 0.10)$%. When applied to the current most-realistic
+version of the simulations, the precision is much lower, with estimates of $m=(-1.34\pm 0.67)$%
+for joint multi-band single-epoch measurements and $m=(-1.13\pm 0.60)$% for multi-band coadd
+measurements. These results are all consistent with zero within 1-2$\sigma$, indicating we are
+currently limited by our simulated survey volume. Further work on testing the shear calibration
+methodology is necessary at higher precision to reach the level of the Roman requirements, in particular
+in the presence of blending. Current results demonstrate, however, that the Metacalibration method
+can work on undersampled space-based Roman imaging data at levels comparable to the requirements
+of current weak lensing surveys. 

@@ -1,0 +1,19 @@
+The solar corona routinely exhibits explosive activity, in particular coronal mass ejections
+and their accompanying eruptive flares, that have global-scale consequences. These events and
+their smaller counterparts, coronal jets, originate in narrow, sinuous filament channels. The
+key processes that form and evolve the channels operate on still smaller spatial scales and much
+longer time scales, culminating in a vast separation of characteristic lengths and times that govern
+these explosive phenomena. In this article, we describe implementation and tests of an efficient
+subgrid-scale model for generating eruptive structures in magnetohydrodynamics (MHD) coronal
+simulations. STITCH -- STatistical InjecTion of Condensed Helicity -- is a physics-based, reduced
+representation of helicity condensation: a process wherein small-scale vortical surface convection
+forms ubiquitous current sheets, and pervasive reconnection across the sheets mediates an inverse
+cascade of magnetic helicity and free energy, thereby forming the filament channels. STITCH abstracts
+these complex processes into a single new term, in the MHD Ohm's law and induction equation, which
+directly injects tangential magnetic flux into the low corona. We show that this approach is in very
+good agreement with a full helicity-condensation calculation that treats all of the dynamics explicitly,
+while enabling substantial reductions in temporal duration especially, but also in spatial resolution.
+In addition, we illustrate the flexibility of STITCH at forming localized filament channels and
+at energizing complex surface flux distributions that have sinuous boundaries. STITCH is simple
+to implement and computationally efficient, making it a powerful new technique for event-based,
+data-driven modeling of solar eruptions. 

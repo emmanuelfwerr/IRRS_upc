@@ -1,0 +1,20 @@
+We present a machine learning based model that can predict the electronic structure of quasi-one-dimensional
+materials while they are subjected to deformation modes such as torsion and extension/compression.
+The technique described here applies to important classes of materials such as nanotubes, nanoribbons,
+nanowires, miscellaneous chiral structures and nano-assemblies, for all of which, tuning the
+interplay of mechanical deformations and electronic fields is an active area of investigation
+in the literature. Our model incorporates global structural symmetries and atomic relaxation
+effects, benefits from the use of helical coordinates to specify the electronic fields, and makes
+use of a specialized data generation process that solves the symmetry-adapted equations of Kohn-Sham
+Density Functional Theory in these coordinates. Using armchair single wall carbon nanotubes as
+a prototypical example, we demonstrate the use of the model to predict the fields associated with
+the ground state electron density and the nuclear pseudocharges, when three parameters - namely,
+the radius of the nanotube, its axial stretch, and the twist per unit length - are specified as inputs.
+Other electronic properties of interest, including the ground state electronic free energy, can
+then be evaluated with low-overhead post-processing, typically to chemical accuracy. We also
+show how the nuclear coordinates can be reliably determined from the pseudocharge field using a
+clustering based technique. Remarkably, only about 120 data points are found to be enough to predict
+the three dimensional electronic fields accurately, which we ascribe to the symmetry in the problem
+setup, the use of low-discrepancy sequences for sampling, and presence of intrinsic low-dimensional
+features in the electronic fields. We comment on the interpretability of our machine learning model
+and discuss its possible future applications. 

@@ -1,0 +1,19 @@
+Future wireless systems are trending towards higher carrier frequencies that offer larger communication
+bandwidth but necessitate the use of large antenna arrays. Existing signal processing techniques
+for channel estimation do not scale well to this "high-dimensional" regime in terms of performance
+and pilot overhead. Meanwhile, training deep learning based approaches for channel estimation
+requires large labeled datasets mapping pilot measurements to clean channel realizations, which
+can only be generated offline using simulated channels. In this paper, we develop a novel unsupervised
+over-the-air (OTA) algorithm that utilizes noisy received pilot measurements to train a deep generative
+model to output beamspace MIMO channel realizations. Our approach leverages Generative Adversarial
+Networks (GAN), while using a conditional input to distinguish between Line-of-Sight (LOS) and
+Non-Line-of-Sight (NLOS) channel realizations. We also present a federated implementation of
+the OTA algorithm that distributes the GAN training over multiple users and greatly reduces the
+user side computation. We then formulate channel estimation from a limited number of pilot measurements
+as an inverse problem and reconstruct the channel by optimizing the input vector of the trained generative
+model. Our proposed approach significantly outperforms Orthogonal Matching Pursuit on both LOS
+and NLOS channel models, and EM-GM-AMP -- an Approximate Message Passing algorithm -- on LOS channel
+models, while achieving comparable performance on NLOS channel models in terms of the normalized
+channel reconstruction error. More importantly, our proposed framework has the potential to be
+trained online using real noisy pilot measurements, is not restricted to a specific channel model
+and can even be utilized for a federated OTA design of a dataset generator from noisy data. 

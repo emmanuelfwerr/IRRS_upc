@@ -1,0 +1,20 @@
+Understanding the movement of animals is crucial to conservation efforts. Past research often
+focuses on factors affecting movement, rather than locations of interest that animals return to
+or habitat. We explore the use of clustering to identify locations of interest to African Elephants
+in regions of Sub-Saharan Africa. Our analysis was performed using publicly available datasets
+for tracking African elephants at Kruger National Park (KNP), South Africa; Etosha National Park,
+Namibia; as well as areas in Burkina Faso and the Congo. Using the DBSCAN and KMeans clustering algorithms,
+we calculate clusters and centroids to simplify elephant movement data and highlight important
+locations of interest. Through a comparison of feature spaces with and without temperature, we
+show that temperature is an important feature to explain movement clustering. Recognizing the
+importance of temperature, we develop a technique to add external temperature data from an API to
+other geospatial datasets that would otherwise not have temperature data. After addressing the
+hurdles of using external data with marginally different timestamps, we consider the quality of
+this data, and the quality of the centroids of the clusters calculated based on this external temperature
+data. Finally, we overlay these centroids onto satellite imagery and locations of human settlements
+to validate the real-life applications of the calculated centroids to identify locations of interest
+for elephants. As expected, we confirmed that elephants tend to cluster their movement around sources
+of water as well as some human settlements, especially those with water holes. Identifying key locations
+of interest for elephants is beneficial in predicting the movement of elephants and preventing
+poaching. These methods may in the future be applied to other animals beyond elephants to identify
+locations of interests for them. 

@@ -1,0 +1,20 @@
+Scientific research and engineering practice often require the modeling and decomposition of
+nonlinear systems. The Dynamic Mode Decomposition (DMD) is a novel Koopman-based technique that
+effectively dissects high-dimensional nonlinear systems into periodically distinct constituents
+on reduced-order subspaces. As a novel mathematical hatchling, the DMD bears vast potentials yet
+an equal degree of unknown. This serial effort investigates the nuances of DMD sampling with an engineering-oriented
+emphasis. This Part I aimed at elucidating how sampling range and resolution affect the convergence
+of DMD modes. We employed the most classical nonlinear system in fluid mechanics as the test subject--the
+turbulent free-shear flow over a prism--for optimal pertinency. We numerically simulated the
+flow by the dynamic-stress Large-Eddies Simulation with Near-Wall Resolution. With the large-quantity,
+high-fidelity data, we parametrized and identified four global convergence states: Initialization,
+Transition, Stabilization, and Divergence with increasing sampling range. Results showed that
+the Stabilization is the optimal state for modal convergence, in which DMD output becomes independent
+of the sampling range. The Initialization state also yields sufficient accuracy for most system
+reconstruction tasks. Moreover, defying popular beliefs, over-sampling causes algorithmic
+instability: as the temporal dimension, n, approaches and transcends the spatial dimension, m
+(i.e., m < n), the output diverges and becomes meaningless. Additionally, the convergence of the
+sampling resolution depends on the mode-specific dynamics, such that the resolution of 15 frames
+per cycle for target activities is suggested for most engineering implementations. Finally, a
+bi-parametric study revealed that the convergence of the sampling range and resolution are mutually
+independent. 

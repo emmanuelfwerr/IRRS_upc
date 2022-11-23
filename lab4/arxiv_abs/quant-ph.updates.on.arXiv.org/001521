@@ -1,0 +1,19 @@
+Quantum Neural Network (QNN) is a promising application towards quantum advantage on near-term
+quantum hardware. However, due to the large quantum noises (errors), the performance of QNN models
+has a severe degradation on real quantum devices. For example, the accuracy gap between noise-free
+simulation and noisy results on IBMQ-Yorktown for MNIST-4 classification is over 60%. Existing
+noise mitigation methods are general ones without leveraging unique characteristics of QNN and
+are only applicable to inference; on the other hand, existing QNN work does not consider noise effect.
+To this end, we present RoQNN, a QNN-specific framework to perform noise-aware optimizations in
+both training and inference stages to improve robustness. We analytically deduct and experimentally
+observe that the effect of quantum noise to QNN measurement outcome is a linear map from noise-free
+outcome with a scaling and a shift factor. Motivated by that, we propose post-measurement normalization
+to mitigate the feature distribution differences between noise-free and noisy scenarios. Furthermore,
+to improve the robustness against noise, we propose noise injection to the training process by inserting
+quantum error gates to QNN according to realistic noise models of quantum hardware. Finally, post-measurement
+quantization is introduced to quantize the measurement outcomes to discrete values, achieving
+the denoising effect. Extensive experiments on 8 classification tasks using 6 quantum devices
+demonstrate that RoQNN improves accuracy by up to 43%, and achieves over 94% 2-class, 80% 4-class,
+and 34% 10-class MNIST classification accuracy measured on real quantum computers. We also open-source
+our PyTorch library for construction and noise-aware training of QNN at https://github.com/mit-han-lab/pytorch-quantum
+. 

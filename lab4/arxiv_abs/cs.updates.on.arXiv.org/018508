@@ -1,0 +1,19 @@
+The success of DNNs is driven by the counter-intuitive ability of over-parameterized networks
+to generalize, even when they perfectly fit the training data. In practice, test error often continues
+to decrease with increasing over-parameterization, referred to as double descent. This allows
+practitioners to instantiate large models without having to worry about over-fitting. Despite
+its benefits, however, prior work has shown that over-parameterization can exacerbate bias against
+minority subgroups. Several fairness-constrained DNN training methods have been proposed to
+address this concern. Here, we critically examine MinDiff, a fairness-constrained training procedure
+implemented within TensorFlow's Responsible AI Toolkit, that aims to achieve Equality of Opportunity.
+We show that although MinDiff improves fairness for under-parameterized models, it is likely to
+be ineffective in the over-parameterized regime. This is because an overfit model with zero training
+loss is trivially group-wise fair on training data, creating an "illusion of fairness," thus turning
+off the MinDiff optimization (this will apply to any disparity-based measures which care about
+errors or accuracy. It won't apply to demographic parity). Within specified fairness constraints,
+under-parameterized MinDiff models can even have lower error compared to their over-parameterized
+counterparts (despite baseline over-parameterized models having lower error). We further show
+that MinDiff optimization is very sensitive to choice of batch size in the under-parameterized
+regime. Thus, fair model training using MinDiff requires time-consuming hyper-parameter searches.
+Finally, we suggest using previously proposed regularization techniques, viz. L2, early stopping
+and flooding in conjunction with MinDiff to train fair over-parameterized models. 

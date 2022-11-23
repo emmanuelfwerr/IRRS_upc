@@ -1,0 +1,20 @@
+Mixed-Integer Linear Programming problems, playing a prominent role in Operations Research,
+are prone to the curse of dimensionality; specifically, the combinatorial complexity of the associated
+MILP problems increases exponentially with the increase of the problem size. To efficiently solve
+the "separable" MILP combinatorial problems, decomposition, and coordination Surrogate "Level-Based"
+Lagrangian Relaxation method is developed. The new method efficiently exploits the underlying
+geometric-convergence potential - the best convergence theoretically possible - inherent to
+Polyak's step-sizing formula in the dual space without the need to know the optimal dual value required
+for convergence. Unlike all the previous methods to obtain "level" estimates of the optimal dual
+value by adjusting hyperparameters, the key novel idea to obtain "level" value is through a hyper-parameter-free
+optimization: a novel "multiplier-convergence-feasibility" Linear Programming constraint
+satisfaction problem needs to be solved, from which, in conjunction with the Polyak's formula,
+the sought-for "level" estimate is inferred. Testing results for medium- and large-scale instances
+of standard Generalized Assignment Problems from OR-library demonstrate that 1. "level" estimates
+generally decrease and the dual values increase faster than those obtained by using other existing
+methods, 2. the new method is computationally efficient in terms of the quality of solutions (for
+several large-scale cases, optimal solutions are obtained) and in terms of the CPU time, 3. the new
+method is robust with respect to the choice of initial parameters such as step-sizes and multipliers.
+Moreover, the procedure to estimate the "level" value is independent of linearity and separability
+of the problem, and thus the new method also paves the way for efficient resolution of general Mixed-Integer
+Programming (MIP) problems. 

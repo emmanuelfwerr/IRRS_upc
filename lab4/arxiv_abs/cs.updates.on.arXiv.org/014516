@@ -1,0 +1,19 @@
+{Beame et al.\ [ITCS 2018] introduced and used the {\sc Bipartite Independent Set} ({\sc BIS}) and
+{\sc Independent Set} ({\sc IS}) oracle access to an unknown, simple, unweighted and undirected
+graph and solved the edge estimation problem. The introduction of this oracle set forth a series
+of works in a short span of time that either solved open questions mentioned by Beame et al.\ or were
+generalizations of their work as in Dell and Lapinskas [STOC 2018], Dell, Lapinskas and Meeks [SODA
+2020], Bhattacharya et al.\ [ISAAC 2019 and arXiv 2019], Chen et al.\ [SODA 2020]. Edge estimation
+using {\sc BIS} can be done using polylogarithmic queries, while {\sc IS} queries need sub-linear
+but more than polylogarithmic queries. Chen et al.\ improved Beame et al.'s upper bound result for
+edge estimation using {\sc IS} and also showed an almost matching lower bound. This result was significant
+because this lower bound result on \is was the first lower bound result for independent set based
+oracles; till date no lower bound results exist for {\sc BIS}. On the other hand, Beame et al.\ in their
+introductory work asked a few open questions out of which one was if structures of higher order than
+edges can be estimated using polylogarithmic number of {\sc BIS} queries. Motivated by this question,
+we resolve in the negative by showing a lower bound (greater than polylogarithmic) for estimating
+the number of triangles using {\sc BIS}. While doing so, we prove the first lower bound result involving
+{\sc BIS}. We also provide a matching upper bound. Till now, query oracles were used for commensurate
+jobs -- \bis and \is for edge estimation, \tislong for triangle estimation, \gpislong for hyperedge
+estimation. Ours is a work that uses a lower order oracle access, like \bis to estimate a higher order
+structure like triangle. } 

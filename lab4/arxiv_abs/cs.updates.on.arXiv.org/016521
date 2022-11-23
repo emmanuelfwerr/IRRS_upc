@@ -1,0 +1,20 @@
+Variational Quantum Algorithms (VQAs) rely upon the iterative optimization of a parameterized
+unitary circuit with respect to an objective function. Since quantum machines are noisy and expensive
+resources, it is imperative to choose a VQA's ansatz appropriately and its initial parameters to
+be close to optimal. This work tackles the problem of finding initial ansatz parameters by proposing
+CAFQA, a Clifford ansatz for quantum accuracy. The CAFQA ansatz is a hardware-efficient circuit
+built with only Clifford gates. In this ansatz, the initial parameters for the tunable gates are
+chosen by searching efficiently through the Clifford parameter space via classical simulation,
+thereby producing a suitable stabilizer state. The stabilizer states produced are shown to always
+equal or outperform traditional classical initialization (e.g., Hartree-Fock), and often produce
+high accuracy estimations prior to quantum exploration. Furthermore, the technique is classically
+suited since a) Clifford circuits can be exactly simulated classically in polynomial time and b)
+the discrete Clifford space, while scaling exponentially in the number of qubits, is searched efficiently
+via Bayesian Optimization. For the Variational Quantum Eigensolver (VQE) task of molecular ground
+state energy estimation up to 20 qubits, CAFQA's Clifford Ansatz achieves a mean accuracy of near
+99%, recovering as much as 99.99% of the correlation energy over Hartree-Fock. Notably, the scalability
+of the approach allows for preliminary ground state energy estimation of the challenging Chromium
+dimer with an accuracy greater than Hartree-Fock. With CAFQA's initialization, VQA convergence
+is accelerated by a factor of 2.5x. In all, this work shows that stabilizer states are an accurate
+ansatz initialization for VQAs. Furthermore, it highlights the potential for quantum-inspired
+classical techniques to support VQAs. 

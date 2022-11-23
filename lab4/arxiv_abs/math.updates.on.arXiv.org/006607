@@ -1,0 +1,20 @@
+Adjoint systems are widely used to inform control, optimization, and design in systems described
+by ordinary differential equations or differential-algebraic equations. In this paper, we explore
+the geometric properties and develop methods for such adjoint systems. In particular, we utilize
+symplectic and presymplectic geometry to investigate the properties of adjoint systems associated
+with ordinary differential equations and differential-algebraic equations, respectively.
+We show that the adjoint variational quadratic conservation laws, which are key to adjoint sensitivity
+analysis, arise from (pre)symplecticity of such adjoint systems. We discuss various additional
+geometric properties of adjoint systems, such as symmetries and variational characterizations.
+For adjoint systems associated with a differential-algebraic equation, we relate the index of
+the differential-algebraic equation to the presymplectic constraint algorithm of Gotay et al.
+[18]. As an application of this geometric framework, we discuss how the adjoint variational quadratic
+conservation laws can be used to compute sensitivities of terminal or running cost functions. Furthermore,
+we develop structure-preserving numerical methods for such systems using Galerkin Hamiltonian
+variational integrators (Leok and Zhang [23]) which admit discrete analogues of these quadratic
+conservation laws. We additionally show that such methods are natural, in the sense that reduction,
+forming the adjoint system, and discretization all commute, for suitable choices of these processes.
+We utilize this naturality to derive a variational error analysis result for the presymplectic
+variational integrator that we use to discretize the adjoint DAE system. Finally, we discuss the
+application of adjoint systems in the context of optimal control problems, where we prove a similar
+naturality result. 

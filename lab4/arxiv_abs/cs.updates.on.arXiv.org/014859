@@ -1,0 +1,20 @@
+We propose a novel shape-aware relation network for accurate and real-time landmark detection
+in endoscopic submucosal dissection (ESD) surgery. This task is of great clinical significance
+but extremely challenging due to bleeding, lighting reflection, and motion blur in the complicated
+surgical environment. Compared with existing solutions, which either neglect geometric relationships
+among targeting objects or capture the relationships by using complicated aggregation schemes,
+the proposed network is capable of achieving satisfactory accuracy while maintaining real-time
+performance by taking full advantage of the spatial relations among landmarks. We first devise
+an algorithm to automatically generate relation keypoint heatmaps, which are able to intuitively
+represent the prior knowledge of spatial relations among landmarks without using any extra manual
+annotation efforts. We then develop two complementary regularization schemes to progressively
+incorporate the prior knowledge into the training process. While one scheme introduces pixel-level
+regularization by multi-task learning, the other integrates global-level regularization by
+harnessing a newly designed grouped consistency evaluator, which adds relation constraints to
+the proposed network in an adversarial manner. Both schemes are beneficial to the model in training,
+and can be readily unloaded in inference to achieve real-time detection. We establish a large in-house
+dataset of ESD surgery for esophageal cancer to validate the effectiveness of our proposed method.
+Extensive experimental results demonstrate that our approach outperforms state-of-the-art
+methods in terms of accuracy and efficiency, achieving better detection results faster. Promising
+results on two downstream applications further corroborate the great potential of our method in
+ESD clinical practice. 

@@ -1,0 +1,19 @@
+From the minimal assumption of post-quantum semi-honest oblivious transfers, we build the first
+$\epsilon$-simulatable two-party computation (2PC) against quantum polynomial-time (QPT)
+adversaries that is both constant-round and black-box (for both the construction and security
+reduction). A recent work by Chia, Chung, Liu, and Yamakawa (FOCS'21) shows that post-quantum 2PC
+with standard simulation-based security is impossible in constant rounds, unless either $\mathbf{NP}
+\subseteq \mathbf{BQP}$ or relying on non-black-box simulation. The $\epsilon$-simulatability
+we target is a relaxation of the standard simulation-based security that allows for an arbitrarily
+small noticeable simulation error $\epsilon$. Moreover, when quantum communication is allowed,
+we can further weaken the assumption to post-quantum secure one-way functions (PQ-OWFs), while
+maintaining the constant-round and black-box property. Our techniques also yield the following
+set of constant-round and black-box two-party protocols secure against QPT adversaries, only
+assuming black-box access to PQ-OWFs: - extractable commitments for which the extractor is also
+an $\epsilon$-simulator; - $\epsilon$-zero-knowledge commit-and-prove whose commit stage
+is extractable with $\epsilon$-simulation; - $\epsilon$-simulatable coin-flipping; - $\epsilon$-zero-knowledge
+arguments of knowledge for $\mathbf{NP}$ for which the knowledge extractor is also an $\epsilon$-simulator;
+- $\epsilon$-zero-knowledge arguments for $\mathbf{QMA}$. At the heart of the above results is
+a black-box extraction lemma showing how to efficiently extract secrets from QPT adversaries while
+disturbing their quantum state in a controllable manner, i.e., achieving $\epsilon$-simulatability
+of the post-extraction state of the adversary. 

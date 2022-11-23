@@ -1,0 +1,19 @@
+Background: Breast cancer has the highest prevalence in women globally. The classification and
+diagnosis of breast cancer and its histopathological images have always been a hot spot of clinical
+concern. In Computer-Aided Diagnosis (CAD), traditional classification models mostly use a single
+network to extract features, which has significant limitations. On the other hand, many networks
+are trained and optimized on patient-level datasets, ignoring the application of lower-level
+data labels. Method: This paper proposes a deep ensemble model based on image-level labels for the
+binary classification of benign and malignant lesions of breast histopathological images. First,
+the BreaKHis dataset is randomly divided into a training, validation and test set. Then, data augmentation
+techniques are used to balance the number of benign and malignant samples. Thirdly, considering
+the performance of transfer learning and the complementarity between each network, VGG16, Xception,
+ResNet50, DenseNet201 are selected as the base classifiers. Result: In the ensemble network model
+with accuracy as the weight, the image-level binary classification achieves an accuracy of $98.90\%$.
+In order to verify the capabilities of our method, the latest Transformer and Multilayer Perception
+(MLP) models have been experimentally compared on the same dataset. Our model wins with a $5\%-20\%$
+advantage, emphasizing the ensemble model's far-reaching significance in classification tasks.
+Conclusion: This research focuses on improving the model's classification performance with an
+ensemble algorithm. Transfer learning plays an essential role in small datasets, improving training
+speed and accuracy. Our model has outperformed many existing approaches in accuracy, providing
+a method for the field of auxiliary medical diagnosis. 

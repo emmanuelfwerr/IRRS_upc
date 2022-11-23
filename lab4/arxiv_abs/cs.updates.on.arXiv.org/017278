@@ -1,0 +1,20 @@
+Immunohistochemistry is a valuable diagnostic tool for cancer pathology. However, it requires
+specialist labs and equipment, is time-intensive, and is difficult to reproduce. Consequently,
+a long term aim is to provide a digital method of recreating physical immunohistochemical stains.
+Generative Adversarial Networks have become exceedingly advanced at mapping one image type to
+another and have shown promise at inferring immunostains from haematoxylin and eosin. However,
+they have a substantial weakness when used with pathology images as they can fabricate structures
+that are not present in the original data. CycleGANs can mitigate invented tissue structures in
+pathology image mapping but have a related disposition to generate areas of inaccurate staining.
+In this paper, we describe a modification to the loss function of a CycleGAN to improve its mapping
+ability for pathology images by enforcing realistic stain replication while retaining tissue
+structure. Our approach improves upon others by considering structure and staining during model
+training. We evaluated our network using the Fr\'echet Inception distance, coupled with a new technique
+that we propose to appraise the accuracy of virtual immunohistochemistry. This assesses the overlap
+between each stain component in the inferred and ground truth images through colour deconvolution,
+thresholding and the Sorensen-Dice coefficient. Our modified loss function resulted in a Dice
+coefficient for the virtual stain of 0.78 compared with the real AE1/AE3 slide. This was superior
+to the unaltered CycleGAN's score of 0.74. Additionally, our loss function improved the Fr\'echet
+Inception distance for the reconstruction to 74.54 from 76.47. We, therefore, describe an advance
+in virtual restaining that can extend to other immunostains and tumour types and deliver reproducible,
+fast and readily accessible immunohistochemistry worldwide. 

@@ -1,0 +1,19 @@
+Social navigation is the capability of an autonomous agent, such as a robot, to navigate in a 'socially
+compliant' manner in the presence of other intelligent agents such as humans. With the emergence
+of autonomously navigating mobile robots in human populated environments (e.g., domestic service
+robots in homes and restaurants and food delivery robots on public sidewalks), incorporating socially
+compliant navigation behaviors on these robots becomes critical to ensuring safe and comfortable
+human robot coexistence. To address this challenge, imitation learning is a promising framework,
+since it is easier for humans to demonstrate the task of social navigation rather than to formulate
+reward functions that accurately capture the complex multi objective setting of social navigation.
+The use of imitation learning and inverse reinforcement learning to social navigation for mobile
+robots, however, is currently hindered by a lack of large scale datasets that capture socially compliant
+robot navigation demonstrations in the wild. To fill this gap, we introduce Socially CompliAnt
+Navigation Dataset (SCAND) a large scale, first person view dataset of socially compliant navigation
+demonstrations. Our dataset contains 8.7 hours, 138 trajectories, 25 miles of socially compliant,
+human teleoperated driving demonstrations that comprises multi modal data streams including
+3D lidar, joystick commands, odometry, visual and inertial information, collected on two morphologically
+different mobile robots a Boston Dynamics Spot and a Clearpath Jackal by four different human demonstrators
+in both indoor and outdoor environments. We additionally perform preliminary analysis and validation
+through real world robot experiments and show that navigation policies learned by imitation learning
+on SCAND generate socially compliant behaviors 

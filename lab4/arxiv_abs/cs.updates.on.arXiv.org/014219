@@ -1,0 +1,20 @@
+Applications based on Deep Neural Networks (DNNs) have grown exponentially in the past decade.
+To match their increasing computational needs, several Non-Volatile Memory (NVM) crossbar-based
+accelerators have been proposed. Apart from improved energy efficiency and performance, these
+approximate hardware also possess intrinsic robustness for defense against Adversarial Attacks,
+which is an important security concern for DNNs. Prior works have focused on quantifying this intrinsic
+robustness for vanilla networks, that is DNNs trained on unperturbed inputs. However, adversarial
+training of DNNs is the benchmark technique for robustness, and sole reliance on intrinsic robustness
+of the hardware may not be sufficient. In this work, we explore the design of robust DNNs through the
+amalgamation of adversarial training and the intrinsic robustness offered by NVM crossbar-based
+analog hardware. First, we study the noise stability of such networks on unperturbed inputs and
+observe that internal activations of adversarially trained networks have lower Signal-to-Noise
+Ratio (SNR), and are sensitive to noise than vanilla networks. As a result, they suffer significantly
+higher performance degradation due to the non-ideal computations; on an average 2x accuracy drop.
+On the other hand, for adversarial images generated using Projected-Gradient-Descent (PGD) White-Box
+attacks, ResNet-10/20 adversarially trained on CIFAR-10/100 display a 5-10% gain in robust accuracy
+due to the underlying NVM crossbar when the attack epsilon ($\epsilon_{attack}$, the degree of
+input perturbations) is greater than the epsilon of the adversarial training ($\epsilon_{train}$).
+Our results indicate that implementing adversarially trained networks on analog hardware requires
+careful calibration between hardware non-idealities and $\epsilon_{train}$ to achieve optimum
+robustness and performance. 

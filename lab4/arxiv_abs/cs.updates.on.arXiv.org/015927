@@ -1,0 +1,19 @@
+Context: Identifying potential vulnerable code is important to improve the security of our software
+systems. However, the manual detection of software vulnerabilities requires expert knowledge
+and is time-consuming, and must be supported by automated techniques. Objective: Such automated
+vulnerability detection techniques should achieve a high accuracy, point developers directly
+to the vulnerable code fragments, scale to real-world software, generalize across the boundaries
+of a specific software project, and require no or only moderate setup or configuration effort. Method:
+In this article, we present VUDENC (Vulnerability Detection with Deep Learning on a Natural Codebase),
+a deep learning-based vulnerability detection tool that automatically learns features of vulnerable
+code from a large and real-world Python codebase. VUDENC applies a word2vec model to identify semantically
+similar code tokens and to provide a vector representation. A network of long-short-term memory
+cells (LSTM) is then used to classify vulnerable code token sequences at a fine-grained level, highlight
+the specific areas in the source code that are likely to contain vulnerabilities, and provide confidence
+levels for its predictions. Results: To evaluate VUDENC, we used 1,009 vulnerability-fixing commits
+from different GitHub repositories that contain seven different types of vulnerabilities (SQL
+injection, XSS, Command injection, XSRF, Remote code execution, Path disclosure, Open redirect)
+for training. In the experimental evaluation, VUDENC achieves a recall of 78%-87%, a precision
+of 82%-96%, and an F1 score of 80%-90%. VUDENC's code, the datasets for the vulnerabilities, and
+the Python corpus for the word2vec model are available for reproduction. Conclusions: Our experimental
+results suggest... 

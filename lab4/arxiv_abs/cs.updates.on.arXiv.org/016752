@@ -1,0 +1,18 @@
+Many video instance segmentation (VIS) methods partition a video sequence into individual frames
+to detect and segment objects frame by frame. However, such a frame-in frame-out (FiFo) pipeline
+is ineffective to exploit the temporal information. Based on the fact that adjacent frames in a short
+clip are highly coherent in content, we propose to extend the one-stage FiFo framework to a clip-in
+clip-out (CiCo) one, which performs VIS clip by clip. Specifically, we stack FPN features of all
+frames in a short video clip to build a spatio-temporal feature cube, and replace the 2D conv layers
+in the prediction heads and the mask branch with 3D conv layers, forming clip-level prediction heads
+(CPH) and clip-level mask heads (CMH). Then the clip-level masks of an instance can be generated
+by feeding its box-level predictions from CPH and clip-level features from CMH into a small fully
+convolutional network. A clip-level segmentation loss is proposed to ensure that the generated
+instance masks are temporally coherent in the clip. The proposed CiCo strategy is free of inter-frame
+alignment, and can be easily embedded into existing FiFo based VIS approaches. To validate the generality
+and effectiveness of our CiCo strategy, we apply it to two representative FiFo methods, Yolact \cite{bolya2019yolact}
+and CondInst \cite{tian2020conditional}, resulting in two new one-stage VIS models, namely CiCo-Yolact
+and CiCo-CondInst, which achieve 37.1/37.3\%, 35.2/35.4\% and 17.2/18.0\% mask AP using the ResNet50
+backbone, and 41.8/41.4\%, 38.0/38.9\% and 18.0/18.2\% mask AP using the Swin Transformer tiny
+backbone on YouTube-VIS 2019, 2021 and OVIS valid sets, respectively, recording new state-of-the-arts.
+Code and video demos of CiCo can be found at \url{https://github.com/MinghanLi/CiCo}. 

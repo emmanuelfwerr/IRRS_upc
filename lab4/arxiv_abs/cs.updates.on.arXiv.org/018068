@@ -1,0 +1,20 @@
+Few-shot learning has recently attracted wide interest in image classification, but almost all
+the current public benchmarks are focused on natural images. The few-shot paradigm is highly relevant
+in medical-imaging applications due to the scarcity of labeled data, as annotations are expensive
+and require specialized expertise. However, in medical imaging, few-shot learning research is
+sparse, limited to private data sets and is at its early stage. In particular, the few-shot setting
+is of high interest in histology due to the diversity and fine granularity of cancer related tissue
+classification tasks, and the variety of data-preparation techniques. This paper introduces
+a highly diversified public benchmark, gathered from various public datasets, for few-shot histology
+data classification. We build few-shot tasks and base-training data with various tissue types,
+different levels of domain shifts stemming from various cancer sites, and different class-granularity
+levels, thereby reflecting realistic scenarios. We evaluate the performances of state-of-the-art
+few-shot learning methods on our benchmark, and observe that simple fine-tuning and regularization
+methods achieve better results than the popular meta-learning and episodic-training paradigm.
+Furthermore, we introduce three scenarios based on the domain shifts between the source and target
+histology data: near-domain, middle-domain and out-domain. Our experiments display the potential
+of few-shot learning in histology classification, with state-of-art few shot learning methods
+approaching the supervised-learning baselines in the near-domain setting. In our out-domain
+setting, for 5-way 5-shot, the best performing method reaches 60% accuracy. We believe that our
+work could help in building realistic evaluations and fair comparisons of few-shot learning methods
+and will further encourage research in the few-shot paradigm. 

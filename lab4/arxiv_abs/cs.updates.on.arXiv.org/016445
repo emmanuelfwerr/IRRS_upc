@@ -1,0 +1,20 @@
+Accurate segmentation of electron microscopy (EM) volumes of the brain is essential to characterize
+neuronal structures at a cell or organelle level. While supervised deep learning methods have led
+to major breakthroughs in that direction during the past years, they usually require large amounts
+of annotated data to be trained, and perform poorly on other data acquired under similar experimental
+and imaging conditions. This is a problem known as domain adaptation, since models that learned
+from a sample distribution (or source domain) struggle to maintain their performance on samples
+extracted from a different distribution or target domain. In this work, we address the complex case
+of deep learning based domain adaptation for mitochondria segmentation across EM datasets from
+different tissues and species. We present three unsupervised domain adaptation strategies to
+improve mitochondria segmentation in the target domain based on (1) state-of-the-art style transfer
+between images of both domains; (2) self-supervised learning to pre-train a model using unlabeled
+source and target images, and then fine-tune it only with the source labels; and (3) multi-task neural
+network architectures trained end-to-end with both labeled and unlabeled images. Additionally,
+we propose a new training stopping criterion based on morphological priors obtained exclusively
+in the source domain. We carried out all possible cross-dataset experiments using three publicly
+available EM datasets. We evaluated our proposed strategies on the mitochondria semantic labels
+predicted on the target datasets. The methods introduced here outperform the baseline methods
+and compare favorably to the state of the art. In the absence of validation labels, monitoring our
+proposed morphology-based metric is an intuitive and effective way to stop the training process
+and select in average optimal models. 

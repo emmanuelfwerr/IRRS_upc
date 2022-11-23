@@ -1,0 +1,20 @@
+Fully Homomorphic Encryption (FHE) allows arbitrarily complex computations on encrypted data
+without ever needing to decrypt it, thus enabling us to maintain data privacy on third-party systems.
+Unfortunately, sustaining deep computations with FHE requires a periodic noise reduction step
+known as bootstrapping. The cost of the bootstrapping operation is one of the primary barriers to
+the wide-spread adoption of FHE. In this paper, we present an in-depth architectural analysis of
+the bootstrapping step in FHE. First, we observe that secure implementations of bootstrapping
+exhibit a low arithmetic intensity (<1 Op/byte), require large caches (>100 MB), and are heavily
+bound by the main memory bandwidth. Consequently, we demonstrate that existing workloads observe
+marginal performance gains from the design of bespoke high-throughput arithmetic units tailored
+to FHE. Second, we propose several cache-friendly algorithmic optimizations that improve the
+throughput in FHE bootstrapping by enabling up to 3.2x higher arithmetic intensity and 4.6x lower
+memory bandwidth. Our optimizations apply to a wide range of structurally similar computations
+such as private evaluation and training of machine learning models. Finally, we incorporate these
+optimizations into an architectural tool which, given a cache size, memory subsystem, the number
+of functional units and a desired security level, selects optimal cryptosystem parameters to maximize
+the bootstrapping throughput. Our optimized bootstrapping implementation represents a best-case
+scenario for compute acceleration of FHE. We show that despite these optimizations, bootstrapping
+continues to be bottlenecked by main memory bandwidth. We propose new research directions to address
+the underlying memory bottleneck. In summary, our answer to the titular question is: yes, but only
+after addressing the memory bottleneck! 

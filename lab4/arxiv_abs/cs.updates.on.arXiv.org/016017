@@ -1,0 +1,20 @@
+Sender-receiver interactions, and specifically persuasion games, are widely researched in economic
+modeling and artificial intelligence. However, in the classic persuasion games setting, the messages
+sent from the expert to the decision-maker (DM) are abstract or well-structured signals rather
+than natural language messages. This paper addresses the use of natural language in persuasion
+games. For this purpose, we conduct an online repeated interaction experiment. At each trial of
+the interaction, an informed expert aims to sell an uninformed decision-maker a vacation in a hotel,
+by sending her a review that describes the hotel. While the expert is exposed to several scored reviews,
+the decision-maker observes only the single review sent by the expert, and her payoff in case she
+chooses to take the hotel is a random draw from the review score distribution available to the expert
+only. We also compare the behavioral patterns in this experiment to the equivalent patterns in similar
+experiments where the communication is based on the numerical values of the reviews rather than
+the reviews' text, and observe substantial differences which can be explained through an equilibrium
+analysis of the game. We consider a number of modeling approaches for our verbal communication setup,
+differing from each other in the model type (deep neural network vs. linear classifier), the type
+of features used by the model (textual, behavioral or both) and the source of the textual features
+(DNN-based vs. hand-crafted). Our results demonstrate that given a prefix of the interaction sequence,
+our models can predict the future decisions of the decision-maker, particularly when a sequential
+modeling approach and hand-crafted textual features are applied. Further analysis of the hand-crafted
+textual features allows us to make initial observations about the aspects of text that drive decision
+making in our setup 

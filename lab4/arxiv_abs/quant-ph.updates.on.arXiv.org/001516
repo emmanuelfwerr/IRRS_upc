@@ -1,0 +1,19 @@
+The effect of instantaneous spectral diffusion (ISD) on gate operations in rare-earth-ion-doped
+crystals is an important question to answer for the future of rare-earth quantum computing. ISD
+has previously been extensively studied for ensemble systems, where it is observed as a dephasing
+that depends on the degree of excitation. However, for applications that use single ions, a microscopic
+modeling that highlights the stochastic nature of the ISD phenomena is necessary. Here we present
+such a model and use it to investigate ISD errors on single-qubit gate operations. However, directly
+simulating how the qubit is affected by all non-qubit ions is intractable since the size of the system
+grows exponentially with the number of ions. To circumvent this problem, we present a method to estimate
+the error of the full system by examining smaller subsystems, each evaluating the rotation and shrinkage
+of the qubit Bloch vector due to only one error source. In the case of ISD, the different error sources
+are individual ions causing ISD, but the method is general and thus applicable to other systems as
+long as the errors are largely independent. After studying ISD due to the ions surrounding a qubit,
+we conclude that transmission windows (prepared by optical pumping) are necessary to suppress
+the ISD errors. Despite using such windows, there remains a roughly $0.3\%$ risk that a qubit has
+an ISD error larger than the error from other sources. However, in those cases the qubit can be discarded
+and its frequency channel can be reused by another qubit. In most cases the ISD errors are significantly
+smaller than other errors, thus opening up the possibility to perform noisy intermediate-scale
+quantum (NISQ) algorithms despite ISD being present. Finally, the approach presented here creates
+a foundation that can be used to study how ISD affects even more complicated gate operations. 

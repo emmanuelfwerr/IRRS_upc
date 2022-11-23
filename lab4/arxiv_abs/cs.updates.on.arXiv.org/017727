@@ -1,0 +1,19 @@
+Purpose: Hard-to-interpret Black-box Machine Learning (ML) were often used for early Alzheimer's
+Disease (AD) detection. Methods: To interpret eXtreme Gradient Boosting (XGBoost), Random Forest
+(RF), and Support Vector Machine (SVM) black-box models a workflow based on Shapley values was developed.
+All models were trained on the Alzheimer's Disease Neuroimaging Initiative (ADNI) dataset and
+evaluated for an independent ADNI test set, as well as the external Australian Imaging and Lifestyle
+flagship study of Ageing (AIBL), and Open Access Series of Imaging Studies (OASIS) datasets. Shapley
+values were compared to intuitively interpretable Decision Trees (DTs), and Logistic Regression
+(LR), as well as natural and permutation feature importances. To avoid the reduction of the explanation
+validity caused by correlated features, forward selection and aspect consolidation were implemented.
+Results: Some black-box models outperformed DTs and LR. The forward-selected features correspond
+to brain areas previously associated with AD. Shapley values identified biologically plausible
+associations with moderate to strong correlations with feature importances. The most important
+RF features to predict AD conversion were the volume of the amygdalae, and a cognitive test score.
+Good cognitive test performances and large brain volumes decreased the AD risk. The models trained
+using cognitive test scores significantly outperformed brain volumetric models ($p<0.05$).
+Cognitive Normal (CN) vs. AD models were successfully transferred to external datasets. Conclusion:
+In comparison to previous work, improved performances for ADNI and AIBL were achieved for CN vs.
+Mild Cognitive Impairment (MCI) classification using brain volumes. The Shapley values and the
+feature importances showed moderate to strong correlations. 

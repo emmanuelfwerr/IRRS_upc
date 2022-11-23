@@ -1,0 +1,20 @@
+Deploying Machine learning (ML) on the milliwatt-scale edge devices (tinyML) is gaining popularity
+due to recent breakthroughs in ML and IoT. However, the capabilities of tinyML are restricted by
+strict power and compute constraints. The majority of the contemporary research in tinyML focuses
+on model compression techniques such as model pruning and quantization to fit ML models on low-end
+devices. Nevertheless, the improvements in energy consumption and inference time obtained by
+existing techniques are limited because aggressive compression quickly shrinks model capacity
+and accuracy. Another approach to improve inference time and/or reduce power while preserving
+its model capacity is through early-exit networks. These networks place intermediate classifiers
+along a baseline neural network that facilitate early exit from neural network computation if an
+intermediate classifier exhibits sufficient confidence in its prediction. Previous work on early-exit
+networks have focused on large networks, beyond what would typically be used for tinyML applications.
+In this paper, we discuss the challenges of adding early-exits to state-of-the-art tiny-CNNs and
+devise an early-exit architecture, T-RECX, that addresses these challenges. In addition, we develop
+a method to alleviate the effect of network overthinking at the final exit by leveraging the high-level
+representations learned by the early-exit. We evaluate T-RECX on three CNNs from the MLPerf tiny
+benchmark suite for image classification, keyword spotting and visual wake word detection tasks.
+Our results demonstrate that T-RECX improves the accuracy of baseline network and significantly
+reduces the average inference time of tiny-CNNs. T-RECX achieves 32.58% average reduction in FLOPS
+in exchange for 1% accuracy across all evaluated models. Also, our techniques increase the accuracy
+of baseline network in two out of three models we evaluate 

@@ -1,0 +1,19 @@
+We introduce a two-person zero-sum game that we call stake-governed tug-of-war. The game develops
+the classic tug-of-war random-turn game from~\cite{PSSW09}. In tug-of-war, two players compete
+by moving a counter along adjacent edges of a graph, each winning the right to move at a given turn according
+to the outcome of the flip of a fair coin; a payment is made from one player to the other when the counter
+reaches a boundary set on which the terminal payment value is specified. The player Mina who makes
+the payment seeks to minimize its mean; her opponent Maxine seeks to maximize it. The game's value
+is the infinity harmonic extension of the payment boundary data. In the stake-governed version,
+both players first receive a limited budget. At the start of each turn, each stakes an amount drawn
+from her present budget, and the right to move at the turn is won randomly by a player with probability
+equal to the ratio of her stake and the combined stake just offered. For certain graphs, we present
+the solution of a leisurely version of the game, in which, after stakes are bid at a turn, the upcoming
+move is cancelled with probability $1 - \epsilon \in (0,1)$. With the parameter $\epsilon$ small
+enough, and for finite trees whose leaves are the boundary set and whose payment function is the indicator
+on a given leaf, we determine the value of the game and the set of Nash equilibria. When the ratio of
+the initial fortunes of Maxine and Mina is $\lambda$, Maxine wins each turn with a probability $\tfrac{\lambda}{1+\lambda}$
+under optimal play, and game value is a biased infinity harmonic function $h(\lambda,v)$; each
+player stakes a shared non-random proportion of her present fortune, a formula for which we give
+in terms of the spatial gradient and $\lambda$-derivative of $h(\lambda,v)$. We also show with
+some examples how the solution can differ when $\epsilon$ is one. 

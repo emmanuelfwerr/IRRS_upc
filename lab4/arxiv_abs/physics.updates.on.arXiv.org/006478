@@ -1,0 +1,19 @@
+Monte Carlo sampling of the canonical distribution presents a formidable challenge when the potential
+energy landscape is characterized by a large number of local minima separated by high barriers.
+The principal observation of this work is that the multiple local minima and energy barriers in a
+landscape can often occur as a result of discrete symmetries in the potential energy function. A
+new Monte Carlo method is proposed, group action Markov chain Monte Carlo (GA-MCMC), which augments
+more conventional trial moves (e.g. random jumps, hybrid Monte Carlo, etc.) with the application
+of a group action from a well-chosen generating set of the discrete symmetry group; the result is
+a framework for symmetry-adapted MCMC. It is shown that conventional trial moves are generally
+optimal for "local mixing" rates, i.e. sampling a single energy well; whereas the group action portion
+of the GA-MCMC trial move allows the Markov chain to propagate between energy wells and can vastly
+improve the rate of "global mixing". The proposed method is compared with standard jumps and umbrella
+sampling (a popular alternative for energy landscapes with barriers) for potential energies with
+translational, reflection, and rotational symmetries. GA-MCMC is shown to consistently outperform
+the considered alternatives, even when the symmetry of the potential energy function is broken.
+The work culminates by extending GA-MCMC to a clustering-type algorithm for interacting dielectric
+polymer chains. Not only does GA-MCMC again outperform the considered alternatives, but it is the
+only method which consistently converges for all of the cases considered. Some new and interesting
+phenomena regarding the electro-elasticity of dielectric polymer chains, unveiled via GA-MCMC,
+is briefly discussed. 

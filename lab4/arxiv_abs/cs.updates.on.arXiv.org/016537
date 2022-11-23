@@ -1,0 +1,20 @@
+Performance and reliability are two prominent factors in the design of data storage systems. To
+achieve higher performance, recently storage system designers use DRAM-based buffers. The volatility
+of DRAM brings up the possibility of data loss, so a part of the main storage is conventionally used
+as the journal area to be able of recovering unflushed data pages in the case of power failure. Moreover,
+periodically flushing buffered data pages to the main storage is a common mechanism to preserve
+a high level of reliability, which leads to an increase in storage write traffic. To address this
+shortcoming, recent studies offer a small NVM as the Persistent Journal Area (PJA) along with DRAM
+as an efficient approach, named NVM-Backed Buffer (NVB-Buffer). This approach aims to address
+DRAM vulnerability against power failure while reducing storage write traffic. In this paper,
+we use the most promising technologies for PJA among the emerging technologies, which is STT-MRAM
+to meet the requirements of PJA (high endurance, non-volatility, and DRAM-like latency). However,
+STT-MRAM faces major reliability challenges, i.e. Retention Failure, Read Disturbance, and Write
+Failure. In this paper, we first show that retention failure is the dominant source of errors in NVB-Buffers
+as it suffers from long and unpredictable page idle intervals. Then, we propose a novel NVB-Buffer
+management scheme, named, Cold Page Awakening (CoPA), which predictably reduces the idle time
+of PJA pages. To this aim, CoPA employs Distant Refreshing to periodically overwrite the vulnerable
+PJA page contents by using their replica in DRAM-based buffer. We compare CoPA with the state-of-the-art
+schemes over several workloads based on physical journaling. Our evaluations show that employing
+CoPA leads to three orders of magnitude lower failure rate with negligible performance degradation
+(1.1%) and memory overhead (1.2%). 

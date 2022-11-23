@@ -1,0 +1,20 @@
+This paper presents a survey of biometric template protection (BTP) methods for securing face templates
+in neural-network-based face recognition systems. The BTP methods are categorised into two types:
+Non-NN and NN-learned. Non-NN methods use a neural network (NN) as a feature extractor, but the BTP
+part is based on a non-NN algorithm applied at image-level or feature-level. In contrast, NN-learned
+methods specifically employ a NN to learn a protected template from the unprotected face image/features.
+We present examples of Non-NN and NN-learned face BTP methods from the literature, along with a discussion
+of the two categories' comparative strengths and weaknesses. We also investigate the techniques
+used to evaluate these BTP methods, in terms of the three most common criteria: recognition accuracy,
+irreversibility, and renewability/unlinkability. As expected, the recognition accuracy of
+protected face recognition systems is generally evaluated using the same (empirical) techniques
+employed for evaluating standard (unprotected) biometric systems. On the contrary, most irreversibility
+and renewability/unlinkability evaluations are based on theoretical assumptions/estimates
+or verbal implications, with no empirical validation in a practical face recognition context.
+So, we recommend a greater focus on empirical evaluation strategies, to provide more concrete insights
+into the irreversibility and renewability/unlinkability of face BTP methods in practice. An exploration
+of the reproducibility of the studied BTP works, in terms of the public availability of their implementation
+code and evaluation datasets/procedures, suggests that it would currently be difficult for the
+BTP community to faithfully replicate (and thus validate) most of the reported findings. So, we
+advocate for a push towards reproducibility, in the hope of furthering our understanding of the
+face BTP research field. 

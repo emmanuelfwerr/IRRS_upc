@@ -1,0 +1,20 @@
+On-demand labor platforms aim to train a skilled workforce to serve its incoming demand for jobs.
+Since limited jobs are available for training, and it is usually not necessary to train all workers,
+efficient matching of training jobs requires prioritizing fast learners over slow ones. However,
+the learning rates of novice workers are unknown, resulting in a tradeoff between exploration (learning
+the learning rates) and exploitation (training the best workers). Motivated to study this tradeoff,
+we analyze a novel objective within the stochastic multi-armed bandit framework. Given $K$ arms,
+instead of maximizing the expected total reward from $T$ pulls (the traditional "sum" objective),
+we consider the vector of cumulative rewards earned from the $K$ arms at the end of $T$ pulls and aim
+to maximize the expected highest cumulative reward (the "max" objective). When rewards represent
+skill increments, this corresponds to the objective of training a single highly skilled worker
+from a set of novice workers, using a limited supply of training jobs. For this objective, we show
+that any policy must incur an instance-dependent asymptotic regret of $\Omega(\log T)$ (with a
+higher instance-dependent constant) and a worst-case regret of $\Omega(K^{1/3}T^{2/3})$. We
+then design an explore-then-commit policy featuring exploration based on appropriately tuned
+confidence bounds on the mean reward and an adaptive stopping criterion, which adapts to the problem
+difficulty and achieves these bounds (up to logarithmic factors). We generalize our algorithmic
+insights to the problem of maximizing the expected value of the average cumulative reward of the
+top $m$ arms with the highest cumulative rewards, corresponding to the case where multiple workers
+must be trained. Our numerical experiments demonstrate the efficacy of our policies compared to
+several natural alternatives in practical parameter regimes. 

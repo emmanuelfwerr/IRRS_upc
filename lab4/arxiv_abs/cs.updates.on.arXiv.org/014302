@@ -1,0 +1,19 @@
+Background: Type-4 clones refer to a pair of code snippets with similar functionality but written
+in different syntax, which challenges the existing code clone detection techniques. Previous
+studies, however, highly rely on syntactic structures and textual tokens, which cannot precisely
+represent the semantic information of code and might introduce nonnegligible noise into the detection
+models. Aims: To overcome these limitations, we explore an effective semantic-based solution
+for Type-4 clone detection. Additionally, we conducted an empirical study on the characteristics
+of Type-4 clone pairs. We found that NOT all tokens contain semantics that the Type-4 clone detection
+required. Operators and API calls emerge as distinct candidates for Type-4 code semantic representation.
+Method: To bridge this gap, we design a novel semantic graph based deep detection approach, called
+SEED. For a pair of code snippets, SEED constructs a semantic graph of each code snippet based on intermediate
+representation to represent the code functionality more precisely compared to the representations
+based on lexical and syntactic analysis. To accommodate the characteristics of Type-4 clones,
+a semantic graph is constructed focusing on the operators and API calls instead of all tokens. Then,
+SEED generates the feature vectors by using the graph deep neural network and performs code clone
+detection based on the similarity among the vectors. Results: Extensive experiments show that
+our approach significantly outperforms two baseline approaches over two public datasets and one
+customized dataset. Specially, SEED outperforms other baseline methods by an average of 25.2%
+in the form of F1-Score. Conclusions: Our experiments demonstrate that SEED can reach state-of-the-art
+and be useful for Type-4 clone detection in practice. 

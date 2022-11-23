@@ -1,0 +1,19 @@
+In edge inference, an edge server provides remote-inference services to edge devices. This requires
+the edge devices to upload high-dimensional features of data samples over resource-constrained
+wireless channels, which creates a communication bottleneck. The conventional solution of feature
+pruning requires that the device has access to the inference model, which is unavailable in the current
+scenario of split inference. To address this issue, we propose the progressive feature transmission
+(ProgressFTX) protocol, which minimizes the overhead by progressively transmitting features
+until a target confidence level is reached. The optimal control policy of the protocol to accelerate
+inference is derived and it comprises two key operations. The first is importance-aware feature
+selection at the server, for which it is shown to be optimal to select the most important features,
+characterized by the largest discriminant gains of the corresponding feature dimensions. The
+second is transmission-termination control by the server for which the optimal policy is shown
+to exhibit a threshold structure. Specifically, the transmission is stopped when the incremental
+uncertainty reduction by further feature transmission is outweighed by its communication cost.
+The indices of the selected features and transmission decision are fed back to the device in each
+slot. The optimal policy is first derived for the tractable case of linear classification and then
+extended to the more complex case of classification using a convolutional neural network. Both
+Gaussian and fading channels are considered. Experimental results are obtained for both a statistical
+data model and a real dataset. It is seen that ProgressFTX can substantially reduce the communication
+latency compared to conventional feature pruning and random feature transmission. 

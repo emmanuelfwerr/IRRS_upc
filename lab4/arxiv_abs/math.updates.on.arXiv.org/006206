@@ -1,0 +1,19 @@
+We give a nearly-linear time reduction that encodes any linear program as a 2-commodity flow problem
+with only a small blow-up in size. Under mild assumptions similar to those employed by modern fast
+solvers for linear programs, our reduction causes only a polylogarithmic multiplicative increase
+in the size of the program and runs in nearly-linear time. Our reduction applies to high-accuracy
+approximation algorithms and exact algorithms. Given an approximate solution to the 2-commodity
+flow problem, we can extract a solution to the linear program in linear time with only a polynomial
+factor increase in the error. This implies that any algorithm that solves the 2-commodity flow problem
+can solve linear programs in essentially the same time. Given a directed graph with edge capacities
+and two source-sink pairs, the goal of the 2-commodity flow problem is to maximize the sum of the flows
+routed between the two source-sink pairs subject to edge capacities and flow conservation. A 2-commodity
+flow can be directly written as a linear program, and thus we establish a nearly-tight equivalence
+between these two classes of problems. Our proof follows the outline of Itai's polynomial-time
+reduction of a linear program to a 2-commodity flow problem (JACM'78). Itai's reduction shows that
+exactly solving 2-commodity flow and exactly solving linear programming are polynomial-time
+equivalent. We improve Itai's reduction to nearly preserve the problem representation size in
+each step. In addition, we establish an error bound for approximately solving each intermediate
+problem in the reduction, and show that the accumulated error is polynomially bounded. We remark
+that our reduction does not run in strongly polynomial time and that it is open whether 2-commodity
+flow and linear programming are equivalent in strongly polynomial time. 

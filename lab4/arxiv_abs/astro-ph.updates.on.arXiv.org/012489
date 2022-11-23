@@ -1,0 +1,19 @@
+Most general-purpose classification methods, such as support-vector machine (SVM) and random
+forest (RF), fail to account for an unusual characteristic of astronomical data: known measurement
+error uncertainties. In astronomical data, this information is often given in the data but discarded
+because popular machine learning classifiers cannot incorporate it. We propose a simulation-based
+approach that incorporates heteroscedastic measurement error into existing classification
+method to better quantify uncertainty in classification. The proposed method first simulates
+perturbed realizations of the data from a Bayesian posterior predictive distribution of a Gaussian
+measurement error model. Then, a chosen classifier is fit to each simulation. The variation across
+the simulations naturally reflects the uncertainty propagated from the measurement errors in
+both labeled and unlabeled data sets. We demonstrate the use of this approach via two numerical studies.
+The first is a thorough simulation study applying the proposed procedure to SVM and RF, which are
+well-known hard and soft classifiers, respectively. The second study is a realistic classification
+problem of identifying high-$z$ $(2.9 \leq z \leq 5.1)$ quasar candidates from photometric data.
+The data are from merged catalogs of the Sloan Digital Sky Survey, the $Spitzer$ IRAC Equatorial
+Survey, and the $Spitzer$-HETDEX Exploratory Large-Area Survey. The proposed approach reveals
+that out of 11,847 high-$z$ quasar candidates identified by a random forest without incorporating
+measurement error, 3,146 are potential misclassifications with measurement error. Additionally,
+out of $1.85$ million objects not identified as high-$z$ quasars without measurement error, 936
+can be considered new candidates with measurement error. 

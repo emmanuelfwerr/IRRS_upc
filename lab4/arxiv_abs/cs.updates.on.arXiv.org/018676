@@ -1,0 +1,19 @@
+Monocular 3D object detection is an essential perception task for autonomous driving. However,
+the high reliance on large-scale labeled data make it costly and time-consuming during model optimization.
+To reduce such over-reliance on human annotations, we propose Mix-Teaching, an effective semi-supervised
+learning framework applicable to employ both labeled and unlabeled images in training stage. Mix-Teaching
+first generates pseudo-labels for unlabeled images by self-training. The student model is then
+trained on the mixed images possessing much more intensive and precise labeling by merging instance-level
+image patches into empty backgrounds or labeled images. This is the first to break the image-level
+limitation and put high-quality pseudo labels from multi frames into one image for semi-supervised
+training. Besides, as a result of the misalignment between confidence score and localization quality,
+it's hard to discriminate high-quality pseudo-labels from noisy predictions using only confidence-based
+criterion. To that end, we further introduce an uncertainty-based filter to help select reliable
+pseudo boxes for the above mixing operation. To the best of our knowledge, this is the first unified
+SSL framework for monocular 3D object detection. Mix-Teaching consistently improves MonoFlex
+and GUPNet by significant margins under various labeling ratios on KITTI dataset. For example,
+our method achieves around +6.34% AP@0.7 improvement against the GUPNet baseline on validation
+set when using only 10% labeled data. Besides, by leveraging full training set and the additional
+48K raw images of KITTI, it can further improve the MonoFlex by +4.65% improvement on AP@0.7 for car
+detection, reaching 18.54% AP@0.7, which ranks the 1st place among all monocular based methods
+on KITTI test leaderboard. The code and pretrained models will be released at https://github.com/yanglei18/Mix-Teaching.

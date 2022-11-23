@@ -1,0 +1,19 @@
+In this study, we present a deep learning-optimization framework to tackle dynamic mixed-integer
+programs. Specifically, we develop a bidirectional Long Short Term Memory (LSTM) framework that
+can process information forward and backward in time to learn optimal solutions to sequential decision-making
+problems. We demonstrate our approach in predicting the optimal decisions for the single-item
+capacitated lot-sizing problem (CLSP), where a binary variable denotes whether to produce in a
+period or not. Due to the dynamic nature of the problem, the CLSP can be treated as a sequence labeling
+task where a recurrent neural network can capture the problem's temporal dynamics. Computational
+results show that our LSTM-Optimization (LSTM-Opt) framework significantly reduces the solution
+time of benchmark CLSP problems without much loss in feasibility and optimality. For example, the
+predictions at the 85\% level reduce the CPLEX solution time by a factor of 9 on average for over 240,000
+test instances with an optimality gap of less than 0.05\% and 0.4\% infeasibility in the test set.
+Also, models trained using shorter planning horizons can successfully predict the optimal solution
+of the instances with longer planning horizons. For the hardest data set, the LSTM predictions at
+the 25\% level reduce the solution time of 70 CPU hours to less than 2 CPU minutes with an optimality
+gap of 0.8\% and without any infeasibility. The LSTM-Opt framework outperforms classical ML algorithms,
+such as the logistic regression and random forest, in terms of the solution quality, and exact approaches,
+such as the ($\ell$, S) and dynamic programming-based inequalities, with respect to the solution
+time improvement. Our machine learning approach could be beneficial in tackling sequential decision-making
+problems similar to CLSP, which need to be solved repetitively, frequently, and in a fast manner.

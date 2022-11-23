@@ -1,0 +1,20 @@
+This paper investigates task-oriented communication for multi-device cooperative edge inference,
+where a group of distributed low-end edge devices transmit the extracted features of local samples
+to a powerful edge server for inference. While cooperative edge inference can overcome the limited
+sensing capability of a single device, it substantially increases the communication overhead
+and may incur excessive latency. To enable low-latency cooperative inference, we propose a learning-based
+communication scheme that optimizes local feature extraction and distributed feature encoding
+in a task-oriented manner, i.e., to remove data redundancy and transmit information that is essential
+for the downstream inference task rather than reconstructing the data samples at the edge server.
+Specifically, we leverage an information bottleneck (IB) principle to extract the task-relevant
+feature at each edge device and adopt a distributed information bottleneck (DIB) framework to formalize
+a single-letter characterization of the optimal rate-relevance tradeoff for distributed feature
+encoding. To admit flexible control of the communication overhead, we extend the DIB framework
+to a distributed deterministic information bottleneck (DDIB) objective that explicitly incorporates
+the representational costs of the encoded features. As the IB-based objectives are computationally
+prohibitive for high-dimensional data, we adopt variational approximations to make the optimization
+problems tractable. To compensate the potential performance loss due to the variational approximations,
+we also develop a selective retransmission (SR) mechanism to identify the redundancy in the encoded
+features of multiple edge devices to attain additional communication overhead reduction. Extensive
+experiments evidence that the proposed task-oriented communication scheme achieves a better
+rate-relevance tradeoff than baseline methods. 

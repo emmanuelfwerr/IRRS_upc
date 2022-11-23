@@ -1,0 +1,20 @@
+This dissertation addresses visual scene understanding and enhances segmentation performance
+and generalization, training efficiency of networks, and holistic understanding. First, we investigate
+semantic segmentation in the context of street scenes and train semantic segmentation networks
+on combinations of various datasets. In Chapter 2 we design a framework of hierarchical classifiers
+over a single convolutional backbone, and train it end-to-end on a combination of pixel-labeled
+datasets, improving generalizability and the number of recognizable semantic concepts. Chapter
+3 focuses on enriching semantic segmentation with weak supervision and proposes a weakly-supervised
+algorithm for training with bounding box-level and image-level supervision instead of only with
+per-pixel supervision. The memory and computational load challenges that arise from simultaneous
+training on multiple datasets are addressed in Chapter 4. We propose two methodologies for selecting
+informative and diverse samples from datasets with weak supervision to reduce our networks' ecological
+footprint without sacrificing performance. Motivated by memory and computation efficiency requirements,
+in Chapter 5, we rethink simultaneous training on heterogeneous datasets and propose a universal
+semantic segmentation framework. This framework achieves consistent increases in performance
+metrics and semantic knowledgeability by exploiting various scene understanding datasets. Chapter
+6 introduces the novel task of part-aware panoptic segmentation, which extends our reasoning towards
+holistic scene understanding. This task combines scene and parts-level semantics with instance-level
+object detection. In conclusion, our contributions span over convolutional network architectures,
+weakly-supervised learning, part and panoptic segmentation, paving the way towards a holistic,
+rich, and sustainable visual scene understanding. 

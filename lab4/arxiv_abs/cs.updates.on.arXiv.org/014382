@@ -1,0 +1,20 @@
+Digital stethoscopes in combination with telehealth allow chest sounds to be easily collected
+and transmitted for remote monitoring and diagnosis. Chest sounds contain important information
+about a newborn's cardio-respiratory health. However, low-quality recordings complicate the
+remote monitoring and diagnosis. In this study, a new method is proposed to objectively and automatically
+assess heart and lung signal quality on a 5-level scale in real-time and to assess the effect of signal
+quality on vital sign estimation. For the evaluation, a total of 207 10s long chest sounds were taken
+from 119 preterm and full-term babies. Thirty of the recordings from ten subjects were obtained
+with synchronous vital signs from the Neonatal Intensive Care Unit (NICU) based on electrocardiogram
+recordings. As reference, seven annotators independently assessed the signal quality. For automatic
+quality classification, 400 features were extracted from the chest sounds. After feature selection
+using minimum redundancy and maximum relevancy algorithm, class balancing, and hyper-parameter
+optimization, a variety of multi-class and ordinal classification and regression algorithms
+were trained. Then, heart rate and breathing rate were automatically estimated from the chest sounds
+using adapted pre-existing methods. The results of subject-wise leave-one-out cross-validation
+show that the best-performing models had a mean squared error (MSE) of 0.49 and 0.61, and balanced
+accuracy of 57% and 51% for heart and lung qualities, respectively. The best-performing models
+for real-time analysis (<200ms) had MSE of 0.459 and 0.67, and balanced accuracy of 57% and 46%, respectively.
+Our experimental results underscore that increasing the signal quality leads to a reduction in
+vital sign error, with only high-quality recordings having a mean absolute error of less than 5 beats
+per minute, as required for clinical usage. 

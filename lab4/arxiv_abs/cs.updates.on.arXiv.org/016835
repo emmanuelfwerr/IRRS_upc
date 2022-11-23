@@ -1,0 +1,19 @@
+Given a closed simple polygon $P$, we say two points $p,q$ see each other if the segment $pq$ is fully
+contained in $P$. The art gallery problem seeks a minimum size set $G\subset P$ of guards that sees
+$P$ completely. The only currently correct algorithm to solve the art gallery problem exactly uses
+algebraic methods and is attributed to Sharir. As the art gallery problem is ER-complete, it seems
+unlikely to avoid algebraic methods, without additional assumptions. In this paper, we introduce
+the notion of vision stability. In order to describe vision stability consider an enhanced guard
+that can see "around the corner" by an angle of $\delta$ or a diminished guard whose vision is by an
+angle of $\delta$ "blocked" by reflex vertices. A polygon $P$ has vision stability $\delta$ if the
+optimal number of enhanced guards to guard $P$ is the same as the optimal number of diminished guards
+to guard $P$. We will argue that most relevant polygons are vision stable. We describe a one-shot
+vision stable algorithm that computes an optimal guard set for visionstable polygons using polynomial
+time and solving one integer program. It guarantees to find the optimal solution for every vision
+stable polygon. We implemented an iterative visionstable algorithm and show its practical performance
+is slower, but comparable with other state of the art algorithms. Our iterative algorithm is inspired
+and follows closely the one-shot algorithm. It delays several steps and only computes them when
+deemed necessary. Given a chord $c$ of a polygon, we denote by $n(c)$ the number of vertices visible
+from $c$. The chord-width of a polygon is the maximum $n(c)$ over all possible chords $c$. The set
+of vision stable polygons admits an FPT algorithm when parametrized by the chord-width. Furthermore,
+the one-shot algorithm runs in FPT time, when parameterized by the number of reflex vertices. 

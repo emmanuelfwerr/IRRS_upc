@@ -1,0 +1,19 @@
+Aligning a sequence to a walk in a labeled graph is a problem of fundamental importance to Computational
+Biology. For finding a walk in an arbitrary graph with $|E|$ edges that exactly matches a pattern
+of length $m$, a lower bound based on the Strong Exponential Time Hypothesis (SETH) implies an algorithm
+significantly faster than $O(|E|m)$ time is unlikely [Equi et al., ICALP 2019]. However, for many
+special graphs, such as de Bruijn graphs, the problem can be solved in linear time [Bowe et al., WABI
+2012]. For approximate matching, the picture is more complex. When edits (substitutions, insertions,
+and deletions) are only allowed to the pattern, or when the graph is acyclic, the problem is again
+solvable in $O(|E|m)$ time. When edits are allowed to arbitrary cyclic graphs, the problem becomes
+NP-complete, even on binary alphabets [Jain et al., RECOMB 2019]. These results hold even when edits
+are restricted to only substitutions. The complexity of approximate pattern matching on de Bruijn
+graphs remained open. We investigate this problem and show that the properties that make de Bruijn
+graphs amenable to efficient exact pattern matching do not extend to approximate matching, even
+when restricted to the substitutions only case with alphabet size four. We prove that determining
+the existence of a matching walk in a de Bruijn graph is NP-complete when substitutions are allowed
+to the graph. In addition, we demonstrate that an algorithm significantly faster than $O(|E|m)$
+is unlikely for de Bruijn graphs in the case where only substitutions are allowed to the pattern.
+This stands in contrast to pattern-to-text matching where exact matching is solvable in linear
+time, like on de Bruijn graphs, but approximate matching under substitutions is solvable in subquadratic
+$O(n\sqrt{m})$ time, where $n$ is the text's length [Abrahamson, SIAM J. Computing 1987]. 

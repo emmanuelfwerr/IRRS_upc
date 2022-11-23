@@ -1,0 +1,19 @@
+Given a graph $G$ and two independent sets $I_s$ and $I_t$ of size $k$, the independent set reconfiguration
+problem asks whether there exists a sequence of $k$-sized independent sets $I_s = I_0, I_1, I_2,
+\ldots, I_\ell = I_t$ such that each independent set is obtained from the previous one using a so-called
+reconfiguration step. Viewing each independent set as a collection of $k$ tokens placed on the vertices
+of a graph $G$, the two most studied reconfiguration steps are token jumping and token sliding. In
+the token jumping variant of the problem, a single step allows a token to jump from one vertex to any
+other vertex in the graph. In the token sliding variant, a token is only allowed to slide from a vertex
+to one of its neighbors. Like the independent set problem, both of the aforementioned problems are
+known to be W[1]-hard on general graphs. A very fruitful line of research has showed that the independent
+set problem becomes fixed-parameter tractable when restricted to sparse graph classes, such as
+planar, bounded treewidth, nowhere-dense, and all the way to biclique-free graphs. Over a series
+of papers, the same was shown to hold for the token jumping problem. As for the token sliding problem,
+which is mentioned in most of these papers, almost nothing is known beyond the fact that the problem
+is polynomial-time solvable on trees and interval graphs. We remedy this situation by introducing
+a new model for the reconfiguration of independent sets, which we call galactic reconfiguration.
+Using this new model, we show that (standard) token sliding is fixed-parameter tractable on graphs
+of bounded degree, planar graphs, and chordal graphs of bounded clique number. We believe that the
+galactic reconfiguration model is of independent interest and could potentially help in resolving
+the remaining open questions concerning the (parameterized) complexity of token sliding. 

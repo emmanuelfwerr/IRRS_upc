@@ -1,0 +1,19 @@
+Both fluid and particle models are commonly used to simulate streamer discharges. In this paper,
+we quantitatively study the agreement between these approaches for axisymmetric and 3D simulations
+of positive streamers in air. We use a drift-diffusion-reaction fluid model with the local field
+approximation and a PIC-MCC (particle-in-cell, Monte Carlo collision) particle model. The simulations
+are performed at 300 K and 1 bar in a 10 mm plate-plate gap with a 2 mm needle electrode. Applied voltages
+between 11.7 and 15.6 kV are used, which correspond to background fields of about 15 to 20 kV/cm. Streamer
+properties like maximal electric field, head position and velocity are compared as a function of
+time or space. Our results show good agreement between the particle and fluid simulations, in contrast
+to some earlier comparisons that were carried out in 1D or for negative streamers. To quantify discrepancies
+between the models, we mainly look at streamer velocities as a function of streamer length. For the
+test cases considered here, the mean deviation in streamer velocity between the particle and fluid
+simulations is less than 4%. We study the effect of different types of transport data for the fluid
+model, and find that flux coefficients lead to good agreement whereas bulk coefficients do not.
+Furthermore, we find that with a two-term Boltzmann solver, data should be computed using a temporal
+growth model for the best agreement. The numerical convergence of the particle and fluid models
+is also studied. In fluid simulations the streamer velocity increases somewhat using finer grids,
+whereas the particle simulations are less sensitive to the grid. Photoionization is the dominant
+source of stochastic fluctuations in our simulations. When the same stochastic photoionization
+model is used, particle and fluid simulations exhibit similar fluctuations. 

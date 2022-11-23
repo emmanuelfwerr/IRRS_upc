@@ -1,0 +1,19 @@
+In recent years, mining the knowledge from asynchronous sequences by Hawkes process is a subject
+worthy of continued attention, and Hawkes processes based on the neural network have gradually
+become the most hotly researched fields, especially based on the recurrence neural network (RNN).
+However, these models still contain some inherent shortcomings of RNN, such as vanishing and exploding
+gradient and long-term dependency problems. Meanwhile, Transformer based on self-attention
+has achieved great success in sequential modeling like text processing and speech recognition.
+Although the Transformer Hawkes process (THP) has gained huge performance improvement, THPs do
+not effectively utilize the temporal information in the asynchronous events, for these asynchronous
+sequences, the event occurrence instants are as important as the types of events, while conventional
+THPs simply convert temporal information into position encoding and add them as the input of transformer.
+With this in mind, we come up with a new kind of Transformer-based Hawkes process model, Temporal
+Attention Augmented Transformer Hawkes Process (TAA-THP), we modify the traditional dot-product
+attention structure, and introduce the temporal encoding into attention structure. We conduct
+numerous experiments on a wide range of synthetic and real-life datasets to validate the performance
+of our proposed TAA-THP model, significantly improvement compared with existing baseline models
+on the different measurements is achieved, including log-likelihood on the test dataset, and prediction
+accuracies of event types and occurrence times. In addition, through the ablation studies, we vividly
+demonstrate the merit of introducing additional temporal attention by comparing the performance
+of the model with and without temporal attention. 

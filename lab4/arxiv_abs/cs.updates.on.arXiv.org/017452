@@ -1,0 +1,20 @@
+With the advance in quantum computing in recent years, quantum software becomes vital for exploring
+the full potential of quantum computing systems. Quantum programming is different from classical
+programming, for example, the state of a quantum program is probabilistic in nature, and a quantum
+computer is error-prone due to the instability of quantum mechanisms. Therefore, the characteristics
+of bugs in quantum software projects may be very different from that of classical software projects.
+This work aims to understand the characteristics of bugs in quantum software projects, in order
+to provide insights to help devise effective testing and debugging mechanisms. To achieve this
+goal, we conduct an empirical study on the bug reports of 125 quantum software projects. We observe
+that quantum software projects are more buggy than classical software projects and that quantum
+project bugs are more costly to fix than classical project bugs. We also identify the types of the
+bugs and the quantum programming components where they occurred. Our study shows that the bugs are
+spread across different components, but quantum-specific bugs particularly appear in the compiler,
+gate operation, and state preparation components. The three most occurring types of bugs are Program
+anomaly bugs, Configuration bugs, and Data type and structure bugs. Our study highlights some particularly
+challenging areas in quantum software development, such as the lack of scientific quantum computation
+libraries that implement comprehensive mathematical functions for quantum computing. Quantum
+developers also seek specialized data manipulation libraries for quantum software engineering
+like Numpy for quantum computing. Our findings also provide insights for future work to advance
+the quantum program development, testing, and debugging of quantum software, such as providing
+tooling support for debugging low-level circuits. 

@@ -1,0 +1,19 @@
+The DLG root-squaring iterations, due to Dandelin 1826 and rediscovered by Lobachevsky 1834 and
+Graeffe 1837, have been the main approach to root-finding for a univariate polynomial p(x) in the
+19th century and beyond, but not so nowadays because these iterations are prone to severe numerical
+stability problems. Trying to avoid these problems we have found simple but novel reduction of the
+iterations applied for Newton's inverse ratio -p'(x)/p(x) to approximation of the power sums of
+the zeros of p(x) and its reverse polynomial. The resulting polynomial root-finders can be devised
+and performed independently of DLG iterations, based on Newton's identities or Cauchy integrals.
+In the former case the computation involve a set of leading or tailing coefficients of an input polynomial.
+In the latter case we must scale the variable and increase the arithmetic computational cost to ensure
+numerical stability. Nevertheless the cost is still manageable, at least for fast root-refinement,
+and the algorithms can be applied to a black box polynomial p(x)--given by a black box for the evaluation
+of the ratio p'(x)/p(x) rather than by its coefficients. This enables important computational
+benefits, including efficient recursive as well as concurrent approximation of a set of zeros of
+p(x) or even all of its zeros, acceleration where an input polynomial can be evaluated fast, and extension
+to approximation of the eigenvalues of a matrix or a polynomial matrix, being efficient if the matrix
+can be inverted fast, e.g., is data sparse. We also recall our recent fast algorithms for approximation
+of the root radii, that is, the distances to the roots from the origin or any complex value to the zeros
+of p(x), and apply it for fast black box initialization of polynomial root-finding by means of functional
+iterations, e.g., Newton's, Ehrlich's, and Weierstrass's. 

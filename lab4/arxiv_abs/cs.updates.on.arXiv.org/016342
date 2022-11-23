@@ -1,0 +1,20 @@
+Small and medium enterprises rely on detailed Web analytics to be informed about their market and
+competition. Focused crawlers meet this demand by crawling and indexing specific parts of the Web.
+Critically, a focused crawler must quickly find new pages that have not yet been indexed. Since a
+new page can be discovered only by following a new outlink, predicting new outlinks is very relevant
+in practice. In the literature, many feature designs have been proposed for predicting changes
+in the Web. In this work we provide a structured analysis of this problem, using new outlinks as our
+running prediction target. Specifically, we unify earlier feature designs in a taxonomic arrangement
+of features along two dimensions: static versus dynamic features, and features of a page versus
+features of the network around it. Within this taxonomy, complemented by our new (mainly, dynamic
+network) features, we identify best predictors for new outlinks. Our main conclusion is that most
+informative features are the recent history of new outlinks on a page itself, and on its content-related
+pages. Hence, we propose a new 'look back, look around' (LBLA) model, that uses only these features.
+With the obtained predictions, we design a number of scoring functions to guide a focused crawler
+to pages with most new outlinks, and compare their performance. Interestingly, the LBLA approach
+proved extremely effective, outperforming even the models that use a most complete set of features.
+One of the learners we use, is the recent NGBoost method that assumes a Poisson distribution for the
+number of new outlinks on a page, and learns its parameters. This connects the two so far unrelated
+avenues in the literature: predictions based on features of a page, and those based on probabilistic
+modeling. All experiments were carried out on an original dataset, made available by a commercial
+focused crawler. 

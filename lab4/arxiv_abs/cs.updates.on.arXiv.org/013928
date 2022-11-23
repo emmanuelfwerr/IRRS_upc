@@ -1,0 +1,20 @@
+The mechanical behavior of inelastic materials with microstructure is very complex and hard to
+grasp with heuristic, empirical constitutive models. For this purpose, multiscale, homogenization
+approaches are often used for performing reliable, accurate predictions of the macroscopic mechanical
+behavior of microstructured solids. Nevertheless, the calculation cost of such approaches is
+extremely high and prohibitive for real-scale applications involving inelastic materials. Recently,
+data-driven approaches based on deep learning have risen as a promising alternative to replace
+ad-hoc constitutive laws and speed-up multiscale numerical methods. However, such approaches
+lack a rigorous frame based on the laws of physics. As a result, their application to model materials
+with complex microstructure in inelasticity is not yet established. Here, we propose Thermodynamics-based
+Artificial Neural Networks (TANN) for the constitutive modeling of materials with inelastic and
+complex microstructure. Our approach integrates thermodynamics-aware dimensionality reduction
+techniques and deep neural networks to identify the constitutive laws and the internal state variables
+of complex inelastic materials. The ability of TANN in delivering high-fidelity, physically consistent
+predictions is demonstrated through several examples both at the microscopic and macroscopic
+scale. In particular, we show the efficiency and accuracy of TANN in predicting the average and local
+stress-strain response, the internal energy and the dissipation of both regular and perturbed
+lattice microstructures in inelasticity. Finally, a double-scale homogenization scheme is used
+to solve a large scale boundary value problem. The high performance of the homogenized model using
+TANN is illustrated through detailed comparisons. An excellent agreement is shown for a variety
+of monotonous and cyclic stress-strain paths. 

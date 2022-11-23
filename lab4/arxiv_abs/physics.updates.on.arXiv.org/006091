@@ -1,0 +1,18 @@
+We study the conservation properties of the Hermite-discontinuous Galerkin (Hermite-DG) approximation
+of the Vlasov-Maxwell equations. In this semi-discrete formulation, the total mass is preserved
+independently for every plasma species. Further, an energy invariant exists if central numerical
+fluxes are used in the DG approximation of Maxwell's equations, while a dissipative term is present
+when upwind fluxes are employed. In general, traditional temporal integrators might fail to preserve
+invariants associated with conservation laws (at the continuous or semi-discrete level) during
+the time evolution. Hence, we analyze the capability of explicit and implicit Runge-Kutta (RK)
+temporal integrators to preserve such invariants. Since explicit RK methods can only ensure preservation
+of linear invariants but do not provide any control on the system energy, we consider modified explicit
+RK methods in the family of relaxation Runge-Kutta methods (RRK). These methods can be tuned to preserve
+the energy invariant at the continuous or semi-discrete level, a distinction that is important
+when upwind fluxes are used in the discretization of Maxwell's equations since upwind provides
+a numerical source of energy dissipation that is not present when central fluxes are used. We prove
+that the proposed methods are able to preserve the energy invariant and to maintain the semi-discrete
+energy dissipation (if present) according to the discretization of Maxwell's equations. An extensive
+set of numerical experiments corroborates the theoretical findings. It also suggests that maintaining
+the semi-discrete energy dissipation when upwind fluxes are used leads to an overall better accuracy
+of the method relative to using upwind fluxes while forcing exact energy conservation. 

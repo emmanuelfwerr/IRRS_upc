@@ -1,0 +1,20 @@
+There is considerable interest in inflationary models with multiple inflaton fields. The inflaton
+field $\boldsymbol\phi$ has a corresponding potential function $V$, the details of which, such
+as the number of dimensions and shape, are free parameters of the theory. We consider a natural hypothesis
+that $V$ ought to be maximally random. We realize this idea by defining $V$ as a Gaussian random field
+in some number $N$ of dimensions. Given a model set of parameters that statistically determine the
+shape of $V$, we repeatedly evolve $\boldsymbol\phi$ through the end of inflation from various
+initial conditions, cataloguing a representative sample of trajectories associated with that
+model. In order to impose the anthropic constraint of a universe in which inflation ends and normal
+expansion takes over, we impose a minimum with $V=0$ and only consider trajectories that reach that
+minimum. We simulate each path evolution stepwise through $\boldsymbol\phi$-space while simultaneously
+computing $V$ and its derivatives along the path via a constrained Gaussian random process. When
+$N$ is large, this method significantly reduces computational load as compared to methods which
+generate the potential landscape all at once. Even so, the covariance matrix $\boldsymbol\Gamma$
+of constraints on $V$ can quickly become large and cumbersome. To solve this problem, we present
+data compression algorithms to prioritize the necessary information already simulated, then
+keep an arbitrarily large portion. With these optimizations, we simulate thousands of trajectories
+with various parameter sets, extract tensor and scalar perturbation spectra from each, then assemble
+statistical predictions of these quantities through repeated trials. We find that the Gaussian
+random potential is a highly versatile inflationary model with a rich volume of parameter space
+capable of reproducing modern observations. 

@@ -1,0 +1,20 @@
+In the realm of unsupervised learning, Bayesian nonparametric mixture models, exemplified by
+the Dirichlet Process Mixture Model (DPMM), provide a principled approach for adapting the complexity
+of the model to the data. Such models are particularly useful in clustering tasks where the number
+of clusters is unknown. Despite their potential and mathematical elegance, however, DPMMs have
+yet to become a mainstream tool widely adopted by practitioners. This is arguably due to a misconception
+that these models scale poorly as well as the lack of high-performance (and user-friendly) software
+tools that can handle large datasets efficiently. In this paper we bridge this practical gap by proposing
+a new, easy-to-use, statistical software package for scalable DPMM inference. More concretely,
+we provide efficient and easily-modifiable implementations for high-performance distributed
+sampling-based inference in DPMMs where the user is free to choose between either a multiple-machine,
+multiple-core, CPU implementation (written in Julia) and a multiple-stream GPU implementation
+(written in CUDA/C++). Both the CPU and GPU implementations come with a common (and optional) python
+wrapper, providing the user with a single point of entry with the same interface. On the algorithmic
+side, our implementations leverage a leading DPMM sampler from (Chang and Fisher III, 2013). While
+Chang and Fisher III's implementation (written in MATLAB/C++) used only CPU and was designed for
+a single multi-core machine, the packages we proposed here distribute the computations efficiently
+across either multiple multi-core machines or across mutiple GPU streams. This leads to speedups,
+alleviates memory and storage limitations, and lets us fit DPMMs to significantly larger datasets
+and of higher dimensionality than was possible previously by either (Chang and Fisher III, 2013)
+or other DPMM methods. 

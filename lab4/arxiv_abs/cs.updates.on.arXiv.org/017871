@@ -1,0 +1,19 @@
+With the increasing diversity of ML infrastructures nowadays, distributed training over heterogeneous
+computing systems is desired to facilitate the production of big models. Mixture-of-Experts (MoE)
+models have been proposed to lower the cost of training subject to the overall size of models/data
+through gating and parallelism in a divide-and-conquer fashion. While DeepSpeed has made efforts
+in carrying out large-scale MoE training over heterogeneous infrastructures, the efficiency
+of training and inference could be further improved from several system aspects, including load
+balancing, communication/computation efficiency, and memory footprint limits. In this work,
+we present SE-MoE that proposes Elastic MoE training with 2D prefetch and Fusion communication
+over Hierarchical storage, so as to enjoy efficient parallelisms in various types. For scalable
+inference in a single node, especially when the model size is larger than GPU memory, SE-MoE forms
+the CPU-GPU memory jointly into a ring of sections to load the model, and executes the computation
+tasks across the memory sections in a round-robin manner for efficient inference. We carried out
+extensive experiments to evaluate SE-MoE, where SE-MoE successfully trains a Unified Feature
+Optimization (UFO) model with a Sparsely-Gated Mixture-of-Experts model of 12B parameters in
+8 days on 48 A100 GPU cards. The comparison against the state-of-the-art shows that SE-MoE outperformed
+DeepSpeed with 33% higher throughput (tokens per second) in training and 13% higher throughput
+in inference in general. Particularly, under unbalanced MoE Tasks, e.g., UFO, SE-MoE achieved
+64% higher throughput with 18% lower memory footprints. The code of the framework will be released
+on: https://github.com/PaddlePaddle/Paddle. 

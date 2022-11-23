@@ -1,0 +1,18 @@
+The quantum Fourier transform (QFT) is one of the most important quantum operations with wide range
+of application from integer factoring, quantum simulation, quantum Monte Carlo simulation for
+the option pricing to relatively new topic such as quantum algorithm for solving Navier-Stokes
+equation of the turbulent flow, to name a few. Major obstacle to the implementation of the QFT is the
+large number of elemental quantum gates needed to build the QFT. Of these resources needed for the
+implementation, the T-count and the T-depth are the major costs. So far, the existing best implementation
+of approximate quantum Fourier transform (AQFT) shows the T-count of 8nlog2(n/\varepsilon) and
+the T-depth of 2nlog2(n/\varepsilon) where n is the number of qubits and \varepsilon is the approximate
+error. Here, we propose the new approximation scheme of the QFT which halves both the T-count and
+the T-depth of the QFT of the best existing implementation. Our approach relies on the manipulation
+of Rz gates after the QFT decomposition and the application of the quantum Karnaugh map for systematic
+reduction. We report the detailed quantum circuits and the experimental verification of the proposed
+scheme using IonQ quantum computer though Amazon Braket cloud service. The quantum amplitude estimation
+algorithm (QAEA) which plays an essential role in solving nonlinear partial differential equations
+employs a QFT and an inverse QFT. This QAEA would be an exemplary quantum algorithm that can get the
+most benefit from our proposed scheme and can be applied not only to financial engineering but also
+to solving Navier-Stokes equations for turbulent hyper sonic flow and numerical weather prediction
+that may have disruptive socio-economic impact, for which little attention is given. 

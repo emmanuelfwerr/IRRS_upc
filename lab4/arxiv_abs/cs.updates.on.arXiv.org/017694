@@ -1,0 +1,19 @@
+Cloud service brokerage is an emerging technology that attempts to simplify the consumption and
+operation of hybrid clouds. Today's cloud brokers attempt to insulate consumers from the vagaries
+of multiple clouds. To achieve the insulation, the modern cloud broker needs to disguise itself
+as the end-provider to consumers by creating and operating a virtual data center construct that
+we call a meta-cloud, which is assembled on top of a set of participating supplier clouds. It is crucial
+for such a cloud broker to be considered a trusted partner both by cloud consumers and by the underpinning
+cloud suppliers. A fundamental tenet of brokerage trust is vendor neutrality. On the one hand, cloud
+consumers will be comfortable if a cloud broker guarantees that they will not be led through a preferred
+path. And on the other hand, cloud suppliers would be more interested in partnering with a cloud broker
+who promises a fair apportioning of client provisioning requests. Because consumer and supplier
+trust on a meta-cloud broker stems from the assumption of being agnostic to supplier clouds, there
+is a need for a test strategy that verifies the fairness of cloud brokerage. In this paper, we propose
+a calculus of fairness that defines the rules to determine the operational behavior of a cloud broker.
+The calculus uses temporal logic to model the fact that fairness is a trait that has to be ascertained
+over time; it is not a characteristic that can be judged at a per-request fulfillment level. Using
+our temporal calculus of fairness as the basis, we propose an algorithm to determine the fairness
+of a broker probabilistically, based on its observed request apportioning policies. Our model
+for the fairness of cloud broker behavior also factors in inter-provider variables such as cost
+divergence and capacity variance. 

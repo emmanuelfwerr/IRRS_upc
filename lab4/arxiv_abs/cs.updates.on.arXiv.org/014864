@@ -1,0 +1,19 @@
+Knowledge distillation is a promising learning paradigm for boosting the performance and reliability
+of resource-efficient graph neural networks (GNNs) using more expressive yet cumbersome teacher
+models. Past work on distillation for GNNs proposed the Local Structure Preserving loss (LSP),
+which matches local structural relationships across the student and teacher's node embedding
+spaces. In this paper, we make two key contributions: From a methodological perspective, we study
+whether preserving the global topology of how the teacher embeds graph data can be a more effective
+distillation objective for GNNs, as real-world graphs often contain latent interactions and noisy
+edges. The purely local LSP objective over pre-defined edges is unable to achieve this as it ignores
+relationships among disconnected nodes. We propose two new approaches which better preserve global
+topology: (1) Global Structure Preserving loss (GSP), which extends LSP to incorporate all pairwise
+interactions; and (2) Graph Contrastive Representation Distillation (G-CRD), which uses contrastive
+learning to align the student node embeddings to those of the teacher in a shared representation
+space. From an experimental perspective, we introduce an expanded set of benchmarks on large-scale
+real-world datasets where the performance gap between teacher and student GNNs is non-negligible.
+We believe this is critical for testing the efficacy and robustness of knowledge distillation,
+but was missing from the LSP study which used synthetic datasets with trivial performance gaps.
+Experiments across 4 datasets and 14 heterogeneous GNN architectures show that G-CRD consistently
+boosts the performance and robustness of lightweight GNN models, outperforming the structure
+preserving approaches, LSP and GSP, as well as baselines adapted from 2D computer vision. 

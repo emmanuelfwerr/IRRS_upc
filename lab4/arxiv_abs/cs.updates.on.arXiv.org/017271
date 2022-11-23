@@ -1,0 +1,20 @@
+The research paper addresses linear decomposition of time series of non-additive metrics that
+allows for the identification and interpretation of contributing factors (input features) of
+variance. Non-additive metrics, such as ratios, are widely used in a variety of domains. It commonly
+requires preceding aggregations of underlying variables that are used to calculate the metric
+of interest. The latest poses a dimensionality challenge when the input features and underlying
+variables are formed as two-dimensional arrays along elements, such as account or customer identifications,
+and time points. It rules out direct modeling of the time series of a non-additive metric as a function
+of input features. The article discusses a five-step approach: (1) segmentations of input features
+and the underlying variables of the metric that are supported by unsupervised autoencoders, (2)
+univariate or joint fittings of the metric by the aggregated input features on the segmented domains,
+(3) transformations of pre-screened input features according to the fitted models, (4) aggregation
+of the transformed features as time series, and (5) modelling of the metric time series as a sum of
+constrained linear effects of the aggregated features. Alternatively, approximation by numerical
+differentiation has been considered to linearize the metric. It allows for element level univariate
+or joint modeling of step (2). The process of these analytical steps allows for a backward-looking
+explanatory decomposition of the metric as a sum of time series of the survived input features. The
+paper includes a synthetic example that studies loss-to-balance monthly rates of a hypothetical
+retail credit portfolio. To validate that no latent factors other than the survived input features
+have significant impacts on the metric, Statistical Process Control has been introduced for the
+residual time series. 

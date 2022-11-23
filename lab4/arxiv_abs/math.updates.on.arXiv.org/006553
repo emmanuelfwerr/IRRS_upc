@@ -1,0 +1,19 @@
+Secure aggregation, which is a core component of federated learning, aggregates locally trained
+models from distributed users at a central server. The "secure" nature of such aggregation consists
+of the fact that no information about the local users' data must be leaked to the server except the
+aggregated local models. In order to guarantee security, some keys may be shared among the users
+(this is referred to as the key sharing phase). After the key sharing phase, each user masks its trained
+model which is then sent to the server (this is referred to as the model aggregation phase). This paper
+follows the information theoretic secure aggregation problem originally formulated by Zhao and
+Sun, with the objective to characterize the minimum communication cost from the $K$ users in the
+model aggregation phase. Due to user dropouts, the server may not receive all messages from the users.
+A secure aggregation schemes should tolerate the dropouts of at most $K-U$ users, where $U$ is a system
+parameter. The optimal communication cost is characterized by Zhao and Sun, but with the assumption
+that the keys stored by the users could be any random variables with arbitrary dependency. On the
+motivation that uncoded groupwise keys are more convenient to be shared and could be used in large
+range of applications besides federated learning, in this paper we add one constraint into the above
+problem, that the key variables are mutually independent and each key is shared by a group of at most
+$S$ users, where $S$ is another system parameter. To the best of our knowledge, all existing secure
+aggregation schemes assign coded keys to the users. We show that if $S > K - U$, a new secure aggregation
+scheme with uncoded groupwise keys can achieve the same optimal communication cost as the best scheme
+with coded keys; if $S \leq K - U$, uncoded groupwise key sharing is strictly sub-optimal. 

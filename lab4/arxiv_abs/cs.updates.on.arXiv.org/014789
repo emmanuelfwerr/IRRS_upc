@@ -1,0 +1,19 @@
+Given a directed graph, we show how to efficiently find a shortest (directed, simple) cycle on an
+even number of vertices. As far as we know, no polynomial-time algorithm was previously known for
+this problem. In fact, finding any even cycle in a directed graph in polynomial time was open for more
+than two decades until Robertson, Seymour, and Thomas (Ann. of Math. (2) 1999) and, independently,
+McCuaig (Electron. J. Combin. 2004; announced jointly at STOC 1997) gave an efficiently testable
+structural characterisation of even-cycle-free directed graphs. Methodologically, our algorithm
+relies on algebraic fingerprinting and randomized polynomial identity testing over a finite field,
+and uses a generating polynomial implicit in Vazirani and Yannakakis ( Discrete Appl. Math. 1989)
+that enumerates weighted cycle covers as a difference of a permanent and a determinant polynomial.
+The need to work with the permanent is where our main technical contribution occurs. We design a family
+of finite commutative rings of characteristic 4 that simultaneously (i) give a nondegenerate representation
+for the generating polynomial identity via the permanent and the determinant, (ii) support efficient
+permanent computations, and (iii) enable emulation of finite-field arithmetic in characteristic
+2. Here our work is foreshadowed by that of Bj\"orklund and Husfeldt (SIAM J. Comput. 2019), who used
+a considerably less efficient ring design to obtain a polynomial-time algorithm for the shortest
+two disjoint paths problem. Building on work of Gilbert and Tarjan (Numer. Math. 1978) as well as
+Alon and Yuster (J. ACM 2013), we also show how ideas from the nested dissection technique for solving
+linear equation systems leads to faster algorithm designs when we have control on the separator
+structure of the input graph; for example, this happens when the input has bounded genus. 

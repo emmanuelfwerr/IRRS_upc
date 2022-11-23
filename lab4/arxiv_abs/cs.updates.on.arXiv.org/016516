@@ -1,0 +1,19 @@
+Supporting public health research and the public's situational awareness during a pandemic requires
+continuous dissemination of infectious disease surveillance data. Legislation, such as the Health
+Insurance Portability and Accountability Act of 1996 (HIPAA) and recent state-level regulations,
+permits sharing de-identified person-level data; however, current de-identification approaches
+are limited. namely, they are inefficient, relying on retrospective disclosure risk assessments,
+and do not flex with changes in infection rates or population demographics over time. In this paper,
+we introduce a framework to dynamically adapt de-identification for near-real time sharing of
+person-level surveillance data. The framework leverages a simulation mechanism, capable of application
+at any geographic level, to forecast the re-identification risk of sharing the data under a wide
+range of generalization policies. The estimates inform weekly, prospective policy selection
+to maintain the proportion of records corresponding to a group size less than 11 (PK11) at or below
+0.1. Fixing the policy at the start of each week facilitates timely dataset updates and supports
+sharing granular date information. We use August 2020 through October 2021 case data from Johns
+Hopkins University and the Centers for Disease Control and Prevention to demonstrate the framework's
+effectiveness in maintaining the PK!1 threshold of 0.01. When sharing COVID-19 county-level case
+data across all US counties, the framework's approach meets the threshold for 96.2% of daily data
+releases, while a policy based on current de-identification techniques meets the threshold for
+32.3%. Periodically adapting the data publication policies preserves privacy while enhancing
+public health utility through timely updates and sharing epidemiologically critical features.

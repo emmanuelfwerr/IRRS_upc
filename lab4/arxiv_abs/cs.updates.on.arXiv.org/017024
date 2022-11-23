@@ -1,0 +1,20 @@
+Decision-Focused Learning (DFL) is a paradigm for tailoring a predictive model to a downstream
+optimisation task that uses its predictions, so that it can perform better on that specific task.
+The main technical challenge associated with DFL is that it requires being able to differentiate
+through $argmin$ operations to work. However, these $argmin$ optimisations are often piecewise
+constant and, as a result, naively differentiating through them would provide uninformative gradients.
+Past work has largely focused on getting around this issue by handcrafting task-specific surrogates
+to the original optimisation problem that provide informative gradients when differentiated
+through. However, finding these surrogates can be challenging and the need to handcraft surrogates
+for each new task limits the usability of DFL. In addition, even after applying these relaxation
+techniques, there are no guarantees that the resulting surrogates are convex and, as a result, training
+a predictive model on them may lead to said model getting stuck in local minimas. In this paper, we
+provide an approach to learn faithful task-specific surrogates which (a) only requires access
+to a black-box oracle that can solve the optimisation problem and is thus generalizable, and (b)
+can be convex by construction and so can be easily optimized over. To the best of our knowledge, this
+is the first work on using learning to find good surrogates for DFL. We evaluate our approach on a budget
+allocation problem from the literature and find that our approach outperforms even the hand-crafted
+(non-convex) surrogate loss proposed by the original paper. Taking a step back, we hope that the
+generality and simplicity of our approach will help lower the barrier associated with implementing
+DFL-based solutions in practice. To that end, we are currently working on extending our experiments
+to more domains. 

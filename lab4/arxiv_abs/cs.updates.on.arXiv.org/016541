@@ -1,0 +1,19 @@
+Enabling Cooperative Driving Automation (CDA) requires high-fidelity and real-time perception
+information, which is available from onboard sensors or vehicle-to-everything (V2X) communications.
+Nevertheless, the accessibility of this information may suffer from the range and occlusion of
+perception or limited penetration rates in connectivity. In this paper, we introduce the prototype
+of Cyber Mobility Mirror (CMM), a next-generation real-time traffic surveillance system for 3D
+object detection, classification, tracking, and reconstruction, to provide CAVs with wide-range
+high-fidelity perception information in a mixed traffic environment. The CMM system consists
+of six main components: 1) the data pre-processor to retrieve and pre-process raw data from the roadside
+LiDAR; 2) the 3D object detector to generate 3D bounding boxes based on point cloud data; 3) the multi-objects
+tracker to endow unique IDs to detected objects and estimate their dynamic states; 4) the global
+locator to map positioning information from the LiDAR coordinate to geographic coordinate using
+coordinate transformation; 5) the cloud-based communicator to transmit perception information
+from roadside sensors to equipped vehicles; and 6) the onboard advisor to reconstruct and display
+the real-time traffic conditions via Graphical User Interface (GUI). In this study, a field-operational
+prototype system is deployed at a real-world intersection, University Avenue and Iowa Avenue in
+Riverside, California to assess the feasibility and performance of our CMM system. Results from
+field tests demonstrate that our CMM prototype system can provide satisfactory perception performance
+with 96.99% precision and 83.62% recall. High-fidelity real-time traffic conditions (at the object
+level) can be displayed on the GUI of the equipped vehicle with a frequency of 3-4 Hz. 

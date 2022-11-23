@@ -1,0 +1,20 @@
+(abridged) We develop a tool for the automated spectral classification of OB stars according to
+their sub-types. We use the regular Random Forest (RF) algorithm, the Probabilistic RF (PRF), and
+we introduce the KDE-RF method which is a combination of the Kernel-Density Estimation and the RF
+algorithm. We train the algorithms on the Equivalent Width (EW) of characteristic absorption lines
+(features) measured in high-quality spectra from large Galactic (LAMOST,GOSSS) and extragalactic
+surveys (2dF,VFTS) with available spectral-types and luminosity classes. We find that the overall
+accuracy score is $\sim$70% with similar results across all approaches. We show that the full set
+of 17 spectral lines is needed to reach the maximum performance per spectral class. We apply our model
+in other observational data sets providing examples of potential application of our classifier
+on real science cases. We find that it performs well for both single massive stars and for the companion
+massive stars in Be X-ray binaries. In addition, we propose a reduced 10-features scheme that can
+be applied to large data sets with lower S/N. The similarity in the performances of our models indicates
+the robustness and the reliability of the RF algorithm when it is used for the spectral classification
+of early-type stars. The score of $\sim$70% is high if we consider (a) the complexity of such multi-class
+classification problems, (b) the intrinsic scatter of the EW distributions within the examined
+spectral classes, and (c) the diversity of the training set since we use data obtained from different
+surveys with different observing strategies. In addition, the approach presented in this work,
+is applicable to data of different quality and of different format (e.g.,absolute or normalized
+flux) while our classifier is agnostic to the Luminosity Class of a star and, as much as possible,
+metallicity independent. 

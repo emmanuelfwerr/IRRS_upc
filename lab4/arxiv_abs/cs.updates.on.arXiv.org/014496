@@ -1,0 +1,19 @@
+As the remarkable development of facial manipulation technologies is accompanied by severe security
+concerns, face forgery detection has become a recent research hotspot. Most existing detection
+methods train a binary classifier under global supervision to judge real or fake. However, advanced
+manipulations only perform small-scale tampering, posing challenges to comprehensively capture
+subtle and local forgery artifacts, especially in high compression settings and cross-dataset
+scenarios. To address such limitations, we propose a novel framework named Multi-modal Contrastive
+Classification by Locally Correlated Representations(MC-LCR), for effective face forgery detection.
+Instead of specific appearance features, our MC-LCR aims to amplify implicit local discrepancies
+between authentic and forged faces from both spatial and frequency domains. Specifically, we design
+the shallow style representation block that measures the pairwise correlation of shallow feature
+maps, which encodes local style information to extract more discriminative features in the spatial
+domain. Moreover, we make a key observation that subtle forgery artifacts can be further exposed
+in the patch-wise phase and amplitude spectrum and exhibit different clues. According to the complementarity
+of amplitude and phase information, we develop a patch-wise amplitude and phase dual attention
+module to capture locally correlated inconsistencies with each other in the frequency domain.
+Besides the above two modules, we further introduce the collaboration of supervised contrastive
+loss with cross-entropy loss. It helps the network learn more discriminative and generalized representations.
+Through extensive experiments and comprehensive studies, we achieve state-of-the-art performance
+and demonstrate the robustness and generalization of our method. 

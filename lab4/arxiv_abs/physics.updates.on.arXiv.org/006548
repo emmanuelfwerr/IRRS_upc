@@ -1,0 +1,20 @@
+Synthetic transmit aperture (STA) imaging can achieve optimal lateral resolution in the full field
+of view, at the cost of low frame rate (FR) and low signal-to-noise ratio (SNR). In our previous studies,
+compressed sensing based synthetic transmit aperture (CS-STA) and minimal l2-norm least squares
+(LS-STA) methods were proposed to recover the complete STA dataset from fewer Hadamard-encoded
+plane wave (PW) transmissions. Results demonstrated that, compared with STA imaging, CS/LS-STA
+can maintain the high resolution of STA and improve the contrast in the deep region with increased
+FR. However, these methods would introduce errors to the recovered STA datasets and subsequently
+produce severe artifacts to the beamformed images. Recently, we discovered that the theoretical
+explanation for the error introduced in the LS-STA-based recovery is that LS-STA method neglects
+the null space component of the real STA data. To deal with this problem, we propose to train a convolutional
+neural network (CNN) under the null space learning framework (to estimate the missing null space
+component) for high-accuracy recovery of the STA dataset from fewer Hadamard-encoded PW transmissions.
+The mapping between the low-quality STA dataset (recovered using the LS-STA method) and the corresponding
+high-quality STA dataset (obtained using full Hadamard-encoded STA imaging, HE-STA) was learned
+from phantom and in vivo samples. The performance of the proposed CNN-STA method was compared with
+the LS-STA, STA, and HE-STA methods, in terms of visual quality, NRMSE, gCNR, and FWHM. The results
+demonstrate that the proposed method can improve the recovery accuracy of the STA datasets and therefore
+effectively suppress the artifacts presented in the images obtained using the LS-STA method. In
+addition, the proposed method can maintain the high lateral resolution of STA with fewer PW transmissions,
+as LS-STA does. 

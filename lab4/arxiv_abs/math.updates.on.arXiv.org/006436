@@ -1,0 +1,19 @@
+We introduce two new optimization models for the dispatch of ambulances. The first model, called
+the ambulance selection problem, is used when an emergency call arrives to decide whether an ambulance
+should be dispatched for that call, and if so, which ambulance should be dispatched, or whether the
+request should be put in a queue of waiting requests. The second model, called the ambulance reassignment
+problem, is used when an ambulance finishes its current task to decide whether the ambulance should
+be dispatched to a request waiting in queue, and if so, which request, or whether the ambulance should
+be dispatched to an ambulance staging location, and if so, which ambulance staging location. These
+decisions affect not only the emergency call and ambulance under consideration, but also the ability
+of the ambulance fleet to service future calls. There is uncertainty regarding the locations, arrival
+times, and types of future calls. We propose a rolling horizon approach that combines the current
+decisions to be made as first-stage decisions with second-stage models that represent the ability
+of the ambulance fleet to service future calls. The second-stage optimization problems can be formulated
+as large-scale deterministic integer linear programs. We propose a column generation algorithm
+to solve the continuous relaxation of these second-stage problems. The optimal objective values
+of these second-stage continuous relaxations are used to make approximately optimal first-stage
+decisions. We compare our resulting dispatch policy with popular decision rules for Rio de Janeiro
+emergency medical service, based on data of more than 2 years of emergency calls for that service.
+These tests show that our proposed policy results in smaller response times than the popular decision
+rules. 

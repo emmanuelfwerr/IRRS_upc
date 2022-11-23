@@ -1,0 +1,20 @@
+In this paper, an online multiscale model reduction method is presented for stochastic partial
+differential equations (SPDEs) with multiplicative noise, where the diffusion coefficient is
+spatially multiscale and the noise perturbation nonlinearly depends on the diffusion dynamics.
+It is necessary to efficiently compute all possible trajectories of the stochastic dynamics for
+quantifying model's uncertainty and statistic moments. The multiscale diffusion and nonlinearity
+may cause the computation intractable. To overcome the multiscale difficulty, a constraint energy
+minimizing generalized multiscale finite element method (CEM-GMsFEM) is used to localize the
+computation and obtain an effective coarse model. However, the nonlinear terms are still defined
+on a fine scale space after the Galerkin projection of CEM-GMsFEM is applied to the nonlinear SPDEs.
+This significantly impacts on the simulation efficiency by CEM-GMsFEM. To this end, a stochastic
+online discrete empirical interpolation method (DEIM) is proposed to treat the stochastic nonlinearity.
+The stochastic online DEIM incorporates offline snapshots and online snapshots. The offline snapshots
+consist of the nonlinear terms at the approximate mean of the stochastic dynamics and are used to
+construct an offline reduced model. The online snapshots contain some information of the current
+new trajectory and are used to correct the offline reduced model in an increment manner. The stochastic
+online DEIM substantially reduces the dimension of the nonlinear dynamics and enhances the prediction
+accuracy for the reduced model. Thus, the online multiscale model reduction is constructed by using
+CEM-GMsFEM and the stochastic online DEIM. A priori error analysis is carried out for the nonlinear
+SPDEs. We present a few numerical examples with diffusion in heterogeneous porous media and show
+the effectiveness of the proposed model reduction. 

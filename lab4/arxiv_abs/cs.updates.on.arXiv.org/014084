@@ -1,0 +1,18 @@
+We consider machine learning applications that train a model by leveraging data distributed over
+a trusted network, where communication constraints can create a performance bottleneck. A number
+of recent approaches propose to overcome this bottleneck through compression of gradient updates.
+However, as models become larger, so does the size of the gradient updates. In this paper, we propose
+an alternate approach to learn from distributed data that quantizes data instead of gradients,
+and can support learning over applications where the size of gradient updates is prohibitive. Our
+approach leverages the dependency of the computed gradient on data samples, which lie in a much smaller
+space in order to perform the quantization in the smaller dimension data space. At the cost of an extra
+gradient computation, the gradient estimate can be refined by conveying the difference between
+the gradient at the quantized data point and the original gradient using a small number of bits. Lastly,
+in order to save communication, our approach adds a layer that decides whether to transmit a quantized
+data sample or not based on its importance for learning. We analyze the convergence of the proposed
+approach for smooth convex and non-convex objective functions and show that we can achieve order
+optimal convergence rates with communication that mostly depends on the data rather than the model
+(gradient) dimension. We use our proposed algorithm to train ResNet models on the CIFAR-10 and ImageNet
+datasets, and show that we can achieve an order of magnitude savings over gradient compression methods.
+These communication savings come at the cost of increasing computation at the learning agent, and
+thus our approach is beneficial in scenarios where communication load is the main problem. 

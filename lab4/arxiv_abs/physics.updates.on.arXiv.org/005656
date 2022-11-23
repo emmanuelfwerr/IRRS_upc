@@ -1,0 +1,19 @@
+We consider lithological tomography in which the posterior distribution of (hydro)geological
+parameters of interest is inferred from geophysical data by treating the intermediate geophysical
+properties as latent variables. In such a latent variable model, one needs to estimate the intractable
+likelihood of the (hydro)geological parameters given the geophysical data. The pseudo-marginal
+method is an adaptation of the Metropolis-Hastings algorithm in which an unbiased approximation
+of this likelihood is obtained by Monte Carlo averaging over samples from, in this setting, the noisy
+petrophysical relationship linking (hydro)geological and geophysical properties. To make the
+method practical in data-rich geophysical settings with low noise levels, we demonstrate that
+the Monte Carlo sampling must rely on importance sampling distributions that well approximate
+the posterior distribution of petrophysical scatter around the sampled (hydro)geological parameter
+field. To achieve a suitable acceptance rate, we rely both on (1) the correlated pseudo-marginal
+method, which correlates the samples used in the proposed and current states of the Markov chain,
+and (2) a model proposal scheme that preserves the prior distribution. As a synthetic test example,
+we infer porosity fields using crosshole ground-penetrating radar (GPR) first-arrival travel
+times. We use a (50x50)-dimensional pixel-based parameterization of the multi-Gaussian porosity
+field with known statistical parameters, resulting in a parameter space of high dimension. We demonstrate
+that the correlated pseudo-marginal method with our proposed importance sampling and prior-preserving
+proposal scheme outperforms current state-of-the-art methods in both linear and non-linear settings
+by greatly enhancing the posterior exploration. 

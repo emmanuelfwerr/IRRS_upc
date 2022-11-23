@@ -1,0 +1,19 @@
+The tensor Ising model is a discrete exponential family used for modeling binary data on networks
+with not just pairwise, but higher-order dependencies. In this exponential family, the sufficient
+statistic is a multi-linear form of degree $p\ge 2$, designed to capture $p$-fold interactions
+between the binary variables sitting on the nodes of a network. A particularly useful class of tensor
+Ising models are the tensor Curie-Weiss models, where one assumes that all $p$-tuples of nodes interact
+with the same intensity. Computing the maximum likelihood estimator (MLE) is computationally
+cumbersome in this model, due to the presence of an inexplicit normalizing constant in the likelihood,
+for which the standard alternative is to use the maximum pseudolikelihood estimator (MPLE). Both
+the MLE and the MPLE are consistent estimators of the natural parameter, provided the latter lies
+strictly above a certain threshold, which is slightly below $\log 2$, and approaches $\log 2$ as
+$p$ increases. In this paper, we compute the Bahadur efficiencies of the MLE and the MPLE above the
+threshold, and derive the optimal sample size (number of nodes) needed for either of these tests
+to achieve significance. We show that the optimal sample size for the MPLE and the MLE agree if either
+$p=2$ or the null parameter is greater than or equal to $\log 2$. On the other hand, if $p\ge 3$ and the
+null parameter lies strictly between the threshold and $\log 2$, then the two differ for sufficiently
+large values of the alternative. In particular, for every fixed alternative above the threshold,
+the Bahadur asymptotic relative efficiency of the MLE with respect to the MPLE goes to $\infty$ as
+the null parameter approaches the threshold. We also provide graphical presentations of the exact
+numerical values of the theoretical optimal sample sizes in different settings. 

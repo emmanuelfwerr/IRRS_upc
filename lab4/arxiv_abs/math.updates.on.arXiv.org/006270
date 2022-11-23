@@ -1,0 +1,19 @@
+Early literature on genome rearrangement modelling views the problem of computing evolutionary
+distances as an inherently combinatorial one. In particular, attention was given to estimating
+distances using the minimum number of events required to transform one genome into another. In hindsight,
+this approach is analogous to early methods for inferring phylogenetic trees from DNA sequences
+such as maximum parsimony -- both are motivated by the principle that the true distance minimises
+evolutionary change, and both are effective if this principle is a true reflection of reality. Recent
+literature considers genome rearrangement under statistical models, continuing this parallel
+with DNA-based methods; the goal here is to use model-based methods (for example maximum likelihood
+techniques) to compute distance estimates that incorporate the large number of rearrangement
+paths that can transform one genome into another. Crucially, this approach requires one to decide
+upon a set of feasible rearrangement events and, in this paper, we focus on characterising well-motivated
+models for signed, uni-chromosomal circular genomes, where the number of regions remains fixed.
+Since rearrangements are often mathematically described using permutations, we isolate the sets
+of permutations representing rearrangements that are biologically reasonable in this context,
+for example inversions and translocations. We provide precise mathematical expressions for these
+rearrangements, and then describe them in terms of the set of cuts made in the genome when they are
+applied. We directly compare cuts to breakpoints, and use this concept to count the distinct rearrangement
+actions which apply a given number of cuts. Finally, we provide some examples of rearrangement models,
+and include a discussion of some questions that arise when defining plausible models. 

@@ -1,0 +1,19 @@
+We study the joint active/passive beamforming and channel blocklength (CBL) allocation in a non-ideal
+reconfigurable intelligent surface (RIS)-aided ultra-reliable and low-latency communication
+(URLLC) system. The considered scenario is a finite blocklength (FBL) regime and the problem is
+solved by leveraging a novel deep reinforcement learning (DRL) algorithm named twin-delayed deep
+deterministic policy gradient (TD3). First, assuming an industrial automation system with multiple
+actuators, the signal-to-interference-plus-noise ratio and achievable rate in the FBL regime
+are identified for each actuator in terms of the phase shift configuration matrix at the RIS. Next,
+the joint active/passive beamforming and CBL optimization problem is formulated where the objective
+is to maximize the total achievable FBL rate in all actuators, subject to non-linear amplitude response
+at the RIS elements, BS transmit power budget, and total available CBL. Since the amplitude response
+equality constraint is highly non-convex and non-linear, we resort to employing an actor-critic
+policy gradient DRL algorithm based on TD3. The considered method relies on interacting RIS with
+the industrial automation environment by taking actions which are the phase shifts at the RIS elements,
+CBL variables, and BS beamforming to maximize the expected observed reward, i.e., the total FBL
+rate. We assess the performance loss of the system when the RIS is non-ideal, i.e., with non-linear
+amplitude response, and compare it with ideal RIS without impairments. The numerical results show
+that optimizing the RIS phase shifts, BS beamforming, and CBL variables via the proposed TD3 method
+is highly beneficial to improving the network total FBL rate as the proposed method with deterministic
+policy outperforms conventional methods. 

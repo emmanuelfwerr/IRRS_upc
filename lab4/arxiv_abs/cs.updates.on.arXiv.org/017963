@@ -1,0 +1,19 @@
+Purpose: Automated liver tumor segmentation from Computed Tomography (CT) images is a necessary
+prerequisite in the interventions of hepatic abnormalities and surgery planning. However, accurate
+liver tumor segmentation remains challenging due to the large variability of tumor sizes and inhomogeneous
+texture. Recent advances based on Fully Convolutional Network (FCN) for medical image segmentation
+drew on the success of learning discriminative pyramid features. In this paper, we propose a Decoupled
+Pyramid Correlation Network (DPC-Net) that exploits attention mechanisms to fully leverage both
+low- and high-level features embedded in FCN to segment liver tumor. Methods: We first design a powerful
+Pyramid Feature Encoder (PFE) to extract multi-level features from input images. Then we decouple
+the characteristics of features concerning spatial dimension (i.e., height, width, depth) and
+semantic dimension (i.e., channel). On top of that, we present two types of attention modules, Spatial
+Correlation (SpaCor) and Semantic Correlation (SemCor) modules, to recursively measure the correlation
+of multi-level features. The former selectively emphasizes global semantic information in low-level
+features with the guidance of high-level ones. The latter adaptively enhance spatial details in
+high-level features with the guidance of low-level ones. Results: We evaluate the DPC-Net on MICCAI
+2017 LiTS Liver Tumor Segmentation (LiTS) challenge dataset. Dice Similarity Coefficient (DSC)
+and Average Symmetric Surface Distance (ASSD) are employed for evaluation. The proposed method
+obtains a DSC of 76.4% and an ASSD of 0.838 mm for liver tumor segmentation, outperforming the state-of-the-art
+methods. It also achieves a competitive results with a DSC of 96.0% and an ASSD of 1.636 mm for liver
+segmentation. 

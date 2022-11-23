@@ -1,0 +1,19 @@
+We cast encryption via classical block ciphers in terms of operator spreading in a dual space of Pauli
+strings, a formulation which allows us to characterize classical ciphers by using tools well known
+in the analysis of quantum many-body systems. We connect plaintext and ciphertext attacks to out-of-time
+order correlators (OTOCs) and quantify the quality of ciphers using measures of delocalization
+in string space such as participation ratios and corresponding entropies obtained from the wave
+function amplitudes in string space. The saturation of the string-space information entropy is
+accompanied by the vanishing of OTOCs. Together these signal irreversibility and chaos, which
+we take to be the defining properties of good classical ciphers. More precisely, we define a good
+cipher by requiring that the OTOCs vanish to exponential precision and that the string entropies
+saturate to the values associated with a random permutation, which are computed explicitly in the
+paper. We argue that these conditions can be satisfied by $n$-bit block ciphers implemented via
+random reversible circuits with ${\cal O}(n \log n)$ gates arranged on a tree structure, with layers
+of $n/3$ 3-bit gates, for which a "key" specifies uniquely the sequence of gates that comprise the
+circuit. We show that in order to reach this "speed limit" one must employ a three-stage circuit consisting
+of a stage implemented by layers of nonlinear gates that proliferate the number of strings, flanked
+by two other stages, each deploying layers of a special set of linear "inflationary" gates that accelerate
+the growth of small individual strings. A shallow, ${\cal O}(\log n)$-depth cipher of the type described
+here can be used in constructing a polynomial-overhead scheme for computation on encrypted data
+proposed in another publication as an alternative to Homomorphic Encryption. 

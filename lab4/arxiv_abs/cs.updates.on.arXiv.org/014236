@@ -1,0 +1,19 @@
+Liver segmentation on images acquired using computed tomography (CT) and magnetic resonance imaging
+(MRI) plays an important role in clinical management of liver diseases. Compared to MRI, CT images
+of liver are more abundant and readily available. However, MRI can provide richer quantitative
+information of the liver compared to CT. Thus, it is desirable to achieve unsupervised domain adaptation
+for transferring the learned knowledge from the source domain containing labeled CT images to the
+target domain containing unlabeled MR images. In this work, we report a novel unsupervised domain
+adaptation framework for cross-modality liver segmentation via joint adversarial learning and
+self-learning. We propose joint semantic-aware and shape-entropy-aware adversarial learning
+with post-situ identification manner to implicitly align the distribution of task-related features
+extracted from the target domain with those from the source domain. In proposed framework, a network
+is trained with the above two adversarial losses in an unsupervised manner, and then a mean completer
+of pseudo-label generation is employed to produce pseudo-labels to train the next network (desired
+model). Additionally, semantic-aware adversarial learning and two self-learning methods, including
+pixel-adaptive mask refinement and student-to-partner learning, are proposed to train the desired
+model. To improve the robustness of the desired model, a low-signal augmentation function is proposed
+to transform MRI images as the input of the desired model to handle hard samples. Using the public
+data sets, our experiments demonstrated the proposed unsupervised domain adaptation framework
+outperformed four supervised learning methods with a Dice score 0.912 plus or minus 0.037 (mean
+plus or minus standard deviation). 

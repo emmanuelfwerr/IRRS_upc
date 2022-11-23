@@ -1,0 +1,19 @@
+The conceptual picture underlying resolvent analysis(RA) is that the nonlinear term in the Navier-Stokes(NS)
+equations provides an intrinsic forcing to the linear dynamics, a description inspired by control
+theory. The inverse of the linear operator, defined as the resolvent, is interpreted as a transfer
+function between the forcing and the velocity response. This inversion obscures the physical interpretation
+of the governing equations and is prohibitive to analytical manipulation, and for large systems
+leads to significant computational cost and memory requirements. In this work we suggest an alternative,
+inverse free, definition of the resolvent basis based on an extension of the Courant-Fischer-Weyl
+min-max principle in which resolvent modes are defined as stationary points of a constrained variational
+problem. This leads to a straightforward approach to approximate the resolvent (response) modes
+of complex flows as expansions in any basis. The proposed method avoids matrix inversions and requires
+only the spectral decomposition of a matrix of significantly reduced size as compared to the original
+system. To illustrate this method and the advantages of the variational formulation we present
+three examples. First, we consider streamwise constant fluctuations in turbulent channel flow
+where an asymptotic analysis allows us to derive closed form expressions for the optimal resolvent
+modes. Second, to illustrate the cost saving potential, and investigate the limits, of the proposed
+method we apply our method to both a 2-dimensional, 3-component equilibrium solution in Couette
+flow and, finally, to a streamwise developing turbulent boundary layer. For these larger systems
+we achieve a model reduction of up to two orders of magnitude. Such savings have the potential to open
+RA to the investigation of larger domains and more complex flow configurations. 

@@ -1,0 +1,19 @@
+Different from handcrafted features, deep neural networks can automatically learn task-specific
+features from data. Due to this data-driven nature, they have achieved remarkable success in various
+areas. However, manual design and selection of suitable network architectures are time-consuming
+and require substantial effort of human experts. To address this problem, researchers have proposed
+neural architecture search (NAS) algorithms which can automatically generate network architectures
+but suffer from heavy computational cost and instability if searching from scratch. In this paper,
+we propose a hybrid NAS framework for ultrasound (US) image classification and segmentation. The
+hybrid framework consists of a pre-trained backbone and several searched cells (i.e., network
+building blocks), which takes advantage of the strengths of both NAS and the expert knowledge from
+existing convolutional neural networks. Specifically, two effective and lightweight operations,
+a mixed depth-wise convolution operator and a squeeze-and-excitation block, are introduced into
+the candidate operations to enhance the variety and capacity of the searched cells. These two operations
+not only decrease model parameters but also boost network performance. Moreover, we propose a re-aggregation
+strategy for the searched cells, aiming to further improve the performance for different vision
+tasks. We tested our method on two large US image datasets, including a 9-class echinococcosis dataset
+containing 9566 images for classification and an ovary dataset containing 3204 images for segmentation.
+Ablation experiments and comparison with other handcrafted or automatically searched architectures
+demonstrate that our method can generate more powerful and lightweight models for the above US image
+classification and segmentation tasks. 

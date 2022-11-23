@@ -1,0 +1,18 @@
+Bayesian parameter inference is an essential tool in modern cosmology, and typically requires
+the calculation of $10^5$--$10^6$ theoretical models for each inference of model parameters for
+a given dataset combination. Computing these models by solving the linearised Einstein-Boltzmann
+system usually takes tens of CPU core-seconds per model, making the entire process very computationally
+expensive. In this paper we present \textsc{connect}, a neural network framework emulating \textsc{class}
+computations as an easy-to-use plug-in for the popular sampler \textsc{MontePython}. \textsc{connect}
+uses an iteratively trained neural network which emulates the observables usually computed by
+\textsc{class}. The training data is generated using \textsc{class}, but using a novel algorithm
+for generating favourable points in parameter space for training data, the required number of \textsc{class}-evaluations
+can be reduced by two orders of magnitude compared to a traditional inference run. Once \textsc{connect}
+has been trained for a given model, no additional training is required for different dataset combinations,
+making \textsc{connect} many orders of magnitude faster than \textsc{class} (and making the inference
+process entirely dominated by the speed of the likelihood calculation). For the models investigated
+in this paper we find that cosmological parameter inference run with \textsc{connect} produces
+posteriors which differ from the posteriors derived using \textsc{class} by typically less than
+$0.01$--$0.1$ standard deviations for all parameters. We also stress that the training data can
+be produced in parallel, making efficient use of all available compute resources. The \textsc{connect}
+code is publicly available for download at \url{https://github.com/AarhusCosmology}. 

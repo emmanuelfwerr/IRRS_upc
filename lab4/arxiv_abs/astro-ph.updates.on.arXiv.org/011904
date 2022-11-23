@@ -1,0 +1,19 @@
+Dust plays a pivotal role in determining the observed spectral energy distribution (SED) of galaxies.
+Yet our understanding of dust attenuation is limited and our observations suffer from the dust-metallicity-age
+degeneracy in SED fitting (single galaxies), large individual variances (ensemble measurements),
+and the difficulty in properly dealing with uncertainties (statistical considerations). In this
+study, we create a population Bayesian model to rigorously account for correlated variables and
+non-Gaussian error distributions and demonstrate the improvement over a simple Bayesian model.
+We employ a flexible 5-D linear interpolation model for the parameters that control dust attenuation
+curves as a function of stellar mass, star formation rate (SFR), metallicity, redshift, and inclination.
+Our setup allows us to determine the complex relationships between dust attenuation and these galaxy
+properties simultaneously. Using Prospector fits of nearly 30,000 3D-HST galaxies, we find that
+the attenuation slope ($n$) flattens with increasing optical depth ($\tau$), though less so than
+in previous studies. $\tau$ increases strongly with SFR, though when $\log~{\rm SFR}\lesssim
+0$, $\tau$ remains roughly constant over a wide range of stellar masses. Edge-on galaxies tend to
+have larger $\tau$ than face-on galaxies, but only for $\log~M_*\gtrsim 10$, reflecting the lack
+of triaxiality for low-mass galaxies. Redshift evolution of dust attenuation is strongest for
+low-mass, low-SFR galaxies, with higher optical depths but flatter curves at high redshift. Finally,
+$n$ has a complex relationship with stellar mass, highlighting the intricacies of the star-dust
+geometry. We have publicly released software (https://github.com/Astropianist/DustE) for
+users to access our population model. 

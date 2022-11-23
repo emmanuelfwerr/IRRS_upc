@@ -1,0 +1,20 @@
+We present a new method for assessing and measuring homophily in networks whose nodes have categorical
+attributes, namely when the nodes of networks come partitioned into classes (colors). We probe
+this method in two different classes of networks: i) protein-protein interaction (PPI) networks,
+where nodes correspond to proteins, partitioned according to their functional role, and edges
+represent functional interactions between proteins ii) Pokec on-line social network, where nodes
+correspond to users, partitioned according to their age, and edges respresent friendship between
+users. Similarly to other classical and well consolidated approaches, our method compares the
+relative edge density of the subgraphs induced by each class with the corresponding expected relative
+edge density under a null model. The novelty of our approach consists in prescribing an endogenous
+null model, namely, the sample space of the null model is built on the input network itself. This allows
+us to give exact explicit expression for the z-score of the relative edge density of each class as
+well as other related statistics. The z-scores directly quantify the statistical significance
+of the observed homophily via Tchebycheff inequality. The expression of each z-score is entered
+by the network structure through basic combinatorial invariant such as the number of subgraphs
+with two spanning edges. Each z-score is computed in O(n + m) time for a network with n nodes and m edges.
+This leads to an overall efficient computational method for assesing homophily. We complement
+the analysis of homophily/heterophily by considering z-scores of the number of isolated nodes
+in the subgraphs induced by each class, that are computed in O(nm) time. Theoretical results are
+then exploited to show that, as expected, both the analyzed network classes are significantly homophilic
+with respect to the considered node properties. 

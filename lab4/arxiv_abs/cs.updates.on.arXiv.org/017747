@@ -1,0 +1,20 @@
+Augmented reality applications have rapidly spread across online platforms, allowing consumers
+to virtually try-on a variety of products, such as makeup, hair dying, or shoes. However, parametrizing
+a renderer to synthesize realistic images of a given product remains a challenging task that requires
+expert knowledge. While recent work has introduced neural rendering methods for virtual try-on
+from example images, current approaches are based on large generative models that cannot be used
+in real-time on mobile devices. This calls for a hybrid method that combines the advantages of computer
+graphics and neural rendering approaches. In this paper we propose a novel framework based on deep
+learning to build a real-time inverse graphics encoder that learns to map a single example image
+into the parameter space of a given augmented reality rendering engine. Our method leverages self-supervised
+learning and does not require labeled training data which makes it extendable to many virtual try-on
+applications. Furthermore, most augmented reality renderers are not differentiable in practice
+due to algorithmic choices or implementation constraints to reach real-time on portable devices.
+To relax the need for a graphics-based differentiable renderer in inverse graphics problems, we
+introduce a trainable imitator module. Our imitator is a generative network that learns to accurately
+reproduce the behavior of a given non-differentiable renderer. We propose a novel rendering sensitivity
+loss to train the imitator, which ensures that the network learns an accurate and continuous representation
+for each rendering parameter. Our framework enables novel applications where consumers can virtually
+try-on a novel unknown product from an inspirational reference image on social media. It can also
+be used by graphics artists to automatically create realistic rendering from a reference product
+image. 

@@ -1,0 +1,19 @@
+Machine learning (ML) has been widely used to improve the predictability of EDA tools. The use of
+CAD tools that express designs at higher levels of abstraction makes machine learning even more
+important to highlight the performance of various design steps. Behavioral descriptions used
+during the high-level synthesis (HLS) are completely technology independent making it hard for
+designers to interpret how changes in the synthesis options affect the resultant circuit. FPGA
+design flows are completely embracing HLS based methodologies so that software engineers with
+almost no hardware design skills can easily use their tools. HLS tools allow design space exploration
+by modifying synthesis options, however, they lack accuracy in the Quality of Results (QoR) reported
+right after HLS. This lack of correctness results in sub-optimal designs with problems in timing
+closure. This paper presents a robust ML based design flow that can accurately predict post-route
+QoR for a given behavioral description without the need to synthesize the design. The model is an
+important design exploration tool where a designer can quickly view the impact on overall design
+quality when local and global optimization directives are changed. The proposed methodology presents
+two strong advantages: (i) Accurate prediction of the design quality (QoR), and (ii) complete elimination
+of the need to execute high-level synthesis for each design option. We predict three post route parameters,
+(i). Area, (ii). Latency and (iii). Clock Period of a design just by analyzing the high level behavioral
+code and some intermediate representation codes. We have integrated the methodology with Xilinx
+HLS tools and have demonstrated accurate estimation on a variety of FPGA families. Our estimated
+results are within 10\% of actual computed values 

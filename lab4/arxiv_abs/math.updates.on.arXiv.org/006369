@@ -1,0 +1,19 @@
+Reconfigurable intelligent surface (RIS) is a promising solution to enhance the performance of
+wireless communications via reconfiguring the wireless propagation environment. In this paper,
+we investigate the joint design of RIS passive beamforming and subcarrier matching in RIS-assisted
+orthogonal frequency division multiplexing (OFDM) dual-hop relaying systems under two cases,
+depending on the presence of the RIS reflected link from the source to the destination in the first
+hop. Accordingly, we formulate a mixed-integer nonlinear programming (MINIP) problem to maximize
+the sum achievable rate over all subcarriers by jointly optimizing the RIS passive beamforming
+and subcarrier matching. To solve this challenging problem, we first develop a branch-and-bound
+(BnB)-based alternating optimization algorithm to obtain a near-optimal solution by alternatively
+optimizing the subcarrier matching by the BnB method and the RIS passive beamforming by using semidefinite
+relaxation techniques. Then, a low-complexity difference-of-convex penalty-based algorithm
+is proposed to reduce the computation complexity in the BnB method. To further reduce the computational
+complexity, we utilize the learning-to-optimize approach to learn the joint design obtained from
+optimization techniques, which is more amenable to practical implementations. Lastly, computer
+simulations are presented to evaluate the performance of the proposed algorithms in the two cases.
+Simulation results demonstrate that the RIS-assisted OFDM relaying system achieves sustainable
+achievable rate gain as compared to that without RIS, and that with random passive beamforming,
+since RIS passive beamforming can be leveraged to recast the subcarrier matching among different
+subcarriers and balance the signal-to-noise ratio within each subcarrier pair. 

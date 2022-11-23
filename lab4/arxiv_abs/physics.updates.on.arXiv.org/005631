@@ -1,0 +1,19 @@
+Watershed models such as the Soil and Water Assessment Tool (SWAT) consist of high-dimensional
+physical and empirical parameters. These parameters need to be accurately calibrated for models
+to produce reliable predictions for streamflow, evapotranspiration, snow water equivalent,
+and nutrient loading. Existing parameter estimation methods are time-consuming, inefficient,
+and computationally intensive, with reduced accuracy when estimating high-dimensional parameters.
+In this paper, we present a fast, accurate, and reliable methodology to calibrate the SWAT model
+(i.e., 21 parameters) using deep learning (DL). We develop DL-enabled inverse models based on convolutional
+neural networks to ingest streamflow data and estimate the SWAT model parameters. Hyperparameter
+tuning is performed to identify the optimal neural network architecture and the nine next best candidates.
+We use ensemble SWAT simulations to train, validate, and test the above DL models. We estimated the
+actual parameters of the SWAT model using observational data. We test and validate the proposed
+DL methodology on the American River Watershed, located in the Pacific Northwest-based Yakima
+River basin. Our results show that the DL models-based calibration is better than traditional parameter
+estimation methods, such as generalized likelihood uncertainty estimation (GLUE). The behavioral
+parameter sets estimated by DL have narrower ranges than GLUE and produce values within the sampling
+range even under high relative observational errors. This narrow range of parameters shows the
+reliability of the proposed workflow to estimate sensitive parameters accurately even under noise.
+Due to its fast and reasonably accurate estimations of process parameters, the proposed DL workflow
+is attractive for calibrating integrated hydrologic models for large spatial-scale applications.

@@ -1,0 +1,18 @@
+In this work we consider the well-known Secretary Problem -- a number $n$ of elements, each having
+an adversarial value, are arriving one-by-one according to some random order, and the goal is to
+choose the highest value element. The decisions are made online and are irrevocable -- if the algorithm
+decides to choose or not to choose the currently seen element, based on the previously observed values,
+it cannot change its decision later regarding this element. The measure of success is the probability
+of selecting the highest value element, minimized over all adversarial assignments of values.
+We show existential and constructive upper bounds on approximation of the success probability
+in this problem, depending on the entropy of the randomly chosen arrival order, including the lowest
+possible entropy $O(\log\log (n))$ for which the probability of success could be constant. We show
+that below entropy level $\mathcal{H}<0.5\log\log n$, all algorithms succeed with probability
+$0$ if random order is selected uniformly at random from some subset of permutations, while we are
+able to construct in polynomial time a non-uniform distribution with entropy $\mathcal{H}$ resulting
+in success probability of at least $\Omega\left(\frac{1}{(\log\log n +3\log\log\log n -\mathcal{H})^{2+\epsilon}}\right)$,
+for any constant $\epsilon>0$. We also prove that no algorithm using entropy $\mathcal{H}=O((\log\log
+n)^a)$ can improve our result by more than polynomially, for any constant $0<a<1$. For entropy $\log\log
+(n)$ and larger, our analysis precisely quantifies both multiplicative and additive approximation
+of the success probability. In particular, we improve more than doubly exponentially on the best
+previously known additive approximation guarantee for the secretary problem. 

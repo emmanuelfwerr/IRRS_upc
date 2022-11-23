@@ -1,0 +1,19 @@
+We study the problem of PAC learning halfspaces on $\mathbb{R}^d$ with Massart noise under the Gaussian
+distribution. In the Massart model, an adversary is allowed to flip the label of each point $\mathbf{x}$
+with unknown probability $\eta(\mathbf{x}) \leq \eta$, for some parameter $\eta \in [0,1/2]$.
+The goal is to find a hypothesis with misclassification error of $\mathrm{OPT} + \epsilon$, where
+$\mathrm{OPT}$ is the error of the target halfspace. This problem had been previously studied under
+two assumptions: (i) the target halfspace is homogeneous (i.e., the separating hyperplane goes
+through the origin), and (ii) the parameter $\eta$ is strictly smaller than $1/2$. Prior to this
+work, no nontrivial bounds were known when either of these assumptions is removed. We study the general
+problem and establish the following: For $\eta <1/2$, we give a learning algorithm for general halfspaces
+with sample and computational complexity $d^{O_{\eta}(\log(1/\gamma))}\mathrm{poly}(1/\epsilon)$,
+where $\gamma =\max\{\epsilon, \min\{\mathbf{Pr}[f(\mathbf{x}) = 1], \mathbf{Pr}[f(\mathbf{x})
+= -1]\} \}$ is the bias of the target halfspace $f$. Prior efficient algorithms could only handle
+the special case of $\gamma = 1/2$. Interestingly, we establish a qualitatively matching lower
+bound of $d^{\Omega(\log(1/\gamma))}$ on the complexity of any Statistical Query (SQ) algorithm.
+For $\eta = 1/2$, we give a learning algorithm for general halfspaces with sample and computational
+complexity $O_\epsilon(1) d^{O(\log(1/\epsilon))}$. This result is new even for the subclass
+of homogeneous halfspaces; prior algorithms for homogeneous Massart halfspaces provide vacuous
+guarantees for $\eta=1/2$. We complement our upper bound with a nearly-matching SQ lower bound
+of $d^{\Omega(\log(1/\epsilon))}$, which holds even for the special case of homogeneous halfspaces.

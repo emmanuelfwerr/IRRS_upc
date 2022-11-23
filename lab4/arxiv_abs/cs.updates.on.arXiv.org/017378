@@ -1,0 +1,19 @@
+In this paper, we consider the restoration and reconstruction of piecewise constant objects in
+two and three dimensions using PaLEnTIR, a significantly enhanced Parametric level set (PaLS)
+model relative to the current state-of-the-art. The primary contribution of this paper is a new
+PaLS formulation which requires only a single level set function to recover a scene with piecewise
+constant objects possessing multiple unknown contrasts. Our model offers distinct advantages
+over current approaches to the multi-contrast, multi-object problem, all of which require multiple
+level sets and explicit estimation of the contrast magnitudes. Given upper and lower bounds on the
+contrast, our approach is able to recover objects with any distribution of contrasts and eliminates
+the need to know either the number of contrasts in a given scene or their values. We provide an iterative
+process for finding these space-varying contrast limits. Relative to most PaLS methods which employ
+radial basis functions (RBFs), our model makes use of non-isotropic basis functions, thereby expanding
+the class of shapes that a PaLS model of a given complexity can approximate. Finally, PaLEnTIR improves
+the conditioning of the Jacobian matrix required as part of the parameter identification process
+and consequently accelerates the optimization methods by controlling the magnitude of the PaLS
+expansion coefficients, fixing the centers of the basis functions, and the uniqueness of parametric
+to image mappings provided by the new parameterization. We demonstrate the performance of the new
+approach using both 2D and 3D variants of X-ray computed tomography, diffuse optical tomography
+(DOT), denoising, deconvolution problems. Application to experimental sparse CT data and simulated
+data with different types of noise are performed to further validate the proposed method. 

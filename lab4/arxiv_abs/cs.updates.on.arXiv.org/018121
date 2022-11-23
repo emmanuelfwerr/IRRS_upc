@@ -1,0 +1,20 @@
+U-Net is a widely adopted neural network in the domain of medical image segmentation. Despite its
+quick embracement by the medical imaging community, its performance suffers on complicated datasets.
+The problem can be ascribed to its simple feature extracting blocks: encoder/decoder, and the semantic
+gap between encoder and decoder. Variants of U-Net (such as R2U-Net) have been proposed to address
+the problem of simple feature extracting blocks by making the network deeper, but it does not deal
+with the semantic gap problem. On the other hand, another variant UNET++ deals with the semantic
+gap problem by introducing dense skip connections but has simple feature extraction blocks. To
+overcome these issues, we propose a new U-Net based medical image segmentation architecture R2U++.
+In the proposed architecture, the adapted changes from vanilla U-Net are: (1) the plain convolutional
+backbone is replaced by a deeper recurrent residual convolution block. The increased field of view
+with these blocks aids in extracting crucial features for segmentation which is proven by improvement
+in the overall performance of the network. (2) The semantic gap between encoder and decoder is reduced
+by dense skip pathways. These pathways accumulate features coming from multiple scales and apply
+concatenation accordingly. The modified architecture has embedded multi-depth models, and an
+ensemble of outputs taken from varying depths improves the performance on foreground objects appearing
+at various scales in the images. The performance of R2U++ is evaluated on four distinct medical imaging
+modalities: electron microscopy (EM), X-rays, fundus, and computed tomography (CT). The average
+gain achieved in IoU score is 1.5+-0.37% and in dice score is 0.9+-0.33% over UNET++, whereas, 4.21+-2.72
+in IoU and 3.47+-1.89 in dice score over R2U-Net across different medical imaging segmentation
+datasets. 

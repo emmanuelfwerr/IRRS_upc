@@ -1,0 +1,19 @@
+Liquid Haskell is an extension to the Haskell programming language that adds support for refinement
+types: data types augmented with SMT-decidable logical predicates that refine the set of values
+that can inhabit a type. Furthermore, Liquid Haskell's support for refinement reflection enables
+the use of Haskell for general-purpose mechanized theorem proving. A growing list of large-scale
+mechanized proof developments in Liquid Haskell take advantage of this capability. Adding theorem-proving
+capabilities to a "legacy" language like Haskell lets programmers directly verify properties
+of real-world Haskell programs (taking advantage of the existing highly tuned compiler, run-time
+system, and libraries), just by writing Haskell. However, more established proof assistants like
+Agda and Coq offer far better support for interactive proof development and insight into the proof
+state (for instance, what subgoals still need to be proved to finish a partially-complete proof).
+In contrast, Liquid Haskell provides only coarse-grained feedback to the user -- either it reports
+a type error, or not -- unfortunately hindering its usability as a theorem prover. In this paper,
+we propose improving the usability of Liquid Haskell by extending it with support for Agda-style
+typed holes and interactive editing commands that take advantage of them. In Agda, typed holes allow
+programmers to indicate unfinished parts of a proof, and incrementally complete the proof in a dialogue
+with the compiler. While GHC Haskell already has its own Agda-inspired support for typed holes,
+we posit that typed holes would be especially powerful and useful if combined with Liquid Haskell's
+refinement types and SMT automation. We discuss how typed holes might work in Liquid Haskell, and
+we consider possible implementation approaches and next steps. 

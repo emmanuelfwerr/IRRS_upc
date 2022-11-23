@@ -1,0 +1,19 @@
+In low-income settings, the most critical piece of information for electric utilities is the anticipated
+consumption of a customer. Electricity consumption assessment is difficult to do in settings where
+a significant fraction of households do not yet have an electricity connection. In such settings
+the absolute levels of anticipated consumption can range from 5-100 kWh/month, leading to high
+variability amongst these customers. Precious resources are at stake if a significant fraction
+of low consumers are connected over those with higher consumption. This is the first study of it's
+kind in low-income settings that attempts to predict a building's consumption and not that of an
+aggregate administrative area. We train a Convolutional Neural Network (CNN) over pre-electrification
+daytime satellite imagery with a sample of utility bills from 20,000 geo-referenced electricity
+customers in Kenya (0.01% of Kenya's residential customers). This is made possible with a two-stage
+approach that uses a novel building segmentation approach to leverage much larger volumes of no-cost
+satellite imagery to make the most of scarce and expensive customer data. Our method shows that competitive
+accuracies can be achieved at the building level, addressing the challenge of consumption variability.
+This work shows that the building's characteristics and it's surrounding context are both important
+in predicting consumption levels. We also evaluate the addition of lower resolution geospatial
+datasets into the training process, including nighttime lights and census-derived data. The results
+are already helping inform site selection and distribution-level planning, through granular
+predictions at the level of individual structures in Kenya and there is no reason this cannot be extended
+to other countries. 

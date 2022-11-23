@@ -1,0 +1,20 @@
+Performance of convolutional neural networks (CNNs) in image analysis tasks is often marred in
+the presence of acquisition-related distribution shifts between training and test images. Recently,
+it has been proposed to tackle this problem by fine-tuning trained CNNs for each test image. Such
+test-time-adaptation (TTA) is a promising and practical strategy for improving robustness to
+distribution shifts as it requires neither data sharing between institutions nor annotating additional
+data. Previous TTA methods use a helper model to increase similarity between outputs and/or features
+extracted from a test image with those of the training images. Such helpers, which are typically
+modeled using CNNs, can be task-specific and themselves vulnerable to distribution shifts in their
+inputs. To overcome these problems, we propose to carry out TTA by matching the feature distributions
+of test and training images, as modelled by a field-of-experts (FoE) prior. FoEs model complicated
+probability distributions as products of many simpler expert distributions. We use 1D marginal
+distributions of a trained task CNN's features as experts in the FoE model. Further, we compute principal
+components of patches of the task CNN's features, and consider the distributions of PCA loadings
+as additional experts. We validate the method on 5 MRI segmentation tasks (healthy tissues in 4 anatomical
+regions and lesions in 1 one anatomy), using data from 17 clinics, and on a MRI registration task,
+using data from 3 clinics. We find that the proposed FoE-based TTA is generically applicable in multiple
+tasks, and outperforms all previous TTA methods for lesion segmentation. For healthy tissue segmentation,
+the proposed method outperforms other task-agnostic methods, but a previous TTA method which is
+specifically designed for segmentation performs the best for most of the tested datasets. Our code
+is publicly available. 

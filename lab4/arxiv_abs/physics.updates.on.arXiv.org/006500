@@ -1,0 +1,19 @@
+Modeling biological soft tissue is complex in part due to material heterogeneity. Microstructural
+patterns, which play a major role in defining the mechanical behavior of these tissues, are both
+challenging to characterize, and difficult to simulate. Recently, machine learning-based methods
+to predict the mechanical behavior of heterogeneous materials have made it possible to more thoroughly
+explore the massive input parameter space associated with heterogeneous blocks of material. Specifically,
+we can train machine learning (ML) models to closely approximate computationally expensive heterogeneous
+material simulations where the ML model is trained on a dataset of simulations that capture the range
+of spatial heterogeneity present in the material of interest. However, when it comes to applying
+these techniques to biological tissue more broadly, there is a major limitation: the relevant microstructural
+patterns are both challenging to obtain and difficult to analyze. Consequently, the number of useful
+examples available to characterize the input domain under study is limited. In this work, we investigate
+the efficacy of ML-based generative models as well as procedural methods as a tool for augmenting
+limited input pattern datasets. We find that a Style-based Generative Adversarial Network with
+adaptive discriminator augmentation is able to successfully leverage just 1,000 example patterns
+to create the most authentic generated patterns. In general, diverse generated patterns with adequate
+resemblance to the real patterns can be used as inputs to finite element simulations to meaningfully
+augment the training dataset. To enable this methodological contribution, we have created an open
+access dataset of Finite Element Analysis simulations based on Cahn-Hilliard patterns. We anticipate
+that future researchers will be able to leverage this dataset and build on the work presented here.

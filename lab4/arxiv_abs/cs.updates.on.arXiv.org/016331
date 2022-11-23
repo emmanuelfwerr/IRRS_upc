@@ -1,0 +1,19 @@
+A common task in single particle electron cryomicroscopy (cryo-EM) is the rigid alignment of images
+and/or volumes. In the context of images, a rigid alignment involves estimating the inner-product
+between one image of $N\times N$ pixels and another image that has been translated by some displacement
+and rotated by some angle $\gamma$. In many situations the number of rotations $\gamma$ considered
+is large (e.g., $\mathcal{O}(N)$), while the number of translations considered is much smaller
+(e.g., $\mathcal{O}(1)$). In these scenarios a naive algorithm requires $\mathcal{O}(N^{3})$
+operations to calculate the array of inner-products for each image-pair. This computation can
+be accelerated by using a fourier-bessel basis and the fast-fourier-transform (FFT), requiring
+only $\mathcal{O}(N^2)$ operations per image-pair. We propose a simple data-driven compression
+algorithm to further accelerate this computation, which we refer to as the `radial-SVD'. Our approach
+involves linearly-recombining the different rings of the original images (expressed in polar-coordinates),
+taking advantage of the singular-value-decomposition (SVD) to choose a low-rank combination
+which both compresses the images and optimizes a certain measure of angular discriminability.
+When aligning multiple images to multiple targets, the complexity of our approach is $\mathcal{O}(N(\log(N)+H))$
+per image-pair, where $H$ is the rank of the SVD used in the compression above. The advantage gained
+by this approach depends on the ratio between $H$ and $N$; the smaller $H$ is the better. In many applications
+$H$ can be quite a bit smaller than $N$ while still maintaining accuracy. We present numerical results
+in a cryo-EM application demonstrating that the radial- and degree-SVD can help save a factor of
+$5$--$10$ for both image- and volume-alignment. 

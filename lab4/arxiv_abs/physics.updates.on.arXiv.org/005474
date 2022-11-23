@@ -1,0 +1,20 @@
+Global spectral analysis (GSA) is used as a tool to test the accuracy of numerical methods with the
+help of canonical problems of convection and convection-diffusion equation which admit exact
+solutions. Similarly, events in turbulent flows computed by direct numerical simulation (DNS)
+are often calibrated with theoretical results of homogeneous isotropic turbulence due to Kolmogorov,
+as given in Turbulence -U. Frisch, Cambridge Univ. Press, UK (1995). However, numerical methods
+for the simulation of this problem are not calibrated, as by using GSA of convection and/or convection-diffusion
+equation. This is with the exception in "A critical assessment of simulations for transitional
+and turbulence flows-Sengupta, T.K., In Proc. of IUTAM Symp. on Advances in Computation, Modeling
+and Control of Transitional and Turbulent Flows, pp 491-532, World Sci. Publ. Co. Pte. Ltd., Singapore
+(2016)", where such a calibration has been advocated with the help of convection equation. For turbulent
+flows, an extreme event is characterized by the presence of length scales smaller than the Kolmogorov
+length scale, a heuristic limit for the largest wavenumber present without being converted to heat.
+With growing computer power, recently many simulations have been reported using a pseudo-spectral
+method, with spatial discretization performed in Fourier spectral space and a two-stage, Runge-Kutta
+(RK2) method for time discretization. But no analyses are reported to ensure high accuracy of such
+simulations. Here, an analysis is reported for few multi-stage Runge-Kutta methods in the Fourier
+spectral framework for convection and convection-diffusion equations. We identify the major
+source of error for the RK2-Fourier spectral method using GSA and also show how to avoid this error
+and specify numerical parameters for achieving highest accuracy possible to capture extreme events
+in turbulent flows. 

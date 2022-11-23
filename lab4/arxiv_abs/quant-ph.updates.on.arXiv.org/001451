@@ -1,0 +1,20 @@
+The goal in the area of functions property testing is to determine whether a given black-box Boolean
+function has a particular given property or is $\varepsilon$-far from having that property. We
+investigate here several types of properties testing for Boolean functions (identity, correlations
+and balancedness) using the Deutsch-Jozsa algorithm (for the Deutsch-Jozsa (D-J) problem) and
+also the amplitude amplification technique. At first, we study here a particular testing problem:
+namely whether a given Boolean function $f$, of $n$ variables, is identical with a given function
+$g$ or is $\varepsilon$-far from $g$, where $\varepsilon$ is the parameter. We present a one-sided
+error quantum algorithm to deal with this problem that has the query complexity $O(\frac{1}{\sqrt{\varepsilon}})$.
+Moreover, we show that our quantum algorithm is optimal. Afterwards we show that the classical randomized
+query complexity of this problem is $\Theta(\frac{1}{\varepsilon})$. Secondly, we consider
+the D-J problem from the perspective of functional correlations and let $C(f,g)$ denote the correlation
+of $f$ and $g$. We propose an exact quantum algorithm for making distinction between $|C(f,g)|=\varepsilon$
+and $|C(f,g)|=1$ using six queries, while the classical deterministic query complexity for this
+problem is $\Theta(2^{n})$ queries. Finally, we propose a one-sided error quantum query algorithm
+for testing whether one Boolean function is balanced versus $\varepsilon$-far balanced using
+$O(\frac{1}{\varepsilon})$ queries. We also prove here that our quantum algorithm for balancedness
+testing is optimal. At the same time, for this balancedness testing problem we present a classical
+randomized algorithm with query complexity of $O(1/\varepsilon^{2})$. Also this randomized
+algorithm is optimal. Besides, we link the problems considered here together and generalize them
+to the general case. 

@@ -1,0 +1,19 @@
+This paper studies data aggregation in large-scale regularly deployed Internet of Things (IoT)
+networks, where devices generate synchronized time-triggered traffic (e.g., measurements or
+updates). The data granularity, in terms of information content and temporal resolution, is parameterized
+by the sizes of the generated packets and the duty cycle of packet generation. The generated data
+packets at the devices are aggregated through static terrestrial gateways. Universal frequency
+reuse is adopted across all gateways and randomized scheduling is utilized for the IoT devices associated
+with each gateway. Such network model finds applications in environmental sensing, precision
+agriculture, and geological seismic sensing to name a few. To this end, we develop a novel spatiotemporal
+mathematical model to characterize the interplay between data granularity, transmission reliability,
+and delay. The developed model accounts for several IoT design parameters, which include packet
+sizes, generation duty cycle, devices and gateways spatial densities, transmission rate adaptation,
+power control, and antenna directivity. For tractable analysis, we propose two accurate approximations,
+based on the Poisson point process, to characterize the signal-to-interference-plus-noise-ratio
+(SINR) based transmission reliability. For the delay analysis, we propose a phase-type arrival/departure
+(PH/PH/1) queueing model that accounts for packet generation, transmission scheduling, and rate-sensitive
+SINR-based packet departure. The developed model is utilized to obtain the optimal transmission
+rate for the IoT devices that minimizes delay. The numerical results delineate the joint feasibility
+range of packet sizes and inter-arrival times for data aggregation and reveal significant gains
+when deploying directional antennas. 

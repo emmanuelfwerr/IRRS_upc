@@ -1,0 +1,19 @@
+Surface code error correction offers a highly promising pathway to achieve scalable fault-tolerant
+quantum computing. When operated as stabiliser codes, surface code computations consist of a syndrome
+decoding step where measured stabiliser operators are used to determine appropriate corrections
+for errors in physical qubits. Decoding algorithms have undergone substantial development, with
+recent work incorporating machine learning (ML) techniques. Despite promising initial results,
+the ML-based syndrome decoders are still limited to small scale demonstrations with low latency
+and are incapable of handling surface codes with boundary conditions and various shapes needed
+for lattice surgery and braiding. Here, we report the development of an artificial neural network
+(ANN) based scalable and fast syndrome decoder capable of decoding surface codes of arbitrary shape
+and size with data qubits suffering from a variety of noise models including depolarising errors,
+biased noise, and spatially inhomogeneous noise. Based on rigorous training over 50 million random
+quantum error instances, our ANN decoder is shown to work with code distances exceeding 1000 (more
+than 4 million physical qubits), which is the largest ML-based decoder demonstration to-date.
+The established ANN decoder demonstrates an execution time in principle independent of code distance,
+implying that its implementation on dedicated hardware could potentially offer surface code decoding
+times of O($\mu$sec), commensurate with the experimentally realisable qubit coherence times.
+With the anticipated scale-up of quantum processors within the next decade, their augmentation
+with a fast and scalable syndrome decoder such as developed in our work is expected to play a decisive
+role towards experimental implementation of fault-tolerant quantum information processing.

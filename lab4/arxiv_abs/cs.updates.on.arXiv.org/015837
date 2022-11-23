@@ -1,0 +1,19 @@
+Convolutional neural networks (CNNs) have been successfully applied to the single target tracking
+task in recent years. Generally, training a deep CNN model requires numerous labeled training samples,
+and the number and quality of these samples directly affect the representational capability of
+the trained model. However, this approach is restrictive in practice, because manually labeling
+such a large number of training samples is time-consuming and prohibitively expensive. In this
+paper, we propose an active learning method for deep visual tracking, which selects and annotates
+the unlabeled samples to train the deep CNNs model. Under the guidance of active learning, the tracker
+based on the trained deep CNNs model can achieve competitive tracking performance while reducing
+the labeling cost. More specifically, to ensure the diversity of selected samples, we propose an
+active learning method based on multi-frame collaboration to select those training samples that
+should be and need to be annotated. Meanwhile, considering the representativeness of these selected
+samples, we adopt a nearest neighbor discrimination method based on the average nearest neighbor
+distance to screen isolated samples and low-quality samples. Therefore, the training samples
+subset selected based on our method requires only a given budget to maintain the diversity and representativeness
+of the entire sample set. Furthermore, we adopt a Tversky loss to improve the bounding box estimation
+of our tracker, which can ensure that the tracker achieves more accurate target states. Extensive
+experimental results confirm that our active learning-based tracker (ALT) achieves competitive
+tracking accuracy and speed compared with state-of-the-art trackers on the seven most challenging
+evaluation benchmarks. 

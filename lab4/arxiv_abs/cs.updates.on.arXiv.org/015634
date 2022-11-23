@@ -1,0 +1,18 @@
+Efficient contact tracing and isolation is an effective strategy to control epidemics. It was used
+effectively during the Ebola epidemic and successfully implemented in several parts of the world
+during the ongoing COVID-19 pandemic. An important consideration while implementing manual contact
+tracing is the number of contact tracers available -- the number of such individuals is limited for
+socioeconomic reasons. In this paper, we present a Markov Decision Process (MDP) framework to formulate
+the problem of efficient contact tracing that reduces the size of the outbreak while using a limited
+number of contact tracers. We formulate each step of the MDP as a combinatorial problem, MinExposed.
+We demonstrate that MinExposed is NP-Hard, so we develop an LP-based approximation algorithm.
+Though this algorithm directly solves MinExposed, it is often impractical in the real world due
+to information constraints. To this end, we develop a greedy approach based on insights from the
+analysis of the previous algorithm, which we show is more interpretable. A key feature of the greedy
+algorithm is that it does not need complete information of the underlying social contact network.
+This makes the heuristic implementable in practice and is an important consideration. Finally,
+we carry out experiments on simulations of the MDP run on real-world networks, and show how the algorithms
+can help in bending the epidemic curve while limiting the number of isolated individuals. Our experimental
+results demonstrate that the greedy algorithm and its variants are especially effective, robust,
+and practical in a variety of realistic scenarios, such as when the contact graph and specific transmission
+probabilities are not known. All code can be found in our GitHub repository: https://github.com/gzli929/ContactTracing.

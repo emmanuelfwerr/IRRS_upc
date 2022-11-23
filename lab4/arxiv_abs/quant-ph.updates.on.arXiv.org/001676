@@ -1,0 +1,19 @@
+The usual method for studying run-times of quantum algorithms is via an asymptotic, worst-case
+analysis. Whilst useful, such a comparison can often fall short: it is not uncommon for algorithms
+with a large worst-case run-time to end up performing well on instances of practical interest. To
+remedy this it is necessary to resort to run-time analyses of a more empirical nature, which for sufficiently
+small input sizes can be performed on a quantum device or a simulation thereof. For larger input sizes,
+alternative approaches are required. In this paper we consider an approach that combines classical
+emulation with rigorous complexity bounds: simulating quantum algorithms by running classical
+versions of the sub-routines, whilst simultaneously collecting information about what the run-time
+of the quantum routine would have been if it were run instead. To do this accurately and efficiently
+for very large input sizes, we describe an estimation procedure that provides provable guarantees
+on the estimates that it obtains. A nice feature of this approach is that it allows one to compare the
+performance of quantum and classical algorithms on particular inputs of interest, rather than
+only on those that allow for an easier mathematical analysis. We apply our method to some simple quantum
+speedups of classical heuristic algorithms for solving the well-studied MAX-k-SAT optimization
+problem. To do this we first obtain some rigorous bounds (including all constants) on the expected-
+and worst-case complexities of two important quantum sub-routines, which improve upon existing
+results and might be of broader interest: Grover search with an unknown number of marked items, and
+quantum maximum-finding. Our results suggest that such an approach can provide insightful and
+meaningful information, in particular when the speedup is of a small polynomial nature. 

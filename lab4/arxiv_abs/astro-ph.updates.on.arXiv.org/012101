@@ -1,0 +1,20 @@
+In astronomy, upcoming space telescopes with wide-field optical instruments have a spatially
+varying point spread function (PSF). Certain scientific goals require a high-fidelity estimation
+of the PSF at target positions where no direct measurement of the PSF is provided. Even though observations
+of the PSF are available at some positions of the field of view (FOV), they are undersampled, noisy,
+and integrated in wavelength in the instrument's passband. PSF modeling requires building a model
+from these observations that can infer a super-resolved PSF at any wavelength and any position in
+the FOV. Current data-driven PSF models can tackle spatial variations and super-resolution, but
+are not capable of capturing chromatic variations. Our model, coined WaveDiff, proposes a paradigm
+shift in the data-driven modeling of the point spread function field of telescopes. By adding a differentiable
+optical forward model into the modeling framework, we change the data-driven modeling space from
+the pixels to the wavefront. The proposed model relies on efficient automatic differentiation
+technology as well as modern stochastic first-order optimization techniques recently developed
+by the thriving machine-learning community. Our framework paves the way to building powerful models
+that are physically motivated and do not require special calibration data. This paper demonstrates
+the WaveDiff model on a simplified setting of a space telescope. The proposed framework represents
+a performance breakthrough with respect to existing data-driven approaches. The pixel reconstruction
+errors decrease 6-fold at observation resolution and 44-fold for a 3x super-resolution. The ellipticity
+errors are reduced by a factor of at least 20 and the size error by a factor of more than 250. By only using
+noisy broad-band in-focus observations, we successfully capture the PSF chromatic variations
+due to diffraction. 

@@ -1,0 +1,20 @@
+In recent years, road safety has attracted significant attention from researchers and practitioners
+in the intelligent transport systems domain. As one of the most common and vulnerable groups of road
+users, pedestrians cause great concerns due to their unpredictable behavior and movement, as subtle
+misunderstandings in vehicle-pedestrian interaction can easily lead to risky situations or collisions.
+Existing methods use either predefined collision-based models or human-labeling approaches
+to estimate the pedestrians' risks. These approaches are usually limited by their poor generalization
+ability and lack of consideration of interactions between the ego vehicle and a pedestrian. This
+work tackles the listed problems by proposing a Pedestrian Risk Level Prediction system. The system
+consists of three modules. Firstly, vehicle-perspective pedestrian data are collected. Since
+the data contains information regarding the movement of both the ego vehicle and pedestrian, it
+can simplify the prediction of spatiotemporal features in an interaction-aware fashion. Using
+the long short-term memory model, the pedestrian trajectory prediction module predicts their
+spatiotemporal features in the subsequent five frames. As the predicted trajectory follows certain
+interaction and risk patterns, a hybrid clustering and classification method is adopted to explore
+the risk patterns in the spatiotemporal features and train a risk level classifier using the learned
+patterns. Upon predicting the spatiotemporal features of pedestrians and identifying the corresponding
+risk level, the risk patterns between the ego vehicle and pedestrians are determined. Experimental
+results verified the capability of the PRLP system to predict the risk level of pedestrians, thus
+supporting the collision risk assessment of intelligent vehicles and providing safety warnings
+to both vehicles and pedestrians. 

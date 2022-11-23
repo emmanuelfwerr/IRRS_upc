@@ -1,0 +1,20 @@
+Grant-free protocols exploiting compressed sensing (CS) multi-user detection (MUD) are appealing
+for solving the random access problem in massive machine-type communications (mMTC) with sporadic
+device activity. Such protocols would greatly benefit from a prior deterministic knowledge of
+the sparsity level, i.e., instantaneous number of simultaneously active devices $K$. Aiming at
+this, herein we introduce a framework relying on coordinated pilot transmissions (CPT) over a short
+phase at the beginning of the transmission block for detecting $K$ in mMTC scenarios under Rayleigh
+fading. CPT can be implemented either as: i) U-CPT, which exploits only uplink transmissions, or
+A-CPT, which includes also downlink transmissions for channel state information (CSI) acquisition
+that resolve fading uncertainty. We discuss two specific implementations of A-CPT: ii) A-CPT-F,
+which implements CSI-based phase corrections while leveraging the same statistical inverse power
+control used by U-CPT, and iii) A-CPT-D, which implements a dynamic CSI-based inverse power control,
+although it requires some active devices to remain in silence if their corresponding channels are
+too faded. We derive a signal sparsity level detector for each CPT mechanism by relaxing the original
+integer detection/classification problem to an estimation problem in the continuous real domain
+followed by a rounding operation. We show that the variance of the relaxed estimator increases with
+$K^2$ and $K$ when operating with U-CPT and A-CPT mechanisms, respectively. The distribution of
+the estimators under U-CPT, A-CPT-F and A-CPT-D is found to follow an exponential, Gaussian, and
+Student's $t-$like distribution, respectively. Analyses evince the superiority of A-CPT-D,
+which is also corroborated via numerical results. We reveal several interesting trade-offs and
+highlight potential research directions. 

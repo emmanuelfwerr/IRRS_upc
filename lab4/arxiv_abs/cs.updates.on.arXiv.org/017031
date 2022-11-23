@@ -1,0 +1,19 @@
+Deep learning-based Hand Gesture Recognition (HGR) via surface Electromyogram (sEMG) signals
+has recently shown significant potential for development of advanced myoelectric-controlled
+prosthesis. Existing deep learning approaches, typically, include only one model as such can hardly
+maintain acceptable generalization performance in changing scenarios. In this paper, we aim to
+address this challenge by capitalizing on the recent advances of hybrid models and transformers.
+In other words, we propose a hybrid framework based on the transformer architecture, which is a relatively
+new and revolutionizing deep learning model. The proposed hybrid architecture, referred to as
+the Transformer for Hand Gesture Recognition (TraHGR), consists of two parallel paths followed
+by a linear layer that acts as a fusion center to integrate the advantage of each module and provide
+robustness over different scenarios. We evaluated the proposed architecture TraHGR based on the
+commonly used second Ninapro dataset, referred to as the DB2. The sEMG signals in the DB2 dataset
+are measured in the real-life conditions from 40 healthy users, each performing 49 gestures. We
+have conducted extensive set of experiments to test and validate the proposed TraHGR architecture,
+and have compared its achievable accuracy with more than five recently proposed HGR classification
+algorithms over the same dataset. We have also compared the results of the proposed TraHGR architecture
+with each individual path and demonstrated the distinguishing power of the proposed hybrid architecture.
+The recognition accuracies of the proposed TraHGR architecture are 86.18%, 88.91%, 81.44%, and
+93.84%, which are 2.48%, 5.12%, 8.82%, and 4.30% higher than the state-ofthe-art performance for
+DB2 (49 gestures), DB2-B (17 gestures), DB2-C (23 gestures), and DB2-D (9 gestures), respectively.

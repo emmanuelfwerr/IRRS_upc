@@ -1,0 +1,20 @@
+Brain tumors analysis is important in timely diagnosis and effective treatment to cure patients.
+Tumor analysis is challenging because of tumor morphology like size, location, texture, and heteromorphic
+appearance in the medical images. In this regard, a novel two-phase deep learning-based framework
+is proposed to detect and categorize brain tumors in magnetic resonance images (MRIs). In the first
+phase, a novel deep boosted features and ensemble classifiers (DBF-EC) scheme is proposed to detect
+tumor MRI images from healthy individuals effectively. The deep boosted feature space is achieved
+through the customized and well-performing deep convolutional neural networks (CNNs), and consequently,
+fed into the ensemble of machine learning (ML) classifiers. While in the second phase, a new hybrid
+features fusion-based brain tumor classification approach is proposed, comprised of dynamic-static
+feature and ML classifier to categorize different tumor types. The dynamic features are extracted
+from the proposed BRAIN-RENet CNN, which carefully learns heteromorphic and inconsistent behavior
+of various tumors, while the static features are extracted using HOG. The effectiveness of the proposed
+two-phase brain tumor analysis framework is validated on two standard benchmark datasets; collected
+from Kaggle and Figshare containing different types of tumor, including glioma, meningioma, pituitary,
+and normal images. Experimental results proved that the proposed DBF-EC detection scheme outperforms
+and achieved accuracy (99.56%), precision (0.9991), recall (0.9899), F1-Score (0.9945), MCC
+(0.9892), and AUC-PR (0.9990). While the classification scheme, the joint employment of the deep
+features fusion of proposed BRAIN-RENet and HOG features improves performance significantly
+in terms of recall (0.9913), precision (0.9906), F1-Score (0.9909), and accuracy (99.20%) on diverse
+datasets. 

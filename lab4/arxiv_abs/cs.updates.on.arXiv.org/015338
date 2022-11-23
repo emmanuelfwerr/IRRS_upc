@@ -1,0 +1,19 @@
+We consider mixtures of $k\geq 2$ Gaussian components with unknown means and unknown covariance
+(identical for all components) that are well-separated, i.e., distinct components have statistical
+overlap at most $k^{-C}$ for a large enough constant $C\ge 1$. Previous statistical-query lower
+bounds [DKS17] give formal evidence that even distinguishing such mixtures from (pure) Gaussians
+may be exponentially hard (in $k$). We show that this kind of hardness can only appear if mixing weights
+are allowed to be exponentially small, and that for polynomially lower bounded mixing weights non-trivial
+algorithmic guarantees are possible in quasi-polynomial time. Concretely, we develop an algorithm
+based on the sum-of-squares method with running time quasi-polynomial in the minimum mixing weight.
+The algorithm can reliably distinguish between a mixture of $k\ge 2$ well-separated Gaussian components
+and a (pure) Gaussian distribution. As a certificate, the algorithm computes a bipartition of the
+input sample that separates a pair of mixture components, i.e., both sides of the bipartition contain
+most of the sample points of at least one component. For the special case of colinear means, our algorithm
+outputs a $k$ clustering of the input sample that is approximately consistent with the components
+of the mixture. A significant challenge for our results is that they appear to be inherently sensitive
+to small fractions of adversarial outliers unlike most previous results for Gaussian mixtures.
+The reason is that such outliers can simulate exponentially small mixing weights even for mixtures
+with polynomially lower bounded mixing weights. A key technical ingredient is a characterization
+of separating directions for well-separated Gaussian components in terms of ratios of polynomials
+that correspond to moments of two carefully chosen orders logarithmic in the minimum mixing weight.

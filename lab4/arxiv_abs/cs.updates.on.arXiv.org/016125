@@ -1,0 +1,19 @@
+Recent advances in high-resolution microscopy have allowed scientists to better understand the
+underlying brain connectivity. However, due to the limitation that biological specimens can only
+be imaged at a single timepoint, studying changes to neural projections is limited to general observations
+using population analysis. In this paper, we introduce NeuRegenerate, a novel end-to-end framework
+for the prediction and visualization of changes in neural fiber morphology within a subject, for
+specified age-timepoints.To predict projections, we present neuReGANerator, a deep-learning
+network based on cycle-consistent generative adversarial network (cycleGAN) that translates
+features of neuronal structures in a region, across age-timepoints, for large brain microscopy
+volumes. We improve the reconstruction quality of neuronal structures by implementing a density
+multiplier and a new loss function, called the hallucination loss.Moreover, to alleviate artifacts
+that occur due to tiling of large input volumes, we introduce a spatial-consistency module in the
+training pipeline of neuReGANerator. We show that neuReGANerator has a reconstruction accuracy
+of 94% in predicting neuronal structures. Finally, to visualize the predicted change in projections,
+NeuRegenerate offers two modes: (1) neuroCompare to simultaneously visualize the difference
+in the structures of the neuronal projections, across the age timepoints, and (2) neuroMorph, a
+vesselness-based morphing technique to interactively visualize the transformation of the structures
+from one age-timepoint to the other. Our framework is designed specifically for volumes acquired
+using wide-field microscopy. We demonstrate our framework by visualizing the structural changes
+in neuronal fibers within the cholinergic system of the mouse brain between a young and old specimen.

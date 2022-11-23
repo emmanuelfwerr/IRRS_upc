@@ -1,0 +1,20 @@
+We analyze the behaviour of an ensemble of time integrators applied to the semi-discrete problem
+resulting from the spectral discretization of the equations describing Boussinesq convection
+in a cylindrical annulus. The equations are cast in a vorticity-streamfunction formulation that
+yields a differential algebraic equation (DAE). The ensemble comprises 28 members: 4 implicit-explicit
+multistep schemes, 22 implicit-explicit Runge-Kutta (IMEX-RK) schemes, and 2 fully explicit
+schemes used for reference. The schemes are assessed for 11 different physical setups that cover
+laminar and turbulent regimes. Multistep and order 2 IMEX-RK methods exhibit their expected order
+of convergence under all circumstances. IMEX-RK methods of higher-order show occasional order
+reduction that impacts both algebraic and differential field variables. We ascribe the order reduction
+to the stiffness of the problem and, to a larger extent, the presence of the DAE. Using the popular
+Crank-Nicolson Adams-Bashforth of order 2 (CNAB2) integrator as reference, performance is defined
+by the ratio of maximum admissible time step to the cost of performing one iteration; the maximum
+admissible time step is determined by inspection of the time series of viscous dissipation within
+the system, which guarantees a physically acceptable solution. Relative performance is bounded
+between 0.5 and 1.5 across all studied configurations. Considering accuracy jointly with performance,
+we find that 6 schemes consistently outperform CNAB2, meaning that in addition to allowing for a
+more efficient calculation, the accuracy that they achieve at their operational limit of stability
+yields a lower error. In our most turbulent setup, where the behaviour of the methods is almost entirely
+dictated by their explicit component, 13 IMEX-RK integrators outperform CNAB2 in terms of accuracy
+and efficiency. 

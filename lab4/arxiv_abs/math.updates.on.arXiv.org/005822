@@ -1,0 +1,19 @@
+We establish the $L_p$-regularity theory for a semilinear stochastic partial differential equation
+with multiplicative white noise: $$ du = (a^{ij}u_{x^ix^j} + b^{i}u_{x^i} + cu + \bar b^{i}|u|^\lambda
+u_{x^i})dt + \sigma^k(u)dw_t^k,\quad (t,x)\in(0,\infty)\times\bR^d; \quad u(0,\cdot) = u_0,
+$$ where $\lambda>0$, the set $\{ w_t^k,k=1,2,\dots \}$ is a set of one-dimensional independent
+Wiener processes, and the function $u_0 = u_0(\omega,x)$ is a nonnegative random initial data.
+The coefficients $a^{ij},b^i,c$ depend on $(\omega,t,x)$, and $\bar b^i$ depends on $(\omega,t,x^1,\dots,x^{i-1},x^{i+1},\dots,x^d)$.
+The coefficients $a^{ij},b^i,c,\bar{b}^i$ are uniformly bounded and twice continuous differentiable.
+The leading coefficient $a$ satisfies ellipticity condition. Depending on the diffusion coefficient
+$\sigma^k(u)$, we consider two different cases; (i) $\lambda\in(0,\infty)$ and $\sigma^k(u)$
+has Lipschitz continuity and linear growth in $u$, (ii) $\lambda,\lambda_0\in(0,1/d)$ and $\sigma^k(u)
+= \mu^k |u|^{1+\lambda_0}$ ($\sigma^k(u)$ is super-linear). Each case has different regularity
+results. For example, in the case of $(i)$, for $\varepsilon>0$ $$u \in C^{1/2 - \varepsilon,1 -
+\varepsilon}_{t,x}([0,T]\times\bR^d)\quad \forall T<\infty, $$ almost surely. On the other
+hand, in the case of $(ii)$, if $\lambda,\lambda_0\in(0,1/d)$, for $\varepsilon>0$ $$ u \in C^{\frac{1-(\lambda
+d) \vee (\lambda_0 d)}{2} - \varepsilon,1-(\lambda d) \vee (\lambda_0 d) - \varepsilon}_{t,x}([0,T]\times\bR^d)\quad
+\forall T<\infty $$ almost surely. It should be noted that $\lambda$ can be any positive number and
+the solution regularity is independent of nonlinear terms in case $(i)$. In case $(ii)$, however,
+$\lambda,\lambda_0$ should satisfy $\lambda,\lambda_0\in(0,1/d)$ and the regularities of
+the solution are affected by $\lambda,\lambda_0$ and $d$. 

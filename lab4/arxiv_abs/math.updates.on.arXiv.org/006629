@@ -1,0 +1,19 @@
+The monotone variational inequality is a central problem in mathematical programming that unifies
+and generalizes many important settings such as smooth convex optimization, two-player zero-sum
+games, convex-concave saddle point problems, etc. The extragradient algorithm by Korpelevich
+[1976] and the optimistic gradient descent-ascent algorithm by Popov [1980] are arguably the two
+most classical and popular methods for solving monotone variational inequalities. Despite its
+long history, the following major problem remains open. What is the last-iterate convergence rate
+of the extragradient algorithm or the optimistic gradient descent-ascent algorithm for monotone
+and Lipschitz variational inequalities with constraints? We resolve this open problem by showing
+that both the extragradient algorithm and the optimistic gradient descent-ascent algorithm have
+a tight $O\left(\frac{1}{\sqrt{T}}\right)$ last-iterate convergence rate for arbitrary convex
+feasible sets, which matches the lower bound by Golowich et al. [2020a, b]. Our rate is measured in
+terms of the standard gap function. At the core of our results lies a new performance measure -- the
+tangent residual, which can be viewed as an adaptation of the norm of the operator that takes the local
+constraints into account. We use the tangent residual (or a slight variation of the tangent residual)
+as the performance measure in our analysis of the extragradient algorithm (or the optimistic gradient
+descent-ascent algorithm). To establish the monotonicity of these performance measures, we develop
+a new approach that combines the power of the sum-of-squares programming with the low dimensionality
+of the update rule of the extragradient or the optimistic gradient descent-ascent algorithm. We
+believe our approach has many additional applications in the analysis of iterative methods. 

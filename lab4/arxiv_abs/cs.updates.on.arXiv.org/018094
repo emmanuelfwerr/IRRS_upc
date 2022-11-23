@@ -1,0 +1,18 @@
+The recent emergence of contrastive learning approaches facilitates the application on graph
+representation learning (GRL), introducing graph contrastive learning (GCL) into the literature.
+These methods contrast semantically similar and dissimilar sample pairs to encode the semantics
+into node or graph embeddings. However, most existing works only performed \textbf{model-level}
+evaluation, and did not explore the combination space of modules for more comprehensive and systematic
+studies. For effective \textbf{module-level} evaluation, we propose a framework that decomposes
+GCL models into four modules: (1) a \textbf{sampler} to generate anchor, positive and negative
+data samples (nodes or graphs); (2) an \textbf{encoder} and a \textbf{readout} function to get
+sample embeddings; (3) a \textbf{discriminator} to score each sample pair (anchor-positive and
+anchor-negative); and (4) an \textbf{estimator} to define the loss function. Based on this framework,
+we conduct controlled experiments over a wide range of architectural designs and hyperparameter
+settings on node and graph classification tasks. Specifically, we manage to quantify the impact
+of a single module, investigate the interaction between modules, and compare the overall performance
+with current model architectures. Our key findings include a set of module-level guidelines for
+GCL, e.g., simple samplers from LINE and DeepWalk are strong and robust; an MLP encoder associated
+with Sum readout could achieve competitive performance on graph classification. Finally, we release
+our implementations and results as OpenGCL, a modularized toolkit that allows convenient reproduction,
+standard model and module evaluation, and easy extension. OpenGCL is available at \url{https://github.com/thunlp/OpenGCL}.

@@ -1,0 +1,20 @@
+Domain Adaptation (DA) has recently raised strong interests in the medical imaging community.
+While a large variety of DA techniques has been proposed for image segmentation, most of these techniques
+have been validated either on private datasets or on small publicly available datasets. Moreover,
+these datasets mostly addressed single-class problems. To tackle these limitations, the Cross-Modality
+Domain Adaptation (crossMoDA) challenge was organised in conjunction with the 24th International
+Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI 2021). CrossMoDA
+is the first large and multi-class benchmark for unsupervised cross-modality DA. The challenge's
+goal is to segment two key brain structures involved in the follow-up and treatment planning of vestibular
+schwannoma (VS): the VS and the cochleas. Currently, the diagnosis and surveillance in patients
+with VS are performed using contrast-enhanced T1 (ceT1) MRI. However, there is growing interest
+in using non-contrast sequences such as high-resolution T2 (hrT2) MRI. Therefore, we created an
+unsupervised cross-modality segmentation benchmark. The training set provides annotated ceT1
+(N=105) and unpaired non-annotated hrT2 (N=105). The aim was to automatically perform unilateral
+VS and bilateral cochlea segmentation on hrT2 as provided in the testing set (N=137). A total of 16
+teams submitted their algorithm for the evaluation phase. The level of performance reached by the
+top-performing teams is strikingly high (best median Dice - VS:88.4%; Cochleas:85.7%) and close
+to full supervision (median Dice - VS:92.5%; Cochleas:87.7%). All top-performing methods made
+use of an image-to-image translation approach to transform the source-domain images into pseudo-target-domain
+images. A segmentation network was then trained using these generated images and the manual annotations
+provided for the source image. 

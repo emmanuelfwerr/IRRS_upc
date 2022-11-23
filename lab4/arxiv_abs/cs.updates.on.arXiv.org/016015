@@ -1,0 +1,20 @@
+Machine learning has begun to play a central role in many applications. A multitude of these applications
+typically also involve datasets that are distributed across multiple computing devices/machines
+due to either design constraints (e.g., multiagent systems) or computational/privacy reasons
+(e.g., learning on smartphone data). Such applications often require the learning tasks to be carried
+out in a decentralized fashion, in which there is no central server that is directly connected to
+all nodes. In real-world decentralized settings, nodes are prone to undetected failures due to
+malfunctioning equipment, cyberattacks, etc., which are likely to crash non-robust learning
+algorithms. The focus of this paper is on robustification of decentralized learning in the presence
+of nodes that have undergone Byzantine failures. The Byzantine failure model allows faulty nodes
+to arbitrarily deviate from their intended behaviors, thereby ensuring designs of the most robust
+of algorithms. But the study of Byzantine resilience within decentralized learning, in contrast
+to distributed learning, is still in its infancy. In particular, existing Byzantine-resilient
+decentralized learning methods either do not scale well to large-scale machine learning models,
+or they lack statistical convergence guarantees that help characterize their generalization
+errors. In this paper, a scalable, Byzantine-resilient decentralized machine learning framework
+termed Byzantine-resilient decentralized gradient descent (BRIDGE) is introduced. Algorithmic
+and statistical convergence guarantees for one variant of BRIDGE are also provided in the paper
+for both strongly convex problems and a class of nonconvex problems. In addition, large-scale decentralized
+learning experiments are used to establish that the BRIDGE framework is scalable and it delivers
+competitive results for Byzantine-resilient convex and nonconvex learning. 

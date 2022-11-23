@@ -1,0 +1,18 @@
+Motivated by cutting-edge applications like cryo-electron microscopy (cryo-EM), the Multi-Reference
+Alignment (MRA) model entails the learning of an unknown signal from repeated measurements of its
+images under the latent action of a group of isometries and additive noise of magnitude $\sigma$.
+Despite significant interest, a clear picture for understanding rates of estimation in this model
+has emerged only recently, particularly in the high-noise regime $\sigma \gg 1$ that is highly relevant
+in applications. Recent investigations have revealed a remarkable asymptotic sample complexity
+of order $\sigma^6$ for certain signals whose Fourier transforms have full support, in stark contrast
+to the traditional $\sigma^2$ that arise in regular models. Often prohibitively large in practice,
+these results have prompted the investigation of variations around the MRA model where better sample
+complexity may be achieved. In this paper, we show that sparse signals exhibit an intermediate $\sigma^4$
+sample complexity even in the classical MRA model. Further, we characterise the dependence of the
+estimation rate on the support size $s$ as $O_p(1)$ and $O_p(s^{3.5})$ in the dilute and moderate
+regimes of sparsity respectively. Our techniques have implications for the problem of crystallographic
+phase retrieval, indicating a certain local uniqueness for the recovery of sparse signals from
+their power spectrum. Our results explore and exploit connections of the MRA estimation problem
+with two classical topics in applied mathematics: the beltway problem from combinatorial optimization,
+and uniform uncertainty principles from harmonic analysis. Our techniques include a certain enhanced
+form of the probabilistic method, which might be of general interest in its own right. 

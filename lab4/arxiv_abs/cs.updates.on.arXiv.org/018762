@@ -1,0 +1,19 @@
+Knowledge Graphs (KGs) are becoming increasingly essential infrastructures in many applications
+while suffering from incompleteness issues. The KG completion task (KGC) automatically predicts
+missing facts based on an incomplete KG. However, existing methods perform unsatisfactorily in
+real-world scenarios. On the one hand, their performance will dramatically degrade along with
+the increasing sparsity of KGs. On the other hand, the inference procedure for prediction is an untrustworthy
+black box. This paper proposes a novel explainable model for sparse KGC, compositing high-order
+reasoning into a graph convolutional network, namely HoGRN. It can not only improve the generalization
+ability to mitigate the information insufficiency issue but also provide interpretability while
+maintaining the model's effectiveness and efficiency. There are two main components that are seamlessly
+integrated for joint optimization. First, the high-order reasoning component learns high-quality
+relation representations by capturing endogenous correlation among relations. This can reflect
+logical rules to justify a broader of missing facts. Second, the entity updating component leverages
+a weight-free Graph Convolutional Network (GCN) to efficiently model KG structures with interpretability.
+Unlike conventional methods, we conduct entity aggregation and design composition-based attention
+in the relational space without additional parameters. The lightweight design makes HoGRN better
+suitable for sparse settings. For evaluation, we have conducted extensive experiments-the results
+of HoGRN on several sparse KGs present impressive improvements (9% MRR gain on average). Further
+ablation and case studies demonstrate the effectiveness of the main components. Our codes will
+be released upon acceptance. 

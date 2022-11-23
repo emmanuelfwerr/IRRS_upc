@@ -1,0 +1,18 @@
+Camouflaging gate techniques are typically used in hardware security to prevent reverse engineering.
+Layout level camouflaging by adding dummy contacts ensures some level of protection against extracting
+the correct netlist. Threshold voltage manipulation for multi-functional logic with identical
+layouts has also been introduced for functional obfuscation. All these techniques are implemented
+at the expense of circuit-complexity and with significant area, energy, and delay penalty. In this
+paper, we propose an efficient hardware encryption technique with minimal complexity and overheads
+based on ferroelectric field-effect transistor (FeFET) active interconnects. The active interconnect
+provides run-time reconfigurable inverter-buffer logic by utilizing the threshold voltage programmability
+of the FeFETs. Our method utilizes only two FeFETs and an inverter to realize the masking function
+compared to recent reconfigurable logic gate implementations using several FeFETs and complex
+differential logic. We fabricate the proposed circuit and demonstrate the functionality. Judicious
+placement of the proposed logic in the IC makes it acts as a hardware encryption key and enables encoding
+and decoding of the functional output without affecting the critical path timing delay. Also, we
+achieve comparable encryption probability with a limited number of encryption units. In addition,
+we show a peripheral programming scheme for reconfigurable logic by reusing the existing scan chain
+logic, hence obviating the need for specialized programming logic and circuitry for keybit distribution.
+Our analysis shows an average encryption probability of 97.43\% with an increase of 2.24\%/ 3.67\%
+delay for the most critical path/ sum of 100 critical paths delay for ISCAS85 benchmarks. 

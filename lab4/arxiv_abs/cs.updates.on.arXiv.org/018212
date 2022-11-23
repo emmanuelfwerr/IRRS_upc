@@ -1,0 +1,19 @@
+Unsupervised domain adaptation (UDA) has been vastly explored to alleviate domain shifts between
+source and target domains, by applying a well-performed model in an unlabeled target domain via
+supervision of a labeled source domain. Recent literature, however, has indicated that the performance
+is still far from satisfactory in the presence of significant domain shifts. Nonetheless, delineating
+a few target samples is usually manageable and particularly worthwhile, due to the substantial
+performance gain. Inspired by this, we aim to develop semi-supervised domain adaptation (SSDA)
+for medical image segmentation, which is largely underexplored. We, thus, propose to exploit both
+labeled source and target domain data, in addition to unlabeled target data in a unified manner.
+Specifically, we present a novel asymmetric co-training (ACT) framework to integrate these subsets
+and avoid the domination of the source domain data. Following a divide-and-conquer strategy, we
+explicitly decouple the label supervisions in SSDA into two asymmetric sub-tasks, including semi-supervised
+learning (SSL) and UDA, and leverage different knowledge from two segmentors to take into account
+the distinction between the source and target label supervisions. The knowledge learned in the
+two modules is then adaptively integrated with ACT, by iteratively teaching each other, based on
+the confidence-aware pseudo-label. In addition, pseudo label noise is well-controlled with an
+exponential MixUp decay scheme for smooth propagation. Experiments on cross-modality brain tumor
+MRI segmentation tasks using the BraTS18 database showed, even with limited labeled target samples,
+ACT yielded marked improvements over UDA and state-of-the-art SSDA methods and approached an "upper
+bound" of supervised joint training. 

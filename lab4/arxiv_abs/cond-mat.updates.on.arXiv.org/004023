@@ -1,0 +1,19 @@
+Finding amorphous polymers with higher thermal conductivity is important, as they are ubiquitous
+in heat transfer applications. With recent progress in material informatics, machine learning
+approaches have been increasingly adopted for finding or designing materials with desired properties.
+However, relatively limited effort has been put into finding thermally conductive polymers using
+machine learning, mainly due to the lack of polymer thermal conductivity databases with reasonable
+data volume. In this work, we combine high-throughput molecular dynamics (MD) simulations and
+machine learning to explore polymers with relatively high thermal conductivity (> 0.300 W/m-K).
+We first randomly select 365 polymers from the existing PolyInfo database and calculate their thermal
+conductivity using MD simulations. The data are then employed to train a machine learning regression
+model to quantify the structure-thermal conductivity relation, which is further leveraged to
+screen polymer candidates in the PolyInfo database with thermal conductivity > 0.300 W/m-K. 133
+polymers with MD-calculated thermal conductivity above this threshold are eventually identified.
+Polymers with a wide range of thermal conductivity values are selected for re-calculation under
+different simulation conditions, and those polymers found with thermal conductivity above 0.300
+W/m-K are mostly calculated to maintain values above this threshold despite fluctuation in the
+exact values. A classification model is also constructed, and similar results were obtained compared
+to the regression model in predicting polymers with thermal conductivity above or below 0.300 W/m-K.
+The strategy and results from this work may contribute to automating the design of polymers with
+high thermal conductivity. 

@@ -1,0 +1,20 @@
+Adversarial training (AT) has become a widely recognized defense mechanism to improve the robustness
+of deep neural networks against adversarial attacks. It solves a min-max optimization problem,
+where the minimizer (i.e., defender) seeks a robust model to minimize the worst-case training loss
+in the presence of adversarial examples crafted by the maximizer (i.e., attacker). However, the
+min-max nature makes AT computationally intensive and thus difficult to scale. Meanwhile, the
+FAST-AT algorithm, and in fact many recent algorithms that improve AT, simplify the min-max based
+AT by replacing its maximization step with the simple one-shot gradient sign based attack generation
+step. Although easy to implement, FAST-AT lacks theoretical guarantees, and its practical performance
+can be unsatisfactory, suffering from the robustness catastrophic overfitting when training
+with strong adversaries. In this paper, we propose to design FAST-AT from the perspective of bi-level
+optimization (BLO). We first make the key observation that the most commonly-used algorithmic
+specification of FAST-AT is equivalent to using some gradient descent-type algorithm to solve
+a bi-level problem involving a sign operation. However, the discrete nature of the sign operation
+makes it difficult to understand the algorithm performance. Based on the above observation, we
+propose a new tractable bi-level optimization problem, design and analyze a new set of algorithms
+termed Fast Bi-level AT (FAST-BAT). FAST-BAT is capable of defending sign-based projected gradient
+descent (PGD) attacks without calling any gradient sign method and explicit robust regularization.
+Furthermore, we empirically show that our method outperforms state-of-the-art FAST-AT baselines,
+by achieving superior model robustness without inducing robustness catastrophic overfitting,
+or suffering from any loss of standard accuracy. 

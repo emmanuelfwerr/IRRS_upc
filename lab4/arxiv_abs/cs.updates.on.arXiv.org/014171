@@ -1,0 +1,20 @@
+Detection and mitigation of Byzantine behaviors in a decentralized learning setting is a daunting
+task, especially when the data distribution at the users is heterogeneous. As our main contribution,
+we propose Basil, a fast and computationally efficient Byzantine robust algorithm for decentralized
+training systems, which leverages a novel sequential, memory assisted and performance-based
+criteria for training over a logical ring while filtering the Byzantine users. In the IID dataset
+distribution setting, we provide the theoretical convergence guarantees of Basil, demonstrating
+its linear convergence rate. Furthermore, for the IID setting, we experimentally demonstrate
+that Basil is robust to various Byzantine attacks, including the strong Hidden attack, while providing
+up to ${\sim}16 \%$ higher test accuracy over the state-of-the-art Byzantine-resilient decentralized
+learning approach. Additionally, we generalize Basil to the non-IID dataset distribution setting
+by proposing Anonymous Cyclic Data Sharing (ACDS), a technique that allows each node to anonymously
+share a random fraction of its local non-sensitive dataset (e.g., landmarks images) with all other
+nodes. We demonstrate that Basil alongside ACDS with only $5\%$ data sharing provides effective
+toleration of Byzantine nodes, unlike the state-of-the-art Byzantine robust algorithm that completely
+fails in the heterogeneous data setting. Finally, to reduce the overall latency of Basil resulting
+from its sequential implementation over the logical ring, we propose Basil+. In particular, Basil+
+provides scalability by enabling Byzantine-robust parallel training across groups of logical
+rings, and at the same time, it retains the performance gains of Basil due to sequential training
+within each group. Furthermore, we experimentally demonstrate the scalability gains of Basil+
+through different sets of experiments. 

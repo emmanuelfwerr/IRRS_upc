@@ -1,0 +1,20 @@
+We revisit the classical problem of band-limited signal reconstruction -- a variant of the *Set
+Query* problem -- which asks to efficiently reconstruct (a subset of) a $d$-dimensional Fourier-sparse
+signal ($\|\hat{x}(t)\|_0 \leq k$), from minimum noisy samples of $x(t)$ in the time domain. We
+present a unified framework for this problem, by developing a theory of sparse Fourier transforms
+over *lattices*, which can be viewed as a "semi-continuous" version of SFT, in-between discrete
+and continuous domains. Using this framework, we obtain the following results: $\bullet$ *High-dimensional
+Fourier sparse recovery* We present a sample-optimal discrete Fourier Set-Query algorithm with
+$O(k^{\omega+1})$ reconstruction time in one dimension, independent of the signal's length ($n$)
+and $\ell_\infty$-norm ($R^* \approx \|\hat{x}\|_\infty$). This complements the state-of-art
+algorithm of [Kap17], whose reconstruction time is $\tilde{O}(k \log^2 n \log R^*)$, and is limited
+to low-dimensions. By contrast, our algorithm works for arbitrary $d$ dimensions, mitigating
+the $\exp(d)$ blowup in decoding time to merely linear in $d$. $\bullet$ *High-accuracy Fourier
+interpolation* We design a polynomial-time $(1+ \sqrt{2} +\epsilon)$-approximation algorithm
+for continuous Fourier interpolation. This bypasses a barrier of all previous algorithms [PS15,
+CKPS16] which only achieve $>100$ approximation for this problem. Our algorithm relies on several
+new ideas of independent interest in signal estimation, including high-sensitivity frequency
+estimation and new error analysis with sharper noise control. $\bullet$ *Fourier-sparse interpolation
+with optimal output sparsity* We give a $k$-Fourier-sparse interpolation algorithm with optimal
+output signal sparsity, improving on the approximation ratio, sample complexity and runtime of
+prior works [CKPS16, CP19]. 

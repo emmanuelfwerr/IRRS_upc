@@ -1,0 +1,18 @@
+Being able to recommend links between users in online social networks is important for users to connect
+with like-minded individuals as well as for the platforms themselves and third parties leveraging
+social media information to grow their business. Predictions are typically based on unsupervised
+or supervised learning, often leveraging simple yet effective graph topological information,
+such as the number of common neighbors. However, we argue that richer information about personal
+social structure of individuals might lead to better predictions. In this paper, we propose to leverage
+well-established social cognitive theories to improve link prediction performance. According
+to these theories, individuals arrange their social relationships along, on average, five concentric
+circles of decreasing intimacy. We postulate that relationships in different circles have different
+importance in predicting new links. In order to validate this claim, we focus on popular feature-extraction
+prediction algorithms (both unsupervised and supervised) and we extend them to include social-circles
+awareness. We validate the prediction performance of these circle-aware algorithms against several
+benchmarks (including their baseline versions as well as node-embedding- and GNN-based link prediction),
+leveraging two Twitter datasets comprising a community of video gamers and generic users. We show
+that social-awareness generally provides significant improvements in the prediction performance,
+beating also state-of-the-art solutions like node2vec and SEAL, and without increasing the computational
+complexity. Finally, we show that social-awareness can be used in place of using a classifier (which
+may be costly or impractical) for targeting a specific category of users. 

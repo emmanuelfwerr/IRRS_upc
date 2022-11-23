@@ -1,0 +1,19 @@
+We propose three constructions of classically verifiable non-interactive zero-knowledge proofs
+and arguments (CV-NIZK) for QMA in various preprocessing models. - We construct a CV-NIZK for QMA
+in the quantum secret parameter model where a trusted setup sends a quantum proving key to the prover
+and a classical verification key to the verifier. It is information theoretically sound and zero-knowledge.
+- Assuming the quantum hardness of the learning with errors problem, we construct a CV-NIZK for QMA
+in a model where a trusted party generates a CRS and the verifier sends an instance-independent quantum
+message to the prover as preprocessing. This model is the same as one considered in the recent work
+by Coladangelo, Vidick, and Zhang (CRYPTO '20). Our construction has the so-called dual-mode property,
+which means that there are two computationally indistinguishable modes of generating CRS, and
+we have information theoretical soundness in one mode and information theoretical zero-knowledge
+property in the other. This answers an open problem left by Coladangelo et al, which is to achieve
+either of soundness or zero-knowledge information theoretically. To the best of our knowledge,
+ours is the first dual-mode NIZK for QMA in any kind of model. - We construct a CV-NIZK for QMA with quantum
+preprocessing in the quantum random oracle model. This quantum preprocessing is the one where the
+verifier sends a random Pauli-basis states to the prover. Our construction uses the Fiat-Shamir
+transformation. The quantum preprocessing can be replaced with the setup that distributes Bell
+pairs among the prover and the verifier, and therefore we solve the open problem by Broadbent and
+Grilo (FOCS '20) about the possibility of NIZK for QMA in the shared Bell pair model via the Fiat-Shamir
+transformation. 

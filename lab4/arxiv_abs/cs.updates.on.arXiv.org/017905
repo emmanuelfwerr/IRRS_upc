@@ -1,0 +1,20 @@
+Reinforcement learning has recently shown promise as a technique for training an artificial neural
+network to parse sentences in some unknown format, through a body of work known as RL-GRIT. A key aspect
+of the RL-GRIT approach is that rather than explicitly inferring a grammar that describes the format,
+the neural network learns to perform various parsing actions (such as merging two tokens) over a
+corpus of sentences, with the goal of maximizing the estimated frequency of the resulting parse
+structures. This can allow the learning process to more easily explore different action choices,
+since a given choice may change the optimality of the parse (as expressed by the total reward), but
+will not result in the failure to parse a sentence. However, this also presents a limitation: because
+the trained neural network can successfully parse any sentence, it cannot be directly used to identify
+sentences that deviate from the format of the training sentences, i.e., that are anomalous. In this
+paper, we address this limitation by presenting procedures for extracting production rules from
+the neural network, and for using these rules to determine whether a given sentence is nominal or
+anomalous. When a sentence is anomalous, an attempt is made to identify the location of the anomaly.
+We empirically demonstrate that our approach is capable of grammatical inference and anomaly detection
+for both non-regular formats and those containing regions of high randomness/entropy. While a
+format with high randomness typically requires large sets of production rules, we propose a two
+pass grammatical inference method to generate parsimonious rule sets for such formats. By further
+improving parser learning, and leveraging the presented rule extraction and anomaly detection
+algorithms, one might begin to understand common errors, either benign or malicious, in practical
+formats. 

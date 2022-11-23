@@ -1,0 +1,19 @@
+Cyber attacks are becoming more sophisticated and diverse, making detection increasingly challenging.
+To combat these attacks, security practitioners actively summarize and exchange their knowledge
+about attacks across organizations in the form of cyber threat intelligence (CTI) reports. However,
+as CTI reports written in natural language texts are not structured for automatic analysis, the
+report usage requires tedious efforts of manual cyber intelligence recovery. Additionally, individual
+reports typically cover only a limited aspect of attack patterns (techniques) and thus are insufficient
+to provide a comprehensive view of attacks with multiple variants. To take advantage of threat intelligence
+delivered by CTI reports, we propose AttacKG to automatically extract structured attack behavior
+graphs from CTI reports and identify the adopted attack techniques. We then aggregate cyber intelligence
+across reports to collect different aspects of techniques and enhance attack behavior graphs as
+technique knowledge graphs (TKGs). Such TKGs with technique-level intelligence directly benefit
+downstream security tasks that rely on technique specifications, e.g., Advanced Persistent Threat
+(APT) detection. In our evaluation against 1,515 real-world CTI reports from diverse intelligence
+sources, AttacKG effectively identifies 28,262 attack techniques with 8,393 unique Indicators
+of Compromises (IoCs). Further, to verify AttacKG's accuracy in extracting threat intelligence,
+we run AttacKG on eight manually labeled CTI reports. Empirical results show that AttacKG accurately
+identifies attack-relevant entities, dependencies, and techniques with F1-scores of 0.895,
+0.911, and 0.819, which significantly outperforms the state-of-the-art approaches like EXTRACTOR
+and TTPDrill. 

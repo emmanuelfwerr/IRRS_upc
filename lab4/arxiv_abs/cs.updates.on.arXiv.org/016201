@@ -1,0 +1,19 @@
+In this paper, we propose an efficient and generalizable framework based on deep convolutional
+neural network (CNN) for multi-source remote sensing data joint classification. While recent
+methods are mostly based on multi-stream architectures, we use group convolution to construct
+equivalent network architectures efficiently within a single-stream network. We further adopt
+and improve dynamic grouping convolution (DGConv) to make group convolution hyperparameters,
+and thus the overall network architecture, learnable during network training. The proposed method
+therefore can theoretically adjust any modern CNN models to any multi-source remote sensing data
+set, and can potentially avoid sub-optimal solutions caused by manually decided architecture
+hyperparameters. In the experiments, the proposed method is applied to ResNet and UNet, and the
+adjusted networks are verified on three very diverse benchmark data sets (i.e., Houston2018 data,
+Berlin data, and MUUFL data). Experimental results demonstrate the effectiveness of the proposed
+single-stream CNNs, and in particular ResNet18-DGConv improves the state-of-the-art classification
+overall accuracy (OA) on HS-SAR Berlin data set from $62.23\%$ to $68.21\%$. In the experiments
+we have two interesting findings. First, using DGConv generally reduces test OA variance. Second,
+multi-stream is harmful to model performance if imposed to the first few layers, but becomes beneficial
+if applied to deeper layers. Altogether, the findings imply that multi-stream architecture, instead
+of being a strictly necessary component in deep learning models for multi-source remote sensing
+data, essentially plays the role of model regularizer. Our code is publicly available at https://github.com/yyyyangyi/Multi-source-RS-DGConv.
+We hope our work can inspire novel research in the future. 

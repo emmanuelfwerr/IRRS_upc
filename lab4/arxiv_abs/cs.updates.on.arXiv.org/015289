@@ -1,0 +1,19 @@
+Unsupervised Salient Object Detection (USOD) is of paramount significance for both industrial
+applications and downstream tasks. Existing deep-learning (DL) based USOD methods utilize some
+low-quality saliency predictions extracted by several traditional SOD methods as saliency cues,
+which mainly capture some conspicuous regions in images. Furthermore, they refine these saliency
+cues with the assistant of semantic information, which is obtained from some models trained by supervised
+learning in other related vision tasks. In this work, we propose a two-stage Activation-to-Saliency
+(A2S) framework that effectively generates high-quality saliency cues and uses these cues to train
+a robust saliency detector. More importantly, no human annotations are involved in our framework
+during the whole training process. In the first stage, we transform a pretrained network (MoCo v2)
+to aggregate multi-level features to a single activation map, where an Adaptive Decision Boundary
+(ADB) is proposed to assist the training of the transformed network. To facilitate the generation
+of high-quality pseudo labels, we propose a loss function to enlarges the feature distances between
+pixels and their means. In the second stage, an Online Label Rectifying (OLR) strategy updates the
+pseudo labels during the training process to reduce the negative impact of distractors. In addition,
+we construct a lightweight saliency detector using two Residual Attention Modules (RAMs), which
+refine the high-level features using the complementary information in low-level features, such
+as edges and colors. Extensive experiments on several SOD benchmarks prove that our framework reports
+significant performance compared with existing USOD methods. Moreover, training our framework
+on 3000 images consumes about 1 hour, which is over 30x faster than previous state-of-the-art methods.

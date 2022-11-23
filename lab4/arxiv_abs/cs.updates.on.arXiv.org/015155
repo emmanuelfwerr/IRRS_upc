@@ -1,0 +1,20 @@
+In our previous studies [17, 18], the commonly reported issue that most of the existing mapped WENO
+schemes suffer from either losing high resolutions or generating spurious oscillations in long-run
+simulations of hyperbolic problems has been successfully addressed, by devising the improved
+mapped WENO schemes, namely MOP-WENO-X, where "X" stands for the version of the existing mapped
+WENO scheme. However, all the MOP-WENO-X schemes bring about the serious deficiency that their
+resolutions in the region with high-frequency but smooth waves are dramatically decreased compared
+to their associated WENO-X schemes. The purpose of this paper is to overcome this drawback. We firstly
+present the definition of the locally order-preserving (LOP) mapping. Then, by using a new proposed
+posteriori adaptive technique, we apply this LOP property to obtain the new mappings from those
+of the WENO-X schemes. The essential idea of the posteriori adaptive technique is to identify the
+global stencil in which the existing mappings fail to preserve the LOP property, and then replace
+the mapped weights with the weights of the classic WENO-JS scheme to recover the LOP property. We
+build the resultant mapped WENO schemes and denote them as LOP-WENO-X. The numerical experiments
+demonstrate that the resolutions in the region with high-frequency but smooth waves of the LOP-WENO-X
+schemes are similar or even better than those of their associated WENO-X schemes and naturally much
+higher than the MOP-WENO-X schemes. Furthermore, the LOP-WENO-X schemes gain all the great advantages
+of the MOP-WENO-X schemes, such as attaining high resolutions and in the meantime preventing spurious
+oscillations near discontinuities when solving the one-dimensional linear advection problems
+with long output times, and significantly reducing the post-shock oscillations in the simulations
+of the two-dimensional problems with shock waves. 

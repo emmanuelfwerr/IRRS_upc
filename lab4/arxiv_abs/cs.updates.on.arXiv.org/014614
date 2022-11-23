@@ -1,0 +1,19 @@
+Recent works on sparse neural networks have demonstrated the possibility to train a sparse subnetwork
+independently from scratch, to match the performance of its corresponding dense network. However,
+identifying such sparse subnetworks (winning tickets) either involves a costly iterative train-prune-retrain
+process (e.g., Lottery Ticket Hypothesis) or an over-extended training time (e.g., Dynamic Sparse
+Training). In this work, we draw a unique connection between sparse neural network training and
+the deep ensembling technique, yielding a novel ensemble learning framework called FreeTickets.
+Instead of starting from a dense network, FreeTickets randomly initializes a sparse subnetwork
+and then trains the subnetwork while dynamically adjusting its sparse mask, resulting in many diverse
+sparse subnetworks throughout the training process. FreeTickets is defined as the ensemble of
+these sparse subnetworks freely obtained during this one-pass, sparse-to-sparse training, which
+uses only a fraction of the computational resources required by the vanilla dense training. Moreover,
+despite being an ensemble of models, FreeTickets has even fewer parameters and training FLOPs compared
+to a single dense model: this seemingly counter-intuitive outcome is due to the high sparsity of
+each subnetwork. FreeTickets is observed to demonstrate a significant all-round improvement
+compared to standard dense baselines, in prediction accuracy, uncertainty estimation, robustness,
+and efficiency. FreeTickets easily outperforms the naive deep ensemble with ResNet50 on ImageNet
+using only a quarter of the training FLOPs required by the latter. Our results provide insights into
+the strength of sparse neural networks and suggest that the benefits of sparsity go way beyond the
+usually expected inference efficiency. 

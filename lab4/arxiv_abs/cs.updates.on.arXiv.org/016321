@@ -1,0 +1,20 @@
+Healthcare representation learning on the Electronic Health Records is crucial for downstream
+medical prediction tasks in health informatics. Many NLP techniques, such as RNN and self-attention,
+have been adapted to learn medical representations from hierarchical and time-stamped EHRs data,
+but fail when they lack either general or task-specific data. Hence, some recent works train healthcare
+representations by incorporating medical ontology, by self-supervised tasks like diagnosis
+prediction, but (1) the small-scale, monotonous ontology is insufficient for robust learning,
+and (2) critical contexts or dependencies underlying patient journeys are barely exploited to
+enhance ontology learning. To address the challenges, we propose a Transformer-based representation
+learning approach: Mutual Integration of Patient journey and medical Ontology (MIPO), which is
+a robust end-to-end framework. Specifically, the proposed method focuses on task-specific representation
+learning by a sequential diagnoses predictive task, which is also beneficial to the ontology-based
+disease typing task. To integrate information in the patient's visiting records, we further introduce
+a graph-embedding module, which can mitigate the challenge of data insufficiency in healthcare.
+In this way, MIPO creates a mutual integration to benefit both healthcare representation learning
+and medical ontology embedding. Such an effective integration is guaranteed by joint training
+over fused embeddings of the two modules, targeting both task-specific prediction and ontology-based
+disease typing tasks simultaneously. Extensive experiments conducted on two real-world benchmark
+datasets have shown MIPO consistently achieves better performance than state-of-the-art methods
+no matter whether the training data is sufficient or not. Also, MIPO derives more interpretable
+diagnose embedding results compared to its counterparts. 

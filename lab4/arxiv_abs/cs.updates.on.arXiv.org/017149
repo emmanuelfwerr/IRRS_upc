@@ -1,0 +1,20 @@
+In the current IT world, developers write code while system operators run the code mostly as a black
+box. The connection between both worlds is typically established with log messages: the developer
+provides hints to the (unknown) operator, where the cause of an occurred issue is, and vice versa,
+the operator can report bugs during operation. To fulfil this purpose, developers write log instructions
+that are structured text commonly composed of a log level (e.g., "info", "error"), static text ("IP
+{} cannot be reached"), and dynamic variables (e.g. IP {}). However, as opposed to well-adopted
+coding practices, there are no widely adopted guidelines on how to write log instructions with good
+quality properties. For example, a developer may assign a high log level (e.g., "error") for a trivial
+event that can confuse the operator and increase maintenance costs. Or the static text can be insufficient
+to hint at a specific issue. In this paper, we address the problem of log quality assessment and provide
+the first step towards its automation. We start with an in-depth analysis of quality log instruction
+properties in nine software systems and identify two quality properties: 1) correct log level assignment
+assessing the correctness of the log level, and 2) sufficient linguistic structure assessing the
+minimal richness of the static text necessary for verbose event description. Based on these findings,
+we developed a data-driven approach that adapts deep learning methods for each of the two properties.
+An extensive evaluation on large-scale open-source systems shows that our approach correctly
+assesses log level assignments with an accuracy of 0.88, and the sufficient linguistic structure
+with an F1 score of 0.99, outperforming the baselines. Our study shows the potential of the data-driven
+methods in assessing instructions quality and aid developers in comprehending and writing better
+code. 

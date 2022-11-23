@@ -1,0 +1,20 @@
+Pooling and unpooling are two essential operations in constructing hierarchical spherical convolutional
+neural networks (HS-CNNs) for comprehensive feature learning in the spherical domain. Most existing
+models employ downsampling-based pooling, which will inevitably incur information loss and cannot
+adapt to different spherical signals and tasks. Besides, the preserved information after pooling
+cannot be well restored by the subsequent unpooling to characterize the desirable features for
+a task. In this paper, we propose a novel framework of HS-CNNs with a lifting structure to learn adaptive
+spherical wavelets for pooling and unpooling, dubbed LiftHS-CNN, which ensures a more efficient
+hierarchical feature learning for both image- and pixel-level tasks. Specifically, adaptive
+spherical wavelets are learned with a lifting structure that consists of trainable lifting operators
+(i.e., update and predict operators). With this learnable lifting structure, we can adaptively
+partition a signal into two sub-bands containing low- and high-frequency components, respectively,
+and thus generate a better down-scaled representation for pooling by preserving more information
+in the low-frequency sub-band. The update and predict operators are parameterized with graph-based
+attention to jointly consider the signal's characteristics and the underlying geometries. We
+further show that particular properties are promised by the learned wavelets, ensuring the spatial-frequency
+localization for better exploiting the signal's correlation in both spatial and frequency domains.
+We then propose an unpooling operation that is invertible to the lifting-based pooling, where an
+inverse wavelet transform is performed by using the learned lifting operators to restore an up-scaled
+representation. Extensive empirical evaluations on various spherical domain tasks validate
+the superiority of the proposed LiftHS-CNN. 

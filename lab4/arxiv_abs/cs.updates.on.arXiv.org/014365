@@ -1,0 +1,20 @@
+A moment function is called doubly robust if it is comprised of two nuisance functions and has the
+desired property that the estimator based on it is a consistent estimator of the target parameter
+even if one of the nuisance functions is misspecified. A common approach for obtaining such a moment
+function is based on using the influence function (IF) of the parameter of interest. Robins et al.
+(2008) introduced a large class of doubly robust IFs. However, that class does not include the IF
+of functionals for which the nuisance functions are solutions to integral equations. Such functionals
+are particularly important in the field of causal inference, specifically in the recently proposed
+proximal inference framework of (Miao et al., 2018; Tchetgen Tchetgen et al., 2020), which allows
+for estimating the average causal effect when unobserved confounders are present in the system.
+Motivated by the proximal inference framework, in this paper, we first extend the class of Robins
+et al. to include doubly robust IFs in which the nuisance functions are solutions to integral equations.
+Then we demonstrate that the double robustness property of these IFs can be leveraged to construct
+estimating equations for the nuisance functions, which enables us to solve the integral equations
+without resorting to parametric models. The main idea is to choose each nuisance function such that
+it minimizes the dependency of the expected value of the moment function to the other nuisance function.
+We frame this idea as a minimax optimization problem and use RKHSes as the function spaces. We provide
+convergence rates for the nuisance functions and conditions required for asymptotic linearity
+of the estimator of the functional of interest. The experiment results demonstrate that our proposed
+methodology leads to robust and high-performance estimators for average causal effect in the proximal
+inference framework. 

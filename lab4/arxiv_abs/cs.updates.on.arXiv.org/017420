@@ -1,0 +1,20 @@
+There is a growing body of research indicating the potential of machine learning to tackle complex
+software testing challenges. One such challenge pertains to continuous integration testing,
+which is highly time-constrained, and generates a large amount of data coming from iterative code
+commits and test runs. In such a setting, we can use plentiful test data for training machine learning
+predictors to identify test cases able to speed up the detection of regression bugs introduced during
+code integration. However, different machine learning models can have different fault prediction
+performance depending on the context and the parameters of continuous integration testing, for
+example variable time budget available for continuous integration cycles, or the size of test execution
+history used for learning to prioritize failing test cases. Existing studies on test case prioritization
+rarely study both of these factors, which are essential for the continuous integration practice.
+In this study we perform a comprehensive comparison of the fault prediction performance of machine
+learning approaches that have shown the best performance on test case prioritization tasks in the
+literature. We evaluate the accuracy of the classifiers in predicting fault-detecting tests for
+different values of the continuous integration time budget and with different length of test history
+used for training the classifiers. In evaluation, we use real-world industrial datasets from a
+continuous integration practice. The results show that different machine learning models have
+different performance for different size of test history used for model training and for different
+time budget available for test case execution. Our results imply that machine learning approaches
+for test prioritization in continuous integration testing should be carefully configured to achieve
+optimal performance. 

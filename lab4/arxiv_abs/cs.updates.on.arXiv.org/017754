@@ -1,0 +1,20 @@
+Knowledge graph embedding research has mainly focused on learning continuous representations
+of entities and relations tailored towards the link prediction problem. Recent results indicate
+an ever increasing predictive ability of current approaches on benchmark datasets. However, this
+effectiveness often comes with the cost of over-parameterization and increased computationally
+complexity. The former induces extensive hyperparameter optimization to mitigate malicious
+overfitting. The latter magnifies the importance of winning the hardware lottery. Here, we investigate
+a remedy for the first problem. We propose a technique based on Kronecker decomposition to reduce
+the number of parameters in a knowledge graph embedding model, while retaining its expressiveness.
+Through Kronecker decomposition, large embedding matrices are split into smaller embedding matrices
+during the training process. Hence, embeddings of knowledge graphs are not plainly retrieved but
+reconstructed on the fly. The decomposition ensures that elementwise interactions between three
+embedding vectors are extended with interactions within each embedding vector. This implicitly
+reduces redundancy in embedding vectors and encourages feature reuse. To quantify the impact of
+applying Kronecker decomposition on embedding matrices, we conduct a series of experiments on
+benchmark datasets. Our experiments suggest that applying Kronecker decomposition on embedding
+matrices leads to an improved parameter efficiency on all benchmark datasets. Moreover, empirical
+evidence suggests that reconstructed embeddings entail robustness against noise in the input
+knowledge graph. To foster reproducible research, we provide an open-source implementation of
+our approach, including training and evaluation scripts as well as pre-trained models in our knowledge
+graph embedding framework (https://github.com/dice-group/dice-embeddings). 

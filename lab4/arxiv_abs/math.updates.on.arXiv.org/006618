@@ -1,0 +1,19 @@
+Partial Integral Equations (PIEs) are an alternative way to model systems governed by Partial Differential
+Equations (PDEs). PIEs have certain advantages over PDEs in that they are defined by integral (not
+differential) operators and do not include boundary conditions or continuity constraints on the
+solution -- a convenience when computing system properties, designing controllers, or performing
+simulation. In prior work, PIE representations were proposed for a limited class of $2^{nd}$-order
+PDEs in a single spatial variable. In this paper, we extend the PIE representation to a more general
+class of PDE systems including, e.g., higher-order spatial derivatives ($N^{th}$-order), PDEs
+with inputs and outputs, PDEs coupled with ODEs, PDEs with distributed input and boundary effects,
+and boundary conditions which combine boundary values with inputs and integrals of the state. These
+extensions are presented in a unified way by first proposing a unified parameterization of PDE systems,
+which we refer to as a Generalized PDE (GPDE). Given a PDE system in GPDE form, we next propose formulae
+that takes the GPDE parameters and constructs the Partial Integral (PI) operators that are used
+to define a PIE system. This formula includes a unitary (and hence invertible) map that converts
+solutions of the PIE to solutions of the GPDE. This unitary map is then used to show that the original
+GPDE and PIE have equivalent system properties, including well-posedness and stability. These
+representations, conversions, and mappings are illustrated through several diverse examples,
+including beams, mixing problems, entropy modeling, wave equations, etc. Finally, we illustrate
+the significance of the PIE representation by solving analysis, simulation, and control problems
+for several representative PDE systems. 

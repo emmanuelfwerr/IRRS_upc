@@ -1,0 +1,18 @@
+The automation and digitalization of business processes has resulted in large amounts of data captured
+in information systems, which can aid businesses in understanding their processes better, improve
+workflows, or provide operational support. By making predictions about ongoing processes, bottlenecks
+can be identified and resources reallocated, as well as insights gained into the state of a process
+instance (case). Traditionally, data is extracted from systems in the form of an event log with a
+single identifying case notion, such as an order id for an Order to Cash (O2C) process. However, real
+processes often have multiple object types, for example, order, item, and package, so a format that
+forces the use of a single case notion does not reflect the underlying relations in the data. The Object-Centric
+Event Log (OCEL) format was introduced to correctly capture this information. The state-of-the-art
+predictive methods have been tailored to only traditional event logs. This thesis shows that a prediction
+method utilizing Generative Adversarial Networks (GAN), Long Short-Term Memory (LSTM) architectures,
+and Sequence to Sequence models (Seq2seq), can be augmented with the rich data contained in OCEL.
+Objects in OCEL can have attributes that are useful in predicting the next event and timestamp, such
+as a priority class attribute for an object type package indicating slower or faster processing.
+In the metrics of sequence similarity of predicted remaining events and mean absolute error (MAE)
+of the timestamp, the approach in this thesis matches or exceeds previous research, depending on
+whether selected object attributes are useful features for the model. Additionally, this thesis
+provides a web interface to predict the next sequence of activities from user input. 

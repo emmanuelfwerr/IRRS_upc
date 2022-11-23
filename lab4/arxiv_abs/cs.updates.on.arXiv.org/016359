@@ -1,0 +1,20 @@
+The human brain has the ability to carry out new tasks with limited experience. It utilizes prior
+learning experiences to adapt the solution strategy to new domains. On the other hand, deep neural
+networks (DNNs) generally need large amounts of data and computational resources for training.
+However, this requirement is not met in many settings. To address these challenges, we propose the
+TUTOR DNN synthesis framework. TUTOR targets tabular datasets. It synthesizes accurate DNN models
+with limited available data and reduced memory/computational requirements. It consists of three
+sequential steps. The first step involves generation, verification, and labeling of synthetic
+data. The synthetic data generation module targets both the categorical and continuous features.
+TUTOR generates the synthetic data from the same probability distribution as the real data. It then
+verifies the integrity of the generated synthetic data using a semantic integrity classifier module.
+It labels the synthetic data based on a set of rules extracted from the real dataset. Next, TUTOR uses
+two training schemes that combine synthetic and training data to learn the parameters of the DNN
+model. These two schemes focus on two different ways in which synthetic data can be used to derive
+a prior on the model parameters and, hence, provide a better DNN initialization for training with
+real data. In the third step, TUTOR employs a grow-and-prune synthesis paradigm to learn both the
+weights and the architecture of the DNN to reduce model size while ensuring its accuracy. We evaluate
+the performance of TUTOR on nine datasets of various sizes. We show that in comparison to fully connected
+DNNs, TUTOR, on an average, reduces the need for data by 5.9x, improves accuracy by 3.4%, and reduces
+the number of parameters (fFLOPs) by 4.7x (4.3x). Thus, TUTOR enables a less data-hungry, more accurate,
+and more compact DNN synthesis. 

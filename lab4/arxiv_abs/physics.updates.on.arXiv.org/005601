@@ -1,0 +1,20 @@
+In this paper a denoising strategy based on the EEMD (Ensemble Empirical Mode Decomposition) is
+used to reduce the background noise in non-stationary signals, which represent the forces measured
+in scaled model testing of the emergency water landing of aircraft, generally referred to as ditching.
+Ditching tests are performed at a constant horizontal speed of 12 m/s with a controlled vertical
+motion, resulting in a vertical velocity at the beginning of the impact of 0.45 m/s. The measured
+data are affected by a large amplitude broadband noise, which has both mechanical and electronic
+origin. Noise sources cannot be easily avoided or removed, since they are associated with the vibrations
+of the structure of the towing carriage and to the interaction of the measuring chain with the electromagnetic
+fields. The EEMD noise reduction method is based on the decomposition of the signal into modes and
+on its partial reconstruction using the residue, the signal-dominant modes and some further modes
+treated with a thresholding technique, which helps to retain some of the sharp features of the signal.
+The strategy is developed and tested first on a synthetic signal with a superimposed and known background
+noise. The method is then verified on the measurement of the inertial force acting on the fuselage
+when it is moving in air, as in this case the denoised force should equal the product of the mass by the
+acceleration, both of them being known. Finally, the procedure is applied to denoise the forces
+measured during the actual ditching experiment. The results look superior to the application of
+classical filtering methods, such as a moving average filter and a low-pass FIR filter, particularly
+due to the enhanced capabilities of the EEMD-denoising strategy here developed to preserve the
+sharp features of the signals and to reduce the residual low-frequency oscillations of spurious
+origin. 

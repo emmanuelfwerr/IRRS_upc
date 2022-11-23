@@ -1,0 +1,19 @@
+A search engine maintains local copies of different web pages to provide quick search results. This
+local cache is kept up-to-date by a web crawler that frequently visits these different pages to track
+changes in them. Ideally, the local copy should be updated as soon as a page changes on the web. However,
+finite bandwidth availability and server restrictions limit how frequently different pages can
+be crawled. This brings forth the following optimization problem: maximize the freshness of the
+local cache subject to the crawling frequencies being within prescribed bounds. While tractable
+algorithms do exist to solve this problem, these either assume the knowledge of exact page change
+rates or use inefficient methods such as MLE for estimating the same. We address this issue here.
+We provide three novel schemes for online estimation of page change rates, all of which have extremely
+low running times per iteration. The first is based on the law of large numbers and the second on stochastic
+approximation. The third is an extension of the second and includes a heavy-ball momentum term.
+All these schemes only need partial information about the page change process, i.e., they only need
+to know if the page has changed or not since the last crawled instance. Our main theoretical results
+concern asymptotic convergence and convergence rates of these three schemes. In fact, our work
+is the first to show convergence of the original stochastic heavy-ball method when neither the gradient
+nor the noise variance is uniformly bounded. We also provide some numerical experiments (based
+on real and synthetic data) to demonstrate the superiority of our proposed estimators over existing
+ones such as MLE. We emphasize that our algorithms are also readily applicable to the synchronization
+of databases and network inventory management. 

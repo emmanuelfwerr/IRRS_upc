@@ -1,0 +1,20 @@
+In conventional public clouds, designing a suitable initial cluster for a given application workload
+is important in reducing the computational foot-print during run-time. In edge or on-premise clouds,
+cold-start rightsizing the cluster at the time of installation is crucial in avoiding the recurrent
+capital expenditure. In both these cases, rightsizing has to balance cost-performance trade-off
+for a given application with multiple tasks, where each task can demand multiple resources, and
+the cloud offers nodes with different capacity and cost. Multidimensional bin-packing can address
+this cold-start rightsizing problem, but assumes that every task is always active. In contrast,
+real-world tasks (e.g. load bursts, batch and dead-lined tasks with time-limits) may be active
+only during specific time-periods or may have dynamic load profiles. The cluster cost can be reduced
+by reusing resources via time sharing and optimal packing. This motivates our generalized problem
+of cold-start rightsizing for time-limited tasks: given a timeline, time-periods and resource
+demands for tasks, the objective is to place the tasks on a minimum cost cluster of nodes without violating
+node capacities at any time instance. We design a baseline two-phase algorithm that performs penalty-based
+mapping of task to node-type and then, solves each node-type independently. We prove that the algorithm
+has an approximation ratio of O(D min(m, T)), where D, m and T are the number of resources, node-types
+and timeslots, respectively. We then present an improved linear programming based mapping strategy,
+enhanced further with a cross-node-type filling mechanism. Our experiments on synthetic and real-world
+cluster traces show significant cost reduction by LP-based mapping compared to the baseline, and
+the filling mechanism improves further to produce solutions within 20% of (a lower-bound to) the
+optimal solution. 

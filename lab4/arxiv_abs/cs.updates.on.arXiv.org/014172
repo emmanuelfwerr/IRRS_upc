@@ -1,0 +1,19 @@
+Nasopharyngeal Carcinoma (NPC) is a worldwide malignant epithelial cancer. Survival prediction
+is a major concern for NPC patients, as it provides early prognostic information that is needed to
+guide treatments. Recently, deep learning, which leverages Deep Neural Networks (DNNs) to learn
+deep representations of image patterns, has been introduced to the survival prediction in various
+cancers including NPC. It has been reported that image-derived end-to-end deep survival models
+have the potential to outperform clinical prognostic indicators and traditional radiomics-based
+survival models in prognostic performance. However, deep survival models, especially 3D models,
+require large image training data to avoid overfitting. Unfortunately, medical image data is usually
+scarce, especially for Positron Emission Tomography/Computed Tomography (PET/CT) due to the
+high cost of PET/CT scanning. Compared to Magnetic Resonance Imaging (MRI) or Computed Tomography
+(CT) providing only anatomical information of tumors, PET/CT that provides both anatomical (from
+CT) and metabolic (from PET) information is promising to achieve more accurate survival prediction.
+However, we have not identified any 3D end-to-end deep survival model that applies to small PET/CT
+data of NPC patients. In this study, we introduced the concept of multi-task leaning into deep survival
+models to address the overfitting problem resulted from small data. Tumor segmentation was incorporated
+as an auxiliary task to enhance the model's efficiency of learning from scarce PET/CT data. Based
+on this idea, we proposed a 3D end-to-end Deep Multi-Task Survival model (DeepMTS) for joint survival
+prediction and tumor segmentation. Our DeepMTS can jointly learn survival prediction and tumor
+segmentation using PET/CT data of only 170 patients with advanced NPC. 

@@ -1,0 +1,20 @@
+Optical flow estimation is a basic task in self-driving and robotics systems, which enables to temporally
+interpret traffic scenes. Autonomous vehicles clearly benefit from the ultra-wide Field of View
+(FoV) offered by 360{\deg} panoramic sensors. However, due to the unique imaging process of panoramic
+cameras, models designed for pinhole images do not directly generalize satisfactorily to 360{\deg}
+panoramic images. In this paper, we put forward a novel network framework--PanoFlow, to learn optical
+flow for panoramic images. To overcome the distortions introduced by equirectangular projection
+in panoramic transformation, we design a Flow Distortion Augmentation (FDA) method, which contains
+radial flow distortion (FDA-R) or equirectangular flow distortion (FDA-E). We further look into
+the definition and properties of cyclic optical flow for panoramic videos, and hereby propose a
+Cyclic Flow Estimation (CFE) method by leveraging the cyclicity of spherical images to infer 360{\deg}
+optical flow and converting large displacement to relatively small displacement. PanoFlow is
+applicable to any existing flow estimation method and benefits from the progress of narrow-FoV
+flow estimation. In addition, we create and release a synthetic panoramic dataset Flow360 based
+on CARLA to facilitate training and quantitative analysis. PanoFlow achieves state-of-the-art
+performance on the public OmniFlowNet and the established Flow360 benchmarks. Our proposed approach
+reduces the End-Point-Error (EPE) on Flow360 by 27.3%. On OmniFlowNet, PanoFlow achieves an EPE
+of 3.17 pixels, a 55.5% error reduction from the best published result. We also qualitatively validate
+our method via a collection vehicle and a public real-world OmniPhotos dataset, indicating strong
+potential and robustness for real-world navigation applications. Code and dataset are publicly
+available at https://github.com/MasterHow/PanoFlow. 

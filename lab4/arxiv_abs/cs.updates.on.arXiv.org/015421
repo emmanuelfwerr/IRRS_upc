@@ -1,0 +1,19 @@
+X-ray micro-computed tomography (micro-CT) has been widely leveraged to characterise pore-scale
+geometry in subsurface porous rock. Recent developments in super resolution (SR) methods using
+deep learning allow the digital enhancement of low resolution (LR) images over large spatial scales,
+creating SR images comparable to the high resolution (HR) ground truth. This circumvents traditional
+resolution and field-of-view trade-offs. An outstanding issue is the use of paired (registered)
+LR and HR data, which is often required in the training step of such methods but is difficult to obtain.
+In this work, we rigorously compare two different state-of-the-art SR deep learning techniques,
+using both paired and unpaired data, with like-for-like ground truth data. The first approach requires
+paired images to train a convolutional neural network (CNN) while the second approach uses unpaired
+images to train a generative adversarial network (GAN). The two approaches are compared using a
+micro-CT carbonate rock sample with complicated micro-porous textures. We implemented various
+image based and numerical verifications and experimental validation to quantitatively evaluate
+the physical accuracy and sensitivities of the two methods. Our quantitative results show that
+unpaired GAN approach can reconstruct super-resolution images as precise as paired CNN method,
+with comparable training times and dataset requirement. This unlocks new applications for micro-CT
+image enhancement using unpaired deep learning methods; image registration is no longer needed
+during the data processing stage. Decoupled images from data storage platforms can be exploited
+more efficiently to train networks for SR digital rock applications. This opens up a new pathway
+for various applications of multi-scale flow simulation in heterogeneous porous media. 

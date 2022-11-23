@@ -1,0 +1,20 @@
+In this work we implement the real-time time-dependent block-orthogonalized Manby-Miller embedding
+(rt-BOMME) approach alongside our previously developed real-time frozen density embedding time-dependent
+density functional theory (rt-TDDFT-in-DFT FDE) code, and investigate these methods' performance
+in reproducing X-ray absorption spectra (XAS) obtained with standard rt-TDDFT simulations, for
+model systems comprised of solvated fluoride and chloride ions ([X@(H$_2$O)$_8$]$^-$, X = F, Cl).
+We observe that, for ground-state quantities such as core orbital energies, the BOMME approach
+shows significantly better agreement with supermolecular results than FDE for the strongly interacting
+fluoride system, while for chloride the two embedding approaches show more similar results. For
+the excited states, we see that while FDE (constrained not to have the environment densities relaxed
+in the ground state) is in good agreement with the reference calculations for the region around the
+K and L$_1$ edge, and is capable of reproducing the splitting of the $\mathrm{1s^{1} (n+1)p^1}$
+final states ($n+1$ being the lowest virtual p orbital of the halides), it by and large fails to properly
+reproduce the $\mathrm{1s^{1} (n+2)p{^1}}$ states and misses the electronic states arising from
+excitation to orbitals with important contributions from the solvent. The BOMME results, on the
+other hand, provide a faithful qualitative representation of the spectra in all energy regions
+considered, though its intrinsic approximation of employing a lower-accuracy exchange-correlation
+functional for the environment induces non-negligible shifts in peak positions for the excitations
+from the halide to the environment. Our results thus confirm that QM/QM embedding approaches are
+viable alternatives to standard real-time simulations of X-ray absorption spectra of species
+in complex or confined environments. 

@@ -1,0 +1,19 @@
+The positive outcome of a trauma intervention depends on an intraoperative evaluation of inserted
+metallic implants. Due to occurring metal artifacts, the quality of this evaluation heavily depends
+on the performance of so-called Metal Artifact Reduction methods (MAR). The majority of these MAR
+methods require prior segmentation of the inserted metal objects. Therefore, typically a rather
+simple thresholding-based segmentation method in the reconstructed 3D volume is applied, despite
+some major disadvantages. With this publication, the potential of shifting the segmentation task
+to a learning-based, view-consistent 2D projection-based method on the downstream MAR's outcome
+is investigated. For segmenting the present metal, a rather simple learning-based 2D projection-wise
+segmentation network that is trained using real data acquired during cadaver studies, is examined.
+To overcome the disadvantages that come along with a 2D projection-wise segmentation, a Consistency
+Filter is proposed. The influence of the shifted segmentation domain is investigated by comparing
+the results of the standard fsMAR with a modified fsMAR version using the new segmentation masks.
+With a quantitative and qualitative evaluation on real cadaver data, the investigated approach
+showed an increased MAR performance and a high insensitivity against metal artifacts. For cases
+with metal outside the reconstruction's FoV or cases with vanishing metal, a significant reduction
+in artifacts could be shown. Thus, increases of up to roughly 3 dB w.r.t. the mean PSNR metric over
+all slices and up to 9 dB for single slices were achieved. The shown results reveal a beneficial influence
+of the shift to a 2D-based segmentation method on real data for downstream use with a MAR method, like
+the fsMAR. 

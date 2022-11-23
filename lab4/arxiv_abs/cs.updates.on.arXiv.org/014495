@@ -1,0 +1,20 @@
+A polynomial Turing kernel for some parameterized problem $P$ is a polynomial-time algorithm that
+solves $P$ using queries to an oracle of $P$ whose sizes are upper-bounded by some polynomial in the
+parameter. Here the term "polynomial" refers to the bound on the query sizes, as the running time
+of any kernel is required to be polynomial. One of the most important open goals in parameterized
+complexity is to understand the applicability and limitations of polynomial Turing Kernels. As
+any fixed-parameter tractable problem admits a Turing kernel of some size, the focus has mostly
+being on determining which problems admit such kernels whose query sizes can be indeed bounded by
+some polynomial. In this paper we take a different approach, and instead focus on the number of queries
+that a Turing kernel uses, assuming it is restricted to using only polynomial sized queries. Our
+study focuses on one the main problems studied in parameterized complexity, the Clique problem:
+Given a graph $G$ and an integer $k$, determine whether there are $k$ pairwise adjacent vertices
+in $G$. We show that Clique parameterized by several structural parameters exhibits the following
+phenomena: - It admits polynomial Turing kernels which use a sublinear number of queries, namely
+$O(n/\log^c n)$ queries where $n$ is the total size of the graph and $c$ is any constant. This holds
+even for a very restrictive type of Turing kernels which we call OR-kernels. - It does not admit polynomial
+Turing kernels which use $O(n^{1-\epsilon})$ queries, unless NP$\subseteq$coNP/poly. For proving
+the second item above, we develop a new framework for bounding the number of queries needed by polynomial
+Turing kernels. This framework is inspired by the standard lower bounds framework for Karp kernels,
+and while it is quite similar, it still requires some novel ideas to allow its extension to the Turing
+setting. 

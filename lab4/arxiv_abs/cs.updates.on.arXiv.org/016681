@@ -1,0 +1,20 @@
+Sparse recovery is one of the most fundamental and well-studied inverse problems. Standard statistical
+formulations of the problem are provably solved by general convex programming techniques and more
+practical, fast (nearly-linear time) iterative methods. However, these latter "fast algorithms"
+have previously been observed to be brittle in various real-world settings. We investigate the
+brittleness of fast sparse recovery algorithms to generative model changes through the lens of
+studying their robustness to a "helpful" semi-random adversary, a framework which tests whether
+an algorithm overfits to input assumptions. We consider the following basic model: let $\mathbf{A}
+\in \mathbb{R}^{n \times d}$ be a measurement matrix which contains an unknown subset of rows $\mathbf{G}
+\in \mathbb{R}^{m \times d}$ which are bounded and satisfy the restricted isometry property (RIP),
+but is otherwise arbitrary. Letting $x^\star \in \mathbb{R}^d$ be $s$-sparse, and given either
+exact measurements $b = \mathbf{A} x^\star$ or noisy measurements $b = \mathbf{A} x^\star + \xi$,
+we design algorithms recovering $x^\star$ information-theoretically optimally in nearly-linear
+time. We extend our algorithm to hold for weaker generative models relaxing our planted RIP assumption
+to a natural weighted variant, and show that our method's guarantees naturally interpolate the
+quality of the measurement matrix to, in some parameter regimes, run in sublinear time. Our approach
+differs from prior fast iterative methods with provable guarantees under semi-random generative
+models: natural conditions on a submatrix which make sparse recovery tractable are NP-hard to verify.
+We design a new iterative method tailored to the geometry of sparse recovery which is provably robust
+to our semi-random model. We hope our approach opens the door to new robust, efficient algorithms
+for natural statistical inverse problems. 

@@ -1,0 +1,20 @@
+The task of multi-dimensional numerical integration is frequently encountered in physics and
+other scientific fields, e.g., in modeling the effects of systematic uncertainties in physical
+systems and in Bayesian parameter estimation. Multi-dimensional integration is often time-prohibitive
+on CPUs. Efficient implementation on many-core architectures is challenging as the workload across
+the integration space cannot be predicted a priori. We propose m-Cubes, a novel implementation
+of the well-known Vegas algorithm for execution on GPUs. Vegas transforms integration variables
+followed by calculation of a Monte Carlo integral estimate using adaptive partitioning of the resulting
+space. m-Cubes improves performance on GPUs by maintaining relatively uniform workload across
+the processors. As a result, our optimized Cuda implementation for Nvidia GPUs outperforms parallelization
+approaches proposed in past literature. We further demonstrate the efficiency of m-Cubes by evaluating
+a six-dimensional integral from a cosmology application, achieving significant speedup and greater
+precision than the CUBA library's CPU implementation of VEGAS. We also evaluate m-Cubes on a standard
+integrand test suite. m-Cubes outperforms the serial implementations of the Cuba and GSL libraries
+by orders of magnitude speedup while maintaining comparable accuracy. Our approach yields a speedup
+of at least 10 when compared against publicly available Monte Carlo based GPU implementations.
+In summary, m-Cubes can solve integrals that are prohibitively expensive using standard libraries
+and custom implementations. A modern C++ interface header-only implementation makes m-Cubes
+portable, allowing its utilization in complicated pipelines with easy to define stateful integrals.
+Compatibility with non-Nvidia GPUs is achieved with our initial implementation of m-Cubes using
+the Kokkos framework. 

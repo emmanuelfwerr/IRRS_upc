@@ -1,0 +1,20 @@
+Radiography is often used to probe complex, evolving density fields in dynamic systems and in so
+doing gain insight into the underlying physics. This technique has been used in numerous fields
+including materials science, shock physics, inertial confinement fusion, and other national
+security applications. In many of these applications, however, complications resulting from
+noise, scatter, complex beam dynamics, etc. prevent the reconstruction of density from being accurate
+enough to identify the underlying physics with sufficient confidence. As such, density reconstruction
+from static/dynamic radiography has typically been limited to identifying discontinuous features
+such as cracks and voids in a number of these applications. In this work, we propose a fundamentally
+new approach to reconstructing density from a temporal sequence of radiographic images. Using
+only the robust features identifiable in radiographs, we combine them with the underlying hydrodynamic
+equations of motion using a machine learning approach, namely, conditional generative adversarial
+networks (cGAN), to determine the density fields from a dynamic sequence of radiographs. Next,
+we seek to further enhance the hydrodynamic consistency of the ML-based density reconstruction
+through a process of parameter estimation and projection onto a hydrodynamic manifold. In this
+context, we note that the distance from the hydrodynamic manifold given by the training data to the
+test data in the parameter space considered both serves as a diagnostic of the robustness of the predictions
+and serves to augment the training database, with the expectation that the latter will further reduce
+future density reconstruction errors. Finally, we demonstrate the ability of this method to outperform
+a traditional radiographic reconstruction in capturing allowable hydrodynamic paths even when
+relatively small amounts of scatter are present. 

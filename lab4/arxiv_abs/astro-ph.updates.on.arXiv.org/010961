@@ -1,0 +1,18 @@
+Due to the complexity of modeling the radiative transfer inside the accretion columns of neutron
+star binaries, their X-ray spectra are still commonly described with phenomenological models,
+for example, a cutoff power law. While the behavior of these models is well understood and they allow
+for a comparison of different sources and studying source behavior, the extent to which the underlying
+physics can be derived from the model parameters is very limited. During recent years, several physically
+motivated spectral models have been developed to overcome these limitations. Their application,
+however, is generally computationally much more expensive and they require a high number of parameters
+which are difficult to constrain. Previous works have presented an analytical solution to the radiative
+transfer equation inside the accretion column assuming a velocity profile that is linear in the
+optical depth. An implementation of this solution that is both fast and accurate enough to be fitted
+to observed spectra is available as a model in XSPEC. The main difficulty of this implementation
+is that some solutions violate energy conservation and therefore have to be rejected by the user.
+We propose a novel fitting strategy that ensures energy conservation during the $\chi^2$-minimization
+which simplifies the application of the model considerably. We demonstrate this approach as well
+a study of possible parameter degeneracies with a comprehensive Markov-chain Monte Carlo analysis
+of the complete parameter space for a combined NuSTAR and Swift/XRT dataset of Cen X-3. The derived
+accretion-flow structure features a small column radius of $\sim$63 m and a spectrum dominated
+by bulk-Comptonization of bremsstrahlung seed photons, in agreement with previous studies. 

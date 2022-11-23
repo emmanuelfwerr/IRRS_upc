@@ -1,0 +1,20 @@
+Recognition and segmentation of objects in images enjoy the wealth of large volume of well annotated
+data. At the other end, when dealing with the reconstruction of geometric structures of objects
+from images, there is a limited amount of accurate data available for supervised learning. One type
+of such geometric data with insufficient amount required for deep learning is real world accurate
+RGB-D images. The lack of accurate RGB-D datasets is one of the obstacles in the evolution of geometric
+scene reconstructions from images. One solution to creating such a dataset is to capture RGB images
+while simultaneously using an accurate depth scanning device that assigns a depth value to each
+pixel. A major challenge in acquiring such ground truth data is the accurate alignment between the
+RGB images and the measured depth and color profiles. We introduce a differential optimization
+method that aligns a colored point cloud to a given color image via iterative geometric and color
+matching. The proposed method enables the construction of RGB-D datasets for specific camera systems.
+In the suggested framework, the optimization minimizes the difference between the colors of the
+image pixels and the corresponding colors of the projected points to the camera plane. We assume
+that the colors produced by the geometric scanner camera and the color camera sensor are different
+and thus are characterized by different chromatic acquisition properties. We align the different
+color spaces while compensating for their corresponding color appearance. Under this setup, we
+find the transformation between the camera image and the point cloud colors by iterating between
+matching the relative location of the point cloud and matching colors. The successful alignments
+produced by the proposed method are demonstrated on both synthetic data with quantitative evaluation
+and real world scenes with qualitative results. 

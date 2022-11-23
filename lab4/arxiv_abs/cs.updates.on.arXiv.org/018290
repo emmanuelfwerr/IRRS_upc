@@ -1,0 +1,20 @@
+Learning program semantics from raw source code is challenging due to the complexity of real-world
+programming language syntax and due to the difficulty of reconstructing long-distance relational
+information implicitly represented in programs using identifiers. Addressing the first point,
+we consider Constrained Horn Clauses (CHCs) as a standard representation of program verification
+problems, providing a simple and programming language-independent syntax. For the second challenge,
+we explore graph representations of CHCs, and propose a new Relational Hypergraph Neural Network
+(R-HyGNN) architecture to learn program features. We introduce two different graph representations
+of CHCs. One is called constraint graph (CG), and emphasizes syntactic information of CHCs by translating
+the symbols and their relations in CHCs as typed nodes and binary edges, respectively, and constructing
+the constraints as abstract syntax trees. The second one is called control- and data-flow hypergraph
+(CDHG), and emphasizes semantic information of CHCs by representing the control and data flow through
+ternary hyperedges. We then propose a new GNN architecture, R-HyGNN, extending Relational Graph
+Convolutional Networks, to handle hypergraphs. To evaluate the ability of R-HyGNN to extract semantic
+information from programs, we use R-HyGNNs to train models on the two graph representations, and
+on five proxy tasks with increasing difficulty, using benchmarks from CHC-COMP 2021 as training
+data. The most difficult proxy task requires the model to predict the occurrence of clauses in counter-examples,
+which subsumes satisfiability of CHCs. CDHG achieves 90.59% accuracy in this task. Furthermore,
+R-HyGNN has perfect predictions on one of the graphs consisting of more than 290 clauses. Overall,
+our experiments indicate that R-HyGNN can capture intricate program features for guiding verification
+problems. 

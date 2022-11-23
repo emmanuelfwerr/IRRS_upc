@@ -1,0 +1,20 @@
+Continuous DR-submodular functions are a class of functions that satisfy the Diminishing Returns
+(DR) property, which implies that they are concave along non-negative directions. Existing works
+have studied monotone continuous DR-submodular maximization subject to a convex constraint and
+have proposed efficient algorithms with approximation guarantees. However, in many applications,
+e.g., computing the stability number of a graph and mean-field inference for probabilistic log-submodular
+models, the DR-submodular function has the additional property of being \emph{strongly} concave
+along non-negative directions that could be utilized for obtaining faster convergence rates.
+In this paper, we first introduce and characterize the class of \emph{strongly DR-submodular}
+functions and show how such a property implies strong concavity along non-negative directions.
+Then, we study $L$-smooth monotone strongly DR-submodular functions that have bounded curvature,
+and we show how to exploit such additional structure to obtain algorithms with improved approximation
+guarantees and faster convergence rates for the maximization problem. In particular, we propose
+the SDRFW algorithm that matches the provably optimal $1-\frac{c}{e}$ approximation ratio after
+only $\lceil\frac{L}{\mu}\rceil$ iterations, where $c\in[0,1]$ and $\mu\geq 0$ are the curvature
+and the strong DR-submodularity parameter. Furthermore, we study the Projected Gradient Ascent
+(PGA) method for this problem and provide a refined analysis of the algorithm with an improved $\frac{1}{1+c}$
+approximation ratio and a linear convergence rate. Given that both algorithms require knowledge
+of the smoothness parameter $L$, we provide a \emph{novel} characterization of $L$ for DR-submodular
+functions showing that in many cases, computing $L$ could be formulated as a convex problem, i.e.,
+a geometric program, that could be solved efficiently. 

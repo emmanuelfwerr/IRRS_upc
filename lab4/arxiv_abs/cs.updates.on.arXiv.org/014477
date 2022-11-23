@@ -1,0 +1,20 @@
+Nowadays, one practical limitation of deep neural network (DNN) is its high degree of specialization
+to a single task or domain (e.g., one visual domain). It motivates researchers to develop algorithms
+that can adapt DNN model to multiple domains sequentially, while still performing well on the past
+domains, which is known as multi-domain learning. Almost all conventional methods only focus on
+improving accuracy with minimal parameter update, while ignoring high computing and memory cost
+during training, which makes it difficult to deploy multi-domain learning into more and more widely
+used resource-limited edge devices, like mobile phones, IoT, embedded systems, etc. We observe
+that large memory used for activation storage is the bottleneck that largely limits the training
+time and cost on edge devices. To reduce training memory usage, while keeping the domain adaption
+accuracy performance, we propose Dynamic Additive Attention Adaption ($DA^3$), a novel memory-efficient
+on-device multi-domain learning method. $DA^3$ learns a novel additive attention adaptor module,
+while freezing the weights of the pre-trained backbone model for each domain. Differentiating
+from prior works, such module not only mitigates activation memory buffering for reducing memory
+usage during training but also serves as a dynamic gating mechanism to reduce the computation cost
+for fast inference. We validate $DA^3$ on multiple datasets against state-of-the-art methods,
+which shows great improvement in both accuracy and training time. Moreover, we deployed $DA^3$
+into the popular NIVDIA Jetson Nano edge GPU, where the measured experimental results show our proposed
+$DA^3$ reduces the on-device training memory consumption by 19-37x, and training time by 2x, in
+comparison to the baseline methods (e.g., standard fine-tuning, Parallel and Series Res. adaptor,
+and Piggyback). 

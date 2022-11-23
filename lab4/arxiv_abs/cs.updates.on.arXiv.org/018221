@@ -1,0 +1,19 @@
+Safety is the foremost concern for autonomous platooning. The vehicle-to-vehicle (V2V) communication
+delay and the sudden appearance of obstacles will trigger the safety of the intended functionality
+(SOTIF) issues for autonomous platooning. This research proposes a holistic robust motion controller
+framework (MCF) for an intelligent and connected vehicle platoon system. The MCF utilizes a hierarchical
+structure to resolve the longitudinal string stability and the lateral control problem under the
+complex driving environment and time-varying communication delay. Firstly, the H-infinity feedback
+controller is developed to ensure the robustness of the platoon under time-varying communication
+delay in the upper-level coordination layer (UCL). The output from UCL will be delivered to the lower-level
+motion-planning layer (LML) as reference signals. Secondly, the model predictive control (MPC)
+algorithm is implemented in the LML to achieve multi-objective control, which comprehensively
+considers the reference signals, the artificial potential field, and multiple vehicle dynamics
+constraints. Furthermore, three critical scenarios are co-simulated for case studies, including
+platooning under time-varying communication delay, merging, and obstacle avoidance scenarios.
+The simulation results indicate that, compared with single-structure MPC, the proposed MCF can
+offer a better suppression on position error propagation, and get improvements on maximum position
+error in the three scenarios by $19.2\%$, $59.8\%$, and $15.3\%$, respectively. Last, the practicability
+and effectiveness of the proposed MCF are verified via hardware-in-the-loop experiment. The average
+conducting time of the proposed method on Speedgoat real-time target machine is 1.1 milliseconds,
+which meets the real-time requirements. 

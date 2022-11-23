@@ -1,0 +1,19 @@
+Gradient-based Bi-Level Optimization (BLO) methods have been widely applied to solve modern machine
+learning problems. However, most existing solution strategies are theoretically designed based
+on restrictive assumptions (e.g., convexity of the lower-level sub-problem), and computationally
+not applicable for high-dimensional tasks. Moreover, there are almost no gradient-based methods
+that can efficiently handle BLO in those challenging scenarios, such as BLO with functional constraints
+and pessimistic BLO. In this work, by reformulating BLO into an approximated single-level problem
+based on the value-function, we provide a new method, named Bi-level Value-Function-based Sequential
+Minimization (BVFSM), to partially address the above issues. To be specific, BVFSM constructs
+a series of value-function-based approximations, and thus successfully avoids the repeated calculations
+of recurrent gradient and Hessian inverse required by existing approaches, which are time-consuming
+(especially for high-dimensional tasks). We also extend BVFSM to address BLO with additional upper-
+and lower-level functional constraints. More importantly, we demonstrate that the algorithmic
+framework of BVFSM can also be used for the challenging pessimistic BLO, which has never been properly
+solved by existing gradient-based methods. On the theoretical side, we strictly prove the convergence
+of BVFSM on these types of BLO, in which the restrictive lower-level convexity assumption is completely
+discarded. To our best knowledge, this is the first gradient-based algorithm that can solve different
+kinds of BLO problems (e.g., optimistic, pessimistic and with constraints) all with solid convergence
+guarantees. Extensive experiments verify our theoretical investigations and demonstrate the
+superiority of BVFSM on various real-world applications. 

@@ -1,0 +1,20 @@
+Maintaining or even improving gate performance with growing numbers of parallel controlled qubits
+is a vital requirement for fault-tolerant quantum computing. For superconducting quantum processors,
+though isolated one- or two-qubit gates have been demonstrated with high-fidelity, implementing
+these gates in parallel commonly shows worse performance. Generally, this degradation is attributed
+to various crosstalks between qubits, such as quantum crosstalk due to residual inter-qubit coupling.
+An understanding of the exact nature of these crosstalks is critical to figuring out respective
+mitigation schemes and improved qubit architecture designs with low crosstalk. Here we give a theoretical
+analysis of quantum crosstalk impact on simultaneous gate operations in a qubit architecture,
+where fixed-frequency transmon qubits are coupled via a tunable bus, and sub-100-ns controlled-Z
+(CZ) gates can be realized by applying a baseband flux pulse on the bus. Our analysis shows that for
+microwave-driven single-qubit gates, the dressing from the qubit-qubit coupling can cause non-negligible
+cross-driving errors when qubits operate near frequency collision regions. During CZ gate operations,
+although unwanted near-neighbor interactions are nominally turned off, sub-MHz parasitic next-near-neighbor
+interactions involving spectator qubits can still exist, causing considerable leakage or control
+error when one operates qubit systems around these parasitic resonance points. To ensure high-fidelity
+simultaneous operations, there could raise a request to figure out a better way to balance the gate
+error from target qubit systems themselves and the error from non-participating spectator qubits.
+Overall, our analysis suggests that towards useful quantum processors, the qubit architecture
+should be examined carefully in the context of high-fidelity simultaneous gate operations in a
+scalable qubit lattice. 

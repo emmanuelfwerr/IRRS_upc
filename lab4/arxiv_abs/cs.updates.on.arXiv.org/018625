@@ -1,0 +1,19 @@
+While artificial intelligence (AI) holds promise for supporting healthcare providers and improving
+the accuracy of medical diagnoses, a lack of transparency in the composition of datasets exposes
+AI models to the possibility of unintentional and avoidable mistakes. In particular, public and
+private image datasets of dermatological conditions rarely include information on skin color.
+As a start towards increasing transparency, AI researchers have appropriated the use of the Fitzpatrick
+skin type (FST) from a measure of patient photosensitivity to a measure for estimating skin tone
+in algorithmic audits of computer vision applications including facial recognition and dermatology
+diagnosis. In order to understand the variability of estimated FST annotations on images, we compare
+several FST annotation methods on a diverse set of 460 images of skin conditions from both textbooks
+and online dermatology atlases. We find the inter-rater reliability between three board-certified
+dermatologists is comparable to the inter-rater reliability between the board-certified dermatologists
+and two crowdsourcing methods. In contrast, we find that the Individual Typology Angle converted
+to FST (ITA-FST) method produces annotations that are significantly less correlated with the experts'
+annotations than the experts' annotations are correlated with each other. These results demonstrate
+that algorithms based on ITA-FST are not reliable for annotating large-scale image datasets, but
+human-centered, crowd-based protocols can reliably add skin type transparency to dermatology
+datasets. Furthermore, we introduce the concept of dynamic consensus protocols with tunable parameters
+including expert review that increase the visibility of crowdwork and provide guidance for future
+crowdsourced annotations of large image datasets. 

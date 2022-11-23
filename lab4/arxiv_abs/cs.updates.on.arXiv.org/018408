@@ -1,0 +1,19 @@
+It is known that Deep Neural networks (DNNs) are vulnerable to adversarial attacks, and the adversarial
+robustness of DNNs could be improved by adding adversarial noises to training data (e.g., the standard
+adversarial training (SAT)). However, inappropriate noises added to training data may reduce
+a model's performance, which is termed the trade-off between accuracy and robustness. This problem
+has been sufficiently studied for the classification of whole images but has rarely been explored
+for image analysis tasks in the medical application domain, including image segmentation, landmark
+detection, and object detection tasks. In this study, we show that, for those medical image analysis
+tasks, the SAT method has a severe issue that limits its practical use: it generates a fixed and unified
+level of noise for all training samples for robust DNN training. A high noise level may lead to a large
+reduction in model performance and a low noise level may not be effective in improving robustness.
+To resolve this issue, we design an adaptive-margin adversarial training (AMAT) method that generates
+sample-wise adaptive adversarial noises for robust DNN training. In contrast to the existing,
+classification-oriented adversarial training methods, our AMAT method uses a loss-defined-margin
+strategy so that it can be applied to different tasks as long as the loss functions are well-defined.
+We successfully apply our AMAT method to state-of-the-art DNNs, using five publicly available
+datasets. The experimental results demonstrate that: (1) our AMAT method can be applied to the three
+seemingly different tasks in the medical image application domain; (2) AMAT outperforms the SAT
+method in adversarial robustness; (3) AMAT has a minimal reduction in prediction accuracy on clean
+data, compared with the SAT method; and (4) AMAT has almost the same training time cost as SAT. 

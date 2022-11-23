@@ -1,0 +1,19 @@
+Benefiting from considerable pixel-level annotations collected from a specific situation (source),
+the trained semantic segmentation model performs quite well but fails in a new situation (target).
+To mitigate the domain gap, previous cross-domain semantic segmentation methods always assume
+the co-existence of source data and target data during domain alignment. However, accessing source
+data in the real scenario may raise privacy concerns and violate intellectual property. To tackle
+this problem, we focus on an interesting and challenging cross-domain semantic segmentation task
+where only the trained source model is provided to the target domain. Specifically, we propose a
+unified framework called \textbf{ATP}, which consists of three schemes, i.e., feature \textbf{A}lignment,
+bidirectional \textbf{T}eaching, and information \textbf{P}ropagation. First, considering
+explicit alignment is infeasible due to no source data, we devise a curriculum-style entropy minimization
+objective to implicitly align the target features with unseen source features via the provided
+source model. Second, besides positive pseudo labels in vanilla self-training, we introduce negative
+pseudo labels to this field and develop a bidirectional self-training strategy to enhance the representation
+learning in the target domain. It is the first work to use negative pseudo labels during self-training
+for domain adaptation. Finally, the information propagation scheme is employed to further reduce
+the intra-domain discrepancy within the target domain via pseudo-semi-supervised learning,
+which is the first step by providing a simple and effective post-process for the domain adaptation
+field. Furthermore, we also extend the proposed to the more challenging black-box source-model
+scenario where only the source model's prediction is available. 

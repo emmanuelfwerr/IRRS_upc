@@ -1,0 +1,19 @@
+Temporal action localization has long been researched in computer vision. Existing state-of-the-art
+action localization methods divide each video into multiple action units (i.e., proposals in two-stage
+methods and segments in one-stage methods) and then perform action recognition/regression on
+each of them individually, without explicitly exploiting their relations during learning. In
+this paper, we claim that the relations between action units play an important role in action localization,
+and a more powerful action detector should not only capture the local content of each action unit
+but also allow a wider field of view on the context related to it. To this end, we propose a general graph
+convolutional module (GCM) that can be easily plugged into existing action localization methods,
+including two-stage and one-stage paradigms. To be specific, we first construct a graph, where
+each action unit is represented as a node and their relations between two action units as an edge.
+Here, we use two types of relations, one for capturing the temporal connections between different
+action units, and the other one for characterizing their semantic relationship. Particularly
+for the temporal connections in two-stage methods, we further explore two different kinds of edges,
+one connecting the overlapping action units and the other one connecting surrounding but disjointed
+units. Upon the graph we built, we then apply graph convolutional networks (GCNs) to model the relations
+among different action units, which is able to learn more informative representations to enhance
+action localization. Experimental results show that our GCM consistently improves the performance
+of existing action localization methods, including two-stage methods (e.g., CBR and R-C3D) and
+one-stage methods (e.g., D-SSAD), verifying the generality and effectiveness of our GCM. 

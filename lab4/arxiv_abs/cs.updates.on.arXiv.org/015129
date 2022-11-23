@@ -1,0 +1,20 @@
+We consider how to directly extract a road map (also known as a topological representation) of an
+initially-unknown 2-dimensional environment via an online procedure that robustly computes
+a retraction of its boundaries. In this article, we first present the online construction of a topological
+map and the implementation of a control law for guiding the robot to the nearest unexplored area,
+first presented in [1]. The proposed method operates by allowing the robot to localize itself on
+a partially constructed map, calculate a path to unexplored parts of the environment (frontiers),
+compute a robust terminating condition when the robot has fully explored the environment, and achieve
+loop closure detection. The proposed algorithm results in smooth safe paths for the robot's navigation
+needs. The presented approach is any time algorithm that has the advantage that it allows for the
+active creation of topological maps from laser scan data, as it is being acquired. We also propose
+a navigation strategy based on a heuristic where the robot is directed towards nodes in the topological
+map that open to empty space. We then extend the work in [1] by presenting a topology matching algorithm
+that leverages the strengths of a particular spectral correspondence method [2], to match the mapped
+environments generated from our topology-making algorithm. Here, we concentrated on implementing
+a system that could be used to match the topologies of the mapped environment by using AOF Skeletons.
+In topology matching between two given maps and their AOF skeletons, we first find correspondences
+between points on the AOF skeletons of two different environments. We then align the (2D) points
+of the environments themselves. We also compute a distance measure between two given environments,
+based on their extracted AOF skeletons and their topology, as the sum of the matching errors between
+corresponding points. 

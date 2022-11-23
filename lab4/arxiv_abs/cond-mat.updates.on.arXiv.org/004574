@@ -1,0 +1,20 @@
+Most natural and engineered information-processing systems transmit information via signals
+that vary in time. Computing the information transmission rate or the information encoded in the
+temporal characteristics of these signals, requires the mutual information between the input
+and output signals as a function of time, i.e. between the input and output trajectories. Yet, this
+is notoriously difficult because of the high-dimensional nature of the trajectory space, and all
+existing techniques require approximations. We present an exact Monte Carlo technique called
+Path Weight Sampling (PWS) that, for the first time, makes it possible to compute the mutual information
+between input and output trajectories for any stochastic system that is described by a master equation.
+The principal idea is to use the master equation to evaluate the exact conditional probability of
+an individual output trajectory for a given input trajectory, and average this via Monte Carlo sampling
+in trajectory space to obtain the mutual information. We present three variants of PWS, which all
+generate the trajectories using the standard stochastic simulation algorithm. While Direct PWS
+is a brute-force method, Rosenbluth-Rosenbluth PWS exploits the analogy between signal trajectory
+sampling and polymer sampling, and Thermodynamic Integration PWS is based on a reversible work
+calculation in trajectory space. PWS also makes it possible to compute the mutual information between
+input and output trajectories for systems with hidden internal states as well as systems with feedback
+from output to input. Applying PWS to the bacterial chemotaxis system, consisting of 173 coupled
+chemical reactions, demonstrates not only that the scheme is highly efficient, but also that the
+appropriate measure for quantifying information transmission via time-varying signals is indeed
+the information transmission rate. 

@@ -1,0 +1,20 @@
+The uses of Machine Learning (ML) in detection of network attacks have been effective when designed
+and evaluated in a single organisation. However, it has been very challenging to design an ML-based
+detection system by utilising heterogeneous network data samples originating from several sources.
+This is mainly due to privacy concerns and the lack of a universal format of datasets. In this paper,
+we propose a collaborative federated learning scheme to address these issues. The proposed framework
+allows multiple organisations to join forces in the design, training, and evaluation of a robust
+ML-based network intrusion detection system. The threat intelligence scheme utilises two critical
+aspects for its application; the availability of network data traffic in a common format to allow
+for the extraction of meaningful patterns across data sources. Secondly, the adoption of a federated
+learning mechanism to avoid the necessity of sharing sensitive users' information between organisations.
+As a result, each organisation benefits from other organisations cyber threat intelligence while
+maintaining the privacy of its data internally. The model is trained locally and only the updated
+weights are shared with the remaining participants in the federated averaging process. The framework
+has been designed and evaluated in this paper by using two key datasets in a NetFlow format known as
+NF-UNSW-NB15-v2 and NF-BoT-IoT-v2. Two other common scenarios are considered in the evaluation
+process; a centralised training method where the local data samples are shared with other organisations
+and a localised training method where no threat intelligence is shared. The results demonstrate
+the efficiency and effectiveness of the proposed framework by designing a universal ML model effectively
+classifying benign and intrusive traffic originating from multiple organisations without the
+need for local data exchange. 

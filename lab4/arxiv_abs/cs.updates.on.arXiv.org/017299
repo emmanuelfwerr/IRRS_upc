@@ -1,0 +1,20 @@
+Recognizing human locomotion intent and activities is important for controlling the wearable
+robots while walking in complex environments. However, human-robot interface signals are usually
+user-dependent, which causes that the classifier trained on source subjects performs poorly on
+new subjects. To address this issue, this paper designs the ensemble diverse hypotheses and knowledge
+distillation (EDHKD) method to realize unsupervised cross-subject adaptation. EDH mitigates
+the divergence between labeled data of source subjects and unlabeled data of target subjects to
+accurately classify the locomotion modes of target subjects without labeling data. Compared to
+previous domain adaptation methods based on the single learner, which may only learn a subset of
+features from input signals, EDH can learn diverse features by incorporating multiple diverse
+feature generators and thus increases the accuracy and decreases the variance of classifying target
+data, but it sacrifices the efficiency. To solve this problem, EDHKD (student) distills the knowledge
+from the EDH (teacher) to a single network to remain efficient and accurate. The performance of the
+EDHKD is theoretically proved and experimentally validated on a 2D moon dataset and two public human
+locomotion datasets. Experimental results show that the EDHKD outperforms all other methods.
+The EDHKD can classify target data with 96.9%, 94.4%, and 97.4% average accuracy on the above three
+datasets with a short computing time (1 ms). Compared to a benchmark (BM) method, the EDHKD increases
+1.3% and 7.1% average accuracy for classifying the locomotion modes of target subjects. The EDHKD
+also stabilizes the learning curves. Therefore, the EDHKD is significant for increasing the generalization
+ability and efficiency of the human intent prediction and human activity recognition system, which
+will improve human-robot interactions. 

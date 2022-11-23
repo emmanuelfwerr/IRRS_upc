@@ -1,0 +1,18 @@
+In the task of Chinese named entity recognition based on deep learning, activation function plays
+an irreplaceable role, it introduces nonlinear characteristics into neural network, so that the
+fitted model can be applied to various tasks. However, the information density of industrial safety
+analysis text is relatively high, and the correlation and similarity between the information are
+large, which is easy to cause the problem of high deviation and high standard deviation of the model,
+no specific activation function has been designed in previous studies, and the traditional activation
+function has the problems of gradient vanishing and negative region, which also lead to the recognition
+accuracy of the model can not be further improved. To solve these problems, a novel activation function
+AIS is proposed in this paper. AIS is an activation function applied in industrial safety engineering,
+which is composed of two piecewise nonlinear functions. In the positive region, the structure combining
+exponential function and quadratic function is used to alleviate the problem of deviation and standard
+deviation, and the linear function is added to modify it, which makes the whole activation function
+smoother and overcomes the problem of gradient vanishing. In the negative region, the cubic function
+structure is used to solve the negative region problem and accelerate the convergence of the model.
+Based on the deep learning model of BERT-BiLSTM-CRF, the performance of AIS is evaluated. The results
+show that, compared with other activation functions, AIS overcomes the problems of gradient vanishing
+and negative region, reduces the deviation of the model, speeds up the model fitting, and improves
+the extraction ability of the model for industrial entities. 

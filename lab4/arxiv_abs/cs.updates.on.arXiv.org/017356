@@ -1,0 +1,19 @@
+We study streaming algorithms in the white-box adversarial model, where the stream is chosen adaptively
+by an adversary who observes the entire internal state of the algorithm at each time step. We show
+that nontrivial algorithms are still possible. We first give a randomized algorithm for the $L_1$-heavy
+hitters problem that outperforms the optimal deterministic Misra-Gries algorithm on long streams.
+If the white-box adversary is computationally bounded, we use cryptographic techniques to reduce
+the memory of our $L_1$-heavy hitters algorithm even further and to design a number of additional
+algorithms for graph, string, and linear algebra problems. The existence of such algorithms is
+surprising, as the streaming algorithm does not even have a secret key in this model, i.e., its state
+is entirely known to the adversary. One algorithm we design is for estimating the number of distinct
+elements in a stream with insertions and deletions achieving a multiplicative approximation and
+sublinear space; such an algorithm is impossible for deterministic algorithms. We also give a general
+technique that translates any two-player deterministic communication lower bound to a lower bound
+for {\it randomized} algorithms robust to a white-box adversary. In particular, our results show
+that for all $p\ge 0$, there exists a constant $C_p>1$ such that any $C_p$-approximation algorithm
+for $F_p$ moment estimation in insertion-only streams with a white-box adversary requires $\Omega(n)$
+space for a universe of size $n$. Similarly, there is a constant $C>1$ such that any $C$-approximation
+algorithm in an insertion-only stream for matrix rank requires $\Omega(n)$ space with a white-box
+adversary. Our algorithmic results based on cryptography thus show a separation between computationally
+bounded and unbounded adversaries. (Abstract shortened to meet arXiv limits.) 

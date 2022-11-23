@@ -1,0 +1,19 @@
+Spatio-temporal pattern recognition is a fundamental ability of the brain which is required for
+numerous real-world applications. Recent deep learning approaches have reached outstanding
+accuracy in such tasks, but their implementation on conventional embedded solutions is still very
+computationally and energy expensive. Tactile sensing in robotic applications is a representative
+example where real-time processing and energy-efficiency are required. Following a brain-inspired
+computing approach, we propose a new benchmark for spatio-temporal tactile pattern recognition
+at the edge through braille letters reading. We recorded a new braille letters dataset based on the
+capacitive tactile sensors/fingertip of the iCub robot, then we investigated the importance of
+temporal information and the impact of event-based encoding for spike-based/event-based computation.
+Afterwards, we trained and compared feed-forward and recurrent spiking neural networks (SNNs)
+offline using back-propagation through time with surrogate gradients, then we deployed them on
+the Intel Loihi neuromorphic chip for fast and efficient inference. We confronted our approach
+to standard classifiers, in particular to a Long Short-Term Memory (LSTM) deployed on the embedded
+Nvidia Jetson GPU in terms of classification accuracy, power/energy consumption and computational
+delay. Our results show that the LSTM outperforms the recurrent SNN in terms of accuracy by 14%. However,
+the recurrent SNN on Loihi is 237 times more energy-efficient than the LSTM on Jetson, requiring
+an average power of only 31mW. This work proposes a new benchmark for tactile sensing and highlights
+the challenges and opportunities of event-based encoding, neuromorphic hardware and spike-based
+computing for spatio-temporal pattern recognition at the edge. 

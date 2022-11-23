@@ -1,0 +1,20 @@
+Language constructs inspired by functional programming have made their way into most mainstream
+programming languages. Many researchers and developers consider that these constructs lead to
+programs that are more concise, reusable, and easier to understand. However, few studies investigate
+the implications of using them in mainstream programming languages. This paper quantifies the
+prevalence of four concepts typically associated with functional programming in JavaScript:
+recursion, immutability, lazy evaluation, and functions as values. We focus on JavaScript programs
+due to the availability of some of these concepts in the language since its inception, its inspiration
+from functional programming languages, and its popularity. We mine 91 GitHub repositories (22+
+million LOC) written mostly in JavaScript (over 50% of the code), measuring the usage of these concepts
+from both static and temporal perspectives. We also measure the likelihood of bug-fixing commits
+removing uses of these concepts (which would hint at bug-proneness) and their association with
+the presence of code comments (which would hint at code that is hard to understand). We find that these
+concepts are in widespread use (1 for every 46.65 LOC, 43.59% of LOC). In addition, the usage of higher-order
+functions, immutability, and lazy evaluation-related structures has been growing throughout
+the years for the analyzed projects, while the usage of recursion and callbacks & promises has decreased.
+We also find statistical evidence that removing these structures, with the exception of the ones
+associated to immutability, is less common in bug-fixing commits than in other commits. In addition,
+their presence is not correlated with comment size. Our findings suggest that functional programming
+concepts are important for developers using a multi-paradigm language, and their usage does not
+make programs harder to understand. 

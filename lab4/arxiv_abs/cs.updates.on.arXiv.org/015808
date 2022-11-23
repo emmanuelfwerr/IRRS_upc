@@ -1,0 +1,20 @@
+Mobile devices increasingly rely on object detection (OD) through deep neural networks (DNNs)
+to perform critical tasks. Due to their high complexity, the execution of these DNNs requires excessive
+time and energy. Low-complexity object tracking (OT) can be used with OD, where the latter is periodically
+applied to generate "fresh" references for tracking. However, the frames processed with OD incur
+large delays, which may make the reference outdated and degrade tracking quality. Herein, we propose
+to use edge computing in this context, and establish parallel OT (at the mobile device) and OD (at
+the edge server) processes that are resilient to large OD latency. We propose Katch-Up, a novel tracking
+mechanism that improves the system resilience to excessive OD delay. However, while Katch-Up significantly
+improves performance, it also increases the computing load of the mobile device. Hence, we design
+SmartDet, a low-complexity controller based on deep reinforcement learning (DRL) that learns
+controlling the trade-off between resource utilization and OD performance. SmartDet takes as
+input context-related information related to the current video content and the current network
+conditions to optimize frequency and type of OD offloading, as well as Katch-Up utilization. We
+extensively evaluate SmartDet on a real-world testbed composed of a JetSon Nano as mobile device
+and a GTX 980 Ti as edge server, connected through a Wi-Fi link. Experimental results show that SmartDet
+achieves an optimal balance between tracking performance - mean Average Recall (mAR) and resource
+usage. With respect to a baseline with full Katch-Upusage and maximum channel usage, we still increase
+mAR by 4% while using 50% less of the channel and 30% power resources associated with Katch-Up. With
+respect to a fixed strategy using minimal resources, we increase mAR by 20% while using Katch-Up
+on 1/3 of the frames. 

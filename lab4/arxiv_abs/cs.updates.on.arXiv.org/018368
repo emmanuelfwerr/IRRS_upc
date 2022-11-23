@@ -1,0 +1,20 @@
+In this paper, a novel data-driven approach named Augmented Imagefication for Fault detection
+(FD) of aircraft air data sensors (ADS) is proposed. Exemplifying the FD problem of aircraft air
+data sensors, an online FD scheme on edge device based on deep neural network (DNN) is developed.
+First, the aircraft inertial reference unit measurements is adopted as equivalent inputs, which
+is scalable to different aircraft/flight cases. Data associated with 6 different aircraft/flight
+conditions are collected to provide diversity (scalability) in the training/testing database.
+Then Augmented Imagefication is proposed for the DNN-based prediction of flying conditions. The
+raw data are reshaped as a grayscale image for convolutional operation, and the necessity of augmentation
+is analyzed and pointed out. Different kinds of augmented method, i.e. Flip, Repeat, Tile and their
+combinations are discussed, the result shows that the All Repeat operation in both axes of image
+matrix leads to the best performance of DNN. The interpretability of DNN is studied based on Grad-CAM,
+which provide a better understanding and further solidifies the robustness of DNN. Next the DNN
+model, VGG-16 with augmented imagefication data is optimized for mobile hardware deployment.
+After pruning of DNN, a lightweight model (98.79% smaller than original VGG-16) with high accuracy
+(slightly up by 0.27%) and fast speed (time delay is reduced by 87.54%) is obtained. And the hyperparameters
+optimization of DNN based on TPE is implemented and the best combination of hyperparameters is determined
+(learning rate 0.001, iterative epochs 600, and batch size 100 yields the highest accuracy at 0.987).
+Finally, a online FD deployment based on edge device, Jetson Nano, is developed and the real time
+monitoring of aircraft is achieved. We believe that this method is instructive for addressing the
+FD problems in other similar fields. 

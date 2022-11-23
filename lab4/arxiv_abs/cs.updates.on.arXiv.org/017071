@@ -1,0 +1,19 @@
+Photovoltaic and wind power forecasts in power systems with a high share of renewable energy are
+essential in several applications. These include stable grid operation, profitable power trading,
+and forward-looking system planning. However, there is a lack of publicly available datasets for
+research on machine learning based prediction methods. This paper provides an openly accessible
+time series dataset with realistic synthetic power data. Other publicly and non-publicly available
+datasets often lack precise geographic coordinates, timestamps, or static power plant information,
+e.g., to protect business secrets. On the opposite, this dataset provides these. The dataset comprises
+120 photovoltaic and 273 wind power plants with distinct sides all over Germany from 500 days in hourly
+resolution. This large number of available sides allows forecasting experiments to include spatial
+correlations and run experiments in transfer and multi-task learning. It includes side-specific,
+power source-dependent, non-synthetic input features from the ICON-EU weather model. A simulation
+of virtual power plants with physical models and actual meteorological measurements provides
+realistic synthetic power measurement time series. These time series correspond to the power output
+of virtual power plants at the location of the respective weather measurements. Since the synthetic
+time series are based exclusively on weather measurements, possible errors in the weather forecast
+are comparable to those in actual power data. In addition to the data description, we evaluate the
+quality of weather-prediction-based power forecasts by comparing simplified physical models
+and a machine learning model. This experiment shows that forecasts errors on the synthetic power
+data are comparable to real-world historical power measurements. 

@@ -1,0 +1,19 @@
+The presented study elaborates a multi-server catastrophic retrial queueing model considering
+preemptive repeat priority policy with phase-type (PH) distributed retrial times. For the sake
+of comprehension, the scenario of model operation prior and later to the occurrence of the disaster
+is referred to as the normal scenario and as the catastrophic scenario, respectively. In both scenarios,
+the arrival and service processes of all types of calls follow marked Markovian arrival process
+(MMAP) and PH distribution with distinct parameters, respectively. In the normal scenario, the
+incoming heterogeneous calls are categorized as handoff calls and new calls. An arriving new call
+will be blocked when all the channels are occupied, and consequently, will join the orbit (virtual
+space) of infinite capacity. From the orbit, the blocked new call can either retry for the service
+or exit the system following PH distribution. Whereas, an arriving handoff call is given preemptive
+repeat priority over a new call in service when all the channels are occupied and at least one of the
+channel is occupied with a new call otherwise the handoff call is dropped, and consequently, this
+preempted new call will join the orbit. In the catastrophic scenario, when a disaster causes the
+shut down of the entire system and failure of all functioning channels, a set of backup channels is
+quickly deployed to restore services. The Markov chain's ergodicity criteria are established
+by demonstrating that it belongs to the class of asymptotically quasi-Toeplitz Markov chains (AQTMC).
+For the approximate computation of the stationary distribution, a new approach is developed. An
+optimization problem to obtain optimal value of total number of backup channels has been formulated
+and dealt by employing non dominated sorting genetic algorithm-II (NSGA-II) approach. 

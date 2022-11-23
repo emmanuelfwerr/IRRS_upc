@@ -1,0 +1,18 @@
+Myocardial infarction (MI) is the leading cause of mortality in the world that occurs due to a blockage
+of the coronary arteries feeding the myocardium. An early diagnosis of MI and its localization can
+mitigate the extent of myocardial damage by facilitating early therapeutic interventions. Following
+the blockage of a coronary artery, the regional wall motion abnormality (RWMA) of the ischemic myocardial
+segments is the earliest change to set in. Echocardiography is the fundamental tool to assess any
+RWMA. Assessing the motion of the left ventricle (LV) wall only from a single echocardiography view
+may lead to missing the diagnosis of MI as the RWMA may not be visible on that specific view. Therefore,
+in this study, we propose to fuse apical 4-chamber (A4C) and apical 2-chamber (A2C) views in which
+a total of 12 myocardial segments can be analyzed for MI detection. The proposed method first estimates
+the motion of the LV wall by Active Polynomials (APs), which extract and track the endocardial boundary
+to compute myocardial segment displacements. The features are extracted from the A4C and A2C view
+displacements, which are concatenated and fed into the classifiers to detect MI. The main contributions
+of this study are 1) creation of a new benchmark dataset by including both A4C and A2C views in a total
+of 260 echocardiography recordings, which is publicly shared with the research community, 2) improving
+the performance of the prior work of threshold-based APs by a Machine Learning based approach, and
+3) a pioneer MI detection approach via multi-view echocardiography by fusing the information of
+A4C and A2C views. Experimental results show that the proposed method achieves 90.91% sensitivity
+and 86.36% precision for MI detection over multi-view echocardiography. 

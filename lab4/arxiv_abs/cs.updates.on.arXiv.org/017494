@@ -1,0 +1,19 @@
+Near-term quantum computers are noisy and have limited connectivity between qubits. Compilers
+are required to introduce SWAP operations in order to perform two-qubit gates between non-adjacent
+qubits. SWAPs increase the number of gates and depth of programs, making them even more vulnerable
+to errors. Moreover, they relocate qubits which affect SWAP selections for future gates in a program.
+Thus, compilers must select SWAP routes that not only minimize the overheads for the current operation,
+but also for future gates. Existing compilers tend to select paths with the fewest SWAPs for the current
+operations, but do not evaluate the impact of the relocations from the selected SWAP candidate on
+future SWAPs. Also, they converge on SWAP candidates for the current operation and only then decide
+SWAP routes for future gates, thus severely restricting the SWAP candidate search space for future
+operations. We propose ForeSight, a compiler that simultaneously evaluates multiple SWAP candidates
+for several operations into the future, delays SWAP selections to analyze their impact on future
+SWAP decisions and avoids early convergence on sub-optimal candidates. Moreover, ForeSight evaluates
+slightly longer SWAP routes for current operations if they have the potential to reduce SWAPs for
+future gates, thus reducing SWAPs for the program globally. As compilation proceeds, ForeSight
+dynamically adds new SWAP candidates to the solution space and eliminates the weaker ones. This
+allows ForeSight to reduce SWAP overheads at program-level while keeping the compilation complexity
+tractable. Our evaluations with a hundred benchmarks across three devices show that ForeSight
+reduces SWAP overheads by 17% on average and 81% in the best-case, compared to the baseline. ForeSight
+takes minutes, making it scalable to large programs. 

@@ -1,0 +1,20 @@
+Website fingerprinting attack (WFA) aims to deanonymize the website a user is visiting through
+anonymous networks channels (e.g., Tor). Despite of remarkable progress in the past years, most
+existing methods make implicitly a couple of artificial assumptions that (1) only a single website
+(i.e., single-tab) is visited each time, and (2) website fingerprinting data are pre-trimmed into
+a single trace per website manually. In reality, a user often open multiple tabs for multiple websites
+spontaneously. Indeed, this multi-tab WFA (MT-WFA) setting has been studied in a few recent works,
+but all of them still fail to fully respect the real-world situations. In particular, the overlapping
+challenge between website fingerprinting has never been investigated in depth. In this work, we
+redefine the problem of MT-WFA as detecting multiple monitored traces, given a natural untrimmed
+traffic data including monitored traces, unmonitored traces, and potentially unconstrained
+overlapping between them. This eliminates the above assumptions, going beyond the conventional
+single website fingerprint classification perspective taken by all previous WFA methods. To tackle
+this realistic MT-WFA problem, we formulate a novel Website Fingerprint Detection (WFD) model
+capable of detecting accurately the start and end points of all the monitored traces and classifying
+them jointly, given long, untrimmed raw traffic data. WFD is end-to-end, with the trace localization
+and website classification integrated in a single unified pipeline. To enable quantitative evaluation
+in our MT-WFA setting, we introduce new performance metrics. Extensive experiments on several
+newly constructed benchmarks show that our WFD outperforms the state-of-the-art alternative
+methods in both accuracy and efficiency by a large margin, even with a very small training set. Code
+is available at https://github.com/WFDetector/WFDetection 

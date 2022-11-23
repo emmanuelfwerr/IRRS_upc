@@ -1,0 +1,19 @@
+We propose Selective Multiple Power Iterations (SMPI), a new algorithm to address the important
+Tensor PCA problem that consists in recovering a spike $\bf{v_0}^{\otimes k}$ corrupted by a Gaussian
+noise tensor $\bf{Z} \in (\mathbb{R}^n)^{\otimes k}$ such that $\bf{T}=\sqrt{n} \beta \bf{v_0}^{\otimes
+k} + \bf{Z}$ where $\beta$ is the signal-to-noise ratio (SNR). SMPI consists in generating a polynomial
+number of random initializations, performing a polynomial number of symmetrized tensor power
+iterations on each initialization, then selecting the one that maximizes $\langle \bf{T}, \bf{v}^{\otimes
+k} \rangle$. Various numerical simulations for $k=3$ in the conventionally considered range $n
+\leq 1000$ show that the experimental performances of SMPI improve drastically upon existent algorithms
+and becomes comparable to the theoretical optimal recovery. We show that these unexpected performances
+are due to a powerful mechanism in which the noise plays a key role for the signal recovery and that
+takes place at low $\beta$. Furthermore, this mechanism results from five essential features of
+SMPI that distinguish it from previous algorithms based on power iteration. These remarkable results
+may have strong impact on both practical and theoretical applications of Tensor PCA. (i) We provide
+a variant of this algorithm to tackle low-rank CP tensor decomposition. These proposed algorithms
+also outperforms existent methods even on real data which shows a huge potential impact for practical
+applications. (ii) We present new theoretical insights on the behavior of SMPI and gradient descent
+methods for the optimization in high-dimensional non-convex landscapes that are present in various
+machine learning problems. (iii) We expect that these results may help the discussion concerning
+the existence of the conjectured statistical-algorithmic gap. 

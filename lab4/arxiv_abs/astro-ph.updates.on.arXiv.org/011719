@@ -1,0 +1,18 @@
+21cm tomography opens a window to directly study astrophysics and fundamental physics of early
+epochs in our Universe's history, the Epoch of Reionisation (EoR) and Cosmic Dawn (CD). Summary
+statistics such as the power spectrum omit information encoded in this signal due to its highly non-Gaussian
+nature. Here we adopt a network-based approach for direct inference of CD and EoR astrophysics jointly
+with fundamental physics from 21cm tomography. We showcase a warm dark matter (WDM) universe, where
+dark matter density parameter $\Omega_\mathrm{m}$ and WDM mass $m_\mathrm{WDM}$ strongly influence
+both CD and EoR. Reflecting the three-dimensional nature of 21cm light-cones, we present a new,
+albeit simple, 3D convolutional neural network for efficient parameter recovery at moderate training
+cost. On simulations we observe high-fidelity parameter recovery for CD and EoR astrophysics ($R^2>0.78-0.99$),
+together with DM density $\Omega_\mathrm{m}$ ($R^2>0.97$) and WDM mass ($R^2>0.61$, significantly
+better for $m_\mathrm{WDM}<3-4\,$keV). For realistic mock observed light-cones that include
+noise and foreground levels expected for the Square Kilometre Array, we note that in an optimistic
+foreground scenario parameter recovery is unaffected, while for moderate, less optimistic foreground
+levels (occupying the so-called wedge) the recovery of the WDM mass deteriorates, while other parameters
+remain robust against increased foreground levels at $R^2>0.9$. We further test the robustness
+of our network-based inference against modelling uncertainties and systematics by transfer learning
+between bare simulations and mock observations; we find robust recovery of specific X-ray luminosity
+and ionising efficiency, while DM density and WDM mass come with increased bias and scatter. 

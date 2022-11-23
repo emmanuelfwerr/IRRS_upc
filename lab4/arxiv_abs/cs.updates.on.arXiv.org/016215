@@ -1,0 +1,19 @@
+A knowledge graph (KG) consists of a set of interconnected typed entities and their attributes.
+Recently, KGs are popularly used as the auxiliary information to enable more accurate, explainable,
+and diverse user preference recommendations. Specifically, existing KG-based recommendation
+methods target modeling high-order relations/dependencies from long connectivity user-item
+interactions hidden in KG. However, most of them ignore the cold-start problems (i.e., user cold-start
+and item cold-start) of recommendation analytics, which restricts their performance in scenarios
+when involving new users or new items. Inspired by the success of meta-learning on scarce training
+samples, we propose a novel meta-learning based framework called MetaKG, which encompasses a collaborative-aware
+meta learner and a knowledge-aware meta learner, to capture meta users' preference and entities'
+knowledge for cold-start recommendations. The collaborative-aware meta learner aims to locally
+aggregate user preferences for each user preference learning task. In contrast, the knowledge-aware
+meta learner is to globally generalize knowledge representation across different user preference
+learning tasks. Guided by two meta learners, MetaKG can effectively capture the high-order collaborative
+relations and semantic representations, which could be easily adapted to cold-start scenarios.
+Besides, we devise a novel adaptive task scheduler which can adaptively select the informative
+tasks for meta learning in order to prevent the model from being corrupted by noisy tasks. Extensive
+experiments on various cold-start scenarios using three real data sets demonstrate that our presented
+MetaKG outperforms all the existing state-of-the-art competitors in terms of effectiveness,
+efficiency, and scalability. 

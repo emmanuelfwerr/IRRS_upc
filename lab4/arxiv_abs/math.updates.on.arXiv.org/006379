@@ -1,0 +1,19 @@
+Nitsche's method is a well-established approach for weak enforcement of boundary conditions for
+partial differential equations (PDEs). It has many desirable properties, including the preservation
+of variational consistency and the fact that it yields symmetric, positive-definite discrete
+linear systems that are not overly ill-conditioned. In recent years, the method has gained in popularity
+in a number of areas, including isogeometric analysis, immersed methods, and contact mechanics.
+However, arriving at a formulation based on Nitsche's method can be a mathematically arduous process,
+especially for high-order PDEs. Fortunately, the derivation is conceptually straightforward
+in the context of variational problems. To facilitate the process, we devised an abstract framework
+for constructing Nitsche's method for these types of problems in [J. Benzaken, J. A. Evans, S. McCormick,
+and R. Tamstorf, Nitsche's method for linear Kirchhoff-Love shells: Formulation, error analysis,
+and verification, Comput. Methods Appl. Mech. Eng., 374 (2021), p. 113544]. The goal of this paper
+is to elucidate the process through a sequence of didactic examples. First, we show the derivation
+of Nitsche's method for Poisson's equation to gain an intuition for the various steps. Next, we present
+the abstract framework and then revisit the derivation for Poisson's equation to use the framework
+and add mathematical rigor. In the process, we extend our derivation to cover the vector-valued
+setting. Armed with a basic recipe, we then show how to handle a higher-order problem by considering
+the vector-valued biharmonic equation and the linearized Kirchhoff-Love plate. In the end, the
+hope is that the reader will be able to apply Nitsche's method to any problem that arises from variational
+principles. 

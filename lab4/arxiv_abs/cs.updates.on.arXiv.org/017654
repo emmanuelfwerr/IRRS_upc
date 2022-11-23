@@ -1,0 +1,19 @@
+The progression of innovation and technology and ease of inter-connectivity among networks has
+allowed us to evolve towards one of the promising areas, the Internet of Vehicles. Nowadays, modern
+vehicles are connected to a range of networks, including intra-vehicle networks and external networks.
+However, a primary challenge in the automotive industry is to make the vehicle safe and reliable;
+particularly with the loopholes in the existing traditional protocols, cyber-attacks on the vehicle
+network are rising drastically. Practically every vehicle uses the universal Controller Area
+Network (CAN) bus protocol for the communication between electronic control units to transmit
+key vehicle functionality and messages related to driver safety. The CAN bus system, although its
+critical significance, lacks the key feature of any protocol authentication and authorization.
+Resulting in compromises of CAN bus security leads to serious issues to both car and driver safety.
+This paper discusses the security issues of the CAN bus protocol and proposes an Intrusion Detection
+System (IDS) that detects known attacks on in-vehicle networks. Multiple Artificial Intelligence
+(AI) algorithms are employed to provide recognition of known potential cyber-attacks based on
+messages, timestamps, and data packets traveling through the CAN. The main objective of this paper
+is to accurately detect cyberattacks by considering time-series features and attack frequency.
+The majority of the evaluated AI algorithms, when considering attack frequency, correctly identify
+known attacks with remarkable accuracy of more than 99%. However, these models achieve approximately
+92% to 97% accuracy when timestamps are not taken into account. Long Short Term Memory (LSTM), Xgboost,
+and SVC have proved to the well-performing classifiers. 

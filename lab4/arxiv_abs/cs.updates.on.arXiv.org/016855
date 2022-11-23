@@ -1,0 +1,20 @@
+Graph Neural Networks (GNNs) have become a prominent approach to machine learning with graphs and
+have been increasingly applied in a multitude of domains. Nevertheless, since most existing GNN
+models are based on flat message-passing mechanisms, two limitations need to be tackled: (i) they
+are costly in encoding long-range information spanning the graph structure; (ii) they are failing
+to encode features in the high-order neighbourhood in the graphs as they only perform information
+aggregation across the observed edges in the original graph. To deal with these two issues, we propose
+a novel Hierarchical Message-passing Graph Neural Networks framework. The key idea is generating
+a hierarchical structure that re-organises all nodes in a flat graph into multi-level super graphs,
+along with innovative intra- and inter-level propagation manners. The derived hierarchy creates
+shortcuts connecting far-away nodes so that informative long-range interactions can be efficiently
+accessed via message passing and incorporates meso- and macro-level semantics into the learned
+node representations. We present the first model to implement this framework, termed Hierarchical
+Community-aware Graph Neural Network (HC-GNN), with the assistance of a hierarchical community
+detection algorithm. The theoretical analysis illustrates HC-GNN's remarkable capacity in capturing
+long-range information without introducing heavy additional computation complexity. Empirical
+experiments conducted on 9 datasets under transductive, inductive, and few-shot settings exhibit
+that HC-GNN can outperform state-of-the-art GNN models in network analysis tasks, including node
+classification, link prediction, and community detection. Moreover, the model analysis further
+demonstrates HC-GNN's robustness facing graph sparsity and the flexibility in incorporating
+different GNN encoders. 

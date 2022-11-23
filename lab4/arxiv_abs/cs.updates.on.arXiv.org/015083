@@ -1,0 +1,19 @@
+Bipartite graphs are rich data structures with prevalent applications and identifier structural
+features. However, less is known about their growth patterns, particularly in streaming settings.
+Current works study the patterns of static or aggregated temporal graphs optimized for certain
+down-stream analytics or ignoring multipartite/non-stationary data distributions, emergence
+patterns of subgraphs, and streaming paradigms. To address these, we perform statistical network
+analysis over web log streams and identify the governing patterns underlying the bursty emergence
+of mesoscopic building blocks, 2,2-bicliques known as butterflies, leading to a phenomenon that
+we call "scale-invariant strength assortativity of streaming butterflies". We provide the graph-theoretic
+explanation of this phenomenon. We further introduce a set of micro-mechanics in the body of a streaming
+growth algorithm, sGrow, to pinpoint the generative origins. sGrow supports streaming paradigms,
+emergence of 4-vertex graphlets, and provides user-specified configurations for the scale, burstiness,
+level of strength assortativity, probability of out-of-order records, generation time, and time-sensitive
+connections. Comprehensive Evaluations on pattern reproducing and stress testing validate the
+effectiveness, efficiency, and robustness of sGrow in realization of the observed patterns independent
+of initial conditions, scale, temporal characteristics, and model configurations. Theoretical
+and experimental analysis verify the robust ability of sGrow in generating streaming graphs based
+on user-specified configurations that affect the scale and burstiness of the stream, level of strength
+assortativity, probability of-of-order streaming records, generation time, and time-sensitive
+connections. 

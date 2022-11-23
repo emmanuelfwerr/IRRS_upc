@@ -1,0 +1,19 @@
+Adaptive radiation therapy (ART) could protect organs at risk (OARs) while maintain high dose coverage
+to targets. However, there still lack efficient online patient QA methods. We aim to develop a clinically
+relevant online patient quality assurance (QA) solution for ART using daily CT scans and electronic
+portal imaging device (EPID)-based in vivo dosimetry. Ten patients with rectal cancer at our center
+were included. Patients' daily CT scans and portal images were collected to generate reconstructed
+3D dose distributions. Contours of targets and OARs were recontoured on these daily CT scans by a
+clinician or an auto-segmentation algorithm, then dose-volume indices were calculated, and the
+percent deviation of these indices to their original plans were determined. This deviation was
+regarded as the metric for clinically relevant patient QA. The tolerance level was obtained using
+a 95% interval of the QA metric distribution. These deviations could be further divided into anatomically
+relevant or delivery relevant indicators for error source analysis. Finally, our QA solution was
+validated on an additional six clinical patients. In rectal cancer, the lower and upper tolerance
+of the QA metric for PTV {\Delta}D95 (%) were [-3.11%, 2.35%], and for PTV {\Delta}D2 (%) were [-0.78%,
+3.23%]. In validation, the 68% for PTV {\Delta}D95 (%) and the 79% for PTV {\Delta}D2 ({%)of the 28
+fractions are within tolerances of the QA metrics. By using four or more out-of-tolerance QA metrics
+as an action level, there were 5 fractions (18%) have four or more out-of-tolerance QA metrics in
+validation patient dataset. The online patient QA solution using daily CT scans and EPID-based
+in vivo dosimetry is clinically feasible. Source of error analysis has the potential for distinguishing
+sources of error and guiding ART for future treatments. 

@@ -1,0 +1,20 @@
+We consider a continuum mathematical model of biological tissue formation inspired by recent experiments
+describing thin tissue growth in 3D-printed bioscaffolds. The continuum model involves a partial
+differential equation describing the density of tissue, $\hat{u}(\hat{\mathbf{x}},\hat{t})$,
+that is coupled to the concentration of an immobile extracellular substrate, $\hat{s}(\hat{\mathbf{x}},\hat{t})$.
+Cell migration is modelled with a nonlinear diffusion term, where the diffusive flux is proportional
+to $\hat{s}$, while a logistic growth term models cell proliferation. The extracellular substrate
+$\hat{s}$ is produced by cells, and undergoes linear decay. Preliminary numerical simulations
+show that this mathematical model, which we call the \textit{substrate model}, is able to recapitulate
+key features of recent tissue growth experiments, including the formation of sharp fronts. To provide
+a deeper understanding of the model we then analyse travelling wave solutions of the substrate model,
+showing that the model supports both sharp-fronted travelling wave solutions that move with a minimum
+wave speed, $c = c_{\rm{min}}$, as well as smooth-fronted travelling wave solutions that move with
+a faster travelling wave speed, $c > c_{\rm{min}}$. We provide a geometric interpretation that
+explains the difference between smooth- and sharp-fronted travelling wave solutions that is based
+on a slow manifold reduction of the desingularised three-dimensional phase space. In addition
+to exploring the nature of the smooth- and sharp-fronted travelling waves, we also develop and test
+a series of useful approximations that describe the shape of the travelling wave solutions in various
+limits. These approximations apply to both the sharp-fronted travelling wave solutions, and the
+smooth-fronted travelling wave solutions. Software to implement all calculations is available
+on GitHub. 

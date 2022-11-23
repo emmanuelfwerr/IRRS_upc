@@ -1,0 +1,19 @@
+We study the block-aware caching problem, a generalization of classic caching in which fetching
+(or evicting) pages from the same block incurs the same cost as fetching (or evicting) just one page
+from the block. Given a cache of size $k$, and a sequence of requests from $n$ pages partitioned into
+given blocks of size $\beta\leq k$, the goal is to minimize the total cost of fetching to (or evicting
+from) cache. We show the following results: $\bullet$ For the eviction cost model, we show an $O(\log
+k)$-approximate offline algorithm, a $k$-competitive deterministic online algorithm, and an
+$O(\log^2 k)$-competitive randomized online algorithm. $\bullet$ For the fetching cost model,
+we show an integrality gap of $\Omega(\beta)$ for the natural LP relaxation of the problem, and an
+$\Omega(\beta + \log k)$ lower bound for randomized online algorithms. The strategy of ignoring
+the block-structure and running a classical paging algorithm trivially achieves an $O(\beta)$
+approximation and an $O(\beta \log k)$ competitive ratio respectively for the offline and online-randomized
+setting. $\bullet$ For both fetching and eviction models, we show improved bounds for the $(h,k)$-bicriteria
+version of the problem. In particular, when $k=2h$, we match the performance of classical caching
+algorithms up to constant factors. Our results establish a separation between the tractability
+of the fetching and eviction cost models, which is interesting since fetching/evictions costs
+are the same up to an additive term for classic caching. Previous work only studied online deterministic
+algorithms for the fetching cost model when $k > h$. Our insight is to relax the block-aware caching
+problem to a submodular covering LP. The main technical challenge is to maintain a competitive fractional
+solution, and to round it with bounded loss, as the constraints of this LP are revealed online. 

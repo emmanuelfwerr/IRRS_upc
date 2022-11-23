@@ -1,0 +1,19 @@
+This paper considers the joint device activity detection and channel estimation problem in a massive
+Internet of Things (IoT) connectivity system, where a large number of IoT devices exist but merely
+a random subset of them become active for short-packet transmission in each coherence block. In
+particular, we propose to leverage the temporal correlation in device activity, e.g., a device
+active in the previous coherence block is more likely to be still active in the current coherence
+block, to improve the detection and estimation performance. However, it is challenging to utilize
+this temporal correlation as side information (SI), which relies on the knowledge about the exact
+statistical relation between the estimated activity pattern for the previous coherence block
+(which may be imperfect with unknown error) and the true activity pattern in the current coherence
+block. To tackle this challenge, we establish a novel SI-aided multiple measurement vector approximate
+message passing (MMV-AMP) framework. Specifically, thanks to the state evolution of the MMV-AMP
+algorithm, the correlation between the activity pattern estimated by the MMV-AMP algorithm in
+the previous coherence block and the real activity pattern in the current coherence block is quantified
+explicitly. Based on the well-defined temporal correlation, we further manage to embed this useful
+SI into the denoiser design under the MMV-AMP framework. Specifically, the SI-based soft-thresholding
+denoisers with binary thresholds and the SI-based minimum mean-squared error (MMSE) denoisers
+are characterized for the cases without and with the knowledge of the channel distribution, respectively.
+Numerical results are given to show the significant gain in device activity detection and channel
+estimation performance brought by our proposed SI-aided MMV-AMP framework. 

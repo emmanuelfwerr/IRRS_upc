@@ -1,0 +1,19 @@
+Optimal control is an essential tool for stabilizing complex nonlinear system. However, despite
+the extensive impacts of methods such as receding horizon control, dynamic programming and reinforcement
+learning, the design of cost functions for a particular system often remains a heuristic-driven
+process of trial and error. In this paper we seek to gain insights into how the choice of cost function
+interacts with the underlying structure of the control system and impacts the amount of computation
+required to obtain a stabilizing controller. We treat the cost design problem as a two-step process
+where the designer specifies outputs for the system that are to be penalized and then modulates the
+relative weighting of the inputs and the outputs in the cost. We then bound the length of the prediction
+horizon $T>0$ that is required for receding horizon control methods to stabilize the system as a
+concrete way of characterizing the computational difficulty of stabilizing the system using the
+chosen cost function. Drawing on insights from the `cheap control' literature, we investigate
+cases where the chosen outputs lead to minimumphase and non-minimumphase input-output dynamics.
+When the system is minimumphase, the prediction horizon needed to ensure stability can be made arbitrarily
+small by making the penalty on the control small enough. This indicates that choices of cost function
+which implicitly induce minimumphase behavior lead to an optimal control problem from which it
+is `easy' to obtain a stabilizing controller. Using these insights, we investigate empirically
+how the choice of cost function affects the ability of modern reinforcement learning algorithms
+to learn a stabilizing controller. Taken together, the results in this paper indicate that cost
+functions which induce non-minimum phase behavior lead to inherent computational difficulties.

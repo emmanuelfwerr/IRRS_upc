@@ -1,0 +1,19 @@
+In many application domains such as medicine, information retrieval, cybersecurity, social media,
+etc., datasets used for inducing classification models often have an unequal distribution of the
+instances of each class. This situation, known as imbalanced data classification, causes low predictive
+performance for the minority class examples. Thus, the prediction model is unreliable although
+the overall model accuracy can be acceptable. Oversampling and undersampling techniques are well-known
+strategies to deal with this problem by balancing the number of examples of each class. However,
+their effectiveness depends on several factors mainly related to data intrinsic characteristics,
+such as imbalance ratio, dataset size and dimensionality, overlapping between classes or borderline
+examples. In this work, the impact of these factors is analyzed through a comprehensive comparative
+study involving 40 datasets from different application areas. The objective is to obtain models
+for automatic selection of the best resampling strategy for any dataset based on its characteristics.
+These models allow us to check several factors simultaneously considering a wide range of values
+since they are induced from very varied datasets that cover a broad spectrum of conditions. This
+differs from most studies that focus on the individual analysis of the characteristics or cover
+a small range of values. In addition, the study encompasses both basic and advanced resampling strategies
+that are evaluated by means of eight different performance metrics, including new measures specifically
+designed for imbalanced data classification. The general nature of the proposal allows the choice
+of the most appropriate method regardless of the domain, avoiding the search for special purpose
+techniques that could be valid for the target data. 

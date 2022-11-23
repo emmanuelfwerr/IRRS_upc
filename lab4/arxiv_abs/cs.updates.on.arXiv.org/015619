@@ -1,0 +1,19 @@
+In recent years we have witnessed a dramatic increase in the adoption and application of smart contracts
+in a variety of contexts such as decentralized finance, supply chain management, and identity management.
+However, a critical stumbling block to the further adoption of smart contracts is their security.
+A particularly widespread class of security vulnerabilities that afflicts Ethereum smart contracts
+is the gas limit denial of service(DoS) on a contract via unbounded operations. These vulnerabilities
+result in a failed transaction with an out-of-gas error and are often present in contracts containing
+loops whose bounds are affected by end-user input. Note that such vulnerabilities differ from gas
+limit DoS on the network via block stuffing. Therefore, we present Gas Gauge, a tool aimed at detecting
+Out-of-Gas DoS vulnerabilities in Ethereum smart contracts. Gas Gauge consists of three major
+components: the Detection, Identification, and Correction Phases. The Detection Phase consists
+of an accurate static analysis approach that finds and summarizes all the loops in a smart contract.
+The Identification Phase uses a white-box fuzzing approach to generate a set of inputs that causes
+the contract to run out of gas. The Correction Phase uses static analysis and run-time verification
+to predict the maximum loop bounds consistent with allowable gas usage and suggest appropriate
+repairs to the user of the tool. Each part of the tool can be used separately for different purposes
+or all together to detect, identify and help repair the contracts vulnerable to Out-of-Gas DoS vulnerabilities.
+Gas Gauge was tested on 1,000 real-world solidity smart contracts deployed on the Ethereum Mainnet.
+The results were compared to seven state-of-the-art static and symbolic tools, and it was empirically
+demonstrated that Gas Gauge is far more effective than competing state-of-the-art tools. 

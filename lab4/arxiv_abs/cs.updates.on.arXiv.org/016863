@@ -1,0 +1,19 @@
+Randomized singular value decomposition (RSVD) is a class of computationally efficient algorithms
+for computing the truncated SVD of large data matrices. Given a $n \times n$ symmetric matrix $\mathbf{M}$,
+the prototypical RSVD algorithm outputs an approximation of the $k$ leading singular vectors of
+$\mathbf{M}$ by computing the SVD of $\mathbf{M}^{g} \mathbf{G}$; here $g \geq 1$ is an integer
+and $\mathbf{G} \in \mathbb{R}^{n \times k}$ is a random Gaussian sketching matrix. In this paper
+we study the statistical properties of RSVD under a general "signal-plus-noise" framework, i.e.,
+the observed matrix $\hat{\mathbf{M}}$ is assumed to be an additive perturbation of some true but
+unknown signal matrix $\mathbf{M}$. We first derive upper bounds for the $\ell_2$ (spectral norm)
+and $\ell_{2\to\infty}$ (maximum row-wise $\ell_2$ norm) distances between the approximate
+singular vectors of $\hat{\mathbf{M}}$ and the true singular vectors of the signal matrix $\mathbf{M}$.
+These upper bounds depend on the signal-to-noise ratio (SNR) and the number of power iterations
+$g$. A phase transition phenomenon is observed in which a smaller SNR requires larger values of $g$
+to guarantee convergence of the $\ell_2$ and $\ell_{2\to\infty}$ distances. We also show that
+the thresholds for $g$ where these phase transitions occur are sharp whenever the noise matrices
+satisfy a certain trace growth condition. Finally, we derive normal approximations for the row-wise
+fluctuations of the approximate singular vectors and the entrywise fluctuations of the approximate
+matrix. We illustrate our theoretical results by deriving nearly-optimal performance guarantees
+for RSVD when applied to three statistical inference problems, namely, community detection, matrix
+completion, and principal component analysis with missing data. 

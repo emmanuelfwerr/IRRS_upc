@@ -1,0 +1,20 @@
+3D point cloud registration is fragile to outliers, which are labeled as the points without corresponding
+points. To handle this problem, a widely adopted strategy is to estimate the relative pose based
+only on some accurate correspondences, which is achieved by building correspondences on the identified
+inliers or by selecting reliable ones. However, these approaches are usually complicated and time-consuming.
+By contrast, the virtual point-based methods learn the virtual corresponding points (VCPs) for
+all source points uniformly without distinguishing the outliers and the inliers. Although this
+strategy is time-efficient, the learned VCPs usually exhibit serious collapse degeneration due
+to insufficient supervision and the inherent distribution limitation. In this paper, we propose
+to exploit the best of both worlds and present a novel robust 3D point cloud registration framework.
+We follow the idea of the virtual point-based methods but learn a new type of virtual points called
+rectified virtual corresponding points (RCPs), which are defined as the point set with the same
+shape as the source and with the same pose as the target. Hence, a pair of consistent point clouds,
+i.e. source and RCPs, is formed by rectifying VCPs to RCPs (VRNet), through which reliable correspondences
+between source and RCPs can be accurately obtained. Since the relative pose between source and RCPs
+is the same as the relative pose between source and target, the input point clouds can be registered
+naturally. Specifically, we first construct the initial VCPs by using an estimated soft matching
+matrix to perform a weighted average on the target points. Then, we design a correction-walk module
+to learn an offset to rectify VCPs to RCPs, which effectively breaks the distribution limitation
+of VCPs. Finally, we develop a hybrid loss function to enforce the shape and geometry structure consistency
+... 

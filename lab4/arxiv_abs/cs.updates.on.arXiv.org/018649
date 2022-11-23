@@ -1,0 +1,19 @@
+Sequential recommendations have made great strides in accurately predicting the future behavior
+of users. However, persuading accuracy alone may bring side effects such as unfair and overspecialized
+recommendation results. In this work, we focus on the calibrated recommendations for sequential
+recommendation, which is connected to both fairness and diversity. On the one hand, it aims to provide
+fairer recommendations whose preference distributions are consistent with users' historical
+behaviors. On the other hand, it can improve the diversity of recommendations to a certain degree.
+But existing methods for calibration have mainly relied on the post-processing on the candidate
+lists, which require more computation time in generating recommendations. In addition, they normally
+sacrifice the accuracy to improve the calibration, because they fail to establish the relationship
+between accuracy and calibration. To handle these problems, we propose an end-to-end framework
+to provide both accurate and calibrated recommendations for sequential recommendation. We design
+an objective function to calibrate the interests between recommendation lists and historical
+behaviors. Therefore, the sequential recommendation model can be trained by accuracy and calibration
+simultaneously, and generate calibrated recommendations without the post-processing stage.
+Moreover, we design a decoupled-aggregated model to improve the recommendation. The framework
+assigns two objectives to two individual sequence encoders, and aggregates the outputs by extracting
+useful information. Experiments on two benchmark datasets demonstrate the ability of our model
+to provide accurate and calibrated recommendations. Meanwhile, our model requires less response
+time than post-processing-based models, which is more efficient. 

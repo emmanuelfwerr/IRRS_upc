@@ -1,0 +1,20 @@
+This study aims to identify the properties, advantages, and drawbacks of some common (and some less
+common) sub-grid scale (SGS) models for large eddy simulation of low Mach compressible flows using
+high order spectral elements. The models investigated are the classical constant coefficient
+Smagorinsky-Lilly, the model by Vreman and two variants of a dynamic SGS (DSGS) model designed to
+stabilize finite and spectral elements for transport dominated problems. In particular, we compare
+one variant of DSGS that is based on a time-dependent residual version (R-DSGS) in contrast to a time-independent
+residual based scheme (T-DSGS). The SGS models are compared against the reference model by Smagorinsky
+and Lilly for their ability to: (i) stabilize the numerical solution, (ii) minimize undershoots
+and overshoots, (iii) capture/preserve discontinuities, and (iv) transfer energy across different
+length scales. These abilities are investigated on problems for: (1) passively advected tracers,
+(2) coupled, nonlinear system of equations exhibiting discontinuities, (3) gravity-driven flows
+in a stratified atmosphere, and (4) homogenous, isotropic turbulence. All models were able to preserve
+sharp discontinuities. Vreman and the R-DSGS models also reduce the undershoots and overshoots
+in the solution of linear and non-linear advection with sharp gradients. Our analysis shows that
+the R-DSGS and T-DSGS models are more robust than Vreman and Smagorinsky-Lilly for numerical stabilization
+of high-order spectral methods. The Smagorinsky and Vreman models are better able to resolve the
+finer flow structures in shear flows, while the nodal R-DSGS model shows better energy conservation.
+Overall, the nodal implementation of R-DSGS (in contrast to its element-based counterpart) is
+shown to outperform the other SGS models in most metrics listed above, and on par with respect to the
+remaining ones. 

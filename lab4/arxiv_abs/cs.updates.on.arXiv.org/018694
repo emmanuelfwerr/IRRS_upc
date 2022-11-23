@@ -1,0 +1,19 @@
+During the radiotherapy treatment of patients with lung cancer, the radiation delivered to healthy
+tissue around the tumor needs to be minimized, which is difficult because of respiratory motion
+and the latency of linear accelerator systems. In the proposed study, we first use the Lucas-Kanade
+pyramidal optical flow algorithm to perform deformable image registration of chest computed tomography
+scan images of four patients with lung cancer. We then track three internal points close to the lung
+tumor based on the previously computed deformation field and predict their position with a recurrent
+neural network (RNN) trained using real-time recurrent learning (RTRL) and gradient clipping.
+The breathing data is quite regular, sampled at approximately 2.5Hz, and includes artificial drift
+in the spine direction. The amplitude of the motion of the tracked points ranged from 12.0mm to 22.7mm.
+Finally, we propose a simple method for recovering and predicting 3D tumor images from the tracked
+points and the initial tumor image based on a linear correspondence model and Nadaraya-Watson non-linear
+regression. The root-mean-square error, maximum error, and jitter corresponding to the RNN prediction
+on the test set were smaller than the same performance measures obtained with linear prediction
+and least mean squares (LMS). In particular, the maximum prediction error associated with the RNN,
+equal to 1.51mm, is respectively 16.1% and 5.0% lower than the maximum error associated with linear
+prediction and LMS. The average prediction time per time step with RTRL is equal to 119ms, which is
+less than the 400ms marker position sampling time. The tumor position in the predicted images appears
+visually correct, which is confirmed by the high mean cross-correlation between the original and
+predicted images, equal to 0.955. 

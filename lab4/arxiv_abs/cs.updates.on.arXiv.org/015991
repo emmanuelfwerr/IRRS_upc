@@ -1,0 +1,20 @@
+Small unmanned aircraft systems (sUAS) are becoming prominent components of many humanitarian
+assistance and disaster response (HADR) operations. Pairing sUAS with onboard artificial intelligence
+(AI) substantially extends their utility in covering larger areas with fewer support personnel.
+A variety of missions, such as search and rescue, assessing structural damage, and monitoring forest
+fires, floods, and chemical spills, can be supported simply by deploying the appropriate AI models.
+However, adoption by resource-constrained groups, such as local municipalities, regulatory
+agencies, and researchers, has been hampered by the lack of a cost-effective, readily-accessible
+baseline platform that can be adapted to their unique missions. To fill this gap, we have developed
+the free and open-source ADAPT multi-mission payload for deploying real-time AI and computer vision
+onboard a sUAS during local and beyond-line-of-site missions. We have emphasized a modular design
+with low-cost, readily-available components, open-source software, and thorough documentation
+(https://kitware.github.io/adapt/). The system integrates an inertial navigation system,
+high-resolution color camera, computer, and wireless downlink to process imagery and broadcast
+georegistered analytics back to a ground station. Our goal is to make it easy for the HADR community
+to build their own copies of the ADAPT payload and leverage the thousands of hours of engineering
+we have devoted to developing and testing. In this paper, we detail the development and testing of
+the ADAPT payload. We demonstrate the example mission of real-time, in-flight ice segmentation
+to monitor river ice state and provide timely predictions of catastrophic flooding events. We deploy
+a novel active learning workflow to annotate river ice imagery, train a real-time deep neural network
+for ice segmentation, and demonstrate operation in the field. 

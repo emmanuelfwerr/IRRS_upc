@@ -1,0 +1,19 @@
+Since spectrum below 6 GHz bands does not suffice to meet the high bandwidth requirements of 5G use
+cases, 5G networks expand their operation to mmWave bands with multi-GHz of available spectrum.
+However, operation at mmWave bands raises two challenges: high penetration loss and susceptibility
+to objects blocking the line-of-sight. As a remedy, transmitters point their antennas to their
+receivers using beamforming to contain the signal in the direction of the intended receiver. To
+avoid loss of connectivity due to blockers or other factors such as rain, users can be connected to
+multiple base stations (BS). While these two features, beamforming and multi-connectivity, can
+mitigate the challenges of mmWave bands, it is not trivial to find the optimal user association which
+can maintain the minimum rate requirements of the users. In this paper, we first formulate a throughput-maximizing
+user association scheme considering beamforming and multi-connectivity, and investigate the
+behavior of the optimal scheme to devise a simple, yet efficient heuristic that does not require
+global network information. Our proposal, dubbed beam-align, which only uses local information
+at a BS, performs close to the optimal in terms of per-user capacity and user satisfaction levels
+and has only polynomial complexity. Our numerical analysis shows that beam-align outperforms
+the frequently-used association schemes based on SNR. To investigate the performance of beam-align
+also under various challenging settings, we consider three scenarios: presence of blockers, different
+levels of rain intensity, and presence of clustered users. From simulations, we observe that beam-align
+is robust against different conditions, as it maintains a stable performance under the studied
+scenarios. 

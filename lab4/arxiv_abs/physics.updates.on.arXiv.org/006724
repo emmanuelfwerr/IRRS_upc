@@ -1,0 +1,19 @@
+Over recent decades, the value of conducting experiments at lower frequencies and in inhomogeneous
+and/or time-variable fields has grown. For example, an interest in the nanoscale heterogeneities
+of hydration dynamics demands increasingly sophisticated and automated measurements deploying
+Overhauser Dynamic Nuclear Polarization (ODNP) at low field. The development of these methods
+poses various challenges that drove us to develop a standardized alternative to the traditional
+schema for acquiring and analyzing coherence pathway information employed by the overwhelming
+majority of contemporary Nuclear Magnetic Resonance (NMR) research. Specifically, on well-tested,
+stable NMR systems running well-tested pulse sequences in highly optimized, homogeneous magnetic
+fields, traditional hardware and software quickly isolate a meaningful subset of data by averaging
+and discarding between 3/4 and 127/128 of the digitized data. In contrast, spurred by recent advances
+in the capabilities of open-source libraries, the domain colored coherence transfer (DCCT) schema
+implemented here builds on the long-extant concept of Fourier transformation along the pulse phase
+cycle domain to enable data visualization that more fully reflects the rich physics underlying
+these NMR experiments. In addition to discussing the outline and implementation of the general
+DCCT schema and associated plotting methods, this manuscript presents a collection of algorithms
+that provide robust phasing, avoidance of baseline distortion, and the ability to realize relatively
+weak signals amidst background noise through signal-averaged correlation alignment. The methods
+for visualizing the raw data, together with the processing routines whose development they guide
+should apply directly to or extend easily to other techniques facing similar challenges. 

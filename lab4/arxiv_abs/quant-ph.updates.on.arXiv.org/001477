@@ -1,0 +1,19 @@
+In this work we establish lower bounds on the size of Clifford circuits that measure a family of commuting
+Pauli operators. Our bounds depend on the interplay between a pair of graphs: the Tanner graph of
+the set of measured Pauli operators, and the connectivity graph which represents the qubit connections
+required to implement the circuit. For local-expander quantum codes, which are promising for low-overhead
+quantum error correction, we prove that any syndrome extraction circuit implemented with local
+Clifford gates in a 2D square patch of $N$ qubits has depth at least $\Omega(n/\sqrt{N})$ where $n$
+is the code length. Then, we propose two families of quantum circuits saturating this bound. First,
+we construct 2D local syndrome extraction circuits for quantum LDPC codes with bounded depth using
+only $O(n^2)$ ancilla qubits. Second, we design a family of 2D local syndrome extraction circuits
+for hypergraph product codes using $O(n)$ ancilla qubits with depth $O(\sqrt{n})$. Finally, we
+use circuit noise simulations to compare the performance of a family of hypergraph product codes
+using this last family of 2D syndrome extraction circuits with a syndrome extraction circuit implemented
+with fully connected qubits. While there is a threshold of about $10^{-3}$ for a fully connected
+implementation, we observe no threshold for the 2D local implementation despite simulating error
+rates of as low as $10^{-6}$. This suggests that quantum LDPC codes are impractical with 2D local
+quantum hardware. We believe that our proof technique is of independent interest and could find
+other applications. Our bounds on circuit sizes are derived from a lower bound on the amount of correlations
+between two subsets of qubits of the circuit and an upper bound on the amount of correlations introduced
+by each circuit gate, which together provide a lower bound on the circuit size. 

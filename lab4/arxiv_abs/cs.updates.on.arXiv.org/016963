@@ -1,0 +1,20 @@
+Learning from Demonstration (LfD) seeks to democratize robotics by enabling diverse end-users
+to teach robots to perform a task by providing demonstrations. However, most LfD techniques assume
+users provide optimal demonstrations. This is not always the case in real applications where users
+are likely to provide demonstrations of varying quality, that may change with expertise and other
+factors. Demonstration quality plays a crucial role in robot learning and generalization. Hence,
+it is important to quantify the quality of the provided demonstrations before using them for robot
+learning. In this paper, we propose quantifying the quality of the demonstrations based on how well
+they perform in the learned task. We hypothesize that task performance can give an indication of
+the generalization performance on similar tasks. The proposed approach is validated in a user study
+(N = 27). Users with different robotics expertise levels were recruited to teach a PR2 robot a generic
+task (pressing a button) under different task constraints. They taught the robot in two sessions
+on two different days to capture their teaching behaviour across sessions. The task performance
+was utilized to classify the provided demonstrations into high-quality and low-quality sets.
+The results show a significant Pearson correlation coefficient (R = 0.85, p < 0.0001) between the
+task performance and generalization performance across all participants. We also found that users
+clustered into two groups: Users who provided high-quality demonstrations from the first session,
+assigned to the fast-adapters group, and users who provided low-quality demonstrations in the
+first session and then improved with practice, assigned to the slow-adapters group. These results
+highlight the importance of quantifying demonstration quality, which can be indicative of the
+adaptation level of the user to the task. 

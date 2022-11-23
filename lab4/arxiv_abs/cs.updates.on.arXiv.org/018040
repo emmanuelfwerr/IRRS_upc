@@ -1,0 +1,20 @@
+Privacy regulations and the physical distribution of heterogeneous data are often primary concerns
+for the development of deep learning models in a medical context. This paper evaluates the feasibility
+of differentially private federated learning for chest X-ray classification as a defense against
+data privacy attacks. To the best of our knowledge, we are the first to directly compare the impact
+of differentially private training on two different neural network architectures, DenseNet121
+and ResNet50. Extending the federated learning environments previously analyzed in terms of privacy,
+we simulated a heterogeneous and imbalanced federated setting by distributing images from the
+public CheXpert and Mendeley chest X-ray datasets unevenly among 36 clients. Both non-private
+baseline models achieved an area under the receiver operating characteristic curve (AUC) of $0.94$
+on the binary classification task of detecting the presence of a medical finding. We demonstrate
+that both model architectures are vulnerable to privacy violation by applying image reconstruction
+attacks to local model updates from individual clients. The attack was particularly successful
+during later training stages. To mitigate the risk of privacy breach, we integrated R\'enyi differential
+privacy with a Gaussian noise mechanism into local model training. We evaluate model performance
+and attack vulnerability for privacy budgets $\epsilon \in$ {1, 3, 6, 10}. The DenseNet121 achieved
+the best utility-privacy trade-off with an AUC of $0.94$ for $\epsilon$ = 6. Model performance deteriorated
+slightly for individual clients compared to the non-private baseline. The ResNet50 only reached
+an AUC of $0.76$ in the same privacy setting. Its performance was inferior to that of the DenseNet121
+for all considered privacy constraints, suggesting that the DenseNet121 architecture is more
+robust to differentially private training. 

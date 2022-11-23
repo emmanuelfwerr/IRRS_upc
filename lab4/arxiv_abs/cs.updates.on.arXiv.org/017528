@@ -1,0 +1,19 @@
+Releasing all pairwise shortest path (APSP) distances between vertices on general graphs under
+weight Differential Privacy (DP) is known as a challenging task. In the previous attempt of (Sealfon
+2016}, by adding Laplace noise to each edge weight or to each output distance, to achieve DP with some
+fixed budget, with high probability the maximal absolute error among all published pairwise distances
+is roughly $O(n)$ where $n$ is the number of nodes. It was shown that this error could be reduced for
+some special graphs, which, however, is hard for general graphs. Therefore, whether the approximation
+error can be reduced to sublinear in $n$ is posted as an interesting open problem. We break the linear
+barrier on the distance approximation error of previous result, by proposing an algorithm that
+releases a constructed synthetic graph privately. Computing all pairwise distances on the constructed
+graph only introduces $\tilde O(n^{1/2})$ error in answering all pairwise shortest path distances
+for fixed privacy parameter. Our method is based on a novel graph diameter (link length) augmentation
+via constructing "shortcuts" for the paths. By adding a set of shortcut edges to the original graph,
+we show that any node pair has a shortest path with link length $\tilde O(n^{1/2})$. Then by adding
+noises with some positive mean to the edge weights, we show that the new graph is differentially private
+and can be published to answer all pairwise shortest path distances with $\tilde O(n^{1/2})$ approximation
+error using standard APSP computation. Additionally, we consider the graph with small feedback
+vertex set number. A feedback vertex set (FVS) of a graph is a set of vertices whose removal leaves
+a graph without cycles, and the feedback vertex set number of a graph, $k$, is the size of a smallest
+feedback vertex set. We propose a DP algorithm with error rate $\tilde O(k)$. 

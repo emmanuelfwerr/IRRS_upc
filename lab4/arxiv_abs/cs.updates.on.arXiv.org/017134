@@ -1,0 +1,19 @@
+State-of-the-art neural (re)rankers are notoriously data hungry which - given the lack of large-scale
+training data in languages other than English - makes them rarely used in multilingual and cross-lingual
+retrieval settings. Current approaches therefore typically transfer rankers trained on English
+data to other languages and cross-lingual setups by means of multilingual encoders: they fine-tune
+all the parameters of a pretrained massively multilingual Transformer (MMT, e.g., multilingual
+BERT) on English relevance judgments and then deploy it in the target language. In this work, we show
+that two parameter-efficient approaches to cross-lingual transfer, namely Sparse Fine-Tuning
+Masks (SFTMs) and Adapters, allow for a more lightweight and more effective zero-shot transfer
+to multilingual and cross-lingual retrieval tasks. We first train language adapters (or SFTMs)
+via Masked Language Modelling and then train retrieval (i.e., reranking) adapters (SFTMs) on top
+while keeping all other parameters fixed. At inference, this modular design allows us to compose
+the ranker by applying the task adapter (or SFTM) trained with source language data together with
+the language adapter (or SFTM) of a target language. Besides improved transfer performance, these
+two approaches offer faster ranker training, with only a fraction of parameters being updated compared
+to full MMT fine-tuning. We benchmark our models on the CLEF-2003 benchmark, showing that our parameter-efficient
+methods outperform standard zero-shot transfer with full MMT fine-tuning, while enabling modularity
+and reducing training times. Further, we show on the example of Swahili and Somali that, for low(er)-resource
+languages, our parameter-efficient neural re-rankers can improve the ranking of the competitive
+machine translation-based ranker. 

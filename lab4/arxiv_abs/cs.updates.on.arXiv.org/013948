@@ -1,0 +1,20 @@
+Graph neural networks (GNNs) have shown great power in modeling graph structured data. However,
+similar to other machine learning models, GNNs may make biased predictions w.r.t protected sensitive
+attributes, e.g., skin color and gender. This is because the training data often contains historical
+bias towards sensitive attributes. In addition, we empirically show that the discrimination in
+GNNs can be magnified by graph structures and the message-passing mechanism of GNNs. As a result,
+the applications of GNNs in high-stake domains such as crime rate prediction would be largely limited.
+Though extensive studies of fair classification have been conducted on i.i.d data, methods to address
+the problem of discrimination on non-i.i.d data are rather limited. Generally, learning fair models
+require abundant sensitive attributes to regularize the model. However, for many graphs such as
+social networks, users are reluctant to share sensitive attributes. Thus, only limited sensitive
+attributes are available for fair GNN training in practice. Moreover, directly collecting and
+applying the sensitive attributes in fair model training may cause privacy issues, because the
+sensitive information can be leaked in data breach or attacks on the trained model. Therefore, we
+study a novel and crucial problem of learning fair GNNs with limited and private sensitive attribute
+information. In an attempt to address these problems, FairGNN is proposed to eliminate the bias
+of GNNs whilst maintaining high accuracy by leveraging graph structures and limited sensitive
+information. We further extend FairGNN to NT-FairGNN which can achieve both fairness and privacy
+on sensitive attributes by using limited and private sensitive attributes. Theoretical analysis
+and extensive experiments on real-world datasets demonstrate the effectiveness of FairGNN and
+NT-FairGNN in achieving fair and high-accurate classification. 

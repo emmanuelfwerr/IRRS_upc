@@ -1,0 +1,20 @@
+Classical implementations of approximate Bayesian computation (ABC) employ summary statistics
+to measure the discrepancy among the observed data and the synthetic samples generated from each
+proposed value of the parameter of interest. However, finding effective summaries is challenging
+for most of the complex models for which ABC is required. This issue has motivated a growing literature
+on summary-free versions of ABC that leverage the discrepancy among the empirical distributions
+of the observed and synthetic data, rather than focusing on selected summaries. The effectiveness
+of these solutions has led to an increasing interest in the properties of the corresponding ABC posteriors,
+with a focus on concentration and robustness in asymptotic regimes. Although recent contributions
+have made key advancements, current theory mostly relies on existence arguments which are not immediate
+to verify and often yield bounds that are not readily interpretable, thus limiting the methodological
+implications of theoretical results. In this article we address such aspects by developing a novel
+unified and constructive framework, based on the concept of Rademacher complexity, to study concentration
+and robustness of ABC posteriors within the general class of integral probability semimetrics
+(IPS), that includes routinely-implemented discrepancies such as Wasserstein distance and MMD,
+and naturally extends classical summary-based ABC. For rejection ABC based on the IPS class, we
+prove that the theoretical properties of the ABC posterior in terms of concentration and robustness
+directly relate to the asymptotic behavior of the Rademacher complexity of the class of functions
+associated to each discrepancy. This result yields a novel understanding of the practical performance
+of ABC with specific discrepancies, as shown also in empirical studies, and allows to develop new
+theory guiding ABC calibration. 

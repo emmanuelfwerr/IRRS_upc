@@ -1,0 +1,19 @@
+Analog-to-digital converters (ADCs) allow physical signals to be processed using digital hardware.
+Their conversion consists of two stages: Sampling, which maps a continuous-time signal into discrete-time,
+and quantization, i.e., representing the continuous-amplitude quantities using a finite number
+of bits. ADCs typically implement generic uniform conversion mappings that are ignorant of the
+task for which the signal is acquired, and can be costly when operating in high rates and fine resolutions.
+In this work we design task-oriented ADCs which learn from data how to map an analog signal into a digital
+representation such that the system task can be efficiently carried out. We propose a model for sampling
+and quantization that facilitates the learning of non-uniform mappings from data. Based on this
+learnable ADC mapping, we present a mechanism for optimizing a hybrid acquisition system comprised
+of analog combining, tunable ADCs with fixed rates, and digital processing, by jointly learning
+its components end-to-end. Then, we show how one can exploit the representation of hybrid acquisition
+systems as deep network to optimize the sampling rate and quantization rate given the task by utilizing
+Bayesian meta-learning techniques. We evaluate the proposed deep task-based ADC in two case studies:
+the first considers symbol detection in multi-antenna digital receivers, where multiple analog
+signals are simultaneously acquired in order to recover a set of discrete information symbols.
+The second application is the beamforming of analog channel data acquired in ultrasound imaging.
+Our numerical results demonstrate that the proposed approach achieves performance which is comparable
+to operating with high sampling rates and fine resolution quantization, while operating with reduced
+overall bit rate. 

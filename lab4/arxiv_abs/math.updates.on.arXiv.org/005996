@@ -1,0 +1,19 @@
+Current state-of-the-art model-based reinforcement learning algorithms use trajectory sampling
+methods, such as the Cross-Entropy Method (CEM), for planning in continuous control settings.
+These zeroth-order optimizers require sampling a large number of trajectory rollouts to select
+an optimal action, which scales poorly for large prediction horizons or high dimensional action
+spaces. First-order methods that use the gradients of the rewards with respect to the actions as
+an update can mitigate this issue, but suffer from local optima due to the non-convex optimization
+landscape. To overcome these issues and achieve the best of both worlds, we propose a novel planner,
+Cross-Entropy Method with Gradient Descent (CEM-GD), that combines first-order methods with
+CEM. At the beginning of execution, CEM-GD uses CEM to sample a significant amount of trajectory
+rollouts to explore the optimization landscape and avoid poor local minima. It then uses the top
+trajectories as initialization for gradient descent and applies gradient updates to each of these
+trajectories to find the optimal action sequence. At each subsequent time step, however, CEM-GD
+samples much fewer trajectories from CEM before applying gradient updates. We show that as the dimensionality
+of the planning problem increases, CEM-GD maintains desirable performance with a constant small
+number of samples by using the gradient information, while avoiding local optima using initially
+well-sampled trajectories. Furthermore, CEM-GD achieves better performance than CEM on a variety
+of continuous control benchmarks in MuJoCo with 100x fewer samples per time step, resulting in around
+25% less computation time and 10% less memory usage. The implementation of CEM-GD is available at
+$\href{https://github.com/KevinHuang8/CEM-GD}{\text{https://github.com/KevinHuang8/CEM-GD}}$.

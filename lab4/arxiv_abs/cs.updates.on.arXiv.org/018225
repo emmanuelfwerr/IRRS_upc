@@ -1,0 +1,19 @@
+The farming industry constantly seeks the automation of different processes involved in agricultural
+production, such as sowing, harvesting and weed control. The use of mobile autonomous robots to
+perform those tasks is of great interest. Arable lands present hard challenges for Simultaneous
+Localization and Mapping (SLAM) systems, key for mobile robotics, given the visual difficulty
+due to the highly repetitive scene and the crop leaves movement caused by the wind. In recent years,
+several Visual-Inertial Odometry (VIO) and SLAM systems have been developed. They have proved
+to be robust and capable of achieving high accuracy in indoor and outdoor urban environments. However,
+they were not properly assessed in agricultural fields. In this work we assess the most relevant
+state-of-the-art VIO systems in terms of accuracy and processing time on arable lands in order to
+better understand how they behave on these environments. In particular, the evaluation is carried
+out on a collection of sensor data recorded by our wheeled robot in a soybean field, which was publicly
+released as the Rosario Dataset. The evaluation shows that the highly repetitive appearance of
+the environment, the strong vibration produced by the rough terrain and the movement of the leaves
+caused by the wind, expose the limitations of the current state-of-the-art VIO and SLAM systems.
+We analyze the systems failures and highlight the observed drawbacks, including initialization
+failures, tracking loss and sensitivity to IMU saturation. Finally, we conclude that even though
+certain systems like ORB-SLAM3 and S-MSCKF show good results with respect to others, more improvements
+should be done to make them reliable in agricultural fields for certain applications such as soil
+tillage of crop rows and pesticide spraying. 

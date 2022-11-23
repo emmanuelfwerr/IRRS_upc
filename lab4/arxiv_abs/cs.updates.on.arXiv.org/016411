@@ -1,0 +1,19 @@
+Motor imagery (MI) is a common brain computer interface (BCI) paradigm. EEG is non-stationary with
+low signal-to-noise, classifying motor imagery tasks of the same participant from different EEG
+recording sessions is generally challenging, as EEG data distribution may vary tremendously among
+different acquisition sessions. Although it is intuitive to consider the cross-session MI classification
+as a domain adaptation problem, the rationale and feasible approach is not elucidated. In this paper,
+we propose a Siamese deep domain adaptation (SDDA) framework for cross-session MI classification
+based on mathematical models in domain adaptation theory. The proposed framework can be easily
+applied to most existing artificial neural networks without altering the network structure, which
+facilitates our method with great flexibility and transferability. In the proposed framework,
+domain invariants were firstly constructed jointly with channel normalization and Euclidean
+alignment. Then, embedding features from source and target domain were mapped into the Reproducing
+Kernel Hilbert Space (RKHS) and aligned accordingly. A cosine-based center loss was also integrated
+into the framework to improve the generalizability of the SDDA. The proposed framework was validated
+with two classic and popular convolutional neural networks from BCI research field (EEGNet and
+ConvNet) in two MI-EEG public datasets (BCI Competition IV IIA, IIB). Compared to the vanilla EEGNet
+and ConvNet, the proposed SDDA framework was able to boost the MI classification accuracy by 15.2%,
+10.2% respectively in IIA dataset, and 5.5%, 4.2% in IIB dataset. The final MI classification accuracy
+reached 82.01% in IIA dataset and 87.52% in IIB, which outperformed the state-of-the-art methods
+in the literature. 

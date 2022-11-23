@@ -1,0 +1,19 @@
+The Flux Rope in 3D (FRi3D, Isavnin, 2016), a coronal mass ejection (CME) model with global three-dimensional
+(3D) geometry, has been implemented in the space weather forecasting tool EUHFORIA (Pomoell and
+Poedts, 2018). By incorporating this advanced flux rope model in EUHFORIA, we aim to improve the
+modelling of CME flank encounters and, most importantly, the magnetic field predictions at Earth.
+After using synthetic events to showcase FRi3D's capabilities of modelling CME flanks, we optimize
+the model to run robust simulations of real events and test its predictive capabilities. We perform
+observation-based modelling of the halo CME event that erupted on 12 July 2012. The geometrical
+input parameters are constrained using the forward modelling tool included in FRi3D with additional
+flux rope geometry flexibilities as compared to the pre-existing models. The magnetic field input
+parameters are derived using the differential evolution algorithm to fit FRi3D parameters to the
+in situ data at 1 AU. An observation-based approach to constrain the density of CMEs is adopted, in
+order to achieve a better estimation of mass corresponding to the FRi3D geometry. The CME is evolved
+in EUHFORIA's heliospheric domain and a comparison of FRi3D's predictive performance with the
+previously implemented spheromak CME in EUHFORIA is presented. For this event, FRi3D improves
+the modelling of the total magnetic field magnitude and Bz at Earth by ~30% and ~70%, respectively.
+Moreover, we compute the expected geoeffectiveness of the storm at Earth using an empirical Dst
+model and find that the FRi3D model improves the predictions of minimum Dst by ~20% as compared to
+the spheromak CME model. Finally, we discuss the limitations of the current implementation of FRi3D
+in EUHFORIA and propose possible improvements. 

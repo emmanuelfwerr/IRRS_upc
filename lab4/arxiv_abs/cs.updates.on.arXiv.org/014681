@@ -1,0 +1,20 @@
+Python has become a dominant programming language for emerging areas like Machine Learning (ML),
+Deep Learning (DL), and Data Science (DS). An attractive feature of Python is that it provides easy-to-use
+programming interface while allowing library developers to enhance performance of their applications
+by harnessing the computing power offered by High Performance Computing (HPC) platforms. Efficient
+communication is key to scaling applications on parallel systems, which is typically enabled by
+the Message Passing Interface (MPI) standard and compliant libraries on HPC hardware. mpi4py is
+a Python-based communication library that provides an MPI-like interface for Python applications
+allowing application developers to utilize parallel processing elements including GPUs. However,
+there is currently no benchmark suite to evaluate communication performance of mpi4py -- and Python
+MPI codes in general -- on modern HPC systems. In order to bridge this gap, we propose OMB-Py -- Python
+extensions to the open-source OSU Micro-Benchmark (OMB) suite -- aimed to evaluate communication
+performance of MPI-based parallel applications in Python. To the best of our knowledge, OMB-Py
+is the first communication benchmark suite for parallel Python applications. OMB-Py consists
+of a variety of point-to-point and collective communication benchmark tests that are implemented
+for a range of popular Python libraries including NumPy, CuPy, Numba, and PyCUDA. We also provide
+Python implementation for several distributed ML algorithms as benchmarks to understand the potential
+gain in performance for ML/DL workloads. Our evaluation reveals that mpi4py introduces a small
+overhead when compared to native MPI libraries. We also evaluate the ML/DL workloads and report
+up to 106x speedup on 224 CPU cores compared to sequential execution. We plan to publicly release
+OMB-Py to benefit Python HPC community. 

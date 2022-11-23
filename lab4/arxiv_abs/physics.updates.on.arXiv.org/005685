@@ -1,0 +1,20 @@
+We recently derived the unified continuum and variational multiscale formulation for fluid-structure
+interaction (FSI) using the Gibbs free energy. Restricting our attention to vascular FSI, we now
+reduce this arbitrary Lagrangian-Eulerian (ALE) formulation by adopting three assumptions for
+the vascular wall. The resulting reduced unified continuum formulation achieves monolithic FSI
+coupling in the Eulerian frame through a simple modification of the fluid boundary integral. While
+ostensibly similar to the semi-discrete formulation of the coupled momentum method, its underlying
+derivation does not rely on an assumption of a fictitious body force in the elastodynamics sub-problem
+and therefore represents a direct simplification of the ALE method. Uniform temporal discretization
+is performed via the generalized-$\alpha$ scheme. In contrast to the predominant approach yielding
+only first-order accuracy for pressure, we collocate both pressure and velocity at the intermediate
+time step to achieve uniform second-order temporal accuracy. In conjunction with quadratic tetrahedral
+elements, our methodology offers higher-order temporal and spatial accuracy for quantities of
+clinical interest. Furthermore, without loss of consistency, a segregated predictor multi-corrector
+algorithm is developed to preserve the same block structure as for the incompressible Navier-Stokes
+equations in the implicit solver's associated linear system. Block preconditioning of a monolithically
+coupled FSI system is therefore made possible for the first time. Compared to alternative preconditioners,
+our three-level nested block preconditioner, which improves representation of the Schur complement,
+demonstrates robust performance over a wide range of physical parameters. We present verification
+against Womersley's deformable wall theory and additionally develop practical modeling techniques
+for clinical applications. 

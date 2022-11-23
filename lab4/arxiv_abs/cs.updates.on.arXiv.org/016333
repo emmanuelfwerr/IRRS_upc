@@ -1,0 +1,19 @@
+Recent state-of-the-art one-stage instance segmentation model SOLO divides the input image into
+a grid and directly predicts per grid cell object masks with fully-convolutional networks, yielding
+comparably good performance as traditional two-stage Mask R-CNN yet enjoying much simpler architecture
+and higher efficiency. We observe SOLO generates similar masks for an object at nearby grid cells,
+and these neighboring predictions can complement each other as some may better segment certain
+object part, most of which are however directly discarded by non-maximum-suppression. Motivated
+by the observed gap, we develop a novel learning-based aggregation method that improves upon SOLO
+by leveraging the rich neighboring information while maintaining the architectural efficiency.
+The resulting model is named SODAR. Unlike the original per grid cell object masks, SODAR is implicitly
+supervised to learn mask representations that encode geometric structure of nearby objects and
+complement adjacent representations with context. The aggregation method further includes two
+novel designs: 1) a mask interpolation mechanism that enables the model to generate much fewer mask
+representations by sharing neighboring representations among nearby grid cells, and thus saves
+computation and memory; 2) a deformable neighbour sampling mechanism that allows the model to adaptively
+adjust neighbor sampling locations thus gathering mask representations with more relevant context
+and achieving higher performance. SODAR significantly improves the instance segmentation performance,
+e.g., it outperforms a SOLO model with ResNet-101 backbone by 2.2 AP on COCO \texttt{test} set, with
+only about 3\% additional computation. We further show consistent performance gain with the SOLOv2
+model. 

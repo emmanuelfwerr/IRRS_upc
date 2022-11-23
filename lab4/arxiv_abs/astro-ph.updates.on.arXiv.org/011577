@@ -1,0 +1,18 @@
+Matter power spectra emulators, such as the Euclid Emulator and CosmicEmu, are trained on simulations
+to correct the non-linear part of the power spectrum. Map-based analyses retrieve additional non-Gaussian
+information from the density field, whether through human-designed statistics such as peak counts,
+or via machine learning methods such as convolutional neural networks. The simulations required
+for these methods are very resource-intensive, both in terms of computing time and storage. Map-level
+density field emulators, based on deep generative models, have recently been proposed to address
+these challenges. In this work, we present a novel mass map emulator of the KiDS-1000 survey footprint,
+which generates noise-free spherical maps in a fraction of a second. It takes a set of cosmological
+parameters $(\Omega_M, \sigma_8)$ as input and produces a consistent set of 5 maps, corresponding
+to the KiDS-1000 tomographic redshift bins. To construct the emulator, we use a conditional generative
+adversarial network architecture and the spherical convolutional neural network $\texttt{DeepSphere}$,
+and train it on N-body-simulated mass maps. We compare its performance using an array of quantitative
+comparison metrics: angular power spectra $C_\ell$, pixel/peaks distributions, $C_\ell$ correlation
+matrices, and Structural Similarity Index. Overall, the agreement on these summary statistics
+is $<10\%$ for the cosmologies at the centre of the simulation grid, and degrades slightly on grid
+edges. Finally, we perform a mock cosmological parameter estimation using the emulator and the
+original simulation set. We find a good agreement in these constraints, for both likelihood and
+likelihood-free approaches. The emulator is available at https://tfhub.dev/cosmo-group-ethz/models/kids-cgan/1.

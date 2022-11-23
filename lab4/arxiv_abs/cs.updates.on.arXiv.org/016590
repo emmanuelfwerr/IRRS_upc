@@ -1,0 +1,18 @@
+This paper studies a sequential task offloading problem for a multiuser mobile edge computing (MEC)
+system. We consider a dynamic optimization approach, which embraces wireless channel fluctuations
+and random deep neural network (DNN) task arrivals over an infinite horizon. Specifically, we introduce
+a local CPU workload queue (WD-QSI) and an MEC server workload queue (MEC-QSI) to model the dynamic
+workload of DNN tasks at each WD and the MEC server, respectively. The transmit power and the partitioning
+of the local DNN task at each WD are dynamically determined based on the instantaneous channel conditions
+(to capture the transmission opportunities) and the instantaneous WD-QSI and MEC-QSI (to capture
+the dynamic urgency of the tasks) to minimize the average latency of the DNN tasks. The joint optimization
+can be formulated as an ergodic Markov decision process (MDP), in which the optimality condition
+is characterized by a centralized Bellman equation. However, the brute force solution of the MDP
+is not viable due to the curse of dimensionality as well as the requirement for knowledge of the global
+state information. To overcome these issues, we first decompose the MDP into multiple lower dimensional
+sub-MDPs, each of which can be associated with a WD or the MEC server. Next, we further develop a parametric
+online Q-learning algorithm, so that each sub-MDP is solved locally at its associated WD or the MEC
+server. The proposed solution is completely decentralized in the sense that the transmit power
+for sequential offloading and the DNN task partitioning can be determined based on the local channel
+state information (CSI) and the local WD-QSI at the WD only. Additionally, no prior knowledge of
+the distribution of the DNN task arrivals or the channel statistics will be needed for the MEC server.

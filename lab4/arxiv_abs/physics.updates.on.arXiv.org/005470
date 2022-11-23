@@ -1,0 +1,19 @@
+A 3D deep learning model (OARnet) is developed and used to delineate 28 H&N OARs on CT images. OARnet
+utilizes a densely connected network to detect the OAR bounding-box, then delineates the OAR within
+the box. It reuses information from any layer to subsequent layers and uses skip connections to combine
+information from different dense block levels to progressively improve delineation accuracy.
+Training uses up to 28 expert manual delineated (MD) OARs from 165 CTs. Dice similarity coefficient
+(DSC) and the 95th percentile Hausdorff distance (HD95) with respect to MD is assessed for 70 other
+CTs. Mean, maximum, and root-mean-square dose differences with respect to MD are assessed for 56
+of the 70 CTs. OARnet is compared with UaNet, AnatomyNet, and Multi-Atlas Segmentation (MAS). Wilcoxon
+signed-rank tests using 95% confidence intervals are used to assess significance. Wilcoxon signed
+ranked tests show that, compared with UaNet, OARnet improves (p<0.05) the DSC (23/28 OARs) and HD95
+(17/28). OARnet outperforms both AnatomyNet and MAS for DSC (28/28) and HD95 (27/28). Compared
+with UaNet, OARnet improves median DSC up to 0.05 and HD95 up to 1.5mm. Compared with AnatomyNet and
+MAS, OARnet improves median (DSC, HD95) by up to (0.08, 2.7mm) and (0.17, 6.3mm). Dosimetrically,
+OARnet outperforms UaNet (Dmax 7/28; Dmean 10/28), AnatomyNet (Dmax 21/28; Dmean 24/28), and MAS
+(Dmax 22/28; Dmean 21/28). The DenseNet architecture is optimized using a hybrid approach that
+performs OAR-specific bounding box detection followed by feature recognition. Compared with
+other auto-delineation methods, OARnet is better than or equal to UaNet for all but one geometric
+(Temporal Lobe L, HD95) and one dosimetric (Eye L, mean dose) endpoint for the 28 H&N OARs, and is better
+than or equal to both AnatomyNet and MAS for all OARs. 

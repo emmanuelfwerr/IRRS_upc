@@ -1,0 +1,20 @@
+In step with the digitalization of transportation, we are witnessing a growing range of path-based
+smart-city applications, e.g., travel-time estimation and travel path ranking. A temporal path~(TP)
+that includes temporal information, e.g., departure time, into the path is of fundamental to enable
+such applications. In this setting, it is essential to learn generic temporal path representations~(TPRs)
+that consider spatial and temporal correlations simultaneously and that can be used in different
+applications, i.e., downstream tasks. Existing methods fail to achieve the goal since (i) supervised
+methods require large amounts of task-specific labels when training and thus fail to generalize
+the obtained TPRs to other tasks; (ii) though unsupervised methods can learn generic representations,
+they disregard the temporal aspect, leading to sub-optimal results. To contend with the limitations
+of existing solutions, we propose a Weakly-Supervised Contrastive (WSC) learning model. We first
+propose a temporal path encoder that encodes both the spatial and temporal information of a temporal
+path into a TPR. To train the encoder, we introduce weak labels that are easy and inexpensive to obtain,
+and are relevant to different tasks, e.g., temporal labels indicating peak vs. off-peak hour from
+departure times. Based on the weak labels, we construct meaningful positive and negative temporal
+path samples by considering both spatial and temporal information, which facilities training
+the encoder using contrastive learning by pulling closer the positive samples' representations
+while pushing away the negative samples' representations. To better guide the contrastive learning,
+we propose a learning strategy based on Curriculum Learning such that the learning performs from
+easy to hard training instances. Experiments studies verify the effectiveness of the proposed
+method. 

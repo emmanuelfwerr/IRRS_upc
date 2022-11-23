@@ -1,0 +1,20 @@
+Motivated by the seemingly high accuracy levels of machine learning models in Moldavian versus
+Romanian dialect identification and the increasing research interest on this topic, we provide
+a follow-up on the Moldavian versus Romanian Cross-Dialect Topic Identification (MRC) shared
+task of the VarDial 2019 Evaluation Campaign. The shared task included two sub-task types: one that
+consisted in discriminating between the Moldavian and Romanian dialects and one that consisted
+in classifying documents by topic across the two dialects of Romanian. Participants achieved impressive
+scores, e.g. the top model for Moldavian versus Romanian dialect identification obtained a macro
+F1 score of 0.895. We conduct a subjective evaluation by human annotators, showing that humans attain
+much lower accuracy rates compared to machine learning (ML) models. Hence, it remains unclear why
+the methods proposed by participants attain such high accuracy rates. Our goal is to understand
+(i) why the proposed methods work so well (by visualizing the discriminative features) and (ii)
+to what extent these methods can keep their high accuracy levels, e.g. when we shorten the text samples
+to single sentences or when we use tweets at inference time. A secondary goal of our work is to propose
+an improved ML model using ensemble learning. Our experiments show that ML models can accurately
+identify the dialects, even at the sentence level and across different domains (news articles versus
+tweets). We also analyze the most discriminative features of the best performing models, providing
+some explanations behind the decisions taken by these models. Interestingly, we learn new dialectal
+patterns previously unknown to us or to our human annotators. Furthermore, we conduct experiments
+showing that the machine learning performance on the MRC shared task can be improved through an ensemble
+based on stacking. 

@@ -1,0 +1,20 @@
+Computer-assisted systems are becoming broadly used in medicine. In endoscopy, most research
+focuses on automatic detection of polyps or other pathologies, but localization and navigation
+of the endoscope is completely performed manually by physicians. To broaden this research and bring
+spatial Artificial Intelligence to endoscopies, data from complete procedures are needed. This
+data will be used to build a 3D mapping and localization systems that can perform special task like,
+for example, detect blind zones during exploration, provide automatic polyp measurements, guide
+doctors to a polyp found in a previous exploration and retrieve previous images of the same area aligning
+them for easy comparison. These systems will provide an improvement in the quality and precision
+of the procedures while lowering the burden on the physicians. This paper introduces the Endomapper
+dataset, the first collection of complete endoscopy sequences acquired during regular medical
+practice, including slow and careful screening explorations, making secondary use of medical
+data. Its original purpose is to facilitate the development and evaluation of VSLAM (Visual Simultaneous
+Localization and Mapping) methods in real endoscopy data. The first release of the dataset is composed
+of 59 sequences with more than 15 hours of video. It is also the first endoscopic dataset that includes
+both the computed geometric and photometric endoscope calibration with the original calibration
+videos. Meta-data and annotations associated to the dataset varies from anatomical landmark and
+description of the procedure labeling, tools segmentation masks, COLMAP 3D reconstructions,
+simulated sequences with groundtruth and meta-data related to special cases, such as sequences
+from the same patient. This information will improve the research in endoscopic VSLAM, as well as
+other research lines, and create new research lines. 

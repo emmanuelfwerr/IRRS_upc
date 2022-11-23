@@ -1,0 +1,19 @@
+Annotation noise is widespread in datasets, but manually revising a flawed corpus is time-consuming
+and error-prone. Hence, given the prior knowledge in Pre-trained Language Models and the expected
+uniformity across all annotations, we attempt to reduce annotation noise in the corpus through
+two tasks automatically: (1) Annotation Inconsistency Detection that indicates the credibility
+of annotations, and (2) Annotation Error Correction that rectifies the abnormal annotations.
+We investigate how to acquire semantic sensitive annotation representations from Pre-trained
+Language Models, expecting to embed the examples with identical annotations to the mutually adjacent
+positions even without fine-tuning. We proposed a novel credibility score to reveal the likelihood
+of annotation inconsistencies based on the neighbouring consistency. Then, we fine-tune the Pre-trained
+Language Models based classifier with cross-validation for annotation correction. The annotation
+corrector is further elaborated with two approaches: (1) soft labelling by Kernel Density Estimation
+and (2) a novel distant-peer contrastive loss. We study the re-annotation in relation extraction
+and create a new manually revised dataset, Re-DocRED, for evaluating document-level re-annotation.
+The proposed credibility scores show promising agreement with human revisions, achieving a Binary
+F1 of 93.4 and 72.5 in detecting inconsistencies on TACRED and DocRED respectively. Moreover, the
+neighbour-aware classifiers based on distant-peer contrastive learning and uncertain labels
+achieve Macro F1 up to 66.2 and 57.8 in correcting annotations on TACRED and DocRED respectively.
+These improvements are not merely theoretical: Rather, automatically denoised training sets
+demonstrate up to 3.6% performance improvement for state-of-the-art relation extraction models.

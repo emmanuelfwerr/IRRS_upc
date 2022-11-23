@@ -1,0 +1,19 @@
+Automatic code review (ACR), which can relieve the costs of manual inspection, is an indispensable
+and essential task in software engineering. To deal with ACR, existing work is to serialize the abstract
+syntax tree (AST). However, making sense of the whole AST with sequence encoding approach is a daunting
+task, mostly due to some redundant nodes in AST hinder the transmission of node information. Not
+to mention that the serialized representation is inadequate to grasp the information of tree structure
+in AST. In this paper, we first present a new large-scale Apache Automatic Code Review (AACR) dataset
+for ACR task since there is still no publicly available dataset in this task. The release of this dataset
+would push forward the research in this field. Based on it, we propose a novel Simplified AST based
+Graph Convolutional Network (SimAST-GCN) to deal with ACR task. Concretely, to improve the efficiency
+of node information dissemination, we first simplify the AST of code by deleting the redundant nodes
+that do not contain connection attributes, and thus deriving a Simplified AST. Then, we construct
+a relation graph for each code based on the Simplified AST to properly embody the relations among
+code fragments of the tree structure into the graph. Subsequently, in the light of the merit of graph
+structure, we explore a graph convolution networks architecture that follows an attention mechanism
+to leverage the crucial implications of code fragments to derive code representations. Finally,
+we exploit a simple but effective subtraction operation in the representations between the original
+and revised code, enabling the revised difference to be preferably learned for deciding the results
+of ACR. Experimental results on the AACR dataset illustrate that our proposed model outperforms
+the state-of-the-art methods. 

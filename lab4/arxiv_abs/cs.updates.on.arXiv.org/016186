@@ -1,0 +1,18 @@
+Risk-limiting audits or RLAs are rigorous statistical procedures meant to detect invalid election
+results. In general, they call for an examination of paper ballots cast during the election to statistically
+assess potential disagreements between the winner determined by the ballots and the winner reported
+by tabulation. The design of an RLA must balance risk, the chance that the audit fails to detect such
+a disagreement when one occurs, with efficiency, the total effort to prepare and conduct the audit.
+The most efficient approaches-when measured in terms of the number of ballots that must be inspected-proceed
+by ballot comparison. This technique, however, requires an untrusted declaration of the contents
+of each cast ballot, rather than a simple tabulation of vote totals. This cast-vote record (CVR)
+is then spot-checked against ballots for consistency. The cost of generating such a CVR dominates
+the cost to conduct the audit in many practical settings which precludes adoption. We introduce
+a new RLA procedure: a lazy ballot comparison audit. In this audit, a global CVR is never produced;
+instead, when a ballot is selected for audit a three-stage procedure is followed: 1) the batch containing
+the ballot is announced, 2) a CVR is produced for that batch, and 3) the ballot is announced and compared
+with the CVR. The analysis of such an audit is complicated by the fact that the details of each CVR may
+depend-perhaps adversarially-on the prior history of the audit. We present three main contributions:
+(1) A formal adversarial model for RLAs; (2) Definition and analysis of a lazy audit procedure with
+rigorous risk limits and an associated correctness analysis accounting for the incidental errors
+arising in typical audits; and (3) An analysis of the relative time savings of these techniques.

@@ -1,0 +1,20 @@
+Goal: This work aims at developing a novel calibration-free fast parallel MRI (pMRI) reconstruction
+method incorporate with discrete-time optimal control framework. The reconstruction model is
+designed to learn a regularization that combines channels and extracts features by leveraging
+the information sharing among channels of multi-coil images. We propose to recover both magnitude
+and phase information by taking advantage of structured convolutional networks in image and Fourier
+spaces. Methods: We develop a novel variational model with a learnable objective function that
+integrates an adaptive multi-coil image combination operator and effective image regularization
+in the image and Fourier spaces. We cast the reconstruction network as a structured discrete-time
+optimal control system, resulting in an optimal control formulation of parameter training where
+the parameters of the objective function play the role of control variables. We demonstrate that
+the Lagrangian method for solving the control problem is equivalent to back-propagation, ensuring
+the local convergence of the training algorithm. Results: We conduct a large number of numerical
+experiments of the proposed method with comparisons to several state-of-the-art pMRI reconstruction
+networks on real pMRI datasets. The numerical results demonstrate the promising performance of
+the proposed method evidently. Conclusion: We conduct a large number of numerical experiments
+of the proposed method with comparisons to several state-of-the-art pMRI reconstruction networks
+on real pMRI datasets. The numerical results demonstrate the promising performance of the proposed
+method evidently. Significance: By learning multi-coil image combination operator and performing
+regularizations in both image domain and k-space domain, the proposed method achieves a highly
+efficient image reconstruction network for pMRI. 

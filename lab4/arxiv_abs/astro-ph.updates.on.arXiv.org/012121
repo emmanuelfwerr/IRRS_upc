@@ -1,0 +1,19 @@
+Estimating stellar masses and radii is a challenge for most of the stars but their knowledge is critical
+for many different astrophysical fields. One of the most extended techniques for estimating these
+variables are the so-called empirical relations. In this work we propose a group of state-of-the-art
+AI regression models, with the aim of studying their proficiency in estimating stellar masses and
+radii. We publicly release the database, the AI models, and an online tool for stellar mass and radius
+estimation to the community. We use a sample of 726 MS stars in the literature with accurate M, R, T_eff,
+L, log g, and [Fe/H]. We have split our data sample into training and testing sets and then analyzed
+the different AI techniques with them. In particular, we have experimentally evaluated the accuracy
+of the following models: Linear Reg., Bayesian Reg., Regression Trees, Random Forest, Support-Vector
+Reg. (SVR), Neural Networks, kNN, and Stacking. We propose a series of experiments designed to evaluate
+the accuracy of the estimations. We have also analyzed the impact of reducing the number of inputs
+parameters and compared our results with those from state-of-the-art empirical relations in the
+literature. We have found that a Stacking of several regression models is the most suitable technique
+for estimating masses and radii. In the case of the mass, Neural Networks also provide precise results,
+and for the radius, SVR and Neural Networks work too. When comparing with other state-of-the-art
+empirical relations based models, our Stacking improves the accuracy by a factor of two for both
+variables. In addition, bias is reduced to one order of magnitude in the case of the stellar mass.
+Finally, we have found that using our Stacking and only T_eff and L as input features, the accuracies
+obtained are slightly larger than a 5%, with a bias approx 1.5%. 

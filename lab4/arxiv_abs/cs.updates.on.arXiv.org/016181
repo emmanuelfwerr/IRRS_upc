@@ -1,0 +1,19 @@
+In applications of group testing in networks, e.g. identifying individuals who are infected by
+a disease spread over a network, exploiting correlation among network nodes provides fundamental
+opportunities in reducing the number of tests needed. We model and analyze group testing on $n$ correlated
+nodes whose interactions are specified by a graph $G$. We model correlation through an edge-faulty
+random graph formed from $G$ in which each edge is dropped with probability $1-r$, and all nodes in
+the same component have the same state. We consider three classes of graphs: cycles and trees, $d$-regular
+graphs and stochastic block models or SBM, and obtain lower and upper bounds on the number of tests
+needed to identify the defective nodes. Our results are expressed in terms of the number of tests
+needed when the nodes are independent and they are in terms of $n$, $r$, and the target error. In particular,
+we quantify the fundamental improvements that exploiting correlation offers by the ratio between
+the total number of nodes $n$ and the equivalent number of independent nodes in a classic group testing
+algorithm. The lower bounds are derived by illustrating a strong dependence of the number of tests
+needed on the expected number of components. In this regard, we establish a new approximation for
+the distribution of component sizes in "$d$-regular trees" which may be of independent interest
+and leads to a lower bound on the expected number of components in $d$-regular graphs. The upper bounds
+are found by forming dense subgraphs in which nodes are more likely to be in the same state. When $G$
+is a cycle or tree, we show an improvement by a factor of $log(1/r)$. For grid, a graph with almost $2n$
+edges, the improvement is by a factor of ${(1-r) \log(1/r)}$, indicating drastic improvement compared
+to trees. When $G$ has a larger number of edges, as in SBM, the improvement can scale in $n$. 

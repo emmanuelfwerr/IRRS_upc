@@ -1,0 +1,19 @@
+Many startups and companies worldwide have been using project management software and tools to
+monitor, track and manage their projects. For software projects, the number of tasks from the beginning
+to the end is quite a large number that sometimes takes a lot of time and effort to search and link the
+current task to a group of previous ones for further references. This paper proposes an efficient
+task dependency recommendation algorithm to suggest tasks dependent on a given task that the user
+has just created. We present an efficient feature engineering step and construct a deep neural network
+to this aim. We performed extensive experiments on two different large projects (MDLSITE from moodle.org
+and FLUME from apache.org) to find the best features in 28 combinations of features and the best performance
+model using two embedding methods (GloVe and FastText). We consider three types of models (GRU,
+CNN, LSTM) using Accuracy@K, MRR@K, and Recall@K (where K = 1, 2, 3, and 5) and baseline models using
+traditional methods: TF-IDF with various matching score calculating such as cosine similarity,
+Euclidean distance, Manhattan distance, and Chebyshev distance. After many experiments, the
+GloVe Embedding and CNN model reached the best result in our dataset, so we chose this model as our
+proposed method. In addition, adding the time filter in the post-processing step can significantly
+improve the recommendation system's performance. The experimental results show that our proposed
+method can reach 0.2335 in Accuracy@1 and MRR@1 and 0.2011 in Recall@1 of dataset FLUME. With the
+MDLSITE dataset, we obtained 0.1258 in Accuracy@1 and MRR@1 and 0.1141 in Recall@1. In the top 5,
+our model reached 0.3040 in Accuracy@5, 0.2563 MRR@5, and 0.2651 Recall@5 in FLUME. In the MDLSITE
+dataset, our model got 0.5270 Accuracy@5, 0.2689 MRR@5, and 0.2651 Recall@5. 

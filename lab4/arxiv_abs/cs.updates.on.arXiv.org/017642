@@ -1,0 +1,18 @@
+Given a weighted undirected graph $G=(V,E,w)$, a hopset $H$ of hopbound $\beta$ and stretch $(1+\epsilon)$
+is a set of edges such that for any pair of nodes $u, v \in V$, there is a path in $G \cup H$ of at most $\beta$
+hops, whose length is within a $(1+\epsilon)$ factor from the distance between $u$ and $v$ in $G$.
+We show the first efficient decremental algorithm for maintaining hopsets with a polylogarithmic
+hopbound. The update time of our algorithm matches the best known static algorithm up to polylogarithmic
+factors. All the previous decremental hopset constructions had a superpolylogarithmic (but subpolynomial)
+hopbound of $2^{\log^{\Omega(1)} n}$ [Bernstein, FOCS'09; HKN, FOCS'14; Chechik, FOCS'18].
+By applying our decremental hopset construction, we get improved or near optimal bounds for several
+distance problems. Most importantly, we show how to decrementally maintain $(2k-1)(1+\epsilon)$-approximate
+all-pairs shortest paths (for any constant $k \geq 2)$, in $\tilde{O}(n^{1/k})$ amortized update
+time and $O(k)$ query time. This improves (by a polynomial factor) over the update-time of the best
+previously known decremental algorithm in the constant query time regime. Moreover, it improves
+over the result of [Chechik, FOCS'18] that has a query time of $O(\log \log(nW))$, where $W$ is the
+aspect ratio, and the amortized update time is $n^{1/k}\cdot(\frac{1}{\epsilon})^{\tilde{O}(\sqrt{\log
+n})}$. For sparse graphs our construction nearly matches the best known static running time / query
+time tradeoff. We also obtain near-optimal bounds for maintaining approximate multi-source shortest
+paths and distance sketches, and get improved bounds for approximate single-source shortest paths.
+Our algorithms are randomized and our bounds hold with high probability against an oblivious adversary.

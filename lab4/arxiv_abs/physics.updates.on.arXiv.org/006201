@@ -1,0 +1,18 @@
+Novel radiotherapy techniques like synchrotron X-ray microbeam radiation therapy (MRT), require
+fast dose distribution predictions that are accurate at the sub-mm level, especially close to tissue/bone/air
+interfaces. Monte Carlo physics simulations are recognised to be one of the most accurate tools
+to predict the dose delivered in a target tissue but can be very time consuming and therefore prohibitive
+for treatment planning. Faster dose prediction algorithms are usually developed for clinically
+deployed treatments only. In this work, we explore a new approach for fast and accurate dose estimations
+suitable for novel treatments using digital phantoms used in pre-clinical development and modern
+machine learning techniques. We develop a generative adversarial network (GAN) model, which is
+able to emulate the equivalent Geant4 Monte Carlo simulation with adequate accuracy, and use it
+to predict the radiation dose delivered by a broad synchrotron beam to various phantoms. The energy
+depositions used for the training of the GAN are obtained using full Geant4 Monte Carlo simulations
+of a synchrotron radiation broad beam passing through the phantoms. The energy deposition is scored
+and predicted in voxel matrices of size 140x18x18 with a voxel edge length of 1 mm. The GAN model consists
+of two competing 3D convolutional neural networks, which are conditioned on the photon beam and
+phantom properties. The energy deposition predictions inside all phantom geometries under investigation
+show deviations of less than 3% of the maximum deposited energy from the simulation for roughly 99%
+of the voxels in the field of the beam. The computing time for a single prediction is reduced from several
+hundred hours using Geant4 simulation to less than a second using the GAN model. 

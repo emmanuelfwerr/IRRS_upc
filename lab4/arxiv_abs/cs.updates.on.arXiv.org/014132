@@ -1,0 +1,19 @@
+Despite the recent progress in the field of causal inference, to date there is no agreed upon methodology
+to glean treatment effect estimation from observational data. The consequence on clinical practice
+is that, when lacking results from a randomized trial, medical personnel is left without guidance
+on what seems to be effective in a real-world scenario. This article showcases a pragmatic methodology
+to obtain preliminary estimation of treatment effect from observational studies. Our approach
+was tested on the estimation of treatment effect of the proning maneuver on oxygenation levels,
+on a cohort of COVID-19 Intensive Care patients. We modeled our study design on a recent RCT for proning
+(the PROSEVA trial). Linear regression, propensity score models such as blocking and DR-IPW, BART
+and two versions of Counterfactual Regression were employed to provide estimates on observational
+data comprising first wave COVID-19 ICU patient data from 25 Dutch hospitals. 6371 data points,
+from 745 mechanically ventilated patients, were included in the study. Estimates for the early
+effect of proning -- P/F ratio from 2 to 8 hours after proning -- ranged between 14.54 and 20.11 mm Hg
+depending on the model. Estimates for the late effect of proning -- oxygenation from 12 to 24 hours
+after proning -- ranged between 13.53 and 15.26 mm Hg. All confidence interval being strictly above
+zero indicated that the effect of proning on oxygenation for COVID-19 patient was positive and comparable
+in magnitude to the effect on non COVID-19 patients. These results provide further evidence on the
+effectiveness of proning on the treatment of COVID-19 patients. This study, along with the accompanying
+open-source code, provides a blueprint for treatment effect estimation in scenarios where RCT
+data is lacking. Funding: SIDN fund, CovidPredict consortium, Pacmed. 

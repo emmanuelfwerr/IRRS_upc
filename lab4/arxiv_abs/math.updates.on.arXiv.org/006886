@@ -1,0 +1,20 @@
+This paper studies a new multi-device edge artificial-intelligent (AI) system, which jointly
+exploits the AI model split inference and integrated sensing and communication (ISAC) to enable
+low-latency intelligent services at the network edge. In this system, multiple ISAC devices perform
+radar sensing to obtain multi-view data, and then offload the quantized version of extracted features
+to a centralized edge server, which conducts model inference based on the cascaded feature vectors.
+Under this setup and by considering classification tasks, we measure the inference accuracy by
+adopting an approximate but tractable metric, namely discriminant gain, which is defined as the
+distance of two classes in the Euclidean feature space under normalized covariance. To maximize
+the discriminant gain, we first quantify the influence of the sensing, computation, and communication
+processes on it with a derived closed-form expression. Then, an end-to-end task-oriented resource
+management approach is developed by integrating the three processes into a joint design. This integrated
+sensing, computation, and communication (ISCC) design approach, however, leads to a challenging
+non-convex optimization problem, due to the complicated form of discriminant gain and the device
+heterogeneity in terms of channel gain, quantization level, and generated feature subsets. Remarkably,
+the considered non-convex problem can be optimally solved based on the sum-of-ratios method. This
+gives the optimal ISCC scheme, that jointly determines the transmit power and time allocation at
+multiple devices for sensing and communication, as well as their quantization bits allocation
+for computation distortion control. By using human motions recognition as a concrete AI inference
+task, extensive experiments are conducted to verify the performance of our derived optimal ISCC
+scheme. 

@@ -1,0 +1,20 @@
+In practical optimization, we typically model uncertainty as a random variable though its true
+probability distribution is unobservable to the decision maker. Historical data provides some
+information of this distribution that we can use to approximately quantify the risk of an evaluation
+function that depends on both decision and uncertainty. This empirical optimization is vulnerable
+to the issues of overfitting, which could be overcome by several data-driven robust optimization
+techniques. To tackle overfitting, Long et al. (2022) propose a robust satisficing model, which
+is specified by a performance target and a penalty function that measures the deviation of the uncertainty
+from its nominal value, and yields solutions with superior out-of-sample performance. We generalize
+the robust satisficing framework to conic optimization problems with recourse, which has broader
+applications in predictive and prescriptive analytics including risk management and statistical
+supervised learning. We derive an exact semidefinite optimization formulation for biconvex quadratic
+evaluation function, with quadratic penalty and ellipsoidal support set. More importantly, under
+complete and bounded recourse, and reasonably chosen polyhedral support set and penalty function,
+we propose safe approximations that do not lead to infeasible problems for any reasonably chosen
+target. We demonstrate that the assumption of complete and bounded recourse is however not unimpeachable,
+and then introduce a novel perspective casting technique to derive an equivalent conic optimization
+problem that satisfies the stated assumptions. Finally, through a computational study on data-driven
+portfolio optimization (that maximizes the expected exponential utility of the portfolio returns),
+we show that the robust satisficing solutions significantly improve over the celebrated Markowitz
+model, which is prone to overfitting. 

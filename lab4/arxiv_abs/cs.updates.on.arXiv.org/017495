@@ -1,0 +1,19 @@
+Safety-critical designs need to ensure reliable operations under hostile conditions with a certain
+degree of confidence. The continuously higher complexity of these designs makes them more susceptible
+to the risk of failure. ISO26262 recommends fault injection as the proper technique to verify and
+measure the dependability of safety-critical designs. To cope with the complexity, a lot of effort
+and stringent verification flow is needed. Moreover, many fault injection tools offer only a limited
+degree of controllability. We propose MetaFI, a model-driven simulator-independent fault simulation
+framework that provides multi-purpose fault injection strategies such as Statistical Fault Injection,
+Direct Fault Injection, Exhaustive Fault Injection, and at the same time reduces manual efforts.
+The framework enables injection of Stuck-at faults, Single-Event Transient faults, Single-Event
+Upset faults as well as Timing faults. The fault simulation is performed at the Register Transfer
+Level (RTL) of a design, in which parts of the design targeted for fault simulation are represented
+with Gate-level (GL) granularity. MetaFI is scalable with a full System-on-Chip (SoC) design and
+to demonstrate the applicability of the framework, fault simulation was applied to various components
+of two different SoCs. One SoC is running the Dhrystone application and the other one is running a
+Fingerprint calculation application. A minimal effort of 2 persondays was required to run 38 various
+fault injection campaigns on both the designs. The framework provided significant data regarding
+failure rates of the components. Results concluded that Prefetcher, a component of the SoC processor,
+is more susceptible to failures than the other targeted components on both the SoCs, regardless
+of the running application. 

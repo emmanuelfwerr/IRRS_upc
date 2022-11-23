@@ -1,0 +1,20 @@
+Memristor-based neuromorphic computing systems address the memory-wall issue in von Neumann
+architecture that prevents the efficient training of deep neural networks (DNNs). Nevertheless,
+emerging memristor devices, with the existence of several non-idealities, such as poor yield and
+limited number of reliable conductance states, are still not mature for practical neuromorphic
+systems. At the same time, the mainstream neuromorphic DNNs utilize the error backpropagation-based
+gradient descent algorithm, requiring ideal synaptic behavior of the memristive devices and complex
+neural circuits. To address this challenge, we demonstrate the training of a memristive restricted
+Boltzmann machine (memristive RBM) and deep belief neural network (memristive DBN) that employ
+memristor devices fabricated in a commercial complementary metal-oxide-semiconductor process
+as artificial synapses and utilize the gradient descent algorithm based on contrastive divergence
+(CD). The memristor devices are based on the floating gate (FG) principle, showing analog tunability,
+high endurance, long retention time, predictable cycling degradation, moderate device-to-device
+variations, high yield, and two orders of magnitude higher energy efficiency for multiply-accumulate
+operations than today's graphical processing units. The CD-based gradient descent algorithm
+highly relaxes both the requirements of the synaptic behavior for the memristor devices and the
+complexity of the neuron circuits. Two 12-by-8 arrays of FG memristors are utilized to demonstrate
+the training of an RBM intended for pattern recognition. We then benchmark an extrapolated memristive
+DBN consisting of three memristive RBMs for the MNIST dataset, showing a recognition accuracy up
+to 97.05%. The designed memristive RBM and DBN have minimal neuron circuits where no digital-to-analog
+and analog-to-digital converters are needed. 

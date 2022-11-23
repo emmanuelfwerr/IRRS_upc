@@ -1,0 +1,19 @@
+Finding the minimum approximation ratio for Nash equilibrium of bi-matrix games has derived a series
+of studies, starting with 3/4, followed by 1/2, 0.38, 0.36, and the previously best-known approximation
+ratio of 0.3393 by Tsaknakis and Spirakis (TS algorithm for short). The TS algorithm applies a descent
+method to locally minimize a loss function and then makes a further adjustment. Efforts to improve
+the analysis of the TS algorithm remain unsuccessful in the past 15 years. This work makes the first
+progress in showing that the bound of 0.3393 is indeed tight for the TS algorithm. We also present
+a thorough theoretical worst-case analysis and give a computable equivalent condition of tight
+instances. With this condition, we provide a tight instance generator for the TS algorithm. Empirically,
+most generated instances are unstable, that is, a small perturbation near a 0.3393 solution may
+help the TS algorithm find another faraway solution with a much better approximation ratio. Meanwhile,
+the existence of stable tight instances indicates the perturbation cannot improve 0.3393 bound
+in worst cases for the TS algorithm. Furthermore, we test approximate algorithms other than the
+TS algorithm on these generated instances. Two approximate algorithms, the regret-matching algorithm
+and the fictitious play algorithm, can find solutions with approximation ratios far better than
+0.3393. Interestingly, the distributed approximate algorithm by Czumaj et al. finds solutions
+with the same approximation ratio of 0.3393 on these generated instances. Such results demonstrate
+that our generated instances against the TS algorithm serve as a necessary benchmark in design and
+analysis of approximate Nash equilibrium algorithms. Finally, we show that our techniques can
+be further generalized to prove the tightness of recently developed 1/3-approximation DFM algorithm.

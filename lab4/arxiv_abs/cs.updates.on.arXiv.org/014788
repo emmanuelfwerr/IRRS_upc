@@ -1,0 +1,20 @@
+The thesis focuses on various techniques to find an alternate approximation method that could be
+universally used for a wide range of CFD problems but with low computational cost and low runtime.
+Various techniques have been explored within the field of machine learning to gauge the utility
+in fulfilling the core ambition. Steady advection diffusion problem has been used as the test case
+to understand the level of complexity up to which a method can provide solution. Ultimately, the
+focus stays over physics informed machine learning techniques where solving differential equations
+is possible without any training with computed data. The prevalent methods by I.E. Lagaris et.al.
+and M. Raissi et.al are explored thoroughly. The prevalent methods cannot solve advection dominant
+problems. A physics informed method, called as Distributed Physics Informed Neural Network (DPINN),
+is proposed to solve advection dominant problems. It increases the lexibility and capability of
+older methods by splitting the domain and introducing other physics-based constraints as mean
+squared loss terms. Various experiments are done to explore the end to end possibilities with the
+method. Parametric study is also done to understand the behavior of the method to different tunable
+parameters. The method is tested over steady advection-diffusion problems and unsteady square
+pulse problems. Very accurate results are recorded. Extreme learning machine (ELM) is a very fast
+neural network algorithm at the cost of tunable parameters. The ELM based variant of the proposed
+model is tested over the advection-diffusion problem. ELM makes the complex optimization simpler
+and Since the method is non-iterative, the solution is recorded in a single shot. The ELM based variant
+seems to work better than the simple DPINN method. Simultaneously scope for various development
+in future are hinted throughout the thesis. 

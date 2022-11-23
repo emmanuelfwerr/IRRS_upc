@@ -1,0 +1,18 @@
+A central goal in experimental high energy physics is to detect new physics signals that are not explained
+by known physics. In this paper, we aim to search for new signals that appear as deviations from known
+Standard Model physics in high-dimensional particle physics data. To do this, we determine whether
+there is any statistically significant difference between the distribution of Standard Model
+background samples and the distribution of the experimental observations, which are a mixture
+of the background and a potential new signal. Traditionally, one also assumes access to a sample
+from a model for the hypothesized signal distribution. Here we instead investigate a model-independent
+method that does not make any assumptions about the signal and uses a semi-supervised classifier
+to detect the presence of the signal in the experimental data. We construct three test statistics
+using the classifier: an estimated likelihood ratio test (LRT) statistic, a test based on the area
+under the ROC curve (AUC), and a test based on the misclassification error (MCE). Additionally,
+we propose a method for estimating the signal strength parameter and explore active subspace methods
+to interpret the proposed semi-supervised classifier in order to understand the properties of
+the detected signal. We also propose a Score test statistic that can be used in the model-dependent
+setting. We investigate the performance of the methods on a simulated data set related to the search
+for the Higgs boson at the Large Hadron Collider at CERN. We demonstrate that the semi-supervised
+tests have power competitive with the classical supervised methods for a well-specified signal,
+but much higher power for an unexpected signal which might be entirely missed by the supervised tests.

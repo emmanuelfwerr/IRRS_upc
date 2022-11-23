@@ -1,0 +1,19 @@
+This work elevates coded caching networks from their purely information-theoretic framework
+to a stochastic setting, by exploring the effect of random user activity and by exploiting correlations
+in the activity patterns of different users. In particular, the work studies the $K$-user cache-aided
+broadcast channel with a limited number of cache states, and explores the effect of cache state association
+strategies in the presence of arbitrary user activity levels; a combination that strikes at the
+very core of the coded caching problem and its crippling subpacketization bottleneck. We first
+present a statistical analysis of the average worst-case delay performance of such subpacketization-constrained
+(state-constrained) coded caching networks, and provide computationally efficient performance
+bounds as well as scaling laws for any arbitrary probability distribution of the user-activity
+levels. The achieved performance is a result of a novel user-to-cache state association algorithm
+that leverages the knowledge of probabilistic user-activity levels. We then follow a data-driven
+approach that exploits the prior history on user-activity levels and correlations, in order to
+predict interference patterns, and thus better design the caching algorithm. This optimized strategy
+is based on the principle that users that overlap more, interfere more, and thus have higher priority
+to secure complementary cache states. This strategy is proven here to be within a small constant
+factor from the optimal. Finally, the above analysis is validated numerically using synthetic
+data following the Pareto principle. To the best of our understanding, this is the first work that
+seeks to exploit user-activity levels and correlations, in order to map future interference and
+design optimized coded caching algorithms that better handle this interference. 

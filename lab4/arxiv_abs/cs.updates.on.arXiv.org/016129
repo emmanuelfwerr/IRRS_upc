@@ -1,0 +1,19 @@
+Knowledge is acquired by humans through experience, and no boundary is set between the kinds of knowledge
+or skill levels we can achieve on different tasks at the same time. When it comes to Neural Networks,
+that is not the case. The breakthroughs in the field are extremely task and domain-specific. Vision
+and language are dealt with in separate manners, using separate methods and different datasets.
+Current text classification methods, mostly rely on obtaining contextual embeddings for input
+text samples, then training a classifier on the embedded dataset. Transfer learning in Language-related
+tasks in general, is heavily used in obtaining the contextual text embeddings for the input samples.
+In this work, we propose to use the knowledge acquired by benchmark Vision Models which are trained
+on ImageNet to help a much smaller architecture learn to classify text. A data transformation technique
+is used to create a new image dataset, where each image represents a sentence embedding from the last
+six layers of BERT, projected on a 2D plane using a t-SNE based method. We trained five models containing
+early layers sliced from vision models which are pretrained on ImageNet, on the created image dataset
+for the IMDB dataset embedded with the last six layers of BERT. Despite the challenges posed by the
+very different datasets, experimental results achieved by this approach which links large pretrained
+models on both language and vision, are very promising, without employing compute resources. Specifically,
+Sentiment Analysis is achieved by five different models on the same image dataset obtained after
+BERT embeddings are transformed into gray scale images. Index Terms: BERT, Convolutional Neural
+Networks, Domain Adaptation, image classification, Natural Language Processing, t-SNE, text
+classification, Transfer Learning 

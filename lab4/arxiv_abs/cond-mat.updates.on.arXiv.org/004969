@@ -1,0 +1,19 @@
+We benchmark a set of quantum-chemistry methods, including multitrajectory Ehrenfest, fewest-switches
+surface-hopping, and multiconfigurational-Ehrenfest dynamics, against exact quantum-many-body
+techniques by studying real-time dynamics in the Holstein model. This is a paradigmatic model in
+condensed matter theory incorporating a local coupling of electrons to Einstein phonons. For the
+two-site and three-site Holstein model, we discuss the exact and quantum-chemistry methods in
+terms of the Born-Huang formalism, covering different initial states, which either start on a single
+Born-Oppenheimer surface, or with the electron localized to a single site. For extended systems
+with up to 51 sites, we address both the physics of single Holstein polarons and the dynamics of charge-density
+waves at finite electron densities. For these extended systems, we compare the quantum-chemistry
+methods to exact dynamics obtained from time-dependent density matrix renormalization group
+calculations with local basis optimization (DMRG-LBO). We observe that the multitrajectory Ehrenfest
+method, in general, only captures the ultrashort time dynamics accurately. In contrast, the surface-hopping
+method with suitable corrections provides a much better description of the long-time behavior
+but struggles with the short-time description of coherences between different Born-Oppenheimer
+states. We show that the multiconfigurational Ehrenfest method yields a significant improvement
+over the multitrajectory Ehrenfest method and can be converged to the exact results in small systems
+with moderate computational efforts. We further observe that for extended systems, this convergence
+is slower with respect to the number of configurations. Our benchmark study demonstrates that DMRG-LBO
+is a useful tool for assessing the quality of the quantum-chemistry methods. 

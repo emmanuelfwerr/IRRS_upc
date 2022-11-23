@@ -1,0 +1,19 @@
+In the context of first-order algorithms subject to random gradient noise, we study the trade-offs
+between the convergence rate (which quantifies how fast the initial conditions are forgotten)
+and the "risk" of suboptimality, i.e. deviations from the expected suboptimality. We focus on a
+general class of momentum methods (GMM) which recover popular methods such as gradient descent
+(GD), accelerated gradient descent (AGD), and heavy-ball (HB) method as special cases depending
+on the choice of GMM parameters. We use well-known risk measures "entropic risk" and "entropic value
+at risk" to quantify the risk of suboptimality. For strongly convex smooth minimization, we first
+obtain new convergence rate results for GMM with a unified theory that is also applicable to both
+AGD and HB, improving some of the existing results for HB. We then provide explicit bounds on the entropic
+risk and entropic value at risk of suboptimality at a given iterate which also provides direct bounds
+on the probability that the suboptimality exceeds a given threshold based on Chernoff's inequality.
+Our results unveil fundamental trade-offs between the convergence rate and the risk of suboptimality.
+We then plug the entropic risk and convergence rate estimates we obtained in a computationally tractable
+optimization framework and propose entropic risk-averse GMM (RA-GMM) and entropic risk-averse
+AGD (RA-AGD) methods which can select the GMM parameters to systematically trade-off the entropic
+value at risk with the convergence rate. We show that RA-AGD and RA-GMM lead to improved performance
+on quadratic optimization and logistic regression problems compared to the standard choice of
+parameters. To our knowledge, our work is the first to resort to coherent measures to design the parameters
+of momentum methods in a systemic manner. 

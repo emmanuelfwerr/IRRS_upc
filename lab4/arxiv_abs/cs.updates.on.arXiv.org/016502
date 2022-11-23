@@ -1,0 +1,19 @@
+Depression is increasingly impacting individuals both physically and psychologically worldwide.
+It has become a global major public health problem and attracts attention from various research
+fields. Traditionally, the diagnosis of depression is formulated through semi-structured interviews
+and supplementary questionnaires, which makes the diagnosis heavily relying on physicians experience
+and is subject to bias. Mental health monitoring and cloud-based remote diagnosis can be implemented
+through an automated depression diagnosis system. In this article, we propose an attention-based
+multimodality speech and text representation for depression prediction. Our model is trained
+to estimate the depression severity of participants using the Distress Analysis Interview Corpus-Wizard
+of Oz (DAIC-WOZ) dataset. For the audio modality, we use the collaborative voice analysis repository
+(COVAREP) features provided by the dataset and employ a Bidirectional Long Short-Term Memory Network
+(Bi-LSTM) followed by a Time-distributed Convolutional Neural Network (T-CNN). For the text modality,
+we use global vectors for word representation (GloVe) to perform word embeddings and the embeddings
+are fed into the Bi-LSTM network. Results show that both audio and text models perform well on the
+depression severity estimation task, with best sequence level F1 score of 0.9870 and patient-level
+F1 score of 0.9074 for the audio model over five classes (healthy, mild, moderate, moderately severe,
+and severe), as well as sequence level F1 score of 0.9709 and patient-level F1 score of 0.9245 for
+the text model over five classes. Results are similar for the multimodality fused model, with the
+highest F1 score of 0.9580 on the patient-level depression detection task over five classes. Experiments
+show statistically significant improvements over previous works. 

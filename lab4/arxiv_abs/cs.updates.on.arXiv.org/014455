@@ -1,0 +1,20 @@
+Phylogenetic trees are leaf-labelled trees used to model the evolution of species. Here we explore
+the practical impact of kernelization (i.e. data reduction) on the NP-hard problem of computing
+the TBR distance between two unrooted binary phylogenetic trees. This problem is better-known
+in the literature as the maximum agreement forest problem, where the goal is to partition the two
+trees into a minimum number of common, non-overlapping subtrees. We have implemented two well-known
+reduction rules, the subtree and chain reduction, and five more recent, theoretically stronger
+reduction rules, and compare the reduction achieved with and without the stronger rules. We find
+that the new rules yield smaller reduced instances and thus have clear practical added value. In
+many cases they also cause the TBR distance to decrease in a controlled fashion. Next, we compare
+the achieved reduction to the known worst-case theoretical bounds of 15k-9 and 11k-9 respectively,
+on the number of leaves of the two reduced trees, where k is the TBR distance, observing in both cases
+a far larger reduction in practice. As a by-product of our experimental framework we obtain a number
+of new insights into the actual computation of TBR distance. We find, for example, that very strong
+lower bounds on TBR distance can be obtained efficiently by randomly sampling certain carefully
+constructed partitions of the leaf labels, and identify instances which seem particularly challenging
+to solve exactly. The reduction rules have been implemented within our new solver Tubro which combines
+kernelization with an Integer Linear Programming (ILP) approach. Tubro also incorporates a number
+of additional features, such as a cluster reduction and a practical upper-bounding heuristic,
+and it can leverage combinatorial insights emerging from the proofs of correctness of the reduction
+rules to simplify the ILP. 

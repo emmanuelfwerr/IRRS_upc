@@ -1,0 +1,18 @@
+Language identification is an important Natural Language Processing task. It has been thoroughly
+researched in the literature. However, some issues are still open. This work addresses the identification
+of the related low-resource languages on the example of the Celtic language family. This work's
+main goals were: (1) to collect the dataset of three Celtic languages; (2) to prepare a method to identify
+the languages from the Celtic family, i.e. to train a successful classification model; (3) to evaluate
+the influence of different feature extraction methods, and explore the applicability of the unsupervised
+models as a feature extraction technique; (4) to experiment with the unsupervised feature extraction
+on a reduced annotated set. We collected a new dataset including Irish, Scottish, Welsh and English
+records. We tested supervised models such as SVM and neural networks with traditional statistical
+features alongside the output of clustering, autoencoder, and topic modelling methods. The analysis
+showed that the unsupervised features could serve as a valuable extension to the n-gram feature
+vectors. It led to an improvement in performance for more entangled classes. The best model achieved
+a 98\% F1 score and 97\% MCC. The dense neural network consistently outperformed the SVM model. The
+low-resource languages are also challenging due to the scarcity of available annotated training
+data. This work evaluated the performance of the classifiers using the unsupervised feature extraction
+on the reduced labelled dataset to handle this issue. The results uncovered that the unsupervised
+feature vectors are more robust to the labelled set reduction. Therefore, they proved to help achieve
+comparable classification performance with much less labelled data. 

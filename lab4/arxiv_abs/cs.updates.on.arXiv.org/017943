@@ -1,0 +1,19 @@
+The AlphaZero algorithm and its successor MuZero have revolutionised several competitive strategy
+games, including chess, Go, and shogi and video games like Atari, by learning to play these games
+better than any human and any specialised computer program. Aside from knowing the rules, AlphaZero
+had no prior knowledge of each game. This dramatically advanced progress on a long-standing AI challenge
+to create programs that can learn for themselves from first principles. Theoretically, there are
+well-known limits to the power of deep learning for strategy games like chess, Go, and shogi, as they
+are known to be NEXPTIME hard. Some papers have argued that the AlphaZero methodology has limitations
+and is unsuitable for general AI. However, none of these works has suggested any specific limits
+for any particular game. In this paper, we provide more powerful bottlenecks than previously suggested.
+We present the first concrete example of a game - namely the (children) game of nim - and other impartial
+games that seem to be a stumbling block for AlphaZero and similar reinforcement learning algorithms.
+We show experimentally that the bottlenecks apply to both the policy and value networks. Since solving
+nim can be done in linear time using logarithmic space i.e. has very low-complexity, our experimental
+results supersede known theoretical limits based on many games' PSPACE (and NEXPTIME) completeness.
+We show that nim can be learned on small boards, but when the board size increases, AlphaZero style
+algorithms rapidly fail to improve. We quantify the difficulties for various setups, parameter
+settings and computational resources. Our results might help expand the AlphaZero self-play paradigm
+by allowing it to use meta-actions during training and/or actual game play like applying abstract
+transformations, or reading and writing to an external memory. 

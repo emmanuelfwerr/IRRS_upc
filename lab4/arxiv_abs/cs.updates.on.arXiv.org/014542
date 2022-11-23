@@ -1,0 +1,20 @@
+We analyze the high-SNR regime of the MxK Network MISO channel in which each transmitter has access
+to a different channel estimate, possibly with different precision. It has been recently shown
+that, for some regimes, this setting attains the same Degrees-of-Freedom as the ideal centralized
+setting with perfect CSI sharing, in which all the transmitters are endowed with the best estimate
+available at any transmitter. This result is restricted by the limitations of the DoF metric, as
+it only provides information about the slope of growth of the capacity as a function of the SNR, without
+any insight about the possible performance at a given SNR. To overcome this limitation, we analyze
+the affine approximation of the rate on the high-SNR regime for this decentralized Network MISO
+setting for the antenna configurations in which it achieves the DoF of the centralized setting.
+We show that, for a regime of antenna configurations, it is possible to asymptotically attain the
+same achievable rate as in the ideal centralized scenario. Consequently, it is possible to achieve
+the beamforming gain of the ideal perfect-CSI-sharing setting even if only a subset of transmitters
+is endowed with precise CSI, which can be exploited in scenarios such as distributed massive MIMO
+where the number of transmit antennas is much bigger than the number of served users. This outcome
+is a consequence of the synergistic compromise between CSI precision at the transmitters and consistency
+between the locally-computed precoders, which is an inherent trade-off of decentralized settings
+that does not exist in a centralized CSI configuration. We propose a precoding scheme achieving
+the previous result, which is built on an uneven structure in which some transmitters reduce the
+precision of their own precoding for the sake of using transmission parameters that can be more easily
+predicted by the other transmitters. 

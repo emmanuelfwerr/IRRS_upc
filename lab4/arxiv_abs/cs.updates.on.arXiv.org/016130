@@ -1,0 +1,20 @@
+Neural Networks (NNs) can provide major empirical performance improvements for closed-loop systems,
+but they also introduce challenges in formally analyzing those systems' safety properties. In
+particular, this work focuses on estimating the forward reachable set of \textit{neural feedback
+loops} (closed-loop systems with NN controllers). Recent work provides bounds on these reachable
+sets, but the computationally tractable approaches yield overly conservative bounds (thus cannot
+be used to verify useful properties), and the methods that yield tighter bounds are too intensive
+for online computation. This work bridges the gap by formulating a convex optimization problem
+for the reachability analysis of closed-loop systems with NN controllers. While the solutions
+are less tight than previous (semidefinite program-based) methods, they are substantially faster
+to compute, and some of those computational time savings can be used to refine the bounds through
+new input set partitioning techniques, which is shown to dramatically reduce the tightness gap.
+The new framework is developed for systems with uncertainty (e.g., measurement and process noise)
+and nonlinearities (e.g., polynomial dynamics), and thus is shown to be applicable to real-world
+systems. To inform the design of an initial state set when only the target state set is known/specified,
+a novel algorithm for backward reachability analysis is also provided, which computes the set of
+states that are guaranteed to lead to the target set. The numerical experiments show that our approach
+(based on linear relaxations and partitioning) gives a $5\times$ reduction in conservatism in
+$150\times$ less computation time compared to the state-of-the-art. Furthermore, experiments
+on quadrotor, 270-state, and polynomial systems demonstrate the method's ability to handle uncertainty
+sources, high dimensionality, and nonlinear dynamics, respectively. 

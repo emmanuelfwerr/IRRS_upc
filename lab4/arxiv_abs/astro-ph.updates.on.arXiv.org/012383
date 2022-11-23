@@ -1,0 +1,19 @@
+Classification of sources is one of the most important tasks in astronomy. Sources detected in one
+wavelength band, for example using gamma rays, may have several possible associations in other
+wavebands, or there may be no plausible association candidates. In this work we aim to determine
+the probabilistic classification of unassociated sources in the third Fermi Large Area Telescope
+(LAT) point source catalog (3FGL) and the fourth Fermi LAT data release 2 point source catalog (4FGL-DR2)
+using two classes - pulsars and active galactic nuclei (AGNs) - or three classes - pulsars, AGNs,
+and "OTHER" sources. We use several machine learning (ML) methods to determine a probabilistic
+classification of Fermi-LAT sources. We evaluate the dependence of results on the meta-parameters
+of the ML methods, such as the maximal depth of the trees in tree-based classification methods and
+the number of neurons in neural networks. We determine a probabilistic classification of both associated
+and unassociated sources in the 3FGL and 4FGL-DR2 catalogs. We cross-check the accuracy by comparing
+the predicted classes of unassociated sources in 3FGL with their associations in 4FGL-DR2 for cases
+where such associations exist. We find that in the two-class case it is important to correct for the
+presence of OTHER sources among the unassociated ones in order to realistically estimate the number
+of pulsars and AGNs. We find that the three-class classification, despite different types of sources
+in the OTHER class, has a similar performance as the two-class classification in terms of reliability
+diagrams and, at the same time, it does not require adjustment due to presence of the OTHER sources
+among the unassociated sources. We show an example of the use of the probabilistic catalogs for population
+studies, which include associated and unassociated sources. 

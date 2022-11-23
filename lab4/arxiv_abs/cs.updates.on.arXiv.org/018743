@@ -1,0 +1,19 @@
+In this article we introduce the notion of Split Variational Autoencoder (SVAE), whose output $\hat{x}$
+is obtained as a weighted sum $\sigma \odot \hat{x_1} + (1-\sigma) \odot \hat{x_2}$ of two generated
+images $\hat{x_1},\hat{x_2}$, and $\sigma$ is a {\em learned} compositional map. The composing
+images $\hat{x_1},\hat{x_2}$, as well as the $\sigma$-map are automatically synthesized by the
+model. The network is trained as a usual Variational Autoencoder with a negative loglikelihood
+loss between training and reconstructed images. No additional loss is required for $\hat{x_1},\hat{x_2}$
+or $\sigma$, neither any form of human tuning. The decomposition is nondeterministic, but follows
+two main schemes, that we may roughly categorize as either \say{syntactic} or \say{semantic}.
+In the first case, the map tends to exploit the strong correlation between adjacent pixels, splitting
+the image in two complementary high frequency sub-images. In the second case, the map typically
+focuses on the contours of objects, splitting the image in interesting variations of its content,
+with more marked and distinctive features. In this case, according to empirical observations,
+the Fr\'echet Inception Distance (FID) of $\hat{x_1}$ and $\hat{x_2}$ is usually lower (hence
+better) than that of $\hat{x}$, that clearly suffers from being the average of the former. In a sense,
+a SVAE forces the Variational Autoencoder to make choices, in contrast with its intrinsic tendency
+to {\em average} between alternatives with the aim to minimize the reconstruction loss towards
+a specific sample. According to the FID metric, our technique, tested on typical datasets such as
+Mnist, Cifar10 and CelebA, allows us to outperform all previous purely variational architectures
+(not relying on normalization flows). 

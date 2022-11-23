@@ -1,0 +1,19 @@
+Human activity recognition plays an increasingly important role not only in our daily lives, but
+also in the medical and rehabilitation fields. The development of deep learning has also contributed
+to the advancement of human activity recognition, but the large amount of data annotation work required
+to train deep learning models is a major obstacle to the development of human activity recognition.
+Contrastive learning has started to be used in the field of sensor-based human activity recognition
+due to its ability to avoid the cost of labeling large datasets and its ability to better distinguish
+between sample representations of different instances. Among them, data augmentation, an important
+part of contrast learning, has a significant impact on model effectiveness, but current data augmentation
+methods do not perform too successfully in contrast learning frameworks for wearable sensor-based
+activity recognition. To optimize the effect of contrast learning models, in this paper, we investigate
+the sampling frequency of sensors and propose a resampling data augmentation method. In addition,
+we also propose a contrast learning framework based on human activity recognition and apply the
+resampling augmentation method to the data augmentation phase of contrast learning. The experimental
+results show that the resampling augmentation method outperforms supervised learning by 9.88%
+on UCI HAR and 7.69% on Motion Sensor in the fine-tuning evaluation of contrast learning with a small
+amount of labeled data, and also reveal that not all data augmentation methods will have positive
+effects in the contrast learning framework. Finally, we explored the influence of the combination
+of different augmentation methods on contrastive learning, and the experimental results showed
+that the effect of most combination augmentation methods was better than that of single augmentation.

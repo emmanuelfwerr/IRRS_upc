@@ -1,0 +1,19 @@
+A flexible treatment for gas- and aerosol-phase chemical processes has been developed for models
+of diverse scale, from box models up to global models. At the core of this novel framework is an "abstracted
+aerosol representation" that allows a given chemical mechanism to be solved in atmospheric models
+with different aerosol representations (e.g., sectional, modal, or particle-resolved). This
+is accomplished by treating aerosols as a collection of condensed phases that are implemented according
+to the aerosol representation of the host model. The framework also allows multiple chemical processes
+(e.g., gas- and aerosol-phase chemical reactions, emissions, deposition, photolysis, and mass-transfer)
+to be solved simultaneously as a single system. The flexibility of the model is achieved by (1) using
+an object-oriented design that facilitates extensibility to new types of chemical processes and
+to new ways of representing aerosol systems; (2) runtime model configuration using JSON input files
+that permits making changes to any part of the chemical mechanism without recompiling the model;
+this widely used, human-readable format allows entire gas- and aerosol-phase chemical mechanisms
+to be described with as much complexity as necessary; and (3) automated comprehensive testing that
+ensures stability of the code as new functionality is introduced. Together, these design choices
+enable users to build a customized multiphase mechanism, without having to handle pre-processors,
+solvers or compilers. This new treatment compiles as a stand-alone library and has been deployed
+in the particle-resolved PartMC model and in the MONARCH chemical weather prediction system for
+use at regional and global scales. Results from the initial deployment will be discussed, along
+with future extension to more complex gas-aerosol systems, and the integration of GPU-based solvers.

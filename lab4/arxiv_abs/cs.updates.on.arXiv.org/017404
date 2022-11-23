@@ -1,0 +1,20 @@
+Finding small vertex covers in a graph has applications in numerous domains. Two common formulations
+of the problem include: Minimum Vertex Cover, which finds the smallest vertex cover in a graph, and
+Parameterized Vertex Cover, which finds a vertex cover whose size is less than or equal to some parameter
+$k$. Algorithms for both formulations traverse a search tree, which grows exponentially with the
+size of the graph or the value of $k$. Parallelizing the traversal of the vertex cover search tree
+on GPUs is challenging for multiple reasons. First, the search tree is a narrow binary tree which
+makes it difficult to extract enough sub-trees to process in parallel to fully utilize the GPU's
+resources. Second, the search tree is highly imbalanced which makes load balancing across a massive
+number of parallel GPU workers challenging. Third, keeping around all the intermediate state needed
+to traverse many sub-trees in parallel puts high pressure on the GPU's memory resources and may act
+as a limiting factor to parallelism. To address these challenges, we propose an approach to traverse
+the vertex cover search tree in parallel using GPUs while handling dynamic load balancing. Each
+thread block traverses a different sub-tree using a local stack, however, we also use a global worklist
+to balance load. Blocks contribute branches of their sub-trees to the global worklist on an as-needed
+basis, while blocks that finish their sub-trees get new ones from the global worklist. We use degree
+arrays to represent intermediate graphs so that the representation is compact in memory to avoid
+limiting parallelism, but self-contained which is necessary for load balancing. Our evaluation
+shows that compared to prior work, our hybrid approach of using local stacks and a global worklist
+substantially improves performance and reduces load imbalance, especially on difficult instances
+of the problem. 

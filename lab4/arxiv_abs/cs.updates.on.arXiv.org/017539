@@ -1,0 +1,20 @@
+Micro-expression recognition (MER) is valuable because the involuntary nature of micro-expressions
+(MEs) can reveal genuine emotions. Most works recognize MEs by taking RGB videos or images as input.
+In fact, the activated facial regions in ME images are very small and the subtle motion can be easily
+submerged in the unrelated information. Facial landmarks are a low-dimensional and compact modality,
+which leads to much lower computational cost and can potentially concentrate more on ME-related
+features. However, the discriminability of landmarks for MER is not clear. Thus, this paper explores
+the contribution of facial landmarks and constructs a new framework to efficiently recognize MEs
+with sole facial landmark information. Specially, we design a separate structure module to separately
+aggregate the spatial and temporal information in the geometric movement graph based on facial
+landmarks, and a Geometric Two-Stream Graph Network is constructed to aggregate the low-order
+geometric information and high-order semantic information of facial landmarks. Furthermore,
+two core components are proposed to enhance features. Specifically, a semantic adjacency matrix
+can automatically model the relationship between nodes even long-distance nodes in a self-learning
+fashion; and an Adaptive Action Unit loss is introduced to guide the learning process such that the
+learned features are forced to have a synchronized pattern with facial action units. Notably, this
+work tackles MER only utilizing geometric features, processed based on a graph model, which provides
+a new idea with much higher efficiency to promote MER. The experimental results demonstrate that
+the proposed method can achieve competitive or even superior performance with a significantly
+reduced computational cost, and facial landmarks can significantly contribute to MER and are worth
+further study for efficient ME analysis. 

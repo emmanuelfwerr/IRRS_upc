@@ -1,0 +1,20 @@
+Accurate and efficient pedestrian detection is crucial for the intelligent transportation system
+regarding pedestrian safety and mobility, e.g., Advanced Driver Assistance Systems, and smart
+pedestrian crosswalk systems. Among all pedestrian detection methods, vision-based detection
+method is demonstrated to be the most effective in previous studies. However, the existing vision-based
+pedestrian detection algorithms still have two limitations that restrict their implementations,
+those being real-time performance as well as the resistance to the impacts of environmental factors,
+e.g., low illumination conditions. To address these issues, this study proposes a lightweight
+Illumination and Temperature-aware Multispectral Network (IT-MN) for accurate and efficient
+pedestrian detection. The proposed IT-MN is an efficient one-stage detector. For accommodating
+the impacts of environmental factors and enhancing the sensing accuracy, thermal image data is
+fused by the proposed IT-MN with visual images to enrich useful information when visual image quality
+is limited. In addition, an innovative and effective late fusion strategy is also developed to optimize
+the image fusion performance. To make the proposed model implementable for edge computing, the
+model quantization is applied to reduce the model size by 75% while shortening the inference time
+significantly. The proposed algorithm is evaluated by comparing with the selected state-of-the-art
+algorithms using a public dataset collected by in-vehicle cameras. The results show that the proposed
+algorithm achieves a low miss rate and inference time at 14.19% and 0.03 seconds per image pair on
+GPU. Besides, the quantized IT-MN achieves an inference time of 0.21 seconds per image pair on the
+edge device, which also demonstrates the potentiality of deploying the proposed model on edge devices
+as a highly efficient pedestrian detection algorithm. 

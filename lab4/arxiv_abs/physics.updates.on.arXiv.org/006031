@@ -1,0 +1,19 @@
+Time delay estimation (TDE) between two radio-frequency (RF) frames is one of the major steps of
+quasi-static ultrasound elastography, which detects tissue pathology by estimating its mechanical
+properties. Regularized optimization-based techniques, a prominent class of TDE algorithms,
+optimize a non-linear energy functional consisting of data constancy and spatial continuity constraints
+to obtain the displacement and strain maps between the time-series frames under consideration.
+The existing optimization-based TDE methods often consider the L2-norm of displacement derivatives
+to construct the regularizer. However, such a formulation over-penalizes the displacement irregularity
+and poses two major issues to the estimated strain field. First, the boundaries between different
+tissues are blurred. Second, the visual contrast between the target and the background is suboptimal.
+To resolve these issues, herein, we propose a novel TDE algorithm where instead of L2-, L1-norms
+of both first- and second-order displacement derivatives are taken into account to devise the continuity
+functional. We handle the non-differentiability of L1-norm by smoothing the absolute value function's
+sharp corner and optimize the resulting cost function in an iterative manner. We call our technique
+Second-Order Ultrasound eLastography with L1-norm spatial regularization (L1-SOUL). In terms
+of both sharpness and visual contrast, L1-SOUL substantially outperforms GLUE, OVERWIND, and
+SOUL, three recently published TDE algorithms in all validation experiments performed in this
+study. In cases of simulated, phantom, and in vivo datasets, respectively, L1-SOUL achieves 67.8%,
+46.81%, and 117.35% improvements of contrast-to-noise ratio (CNR) over SOUL. The L1-SOUL code
+can be downloaded from this http URL 

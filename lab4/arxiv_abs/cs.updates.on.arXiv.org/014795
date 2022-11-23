@@ -1,0 +1,19 @@
+Functional groups and moieties are chemical descriptors of biomolecules that can be used to interpret
+their properties and functions, leading to the understanding of chemical or biological mechanisms.
+These chemical building blocks, or sub-structures, enable the identification of common molecular
+subgroups, assessing the structural similarities and critical interactions among a set of biological
+molecules with known activities, and designing novel compounds with similar chemical properties.
+Here, we introduce a Python-based tool, SPECTRe (Substructure Processing, Enumeration, and Comparison
+Tool Resource), designed to provide all substructures in a given molecular structure, regardless
+of the molecule size, employing efficient enumeration and generation of substructures represented
+in a human-readable SMILES format through the use of classical graph traversal (breadth-first
+and depth-first search) algorithms. We demonstrate the application of SPECTRe for a set of 10,375
+molecules in the molecular weight range 27 to 350 Da (<=26 non-hydrogen atoms), spanning a wide array
+of structure-based chemical functionalities and chemical classes. We found that the substructure
+count as a measure of molecular complexity depends strongly on the number of unique atom and bond
+types present, degree of branching, and presence of rings. The substructure counts are found to
+be similar for a set of molecules belonging to particular chemical classes and classified based
+on the characteristic features of certain topologies. We demonstrate that SPECTRe shows promise
+to be useful in many applications of cheminformatics such as virtual screening for drug discovery,
+property prediction, fingerprint-based molecular similarity searching, and data mining for
+identifying frequent substructures. 

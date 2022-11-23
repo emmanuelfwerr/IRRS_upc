@@ -1,0 +1,20 @@
+Systems-on-Chips (SoCs) that power autonomous vehicles (AVs) must meet stringent performance
+and safety requirements prior to deployment. With increasing complexity in AV applications, the
+system needs to meet these real-time demands of multiple safety-critical applications simultaneously.
+A typical AV-SoC is a heterogeneous multiprocessor consisting of accelerators supported by general-purpose
+cores. Such heterogeneity, while needed for power-performance efficiency, complicates the art
+of task scheduling. In this paper, we demonstrate that hardware heterogeneity impacts the scheduler's
+effectiveness and that optimizing for only the real-time aspect of applications is not sufficient
+in AVs. Therefore, a more holistic approach is required -- one that considers global Quality-of-Mission
+(QoM) metrics, as defined in the paper. We then propose HetSched, a multi-step scheduler that leverages
+dynamic runtime information about the underlying heterogeneous hardware platform, along with
+the applications' real-time constraints and the task traffic in the system to optimize overall
+mission performance. HetSched proposes two scheduling policies: MSstat and MSdyn and scheduling
+optimizations like task pruning, hybrid heterogeneous ranking and rank update. HetSched improves
+overall mission performance on average by 4.6x, 2.6x and 2.6x when compared against CPATH, ADS and
+2lvl-EDF (state-of-the-art real-time schedulers built for heterogeneous systems), respectively,
+and achieves an average of 53.3% higher hardware utilization, while meeting 100% critical deadlines
+for real-world applications of autonomous vehicles. Furthermore, when used as part of an SoC design
+space exploration loop, in comparison to prior schedulers, HetSched reduces the number of processing
+elements required by an SoC to safely complete AV's missions by 35% on average while achieving 2.7x
+lower energy-mission time product. 

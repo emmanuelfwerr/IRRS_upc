@@ -1,0 +1,18 @@
+ARX-based ciphers, constructed by the modular addition, rotation and XOR operations, have been
+receiving a lot of attention in the design of lightweight symmetric ciphers. For their differential
+cryptanalysis, most automatic search methods of differential trails adopt the assumption of independence
+of modulo additions. However, this assumption does not necessarily hold when the trail includes
+consecutive modular additions (CMAs). It has already been found that in this case some differential
+trails searched by automatic methods before are actually impossible, but the study is not in depth
+yet, for example, few effort has been paid to exploiting the root causes of non-independence between
+CMAs and accurate calculation of probabilities of the valid trails. In this paper, we devote to solving
+these two problems. By examing the differential equations of single and consecutive modular additions,
+we find that the influence of non-independence can be described by relationships between constraints
+on the intermediate state of two additions. Specifically, constraints of the first addition can
+make some of its output bits non-uniform, and when they meet the constraints of the second addition,
+the differential probability of the whole CMA may be different from the value calculated under the
+independence assumption. As a result, we can build SAT models to verify the validity of a given differential
+trail of ARX ciphers and #SAT models to calculate the exact probabilities of the differential propagation
+through CMAs in the trail, promising a more accurate evaluation of probability of the trail. Our
+automic methods and searching tools are applied to search related-key differential trails of SPECK
+and Chaskey including CMAs in the key schedule and the round function respectively. 

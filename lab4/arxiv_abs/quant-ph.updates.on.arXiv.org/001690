@@ -1,0 +1,19 @@
+Quantum machine learning (QML) has been identified as one of the key fields that could reap advantages
+from near-term quantum devices, next to optimization and quantum chemistry. Research in this area
+has focused primarily on variational quantum algorithms (VQAs), and several proposals to enhance
+supervised, unsupervised and reinforcement learning (RL) algorithms with VQAs have been put forward.
+Out of the three, RL is the least studied and it is still an open question whether VQAs can be competitive
+with state-of-the-art classical algorithms based on neural networks (NNs) even on simple benchmark
+tasks. In this work, we introduce a training method for parametrized quantum circuits (PQCs) that
+can be used to solve RL tasks for discrete and continuous state spaces based on the deep Q-learning
+algorithm. We investigate which architectural choices for quantum Q-learning agents are most
+important for successfully solving certain types of environments by performing ablation studies
+for a number of different data encoding and readout strategies. We provide insight into why the performance
+of a VQA-based Q-learning algorithm crucially depends on the observables of the quantum model and
+show how to choose suitable observables based on the learning task at hand. To compare our model against
+the classical DQN algorithm, we perform an extensive hyperparameter search of PQCs and NNs with
+varying numbers of parameters. We confirm that similar to results in classical literature, the
+architectural choices and hyperparameters contribute more to the agents' success in a RL setting
+than the number of parameters used in the model. Finally, we show when recent separation results
+between classical and quantum agents for policy gradient RL can be extended to inferring optimal
+Q-values in restricted families of environments. 

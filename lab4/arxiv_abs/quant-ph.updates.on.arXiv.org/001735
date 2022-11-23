@@ -1,0 +1,19 @@
+Smart contracts are cryptographic protocols that are enforced without a judiciary. Smart contracts
+are used occasionally in Bitcoin and are prevalent in Ethereum. Public quantum money improves upon
+cash we use today, yet the current constructions do not enable smart contracts. In this work, we define
+and introduce quantum payment schemes, and show how to implement prudent contracts -- a non-trivial
+subset of the functionality that a network such as Ethereum provides. Examples discussed include:
+multi-signature wallets in which funds can be spent by any 2-out-of-3 owners; restricted accounts
+that can send funds only to designated destinations; and "colored coins" that can represent stocks
+that can be freely traded, and their owner would receive dividends. Our approach is not as universal
+as the one used in Ethereum since we do not reach a consensus regarding the state of a ledger. We call
+our proposal prudent contracts to reflect this. The main building block is either quantum tokens
+for digital signatures (Ben-David and Sattath QCrypt'17, Coladangelo et al. Crypto'21), semi-quantum
+tokens for digital signatures (Shmueli'22) or one-shot signatures (Amos et al. STOC'20). The solution
+has all the benefits of public quantum money: no mining is necessary, and the security model is standard
+(e.g., it is not susceptible to 51\% attacks, as in Bitcoin). Our one-shot signature construction
+can be used to upgrade the Bitcoin network to a quantum payment scheme. Notable advantages of this
+approach are: transactions are locally verifiable and without latency, the throughput is unbounded,
+and most importantly, it would remove the need for Bitcoin mining. Our approach requires a universal
+large-scale quantum computer and long-term quantum memory; hence we do not expect it to be implementable
+in the next few years. 

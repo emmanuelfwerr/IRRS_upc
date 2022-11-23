@@ -1,0 +1,19 @@
+In this paper we develop FaceQgen, a No-Reference Quality Assessment approach for face images based
+on a Generative Adversarial Network that generates a scalar quality measure related with the face
+recognition accuracy. FaceQgen does not require labelled quality measures for training. It is
+trained from scratch using the SCface database. FaceQgen applies image restoration to a face image
+of unknown quality, transforming it into a canonical high quality image, i.e., frontal pose, homogeneous
+background, etc. The quality estimation is built as the similarity between the original and the
+restored images, since low quality images experience bigger changes due to restoration. We compare
+three different numerical quality measures: a) the MSE between the original and the restored images,
+b) their SSIM, and c) the output score of the Discriminator of the GAN. The results demonstrate that
+FaceQgen's quality measures are good estimators of face recognition accuracy. Our experiments
+include a comparison with other quality assessment methods designed for faces and for general images,
+in order to position FaceQgen in the state of the art. This comparison shows that, even though FaceQgen
+does not surpass the best existing face quality assessment methods in terms of face recognition
+accuracy prediction, it achieves good enough results to demonstrate the potential of semi-supervised
+learning approaches for quality estimation (in particular, data-driven learning based on a single
+high quality image per subject), having the capacity to improve its performance in the future with
+adequate refinement of the model and the significant advantage over competing methods of not needing
+quality labels for its development. This makes FaceQgen flexible and scalable without expensive
+data curation. 

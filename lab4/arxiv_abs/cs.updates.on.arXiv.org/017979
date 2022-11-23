@@ -1,0 +1,19 @@
+In more recent years, there has been increasing research interest in exploiting the use of application
+specific hardware for solving optimisation problems. Examples of solvers that use specialised
+hardware are IBM's Quantum System One and D-wave's Quantum Annealer (QA) and Fujitsu's Digital
+Annealer (DA). These solvers have been developed to optimise problems faster than traditional
+meta-heuristics implemented on general purpose machines. Previous research has shown that these
+solvers (can optimise many problems much quicker than exact solvers such as GUROBI and CPLEX. Such
+conclusions have not been made when comparing hardware solvers with classical evolutionary algorithms.
+Making a fair comparison between traditional evolutionary algorithms, such as Genetic Algorithm
+(GA), and the DA (or other similar solvers) is challenging because the later benefits from the use
+of application specific hardware while evolutionary algorithms are often implemented on generation
+purpose machines. Moreover, quantum or quantum-inspired solvers are limited to solving problems
+in a specific format. A common formulation used is Quadratic Unconstrained Binary Optimisation
+(QUBO). Many optimisation problems are however constrained and have natural representations
+that are non-binary. Converting such problems to QUBO can lead to more problem difficulty and/or
+larger search space. The question addressed in this paper is whether quantum or quantum-inspired
+solvers can optimise QUBO transformations of combinatorial optimisation problems faster than
+classical evolutionary algorithms applied to the same problems in their natural representations.
+We show that the DA often presents better average objective function values than GA on Travelling
+Salesman, Quadratic Assignment and Multi-dimensional Knapsack Problem instances. 

@@ -1,0 +1,20 @@
+Deep learning has been a prevalence in computational chemistry and widely implemented in molecule
+property predictions. Recently, self-supervised learning (SSL), especially contrastive learning
+(CL), gathers growing attention for the potential to learn molecular representations that generalize
+to the gigantic chemical space. Unlike supervised learning, SSL can directly leverage large unlabeled
+data, which greatly reduces the effort to acquire molecular property labels through costly and
+time-consuming simulations or experiments. However, most molecular SSL methods borrow the insights
+from the machine learning community but neglect the unique cheminformatics (e.g., molecular fingerprints)
+and multi-level graphical structures (e.g., functional groups) of molecules. In this work, we
+propose iMolCLR: improvement of Molecular Contrastive Learning of Representations with graph
+neural networks (GNNs) in two aspects, (1) mitigating faulty negative contrastive instances via
+considering cheminformatics similarities between molecule pairs; (2) fragment-level contrasting
+between intra- and inter-molecule substructures decomposed from molecules. Experiments have
+shown that the proposed strategies significantly improve the performance of GNN models on various
+challenging molecular property predictions. In comparison to the previous CL framework, iMolCLR
+demonstrates an averaged 1.3% improvement of ROC-AUC on 7 classification benchmarks and an averaged
+4.8% decrease of the error on 5 regression benchmarks. On most benchmarks, the generic GNN pre-trained
+by iMolCLR rivals or even surpasses supervised learning models with sophisticated architecture
+designs and engineered features. Further investigations demonstrate that representations learned
+through iMolCLR intrinsically embed scaffolds and functional groups that can reason molecule
+similarities. 

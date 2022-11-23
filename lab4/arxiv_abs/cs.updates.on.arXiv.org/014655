@@ -1,0 +1,19 @@
+Log-Structured Merge tree (LSM tree) Key-Value (KV) stores have become a foundational layer in
+the storage stacks of datacenter and cloud services. Current approaches for achieving reliability
+and availability avoid replication at the KV store level and instead perform these operations at
+higher layers, e.g., the DB layer that runs on top of the KV store. The main reason is that past designs
+for replicated KV stores favor reducing network traffic and increasing I/O size. Therefore, they
+perform costly compactions to reorganize data in both the primary and backup nodes, which hurts
+overall system performance. In this paper, we design and implement Talos, an efficient rack-scale
+LSM-based KV store that aims to significantly reduce the I/O amplification and CPU overhead in backup
+nodes and make replication in the KV store practical. We rely on two observations: (a) the increased
+use of RDMA in the datacenter, which reduces CPU overhead for communication, and (b) the use of KV
+separation that is becoming prevalent in modern KV stores. We use a primary-backup replication
+scheme that performs compactions only on the primary nodes and sends the pre-built index to the backup
+nodes of the region, avoiding all compactions in backups. Our approach includes an efficient mechanism
+to deal with pointer translation across nodes in the region index. Our results show that Talos reduces
+in the backup nodes, I/O amplification by up to $3\times$, CPU overhead by up to $1.6\times$, and
+memory size needed for the write path by up to $2\times$, without increasing network bandwidth excessively,
+and by up to $1.3\times$. Overall, we show that our approach has benefits even when small KV pairs
+dominate in a workload (80%-90%). Finally, it enables KV stores to operate with larger growth factors
+(from 10 to 16) to reduce space amplification without sacrificing precious CPU cycles. 

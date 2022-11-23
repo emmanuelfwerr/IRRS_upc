@@ -1,0 +1,19 @@
+We address the problem of defending predictive models, such as machine learning classifiers (Defender
+models), against membership inference attacks, in both the black-box and white-box setting, when
+the trainer and the trained model are publicly released. The Defender aims at optimizing a dual objective:
+utility and privacy. Both utility and privacy are evaluated with an external apparatus including
+an Attacker and an Evaluator. On one hand, Reserved data, distributed similarly to the Defender
+training data, is used to evaluate Utility; on the other hand, Reserved data, mixed with Defender
+training data, is used to evaluate membership inference attack robustness. In both cases classification
+accuracy or error rate are used as the metric: Utility is evaluated with the classification accuracy
+of the Defender model; Privacy is evaluated with the membership prediction error of a so-called
+"Leave-Two-Unlabeled" LTU Attacker, having access to all of the Defender and Reserved data, except
+for the membership label of one sample from each. We prove that, under certain conditions, even a
+"na\"ive" LTU Attacker can achieve lower bounds on privacy loss with simple attack strategies,
+leading to concrete necessary conditions to protect privacy, including: preventing over-fitting
+and adding some amount of randomness. However, we also show that such a na\"ive LTU Attacker can fail
+to attack the privacy of models known to be vulnerable in the literature, demonstrating that knowledge
+must be complemented with strong attack strategies to turn the LTU Attacker into a powerful means
+of evaluating privacy. Our experiments on the QMNIST and CIFAR-10 datasets validate our theoretical
+results and confirm the roles of over-fitting prevention and randomness in the algorithms to protect
+against privacy attacks. 

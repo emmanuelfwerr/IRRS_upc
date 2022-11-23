@@ -1,0 +1,19 @@
+When the global rollout of the DNS Security Extensions (DNSSEC) began in 2005, it started a first-of-its-kind
+trial: increasing complexity of a core Internet protocol in favor of better security for the overall
+Internet. The necessary cryptographic key management is made particularly challenging by DNS'
+loosely-federated delegation substrate and unprecedented cryptographic scale. Though fundamental
+for current and future operational success, our community lacks a clear notion of how to empirically
+evaluate the process of securely changing (or transitioning) keys. In this paper, we propose two
+building blocks to fundamentally understand and assess key transitions. First, the anatomy of
+key transitions: measurable and well-defined properties of key changes; and second a novel classification
+model based on this anatomy to describe key transitions practices in abstract terms. Our anatomy
+enables the evaluation of cryptographic keys' life cycles in general, and comparison of operational
+practices with prescribed key management processes, e.g., RFC key rollover guidelines. The fine-grained
+transition anatomy is then abstracted through our classification model to characterize transitions
+in abstract terms which rather describe a transition's behavior than its specific features. The
+applicability and utility of our proposed transition anatomy and transition classes are exemplified
+for the global DNSSEC deployment. Specifically, we use measurements from the first 15 years of the
+DNSSEC rollout to detect and measure which key rollover/transitions have been used, to what degree,
+and what their rates of errors and warnings have been. Our results show measurable gaps between prescribed
+key management processes and key transitions in the wild. We also find evidence that such noncompliant
+transitions are inevitable in the wild. 

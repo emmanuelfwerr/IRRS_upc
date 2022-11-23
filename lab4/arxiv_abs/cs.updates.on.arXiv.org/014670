@@ -1,0 +1,20 @@
+Land cover classification in remote sensing is often faced with the challenge of limited ground
+truth. Incorporating historical information has the potential to significantly lower the expensive
+cost associated with collecting ground truth and, more importantly, enable early- and in-season
+mapping that is helpful to many pre-harvest decisions. In this study, we propose a new approach that
+can effectively transfer knowledge about the topology (i.e. relative position) of different crop
+types in the spectral feature space (e.g. the histogram of SWIR1 vs RDEG1 bands) to generate labels,
+thereby support crop classification in a different year. Importantly, our approach does not attempt
+to transfer classification decision boundaries that are susceptible to inter-annual variations
+of weather and management, but relies on the more robust and shift-invariant topology information.
+We tested this approach for mapping corn/soybeans in the US Midwest and paddy rice/corn/soybeans
+in Northeast China using Landsat-8 and Sentinel-2 data. Results show that our approach automatically
+generates high-quality labels for crops in the target year immediately after each image becomes
+available. Based on these generated labels from our approach, the subsequent crop type mapping
+using a random forest classifier reach the F1 score as high as 0.887 for corn as early as the silking
+stage and 0.851 for soybean as early as the flowering stage and the overall accuracy of 0.873 in Iowa.
+In Northeast China, F1 scores of paddy rice, corn and soybeans and the overall accuracy can exceed
+0.85 two and half months ahead of harvest. Overall, these results highlight unique advantages of
+our approach in transferring historical knowledge and maximizing the timeliness of crop maps.
+Our approach supports a general paradigm shift towards learning transferrable and generalizable
+knowledge to facilitate land cover classification. 

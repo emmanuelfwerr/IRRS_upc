@@ -1,0 +1,20 @@
+Improvements in main memory storage density are primarily driven by process technology scaling,
+which negatively impacts reliability by exacerbating various circuit-level error mechanisms.
+To compensate for growing error rates, both memory manufacturers and consumers use error-mitigation
+mechanisms that improve manufacturing yield and allow system designers to meet reliability targets.
+Developing effective error mitigations requires understanding the errors' characteristics
+(e.g., worst-case behavior, statistical properties). Unfortunately, we observe that proprietary
+on-die Error-Correcting Codes (ECC) used in modern memory chips introduce new challenges to efficient
+error mitigation by obfuscating CPU-visible error characteristics in an unpredictable, ECC-dependent
+manner. This dissertation builds a detailed understanding of how on-die ECC obfuscates the statistical
+properties of main memory error mechanisms using a combination of real-chip experiments and statistical
+analyses. We experimentally study memory errors, examine how on-die ECC obfuscates their statistical
+characteristics, and develop new testing techniques to overcome the obfuscation. Our results
+show that the obfuscated error characteristics can be recovered using new memory testing techniques
+that exploit the interaction between on-die ECC and the statistical characteristics of memory
+error mechanisms to expose physical cell behavior. We conclude by discussing the critical need
+for transparency in DRAM reliability characteristics in order to enable DRAM consumers to better
+understand and adapt commodity DRAM chips to their system-specific needs. We hope and believe that
+the analysis, techniques, and results we present in this dissertation will enable the community
+to better understand and tackle current and future reliability challenges as well as adapt commodity
+memory to new advantageous applications. 

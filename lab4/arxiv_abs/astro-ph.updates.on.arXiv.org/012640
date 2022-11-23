@@ -1,0 +1,19 @@
+Images collected with ground-based telescopes suffer blurring and distortions from turbulence
+in Earth's atmosphere. Adaptive optics (AO) can only partially compensate for these effects. Neither
+multi-frame blind deconvolution (MFBD) nor speckle techniques restore AO compensated images
+to the correct power spectrum and contrast. MFBD can only compensate for a finite number of low-order
+aberrations, leaving a tail of uncorrected high-order modes. Speckle restoration of AO-corrected
+data depends on calibrations of the AO corrections and assumptions regarding the height distribution
+of atmospheric turbulence. We seek to develop an improvement to MFBD that combines speckle's usage
+of turbulence statistics to account for high-order modes with the ability of MFBD to sense low-order
+modes that can be partially corrected by AO and/or include fixed or slowly changing instrumental
+aberrations. We modify the image formation model, supplementing the fitted low-order wavefront
+aberrations with tails of random high-order aberrations that follow Kolmogorov statistics, scaled
+to estimated or measured values of Fried's parameter, r0, that characterize the strength of the
+seeing at the moment of data collection. We refer to this as statistical diversity (SD). We test MFBD
+with SD with noise-free synthetic data, simulating many different r0 and numbers of AO-corrected
+modes. SD improves the contrasts and power spectra of restored images, both in accuracy and in consistency
+with varying r0, without penalty in processing time. With focus diversity (FD), the results are
+almost perfect. SD also reduces errors in the fitted wavefront parameters. MFBD with SD and FD seems
+robust with respect to several percents of error in r0. Adding SD to MFBD shows great promise for improving
+contrasts and power spectra in restored images. Further studies with real data are motivated. 

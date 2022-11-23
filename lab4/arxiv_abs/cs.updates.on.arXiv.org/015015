@@ -1,0 +1,19 @@
+The millimeter-wave (mmW) communications is a key enabling technology in 5G to provide ultra-high
+throughput. Current mmW technologies rely on analog phased arrays to realize beamforming gain
+and overcome high path loss. However, due to a limited number of simultaneous beams that can be created
+with analog/hybrid phased antenna arrays, the overheads of beam training and beam scheduling become
+a bottleneck for emerging networks that need to support a large number of users and low latency applications.
+This paper introduces rainbow-link, a novel multiple access protocol, that can achieve low latency
+and massive connectivity by exploiting wide bandwidth at mmW frequencies and novel analog true-time-delay
+array architecture with frequency dependent beamforming capability. In the proposed design,
+the network infrastructure is equipped with the true-time-delay array to simultaneously steer
+different frequency resource blocks towards distinct directions covering the entire cell sector.
+Users or devices, equipped with a narrowband receiver and either a single antenna or small phased
+antenna array, connect to the network based on their angular positions by selecting frequency resources
+within their rainbow beam allocation. Rainbow-link is combined with a contention-based grant-free
+access to eliminate the explicit beam training and user scheduling. The proposed design and analysis
+show that rainbow-link grant-free access is a potential candidate for latency-critical use cases
+within massive connectivity. Our results show that, given less than 1e-5 probability of packet
+loss, a rainbow-link cell, over 1 GHz bandwidth using 64 element antenna array, attains sub-millisecond
+user-plane latency and Mbps user rates with an approximate 400m line-of-sight coverage and a density
+of up to 5 active single antenna users per second per meter square. 

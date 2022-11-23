@@ -1,0 +1,19 @@
+There has been significant progress in the development of quantum algorithms for solving linear
+systems of equations with a growing body of applications to Computational Fluid Dynamics (CFD)
+and CFD-like problems. This work extends previous work by developing a non-linear hybrid quantum-classical
+CFD solver and using it to generate fully converged solutions. The hybrid solver uses the SIMPLE
+CFD algorithm, which is common in many industrial CFD codes, and applies it to the 2-dimensional
+lid driven cavity test case. A theme of this work is the classical processing time needed to prepare
+the quantum circuit with a focus on the decomposition of the CFD matrix into a linear combination
+of unitaries (LCU). CFD meshes with up to 65x65 nodes are considered with the largest producing a
+LCU containing 32,767 Pauli strings. A new method for rapidly re-computing the coefficients in
+a LCU is proposed, although this reduces, rather than eliminates, the classical scaling issues.
+The quantum linear equation solver uses the Harrow, Hassidim, Lloyd (HHL) algorithm via a state-vector
+emulator. Test matrices are sampled from the classical CFD solver to investigate the solution accuracy
+that can be achieved with HHL. For the smallest 5x5 and 9x9 CFD meshes, full non-linear hybrid CFD
+calculations are performed. The impacts of approximating the LCU and the varying the number of ancilla
+rotations in the eigenvalue inversion circuit are studied. Preliminary timing results indicate
+that the classical computer preparation time needed for a hybrid solver is just as important to the
+achievement of quantum advantage in CFD as the time on the quantum computer. The reported HHL solutions
+and LCU decompositions provide a benchmark for future research. The CFD test matrices used in this
+study are available upon request. 

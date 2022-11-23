@@ -1,0 +1,19 @@
+This theoretical paper is devoted to developing a rigorous theory for demystifying the global convergence
+phenomenon in a challenging scenario: learning over-parameterized Rectified Linear Unit (ReLU)
+nets for very high dimensional dataset under very mild assumptions. A major ingredient of our analysis
+is a fine-grained analysis of random activation matrices. The essential virtue of dissecting activation
+matrices is that it bridges the dynamics of optimization and angular distribution in high-dimensional
+data space. This angle-based detailed analysis leads to asymptotic characterizations of gradient
+norm and directional curvature of objective function at each gradient descent iteration, revealing
+that the empirical loss function enjoys nice geometrical properties in the overparameterized
+setting. Along the way, we significantly improve existing theoretical bounds on both over-parameterization
+condition and learning rate with very mild assumptions for learning very high dimensional data.
+Moreover, we uncover the role of the geometrical and spectral properties of the input data in determining
+desired over-parameterization size and global convergence rate. All these clues allow us to discover
+a novel geometric picture of nonconvex optimization in deep learning: angular distribution in
+high-dimensional data space $\mapsto$ spectrums of overparameterized activation matrices $\mapsto$
+favorable geometrical properties of empirical loss landscape $\mapsto$ global convergence phenomenon.
+Furthremore, our theoretical results imply that gradient-based nonconvex optimization algorithms
+have much stronger statistical guarantees with much milder over-parameterization condition
+than exisiting theory states for learning very high dimensional data, which is rarely explored
+so far. 

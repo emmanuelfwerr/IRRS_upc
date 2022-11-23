@@ -1,0 +1,20 @@
+Deep learning (DL) based semantic segmentation methods have achieved excellent performance in
+biomedical image segmentation, producing high quality probability maps to allow extraction of
+rich instance information to facilitate good instance segmentation. While numerous efforts were
+put into developing new DL semantic segmentation models, less attention was paid to a key issue of
+how to effectively explore their probability maps to attain the best possible instance segmentation.
+We observe that probability maps by DL semantic segmentation models can be used to generate many
+possible instance candidates, and accurate instance segmentation can be achieved by selecting
+from them a set of "optimized" candidates as output instances. Further, the generated instance
+candidates form a well-behaved hierarchical structure (a forest), which allows selecting instances
+in an optimized manner. Hence, we propose a novel framework, called hierarchical earth mover's
+distance (H-EMD), for instance segmentation in biomedical 2D+time videos and 3D images, which
+judiciously incorporates consistent instance selection with semantic-segmentation-generated
+probability maps. H-EMD contains two main stages. (1) Instance candidate generation: capturing
+instance-structured information in probability maps by generating many instance candidates
+in a forest structure. (2) Instance candidate selection: selecting instances from the candidate
+set for final instance segmentation. We formulate a key instance selection problem on the instance
+candidate forest as an optimization problem based on the earth mover's distance (EMD), and solve
+it by integer linear programming. Extensive experiments on eight biomedical video or 3D datasets
+demonstrate that H-EMD consistently boosts DL semantic segmentation models and is highly competitive
+with state-of-the-art methods. 

@@ -1,0 +1,19 @@
+High-throughput structure-based screening of drug-like molecules has become a common tool in
+biomedical research. Recently, acceleration with graphics processing units (GPUs) has provided
+a large performance boost for molecular docking programs. Both cloud and high-performance computing
+(HPC) resources have been used for large screens with molecular docking programs; while NVIDIA
+GPUs have dominated cloud and HPC resources, new vendors such as AMD and Intel are now entering the
+field, creating the problem of software portability across different GPUs. Ideally, software
+productivity could be maximized with portable programming models that are able to maintain high
+performance across architectures. While in many cases compiler directives have been used as an
+easy way to offload parallel regions of a CPU-based program to a GPU accelerator, they may also be
+an attractive programming model for providing portability across different GPU vendors, in which
+case the porting process may proceed in the reverse direction: from low-level, architecture-specific
+code to higher-level directive-based abstractions. MiniMDock is a new mini-application (miniapp)
+designed to capture the essential computational kernels found in molecular docking calculations,
+such as are used in pharmaceutical drug discovery efforts, in order to test different solutions
+for porting across GPU architectures. Here we extend MiniMDock to GPU offloading with OpenMP directives,
+and compare to performance of kernels using CUDA, and HIP on both NVIDIA and AMD GPUs, as well as across
+different compilers, exploring performance bottlenecks. We document this reverse-porting process,
+from highly optimized device code to a higher-level version using directives, compare code structure,
+and describe barriers that were overcome in this effort. 

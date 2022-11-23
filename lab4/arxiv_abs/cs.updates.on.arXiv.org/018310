@@ -1,0 +1,19 @@
+The Hierarchical Clustering (HC) problem consists of building a hierarchy of clusters to represent
+a given dataset. Motivated by the modern large-scale applications, we study the problem in the \streaming
+model, in which the memory is heavily limited and only a single or very few passes over the input are
+allowed. Specifically, we investigate whether a good hierarchical clustering can be obtained,
+or at least whether we can approximately estimate the value of the optimal hierarchy. To measure
+the quality of a hierarchy, we use the HC minimization objective introduced by Dasgupta. Assuming
+that the input is an $n$-vertex weighted graph whose edges arrive in a stream, we derive the following
+results on space-vs-accuracy tradeoffs: * With $O(n\cdot \text{polylog}\,{n})$ space, we develop
+a single-pass algorithm, whose approximation ratio matches the currently best offline algorithm.
+* When the space is more limited, namely, $n^{1-o(1)}$, we prove that no algorithm can even estimate
+the value of optimum HC tree to within an $o(\frac{\log{n}}{\log\log{n}})$ factor, even when allowed
+$\text{polylog}{\,{n}}$ passes over the input. * In the most stringent setting of $\text{polylog}\,{n}$
+space, we rule out algorithms that can even distinguish between "highly"-vs-"poorly" clusterable
+graphs, namely, graphs that have an $n^{1/2-o(1)}$ factor gap between their HC objective value.
+* Finally, we prove that any single-pass streaming algorithm that computes an optimal HC tree requires
+to store almost the entire input even if allowed exponential time. Our algorithmic results establish
+a general structural result that proves that cut sparsifiers of input graph can preserve cost of
+"balanced" HC trees to within a constant factor. Our lower bound results include a new streaming
+lower bound for a novel problem "One-vs-Many-Expanders", which can be of independent interest.

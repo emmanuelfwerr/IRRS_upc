@@ -1,0 +1,20 @@
+A fundamental challenge in the design of photonic devices, and electromagnetic structures more
+generally, is the optimization of their overall architecture to achieve a desired response. To
+this end, topology or shape optimizers based on the adjoint variables method have been widely adopted
+due to their high computational efficiency and ability to create complex freeform geometries.
+However, the functional understanding of such freeform structures remains a black box. Moreover,
+unless a design space of high-performance devices is known in advance, such gradient-based optimizers
+can get trapped in local minima valleys or saddle points, which limits performance achievable through
+this inverse design process. To elucidate the relationships between device performance and nanoscale
+structuring while mitigating the effects of local minima trapping, we present an inverse design
+framework that combines adjoint optimization, automated machine learning (AutoML), and explainable
+artificial intelligence (XAI). Integrated with a numerical electromagnetics simulation method,
+our framework reveals structural contributions towards a figure-of-merit (FOM) of interest.
+Through an explanation-based reoptimization process, this information is then leveraged to minimize
+the FOM further than that obtained through adjoint optimization alone, thus overcoming the optimization's
+local minima. We demonstrate our framework in the context of waveguide design and achieve between
+39% and 74% increases in device performance relative to state-of-the-art adjoint optimization-based
+inverse design across a range of telecom wavelengths. Results of this work therefore highlight
+machine learning strategies that can substantially extend and enhance the capabilities of a conventional,
+optimization-based inverse design algorithm while revealing deeper insights into the algorithm's
+designs. 

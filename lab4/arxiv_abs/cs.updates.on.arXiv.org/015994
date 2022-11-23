@@ -1,0 +1,20 @@
+The peculiarity of adversarial team games resides in the asymmetric information available to the
+team members during the play, which makes the equilibrium computation problem hard even with zero-sum
+payoffs. The algorithms available in the literature work with implicit representations of the
+strategy space and mainly resort to Linear Programming and column generation techniques to enlarge
+incrementally the strategy space. Such representations prevent the adoption of standard tools
+such as abstraction generation, game solving, and subgame solving, which demonstrated to be crucial
+when solving huge, real-world two-player zero-sum games. Differently from these works, we answer
+the question of whether there is any suitable game representation enabling the adoption of those
+tools. In particular, our algorithms convert a sequential team game with adversaries to a classical
+two-player zero-sum game. In this converted game, the team is transformed into a single coordinator
+player who only knows information common to the whole team and prescribes to the players an action
+for any possible private state. Interestingly, we show that our game is more expressive than the
+original extensive-form game as any state/action abstraction of the extensive-form game can be
+captured by our representation, while the reverse does not hold. Due to the NP-hard nature of the
+problem, the resulting Public Team game may be exponentially larger than the original one. To limit
+this explosion, we provide three algorithms, each returning an information-lossless abstraction
+that dramatically reduces the size of the tree. These abstractions can be produced without generating
+the original game tree. Finally, we show the effectiveness of the proposed approach by presenting
+experimental results on Kuhn and Leduc Poker games, obtained by applying state-of-art algorithms
+for two-player zero-sum games on the converted games 

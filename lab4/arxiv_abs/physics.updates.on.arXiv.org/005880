@@ -1,0 +1,19 @@
+We use a data-driven approach to model a three-dimensional turbulent flow using cutting-edge Deep
+Learning techniques. The deep learning framework incorporates physical constraints on the flow,
+such as preserving incompressibility and global statistical invariants of velocity gradient
+tensor. The accuracy of the model is assessed using statistical and physics-based metrics. The
+data set comes from Direct Numerical Simulation of an incompressible, statistically stationary,
+isotropic turbulent flow in a cubic box. Since the size of the dataset is memory intensive, we first
+generate a low-dimensional representation of the velocity data, and then pass it to a sequence prediction
+network that learns the spatial and temporal correlations of the underlying data. The dimensionality
+reduction is performed via extraction using Vector-Quantized Autoencoder (VQ-AE), which learns
+the discrete latent variables. For the sequence forecasting, the idea of Transformer architecture
+from natural language processing is used, and its performance compared against more standard Recurrent
+Networks (such as Convolutional LSTM). These architectures are designed and trained to perform
+a sequence to sequence multi-class classification task in which they take an input sequence with
+a fixed length (k) and predict a sequence with a fixed length (p), representing the future time instants
+of the flow. Our results for the short-term predictions show that the accuracy of results for both
+models deteriorates across predicted snapshots due to autoregressive nature of the predictions.
+Based on our diagnostics tests, the trained Conv-Transformer model outperforms the Conv-LSTM
+one and can accurately, both quantitatively and qualitatively, retain the large scales and capture
+well the inertial scales of flow but fails at recovering the small and intermittent fluid motions.

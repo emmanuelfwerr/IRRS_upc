@@ -1,0 +1,18 @@
+Person Re-identification (Re-ID) has attracted great attention due to its promising real-world
+applications. However, in practice, it is always costly to annotate the training data to train a
+Re-ID model, and it still remains challenging to reduce the annotation cost while maintaining the
+performance for the Re-ID task. To solve this problem, we propose the Annotation Efficient Person
+Re-Identification method to select image pairs from an alternative pair set according to the fallibility
+and diversity of pairs, and train the Re-ID model based on the annotation. Specifically, we design
+an annotation and training framework to firstly reduce the size of the alternative pair set by clustering
+all images considering the locality of features, secondly select images pairs from intra-/inter-cluster
+samples for human to annotate, thirdly re-assign clusters according to the annotation, and finally
+train the model with the re-assigned clusters. During the pair selection, we seek for valuable pairs
+according to pairs' fallibility and diversity, which includes an intra-cluster criterion to construct
+image pairs with the most chaotic samples and the representative samples within clusters, an inter-cluster
+criterion to construct image pairs between clusters based on the second-order Wasserstein distance,
+and a diversity criterion for clusterbased pair selection. Combining all criteria above, a greedy
+strategy is developed to solve the pair selection problem. Finally, the above clustering-selecting-annotating-reassigning-training
+procedure will be repeated until the annotation budget is reached. Extensive experiments on three
+widely adopted Re-ID datasets show that we can greatly reduce the annotation cost while achieving
+better performance compared with state-of-the-art works. 

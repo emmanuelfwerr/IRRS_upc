@@ -1,0 +1,18 @@
+Steganography in multimedia aims to embed secret data into an innocent looking multimedia cover
+object. This embedding introduces some distortion to the cover object and produces a corresponding
+stego object. The embedding distortion is measured by a cost function that determines the detection
+probability of the existence of the embedded secret data. A cost function related to the maximum
+embedding rate is typically employed to evaluate a steganographic system. In addition, the distribution
+of multimedia sources follows the Gibbs distribution which is a complex statistical model that
+restricts analysis. Thus, previous multimedia steganographic approaches either assume a relaxed
+distribution or presume a proposition on the maximum embedding rate and then try to prove it is correct.
+Conversely, this paper introduces an analytic approach to determining the maximum embedding rate
+in multimedia cover objects through a constrained optimization problem concerning the relationship
+between the maximum embedding rate and the probability of detection by any steganographic detector.
+The KL-divergence between the distributions for the cover and stego objects is used as the cost function
+as it upper bounds the performance of the optimal steganographic detector. An equivalence between
+the Gibbs and correlated-multivariate-quantized-Gaussian distributions is established to
+solve this optimization problem. The solution provides an analytic form for the maximum embedding
+rate in terms of the WrightOmega function. Moreover, it is proven that the maximum embedding rate
+is in agreement with the commonly used Square Root Law (SRL) for steganography, but the solution
+presented here is more accurate. Finally, the theoretical results obtained are verified experimentally.

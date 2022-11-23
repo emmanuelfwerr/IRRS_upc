@@ -1,0 +1,18 @@
+In modern society, people should not be identified based on their disability, rather, it is environments
+that can disable people with impairments. Improvements to automatic Sign Language Recognition
+(SLR) will lead to more enabling environments via digital technology. Many state-of-the-art approaches
+to SLR focus on the classification of static hand gestures, but communication is a temporal activity,
+which is reflected by many of the dynamic gestures present. Given this, temporal information during
+the delivery of a gesture is not often considered within SLR. The experiments in this work consider
+the problem of SL gesture recognition regarding how dynamic gestures change during their delivery,
+and this study aims to explore how single types of features as well as mixed features affect the classification
+ability of a machine learning model. 18 common gestures recorded via a Leap Motion Controller sensor
+provide a complex classification problem. Two sets of features are extracted from a 0.6 second time
+window, statistical descriptors and spatio-temporal attributes. Features from each set are compared
+by their ANOVA F-Scores and p-values, arranged into bins grown by 10 features per step to a limit of
+the 250 highest-ranked features. Results show that the best statistical model selected 240 features
+and scored 85.96% accuracy, the best spatio-temporal model selected 230 features and scored 80.98%,
+and the best mixed-feature model selected 240 features from each set leading to a classification
+accuracy of 86.75%. When all three sets of results are compared (146 individual machine learning
+models), the overall distribution shows that the minimum results are increased when inputs are
+any number of mixed features compared to any number of either of the two single sets of features. 

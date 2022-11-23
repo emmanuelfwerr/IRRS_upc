@@ -1,0 +1,20 @@
+We consider information dissemination over a network of gossiping agents (nodes). In this model,
+a source keeps the most up-to-date information about a time-varying binary state of the world, and
+$n$ receiver nodes want to follow the information at the source as accurately as possible. When the
+information at the source changes, the source first sends updates to a subset of $m\leq n$ nodes.
+After that, the nodes share their local information during the gossiping period to disseminate
+the information further. The nodes then estimate the information at the source using the majority
+rule at the end of the gossiping period. To analyze information dissemination, we introduce a new
+error metric to find the average percentage of nodes that can accurately obtain the most up-to-date
+information at the source. We characterize the equations necessary to obtain the steady-state
+distribution for the average error and then analyze the system behavior under both high and low gossip
+rates. In the high gossip rate, in which each node can access other nodes' information more frequently,
+we show that the nodes update their information based on the majority of the information in the network.
+In the low gossip rate, we introduce and analyze the gossip gain, which is the reduction at the average
+error due to gossiping. In particular, we develop an adaptive policy that the source can use to determine
+its current transmission capacity $m$ based on its past transmission rates and the accuracy of the
+information at the nodes. In numerical results, we show that when the source's transmission capacity
+$m$ is limited, gossiping can be harmful as it causes incorrect information to disseminate. We then
+find the optimal gossip rates to minimize the average error for a fixed $m$. Finally, we illustrate
+the outperformance of our adaptive policy compared to the constant $m$-selection policy even for
+the high gossip rates. 

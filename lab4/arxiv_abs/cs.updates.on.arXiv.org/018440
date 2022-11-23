@@ -1,0 +1,19 @@
+Camera traps are a strategy for monitoring wildlife that collects a large number of pictures. The
+number of images collected from each species usually follows a long-tail distribution, i.e., a
+few classes have a large number of instances while a lot of species have just a small percentage. Although
+in most cases these rare species are the classes of interest to ecologists, they are often neglected
+when using deep learning models because these models require a large number of images for the training.
+In this work, we systematically evaluate recently proposed techniques - namely, square-root re-sampling,
+class-balanced focal loss, and balanced group softmax - to address the long-tail visual recognition
+of animal species in camera trap images. To achieve a more general conclusion, we evaluated the selected
+methods on four families of computer vision models (ResNet, MobileNetV3, EfficientNetV2, and
+Swin Transformer) and four camera trap datasets with different characteristics. Initially, we
+prepared a robust baseline with the most recent training tricks and then we applied the methods for
+improving long-tail recognition. Our experiments show that the Swin transformer can reach high
+performance for rare classes without applying any additional method for handling imbalance, with
+an overall accuracy of 88.76% for WCS dataset and 94.97% for Snapshot Serengeti, considering a location-based
+train/test split. In general, the square-root sampling was the method that most improved the performance
+for minority classes by around 10%, but at the cost of reducing the majority classes accuracy at least
+4%. These results motivated us to propose a simple and effective approach using an ensemble combining
+square-root sampling and the baseline. The proposed approach achieved the best trade-off between
+the performance of the tail class and the cost of the head classes' accuracy. 

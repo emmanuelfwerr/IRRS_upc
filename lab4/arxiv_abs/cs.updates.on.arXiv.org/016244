@@ -1,0 +1,18 @@
+We design accelerated algorithms with improved rates for several fundamental classes of optimization
+problems. Our algorithms all build upon techniques related to the analysis of primal-dual extragradient
+methods via relative Lipschitzness proposed recently by [CST21]. (1) Separable minimax optimization.
+We study separable minimax optimization problems $\min_x \max_y f(x) - g(y) + h(x, y)$, where $f$
+and $g$ have smoothness and strong convexity parameters $(L^x, \mu^x)$, $(L^y, \mu^y)$, and $h$
+is convex-concave with a $(\Lambda^{xx}, \Lambda^{xy}, \Lambda^{yy})$-blockwise operator
+norm bounded Hessian. We provide an algorithm with gradient query complexity $\tilde{O}\left(\sqrt{\frac{L^{x}}{\mu^{x}}}
++ \sqrt{\frac{L^{y}}{\mu^{y}}} + \frac{\Lambda^{xx}}{\mu^{x}} + \frac{\Lambda^{xy}}{\sqrt{\mu^{x}\mu^{y}}}
++ \frac{\Lambda^{yy}}{\mu^{y}}\right)$. Notably, for convex-concave minimax problems with
+bilinear coupling (e.g.\ quadratics), where $\Lambda^{xx} = \Lambda^{yy} = 0$, our rate matches
+a lower bound of [ZHZ19]. (2) Finite sum optimization. We study finite sum optimization problems
+$\min_x \frac{1}{n}\sum_{i\in[n]} f_i(x)$, where each $f_i$ is $L_i$-smooth and the overall
+problem is $\mu$-strongly convex. We provide an algorithm with gradient query complexity $\tilde{O}\left(n
++ \sum_{i\in[n]} \sqrt{\frac{L_i}{n\mu}} \right)$. Notably, when the smoothness bounds $\{L_i\}_{i\in[n]}$
+are non-uniform, our rate improves upon accelerated SVRG [LMH15, FGKS15] and Katyusha [All17]
+by up to a $\sqrt{n}$ factor. (3) Minimax finite sums. We generalize our algorithms for minimax and
+finite sum optimization to solve a natural family of minimax finite sum optimization problems at
+an accelerated rate, encapsulating both above results up to a logarithmic factor. 

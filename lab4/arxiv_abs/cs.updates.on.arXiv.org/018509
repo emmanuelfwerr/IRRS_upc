@@ -1,0 +1,20 @@
+The capability of generating speech with specific type of emotion is desired for many applications
+of human-computer interaction. Cross-speaker emotion transfer is a common approach to generating
+emotional speech when speech with emotion labels from target speakers is not available for model
+training. This paper presents a novel cross-speaker emotion transfer system, named iEmoTTS. The
+system is composed of an emotion encoder, a prosody predictor, and a timbre encoder. The emotion
+encoder extracts the identity of emotion type as well as the respective emotion intensity from the
+mel-spectrogram of input speech. The emotion intensity is measured by the posterior probability
+that the input utterance carries that emotion. The prosody predictor is used to provide prosodic
+features for emotion transfer. The timber encoder provides timbre-related information for the
+system. Unlike many other studies which focus on disentangling speaker and style factors of speech,
+the iEmoTTS is designed to achieve cross-speaker emotion transfer via disentanglement between
+prosody and timbre. Prosody is considered as the main carrier of emotion-related speech characteristics
+and timbre accounts for the essential characteristics for speaker identification. Zero-shot
+emotion transfer, meaning that speech of target speakers are not seen in model training, is also
+realized with iEmoTTS. Extensive experiments of subjective evaluation have been carried out.
+The results demonstrate the effectiveness of iEmoTTS as compared with other recently proposed
+systems of cross-speaker emotion transfer. It is shown that iEmoTTS can produce speech with designated
+emotion type and controllable emotion intensity. With appropriate information bottleneck capacity,
+iEmoTTS is able to effectively transfer emotion information to a new speaker. Audio samples are
+publicly available\footnote{https://patrick-g-zhang.github.io/iemotts/}. 

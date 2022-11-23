@@ -1,0 +1,20 @@
+Well-labeled datasets of chest radiographs (CXRs) are difficult to acquire due to the high cost
+of annotation. Thus, it is desirable to learn a robust and transferable representation in an unsupervised
+manner to benefit tasks that lack labeled data. Unlike natural images, medical images have their
+own domain prior; e.g., we observe that many pulmonary diseases, such as the COVID-19, manifest
+as changes in the lung tissue texture rather than the anatomical structure. Therefore, we hypothesize
+that studying only the texture without the influence of structure variations would be advantageous
+for downstream prognostic and predictive modeling tasks. In this paper, we propose a generative
+framework, the Lung Swapping Autoencoder (LSAE), that learns factorized representations of a
+CXR to disentangle the texture factor from the structure factor. Specifically, by adversarial
+training, the LSAE is optimized to generate a hybrid image that preserves the lung shape in one image
+but inherits the lung texture of another. To demonstrate the effectiveness of the disentangled
+texture representation, we evaluate the texture encoder $Enc^t$ in LSAE on ChestX-ray14 (N=112,120),
+and our own multi-institutional COVID-19 outcome prediction dataset, COVOC (N=340 (Subset-1)
++ 53 (Subset-2)). On both datasets, we reach or surpass the state-of-the-art by finetuning $Enc^t$
+in LSAE that is 77% smaller than a baseline Inception v3. Additionally, in semi-and-self supervised
+settings with a similar model budget, $Enc^t$ in LSAE is also competitive with the state-of-the-art
+MoCo. By "re-mixing" the texture and shape factors, we generate meaningful hybrid images that can
+augment the training set. This data augmentation method can further improve COVOC prediction performance.
+The improvement is consistent even when we directly evaluate the Subset-1 trained model on Subset-2
+without any fine-tuning. 

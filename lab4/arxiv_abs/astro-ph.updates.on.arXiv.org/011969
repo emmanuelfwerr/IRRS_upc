@@ -1,0 +1,20 @@
+Despite the prevalence of transient-searching facilities operating across most wavelengths,
+the ultraviolet (UV) transient sky remains to be systematically studied. We have recently initiated
+the Transient Ultraviolet Objects (TUVO) project, with which we search for serendipitous UV transients
+in data from currently available UV instruments, with a focus on the UV/Optical (UVOT) telescope
+aboard the Neil Gehrels Swift Observatory (an overview of the TUVO project is described in a companion
+paper). Here we describe TUVOpipe, the pipeline we constructed in order to find such transients
+in the UVOT data, using difference image analysis. The pipeline is run daily on all new public UVOT
+data (which are available 6-8 hours after the observations are performed), so we discover transients
+in near real-time. This allows for follow-up observations to be performed. From October 1, 2020,
+to the time of submission, we have processed 111,330 individual UVOT images and we currently detect
+an average rate of ~100 transient candidates per day. Of these daily candidates, on average ~30 are
+real transients, separated by human vetting from the remaining `bogus' transients which were not
+discarded automatically within the pipeline. Most of the real transients we detect are known variable
+stars, though we also detect many known active galactic nuclei and accreting white dwarfs. TUVOpipe
+can additionally run in archival mode, whereby all archival UVOT data of a given field is scoured
+for `historical' transients; in this mode we also mostly find variable stars. However, some of the
+transients we find (in particular in the real-time mode) represent previously unreported new transients,
+or undiscovered outbursts of known transients, predominantly outbursts from cataclysmic variables.
+In this paper we describe the operation of (both modes of) TUVOpipe and some of the initial results
+we have so far obtained. 

@@ -1,0 +1,19 @@
+One of the main challenges in developing racetrack memory systems is the limited precision in controlling
+the track shifts, that in turn affects the reliability of reading and writing the data. A current
+proposal for combating deletions in racetrack memories is to use redundant heads per-track resulting
+in multiple copies (potentially erroneous) and recovering the data by solving a specialized version
+of a sequence reconstruction problem. Using this approach, $k$-deletion correcting codes of length
+$n$, with $d \ge 2$ heads per-track, with redundancy $\log \log n + 4$ were constructed. However,
+the known approach requires that $k \le d$, namely, that the number of heads ($d$) is larger than or
+equal to the number of correctable deletions ($k$). Here we address the question: What is the best
+redundancy that can be achieved for a $k$-deletion code ($k$ is a constant) if the number of heads
+is fixed at $d$ (due to implementation constraints)? One of our key results is an answer to this question,
+namely, we construct codes that can correct $k$ deletions, for any $k$ beyond the known limit of $d$.
+The code has $4k \log \log n+o(\log \log n)$ redundancy for $k \le 2d-1$. In addition, when $k \ge 2d$,
+our codes have $2 \lfloor k/d\rfloor \log n+o(\log n)$ redundancy, that we prove it is order-wise
+optimal, specifically, we prove that the redundancy required for correcting $k$ deletions is at
+least $\lfloor k/d\rfloor \log n+o(\log n)$. The encoding/decoding complexity of our codes is
+$O(n\log^{2k}n)$. Finally, we ask a general question: What is the optimal redundancy for codes
+correcting a combination of at most $k$ deletions and insertions in a $d$-head racetrack memory?
+We prove that the redundancy sufficient to correct a combination of $k$ deletion and insertion errors
+is similar to the case of $k$ deletion errors. 

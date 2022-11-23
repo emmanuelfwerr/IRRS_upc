@@ -1,0 +1,20 @@
+Micromagnetic modelling provides the ability to simulate large magnetic systems accurately without
+the computational cost limitation imposed by atomistic modelling. Through micromagnetic modelling
+it is possible to simulate systems consisting of thousands of grains over a time range of nanoseconds
+to years, depending upon the solver used. Here we present the creation and release of an open-source
+multi-timescale micromagnetic code combining three key solvers: Landau-Lifshitz-Gilbert;
+Landau-Lifshitz-Bloch; Kinetic Monte Carlo. This code, called MARS (Models of Advanced Recording
+Systems), is capable of accurately simulating the magnetisation dynamics in large and structurally
+complex single- and multi-layered granular systems. The short timescale simulations are achieved
+for systems far from and close to the Curie point via the implemented Landau-Lifshitz-Gilbert and
+Landau-Lifshitz-Bloch solvers respectively. This enables read/write simulations for general
+perpendicular magnetic recording and also state of the art heat assisted magnetic recording (HAMR).
+The long timescale behaviour is simulated via the Kinetic Monte Carlo solver, enabling investigations
+into signal-to-noise ratio and data longevity. The combination of these solvers opens up the possibility
+of multi-timescale simulations within a single software package. For example the entire HAMR process
+from initial data writing and data read back to long term data storage is possible via a single simulation
+using MARS. The use of atomistic parameterisation for the material input of MARS enables highly
+accurate material descriptions which provide a bridge between atomistic simulation and real world
+experimentation. Thus MARS is capable of performing simulations for all aspects of recording media
+research and development. This ranges from material characterisation and optimisation to system
+design and implementation. 

@@ -1,0 +1,20 @@
+Pebble games are commonly used to study space-time trade-offs in computation. We present a pebble
+game that explores this trade-off in quantum simulation of arbitrary classical circuits on non-classical
+inputs. Many quantum algorithms, such as Shor's algorithm and Grover's search, include subroutines
+that require simulation of classical functions on inputs in superposition. The current state of
+the art uses generic reversible simulation through Bennett's pebble game and universal reversible
+gate sets such as the Toffoli. Using measurement-based uncomputation, we replace many of the ancilla
+qubits used by existing constructions with classical control bits, which are cheaper. Our pebble
+game forms a natural framework for reasoning about measurement-based uncomputation, and we prove
+tight bounds on the time complexity of all algorithms that use our pebble game. For any $\epsilon
+\in (0,1)$, we present an algorithm that can simulate irreversible classical computation that
+uses $\mathcal{T}$ time and $\mathcal{S}$ space in $O(\frac{1}{\epsilon}\frac{\mathcal{T}^{1+\epsilon}}{\mathcal{S}^\epsilon})$
+time with $O(\frac{1}{\epsilon}\mathcal{S})$ qubits. With access to more qubits we present algorithms
+that run in $O(\frac{1}{\epsilon}\mathcal{T})$ time with $O(\mathcal{S}^{1-\epsilon}\mathcal{T}^\epsilon)$
+qubits. Both of these results show an improvement over Bennett's construction, which requires
+$O(\frac{\mathcal{T}^{1+\epsilon}}{\mathcal{S}^\epsilon})$ time when using $O(\epsilon2^{1/\epsilon}
+\mathcal{S} (1+\log \frac{\mathcal{T}}{\mathcal{S}}))$ qubits. Additionally the results
+in our paper combine with Barrington's theorem to provide a general method to efficiently compute
+any log-depth circuit on quantum inputs using a constant number of ancilla qubits. We also explore
+a connection between the optimal structure of our pebbling algorithms and backtracking from dynamic
+programming. 

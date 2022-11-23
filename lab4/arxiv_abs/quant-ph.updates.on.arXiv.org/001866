@@ -1,0 +1,20 @@
+Quantum network protocols offer new functionalities such as enhanced security to communication
+and computational systems. Despite the rapid progress in quantum hardware, it has not yet reached
+a level of maturity that enables execution of many quantum protocols in practical settings. To develop
+quantum protocols in real world, it is necessary to examine their performance considering the imperfections
+in their practical implementation using simulation platforms. In this paper, we consider several
+quantum protocols that enable promising functionalities and services in near-future quantum
+networks. The protocols are chosen from both areas of quantum communication and quantum computation
+as follows: quantum money, W-state based anonymous transmission, verifiable blind quantum computation,
+and quantum digital signature. We use NetSquid simulation platform to evaluate the effect of various
+sources of noise on the performance of these protocols, considering different figures of merit.
+We find that to enable quantum money protocol, the decoherence time constant of the quantum memory
+must be at least three times the storage time of qubits. Furthermore, our simulation results for
+the w-state based anonymous transmission protocol show that to achieve an average fidelity above
+0.8 in this protocol, the storage time of sender's and receiver's particles in the quantum memory
+must be less than half of the decoherence time constant of the quantum memory. We have also investigated
+the effect of gate imperfections on the performance of verifiable blind quantum computation. We
+find that with our chosen parameters, if the depolarizing probability of quantum gates is equal
+to or greater than 0.05, the security of the protocol cannot be guaranteed. Lastly, our simulation
+results for quantum digital signature protocol show that channel loss has a significant effect
+on the probability of repudiation. 

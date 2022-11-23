@@ -1,0 +1,18 @@
+We analyze the optimal partition and assignment strategy for an uncapacitated FCFS queueing system
+with multiple types of customers. Each type of customers is associated with a certain arrival and
+service rate. The decision maker can partition the server into sub-queues, each with a smaller service
+capacity, and can route different types of customers to different sub-queues (deterministically
+or randomly). The objective is to minimize the overall expected waiting time. First, we show that
+by properly partitioning the queue, it is possible to reduce the expected waiting time of customers,
+and there exist a series of instances such that the reduction can be arbitrarily large. Then we consider
+four settings of this problem, depending on whether the partition is given (thus only assignment
+decision is to be made) or not and whether each type of customers can only be assigned to a unique queue
+or can be assigned to multiple queues in a probabilistic manner. When the partition is given, we show
+that this problem is NP-hard in general if each type of customers must be assigned to a unique queue.
+When the customers can be assigned to multiple queues in a probabilistic manner, we identify a structure
+of the optimal assignment and develop an efficient algorithm to find the optimal assignment. When
+the decision maker can also optimize the partition, we show that the optimal decision must be to segment
+customers deterministically based on their service rates, and to assign customers with consecutive
+service rates into the same queue. Efficient algorithms are also proposed in this case. Overall,
+our work is the first to comprehensively study the queue partition problem based on customer types,
+which has the potential to increase the efficiency of queueing system. 

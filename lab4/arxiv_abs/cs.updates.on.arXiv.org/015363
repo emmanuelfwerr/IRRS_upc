@@ -1,0 +1,19 @@
+In this work, we have proposed a generative model, called VAE-KRnet, for density estimation or approximation,
+which combines the canonical variational autoencoder (VAE) with our recently developed flow-based
+generative model, called KRnet. VAE is used as a dimension reduction technique to capture the latent
+space, and KRnet is used to model the distribution of the latent variable. Using a linear model between
+the data and the latent variable, we show that VAE-KRnet can be more effective and robust than the
+canonical VAE. VAE-KRnet can be used as a density model to approximate either data distribution
+or an arbitrary probability density function (PDF) known up to a constant. VAE-KRnet is flexible
+in terms of dimensionality. When the number of dimensions is relatively small, KRnet can effectively
+approximate the distribution in terms of the original random variable. For high-dimensional cases,
+we may use VAE-KRnet to incorporate dimension reduction. One important application of VAE-KRnet
+is the variational Bayes for the approximation of the posterior distribution. The variational
+Bayes approaches are usually based on the minimization of the Kullback-Leibler (KL) divergence
+between the model and the posterior. For high-dimensional distributions, it is very challenging
+to construct an accurate density model due to the curse of dimensionality, where extra assumptions
+are often introduced for efficiency. For instance, the classical mean-field approach assumes
+mutual independence between dimensions, which often yields an underestimated variance due to
+oversimplification. To alleviate this issue, we include into the loss the maximization of the mutual
+information between the latent random variable and the original random variable, which helps keep
+more information from the region of low density such that the estimation of variance is improved.

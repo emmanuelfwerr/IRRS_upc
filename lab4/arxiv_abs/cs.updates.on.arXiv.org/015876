@@ -1,0 +1,18 @@
+The modeling of optical wave propagation in optical fiber is a task of fast and accurate solving the
+nonlinear Schr\"odinger equation (NLSE), and can enable the optical system design, digital signal
+processing verification and fast waveform calculation. Traditional waveform modeling of full-time
+and full-frequency information is the split-step Fourier method (SSFM), which has long been regarded
+as challenging in long-haul wavelength division multiplexing (WDM) optical fiber communication
+systems because it is extremely time-consuming. Here we propose a linear-nonlinear feature decoupling
+distributed (FDD) waveform modeling scheme to model long-haul WDM fiber channel, where the channel
+linear effects are modelled by the NLSE-derived model-driven methods and the nonlinear effects
+are modelled by the data-driven deep learning methods. Meanwhile, the proposed scheme only focuses
+on one-span fiber distance fitting, and then recursively transmits the model to achieve the required
+transmission distance. The proposed modeling scheme is demonstrated to have high accuracy, high
+computing speeds, and robust generalization abilities for different optical launch powers, modulation
+formats, channel numbers and transmission distances. The total running time of FDD waveform modeling
+scheme for 41-channel 1040-km fiber transmission is only 3 minutes versus more than 2 hours using
+SSFM for each input condition, which achieves a 98% reduction in computing time. Considering the
+multi-round optimization by adjusting system parameters, the complexity reduction is significant.
+The results represent a remarkable improvement in nonlinear fiber modeling and open up novel perspectives
+for solution of NLSE-like partial differential equations and optical fiber physics problems.

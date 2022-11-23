@@ -1,0 +1,19 @@
+This paper addresses the construction of the pilots' schedules under the preferential bidding
+system in the airline industry. In this system, the pilots bid on the different activities and the
+airline constructs the schedules that maximize the scores of the pilots lexicographically: the
+most senior is served first, then the second one, etc. A sequential approach to solve this problem
+is natural, and actually quite common: the problem is first solved with the bids of the most senior
+pilot in the objective function; then it is solved with those of the second most senior without decreasing
+the score of the most senior, and so on. Each step often involves column generation, requires solving
+an integer program, and usually takes into account the possible schedules of the less senior crew
+members approximately, which might compel to time-consuming backtrackings. The known existing
+exact method for this problem follows the sequential approach. The literature commonly admits
+that the structure of the problems somehow imposes such an approach. In this work, we show that this
+belief is actually not completely correct by proposing another exact method that, among other things,
+solves directly the continuous relaxation of the full problem via column generation. The problem
+of generating new columns is solved using a lexicographic resource-constrained longest path algorithm.
+With this approach, we show that standard schemes of mathematical programming (such as column generation,
+bounds, dominance, etc.) can be extended directly to optimization problems with lexicographic
+objectives. Numerical experiments on industrial instances provided by Air France show that the
+method can solve these instances in relatively short computational time that is compatible with
+the operational constraints of the airline. 

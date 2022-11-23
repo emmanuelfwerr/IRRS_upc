@@ -1,0 +1,19 @@
+With the society's growing adoption of machine learning (ML) and deep learning (DL) for various
+intelligent solutions, it becomes increasingly imperative to standardize a common set of measures
+for ML/DL models with large scale open datasets under common development practices and resources
+so that people can benchmark and compare models quality and performance on a common ground. MLCommons
+has emerged recently as a driving force from both industry and academia to orchestrate such an effort.
+Despite its wide adoption as standardized benchmarks, MLCommons Inference has only included a
+limited number of ML/DL models (in fact seven models in total). This significantly limits the generality
+of MLCommons Inference's benchmarking results because there are many more novel ML/DL models from
+the research community, solving a wide range of problems with different inputs and outputs modalities.
+To address such a limitation, we propose MLHarness, a scalable benchmarking harness system for
+MLCommons Inference with three distinctive features: (1) it codifies the standard benchmark process
+as defined by MLCommons Inference including the models, datasets, DL frameworks, and software
+and hardware systems; (2) it provides an easy and declarative approach for model developers to contribute
+their models and datasets to MLCommons Inference; and (3) it includes the support of a wide range
+of models with varying inputs/outputs modalities so that we can scalably benchmark these models
+across different datasets, frameworks, and hardware systems. This harness system is developed
+on top of the MLModelScope system, and will be open sourced to the community. Our experimental results
+demonstrate the superior flexibility and scalability of this harness system for MLCommons Inference
+benchmarking. 

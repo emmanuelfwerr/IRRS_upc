@@ -1,0 +1,20 @@
+The ultraviolet (UV) to sub-millimetre (submm) spectral energy distribution of galaxies can be
+roughly divided into two sections: the stellar emission (attenuated by dust) at UV to near-infrared
+wavelengths and dust emission at longer wavelengths. In Dobbels et al. (2020), we show that these
+two sections are strongly related, and we can predict the global dust properties from the integrated
+UV to mid-infrared emission with the help of machine learning techniques. We investigate if these
+machine learning techniques can also be extended to resolved scales. Our aim is to predict resolved
+maps of the specific dust luminosity, specific dust mass, and dust temperature starting from a set
+of surface brightness images from UV to mid-infrared wavelengths. We used a selection of nearby
+galaxies retrieved from the DustPedia sample, in addition to M31 and M33. These were convolved and
+resampled to a range of pixel sizes, ranging from 150 pc to 3 kpc. We trained a random forest model which
+considers each pixel individually. We find that the predictions work well on resolved scales, with
+the dust mass and temperature having a similar root mean square error as on global scales (0.32 dex
+and 3.15 K on 18" scales respectively), and the dust luminosity being noticeably better (0.11 dex).
+We find no significant dependence on the pixel scale. Predictions on individual galaxies can be
+biased, and we find that about two-thirds of the scatter can be attributed to scatter between galaxies
+(rather than within galaxies). A machine learning approach can be used to create dust maps, with
+its resolution being only limited to the input bands, thus achieving a higher resolution than Herschel.
+These dust maps can be used to improve global estimates of dust properties, they can lead to a better
+estimate of dust attenuation, and they can be used as a constraint on cosmological simulations that
+trace dust. 

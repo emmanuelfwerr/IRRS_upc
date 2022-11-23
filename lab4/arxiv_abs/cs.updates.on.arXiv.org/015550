@@ -1,0 +1,19 @@
+Social distancing and temperature screening have been widely employed to counteract the COVID-19
+pandemic, sparking great interest from academia, industry and public administrations worldwide.
+While most solutions have dealt with these aspects separately, their combination would greatly
+benefit the continuous monitoring of public spaces and help trigger effective countermeasures.
+This work presents milliTRACE-IR, a joint mmWave radar and infrared imaging sensing system performing
+unobtrusive and privacy preserving human body temperature screening and contact tracing in indoor
+spaces. milliTRACE-IR combines, via a robust sensor fusion approach, mmWave radars and infrared
+thermal cameras. It achieves fully automated measurement of distancing and body temperature,
+by jointly tracking the subjects's faces in the thermal camera image plane and the human motion in
+the radar reference system. Moreover, milliTRACE-IR performs contact tracing: a person with high
+body temperature is reliably detected by the thermal camera sensor and subsequently traced across
+a large indoor area in a non-invasive way by the radars. When entering a new room, a subject is re-identified
+among several other individuals by computing gait-related features from the radar reflections
+through a deep neural network and using a weighted extreme learning machine as the final re-identification
+tool. Experimental results, obtained from a real implementation of milliTRACE-IR, demonstrate
+decimeter-level accuracy in distance/trajectory estimation, inter-personal distance estimation
+(effective for subjects getting as close as 0.2 m), and accurate temperature monitoring (max. errors
+of 0.5{\deg}C). Furthermore, milliTRACE-IR provides contact tracing through highly accurate
+(95%) person re-identification, in less than 20 seconds. 

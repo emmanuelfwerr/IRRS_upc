@@ -1,0 +1,19 @@
+In continual learning (CL), the goal is to design models that can learn a sequence of tasks without
+catastrophic forgetting. While there is a rich set of techniques for CL, relatively little understanding
+exists on how representations built by previous tasks benefit new tasks that are added to the network.
+To address this, we study the problem of continual representation learning (CRL) where we learn
+an evolving representation as new tasks arrive. Focusing on zero-forgetting methods where tasks
+are embedded in subnetworks (e.g., PackNet), we first provide experiments demonstrating CRL can
+significantly boost sample efficiency when learning new tasks. To explain this, we establish theoretical
+guarantees for CRL by providing sample complexity and generalization error bounds for new tasks
+by formalizing the statistical benefits of previously-learned representations. Our analysis
+and experiments also highlight the importance of the order in which we learn the tasks. Specifically,
+we show that CL benefits if the initial tasks have large sample size and high "representation diversity".
+Diversity ensures that adding new tasks incurs small representation mismatch and can be learned
+with few samples while training only few additional nonzero weights. Finally, we ask whether one
+can ensure each task subnetwork to be efficient during inference time while retaining the benefits
+of representation learning. To this end, we propose an inference-efficient variation of PackNet
+called Efficient Sparse PackNet (ESPN) which employs joint channel & weight pruning. ESPN embeds
+tasks in channel-sparse subnets requiring up to 80% less FLOPs to compute while approximately retaining
+accuracy and is very competitive with a variety of baselines. In summary, this work takes a step towards
+data and compute-efficient CL with a representation learning perspective. GitHub page: https://github.com/ucr-optml/CtRL

@@ -1,0 +1,19 @@
+Several manufacturers have already started to commercialize near-bank Processing-In-Memory
+(PIM) architectures. Near-bank PIM architectures place simple cores close to DRAM banks and can
+yield significant performance and energy improvements in parallel applications by alleviating
+data access costs. Real PIM systems can provide high levels of parallelism, large aggregate memory
+bandwidth and low memory access latency, thereby being a good fit to accelerate the widely-used,
+memory-bound Sparse Matrix Vector Multiplication (SpMV) kernel. This paper provides the first
+comprehensive analysis of SpMV on a real-world PIM architecture, and presents SparseP, the first
+SpMV library for real PIM architectures. We make three key contributions. First, we implement a
+wide variety of software strategies on SpMV for a multithreaded PIM core and characterize the computational
+limits of a single multithreaded PIM core. Second, we design various load balancing schemes across
+multiple PIM cores, and two types of data partitioning techniques to execute SpMV on thousands of
+PIM cores: (1) 1D-partitioned kernels to perform the complete SpMV computation only using PIM cores,
+and (2) 2D-partitioned kernels to strive a balance between computation and data transfer costs
+to PIM-enabled memory. Third, we compare SpMV execution on a real-world PIM system with 2528 PIM
+cores to state-of-the-art CPU and GPU systems to study the performance and energy efficiency of
+various devices. SparseP software package provides 25 SpMV kernels for real PIM systems supporting
+the four most widely used compressed matrix formats, and a wide range of data types. Our extensive
+evaluation provides new insights and recommendations for software designers and hardware architects
+to efficiently accelerate SpMV on real PIM systems. 

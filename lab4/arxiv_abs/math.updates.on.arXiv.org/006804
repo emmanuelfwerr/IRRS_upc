@@ -1,0 +1,20 @@
+Tensor models play an increasingly prominent role in many fields, notably in machine learning.
+In several applications, such as community detection, topic modeling and Gaussian mixture learning,
+one must estimate a low-rank signal from a noisy tensor. Hence, understanding the fundamental limits
+of estimators of that signal inevitably calls for the study of random tensors. Substantial progress
+has been recently achieved on this subject in the large-dimensional limit. Yet, some of the most
+significant among these results--in particular, a precise characterization of the abrupt phase
+transition (with respect to signal-to-noise ratio) that governs the performance of the maximum
+likelihood (ML) estimator of a symmetric rank-one model with Gaussian noise--were derived based
+of mean-field spin glass theory, which is not easily accessible to non-experts. In this work, we
+develop a sharply distinct and more elementary approach, relying on standard but powerful tools
+brought by years of advances in random matrix theory. The key idea is to study the spectra of random
+matrices arising from contractions of a given random tensor. We show how this gives access to spectral
+properties of the random tensor itself. For the aforementioned rank-one model, our technique yields
+a hitherto unknown fixed-point equation whose solution precisely matches the asymptotic performance
+of the ML estimator above the phase transition threshold in the third-order case. A numerical verification
+provides evidence that the same holds for orders 4 and 5, leading us to conjecture that, for any order,
+our fixed-point equation is equivalent to the known characterization of the ML estimation performance
+that had been obtained by relying on spin glasses. Moreover, our approach sheds light on certain
+properties of the ML problem landscape in large dimensions and can be extended to other models, such
+as asymmetric and non-Gaussian. 

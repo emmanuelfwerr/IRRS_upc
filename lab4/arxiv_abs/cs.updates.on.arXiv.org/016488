@@ -1,0 +1,19 @@
+In the early stages of human life, babies develop their skills by exploring different scenarios
+motivated by their inherent satisfaction rather than by extrinsic rewards from the environment.
+This behavior, referred to as intrinsic motivation, has emerged as one solution to address the exploration
+challenge derived from reinforcement learning environments with sparse rewards. Diverse exploration
+approaches have been proposed to accelerate the learning process over single- and multi-agent
+problems with homogeneous agents. However, scarce studies have elaborated on collaborative learning
+frameworks between heterogeneous agents deployed into the same environment, but interacting
+with different instances of the latter without any prior knowledge. Beyond the heterogeneity,
+each agent's characteristics grant access only to a subset of the full state space, which may hide
+different exploration strategies and optimal solutions. In this work we combine ideas from intrinsic
+motivation and transfer learning. Specifically, we focus on sharing parameters in actor-critic
+model architectures and on combining information obtained through intrinsic motivation with
+the aim of having a more efficient exploration and faster learning. We test our strategies through
+experiments performed over a modified ViZDooM's My Way Home scenario, which is more challenging
+than its original version and allows evaluating the heterogeneity between agents. Our results
+reveal different ways in which a collaborative framework with little additional computational
+cost can outperform an independent learning process without knowledge sharing. Additionally,
+we depict the need for modulating correctly the importance between the extrinsic and intrinsic
+rewards to avoid undesired agent behaviors. 

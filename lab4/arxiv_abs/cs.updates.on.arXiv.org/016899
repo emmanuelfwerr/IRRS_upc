@@ -1,0 +1,20 @@
+The text-based speech editor allows the editing of speech through intuitive cutting, copying,
+and pasting operations to speed up the process of editing speech. However, the major drawback of
+current systems is that edited speech often sounds unnatural due to cut-copy-paste operation.
+In addition, it is not obvious how to synthesize records according to a new word not appearing in the
+transcript. This paper proposes a novel end-to-end text-based speech editing method called context-aware
+mask prediction network (CampNet). The model can simulate the text-based speech editing process
+by randomly masking part of speech and then predicting the masked region by sensing the speech context.
+It can solve unnatural prosody in the edited region and synthesize the speech corresponding to the
+unseen words in the transcript. Secondly, for the possible operation of text-based speech editing,
+we design three text-based operations based on CampNet: deletion, insertion, and replacement.
+These operations can cover various situations of speech editing. Thirdly, to synthesize the speech
+corresponding to long text in insertion and replacement operations, a word-level autoregressive
+generation method is proposed. Fourthly, we propose a speaker adaptation method using only one
+sentence for CampNet and explore the ability of few-shot learning based on CampNet, which provides
+a new idea for speech forgery tasks. The subjective and objective experiments on VCTK and LibriTTS
+datasets show that the speech editing results based on CampNet are better than TTS technology, manual
+editing, and VoCo method. We also conduct detailed ablation experiments to explore the effect of
+the CampNet structure on its performance. Finally, the experiment shows that speaker adaptation
+with only one sentence can further improve the naturalness of speech. Examples of generated speech
+can be found at https://hairuo55.github.io/CampNet. 

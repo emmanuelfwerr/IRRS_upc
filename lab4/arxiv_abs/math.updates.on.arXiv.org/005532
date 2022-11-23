@@ -1,0 +1,19 @@
+We consider the multidimensional space-fractional diffusion equations with spatially varying
+diffusivity and fractional order. Significant computational challenges are encountered when
+solving these equations due both to the kernel singularity in the fractional integral operator
+and to the resulting dense discretized operators, which quickly become prohibitively expensive
+to handle because of their memory and arithmetic complexities. In this work, we present a singularity-aware
+discretization scheme that regularizes the singular integrals through a singularity subtraction
+technique adapted to the spatial variability of diffusivity and fractional order. This regularization
+strategy is conveniently formulated as a sparse matrix correction that is added to the dense operator,
+and is applicable to different formulations of fractional diffusion equations. We also present
+a block low rank representation to handle the dense matrix representations, by exploiting the ability
+to approximate blocks of the resulting formally dense matrix by low rank factorizations. A Cholesky
+factorization solver operates directly on this representation using the low rank blocks as its
+atomic computational tiles, and achieves high performance on multicore hardware. Numerical results
+show that the singularity treatment is robust, substantially reduces discretization errors,
+and attains the first-order convergence rate allowed by the regularity of the solutions. They also
+show that considerable savings are obtained in storage ($O(N^{1.5})$) and computational cost
+($O(N^2)$) compared to dense factorizations. This translates to orders-of-magnitude savings
+in memory and time on multi-dimensional problems, and shows that the proposed methods offer practical
+tools for tackling large nonlocal fractional diffusion simulations. 

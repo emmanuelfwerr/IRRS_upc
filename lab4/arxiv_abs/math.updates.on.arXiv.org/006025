@@ -1,0 +1,20 @@
+We explore the efficient estimation of statistical quantities, particularly rare event probabilities,
+for stochastic reaction networks. We propose a novel importance sampling (IS) approach to improve
+the efficiency of Monte Carlo (MC) estimators when based on an approximate tau-leap scheme. In the
+IS framework, it is crucial to choose an appropriate change of probability measure for achieving
+substantial variance reduction. Based on an original connection between finding the optimal IS
+parameters within a class of probability measures and a stochastic optimal control (SOC) formulation,
+we propose an automated approach to obtain a highly efficient path-dependent measure change. The
+optimal IS parameters are obtained by solving a variance minimization problem. We derive an associated
+backward equation solved by these optimal parameters. Given the challenge of analytically solving
+this backward equation, we propose a numerical dynamic programming algorithm to approximate the
+optimal control parameters. To mitigate the curse of dimensionality issue caused by solving the
+backward equation in the multi-dimensional case, we propose a learning-based method that approximates
+the value function using a neural network, the parameters of which are determined via stochastic
+optimization. Our numerical experiments show that our learning-based IS approach substantially
+reduces the variance of the MC estimator. Moreover, when applying the numerical dynamic programming
+approach for the one-dimensional case, we obtained a variance that decays at a rate of $\mathcal{O}(\Delta
+t)$ for a step size of $\Delta t$, compared to $\mathcal{O}(1)$ for a standard MC estimator. For a
+given prescribed error tolerance, $\text{TOL}$, this implies an improvement in the computational
+complexity to become $\mathcal{O}(\text{TOL}^{-2})$ instead of $\mathcal{O}(\text{TOL}^{-3})$
+when using a standard MC estimator. 

@@ -1,0 +1,19 @@
+In known constructions of classical zero-knowledge protocols for NP, either of zero-knowledge
+or soundness holds only against computationally bounded adversaries. Indeed, achieving both
+statistical zero-knowledge and statistical soundness at the same time with classical verifier
+is impossible for NP unless the polynomial-time hierarchy collapses, and it is also believed to
+be impossible even with a quantum verifier. In this work, we introduce a novel compromise, which
+we call the certified everlasting zero-knowledge proof for QMA. It is a computational zero-knowledge
+proof for QMA, but the verifier issues a classical certificate that shows that the verifier has deleted
+its quantum information. If the certificate is valid, even unbounded malicious verifier can no
+longer learn anything beyond the validity of the statement. We construct a certified everlasting
+zero-knowledge proof for QMA. For the construction, we introduce a new quantum cryptographic primitive,
+which we call commitment with statistical binding and certified everlasting hiding, where the
+hiding property becomes statistical once the receiver has issued a valid certificate that shows
+that the receiver has deleted the committed information. We construct commitment with statistical
+binding and certified everlasting hiding from quantum encryption with certified deletion by Broadbent
+and Islam [TCC 2020] (in a black box way), and then combine it with the quantum sigma-protocol for
+QMA by Broadbent and Grilo [FOCS 2020] to construct the certified everlasting zero-knowledge proof
+for QMA. Our constructions are secure in the quantum random oracle model. Commitment with statistical
+binding and certified everlasting hiding itself is of independent interest, and there will be many
+other useful applications beyond zero-knowledge. 

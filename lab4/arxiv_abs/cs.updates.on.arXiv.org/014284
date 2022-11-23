@@ -1,0 +1,20 @@
+Emotion classifiers traditionally predict discrete emotions. However, emotion expressions
+are often subjective, thus requiring a method to handle subjective labels. We explore the use of
+crowdsourcing to acquire reliable soft-target labels and evaluate an emotion detection classifier
+trained with these labels. We center our study on the Child Affective Facial Expression (CAFE) dataset,
+a gold standard collection of images depicting pediatric facial expressions along with 100 human
+labels per image. To test the feasibility of crowdsourcing to generate these labels, we used Microworkers
+to acquire labels for 207 CAFE images. We evaluate both unfiltered workers as well as workers selected
+through a short crowd filtration process. We then train two versions of a classifiers on soft-target
+CAFE labels using the original 100 annotations provided with the dataset: (1) a classifier trained
+with traditional one-hot encoded labels, and (2) a classifier trained with vector labels representing
+the distribution of CAFE annotator responses. We compare the resulting softmax output distributions
+of the two classifiers with a 2-sample independent t-test of L1 distances between the classifier's
+output probability distribution and the distribution of human labels. While agreement with CAFE
+is weak for unfiltered crowd workers, the filtered crowd agree with the CAFE labels 100% of the time
+for many emotions. While the F1-score for a one-hot encoded classifier is much higher (94.33% vs.
+78.68%) with respect to the ground truth CAFE labels, the output probability vector of the crowd-trained
+classifier more closely resembles the distribution of human labels (t=3.2827, p=0.0014). Reporting
+an emotion probability distribution that accounts for the subjectivity of human interpretation.
+Crowdsourcing, including a sufficient filtering mechanism, is a feasible solution for acquiring
+soft-target labels. 

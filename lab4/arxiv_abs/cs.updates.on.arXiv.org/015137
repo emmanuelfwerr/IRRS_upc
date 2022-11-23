@@ -1,0 +1,18 @@
+Memory safety remains a critical and widely violated property in reality. Numerous defense techniques
+have been proposed and developed but most of them are not applied or enabled by default in production-ready
+environment due to their substantial running cost. The situation might change in the near future
+because the hardware supported defenses against these attacks are finally beginning to be adopted
+by commercial processors, operating systems and compilers. We then face a question as there is currently
+no suitable test suite to measure the memory safety extensions supported on different processors.
+In fact, the issue is not constrained only for memory safety but all aspect of processor security.
+All of the existing test suites related to processor security lack some of the key properties, such
+as comprehensiveness, distinguishability and portability. As an initial step, we propose an expandable
+test framework for measuring the processor security and open source a memory safety test suite utilizing
+this framework. The framework is deliberately designed to be flexible so it can be gradually extended
+to all types of hardware supported security extensions in processors. The initial test suite for
+memory safety currently contains 160 test cases covering spatial and temporal safety of memory,
+memory access control, pointer integrity and control-flow integrity. Each type of vulnerabilities
+and their related defenses have been individually evaluated by one or more test cases. The test suite
+has been ported to three different instruction set architectures (ISAs) and experimented on six
+different platforms. We have also utilized the test suite to explore the security benefits of applying
+different sets of compiler flags available on the latest GNU GCC and LLVM compilers. 

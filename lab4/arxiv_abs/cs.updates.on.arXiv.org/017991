@@ -1,0 +1,20 @@
+A noisy generalized phase retrieval (NGPR) problem refers to a problem of estimating $x_0 \in \mathbb{C}^d$
+by noisy quadratic samples $\big\{x_0^*A_kx_0+\eta_k\big\}_{k=1}^n$ where $A_k$ is a Hermitian
+matrix and $\eta_k$ is a noise scalar. When $A_k=\alpha_k\alpha_k^*$ for some $\alpha_k\in\mathbb{C}^d$,
+it reduces to a standard noisy phase retrieval (NPR) problem. The main aim of this paper is to study
+the estimation performance of empirical $\ell_2$ risk minimization in both problems when $A_k$
+in NGPR, or $\alpha_k$ in NPR, is drawn from sub-Gaussian distribution. Under different kinds of
+noise patterns, we establish error bounds that can imply approximate reconstruction and these
+results are new in the literature. In NGPR, we show the bounds are of $O\big(\frac{||\eta||}{\sqrt{n}}\big)$
+and $O\big(||\eta||_\infty \sqrt{\frac{d}{n}}\big)$ for general noise, and of $O\big(\sqrt{\frac{d\log
+n}{n}}\big)$ and $O\big(\sqrt{\frac{d(\log n)^2}{n}}\big)$ for random noise with sub-Gaussian
+and sub-exponential tail respectively, where $\| \eta \|$ and $\| \eta \|_{\infty}$ are the 2-norm
+and sup-norm of the noise vector of $\eta_k$. Under heavy-tailed noise, by truncating response
+outliers we propose a robust estimator that possesses an error bound with slower convergence rate.
+On the other hand, we obtain in NPR the bound is of $O\big(\sqrt{\frac{d\log n}{n}}\big)$ and $O\big(\sqrt{\frac{d(\log
+n)^2}{n}}\big)$) for sub-Gaussian and sub-exponential noise respectively, which is essentially
+tighter than the existing bound $O\big(\frac{||\eta||_2}{\sqrt{n}}\big)$. Although NGPR involving
+measurement matrix $A_k$ is more computationally demanding than NPR involving measurement vector
+$\alpha_k$, our results reveal that NGPR exhibits stronger robustness than NPR under biased and
+deterministic noise. Experimental results are presented to confirm and demonstrate our theoretical
+findings. 

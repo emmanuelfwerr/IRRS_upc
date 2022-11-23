@@ -1,0 +1,20 @@
+The kd-tree and Bounding Volume Hierarchy (BVH) are well-known data structures for computing ray-object
+intersections. Less known is the Constrained Convex Space Partitioning (CCSP), which partitions
+space and makes the geometric primitives exactly overlap with the boundaries of its cells. Consequently,
+it is robust against ill-fitting cells that plague methods with axis-aligned cells (kd-tree, BVH)
+and it permits an efficient, stackless traversal. Within computer graphics, CCSPs have received
+some attention in both 2D and 3D, but their construction methods were never directly aimed at minimizing
+their traversal cost -- even having fundamentally opposing goals for Delaunay-type methods. Instead,
+for an isotropic and translation-invariant ray distribution the traversal cost is minimized by
+minimizing the weight: the total boundary size of all cells in the structure. We study the 2D case
+using triangulations as CCSPs and minimize their total edge length using a simulated annealing
+process that allows for topological changes and varying vertex count. Standard Delaunay-based
+triangulation techniques show total edge lengths ranging from 10% higher to twice as high as our
+optimized triangulations for a variety of scenes, with a similar difference in traversal cost when
+using the triangulations for ray tracing. Compared to a roped kd-tree, our triangulations require
+less traversal steps for all scenes that we tested and they are robust against the kd-tree's pathological
+behaviour when geometry becomes misaligned with the world axes. Moreover, the stackless traversal
+strongly outperforms a BVH, which always requires a top-down descent in the hierarchy. In fact,
+we show several scenes where the number of traversal operations for our triangulations decreases(!)
+as the number of geometric primitives $N$ increases, in contrast to the increasing $\log N$ behaviour
+of a BVH. 

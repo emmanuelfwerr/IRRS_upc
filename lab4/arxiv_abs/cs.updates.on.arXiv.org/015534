@@ -1,0 +1,20 @@
+Multi-agent reinforcement learning (MARL) enables us to create adaptive agents in challenging
+environments, even when the agents have limited observation. Modern MARL methods have hitherto
+focused on finding factorized value functions. While this approach has proven successful, the
+resulting methods have convoluted network structures. We take a radically different approach,
+and build on the structure of independent Q-learners. Inspired by influence-based abstraction,
+we start from the observation that compact representations of the observation-action histories
+can be sufficient to learn close to optimal decentralized policies. Combining this observation
+with a dueling architecture, our algorithm, LAN, represents these policies as separate individual
+advantage functions w.r.t. a centralized critic. These local advantage networks condition only
+on a single agent's local observation-action history. The centralized value function conditions
+on the agents' representations as well as the full state of the environment. The value function,
+which is cast aside before execution, serves as a stabilizer that coordinates the learning and to
+formulate DQN targets during learning. In contrast with other methods, this enables LAN to keep
+the number of network parameters of its centralized network independent in the number of agents,
+without imposing additional constraints like monotonic value functions. When evaluated on the
+StarCraft multi-agent challenge benchmark, LAN shows state-of-the-art performance and scores
+more than 80% wins in two previously unsolved maps `corridor' and `3s5z_vs_3s6z', leading to an
+improvement of 10% over QPLEX on average performance on the 14 maps. Moreover when the number of agents
+becomes large, LAN uses significantly fewer parameters than QPLEX or even QMIX. We thus show that
+LAN's structure forms a key improvement that helps MARL methods remain scalable. 

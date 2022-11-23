@@ -1,0 +1,20 @@
+A main research goal in various studies is to use an observational data set and provide a new set of
+counterfactual guidelines that can yield causal improvements. Dynamic Treatment Regimes (DTRs)
+are widely studied to formalize this process. However, available methods in finding optimal DTRs
+often rely on assumptions that are violated in real-world applications (e.g., medical decision-making
+or public policy), especially when (a) the existence of unobserved confounders cannot be ignored,
+and (b) the unobserved confounders are time-varying (e.g., affected by previous actions). When
+such assumptions are violated, one often faces ambiguity regarding the underlying causal model
+that is needed to be assumed to obtain an optimal DTR. This ambiguity is inevitable, since the dynamics
+of unobserved confounders and their causal impact on the observed part of the data cannot be understood
+from the observed data. Motivated by a case study of finding superior treatment regimes for patients
+who underwent transplantation in our partner hospital and faced a medical condition known as New
+Onset Diabetes After Transplantation (NODAT), we extend DTRs to a new class termed Ambiguous Dynamic
+Treatment Regimes (ADTRs), in which the casual impact of treatment regimes is evaluated based on
+a "cloud" of potential causal models. We then connect ADTRs to Ambiguous Partially Observable Mark
+Decision Processes (APOMDPs) proposed by Saghafian (2018), and develop two Reinforcement Learning
+methods termed Direct Augmented V-Learning (DAV-Learning) and Safe Augmented V-Learning (SAV-Learning),
+which enable using the observed data to efficiently learn an optimal treatment regime. We establish
+theoretical results for these learning methods, including (weak) consistency and asymptotic
+normality. We further evaluate the performance of these learning methods both in our case study
+and in simulation experiments. 

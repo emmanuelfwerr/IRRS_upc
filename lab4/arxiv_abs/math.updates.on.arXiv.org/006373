@@ -1,0 +1,19 @@
+Symmetries found through automorphisms or graph fibrations provide important insights in network
+analysis. Symmetries identify clusters of robust synchronization in the network which improves
+the understanding of the functionality of complex biological systems. Network symmetries can
+be determined by finding a {\it balanced coloring} of the graph, which is a node partition in which
+each cluster of nodes receives the same information (color) from the rest of the graph. In recent
+work we saw that biological networks such as gene regulatory networks, metabolic networks and neural
+networks in organisms ranging from bacteria to yeast and humans are rich in fibration symmetries
+related to the graph balanced coloring. Networks based on real systems, however, are built on experimental
+data which are inherently incomplete, due to missing links, collection errors, and natural variations
+within specimens of the same biological species. Therefore, it is fair to assume that some of the
+existing symmetries were not detected in our analysis. For that reason, a method to find pseudosymmetries
+and repair networks based on those symmetries is important when analyzing real world networks.
+In this paper we introduce the {\it pseudobalanced coloring} \eqref{eq:mainip} problem, and provide
+an integer programming formulation which (a) calculates a pseudobalanced coloring of the graph
+taking into account the missing data, and (b) optimally repairs the graph with the minimal number
+of added/removed edges to maximize the symmetry of the graph. We apply our formulation to the {\it
+C. elegans} connectome to find pseudocoloring and the optimal graph repair. Our solution compares
+well with a manually curated ground-truth {\it C. elegans} graph as well as solutions generated
+by other methods of missing link prediction. 

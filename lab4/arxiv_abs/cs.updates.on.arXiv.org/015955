@@ -1,0 +1,19 @@
+Cross-view geo-localization is a task of matching the same geographic image from different views,
+e.g., unmanned aerial vehicle (UAV) and satellite. The most difficult challenges are the position
+shift and the uncertainty of distance and scale. Existing methods are mainly aimed at digging for
+more comprehensive fine-grained information. However, it underestimates the importance of extracting
+robust feature representation and the impact of feature alignment. The CNN-based methods have
+achieved great success in cross-view geo-localization. However it still has some limitations,
+e.g., it can only extract part of the information in the neighborhood and some scale reduction operations
+will make some fine-grained information lost. In particular, we introduce a simple and efficient
+transformer-based structure called Feature Segmentation and Region Alignment (FSRA) to enhance
+the model's ability to understand contextual information as well as to understand the distribution
+of instances. Without using additional supervisory information, FSRA divides regions based on
+the heat distribution of the transformer's feature map, and then aligns multiple specific regions
+in different views one on one. Finally, FSRA integrates each region into a set of feature representations.
+The difference is that FSRA does not divide regions manually, but automatically based on the heat
+distribution of the feature map. So that specific instances can still be divided and aligned when
+there are significant shifts and scale changes in the image. In addition, a multiple sampling strategy
+is proposed to overcome the disparity in the number of satellite images and that of images from other
+sources. Experiments show that the proposed method has superior performance and achieves the state-of-the-art
+in both tasks of drone view target localization and drone navigation. Code will be released at https://github.com/Dmmm1997/FSRA

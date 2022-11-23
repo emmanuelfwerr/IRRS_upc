@@ -1,0 +1,20 @@
+Given a classical query algorithm as a decision tree, when does there exist a quantum query algorithm
+with a speed-up over the classical one? We provide a general construction based on the structure
+of the underlying decision tree, and prove that this can give us an up-to-quadratic quantum speed-up.
+In particular, we obtain a bounded-error quantum query algorithm of cost $O(\sqrt{s})$ to compute
+a Boolean function (more generally, a relation) that can be computed by a classical (even randomized)
+decision tree of size $s$. Lin and Lin [ToC'16] and Beigi and Taghavi [Quantum'20] showed results
+of a similar flavor, and gave upper bounds in terms of a quantity which we call the "guessing complexity"
+of a decision tree. We identify that the guessing complexity of a decision tree equals its rank, a
+notion introduced by Ehrenfeucht and Haussler [Inf. Comp.'89] in the context of learning theory.
+This answers a question posed by Lin and Lin, who asked whether the guessing complexity of a decision
+tree is related to any complexity-theoretic measure. We also show a polynomial separation between
+rank and randomized rank for the complete binary AND-OR tree. Beigi and Taghavi constructed span
+programs and dual adversary solutions for Boolean functions given classical decision trees computing
+them and an assignment of non-negative weights to its edges. We explore the effect of changing these
+weights on the resulting span program complexity and objective value of the dual adversary bound,
+and capture the best possible weighting scheme by an optimization program. We exhibit a solution
+to this program and argue its optimality from first principles. We also exhibit decision trees for
+which our bounds are asymptotically stronger than those of Lin and Lin, and Beigi and Taghavi. This
+answers a question of Beigi and Taghavi, who asked whether different weighting schemes could yield
+better upper bounds. 

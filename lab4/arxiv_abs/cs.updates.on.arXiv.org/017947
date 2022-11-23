@@ -1,0 +1,19 @@
+The past few years have seen a surge of work on fairness in allocation problems where items must be
+fairly divided among agents having individual preferences. In comparison, fairness in settings
+with preferences on both sides, that is, where agents have to be matched to other agents, has received
+much less attention. Moreover, two-sided matching literature has largely focused on ordinal preferences.
+This paper initiates the study of fairness in stable many-to-one matchings under cardinal valuations.
+Motivated by real-world settings, we study leximin optimality over stable many-to-one matchings.
+We first investigate matching problems with ranked valuations where all agents on each side have
+the same preference orders or rankings over the agents on the other side (but not necessarily the
+same valuations). Here, we provide a complete characterisation of the space of stable matchings.
+This leads to FaSt, a novel and efficient algorithm to compute a leximin optimal stable matching
+under ranked isometric valuations (where, for each pair of agents, the valuation of one agent for
+the other is the same). Building upon FaSt, we present an efficient algorithm, FaSt-Gen, that finds
+the leximin optimal stable matching for a more general ranked setting. When there are exactly two
+agents on one side who may be matched to many agents on the other, strict preferences are enough to
+guarantee an efficient algorithm. We next establish that, in the absence of rankings and under strict
+preferences (with no restriction on the number of agents on either side), finding a leximin optimal
+stable matching is NP-Hard. Further, with weak rankings, the problem is strongly NP-Hard, even
+under isometric valuations. In fact, when additivity and non-negativity are the only assumptions,
+we show that, unless P=NP, no efficient polynomial factor approximation is possible. 

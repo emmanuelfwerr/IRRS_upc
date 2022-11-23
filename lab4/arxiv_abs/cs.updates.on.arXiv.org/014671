@@ -1,0 +1,20 @@
+As machine learning (ML) techniques are being increasingly used in many applications, their vulnerability
+to adversarial attacks becomes well-known. Test time attacks, usually launched by adding adversarial
+noise to test instances, have been shown effective against the deployed ML models. In practice,
+one test input may be leveraged by different ML models. Test time attacks targeting a single ML model
+often neglect their impact on other ML models. In this work, we empirically demonstrate that naively
+attacking the classifier learning one concept may negatively impact classifiers trained to learn
+other concepts. For example, for the online image classification scenario, when the Gender classifier
+is under attack, the (wearing) Glasses classifier is simultaneously attacked with the accuracy
+dropped from 98.69 to 88.42. This raises an interesting question: is it possible to attack one set
+of classifiers without impacting the other set that uses the same test instance? Answers to the above
+research question have interesting implications for protecting privacy against ML model misuse.
+Attacking ML models that pose unnecessary risks of privacy invasion can be an important tool for
+protecting individuals from harmful privacy exploitation. In this paper, we address the above
+research question by developing novel attack techniques that can simultaneously attack one set
+of ML models while preserving the accuracy of the other. In the case of linear classifiers, we provide
+a theoretical framework for finding an optimal solution to generate such adversarial examples.
+Using this theoretical framework, we develop a multi-concept attack strategy in the context of
+deep learning. Our results demonstrate that our techniques can successfully attack the target
+classes while protecting the protected classes in many different settings, which is not possible
+with the existing test-time attack-single strategies. 

@@ -1,0 +1,19 @@
+We study the decremental All-Pairs Shortest Paths (APSP) problem in undirected edge-weighted
+graphs. The input to the problem is an $n$-vertex $m$-edge graph $G$ with non-negative edge lengths,
+that undergoes a sequence of edge deletions. The goal is to support approximate shortest-path queries:
+given a pair $x,y$ of vertices of $G$, return a path $P$ connecting $x$ to $y$, whose length is within
+factor $\alpha$ of the length of the shortest $x$-$y$ path, in time $\tilde O(|E(P)|)$, where $\alpha$
+is the approximation factor of the algorithm. APSP is one of the most basic and extensively studied
+dynamic graph problems. A long line of work culminated in the algorithm of [Chechik, FOCS 2018] with
+near optimal guarantees for the oblivious-adversary setting. Unfortunately, adaptive-adversary
+setting is still poorly understood. For unweighted graphs, the algorithm of [Henzinger, Krinninger
+and Nanongkai, FOCS '13, SICOMP '16] achieves a $(1+\epsilon)$-approximation with total update
+time $\tilde O(mn/\epsilon)$; the best current total update time of $n^{2.5+O(\epsilon)}$ is
+achieved by the deterministic algorithm of [Chuzhoy, Saranurak, SODA'21], with $2^{O(1/\epsilon)}$-multiplicative
+and $2^{O(\log^{3/4}n/\epsilon)}$-additive approximation. To the best of our knowledge, for
+arbitrary non-negative edge weights, the fastest current adaptive-update algorithm has total
+update time $O(n^{3}\log L/\epsilon)$, achieving a $(1+\epsilon)$-approximation. Here, L is
+the ratio of longest to shortest edge lengths. Our main result is a deterministic algorithm for decremental
+APSP in undirected edge-weighted graphs, that, for any $\Omega(1/\log\log m)\leq \epsilon< 1$,
+achieves approximation factor $(\log m)^{2^{O(1/\epsilon)}}$, with total update time $O\left
+(m^{1+O(\epsilon)}\cdot (\log m)^{O(1/\epsilon^2)}\cdot \log L\right )$. 

@@ -1,0 +1,20 @@
+Longitudinal image registration is challenging and has not yet benefited from major performance
+improvements thanks to deep-learning. Inspired by Deep Image Prior, this paper introduces a different
+use of deep architectures as regularizers to tackle the image registration question. We propose
+a subject-specific deformable registration method called MIRRBA, relying on a deep pyramidal
+architecture to be the prior parametric model constraining the deformation field. Diverging from
+the supervised learning paradigm, MIRRBA does not require a learning database, but only the pair
+of images to be registered to optimize the network's parameters and provide a deformation field.
+We demonstrate the regularizing power of deep architectures and present new elements to understand
+the role of the architecture in deep learning methods for registration. Hence, to study the impact
+of the network parameters, we ran our method with different architectural configurations on a private
+dataset of 110 metastatic breast cancer full-body PET images with manual segmentations of the brain,
+bladder and metastatic lesions. We compared it against conventional iterative registration approaches
+and supervised deep learning-based models. Global and local registration accuracies were evaluated
+using the detection rate and the Dice score respectively, while registration realism was evaluated
+using the Jacobian's determinant. Moreover, we computed the ability of the different methods to
+shrink vanishing lesions with the disappearing rate. MIRRBA significantly improves the organ
+and lesion Dice scores of supervised models. Regarding the disappearing rate, MIRRBA more than
+doubles the best performing conventional approach SyNCC score. Our work therefore proposes an
+alternative way to bridge the performance gap between conventional and deep learning-based methods
+and demonstrates the regularizing power of deep architectures. 

@@ -1,0 +1,20 @@
+With the broad application of deep neural networks (DNNs), backdoor attacks have gradually attracted
+attention. Backdoor attacks are insidious, and poisoned models perform well on benign samples
+and are only triggered when given specific inputs, which cause the neural network to produce incorrect
+outputs. The state-of-the-art backdoor attack work is implemented by data poisoning, i.e., the
+attacker injects poisoned samples into the dataset, and the models trained with that dataset are
+infected with the backdoor. However, most of the triggers used in the current study are fixed patterns
+patched on a small fraction of an image and are often clearly mislabeled, which is easily detected
+by humans or defense methods such as Neural Cleanse and SentiNet. Also, it's difficult to be learned
+by DNNs without mislabeling, as they may ignore small patterns. In this paper, we propose a generalized
+backdoor attack method based on the frequency domain, which can implement backdoor implantation
+without mislabeling and accessing the training process. It is invisible to human beings and able
+to evade the commonly used defense methods. We evaluate our approach in the no-label and clean-label
+cases on three datasets (CIFAR-10, STL-10, and GTSRB) with two popular scenarios (self-supervised
+learning and supervised learning). The results show our approach can achieve a high attack success
+rate (above 90%) on all the tasks without significant performance degradation on main tasks. Also,
+we evaluate the bypass performance of our approach for different kinds of defenses, including the
+detection of training data (i.e., Activation Clustering), the preprocessing of inputs (i.e.,
+Filtering), the detection of inputs (i.e., SentiNet), and the detection of models (i.e., Neural
+Cleanse). The experimental results demonstrate that our approach shows excellent robustness
+to such defenses. 

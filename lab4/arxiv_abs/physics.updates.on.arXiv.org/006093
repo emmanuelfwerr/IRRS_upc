@@ -1,0 +1,20 @@
+Full-Waveform Inversion (FWI) has now become a widely accepted tool to obtain high-resolution
+velocity models from seismic data. Typically, the velocity model in its discrete form is represented
+on a rectangular grid, and we solve for the elastic properties at these grid points. FWI is mostly
+solved employing a local optimization method, where one obtains a velocity update by minimizing
+the misfit between the observed and the calculated seismograms. Note also that FWI is a highly non-linear
+problem which is known to be prone to non-uniqueness. The convergence to a globally optimum solution
+is not guaranteed; it depends on the choice of the starting model. Thus, a Bayesian formulation of
+the inverse problem with subsequent sampling of the posterior distribution is a preferred choice,
+since it enables uncertainty quantification. However, with the increase in the dimension of a model,
+sampling search space becomes computationally expensive. We employ a recently developed trans-dimensional
+sampling method called Reversible Jump Hamiltonian Monte Carlo (RJHMC), to the 2D full waveform
+inversion problem. We represent our velocity model using Voronoi cells, determined from the distribution
+of certain nuclei points in the model space. This method offers two advantages. First, it solves
+for a variable dimensional velocity updates by using a trans-dimensional reversible jump Markov
+Chain Monte Carlo (RJMCMC) step and thus tries to achieve an optimum number of nuclei to represent
+the model and minimize the misfit. A smaller number of parameters helps in an efficient sampling
+of the model search space. Second, it applies the gradient-based Hamiltonian Monte Carlo (HMC)
+step, which further improves the sampling by allowing the algorithm to take a large step guided by
+the gradient. This two-step algorithm proves to be a useful tool for model exploration and uncertainty
+quantification in FWI. 

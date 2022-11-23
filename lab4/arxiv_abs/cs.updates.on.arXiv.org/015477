@@ -1,0 +1,20 @@
+The minimizers sampling mechanism is a popular mechanism for string sampling introduced independently
+by Schleimer et al. [SIGMOD 2003] and by Roberts et al. [Bioinf. 2004]. Given two positive integers
+$w$ and $k$, it selects the lexicographically smallest length-$k$ substring in every fragment
+of $w$ consecutive length-$k$ substrings (in every sliding window of length $w + k - 1$). Minimizers
+samples are approximately uniform, locally consistent, and computable in linear time. Two main
+disadvantages of minimizers sampling mechanisms are: first, they do not have good guarantees on
+the expected size of their samples for every combination of $w$ and $k$; and, second, indexes that
+are constructed over their samples do not have good worst-case guarantees for on-line pattern searches.
+We introduce bidirectional string anchors (bd-anchors), a new string sampling mechanism. Given
+a positive integer $\ell$, our mechanism selects the lexicographically smallest rotation in every
+length-$\ell$ fragment (in every sliding window of length $\ell$). We show that bd-anchors samples
+are also approximately uniform, locally consistent, and computable in linear time. In addition,
+our experiments using several datasets demonstrate that the bd-anchors sample sizes decrease
+proportionally to $\ell$; and that these sizes are competitive to or smaller than the minimizers
+sample sizes using the analogous sampling parameters. We provide theoretical justification for
+these results by analyzing the expected size of bd-anchors samples. As a negative result, we show
+that computing a total order $\leq$ on the input alphabet, which minimizes the bd-anchors sample
+size, is NP-hard. We also show that by using any bd-anchors sample, we can construct, in near-linear
+time, an index which requires linear (extra) space in the size of the sample and answers on-line pattern
+searches in near-optimal time. 

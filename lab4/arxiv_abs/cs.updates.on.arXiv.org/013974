@@ -1,0 +1,20 @@
+Recently, using different channels to model social semantic information, and using self-supervised
+learning tasks to maintain the characteristics of each channel when fusing the information, which
+has been proven to be a very promising work. However, how to deeply dig out the relationship between
+different channels and make full use of it while maintaining the uniqueness of each channel is a problem
+that has not been well studied and resolved in this field. Under such circumstances, this paper explores
+and verifies the deficiency of directly constructing contrastive learning tasks on different
+channels with practical experiments and proposes the scheme of interactive modeling and matching
+representation across different channels. This is the first attempt in the field of recommender
+systems, we believe the insight of this paper is inspirational to future self-supervised learning
+research based on multi-channel information. To solve this problem, we propose a cross-channel
+matching representation model based on attentive interaction, which realizes efficient modeling
+of the relationship between cross-channel information. Based on this, we also proposed a hierarchical
+self-supervised learning model, which realized two levels of self-supervised learning within
+and between channels and improved the ability of self-supervised tasks to autonomously mine different
+levels of potential information. We have conducted abundant experiments, and many experimental
+metrics on multiple public data sets show that the method proposed in this paper has a significant
+improvement compared with the state-of-the-art methods, no matter in the general or cold-start
+scenario. And in the experiment of model variant analysis, the benefits of the cross-channel matching
+representation model and the hierarchical self-supervised model proposed in this paper are also
+fully verified. 

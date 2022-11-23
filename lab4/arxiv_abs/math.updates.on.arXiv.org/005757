@@ -1,0 +1,19 @@
+A graph is word-representable if it can be represented in a certain way using alternation of letters
+in words. Word-representable graphs generalise several important and well-studied classes of
+graphs, and they can be characterised by semi-transitive orientations. Recognising word-representability
+is an NP-complete problem, and the bottleneck of the theory of word-representable graphs is how
+to convince someone, e.g.\ a referee, that a graph is non-word-representable keeping in mind that
+references to (publicly available) software are not always welcome? (Word-representability
+can be justified by providing a semi-transitive orientation as a certificate that can be checked
+in polynomial time.) In the literature, a variety of (usually ad hoc) proofs of non-word-representability
+for particular graphs, or families of graphs, appear, but for a randomly selected graph, one should
+expect looking at $O(2^{\#\mbox{edges}})$ orientations and justifying that none of them is semi-transitive.
+Even if computer would print out all these orientations and would point out what is wrong with each
+of the orientations, such a proof would be essentially non-checkable by a human. In this paper, we
+develop methods for an automatic search of human-verifiable proofs of graph non-word-representability.
+As a proof-of-concept, we provide ``short'' proofs of non-word-representability, generated
+automatically by our publicly available user-friendly software, of the Shrikhande graph on 16
+vertices and 48 edges (9 ``lines'' of proof) and the Clebsch graph on 16 vertices and 40 edges (33 ``lines''
+of proof). As a bi-product of our studies, we correct two mistakes published multiple times (two
+graphs out of the 25 non-word-representable graphs on 7 vertices were actually word-representable,
+while two non-word-representable graphs on 7 vertices were missing). 

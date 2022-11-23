@@ -1,0 +1,19 @@
+The stagnation of EDA technologies roots from insufficient knowledge reuse. In practice, very
+similar simulation or optimization results may need to be repeatedly constructed from scratch.
+This motivates my research on introducing more 'intelligence' to EDA with machine learning (ML),
+which explores complex correlations in design flows based on prior data. Besides design time, I
+also propose ML solutions to boost IC performance by assisting the circuit management at runtime.
+In this dissertation, I present multiple fast yet accurate ML models covering a wide range of chip
+design stages from the register-transfer level (RTL) to sign-off, solving primary chip-design
+problems about power, timing, interconnect, IR drop, routability, and design flow tuning. Targeting
+the RTL stage, I present APOLLO, a fully automated power modeling framework. It constructs an accurate
+per-cycle power model by extracting the most power-correlated signals. The model can be further
+implemented on chip for runtime power management with unprecedented low hardware costs. Targeting
+gate-level netlist, I present Net2 for early estimations on post-placement wirelength. It further
+enables more accurate timing analysis without actual physical design information. Targeting
+circuit layout, I present RouteNet for early routability prediction. As the first deep learning-based
+routability estimator, some feature-extraction and model-design principles proposed in it are
+widely adopted by later works. I also present PowerNet for fast IR drop estimation. It captures spatial
+and temporal information about power distribution with a customized CNN architecture. Last, besides
+targeting a single design step, I present FIST to efficiently tune design flow parameters during
+both logic synthesis and physical design. 

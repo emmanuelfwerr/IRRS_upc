@@ -1,0 +1,18 @@
+The taxonomy of galaxy morphology is critical in astrophysics as the morphological properties
+are powerful tracers of galaxy evolution. With the upcoming Large-scale Imaging Surveys, billions
+of galaxy images challenge astronomers to accomplish the classification task by applying traditional
+methods or human inspection. Consequently, machine learning, in particular supervised deep learning,
+has been widely employed to classify galaxy morphologies recently due to its exceptional automation,
+efficiency, and accuracy. However, supervised deep learning requires extensive training sets,
+which causes considerable workloads; also, the results are strongly dependent on the characteristics
+of training sets, which leads to biased outcomes potentially. In this study, we attempt Few-shot
+Learning to bypass the two issues. Our research adopts the dataset from Galaxy Zoo Challenge Project
+on Kaggle, and we divide it into five categories according to the corresponding truth table. By classifying
+the above dataset utilizing few-shot learning based on Siamese Networks and supervised deep learning
+based on AlexNet, VGG_16, and ResNet_50 trained with different volumes of training sets separately,
+we find that few-shot learning achieves the highest accuracy in most cases, and the most significant
+improvement is $21\%$ compared to AlexNet when the training sets contain 1000 images. In addition,
+to guarantee the accuracy is no less than 90\%, few-shot learning needs $\sim$6300 images for training,
+while ResNet_50 requires 13000 images. Considering the advantages stated above, foreseeably,
+few-shot learning is suitable for the taxonomy of galaxy morphology and even for identifying rare
+astrophysical objects, despite limited training sets consisting of observational data only.

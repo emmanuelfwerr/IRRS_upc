@@ -1,0 +1,18 @@
+The high cost of data acquisition makes Automatic Speech Recognition (ASR) model training problematic
+for most existing languages, including languages that do not even have a written script, or for which
+the phone inventories remain unknown. Past works explored multilingual training, transfer learning,
+as well as zero-shot learning in order to build ASR systems for these low-resource languages. While
+it has been shown that the pooling of resources from multiple languages is helpful, we have not yet
+seen a successful application of an ASR model to a language unseen during training. A crucial step
+in the adaptation of ASR from seen to unseen languages is the creation of the phone inventory of the
+unseen language. The ultimate goal of our work is to build the phone inventory of a language unseen
+during training in an unsupervised way without any knowledge about the language. In this paper,
+we 1) investigate the influence of different factors (i.e., model architecture, phonotactic model,
+type of speech representation) on phone recognition in an unknown language; 2) provide an analysis
+of which phones transfer well across languages and which do not in order to understand the limitations
+of and areas for further improvement for automatic phone inventory creation; and 3) present different
+methods to build a phone inventory of an unseen language in an unsupervised way. To that end, we conducted
+mono-, multi-, and crosslingual experiments on a set of 13 phonetically diverse languages and several
+in-depth analyses. We found a number of universal phone tokens (IPA symbols) that are well-recognized
+cross-linguistically. Through a detailed analysis of results, we conclude that unique sounds,
+similar sounds, and tone languages remain a major challenge for phonetic inventory discovery.

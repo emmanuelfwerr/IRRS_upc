@@ -1,0 +1,19 @@
+Decentralized optimization enables a network of agents to cooperatively optimize an overall objective
+function without a central coordinator and is gaining increased attention in domains as diverse
+as control, sensor networks, data mining, and robotics. However, the information sharing among
+agents in decentralized optimization also discloses agents' information, which is undesirable
+or even unacceptable when involved data are sensitive. This paper proposes two gradient based decentralized
+optimization algorithms that can protect participating agents' privacy without compromising
+optimization accuracy or incurring heavy communication/computational overhead. This is in distinct
+difference from differential privacy based approaches which have to trade optimization accuracy
+for privacy, or encryption based approaches which incur heavy communication and computational
+overhead. Both algorithms leverage a judiciously designed mixing matrix and time-varying uncoordinated
+stepsizes to enable privacy, one using diminishing stepsizes while the other using non-diminishing
+stepsizes. Both algorithms only require a participating agent to share one message with a neighboring
+agent in each iteration to reach convergence to an exact optimal solution, which is in contrast to
+most gradient-tracking based algorithms requiring every agent to share two messages (an optimization
+variable and an auxiliary gradient-tracking variable) under non-diminishing stepsizes. Furthermore,
+both algorithms can guarantee the privacy of a participating agent even when all information shared
+by the agent are accessible to an adversary, a scenario in which most existing accuracy-maintaining
+privacy approaches will fail to protect privacy. Simulation results confirm the effectiveness
+of the proposed algorithms. 

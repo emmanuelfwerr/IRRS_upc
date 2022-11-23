@@ -1,0 +1,18 @@
+We demonstrate that a neural network pre-trained on text and fine-tuned on code solves mathematics
+course problems, explains solutions, and generates new questions at human level. We automatically
+synthesize programs using few-shot learning and OpenAI's Codex transformer and execute them to
+solve course problems at 80% automatic accuracy. We curate a new dataset of questions from MIT's
+large mathematics courses (Single Variable and Multivariable Calculus, Differential Equations,
+Introduction to Probability and Statistics, Linear Algebra, and Mathematics for Computer Science)
+and Columbia University's Computational Linear Algebra course. We solve questions from a MATH
+dataset (on Prealgebra, Algebra, Counting and Probability, Intermediate Algebra, Number Theory,
+and Precalculus), the latest benchmark of advanced mathematics problems designed to assess mathematical
+reasoning. We randomly sample questions from each course and benchmark topic and generate solutions
+with multiple modalities, including numbers, equations, and plots. The latest GPT-3 language
+model pre-trained on text automatically solves only 18% of these university questions. In contrast,
+using program synthesis and few-shot learning with Codex that is fine tuned on code generates programs
+that automatically solve 80% of these questions. Our approach improves upon the previous state-of-the-art
+automatic solution accuracy on the benchmark topics from 8.8% to 81.1%. We perform a survey to evaluate
+the quality and difficulty of generated questions. This work is the first to automatically solve
+university-level mathematics course questions at a human level. This is also the first work to explain,
+and generate university-level mathematics course questions at scale, a milestone for higher education.

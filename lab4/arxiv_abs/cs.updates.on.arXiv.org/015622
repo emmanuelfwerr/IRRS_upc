@@ -1,0 +1,20 @@
+Accurate decoding of surface electromyography (sEMG) is pivotal for muscle-to-machine-interfaces
+(MMI) and their application for e.g. rehabilitation therapy. sEMG signals have high inter-subject
+variability, due to various factors, including skin thickness, body fat percentage, and electrode
+placement. Therefore, obtaining high generalization quality of a trained sEMG decoder is quite
+challenging. Usually, machine learning based sEMG decoders are either trained on subject-specific
+data, or at least recalibrated for each user, individually. Even though, deep learning algorithms
+produced several state of the art results for sEMG decoding,however, due to the limited amount of
+availability of sEMG data, the deep learning models are prone to overfitting. Recently, transfer
+learning for domain adaptation improved generalization quality with reduced training time on
+various machine learning tasks. In this study, we investigate the effectiveness of transfer learning
+using weight initialization for recalibration of two different pretrained deep learning models
+on a new subjects data, and compare their performance to subject-specific models. To the best of
+our knowledge, this is the first study that thoroughly investigated weight-initialization based
+transfer learning for sEMG classification and compared transfer learning to subject-specific
+modeling. We tested our models on three publicly available databases under various settings. On
+average over all settings, our transfer learning approach improves 5~\%-points on the pretrained
+models without fine-tuning and 12~\%-points on the subject-specific models, while being trained
+on average 22~\% fewer epochs. Our results indicate that transfer learning enables faster training
+on fewer samples than user-specific models, and improves the performance of pretrained models
+as long as enough data is available. 

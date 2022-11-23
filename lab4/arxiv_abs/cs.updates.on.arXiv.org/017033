@@ -1,0 +1,20 @@
+We propose 2D Piezoelectric FET (PeFET) based compute-enabled non-volatile memory for ternary
+deep neural networks (DNNs). PeFETs consist of a material with ferroelectric and piezoelectric
+properties coupled with Transition Metal Dichalcogenide channel. We utilize (a) ferroelectricity
+to store binary bits (0/1) in the form of polarization (-P/+P) and (b) polarization dependent piezoelectricity
+to read the stored state by means of strain-induced bandgap change in Transition Metal Dichalcogenide
+channel. The unique read mechanism of PeFETs enables us to expand the traditional association of
++P (-P) with low (high) resistance states to their dual high (low) resistance depending on read voltage.
+Specifically, we demonstrate that +P (-P) stored in PeFETs can be dynamically configured in (a)
+a low (high) resistance state for positive read voltages and (b) their dual high (low) resistance
+states for negative read voltages, without afflicting a read disturb. Such a feature, which we name
+as Polarization Preserved Piezoelectric Effect Reversal with Dual Voltage Polarity (PiER), is
+unique to PeFETs and has not been shown in hitherto explored memories. We leverage PiER to propose
+a Strain-enabled Ternary Precision Computation-in-Memory (STeP-CiM) cell with capabilities
+of computing the scalar product of the stored weight and input, both of which are represented with
+signed ternary precision. Further, using multi word-line assertion of STeP-CiM cells, we achieve
+massively parallel computation of dot products of signed ternary inputs and weights. Our array
+level analysis shows 91% lower delay and improvements of 15% and 91% in energy for in-memory multiply-and-accumulate
+operations compared to near-memory design approaches based on SRAM and PeFET respectively. STeP-CiM
+exhibits upto 8.91x improvement in performance and 6.07x average improvement in energy over SRAM/PeFET
+based near-memory design. 

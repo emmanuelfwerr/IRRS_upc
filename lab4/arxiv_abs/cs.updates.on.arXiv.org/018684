@@ -1,0 +1,19 @@
+Few-shot learning (FSL) aims to generate a classifier using limited labeled examples. Many existing
+works take the meta-learning approach, constructing a few-shot learner that can learn from few-shot
+examples to generate a classifier. Typically, the few-shot learner is constructed or meta-trained
+by sampling multiple few-shot tasks in turn and optimizing the few-shot learner's performance
+in generating classifiers for those tasks. The performance is measured by how well the resulting
+classifiers classify the test (i.e., query) examples of those tasks. In this paper, we point out
+two potential weaknesses of this approach. First, the sampled query examples may not provide sufficient
+supervision for meta-training the few-shot learner. Second, the effectiveness of meta-learning
+diminishes sharply with the increasing number of shots. To resolve these issues, we propose a novel
+meta-training objective for the few-shot learner, which is to encourage the few-shot learner to
+generate classifiers that perform like strong classifiers. Concretely, we associate each sampled
+few-shot task with a strong classifier, which is trained with ample labeled examples. The strong
+classifiers can be seen as the target classifiers that we hope the few-shot learner to generate given
+few-shot examples, and we use the strong classifiers to supervise the few-shot learner. We present
+an efficient way to construct the strong classifier, making our proposed objective an easily plug-and-play
+term to existing meta-learning based FSL methods. We validate our approach, LastShot, in combinations
+with many representative meta-learning methods. On several benchmark datasets, our approach
+leads to a notable improvement across a variety of tasks. More importantly, with our approach, meta-learning
+based FSL methods can outperform non-meta-learning based methods at different numbers of shots.

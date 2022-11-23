@@ -1,0 +1,18 @@
+Compared with the traditional collaborative filtering methods, the graph convolution network
+can explicitly model the interaction between the nodes of the user-item bipartite graph and effectively
+use higher-order neighbors, which enables the graph neural network to obtain more effective embeddings
+for recommendation, such as NGCF And LightGCN. However, its representations is very susceptible
+to the noise of interaction. In response to this problem, SGL explored the self-supervised learning
+on the user-item graph to improve the robustness of GCN. Although effective, we found that SGL directly
+applies SimCLR's comparative learning framework. This framework may not be directly applicable
+to the scenario of the recommendation system, and does not fully consider the uncertainty of user-item
+interaction.In this work, we aim to consider the application of contrastive learning in the scenario
+of the recommendation system adequately, making it more suitable for recommendation task. We propose
+a supervised contrastive learning framework to pre-train the user-item bipartite graph, and then
+fine-tune the graph convolutional neural network. Specifically, we will compare the similarity
+between users and items during data preprocessing, and then when applying contrastive learning,
+not only will the augmented views be regarded as the positive samples, but also a certain number of
+similar samples will be regarded as the positive samples, which is different from SimCLR who treats
+other samples in a batch as negative samples. We term this learning method as Supervised Contrastive
+Learning(SCL) and apply it on the most advanced LightGCN. In addition, in order to consider the uncertainty
+of node interaction, we also propose a new data augment method called node replication. 

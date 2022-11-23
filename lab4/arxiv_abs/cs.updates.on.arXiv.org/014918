@@ -1,0 +1,19 @@
+Hierarchical Clustering has been studied and used extensively as a method for analysis of data.
+More recently, Dasgupta [2016] defined a precise objective function. Given a set of $n$ data points
+with a weight function $w_{i,j}$ for each two items $i$ and $j$ denoting their similarity/dis-similarity,
+the goal is to build a recursive (tree like) partitioning of the data points (items) into successively
+smaller clusters. He defined a cost function for a tree $T$ to be $Cost(T) = \sum_{i,j \in [n]} \big(w_{i,j}
+\times |T_{i,j}| \big)$ where $T_{i,j}$ is the subtree rooted at the least common ancestor of $i$
+and $j$ and presented the first approximation algorithm for such clustering. Then Moseley and Wang
+[2017] considered the dual of Dasgupta's objective function for similarity-based weights and
+showed that both random partitioning and average linkage have approximation ratio $1/3$ which
+has been improved in a series of works to $0.585$ [Alon et al. 2020]. Later Cohen-Addad et al. [2019]
+considered the same objective function as Dasgupta's but for dissimilarity-based metrics, called
+$Rev(T)$. It is shown that both random partitioning and average linkage have ratio $2/3$ which has
+been only slightly improved to $0.667078$ [Charikar et al. SODA2020]. Our first main result is to
+consider $Rev(T)$ and present a more delicate algorithm and careful analysis that achieves approximation
+$0.71604$. We also introduce a new objective function for dissimilarity-based clustering. For
+any tree $T$, let $H_{i,j}$ be the number of $i$ and $j$'s common ancestors. Intuitively, items that
+are similar are expected to remain within the same cluster as deep as possible. So, for dissimilarity-based
+metrics, we suggest the cost of each tree $T$, which we want to minimize, to be $Cost_H(T) = \sum_{i,j
+\in [n]} \big(w_{i,j} \times H_{i,j} \big)$. We present a $1.3977$-approximation for this objective.

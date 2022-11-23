@@ -1,0 +1,20 @@
+In this paper, we consider a distributed joint sensing and communication (DJSC) system in which
+multiple radar sensors are deployed. Each sensor is equipped with a sensing function and a communication
+function, and thus it is a JSC node. The JSC nodes are able to perform sensing their surrounding environments,
+e.g., weather conditions or available spectrum. Furthermore, they can cooperatively detect and
+track a common target. The information, i.e., of the environment and target, collected by the JSC
+nodes is transmitted to a base station (BS) for further processing. As such, different aspects of
+the target to be viewed simultaneously, which significantly improves the performance of the target
+detection and tracking. However, both the sensing function and communication function require
+a certain amount of bandwidth for their operations, and deploying multiple JSC nodes may consume
+a large amount of bandwidth. Therefore, we investigate the bandwidth allocation problem for the
+DJSC system. In particular, we aim to optimize the bandwidth allocation to the sensing function
+and the communication function of the JSC nodes. To improve the allocation efficiency while benefiting
+the spatial diversity advantage of the DJSC systems, the objective is to maximize the sum of sensing
+performances, i.e., estimation rates, communication performances, i.e., communication data
+rates, and fairnesses of all the users. The optimization problem is non-convex and difficult to
+be solved. For this, we propose a fully polynomial time approximation algorithm, and we prove that
+the approximation algorithm can guarantee a near-optimal solution with an accuracy bound of $\epsilon$.
+Furthermore, we propose to use a heuristic algorithm with lower complexity. The simulation results
+show that both the proposed algorithms are able to achieve the solutions close to the optimum in a
+computationally efficient fashion. 

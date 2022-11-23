@@ -1,0 +1,20 @@
+By executing offloaded tasks from mobile users, edge computing augments mobile user equipments
+(UEs) with computing/communications resources from edge nodes (ENs), enabling new services (e.g.,
+real-time gaming). However, despite being more resourceful than UEs, allocating ENs' resources
+to a given favorable set of users (e.g., closer to ENs) may block other UEs from their services. This
+is often the case for most existing approaches that only aim to maximize the network social welfare
+or minimize the total energy consumption but do not consider the computing/battery status of each
+UE. This work develops an energy-based proportional-fair framework to serve all users with multiple
+tasks while considering both their service requirements and energy/battery levels in a multi-layer
+edge network. The resulting problem for offloading tasks and allocating resources toward the tasks
+is a Mixed-Integer Nonlinear Programming, which is NP-hard. To tackle it, we leverage the fact that
+the relaxed problem is convex and propose a distributed algorithm, namely the dynamic branch-and-bound
+Benders decomposition (DBBD). DBBD decomposes the original problem into a master problem (MP)
+for the offloading decisions and multiple subproblems (SPs) for resource allocation. To quickly
+eliminate inefficient offloading solutions, MP is integrated with powerful Benders cuts exploiting
+the ENs' resource constraints. We then develop a dynamic branch-and-bound algorithm (DBB) to efficiently
+solve MP considering the load balance among ENs. SPs can either be solved for their closed-form solutions
+or be solved in parallel at ENs, thus reducing the complexity. The numerical results show that DBBD
+returns the optimal solution in maximizing the proportional fairness among UEs. DBBD has higher
+fairness indexes, i.e., Jain's index and min-max ratio, in comparison with the existing ones that
+minimize the total consumed energy. 

@@ -1,0 +1,19 @@
+Local differential privacy has recently received increasing attention from the statistics community
+as a valuable tool to protect the privacy of individual data owners without the need of a trusted third
+party. Similar to the classical notion of randomized response, the idea is that data owners randomize
+their true information locally and only release the perturbed data. Many different protocols for
+such local perturbation procedures can be designed. In most estimation problems studied in the
+literature so far, however, no significant difference in terms of minimax risk between purely non-interactive
+protocols and protocols that allow for some amount of interaction between individual data providers
+could be observed. In this paper we show that for estimating the integrated square of a density, sequentially
+interactive procedures improve substantially over the best possible non-interactive procedure
+in terms of minimax rate of estimation. In particular, in the non-interactive scenario we identify
+an elbow in the minimax rate at $s=\frac34$, whereas in the sequentially interactive scenario the
+elbow is at $s=\frac12$. This is markedly different from both, the case of direct observations,
+where the elbow is well known to be at $s=\frac14$, as well as from the case where Laplace noise is added
+to the original data, where an elbow at $s= \frac94$ is obtained. We also provide adaptive estimators
+that achieve the optimal rate up to log-factors, we draw connections to non-parametric goodness-of-fit
+testing and estimation of more general integral functionals and conduct a series of numerical experiments.
+The fact that a particular locally differentially private, but interactive, mechanism improves
+over the simple non-interactive one is also of great importance for practical implementations
+of local differential privacy. 

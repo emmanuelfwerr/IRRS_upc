@@ -1,0 +1,20 @@
+Forward-secure signatures guarantee that the signatures generated before the compromise of private
+key remain secure, and therefore offer an enhanced compromise-resiliency for real-life applications
+such as digital forensics, audit logs, and financial systems. However, the vast majority of state-of-the-art
+forward-secure signatures rely on conventional intractability assumptions and therefore are
+not secure against quantum computers. Hash-based signatures (HBS) (e.g., XMSS) can offer forward-secure
+post-quantum security. However, they are efficient only for a pre-defined number of messages to
+be signed and incur high key generation overhead, highly expensive signing, and large signature
+sizes for an increasing number of messages. It is an open problem to develop quantum-safe forward-secure
+signatures that are efficient and practical with a signing capability scalable to their security
+parameters. In this work, we propose a new series of post-quantum signatures that we call FROG (Forward-secuRe
+pOst-quantum siGnature). Unlike HBS alternatives, FROG can achieve highly computational efficient
+signatures with sub-linear key/signature sizes and (practically) unbounded signing capability.
+This is achieved by transforming suitable post-quantum signatures into forward-secure settings
+via MMM constructions. We investigated the transformation of prominent post-quantum secure signatures
+such as Dilithium, WOTS, and BLISS with MMM. Our experiments indicate that FROG outperforms XMSS
+for the vast majority (if not all for a large number of messages) of performance metrics. We also discuss
+one-time variants of these base signature schemes that can push the performance of FROG to the edge.
+Overall, FROG shows a better performance than the existing alternatives with forward-security
+and therefore is an ideal alternative for the standardization efforts for forward-secure post-quantum
+signatures. 

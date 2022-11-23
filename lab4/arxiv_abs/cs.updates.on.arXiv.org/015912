@@ -1,0 +1,18 @@
+It was found when reviewing the ransomware detection research literature that almost no proposal
+provided enough detail on how the test data set was created, or sufficient description of its actual
+content, to allow it to be recreated by other researchers interested in reconstructing their environment
+and validating the research results. A modern cybersecurity mixed file data set called NapierOne
+is presented, primarily aimed at, but not limited to, ransomware detection and forensic analysis
+research. NapierOne was designed to address this deficiency in reproducibility and improve consistency
+by facilitating research replication and repeatability. The methodology used in the creation
+of this data set is also described in detail. The data set was inspired by the Govdocs1 data set and
+it is intended that NapierOne be used as a complement to this original data set. An investigation
+was performed with the goal of determining the common files types currently in use. No specific research
+was found that explicitly provided this information, so an alternative consensus approach was
+employed. This involved combining the findings from multiple sources of file type usage into an
+overall ranked list. After which 5000 real-world example files were gathered, and a specific data
+subset created, for each of the common file types identified. In some circumstances, multiple data
+subsets were created for a specific file type, each subset representing a specific characteristic
+for that file type. For example, there are multiple data subsets for the ZIP file type with each subset
+containing examples of a specific compression method. Ransomware execution tends to produce files
+that have high entropy, so examples of file types that naturally have this attribute are also present.

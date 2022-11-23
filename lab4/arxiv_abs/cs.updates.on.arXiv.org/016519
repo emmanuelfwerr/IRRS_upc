@@ -1,0 +1,19 @@
+Machine Learning explainability techniques have been proposed as a means of `explaining' or interrogating
+a model in order to understand why a particular decision or prediction has been made. Such an ability
+is especially important at a time when machine learning is being used to automate decision processes
+which concern sensitive factors and legal outcomes. Indeed, it is even a requirement according
+to EU law. Furthermore, researchers concerned with imposing overly restrictive functional form
+(e.g., as would be the case in a linear regression) may be motivated to use machine learning algorithms
+in conjunction with explainability techniques, as part of exploratory research, with the goal
+of identifying important variables which are associated with an outcome of interest. For example,
+epidemiologists might be interested in identifying `risk factors' - i.e. factors which affect
+recovery from disease - by using random forests and assessing variable relevance using importance
+measures. However, and as we demonstrate, machine learning algorithms are not as flexible as they
+might seem, and are instead incredibly sensitive to the underling causal structure in the data.
+The consequences of this are that predictors which are, in fact, critical to a causal system and highly
+correlated with the outcome, may nonetheless be deemed by explainability techniques to be unrelated/unimportant/unpredictive
+of the outcome. Rather than this being a limitation of explainability techniques per se, we show
+that it is rather a consequence of the mathematical implications of regression, and the interaction
+of these implications with the associated conditional independencies of the underlying causal
+structure. We provide some alternative recommendations for researchers wanting to explore the
+data for important variables. 

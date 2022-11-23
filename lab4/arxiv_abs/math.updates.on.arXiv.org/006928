@@ -1,0 +1,19 @@
+The Structural Theorem of the Graph Minors series of Robertson and Seymour asserts that, for every
+$t\in\mathbb{N},$ there exists some constant $c_{t}$ such that every $K_{t}$-minor-free graph
+admits a tree decomposition whose torsos can be transformed, by the removal of at most $c_{t}$ vertices,
+to graphs that can be seen as the union of some graph that is embeddable to some surface of Euler genus
+at most $c_{t}$ and "at most $c_{t}$ vortices of depth $c_{t}$". Our main combinatorial result is
+a "vortex-free" refinement of the above structural theorem as follows: we identify a (parameterized)
+graph $H_{t}$, called shallow vortex grid, and we prove that if in the above structural theorem we
+replace $K_{t}$ by $H_{t},$ then the resulting decomposition becomes "vortex-free". Up to now,
+the most general classes of graphs admitting such a result were either bounded Euler genus graphs
+or the so called single-crossing minor-free graphs. Our result is tight in the sense that, whenever
+we minor-exclude a graph that is not a minor of some $H_{t},$ the appearance of vortices is unavoidable.
+Using the above decomposition theorem, we design an algorithm that, given an $H_{t}$-minor-free
+graph $G$, computes the generating function of all perfect matchings of $G$ in polynomial time.
+This algorithm yields, on $H_{t}$-minor-free graphs, polynomial algorithms for computational
+problems such as the {dimer problem, the exact matching problem}, and the computation of the permanent.
+Our results, combined with known complexity results, imply a complete characterization of minor-closed
+graphs classes where the number of perfect matchings is polynomially computable: They are exactly
+those graph classes that do not contain every $H_{t}$ as a minor. This provides a sharp complexity
+dichotomy for the problem of counting perfect matchings in minor-closed classes. 

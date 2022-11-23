@@ -1,0 +1,20 @@
+Modern software deployment process produces software that is uniform and hence vulnerable to large-scale
+code-reuse attacks, such as Jump-Oriented Programming (JOP) attacks. Compiler-based diversification
+improves the resilience of software systems by automatically generating different assembly code
+versions of a given program. Existing techniques are efficient but do not have a precise control
+over the quality of the generated variants. This paper introduces Diversity by Construction (DivCon),
+a constraint-based approach to software diversification. Unlike previous approaches, DivCon
+allows users to control and adjust the conflicting goals of diversity and code quality. A key enabler
+is the use of Large Neighborhood Search (LNS) to generate highly diverse code efficiently. For larger
+problems, we propose a combination of LNS with a structural decomposition of the problem. To further
+improve the diversification efficiency of DivCon against JOP attacks, we propose an application-specific
+distance measure tailored to the characteristics of JOP attacks. We evaluate DivCon with 20 functions
+from a popular benchmark suite for embedded systems. These experiments show that the combination
+of LNS and our application-specific distance measure generates binary programs that are highly
+resilient against JOP attacks. Our results confirm that there is a trade-off between the quality
+of each assembly code version and the diversity of the entire pool of versions. In particular, the
+experiments show that DivCon generates near-optimal binary programs that share a small number
+of gadgets. For constraint programming researchers and practitioners, this paper demonstrates
+that LNS is a valuable technique for finding diverse solutions. For security researchers and software
+engineers, DivCon extends the scope of compiler-based diversification to performance-critical
+and resource-constrained applications. 

@@ -1,0 +1,20 @@
+Object rearrangement is important for many applications but remains challenging, especially
+in confined spaces, such as shelves, where objects cannot be easily accessed from above and they
+block reachability to each other. Such constraints require many motion planning and collision
+checking calls, which are computationally expensive. In addition, the arrangement space (space
+of possible object placements) grows exponentially with the number of objects. To address these
+issues, this work introduces a lazy evaluation framework for object rearrangement in confined
+spaces. It improves upon a local monotone solver, which extends to a high-quality planner for the
+general, non-monotone case. Monotone instances are those that can be solved by moving each object
+at most once. A key insight is that reachability constraints at the grasps for objects' starts and
+goals can quickly reveal dependencies between objects without having to execute expensive motion
+planning queries. The local solver builds lazily a search tree that respects these reachability
+constraints without verifying that the arm paths are collision free. It only collision checks when
+a promising solution is found given grasp reachability. If a monotone solution is not found, the
+non-monotone planner loads the lazy search tree and explores ways to move objects to intermediate
+locations from where monotone solutions to the goal can be found. The non-monotone planner also
+applies lazy evaluation to minimize collision checking. Comprehensive simulations and robot
+demonstrations show that the proposed framework can solve difficult instances in confined spaces
+with up to 16 objects, which state-of-the-art methods fail to solve. It also achieves high-quality
+solutions, i.e., only 1.8 additional actions on average are needed for non-monotone instances.
+It also solves problems faster than alternatives, when the alternatives find a solution. 

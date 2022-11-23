@@ -1,0 +1,19 @@
+We develop the "generalized consistent weighted sampling" (GCWS) for hashing the "powered-GMM"
+(pGMM) kernel (with a tuning parameter $p$). It turns out that GCWS provides a numerically stable
+scheme for applying power transformation on the original data, regardless of the magnitude of $p$
+and the data. The power transformation is often effective for boosting the performance, in many
+cases considerably so. We feed the hashed data to neural networks on a variety of public classification
+datasets and name our method ``GCWSNet''. Our extensive experiments show that GCWSNet often improves
+the classification accuracy. Furthermore, it is evident from the experiments that GCWSNet converges
+substantially faster. In fact, GCWS often reaches a reasonable accuracy with merely (less than)
+one epoch of the training process. This property is much desired because many applications, such
+as advertisement click-through rate (CTR) prediction models, or data streams (i.e., data seen
+only once), often train just one epoch. Another beneficial side effect is that the computations
+of the first layer of the neural networks become additions instead of multiplications because the
+input data become binary (and highly sparse). Empirical comparisons with (normalized) random
+Fourier features (NRFF) are provided. We also propose to reduce the model size of GCWSNet by count-sketch
+and develop the theory for analyzing the impact of using count-sketch on the accuracy of GCWS. Our
+analysis shows that an ``8-bit'' strategy should work well in that we can always apply an 8-bit count-sketch
+hashing on the output of GCWS hashing without hurting the accuracy much. There are many other ways
+to take advantage of GCWS when training deep neural networks. For example, one can apply GCWS on the
+outputs of the last layer to boost the accuracy of trained deep neural networks. 

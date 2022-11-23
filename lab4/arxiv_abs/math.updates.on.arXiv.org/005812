@@ -1,0 +1,18 @@
+This paper is designed to increase the knowledge and computational know-how for time-varying matrix
+problems and Zeroing Neural Networks in the West. Zeroing Neural Networks (ZNN) were invented for
+time-varying matrix problems 20 years ago in China and almost all of their advances have been made
+in and still come from its birthplace. ZNN methods have become a backbone for solving discretized
+sensor driven time-varying matrix problems in real-time, in theory and in on-chip applications
+for robots, in control theory and in engineering. They have become the method of choice for many time-varying
+matrix problems that benefit from or require efficient, accurate and predictive real-time computations.
+The typical discretized ZNN algorithm needs seven distinct steps for its initial set-up. The construction
+of discretized ZNN algorithms starts from a model with its associated error equation and the stipulation
+that the error function decrease exponentially fast. The error function differential equation
+is then mated with a convergent look-ahead finite difference formula to create a distinctly new
+multistep-style solver that predicts the future state of the system reliably from current and earlier
+state and solutions data. Matlab codes for discretized ZNN algorithms typically consist of one
+linear equations solve and one recursion of already available data per time step. This makes discretized
+ZNN based algorithms highly competitive with ordinary differential equation initial value path
+following or homotopy methods that are designed to work adaptively and gives ZNN different characteristics
+and applicabilities from multistep ODE initial value solvers. Discretized ZNN methods can solve
+problems given by sensor data with constant sampling gaps or from functional equations. 

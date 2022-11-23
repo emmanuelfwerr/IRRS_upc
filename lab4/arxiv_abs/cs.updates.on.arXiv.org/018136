@@ -1,0 +1,18 @@
+In the past redaction involved the use of black or white markers or paper cut-outs to obscure content
+on physical paper. Today many redactions take place on digital PDF documents and redaction is often
+performed by software tools. Typical redaction tools remove text from PDF documents and draw a black
+or white rectangle in its place, mimicking a physical redaction. This practice is thought to be secure
+when the redacted text is removed and cannot be "copy-pasted" from the PDF document. We find this
+common conception is false -- existing PDF redactions can be broken by precise measurements of non-redacted
+character positioning information. We develop a deredaction tool for automatically finding and
+breaking these vulnerable redactions. We report on 11 different redaction tools, finding the majority
+do not remove redaction-breaking information, including some Adobe Acrobat workflows. We empirically
+measure the information leaks, finding some redactions leak upwards of 15 bits of information,
+creating a 32,768-fold reduction in the space of potential redacted texts. We demonstrate a lower
+bound on the impact of these leaks via a 22,120 document study, including 18,975 Office of the Inspector
+General (OIG) investigation reports, where we find 769 vulnerable named-entity redactions. We
+find leaked information reduces the contents for 164 of these redacted names to less than 494 possibilities
+from a 7 million name dictionary. We show these findings impact by breaking redactions from the Epstein/Maxwell
+case, Manafort case, and a released Snowden document. Moreover, we develop an efficient algorithm
+for locating copy-pastable redactions and find over 100,000 poorly redacted words in US court documents.
+Current PDF text redaction methods are insufficient for named entity protection. 

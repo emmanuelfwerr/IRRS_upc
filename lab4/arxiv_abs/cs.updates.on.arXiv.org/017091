@@ -1,0 +1,19 @@
+The implementation of automatic image registration is still difficult in various applications.
+In this paper, an automatic image registration approach through line-support region segmentation
+and geometrical outlier removal (ALRS-GOR) is proposed. This new approach is designed to address
+the problems associated with the registration of images with affine deformations and inconsistent
+content, such as remote sensing images with different spectral content or noise interference,
+or map images with inconsistent annotations. To begin with, line-support regions, namely a straight
+region whose points share roughly the same image gradient angle, are extracted to address the issues
+of inconsistent content existing in images. To alleviate the incompleteness of line segments,
+an iterative strategy with multi-resolution is employed to preserve global structures that are
+masked at full resolution by image details or noise. Then, Geometrical Outlier Removal (GOR) is
+developed to provide reliable feature point matching, which is based on affineinvariant geometrical
+classifications for corresponding matches initialized by SIFT. The candidate outliers are selected
+by comparing the disparity of accumulated classifications among all matches, instead of conventional
+methods which only rely on local geometrical relations. Various image sets have been considered
+in this paper for the evaluation of the proposed approach, including aerial images with simulated
+affine deformations, remote sensing optical and synthetic aperture radar images taken at different
+situations (multispectral, multisensor, and multitemporal), and map images with inconsistent
+annotations. Experimental results demonstrate the superior performance of the proposed method
+over the existing approaches for the whole data set. 

@@ -1,0 +1,19 @@
+We present DeepCSI, a novel approach to Wi-Fi radio fingerprinting (RFP) which leverages standard-compliant
+beamforming feedback matrices to authenticate MU-MIMO Wi-Fi devices on the move. By capturing
+unique imperfections in off-the-shelf radio circuitry, RFP techniques can identify wireless
+devices directly at the physical layer, allowing low-latency low-energy cryptography-free authentication.
+However, existing Wi-Fi RFP techniques are based on software-defined radio (SDRs), which may ultimately
+prevent their widespread adoption. Moreover, it is unclear whether existing strategies can work
+in the presence of MU-MIMO transmitters - a key technology in modern Wi-Fi standards. Conversely
+from prior work, DeepCSI does not require SDR technologies and can be run on any low-cost Wi-Fi device
+to authenticate MU-MIMO transmitters. Our key intuition is that imperfections in the transmitter's
+radio circuitry percolate onto the beamforming feedback matrix, and thus RFP can be performed without
+explicit channel state information (CSI) computation. DeepCSI is robust to inter-stream and inter-user
+interference being the beamforming feedback not affected by those phenomena. We extensively evaluate
+the performance of DeepCSI through a massive data collection campaign performed in the wild with
+off-the-shelf equipment, where 10 MU-MIMO Wi-Fi radios emit signals in different positions. Experimental
+results indicate that DeepCSI correctly identifies the transmitter with an accuracy of up to 98%.
+The identification accuracy remains above 82% when the device moves within the environment. To
+allow replicability and provide a performance benchmark, we pledge to share the 800 GB datasets
+- collected in static and, for the first time, dynamic conditions - and the code database with the
+community. 

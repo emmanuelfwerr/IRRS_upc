@@ -1,0 +1,20 @@
+Self-supervised learning approach like contrastive learning is attached great attention in natural
+language processing. It uses pairs of training data augmentations to build a classification task
+for an encoder with well representation ability. However, the construction of learning pairs over
+contrastive learning is much harder in NLP tasks. Previous works generate word-level changes to
+form pairs, but small transforms may cause notable changes on the meaning of sentences as the discrete
+and sparse nature of natural language. In this paper, adversarial training is performed to generate
+challenging and harder learning adversarial examples over the embedding space of NLP as learning
+pairs. Using contrastive learning improves the generalization ability of adversarial training
+because contrastive loss can uniform the sample distribution. And at the same time, adversarial
+training also enhances the robustness of contrastive learning. Two novel frameworks, supervised
+contrastive adversarial learning (SCAL) and unsupervised SCAL (USCAL), are proposed, which yields
+learning pairs by utilizing the adversarial training for contrastive learning. The label-based
+loss of supervised tasks is exploited to generate adversarial examples while unsupervised tasks
+bring contrastive loss. To validate the effectiveness of the proposed framework, we employ it to
+Transformer-based models for natural language understanding, sentence semantic textual similarity
+and adversarial learning tasks. Experimental results on GLUE benchmark tasks show that our fine-tuned
+supervised method outperforms BERT$_{base}$ over 1.75\%. We also evaluate our unsupervised method
+on semantic textual similarity (STS) tasks, and our method gets 77.29\% with BERT$_{base}$. The
+robustness of our approach conducts state-of-the-art results under multiple adversarial datasets
+on NLI tasks. 

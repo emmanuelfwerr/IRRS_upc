@@ -1,0 +1,18 @@
+In this paper, we give first constant factor approximation for capacitated knapsack median problem
+(CKM) for hard uniform capacities, violating the budget only by an additive factor of $f_{max}$
+where $f_{max}$ is the maximum cost of a facility opened by the optimal and violating capacities
+by $(2+\epsilon)$ factor. Natural LP for the problem is known to have an unbounded integrality gap
+when any one of the two constraints is allowed to be violated by a factor less than $2$. Thus, we present
+a result which is very close to the best achievable from the natural LP. To the best of our knowledge,
+the problem has not been studied earlier. For capacitated facility location problem with uniform
+capacities, a constant factor approximation algorithm is presented violating the capacities
+a little ($1 + \epsilon$). Though constant factor results are known for the problem without violating
+the capacities, the result is interesting as it is obtained by rounding the solution to the natural
+LP, which is known to have an unbounded integrality gap without violating the capacities. Thus,
+we achieve the best possible from the natural LP for the problem. The result shows that natural LP
+is not too bad. Finally, we raise some issues with the proofs of the results presented in \cite{capkmByrkaFRS2013}
+for capacitated $k$-facility location problem (C$k$FLP). \cite{capkmByrkaFRS2013} presents
+$O(1/\epsilon^2)$ approximation violating the capacities by a factor of $(2 + \epsilon)$ using
+dependent rounding. We first fix these issues using our techniques. Also, it can be argued that (deterministic)
+pipage rounding cannot be used to open the facilities instead of dependent rounding. Our techniques
+for CKM provide a constant factor approximation for CkFLP violating the capacities by $(2 + \epsilon)$.

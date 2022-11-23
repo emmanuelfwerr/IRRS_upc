@@ -1,0 +1,18 @@
+Apertif (APERture Tile In Focus) is one of the Square Kilometre Array (SKA) pathfinder facilities.
+The Apertif project is an upgrade to the 50-year-old Westerbork Synthesis Radio Telescope (WSRT)
+using phased-array feed technology. The new receivers create 40 individual beams on the sky, achieving
+an instantaneous sky coverage of 6.5 square degrees. The primary goal of the Apertif Imaging Survey
+is to perform a wide survey of 3500 square degrees (AWES) and a medium deep survey of 350 square degrees
+(AMES) of neutral atomic hydrogen (up to a redshift of 0.26), radio continuum emission and polarisation.
+Each survey pointing yields 4.6 TB of correlated data. The goal of Apercal is to process this data
+and fully automatically generate science ready data products for the astronomical community while
+keeping up with the survey observations. We make use of common astronomical software packages in
+combination with Python based routines and parallelisation. We use an object oriented module-based
+approach to ensure easy adaptation of the pipeline. A Jupyter notebook based framework allows user
+interaction and execution of individual modules as well as a full automatic processing of a complete
+survey observation. If nothing interrupts processing, we are able to reduce a single pointing survey
+observation on our five node cluster with 24 physical cores and 256 GB of memory each within 24h keeping
+up with the speed of the surveys. The quality of the generated images is sufficient for scientific
+usage for 44 % of the recorded data products with single images reaching dynamic ranges of several
+thousands. Future improvements will increase this percentage to over 80 %. Our design allowed development
+of the pipeline in parallel to the commissioning of the Apertif system. 

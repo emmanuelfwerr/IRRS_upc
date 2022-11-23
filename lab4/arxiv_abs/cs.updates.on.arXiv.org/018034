@@ -1,0 +1,20 @@
+The framework of optimal transport has been leveraged to extend the notion of rank to the multivariate
+setting while preserving desirable properties of the resulting goodness of-fit (GoF) statistics.
+In particular, the rank energy (RE) and rank maximum mean discrepancy (RMMD) are distribution-free
+under the null, exhibit high power in statistical testing, and are robust to outliers. In this paper,
+we point to and alleviate some of the practical shortcomings of these proposed GoF statistics, namely
+their high computational cost, high statistical sample complexity, and lack of differentiability
+with respect to the data. We show that all these practically important issues are addressed by considering
+entropy-regularized optimal transport maps in place of the rank map, which we refer to as the soft
+rank. We consequently propose two new statistics, the soft rank energy (sRE) and soft rank maximum
+mean discrepancy (sRMMD), which exhibit several desirable properties. Given $n$ sample data points,
+we provide non-asymptotic convergence rates for the sample estimate of the entropic transport
+map to its population version that are essentially of the order $n^{-1/2}$. This compares favorably
+to non-regularized estimates, which typically suffer from the curse-of-dimensionality and converge
+at rate that is exponential in the data dimension. We leverage this fast convergence rate to demonstrate
+the sample estimate of the proposed statistics converge rapidly to their population versions,
+enabling efficient rank-based GoF statistical computation, even in high dimensions. Our statistics
+are differentiable and amenable to popular machine learning frameworks that rely on gradient methods.
+We leverage these properties towards showcasing the utility of the proposed statistics for generative
+modeling on two important problems: image generation and generating valid knockoffs for controlled
+feature selection. 

@@ -1,0 +1,19 @@
+Hyperspectral image (HSI) classification has been a hot topic for decides, as hyperspectral images
+have rich spatial and spectral information and provide strong basis for distinguishing different
+land-cover objects. Benefiting from the development of deep learning technologies, deep learning
+based HSI classification methods have achieved promising performance. Recently, several neural
+architecture search (NAS) algorithms have been proposed for HSI classification, which further
+improve the accuracy of HSI classification to a new level. In this paper, NAS and Transformer are
+combined for handling HSI classification task for the first time. Compared with previous work,
+the proposed method has two main differences. First, we revisit the search spaces designed in previous
+HSI classification NAS methods and propose a novel hybrid search space, consisting of the space
+dominated cell and the spectrum dominated cell. Compared with search spaces proposed in previous
+works, the proposed hybrid search space is more aligned with the characteristic of HSI data, that
+is, HSIs have a relatively low spatial resolution and an extremely high spectral resolution. Second,
+to further improve the classification accuracy, we attempt to graft the emerging transformer module
+on the automatically designed convolutional neural network (CNN) to add global information to
+local region focused features learned by CNN. Experimental results on three public HSI datasets
+show that the proposed method achieves much better performance than comparison approaches, including
+manually designed network and NAS based HSI classification methods. Especially on the most recently
+captured dataset Houston University, overall accuracy is improved by nearly 6 percentage points.
+Code is available at: https://github.com/Cecilia-xue/HyT-NAS. 

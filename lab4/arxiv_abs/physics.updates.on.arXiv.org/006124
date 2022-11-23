@@ -1,0 +1,20 @@
+We present an interface and geometry preserving (IGP) method for the modeling of fully Eulerian
+fluid-structure interaction via phase-field formulation. While the hyperbolic tangent interface
+profile is preserved by the time-dependent mobility model, the proposed method maintains the geometry
+of the solid-fluid interface by reducing the volume-conserved mean curvature flow. To achieve
+the reduction in the curvature flow, we construct a gradient-minimizing velocity field (GMV) for
+the convection of the order parameter. The constructed velocity field enables the preservation
+of the solid velocity in the solid domain while extending the velocity in the normal direction throughout
+the diffuse interface region. With this treatment, the GMV reduces the normal velocity difference
+of the level sets of the order parameter which alleviates the undesired thickening or thinning of
+the diffuse interface region due to the convection. During this process, the time-dependent mobility
+coefficient is substantially reduced and there is a lesser curvature flow. The GMV ensures that
+the diffuse interface region moves with the solid bulk such that the fluid-solid interface conforms
+to the geometry of the solid. Using the unified momentum equation and the phase-dependent interpolation,
+we integrate the IGP method into a fully Eulerian variational FSI solver based on the incompressible
+viscous fluid and the neo-Hookean solid. We first demonstrate the ability of the phase-field-based
+IGP method for the convection of circular and square interfaces with a prescribed velocity field.
+The variational FSI framework with the IGP method is then examined for the flow passing a fixed deformable
+block in a channel domain. Finally, the vibration of a plate attached behind a stationary cylinder
+subjected to incoming flow is employed to assess the fully Eulerian framework for a large aspect
+ratio and sharp corners. 

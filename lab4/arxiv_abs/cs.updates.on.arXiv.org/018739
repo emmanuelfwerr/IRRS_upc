@@ -1,0 +1,20 @@
+We study a stochastic variant of the vehicle routing problem arising in the context of domestic donor
+collection services. The problem we consider combines the following attributes. Customers requesting
+services are variable, in the sense that the customers are stochastic but are not restricted to a
+predefined set, as they may appear anywhere in a given service area. Furthermore, demand volumes
+are stochastic and observed upon visiting the customer. The objective is to maximize the expected
+served demands while meeting vehicle capacity and time restrictions. We call this problem the VRP
+with a highly Variable Customer basis and Stochastic Demands (VRP-VCSD). For this problem, we first
+propose a Markov Decision Process (MDP) formulation representing the classical centralized decision-making
+perspective where one decision-maker establishes the routes of all vehicles. While the resulting
+formulation turns out to be intractable, it provides us with the ground to develop a new MDP formulation,
+which we call partially decentralized. In this formulation, the action-space is decomposed by
+vehicle. However, the decentralization is incomplete as we enforce identical vehicle-specific
+policies while optimizing the collective reward. We propose several strategies to reduce the dimension
+of the state and action spaces associated with the partially decentralized formulation. These
+yield a considerably more tractable problem, which we solve via Reinforcement Learning. In particular,
+we develop a Q-learning algorithm called DecQN, featuring state-of-the-art acceleration techniques.
+We conduct a thorough computational analysis. Results show that DecQN considerably outperforms
+three benchmark policies. Moreover, we show that our approach can compete with specialized methods
+developed for the particular case of the VRP-VCSD, where customer locations and expected demands
+are known in advance. 

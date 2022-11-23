@@ -1,0 +1,18 @@
+RGB-thermal salient object detection (RGB-T SOD) aims to locate the common prominent objects of
+an aligned visible and thermal infrared image pair and accurately segment all the pixels belonging
+to those objects. It is promising in challenging scenes such as nighttime and complex backgrounds
+due to the insensitivity to lighting conditions of thermal images. Thus, the key problem of RGB-T
+SOD is to make the features from the two modalities complement and adjust each other flexibly, since
+it is inevitable that any modalities of RGB-T image pairs failure due to challenging scenes such
+as extreme light conditions and thermal crossover. In this paper, we propose a novel mirror complementary
+Transformer network (MCNet) for RGB-T SOD. Specifically, we introduce a Transformer-based feature
+extraction module to effective extract hierarchical features of RGB and thermal images. Then,
+through the attention-based feature interaction and serial multiscale dilated convolution (SDC)
+based feature fusion modules, the proposed model achieves the complementary interaction of low-level
+features and the semantic fusion of deep features. Finally, based on the mirror complementary structure,
+the salient regions of the two modalities can be accurately extracted even one modality is invalid.
+To demonstrate the robustness of the proposed model under challenging scenes in real world, we build
+a novel RGB-T SOD dataset VT723 based on a large public semantic segmentation RGB-T dataset used
+in the autonomous driving domain. Expensive experiments on benchmark and VT723 datasets show that
+the proposed method outperforms state-of-the-art approaches, including CNN-based and Transformer-based
+methods. The code and dataset will be released later at https://github.com/jxr326/SwinMCNet.

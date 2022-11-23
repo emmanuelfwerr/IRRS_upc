@@ -1,0 +1,20 @@
+Enhancing the quality of low-light images plays a very important role in many image processing and
+multimedia applications. In recent years, a variety of deep learning techniques have been developed
+to address this challenging task. A typical framework is to simultaneously estimate the illumination
+and reflectance, but they disregard the scene-level contextual information encapsulated in feature
+spaces, causing many unfavorable outcomes, e.g., details loss, color unsaturation, artifacts,
+and so on. To address these issues, we develop a new context-sensitive decomposition network architecture
+to exploit the scene-level contextual dependencies on spatial scales. More concretely, we build
+a two-stream estimation mechanism including reflectance and illumination estimation network.
+We design a novel context-sensitive decomposition connection to bridge the two-stream mechanism
+by incorporating the physical principle. The spatially-varying illumination guidance is further
+constructed for achieving the edge-aware smoothness property of the illumination component.
+According to different training patterns, we construct CSDNet (paired supervision) and CSDGAN
+(unpaired supervision) to fully evaluate our designed architecture. We test our method on seven
+testing benchmarks to conduct plenty of analytical and evaluated experiments. Thanks to our designed
+context-sensitive decomposition connection, we successfully realized excellent enhanced results,
+which fully indicates our superiority against existing state-of-the-art approaches. Finally,
+considering the practical needs for high-efficiency, we develop a lightweight CSDNet (named LiteCSDNet)
+by reducing the number of channels. Further, by sharing an encoder for these two components, we obtain
+a more lightweight version (SLiteCSDNet for short). SLiteCSDNet just contains 0.0301M parameters
+but achieves the almost same performance as CSDNet. 

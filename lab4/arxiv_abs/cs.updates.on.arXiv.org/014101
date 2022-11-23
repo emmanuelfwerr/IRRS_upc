@@ -1,0 +1,19 @@
+Despite the many recent practical and theoretical breakthroughs in computational game theory,
+equilibrium finding in extensive-form team games remains a significant challenge. While NP-hard
+in the worst case, there are provably efficient algorithms for certain families of team game. In
+particular, if the game has common external information, also known as A-loss recall -- informally,
+actions played by non-team members (i.e., the opposing team or nature) are either unknown to the
+entire team, or common knowledge within the team -- then polynomial-time algorithms exist (Kaneko
+and Kline, 1995). In this paper, we devise a completely new algorithm for solving team games. It uses
+a tree decomposition of the constraint system representing each team's strategy to reduce the number
+and degree of constraints required for correctness (tightness of the mathematical program). Our
+algorithm reduces the problem of solving team games to a linear program with at most $NW^{w+O(1)}$
+nonzero entries in the constraint matrix, where $N$ is the size of the game tree, $w$ is a parameter
+that depends on the amount of uncommon external information, and $W$ is the treewidth of the tree
+decomposition. In public-action games, our program size is bounded by the tighter $\tilde O(3^t
+2^{t(n-1)}NW)$ for teams of $n$ players with $t$ types each. Since our algorithm describes the polytope
+of correlated strategies directly, we get equilibrium finding in correlated strategies for free
+-- instead of, say, having to run a double oracle algorithm. We show via experiments on a standard
+suite of games that our algorithm achieves state-of-the-art performance on all benchmark game
+classes except one. We also present, to our knowledge, the first experiments for this setting where
+more than one team has more than one member. 

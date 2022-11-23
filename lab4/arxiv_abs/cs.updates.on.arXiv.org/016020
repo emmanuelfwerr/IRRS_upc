@@ -1,0 +1,19 @@
+The training data distribution is often biased towards objects in certain orientations and illumination
+conditions. While humans have a remarkable capability of recognizing objects in out-of-distribution
+(OoD) orientations and illuminations, Deep Neural Networks (DNNs) severely suffer in this case,
+even when large amounts of training examples are available. In this paper, we investigate three
+different approaches to improve DNNs in recognizing objects in OoD orientations and illuminations.
+Namely, these are (i) training much longer after convergence of the in-distribution (InD) validation
+accuracy, i.e., late-stopping, (ii) tuning the momentum parameter of the batch normalization
+layers, and (iii) enforcing invariance of the neural activity in an intermediate layer to orientation
+and illumination conditions. Each of these approaches substantially improves the DNN's OoD accuracy
+(more than 20% in some cases). We report results in four datasets: two datasets are modified from
+the MNIST and iLab datasets, and the other two are novel (one of 3D rendered cars and another of objects
+taken from various controlled orientations and illumination conditions). These datasets allow
+to study the effects of different amounts of bias and are challenging as DNNs perform poorly in OoD
+conditions. Finally, we demonstrate that even though the three approaches focus on different aspects
+of DNNs, they all tend to lead to the same underlying neural mechanism to enable OoD accuracy gains
+--individual neurons in the intermediate layers become more selective to a category and also invariant
+to OoD orientations and illuminations. We anticipate this study to be a basis for further improvement
+of deep neural networks' OoD generalization performance, which is highly demanded to achieve safe
+and fair AI applications. 

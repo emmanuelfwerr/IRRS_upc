@@ -1,0 +1,18 @@
+In parallel machine scheduling, we are given a set of jobs, together with a number of machines and
+our goal is to decide for each job, when and on which machine(s) it should be scheduled in order to minimize
+some objective function. Different machine models, job characteristics and objective functions
+result in a multitude of scheduling problems and many of them are NP-hard, even for a fixed number
+of identical machines. However, using pseudo-polynomial or approximation algorithms, we can
+still hope to solve some of these problems efficiently. In this work, we give conditional running
+time lower bounds for a large number of scheduling problems, indicating the optimality of some classical
+algorithms. In particular, we show that the dynamic programming algorithm by Lawler and Moore is
+probably optimal for $1||\sum w_jU_j$ and $Pm||C_{max}$. Moreover, the algorithm by Lee and Uzsoy
+for $P2||\sum w_jC_j$ is probably optimal as well. There is still small room for improvement for
+the $1|Rej\leq Q|\sum w_jU_j$ algorithm by Zhang et al., the algorithm for $1||\sum T_j$ by Lawler
+and the FPTAS for $1||\sum w_jU_j$ by Gens and Levner. We also give a lower bound for $P2|any|C_{max}$
+and improve the dynamic program by Du and Leung from $\mathcal{O}(nP^2)$ to $\mathcal{O}(nP)$
+to match this lower bound. Here, $P$ is the sum of all processing times. The same idea also improves
+the algorithm for $P3|any|C_{max}$ by Du and Leung from $\mathcal{O}(nP^5)$ to $\mathcal{O}(nP^2)$.
+The lower bounds in this work all either rely on the (Strong) Exponential Time Hypothesis or the $(\min,+)$-conjecture.
+While our results suggest the optimality of some classical algorithms, they also motivate future
+research in cases where the best known algorithms do not quite match the lower bounds. 

@@ -1,0 +1,20 @@
+Machine learning (ML) classification tasks can be carried out on a quantum computer (QC) using Probabilistic
+Quantum Memory (PQM) and its extension, Parameteric PQM (P-PQM) by calculating the Hamming distance
+between an input pattern and a database of $r$ patterns containing $z$ features with $a$ distinct
+attributes. For accurate computations, the feature must be encoded using one-hot encoding, which
+is memory-intensive for multi-attribute datasets with $a>2$. We can easily represent multi-attribute
+data more compactly on a classical computer by replacing one-hot encoding with label encoding.
+However, replacing these encoding schemes on a QC is not straightforward as PQM and P-PQM operate
+at the quantum bit level. We present an enhanced P-PQM, called EP-PQM, that allows label encoding
+of data stored in a PQM data structure and reduces the circuit depth of the data storage and retrieval
+procedures. We show implementations for an ideal QC and a noisy intermediate-scale quantum (NISQ)
+device. Our complexity analysis shows that the EP-PQM approach requires $O\left(z \log_2(a)\right)$
+qubits as opposed to $O(za)$ qubits for P-PQM. EP-PQM also requires fewer gates, reducing gate count
+from $O\left(rza\right)$ to $O\left(rz\log_2(a)\right)$. For five datasets, we demonstrate
+that training an ML classification model using EP-PQM requires 48% to 77% fewer qubits than P-PQM
+for datasets with $a>2$. EP-PQM reduces circuit depth in the range of 60% to 96%, depending on the
+dataset. The depth decreases further with a decomposed circuit, ranging between 94% and 99%. EP-PQM
+requires less space; thus, it can train on and classify larger datasets than previous PQM implementations
+on NISQ devices. Furthermore, reducing the number of gates speeds up the classification and reduces
+the noise associated with deep quantum circuits. Thus, EP-PQM brings us closer to scalable ML on
+a NISQ device. 

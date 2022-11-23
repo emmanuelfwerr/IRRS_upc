@@ -1,0 +1,19 @@
+We present a Bayesian tomography framework operating with prior-knowledge-based parametrization
+that is accelerated by surrogate models. Standard high-fidelity forward solvers solve wave equations
+with natural spatial parametrizations based on fine discretization. Similar parametrizations,
+typically involving tens of thousand of variables, are usually employed to parameterize the subsurface
+in tomography applications. When the data do not allow to resolve details at such finely parameterized
+scales, it is often beneficial to instead rely on a prior-knowledge-based parametrization defined
+on a lower dimension domain (or manifold). Due to the increased identifiability in the reduced domain,
+the concomitant inversion is better constrained and generally faster. We illustrate the potential
+of a prior-knowledge-based approach by considering ground penetrating radar (GPR) travel-time
+tomography in a crosshole configuration. An effective parametrization of the input (i.e., the
+permittivity distributions) and compression in the output (i.e., the travel-time gathers) spaces
+are achieved via data-driven principal component decomposition based on random realizations
+of the prior Gaussian-process model with a truncation determined by the performances of the standard
+solver on the full and reduced model domains. To accelerate the inversion process, we employ a high-fidelity
+polynomial chaos expansion (PCE) surrogate model. We show that a few hundreds design data sets is
+sufficient to provide reliable Markov chain Monte Carlo inversion. Appropriate uncertainty quantification
+is achieved by reintroducing the truncated higher-order principle components in the original
+model space after inversion on the manifold and by adapting a likelihood function that accounts
+for the fact that the truncated higher-order components are not completely located in the null-space.

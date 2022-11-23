@@ -1,0 +1,18 @@
+Developing suitable approximate models for analyzing and simulating complex nonlinear systems
+is practically important. This paper aims at exploring the skill of a rich class of nonlinear stochastic
+models, known as the conditional Gaussian nonlinear system (CGNS), as both a cheap surrogate model
+and a fast preconditioner for facilitating many computationally challenging tasks. The CGNS preserves
+the underlying physics to a large extent and can reproduce intermittency, extreme events and other
+non-Gaussian features in many complex systems arising from practical applications. Three interrelated
+topics are studied. First, the closed analytic formulae of solving the conditional statistics
+provide an efficient and accurate data assimilation scheme. It is shown that the data assimilation
+skill of a suitable CGNS approximate forecast model outweighs that by applying an ensemble method
+even to the perfect model with strong nonlinearity, where the latter suffers from filter divergence.
+Second, the CGNS allows the development of a fast algorithm for simultaneously estimating the parameters
+and the unobserved variables with uncertainty quantification in the presence of only partial observations.
+Utilizing an appropriate CGNS as a preconditioner significantly reduces the computational cost
+in accurately estimating the parameters in the original complex system. Finally, the CGNS advances
+rapid and statistically accurate algorithms for computing the probability density function and
+sampling the trajectories of the unobserved state variables. These fast algorithms facilitate
+the development of an efficient and accurate data-driven method for predicting the linear response
+of the original system with respect to parameter perturbations based on a suitable CGNS preconditioner.

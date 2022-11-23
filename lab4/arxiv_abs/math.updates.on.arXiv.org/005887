@@ -1,0 +1,18 @@
+There is a large and important collection of Ramsey-type combinatorial problems, closely related
+to central problems in complexity theory, that can be formulated in terms of the asymptotic growth
+of the size of the maximum independent sets in powers of a fixed small (directed or undirected) hypergraph,
+also called the Shannon capacity. An important instance of this is the corner problem studied in
+the context of multiparty communication complexity in the Number On the Forehead (NOF) model. Versions
+of this problem and the NOF connection have seen much interest (and progress) in recent works of Linial,
+Pitassi and Shraibman (ITCS 2019) and Linial and Shraibman (CCC 2021). We introduce and study a general
+algebraic method for lower bounding the Shannon capacity of directed hypergraphs via combinatorial
+degenerations, a combinatorial kind of "approximation" of subgraphs that originates from the
+study of matrix multiplication in algebraic complexity theory (and which play an important role
+there) but which we use in a novel way. Using the combinatorial degeneration method, we make progress
+on the corner problem by explicitly constructing a corner-free subset in $F_2^n \times F_2^n$ of
+size $\Omega(3.39^n/poly(n))$, which improves the previous lower bound $\Omega(2.82^n)$ of
+Linial, Pitassi and Shraibman (ITCS 2019) and which gets us closer to the best upper bound $4^{n -
+o(n)}$. Our new construction of corner-free sets implies an improved NOF protocol for the Eval problem.
+In the Eval problem over a group $G$, three players need to determine whether their inputs $x_1, x_2,
+x_3 \in G$ sum to zero. We find that the NOF communication complexity of the Eval problem over $F_2^n$
+is at most $0.24n + O(\log n)$, which improves the previous upper bound $0.5n + O(\log n)$. 

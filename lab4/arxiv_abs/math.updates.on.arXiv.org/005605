@@ -1,0 +1,20 @@
+Propensity score methods have been shown to be powerful in obtaining efficient estimators of average
+treatment effect (ATE) from observational data, especially under the existence of confounding
+factors. When estimating, deciding which type of covariates need to be included in the propensity
+score function is important, since incorporating some unnecessary covariates may amplify both
+bias and variance of estimators of ATE. In this paper, we show that including additional instrumental
+variables that satisfy the exclusion restriction for outcome will do harm to the statistical efficiency.
+Also, we prove that, controlling for covariates that appear as outcome predictors, i.e. predict
+the outcomes and are irrelevant to the exposures, can help reduce the asymptotic variance of ATE
+estimation. We also note that, efficiently estimating the ATE by non-parametric or semi-parametric
+methods require the estimated propensity score function, as described in Hirano et al. (2003)\cite{Hirano2003}.
+Such estimation procedure usually asks for many regularity conditions, Rothe (2016)\cite{Rothe2016}
+also illustrated this point and proposed a known propensity score (KPS) estimator that requires
+mild regularity conditions and is still fully efficient. In addition, we introduce a linearly modified
+(LM) estimator that is nearly efficient in most general settings and need not estimation of the propensity
+score function, hence convenient to calculate. The construction of this estimator borrows idea
+from the interaction estimator of Lin (2013)\cite{Lin2013}, in which regression adjustment with
+interaction terms are applied to deal with data arising from a completely randomized experiment.
+As its name suggests, the LM estimator can be viewed as a linear modification on the IPW estimator
+using known propensity scores. We will also investigate its statistical properties both analytically
+and numerically. 

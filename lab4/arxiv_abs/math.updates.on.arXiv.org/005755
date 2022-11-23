@@ -1,0 +1,19 @@
+Let $\mathcal{X}$ be a real separable Hilbert space. Let $C$ be a linear, bounded and positive operator
+on $\mathcal{X}$ and let $A$ be the infinitesimal generator of a strongly continuous semigroup
+on $\mathcal{X}$. Let $\{W(t)\}_{t\geq 0}$ be a $\mathcal{X}$-valued cylindrical Wiener process
+on a filtered (normal) probability space $(\Omega,\mathcal{F},\{\mathcal{F}_t\}_{t\geq 0},\mathbb{P})$.
+Let $F:D(F)\subseteq\mathcal{X}\rightarrow\mathcal{X}$ be a smooth enough function. Under
+suitable conditions on $A$, $C$ and $F$ the following semilinear stochastic partial differential
+equation \begin{gather*} \begin{cases} dX(t,x)=\big(AX(t,x)+F(X(t,x))\big)dt+ \sqrt{C}dW(t),
+& t>0;\\ X(0,x)=x\in \mathcal{X}, \end{cases} \end{gather*} has a unique generalized mild solution
+$\{X(t,x)\}_{t\geq 0}$. We consider the transition semigroup defined by \begin{align*} P(t)\varphi(x):=\mathbb{E}[\varphi(X(t,x))],
+\qquad \varphi\in B_b(\mathcal{X}),\ t\geq 0,\ x\in \mathcal{X}. \end{align*} If $\mathcal{O}$
+is an open set of $\mathcal{X}$, we consider the stopped semigroup defined by \begin{equation*}
+P^{\mathcal{O}}(t)\varphi(x):=\mathbb{E}\left[\varphi(X(t,x))\mathbb{I}_{\{\omega\in\Omega\;
+:\;\tau_x(\omega)> t\}}\right],\quad \varphi\in B_b(\mathcal{O}),\; x\in\mathcal{O},\;
+t>0 \end{equation*} where $\tau_x$ is the stopping time defined by \begin{equation*} \tau_x=\inf\{
+s> 0\; : \; X(s,x)\in \mathcal{O}^c \}. \end{equation*} We will study the infinitesimal generators
+of $P(t)$ and $P^{\mathcal{O}}(t)$ in $L^2(\mathcal{X},\nu)$ and $L^2(\mathcal{O},\nu)$ respectively,
+where $\nu$ is the unique invariant measure of $P(t)$. We will focus on investigating how these two
+semigroups are related to the operator formally defined by \begin{equation*} N\varphi(x):=\frac{1}{2}\mbox{Tr}[C\nabla^2\varphi(x)]+\langle
+Ax+F(x), \nabla\varphi(x) \rangle. \end{equation*} 

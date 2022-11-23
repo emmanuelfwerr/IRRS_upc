@@ -1,0 +1,19 @@
+Facial expression recognition (FER) is still one challenging research due to the small inter-class
+discrepancy in the facial expression data. In view of the significance of facial crucial regions
+for FER, many existing researches utilize the prior information from some annotated crucial points
+to improve the performance of FER. However, it is complicated and time-consuming to manually annotate
+facial crucial points, especially for vast wild expression images. Based on this, a local non-local
+joint network is proposed to adaptively light up the facial crucial regions in feature learning
+of FER in this paper. In the proposed method, two parts are constructed based on facial local and non-local
+information respectively, where an ensemble of multiple local networks are proposed to extract
+local features corresponding to multiple facial local regions and a non-local attention network
+is addressed to explore the significance of each local region. Especially, the attention weights
+obtained by the non-local network is fed into the local part to achieve the interactive feedback
+between the facial global and local information. Interestingly, the non-local weights corresponding
+to local regions are gradually updated and higher weights are given to more crucial regions. Moreover,
+U-Net is employed to extract the integrated features of deep semantic information and low hierarchical
+detail information of expression images. Finally, experimental results illustrate that the proposed
+method achieves more competitive performance compared with several state-of-the art methods
+on five benchmark datasets. Noticeably, the analyses of the non-local weights corresponding to
+local regions demonstrate that the proposed method can automatically enhance some crucial regions
+in the process of feature learning without any facial landmark information. 

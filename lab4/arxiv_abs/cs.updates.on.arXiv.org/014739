@@ -1,0 +1,20 @@
+Critical evaluation and understanding of ship responses in the ocean is important for not only the
+design and engineering of future platforms but also the operation and safety of those that are currently
+deployed. Simulations or experiments are typically performed in nominal sea conditions during
+ship design or prior to deployment and the results may not be reflective of the instantaneous state
+of the vessel and the ocean environment while deployed. Short-term temporal predictions of ship
+responses given the current wave environment and ship state would enable enhanced decision-making
+onboard for both manned and unmanned vessels. However, the current state-of-the-art in numerical
+hydrodynamic simulation tools are too computationally expensive to be employed for real-time
+ship motion forecasting and the computationally efficient tools are too low fidelity to provide
+accurate responses. A methodology is developed with long short-term memory (LSTM) neural networks
+to represent the motions of a free running David Taylor Model Basin (DTMB) 5415 destroyer operating
+at 20 knots in Sea State 7 stern-quartering irregular seas. Case studies are performed for both course-keeping
+and turning circle scenarios. An estimate of the vessel's encounter frame is made with the trajectories
+observed in the training dataset. Wave elevation time histories are given by artificial wave probes
+that travel with the estimated encounter frame and serve as input into the neural network, while
+the output is the 6-DOF temporal ship motion response. Overall, the neural network is able to predict
+the temporal response of the ship due to unseen waves accurately, which makes this methodology suitable
+for system identification and real-time ship motion forecasting. The methodology, the dependence
+of model accuracy on wave probe and training data quantity and the estimated encounter frame are
+all detailed. 

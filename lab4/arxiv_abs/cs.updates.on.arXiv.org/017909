@@ -1,0 +1,18 @@
+We present a framework for learning 3D object shapes and dense cross-object 3D correspondences
+from just an unaligned category-specific image collection. The 3D shapes are generated implicitly
+as deformations to a category-specific signed distance field and are learned in an unsupervised
+manner solely from unaligned image collections and their poses without any 3D supervision. Generally,
+image collections on the internet contain several intra-category geometric and topological variations,
+for example, different chairs can have different topologies, which makes the task of joint shape
+and correspondence estimation much more challenging. Because of this, prior works either focus
+on learning each 3D object shape individually without modeling cross-instance correspondences
+or perform joint shape and correspondence estimation on categories with minimal intra-category
+topological variations. We overcome these restrictions by learning a topologically-aware implicit
+deformation field that maps a 3D point in the object space to a higher dimensional point in the category-specific
+canonical space. At inference time, given a single image, we reconstruct the underlying 3D shape
+by first implicitly deforming each 3D point in the object space to the learned category-specific
+canonical space using the topologically-aware deformation field and then reconstructing the
+3D shape as a canonical signed distance field. Both canonical shape and deformation field are learned
+end-to-end in an inverse-graphics fashion using a learned recurrent ray marcher (SRN) as a differentiable
+rendering module. Our approach, dubbed TARS, achieves state-of-the-art reconstruction fidelity
+on several datasets: ShapeNet, Pascal3D+, CUB, and Pix3D chairs. Result videos and code at https://shivamduggal4.github.io/tars-3D/

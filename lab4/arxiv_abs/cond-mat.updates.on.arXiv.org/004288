@@ -1,0 +1,19 @@
+Under the most common experimental conditions, the adsorption of proteins to solid surfaces is
+an spontaneous process that leads to a rather compact layer of randomly oriented molecules. Due
+to the importance of this process for the development of catalytic surfaces, a number of existing
+computational and experimental approaches try to predict and control the orientation of such molecules.
+However, and despite their own advantages, these tend to be either too expensive computationally,
+or oversimplified, undermining their ability to predict the most appropriate experimental conditions
+to maximize the catalytic activity of adsorbed proteins. To address this current need, we present
+an efficient computational approach to model the behavior of proteins near surfaces in the presence
+of an external electric field, based on continuum electrostatics. Our model can not only estimate
+the overall affinity of the protein with the surface, but also their most likely orientation as a
+function of the potential applied. In this way, a rational selection of the potential can be performed
+to maximize the accessibility of the protein's active site to the solvent. The model relies on the
+Poisson-Boltzmann equation and was implemented in an extension of the code PyGBe that includes
+an external electric field, and renders the electrostatic component of the solvation free energy.
+To demonstrate the feasibility of this technique, we investigate the adsorption of trypsin onto
+a carbon electrode under potentiostatic conditions both numerically and experimentally. We found
+that even though the adsorption process is largely dominated by hydrophobic effects, the orientation
+of trypsin can be controlled through an external potential, influencing the position of the active
+sites, and resulting in an important change in the catalytic activity of the surface. 

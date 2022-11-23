@@ -1,0 +1,19 @@
+In the whole aircraft structural optimization loop, thermal analysis plays a very important role.
+But it faces a severe computational burden when directly applying traditional numerical analysis
+tools, especially when each optimization involves repetitive parameter modification and thermal
+analysis followed. Recently, with the fast development of deep learning, several Convolutional
+Neural Network (CNN) surrogate models have been introduced to overcome this obstacle. However,
+for temperature field prediction on irregular geometric domains (TFP-IGD), CNN can hardly be competent
+since most of them stem from processing for regular images. To alleviate this difficulty, we propose
+a novel physics and data co-driven surrogate modeling method. First, after adapting the Bezier
+curve in geometric parameterization, a body-fitted coordinate mapping is introduced to generate
+coordinate transforms between the irregular physical plane and regular computational plane.
+Second, a physics-driven CNN surrogate with partial differential equation (PDE) residuals as
+a loss function is utilized for fast meshing (meshing surrogate); then, we present a data-driven
+surrogate model based on the multi-level reduced-order method, aiming to learn solutions of temperature
+field in the above regular computational plane (thermal surrogate). Finally, combining the grid
+position information provided by the meshing surrogate with the scalar temperature field information
+provided by the thermal surrogate (combined model), we reach an end-to-end surrogate model from
+geometric parameters to temperature field prediction on an irregular geometric domain. Numerical
+results demonstrate that our method can significantly improve accuracy prediction on a smaller
+dataset while reducing the training time when compared with other CNN methods. 

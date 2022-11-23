@@ -1,0 +1,20 @@
+Protein-ligand interactions (PLIs) are fundamental to biochemical research and their identification
+is crucial for estimating biophysical and biochemical properties for rational therapeutic design.
+Currently, experimental characterization of these properties is the most accurate method, however,
+this is very time-consuming and labor-intensive. A number of computational methods have been developed
+in this context but most of the existing PLI prediction heavily depends on 2D protein sequence data.
+Here, we present a novel parallel graph neural network (GNN) to integrate knowledge representation
+and reasoning for PLI prediction to perform deep learning guided by expert knowledge and informed
+by 3D structural data. We develop two distinct GNN architectures, GNNF is the base implementation
+that employs distinct featurization to enhance domain-awareness, while GNNP is a novel implementation
+that can predict with no prior knowledge of the intermolecular interactions. The comprehensive
+evaluation demonstrated that GNN can successfully capture the binary interactions between ligand
+and proteins 3D structure with 0.979 test accuracy for GNNF and 0.958 for GNNP for predicting activity
+of a protein-ligand complex. These models are further adapted for regression tasks to predict experimental
+binding affinities and pIC50 is crucial for drugs potency and efficacy. We achieve a Pearson correlation
+coefficient of 0.66 and 0.65 on experimental affinity and 0.50 and 0.51 on pIC50 with GNNF and GNNP,
+respectively, outperforming similar 2D sequence-based models. Our method can serve as an interpretable
+and explainable artificial intelligence (AI) tool for predicted activity, potency, and biophysical
+properties of lead candidates. To this end, we show the utility of GNNP on SARS-Cov-2 protein targets
+by screening a large compound library and comparing our prediction with the experimentally measured
+data. 

@@ -1,0 +1,20 @@
+In this paper, we propose MAGICSTYLEGAN and MAGICSTYLEGAN-ADA - both incarnations of the state-of-the-art
+models StyleGan2 and StyleGan2 ADA - to experiment with their capacity of transfer learning into
+a rather different domain: creating new illustrations for the vast universe of the game "Magic:
+The Gathering" cards. This is a challenging task especially due to the variety of elements present
+in these illustrations, such as humans, creatures, artifacts, and landscapes - not to mention the
+plethora of art styles of the images made by various artists throughout the years. To solve the task
+at hand, we introduced a novel dataset, named MTG, with thousands of illustration from diverse card
+types and rich in metadata. The resulting set is a dataset composed by a myriad of both realistic and
+fantasy-like illustrations. Although, to investigate effects of diversity we also introduced
+subsets that contain specific types of concepts, such as forests, islands, faces, and humans. We
+show that simpler models, such as DCGANs, are not able to learn to generate proper illustrations
+in any setting. On the other side, we train instances of MAGICSTYLEGAN using all proposed subsets,
+being able to generate high quality illustrations. We perform experiments to understand how well
+pre-trained features from StyleGan2 can be transferred towards the target domain. We show that
+in well trained models we can find particular instances of noise vector that realistically represent
+real images from the dataset. Moreover, we provide both quantitative and qualitative studies to
+support our claims, and that demonstrate that MAGICSTYLEGAN is the state-of-the-art approach
+for generating Magic illustrations. Finally, this paper highlights some emerging properties
+regarding transfer learning in GANs, which is still a somehow under-explored field in generative
+learning research. 

@@ -1,0 +1,20 @@
+By the end of 2021, the renewable energy share of the global electricity capacity reached 38.3% and
+the new installations are dominated by wind and solar energy, showing global increases of 12.7%
+and 18.5%, respectively. However, both wind and photovoltaic energy sources are highly volatile
+making planning difficult for grid operators, so accurate forecasts of the corresponding weather
+variables are essential for reliable electricity predictions. The most advanced approach in weather
+prediction is the ensemble method, which opens the door for probabilistic forecasting; though
+ensemble forecast are often underdispersive and subject to systematic bias. Hence, they require
+some form of statistical post-processing, where parametric models provide full predictive distributions
+of the weather variables at hand. We propose a general two-step machine learning-based approach
+to calibrating ensemble weather forecasts, where in the first step improved point forecasts are
+generated, which are then together with various ensemble statistics serve as input features of
+the neural network estimating the parameters of the predictive distribution. In two case studies
+based of 100m wind speed and global horizontal irradiance forecasts of the operational ensemble
+pre diction system of the Hungarian Meteorological Service, the predictive performance of this
+novel method is compared with the forecast skill of the raw ensemble and the state-of-the-art parametric
+approaches. Both case studies confirm that at least up to 48h statistical post-processing substantially
+improves the predictive performance of the raw ensemble for all considered forecast horizons.
+The investigated variants of the proposed two-step method outperform in skill their competitors
+and the suggested new approach is well applicable for different weather quantities and for a fair
+range of predictive distributions. 

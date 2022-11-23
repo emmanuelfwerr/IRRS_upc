@@ -1,0 +1,20 @@
+The use of machine learning techniques in classical and quantum systems has led to novel techniques
+to classify ordered and disordered phases, as well as uncover transition points in critical phenomena.
+Efforts to extend these methods to dynamical processes in complex networks is a field of active research.
+Network-percolation, a measure of resilience and robustness to structural failures, as well as
+a proxy for spreading processes, has numerous applications in social, technological, and infrastructural
+systems. A particular challenge is to identify the existence of a percolation cluster in a network
+in the face of noisy data. Here, we consider bond-percolation, and introduce a sampling approach
+that leverages the core-periphery structure of such networks at a microscopic scale, using onion
+decomposition, a refined version of the $k-$core. By selecting subsets of nodes in a particular
+layer of the onion spectrum that follow similar trajectories in the percolation process, percolating
+phases can be distinguished from non-percolating ones through an unsupervised clustering method.
+Accuracy in the initial step is essential for extracting samples with information-rich content,
+that are subsequently used to predict the critical transition point through the confusion scheme,
+a recently introduced learning method. The method circumvents the difficulty of missing data or
+noisy measurements, as it allows for sampling nodes from both the core and periphery, as well as intermediate
+layers. We validate the effectiveness of our sampling strategy on a spectrum of synthetic network
+topologies, as well as on two real-word case studies: the integration time of the US domestic airport
+network, and the identification of the epidemic cluster of COVID-19 outbreaks in three major US
+states. The method proposed here allows for identifying phase transitions in empirical time-varying
+networks. 

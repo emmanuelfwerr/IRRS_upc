@@ -1,0 +1,20 @@
+Many fundamental problems affecting the care of critically ill patients lead to similar analytical
+challenges: physicians cannot easily estimate the effects of at-risk medical conditions or treatments
+because the causal effects of medical conditions and drugs are entangled. They also cannot easily
+perform studies: there are not enough high-quality data for high-dimensional observational causal
+inference, and RCTs often cannot ethically be conducted. However, mechanistic knowledge is available,
+including how drugs are absorbed into the body, and the combination of this knowledge with the limited
+data could potentially suffice -- if we knew how to combine them. In this work, we present a framework
+for interpretable estimation of causal effects for critically ill patients under exactly these
+complex conditions: interactions between drugs and observations over time, patient data sets
+that are not large, and mechanistic knowledge that can substitute for lack of data. We apply this
+framework to an extremely important problem affecting critically ill patients, namely the effect
+of seizures and other potentially harmful electrical events in the brain (called epileptiform
+activity -- EA) on outcomes. Given the high stakes involved and the high noise in the data, interpretability
+is critical for troubleshooting such complex problems. Interpretability of our matched groups
+allowed neurologists to perform chart reviews to verify the quality of our causal analysis. For
+instance, our work indicates that a patient who experiences a high level of seizure-like activity
+(75% high EA burden) and is untreated for a six-hour window, has, on average, a 16.7% increased chance
+of adverse outcomes such as severe brain damage, lifetime disability, or death. We find that patients
+with mild but long-lasting EA (average EA burden >= 50%) have their risk of an adverse outcome increased
+by 11.2%. 

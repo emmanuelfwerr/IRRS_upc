@@ -1,0 +1,19 @@
+In the $(s,d)$-spy game over a graph $G$, $k$ guards and one spy occupy some vertices of $G$ and, at
+each turn, the spy may move with speed $s$ (along at most $s$ edges) and each guard may move along one
+edge. The spy and the guards may occupy the same vertices. The spy wins if she reaches a vertex at distance
+more than the surveilling distance $d$ from every guard. This game was introduced by Cohen et al.
+in 2016 and is related to two well-studied games: Cops and robber game and Eternal Dominating game.
+The guard number $gn_{s,d}(G)$ is the minimum number of guards such that the guards have a winning
+strategy (of controlling the spy) in the graph $G$. In 2018, it was proved that deciding if the spy
+has a winning strategy is NP-hard for every speed $s\geq 2$ and distance $d\geq 0$. In this paper,
+we initiate the investigation of the guard number in grids and in graph products. We obtain a strict
+upper bound on the strong product of two general graphs and obtain examples with King grids that match
+this bound and other examples for which the guard number is smaller. We also obtain the exact value
+of the guard number in the lexicographical product of two general graphs for any distance $d\geq
+2$. From the algorithmic point of view, we prove a positive result: if the number $k$ of guards is fixed,
+the spy game is solvable in polynomial XP time $O(n^{3k+2})$ for every speed $s\geq 2$ and distance
+$d\geq 0$. In other words, the spy game is XP when parameterized by the number of guards. This XP algorithm
+is used to obtain an FPT algorithm on the $P_4$-fewness of the graph. As a negative result, we prove
+that the spy game is W[2]-hard even in bipartite graphs when parameterized by the number of guards,
+for every speed $s\geq 2$ and distance $d\geq 0$, extending the hardness result of Cohen et al. in
+2018. 

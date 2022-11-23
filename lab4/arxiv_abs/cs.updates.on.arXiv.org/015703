@@ -1,0 +1,19 @@
+Conventional CNNs-based dehazing models suffer from two essential issues: the dehazing framework
+(limited in interpretability) and the convolution layers (content-independent and ineffective
+to learn long-range dependency information). In this paper, firstly, we propose a new complementary
+feature enhanced framework, in which the complementary features are learned by several complementary
+subtasks and then together serve to boost the performance of the primary task. One of the prominent
+advantages of the new framework is that the purposively chosen complementary tasks can focus on
+learning weakly dependent complementary features, avoiding repetitive and ineffective learning
+of the networks. We design a new dehazing network based on such a framework. Specifically, we select
+the intrinsic image decomposition as the complementary tasks, where the reflectance and shading
+prediction subtasks are used to extract the color-wise and texture-wise complementary features.
+To effectively aggregate these complementary features, we propose a complementary features selection
+module (CFSM) to select the more useful features for image dehazing. Furthermore, we introduce
+a new version of vision transformer block, named Hybrid Local-Global Vision Transformer (HyLoG-ViT),
+and incorporate it within our dehazing networks. The HyLoG-ViT block consists of the local and the
+global vision transformer paths used to capture local and global dependencies. As a result, the
+HyLoG-ViT introduces locality in the networks and captures the global and long-range dependencies.
+Extensive experiments on homogeneous, non-homogeneous, and nighttime dehazing tasks reveal
+that the proposed dehazing network can achieve comparable or even better performance than CNNs-based
+dehazing models. 

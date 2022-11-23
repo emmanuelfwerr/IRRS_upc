@@ -1,0 +1,19 @@
+Computing routing schemes that support both high throughput and low latency is one of the core challenges
+of network optimization. Such routes can be formalized as $h$-length flows which are defined as
+flows whose flow paths are restricted to have length at most $h$. Many well-studied algorithmic
+primitives -- such as maximal and maximum length-constrained disjoint paths -- are special cases
+of $h$-length flows. Likewise the optimal $h$-length flow is a fundamental quantity in network
+optimization, characterizing, up to poly-log factors, how quickly a network can accomplish numerous
+distributed primitives. In this work, we give the first efficient algorithms for computing $(1
+- \epsilon)$-approximate $h$-length flows. We give deterministic algorithms that take $\tilde{O}(\text{poly}(h,
+\frac{1}{\epsilon}))$ parallel time and $\tilde{O}(\text{poly}(h, \frac{1}{\epsilon}) \cdot
+2^{O(\sqrt{\log n})})$ distributed CONGEST time. We also give a CONGEST algorithm that succeeds
+with high probability and only takes $\tilde{O}(\text{poly}(h, \frac{1}{\epsilon}))$ time.
+Using our $h$-length flow algorithms, we give the first efficient deterministic CONGEST algorithms
+for the maximal length-constrained disjoint paths problem -- settling an open question of Chang
+and Saranurak (FOCS 2020) -- as well as essentially-optimal parallel and distributed approximation
+algorithms for maximum length-constrained disjoint paths. The former greatly simplifies deterministic
+CONGEST algorithms for computing expander decompositions. We also use our techniques to give the
+first efficient $(1-\epsilon)$-approximation algorithms for bipartite $b$-matching in CONGEST.
+Lastly, using our flow algorithms, we give the first algorithms to efficiently compute $h$-length
+cutmatches, an object at the heart of recent advances in length-constrained expander decompositions.

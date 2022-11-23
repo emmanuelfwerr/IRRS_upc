@@ -1,0 +1,20 @@
+With the rapid development of Internet technology and the comprehensive popularity of Internet
+applications, online activities have gradually become an indispensable part of people's daily
+life. The original recommendation learning algorithm is mainly based on user-microvideo interaction
+for learning, modeling the user-micro-video connection relationship, which is difficult to capture
+the more complex relationships between nodes. To address the above problems, we propose a personalized
+recommendation model based on graph neural network, which utilizes the feature that graph neural
+network can tap deep information of graph data more effectively, and transforms the input user rating
+information and item side information into graph structure, for effective feature extraction,
+based on the importance sampling strategy. The importance-based sampling strategy measures the
+importance of neighbor nodes to the central node by calculating the relationship tightness between
+the neighbor nodes and the central node, and selects the neighbor nodes for recommendation tasks
+based on the importance level, which can be more targeted to select the sampling neighbors with more
+influence on the target micro-video nodes. The pooling aggregation strategy, on the other hand,
+trains the aggregation weights by inputting the neighborhood node features into the fully connected
+layer before aggregating the neighborhood features, and then introduces the pooling layer for
+feature aggregation, and finally aggregates the obtained neighborhood aggregation features
+with the target node itself, which directly introduces a symmetric trainable function to fuse the
+neighborhood weight training into the model to better capture the different neighborhood nodes'
+differential features in a learnable manner to allow for a more accurate representation of the current
+node features. 

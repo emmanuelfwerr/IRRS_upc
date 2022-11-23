@@ -1,0 +1,19 @@
+In this study, by attempting to eliminate the disadvantageous complexity of the existing particle
+generators, we present a discrete probabilistic scheme adapted for the discrete energy spectra
+in the GEANT4 simulations. In our multi-binned approach, we initially compute the discrete probabilities
+for each energy bin, the number of which is flexible depending on the computational goal, and we solely
+satisfy the imperative condition that requires the sum of the discrete probabilities to be the unity.
+Regarding the implementation in GEANT4, we construct a one-dimensional probability grid that
+consists of sub-cells equaling the number of the energy bin, and each cell represents the discrete
+probability of each energy bin by fulfilling the unity condition. Through uniformly generating
+random numbers between 0 and 1, we assign the discrete energy in accordance with the associated generated
+random number that corresponds to a specific cell in the probability grid. This probabilistic methodology
+does not only permits us to discretize the continuous energy spectra based on the Monte Carlo generators,
+but it also gives a unique access to utilize the experimental energy spectra measured at the distinct
+particle flux values. Ergo, we initially perform our simulations by discretizing the muon energy
+spectrum acquired via the CRY generator over the energy interval between 0 and 8 GeV along with the
+measurements from the BESS spectrometer and we determine the average scattering angle, the root-mean-square
+of the scattering angle, and the number of the muon absorption by using a series of slabs consisting
+of aluminum, copper, iron, lead, and uranium. Eventually, we express a computational strategy
+in the GEANT4 simulations that grants us the ability to verify as well as to modify the energy spectrum
+depending on the nature of the information source in addition to the exceptional tracking speed.

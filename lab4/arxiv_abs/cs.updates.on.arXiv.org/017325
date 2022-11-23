@@ -1,0 +1,19 @@
+The classical coding theorem in Kolmogorov complexity states that if an $n$-bit string $x$ is sampled
+with probability $\delta$ by an algorithm with prefix-free domain then K$(x) \leq \log(1/\delta)
++ O(1)$. In a recent work, Lu and Oliveira [LO21] established an unconditional time-bounded version
+of this result, by showing that if $x$ can be efficiently sampled with probability $\delta$ then
+rKt$(x) = O(\log(1/\delta)) + O(\log n)$, where rKt denotes the randomized analogue of Levin's
+Kt complexity. Unfortunately, this result is often insufficient when transferring applications
+of the classical coding theorem to the time-bounded setting, as it achieves a $O(\log(1/\delta))$
+bound instead of the information-theoretic optimal $\log(1/\delta)$. We show a coding theorem
+for rKt with a factor of $2$. As in previous work, our coding theorem is efficient in the sense that
+it provides a polynomial-time probabilistic algorithm that, when given $x$, the code of the sampler,
+and $\delta$, it outputs, with probability $\ge 0.99$, a probabilistic representation of $x$ that
+certifies this rKt complexity bound. Assuming the security of cryptographic pseudorandom generators,
+we show that no efficient coding theorem can achieve a bound of the form rKt$(x) \leq (2 - o(1)) \cdot
+\log(1/\delta) +$ poly$(\log n)$. Under a weaker assumption, we exhibit a gap between efficient
+coding theorems and existential coding theorems with near-optimal parameters. We consider pK$^t$
+complexity [GKLO22], a variant of rKt where the randomness is public and the time bound is fixed.
+We observe the existence of an optimal coding theorem for pK$^t$, and employ this result to establish
+an unconditional version of a theorem of Antunes and Fortnow [AF09] which characterizes the worst-case
+running times of languages that are in average polynomial-time over all P-samplable distributions.

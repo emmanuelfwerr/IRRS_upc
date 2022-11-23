@@ -1,0 +1,18 @@
+We study the long-term behavior of the two-thinning variant of the classical balls-and-bins model.
+In this model, an overseer is provided with uniform random allocation of $m$ balls into $n$ bins in
+an on-line fashion. For each ball, the overseer could reject its allocation and place the ball into
+a new bin drawn independently at random. The purpose of the overseer is to reduce the maximum load
+of the bins, which is defined as the difference between the maximum number of balls in a single bin
+and $m/n$, i.e., the average number of balls among all bins. We provide tight estimates for three
+quantities: the lowest maximum load that could be achieved at time $m$, the lowest maximum load that
+could be achieved uniformly over the entire time interval $[m]:=\{1, 2, \cdots, m\}$, and the lowest
+\emph{typical} maximum load that could be achieved over the interval $[m]$, where the typicality
+means that the maximum load holds for $1-o(1)$ portion of the times in $[m]$. We show that when $m$
+and $n$ are sufficiently large, a typical maximum load of $(\log n)^{1/2+o(1)}$ can be achieved
+with high probability, asymptotically the same as the optimal maximum load that could be achieved
+at time $m$. However, for any strategy, the maximal load among all times in the interval $[m]$ is $\Omega\big(\frac{\log
+n}{\log\log n}\big)$ with high probability. A strategy achieving this bound is provided. An explanation
+for this gap is provided by our optimal strategies as follows. To control the typical load, we restrain
+the maximum load for some time, during which we accumulate more and more bins with relatively high
+load. After a while, we have to employ for a short time a different strategy to reduce the number of
+relatively heavily loaded bins, at the expanse of temporarily inducing high load in a few bins. 

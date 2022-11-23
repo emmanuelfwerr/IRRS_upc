@@ -1,0 +1,19 @@
+The incidences of atrial fibrillation (AFib) are increasing at a daunting rate worldwide. For the
+early detection of the risk of AFib, we have developed an automatic detection system based on deep
+neural networks. For achieving better classification, it is mandatory to have good pre-processing
+of physiological signals. Keeping this in mind, we have proposed a two-fold study. First, an end-to-end
+model is proposed to denoise the electrocardiogram signals using denoising autoencoders (DAE).
+To achieve denoising, we have used three networks including, convolutional neural network (CNN),
+dense neural network (DNN), and recurrent neural networks (RNN). Compared the three models and
+CNN based DAE performance is found to be better than the other two. Therefore, the signals denoised
+by the CNN based DAE were used to train the deep neural networks for classification. Three neural
+networks' performance has been evaluated using accuracy, specificity, sensitivity, and signal
+to noise ratio (SNR) as the evaluation criteria. The proposed end-to-end deep learning model for
+detecting atrial fibrillation in this study has achieved an accuracy rate of 99.20%, a specificity
+of 99.50%, a sensitivity of 99.50%, and a true positive rate of 99.00%. The average accuracy of the
+algorithms we compared is 96.26%, and our algorithm's accuracy is 3.2% higher than this average
+of the other algorithms. The CNN classification network performed better as compared to the other
+two. Additionally, the model is computationally efficient for real-time applications, and it
+takes approx 1.3 seconds to process 24 hours ECG signal. The proposed model was also tested on unseen
+dataset with different proportions of arrhythmias to examine the model's robustness, which resulted
+in 99.10% of recall and 98.50% of precision. 

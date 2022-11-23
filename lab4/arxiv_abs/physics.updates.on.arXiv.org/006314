@@ -1,0 +1,20 @@
+The rise in computational capability has increased reliance on simulations to inform aircraft
+design. However aircraft airworthiness testing for flight certification remains rooted in real-world
+experiments performed after manufacturing an aircraft prototype. Leveraging multi-fidelity
+modeling and uncertainty quantification, we present a framework creating a stochastic representation
+of the aircraft, uses it to simulate flight certification maneuvers, and determines the likelihood
+of successfully meeting the certification requirement. We focus on uncertainties associated
+with Computational Fluid Dynamics simulations solving the Reynolds-Averaged Navier-Stokes
+equations. The simulation predictions and associated uncertainties are combined with data from
+other analysis tools to create stochastic aerodynamics and controls databases. The databases
+describe the aircraft's behavior across its flight envelope and provide probability distributions
+for its predictions. Databases are generated for two aircraft configurations, the National Aeronautics
+and Space Administration (NASA) Common Research Model and the Generic T-tail Transport aircraft.
+Samples from the databases, representing different aircraft behavior, are created. Each sample
+is run through a flight simulation representing a real-world airworthiness test performed by the
+Federal Aviation Administration (FAA). These tests are agglomerated to create distributions
+of the performance metrics, quantifying the probability that the aircraft succeeds in performing
+the certification maneuver. Simulating flight certification testing before building a full-size
+aircraft prototype mitigates the enormous costs of expensive redesigns late in the aircraft design
+process. The calculation of the failure rates provides design suggestions to ensure the aircraft
+can meet the certification requirement with a prescribed success rate. 

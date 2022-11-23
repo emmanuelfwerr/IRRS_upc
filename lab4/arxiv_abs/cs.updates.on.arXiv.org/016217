@@ -1,0 +1,19 @@
+Edge computing and 5G have made it possible to perform analytics closer to the source of data and achieve
+super-low latency response times, which is not possible with centralized cloud deployment. In
+this paper, we present a novel fever-screening system, which uses edge machine learning techniques
+and leverages private 5G to accurately identify and screen individuals with fever in real-time.
+Particularly, we present deep-learning based novel techniques for fusion and alignment of cross-spectral
+visual and thermal data streams at the edge. Our novel Cross-Spectral Generative Adversarial Network
+(CS-GAN) synthesizes visual images that have the key, representative object level features required
+to uniquely associate objects across visual and thermal spectrum. Two key features of CS-GAN are
+a novel, feature-preserving loss function that results in high-quality pairing of corresponding
+cross-spectral objects, and dual bottleneck residual layers with skip connections (a new, network
+enhancement) to not only accelerate real-time inference, but to also speed up convergence during
+model training at the edge. To the best of our knowledge, this is the first technique that leverages
+5G networks and limited edge resources to enable real-time feature-level association of objects
+in visual and thermal streams (30 ms per full HD frame on an Intel Core i7-8650 4-core, 1.9GHz mobile
+processor). To the best of our knowledge, this is also the first system to achieve real-time operation,
+which has enabled fever screening of employees and guests in arenas, theme parks, airports and other
+critical facilities. By leveraging edge computing and 5G, our fever screening system is able to
+achieve 98.5% accuracy and is able to process about 5X more people when compared to a centralized
+cloud deployment. 

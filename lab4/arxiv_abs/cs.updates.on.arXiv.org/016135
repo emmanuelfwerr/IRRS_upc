@@ -1,0 +1,20 @@
+Graph Generation is a recently introduced enhanced Column Generation algorithm for solving expanded
+Linear Programming relaxations of mixed integer linear programs without weakening the expanded
+relaxations which characterize these methods. To apply Graph Generation we must be able to map any
+given column generated during pricing to a small directed acyclic graph for which any path from source
+to sink describes a feasible column. This structure is easily satisfied for vehicle routing, crew
+scheduling and various logistics problems where pricing is a constrained shortest path problem.
+The construction of such graphs trades off the size/diversity of a subset of columns modeled by the
+graphs versus the additional computational time required to solve the problems induced by larger
+graphs. Graph Generation (GG) has two computational bottlenecks. The first is pricing. Pricing
+in GG and Column Generation (CG) is identical because of the structure of the problems solved. The
+second bottleneck is the restricted master problem (RMP), which is more computationally intensive
+in GG than in CG given the same number of columns generated. By design GG converges in fewer iterations
+than CG, and hence requires fewer calls to pricing. Therefore, when the computation time of GG is
+dominated by pricing, as opposed to solving the RMP, GG converges much faster than CG in terms of time.
+However GG need not converge faster than CG when the GG RMP, rather than pricing, dominates computation.
+In this paper we introduce Principled Graph Management (PGM), which is an algorithm to solve the
+GG RMP rapidly by exploiting its special structure. We demonstrate the effectiveness of PGM inside
+a GG solution to the classical Capacitated Vehicle Routing Problem. We demonstrate that PGM solves
+the GG RMP hundreds of times faster than the baseline solver and that the improvement in speed increases
+with problem size. 

@@ -1,0 +1,21 @@
+State-of-the-art automatic speech recognition (ASR) system development is data and computation
+intensive. The optimal design of deep neural networks (DNNs) for these systems often require expert
+knowledge and empirical evaluation. In this paper, a range of neural architecture search (NAS)
+techniques are used to automatically learn two types of hyper-parameters of factored time delay
+neural networks (TDNN-Fs): i) the left and right splicing context offsets; and ii) the dimensionality
+of the bottleneck linear projection at each hidden layer. These techniques include the differentiable
+neural architecture search (DARTS) method integrating architecture learning with lattice-free
+MMI training; Gumbel-Softmax and pipelined DARTS methods reducing the confusion over candidate
+architectures and improving the generalization of architecture selection; and Penalized DARTS
+incorporating resource constraints to balance the trade-off between performance and system complexity.
+Parameter sharing among TDNN-F architectures allows an efficient search over up to 7^28 different
+systems. Statistically significant word error rate (WER) reductions of up to 1.2% absolute and
+relative model size reduction of 31% were obtained over a state-of-the-art 300-hour Switchboard
+corpus trained baseline LF-MMI TDNN-F system featuring speed perturbation, i-Vector and learning
+hidden unit contribution (LHUC) based speaker adaptation as well as RNNLM rescoring. Performance
+contrasts on the same task against recent end-to-end systems reported in the literature suggest
+the best NAS auto-configured system achieves state-of-the-art WERs of 9.9% and 11.1% on the NIST
+Hub5' 00 and Rt03s test sets respectively with up to 96% model size reduction. Further analysis using
+Bayesian learning shows that the proposed NAS approaches can effectively minimize the structural
+redundancy in the TDNN-F systems and reduce their model parameter uncertainty. Consistent performance
+improvements were also obtained on a UASpeech dysarthric speech recognition task. 

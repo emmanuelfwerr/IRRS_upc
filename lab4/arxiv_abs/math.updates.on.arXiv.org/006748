@@ -1,0 +1,19 @@
+We consider an ultra-low-complexity multi-group multicast beamforming design for large-scale
+systems. For the quality-of-service (QoS) problem, by utilizing the optimal multicast beamforming
+structure obtained recently in [2], we convert the original problem into a non-convex weight optimization
+problem of a lower dimension and propose two fast first-order algorithms to solve it. Both algorithms
+are based on successive convex approximation (SCA) and provide fast iterative updates to solve
+each SCA subproblem. The first algorithm uses a saddle point reformulation in the dual domain and
+applies the extragradient method with an adaptive step-size procedure to find the saddle point
+with simple closed-form updates. The second algorithm adopts the alternating direction method
+of multipliers (ADMM) method by converting each SCA subproblem into a favorable ADMM structure.
+The structure leads to simple closed-form ADMM updates, where the problem in each update block can
+be further decomposed into parallel subproblems of small sizes, for which closed-form solutions
+are obtained. We also propose efficient initialization methods to obtain favorable initial points
+that facilitate fast convergence. Furthermore, taking advantage of the proposed fast algorithms,
+for the max-min fair (MMF) problem, we propose a simple closed-form scaling scheme that directly
+uses the solution obtained from the QoS problem, avoiding the conventional computationally expensive
+method that iteratively solves the inverse QoS problem. We further develop lower and upper bounds
+on the performance of this scaling scheme. Simulation results show that the proposed algorithms
+offer near-optimal performance with substantially lower computational complexity than the state-of-the-art
+algorithms for large-scale systems. 

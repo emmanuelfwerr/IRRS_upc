@@ -1,0 +1,20 @@
+Recent work in time-frequency analysis proposed to switch the focus from the maxima of the spectrogram
+toward its zeros. The zeros of signals in white Gaussian noise indeed form a random point pattern
+with a very stable structure. Using modern spatial statistics tools on the pattern of zeros of a spectrogram
+has led to component disentanglement and signal detection procedures. The major bottlenecks of
+this approach are the discretization of the Short-Time Fourier Transform and the necessarily bounded
+observation window in the time-frequency plane. Both impact the estimation of summary statistics
+of the zeros, which are then used in standard statistical tests. To circumvent these limitations,
+we propose a generalized time-frequency representation, which we call the Kravchuk transform.
+It naturally applies to finite signals, i.e., finite-dimensional vectors. The corresponding
+phase space, instead of the whole time-frequency plane, is compact, and particularly amenable
+to spatial statistics. On top of this, the Kravchuk transform has several natural properties for
+signal processing, among which covariance under the action of SO(3), invertibility and symmetry
+with respect to complex conjugation. We further show that the point process of the zeros of the Kravchuk
+transform of discrete white Gaussian noise coincides in law with the zeros of the spherical Gaussian
+Analytic Function. This implies that the law of the zeros is invariant under isometries of the sphere.
+Elaborating on this theorem, we develop a procedure for signal detection based on the spatial statistics
+of the zeros of the Kravchuk spectrogram. The statistical power of this procedure is assessed by
+intensive numerical simulation, and compares favorably with respect to state-of-the-art zeros-based
+detection procedures. Furthermore it appears to be particularly robust to both low signal-to-noise
+ratio and small number of samples. 

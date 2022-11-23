@@ -1,0 +1,18 @@
+We study the following problem: recover an $n \times q$ rank-$r$ matrix, $X^* =[x^*_1 , x^*_2, ...,
+x^*_q]$ from $m$ independent linear projections of each of its $q$ columns, i.e., from $y_k := A_k
+x^*_k , k \in [q]$, when $y_k$ is an $m$-length vector with $m < n$. The matrices $A_k$ are known and
+mutually independent for different $k$. Even though many LR recovery problems have been extensively
+studied in the last decade, this problem had not received much attention until recently. We introduce
+a novel gradient descent (GD) based solution called AltGD-Min. We show that, if the $A_k$s are i.i.d.
+with i.i.d. Gaussian entries, and if the right singular vectors of $X^*$ satisfy the incoherence
+assumption, then $\epsilon$-accurate recovery of $X^*$ is possible with order $(n+q) r^2 \log(1/\epsilon)$
+total samples and $ mq nr \log (1/\epsilon)$ time. Compared with existing work, this is the fastest
+solution and, in most cases of practical interest, it also has the best sample complexity. Moreover,
+a simple extension of AltGD-Min also provably solves LR Phase Retrieval (LRPR), which is the magnitude-only
+generalization of the above problem. AltGD-Min factorizes the unknown $X$ as $X = UB$ where $U$ and
+$B$ are matrices with $r$ columns and rows respectively (with $U$ having orthonormal columns).
+It alternates between a (projected) GD step for updating $U$, and a minimization step for updating
+$B$. Each iteration of AltGD-Min is as fast as that of regular projected GD because the minimization
+step decouples. At the same time, we can prove error decay for it, which we cannot do for the more commonly
+used projected GD on $X$ approach for our problem. Moreover, it can be efficiently federated with
+a communication cost of only $nr$ per node, instead of $nq$ for projected GD on $X$. 

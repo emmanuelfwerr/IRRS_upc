@@ -1,0 +1,19 @@
+Onboard localization capabilities for planetary rovers to date have used relative navigation,
+by integrating combinations of wheel odometry, visual odometry, and inertial measurements during
+each drive to track position relative to the start of each drive. At the end of each drive, a ground-in-the-loop
+(GITL) interaction is used to get a position update from human operators in a more global reference
+frame, by matching images or local maps from onboard the rover to orbital reconnaissance images
+or maps of a large region around the rover's current position. Autonomous rover drives are limited
+in distance so that accumulated relative navigation error does not risk the possibility of the rover
+driving into hazards known from orbital images. However, several rover mission concepts have recently
+been studied that require much longer drives between GITL cycles, particularly for the Moon. These
+concepts require greater autonomy to minimize GITL cycles to enable such large range; onboard global
+localization is a key element of such autonomy. Multiple techniques have been studied in the past
+for onboard rover global localization, but a satisfactory solution has not yet emerged. For the
+Moon, the ubiquitous craters offer a new possibility, which involves mapping craters from orbit,
+then recognizing crater landmarks with cameras and-or a lidar onboard the rover. This approach
+is applicable everywhere on the Moon, does not require high resolution stereo imaging from orbit
+as some other approaches do, and has potential to enable position knowledge with order of 5 to 10 m
+accuracy at all times. This paper describes our technical approach to crater-based lunar rover
+localization and presents initial results on crater detection using 3D point cloud data from onboard
+lidar or stereo cameras, as well as using shading cues in monocular onboard imagery. 

@@ -1,0 +1,20 @@
+Integrated simulation models are emerging as an alternative for analyzing large-scale interdependent
+infrastructure networks due to their modeling advantages over traditional interdependency models.
+This paper presents an open-source integrated simulation package for the asset-level analysis
+of interdependent infrastructure systems. The simulation platform, named 'InfraRisk' and developed
+in Python, can simulate disaster-induced infrastructure failures and subsequent post-disaster
+restoration in interconnected water-, power-, and road networks. InfraRisk consists of an infrastructure
+module, a hazard module, a recovery module, a simulation module, and a resilience quantification
+module. The infrastructure module integrates existing infrastructure network packages (wntr
+for water networks, pandapower for power systems, and a static traffic assignment model for transportation
+networks) through an interface that facilitates the network-level simulation of interdependent
+failures. The hazard module generates infrastructure component failure sequences based on various
+disaster characteristics. The recovery module determines repair sequences and assigns repair
+crews based on predefined heuristics-based recovery strategies or model predictive control (MPC)
+based optimization. Based on the schedule, the simulation module implements the network-wide
+simulation of the consequences of the disaster impacts and the recovery actions. The resilience
+quantification module offers system-level and consumer-level metrics to quantify both the risks
+and resilience of the integrated infrastructure networks against disaster events. InfraRisk
+provides a virtual platform for decision-makers to experiment and develop region-specific pre-disaster
+and post-disaster policies to enhance the overall resilience of interdependent urban infrastructure
+networks. 

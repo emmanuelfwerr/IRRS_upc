@@ -1,0 +1,19 @@
+Autonomous driving requires 3D maps that provide accurate and up-to-date information about semantic
+landmarks. Due to the wider availability and lower cost of cameras compared with laser scanners,
+vision-based mapping solutions, especially the ones using crowdsourced visual data, have attracted
+much attention from academia and industry. However, previous works have mainly focused on creating
+3D point clouds, leaving automatic change detection as open issues. We propose in this paper a pipeline
+for initiating and updating 3D maps with dashcam videos, with a focus on automatic change detection
+based on comparison of metadata (e.g., the types and locations of traffic signs). To improve the
+performance of metadata generation, which depends on the accuracy of 3D object detection and localization,
+we introduce a novel deep learning-based pixel-wise 3D localization algorithm. The algorithm,
+trained directly with SfM point cloud data, can locate objects detected from 2D images in a 3D space
+with high accuracy by estimating not only depth from monocular images but also lateral and height
+distances. In addition, we also propose a point clustering and thresholding algorithm to improve
+the robustness of the system to errors. We have performed experiments on two distinct areas - a campus
+and a residential area - with different types of cameras, lighting, and weather conditions. The
+changes were detected with 85% and 100% accuracy in the campus and residential areas, respectively.
+The errors in the campus area were mainly due to traffic signs seen from a far distance to the vehicle
+and intended for pedestrians and cyclists only. We also conducted cause analysis of the detection
+and localization errors to measure the impact from the performance of the background technology
+in use. 

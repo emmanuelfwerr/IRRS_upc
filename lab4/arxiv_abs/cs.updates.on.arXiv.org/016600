@@ -1,0 +1,19 @@
+Humans race drones faster than neural networks trained for end-to-end autonomous flight. This
+may be related to the ability of human pilots to select task-relevant visual information effectively.
+This work investigates whether neural networks capable of imitating human eye gaze behavior and
+attention can improve neural network performance for the challenging task of vision-based autonomous
+drone racing. We hypothesize that gaze-based attention prediction can be an efficient mechanism
+for visual information selection and decision making in a simulator-based drone racing task. We
+test this hypothesis using eye gaze and flight trajectory data from 18 human drone pilots to train
+a visual attention prediction model. We then use this visual attention prediction model to train
+an end-to-end controller for vision-based autonomous drone racing using imitation learning.
+We compare the drone racing performance of the attention-prediction controller to those using
+raw image inputs and image-based abstractions (i.e., feature tracks). Comparing success rates
+for completing a challenging race track by autonomous flight, our results show that the attention-prediction
+based controller (88% success rate) outperforms the RGB-image (61% success rate) and feature-tracks
+(55% success rate) controller baselines. Furthermore, visual attention-prediction and feature-track
+based models showed better generalization performance than image-based models when evaluated
+on hold-out reference trajectories. Our results demonstrate that human visual attention prediction
+improves the performance of autonomous vision-based drone racing agents and provides an essential
+step towards vision-based, fast, and agile autonomous flight that eventually can reach and even
+exceed human performances. 

@@ -1,0 +1,22 @@
+Group testing is one of the fundamental problems in coding theory and combinatorics in which one
+is to identify a subset of contaminated items from a given ground set. There has been renewed interest
+in group testing recently due to its applications in diagnostic virology, including pool testing
+for the novel coronavirus. The majority of existing works on group testing focus on the \emph{uniform}
+setting in which any subset of size $d$ from a ground set $V$ of size $n$ is potentially contaminated.
+In this work, we consider a {\em generalized} version of group testing with an arbitrary set-system
+of potentially contaminated sets. The generalized problem is characterized by a hypergraph $H=(V,E)$,
+where $V$ represents the ground set and edges $e\in E$ represent potentially contaminated sets.
+The problem of generalized group testing is motivated by practical settings in which not all subsets
+of a given size $d$ may be potentially contaminated, rather, due to social dynamics, geographical
+limitations, or other considerations, there exist subsets that can be readily ruled out. For example,
+in the context of pool testing, the edge set $E$ may consist of families, work teams, or students in
+a classroom, i.e., subsets likely to be mutually contaminated. The goal in studying the generalized
+setting is to leverage the additional knowledge characterized by $H=(V,E)$ to significantly reduce
+the number of required tests. The paper considers both adaptive and non-adaptive group testing
+and makes the following contributions. First, for the non-adaptive setting, we show that finding
+an optimal solution for the generalized version of group testing is NP-hard. For this setting, we
+present a solution that requires $O(d\log{|E|})$ tests, where $d$ is the maximum size of a set $e
+\in E$. Our solutions generalize those given for the traditional setting and are shown to be of order-optimal
+size $O(\log{|E|})$ for hypergraphs with edges that have ``large'' symmetric differences. For
+the adaptive setting, when edges in $E$ are of size exactly $d$, we present a solution of size $O(\log{|E|}+d\log^2{d})$
+that comes close to the lower bound of $\Omega(\log{|E|} + d)$. 

@@ -1,0 +1,20 @@
+Maintenance planning plays a key role in power system operations under uncertainty by helping system
+operators ensure a reliable and secure power grid. This paper studies a short-term condition-based
+integrated maintenance planning with operations scheduling problem while considering the unexpected
+failure possibilities of generators as well as transmission lines. We formulate this problem as
+a two-stage stochastic mixed-integer program with failure scenarios sampled from the sensor-driven
+remaining lifetime distributions of the individual system elements whereas a joint chance-constraint
+consisting of Poisson Binomial random variables is introduced to account for failure risks. Because
+of its intractability, we develop a cutting-plane method to obtain an exact reformulation of the
+joint chance-constraint by proposing a separation subroutine and deriving stronger cuts as part
+of this procedure. To solve large-scale instances, we derive a second-order cone programming based
+safe approximation of this constraint. Furthermore, we propose a decomposition-based algorithm
+implemented in parallel fashion for solving the resulting stochastic program, by exploiting the
+features of the integer L-shaped method and the special structure of the maintenance and operations
+scheduling problem to derive stronger optimality cuts. We further present preprocessing steps
+over transmission line flow constraints to identify redundancies. To illustrate the computational
+performance and efficiency of our algorithm compared to more conventional maintenance approaches,
+we design a computational study focusing on a weekly plan with daily maintenance and hourly operational
+decisions involving detailed unit commitment subproblems. Our computational results on various
+IEEE instances demonstrate the computational efficiency of the proposed approach with reliable
+and cost-effective maintenance and operational schedules. 

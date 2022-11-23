@@ -1,0 +1,20 @@
+Detection models trained by one party (server) may face severe performance degradation when distributed
+to other users (clients). For example, in autonomous driving scenarios, different driving environments
+may bring obvious domain shifts, which lead to biases in model predictions. Federated learning
+that has emerged in recent years can enable multi-party collaborative training without leaking
+client data. In this paper, we focus on a special cross-domain scenario where the server contains
+large-scale data and multiple clients only contain a small amount of data; meanwhile, there exist
+differences in data distributions among the clients. In this case, traditional federated learning
+techniques cannot take into account the learning of both the global knowledge of all participants
+and the personalized knowledge of a specific client. To make up for this limitation, we propose a
+cross-domain federated object detection framework, named FedOD. In order to learn both the global
+knowledge and the personalized knowledge in different domains, the proposed framework first performs
+the federated training to obtain a public global aggregated model through multi-teacher distillation,
+and sends the aggregated model back to each client for finetuning its personalized local model.
+After very few rounds of communication, on each client we can perform weighted ensemble inference
+on the public global model and the personalized local model. With the ensemble, the generalization
+performance of the client-side model can outperform a single model with the same parameter scale.
+We establish a federated object detection dataset which has significant background differences
+and instance differences based on multiple public autonomous driving datasets, and then conduct
+extensive experiments on the dataset. The experimental results validate the effectiveness of
+the proposed method. 

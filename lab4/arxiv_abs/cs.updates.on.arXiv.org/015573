@@ -1,0 +1,20 @@
+In the modern era of computing, machine learning tools have demonstrated their potential in vital
+sectors, such as healthcare and finance, to derive proper inferences. The sensitive and confidential
+nature of the data in such sectors raises genuine concerns for data privacy. This motivated the area
+of Privacy-preserving Machine Learning (PPML), where privacy of data is guaranteed. In this thesis,
+we design an efficient platform, MPCLeague, for PPML in the Secure Outsourced Computation (SOC)
+setting using Secure Multi-party Computation (MPC) techniques. MPC, the holy-grail problem of
+secure distributed computing, enables a set of n mutually distrusting parties to perform joint
+computation on their private inputs in a way that no coalition of t parties can learn more information
+than the output (privacy) or affect the true output of the computation (correctness). While MPC,
+in general, has been a subject of extensive research, the area of MPC with a small number of parties
+has drawn popularity of late mainly due to its application to real-time scenarios, efficiency and
+simplicity. This thesis focuses on designing efficient MPC frameworks for 2, 3 and 4 parties, with
+at most one corruption and supports ring structures. At the heart of this thesis are four frameworks
+- ASTRA, SWIFT, Tetrad, ABY2.0 - catered to different settings. The practicality of our framework
+is argued through improvements in the benchmarking of widely used ML algorithms -- Linear Regression,
+Logistic Regression, Neural Networks, and Support Vector Machines. We propose two variants for
+each of our frameworks, with one variant aiming to minimise the execution time while the other focuses
+on the monetary cost. The concrete efficiency gains of our frameworks coupled with the stronger
+security guarantee of robustness make our platform an ideal choice for a real-time deployment of
+PPML techniques. 

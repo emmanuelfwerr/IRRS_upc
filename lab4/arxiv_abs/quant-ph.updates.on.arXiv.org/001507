@@ -1,0 +1,20 @@
+Quantum annealing (QA) has gained considerable attention because it can be applied to combinatorial
+optimization problems, which have numerous applications in logistics, scheduling, and finance.
+In recent years, research on solving practical combinatorial optimization problems using them
+has accelerated. However, researchers struggle to find practical combinatorial optimization
+problems, for which quantum annealers outperform other mathematical optimization solvers. Moreover,
+there are only a few studies that compare the performance of quantum annealers with one of the most
+sophisticated mathematical optimization solvers, such as Gurobi and CPLEX. In our study, we determine
+that QA demonstrates better performance than the solvers in the break minimization problem in a
+mirrored double round-robin tournament (MDRRT). We also explain the desirable performance of
+QA for the sparse interaction between variables and a problem without constraints. In this process,
+we demonstrate that the break minimization problem in an MDRRT can be expressed as a 4-regular graph.
+Through computational experiments, we solve this problem using our QA approach and two-integer
+programming approaches, which were performed using the latest quantum annealer D-Wave Advantage,
+and the sophisticated mathematical optimization solver, Gurobi, respectively. Further, we compare
+the quality of the solutions and the computational time. QA was able to determine the exact solution
+in 0.05 seconds for problems with 20 teams, which is a practical size. In the case of 36 teams, it took
+84.8 s for the integer programming method to reach the objective function value, which was obtained
+by the quantum annealer in 0.05 s. These results not only present the break minimization problem
+in an MDRRT as an example of applying QA to practical optimization problems, but also contribute
+to find problems that can be effectively solved by QA. 

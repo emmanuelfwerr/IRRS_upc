@@ -1,0 +1,20 @@
+The dynamics in the photosphere is governed by the multi-scale turbulent convection termed as granulation
+and supergranulation. It is important to derive 3-dimensional velocity vectors to understand
+the nature of the turbulent convection. However, it is difficult to obtain the velocity component
+perpendicular to the line-of-sight, which corresponds to the horizontal velocity in disk center
+observations. We developed a convolutional neural network model with a multi-scale deep learning
+architecture. The method consists of multiple convolutional kernels with various sizes of the
+receptive fields, and it performs convolution for spatial and temporal axes. The network is trained
+with data from three different numerical simulations of turbulent convection, and we introduced
+a coherence spectrum to assess the horizontal velocity fields that were derived at each spatial
+scale. The multi-scale deep learning method successfully predicts the horizontal velocities
+for each convection simulation in terms of the global-correlation-coefficient, which is often
+used for evaluating the prediction accuracy of the methods. The coherence spectrum reveals the
+strong dependence of the correlation coefficients on the spatial scales. Although coherence spectra
+are higher than 0.9 for large-scale structures, they drastically decrease to less than 0.3 for small-scale
+structures wherein the global-correlation-coefficient indicates a high value of approximately
+0.95. We determined that this decrease in the coherence spectrum occurs around the energy injection
+scales. The accuracy for the small-scale structures is not guaranteed solely by the global-correlation-coefficient.
+To improve the accuracy in small-scales, it is important to improve the loss function for enhancing
+the small-scale structures and to utilize other physical quantities related to the non-linear
+cascade of convective eddies as input data. 

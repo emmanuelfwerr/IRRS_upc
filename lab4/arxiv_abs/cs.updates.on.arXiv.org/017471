@@ -1,0 +1,19 @@
+The increasing amount of data and the growing complexity of problems has resulted in an ever-growing
+reliance on cloud computing. However, many applications, most notably in healthcare, finance
+or defense, demand security and privacy which today's solutions cannot fully address. Fully homomorphic
+encryption (FHE) elevates the bar of today's solutions by adding confidentiality of data during
+processing. It allows computation on fully encrypted data without the need for decryption, thus
+fully preserving privacy. To enable processing encrypted data at usable levels of classic security,
+e.g., 128-bit, the encryption procedure introduces noticeable data size expansion - the ciphertext
+is much bigger than the native aggregate of native data types. In this paper, we present MemFHE which
+is the first accelerator of both client and server for the latest Ring-GSW (Gentry, Sahai, and Waters)
+based homomorphic encryption schemes using Processing In Memory (PIM). PIM alleviates the data
+movement issues with large FHE encrypted data, while providing in-situ execution and extensive
+parallelism needed for FHE's polynomial operations. While the client-PIM can homomorphically
+encrypt and decrypt data, the server-PIM can process homomorphically encrypted data without decryption.
+MemFHE's server-PIM is pipelined and is designed to provide flexible bootstrapping, allowing
+two encryption techniques and various FHE security-levels based on the application requirements.
+We evaluate MemFHE for various security-levels and compare it with state-of-the-art CPU implementations
+for Ring-GSW based FHE. MemFHE is up to 20kx (265x) faster than CPU (GPU) for FHE arithmetic operations
+and provides on average 2007x higher throughput than the state-of-the-art while implementing
+neural networks with FHE. 

@@ -1,0 +1,20 @@
+Actual causality and a closely related concept of responsibility attribution are central to accountable
+decision making. Actual causality focuses on specific outcomes and aims to identify decisions
+(actions) that were critical in realizing an outcome of interest. Responsibility attribution
+is complementary and aims to identify the extent to which decision makers (agents) are responsible
+for this outcome. In this paper, we study these concepts under a widely used framework for multi-agent
+sequential decision making under uncertainty: decentralized partially observable Markov decision
+processes (Dec-POMDPs). Following recent works in RL that show correspondence between POMDPs
+and Structural Causal Models (SCMs), we first establish a connection between Dec-POMDPs and SCMs.
+This connection enables us to utilize a language for describing actual causality from prior work
+and study existing definitions of actual causality in Dec-POMDPs. Given that some of the well-known
+definitions may lead to counter-intuitive actual causes, we introduce a novel definition that
+more explicitly accounts for causal dependencies between agents' actions. We then turn to responsibility
+attribution based on actual causality, where we argue that in ascribing responsibility to an agent
+it is important to consider both the number of actual causes in which the agent participates, as well
+as its ability to manipulate its own degree of responsibility. Motivated by these arguments we introduce
+a family of responsibility attribution methods that extends prior work, while accounting for the
+aforementioned considerations. Finally, through a simulation-based experiment, we compare
+different definitions of actual causality and responsibility attribution methods. The empirical
+results demonstrate the qualitative difference between the considered definitions of actual
+causality and their impact on attributed responsibility. 

@@ -1,0 +1,19 @@
+An architecture consisting of a serial coupling of the one-dimensional convolutional neural network
+(1D-CNN) and the long short-term memory (LSTM) network, which is referred as CNNsLSTM, was proposed
+for hourly-scale rainfall-runoff modeling in this study. In CNNsLTSM, the CNN component receives
+the hourly meteorological time series data for a long duration, and then the LSTM component receives
+the extracted features from 1D-CNN and the hourly meteorological time series data for a short-duration.
+As a case study, CNNsLSTM was implemented for hourly rainfall-runoff modeling at the Ishikari River
+watershed, Japan. The meteorological dataset, consists of precipitation, air temperature, evapotranspiration,
+and long- and short-wave radiation, were utilized as input, and the river flow was used as the target
+data. To evaluate the performance of proposed CNNsLSTM, results of CNNsLSTM were compared with
+those of 1D-CNN, LSTM only with hourly inputs (LSTMwHour), parallel architecture of 1D-CNN and
+LSTM (CNNpLSTM), and the LSTM architecture which uses both daily and hourly input data (LSTMwDpH).
+CNNsLSTM showed clear improvements on the estimation accuracy compared to the three conventional
+architectures (1D-CNN, LSTMwHour, and CNNpLSTM), and recently proposed LSTMwDpH. In comparison
+to observed flows, the median of the NSE values for the test period are 0.455-0.469 for 1D-CNN (based
+on NCHF=8, 16, and 32, the numbers of the channels of the feature map of the first layer of CNN), 0.639-0.656
+for CNNpLSTM (based on NCHF=8, 16, and 32), 0.745 for LSTMwHour, 0.831 for LSTMwDpH, and 0.865-0.873
+for CNNsLSTM (based on NCHF=8, 16, and 32). Furthermore, the proposed CNNsLSTM reduces the median
+RMSE of 1D-CNN by 50.2%-51.4%, CNNpLSTM by 37.4%-40.8%, LSTMwHour by 27.3%-29.5%, and LSTMwDpH
+by 10.6%-13.4%. 

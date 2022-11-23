@@ -1,0 +1,20 @@
+When vulnerabilities are discovered after software is deployed, source code is often unavailable,
+and binary patching may be required to mitigate the vulnerability. However, manually patching
+binaries is time-consuming, requires significant expertise, and does not scale to the rate at which
+new vulnerabilities are discovered. To address these problems, we introduce Partially Recompilable
+Decompilation (PRD), which extracts and decompiles suspect binary functions to source where they
+can be patched or analyzed, applies transformations to enable recompilation of these functions
+(partial recompilation), then employs binary rewriting techniques to create a patched binary.
+Although decompilation and recompilation do not universally apply, PRD's fault localization
+identifies a function subset that is small enough to admit decompilation and large enough to address
+many vulnerabilities. Our approach succeeds because decompilation is limited to a few functions
+and lifting facilitates analysis and repair. To demonstrate the scalability of PRD, we evaluate
+it in the context of a fully automated end-to-end scenario that relies on source-level Automated
+Program Repair (APR) methods to mitigate the vulnerabilities. We also evaluate PRD in the context
+of human-generated source-level repairs. In the end-to-end experiment, PRD produced test-equivalent
+binaries in 84% of cases; and the patched binaries incur no significant run-time overhead. When
+combined with APR tools and evaluated on the DARPA Cyber Grand Challenge (CGC) benchmarks, PRD achieved
+similar success rates as the winning CGC entries, while presenting repairs as source-level patches
+which can be reviewed by humans; In some cases, PRD finds higher-quality mitigations than those
+produced by top CGC teams. We also demonstrate that PRD successfully extends to real-world binaries
+and binaries that are produced from languages other than C. 

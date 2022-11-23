@@ -1,0 +1,20 @@
+For unweighted graphs, finding isometric embeddings is closely related to decompositions of $G$
+into Cartesian products of smaller graphs. When $G$ is isomorphic to a Cartesian graph product,
+we call the factors of this product a factorization of $G$. When $G$ is isomorphic to an isometric
+subgraph of a Cartesian graph product, we call those factors a pseudofactorization of $G$. Prior
+work has shown that an unweighted graph's pseudofactorization can be used to generate a canonical
+isometric embedding into a product of the smallest possible pseudofactors. However, for arbitrary
+weighted graphs, which represent a richer variety of metric spaces, methods for finding isometric
+embeddings or determining their existence remain elusive, and indeed pseudofactorization and
+factorization have not previously been extended to this context. In this work, we address the problem
+of finding the factorization and pseudofactorization of a weighted graph $G$, where $G$ satisfies
+the property that every edge constitutes a shortest path between its endpoints. We term such graphs
+minimal graphs, noting that every graph can be made minimal by removing edges not affecting its path
+metric. We generalize pseudofactorization and factorization to minimal graphs and develop new
+proof techniques that extend the previously proposed algorithms due to Graham and Winkler [Graham
+and Winkler, '85] and Feder [Feder, '92] for pseudofactorization and factorization of unweighted
+graphs. We show that any $m$-edge, $n$-vertex graph with positive integer edge weights can be factored
+in $O(m^2)$ time, plus the time to find all pairs shortest paths (APSP) distances in a weighted graph,
+resulting in an overall running time of $O(m^2+n^2\log\log n)$ time. We also show that a pseudofactorization
+for such a graph can be computed in $O(mn)$ time, plus the time to solve APSP, resulting in an $O(mn+n^2\log\log
+n)$ running time. 

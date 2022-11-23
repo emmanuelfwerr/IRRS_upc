@@ -1,0 +1,19 @@
+With the advancement in computing and robotics, it is necessary to develop fluent and intuitive
+methods for interacting with digital systems, AR/VR interfaces, and physical robotic systems.
+Hand movement recognition is widely used to enable this interaction. Hand configuration classification
+and Metacarpophalangeal (MCP) joint angle detection are important for a comprehensive reconstruction
+of the hand motion. Surface electromyography and other technologies have been used for the detection
+of hand motions. Ultrasound images of the forearm offer a way to visualize the internal physiology
+of the hand from a musculoskeletal perspective. Recent work has shown that these images can be classified
+using machine learning to predict various hand configurations. In this paper, we propose a Convolutional
+Neural Network (CNN) based deep learning pipeline for predicting the MCP joint angles. We supplement
+our results by using a Support Vector Classifier (SVC) to classify the ultrasound information into
+several predefined hand configurations based on activities of daily living (ADL). Ultrasound
+data from the forearm was obtained from 6 subjects who were instructed to move their hands according
+to predefined hand configurations relevant to ADLs. Motion capture data was acquired as the ground
+truth for hand movements at different speeds (0.5 Hz, 1 Hz, & 2 Hz) for the index, middle, ring, and
+pinky fingers. We were able to get promising SVC classification results on a subset of our collected
+data set. We demonstrated a correspondence between the predicted MCP joint angles and the actual
+MCP joint angles for the fingers, with an average root mean square error of 7.35 degrees. We implemented
+a low latency (6.25 - 9.1 Hz) pipeline for the prediction of both MCP joint angles and hand configuration
+estimation aimed at real-time control of digital devices, AR/VR interfaces, and physical robots.

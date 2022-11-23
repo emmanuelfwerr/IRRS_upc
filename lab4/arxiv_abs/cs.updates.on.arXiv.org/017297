@@ -1,0 +1,19 @@
+Recommender systems aim to recommend new items to users by learning user and item representations.
+In practice, these representations are highly entangled as they consist of information about multiple
+factors, including user's interests, item attributes along with confounding factors such as user
+conformity, and item popularity. Considering these entangled representations for inferring
+user preference may lead to biased recommendations (e.g., when the recommender model recommends
+popular items even if they do not align with the user's interests). Recent research proposes to debias
+by modeling a recommender system from a causal perspective. The exposure and the ratings are analogous
+to the treatment and the outcome in the causal inference framework, respectively. The critical
+challenge in this setting is accounting for the hidden confounders. These confounders are unobserved,
+making it hard to measure them. On the other hand, since these confounders affect both the exposure
+and the ratings, it is essential to account for them in generating debiased recommendations. To
+better approximate hidden confounders, we propose to leverage network information (i.e., user-social
+and user-item networks), which are shown to influence how users discover and interact with an item.
+Aside from the user conformity, aspects of confounding such as item popularity present in the network
+information is also captured in our method with the aid of \textit{causal disentanglement} which
+unravels the learned representations into independent factors that are responsible for (a) modeling
+the exposure of an item to the user, (b) predicting the ratings, and (c) controlling the hidden confounders.
+Experiments on real-world datasets validate the effectiveness of the proposed model for debiasing
+recommender systems. 

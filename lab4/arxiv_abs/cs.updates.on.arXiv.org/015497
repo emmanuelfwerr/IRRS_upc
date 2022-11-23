@@ -1,0 +1,18 @@
+We consider the problem of space-efficiently estimating the number of simplices in a hypergraph
+stream. This is the most natural hypergraph generalization of the highly-studied problem of estimating
+the number of triangles in a graph stream. Our input is a $k$-uniform hypergraph $H$ with $n$ vertices
+and $m$ hyperedges. A $k$-simplex in $H$ is a subhypergraph on $k+1$ vertices $X$ such that all $k+1$
+possible hyperedges among $X$ exist in $H$. The goal is to process a stream of hyperedges of $H$ and
+compute a good estimate of $T_k(H)$, the number of $k$-simplices in $H$. We design a suite of algorithms
+for this problem. Under a promise that $T_k(H) \ge T$, our algorithms use at most four passes and together
+imply a space bound of $O( \epsilon^{-2} \log\delta^{-1} \text{polylog} n \cdot \min\{ m^{1+1/k}/T,
+m/T^{2/(k+1)} \} )$ for each fixed $k \ge 3$, in order to guarantee an estimate within $(1\pm\epsilon)T_k(H)$
+with probability at least $1-\delta$. We also give a simpler $1$-pass algorithm that achieves $O(\epsilon^{-2}
+\log\delta^{-1} \log n\cdot (m/T) ( \Delta_E + \Delta_V^{1-1/k} ))$ space, where $\Delta_E$ (respectively,
+$\Delta_V$) denotes the maximum number of $k$-simplices that share a hyperedge (respectively,
+a vertex). We complement these algorithmic results with space lower bounds of the form $\Omega(\epsilon^{-2})$,
+$\Omega(m^{1+1/k}/T)$, $\Omega(m/T^{1-1/k})$ and $\Omega(m\Delta_V^{1/k}/T)$ for multi-pass
+algorithms and $\Omega(m\Delta_E/T)$ for $1$-pass algorithms, which show that some of the dependencies
+on parameters in our upper bounds are nearly tight. Our techniques extend and generalize several
+different ideas previously developed for triangle counting in graphs, using appropriate innovations
+to handle the more complicated combinatorics of hypergraphs. 

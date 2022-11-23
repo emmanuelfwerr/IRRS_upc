@@ -1,0 +1,18 @@
+Recently, several approaches have explored the detection and classification of objects in videos
+to perform Zero-Shot Action Recognition with remarkable results. In these methods, class-object
+relationships are used to associate visual patterns with the semantic side information because
+these relationships also tend to appear in texts. Therefore, word vector methods would reflect
+them in their latent representations. Inspired by these methods and by video captioning's ability
+to describe events not only with a set of objects but with contextual information, we propose a method
+in which video captioning models, called observers, provide different and complementary descriptive
+sentences. We demonstrate that representing videos with descriptive sentences instead of deep
+features, in ZSAR, is viable and naturally alleviates the domain adaptation problem, as we reached
+state-of-the-art (SOTA) performance on the UCF101 dataset and competitive performance on HMDB51
+without their training sets. We also demonstrate that word vectors are unsuitable for building
+the semantic embedding space of our descriptions. Thus, we propose to represent the classes with
+sentences extracted from documents acquired with search engines on the Internet, without any human
+evaluation on the quality of descriptions. Lastly, we build a shared semantic space employing BERT-based
+embedders pre-trained in the paraphrasing task on multiple text datasets. We show that this pre-training
+is essential for bridging the semantic gap. The projection onto this space is straightforward for
+both types of information, visual and semantic, because they are sentences, enabling the classification
+with nearest neighbour rule in this shared space. Our code is available at https://github.com/valterlej/zsarcap.

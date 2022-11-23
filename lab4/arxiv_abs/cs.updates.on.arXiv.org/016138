@@ -1,0 +1,19 @@
+From designing architected materials to connecting mechanical behavior across scales, computational
+modeling is a critical tool in solid mechanics. Recently, there has been a growing interest in using
+machine learning to reduce the computational cost of physics-based simulations. Notably, while
+machine learning approaches that rely on Graph Neural Networks (GNNs) have shown success in learning
+mechanics, the performance of GNNs has yet to be investigated on a myriad of solid mechanics problems.
+In this work, we examine the ability of GNNs to predict a fundamental aspect of mechanically driven
+emergent behavior: the connection between a column's geometric structure and the direction that
+it buckles. To accomplish this, we introduce the Asymmetric Buckling Columns (ABC) dataset, a dataset
+comprised of three sub-datasets of asymmetric and heterogeneous column geometries where the goal
+is to classify the direction of symmetry breaking (left or right) under compression after the onset
+of instability. Because of complex local geometry, the "image-like" data representations required
+for implementing standard convolutional neural network based metamodels are not ideal, thus motivating
+the use of GNNs. In addition to investigating GNN model architecture, we study the effect of different
+input data representation approaches, data augmentation, and combining multiple models as an
+ensemble. While we were able to obtain good results, we also showed that predicting solid mechanics
+based emergent behavior is non-trivial. Because both our model implementation and dataset are
+distributed under open-source licenses, we hope that future researchers can build on our work to
+create enhanced mechanics-specific machine learning pipelines for capturing the behavior of
+complex geometric structures. 

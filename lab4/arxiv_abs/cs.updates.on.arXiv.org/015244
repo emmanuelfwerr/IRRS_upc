@@ -1,0 +1,19 @@
+In Test-time Adaptation (TTA), given a model trained on some source data, the goal is to adapt it to
+make better predictions for test instances from a different distribution. Crucially, TTA assumes
+no access to the source data or even any additional labeled/unlabeled samples from the target distribution
+to finetune the source model. In this work, we consider TTA in a more pragmatic setting which we refer
+to as SITA (Single Image Test-time Adaptation). Here, when making each prediction, the model has
+access only to the given \emph{single} test instance, rather than a \emph{batch} of instances,
+as has typically been considered in the literature. This is motivated by the realistic scenarios
+where inference is needed in an on-demand fashion that may not be delayed to "batch-ify" incoming
+requests or the inference is happening on an edge device (like mobile phone) where there is no scope
+for batching. The entire adaptation process in SITA should be extremely fast as it happens at inference
+time. To address this, we propose a novel approach AugBN for the SITA setting that requires only forward
+propagation. The approach can adapt any off-the-shelf trained model to individual test instances
+for both classification and segmentation tasks. AugBN estimates normalisation statistics of
+the unseen test distribution from the given test image using only one forward pass with label-preserving
+transformations. Since AugBN does not involve any back-propagation, it is significantly faster
+compared to other recent methods. To the best of our knowledge, this is the first work that addresses
+this hard adaptation problem using only a single test image. Despite being very simple, our framework
+is able to achieve significant performance gains compared to directly applying the source model
+on the target instances, as reflected in our extensive experiments and ablation studies. 

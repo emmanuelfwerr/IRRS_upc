@@ -1,0 +1,19 @@
+There is tremendous scope for improving the energy efficiency of embedded vision systems by incorporating
+programmable region-of-interest (ROI) readout in the image sensor design. In this work, we study
+how ROI programmability can be leveraged for tracking applications by anticipating where the ROI
+will be located in future frames and switching pixels off outside of this region. We refer to this
+process of ROI prediction and corresponding sensor configuration as adaptive subsampling. Our
+adaptive subsampling algorithms comprise an object detector and an ROI predictor (Kalman filter)
+which operate in conjunction to optimize the energy efficiency of the vision pipeline with the end
+task being object tracking. To further facilitate the implementation of our adaptive algorithms
+in real life, we select a candidate algorithm and map it onto an FPGA. Leveraging Xilinx Vitis AI tools,
+we designed and accelerated a YOLO object detector-based adaptive subsampling algorithm. In order
+to further improve the algorithm post-deployment, we evaluated several competing baselines on
+the OTB100 and LaSOT datasets. We found that coupling the ECO tracker with the Kalman filter has a
+competitive AUC score of 0.4568 and 0.3471 on the OTB100 and LaSOT datasets respectively. Further,
+the power efficiency of this algorithm is on par with, and in a couple of instances superior to, the
+other baselines. The ECO-based algorithm incurs a power consumption of approximately 4 W averaged
+across both datasets while the YOLO-based approach requires power consumption of approximately
+6 W (as per our power consumption model). In terms of accuracy-latency tradeoff, the ECO-based algorithm
+provides near-real-time performance (19.23 FPS) while managing to attain competitive tracking
+precision. 

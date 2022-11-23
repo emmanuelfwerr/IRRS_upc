@@ -1,0 +1,19 @@
+A variety of statistical and machine learning methods are used to model crash frequency on specific
+roadways with machine learning methods generally having a higher prediction accuracy. Recently,
+heterogeneous ensemble methods (HEM), including stacking, have emerged as more accurate and robust
+intelligent techniques and are often used to solve pattern recognition problems by providing more
+reliable and accurate predictions. In this study, we apply one of the key HEM methods, Stacking,
+to model crash frequency on five lane undivided segments (5T) of urban and suburban arterials. The
+prediction performance of Stacking is compared with parametric statistical models (Poisson and
+negative binomial) and three state of the art machine learning techniques (Decision tree, random
+forest, and gradient boosting), each of which is termed as the base learner. By employing an optimal
+weight scheme to combine individual base learners through stacking, the problem of biased predictions
+in individual base-learners due to differences in specifications and prediction accuracies is
+avoided. Data including crash, traffic, and roadway inventory were collected and integrated from
+2013 to 2017. The data are split into training, validation, and testing datasets. Estimation results
+of statistical models reveal that besides other factors, crashes increase with density (number
+per mile) of different types of driveways. Comparison of out-of-sample predictions of various
+models confirms the superiority of Stacking over the alternative methods considered. From a practical
+standpoint, stacking can enhance prediction accuracy (compared to using only one base learner
+with a particular specification). When applied systemically, stacking can help identify more
+appropriate countermeasures. 

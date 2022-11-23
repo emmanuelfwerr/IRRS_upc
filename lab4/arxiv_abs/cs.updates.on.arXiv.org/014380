@@ -1,0 +1,19 @@
+In order to prevent eavesdropping and tampering, the network security protocols use a handshake
+with an asymmetric cipher to establish a session-specific shared key with which further communication
+is encrypted using a symmetric cipher. The commonly used asymmetric algorithms include public
+key encryption, key exchange and identity-based encryption(IBE). However, the network security
+protocols based on classic identity-based encryption do not have perfect forward security. To
+solve the problem, we construct the first quantum IBE (QIBE) scheme based on the learning with errors
+problem, and prove that our scheme is fully secure under the random oracle. Moreover, we construct
+the quantum circuit of our QIBE scheme and give an estimate of the quantum resource of our circuit
+including the numbers of Hadamard gate, phase gate, T gate, CNOT gate and the total qubits used in
+the circuit, and conclude that the quantum resources required by our scheme increase linearly with
+the number of bits of the encrypted quantum plaintext. Our scheme exhibits the following advantages:
+(i) The classic key generation center (KGC) system still can be used for our QIBE scheme to generate
+and distribute the secret identity keys so that the cost can be reduced when the scheme is implemented.
+The reason why the classic KGC can be used is that the public and private keys are in the form of classic
+bits. (ii) The network security protocols using a handshake with our QIBE scheme can provide perfect
+forward security. In our scheme, the ciphertext is transmitted in the form of a quantum state that
+is unknown to the adversary and therefore cannot be copied and stored. Thus, in the network security
+protocols based on our QIBE construction, the adversary cannot decrypt the previous quantum ciphertext
+to threat the previous session keys even if the identity secret key is threatened. 

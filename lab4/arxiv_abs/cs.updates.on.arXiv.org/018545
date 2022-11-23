@@ -1,0 +1,20 @@
+Many real-world problems contain multiple objectives and agents, where a trade-off exists between
+objectives. Key to solving such problems is to exploit sparse dependency structures that exist
+between agents. For example, in wind farm control a trade-off exists between maximising power and
+minimising stress on the systems components. Dependencies between turbines arise due to the wake
+effect. We model such sparse dependencies between agents as a multi-objective coordination graph
+(MO-CoG). In multi-objective reinforcement learning a utility function is typically used to model
+a users preferences over objectives, which may be unknown a priori. In such settings a set of optimal
+policies must be computed. Which policies are optimal depends on which optimality criterion applies.
+If the utility function of a user is derived from multiple executions of a policy, the scalarised
+expected returns (SER) must be optimised. If the utility of a user is derived from a single execution
+of a policy, the expected scalarised returns (ESR) criterion must be optimised. For example, wind
+farms are subjected to constraints and regulations that must be adhered to at all times, therefore
+the ESR criterion must be optimised. For MO-CoGs, the state-of-the-art algorithms can only compute
+a set of optimal policies for the SER criterion, leaving the ESR criterion understudied. To compute
+a set of optimal polices under the ESR criterion, also known as the ESR set, distributions over the
+returns must be maintained. Therefore, to compute a set of optimal policies under the ESR criterion
+for MO-CoGs, we present a novel distributional multi-objective variable elimination (DMOVE)
+algorithm. We evaluate DMOVE in realistic wind farm simulations. Given the returns in real-world
+wind farm settings are continuous, we utilise a model known as real-NVP to learn the continuous return
+distributions to calculate the ESR set. 

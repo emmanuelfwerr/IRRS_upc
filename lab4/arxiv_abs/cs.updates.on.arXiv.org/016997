@@ -1,0 +1,20 @@
+Tactile sensing is a crucial perception mode for robots and human amputees in need of controlling
+a prosthetic device. Today robotic and prosthetic systems are still missing the important feature
+of accurate tactile sensing. This lack is mainly due to the fact that the existing tactile technologies
+have limited spatial and temporal resolution and are either expensive or not scalable. In this paper,
+we present the design and the implementation of a hardware-software embedded system called SmartHand.
+It is specifically designed to enable the acquisition and the real-time processing of high-resolution
+tactile information from a hand-shaped multi-sensor array for prosthetic and robotic applications.
+During data collection, our system can deliver a high throughput of 100 frames per second, which
+is 13.7x higher than previous related work. We collected a new tactile dataset while interacting
+with daily-life objects during five different sessions. We propose a compact yet accurate convolutional
+neural network that requires one order of magnitude less memory and 15.6x fewer computations compared
+to related work without degrading classification accuracy. The top-1 and top-3 cross-validation
+accuracies are respectively 98.86% and 99.83%. We further analyze the inter-session variability
+and obtain the best top-3 leave-one-out-validation accuracy of 77.84%. We deploy the trained model
+on a high-performance ARM Cortex-M7 microcontroller achieving an inference time of only 100 ms
+minimizing the response latency. The overall measured power consumption is 505 mW. Finally, we
+fabricate a new control sensor and perform additional experiments to provide analyses on sensor
+degradation and slip detection. This work is a step forward in giving robotic and prosthetic devices
+a sense of touch and demonstrates the practicality of a smart embedded system empowered by tiny machine
+learning. 

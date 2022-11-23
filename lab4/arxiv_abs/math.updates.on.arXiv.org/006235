@@ -1,0 +1,18 @@
+The CREAM GAP package computes automorphisms, congruences, endomorphisms and subalgebras of
+algebras with an arbitrary number of binary and unary operations; it also decides if between two
+such algebras there exists a monomorphism, an epimorphism, an isomorphism or if one is a divisor
+of the other. Thus it finds those objects for almost all algebras used in practice (groups, quasigroups
+in their various signatures, semigroups possibly with many unary operations, fields, semi-rings,
+quandles, logic algebras, etc). As a one-size-fits-all package, it only relies on universal algebra
+theorems, without taking advantage of specific theorems about, eg, groups or semigroups to reduce
+the search space. Canon and Holt produced very fast code to compute automorphisms of groups that
+outperform CREAM on orders larger than 128. Similarly, Mitchell et al. take advantage of deep theorems
+to compute automorphisms and congruences of completely 0-simple semigroups in a very efficient
+manner. However these domains (groups of order above 128 and completely 0-simple semigroups) are
+among the very few examples of GAP code faster than our general purpose package CREAM. For the overwhelming
+majority of other classes of algebras, either ours is the first code computing the above mentioned
+objects, or the existing algorithms are outperformed by CREAM, in some cases by several orders of
+magnitude. To get this performance, CREAM uses a mixture of universal algebra algorithms together
+with GAP coupled with artificial intelligence theorem proving tools (AITP) and very delicate C
+implementations. As an example of the latter, we re-implement Freese's very clever algorithm for
+computing congruences in universal algebras, in a way that outperforms all other known implementations.

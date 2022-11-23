@@ -1,0 +1,19 @@
+Deep learning based single image super resolution (SISR) algorithms has revolutionized the overall
+diagnosis framework by continually improving the architectural components and training strategies
+associated with convolutional neural networks (CNN) on low-resolution images. However, existing
+work lacks in two ways: i) the SR output produced exhibits poor texture details, and often produce
+blurred edges, ii) most of the models have been developed for a single modality, hence, require modification
+to adapt to a new one. This work addresses (i) by proposing generative adversarial network (GAN)
+with deep multi-attention modules to learn high-frequency information from low-frequency data.
+Existing approaches based on the GAN have yielded good SR results; however, the texture details
+of their SR output have been experimentally confirmed to be deficient for medical images particularly.
+The integration of wavelet transform (WT) and GANs in our proposed SR model addresses the aforementioned
+limitation concerning textons. While the WT divides the LR image into multiple frequency bands,
+the transferred GAN uses multi-attention and upsample blocks to predict high-frequency components.
+Additionally, we present a learning method for training domain-specific classifiers as perceptual
+loss functions. Using a combination of multi-attention GAN loss and a perceptual loss function
+results in an efficient and reliable performance. Applying the same model for medical images from
+diverse modalities is challenging, our work addresses (ii) by training and performing on several
+modalities via transfer learning. Using two medical datasets, we validate our proposed SR network
+against existing state-of-the-art approaches and achieve promising results in terms of SSIM and
+PSNR. 

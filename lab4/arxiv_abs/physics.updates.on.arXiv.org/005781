@@ -1,0 +1,19 @@
+Cardiac disease and clinical intervention may both lead to an increased risk for thrombosis events
+due to modified blood flow in the heart, and thereby a change in the mechanical stimuli of blood cells
+passing through the chambers of the heart. Specifically, the degree of platelet activation is influenced
+by the level and type of mechanical stresses in the blood flow. Here we analyze the blood flow in the
+left ventricle of the heart through a computational model constructed from patient-specific data.
+The blood flow in the ventricle is modeled by the Navier-Stokes equations, and the flow through the
+mitral valve by a parameterized model which represents the projected opening of the valve. A finite
+element method is used to solve the equations, from which a simulation of the velocity and pressure
+of the blood flow is constructed. A triple decomposition of the velocity gradient tensor is then
+used to distinguish between rigid body rotational flow, irrotational straining flow, and shear
+flow. The triple decomposition enables the separation of three fundamentally different flow structures,
+each generating a distinct type of mechanical stimulus on the blood cells in the flow. We compare
+the results to simulations where a mitral valve clip intervention is modelled, which leads to a significant
+modification of the ventricular flow. It was found that the shear in the simulation cases treated
+with clips increased more compared to the untreated case than the rotation and strain did. A decrease
+in valve opening area of 64 % in one of the cases led to a 90 % increase in rotation and strain, but a 150
+% increase in shear. The computational analysis suggests a process for patient-specific simulation
+of clinical interventions in the heart with a detailed analysis of the resulting blood flow, which
+could support clinical risk assessment with respect to platelet activation and thrombosis events.

@@ -1,0 +1,19 @@
+Deep learning models suffer from catastrophic forgetting of the classes in the older phases as they
+get trained on the classes introduced in the new phase in the class-incremental learning setting.
+In this work, we show that the effect of catastrophic forgetting on the model prediction varies with
+the change in orientation of the same image, which is a novel finding. Based on this, we propose a novel
+data-ensemble approach that combines the predictions for the different orientations of the image
+to help the model retain further information regarding the previously seen classes and thereby
+reduce the effect of forgetting on the model predictions. However, we cannot directly use the data-ensemble
+approach if the model is trained using traditional techniques. Therefore, we also propose a novel
+dual-incremental learning framework that involves jointly training the network with two incremental
+learning objectives, i.e., the class-incremental learning objective and our proposed data-incremental
+learning objective. In the dual-incremental learning framework, each image belongs to two classes,
+i.e., the image class (for class-incremental learning) and the orientation class (for data-incremental
+learning). In class-incremental learning, each new phase introduces a new set of classes, and the
+model cannot access the complete training data from the older phases. In our proposed data-incremental
+learning, the orientation classes remain the same across all the phases, and the data introduced
+by the new phase in class-incremental learning acts as new training data for these orientation classes.
+We empirically demonstrate that the dual-incremental learning framework is vital to the data-ensemble
+approach. We apply our proposed approach to state-of-the-art class-incremental learning methods
+and empirically show that our framework significantly improves the performance of these methods.

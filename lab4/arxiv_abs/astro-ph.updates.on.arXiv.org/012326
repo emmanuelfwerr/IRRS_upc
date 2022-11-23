@@ -1,0 +1,20 @@
+High-contrast imaging of exoplanets hinges on powerful post-processing methods to denoise the
+data and separate the signal of a companion from its host star, which is typically orders of magnitude
+brighter. Existing post-processing algorithms do not use all prior domain knowledge that is available
+about the problem. We propose a new method that builds on our understanding of the systematic noise
+and the causal structure of the data-generating process. Our algorithm is based on a modified version
+of half-sibling regression (HSR), a flexible denoising framework that combines ideas from the
+fields of machine learning and causality. We adapt the method to address the specific requirements
+of high-contrast exoplanet imaging data obtained in pupil tracking mode. The key idea is to estimate
+the systematic noise in a pixel by regressing the time series of this pixel onto a set of causally independent,
+signal-free predictor pixels. We use regularized linear models in this work; however, other (non-linear)
+models are also possible. In a second step, we demonstrate how the HSR framework allows us to incorporate
+observing conditions such as wind speed or air temperature as additional predictors. When we apply
+our method to four data sets from the VLT/NACO instrument, our algorithm provides a better false-positive
+fraction than PCA-based PSF subtraction, a popular baseline method in the field. Additionally,
+we find that the HSR-based method provides direct and accurate estimates for the contrast of the
+exoplanets without the need to insert artificial companions for calibration in the data sets. Finally,
+we present first evidence that using the observing conditions as additional predictors can improve
+the results. Our HSR-based method provides an alternative, flexible and promising approach to
+the challenge of modeling and subtracting the stellar PSF and systematic noise in exoplanet imaging
+data. 

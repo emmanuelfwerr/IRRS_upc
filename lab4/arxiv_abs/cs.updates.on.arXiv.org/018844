@@ -1,0 +1,20 @@
+In recent years, number of edge computing devices and artificial intelligence applications on
+them have advanced excessively. In edge computing, decision making processes and computations
+are moved from servers to edge devices. Hence, cheap and low power devices are required. FPGAs are
+very low power, inclined to do parallel operations and deeply suitable devices for running Convolutional
+Neural Networks (CNN) which are the fundamental unit of an artificial intelligence application.
+Face detection on surveillance systems is the most expected application on the security market.
+In this work, TinyYolov3 architecture is redesigned and deployed for face detection. It is a CNN
+based object detection method and developed for embedded systems. PYNQ-Z2 is selected as a target
+board which has low-end Xilinx Zynq 7020 System-on-Chip (SoC) on it. Redesigned TinyYolov3 model
+is defined in numerous bit width precisions with Brevitas library which brings fundamental CNN
+layers and activations in integer quantized form. Then, the model is trained in a quantized structure
+with WiderFace dataset. In order to decrease latency and power consumption, onchip memory of the
+FPGA is configured as a storage of whole network parameters and the last activation function is modified
+as rescaled HardTanh instead of Sigmoid. Also, high degree of parallelism is applied to logical
+resources of the FPGA. The model is converted to an HLS based application with using FINN framework
+and FINN-HLS library which includes the layer definitions in C++. Later, the model is synthesized
+and deployed. CPU of the SoC is employed with multithreading mechanism and responsible for preprocessing,
+postprocessing and TCP/IP streaming operations. Consequently, 2.4 Watt total board power consumption,
+18 Frames-Per-Second (FPS) throughput and 0.757 mAP accuracy rate on Easy category of the WiderFace
+are achieved with 4 bits precision model. 

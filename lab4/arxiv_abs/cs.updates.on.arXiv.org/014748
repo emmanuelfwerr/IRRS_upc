@@ -1,0 +1,19 @@
+Classifiers are often utilized in time-constrained settings where labels must be assigned to inputs
+quickly. To address these scenarios, budgeted multi-stage classifiers (MSC) process inputs through
+a sequence of partial feature acquisition and evaluation steps with early-exit options until a
+confident prediction can be made. This allows for fast evaluation that can prevent expensive, unnecessary
+feature acquisition in time-critical instances. However, performance of MSCs is highly sensitive
+to several design aspects -- making optimization of these systems an important but difficult problem.
+To approximate an initially intractable combinatorial problem, current approaches to MSC configuration
+rely on well-behaved surrogate loss functions accounting for two primary objectives (processing
+cost, error). These approaches have proven useful in many scenarios but are limited by analytic
+constraints (convexity, smoothness, etc.) and do not manage additional performance objectives.
+Notably, such methods do not explicitly account for an important aspect of real-time detection
+systems -- the ratio of "accepted" predictions satisfying some confidence criterion imposed by
+a risk-averse monitor. This paper proposes a problem-specific genetic algorithm, EMSCO, that
+incorporates a terminal reject option for indecisive predictions and treats MSC design as an evolutionary
+optimization problem with distinct objectives (accuracy, cost, coverage). The algorithm's design
+emphasizes Pareto efficiency while respecting a notion of aggregated performance via a unique
+scalarization. Experiments are conducted to demonstrate EMSCO's ability to find global optima
+in a variety of Theta(k^n) solution spaces, and multiple experiments show EMSCO is competitive
+with alternative budgeted approaches. 

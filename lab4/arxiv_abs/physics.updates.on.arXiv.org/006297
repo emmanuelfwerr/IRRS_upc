@@ -1,0 +1,19 @@
+The optimization of radiofrequency-wave (RF) systems for fusion experiments is often performed
+using ray-tracing codes, which rely on the geometrical-optics (GO) approximation. However, GO
+fails at caustics such as cutoffs and focal points, erroneously predicting the wave intensity to
+be infinite. This is a critical shortcoming of GO, since the caustic wave intensity is often the quantity
+of interest, e.g. RF heating. Full-wave modeling can be used instead, but the computational cost
+limits the speed at which such optimizations can be performed. We have developed a less expensive
+alternative called metaplectic geometrical optics (MGO). Instead of evolving waves in the usual
+$\textbf{x}$ (coordinate) or $\text{k}$ (spectral) representation, MGO uses a mixed $\textbf{X}
+\equiv \textsf{A}\textbf{x} + \textsf{B}\textbf{k}$ representation. By continuously adjusting
+the matrix coefficients $\textsf{A}$ and $\textsf{B}$ along the rays, one can ensure that GO remains
+valid in the $\textbf{X}$ coordinates without caustic singularities. The caustic-free result
+is then mapped back onto the original $\textbf{x}$ space using metaplectic transforms. Here, we
+overview the MGO theory and review algorithms that will aid the development of an MGO-based ray-tracing
+code. We show how using orthosymplectic transformations leads to considerable simplifications
+compared to previously published MGO formulas. We also prove explicitly that MGO exactly reproduces
+standard GO when evaluated far from caustics (an important property which until now has only been
+inferred from numerical simulations), and we relate MGO to other semiclassical caustic-removal
+schemes published in the literature. This discussion is then augmented by an explicit comparison
+of the computed spectrum for a wave bounded between two cutoffs. 

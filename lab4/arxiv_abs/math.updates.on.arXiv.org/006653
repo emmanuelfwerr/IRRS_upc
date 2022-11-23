@@ -1,0 +1,20 @@
+Bayesian inversion generates a posterior distribution of model parameters from an observation
+equation and prior information both weighted by hyperparameters. The prior is also introduced
+for the hyperparameters in fully Bayesian inversions and enables us to evaluate both the model parameters
+and hyperparameters probabilistically by the joint posterior. However, even in a linear inverse
+problem, it is unsolved how we should extract useful information on the model parameters from the
+joint posterior. This study presents a theoretical exploration into the appropriate dimensionality
+reduction of the joint posterior in the fully Bayesian inversion. We classify the ways of probability
+reduction into the following three categories focused on the marginalisation of the joint posterior:
+(1) using the joint posterior without marginalisation, (2) using the marginal posterior of the
+model parameters and (3) using the marginal posterior of the hyperparameters. First, we derive
+several analytical results that characterise these categories. One is a suite of semianalytic
+representations of the probability maximisation estimators for respective categories in the
+linear inverse problem. The mode estimators of categories (1) and (2) are found asymptotically
+identical for a large number of data and model parameters. We also prove the asymptotic distributions
+of categories (2) and (3) delta-functionally concentrate on their probability peaks, which predicts
+two distinct optimal estimates of the model parameters. Second, we conduct a synthetic test and
+find an appropriate reduction is realised by category (3), typified by Akaike's Bayesian information
+criterion (ABIC). The other reduction categories are shown inappropriate for the case of many model
+parameters, where the probability concentration of the marginal posterior of the model parameters
+is found no longer to mean the central limit theorem... 

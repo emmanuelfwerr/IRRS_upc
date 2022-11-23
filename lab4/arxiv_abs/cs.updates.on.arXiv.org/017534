@@ -1,0 +1,19 @@
+The question to enumerate all inclusion-minimal connected dominating sets in a graph of order $n$
+in time significantly less than $2^n$ is an open question that was asked in many places. We answer
+this question affirmatively, by providing an enumeration algorithm that runs in time $\mathcal{O}(1.9896^n)$,
+using polynomial space only. The key to this result is the consideration of this enumeration problem
+on 2-degenerate graphs, which is proven to be possible in time $\mathcal{O}(1.9767^n)$. We also
+show new lower bound results by constructing a family of graphs of order $n$ with $\Omega(1.4890^n)$
+minimal connected dominating sets, while previous examples achieved $\Omega(1.4422^n)$. Our
+construction results in lower bounds for a few special graph classes. We also address essential
+questions concerning output-sensitive enumeration. Namely, we give reasons why our algorithm
+cannot be turned into an enumeration algorithm that guarantees polynomial delay without much efforts.
+More precisely, we prove that it is NP-complete to decide, given a graph $G$ and a vertex set $U$, if
+there exists a minimal connected dominating set $D$ with $U\subseteq D$, even if $G$ is known to be
+2-degenerate. Our reduction also shows that even any subexponential delay is not easy to achieve
+for enumerating minimal connected dominating sets. Another reduction shows that no FPT-algorithms
+can be expected for this extension problem concerning minimal connected dominating sets, parameterized
+by $|U|$. We also relate our enumeration problem to the famous open Hitting Set Transversal problem,
+which can be phrased in our context as the question to enumerate all minimal dominating sets of a graph
+with polynomial delay by showing that a polynomial-delay enumeration algorithm for minimal connected
+dominating sets implies an affirmative algorithmic solution to the Hitting Set Transversal problem.

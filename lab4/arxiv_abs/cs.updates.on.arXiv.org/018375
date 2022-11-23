@@ -1,0 +1,18 @@
+Although depth extraction with passive sensors has seen remarkable improvement with deep learning,
+these approaches may fail to obtain correct depth if they are exposed to environments not observed
+during training. Online adaptation, where the neural network trains while deployed, with self-supervised
+learning provides a convenient solution as the network can learn from the scene where it is deployed
+without external supervision. However, online adaptation causes a neural network to forget the
+past. Thus, past training is wasted and the network is not able to provide good results if it observes
+past scenes. This work deals with practical online-adaptation where the input is online and temporally-correlated,
+and training is completely self-supervised. Regularization and replay-based methods without
+task boundaries are proposed to avoid catastrophic forgetting while adapting to online data. Effort
+has been made to make the proposed approach suitable for practical use. We apply our method to both
+structure-from-motion and stereo depth estimation. We evaluate our method on diverse public datasets
+that include outdoor, indoor and synthetic scenes. Qualitative and quantitative results with
+both structure-from-motion and stereo show superior forgetting as well as adaptation performance
+compared to recent methods. Furthermore, the proposed method incurs negligible overhead compared
+to fine-tuning for online adaptation, proving to be an adequate choice in terms of plasticity, stability
+and applicability. The proposed approach is more inline with the artificial general intelligence
+paradigm as the neural network learns continually with no supervision. Source code is available
+at https://github.com/umarKarim/cou_sfm and https://github.com/umarKarim/cou_stereo.

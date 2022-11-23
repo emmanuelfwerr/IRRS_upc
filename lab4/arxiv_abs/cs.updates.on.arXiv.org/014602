@@ -1,0 +1,19 @@
+Nowadays, using vibration data in conjunction with pattern recognition methods is one of the most
+common fault detection strategies for structures. However, their performances depend on the features
+extracted from vibration data, the features selected to train the classifier, and the classifier
+used for pattern recognition. Deep learning facilitates the fault detection procedure by automating
+the feature extraction and selection, and classification procedure. Though, deep learning approaches
+have challenges in designing its structure and tuning its hyperparameters, which may result in
+a low generalization capability. Therefore, this study proposes an ensemble deep learning framework
+based on a convolutional neural network (CNN) and Dempster-Shafer theory (DST), called CNN-DST.
+In this framework, several CNNs with the proposed structure are first trained, and then, the outputs
+of the CNNs selected by the proposed technique are combined by using an improved DST-based method.
+To validate the proposed CNN-DST framework, it is applied to an experimental dataset created by
+the broadband vibrational responses of polycrystalline Nickel alloy first-stage turbine blades
+with different types and severities of damage. Through statistical analysis, it is shown that the
+proposed CNN-DST framework classifies the turbine blades with an average prediction accuracy
+of 97.19%. The proposed CNN-DST framework is benchmarked with other state-of-the-art classification
+methods, demonstrating its high performance. The robustness of the proposed CNN-DST framework
+with respect to measurement noise is investigated, showing its high noise-resistance. Further,
+bandwidth analysis reveals that most of the required information for detecting faulty samples
+is available in a small frequency range. 

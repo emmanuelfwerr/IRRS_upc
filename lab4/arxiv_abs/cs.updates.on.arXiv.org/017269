@@ -1,0 +1,19 @@
+Most NoSQL systems are schema-on-read: data can be stored without first having to declare a Schema
+that imposes a structure. This schemaless feature offers flexibility to evolve data-intensive
+applications when data frequently change. However, freeing from declaring schemas does not mean
+their absence, but rather that they are implicit in data and code. Therefore, diagramming tools
+similar to those available for relational systems are also needed to help developers and administrators
+understanding NoSQL schemas. Visualizing diagrams is not practical if schemas contain hundreds
+of database entities, and exploration or query facilities are then needed. In schemaless NoSQL
+stores, data of the same entity can be stored with different structure which can increase the difficulty
+of having readable diagrams. NoSQL schema management tools should therefore have three main components:
+schema extraction, schema visualization, and schema query. Since that there exist four main NoSQL
+data models, it is convenient that such tools can be built on a generic data model that provide platform-independence
+to query and visualize schemas. With the aim of favoring the creation of generic database tools,
+the authors of this paper defined the U-Schema unified data model that integrates the four main NoSQL
+data models and the relational model. This paper is focused on querying NoSQL and relational schemas
+which are represented as U-Schema models. We present the SkiQL language designed on U-Schema to
+achieve a platform-independent schema query service. SkiQL provides two constructs: schema-query
+and relationship-query. The former allows to obtain information of entity or relationship types,
+and the latter that of the aggregations or references (relations among types). We will show how SkiQL
+was evaluated by calculating well-known metrics for languages and using a survey. 

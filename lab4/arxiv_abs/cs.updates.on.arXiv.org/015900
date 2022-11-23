@@ -1,0 +1,20 @@
+The latest video coding standard, Versatile Video Coding (VVC), achieves almost twice coding efficiency
+compared to its predecessor, the High Efficiency Video Coding (HEVC). However, achieving this
+efficiency (for intra coding) requires 31x computational complexity compared to HEVC, making
+it challenging for low power and real-time applications. This paper, proposes a novel machine learning
+approach that jointly and separately employs two modalities of features, to simplify the intra
+coding decision. First a set of features are extracted that use the existing DCT core of VVC, to assess
+the texture characteristics, and forms the first modality of data. This produces high quality features
+with almost no overhead. The distribution of intra modes at the neighboring blocks is also used to
+form the second modality of data, which provides statistical information about the frame. Second,
+a two-step feature reduction method is designed that reduces the size of feature set, such that a
+lightweight model with a limited number of parameters can be used to learn the intra mode decision
+task. Third, three separate training strategies are proposed (1) an offline training strategy
+using the first (single) modality of data, (2) an online training strategy that uses the second (single)
+modality, and (3) a mixed online-offline strategy that uses bimodal learning. Finally, a low-complexity
+encoding algorithms is proposed based on the proposed learning strategies. Extensive experimental
+results show that the proposed methods can reduce up to 24% of encoding time, with a negligible loss
+of coding efficiency. Moreover, it is demonstrated how a bimodal learning strategy can boost the
+performance of learning. Lastly, the proposed method has a very low computational overhead (0.2%),
+and uses existing components of a VVC encoder, which makes it much more practical compared to competing
+solutions. 

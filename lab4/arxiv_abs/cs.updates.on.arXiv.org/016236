@@ -1,0 +1,20 @@
+In presenting an irrigation detection methodology that leverages multiscale satellite imagery
+of vegetation abundance, this paper introduces a process to supplement limited ground-collected
+labels and ensure classifier applicability in an area of interest. Spatiotemporal analysis of
+MODIS 250m Enhanced Vegetation Index (EVI) timeseries characterizes native vegetation phenologies
+at regional scale to provide the basis for a continuous phenology map that guides supplementary
+label collection over irrigated and non-irrigated agriculture. Subsequently, validated dry
+season greening and senescence cycles observed in 10m Sentinel-2 imagery are used to train a suite
+of classifiers for automated detection of potential smallholder irrigation. Strategies to improve
+model robustness are demonstrated, including a method of data augmentation that randomly shifts
+training samples; and an assessment of classifier types that produce the best performance in withheld
+target regions. The methodology is applied to detect smallholder irrigation in two states in the
+Ethiopian highlands, Tigray and Amhara. Results show that a transformer-based neural network
+architecture allows for the most robust prediction performance in withheld regions, followed
+closely by a CatBoost random forest model. Over withheld ground-collection survey labels, the
+transformer-based model achieves 96.7% accuracy over non-irrigated samples and 95.9% accuracy
+over irrigated samples. Over a larger set of samples independently collected via the introduced
+method of label supplementation, non-irrigated and irrigated labels are predicted with 98.3%
+and 95.5% accuracy, respectively. The detection model is then deployed over Tigray and Amhara,
+revealing crop rotation patterns and year-over-year irrigated area change. Predictions suggest
+that irrigated area in these two states has decreased by approximately 40% from 2020 to 2021. 

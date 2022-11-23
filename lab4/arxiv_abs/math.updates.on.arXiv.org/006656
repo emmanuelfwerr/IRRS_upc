@@ -1,0 +1,19 @@
+We address the thesis defence scheduling problem, a critical academic scheduling management process,
+which has been overshadowed in the literature by its counterparts, course timetabling and exam
+scheduling. Specifically, the single defence assignment type of thesis defence scheduling problems,
+where each committee is assigned to a single defence, scheduled for a specific day, hour and room.
+We formulate a multi-objective mixed-integer linear programming model, which aims to be a general
+representation of the problem mentioned above, and that can, therefore, be applied to a broader
+set of cases than other models present in the literature, which have a focus on the characteristics
+of their universities. We introduce a new decision variable, propose constraint formulations
+that are not policy specific, and offer new takes on the more common objectives seen in the literature.
+We also include new objective functions based on our experience with the problem at our university.
+We also propose a two-stage solution approach. The first stage is employed to find the number of schedulable
+defences, enabling the optimisation of instances with unschedulable defences. The second stage
+is an implementation of the augmented e-constraint method, which allows for the search of a set of
+different and non-dominated solutions while skipping redundant iterations. A novel instance
+generator for thesis scheduling problems is presented. Its main benefit is the generation of the
+availability of committee members and rooms in availability and unavailability blocks, resembling
+their real-world counterparts. A set of 96 randomly generated instances of varying sizes is solved
+and analysed. The proposed method can find the optimal number of schedulable defences and present
+non-dominated solutions within the set time limits for every tested instance. 

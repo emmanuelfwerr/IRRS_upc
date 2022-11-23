@@ -1,0 +1,19 @@
+Ensuring solution feasibility is a key challenge in developing Deep Neural Network (DNN) schemes
+for solving constrained optimization problems, due to inherent DNN prediction errors. In this
+paper, we propose a "preventive learning'" framework to systematically guarantee DNN solution
+feasibility for problems with convex constraints and general objective functions. We first apply
+a predict-and-reconstruct design to not only guarantee equality constraints but also exploit
+them to reduce the number of variables to be predicted by DNN. Then, as a key methodological contribution,
+we systematically calibrate inequality constraints used in DNN training, thereby anticipating
+prediction errors and ensuring the resulting solutions remain feasible. We characterize the calibration
+magnitudes and the DNN size sufficient for ensuring universal feasibility. We propose a new Adversary-Sample
+Aware training algorithm to improve DNN's optimality performance without sacrificing feasibility
+guarantee. Overall, the framework provides two DNNs. The first one from characterizing the sufficient
+DNN size can guarantee universal feasibility while the other from the proposed training algorithm
+further improves optimality and maintains DNN's universal feasibility simultaneously. We apply
+the preventive learning framework to develop DeepOPF+ for solving the essential DC optimal power
+flow problem in grid operation. It improves over existing DNN-based schemes in ensuring feasibility
+and attaining consistent desirable speedup performance in both light-load and heavy-load regimes.
+Simulation results over IEEE Case-30/118/300 test cases show that DeepOPF+ generates $100\%$
+feasible solutions with $<$0.5% optimality loss and up to two orders of magnitude computational
+speedup, as compared to a state-of-the-art iterative solver. 

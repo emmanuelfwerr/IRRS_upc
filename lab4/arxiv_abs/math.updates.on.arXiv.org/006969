@@ -1,0 +1,19 @@
+In this work, we propose a compositional data-driven approach for the formal estimation of collision
+risks for autonomous vehicles (AVs) while acting in a stochastic multi-agent framework. The proposed
+approach is based on the construction of sub-barrier certificates for each stochastic agent via
+a set of data collected from its trajectories while providing an a-priori guaranteed confidence
+on the data-driven estimation. In our proposed setting, we first cast the original collision risk
+problem for each agent as a robust optimization program (ROP). Solving the acquired ROP is not tractable
+due to an unknown model that appears in one of its constraints. To tackle this difficulty, we collect
+finite numbers of data from trajectories of each agent and provide a scenario optimization program
+(SOP) corresponding to the original ROP. We then establish a probabilistic bridge between the optimal
+value of SOP and that of ROP, and accordingly, we formally construct the sub-barrier certificate
+for each unknown agent based on the number of data and a required level of confidence. We then propose
+a compositional technique based on small-gain reasoning to quantify the collision risk for multi-agent
+AVs with some desirable confidence based on sub-barrier certificates of individual agents constructed
+from data. For the case that the proposed compositionality conditions are not satisfied, we provide
+a relaxed version of compositional results without requiring any compositionality conditions
+but at the cost of providing a potentially conservative collision risk. Eventually, we also present
+our approaches for non-stochastic multi-agent AVs. We demonstrate the effectiveness of our proposed
+results by applying them to a vehicle platooning consisting of 100 vehicles with 1 leader and 99 followers.
+We formally estimate the collision risk by collecting data from trajectories of each agent. 

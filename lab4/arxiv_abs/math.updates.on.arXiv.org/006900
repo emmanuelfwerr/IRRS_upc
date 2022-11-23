@@ -1,0 +1,19 @@
+We develop a cross-border market model between two countries in which the transmission capacities
+that enable transactions between market participants of different countries are limited. Starting
+from two so-called reduced-form representations of national limit order book dynamics, we allow
+incoming market orders to be matched with standing volumes of the foreign market, resulting in cross-border
+trades. We introduce a microscopic model that consists of two bid and ask price processes, four queue
+length processes that describe the number of unexecuted limit orders at the best bid and ask prices,
+and a capacity process. The latter counts the net number of executed cross-border trades over time.
+Since the transmission capacities in our model are limited, our model alternates between regimes
+in which cross-border trades are possible and regimes in which incoming market orders can only be
+matched against limit orders of the same origin. If the size of an individual order converges to zero
+while the order arrival rate tends to infinity, we derive a continuous-time limit approximation
+of our microscopic market dynamics. In the limit the volume dynamics is approximated by a four-dimensional,
+non-negative semimartingale with a non-trivial martingale part and reflections to the interior
+of $\mathbb{R}^4_+$ on hits of the (cumulative) queue length process of the axes. The approximation
+of the capacity dynamics turns out to be a bounded continuous process of finite variation. Since
+the tick size in our model is constant, the approximation of the bid (resp. ask) price dynamics is
+a two-dimensional pure jump process with jump times equal to those of the volume approximation.
+The usefulness of the ability to transact across borders is illustrated through a simulation study
+of price evolution. 

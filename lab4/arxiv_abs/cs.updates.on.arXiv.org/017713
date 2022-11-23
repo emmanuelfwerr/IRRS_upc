@@ -1,0 +1,20 @@
+We study ranked enumeration for Conjunctive Queries (CQs) where the answers are ordered by a given
+ranking function (e.g., an ORDER BY clause in SQL). We develop "any-k" algorithms which, without
+knowing the number k of desired answers, push the ranking into joins and avoid materializing the
+join output earlier than necessary. For this to be possible, the ranking function needs to obey a
+certain kind of monotonicity; the supported ranking functions include the common sum-of-weights
+case where query answers are compared by sums of input weights, as well as any commutative selective
+dioid. One core insight of our work is that the problem is closely related to the fundamental task
+of path enumeration in a weighted DAG. We generalize and improve upon classic research on finding
+the k'th shortest path and unify into the same framework several solutions from different areas
+that had been studied in isolation. For the time to the k'th ranked CQ answer (for every value of k),
+our approach is optimal in data complexity precisely for the same class of queries where unranked
+enumeration is optimal -- and only slower by a logarithmic factor. In a more careful analysis of combined
+complexity, we uncover a previously unknown tradeoff between two different any-k algorithms:
+one has lower complexity when the number of returned results is small, the other when the number is
+very large. This tradeoff is eliminated under a stricter monotonicity property that we exploit
+to design a novel algorithm that asymptotically dominates all previously known alternatives,
+including the well-known algorithm of Eppstein for sum-of-weights path enumeration. We empirically
+demonstrate the findings of our theoretical analysis in an experimental study that highlights
+the superiority of our approach over the join-then-rank approach that existing database systems
+typically follow. 

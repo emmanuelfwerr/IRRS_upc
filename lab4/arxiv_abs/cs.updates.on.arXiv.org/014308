@@ -1,0 +1,19 @@
+The success of deep learning relies heavily on large datasets with extensive labels, but we often
+only have access to several small, heterogeneous datasets associated with partial labels, particularly
+in the field of medical imaging. When learning from multiple datasets, existing challenges include
+incomparable, heterogeneous, or even conflicting labeling protocols across datasets. In this
+paper, we propose a new initiative--"data, assemble"--which aims to unleash the full potential
+of partially labeled data and enormous unlabeled data from an assembly of datasets. To accommodate
+the supervised learning paradigm to partial labels, we introduce a dynamic adapter that encodes
+multiple visual tasks and aggregates image features in a question-and-answer manner. Furthermore,
+we employ pseudo-labeling and consistency constraints to harness images with missing labels and
+to mitigate the domain gap across datasets. From proof-of-concept studies on three natural imaging
+datasets and rigorous evaluations on two large-scale thorax X-ray benchmarks, we discover that
+learning from "negative examples" facilitates both classification and segmentation of classes
+of interest. This sheds new light on the computer-aided diagnosis of rare diseases and emerging
+pandemics, wherein "positive examples" are hard to collect, yet "negative examples" are relatively
+easier to assemble. As a result, besides exceeding the prior art in the NIH ChestXray benchmark,
+our model is particularly strong in identifying diseases of minority classes, yielding over 3-point
+improvement on average. Remarkably, when using existing partial labels, our model performance
+is on-par (p>0.05) with that using a fully curated dataset with exhaustive labels, eliminating
+the need for additional 40% annotation costs. 

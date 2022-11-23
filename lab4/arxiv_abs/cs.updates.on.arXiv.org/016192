@@ -1,0 +1,19 @@
+In financial engineering, prices of financial products are computed approximately many times
+each trading day with (slightly) different parameters in each calculation. In many financial models
+such prices can be approximated by means of Monte Carlo (MC) simulations. To obtain a good approximation
+the MC sample size usually needs to be considerably large resulting in a long computing time to obtain
+a single approximation. In this paper we introduce a new approximation strategy for parametric
+approximation problems including the parametric financial pricing problems described above.
+A central aspect of the approximation strategy proposed in this article is to combine MC algorithms
+with machine learning techniques to, roughly speaking, learn the random variables (LRV) in MC simulations.
+In other words, we employ stochastic gradient descent (SGD) optimization methods not to train parameters
+of standard artificial neural networks (ANNs) but to learn random variables appearing in MC approximations.
+We numerically test the LRV strategy on various parametric problems with convincing results when
+compared with standard MC simulations, Quasi-Monte Carlo simulations, SGD-trained shallow ANNs,
+and SGD-trained deep ANNs. Our numerical simulations strongly indicate that the LRV strategy might
+be capable to overcome the curse of dimensionality in the $L^\infty$-norm in several cases where
+the standard deep learning approach has been proven not to be able to do so. This is not a contradiction
+to lower bounds established in the scientific literature because this new LRV strategy is outside
+of the class of algorithms for which lower bounds have been established in the scientific literature.
+The proposed LRV strategy is of general nature and not only restricted to the parametric financial
+pricing problems described above, but applicable to a large class of approximation problems. 

@@ -1,0 +1,20 @@
+Full-duplex (FD) systems have been introduced to provide high data rates for beyond fifth-generation
+wireless networks through simultaneous transmission of information over the same frequency resources.
+However, the operation of FD systems is practically limited by the self-interference (SI), and
+efficient SI cancelers are sought to make the FD systems realizable. Typically, polynomial-based
+cancelers are employed to mitigate the SI; nevertheless, they suffer from high complexity. This
+article proposes two novel hybrid-layers neural network (NN) architectures to cancel the SI with
+low complexity. The first architecture is referred to as hybrid-convolutional recurrent NN (HCRNN),
+whereas the second is termed as hybrid-convolutional recurrent dense NN (HCRDNN). In contrast
+to the state-of-the-art NNs that employ dense or recurrent layers for SI modeling, the proposed
+NNs exploit, in a novel manner, a combination of different hidden layers (e.g., convolutional,
+recurrent, and/or dense) in order to model the SI with lower computational complexity than the polynomial
+and the state-of-the-art NN-based cancelers. The key idea behind using hybrid layers is to build
+an NN model, which makes use of the characteristics of the different layers employed in its architecture.
+More specifically, in the HCRNN, a convolutional layer is employed to extract the input data features
+using a reduced network scale. Moreover, a recurrent layer is then applied to assist in learning
+the temporal behavior of the input signal from the localized feature map of the convolutional layer.
+In the HCRDNN, an additional dense layer is exploited to add another degree of freedom for adapting
+the NN settings in order to achieve the best compromise between the cancellation performance and
+computational complexity. Complexity analysis and numerical simulations are provided to prove
+the superiority of the proposed architectures. 

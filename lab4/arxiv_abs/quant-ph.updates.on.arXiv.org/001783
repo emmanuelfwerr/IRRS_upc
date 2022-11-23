@@ -1,0 +1,20 @@
+Quantum computing testbeds exhibit high-fidelity quantum control over small collections of qubits,
+enabling performance of precise, repeatable operations followed by measurements. Currently,
+these noisy intermediate-scale devices can support a sufficient number of sequential operations
+prior to decoherence such that small algorithms can be performed reliably. While the results of
+these algorithms are imperfect, these imperfections can help bootstrap quantum computer testbed
+development. Demonstrations of these small algorithms over the past few years, coupled with the
+idea that imperfect algorithm performance can be caused by several dominant noise sources in the
+quantum processor, which can be measured and calibrated during algorithm execution or in post-processing,
+has led to the use of noise mitigation to improve typical computational results. Conversely, small
+benchmark algorithms coupled with noise mitigation can help diagnose the nature of the noise, whether
+systematic or purely random. Here, we outline the use of coherent noise mitigation techniques as
+a characterization tool in trapped-ion testbeds. We perform model-fitting of the noisy data to
+determine the noise source based on realistic physics focused noise models and demonstrate that
+systematic noise amplification coupled with error mitigation schemes provides useful data for
+noise model deduction. Further, in order to connect lower level noise model details with application
+specific performance of near term algorithms, we experimentally construct the loss landscape
+of a variational algorithm under various injected noise sources coupled with error mitigation
+techniques. This type of connection enables application-aware hardware codesign, in which the
+most important noise sources in specific applications, like quantum chemistry, become foci of
+improvement in subsequent hardware generations. 

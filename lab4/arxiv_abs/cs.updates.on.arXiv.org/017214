@@ -1,0 +1,18 @@
+In today's data-driven world, recommender systems (RS) play a crucial role to support the decision-making
+process. As users become continuously connected to the internet, they become less patient and less
+tolerant to obsolete recommendations made by an RS, e.g., movie recommendations on Netflix or books
+to read on Amazon. This, in turn, requires continuous training of the RS to cope with both the online
+fashion of data and the changing nature of user tastes and interests, known as concept drift. Streaming
+(online) RS has to address three requirements: continuous training and recommendation, handling
+concept drifts, and ability to scale. Streaming recommender systems proposed in the literature
+mostly, address the first two requirements and do not consider scalability. That is because they
+run the training process on a single machine. Such a machine, no matter how powerful it is, will eventually
+fail to cope with the volume of the data, a lesson learned from big data processing. To tackle the third
+challenge, we propose a Splitting and Replication mechanism for building distributed streaming
+recommender systems. Our mechanism is inspired by the successful shared-nothing architecture
+that underpins contemporary big data processing systems. We have applied our mechanism to two well-known
+approaches for online recommender systems, namely, matrix factorization and item-based collaborative
+filtering. We have implemented our mechanism on top of Apache Flink. We conducted experiments comparing
+the performance of the baseline (single machine) approach with our distributed approach. Evaluating
+different data sets, improvement in processing latency, throughput, and accuracy have been observed.
+Our experiments show online recall improvement by 40\% with more than 50\% less memory consumption.

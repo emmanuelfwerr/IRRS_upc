@@ -1,0 +1,19 @@
+Adversarial attack perturbs an image with an imperceptible noise, leading to incorrect model prediction.
+Recently, a few works showed inherent bias associated with such attack (robustness bias), where
+certain subgroups in a dataset (e.g. based on class, gender, etc.) are less robust than others. This
+bias not only persists even after adversarial training, but often results in severe performance
+discrepancies across these subgroups. Existing works characterize the subgroup's robustness
+bias by only checking individual sample's proximity to the decision boundary. In this work, we argue
+that this measure alone is not sufficient and validate our argument via extensive experimental
+analysis. It has been observed that adversarial attacks often corrupt the high-frequency components
+of the input image. We, therefore, propose a holistic approach for quantifying adversarial vulnerability
+of a sample by combining these different perspectives, i.e., degree of model's reliance on high-frequency
+features and the (conventional) sample-distance to the decision boundary. We demonstrate that
+by reliably estimating adversarial vulnerability at the sample level using the proposed holistic
+metric, it is possible to develop a trustworthy system where humans can be alerted about the incoming
+samples that are highly likely to be misclassified at test time. This is achieved with better precision
+when our holistic metric is used over individual measures. To further corroborate the utility of
+the proposed holistic approach, we perform knowledge distillation in a limited-sample setting.
+We observe that the student network trained with the subset of samples selected using our combined
+metric performs better than both the competing baselines, viz., where samples are selected randomly
+or based on their distances to the decision boundary. 

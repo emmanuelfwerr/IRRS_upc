@@ -1,0 +1,20 @@
+Estimating the rank of a corrupted data matrix is an important task in data analysis, most notably
+for choosing the number of components in PCA. Significant progress on this task was achieved using
+random matrix theory by characterizing the spectral properties of large noise matrices. However,
+utilizing such tools is not straightforward when the data matrix consists of count random variables,
+e.g., Poisson, in which case the noise can be heteroskedastic with an unknown variance in each entry.
+In this work, we consider a Poisson random matrix with independent entries, and propose a simple
+procedure termed \textit{biwhitening} for estimating the rank of the underlying signal matrix
+(i.e., the Poisson parameter matrix) without any prior knowledge. Our approach is based on the key
+observation that one can scale the rows and columns of the data matrix simultaneously so that the
+spectrum of the corresponding noise agrees with the standard Marchenko-Pastur (MP) law, justifying
+the use of the MP upper edge as a threshold for rank selection. Importantly, the required scaling
+factors can be estimated directly from the observations by solving a matrix scaling problem via
+the Sinkhorn-Knopp algorithm. Aside from the Poisson, our approach is extended to families of distributions
+that satisfy a quadratic relation between the mean and the variance, such as the generalized Poisson,
+binomial, negative binomial, gamma, and many others. This quadratic relation can also account
+for missing entries in the data. We conduct numerical experiments that corroborate our theoretical
+findings, and showcase the advantage of our approach for rank estimation in challenging regimes.
+Furthermore, we demonstrate the favorable performance of our approach on several real datasets
+of single-cell RNA sequencing (scRNA-seq), High-Throughput Chromosome Conformation Capture
+(Hi-C), and document topic modeling. 

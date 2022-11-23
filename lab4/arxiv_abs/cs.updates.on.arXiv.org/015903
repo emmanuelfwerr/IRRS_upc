@@ -1,0 +1,20 @@
+Jet fires are relatively small and have the least severe effects among the diverse fire accidents
+that can occur in industrial plants; however, they are usually involved in a process known as the
+domino effect, that leads to more severe events, such as explosions or the initiation of another
+fire, making the analysis of such fires an important part of risk analysis. This research work explores
+the application of deep learning models in an alternative approach that uses the semantic segmentation
+of jet fires flames to extract main geometrical attributes, relevant for fire risk assessments.
+A comparison is made between traditional image processing methods and some state-of-the-art deep
+learning models. It is found that the best approach is a deep learning architecture known as UNet,
+along with its two improvements, Attention UNet and UNet++. The models are then used to segment a
+group of vertical jet flames of varying pipe outlet diameters to extract their main geometrical
+characteristics. Attention UNet obtained the best general performance in the approximation of
+both height and area of the flames, while also showing a statistically significant difference between
+it and UNet++. UNet obtained the best overall performance for the approximation of the lift-off
+distances; however, there is not enough data to prove a statistically significant difference between
+Attention UNet and UNet++. The only instance where UNet++ outperformed the other models, was while
+obtaining the lift-off distances of the jet flames with 0.01275 m pipe outlet diameter. In general,
+the explored models show good agreement between the experimental and predicted values for relatively
+large turbulent propane jet flames, released in sonic and subsonic regimes; thus, making these
+radiation zones segmentation models, a suitable approach for different jet flame risk management
+scenarios. 

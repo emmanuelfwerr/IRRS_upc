@@ -1,0 +1,20 @@
+The high computational scaling with the number of correlated electrons and the size of the basis
+set is a bottleneck which limits applications of coupled cluster (CC) algorithms. This is particularly
+so for calculations based on 4-component relativistic Hamiltonians, which generally employ uncontracted
+basis sets and lead to large virtual molecular orbital (VMO) spaces. This problem may be alleviated
+by employing a more compact set of virtual spinors than those provided by the canonical Hartree-Fock
+(HF) set, such as those based on natural orbitals (NOs). In this paper we describe the implementation
+of a module for generating NOs for correlated wavefunctions, and in particular MP2 frozen natural
+orbitals (MP2FNOs), as a component of our novel implementation of relativistic coupled cluster
+theory for massively parallel architectures [J. Pototschnig et. al., J. Chem. Theory Comput. 17,
+5509, 2021]. Our implementation is capable of manipulating both complex and quaternion density
+matrices, thus allowing for the generation of both Kramers-restricted and Kramers-unrestricted
+MP2FNOs. Furthermore, NOs are re-expressed in the parent atomic orbital (AO) basis, so that the
+code also makes it possible to generate CCSD natural orbitals in AO basis for further analysis. By
+investigating the truncation errors of MP2FNOs for both the correlation energy and molecular properties
+at CCSD level such as the electric field gradients at the nuclei (EFGs), electric dipole and quadrupole
+moments for hydrogen halides HX (X=F-Ts), and parity-violating energy differences (PV) for H$_2$Y$_2$
+(Y=O-Se), we find that MP2FNOs accelerate the convergence of the correlation energy in a roughly
+uniform manner across the periodic table and that, with VMO spaces truncated to around half the size
+of the full spaces ones, it is possible to obtain reliable estimates for both energies and all molecular
+properties considered. 

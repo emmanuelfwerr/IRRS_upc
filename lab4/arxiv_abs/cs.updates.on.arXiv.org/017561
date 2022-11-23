@@ -1,0 +1,19 @@
+A graph is temporally connected if there exists a strict temporal path, i.e. a path whose edges have
+strictly increasing labels, from every vertex $u$ to every other vertex $v$. In this paper we study
+temporal design problems for undirected temporally connected graphs. The basic setting of these
+optimization problems is as follows: given a connected undirected graph $G$, what is the smallest
+number $|\lambda|$ of time-labels that we need to add to the edges of $G$ such that the resulting temporal
+graph $(G,\lambda)$ is temporally connected? As it turns out, this basic problem, called MINIMUM
+LABELING (ML), can be optimally solved in polynomial time. However, exploiting the temporal dimension,
+the problem becomes more interesting and meaningful in its following variations, which we investigate
+in this paper. First we consider the problem MIN. AGED LABELING (MAL) of temporally connecting the
+graph when we are given an upper-bound on the allowed age (i.e. maximum label) of the obtained temporal
+graph $(G,\lambda)$. Second we consider the problem MIN. STEINER LABELING (MSL), where the aim
+is now to have a temporal path between any pair of "terminals" vertices which lie in a subset $R\subseteq
+V$. This relaxed problem resembles STEINER TREE in static graphs. However, due to the requirement
+of strictly increasing labels in a temporal path, STEINER TREE is not a special case of MSL. Finally
+we consider the age-restricted version of MSL, namely MIN. AGED STEINER LABELING (MASL). Our main
+results are threefold: we prove that (i) MAL becomes NP-complete on undirected graphs, while (ii)
+MASL becomes W[1]-hard with respect to the number $|R|$ of terminals. On the other hand we prove that
+(iii) although the age-unrestricted problem MSL is NP-hard, it is in FPT with respect to the number
+$|R|$ of terminals. That is, adding the age restriction, makes the above problems strictly harder.

@@ -1,0 +1,20 @@
+In today's world, computer networks have become vulnerable to numerous attacks. In both wireless
+and wired networks, one of the most common attacks is man-in-the-middle attacks, within which session
+hijacking, context confusion attacks have been the most attempted. A potential attacker may have
+enough time to launch an attack targeting these vulnerabilities (such as rerouting the target request
+to a malicious server or hijacking the traffic). A viable strategy to solve this problem is, by dynamically
+changing the system properties, configurations and create unique fingerprints to identify the
+source. However, the existing work of fingerprinting mainly focuses on lower-level properties
+(e.g IP address), and only these types of properties are restricted for mutation. We develop a novel
+system, called Verify-Pro, to provide server authentication using communication protocol dialects,
+that uses a client-server architecture based on network protocols for customizing the communication
+transactions. For each session, a particular sequence of handshakes will be used as dialects. So,
+given the context, with the establishment of a one-time username and password, we use the dialects
+as an authentication mechanism for each request (e.g get filename in FTP) throughout the session,
+which enforces continuous authentication. Specifically, we leverage a machine learning approach
+on both client and server machines to trigger a specific dialect that dynamically changes for each
+request. We implement a prototype of Verify-Pro and evaluate its practicality on standard communication
+protocols FTP, HTTP & internet of things protocol MQTT. Our experimental results show that by sending
+misleading information through message packets from an attacker at the application layer, it is
+possible for the recipient to identify if the sender is genuine or a spoofed one, with a negligible
+overhead of 0.536%. 

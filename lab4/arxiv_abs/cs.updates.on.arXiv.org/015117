@@ -1,0 +1,20 @@
+Over the past few years, deep neural networks (DNNs) have achieved tremendous success and have been
+continuously applied in many application domains. However, during the practical deployment in
+the industrial tasks, DNNs are found to be erroneous-prone due to various reasons such as overfitting,
+lacking robustness to real-world corruptions during practical usage. To address these challenges,
+many recent attempts have been made to repair DNNs for version updates under practical operational
+contexts by updating weights (i.e., network parameters) through retraining, fine-tuning, or
+direct weight fixing at a neural level. In this work, as the first attempt, we initiate to repair DNNs
+by jointly optimizing the architecture and weights at a higher (i.e., block) level. We first perform
+empirical studies to investigate the limitation of whole network-level and layer-level repairing,
+which motivates us to explore a novel repairing direction for DNN repair at the block level. To this
+end, we first propose adversarial-aware spectrum analysis for vulnerable block localization
+that considers the neurons' status and weights' gradients in blocks during the forward and backward
+processes, which enables more accurate candidate block localization for repairing even under
+a few examples. Then, we further propose the architecture-oriented search-based repairing that
+relaxes the targeted block to a continuous repairing search space at higher deep feature levels.
+By jointly optimizing the architecture and weights in that space, we can identify a much better block
+architecture. We implement our proposed repairing techniques as a tool, named ArchRepair, and
+conduct extensive experiments to validate the proposed method. The results show that our method
+can not only repair but also enhance accuracy & robustness, outperforming the state-of-the-art
+DNN repair techniques. 

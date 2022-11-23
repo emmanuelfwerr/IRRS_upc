@@ -1,0 +1,19 @@
+Unclonable encryption, introduced by Broadbent and Lord (TQC'20), is an encryption scheme with
+the following attractive feature: given a ciphertext, an adversary cannot create two ciphertexts
+both of which decrypt to the same message as the original ciphertext. We revisit this notion and show
+the following: - Reusability: The constructions proposed by Broadbent and Lord have the disadvantage
+that they either guarantee one-time security (that is, the encryption key can only be used once to
+encrypt the message) in the plain model or they guaranteed security in the random oracle model. We
+construct unclonable encryption schemes with semantic security. We present two constructions
+(for public-key and private-key settings) from minimal cryptographic assumptions. - Lower Bound
+and Generalized Construction: We revisit the information-theoretic one-time secure construction
+of Broadbent and Lord. The success probability of the adversary in their construction was guaranteed
+to be $0.85^n$, where $n$ is the length of the message. It was interesting to understand whether the
+ideal success probability of (negligibly close to) $0.5^n$ was unattainable. We generalize their
+construction to be based on a broader class of monogamy of entanglement games. We demonstrate a simple
+cloning attack that succeeds with probability $0.71^n$ against a class of schemes including that
+of Broadbent and Lord. We also present a $0.75^n$ cloning attack exclusively against their scheme.
+- Implication to Copy-Protection: We show that unclonable encryption, satisfying a stronger property,
+called unclonable-indistinguishability (defined by Broadbent and Lord), implies copy-protection
+for a simple class of unlearnable functions. While we currently don't have encryption schemes satisfying
+this stronger property, this implication demonstrates a new path to construct copy-protection.

@@ -1,0 +1,20 @@
+Recently, we have introduced two graph-decomposition theorems based on a new graph product (the
+vertex-removing synchronised product (VRSP)), motivated by applications in the context of synchronising
+periodic real-time processes. In these applications, periodic real-time processes synchronise
+over actions that have the same label and therefore the same behaviour. From a process-algebraic
+point of view, such a synchronising action is executed atomically and at the same time by all processes
+that have this action in their alphabet. But, when these processes are executed on some computer
+platform, synchronisation leads to context switches of the processes and therefore an increased
+overhead, which may lead to deadline misses. But, by combining processes we reduce the number of
+context switches and therefore reduce the overhead. We combine these processes by representing
+the processes by edge-labelled acyclic directed multi-graphs, and multiply the graphs by the VRSP.
+Next, we transpose the resulting graphs into processes for which there are less context switches.
+An important aspect of these real-time applications is that they must execute in time. Still, it
+may happen that the set of processes of the application cannot execute timely and may miss a deadline.
+Now, by decomposing the graphs and multiplying the graphs by the VRSP in another combination, the
+processes that are represented by these recombined graphs may execute in time. The requirements
+of the recently introduced graph-decomposition theorems are too strict and can be relaxed, whereby
+more graphs can be decomposed giving more possible combinations for the real-time application.
+Therefore, we recall the definition of the VRSP and the two graph-decomposition theorems, we relax
+the requirements by stating and proving two lemmas and use these lemmas to state and prove these two
+(relaxed) graph-decomposition theorems. 

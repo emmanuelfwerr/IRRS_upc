@@ -1,0 +1,20 @@
+Since the derivation of the Navier Stokes equations, it has become possible to numerically solve
+real world viscous flow problems (computational fluid dynamics (CFD)). However, despite the rapid
+advancements in the performance of central processing units (CPUs), the computational cost of
+simulating transient flows with extremely small time/grid scale physics is still unrealistic.
+In recent years, machine learning (ML) technology has received significant attention across industries,
+and this big wave has propagated various interests in the fluid dynamics community. Recent ML CFD
+studies have revealed that completely suppressing the increase in error with the increase in interval
+between the training and prediction times in data driven methods is unrealistic. The development
+of a practical CFD acceleration methodology that applies ML is a remaining issue. Therefore, the
+objectives of this study were developing a realistic ML strategy based on a physics-informed transfer
+learning and validating the accuracy and acceleration performance of this strategy using an unsteady
+CFD dataset. This strategy can determine the timing of transfer learning while monitoring the residuals
+of the governing equations in a cross coupling computation framework. Consequently, our hypothesis
+that continuous fluid flow time series prediction is feasible was validated, as the intermediate
+CFD simulations periodically not only reduce the increased residuals but also update the network
+parameters. Notably, the cross coupling strategy with a grid based network model does not compromise
+the simulation accuracy for computational acceleration. The simulation was accelerated by 1.8
+times in the laminar counterflow CFD dataset condition including the parameter updating time.
+Open source CFD software OpenFOAM and open-source ML software TensorFlow were used in this feasibility
+study. 

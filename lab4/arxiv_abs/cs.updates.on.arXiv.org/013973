@@ -1,0 +1,20 @@
+Designing and implementing efficient parallel priority schedulers is an active research area.
+An intriguing proposed design is the Multi-Queue: given $n$ threads and $m\ge n$ distinct priority
+queues, task insertions are performed uniformly at random, while, to delete, a thread picks two
+queues uniformly at random, and removes the observed task of higher priority. This approach scales
+well, and has probabilistic rank guarantees: roughly, the rank of each task removed, relative to
+remaining tasks in all other queues, is $O(m)$ in expectation. Yet, the performance of this pattern
+is below that of well-engineered schedulers, which eschew theoretical guarantees for practical
+efficiency. We investigate whether it is possible to design and implement a Multi-Queue-based
+task scheduler that is both highly efficient and has analytical guarantees. We propose a new variant
+called the Stealing Multi-Queue (SMQ), a cache-efficient variant of the Multi-Queue, which leverages
+both queue affinity -- each thread has a local queue, from which tasks are usually removed; but, with
+some probability, threads also attempt to steal higher-priority tasks from the other queues --
+and task batching, that is, the processing of several tasks in a single insert / delete step. These
+ideas are well-known for task scheduling without priorities; our theoretical contribution is
+showing that, despite relaxations, this design can still provide rank guarantees, which in turn
+implies bounds on total work performed. We provide a general SMQ implementation that can surpass
+state-of-the-art schedulers such as Galois and PMOD in terms of performance on popular graph-processing
+benchmarks. Notably, the performance improvement comes mainly from the superior rank guarantees
+provided by our scheduler, confirming that analytically-reasoned approaches can still provide
+performance improvements for priority task scheduling. 

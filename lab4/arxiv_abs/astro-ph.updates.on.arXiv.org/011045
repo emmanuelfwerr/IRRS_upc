@@ -1,0 +1,19 @@
+The observed atmospheric spectrum of exoplanets and brown dwarfs depends critically on the presence
+and distribution of atmospheric condensates. The Ackerman & Marley (2001) methodology for predicting
+the vertical distribution of condensate particles is widely used to study cloudy atmospheres and
+has recently been implemented in an open-source python package virga. The model relies upon input
+parameter $f_{\text{sed}}$, the sedimentation efficiency, which until now has been held constant.
+The relative simplicity of this model renders it useful for retrieval studies due to its rapidly
+attainable solutions. However, comparisons with more complex microphysical models such as CARMA
+have highlighted inconsistencies between the two approaches, namely that the cloud parameters
+needed for radiative transfer produced by virga are dissimilar to those produced by CARMA. To address
+these discrepancies, we have extended the original Ackerman and Marley methodology in virga to
+allow for non-constant $f_{\text{sed}}$ values, in particular those that vary with altitude.
+We discuss one such parameterization and compare the cloud mass mixing ratio produced by virga with
+constant and variable $f_{\text{sed}}$ profiles to that produced by CARMA. We find that the variable
+$f_{\text{sed}}$ formulation better captures the profile produced by CARMA with heterogeneous
+nucleation, yet performs comparatively to constant $f_{\text{sed}}$ for homogeneous nucleation.
+In general, virga has the capacity to handle any $f_{\text{sed}}$ with an explicit anti-derivative,
+permitting a plethora of alternative cloud profiles that are otherwise unattainable by constant
+$f_{\text{sed}}$ values. The ensuing flexibility has the potential to better agree with increasingly
+complex models and observed data. 

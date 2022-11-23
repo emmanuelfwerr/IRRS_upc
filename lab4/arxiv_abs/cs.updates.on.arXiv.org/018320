@@ -1,0 +1,20 @@
+Deep Reinforcement Learning (DRL) algorithms have been increasingly employed during the last
+decade to solve various decision-making problems such as autonomous driving and robotics. However,
+these algorithms have faced great challenges when deployed in safety-critical environments since
+they often exhibit erroneous behaviors that can lead to potentially critical errors. One way to
+assess the safety of DRL agents is to test them to detect possible faults leading to critical failures
+during their execution. This raises the question of how we can efficiently test DRL policies to ensure
+their correctness and adherence to safety requirements. Most existing works on testing DRL agents
+use adversarial attacks that perturb states or actions of the agent. However, such attacks often
+lead to unrealistic states of the environment. Their main goal is to test the robustness of DRL agents
+rather than testing the compliance of agents' policies with respect to requirements. Due to the
+huge state space of DRL environments, the high cost of test execution, and the black-box nature of
+DRL algorithms, the exhaustive testing of DRL agents is impossible. In this paper, we propose a Search-based
+Testing Approach of Reinforcement Learning Agents (STARLA) to test the policy of a DRL agent by effectively
+searching for failing executions of the agent within a limited testing budget. We use machine learning
+models and a dedicated genetic algorithm to narrow the search towards faulty episodes. We apply
+STARLA on a Deep-Q-Learning agent which is widely used as a benchmark and show that it significantly
+outperforms Random Testing by detecting more faults related to the agent's policy. We also investigate
+how to extract rules that characterize faulty episodes of the DRL agent using our search results.
+Such rules can be used to understand the conditions under which the agent fails and thus assess its
+deployment risks. 

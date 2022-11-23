@@ -1,0 +1,19 @@
+Differential privacy (DP) has been applied in deep learning for preserving privacy of the underlying
+training sets. Existing DP practice falls into three categories - objective perturbation, gradient
+perturbation and output perturbation. They suffer from three main problems. First, conditions
+on objective functions limit objective perturbation in general deep learning tasks. Second, gradient
+perturbation does not achieve a satisfactory privacy-utility trade-off due to over-injected
+noise in each epoch. Third, high utility of the output perturbation method is not guaranteed because
+of the loose upper bound on the global sensitivity of the trained model parameters as the noise scale
+parameter. To address these problems, we analyse a tighter upper bound on the global sensitivity
+of the model parameters. Under a black-box setting, based on this global sensitivity, to control
+the overall noise injection, we propose a novel output perturbation framework by injecting DP noise
+into a randomly sampled neuron (via the exponential mechanism) at the output layer of a baseline
+non-private neural network trained with a convexified loss function. We empirically compare the
+privacy-utility trade-off, measured by accuracy loss to baseline non-private models and the privacy
+leakage against black-box membership inference (MI) attacks, between our framework and the open-source
+differentially private stochastic gradient descent (DP-SGD) approaches on six commonly used
+real-world datasets. The experimental evaluations show that, when the baseline models have observable
+privacy leakage under MI attacks, our framework achieves a better privacy-utility trade-off than
+existing DP-SGD implementations, given an overall privacy budget $\epsilon \leq 1$ for a large
+number of queries. 

@@ -1,0 +1,19 @@
+We present a monolithic geometric multigrid preconditioner for solving fluid-solid interaction
+problems in Stokes limit. The problems are discretized by a spatially adaptive high-order meshless
+method, the generalized moving least squares (GMLS) with adaptive $h$-refinement. In Stokes limit,
+solid kinematics can be dominated by the singularities governing the lubrication effects. Resolving
+those singularities with adaptive $h$-refinement can lead to an ill-conditioned linear system
+of equations. For constructing the interpolation and restriction operators - the key ingredients
+of the multigrid preconditioner, we utilize the geometric information of hierarchical sets of
+GMLS nodes generated in adaptive $h$-refinement. We build decoupled smoothers through physics-based
+splitting and then combine them via a multiplicative overlapping Schwarz approach. Through numerical
+examples with the inclusion of different numbers and shapes of solid bodies, we demonstrate the
+performance and assess the scalability of the designed preconditioner. As the total degrees of
+freedom and the number of solid bodies $N_s$ increase, the proposed monolithic geometric multigrid
+preconditioner can ensure convergence and good scalability when using the Krylov iterative method
+for solving the linear systems of equations generated from the spatially adaptive GMLS discretization.
+More specifically, for a fixed number of solid bodies, as the discretization resolution is incrementally
+refined, the number of iterations of the linear solver can be maintained at the same level, indicating
+nearly linear scalability of our preconditioner with respect to the total degrees of freedom. When
+$N_s$ increases, the number of iterations is nearly proportional to $\sqrt{N_s}$, implying the
+sublinear optimality with respect to the number of solid bodies. 

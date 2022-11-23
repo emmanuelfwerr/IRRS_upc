@@ -1,0 +1,18 @@
+Several software packages for relativistic cosmological simulations that do not fully implement
+the Einstein equation have recently been developed. Two of the free-licensed ones are inhomog and
+gevolution. A key question is whether globally emergent volume evolution that is faster than that
+of a Friedmannian reference model results from the averaged effects of structure formation. Checking
+that emergent volume evolution is correctly modelled by the packages is thus needed. We numerically
+replace the software's default random realisation of initial seed fluctuations by a fluctuation
+of spatially constant amplitude in a simulation's initial conditions. The average volume evolution
+of the perturbed model should follow that of a Friedmannian expansion history that corresponds
+to the original Friedmannian reference solution modified by the insertion of the spatially constant
+perturbation. We derive the equations that convert from the perturbed reference solution to the
+effective solution. We find that inhomog allows emergent volume evolution correctly at first order
+through to the current epoch. For initial conditions with a resolution of $N = 128^3$ particles and
+an initial non-zero extrinsic curvature invariant $I_i = 0.001$, inhomog matches an exact Friedmannian
+solution to -0.0058% (Einstein-de Sitter, EdS) or -0.0033% (LCDM). We find that gevolution models
+the decaying mode to fair accuracy, and excludes the growing mode by construction. For $N = 128^3$
+and an initial scalar potential $\Phi$ = 0.001, gevolution is accurate for the decaying mode to 0.012%
+(EdS) or 0.013% (LCDM). We conclude that this special case of an exact non-linear solution for a perturbed
+Friedmannian model provides a robust calibration for relativistic cosmological simulations.

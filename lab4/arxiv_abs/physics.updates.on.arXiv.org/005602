@@ -1,0 +1,18 @@
+In this article we present a new formulation and an associated algorithm for the simultaneous numerical
+simulation of multiple condensed phase explosives in direct contact with each other, which may
+also be confined by (or interacting with one or more) compliant inert materials. Examples include
+composite rate-stick problems and interaction of shock waves with chemically-active particles
+in condensed-phase explosives. There are several formulations which address the compliant or
+structural response of confiners and particles due to detonations, but the direct interaction
+of explosives remains a challenge for most formulations and algorithms. The proposed formulation
+addresses this problem by extending the conservation laws and mixture rules of an existing hybrid
+formulation to model the interaction of multiple explosive mixtures. An algorithm for the solution
+of the resulting system of partial differential equations is presented, which includes a new robust
+method for the retrieval of the densities of the constituents of each explosive mixture. The algorithm
+is implemented in a hierarchical adaptive mesh refinement framework and validated against results
+from problems with known solutions. It is evaluated for robustness for rate-stick and shock-induced
+flows in particle-laden explosives case-studies. It is shown that the method can simulate the interaction
+of detonation waves produced by military grade and commercial explosives in direct contact, each
+with its own distinct equation of state and reaction rate law. The ability of the new model to simulate
+reactive particles which are explicitly resolved in a heterogeneous explosive is demonstrated
+by a case-study of a shock wave interacting with a high explosive bead embedded in liquid nitromethane.

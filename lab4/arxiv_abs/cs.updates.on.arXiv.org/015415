@@ -1,0 +1,19 @@
+Software configuration tuning is essential for optimizing a given performance objective (e.g.,
+minimizing latency). Yet, due to the software's intrinsically complex configuration landscape
+and expensive measurement, there has been a rather mild success, particularly in preventing the
+search from being trapped in local optima. To address this issue, in this paper we take a different
+perspective. Instead of focusing on improving the optimizer, we work on the level of optimization
+model and propose a meta multi-objectivization (MMO) model that considers an auxiliary performance
+objective (e.g., throughput in addition to latency). What makes this model unique is that we do not
+optimize the auxiliary performance objective, but rather use it to make similarly-performing
+while different configurations less comparable (i.e. Pareto nondominated to each other), thus
+preventing the search from being trapped in local optima. Importantly through a new normalization
+method we show how to effectively use the MMO model without worrying about its weight -- the only yet
+highly sensitive parameter that can affect its effectiveness. Experiments on 22 cases from 11 real-world
+software systems/environments confirm that our MMO model with the new normalization performs
+better than its state-of-the-art single-objective counterparts on 82% cases while achieving
+up to 2.09x speedup. For 67% of the cases, the new normalization also enables the MMO model to outperform
+the instance when using it with the normalization used in our prior FSE work under pre-tuned best
+weights, saving a great amount of resources which would be otherwise necessary to find a good weight.
+We also demonstrate that the MMO model with the new normalization can consolidate Flash, a recent
+model-based tuning tool, on 68% of the cases with 1.22x speedup in general. 

@@ -1,0 +1,20 @@
+Varieties of Democracy (V-Dem) is a new approach to conceptualizing and measuring democracy and
+politics. It has information for 200 countries and is one of the biggest databases for political
+science. According to the V-Dem annual democracy report 2019, Taiwan is one of the two countries
+that got disseminated false information from foreign governments the most. It also shows that the
+"made-up news" has caused a great deal of confusion in Taiwanese society and has serious impacts
+on global stability. Although there are several applications helping distinguish the false information,
+we found out that the pre-processing of categorizing the news is still done by human labor. However,
+human labor may cause mistakes and cannot work for a long time. The growing demands for automatic
+machines in the near decades show that while the machine can do as good as humans or even better, using
+machines can reduce humans' burden and cut down costs. Therefore, in this work, we build a predictive
+model to classify the category of news. The corpora we used contains 28358 news and 200 news scraped
+from the online newspaper Liberty Times Net (LTN) website and includes 8 categories: Technology,
+Entertainment, Fashion, Politics, Sports, International, Finance, and Health. At first, we use
+Bidirectional Encoder Representations from Transformers (BERT) for word embeddings which transform
+each Chinese character into a (1,768) vector. Then, we use a Long Short-Term Memory (LSTM) layer
+to transform word embeddings into sentence embeddings and add another LSTM layer to transform them
+into document embeddings. Each document embedding is an input for the final predicting model, which
+contains two Dense layers and one Activation layer. And each document embedding is transformed
+into 1 vector with 8 real numbers, then the highest one will correspond to the 8 news categories with
+up to 99% accuracy. 

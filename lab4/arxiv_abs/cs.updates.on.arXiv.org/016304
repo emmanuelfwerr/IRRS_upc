@@ -1,0 +1,20 @@
+Software dependency network metrics extracted from the dependency graph of the software modules
+by the application of Social Network Analysis (SNA metrics) have been shown to improve the performance
+of the Software Defect prediction (SDP) models. However, the relative effectiveness of these SNA
+metrics over code metrics in improving the performance of the SDP models has been widely debated
+with no clear consensus. Furthermore, some of the common SDP scenarios like predicting the number
+of defects in a module (Defect-count) in Cross-version and Cross-project SDP contexts remain unexplored.
+Such lack of clear directive on the effectiveness of SNA metrics when compared to the widely used
+code metrics prevents us from potentially building better performing SDP models. Therefore, through
+a case study of 9 open source software projects across 30 versions, we study the relative effectiveness
+of SNA metrics when compared to code metrics across 3 commonly used SDP contexts (Within-project,
+Cross-version and Cross-project) and scenarios (Defect-count, Defect-classification (classifying
+if a module is defective) and Effort-aware (ranking the defective modules w.r.t to the involved
+effort)). We find the SNA metrics by themselves or along with code metrics improve the performance
+of SDP models over just using code metrics on 5 out of the 9 studied SDP scenarios (three SDP scenarios
+across three SDP contexts). However, we note that in some cases the improvements afforded by considering
+SNA metrics over or alongside code metrics might only be marginal, whereas in other cases the improvements
+could be potentially large. Based on these findings we suggest that the future work should: consider
+SNA metrics alongside code metrics in their SDP models; as well as consider Ego metrics and Global
+metrics, the two different types of the SNA metrics separately when training SDP models as they behave
+differently. 

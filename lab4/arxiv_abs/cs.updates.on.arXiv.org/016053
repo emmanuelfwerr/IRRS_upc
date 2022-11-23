@@ -1,0 +1,20 @@
+In non-invasive brain-computer interface systems, pre-movement decoding plays an important
+role in the detection of movement before limbs actually move. Movement-related cortical potential
+is a kind of brain activity associated with pre-movement decoding. In current studies, patterns
+decoded from movement are mainly applied to the binary classification between movement state and
+resting state, such as elbow flexion and rest. The classifications between two movement states
+and among multiple movement states are still challenging. This study proposes a new method, the
+star-arrangement spectral filtering (SASF), to solve the multi-class pre-movement classification
+problem. We first design a referenced task-related component analysis (RTRCA) framework that
+consists of two modules. This first module is the classification between movement state and resting
+state; the second module is the classification of multiple movement states. SASF is developed by
+optimizing the features in RTRCA. In SASF, feature selection on filter banks is used on the first
+module of RTRCA, and feature selection on time windows is used on the second module of RTRCA. A linear
+discriminant analysis classifier is used to classify the optimized features. In the binary classification
+between two motions, the classification accuracy of SASF achieves 0.9670$\pm$0.0522, which is
+significantly higher than the result provided by the deep convolutional neural network (0.6247$\pm$0.0680)
+and the discriminative spatial pattern method (0.4400$\pm$0.0700). In the multi-class classification
+of 7 states, the classification accuracy of SASF is 0.9491$\pm$0.0372. The proposed SASF greatly
+improves the classification between two motions and enables the classification among multiple
+motions. The result shows that the movement can be decoded from EEG signals before the actual limb
+movement. 

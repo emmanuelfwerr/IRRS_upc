@@ -1,0 +1,19 @@
+This paper proposes a low-cost and highly accurate ECG-monitoring system intended for personalized
+early arrhythmia detection for wearable mobile sensors. Earlier supervised approaches for personalized
+ECG monitoring require both abnormal and normal heartbeats for the training of the dedicated classifier.
+However, in a real-world scenario where the personalized algorithm is embedded in a wearable device,
+such training data is not available for healthy people with no cardiac disorder history. In this
+study, (i) we propose a null space analysis on the healthy signal space obtained via sparse dictionary
+learning, and investigate how a simple null space projection or alternatively regularized least
+squares-based classification methods can reduce the computational complexity, without sacrificing
+the detection accuracy, when compared to sparse representation-based classification. (ii) Then
+we introduce a sparse representation-based domain adaptation technique in order to project other
+existing users' abnormal and normal signals onto the new user's signal space, enabling us to train
+the dedicated classifier without having any abnormal heartbeat of the new user. Therefore, zero-shot
+learning can be achieved without the need for synthetic abnormal heartbeat generation. An extensive
+set of experiments performed on the benchmark MIT-BIH ECG dataset shows that when this domain adaptation-based
+training data generator is used with a simple 1-D CNN classifier, the method outperforms the prior
+work by a significant margin. (iii) Then, by combining (i) and (ii), we propose an ensemble classifier
+that further improves the performance. This approach for zero-shot arrhythmia detection achieves
+an average accuracy level of 98.2% and an F1-Score of 92.8%. Finally, a personalized energy-efficient
+ECG monitoring scheme is proposed using the above-mentioned innovations. 

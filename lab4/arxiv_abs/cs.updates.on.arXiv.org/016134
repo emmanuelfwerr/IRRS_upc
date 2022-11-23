@@ -1,0 +1,19 @@
+In this paper, we consider the task of computing an independent set of maximum weight in a given $d$-claw
+free graph $G=(V,E)$ equipped with a positive weight function $w:V\rightarrow\mathbb{R}_{>0}$.
+Recently, Neuwohner has shown how to obtain approximation ratios of $\frac{d-1+\epsilon_d}{2}$
+in quasi-polynomial time, where $0\leq \epsilon_d\leq 1$ and $\lim_{d\rightarrow\infty}\epsilon_d
+= 0$. For the special case of the $d-1$-Set Packing Problem, she showed how to get down to a polynomial
+running time. On the other hand, she provided examples showing that no local improvement algorithm
+considering local improvements of logarithmic size can yield an approximation guarantee better
+than $\frac{d-1}{2}$. However, it turns out that if one considers local improvements that arise
+by dropping vertex weights and running an algorithm devised for the unweighted setting on certain
+sub-instances of the given one, one can get beyond the $\frac{d-1}{2}$-threshold and obtain approximation
+guarantees of $\frac{d}{2}-\Omega(d)$ in quasi-polynomial time. For $d-1$-Set Packing instances,
+we can guarantee a polynomial running time. We also conduct a more general investigation of the relation
+between approximation guarantees for the unweighted and weighted variants of both the Maximum
+Weight Independent Set Problem in $d$-claw free graphs and the $d-1$-Set Packing problem. In doing
+so, we can show that for any constant $\sigma > 0$, there exists a constant $\tau > 0$ such that a (quasi-)polynomial
+time $1+\tau\cdot (d-2)$-approximation for the unweighted $d-1$-Set Packing Problem (the Maximum
+Cardinality Independent Set problem in $d$-claw free graphs) implies a (quasi-)-polynomial time
+$1+\sigma\cdot (d-2)$-approximation for the weighted $d-1$-Set Packing Problem (the Maximum
+Weight Independent Set problem in $d$-claw free graphs). 

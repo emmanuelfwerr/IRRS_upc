@@ -1,0 +1,19 @@
+This paper presents a convex optimization-based solution to the design of state-feedback controllers
+for solving the linear quadratic regulator (LQR) problem of uncertain discrete-time systems with
+multiplicative noise. To synthesize a tractable solution, the recently developed system level
+synthesis (SLS) framework is leveraged. It is shown that SLS shifts the controller synthesis task
+from the design of a robust controller to the design of the entire set-valued closed-loop system
+responses. To this end, the closed-loop system response is entirely characterized by probabilistic
+set-valued maps from the additive noise to control actions and states. A bi-level convex optimization
+over the achievable set-valued closed-loop responses is then developed to optimize the expected
+value of the LQR cost against the worst-case closed-loop system response. The solution to this robust
+optimization problem may be too conservative since it aims at enforcing the design constraints
+for all possible system realizations. To deal with this issue, the presented optimization problem
+is next reformulated as a chance-constrained program (CCP) in which the guarantees are not intended
+in a deterministic sense of satisfaction against all possible closed-loop system responses, but
+are instead intended in a probabilistic sense of satisfaction against all but a small fraction of
+the system responses. To approximately solve the CCP without the requirement of knowing the probabilistic
+description of the uncertainty in the system matrices, the so-called scenario optimization approach
+is employed, which provides probabilistic guarantees based on a finite number of system realizations
+and results in a convex optimization program with moderate computational complexity. Finally,
+numerical simulations are presented to illustrate the theoretical findings. 

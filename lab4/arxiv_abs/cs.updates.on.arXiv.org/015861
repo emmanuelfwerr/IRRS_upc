@@ -1,0 +1,19 @@
+Unsupervised sentence embedding aims to obtain the most appropriate embedding for a sentence to
+reflect its semantic. Contrastive learning has been attracting developing attention. For a sentence,
+current models utilize diverse data augmentation methods to generate positive samples, while
+consider other independent sentences as negative samples. Then they adopt InfoNCE loss to pull
+the embeddings of positive pairs gathered, and push those of negative pairs scattered. Although
+these models have made great progress on sentence embedding, we argue that they may suffer from feature
+suppression. The models fail to distinguish and decouple textual similarity and semantic similarity.
+And they may overestimate the semantic similarity of any pairs with similar textual regardless
+of the actual semantic difference between them. This is because positive pairs in unsupervised
+contrastive learning come with similar and even the same textual through data augmentation. To
+alleviate feature suppression, we propose contrastive learning for unsupervised sentence embedding
+with soft negative samples (SNCSE). Soft negative samples share highly similar textual but have
+surely and apparently different semantic with the original samples. Specifically, we take the
+negation of original sentences as soft negative samples, and propose Bidirectional Margin Loss
+(BML) to introduce them into traditional contrastive learning framework, which merely involves
+positive and negative samples. Our experimental results show that SNCSE can obtain state-of-the-art
+performance on semantic textual similarity (STS) task with average Spearman's correlation coefficient
+of 78.97% on BERTbase and 79.23% on RoBERTabase. Besides, we adopt rank-based error analysis method
+to detect the weakness of SNCSE for future study. 

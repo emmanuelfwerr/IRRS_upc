@@ -1,0 +1,19 @@
+Expectation maximisation (EM) is an unsupervised learning method for estimating the parameters
+of a finite mixture distribution. It works by introducing "hidden" or "latent" variables via Baum's
+auxiliary function $Q$ that allow the joint data likelihood to be expressed as a product of simple
+factors. The relevance of EM has increased since the introduction of the variational lower bound
+(VLB): the VLB differs from Baum's auxiliary function only by the entropy of the PDF of the latent
+variables $Z$. We first present a rederivation of the standard EM algorithm using data association
+ideas from the field of multiple target tracking, using $K$-valued scalar data association hypotheses
+rather than the usual binary indicator vectors. The same method is then applied to a little known
+but much more general type of supervised EM algorithm for shared kernel models, related to probabilistic
+radial basis function networks. We address a number of shortcomings in the derivations that have
+been published previously in this area. In particular, we give theoretically rigorous derivations
+of (i) the complete data likelihood; (ii) Baum's auxiliary function (the E-step) and (iii) the maximisation
+(M-step) in the case of Gaussian shared kernel models. The subsequent algorithm, called shared
+kernel EM (SKEM), is then applied to a digit recognition problem using a novel 7-segment digit representation.
+Variants of the algorithm that use different numbers of features and different EM algorithm dimensions
+are compared in terms of mean accuracy and mean IoU. A simplified classifier is proposed that decomposes
+the joint data PDF as a product of lower order PDFs over non-overlapping subsets of variables. The
+effect of different numbers of assumed mixture components $K$ is also investigated. High-level
+source code for the data generation and SKEM algorithm is provided. 

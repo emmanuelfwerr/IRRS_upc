@@ -1,0 +1,19 @@
+We study the multisecretary problem with capacity to hire up to $B$ out of $T$ candidates, and values
+drawn i.i.d. from a distribution $F$ on $[0,1]$. We investigate achievable regret performance,
+where the latter is defined as the difference between the performance of an oracle with perfect information
+of future types (values) and an online policy. While the case of distributions over a few discrete
+types is well understood, very little is known when there are many types, with the exception of the
+special case of a uniform distribution of types. In this work we consider a larger class of distributions
+which includes the few discrete types as a special case. We first establish the insufficiency of
+the common certainty equivalent heuristic for distributions with many types and "gaps" (intervals)
+of absent types; even for simple deviations from the uniform distribution, it leads to regret $\Theta(\sqrt{T})$,
+as large as that of a non-adaptive algorithm. We introduce a new algorithmic principle which we call
+"conservativeness with respect to gaps" (CwG), and use it to design an algorithm that applies to
+any distribution. We establish that the proposed algorithm yields optimal regret scaling of $\tilde{\Theta}(T^{1/2
+- 1/(2(\beta + 1))})$ for a broad class of distributions with gaps, where $\beta$ quantifies the
+mass accumulation of types around gaps. We recover constant regret scaling for the special case
+of a bounded number of types ($\beta=0$ in this case). In most practical network revenue management
+problems, the number of types is large and the current certainty equivalent heuristics scale poorly
+with the number of types. The new algorithmic principle called \emph{Conservatism w.r.t Gaps}
+(CwG) that we developed, can pave the way for progress on handling many types for the broader class
+of network revenue management problems like order fulfillment and online matching. 

@@ -1,0 +1,19 @@
+The Job-shop Scheduling Problem (JSP) is a well-known and challenging combinatorial optimization
+problem in which tasks sharing a machine are to be arranged in a sequence such that encompassing jobs
+can be completed as early as possible. In this paper, we propose problem decomposition into time
+windows whose operations can be successively scheduled and optimized by means of multi-shot Answer
+Set Programming (ASP) solving. Decomposition aims to split highly complex scheduling tasks into
+better manageable sub-problems with a balanced number of operations so that good quality or even
+optimal partial solutions can be reliably found in a small fraction of runtime. Problem decomposition
+must respect the precedence of operations within their jobs and partial schedules optimized by
+time windows should yield better global solutions than obtainable in similar runtime on the entire
+instance. We devise and investigate a variety of decomposition strategies in terms of the number
+and size of time windows as well as heuristics for choosing their operations. Moreover, we incorporate
+time window overlapping and compression techniques into the iterative scheduling process to counteract
+window-wise optimization limitations restricted to partial schedules. Our experiments on JSP
+benchmark sets of several sizes show that successive optimization by multi-shot ASP solving leads
+to substantially better schedules within the runtime limit than global optimization on the full
+problem, where the gap increases with the number of operations to schedule. While the obtained solution
+quality still remains behind a state-of-the-art Constraint Programming system, our multi-shot
+solving approach comes closer the larger the instance size, demonstrating good scalability by
+problem decomposition. 

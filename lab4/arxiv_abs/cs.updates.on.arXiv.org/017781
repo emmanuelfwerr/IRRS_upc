@@ -1,0 +1,20 @@
+Hybrid storage systems (HSS) use multiple different storage devices to provide high and scalable
+storage capacity at high performance. Recent research proposes various techniques that aim to
+accurately identify performance-critical data to place it in a "best-fit" storage device. Unfortunately,
+most of these techniques are rigid, which (1) limits their adaptivity to perform well for a wide range
+of workloads and storage device configurations, and (2) makes it difficult for designers to extend
+these techniques to different storage system configurations (e.g., with a different number or
+different types of storage devices) than the configuration they are designed for. We introduce
+Sibyl, the first technique that uses reinforcement learning for data placement in hybrid storage
+systems. Sibyl observes different features of the running workload as well as the storage devices
+to make system-aware data placement decisions. For every decision it makes, Sibyl receives a reward
+from the system that it uses to evaluate the long-term performance impact of its decision and continuously
+optimizes its data placement policy online. We implement Sibyl on real systems with various HSS
+configurations. Our results show that Sibyl provides 21.6%/19.9% performance improvement in
+a performance-oriented/cost-oriented HSS configuration compared to the best previous data placement
+technique. Our evaluation using an HSS configuration with three different storage devices shows
+that Sibyl outperforms the state-of-the-art data placement policy by 23.9%-48.2%, while significantly
+reducing the system architect's burden in designing a data placement mechanism that can simultaneously
+incorporate three storage devices. We show that Sibyl achieves 80% of the performance of an oracle
+policy that has complete knowledge of future access patterns while incurring a very modest storage
+overhead of only 124.4 KiB. 

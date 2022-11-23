@@ -1,0 +1,19 @@
+We study the Representative Volume Element (RVE) method, which is a method to approximately infer
+the effective behavior $a_{\text{hom}}$ of a stationary random medium. The latter is described
+by a coefficient field $a(x)$ generated from a given ensemble $\langle\cdot\rangle$ and the corresponding
+linear elliptic operator $-\nabla\cdot a\nabla$. In line with the theory of homogenization, the
+method proceeds by computing $d = 3$ correctors (d denoting the space dimension).To be numerically
+tractable, this computation has to be done on a finite domain: the so-called "representative" volume
+element, i. e. a large box with, say, periodic boundary conditions. The main message of this article
+is: Periodize the ensemble instead of its realizations. By this we mean that it is better to sample
+from a suitably periodized ensemble than to periodically extend the restriction of a realization
+$a(x)$ from the whole-space ensemble $\langle\cdot\rangle$. We make this point by investigating
+the bias (or systematic error), i. e. the difference between $a_{\text{hom}}$ and the expected
+value of the RVE method, in terms of its scaling w. r. t. the lateral size $L$ of the box. In case of periodizing
+$a(x)$, we heuristically argue that this error is generically $O(L^{-1})$. In case of a suitable
+periodization of $\langle\cdot\rangle$, we rigorously show that it is $O(L^{-d})$. In fact, we
+give a characterization of the leading-order error term for both strategies, and argue that even
+in the isotropic case it is generically non-degenerate. We carry out the rigorous analysis in the
+convenient setting of ensembles $\langle\cdot\rangle$ of Gaussian type with integrable covariance,
+which allow for a straightforward periodization and which make the Price theorem and the Malliavin
+calculus available for optimal stochastic estimates of correctors. 

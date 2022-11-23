@@ -1,0 +1,18 @@
+Quality assessment for User Generated Content (UGC) videos plays an important role in ensuring
+the viewing experience of end-users. Previous UGC video quality assessment (VQA) studies either
+use the image recognition model or the image quality assessment (IQA) models to extract frame-level
+features of UGC videos for quality regression, which are regarded as the sub-optimal solutions
+because of the domain shifts between these tasks and the UGC VQA task. In this paper, we propose a very
+simple but effective UGC VQA model, which tries to address this problem by training an end-to-end
+spatial feature extraction network to directly learn the quality-aware spatial feature representation
+from raw pixels of the video frames. We also extract the motion features to measure the temporal-related
+distortions that the spatial features cannot model. The proposed model utilizes very sparse frames
+to extract spatial features and dense frames (i.e. the video chunk) with a very low spatial resolution
+to extract motion features, which thereby has low computational complexity. With the better quality-aware
+features, we only use the simple multilayer perception layer (MLP) network to regress them into
+the chunk-level quality scores, and then the temporal average pooling strategy is adopted to obtain
+the video-level quality score. We further introduce a multi-scale quality fusion strategy to solve
+the problem of VQA across different spatial resolutions, where the multi-scale weights are obtained
+from the contrast sensitivity function of the human visual system. The experimental results show
+that the proposed model achieves the best performance on five popular UGC VQA databases, which demonstrates
+the effectiveness of the proposed model. The code will be publicly available. 

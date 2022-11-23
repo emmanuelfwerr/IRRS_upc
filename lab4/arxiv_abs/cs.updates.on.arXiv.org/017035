@@ -1,0 +1,19 @@
+The requirements of much larger file sizes, different storage formats, and immersive viewing conditions
+of VR pose significant challenges to the goals of acquiring, transmitting, compressing, and displaying
+high-quality VR content. At the same time, the great potential of deep learning to advance progress
+on the video compression problem has driven a significant research effort. Because of the high bandwidth
+requirements of VR, there has also been significant interest in the use of space-variant, foveated
+compression protocols. We have integrated these techniques to create an end-to-end deep learning
+video compression framework. A feature of our new compression model is that it dispenses with the
+need for expensive search-based motion prediction computations. This is accomplished by exploiting
+statistical regularities inherent in video motion expressed by displaced frame differences.
+Foveation protocols are desirable since only a small portion of a video viewed in VR may be visible
+as a user gazes in any given direction. Moreover, even within a current field of view (FOV), the resolution
+of retinal neurons rapidly decreases with distance (eccentricity) from the projected point of
+gaze. In our learning based approach, we implement foveation by introducing a Foveation Generator
+Unit (FGU) that generates foveation masks which direct the allocation of bits, significantly increasing
+compression efficiency while making it possible to retain an impression of little to no additional
+visual loss given an appropriate viewing geometry. Our experiment results reveal that our new compression
+model, which we call the Foveated MOtionless VIdeo Codec (Foveated MOVI-Codec), is able to efficiently
+compress videos without computing motion, while outperforming foveated version of both H.264
+and H.265 on the widely used UVG dataset and on the HEVC Standard Class B Test Sequences. 

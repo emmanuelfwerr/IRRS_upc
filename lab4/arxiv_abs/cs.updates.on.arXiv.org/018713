@@ -1,0 +1,19 @@
+Segmentation and spatial alignment of ultrasound (US) imaging data acquired in the in first trimester
+are crucial for monitoring human embryonic growth and development throughout this crucial period
+of life. Current approaches are either manual or semi-automatic and are therefore very time-consuming
+and prone to errors. To automate these tasks, we propose a multi-atlas framework for automatic segmentation
+and spatial alignment of the embryo using deep learning with minimal supervision. Our framework
+learns to register the embryo to an atlas, which consists of the US images acquired at a range of gestational
+age (GA), segmented and spatially aligned to a predefined standard orientation. From this, we can
+derive the segmentation of the embryo and put the embryo in standard orientation. US images acquired
+at 8+0 till 12+6 weeks GA were used and eight subjects were selected as atlas. We evaluated different
+fusion strategies to incorporate multiple atlases: 1) training the framework using atlas images
+from a single subject, 2) training the framework with data of all available atlases and 3) ensembling
+of the frameworks trained per subject. To evaluate the performance, we calculated the Dice score
+over the test set. We found that training the framework using all available atlases outperformed
+ensembling and gave similar results compared to the best of all frameworks trained on a single subject.
+Furthermore, we found that selecting images from the four atlases closest in GA out of all available
+atlases, regardless of the individual quality, gave the best results with a median Dice score of
+0.72. We conclude that our framework can accurately segment and spatially align the embryo in first
+trimester 3D US images and is robust for the variation in quality that existed in the available atlases.
+Our code is publicly available at: https://github.com/wapbastiaansen/multi-atlas-seg-reg.

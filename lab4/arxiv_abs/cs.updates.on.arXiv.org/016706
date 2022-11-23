@@ -1,0 +1,19 @@
+Accelerators like Graphics Processing Units (GPUs) have been increasingly deployed in modern
+data centers because of their compute capabilities and memory bandwidth. These accelerators have
+traditionally relied on the "application host code" and the OS running on the CPU to orchestrate
+their access to the data storage devices. CPU orchestration of storage data accesses works well
+for classic GPU applications, like dense neural network training, where data access patterns are
+predefined, regular, dense, and independent of the data values, enabling the CPU to partition the
+storage data into coarse-grain chunks and coordinate the storage device accesses and data transfers
+to the accelerators. Unfortunately, such a CPU-centric strategy causes excessive CPU-GPU synchronization
+overhead and/or I/O traffic amplification, diminishing the effective storage bandwidth for emerging
+applications with fine-grain data-dependent access patterns like graph and data analytics, recommender
+systems, and graph neural networks. In this work, we make a case for enabling GPUs to orchestrate
+high-throughput, fine-grain accesses into NVMe Solid State Drives (SSDs) in a new system architecture
+called BaM. BaM mitigates the I/O traffic amplification by enabling the GPU threads to read or write
+small amounts of data on-demand, as determined by the compute. We show that (1) the BaM infrastructure
+software running on GPUs can identify and communicate the fine-grain accesses at a sufficiently
+high rate to fully utilize the underlying storage devices, (2) even with consumer-grade SSDs, a
+BaM system can support application performance that is competitive against a much more expensive
+DRAM-only solution, and (3) the reduction in I/O amplification can yield significant performance
+benefit. 

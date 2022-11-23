@@ -1,0 +1,19 @@
+Traffic flow forecasting is essential and challenging to intelligent city management and public
+safety. Recent studies have shown the potential of convolution-free Transformer approach to extract
+the dynamic dependencies among complex influencing factors. However, two issues prevent the approach
+from being effectively applied in traffic flow forecasting. First, it ignores the spatiotemporal
+structure of the traffic flow videos. Second, for a long sequence, it is hard to focus on crucial attention
+due to the quadratic times dot-product computation. To address the two issues, we first factorize
+the dependencies and then design a progressive space-time self-attention mechanism named ProSTformer.
+It has two distinctive characteristics: (1) corresponding to the factorization, the self-attention
+mechanism progressively focuses on spatial dependence from local to global regions, on temporal
+dependence from inside to outside fragment (i.e., closeness, period, and trend), and finally on
+external dependence such as weather, temperature, and day-of-week; (2) by incorporating the spatiotemporal
+structure into the self-attention mechanism, each block in ProSTformer highlights the unique
+dependence by aggregating the regions with spatiotemporal positions to significantly decrease
+the computation. We evaluate ProSTformer on two traffic datasets, and each dataset includes three
+separate datasets with big, medium, and small scales. Despite the radically different design compared
+to the convolutional architectures for traffic flow forecasting, ProSTformer performs better
+or the same on the big scale datasets than six state-of-the-art baseline methods by RMSE. When pre-trained
+on the big scale datasets and transferred to the medium and small scale datasets, ProSTformer achieves
+a significant enhancement and behaves best. 

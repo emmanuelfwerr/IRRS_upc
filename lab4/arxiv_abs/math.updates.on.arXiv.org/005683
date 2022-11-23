@@ -1,0 +1,19 @@
+In this paper we propose and investigate a new class of dual updates within the augmented Lagrangian
+framework, where the key feature is to reverse the update direction in the traditional dual ascent.
+When the dual variable is further scaled by a fractional number, we name the resulting scheme scaled
+dual descent (SDD), and otherwise, unscaled dual descent (UDD). The novel concept of dual descent
+sheds new light on the classic augmented Lagrangian framework and brings in more possibilities
+for algorithmic development. For nonlinear equality-constrained multi-block problems, we propose
+a new algorithm named SDD-ADMM, which combines SDD with the alternating direction method of multipliers
+(ADMM). We show that SDD-ADMM finds an $\epsilon$-stationary solution in $\mathcal{O}(\epsilon^{-4})$
+iterations, which can be further improved to $\mathcal{O}(\epsilon^{-3})$ under an additional
+technical while verifiable assumption. We also propose UDD-ALM, which applies UDD within the augmented
+Lagrangian method (ALM), for weakly convex minimization over affine constraints. We show that
+when a certain regularity condition holds at the primal limit point, UDD-ALM asymptotically converges
+to a stationary point and finds an $\epsilon$-stationary solution in $\mathcal{O}(\epsilon^{-2})$
+iterations. Both SDD-ADMM and UDD-ALM are single-looped, and our iteration complexities are measured
+by first-order oracles. SDD-ADMM achieves better iteration complexities for a more challenging
+setting compared to the ADMM literature, while UDD-ALM complements the best-known result of existing
+ALM-base algorithms. Furthermore, we demonstrate the potential of UDD-ALM to handle nonlinear
+constraints by assuming a novel descent solution oracle for the proximal augmented Lagrangian
+relaxation. 

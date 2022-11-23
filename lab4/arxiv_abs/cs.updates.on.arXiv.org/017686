@@ -1,0 +1,19 @@
+Context: Novel plant communities reshape landscapes and pose challenges for land cover classification
+and mapping that can constrain research and stewardship efforts. In the US Northeast, emergence
+of low-statured woody vegetation, or 'shrublands', instead of secondary forests in post-agricultural
+landscapes is well-documented by field studies, but poorly understood from a landscape perspective,
+which limits the ability to systematically study and manage these lands. Objectives: To address
+gaps in classification/mapping of low-statured cover types where they have been historically
+rare, we developed models to predict 'shrubland' distributions at 30m resolution across New York
+State (NYS), using machine learning and model ensembling techniques to integrate remote sensing
+of structural (airborne LIDAR) and optical (satellite imagery) properties of vegetation cover.
+We first classified a 1m canopy height model (CHM), derived from a "patchwork" of available LIDAR
+coverages, to define shrubland presence/absence. Next, these non-contiguous maps were used to
+train a model ensemble based on temporally-segmented imagery to predict 'shrubland' probability
+for the entire study landscape (NYS). Results: Approximately 2.5% of the CHM coverage area was classified
+as shrubland. Models using Landsat predictors trained on the classified CHM were effective at identifying
+shrubland (test set AUC=0.893, real-world AUC=0.904), in discriminating between shrub/young
+forest and other cover classes, and produced qualitatively sensible maps, even when extending
+beyond the original training data. Conclusions: After ground-truthing, we expect these shrubland
+maps and models will have many research and stewardship applications including wildlife conservation,
+invasive species mitigation and natural climate solutions. 

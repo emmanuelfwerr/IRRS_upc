@@ -1,0 +1,18 @@
+We consider prophet inequalities under general downward-closed constraints. In a prophet inequality
+problem, a decision-maker sees a series of online elements and needs to decide immediately and irrevocably
+whether or not to select each element upon its arrival, subject to an underlying feasibility constraint.
+Traditionally, the decision-maker's expected performance has been compared to the expected performance
+of the prophet, i.e., the expected offline optimum. We refer to this measure as the Ratio of Expectations
+(or, in short, RoE). However, a major limitation of the RoE measure is that it only gives a guarantee
+against what the optimum would be on average, while, in theory, algorithms still might perform poorly
+compared to the realized ex-post optimal value. Hence, we study alternative performance measures.
+In particular, we suggest the Expected Ratio (or, in short, EoR), which is the expectation of the
+ratio between the value of the algorithm and the value of the prophet. This measure yields desirable
+guarantees, e.g., a constant EoR implies achieving a constant fraction of the ex-post offline optimum
+with constant probability. Moreover, in the single-choice setting, we show that the EoR is equivalent
+(in the worst case) to the probability of selecting the maximum, a well-studied measure in the literature.
+This is no longer the case for combinatorial constraints (beyond single-choice), which is the main
+focus of this paper. Our main goal is to understand the relation between RoE and EoR in combinatorial
+settings. Specifically, we establish a two-way black-box reduction: for every feasibility constraint,
+the RoE and the EoR are at most a constant factor apart. This implies a wealth of EoR results in multiple
+settings where RoE results are known. 

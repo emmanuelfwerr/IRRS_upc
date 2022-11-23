@@ -1,0 +1,20 @@
+Clique is one of the most fundamental models for cohesive subgraph mining in network analysis. Existing
+clique model mainly focuses on unsigned networks. However, in real world, many applications are
+modeled as signed networks with positive and negative edges. As the signed networks hold their own
+properties different from the unsigned networks, the existing clique model is inapplicable for
+the signed networks. Motivated by this, we propose the balanced clique model that considers the
+most fundamental and dominant theory, structural balance theory, for signed networks. Following
+the balanced clique model, we study the maximal balanced clique enumeration problem (MBCE) which
+computes all the maximal balanced cliques in a given signed network and the maximum balanced clique
+search problem (MBCS) which computes the balanced clique with maximum size. We show that MBCE problem
+and MBCS problem are both NP-Hard. For the MBCE problem, a straightforward solution is to treat the
+signed network as two unsigned networks and leverage the off-the-shelf techniques for unsigned
+networks. However, such a solution is inefficient for large signed networks. To address this problem,
+in this paper, we first propose a new maximal balanced clique enumeration algorithm by exploiting
+the unique properties of signed networks. Based on the new proposed algorithm, we devise two optimization
+strategies to further improve the efficiency of the enumeration. For the MBCS problem, we propose
+a new search framework based on search space partition. To further improve the efficiency of the
+new framework, we propose multiple optimization strategies regarding to redundant search branches
+and invalid candidates. We conduct extensive experiments on large real datasets. The experimental
+results demonstrate the efficiency, effectiveness and scalability of our proposed algorithms
+for MBCE problem and MBCS problem. 

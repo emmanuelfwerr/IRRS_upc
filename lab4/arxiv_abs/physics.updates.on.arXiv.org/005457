@@ -1,0 +1,20 @@
+Catheter ablation is currently the only curative treatment for scar-related ventricular tachycardias
+(VTs). However, not only are ablation procedures long, with relatively high risk, but success rates
+are punitively low, with frequent VT recurrence. Personalized in-silico approaches have the opportunity
+to address these limitations. However, state-of-the-art reaction diffusion (R-D) simulations
+of VT induction and subsequent circuits used for in-silico ablation target identification require
+long execution times, along with vast computational resources, which are incompatible with the
+clinical workflow. Here, we present the Virtual Induction and Treatment of Arrhythmias (VITA),
+a novel, rapid and fully automated computational approach that uses reaction-Eikonal methodology
+to induce VT and identify subsequent ablation targets. The rationale for VITA is based on finding
+isosurfaces associated with an activation wavefront that splits in the ventricles due to the presence
+of an isolated isthmus of conduction within the scar; once identified, each isthmus may be assessed
+for their vulnerability to sustain a reentrant circuit, and the corresponding exit site automatically
+identified for potential ablation targeting. VITA was tested on a virtual cohort of 7 post-infarcted
+porcine hearts and the results compared to R-D simulations. Using only a standard desktop machine,
+VITA could detect all scar-related VTs, simulating activation time maps and ECGs (for clinical
+comparison) as well as computing ablation targets in 48 minutes. The comparable VTs probed by the
+R-D simulations took 68.5 hours on 256 cores of high-performance computing infrastructure. The
+set of lesions computed by VITA was shown to render the ventricular model VT-free. VITA could be used
+in near real-time as a complementary modality aiding in clinical decision-making in the treatment
+of post-infarction VTs. 

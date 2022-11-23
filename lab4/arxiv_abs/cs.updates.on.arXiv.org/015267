@@ -1,0 +1,19 @@
+Adaptive Random Testing (ART) is an enhancement of Random Testing (RT), and aims to improve the RT
+failure-detection effectiveness by distributing test cases more evenly in the input domain. Many
+ART algorithms have been proposed, with Fixed-Size-Candidate-Set ART (FSCS-ART) being one of
+the most effective and popular. FSCS-ART ensures high failure-detection effectiveness by selecting
+the next test case as the candidate farthest from previously-executed test cases. Although FSCS-ART
+has good failure-detection effectiveness, it also faces some challenges, including heavy computational
+overheads. In this paper, we propose an enhanced version of FSCS-ART, Vantage Point Partitioning
+ART (VPP-ART). VPP-ART addresses the FSCS-ART computational overhead problem using vantage point
+partitioning, while maintaining the failure-detection effectiveness. VPP-ART partitions the
+input domain space using a modified Vantage Point tree (VP-tree) and finds the approximate nearest
+executed test cases of a candidate test case in the partitioned sub-domains -- thereby significantly
+reducing the time overheads compared with the searches required for FSCS-ART. To enable the FSCS-ART
+dynamic insertion process, we modify the traditional VP-tree to support dynamic data. The simulation
+results show that VPP-ART has a much lower time overhead compared to FSCS-ART, but also delivers
+similar (or better) failure-detection effectiveness, especially in the higher dimensional input
+domains. According to statistical analyses, VPP-ART can improve on the FSCS-ART failure-detection
+effectiveness by approximately 50% to 58%. VPP-ART also compares favorably with the KDFC-ART algorithms
+(a series of enhanced ART algorithms based on the KD-tree). Our experiments also show that VPP-ART
+is more cost-effective than FSCS-ART and KDFC-ART. 

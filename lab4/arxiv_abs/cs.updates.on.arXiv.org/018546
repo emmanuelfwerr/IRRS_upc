@@ -1,0 +1,19 @@
+Semantic image interpretation can vastly benefit from approaches that combine sub-symbolic distributed
+representation learning with the capability to reason at a higher level of abstraction. Logic Tensor
+Networks (LTNs) are a class of neuro-symbolic systems based on a differentiable, first-order logic
+grounded into a deep neural network. LTNs replace the classical concept of training set with a knowledge
+base of fuzzy logical axioms. By defining a set of differentiable operators to approximate the role
+of connectives, predicates, functions and quantifiers, a loss function is automatically specified
+so that LTNs can learn to satisfy the knowledge base. We focus here on the subsumption or \texttt{isOfClass}
+predicate, which is fundamental to encode most semantic image interpretation tasks. Unlike conventional
+LTNs, which rely on a separate predicate for each class (e.g., dog, cat), each with its own set of learnable
+weights, we propose a common \texttt{isOfClass} predicate, whose level of truth is a function of
+the distance between an object embedding and the corresponding class prototype. The PROTOtypical
+Logic Tensor Networks (PROTO-LTN) extend the current formulation by grounding abstract concepts
+as parametrized class prototypes in a high-dimensional embedding space, while reducing the number
+of parameters required to ground the knowledge base. We show how this architecture can be effectively
+trained in the few and zero-shot learning scenarios. Experiments on Generalized Zero Shot Learning
+benchmarks validate the proposed implementation as a competitive alternative to traditional
+embedding-based approaches. The proposed formulation opens up new opportunities in zero shot
+learning settings, as the LTN formalism allows to integrate background knowledge in the form of
+logical axioms to compensate for the lack of labelled examples. 

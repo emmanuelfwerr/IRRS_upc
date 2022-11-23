@@ -1,0 +1,19 @@
+Class imbalance is a characteristic known for making learning more challenging for classification
+models as they may end up biased towards the majority class. A promising approach among the ensemble-based
+methods in the context of imbalance learning is Dynamic Selection (DS). DS techniques single out
+a subset of the classifiers in the ensemble to label each given unknown sample according to their
+estimated competence in the area surrounding the query. Because only a small region is taken into
+account in the selection scheme, the global class disproportion may have less impact over the system's
+performance. However, the presence of local class overlap may severely hinder the DS techniques'
+performance over imbalanced distributions as it not only exacerbates the effects of the under-representation
+but also introduces ambiguous and possibly unreliable samples to the competence estimation process.
+Thus, in this work, we propose a DS technique which attempts to minimize the effects of the local class
+overlap during the classifier selection procedure. The proposed method iteratively removes from
+the target region the instance perceived as the hardest to classify until a classifier is deemed
+competent to label the query sample. The known samples are characterized using instance hardness
+measures that quantify the local class overlap. Experimental results show that the proposed technique
+can significantly outperform the baseline as well as several other DS techniques, suggesting its
+suitability for dealing with class under-representation and overlap. Furthermore, the proposed
+technique still yielded competitive results when using an under-sampled, less overlapped version
+of the labelled sets, specially over the problems with a high proportion of minority class samples
+in overlap areas. Code available at https://github.com/marianaasouza/lords. 

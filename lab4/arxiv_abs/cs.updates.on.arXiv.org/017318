@@ -1,0 +1,20 @@
+Privacy protection is an essential issue in personalized news recommendation, and federated learning
+can potentially mitigate the privacy concern by training personalized news recommendation models
+over decentralized user data.For a theoretical privacy guarantee, differential privacy is necessary.
+However, applying differential privacy to federated recommendation training and serving conventionally
+suffers from the unsatisfactory trade-off between privacy and utility due to the high-dimensional
+characteristics of model gradients and hidden representations. In addition, there is no formal
+privacy guarantee for both training and serving in federated recommendation. In this paper, we
+propose a unified federated news recommendation method for effective and privacy-preserving
+model training and online serving with differential privacy guarantees. We first clarify the notion
+of differential privacy over users' behavior data for both model training and online serving in
+the federated recommendation scenario. Next, we propose a privacy-preserving online serving
+mechanism under this definition with differentially private user interest decomposition. More
+specifically, it decomposes the high-dimensional and privacy-sensitive user embedding into
+a combination of public basic vectors and adds noise to the combination coefficients. In this way,
+it can avoid the dimension curse and improve the utility by reducing the required noise intensity
+for differential privacy. Besides, we design a federated recommendation model training method
+with differential privacy, which can avoid the dimension-dependent noise for large models via
+label permutation and differentially private attention modules. Experiments on real-world news
+recommendation datasets validate the effectiveness of our method in achieving a good trade-off
+between privacy protection and utility for federated news recommendations. 

@@ -1,0 +1,19 @@
+The $t$-fold pebbling number, $\pi_t(G)$, of a graph $G$ is defined to be the minimum number $m$ so
+that, from any given configuration of $m$ pebbles on the vertices of $G$, it is possible to place at
+least $t$ pebbles on any specified vertex via pebbling moves. It has been conjectured that the pebbling
+numbers of pyramid-free chordal graphs can be calculated in polynomial time. The $k^{\rm th}$ power
+$G^{(k)}$ of the graph $G$ is obtained from $G$ by adding an edge between any two vertices of distance
+at most $k$ from each other. The $k^{\rm th}$ power of the path $P_n$ on $n$ is an important class of
+pyramid-free chordal graphs. Pachter, Snevily, and Voxman (1995), Kim (2004), and Kim and Kim (2010)
+calculated $\pi(P_n^{(k)})$ for $2\le k\le 4$, respectively. In this paper we calculate $\pi_t(P_n^{(k)})$
+for all $n$, $k$, and $t$. For a function $D:V(G)\rightarrow{\mathbb N}$, the $D$-pebbling number,
+$\pi(G,D)$, of a graph $G$ is defined to be the minimum number $m$ so that, from any given configuration
+of $m$ pebbles on the vertices of $G$, it is possible to place at least $D(v)$ pebbles on each vertex
+$v$ via pebbling moves. We make the conjecture that every $G$ and $D$ satisfies $\pi(G,D)\le \pi_{|D|}(G)-(s(D)-1)$,
+where $s(D)$ counts the number of vertices $v$ with $D(v)>0$. We prove this for trees and $P_n^{(k)}$,
+for all $n$ and $k$. The pebbling exponent $e_\pi(G)$ of a graph $G$ was defined by Pachter, et al.,
+to be the minimum $k$ for which $\pi(G^{(k)})=n(G^{(k)})$. Of course, $e_\pi(G)\le {\rm diameter}(G)$,
+and Czygrinow, Hurlbert, Kierstead, and Trotter (2002) proved that almost all graphs $G$ have $e_\pi(G)=1$.
+Lourdusamy and Mathivanan (2015) proved several results on $\pi_t(C_n^2)$, and Hurlbert (2017)
+proved an asymptotically tight formula for $e_\pi(C_n)$. Our formula for $\pi_t(P_n^{(k)})$
+allows us us to compute $e_\pi(P_n)$ asymptotically tightly. 

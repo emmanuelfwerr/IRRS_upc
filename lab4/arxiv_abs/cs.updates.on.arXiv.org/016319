@@ -1,0 +1,19 @@
+To improve the viewer's Quality of Experience (QoE) and optimize computer graphics applications,
+3D model quality assessment (3D-QA) has become an important task in the multimedia area. Point cloud
+and mesh are the two most widely used digital representation formats of 3D models, the visual quality
+of which is quite sensitive to lossy operations like simplification and compression. Therefore,
+many related studies such as point cloud quality assessment (PCQA) and mesh quality assessment
+(MQA) have been carried out to measure the visual quality degradations of 3D models. However, a large
+part of previous studies utilize full-reference (FR) metrics, which indicates they can not predict
+the quality level with the absence of the reference 3D model. Furthermore, few 3D-QA metrics consider
+color information, which significantly restricts their effectiveness and scope of application.
+In this paper, we propose a no-reference (NR) quality assessment metric for colored 3D models represented
+by both point cloud and mesh. First, we project the 3D models from 3D space into quality-related geometry
+and color feature domains. Then, the 3D natural scene statistics (3D-NSS) and entropy are utilized
+to extract quality-aware features. Finally, machine learning is employed to regress the quality-aware
+features into visual quality scores. Our method is validated on the colored point cloud quality
+assessment database (SJTU-PCQA), the Waterloo point cloud assessment database (WPC), and the
+colored mesh quality assessment database (CMDM). The experimental results show that the proposed
+method outperforms most compared NR 3D-QA metrics with competitive computational resources and
+greatly reduces the performance gap with the state-of-the-art FR 3D-QA metrics. The code of the
+proposed model is publicly available now to facilitate further research. 

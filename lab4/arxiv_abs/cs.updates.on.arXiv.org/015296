@@ -1,0 +1,18 @@
+Accurate and robust segmentation of lung cancers from CT, even those located close to mediastinum,
+is needed to more accurately plan and deliver radiotherapy and to measure treatment response. Therefore,
+we developed a new cross-modality educed distillation (CMEDL) approach, using unpaired CT and
+MRI scans, whereby an informative teacher MRI network guides a student CT network to extract features
+that signal the difference between foreground and background. Our contribution eliminates two
+requirements of distillation methods: (i) paired image sets by using an image to image (I2I) translation
+and (ii) pre-training of the teacher network with a large training set by using concurrent training
+of all networks. Our framework uses an end-to-end trained unpaired I2I translation, teacher, and
+student segmentation networks. Architectural flexibility of our framework is demonstrated using
+3 segmentation and 2 I2I networks. Networks were trained with 377 CT and 82 T2w MRI from different
+sets of patients, with independent validation (N=209 tumors) and testing (N=609 tumors) datasets.
+Network design, methods to combine MRI with CT information, distillation learning under informative
+(MRI to CT), weak (CT to MRI) and equal teacher (MRI to MRI), and ablation tests were performed. Accuracy
+was measured using Dice similarity (DSC), surface Dice (sDSC), and Hausdorff distance at the 95$^{th}$
+percentile (HD95). The CMEDL approach was significantly (p $<$ 0.001) more accurate (DSC of 0.77
+vs. 0.73) than non-CMEDL methods with an informative teacher for CT lung tumor, with a weak teacher
+(DSC of 0.84 vs. 0.81) for MRI lung tumor, and with equal teacher (DSC of 0.90 vs. 0.88) for MRI multi-organ
+segmentation. CMEDL also reduced inter-rater lung tumor segmentation variabilities.. 

@@ -1,0 +1,19 @@
+The Join operator, as one of the most expensive and commonly used operators in database systems,
+plays a substantial role in Database Management System (DBMS) performance. Among the many different
+Join algorithms studied over the last decades, Hybrid Hash Join (HHJ) has proven to be one of the most
+efficient and widely-used join algorithms. While the performance of HHJ depends largely on accurate
+statistics and information about the input relations, it may not always be practical or possible
+for a system to have such information available. The design of HHJ depends on many details to perform
+well. This paper is an experimental and analytical study of the trade-offs in designing a robust
+and dynamic HHJ operator. We revisit the design and optimization techniques suggested by previous
+studies through extensive experiments, comparing them with other algorithms designed by us or
+used in related studies. We explore the impact of the number of partitions on the performance of HHJ
+and propose a lower bound and a default value for the number of partitions. We continue by designing
+and evaluating different partition insertion techniques to maximize memory utilization with
+the least CPU cost. In addition, we consider a comprehensive set of algorithms for dynamically selecting
+a partition to spill and compare the results against previously published studies. We then present
+two alternative growth policies for spilled partitions and study their effectiveness using experimental
+and model-based analyses. These algorithms have been implemented in the context of Apache AsterixDB
+and evaluated under different scenarios such as variable record sizes, different distributions
+of join attributes, and different storage types, including HDD, SSD, and Amazon Elastic Block Store
+(Amazon EBS). 

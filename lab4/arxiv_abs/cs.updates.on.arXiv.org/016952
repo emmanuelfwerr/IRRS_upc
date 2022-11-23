@@ -1,0 +1,18 @@
+Modern computing systems are increasingly more complex, with their multicore CPUs and GPUs accelerators
+changing yearly, if not more often. It thus has become very challenging to write programs that efficiently
+use the associated complex memory systems and take advantage of the available parallelism. Autotuning
+addresses this by optimizing parameterized code to the targeted hardware by searching for the optimal
+set of parameters. Empirical autotuning has therefore gained interest during the past decades.
+While new autotuning algorithms are regularly presented and published, we will show why comparing
+these autotuning algorithms is a deceptively difficult task. In this paper, we describe our empirical
+study of state-of-the-art search techniques for autotuning by comparing them on a range of sample
+sizes, benchmarks and architectures. We optimize 6 tunable parameters with a search-space size
+of over 2 million. The algorithms studied include Random Search (RS), Random Forest Regression
+(RF), Genetic Algorithms (GA), Bayesian Optimization with Gaussian Processes (BO GP) and Bayesian
+Optimization with Tree-Parzen Estimators (BO TPE). Our results on the ImageCL benchmark suite
+suggest that the ideal autotuning algorithm heavily depends on the sample size. In our study, BO
+GP and BO TPE outperform the other algorithms in most scenarios with sample sizes from 25 to 100. However,
+GA usually outperforms the others for sample sizes 200 and beyond. We generally see the most speedup
+to be gained over RS in the lower range of sample sizes (25-100). However, the algorithms more consistently
+outperform RS for higher sample sizes (200-400). Hence, no single state-of-the-art algorithm
+outperforms the rest for all sample sizes. Some suggestions for future work are also included. 

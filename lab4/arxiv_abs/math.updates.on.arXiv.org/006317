@@ -1,0 +1,20 @@
+Full-waveform inversion (FWI) is a seismic imaging method that provides quantitative inference
+about subsurface properties with a wavelength-scale resolution. Its frequency-domain formulation
+is computationally efficient when processing only a few discrete frequencies. However, classical
+FWI, which is formulated on the reduced-parameter space, requires starting the inversion with
+a sufficiently-accurate initial model and low frequency to prevent being stuck in local minima
+due to cycle skipping. FWI with extended search space has been proposed to mitigate this issue. It
+contains two main steps: first, data-assimilated (DA) wavefields are computed by allowing for
+wave-equation errors to match the data at receivers closely. Then, subsurface parameters are estimated
+from these wavefields by minimizing the wave-equation errors. The DA wavefields are the least-squares
+solution of an overdetermined system gathering the wave and observation equations. The numerical
+bandwidth of the resulting normal-equation system is two times that of the wave-equation system,
+which can be a limiting factor for 3D large-scale applications. Therefore, computing highly accurate
+DA wavefields at a reasonable computational cost is an issue in extended FWI. This issue is addressed
+here by rewriting the normal system such that its solution can be computed by solving the time-harmonic
+wave equation several times in sequence. Moreover, the computational burden of multi-right-hand
+side (RHS) simulations is mitigated with a sketching method. Finally, we solve the time-harmonic
+wave equation with the convergent Born series method, which conciliates accuracy and computational
+efficiency. Application of the new extended FWI algorithm on the salt benchmark shows that it reconstructs
+at a reasonable cost subsurface models that are similar to those obtained with the classical extended
+FWI. 

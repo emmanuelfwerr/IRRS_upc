@@ -1,0 +1,20 @@
+We intend to create a new risk assessment methodology that combines the best characteristics of
+both risk score and machine learning models. More specifically, we aim to develop a method that,
+besides having a good performance, offers a personalized model and outcome for each patient, presents
+high interpretability, and incorporates an estimation of the prediction reliability which is
+not usually available. By combining these features in the same approach we expect that it can boost
+the confidence of physicians to use such a tool in their daily activity. In order to achieve the mentioned
+goals, a three-step methodology was developed: several rules were created by dichotomizing risk
+factors; such rules were trained with a machine learning classifier to predict the acceptance degree
+of each rule (the probability that the rule is correct) for each patient; that information was combined
+and used to compute the risk of mortality and the reliability of such prediction. The methodology
+was applied to a dataset of patients admitted with any type of acute coronary syndromes (ACS), to
+assess the 30-days all-cause mortality risk. The performance was compared with state-of-the-art
+approaches: logistic regression (LR), artificial neural network (ANN), and clinical risk score
+model (Global Registry of Acute Coronary Events - GRACE). The proposed approach achieved testing
+results identical to the standard LR, but offers superior interpretability and personalization;
+it also significantly outperforms the GRACE risk model and the standard ANN model. The calibration
+curve also suggests a very good generalization ability of the obtained model as it approaches the
+ideal curve. Finally, the reliability estimation of individual predictions presented a great
+correlation with the misclassifications rate. Those properties may have a beneficial application
+in other clinical scenarios as well. [abridged] 

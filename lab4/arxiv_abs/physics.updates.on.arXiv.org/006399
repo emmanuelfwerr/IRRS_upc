@@ -1,0 +1,19 @@
+$\textbf{Purpose}$: To develop a clinical CEST MR fingerprinting (CEST-MRF) method for brain
+tumor quantification using EPI acquisition and deep learning reconstruction. $\textbf{Methods}$:
+A CEST-MRF pulse sequence originally designed for animal imaging was modified to conform to hardware
+limits on clinical scanners while keeping scan time $\leq$ 2 minutes. Quantitative MRF reconstruction
+was performed using a deep reconstruction network (DRONE) to yield the water relaxation and chemical
+exchange parameters. The feasibility of the 6 parameter DRONE reconstruction was tested in simulations
+in a digital brain phantom. A healthy subject was scanned with the CEST-MRF sequence, conventional
+MRF and CEST sequences for comparison. Reproducibility was assessed via test-retest experiments
+and the concordance correlation coefficient (CCC) calculated for white matter (WM) and grey matter
+(GM). The clinical utility of CEST-MRF was demonstrated in 4 patients with brain metastases in comparison
+to standard clinical imaging sequences. Tumors were segmented into edema, solid core and necrotic
+core regions and the CEST-MRF values compared to the contra-lateral side. $\textbf{Results}$:
+The DRONE reconstruction of the digital phantom yielded a normalized RMS error of $\leq$ 7% for all
+parameters. The CEST-MRF parameters were in good agreement with those from conventional MRF and
+CEST sequences and previous studies. The mean CCC for all 6 parameters was 0.98$\pm$0.01 in WM and
+0.98$\pm$0.02 in GM. The CEST-MRF values in nearly all tumor regions were significantly different
+(P=0.05) from each other and the contra-lateral side. $\textbf{Conclusion}$: Combination of
+EPI readout and deep learning reconstruction enabled fast, accurate and reproducible CEST-MRF
+in brain tumors. 

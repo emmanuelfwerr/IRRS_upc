@@ -1,0 +1,19 @@
+Object density reconstruction from projections containing scattered radiation and noise is of
+critical importance in many applications. Existing scatter correction and density reconstruction
+methods may not provide the high accuracy needed in many applications and can break down in the presence
+of unmodeled or anomalous scatter and other experimental artifacts. Incorporating machine-learned
+models could prove beneficial for accurate density reconstruction particularly in dynamic imaging,
+where the time-evolution of the density fields could be captured by partial differential equations
+or by learning from hydrodynamics simulations. In this work, we demonstrate the ability of learned
+deep neural networks to perform artifact removal in noisy density reconstructions, where the noise
+is imperfectly characterized. We use a Wasserstein generative adversarial network (WGAN), where
+the generator serves as a denoiser that removes artifacts in densities obtained from traditional
+reconstruction algorithms. We train the networks from large density time-series datasets, with
+noise simulated according to parametric random distributions that may mimic noise in experiments.
+The WGAN is trained with noisy density frames as generator inputs, to match the generator outputs
+to the distribution of clean densities (time-series) from simulations. A supervised loss is also
+included in the training, which leads to improved density restoration performance. In addition,
+we employ physics-based constraints such as mass conservation during network training and application
+to further enable highly accurate density reconstructions. Our preliminary numerical results
+show that the models trained in our frameworks can remove significant portions of unknown noise
+in density time-series data. 

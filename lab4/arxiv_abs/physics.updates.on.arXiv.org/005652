@@ -1,0 +1,19 @@
+We propose to use techniques from Bayesian inference and deep neural networks to translate uncertainty
+in seismic imaging to uncertainty in tasks performed on the image, such as horizon tracking. Seismic
+imaging is an ill-posed inverse problem because of unavoidable bandwidth and aperture limitations,
+which that is hampered by the presence of noise and linearization errors. Many regularization methods,
+such as transform-domain sparsity promotion, have been designed to deal with the adverse effects
+of these errors, however, these methods run the risk of biasing the solution and do not provide information
+on uncertainty in the image space and how this uncertainty impacts certain tasks on the image. A systematic
+approach is proposed to translate uncertainty due to noise in the data to confidence intervals of
+automatically tracked horizons in the image. The uncertainty is characterized by a convolutional
+neural network (CNN) and to assess these uncertainties, samples are drawn from the posterior distribution
+of the CNN weights, used to parameterize the image. Compared to traditional priors, in the literature
+it is argued that these CNNs introduce a flexible inductive bias that is a surprisingly good fit for
+many diverse domains in imaging. The method of stochastic gradient Langevin dynamics is employed
+to sample from the posterior distribution. This method is designed to handle large scale Bayesian
+inference problems with computationally expensive forward operators as in seismic imaging. Aside
+from offering a robust alternative to maximum a posteriori estimate that is prone to overfitting,
+access to these samples allow us to translate uncertainty in the image, due to noise in the data, to
+uncertainty on the tracked horizons. For instance, it admits estimates for the pointwise standard
+deviation on the image and for confidence intervals on its automatically tracked horizons. 

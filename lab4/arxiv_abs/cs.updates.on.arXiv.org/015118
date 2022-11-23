@@ -1,0 +1,19 @@
+The optimal design of federated learning (FL) algorithms for solving general machine learning
+(ML) problems in practical edge computing systems with quantized message passing remains an open
+problem. This paper considers an edge computing system where the server and workers have possibly
+different computing and communication capabilities and employ quantization before transmitting
+messages. To explore the full potential of FL in such an edge computing system, we first present a
+general FL algorithm, namely GenQSGD, parameterized by the numbers of global and local iterations,
+mini-batch size, and step size sequence. Then, we analyze its convergence for an arbitrary step
+size sequence and specify the convergence results under three commonly adopted step size rules,
+namely the constant, exponential, and diminishing step size rules. Next, we optimize the algorithm
+parameters to minimize the energy cost under the time constraint and convergence error constraint,
+with the focus on the overall implementing process of FL. Specifically, for any given step size sequence
+under each considered step size rule, we optimize the numbers of global and local iterations and
+mini-batch size to optimally implement FL for applications with preset step size sequences. We
+also optimize the step size sequence along with these algorithm parameters to explore the full potential
+of FL. The resulting optimization problems are challenging non-convex problems with non-differentiable
+constraint functions. We propose iterative algorithms to obtain KKT points using general inner
+approximation (GIA) and tricks for solving complementary geometric programming (CGP). Finally,
+we numerically demonstrate the remarkable gains of GenQSGD with optimized algorithm parameters
+over existing FL algorithms and reveal the significance of optimally designing general FL algorithms.

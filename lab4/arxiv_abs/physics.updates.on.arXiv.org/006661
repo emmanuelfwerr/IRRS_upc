@@ -1,0 +1,20 @@
+The vortex particle method (VPM) is a mesh-free approach to computational fluid dynamics (CFD)
+solving the Navier-Stokes equations in their velocity-vorticity form. The VPM uses a Lagrangian
+scheme, which not only avoids the hurdles of mesh generation, but it also conserves vortical structures
+over long distances with minimal numerical dissipation while being orders of magnitude faster
+than conventional mesh-based CFD. However, VPM is known to be numerically unstable when vortical
+structures break down close to the turbulent regime. In this study, we reformulate the VPM as a large
+eddy simulation (LES) in a scheme that is numerically stable, without increasing its computational
+cost. A new set of VPM governing equations are derived from the LES-filtered Navier-Stokes equations.
+The new equations reinforce conservation of mass and angular momentum by reshaping the vortex elements
+subject to vortex stretching. In addition to the VPM reformulation, a new anisotropic dynamic model
+of subfilter-scale (SFS) vortex stretching is developed. This SFS model is well suited for turbulent
+flows with coherent vortical structures where the predominant cascade mechanism is vortex stretching.
+Advection, viscous diffusion, and vortex stretching are validated through simulation of isolated
+and leapfrogging vortex rings. Mean and fluctuating components of turbulent flow are validated
+through simulation of a turbulent round jet, where Reynolds stresses are resolved directly and
+compared to experimental measurements. Finally, the computational efficiency of the scheme is
+showcased in the simulation of an aircraft rotor in hover, showing our meshless LES to be 100x faster
+than a mesh-based LES with similar fidelity, while being 10x faster than a low-fidelity unsteady
+Reynolds-average Navier-Stokes simulation and 1000x faster than a high-fidelity detached-eddy
+simulation. 

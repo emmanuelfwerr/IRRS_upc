@@ -1,0 +1,19 @@
+We propose a method to calculate finite-temperature properties of a quantum many-body system for
+a microcanonical ensemble by introducing a pure quantum state named here an energy-filtered random-phase
+state, which is also a potentially promising application of near-term quantum computers. In our
+formalism, a microcanonical ensemble is specified by two parameters, i.e., an energy of the system
+and its associated energy window. Accordingly, the density of states is expressed as a sum of Gaussians
+centered at the target energy with its spread corresponding to the width of the energy window. We
+then show that the thermodynamic quantities such as entropy and temperature are calculated by evaluating
+the trace of the time-evolution operator and the trace of the time-evolution operator multiplied
+by the Hamiltonian of the system. We also describe how these traces can be evaluated using random
+diagonal-unitary circuits appropriate to quantum computation. The pure quantum state representing
+our microcanonical ensemble is related to a state of the form introduced by Wall and Neuhauser for
+the filter diagonalization method [M. R. Wall and D. Neuhauser, J. Chem. Phys. 102, 8011 (1995)],
+and therefore we refer to it as an energy-filtered random-phase state. The energy-filtered random-phase
+state is essentially a Fourier transform of a time-evolved state whose initial state is prepared
+as a random-phase state, and the cut-off time in the time-integral for the Fourier transform sets
+the inverse of the width of the energy window. The proposed method is demonstrated numerically by
+calculating thermodynamic quantities for the one-dimensional spin-1/2 Heisenberg model on small
+clusters up to 28 qubits, showing that the method is most efficient for the target energy around which
+the dense distribution of energy eigenstates is found. 

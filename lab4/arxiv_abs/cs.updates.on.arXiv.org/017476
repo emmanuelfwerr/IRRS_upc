@@ -1,0 +1,19 @@
+As one of the most well-known programmer Q&A websites, Stack Overflow (i.e., SO) is serving tens
+of thousands of developers every day. Previous work has shown that many developers reuse the code
+snippets on SO when they find an answer (from SO) that functionally matches the programming problem
+they encounter in their development activities. To study how programmers reuse code on SO during
+project development, we conduct a comprehensive empirical study. First, to capture the development
+activities of programmers, we collect 342,148 modified code snippets in commits from 793 open-source
+Java projects, and these modified code can reflect the programming problems encountered during
+development. We also collect the code snippets from 1,355,617 posts on SO. Then, we employ CCFinder
+to detect the code clone between the modified code from commits and the code from SO, and further analyze
+the code reuse when programmer solves a programming problem during development. We count the code
+reuse ratios of the modified code snippets in the commits of each project in different years, the
+results show that the average code reuse ratio is 6.32%, and the maximum is 8.38%. The code reuse ratio
+in project commits has increased year by year, and the proportion of code reuse in the newly established
+project is higher than that of old projects. We also find that some projects reuse the code snippets
+from many years ago. Additionally, we find that experienced developers seem to be more likely to
+reuse the knowledge on SO. Moreover, we find that the code reuse ratio in bug-related commits (6.67%)
+is slightly higher than that of in non-bug-related commits (6.59%). Furthermore, we also find that
+the code reuse ratio (14.44%) in Java class files that have undergone multiple modifications is
+more than double the overall code reuse ratio (6.32%). 

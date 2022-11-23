@@ -1,0 +1,19 @@
+Aggregating data in a database could also be called "integrating along fibers": given functions
+$\pi\colon E\to D$ and $s\colon E\to R$, where $(R,\circledast)$ is a commutative monoid, we want
+a new function $(\circledast s)_\pi$ that sends each $d\in D$ to the "sum" of all $s(e)$ for which
+$\pi(e)=d$. The operation lives alongside querying -- or more generally data migration -- in typical
+database usage: one wants to know how much Canadians spent on cell phones in 2021, for example, and
+such requests typically require both aggregation and querying. But whereas querying has an elegant
+category-theoretic treatment in terms of parametric right adjoints between copresheaf categories,
+a categorical formulation of aggregation -- especially one that lives alongside that for querying
+-- appears to be completely absent from the literature. In this paper we show how both querying and
+aggregation fit into the "polynomial ecosystem". Starting with the category $\mathbf{Poly}$
+of polynomial functors in one variable, we review the relatively recent results of Ahman-Uustalu
+and Garner, which showed that the framed bicategory $\mathbb{C}\mathbf{at}^\sharp$ of comonads
+in $\mathbf{Poly}$ is precisely the right setting for data migration: its objects are categories
+and its bicomodules are parametric right adjoints between their copresheaf categories. We then
+develop a great deal of theory, compressed for space reasons, including local monoidal closed structures,
+a coclosure to bicomodule composition, and an understanding of adjoints in $\mathbb{C}\mathbf{at}^\sharp$.
+Doing so allows us to derive interesting mathematical results, e.g.\ that the ordinary operation
+of transposing a span can be decomposed into the composite of two more primitive operations, and
+then finally to explain how aggregation arises, alongside querying, in $\mathbb{C}\mathbf{at}^\sharp$.

@@ -1,0 +1,19 @@
+With the rise of the digital economy and an explosion of available information on consumers, effective
+personalization of offers, goods, and services has become a core business focus for companies to
+improve revenues and maintain competitive edge. This paper studies the personalization problem
+through the lens of policy learning, where the goal is to learn a decision-making rule (a policy)
+that maps from consumer and product characteristics (features) to recommendations (actions)
+in order to optimize outcomes (rewards). We focus on using available historical data for offline
+learning with unknown data collection procedure. Importantly, in many business and medical settings,
+interpretability of a policy is essential. To address these challenges, we study the class of policies
+with linear decision boundaries and propose learning algorithms using tools from causal inference.
+We propose several optimization schemes to solve the associated non-convex, non-smooth optimization
+problem, and find that an adapted Bayesian optimization algorithm is fast and effective. We test
+our algorithm with extensive simulation studies and apply it to an online marketplace customer
+purchase dataset, where the learned policy outputs a personalized discount recommendation based
+on customer and product features in order to maximize gross merchandise value (GMV) for sellers.
+Our learned policy improves upon the platform's baseline by 88.2\% in net sales revenue, while also
+providing informative insights on which features are important for the decision-making process,
+e.g. when "Attribute 2" is large, marginal increase in GMV is low for discounts higher than 10\%.
+Our findings suggest that the proposed policy learning algorithm provides a promising practical
+approach for interpretable personalization across a wide range of applications. 

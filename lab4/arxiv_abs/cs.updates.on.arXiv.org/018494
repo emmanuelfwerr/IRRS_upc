@@ -1,0 +1,19 @@
+Convolutional neural networks (CNN), the most prevailing architecture for deep-learning based
+medical image analysis, are still functionally limited by their intrinsic inductive biases and
+inadequate receptive fields. Transformer, born to address this issue, has drawn explosive attention
+in natural language processing and computer vision due to its remarkable ability in capturing long-range
+dependency. However, most recent transformer-based methods for medical image segmentation directly
+apply vanilla transformers as an auxiliary module in CNN-based methods, resulting in severe detail
+loss due to the rigid patch partitioning scheme in transformers. To address this problem, we propose
+C2FTrans, a novel multi-scale architecture that formulates medical image segmentation as a coarse-to-fine
+procedure. C2FTrans mainly consists of a cross-scale global transformer (CGT) which addresses
+local contextual similarity in CNN and a boundary-aware local transformer (BLT) which overcomes
+boundary uncertainty brought by rigid patch partitioning in transformers. Specifically, CGT
+builds global dependency across three different small-scale feature maps to obtain rich global
+semantic features with an acceptable computational cost, while BLT captures mid-range dependency
+by adaptively generating windows around boundaries under the guidance of entropy to reduce computational
+complexity and minimize detail loss based on large-scale feature maps. Extensive experimental
+results on three public datasets demonstrate the superior performance of C2FTrans against state-of-the-art
+CNN-based and transformer-based methods with fewer parameters and lower FLOPs. We believe the
+design of C2FTrans would further inspire future work on developing efficient and lightweight transformers
+for medical image segmentation. The source code of this paper is publicly available at https://github.com/xianlin7/C2FTrans.

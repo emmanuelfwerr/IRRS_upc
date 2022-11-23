@@ -1,0 +1,20 @@
+With the increasing demand for openness, flexibility, and monetization the Network Function Virtualization
+(NFV) of mobile network functions has become the embracing factor for most mobile network operators.
+Early reported field deployments of virtualized Evolved Packet Core (EPC) - the core network component
+of 4G LTE and 5G non-standalone mobile networks - reflect this growing trend. To best meet the requirements
+of power management, load balancing, and fault tolerance in the cloud environment, the need for
+live migration for these virtualized components cannot be shunned. Virtualization platforms
+of interest include both Virtual Machines (VMs) and Containers, with the latter option offering
+more lightweight characteristics. The first contribution of this paper is the implementation
+of a number of custom functions that enable migration of Containers supporting virtualized EPC
+components. The current CRIU-based migration of Docker Container does not fully support the mobile
+network protocol stack. CRIU extensions to support the mobile network protocol stack are therefore
+required and described in the paper. The second contribution is an experimental-based comprehensive
+analysis of live migration in two backhaul network settings and two virtualization technologies.
+The two backhaul network settings are the one provided by CloudLab and one based on a programmable
+optical network testbed that makes use of OpenROADM dense wavelength division multiplexing (DWDM)
+equipment. The paper compares the migration performance of the proposed implementation of OpenAirInterface
+(OAI) based containerized EPC components with the one utilizing VMs, running in OpenStack. The
+presented experimental comparison accounts for a number of system parameters and configurations,
+image size of the virtualized EPC components, network characteristics, and signal propagation
+time across the OpenROADM backhaul network. 

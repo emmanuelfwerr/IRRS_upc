@@ -1,0 +1,19 @@
+Spatial speech communication, i.e., the reconstruction of spoken signal along with the relative
+speaker position in the enclosure (reverberation information) is considered in this paper. Directional,
+diffuse components and the source position information are estimated at the transmitter, and perceptually
+effective reproduction is considered at the receiver. We consider spatially distributed microphone
+arrays for signal acquisition, and node specific signal estimation, along with its direction of
+arrival (DoA) estimation. Short-time Fourier transform (STFT) domain multi-channel linear prediction
+(MCLP) approach is used to model the diffuse component and relative acoustic transfer function
+is used to model the direct signal component. Distortion-less array response constraint and the
+time-varying complex Gaussian source model are used in the joint estimation of source DoA and the
+constituent signal components, separately at each node. The intersection between DoA directions
+at each node is used to compute the source position. Signal components computed at the node nearest
+to the estimated source position are taken as the signals for transmission. At the receiver, a four
+channel loud speaker (LS) setup is used for spatial reproduction, in which the source spatial image
+is reproduced relative to a chosen virtual listener position in the transmitter enclosure. Vector
+base amplitude panning (VBAP) method is used for direct component reproduction using the LS setup
+and the diffuse component is reproduced equally from all the loud speakers after decorrelation.
+This scheme of spatial speech communication is shown to be effective and more natural for hands-free
+telecommunication, through either loudspeaker listening or binaural headphone listening with
+head related transfer function (HRTF) based presentation. 

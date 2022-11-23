@@ -1,0 +1,18 @@
+Human drivers have limited and time-varying cognitive resources when making decisions in real-world
+traffic scenarios, which often leads to unique and stochastic behaviors that can not be explained
+by perfect rationality assumption, a widely accepted premise in modeling driving behaviors that
+presume drivers rationally make decisions to maximize their own rewards under all circumstances.
+To explicitly address this disadvantage, this study presents a novel driver behavior model that
+aims to capture the resource rationality and stochasticity of the human driver's behaviors in realistic
+longitudinal driving scenarios. The resource rationality principle can provide a theoretic framework
+to better understand the human cognition processes by modeling human's internal cognitive mechanisms
+as utility maximization subject to cognitive resource limitations, which can be represented as
+finite and time-varying preview horizons in the context of driving. An inverse resource rational-based
+stochastic inverse reinforcement learning approach (IRR-SIRL) is proposed to learn a distribution
+of the planning horizon and cost function of the human driver with a given series of human demonstrations.
+A nonlinear model predictive control (NMPC) with a time-varying horizon approach is used to generate
+driver-specific trajectories by using the learned distributions of the planning horizon and the
+cost function of the driver. The simulation experiments are carried out using human demonstrations
+gathered from the driver-in-the-loop driving simulator. The results reveal that the proposed
+inverse resource rational-based stochastic driver model can address the resource rationality
+and stochasticity of human driving behaviors in a variety of realistic longitudinal driving scenarios.

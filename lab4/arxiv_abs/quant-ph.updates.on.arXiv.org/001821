@@ -1,0 +1,20 @@
+Quantum Chemistry (QC) is one of the most promising applications of Quantum Computing. However,
+present quantum processing units (QPUs) are still subject to large errors. Therefore, noisy intermediate-scale
+quantum (NISQ) hardware is limited in terms of qubits counts and circuit depths. Specific algorithms
+such as Variational Quantum Eigensolvers (VQEs) can potentially overcome such issues. We introduce
+here a novel open-source QC package, denoted Open-VQE, providing tools for using and developing
+chemically-inspired adaptive methods derived from Unitary Coupled Cluster (UCC). It facilitates
+the development and testing of VQE algorithms. It is able to use the Atos Quantum Learning Machine
+(QLM), a general quantum programming framework enabling to write, optimize and simulate quantum
+computing programs. Along with Open-VQE, we introduce myQLM-Fermion, a new open-source module
+(that includes the key QLM ressources that are important for QC developments (fermionic second
+quantization tools etc...). The Open-VQE package extends therefore QLM to QC providing: (i) the
+functions to generate the different types of excitations beyond the commonly used UCCSD ans{\"a}tz;(ii)
+a new implementation of the "adaptive derivative assembled pseudo-Trotter method" (ADAPT-VQE),
+written in simple class structure python codes. Interoperability with other major quantum programming
+frameworks is ensured thanks to myQLM, which allows users to easily build their own code and execute
+it on existing QPUs. The combined Open-VQE/myQLM-Fermion quantum simulator facilitates the implementation,
+tests and developments of variational quantum algorithms towards choosing the best compromise
+to run QC computations on present quantum computers while offering the possibility to test large
+molecules. We provide extensive benchmarks for several molecules associated to qubit counts ranging
+from 4 up to 24. 

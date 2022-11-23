@@ -1,0 +1,19 @@
+Deep learning approaches are superior in NLP due to their ability to extract informative features
+and patterns from languages. The two most successful neural architectures are LSTM and transformers,
+used in large pretrained language models such as BERT. While cross-lingual approaches are on the
+rise, most current NLP techniques are designed and applied to English, and less-resourced languages
+are lagging behind. In morphologically rich languages, information is conveyed through morphology,
+e.g., through affixes modifying stems of words. Existing neural approaches do not explicitly use
+the information on word morphology. We analyse the effect of adding morphological features to LSTM
+and BERT models. As a testbed, we use three tasks available in many less-resourced languages: named
+entity recognition (NER), dependency parsing (DP), and comment filtering (CF). We construct baselines
+involving LSTM and BERT models, which we adjust by adding additional input in the form of part of speech
+(POS) tags and universal features. We compare models across several languages from different language
+families. Our results suggest that adding morphological features has mixed effects depending
+on the quality of features and the task. The features improve the performance of LSTM-based models
+on the NER and DP tasks, while they do not benefit the performance on the CF task. For BERT-based models,
+the morphological features only improve the performance on DP when they are of high quality while
+not showing practical improvement when they are predicted. Even for high-quality features, the
+improvements are less pronounced in language-specific BERT variants compared to massively multilingual
+BERT models. As in NER and CF datasets manually checked features are not available, we only experiment
+with predicted features and find that they do not cause any practical improvement in performance.

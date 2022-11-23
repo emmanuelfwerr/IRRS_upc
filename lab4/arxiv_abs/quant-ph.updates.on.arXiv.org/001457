@@ -1,0 +1,20 @@
+Quantum circuit simulation is used to verify and test large quantum circuits before constructing
+them physically. Improving simulation saves time and resources for designing circuits. Here we
+study three different aspects of simulation. Initially, we explore the method of using graph states
+augmented with local Clifford operations to simulate stabilizer circuit computations, which
+we call graph state simulation. By deriving new transformation rules on graph states, we improve
+upon the current widely adopted graph state simulation algorithm. At the same time, we prove that
+in the worst case, at least $\Omega(n^2)$ edge toggles must be performed in order to update the graph
+corresponding to the stabilizer state upon application of a controlled-Pauli $Z$ gate. Our results
+suggest that graph state simulation is advantageous over other methods of simulation for some but
+not all classes of circuits. Then, stabilizer simulation can be used to simulate arbitrary quantum
+circuits by representing quantum states as linear combinations of stabilizer states. To better
+represent stabilizer states, we discover a unique and elegant canonical form for stabilizer states
+based on graph states and also show how to efficiently simplify stabilizer states to canonical form.
+Also, we derive a simpler formula for combining two Pauli-related stabilizer states into one and
+characterize all linearly dependent triplets of stabilizer states, revealing three cases, the
+first with two Pauli-related stabilizer states and the other two with pairwise equal inner products.
+We present an algorithm for computing the inner product between stabilizer states, which receives
+graph states augmented with Clifford operations as inputs. Our algorithm's runtime is $O(nd^2)$
+where $d$ is the maximum degree of the graph, which improves upon the previous algorithm's runtime
+of $O(n^3)$. 

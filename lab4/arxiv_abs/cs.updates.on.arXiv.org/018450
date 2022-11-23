@@ -1,0 +1,19 @@
+This paper addresses the problem of estimating link flows in a road network by combining limited
+traffic volume and vehicle trajectory data. While traffic volume data from loop detectors have
+been the common data source for link flow estimation, the detectors only cover a subset of links.
+Vehicle trajectory data collected from vehicle tracking sensors are also incorporated these days.
+However, trajectory data are often sparse in that the observed trajectories only represent a small
+subset of the whole population, where the exact sampling rate is unknown and may vary over space and
+time. This study proposes a novel generative modelling framework, where we formulate the link-to-link
+movements of a vehicle as a sequential decision-making problem using the Markov Decision Process
+framework and train an agent to make sequential decisions to generate realistic synthetic vehicle
+trajectories. We use Reinforcement Learning (RL)-based methods to find the best behaviour of the
+agent, based on which synthetic population vehicle trajectories can be generated to estimate link
+flows across the whole network. To ensure the generated population vehicle trajectories are consistent
+with the observed traffic volume and trajectory data, two methods based on Inverse Reinforcement
+Learning and Constrained Reinforcement Learning are proposed. The proposed generative modelling
+framework solved by either of these RL-based methods is validated by solving the link flow estimation
+problem in a real road network. Additionally, we perform comprehensive experiments to compare
+the performance with two existing methods. The results show that the proposed framework has higher
+estimation accuracy and robustness under realistic scenarios where certain behavioural assumptions
+about drivers are not met or the network coverage and penetration rate of trajectory data are low.

@@ -1,0 +1,20 @@
+Immersive video, such as virtual reality (VR) and multi-view videos, is growing in popularity.
+Its wireless streaming is an instance of general multicast, extending conventional unicast and
+multicast, whose effective design is still open. This paper investigates general rate splitting
+for general multicast. Specifically, we consider a multi-carrier single-cell wireless network
+where a multi-antenna base station (BS) communicates to multiple single-antenna users via general
+multicast. We consider linear beamforming at the BS and joint decoding at each user in the slow fading
+and fast fading scenarios. In the slow fading scenario, we consider the maximization of the weighted
+sum average rate, which is a challenging nonconvex stochastic problem with numerous variables.
+To reduce computational complexity, we decouple the original nonconvex stochastic problem into
+multiple nonconvex deterministic problems, one for each system channel state. Then, we propose
+an iterative algorithm for each deterministic problem to obtain a Karush-Kuhn-Tucker (KKT) point
+using the concave-convex procedure (CCCP). In the fast fading scenario, we consider the maximization
+of the weighted sum ergodic rate. This problem is more challenging than the one for the slow fading
+scenario, as it is not separable. First, we propose a stochastic iterative algorithm to obtain a
+KKT point using stochastic successive convex approximation (SSCA) and the exact penalty method.
+Then, we propose two low-complexity iterative algorithms to obtain feasible points with promising
+performance for two cases of channel distributions using approximation and CCCP. The proposed
+optimization framework generalizes the existing ones for rate splitting for various types of services.
+Finally, we numerically show substantial gains of the proposed solutions over existing schemes
+in both scenarios. 

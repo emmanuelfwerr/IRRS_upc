@@ -1,0 +1,19 @@
+We present CRISP (COVID-19 Risk Score Prediction), a probabilistic graphical model for COVID-19
+infection spread through a population based on the SEIR model where we assume access to (1) mutual
+contacts between pairs of individuals across time across various channels (e.g., Bluetooth contact
+traces), as well as (2) test outcomes at given times for infection, exposure and immunity tests.
+Our micro-level model keeps track of the infection state for each individual at every point in time,
+ranging from susceptible, exposed, infectious to recovered. We develop both a Monte Carlo EM as
+well as a message passing algorithm to infer contact-channel specific infection transmission
+probabilities. Our Monte Carlo algorithm uses Gibbs sampling to draw samples of the latent infection
+status of each individual over the entire time period of analysis, given the latent infection status
+of all contacts and test outcome data. Experimental results with simulated data demonstrate our
+CRISP model can be parametrized by the reproduction factor $R_0$ and exhibits population-level
+infectiousness and recovery time series similar to those of the classical SEIR model. However,
+due to the individual contact data, this model allows fine grained control and inference for a wide
+range of COVID-19 mitigation and suppression policy measures. Moreover, the block-Gibbs sampling
+algorithm is able to support efficient testing in a test-trace-isolate approach to contain COVID-19
+infection spread. To the best of our knowledge, this is the first model with efficient inference
+for COVID-19 infection spread based on individual-level contact data; most epidemic models are
+macro-level models that reason over entire populations. The implementation of CRISP is available
+in Python and C++ at https://github.com/zalandoresearch/CRISP. 

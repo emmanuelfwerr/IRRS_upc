@@ -1,0 +1,20 @@
+Non-contact technology for monitoring multiple people's vital signs, such as respiration and
+heartbeat, has been investigated in recent years due to the rising cardiopulmonary morbidity,
+the risk of transmitting diseases, and the heavy burden on the medical staff. Frequency modulated
+continuous wave (FMCW) radars have shown great promise in meeting these needs. However, contemporary
+techniques for non-contact vital signs monitoring (NCVSM) via FMCW radars, are based on simplistic
+models, and present difficulties coping with noisy environments containing multiple objects.
+In this work, we develop an extended model of FMCW radar signals in a noisy setting containing multiple
+people and clutter. By utilizing the sparse nature of the modeled signals in conjunction with human-typical
+cardiopulmonary features, we can accurately localize humans and reliably monitor their vital
+signs, using only a single channel and a single-input-single-output setup. To this end, we first
+show that spatial sparsity allows for both accurate detection of multiple people and computationally
+efficient extraction of their Doppler samples, using a joint sparse recovery approach. Given the
+extracted samples, we develop a method named Vital Signs based Dictionary Recovery (VSDR), which
+uses a dictionary-based approach to search for the desired rates of respiration and heartbeat over
+high-resolution grids corresponding to normal cardiopulmonary activity. The advantages of the
+proposed method are illustrated through examples that combine the proposed model with real data
+of $30$ monitored individuals. We demonstrate accurate human localization in a clutter-rich scenario
+that includes both static and vibrating objects, and show that our VSDR approach outperforms existing
+techniques, based on several statistical metrics. The findings support the widespread use of FMCW
+radars with the proposed algorithms in healthcare. 

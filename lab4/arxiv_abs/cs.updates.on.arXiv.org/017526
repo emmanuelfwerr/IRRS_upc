@@ -1,0 +1,20 @@
+Range and charge anxiety remain essential barriers to a faster electric vehicle market diffusion.
+To this end, quickly and reliably finding suitable charging stations may foster an electric vehicle
+uptake by mitigating drivers' anxieties. Here, existing commercial services help drivers to find
+available stations based on real-time availability data but struggle with data inaccuracy, e.g.,
+due to conventional vehicles blocking the access to public charging stations. In this context,
+recent works have studied stochastic search methods to account for availability uncertainty in
+order to minimize a driver's detour until reaching an available charging station. So far, both practical
+and theoretical approaches ignore driver coordination enabled by charging requests centralization
+or sharing of data, e.g., sharing observations of charging stations' availability or visit intentions
+between drivers. Against this background, we study coordinated stochastic search algorithms,
+which help to reduce station visit conflicts and improve the drivers' charging experience. We model
+a multi-agent stochastic charging station search problem as a finite-horizon Markov decision
+process and introduce an online solution framework applicable to static and dynamic policies.
+In contrast to static policies, dynamic policies account for information updates during policy
+planning and execution. We present a hierarchical implementation of a single-agent heuristic
+for decentralized decision making and a rollout algorithm for centralized decision making. Extensive
+numerical studies show that compared to an uncoordinated setting, a decentralized setting with
+visit-intentions sharing decreases the system cost by 26%, which is nearly as good as the 28% cost
+decrease achieved in a centralized setting, and saves up to 23% of a driver's search time while increasing
+her search reliability. 

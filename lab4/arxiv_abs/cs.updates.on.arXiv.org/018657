@@ -1,0 +1,19 @@
+We propose and analyze a product segmentation newsvendor problem, which generalizes the phenomenon
+of segmentation sales of a class of perishable items. The product segmentation newsvendor problem
+is a new variant of the newsvendor problem, reflecting that sellers maximize profits by determining
+the inventory of the whole item in the context of uncertain demand for sub-items. We derive the closed-form
+robust ordering decision by assuming that the means and covariance matrix of stochastic demand
+are available but not the distributions. However, robust approaches that always trade-off in the
+worst-case demand scenario face a concern in solution conservatism; thus, the traditional robust
+schemes offer unsatisfactory. In this paper, we integrate robust and deep reinforcement learning
+(DRL) techniques and propose a new paradigm termed robust learning to increase the attractiveness
+of robust policies. Notably, we take the robust decision as human domain knowledge and implement
+it into the training process of DRL by designing a full-process human-machine collaborative mechanism
+of teaching experience, normative decision, and regularization return. Simulation results confirm
+that our approach effectively improves robust performance and can generalize to various problems
+that require robust but less conservative solutions. Simultaneously, fewer training episodes,
+increased training stability, and interpretability of behavior may have the opportunity to facilitate
+the deployment of DRL algorithms in operational practice. Furthermore, the successful attempt
+of RLDQN to solve the 1000-dimensional demand scenarios reveals that the algorithm provides a path
+to solve complex operational problems through human-machine collaboration and may have potential
+significance for solving other complex operational management problems. 

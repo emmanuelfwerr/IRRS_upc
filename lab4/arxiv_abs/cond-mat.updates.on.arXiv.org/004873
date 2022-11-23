@@ -1,0 +1,19 @@
+Computing the $GW$ quasiparticle bandstructure and Bethe-Salpeter Equation (BSE) absorption
+spectra for materials with spin-orbit coupling has commonly been done by treating $GW$ corrections
+and spin-orbit coupling as separate perturbations to density-functional theory. However, accurate
+treatment of materials with strong spin-orbit coupling often requires a fully relativistic approach
+using spinor wavefunctions in the Kohn-Sham equation and $GW$/BSE. Such calculations have only
+recently become available, in particular for the BSE. We have implemented this approach in the plane-wave
+pseudopotential $GW$/BSE code BerkeleyGW, which is highly parallelized and widely used in the
+electronic-structure community. We present reference results for quasiparticle bandstructures
+and optical absorption spectra of solids with different strengths of spin-orbit coupling, including
+Si, Ge, GaAs, GaSb, CdSe, Au, and Bi$_2$Se$_3$. The calculated quasiparticle band gaps of these
+systems are found to agree with experiment to within a few tens of meV. The absorption spectrum of
+GaSb calculated with the fully-relativistic $GW$-BSE captures the large spin-orbit splitting
+of peaks in the spectrum. For Bi$_2$Se$_3$, we find a drastic change in the low-energy bandstructure
+compared to that of DFT, with the fully-relativistic treatment of the $GW$ approximation correctly
+capturing the parabolic nature of the valence and conduction bands after including off-diagonal
+self-energy matrix elements. We present the detailed methodology, approach to spatial symmetries
+for spinors, comparison against other codes, and performance compared to spinless $GW$/BSE calculations
+and perturbative approaches to SOC. This work aims to spur further development of spinor $GW$/BSE
+methodology in excited-state research software. 

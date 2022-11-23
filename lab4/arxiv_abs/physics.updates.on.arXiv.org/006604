@@ -1,0 +1,19 @@
+Accurate estimates of left ventricle elastances based on non-invasive measurements are required
+for clinical decision-making during treatment of valvular diseases. The present study proposes
+a parameter discovery approach based on a lumped parameter model of the cardiovascular system in
+conjunction with optimization and non-invasive, clinical input measurements to approximate
+important cardiac parameters, including left ventricle elastances. A subset of parameters of
+a multi-compartment lumped parameter model was estimated using 1st order Adam gradient descent
+and hybrid Adam and 2nd order quasi-Newton limited-memory Broyden-Fletcher-Goldfarb-Shanno
+optimization routines. Forward-mode automatic differentiation was used to estimate the Jacobian
+matrices and compared to the common finite differences approach. Synthetic data of healthy and
+diseased hearts were generated as proxies for non-invasive clinical measurements and used to evaluate
+the algorithm. Twelve parameters including left ventricle elastances were selected for optimization
+based on 99% explained variation in mean left ventricle pressure and volume. The hybrid optimization
+strategy yielded the best overall results compared to 1st order optimization with automatic differentiation
+and finite difference approaches, with mean absolute percentage errors ranging from 6.67% to 14,14%.
+Errors in left ventricle elastance estimates for simulated aortic stenosis and mitral regurgitation
+were smallest when including synthetic measurements for arterial pressure and valvular flow rate
+at approximately 2% and degraded to roughly 5% when including volume trends as well. However, the
+latter resulted in better tracking of the left ventricle pressure waveforms and may be considered
+when the necessary equipment is available. 

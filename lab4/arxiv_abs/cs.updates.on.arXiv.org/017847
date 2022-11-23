@@ -1,0 +1,20 @@
+Container data types are ubiquitous in computer programming, enabling developers to efficiently
+store and process collections of data with an easy-to-use programming interface. Many programming
+languages offer a variety of container implementations in their standard libraries based on data
+structures offering different capabilities and performance characteristics. Choosing the best
+container for an application is not straightforward, as performance characteristics can change
+drastically in different scenarios, and real-world performance is not always correlated to theoretical
+complexity. In this paper, we present Primrose, a language-agnostic tool for selecting the best
+performing valid container implementation from a set of container data types that satisfy the given
+properties. Semantic properties allow application developers to specify the expected behaviour
+of a container as a type refinement, e.g., if the container should only contain unique values (such
+as a set) or should satisfy the LIFO property of a stack. Semantic properties nicely complement syntactic
+properties (i.e., traits, interfaces, or type classes), allowing developers to specify a container's
+programming interface and behaviour without committing to a concrete implementation. Primrose
+automatically select the set of valid container implementations for which the library specifications,
+written by the developers of container libraries, satisfies the specified properties. Finally,
+Primrose ranks the valid library implementations based on their runtime performance. We present
+our prototype implementation of Primrose that preprocesses annotated Rust code, selecting the
+best performing container implementation. Primrose is easy to integrate in other programming
+languages. We encode properties and library specifications into verification conditions in a
+SMT solver to determine the set of valid container implementations. 

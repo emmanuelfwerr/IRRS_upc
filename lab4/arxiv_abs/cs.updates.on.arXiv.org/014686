@@ -1,0 +1,20 @@
+Accurate and rapid detection of COVID-19 pneumonia is crucial for optimal patient treatment. Chest
+X-Ray (CXR) is the first line imaging test for COVID-19 pneumonia diagnosis as it is fast, cheap and
+easily accessible. Inspired by the success of deep learning (DL) in computer vision, many DL-models
+have been proposed to detect COVID-19 pneumonia using CXR images. Unfortunately, these deep classifiers
+lack the transparency in interpreting findings, which may limit their applications in clinical
+practice. The existing commonly used visual explanation methods are either too noisy or imprecise,
+with low resolution, and hence are unsuitable for diagnostic purposes. In this work, we propose
+a novel explainable deep learning framework (CXRNet) for accurate COVID-19 pneumonia detection
+with an enhanced pixel-level visual explanation from CXR images. The proposed framework is based
+on a new Encoder-Decoder-Encoder multitask architecture, allowing for both disease classification
+and visual explanation. The method has been evaluated on real world CXR datasets from both public
+and private data sources, including: healthy, bacterial pneumonia, viral pneumonia and COVID-19
+pneumonia cases The experimental results demonstrate that the proposed method can achieve a satisfactory
+level of accuracy and provide fine-resolution classification activation maps for visual explanation
+in lung disease detection. The Average Accuracy, the Precision, Recall and F1-score of COVID-19
+pneumonia reached 0.879, 0.985, 0.992 and 0.989, respectively. We have also found that using lung
+segmented (CXR) images can help improve the performance of the model. The proposed method can provide
+more detailed high resolution visual explanation for the classification decision, compared to
+current state-of-the-art visual explanation methods and has a great potential to be used in clinical
+practice for COVID-19 pneumonia diagnosis. 

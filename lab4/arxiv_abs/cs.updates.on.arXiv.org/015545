@@ -1,0 +1,19 @@
+The Area Under the the Receiver Operating Characteristics (ROC) Curve, referred to as AUC, is a well-known
+performance measure in the supervised learning domain. Due to its compelling features, it has been
+employed in a number of studies to evaluate and compare the performance of different classifiers.
+In this work, we explore AUC as a performance measure in the unsupervised learning domain, more specifically,
+in the context of cluster analysis. In particular, we elaborate on the use of AUC as an internal/relative
+measure of clustering quality, which we refer to as Area Under the Curve for Clustering (AUCC). We
+show that the AUCC of a given candidate clustering solution has an expected value under a null model
+of random clustering solutions, regardless of the size of the dataset and, more importantly, regardless
+of the number or the (im)balance of clusters under evaluation. In addition, we elaborate on the fact
+that, in the context of internal/relative clustering validation as we consider, AUCC is actually
+a linear transformation of the Gamma criterion from Baker and Hubert (1975), for which we also formally
+derive a theoretical expected value for chance clusterings. We also discuss the computational
+complexity of these criteria and show that, while an ordinary implementation of Gamma can be computationally
+prohibitive and impractical for most real applications of cluster analysis, its equivalence with
+AUCC actually unveils a much more efficient algorithmic procedure. Our theoretical findings are
+supported by experimental results. These results show that, in addition to an effective and robust
+quantitative evaluation provided by AUCC, visual inspection of the ROC curves themselves can be
+useful to further assess a candidate clustering solution from a broader, qualitative perspective
+as well. 

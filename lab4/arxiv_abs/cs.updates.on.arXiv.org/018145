@@ -1,0 +1,19 @@
+Knowledge graph embedding (KGE) has been intensively investigated for link prediction by projecting
+entities and relations into continuous vector spaces. Current popular high-dimensional KGE methods
+obtain quite slight performance gains while require enormous computation and memory costs. In
+contrast to high-dimensional KGE models, training low-dimensional models is more efficient and
+worthwhile for better deployments to practical intelligent systems. However, the model expressiveness
+of semantic information in knowledge graphs (KGs) is highly limited in the low dimension parameter
+space. In this paper, we propose iterative self-semantic knowledge distillation strategy to improve
+the KGE model expressiveness in the low dimension space. KGE model combined with our proposed strategy
+plays the teacher and student roles alternatively during the whole training process. Specifically,
+at a certain iteration, the model is regarded as a teacher to provide semantic information for the
+student. At next iteration, the model is regard as a student to incorporate the semantic information
+transferred from the teacher. We also design a novel semantic extraction block to extract iteration-based
+semantic information for the training model self-distillation. Iteratively incorporating and
+accumulating iteration-based semantic information enables the low-dimensional model to be more
+expressive for better link prediction in KGs. There is only one model during the whole training,
+which alleviates the increase of computational expensiveness and memory requirements. Furthermore,
+the proposed strategy is model-agnostic and can be seamlessly combined with other KGE models. Consistent
+and significant performance gains in experimental evaluations on four standard datasets demonstrate
+the effectiveness of the proposed self-distillation strategy. 

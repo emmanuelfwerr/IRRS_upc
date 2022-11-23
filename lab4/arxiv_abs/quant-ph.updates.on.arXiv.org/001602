@@ -1,0 +1,20 @@
+Logical gates are the building blocks of fault-tolerant quantum computation. While quantum error-corrected
+memories have been extensively studied in the literature, detailed analyses of thresholds and
+resource overheads of universal logical gate sets have so far been limited. In this paper, we present
+a comprehensive framework for universal fault-tolerant logic motivated by the combined need for
+(i) platform-independent logical gate definitions, (ii) flexible and scalable tools for numerical
+analysis, and (iii) exploration of novel schemes for universal logic that improve resource overheads.
+We first introduce the theory of fault-tolerant channels for describing logical gates holistically
+in space-time. Focusing on channels based on surface codes, we introduce explicit, platform-independent
+representations of topological logic gates -- called logical blocks -- and generate new, overhead-efficient
+methods for universal quantum computation. As a specific example, we propose fault-tolerant schemes
+based on surface codes concatenated with more general low-density parity check (LDPC) codes. The
+logical blocks framework enables a convenient mapping from an abstract description of the logical
+gate to a precise set of physical instructions for both circuit-based and fusion-based quantum
+computation (FBQC). Using this, we numerically simulate a surface-code-based universal gate
+set implemented with FBQC, and verify that the threshold for fault-tolerant gates is consistent
+with the bulk memory threshold. We find that boundaries, defects, and twists, can significantly
+impact the logical error rate scaling, with periodic boundary conditions potentially halving
+the memory resource requirements. Motivated by the favorable logical error rate suppression for
+boundaryless computation, we introduce a novel computational scheme based on the teleportation
+of twists that may offer further resource reductions. 

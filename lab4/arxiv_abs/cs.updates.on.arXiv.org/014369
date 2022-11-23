@@ -1,0 +1,19 @@
+In real-time graphics, the strict separation of programming languages and environments for host
+(CPU) code and GPU code results in code duplication, subtle compatibility bugs, and additional
+development and maintenance costs. In contrast, popular general-purpose GPU (GPGPU) programming
+models like CUDA and C++ AMP avoid many of these issues by presenting unified programming environments
+where both host and GPU code are written in the same language, can be in the same file, and share lexical
+scopes. To bring the benefits of unified programming to real-time graphics, this paper examines
+graphics-specific challenges that complicate the development of such a unified model and explores
+how to overcome them in a widely used programming language. We observe that GPU code specialization,
+a key optimization in real-time graphics, requires coordination between parameters that are compile-time-constant
+in GPU code but are assigned values at runtime in host code based on dynamic data. Current methods
+used to implement specialization do not translate to a unified environment where host and GPU code
+share declarations of these parameters. Furthermore, this compile-time vs. runtime coordination
+is not innately expressible in the popular languages used in this domain. In this paper, we create
+a unified environment for real-time graphics programming in C++ by co-opting existing features
+of the language and implementing them with alternate semantics to express the services required.
+Specifically, we co-opt C++ attributes and virtual functions, which enables us to provide first-class
+support for specialization in our unified system. By co-opting existing features, we enable programmers
+to use familiar C++ programming techniques to write host and GPU code together, while still achieving
+efficient generated C++ and HLSL code via our source-to-source translator. 

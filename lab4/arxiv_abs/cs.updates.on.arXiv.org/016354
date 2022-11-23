@@ -1,0 +1,20 @@
+Chemical kinetic models are an essential component in the development and optimisation of combustion
+devices through their coupling to multi-dimensional simulations such as computational fluid
+dynamics (CFD). Low-dimensional kinetic models which retain good fidelity to the reality are needed,
+the production of which requires considerable human-time cost and expert knowledge. Here, we present
+a novel automated compute intensification methodology to produce overly-reduced and optimised
+(compact) chemical kinetic models. This algorithm, termed Machine Learned Optimisation of Chemical
+Kinetics (MLOCK), systematically perturbs each of the four sub-models of a chemical kinetic model
+to discover what combinations of terms results in a good model. A virtual reaction network comprised
+of n species is first obtained using conventional mechanism reduction. To counteract the imposed
+decrease in model performance, the weights (virtual reaction rate constants) of important connections
+(virtual reactions) between each node (species) of the virtual reaction network are numerically
+optimised to replicate selected calculations across four sequential phases. The first version
+of MLOCK, (MLOCK1.0) simultaneously perturbs all three virtual Arrhenius reaction rate constant
+parameters for important connections and assesses the suitability of the new parameters through
+objective error functions, which quantify the error in each compact model candidate's calculation
+of the optimisation targets, which may be comprised of detailed model calculations and/or experimental
+data. MLOCK1.0 is demonstrated by creating compact models for the archetypal case of methane air
+combustion. It is shown that the NUGMECH1.0 detailed model comprised of 2,789 species is reliably
+compacted to 15 species (nodes), whilst retaining an overall fidelity of ~87% to the detailed model
+calculations, outperforming the prior state-of-art. 

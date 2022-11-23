@@ -1,0 +1,19 @@
+Writing concurrent code that is both correct and efficient is notoriously difficult: thus, programmers
+often prefer to use synchronization abstractions, which render code simpler and easier to reason
+about. Despite a wealth of work on this topic, there is still a gap between the rich semantics provided
+by synchronization abstractions in modern programming languages--specifically, fair FIFO ordering
+of synchronization requests and support for abortable operations--and frameworks for implementing
+such semantics correctly and efficiently. Supporting such semantics is critical given the rising
+popularity of constructs for asynchronous programming, such as coroutines, which abort frequently,
+and should be cheaper to suspend and resume compared to native threads. We introduce a new framework
+called the CancellableQueueSynchronizer (CQS), which enables efficient fair and abortable implementations
+of fundamental synchronization primitives such as mutexes, semaphores, barriers, count-down-latches,
+and blocking pools. Our first contribution is algorithmic, as implementing both fairness and abortability
+efficiently at this level of generality is non-trivial. Importantly, all our algorithms come with
+formal proofs in the Iris framework for Coq. These proofs are modular, so it is easy to prove correctness
+for new primitives implemented on top of CQS. To validate practical impact, we integrated CQS into
+the Kotlin Coroutines library. Compared against Java's AbstractQueuedSynchronizer, the only
+practical abstraction to provide similar semantics, CQS shows significant improvements across
+all benchmarks, of up to two orders of magnitude. In sum, CQS is the first framework to combine expressiveness
+with formal guarantees and strong practical performance, and should be extensible to other languages
+and other families of synchronization primitives. 

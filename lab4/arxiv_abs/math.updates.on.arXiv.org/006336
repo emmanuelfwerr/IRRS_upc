@@ -1,0 +1,18 @@
+We consider growing random networks $\{\mathcal{G}_n\}_{n \ge 1}$ where, at each time, a new vertex
+attaches itself to a collection of existing vertices via a fixed number $m \ge 1$ of edges, with probability
+proportional to a function $f$ (called attachment function) of their degree. It was shown in \cite{BBpersistence}
+that such network models exhibit two distinct regimes: (i) the persistent regime, corresponding
+to $\sum_{i=1}^{\infty}f(i)^{-2} < \infty$, where the top $K$ maximal degree vertices fixate
+over time for any given $K$, and (ii) the non-persistent regime, with $\sum_{i=1}^{\infty}f(i)^{-2}
+= \infty$, where the identities of these vertices keep changing infinitely often over time. In this
+article, we develop root finding algorithms using the empirical degree structure and local network
+information based on a snapshot of such a network at some large time. In the persistent regime, the
+algorithm is purely based on degree centrality. For a given error tolerance $\varepsilon \in (0,1)$,
+there exists $K_{\varepsilon} \in \mathbb{N}$ such that for any $n \ge 1$, the confidence set for
+the root in $\mathcal{G}_n$, which contains the root with probability at least $1 - \varepsilon$,
+consists of the top $K_{\varepsilon}$ maximal degree vertices. In particular, the size of the confidence
+set is stable in the network size. Upper and lower bounds on $K_{\varepsilon}$ are explicitly characterized
+in terms of the error tolerance $\varepsilon$ and the attachment function $f$. In the non-persistent
+regime, for an appropriate choice of $r_n \rightarrow \infty$ at a rate much smaller than the diameter
+of the network, the neighborhood of radius $r_n$ around the maximal degree vertex is shown to contain
+the root with high probability, and a size estimate for this set is obtained. 

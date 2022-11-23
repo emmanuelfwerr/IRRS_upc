@@ -1,0 +1,19 @@
+Computation on ciphertexts of all known fully homomorphic encryption (FHE) schemes induces some
+noise, which, if too large, will destroy the plaintext. Therefore, the bootstrapping technique
+that re-encrypts a ciphertext and reduces the noise level remains the only known way of building
+FHE schemes for arbitrary unbounded computations. The bootstrapping step is also the major efficiency
+bottleneck in current FHE schemes. A promising direction towards improving concrete efficiency
+is to exploit the bootstrapping process to perform useful computation while reducing the noise
+at the same time. We show a bootstrapping algorithm, which embeds a lookup table and evaluates arbitrary
+functions of the plaintext while reducing the noise. Depending on the choice of parameters, the
+resulting homomorphic encryption scheme may be either an exact FHE or homomorphic encryption for
+approximate arithmetic. Since we can evaluate arbitrary functions over the plaintext space, we
+can use the natural homomorphism of Regev encryption to compute affine functions without bootstrapping
+almost for free. Consequently, our algorithms are particularly suitable for circuits with many
+additions and scalar multiplication gates. We achieve record speeds for such circuits. For example,
+in the exact FHE setting, we achieve a speedup of a factor of over 3000x over state-of-the-art methods.
+Effectively, we bring the evaluation time from weeks or days down to a few hours or minutes. Furthermore,
+we note that the speedup gets more significant with the size of the affine function. We provide a tight
+error analysis and show several parameter sets for our bootstrapping. Finally, we implement our
+algorithm and provide extensive tests. We demonstrate our algorithms by evaluating different
+neural networks in several parameter and accuracy settings. 

@@ -1,0 +1,20 @@
+Training machine learning (ML) algorithms is a computationally intensive process, which is frequently
+memory-bound due to repeatedly accessing large training datasets. As a result, processor-centric
+systems (e.g., CPU, GPU) suffer from costly data movement between memory units and processing units,
+which consumes large amounts of energy and execution cycles. Memory-centric computing systems,
+i.e., with processing-in-memory (PIM) capabilities, can alleviate this data movement bottleneck.
+Our goal is to understand the potential of modern general-purpose PIM architectures to accelerate
+ML training. To do so, we (1) implement several representative classic ML algorithms (namely, linear
+regression, logistic regression, decision tree, K-Means clustering) on a real-world general-purpose
+PIM architecture, (2) rigorously evaluate and characterize them in terms of accuracy, performance
+and scaling, and (3) compare to their counterpart implementations on CPU and GPU. Our evaluation
+on a real memory-centric computing system with more than 2500 PIM cores shows that general-purpose
+PIM architectures can greatly accelerate memory-bound ML workloads, when the necessary operations
+and datatypes are natively supported by PIM hardware. For example, our PIM implementation of decision
+tree is $27\times$ faster than a state-of-the-art CPU version on an 8-core Intel Xeon, and $1.34\times$
+faster than a state-of-the-art GPU version on an NVIDIA A100. Our K-Means clustering on PIM is $2.8\times$
+and $3.2\times$ than state-of-the-art CPU and GPU versions, respectively. To our knowledge, our
+work is the first one to evaluate ML training on a real-world PIM architecture. We conclude with key
+observations, takeaways, and recommendations that can inspire users of ML workloads, programmers
+of PIM architectures, and hardware designers & architects of future memory-centric computing
+systems. 

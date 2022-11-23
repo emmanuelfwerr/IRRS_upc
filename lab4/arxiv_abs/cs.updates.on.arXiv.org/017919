@@ -1,0 +1,20 @@
+Echo State Networks (ESN) are versatile recurrent neural network models in which the hidden layer
+remains unaltered during training. Interactions among nodes of this static backbone produce diverse
+representations of the given stimuli that are harnessed by a read-out mechanism to perform computations
+needed for solving a given task. ESNs are accessible models of neuronal circuits, since they are
+relatively inexpensive to train. Therefore, ESNs have become attractive for neuroscientists
+studying the relationship between neural structure, function, and behavior. For instance, it
+is not yet clear how distinctive connectivity patterns of brain networks support effective interactions
+among their nodes and how these patterns of interactions give rise to computation. To address this
+question, we employed an ESN with a biologically inspired structure and used a systematic multi-site
+lesioning framework to quantify the causal contribution of each node to the network's output, thus
+providing a causal link between network structure and behavior. We then focused on the structure-function
+relationship and decomposed the causal influence of each node on all other nodes, using the same
+lesioning framework. We found that nodes in a properly engineered ESN interact largely irrespective
+of the network's underlying structure. However, in a network with the same topology and a non-optimal
+parameter set, the underlying connectivity patterns determine the node interactions. Our results
+suggest that causal structure-function relations in ESNs can be decomposed into two components,
+direct and indirect interactions. The former are based on influences relying on structural connections.
+The latter describe the effective communication between any two nodes through other intermediate
+nodes. These widely distributed indirect interactions may crucially contribute to the efficient
+performance of ESNs. 

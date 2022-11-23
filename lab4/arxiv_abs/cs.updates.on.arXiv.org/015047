@@ -1,0 +1,19 @@
+Modern large-scale computing systems distribute jobs into multiple smaller tasks which execute
+in parallel to accelerate job completion rates and reduce energy consumption. However, a common
+performance problem in such systems is dealing with straggler tasks that are slow running instances
+that increase the overall response time. Such tasks can significantly impact the system's Quality
+of Service (QoS) and the Service Level Agreements (SLA). To combat this issue, there is a need for
+automatic straggler detection and mitigation mechanisms that execute jobs without violating
+the SLA. Prior work typically builds reactive models that focus first on detection and then mitigation
+of straggler tasks, which leads to delays. Other works use prediction based proactive mechanisms,
+but ignore heterogeneous host or volatile task characteristics. In this paper, we propose a Straggler
+Prediction and Mitigation Technique (START) that is able to predict which tasks might be stragglers
+and dynamically adapt scheduling to achieve lower response times. Our technique analyzes all tasks
+and hosts based on compute and network resource consumption using an Encoder Long-Short-Term-Memory
+(LSTM) network. The output of this network is then used to predict and mitigate expected straggler
+tasks. This reduces the SLA violation rate and execution time without compromising QoS. Specifically,
+we use the CloudSim toolkit to simulate START in a cloud environment and compare it with state-of-the-art
+techniques (IGRU-SD, SGC, Dolly, GRASS, NearestFit and Wrangler) in terms of QoS parameters such
+as energy consumption, execution time, resource contention, CPU utilization and SLA violation
+rate. Experiments show that START reduces execution time, resource contention, energy and SLA
+violations by 13%, 11%, 16% and 19%, respectively, compared to the state-of-the-art approaches.

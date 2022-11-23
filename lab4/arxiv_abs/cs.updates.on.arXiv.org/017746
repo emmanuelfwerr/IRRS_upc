@@ -1,0 +1,19 @@
+Human motion prediction is a challenging task due to the dynamic spatiotemporal correlations in
+different motion sequences. How to efficiently represent spatiotemporal correlations and model
+dynamic correlation variances between different motion sequences is a challenge for spatiotemporal
+representation in motion prediction. In this work, we propose Dynamic SpatioTemporal Decompose
+Graph Convolution (DSTD-GC), which decomposes dynamic spatiotemporal graph modeling with a combination
+of Dynamic Spatial Graph Convolution (DS-GC) and Dynamic Temporal Graph Convolution (DT-GC).
+The dynamic spatial/temporal correlations in DS-GC/DT-GC are efficiently represented by Constrained
+Dynamic Correlation Modeling, which is inspired by the common constraints in human motion like
+body connections and dynamic patterns from different samples. The Constrained Dynamic Correlation
+Modeling represents the spatial/temporal graph as a combination of a shared spatial/temporal
+correlation and an unshared correlation extraction function. This spatiotemporal representation
+is of square space complexity and only requires 28.6% parameters of the state-of-the-art sample-shared
+decomposition representation. It also explicitly models sample-specific spatiotemporal correlation
+variances. Moreover, we also mathematically reformulate graph convolutions on spatiotemporal
+graphs into a unified form and find that DSTD-GC relaxes certain constraints of other graph convolutions,
+which leads to a stronger representation capability. Combining DSTD-GC with prior knowledge like
+body connection and temporal context, we propose a powerful spatiotemporal graph convolution
+network called DSTD-GCN. On the Human3.6M and CMU Mocap datasets, DSTD-GCN outperforms state-of-the-art
+methods by 3.9% - 5.7% in prediction accuracy with 55.0% - 96.9% parameter reduction. 

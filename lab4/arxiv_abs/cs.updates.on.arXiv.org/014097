@@ -1,0 +1,20 @@
+Bridge inspection is an important step in preserving and rehabilitating transportation infrastructure
+for extending their service lives. The advancement of mobile robotic technology allows the rapid
+collection of a large amount of inspection video data. However, the data are mainly images of complex
+scenes, wherein a bridge of various structural elements mix with a cluttered background. Assisting
+bridge inspectors in extracting structural elements of bridges from the big complex video data,
+and sorting them out by classes, will prepare inspectors for the element-wise inspection to determine
+the condition of bridges. This paper is motivated to develop an assistive intelligence model for
+segmenting multiclass bridge elements from inspection videos captured by an aerial inspection
+platform. With a small initial training dataset labeled by inspectors, a Mask Region-based Convolutional
+Neural Network (Mask R-CNN) pre-trained on a large public dataset was transferred to the new task
+of multiclass bridge element segmentation. Besides, the temporal coherence analysis attempts
+to recover false negatives and identify the weakness that the neural network can learn to improve.
+Furthermore, a semi-supervised self-training (S$^3$T) method was developed to engage experienced
+inspectors in refining the network iteratively. Quantitative and qualitative results from evaluating
+the developed deep neural network demonstrate that the proposed method can utilize a small amount
+of time and guidance from experienced inspectors (3.58 hours for labeling 66 images) to build the
+network of excellent performance (91.8% precision, 93.6% recall, and 92.7% f1-score). Importantly,
+the paper illustrates an approach to leveraging the domain knowledge and experiences of bridge
+professionals into computational intelligence models to efficiently adapt the models to varied
+bridges in the National Bridge Inventory. 

@@ -1,0 +1,18 @@
+The saturating counter is the basic module of the dynamic branch predictor, which involves the core
+technique to improve instruction level parallelism performance in modern processors. However,
+most studies focus on the performance improvement and hardware consumption of saturating counters,
+while ignoring the security problems they may cause. In this paper, we creatively propose to study
+and design saturating counters from the defense perspective of differential privacy, so that attackers
+cannot distinguish the states that saturating counters are in and further infer sensitive information.
+To obtain theoretical guarantees, we use Markov chain to formalize the attack algorithm applied
+to the saturating counter, investigate into the optimal attack strategy and calculate the probability
+of successful attack. Furthermore, we find that the attacker is able to accurately guess the branch
+execution of the victim's process in the existing saturating counters. To avoid this, we design
+a new probabilistic saturating counter, which generalizes the existing conventional and probabilistic
+saturating counters. The guarantee of differential privacy is applied to deduce parameters of
+the new saturating counters so that the security requirement can be satisfied. We also theoretically
+calculate the misprediction rate when the saturating counter reaches the steady state. The experimental
+results on testing programs show that the calculated theoretical results agree with the experimental
+performances. Compared with the existing conventional and probabilistic saturating counters,
+when the parameters of our designed models are selected appropriately, the new saturating counters
+can not only ensure similar operational performance, but also establish strict security guarantee.

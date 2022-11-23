@@ -1,0 +1,20 @@
+In neuroscience, researchers have developed informal notions of what it means to reverse engineer
+a system, e.g., being able to model or simulate a system in some sense. A recent influential paper
+of Jonas and Kording, that examines a microprocessor using techniques from neuroscience, suggests
+that common techniques to understand neural systems are inadequate. Part of the difficulty, as
+a previous work of Lazebnik noted, lies in lack of formal language. We provide a theoretical framework
+for defining reverse engineering of computational systems, motivated by the neuroscience context.
+Of specific interest are recent works where, increasingly, interventions are being made to alter
+the function of the neural circuitry to both understand the system and treat disorders. Starting
+from Lazebnik's viewpoint that understanding a system means you can ``fix it'', and motivated by
+use-cases in neuroscience, we propose the following requirement on reverse engineering: once
+an agent claims to have reverse-engineered a neural circuit, they subsequently need to be able to:
+(a) provide a minimal set of interventions to change the input/output (I/O) behavior of the circuit
+to a desired behavior; (b) arrive at this minimal set of interventions while operating under bounded
+rationality constraints (e.g., limited memory) to rule out brute-force approaches. Under certain
+assumptions, we show that this reverse engineering goal falls within the class of undecidable problems.
+Next, we examine some canonical computational systems and reverse engineering goals (as specified
+by desired I/O behaviors) where reverse engineering can indeed be performed. Finally, using an
+exemplar network, the ``reward network'' in the brain, we summarize the state of current neuroscientific
+understanding, and discuss how computer-science and information-theoretic concepts can inform
+goals of future neuroscience studies. 

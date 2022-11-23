@@ -1,0 +1,18 @@
+The reconstruction of electrons and photons in CMS depends on topological clustering of the energy
+deposited by an incident particle in different crystals of the electromagnetic calorimeter (ECAL).
+These clusters are formed by aggregating neighbouring crystals according to the expected topology
+of an electromagnetic shower in the ECAL. The presence of upstream material (beampipe, tracker
+and support structures) causes electrons and photons to start showering before reaching the calorimeter.
+This effect, combined with the 3.8T CMS magnetic field, leads to energy being spread in several clusters
+around the primary one. It is essential to recover the energy contained in these satellite clusters
+in order to achieve the best possible energy resolution for physics analyses. Historically satellite
+clusters have been associated to the primary cluster using a purely topological algorithm which
+does not attempt to remove spurious energy deposits from additional pileup interactions (PU).
+The performance of this algorithm is expected to degrade during LHC Run 3 (2022+) because of the larger
+average PU levels and the increasing levels of noise due to the ageing of the ECAL detector. New methods
+are being investigated that exploit state-of-the-art deep learning architectures like Graph
+Neural Networks (GNN) and self-attention algorithms. These more sophisticated models improve
+the energy collection and are more resilient to PU and noise, helping to preserve the electron and
+photon energy resolution achieved during LHC Runs 1 and 2. This work will cover the challenges of
+training the models as well the opportunity that this new approach offers to unify the ECAL energy
+measurement with the particle identification steps used in the global CMS photon and electron reconstruction.

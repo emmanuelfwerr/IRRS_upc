@@ -1,0 +1,19 @@
+We study individual pulses of Vela (PSR\ B0833-45\,/\,J0835-4510) from daily observations of
+over three hours (around 120,000 pulses per observation), performed simultaneously with the two
+radio telescopes at the Argentine Institute of Radioastronomy. We select 4 days of observations
+in January-March 2021 and study their statistical properties with machine learning techniques.
+We first use density based DBSCAN clustering techniques, associating pulses mainly by amplitudes,
+and find a correlation between higher amplitudes and earlier arrival times. We also find a weaker
+(polarization dependent) correlation with the mean width of the pulses. We identify clusters of
+the so-called mini-giant pulses, with $\sim10\times$ the average pulse amplitude. We then perform
+an independent study, with Self-Organizing Maps (SOM) clustering techniques. We use Variational
+AutoEncoder (VAE) reconstruction of the pulses to separate them clearly from the noise and select
+one of the days of observation to train VAE and apply it to thre rest of the observations. We use SOM
+to determine 4 clusters of pulses per day per radio telescope and conclude that our main results are
+robust and self-consistent. These results support models for emitting regions at different heights
+(separated each by roughly a hundred km) in the pulsar magnetosphere. We also model the pulses amplitude
+distribution with interstellar scintillation patterns at the inter-pulses time-scale finding
+a characterizing exponent $n_{\mathrm{ISS}}\sim7-10$. In the appendices we discuss independent
+checks of hardware systematics with the simultaneous use of the two radio telescopes in different
+one-polarization / two-polarizations configurations. We also provide a detailed analysis of
+the processes of radio-interferences cleaning and individual pulse folding. 

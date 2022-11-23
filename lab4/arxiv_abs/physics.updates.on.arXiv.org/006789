@@ -1,0 +1,19 @@
+The diversity of the structures recently observed in protoplanetary discs (PPDs) with the new generation
+of high-resolution instruments have made more acute the challenging questions that planet-formation
+models must answer. The challenge is in the theoretical side but also in the numerical one with the
+need to significantly improve the performances of the codes and to stretch the limit of PPD simulations.
+Multi-physics, fast, accurate, high-resolution, modular, and reliable 3D codes are needed to
+explore the mechanisms at work in PPDs and to try explaining the observed features. We present RoSSBi3D
+the 3D extension of the 2D code Rotating-System Simulations for Bi-fluids (RoSSBi) which was specifically
+developed to study the evolution of PPDs. This is a new code, even if based on the 2D version, that we
+describe in detail explaining its architecture and specificity but also its performances against
+test cases and a PPD benchmark. We also explain the way to use it and to manage the produced data. This
+FORTRAN code solves the fully compressible inviscid continuity, Euler, and energy conservation
+equations for an ideal gas in non-homentropic conditions and for pressureless particles in a fluid
+approximation. It is a finite volume code which is second order in time and accounts for discontinuities
+thanks to an exact Riemann solver. The spatial scheme accounts for the equilibrium solution and
+is improved thanks to parabolic interpolation which permits to reach third order in space. The code
+is developed in 3D and structured for high-performance parallelism. The optimised version of the
+code work on high performance computers with a very good scalability. Its reliability has been checked
+against classical tests and a benchmark specific to PPDs that includes Rossby wave instability
+(RWI), streaming instability (SI), dust capture by a vortex and dust settling. 

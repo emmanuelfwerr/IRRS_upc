@@ -1,0 +1,19 @@
+One of the major promises of quantum computing is the realization of SIMD (single instruction - multiple
+data) operations using the phenomenon of superposition. Since the dimension of the state space
+grows exponentially with the number of qubits, we can easily reach situations where we pay less than
+a single quantum gate per data point for data-processing instructions which would be rather expensive
+in classical computing. Formulating such instructions in terms of quantum gates, however, still
+remains a challenging task. Laying out the foundational functions for more advanced data-processing
+is therefore a subject of paramount importance for advancing the realm of quantum computing. In
+this paper, we introduce the formalism of encoding so called-semi-boolean polynomials. As it turns
+out, arithmetic $\mathbb{Z}/2^n\mathbb{Z}$ ring operations can be formulated as semi-boolean
+polynomial evaluations, which allows convenient generation of unsigned integer arithmetic quantum
+circuits. For arithmetic evaluations, the resulting algorithm has been known as Fourier-arithmetic.
+We extend this type of algorithm with additional features, such as ancilla-free in-place multiplication
+and integer coefficient polynomial evaluation. Furthermore, we introduce a tailor-made method
+for encoding signed integers succeeded by an encoding for arbitrary floating-point numbers. This
+representation of floating-point numbers and their processing can be applied to any quantum algorithm
+that performs unsigned modular integer arithmetic. We discuss some further performance enhancements
+of the semi boolean polynomial encoder and finally supply a complexity estimation. The application
+of our methods to a 32-bit unsigned integer multiplication demonstrated a 90\% circuit depth reduction
+compared to carry-ripple approaches. 

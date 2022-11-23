@@ -1,0 +1,19 @@
+Semi-supervised learning is the problem of training an accurate predictive model by combining
+a small labeled dataset with a presumably much larger unlabeled dataset. Many methods for semi-supervised
+deep learning have been developed, including pseudolabeling, consistency regularization, and
+contrastive learning techniques. Pseudolabeling methods however are highly susceptible to confounding,
+in which erroneous pseudolabels are assumed to be true labels in early iterations, thereby causing
+the model to reinforce its prior biases and thereby fail to generalize to strong predictive performance.
+We present a new approach to suppress confounding errors through a method we describe as Semi-supervised
+Contrastive Outlier removal for Pseudo Expectation Maximization (SCOPE). Like basic pseudolabeling,
+SCOPE is related to Expectation Maximization (EM), a latent variable framework which can be extended
+toward understanding cluster-assumption deep semi-supervised algorithms. However, unlike
+basic pseudolabeling which fails to adequately take into account the probability of the unlabeled
+samples given the model, SCOPE introduces an outlier suppression term designed to improve the behavior
+of EM iteration given a discrimination DNN backbone in the presence of outliers. Our results show
+that SCOPE greatly improves semi-supervised classification accuracy over a baseline, and furthermore
+when combined with consistency regularization achieves the highest reported accuracy for the
+semi-supervised CIFAR-10 classification task using 250 and 4000 labeled samples. Moreover, we
+show that SCOPE reduces the prevalence of confounding errors during pseudolabeling iterations
+by pruning erroneous high-confidence pseudolabeled samples that would otherwise contaminate
+the labeled set in subsequent retraining iterations. 

@@ -1,0 +1,19 @@
+The detection and rapid characterisation of earthquake parameters such as magnitude are of prime
+importance in seismology, particularly in applications such as Earthquake Early Warning (EEW).
+Traditionally, algorithms such as STA/LTA are used for event detection, while frequency or amplitude
+domain parameters calculated from 1-3 seconds of first P-arrival data are sometimes used to provide
+a first estimate of (body wave) magnitude. Owing to extensive involvement of human experts in parameter
+determination, these approaches are often found to be insufficient. Moreover, these methods are
+sensitive to the signal to noise ratio and may often lead to false or missed alarms depending on the
+choice of parameters. We, therefore, propose a multitasking deep learning model the Convolutional
+Recurrent model for Earthquake Identification and Magnitude Estimation (CREIME) that: (i) detects
+the first earthquake signal, from background seismic noise, (ii) determines first P arrival time
+as well as (iii) estimates the magnitude using the raw 3-component waveform data from a single station
+as model input. Considering, speed is of essence in EEW, we use up to two seconds of P-wave information
+which, to the best of our knowledge, is a significantly smaller data window (5 second window with
+up to of P wave data) compared to the previous studies. To examine the robustness of CREIME we test
+it on two independent datasets and find that it achieves an average accuracy of 98 percent for event
+vs noise discrimination and is able to estimate first P arrival time and local magnitude with average
+root mean squared errors of 0.13 seconds and 0.65 units, respectively. We also compare CREIME architecture
+with architectures of other baseline models, by training them on the same data, and also with traditional
+algorithms such as STA/LTA, and show that our architecture outperforms these methods. 

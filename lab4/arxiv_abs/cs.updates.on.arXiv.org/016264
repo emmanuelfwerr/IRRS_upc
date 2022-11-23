@@ -1,0 +1,19 @@
+Vertical federated learning (VFL) aims to train models from cross-silo data with different feature
+spaces stored on different platforms. Existing VFL methods usually assume all data on each platform
+can be used for model training. However, due to the intrinsic privacy risks of federated learning,
+the total amount of involved data may be constrained. In addition, existing VFL studies usually
+assume only one platform has task labels and can benefit from the collaboration, making it difficult
+to attract other platforms to join in the collaborative learning. In this paper, we study the platform
+collaboration problem in VFL under privacy constraint. We propose to incent different platforms
+through a reciprocal collaboration, where all platforms can exploit multi-platform information
+in the VFL framework to benefit their own tasks. With limited privacy budgets, each platform needs
+to wisely allocate its data quotas for collaboration with other platforms. Thereby, they naturally
+form a multi-party game. There are two core problems in this game, i.e., how to appraise other platforms'
+data value to compute game rewards and how to optimize policies to solve the game. To evaluate the
+contributions of other platforms' data, each platform offers a small amount of "deposit" data to
+participate in the VFL. We propose a performance estimation method to predict the expected model
+performance when involving different amount combinations of inter-platform data. To solve the
+game, we propose a platform negotiation method that simulates the bargaining among platforms and
+locally optimizes their policies via gradient descent. Extensive experiments on two real-world
+datasets show that our approach can effectively facilitate the collaborative exploitation of
+multi-platform data in VFL under privacy restrictions. 

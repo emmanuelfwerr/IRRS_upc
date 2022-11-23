@@ -1,0 +1,19 @@
+In recent years, the usage of indoor positioning systems for manufacturing processes became increasingly
+popular. Typically, the production hall is equipped with satellites which receive position data
+of sensors that can be pinned on components, load carriers or industrial trucks. This enables a company
+e.g. to reduce search efforts and to optimize individual system processes. In our research context,
+a sensor only sends position information when it is moved. However, various circumstances frequently
+affect that data is undesirably sent, e.g. due to disrupting factors nearby. This has a negative
+impact on the data quality, the energy consumption, and the reliability of the whole system. Motivated
+by this, we aim to distinguish between actual movements and signals that were undesirably sent which
+is in particular challenging due to the susceptibility of indoor systems in terms of noise and measuring
+errors. Therefore, we propose two novel unsupervised classification algorithms suitable for
+this task. Depending on the question of interest, they rely either on a distance-based or on a time-based
+criterion, which allows to make use of all essential information. Furthermore, we propose an approach
+to combine both classifications and to aggregate them on spatial production areas. This enables
+us to generate a comprehensive map of the underlying production hall with the sole usage of the position
+data. Aside from the analysis and detection of the underlying movement structure, the user benefits
+from a better understanding of own system processes and from the detection of problematic system
+areas which leads to a more efficient usage of positioning systems. Since all our approaches are
+constructed with unsupervised techniques, they are handily applicable in practice and do not require
+more information than the output data of the positioning system. 

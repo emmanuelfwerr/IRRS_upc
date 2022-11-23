@@ -1,0 +1,19 @@
+Premixed flames exhibit different asymptotic regimes of interaction between heat release and
+turbulence depending on their respective length scales. At high Karlovitz number, the dilatation
+caused by heat release does not have any relevant effect on turbulent kinetic energy with respect
+to non-reacting flow, while at low Karlovitz number, the mean shear is a sink of turbulent kinetic
+energy, and counter-gradient transport is observed. This latter phenomenon is not well captured
+by closure models commonly used in Large Eddy Simulations that are based on gradient diffusion.
+The massive amount of data available from Direct Numerical Simulation (DNS) opens the possibility
+to develop data-driven models able to represent physical mechanisms and non-linear features present
+in both these regimes. In this work, the databases are formed by DNSs of two planar hydrogen/air flames
+at different Karlovitz numbers corresponding to the two asymptotic regimes. In this context, the
+Generative Adversarial Network (GAN) gives the possibility to successfully recognize and reconstruct
+both gradient and counter-gradient phenomena if trained with databases where both regimes are
+included. Two GAN models were first trained each for a specific Karlovitz number and tested using
+the same dataset in order to verify the capability of the models to learn the features of a single asymptotic
+regime and assess its accuracy. In both cases, the GAN models were able to reconstruct the Reynolds
+stress subfilter scales accurately. Later, the GAN was trained with a mixture of both datasets to
+create a model containing physical knowledge of both combustion regimes. This model was able to
+reconstruct the subfilter scales for both cases capturing the interaction between heat release
+and turbulence closely to the DNS as shown from the turbulent kinetic budget and barycentric maps.

@@ -1,0 +1,19 @@
+The modern code review process is an integral part of the current software development practice.
+Considerable effort is given here to inspect code changes, find defects, suggest an improvement,
+and address the suggestions of the reviewers. In a code review process, usually, several iterations
+take place where an author submits code changes and a reviewer gives feedback until is happy to accept
+the change. In around 12% cases, the changes are abandoned, eventually wasting all the efforts.
+In this research, our objective is to design a tool that can predict whether a code change would be
+merged or abandoned at an early stage to reduce the waste of efforts of all stakeholders (e.g., program
+author, reviewer, project management, etc.) involved. The real-world demand for such a tool was
+formally identified by a study by Fan et al. [1]. We have mined 146,612 code changes from the code reviews
+of three large and popular open-source software and trained and tested a suite of supervised machine
+learning classifiers, both shallow and deep learning based. We consider a total of 25 features in
+each code change during the training and testing of the models. The best performing model named PredCR
+(Predicting Code Review), a LightGBM-based classifier achieves around 85% AUC score on average
+and relatively improves the state-of-the-art [1] by 14-23%. In our empirical study on the 146,612
+code changes from the three software projects, we find that (1) The new features like reviewer dimensions
+that are introduced in PredCR are the most informative. (2) Compared to the baseline, PredCR is more
+effective towards reducing bias against new developers. (3) PredCR uses historical data in the
+code review repository and as such the performance of PredCR improves as a software system evolves
+with new and more data. 

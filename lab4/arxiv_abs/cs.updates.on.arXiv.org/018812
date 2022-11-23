@@ -1,0 +1,20 @@
+Spiking Neural Networks (SNNs) have emerged as a hardware efficient architecture for classification
+tasks. The penalty of spikes-based encoding has been the lack of a universal training mechanism
+performed entirely using spikes. There have been several attempts to adopt the powerful backpropagation
+(BP) technique used in non-spiking artificial neural networks (ANN): (1) SNNs can be trained by
+externally computed numerical gradients. (2) A major advancement toward native spike-based learning
+has been the use of approximate Backpropagation using spike-time-dependent plasticity (STDP)
+with phased forward/backward passes. However, the transfer of information between such phases
+necessitates external memory and computational access. This is a challenge for neuromorphic hardware
+implementations. In this paper, we propose a stochastic SNN-based Back-Prop (SSNN-BP) algorithm
+that utilizes a composite neuron to simultaneously compute the forward pass activations and backward
+pass gradients explicitly with spikes. Although signed gradient values are a challenge for spike-based
+representation, we tackle this by splitting the gradient signal into positive and negative streams.
+The composite neuron encodes information in the form of stochastic spike-trains and converts Backpropagation
+weight updates into temporally and spatially local discrete STDP-like spike coincidence updates
+compatible with hardware-friendly Resistive Processing Units (RPUs). Furthermore, our method
+approaches BP ANN baseline with sufficiently long spike-trains. Finally, we show that softmax
+cross-entropy loss function can be implemented through inhibitory lateral connections enforcing
+a Winner Take All (WTA) rule. Our SNN shows excellent generalization through comparable performance
+to ANNs on the MNIST, Fashion-MNIST and Extended MNIST datasets. Thus, SSNN-BP enables BP compatible
+with purely spike-based neuromorphic hardware. 

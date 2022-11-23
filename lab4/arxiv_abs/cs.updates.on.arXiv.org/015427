@@ -1,0 +1,20 @@
+Partial synchrony is a model of computation in many distributed algorithms and modern blockchains.
+These algorithms are typically parameterized in the number of participants, and their correctness
+requires the existence of bounds on message delays and on the relative speed of processes after reaching
+Global Stabilization Time. These characteristics make partially synchronous algorithms parameterized
+in the number of processes, and parametric in time bounds, which render automated verification
+of partially synchronous algorithms challenging. In this paper, we present a case study on formal
+verification of both safety and liveness of the Chandra and Toueg failure detector that is based
+on partial synchrony. To this end, we first introduce and formalize the class of symmetric point-to-point
+algorithms that contains the failure detector. Second, we show that these symmetric point-to-point
+algorithms have a cutoff, and the cutoff results hold in three models of computation: synchrony,
+asynchrony, and partial synchrony. As a result, one can verify them by model checking small instances,
+but the verification problem stays parametric in time. Next, we specify the failure detector and
+the partial synchrony assumptions in three frameworks: TLA+, IVy, and counter automata. Importantly,
+we tune our modeling to use the strength of each method: (1) We are using counters to encode message
+buffers with counter automata, (2) we are using first-order relations to encode message buffers
+in IVy, and (3) we are using both approaches in TLA+. By running the tools for TLA+ and counter automata,
+we demonstrate safety for fixed time bounds. By running IVy, we prove safety for arbitrary time bounds.
+Moreover, we show how to verify liveness of the failure detector by reducing the verification problem
+to safety verification. Thus, both properties are verified by developing inductive invariants
+with IVy. 

@@ -1,0 +1,19 @@
+During the last decades there is a continuing international endeavor in developing realistic space
+weather prediction tools aiming to forecast the conditions on the Sun and in the interplanetary
+environment. These efforts have led to the need of developing appropriate metrics in order to assess
+the performance of those tools. Metrics are necessary for validating models, comparing different
+models and monitoring adjustments or improvements of a certain model over time. In this work, we
+introduce the Dynamic Time Warping (DTW) as an alternative way to validate models and, in particular,
+to quantify differences between observed and synthetic (modeled) time series for space weather
+purposes. We present the advantages and drawbacks of this method as well as applications on WIND
+observations and EUHFORIA modeled output at L1. We show that DTW is a useful tool that permits the
+evaluation of both the fast and slow solar wind. Its distinctive characteristic is that it warps
+sequences in time, aiming to align them with the minimum cost by using dynamic programming. It can
+be applied in two different ways for the evaluation of modeled solar wind time series. The first way
+calculates the so-called sequence similarity factor (SSF), a number that provides a quantification
+of how good the forecast is, compared to a best and a worst case prediction scenarios. The second way
+quantifies the time and amplitude differences between the points that are best matched between
+the two sequences. As a result, it can serve as a hybrid metric between continuous measurements (such
+as, e.g., the correlation coefficient) and point-by-point comparisons. We conclude that DTW is
+a promising technique for the assessment of solar wind profiles offering functions that other metrics
+do not, so that it can give at once the most complete evaluation profile of a model. 

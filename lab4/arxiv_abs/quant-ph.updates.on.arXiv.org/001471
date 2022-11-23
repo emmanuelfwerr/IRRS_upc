@@ -1,0 +1,19 @@
+The challenge of quantum computing is to combine error resilience with universal computation.
+Diagonal gates such as the transversal $T$ gate play an important role in implementing a universal
+set of quantum operations. This paper introduces a framework that describes the process of preparing
+a code state, applying a diagonal physical gate, measuring a code syndrome, and applying a Pauli
+correction that may depend on the measured syndrome (the average logical channel induced by an arbitrary
+diagonal gate). It focuses on CSS codes, and describes the interaction of code states and physical
+gates in terms of generator coefficients determined by the induced logical operator. The interaction
+of code states and diagonal gates depends very strongly on the signs of $Z$-stabilizers in the CSS
+code, and the proposed generator coefficient framework explicitly includes this degree of freedom.
+The paper derives necessary and sufficient conditions for an arbitrary diagonal gate to preserve
+the code space of a stabilizer code, and provides an explicit expression of the induced logical operator.
+When the diagonal gate is a quadratic form diagonal gate (introduced by Rengaswamy et al.), the conditions
+can be expressed in terms of divisibility of weights in the two classical codes that determine the
+CSS code. These codes find application in magic state distillation and elsewhere. When all the signs
+are positive, the paper characterizes all possible CSS codes, invariant under transversal $Z$-rotation
+through $\pi/2^l$, that are constructed from classical Reed-Muller codes by deriving the necessary
+and sufficient constraints on $l$. The generator coefficient framework extends to arbitrary stabilizer
+codes but there is nothing to be gained by considering the more general class of non-degenerate stabilizer
+codes. 

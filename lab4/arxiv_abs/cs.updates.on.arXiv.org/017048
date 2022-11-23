@@ -1,0 +1,19 @@
+Vision transformer (ViT) has been trending in image classification tasks due to its promising performance
+when compared to convolutional neural networks (CNNs). As a result, many researchers have tried
+to incorporate ViT models in hyperspectral image (HSI) classification tasks, but without achieving
+satisfactory performance. To this paper, we introduce a new multimodal fusion transformer (MFT)
+network for HSI land-cover classification, which utilizes other sources of multimodal data in
+addition to HSI. Instead of using conventional feature fusion techniques, other multimodal data
+are used as an external classification (CLS) token in the transformer encoder, which helps achieving
+better generalization. ViT and other similar transformer models use a randomly initialized external
+classification token {and fail to generalize well}. However, the use of a feature embedding derived
+from other sources of multimodal data, such as light detection and ranging (LiDAR), offers the potential
+to improve those models by means of a CLS. The concept of tokenization is used in our work to generate
+CLS and HSI patch tokens, helping to learn key features in a reduced feature space. We also introduce
+a new attention mechanism for improving the exchange of information between HSI tokens and the CLS
+(e.g., LiDAR) token. Extensive experiments are carried out on widely used and benchmark datasets
+i.e., the University of Houston, Trento, University of Southern Mississippi Gulfpark (MUUFL),
+and Augsburg. In the results section, we compare the proposed MFT model with other state-of-the-art
+transformer models, classical CNN models, as well as conventional classifiers. The superior performance
+achieved by the proposed model is due to the use of multimodal information as external classification
+tokens. 

@@ -1,0 +1,19 @@
+Whole abdominal organ segmentation plays an important role in diagnosing abdomen lesions, radiotherapy,
+and follow-up. However, oncologists delineating all abdominal organs is time-consuming and very
+expensive. Recently, deep learning-based medical image segmentation has shown the potential
+to reduce manual delineation efforts, but it still requires a large-scale fine annotated dataset
+for training. Although many efforts in this task, there are still few large image datasets covering
+the whole abdomen region with accurate and detailed annotations for the whole abdominal organ segmentation.
+In this work, we establish a large-scale \textit{W}hole abdominal \textit{OR}gan \textit{D}ataset
+(\textit{WORD}) for algorithms research and clinical applications development. This dataset
+contains 150 abdominal CT volumes (30495 slices). Each volume has 16 organs with fine pixel-level
+annotations and scribble-based sparse annotation, which may be the largest dataset with whole
+abdominal organ annotation. Several state-of-the-art segmentation methods are evaluated on
+this dataset. And we also invited three clinical oncologists to revise the model predictions to
+measure the gap between the deep learning method and three oncologists. Afterwards, we investigate
+the inference-efficiently learning on the WORD dataset, as the high-resolution image requires
+large GPU memory and inference time in the test stage. We further evaluate the scribble-based annotation-efficient
+learning on this dataset, as the pixel-wise manual annotation is time-consuming and expensive.
+The work provided a new benchmark for the abdominal multi-organ segmentation task, and these experiments
+can serve as the baseline for future research and clinical application development. The codebase
+and dataset is released at: \url{https://github.com/HiLab-git/WORD}. 

@@ -1,0 +1,19 @@
+Accurate and reliable building footprint maps are vital to urban planning and monitoring, and most
+existing approaches fall back on convolutional neural networks (CNNs) for building footprint
+generation. However, one limitation of these methods is that they require strong supervisory information
+from massive annotated samples for network learning. State-of-the-art semi-supervised semantic
+segmentation networks with consistency training can help to deal with this issue by leveraging
+a large amount of unlabeled data, which encourages the consistency of model output on data perturbation.
+Considering that rich information is also encoded in feature maps, we propose to integrate the consistency
+of both features and outputs in the end-to-end network training of unlabeled samples, enabling
+to impose additional constraints. Prior semi-supervised semantic segmentation networks have
+established the cluster assumption, in which the decision boundary should lie in the vicinity of
+low sample density. In this work, we observe that for building footprint generation, the low-density
+regions are more apparent at the intermediate feature representations within the encoder than
+the encoder's input or output. Therefore, we propose an instruction to assign the perturbation
+to the intermediate feature representations within the encoder, which considers the spatial resolution
+of input remote sensing imagery and the mean size of individual buildings in the study area. The proposed
+method is evaluated on three datasets with different resolutions: Planet dataset (3 m/pixel),
+Massachusetts dataset (1 m/pixel), and Inria dataset (0.3 m/pixel). Experimental results show
+that the proposed approach can well extract more complete building structures and alleviate omission
+errors. 

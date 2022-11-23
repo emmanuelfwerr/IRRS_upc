@@ -1,0 +1,19 @@
+Multilayer networks describe the rich ways in which nodes are related through different types of
+connections in separate layers. These multiple relationships are naturally represented by an
+adjacency tensor that can be interpreted using techniques from multilinear algebra. In this work
+we propose the use of the nonnegative Tucker decomposition (NNTuck) with KL-divergence as an expressive
+factor model for multilayer networks that naturally generalizes existing methods for stochastic
+block models of multilayer networks. We show how the NNTuck provides an intuitive factor-based
+perspective on layer dependence and enables linear-algebraic techniques for analyzing dependence
+with respect to specific layers. Algorithmically, we show that using expectation maximization
+(EM) to maximize this log-likelihood under the NNTuck model is step-by-step equivalent to tensorial
+multiplicative updates for the nonnegative Tucker decomposition under a KL loss, extending a previously
+known equivalence from nonnegative matrices to nonnegative tensors. Using both synthetic and
+real-world data, we evaluate the use and interpretation of the NNTuck as a model of multilayer networks.
+The ability to quantify dependencies between layers has the potential to inform survey instruments
+for collecting social network data, identify redundancies in the structure of a network, and indicate
+relationships between disparate layers. Therefore, we propose a definition of layer dependence
+based on using a likelihood ratio test to evaluate three nested models: the layer independent, layer
+dependent, and layer redundant NNTucks. We show how these definitions, paired with analysis of
+the factor matrices in the NNTuck, can be used to understand and interpret layer dependence in different
+contexts. 

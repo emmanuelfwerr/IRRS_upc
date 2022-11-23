@@ -1,0 +1,19 @@
+Using an amalgamation of techniques from classical radar, computer vision, and deep learning,
+we characterize our ongoing data-driven approach to space-time adaptive processing (STAP) radar.
+We generate a rich example dataset of received radar signals by randomly placing targets of variable
+strengths in a predetermined region using RFView, a site-specific radio frequency modeling and
+simulation tool developed by ISL Inc. For each data sample within this region, we generate heatmap
+tensors in range, azimuth, and elevation of the output power of a minimum variance distortionless
+response (MVDR) beamformer, which can be replaced with a desired test statistic. These heatmap
+tensors can be thought of as stacked images, and in an airborne scenario, the moving radar creates
+a sequence of these time-indexed image stacks, resembling a video. Our goal is to use these images
+and videos to detect targets and estimate their locations, a procedure reminiscent of computer
+vision algorithms for object detection$-$namely, the Faster Region-Based Convolutional Neural
+Network (Faster R-CNN). The Faster R-CNN consists of a proposal generating network for determining
+regions of interest (ROI), a regression network for positioning anchor boxes around targets, and
+an object classification algorithm; it is developed and optimized for natural images. Our ongoing
+research will develop analogous tools for heatmap images of radar data. In this regard, we will generate
+a large, representative adaptive radar signal processing database for training and testing, analogous
+in spirit to the COCO dataset for natural images. As a preliminary example, we present a regression
+network in this paper for estimating target locations to demonstrate the feasibility of and significant
+improvements provided by our data-driven approach. 

@@ -1,0 +1,19 @@
+In recent years, deep-learning-based image processing has emerged as a valuable tool for medical
+imaging owing to its high performance. However, the quality of deep-learning-based methods heavily
+relies on the amount of training data; the high cost of acquiring a large dataset is a limitation to
+their utilization in medical fields. Herein, based on deep learning, we developed a computed tomography
+(CT) modality conversion method requiring only a few unsupervised images. The proposed method
+is based on CycleGAN with several extensions tailored for CT images, which aims at preserving the
+structure in the processed images and reducing the amount of training data. This method was applied
+to realize the conversion of megavoltage computed tomography (MVCT) to kilovoltage computed tomography
+(kVCT) images. Training was conducted using several datasets acquired from patients with head
+and neck cancer. The size of the datasets ranged from 16 slices (two patients) to 2745 slices (137
+patients) for MVCT and 2824 slices (98 patients) for kVCT. The required size of the training data
+was found to be as small as a few hundred slices. By statistical and visual evaluations, the quality
+improvement and structure preservation of the MVCT images converted by the proposed model were
+investigated. As a clinical benefit, it was observed by medical doctors that the converted images
+enhanced the precision of contouring. We developed an MVCT to kVCT conversion model based on deep
+learning, which can be trained using only a few hundred unpaired images. The stability of the model
+against changes in data size was demonstrated. This study promotes the reliable use of deep learning
+in clinical medicine by partially answering commonly asked questions, such as "Is our data sufficient?"
+and "How much data should we acquire?" 

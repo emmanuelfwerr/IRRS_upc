@@ -1,0 +1,20 @@
+Code search aims to retrieve accurate code snippets based on a natural language query to improve
+software productivity and quality. With the massive amount of available programs such as (on GitHub
+or Stack Overflow), identifying and localizing the precise code is critical for the software developers.
+In addition, Deep learning has recently been widely applied to different code-related scenarios,
+e.g., vulnerability detection, source code summarization. However, automated deep code search
+is still challenging due to the semantic gap between the program and the natural language query.
+Most existing deep learning-based approaches for code search rely on the sequential text i.e.,
+feeding the program and the query as a flat sequence of tokens to learn the program semantics while
+the structural information is not fully considered. Furthermore, the widely adopted Graph Neural
+Networks (GNNs) have proved the effectiveness in learning program semantics, however, they also
+suffer the problem of capturing the global dependency in the constructed graph, which limits the
+model learning capacity. To address these challenges, in this paper, we design a novel neural network
+framework, named GraphSearchNet, to enable an effective and accurate source code search by jointly
+learning rich semantics of both source code and natural language queries. Specifically, we propose
+to construct graphs for the source code and queries with bidirectional GGNN (BiGGNN) to capture
+the local structural information of the source code and queries. Furthermore, we enhance BiGGNN
+by utilizing the multi-head attention module to supplement the global dependency that BiGGNN missed
+to improve the model learning capacity. The extensive experiments on Java and Python programming
+language from the public benchmark CodeSearchNet confirm that GraphSearchNet outperforms current
+state-of-the-art works by a significant margin. 

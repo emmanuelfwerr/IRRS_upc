@@ -1,0 +1,20 @@
+Nowadays, we are witnessing an increasing effort to improve the performance and trustworthiness
+of Deep Neural Networks (DNNs), with the aim to enable their adoption in safety critical systems
+such as self-driving cars. Multiple testing techniques are proposed to generate test cases that
+can expose inconsistencies in the behavior of DNN models. These techniques assume implicitly that
+the training program is bug-free and appropriately configured. However, satisfying this assumption
+for a novel problem requires significant engineering work to prepare the data, design the DNN, implement
+the training program, and tune the hyperparameters in order to produce the model for which current
+automated test data generators search for corner-case behaviors. All these model training steps
+can be error-prone. Therefore, it is crucial to detect and correct errors throughout all the engineering
+steps of DNN-based software systems and not only on the resulting DNN model. In this paper, we gather
+a catalog of training issues and based on their symptoms and their effects on the behavior of the training
+program, we propose practical verification routines to detect the aforementioned issues, automatically,
+by continuously validating that some important properties of the learning dynamics hold during
+the training. Then, we design, TheDeepChecker, an end-to-end property-based debugging approach
+for DNN training programs. We assess the effectiveness of TheDeepChecker on synthetic and real-world
+buggy DL programs and compare it with Amazon SageMaker Debugger (SMD). Results show that TheDeepChecker's
+on-execution validation of DNN-based program's properties succeeds in revealing several coding
+bugs and system misconfigurations, early on and at a low cost. Moreover, TheDeepChecker outperforms
+the SMD's offline rules verification on training logs in terms of detection accuracy and DL bugs
+coverage. 

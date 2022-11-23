@@ -1,0 +1,19 @@
+This paper introduces a sharp-interface approach to simulating fluid-structure interaction
+involving flexible bodies described by general nonlinear material models and across a broad range
+of mass density ratios. This new flexible-body immersed Lagrangian-Eulerian (ILE) approach incorporates
+the geometrical and domain solution flexibility of the immersed boundary (IB) method with an accuracy
+comparable to body-fitted approaches that sharply resolve flows and stresses up to the fluid-structure
+interface. Unlike many IB methods, our ILE formulation uses distinct momentum equations for the
+fluid and solid subregions with a Dirichlet-Neumann coupling strategy that connects fluid and
+solid subproblems through simple interface conditions. We use a penalty method involving two representations
+of the fluid-structure interface. These two representations are connected by approximate Lagrange
+multiplier forces that impose kinematic interface conditions. This approach also enables the
+use of multi-rate time stepping, which allows us to take different time step sizes for the fluid and
+structure subproblems. Our fluid solver relies on an immersed interface method for discrete surfaces
+to impose stress jump conditions along complex interfaces. The dynamics of the volumetric structural
+mesh are determined using a standard finite element approach to large-deformation nonlinear elasticity
+via a nearly incompressible solid mechanics formulation. This formulation also readily accommodates
+compressible structures for cases in which part of the solid boundary does not contact the incompressible
+fluid. Comparisons are made with computational and experimental benchmarks. We also demonstrate
+the capabilities of this methodology by applying it to model the transport and capture of a cylindrical
+blood clot in an inferior vena cava filter. 

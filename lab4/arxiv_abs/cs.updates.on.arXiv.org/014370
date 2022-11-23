@@ -1,0 +1,19 @@
+This work introduces a new approach to reduce the computational cost of solving partial differential
+equations (PDEs) with convection-dominated solutions: model reduction with implicit feature
+tracking. Traditional model reduction techniques use an affine subspace to reduce the dimensionality
+of the solution manifold and, as a result, yield limited reduction and require extensive training
+due to the slowly decaying Kolmogorov $n$-width of convection-dominated problems. The proposed
+approach circumvents the slowly decaying $n$-width limitation by using a nonlinear approximation
+manifold systematically defined by composing a low-dimensional affine space with a space of bijections
+of the underlying domain. Central to the implicit feature tracking approach is a residual minimization
+problem over the reduced nonlinear manifold that simultaneously determines the reduced coordinates
+in the affine space and the domain mapping that minimize the residual of the unreduced PDE discretization.
+The nonlinear trial manifold is constructed by using the proposed residual minimization formulation
+to determine domain mappings that cause parametrized features to align in a reference domain for
+a set of training parameters. Because the feature is stationary in the reference domain, i.e., the
+convective nature of solution removed, the snapshots are effectively compressed to define an affine
+subspace. The space of domain mappings, originally constructed using high-order finite elements,
+are also compressed in a way that ensures the boundaries of the original domain are maintained. Several
+numerical experiments are provided, including transonic and supersonic, inviscid, compressible
+flows, to demonstrate the potential of the method to yield accurate approximations to convection-dominated
+problems with limited training. 

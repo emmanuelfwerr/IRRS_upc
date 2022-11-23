@@ -1,0 +1,18 @@
+Adverse events are a serious issue in drug development and many prediction methods using machine
+learning have been developed. The random split cross-validation is the de facto standard for model
+building and evaluation in machine learning, but care should be taken in adverse event prediction
+because this approach does not match to the real-world situation. The time split, which uses the
+time axis, is considered suitable for real-world prediction. However, the differences in model
+performance obtained using the time and random splits are not clear due to the lack of the comparable
+studies. To understand the differences, we compared the model performance between the time and
+random splits using nine types of compound information as input, eight adverse events as targets,
+and six machine learning algorithms. The random split showed higher area under the curve values
+than did the time split for six of eight targets. The chemical spaces of the training and test datasets
+of the time split were similar, suggesting that the concept of applicability domain is insufficient
+to explain the differences derived from the splitting. The area under the curve differences were
+smaller for the protein interaction than for the other datasets. Subsequent detailed analyses
+suggested the danger of confounding in the use of knowledge-based information in the time split.
+These findings indicate the importance of understanding the differences between the time and random
+splits in adverse event prediction and strongly suggest that appropriate use of the splitting strategies
+and interpretation of results are necessary for the real-world prediction of adverse events. We
+provide analysis code and datasets used in the present study (https://github.com/mizuno-group/AE_prediction).

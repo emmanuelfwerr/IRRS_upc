@@ -1,0 +1,19 @@
+Protein Structure Prediction (PSP) is an unsolved problem in the field of computational biology.
+The problem of protein structure prediction is about predicting the native conformation of a protein,
+while its sequence of amino acids is known. Regarding processing limitations of current computer
+systems, all-atom simulations for proteins are typically unpractical; several reduced models
+of proteins have been proposed. Additionally, due to intrinsic hardness of calculations even in
+reduced models, many computational methods mainly based on artificial intelligence have been
+proposed to solve the problem. Agent-based modeling is a relatively new method for modeling systems
+composed of interacting items. In this paper we proposed a new approach for protein structure prediction
+by using agent-based modeling (ABM) in two dimensional hydrophobic-hydrophilic model. We broke
+the whole process of protein structure prediction into two steps: the first step, which was introduced
+in our previous paper, is about biasing the linear sequence to gain a primary energy, and the next
+step, which will be explained in this paper, is about using ABM with a predefined set of rules, to find
+the best conformation in the least possible amount of time and steps. This method was implemented
+in NETLOGO. We have tested this algorithm on several benchmark sequences ranging from 20 to 50-mers
+in two dimensional Hydrophobic-Hydrophilic lattice models. Comparing to the result of the other
+algorithms, our method is capable of finding the best known conformations in a significantly shorter
+time. A major problem in PSP simulation is that as the sequence length increases the time consumed
+to predict a valid structure will exponentially increase. In contrast, by using MAS2HP the effect
+of increase in sequence length on spent time has changed from exponentially to linear. 

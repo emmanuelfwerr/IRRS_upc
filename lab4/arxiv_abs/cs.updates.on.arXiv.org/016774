@@ -1,0 +1,19 @@
+Purpose: To introduce a dual-domain reconstruction network with V-Net and K-Net for accurate MR
+image reconstruction from undersampled k-space data. Methods: Most state-of-the-art reconstruction
+methods apply U-Net or cascaded U-Nets in image domain and/or k-space domain. Nevertheless, these
+methods have following problems: (1) Directly applying U-Net in k-space domain is not optimal for
+extracting features in k-space domain; (2) Classical image-domain oriented U-Net is heavy-weight
+and hence is inefficient to be cascaded many times for yielding good reconstruction accuracy; (3)
+Classical image-domain oriented U-Net does not fully make use information of encoder network for
+extracting features in decoder network; and (4) Existing methods are ineffective in simultaneously
+extracting and fusing features in image domain and its dual k-space domain. To tackle these problems,
+we propose in this paper (1) an image-domain encoder-decoder sub-network called V-Net which is
+more light-weight for cascading and effective in fully utilizing features in the encoder for decoding,
+(2) a k-space domain sub-network called K-Net which is more suitable for extracting hierarchical
+features in k-space domain, and (3) a dual-domain reconstruction network where V-Nets and K-Nets
+are parallelly and effectively combined and cascaded. Results: Extensive experimental results
+on the challenging fastMRI dataset demonstrate that the proposed KV-Net can reconstruct high-quality
+images and outperform current state-of-the-art approaches with fewer parameters. Conclusions:
+To reconstruct images effectively and efficiently from incomplete k-space data, we have presented
+a parallel dual-domain KV-Net to combine K-Nets and V-Nets. The KV-Net is more lightweight than
+state-of-the-art methods but achieves better reconstruction performance. 

@@ -1,0 +1,19 @@
+In this work we propose a high-quality decomposition approach for qubit routing by swap insertion.
+This optimization problem arises in the context of compiling quantum algorithms onto specific
+quantum hardware. Our approach decomposes the routing problem into an allocation subproblem and
+a set of token swapping problems. This allows us to tackle the allocation part and the token swapping
+part separately. Extracting the allocation part from the qubit routing model of Nannicini et al.\
+(\cite{nannicini2021}), we formulate the allocation subproblem as a binary program. Herein,
+we employ a cost function that is a lower bound on the overall routing problem objective. We strengthen
+the linear relaxation by novel valid inequalities. For the token swapping part we develop an exact
+branch-and-bound algorithm. In this context, we improve upon known lower bounds on the token swapping
+problem. Furthermore, we enhance an existing approximation algorithm. We present numerical results
+for the integrated allocation and token swapping problem. Obtained solutions may not be globally
+optimal due to the decomposition and the usage of an approximation algorithm. However, the solutions
+are obtained fast and are typically close to optimal. In addition, there is a significant reduction
+in the number of gates and output circuit depth when compared to state-of-the-art heuristics. Reducing
+these figures is crucial for minimizing noise when running quantum algorithms on near-term hardware.
+As a consequence, using the novel decomposition approach leads to compiled algorithms with improved
+quality. Indeed, when compiled with the novel routing procedure and executed on real hardware,
+our experimental results for quantum approximate optimization algorithms show an significant
+increase in solution quality in comparison to standard routing methods. 

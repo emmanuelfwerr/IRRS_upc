@@ -1,0 +1,19 @@
+Magnetohydrodynamic (MHD) simulations of the solar corona have become more popular with the increased
+availability of computational power. Modern computational plasma codes, relying upon Computational
+Fluid Dynamics (CFD) methods, allow for resolving the coronal features using solar surface magnetograms
+as inputs. These computations are carried out in a full 3D domain and thus selection of the right mesh
+configuration is essential to save computational resources and enable/speed up convergence.
+In addition, it has been observed that for MHD simulations close to the hydrostatic equilibrium,
+spurious numerical artefacts might appear in the solution following the mesh structure, which
+makes the selection of the grid also a concern for accuracy. The purpose of this paper is to discuss
+and trade off two main mesh topologies when applied to global solar corona simulations using the
+unstructured ideal MHD solver from the COOLFluiD platform. The first topology is based on the geodesic
+polyhedron and the second on UV mapping. Focus will be placed on aspects such as mesh adaptability,
+resolution distribution, resulting spurious numerical fluxes and convergence performance.
+For this purpose, firstly a rotating dipole case is investigated, followed by two simulations using
+real magnetograms from the solar minima (1995) and solar maxima (1999). It is concluded that the
+most appropriate mesh topology for the simulation depends on several factors, such as the accuracy
+requirements, the presence of features near the polar regions and/or strong features in the flow
+field in general. If convergence is of concern and the simulation contains strong dynamics, then
+grids which are based on the geodesic polyhedron are recommended compared to more conventionally
+used UV-mapped meshes. 

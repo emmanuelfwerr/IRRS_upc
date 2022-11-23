@@ -1,0 +1,19 @@
+Existing disentangled-based methods for generalizable person re-identification aim at directly
+disentangling person representations into domain-relevant interference and identity-relevant
+feature. However, they ignore that some crucial characteristics are stubbornly entwined in both
+the domain-relevant interference and identity-relevant feature, which are intractable to decompose
+in an unsupervised manner. In this paper, we propose a simple yet effective Calibrated Feature Decomposition
+(CFD) module that focuses on improving the generalization capacity for person re-identification
+through a more judicious feature decomposition and reinforcement strategy. Specifically, a calibrated-and-standardized
+Batch normalization (CSBN) is designed to learn calibrated person representation by jointly exploring
+intra-domain calibration and inter-domain standardization of multi-source domain features.
+CSBN restricts instance-level inconsistency of feature distribution for each domain and captures
+intrinsic domain-level specific statistics. The calibrated person representation is subtly
+decomposed into the identity-relevant feature, domain feature, and the remaining entangled one.
+For enhancing the generalization ability and ensuring high discrimination of the identity-relevant
+feature, a calibrated instance normalization (CIN) is introduced to enforce discriminative id-relevant
+information, and filter out id-irrelevant information, and meanwhile the rich complementary
+clues from the remaining entangled feature are further employed to strengthen it. Extensive experiments
+demonstrate the strong generalization capability of our framework. Our models empowered by CFD
+modules significantly outperform the state-of-the-art domain generalization approaches on
+multiple widely-used benchmarks. Code will be made public: https://github.com/zkcys001/CFD.

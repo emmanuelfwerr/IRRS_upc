@@ -1,0 +1,19 @@
+In this paper, we focus on the demodulation/decoding of the complex modulations/codes that approach
+the Shannon capacity. Theoretically, the maximum likelihood (ML) algorithm can achieve the optimal
+error performance whereas it has $\mathcal{O}(2^k)$ demodulation/decoding complexity with
+$k$ denoting the number of information bits. Recent progress in deep learning provides a new direction
+to tackle the demodulation and the decoding. The purpose of this paper is to analyze the feasibility
+of the neural network to demodulate/decode the complex modulations/codes close to the Shannon
+capacity and characterize the error performance and the complexity of the neural network. Regarding
+the neural network demodulator, we use the golden angle modulation (GAM), a promising modulation
+format that can offer the Shannon capacity approaching performance, to evaluate the demodulator.
+It is observed that the neural network demodulator can get a close performance to the ML-based method
+while it suffers from the lower complexity order in the low-order GAM. Regarding the neural network
+decoder, we use the Gaussian codebook, achieving the Shannon capacity, to evaluate the decoder.
+We also observe that the neural network decoder achieves the error performance close to the ML decoder
+with a much lower complexity order in the small Gaussian codebook. Limited by the current training
+resources, we cannot evaluate the performance of the high-order modulation and the long codeword.
+But, based on the results of the low-order GAM and the small Gaussian codebook, we boldly give our
+conjecture: the neural network demodulator/decoder is a strong candidate approach for demodulating/decoding
+the complex modulations/codes close to the Shannon capacity owing to the error performance of the
+near-ML algorithm and the lower complexity. 

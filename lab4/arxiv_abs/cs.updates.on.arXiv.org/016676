@@ -1,0 +1,20 @@
+With the advancement of Deep Neural Networks (DNN) and large amounts of sensor data from Internet
+of Things (IoT) systems, the research community has worked to reduce the computational and resource
+demands of DNN to compute on low-resourced microcontrollers (MCUs). However, most of the current
+work in embedded deep learning focuses on solving a single task efficiently, while the multi-tasking
+nature and applications of IoT devices demand systems that can handle a diverse range of tasks (activity,
+voice, and context recognition) with input from a variety of sensors, simultaneously. In this paper,
+we propose YONO, a product quantization (PQ) based approach that compresses multiple heterogeneous
+models and enables in-memory model execution and switching for dissimilar multi-task learning
+on MCUs. We first adopt PQ to learn codebooks that store weights of different models. Also, we propose
+a novel network optimization and heuristics to maximize the compression rate and minimize the accuracy
+loss. Then, we develop an online component of YONO for efficient model execution and switching between
+multiple tasks on an MCU at run time without relying on an external storage device. YONO shows remarkable
+performance as it can compress multiple heterogeneous models with negligible or no loss of accuracy
+up to 12.37$\times$. Besides, YONO's online component enables an efficient execution (latency
+of 16-159 ms per operation) and reduces model loading/switching latency and energy consumption
+by 93.3-94.5% and 93.9-95.0%, respectively, compared to external storage access. Interestingly,
+YONO can compress various architectures trained with datasets that were not shown during YONO's
+offline codebook learning phase showing the generalizability of our method. To summarize, YONO
+shows great potential and opens further doors to enable multi-task learning systems on extremely
+resource-constrained devices. 

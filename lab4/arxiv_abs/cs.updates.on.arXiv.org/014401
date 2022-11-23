@@ -1,0 +1,20 @@
+Composed of spatially distributed sensors and actuators that communicate through wireless networks,
+networked control systems are emerging as a fundamental infrastructure technology in 5G and IoT
+technologies, including diverse applications, such as autonomous vehicles, UAVs, and various
+sensing devices. In order to increase flexibility and reduce deployment and maintenance costs,
+many such applications consider battery-powered or energy-harvesting networks, which bring
+additional limitations on the energy consumption of the wireless network. Specifically, the operation
+of battery-powered or energy-harvesting wireless communication networks needs to guarantee
+(i) efficient communication between nodes and (ii) preservation of available energy. Motivated
+by these novel requirements, in this paper, we present and analyze a novel distributed average consensus
+algorithm, which (i) operates exclusively on quantized values (in order to guarantee efficient
+communication and data storage), and (ii) relies on event-driven updates (in order to reduce energy
+consumption, communication bandwidth, network congestion, and/or processor usage). We characterize
+the properties of the proposed algorithm and show that its execution, on any time-invariant and
+strongly connected digraph, will allow all nodes to reach, in finite time, a common consensus value
+that is equal to the exact average (represented as the ratio of two quantized values). Furthermore,
+we show that our algorithm allows each node to cease transmissions once the exact average of the initial
+quantized values has been reached (in order to preserve its battery energy). Then, we present upper
+bounds on (i) the number of transmissions and computations each node has to perform during the execution
+of the algorithm, and (ii) the memory and energy requirements of each node in order for the algorithm
+to be executed. 

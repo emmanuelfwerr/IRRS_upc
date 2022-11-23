@@ -1,0 +1,18 @@
+Reductions of the self-consistent mean field theory model of amphiphilic molecules in solvent
+leads to a singular family of functionalized Cahn-Hilliard (FCH) energies. We modify the energy,
+removing singularities to stabilize the computation of the gradient flows and develop a series
+of benchmark problems that emulate the "morphological complexity" observed in experiments. These
+benchmarks investigate the delicate balance between the rate of arrival of amphiphilic materials
+onto an interface and a least energy mechanism to accommodate the arriving mass. The result is a trichotomy
+of responses in which two-dimensional interfaces grow either by a regularized motion against curvature,
+pearling bifurcations, or curve-splitting directly into networks of interfaces. We evaluate
+a number of schemes that use second order BDF2-type time stepping coupled with Fourier pseudo-spectral
+spatial discretization. The BDF2-type schemes are either based on a fully implicit time discretization
+with a preconditioned steepest descent (PSD) nonlinear solver or upon linearly implicit time discretization
+based on the standard implicit-explicit (IMEX) and the scalar auxiliary variable (SAV) approaches.
+We add an exponential time differencing (ETD) scheme for comparison purposes. All schemes use a
+fixed local truncation error target with adaptive time-stepping to achieve the error target. Each
+scheme requires proper "preconditioning" to achieve robust performance that can enhance efficiency
+by several orders of magnitude. The nonlinear PSD scheme achieves the smallest global discretization
+error at fixed local truncation error, however the IMEX and SAV schemes are the most computationally
+efficient as measured by the number of FFT calls required to achieve a desired global error. 

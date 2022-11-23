@@ -1,0 +1,19 @@
+Cryptographic signatures can be used to increase the resilience of distributed systems against
+adversarial attacks, by increasing the number of faulty parties that can be tolerated. While this
+is well-studied for consensus, it has been underexplored in the context of fault-tolerant clock
+synchronization, even in fully connected systems. Here, the honest parties of an $n$-node system
+are required to compute output clocks of small skew (i.e., maximum phase offset) despite local clock
+rates varying between $1$ and $\vartheta>1$, end-to-end communication delays varying between
+$d-u$ and $d$, and the interference from malicious parties. So far, it is only known that clock pulses
+of skew $d$ can be generated with (trivially optimal) resilience of $\lceil n/2\rceil-1$ (PODC
+`19), improving over the tight bound of $\lceil n/3\rceil-1$ holding without signatures for \emph{any}
+skew bound (STOC `84, PODC `85). Since typically $d\gg u$ and $\vartheta-1\ll 1$, this is far from
+the lower bound of $u+(\vartheta-1)d$ that applies even in the fault-free case (IPL `01). We prove
+matching upper and lower bounds of $\Theta(u+(\vartheta-1)d)$ on the skew for the resilience range
+from $\lceil n/3\rceil$ to $\lceil n/2\rceil-1$. The algorithm showing the upper bound is, under
+the assumption that the adversary cannot forge signatures, deterministic. The lower bound holds
+even if clocks are initially perfectly synchronized, message delays between honest nodes are known,
+$\vartheta$ is arbitrarily close to one, and the synchronization algorithm is randomized. This
+has crucial implications for network designers that seek to leverage signatures for providing
+more robust time. In contrast to the setting without signatures, they must ensure that an attacker
+cannot easily bypass the lower bound on the delay on links with a faulty endpoint. 

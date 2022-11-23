@@ -1,0 +1,19 @@
+Given a finite family $\mathcal{F}$ of graphs, we say that a graph $G$ is "$\mathcal{F}$-free" if
+$G$ does not contain any graph in $\mathcal{F}$ as a subgraph. A vertex-coloured graph $H$ is called
+"rainbow" if no two vertices of $H$ have the same colour. Given an integer $s$ and a finite family of
+graphs $\mathcal{F}$, let $\ell(s,\mathcal{F})$ denote the smallest integer such that any properly
+vertex-coloured $\mathcal{F}$-free graph $G$ having $\chi(G)\geq \ell(s,\mathcal{F})$ contains
+an induced rainbow path on $s$ vertices. Scott and Seymour showed that $\ell(s,K)$ exists for every
+complete graph $K$. A conjecture of N. R. Aravind states that $\ell(s,C_3)=s$. The upper bound on
+$\ell(s,C_3)$ that can be obtained using the methods of Scott and Seymour setting $K=C_3$ are, however,
+super-exponential. Gy\`arf\`as and S\`ark\"ozy showed that $\ell(s,\{C_3,C_4\})=\mathcal{O}\big((2s)^{2s}\big)$.
+We show that $\ell(s,K_{2,r})\leq (r-1)(s-1)s/2+s$ and therefore, $\ell(s,C_4)\leq\frac{s^2+s}{2}$.
+This significantly improves Gy\`arf\`as and S\`ark\"ozy's bound and also covers a bigger class
+of graphs. We adapt our proof to achieve much stronger upper bounds for graphs of higher girth: we
+prove that $\ell(s,\{C_3,C_4,\ldots,C_{g-1}\})\leq s^{1+\frac{4}{g-4}}$, where $g\geq 5$.
+Moreover, in each case, our results imply the existence of at least $s!/2$ distinct induced rainbow
+paths on $s$ vertices. Along the way, we obtain some new results on an oriented variant of the Gy\`arf\`as-Sumner
+conjecture. Let $\mathcal{B}_r$ denote the orientations of $K_{2,r}$ in which one vertex has out-degree
+$r$. We show that every $\mathcal{B}_r$-free oriented graph having chromatic number at least $(r-1)(s-1)(s-2)+s$
+and every bikernel-perfect oriented graph with girth $g\geq 5$ having chromatic number at least
+$2s^{1+\frac{4}{g-4}}$ contains every oriented tree on at most $s$ vertices as an induced subgraph.

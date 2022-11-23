@@ -1,0 +1,19 @@
+Software-related platforms have enabled their users to collaboratively label software entities
+with topics. Tagging software repositories with relevant topics can be exploited for facilitating
+various downstream tasks. For instance, a correct and complete set of topics assigned to a repository
+can increase its visibility. Consequently, this improves the outcome of tasks such as browsing,
+searching, navigation, and organization of repositories. Unfortunately, assigned topics are
+usually highly noisy, and some repositories do not have well-assigned topics. Thus, there have
+been efforts on recommending topics for software projects, however, the semantic relationships
+among these topics have not been exploited so far. We propose two recommender models for tagging
+software projects that incorporate the semantic relationship among topics. Our approach has two
+main phases; (1) we first take a collaborative approach to curate a dataset of quality topics specifically
+for the domain of software engineering and development. We also enrich this data with the semantic
+relationships among these topics and encapsulate them in a knowledge graph we call SED-KGraph.
+Then, (2) we build two recommender systems; The first one operates only based on the list of original
+topics assigned to a repository and the relationships specified in our knowledge graph. The second
+predictive model, however, assumes there are no topics available for a repository, hence it proceeds
+to predict the relevant topics based on both textual information of a software project and SED-KGraph.
+We built SED-KGraph in a crowd-sourced project with 170 contributors from both academia and industry.
+The experiment results indicate that our solutions outperform baselines that neglect the semantic
+relationships among topics by at least 25% and 23% in terms of ASR and MAP metrics. 

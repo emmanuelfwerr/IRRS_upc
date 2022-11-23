@@ -1,0 +1,19 @@
+Context. Several methods have been proposed to build 3D extinction maps of the Milky Way (MW), most
+often based on Bayesian approaches. Although some studies employed machine learning (ML) methods
+in part of their procedure, or to specific targets, no 3D extinction map of a large volume of the MW
+solely based on a Neural Network method has been reported so far. Aims. We aim to apply deep learning
+as a solution to build 3D extinction maps of the MW. Methods. We built a convolutional neural network
+(CNN) using the CIANNA framework, and trained it with synthetic 2MASS data. We used the Besan\c{c}on
+Galaxy model to generate mock star catalogs, and 1D Gaussian random fields to simulate the extinction
+profiles. From these data we computed color-magnitude diagrams (CMDs) to train the network, using
+the corresponding extinction profiles as targets. A forward pass with observed 2MASS CMDs provided
+extinction profile estimates for a grid of lines of sight. Results. We trained our network with data
+simulating lines of sight in the area of the Carina spiral arm tangent and obtained a 3D extinction
+map for a large sector in this region ($l = 257 - 303$ deg, $|b| \le 5$ deg), with distance and angular
+resolutions of $100$ pc and $30$ arcmin, respectively, and reaching up to $\sim 10$ kpc. Although
+each sightline is computed independently in the forward phase, the so-called fingers-of-God artifacts
+are weaker than in many other 3D extinction maps. We found that our CNN was efficient in taking advantage
+of redundancy across lines of sight, enabling us to train it with only 9 sightlines simultaneously
+to build the whole map. Conclusions. We found deep learning to be a reliable approach to produce 3D
+extinction maps from large surveys. With this methodology, we expect to easily combine heterogeneous
+surveys without cross-matching, and therefore to exploit several surveys in a complementary fashion.

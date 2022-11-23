@@ -1,0 +1,19 @@
+This paper introduces Presto, a symbolic partial evaluator for Maude's rewriting logic theories
+that can improve system analysis and verification. In Presto, the automated optimization of a conditional
+rewrite theory R (whose rules define the concurrent transitions of a system) is achieved by partially
+evaluating, with respect to the rules of R, an underlying, companion equational logic theory E that
+specifies the algebraic structure of the system states of R. This can be particularly useful for
+specializing an overly general equational theory E whose operators may obey complex combinations
+of associativity, commutativity, and/or identity axioms, when being plugged into a host rewrite
+theory R as happens, for instance, in protocol analysis, where sophisticated equational theories
+for cryptography are used. Presto implements different unfolding operators that are based on folding
+variant narrowing (the symbolic engine of Maude's equational theories). When combined with an
+appropriate abstraction algorithm, they allow the specialization to be adapted to the theory termination
+behavior and bring significant improvement while ensuring strong correctness and termination
+of the specialization. We demonstrate the effectiveness of Presto in several examples of protocol
+analysis where it achieves a significant speed-up. Actually, the transformation provided by Presto
+may cut down an infinite folding variant narrowing space to a finite one, and moreover, some of the
+costly algebraic axioms and rule conditions may be eliminated as well. As far as we know, this is the
+first partial evaluator for Maude that respects the semantics of functional, logic, concurrent,
+and object-oriented computations. Under consideration in Theory and Practice of Logic Programming
+(TPLP). 

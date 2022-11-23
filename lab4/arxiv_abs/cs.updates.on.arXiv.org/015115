@@ -1,0 +1,20 @@
+It is well known [Lov\'{a}sz, 1967] that up to isomorphism a graph $G$ is determined by the homomorphism
+counts $\hom(F, G)$, i.e., the number of homomorphisms from $F$ to $G$, where $F$ ranges over all
+graphs. Moreover, it suffices that $F$ ranges over the graphs with at most as many vertices as $G$.
+Thus in principle we can answer any query concerning $G$ with only accessing the $\hom(\cdot,G)$'s
+instead of $G$ itself. In this paper, we zoom in on those queries that can be answered using a constant
+number of $\hom(\cdot,G)$ for every graph $G$. We observe that if a query $\varphi$ is expressible
+as a Boolean combination of universal sentences in first-order logic, then whether a graph $G$ satisfies
+$\varphi$ can be determined by the vector \[\overrightarrow{\mathrm{hom}}_{F_1, \ldots, F_k}(G):=
+\big(\mathrm{hom}(F_1, G), \ldots, \mathrm{hom}(F_k, G)\big),\] where the graphs $F_1,\ldots,F_k$
+only depend on $\varphi$. This leads to a query algorithm for $\varphi$ that is non-adaptive in the
+sense that those $F_i$ are independent of the input $G$. On the other hand, we prove that the existence
+of an isolated vertex, which is not definable by such a $\varphi$ but in first-order logic, cannot
+be determined by any $\overrightarrow{\mathrm{hom}}_{F_1, \ldots, F_k}(\cdot)$. These results
+provide a clear delineation of the power of non-adaptive query algorithms with access to a constant
+number of $\hom(\cdot, G)$'s. For adaptive query algorithms, i.e., algorithms that might access
+some $\hom(F_{i+1}, G)$ with $F_{i+1}$ depending on $\hom(F_1, G), \ldots, \hom(F_i, G)$, we show
+that three homomorphism counts $\hom(\cdot,G)$ are both sufficient and in general necessary to
+determine the graph $G$. In particular, by three adaptive queries we can answer any question on $G$.
+Moreover, adaptively accessing two $\hom(\cdot, G)$'s is already enough to detect an isolated
+vertex. 

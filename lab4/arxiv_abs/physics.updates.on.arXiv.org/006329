@@ -1,0 +1,20 @@
+In the numerical simulation of ideal MHD, keeping the pressure and density positive is essential
+for both physical considerations and numerical stability. This is a challenge, due to the underlying
+relation between such positivity-preserving (PP) property and the magnetic divergence-free
+(DF) constraint as well as the strong nonlinearity of the MHD equations. This paper presents the
+first rigorous PP analysis of the central discontinuous Galerkin (CDG) methods and constructs
+arbitrarily high-order PP CDG schemes for ideal MHD. By the recently developed geometric quasilinearization
+(GQL) approach, our analysis reveals that the PP property of standard CDG methods is closely related
+to a discrete DF condition, whose form was unknown and differs from the non-central DG and finite
+volume cases in [K. Wu, SIAM J. Numer. Anal. 2018]. This result lays the foundation for the design
+of our PP CDG schemes. In 1D case, the discrete DF condition is naturally satisfied, and we prove the
+standard CDG method is PP under a condition that can be enforced with a PP limiter. However, in the
+multidimensional cases, the discrete DF condition is highly nontrivial yet critical, and we prove
+the the standard CDG method, even with the PP limiter, is not PP in general, as it fails to meet the discrete
+DF condition. We address this issue by carefully analyzing the structure of the discrete divergence
+and then constructing new locally DF CDG schemes for Godunov's modified MHD equations with an additional
+source. The key point is to find out the suitable discretization of the source term such that it exactly
+offsets all the terms in the discrete DF condition. Based on the GQL approach, we prove the PP property
+of the new multidimensional CDG schemes. The robustness and accuracy of PP CDG schemes are validated
+by several demanding examples, including the high-speed jets and blast problems with very low plasma
+beta. 

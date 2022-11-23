@@ -1,0 +1,20 @@
+Aiming at facilitating a real-world, ever-evolving and scalable autonomous driving system, we
+present a large-scale dataset for standardizing the evaluation of different self-supervised
+and semi-supervised approaches by learning from raw data, which is the first and largest dataset
+to date. Existing autonomous driving systems heavily rely on `perfect' visual perception models
+(i.e., detection) trained using extensive annotated data to ensure safety. However, it is unrealistic
+to elaborately label instances of all scenarios and circumstances (i.e., night, extreme weather,
+cities) when deploying a robust autonomous driving system. Motivated by recent advances of self-supervised
+and semi-supervised learning, a promising direction is to learn a robust detection model by collaboratively
+exploiting large-scale unlabeled data and few labeled data. Existing datasets either provide
+only a small amount of data or covers limited domains with full annotation, hindering the exploration
+of large-scale pre-trained models. Here, we release a Large-Scale 2D Self/semi-supervised Object
+Detection dataset for Autonomous driving, named as SODA10M, containing 10 million unlabeled images
+and 20K images labeled with 6 representative object categories. To improve diversity, the images
+are collected within 27833 driving hours under different weather conditions, periods and location
+scenes of 32 different cities. We provide extensive experiments and deep analyses of existing popular
+self/semi-supervised approaches, and give some interesting findings in autonomous driving scope.
+Experiments show that SODA10M can serve as a promising pre-training dataset for different self-supervised
+learning methods, which gives superior performance when fine-tuning with different downstream
+tasks (i.e., detection, semantic/instance segmentation) in autonomous driving domain. More
+information can refer to https://soda-2d.github.io. 

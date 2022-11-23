@@ -1,0 +1,19 @@
+Accurate delineation of the left ventricular boundaries in late gadolinium-enhanced magnetic
+resonance imaging (LGE-MRI) is an essential step for scar tissue quantification and patient-specific
+assessment of myocardial infarction. Many deep-learning techniques have been proposed to perform
+automatic segmentations of the left ventricle (LV) in LGE-MRI showing segmentations as accurate
+as those obtained by expert cardiologists. Thus far, the existing models have been overwhelmingly
+developed and evaluated with LGE-MRI datasets from single clinical centers. However, in practice,
+LGE-MRI images vary significantly between clinical centers within and across countries, in particular
+due to differences in the MRI scanners, imaging conditions, contrast injection protocols and local
+clinical practise. This work investigates for the first time multi-center and multi-vendor LV
+segmentation in LGE-MRI, by proposing, implementing and evaluating in detail several strategies
+to enhance model generalizability across clinical cites. These include data augmentation to artificially
+augment the image variability in the training sample, image harmonization to align the distributions
+of LGE-MRI images across centers, and transfer learning to adjust existing single-center models
+to unseen images from new clinical sites. The results obtained based on a new multi-center LGE-MRI
+dataset acquired in four clinical centers in Spain, France and China, show that the combination
+of data augmentation and transfer learning can lead to single-center models that generalize well
+to new clinical centers not included in the original training. The proposed framework shows the
+potential for developing clinical tools for automated LV segmentation in LGE-MRI that can be deployed
+in multiple clinical centers across distinct geographical locations. 

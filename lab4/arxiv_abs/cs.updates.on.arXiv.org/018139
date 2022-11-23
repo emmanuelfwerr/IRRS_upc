@@ -1,0 +1,19 @@
+Lane detection is a critical function for autonomous driving. With the recent development of deep
+learning and the publication of camera lane datasets and benchmarks, camera lane detection networks
+(CLDNs) have been remarkably developed. Unfortunately, CLDNs rely on camera images which are often
+distorted near the vanishing line and prone to poor lighting condition. This is in contrast with
+Lidar lane detection networks (LLDNs), which can directly extract the lane lines on the bird's eye
+view (BEV) for motion planning and operate robustly under various lighting conditions. However,
+LLDNs have not been actively studied, mostly due to the absence of large public lidar lane datasets.
+In this paper, we introduce KAIST-Lane (K-Lane), the world's first and the largest public urban
+road and highway lane dataset for Lidar. K-Lane has more than 15K frames and contains annotations
+of up to six lanes under various road and traffic conditions, e.g., occluded roads of multiple occlusion
+levels, roads at day and night times, merging (converging and diverging) and curved lanes. We also
+provide baseline networks we term Lidar lane detection networks utilizing global feature correlator
+(LLDN-GFC). LLDN-GFC exploits the spatial characteristics of lane lines on the point cloud, which
+are sparse, thin, and stretched along the entire ground plane of the point cloud. From experimental
+results, LLDN-GFC achieves the state-of-the-art performance with an F1- score of 82.1%, on the
+K-Lane. Moreover, LLDN-GFC shows strong performance under various lighting conditions, which
+is unlike CLDNs, and also robust even in the case of severe occlusions, unlike LLDNs using the conventional
+CNN. The K-Lane, LLDN-GFC training code, pre-trained models, and complete development kits including
+evaluation, visualization and annotation tools are available at https://github.com/kaist-avelab/k-lane.

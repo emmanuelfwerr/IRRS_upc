@@ -1,0 +1,20 @@
+Splitting is a method to handle application problems by splitting physics, scales, domain, and
+so on. Many splitting algorithms have been designed for efficient temporal discretization. In
+this paper, our goal is to use temporal splitting concepts in designing machine learning algorithms
+and, at the same time, help splitting algorithms by incorporating data and speeding them up. Since
+the spitting solution usually has an explicit and implicit part, we will call our method hybrid explicit-implict
+(HEI) learning. We will consider a recently introduced multiscale splitting algorithms. To approximate
+the dynamics, only a few degrees of freedom are solved implicitly, while others explicitly. In this
+paper, we use this splitting concept in machine learning and propose several strategies. First,
+the implicit part of the solution can be learned as it is more difficult to solve, while the explicit
+part can be computed. This provides a speed-up and data incorporation for splitting approaches.
+Secondly, one can design a hybrid neural network architecture because handling explicit parts
+requires much fewer communications among neurons and can be done efficiently. Thirdly, one can
+solve the coarse grid component via PDEs or other approximation methods and construct simpler neural
+networks for the explicit part of the solutions. We discuss these options and implement one of them
+by interpreting it as a machine translation task. This interpretation successfully enables us
+using the Transformer since it can perform model reduction for multiple time series and learn the
+connection. We also find that the splitting scheme is a great platform to predict the coarse solution
+with insufficient information of the target model: the target problem is partially given and we
+need to solve it through a known problem. We conduct four numerical examples and the results show
+that our method is stable and accurate. 

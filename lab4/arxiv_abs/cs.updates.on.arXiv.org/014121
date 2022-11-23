@@ -1,0 +1,20 @@
+Circuit design is complicated and requires extensive domain-specific expertise. One major obstacle
+stuck on the way to hardware agile development is the considerably time-consuming process of accurate
+circuit quality evaluation. To significantly expedite the circuit evaluation during the translation
+from behavioral languages to circuit designs, we formulate it as a Program-to-Circuit problem,
+aiming to exploit the representation power of graph neural networks (GNNs) by representing C/C++
+programs as graphs. The goal of this work is four-fold. First, we build a standard benchmark containing
+40k C/C++ programs, each of which is translated to a circuit design with actual hardware quality
+metrics, aiming to facilitate the development of effective GNNs targeting this high-demand circuit
+design area. Second, 14 state-of-the-art GNN models are analyzed on the Program-to-Circuit problem.
+We identify key design challenges of this problem, which should be carefully handled but not yet
+solved by existing GNNs. The goal is to provide domain-specific knowledge for designing GNNs with
+suitable inductive biases. Third, we discuss three sets of real-world benchmarks for GNN generalization
+evaluation, and analyze the performance gap between standard programs and the real-case ones.
+The goal is to enable transfer learning from limited training data to real-world large-scale circuit
+design problems. Fourth, the Program-to-Circuit problem is a representative within the Program-to-X
+framework, a set of program-based analysis problems with various downstream tasks. The in-depth
+understanding of strength and weaknesses in applying GNNs on Program-to-Circuit could largely
+benefit the entire family of Program-to-X. Pioneering in this direction, we expect more GNN endeavors
+to revolutionize this high-demand Program-to-Circuit problem and to enrich the expressiveness
+of GNNs on programs. 

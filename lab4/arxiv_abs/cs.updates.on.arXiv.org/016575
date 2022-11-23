@@ -1,0 +1,19 @@
+Atomic shared objects, whose operations take place instantaneously, are a powerful abstraction
+for designing complex concurrent programs. Since they are not always available, they are typically
+substituted with software implementations. A prominent condition relating these implementations
+to their atomic specifications is linearizability, which preserves safety properties of the programs
+using them. However linearizability does not preserve hyper-properties, which include probabilistic
+guarantees of randomized programs: an adversary can greatly amplify the probability of a bad outcome.
+This unwelcome behavior prevents modular reasoning, which is the key benefit provided by the use
+of linearizable object implementations. A more restrictive property, strong linearizability,
+does preserve hyper-properties but it is impossible to achieve in many situations. This paper suggests
+a novel approach to blunting the adversary's additional power that works even in cases where strong
+linearizability is not achievable. We show that a wide class of linearizable implementations,
+including well-known ones for registers and snapshots, can be modified to approximate the probabilistic
+guarantees of randomized programs when using atomic objects. The technical approach is to transform
+the algorithm of each method of an existing linearizable implementation by repeating a carefully
+chosen prefix of the method several times and then randomly choosing which repetition to use subsequently.
+We prove that the probability of a bad outcome decreases with the number of repetitions, approaching
+the probability attained when using atomic objects. The class of implementations to which our transformation
+applies includes the ABD implementation of a shared register using message-passing and the Afek
+et al. implementation of an atomic snapshot using single-writer registers. 

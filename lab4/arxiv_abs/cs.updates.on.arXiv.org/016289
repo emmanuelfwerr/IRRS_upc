@@ -1,0 +1,19 @@
+For job scheduling systems, where jobs require some amount of processing and then leave the system,
+it is natural for each user to provide an estimate of their job's time requirement in order to aid the
+scheduler. However, if there is no incentive mechanism for truthfulness, each user will be motivated
+to provide estimates that give their job precedence in the schedule, so that the job completes as
+early as possible. We examine how to make such scheduling systems incentive compatible, without
+using monetary charges, under a natural queueing theory framework. In our setup, each user has an
+estimate of their job's running time, but it is possible for this estimate to be incorrect. We examine
+scheduling policies where if a job exceeds its estimate, it is with some probability "punished"
+and re-scheduled after other jobs, to disincentivize underestimates of job times. However, because
+user estimates may be incorrect (without any malicious intent), excessive punishment may incentivize
+users to overestimate their job times, which leads to less efficient scheduling. We describe two
+natural scheduling policies, BlindTrust and MeasuredTrust. We show that, for both of these policies,
+given the parameters of the system, we can efficiently determine the set of punishment probabilities
+that are incentive compatible, in that users are incentivized to provide their actual estimate
+of the job time. Moreover, we prove for MeasuredTrust that in the limit as estimates converge to perfect
+accuracy, the range of punishment probabilities that are incentive compatible converges to $[0,1]$.
+Our formalism establishes a framework for studying further queue-based scheduling problems where
+job time estimates from users are utilized, and the system needs to incentivize truthful reporting
+of estimates. 

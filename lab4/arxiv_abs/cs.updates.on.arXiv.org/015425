@@ -1,0 +1,20 @@
+Sequential recommendation based on multi-interest framework models the user's recent interaction
+sequence into multiple different interest vectors, since a single low-dimensional vector cannot
+fully represent the diversity of user interests. However, most existing models only intercept
+users' recent interaction behaviors as training data, discarding a large amount of historical
+interaction sequences. This may raise two issues. On the one hand, data reflecting multiple interests
+of users is missing; on the other hand, the co-occurrence between items in historical user-item
+interactions is not fully explored. To tackle the two issues, this paper proposes a novel sequential
+recommendation model called "Global Interaction Aware Multi-Interest Framework for Sequential
+Recommendation (GIMIRec)". Specifically, a global context extraction module is firstly proposed
+without introducing any external information, which calculates a weighted co-occurrence matrix
+based on the constrained co-occurrence number of each item pair and their time interval from the
+historical interaction sequences of all users and then obtains the global context embedding of
+each item by using a simplified graph convolution. Secondly, the time interval of each item pair
+in the recent interaction sequence of each user is captured and combined with the global context
+item embedding to get the personalized item embedding. Finally, a self-attention based multi-interest
+framework is applied to learn the diverse interests of users for sequential recommendation. Extensive
+experiments on the three real-world datasets of Amazon-Books, Taobao-Buy and Amazon-Hybrid show
+that the performance of GIMIRec on the Recall, NDCG and Hit Rate indicators is significantly superior
+to that of the state-of-the-art methods. Moreover, the proposed global context extraction module
+can be easily transplanted to most sequential recommendation models. 

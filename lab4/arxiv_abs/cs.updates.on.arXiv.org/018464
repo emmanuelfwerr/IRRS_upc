@@ -1,0 +1,19 @@
+The work in ICML'09 showed that the derivatives of the classical multi-class logistic regression
+loss function could be re-written in terms of a pre-chosen "base class" and applied the new derivatives
+in the popular boosting framework. In order to make use of the new derivatives, one must have a strategy
+to identify/choose the base class at each boosting iteration. The idea of "adaptive base class boost"
+(ABC-Boost) in ICML'09, adopted a computationally expensive "exhaustive search" strategy for
+the base class at each iteration. It has been well demonstrated that ABC-Boost, when integrated
+with trees, can achieve substantial improvements in many multi-class classification tasks. Furthermore,
+the work in UAI'10 derived the explicit second-order tree split gain formula which typically improved
+the classification accuracy considerably, compared with using only the fist-order information
+for tree-splitting, for both multi-class and binary-class classification tasks. In this paper,
+we develop a unified framework for effectively selecting the base class by introducing a series
+of ideas to improve the computational efficiency of ABC-Boost. Our framework has parameters $(s,g,w)$.
+At each boosting iteration, we only search for the "$s$-worst classes" (instead of all classes)
+to determine the base class. We also allow a "gap" $g$ when conducting the search. That is, we only
+search for the base class at every $g+1$ iterations. We furthermore allow a "warm up" stage by only
+starting the search after $w$ boosting iterations. The parameters $s$, $g$, $w$, can be viewed as
+tunable parameters and certain combinations of $(s,g,w)$ may even lead to better test accuracy
+than the "exhaustive search" strategy. Overall, our proposed framework provides a robust and reliable
+scheme for implementing ABC-Boost in practice. 

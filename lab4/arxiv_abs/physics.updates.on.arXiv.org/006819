@@ -1,0 +1,20 @@
+We address in this thesis the current need to design new parallel algorithms and tools that ease the
+development of geodynamic modelling applications that are suited for today's and tomorrow's hardware.
+We present (1) the MATLAB HPC compiler HPC.m, which greatly simplifies the building of parallel
+high performance applications and (2) parallel algorithms for the 3D simulation of strongly nonlinear
+processes as mechanical and reactive porosity waves. To simulate mechanical porosity waves we
+employ a massively parallel algorithm that permits to resolve the deformation of fluid-filled
+viscoelastic porous media in 3D. The utilized mathematical model is based on Biot's poroelastic
+theory, extended to account for viscous deformation and plastic yielding. The modelling results
+exhibit the impact of decompaction weakening on the formation of three-dimensional solitary-wave-like
+moving porosity channels. To simulate reactive porosity waves we use a solver for 3D deformation
+of fluid-filled reactive viscous porous media. The Damk\"ohler number (Da) of the simulations
+is varied in order to estimate the respective roles of viscous deformation (low Da) and reaction
+(high Da) on wave propagation. 3D waves are found to propagate independently of their source at constant
+speed by going through each other for all the investigated Da. Soliton-like wave propagation as
+a result of metamorphic reaction provides an efficient mechanism for fluid flow in the Earth's crust.
+We illustrate the great performance and versatility of HPC.m by deploying it to generate solvers
+for a variety of physics across multiple Earth Science disciplines. All solvers run close to hardware's
+peak performance and were shown to scale linearly on a institute cluster with 80 GPUs. Moreover,
+our nonlinear poroviscoelastic two-phase flow solver scales close to ideally on Piz Daint's 5000
+GPUs at the Swiss National Supercomputing Centre. 

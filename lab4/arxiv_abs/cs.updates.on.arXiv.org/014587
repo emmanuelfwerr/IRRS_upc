@@ -1,0 +1,18 @@
+Evidence from cognitive psychology suggests that understanding spatio-temporal object interactions
+and dynamics can be essential for recognizing actions in complex videos. Therefore, action recognition
+models are expected to benefit from explicit modeling of objects, including their appearance,
+interaction, and dynamics. Recently, video transformers have shown great success in video understanding,
+exceeding CNN performance. Yet, existing video transformer models do not explicitly model objects.
+In this work, we present Object-Region Video Transformers (ORViT), an \emph{object-centric}
+approach that extends video transformer layers with a block that directly incorporates object
+representations. The key idea is to fuse object-centric spatio-temporal representations throughout
+multiple transformer layers. Our ORViT block consists of two object-level streams: appearance
+and dynamics. In the appearance stream, an ``Object-Region Attention'' element applies self-attention
+over the patches and \emph{object regions}. In this way, visual object regions interact with uniform
+patch tokens and enrich them with contextualized object information. We further model object dynamics
+via a separate ``Object-Dynamics Module'', which captures trajectory interactions, and show
+how to integrate the two streams. We evaluate our model on standard and compositional action recognition
+on Something-Something V2, standard action recognition on Epic-Kitchen100 and Diving48, and
+spatio-temporal action detection on AVA. We show strong improvement in performance across all
+tasks and datasets considered, demonstrating the value of a model that incorporates object representations
+into a transformer architecture. For code and pretrained models, visit the project page at https://roeiherz.github.io/ORViT/.

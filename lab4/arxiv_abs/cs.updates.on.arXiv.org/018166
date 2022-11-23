@@ -1,0 +1,20 @@
+Large medical imaging data sets are becoming increasingly available. A common challenge in these
+data sets is to ensure that each sample meets minimum quality requirements devoid of significant
+artefacts. Despite a wide range of existing automatic methods having been developed to identify
+imperfections and artefacts in medical imaging, they mostly rely on data-hungry methods. In particular,
+the lack of sufficient scans with artefacts available for training has created a barrier in designing
+and deploying machine learning in clinical research. To tackle this problem, we propose a novel
+framework having four main components: (1) a set of artefact generators inspired by magnetic resonance
+physics to corrupt brain MRI scans and augment a training dataset, (2) a set of abstract and engineered
+features to represent images compactly, (3) a feature selection process that depends on the class
+of artefact to improve classification performance, and (4) a set of Support Vector Machine (SVM)
+classifiers trained to identify artefacts. Our novel contributions are threefold: first, we use
+the novel physics-based artefact generators to generate synthetic brain MRI scans with controlled
+artefacts as a data augmentation technique. This will avoid the labour-intensive collection and
+labelling process of scans with rare artefacts. Second, we propose a large pool of abstract and engineered
+image features developed to identify 9 different artefacts for structural MRI. Finally, we use
+an artefact-based feature selection block that, for each class of artefacts, finds the set of features
+that provide the best classification performance. We performed validation experiments on a large
+data set of scans with artificially-generated artefacts, and in a multiple sclerosis clinical
+trial where real artefacts were identified by experts, showing that the proposed pipeline outperforms
+traditional methods. 

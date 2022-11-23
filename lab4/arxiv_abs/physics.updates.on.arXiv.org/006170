@@ -1,0 +1,19 @@
+Single-shot Coherent Diffraction Imaging (CDI) is a powerful approach to characterize the structure
+and dynamics of isolated nanoscale objects such as single viruses, aerosols, nanocrystals or droplets.
+Using X-ray wavelengths, the diffraction images in CDI experiments usually cover only small scattering
+angles of few degrees. These small-angle patterns represent the magnitude of the Fourier transform
+of the two-dimensional projection of the sample's electron density, which can be reconstructed
+efficiently but lacks any depth information. In cases where the diffracted signal can be measured
+up to scattering angles exceeding 10 degrees, i.e. in the wide-angle regime, three-dimensional
+morphological information of the target is contained in a single-shot diffraction pattern. However,
+the extraction of the 3D structural information is no longer straightforward and defines the key
+challenge in wide-angle CDI. So far, the most convenient approach relies on iterative forward fitting
+of the scattering pattern using scattering simulations. Here we present the Scatman, an approximate
+and fast numerical tool for the simulation and iterative fitting of wide-angle scattering images
+of isolated samples. Furthermore, we publish and describe in detail our Open Source software implementation
+of the Scatman algorithm, PyScatman. The Scatman approach yields quantitative results for weakly
+scattering samples. PyScatman is capable of computing wide-angle scattering patterns in few milliseconds
+even on consumer-level computing hardware. The high computational efficiency of PyScatman enables
+effective data analysis based on model fitting, thus representing an important step towards a systematic
+application of 3D Coherent Diffraction Imaging from single wide-angle diffraction patterns in
+various scientific communities. 

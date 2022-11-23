@@ -1,0 +1,20 @@
+Deep operator networks (DeepONets) are powerful architectures for fast and accurate emulation
+of complex dynamics. As their remarkable generalization capabilities are primarily enabled by
+their projection-based attribute, we investigate connections with low-rank techniques derived
+from the singular value decomposition (SVD). We demonstrate that some of the concepts behind proper
+orthogonal decomposition (POD)-neural networks can improve DeepONet's design and training phases.
+These ideas lead us to a methodology extension that we name SVD-DeepONet. Moreover, through multiple
+SVD analyses, we find that DeepONet inherits from its projection-based attribute strong inefficiencies
+in representing dynamics characterized by symmetries. Inspired by the work on shifted-POD, we
+develop flexDeepONet, an architecture enhancement that relies on a pre-transformation network
+for generating a moving reference frame and isolating the rigid components of the dynamics. In this
+way, the physics can be represented on a latent space free from rotations, translations, and stretches,
+and an accurate projection can be performed to a low-dimensional basis. In addition to flexibility
+and interpretability, the proposed perspectives increase DeepONet's generalization capabilities
+and computational efficiencies. For instance, we show flexDeepONet can accurately surrogate
+the dynamics of 19 variables in a combustion chemistry application by relying on 95% less trainable
+parameters than the ones of the vanilla architecture. We argue that DeepONet and SVD-based methods
+can reciprocally benefit from each other. In particular, the flexibility of the former in leveraging
+multiple data sources and multifidelity knowledge in the form of both unstructured data and physics-informed
+constraints has the potential to greatly extend the applicability of methodologies such as POD
+and PCA. 

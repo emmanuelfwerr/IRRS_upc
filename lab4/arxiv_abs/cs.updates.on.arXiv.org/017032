@@ -1,0 +1,19 @@
+Capsule network (CapsNet) acts as a promising alternative to the typical convolutional neural
+network, which is the dominant network to develop the remaining useful life (RUL) estimation models
+for mechanical equipment. Although CapsNet comes with an impressive ability to represent the entities'
+hierarchical relationships through a high-dimensional vector embedding, it fails to capture
+the long-term temporal correlation of run-to-failure time series measured from degraded mechanical
+equipment. On the other hand, the slow-varying dynamics, which reveals the low-frequency information
+hidden in mechanical dynamical behaviour, is overlooked in the existing RUL estimation models,
+limiting the utmost ability of advanced networks. To address the aforementioned concerns, we propose
+a Slow-varying Dynamics assisted Temporal CapsNet (SD-TemCapsNet) to simultaneously learn the
+slow-varying dynamics and temporal dynamics from measurements for accurate RUL estimation. First,
+in light of the sensitivity of fault evolution, slow-varying features are decomposed from normal
+raw data to convey the low-frequency components corresponding to the system dynamics. Next, the
+long short-term memory (LSTM) mechanism is introduced into CapsNet to capture the temporal correlation
+of time series. To this end, experiments conducted on an aircraft engine and a milling machine verify
+that the proposed SD-TemCapsNet outperforms the mainstream methods. In comparison with CapsNet,
+the estimation accuracy of the aircraft engine with four different scenarios has been improved
+by 10.17%, 24.97%, 3.25%, and 13.03% concerning the index root mean squared error, respectively.
+Similarly, the estimation accuracy of the milling machine has been improved by 23.57% compared
+to LSTM and 19.54% compared to CapsNet. 

@@ -1,0 +1,20 @@
+In large-scale recommender systems, the user-item networks are generally scale-free or expand
+exponentially. The latent features (also known as embeddings) used to describe the user and item
+are determined by how well the embedding space fits the data distribution. Hyperbolic space offers
+a spacious room to learn embeddings with its negative curvature and metric properties, which can
+well fit data with tree-like structures. Recently, several hyperbolic approaches have been proposed
+to learn high-quality representations for the users and items. However, most of them concentrate
+on developing the hyperbolic similitude by designing appropriate projection operations, whereas
+many advantageous and exciting geometric properties of hyperbolic space have not been explicitly
+explored. For example, one of the most notable properties of hyperbolic space is that its capacity
+space increases exponentially with the radius, which indicates the area far away from the hyperbolic
+origin is much more embeddable. Regarding the geometric properties of hyperbolic space, we bring
+up a \textit{Hyperbolic Regularization powered Collaborative Filtering} (HRCF) and design a
+geometric-aware hyperbolic regularizer. Specifically, the proposal boosts optimization procedure
+via the root alignment and origin-aware penalty, which is simple yet impressively effective. Through
+theoretical analysis, we further show that our proposal is able to tackle the over-smoothing problem
+caused by hyperbolic aggregation and also brings the models a better discriminative ability. We
+conduct extensive empirical analysis, comparing our proposal against a large set of baselines
+on several public benchmarks. The empirical results show that our approach achieves highly competitive
+performance and surpasses both the leading Euclidean and hyperbolic baselines by considerable
+margins. Further analysis verifies ... 

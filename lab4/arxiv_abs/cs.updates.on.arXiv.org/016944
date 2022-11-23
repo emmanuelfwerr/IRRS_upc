@@ -1,0 +1,19 @@
+A general control policy framework based on deep reinforcement learning (DRL) is introduced for
+closed-loop decision making in subsurface flow settings. Traditional closed-loop modeling workflows
+in this context involve the repeated application of data assimilation/history matching and robust
+optimization steps. Data assimilation can be particularly challenging in cases where both the
+geological style (scenario) and individual model realizations are uncertain. The closed-loop
+reservoir management (CLRM) problem is formulated here as a partially observable Markov decision
+process, with the associated optimization problem solved using a proximal policy optimization
+algorithm. This provides a control policy that instantaneously maps flow data observed at wells
+(as are available in practice) to optimal well pressure settings. The policy is represented by a
+temporal convolution and gated transformer blocks. Training is performed in a preprocessing step
+with an ensemble of prior geological models, which can be drawn from multiple geological scenarios.
+Example cases involving the production of oil via water injection, with both 2D and 3D geological
+models, are presented. The DRL-based methodology is shown to result in an NPV increase of 15% (for
+the 2D cases) and 33% (3D cases) relative to robust optimization over prior models, and to an average
+improvement of 4% in NPV relative to traditional CLRM. The solutions from the control policy are
+found to be comparable to those from deterministic optimization, in which the geological model
+is assumed to be known, even when multiple geological scenarios are considered. The control policy
+approach results in a 76% decrease in computational cost relative to traditional CLRM with the algorithms
+and parameter settings considered in this work. 

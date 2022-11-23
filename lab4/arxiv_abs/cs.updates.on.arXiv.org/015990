@@ -1,0 +1,19 @@
+Morphological attributes from histopathological images and molecular profiles from genomic
+data are important information to drive diagnosis, prognosis, and therapy of cancers. By integrating
+these heterogeneous but complementary data, many multi-modal methods are proposed to study the
+complex mechanisms of cancers, and most of them achieve comparable or better results from previous
+single-modal methods. However, these multi-modal methods are restricted to a single task (e.g.,
+survival analysis or grade classification), and thus neglect the correlation between different
+tasks. In this study, we present a multi-modal fusion framework based on multi-task correlation
+learning (MultiCoFusion) for survival analysis and cancer grade classification, which combines
+the power of multiple modalities and multiple tasks. Specifically, a pre-trained ResNet-152 and
+a sparse graph convolutional network (SGCN) are used to learn the representations of histopathological
+images and mRNA expression data respectively. Then these representations are fused by a fully connected
+neural network (FCNN), which is also a multi-task shared network. Finally, the results of survival
+analysis and cancer grade classification output simultaneously. The framework is trained by an
+alternate scheme. We systematically evaluate our framework using glioma datasets from The Cancer
+Genome Atlas (TCGA). Results demonstrate that MultiCoFusion learns better representations than
+traditional feature extraction methods. With the help of multi-task alternating learning, even
+simple multi-modal concatenation can achieve better performance than other deep learning and
+traditional methods. Multi-task learning can improve the performance of multiple tasks not just
+one of them, and it is effective in both single-modal and multi-modal data. 

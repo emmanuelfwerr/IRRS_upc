@@ -1,0 +1,19 @@
+Sidescan sonar intensity encodes information about the changes of surface normal of the seabed.
+However, other factors such as seabed geometry as well as its material composition also affect the
+return intensity. One can model these intensity changes in a forward direction from the surface
+normals from bathymetric map and physical properties to the measured intensity or alternatively
+one can use an inverse model which starts from the intensities and models the surface normals. Here
+we use an inverse model which leverages deep learning's ability to learn from data; a convolutional
+neural network is used to estimate the surface normal from the sidescan. Thus the internal properties
+of the seabed are only implicitly learned. Once this information is estimated, a bathymetric map
+can be reconstructed through an optimization framework that also includes altimeter readings
+to provide a sparse depth profile as a constraint. Implicit neural representation learning was
+recently proposed to represent the bathymetric map in such an optimization framework. In this article,
+we use a neural network to represent the map and optimize it under constraints of altimeter points
+and estimated surface normal from sidescan. By fusing multiple observations from different angles
+from several sidescan lines, the estimated results are improved through optimization. We demonstrate
+the efficiency and scalability of the approach by reconstructing a high-quality bathymetry using
+sidescan data from a large sidescan survey. We compare the proposed data-driven inverse model approach
+of modeling a sidescan with a forward Lambertian model. We assess the quality of each reconstruction
+by comparing it with data constructed from a multibeam sensor. We are thus able to discuss the strengths
+and weaknesses of each approach. 

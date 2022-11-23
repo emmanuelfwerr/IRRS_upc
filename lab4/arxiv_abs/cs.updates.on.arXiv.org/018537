@@ -1,0 +1,19 @@
+As deep learning is widely used in the radiology field, the explainability of such models is increasingly
+becoming essential to gain clinicians' trust when using the models for diagnosis. In this research,
+three experiment sets were conducted with a U-Net architecture to improve the classification performance
+while enhancing the heatmaps corresponding to the model's focus through incorporating heatmap
+generators during training. All of the experiments used the dataset that contained chest radiographs,
+associated labels from one of the three conditions ("normal", "congestive heart failure (CHF)",
+and "pneumonia"), and numerical information regarding a radiologist's eye-gaze coordinates
+on the images. The paper (A. Karargyris and Moradi, 2021) that introduced this dataset developed
+a U-Net model, which was treated as the baseline model for this research, to show how the eye-gaze
+data can be used in multi-modal training for explainability improvement. To compare the classification
+performances, the 95% confidence intervals (CI) of the area under the receiver operating characteristic
+curve (AUC) were measured. The best method achieved an AUC of 0.913 (CI: 0.860-0.966). The greatest
+improvements were for the "pneumonia" and "CHF" classes, which the baseline model struggled most
+to classify, resulting in AUCs of 0.859 (CI: 0.732-0.957) and 0.962 (CI: 0.933-0.989), respectively.
+The proposed method's decoder was also able to produce probability masks that highlight the determining
+image parts in model classifications, similarly as the radiologist's eye-gaze data. Hence, this
+work showed that incorporating heatmap generators and eye-gaze information into training can
+simultaneously improve disease classification and provide explainable visuals that align well
+with how the radiologist viewed the chest radiographs when making diagnosis. 

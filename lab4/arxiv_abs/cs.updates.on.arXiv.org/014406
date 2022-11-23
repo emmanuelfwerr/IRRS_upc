@@ -1,0 +1,19 @@
+Cryptographic techniques have the potential to enable distrusting parties to collaborate in fundamentally
+new ways, but their practical implementation poses numerous challenges. An important class of
+such cryptographic techniques is known as Secure Multi-Party Computation (MPC). Developing Secure
+MPC applications in realistic scenarios requires extensive knowledge spanning multiple areas
+of cryptography and systems. And while the steps to arrive at a solution for a particular application
+are often straightforward, it remains difficult to make the implementation efficient, and tedious
+to apply those same steps to a slightly different application from scratch. Hence, it is an important
+problem to design platforms for implementing Secure MPC applications with minimum effort and using
+techniques accessible to non-experts in cryptography. In this paper, we present the HACCLE (High
+Assurance Compositional Cryptography: Languages and Environments) toolchain, specifically
+targeted to MPC applications. HACCLE contains an embedded domain-specific language Harpoon,
+for software developers without cryptographic expertise to write MPC-based programs, and uses
+Lightweight Modular Staging (LMS) for code generation. Harpoon programs are compiled into acyclic
+circuits represented in HACCLE's Intermediate Representation (HIR) that serves as an abstraction
+over different cryptographic protocols such as secret sharing, homomorphic encryption, or garbled
+circuits. Implementations of different cryptographic protocols serve as different backends
+of our toolchain. The extensible design of HIR allows cryptographic experts to plug in new primitives
+and protocols to realize computation. And the use of standard metaprogramming techniques lowers
+the development effort significantly. 

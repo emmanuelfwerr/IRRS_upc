@@ -1,0 +1,19 @@
+This study presents an artificial neural network and proper orthogonal decomposition (POD)-based
+reduced-order model (ROM) of turbulent flow around a finite wall-mounted square cylinder. The
+proposed model is suitable for turbulent wake control applications because it can predict the dynamics
+of the main features of the flow field without computing Navier-Stokes equations. Long short-term
+memory neural network (LSTM NN) and bidirectional long short-term memory neural network (BLSTM
+NN) are used to predict the temporal evolution of the POD time coefficients at different planes along
+the height of the obstacle. The improved delayed detached-eddy simulation (IDDES) is performed
+to generate the training datasets. Transfer learning (TL) approach is utilized in the training
+process by using the weights of the LSTM/BLSTM NN that are used to predict the POD time coefficients
+of the planes at lower elevations to initialize the weights of the networks at higher elevations
+along the height of the obstacle. The use of TL results in a remarkable improvement in the capability
+of the LSTM/BLSTM NN prediction compared with the one when the network is initialized with random
+weights. BLSTM NN shows better results compared with LSTM NN in terms of training and prediction
+error, indicating that the BLSTM-POD model is more suitable to be used as a ROM for predicting the
+turbulent wake. Furthermore, the temporal behavior of the time coefficients is carefully examined
+using the phase space plots and Poincar$\acute{e}$ sections. The results of using different lengths
+of the prediction time window showed that the prediction error of the POD time coefficients increases
+as the prediction time window increases and the error increasing rate decreases with the ranking
+of the POD time coefficients. 

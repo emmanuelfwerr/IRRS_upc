@@ -1,0 +1,20 @@
+Innovation in the physical layer of communication systems has traditionally been achieved by breaking
+down the transceivers into sets of processing blocks, each optimized independently based on mathematical
+models. Conversely, deep learning (DL)-based systems are able to handle increasingly complex
+tasks for which no tractable models are available. This thesis aims at comparing different approaches
+to unlock the full potential of DL in the physical layer. First, we describe a neural network (NN)-based
+block strategy, where an NN is optimized to replace a block in a communication system. We apply this
+strategy to introduce a multi-user multiple-input multiple-output (MU-MIMO) detector that builds
+on top of an existing DL-based architecture. Second, we detail an end-to-end strategy, in which
+the transmitter and receiver are modeled as an autoencoder. This approach is illustrated with the
+design of waveforms that achieve high throughputs while satisfying peak-to-average power ratio
+(PAPR) and adjacent channel leakage ratio (ACLR) constraints. Lastly, we propose a hybrid strategy,
+where multiple DL components are inserted into a traditional architecture but are trained to optimize
+the end-to-end performance. To demonstrate its benefits, we propose a DL-enhanced MU-MIMO receiver
+that both enable lower bit error rates (BERs) compared to a conventional receiver and remains scalable
+to any number of users. Each approach has its own strengths and shortcomings. While the first one
+is the easiest to implement, its individual block optimization does not ensure the overall system
+optimality. On the other hand, systems designed with the second approach are computationally complex
+but allow for new opportunities such as pilotless transmissions. Finally, the combined flexibility
+and end-to-end performance gains of the third approach motivate its use for short-term practical
+implementations. 

@@ -1,0 +1,20 @@
+In this work, we propose NARRATE, a novel pipeline that enables simultaneously editing portrait
+lighting and perspective in a photorealistic manner. As a hybrid neural-physical face model, NARRATE
+leverages complementary benefits of geometry-aware generative approaches and normal-assisted
+physical face models. In a nutshell, NARRATE first inverts the input portrait to a coarse geometry
+and employs neural rendering to generate images resembling the input, as well as producing convincing
+pose changes. However, inversion step introduces mismatch, bringing low-quality images with
+less facial details. As such, we further estimate portrait normal to enhance the coarse geometry,
+creating a high-fidelity physical face model. In particular, we fuse the neural and physical renderings
+to compensate for the imperfect inversion, resulting in both realistic and view-consistent novel
+perspective images. In relighting stage, previous works focus on single view portrait relighting
+but ignoring consistency between different perspectives as well, leading unstable and inconsistent
+lighting effects for view changes. We extend Total Relighting to fix this problem by unifying its
+multi-view input normal maps with the physical face model. NARRATE conducts relighting with consistent
+normal maps, imposing cross-view constraints and exhibiting stable and coherent illumination
+effects. We experimentally demonstrate that NARRATE achieves more photorealistic, reliable
+results over prior works. We further bridge NARRATE with animation and style transfer tools, supporting
+pose change, light change, facial animation, and style transfer, either separately or in combination,
+all at a photographic quality. We showcase vivid free-view facial animations as well as 3D-aware
+relightable stylization, which help facilitate various AR/VR applications like virtual cinematography,
+3D video conferencing, and post-production. 

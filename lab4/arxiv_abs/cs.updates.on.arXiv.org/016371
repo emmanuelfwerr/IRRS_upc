@@ -1,0 +1,19 @@
+Differential privacy (DP) has been the de-facto standard to preserve privacy-sensitive information
+in database. Nevertheless, there lacks a clear and convincing contextualization of DP in image
+database, where individual images' indistinguishable contribution to a certain analysis can
+be achieved and observed when DP is exerted. As a result, the privacy-accuracy trade-off due to integrating
+DP is insufficiently demonstrated in the context of differentially-private image database. This
+work aims at contextualizing DP in image database by an explicit and intuitive demonstration of
+integrating conceptional differential privacy with images. To this end, we design a lightweight
+approach dedicating to privatizing image database as a whole and preserving the statistical semantics
+of the image database to an adjustable level, while making individual images' contribution to such
+statistics indistinguishable. The designed approach leverages principle component analysis
+(PCA) to reduce the raw image with large amount of attributes to a lower dimensional space whereby
+DP is performed, so as to decrease the DP load of calculating sensitivity attribute-by-attribute.
+The DP-exerted image data, which is not visible in its privatized format, is visualized through
+PCA inverse such that both a human and machine inspector can evaluate the privatization and quantify
+the privacy-accuracy trade-off in an analysis on the privatized image database. Using the devised
+approach, we demonstrate the contextualization of DP in images by two use cases based on deep learning
+models, where we show the indistinguishability of individual images induced by DP and the privatized
+images' retention of statistical semantics in deep learning tasks, which is elaborated by quantitative
+analyses on the privacy-accuracy trade-off under different privatization settings. 

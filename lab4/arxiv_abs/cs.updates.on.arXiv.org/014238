@@ -1,0 +1,19 @@
+\emph{Resistive memories}, such as \emph{phase change memories} and \emph{resistive random
+access memories} have attracted significant attention in recent years due to their better scalability,
+speed, rewritability, and yet non-volatility. However, their \emph{limited endurance} is still
+a major drawback that has to be improved before they can be widely adapted in large-scale systems.
+In this work, in order to reduce the wear out of the cells, we propose a new coding scheme, called \emph{endurance-limited
+memories} (\emph{ELM}) codes, that increases the endurance of these memories by limiting the number
+of cell programming operations. Namely, an \emph{$\ell$-change $t$-write ELM code} is a coding
+scheme that allows to write $t$ messages into some $n$ binary cells while guaranteeing that each
+cell is programmed at most $\ell$ times. In case $\ell=1$, these codes coincide with the well-studied
+\emph{write-once memory} (\emph{WOM}) codes. We study some models of these codes which depend
+upon whether the encoder knows on each write the number of times each cell was programmed, knows only
+the memory state, or even does not know anything. For the decoder, we consider these similar three
+cases. We fully characterize the capacity regions and the maximum sum-rates of three models where
+the encoder knows on each write the number of times each cell was programmed. In particular, it is
+shown that in these models the maximum sum-rate is $\log \sum_{i=0}^{\ell} {t \choose i}$. We also
+study and expose the capacity regions of the models where the decoder is informed with the number
+of times each cell was programmed. Finally we present the most practical model where the encoder
+read the memory before encoding new data and the decoder has no information about the previous states
+of the memory. 

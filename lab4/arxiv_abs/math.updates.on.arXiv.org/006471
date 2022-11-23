@@ -1,0 +1,20 @@
+Representations of the world environment play a crucial role in artificial intelligence. It is
+often inefficient to conduct reasoning and inference directly in the space of raw sensory representations,
+such as pixel values of images. Representation learning allows us to automatically discover suitable
+representations from raw sensory data. For example, given raw sensory data, a deep neural network
+learns nonlinear representations at its hidden layers, which are subsequently used for classification
+at its output layer. This happens implicitly during training through minimizing a supervised or
+unsupervised loss. In this paper, we study the dynamics of such implicit nonlinear representation
+learning. We identify a pair of a new assumption and a novel condition, called the common model structure
+assumption and the data-architecture alignment condition. Under the common model structure assumption,
+the data-architecture alignment condition is shown to be sufficient for the global convergence
+and necessary for the global optimality. Moreover, our theory explains how and when increasing
+the network size does and does not improve the training behaviors in the practical regime. Our results
+provide practical guidance for designing a model structure: e.g., the common model structure assumption
+can be used as a justification for using a particular model structure instead of others. We also derive
+a new training framework, which satisfies the data-architecture alignment condition by automatically
+modifying any given training algorithm. Given a standard training algorithm, the framework running
+its modified version is empirically shown to maintain competitive test performances while providing
+global convergence guarantees for deep residual neural networks with convolutions, skip connections,
+and batch normalization with datasets, including MNIST, CIFAR-10, CIFAR-100, Semeion, KMNIST
+and SVHN. 

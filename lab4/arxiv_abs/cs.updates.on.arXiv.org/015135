@@ -1,0 +1,20 @@
+In the last decades, the development of smartphones, drones, aerial patrols, and digital cameras
+enabled high-quality photographs available to large populations and, thus, provides an opportunity
+to collect massive data of the nature and society with global coverage. However, the data collected
+with new photography tools is usually oblique - they are difficult to be georeferenced, and huge
+amounts of data is often obsolete. Georeferencing oblique imagery data may be solved by a technique
+called monoplotting, which only requires a single image and Digital Elevation Model (DEM). In traditional
+monoplotting, a human user has to manually choose a series of ground control point (GCP) pairs in
+the image and DEM and then determine the extrinsic and intrinsic parameters of the camera to establish
+a pixel-level correspondence between photos and the DEM to enable the mapping and georeferencing
+of objects in photos. This traditional method is difficult to scale due to several challenges including
+the labor-intensive inputs, the need of rich experience to identify well-defined GCPs, and limitations
+in camera pose estimation. Therefore, existing monoplotting methods are rarely used in analyzing
+large-scale databases or near-real-time warning systems. In this paper, we propose and demonstrate
+a novel semi-automatic monoplotting framework that provides pixel-level correspondence between
+photos and DEMs requiring minimal human interventions. A pipeline of analyses was developed including
+key point detection in images and DEM rasters, retrieving georeferenced 3D DEM GCPs, regularized
+gradient-based optimization, pose estimation, ray tracing, and the correspondence identification
+between image pixels and real world coordinates. Two numerical experiments show that the framework
+is superior in georeferencing visual data in 3-D coordinates, paving a way toward fully automatic
+monoplotting methodology. 

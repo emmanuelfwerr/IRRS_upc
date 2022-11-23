@@ -1,0 +1,20 @@
+We consider Bayesian inference for large scale inverse problems, where computational challenges
+arise from the need for repeated evaluations of an expensive forward model. This renders most Markov
+chain Monte Carlo approaches infeasible, since they typically require $O(10^4)$ model runs, or
+more. Moreover, the forward model is often given as a black box or is impractical to differentiate.
+Therefore derivative-free algorithms are highly desirable. We propose a framework, which is built
+on Kalman methodology, to efficiently perform Bayesian inference in such inverse problems. The
+basic method is based on an approximation of the filtering distribution of a novel mean-field dynamical
+system into which the inverse problem is embedded as an observation operator. Theoretical properties
+of the mean-field model are established for linear inverse problems, demonstrating that the desired
+Bayesian posterior is given by the steady state of the law of the filtering distribution of the mean-field
+dynamical system, and proving exponential convergence to it. This suggests that, for nonlinear
+problems which are close to Gaussian, sequentially computing this law provides the basis for efficient
+iterative methods to approximate the Bayesian posterior. Ensemble methods are applied to obtain
+interacting particle system approximations of the filtering distribution of the mean-field model;
+and practical strategies to further reduce the computational and memory cost of the methodology
+are presented, including low-rank approximation and a bi-fidelity approach. The effectiveness
+of the framework is demonstrated in several numerical experiments, including proof-of-concept
+linear/nonlinear examples and two large-scale applications: learning of permeability parameters
+in subsurface flow; and learning subgrid-scale parameters in a global climate model from time-averaged
+statistics. 

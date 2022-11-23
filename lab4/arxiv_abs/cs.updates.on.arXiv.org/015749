@@ -1,0 +1,20 @@
+Sepsis is a life-threatening medical emergency, which is a major cause of death worldwide and the
+second highest cause of mortality in the United States. Researching the optimal control treatment
+or intervention strategy on the comprehensive sepsis system is key in reducing mortality. For this
+purpose, first, this paper improves a complex nonlinear sepsis model proposed in our previous work.
+Then, bifurcation analyses are conducted for each sepsis subsystem to study the model behaviors
+under some system parameters. The bifurcation analysis results also further indicate the necessity
+of control treatment and intervention therapy. If the sepsis system is without adding any control
+under some parameter and initial system value settings, the system will perform persistent inflammation
+outcomes as time goes by. Therefore, we develop our complex improved nonlinear sepsis model into
+a sepsis optimal control model, and then use some effective biomarkers recommended in existing
+clinic practices as optimization objective function to measure the development of sepsis. Besides
+that, a Bayesian optimization algorithm by combining Recurrent neural network (RNN-BO algorithm)
+is introduced to predict the optimal control strategy for the studied sepsis optimal control system.
+The difference between the RNN-BO algorithm from other optimization algorithms is that once given
+any new initial system value setting (initial value is associated with the initial conditions of
+patients), the RNN-BO algorithm is capable of quickly predicting a corresponding time-series
+optimal control based on the historical optimal control data for any new sepsis patient. To demonstrate
+the effectiveness and efficiency of the RNN-BO algorithm on solving the optimal control solution
+on the complex nonlinear sepsis system, some numerical simulations are implemented by comparing
+with other optimization algorithms in this paper. 

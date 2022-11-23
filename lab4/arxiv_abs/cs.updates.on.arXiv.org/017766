@@ -1,0 +1,18 @@
+High demand of data rate in the next generation of wireless communication could be ensured by Non-Orthogonal
+Multiple Access (NOMA) approach in the millimetre-wave (mmW) frequency band. Decreasing the interference
+on the other users while maintaining the bit rate via joint power allocation and beamforming is mandatory
+to guarantee the high demand of bit-rate. Furthermore, mmW frequency bands dictates the hybrid
+structure for beamforming because of the trade-off in implementation and performance, simultaneously.
+In this paper, joint power allocation and hybrid beamforming of mmW-NOMA systems is brought up via
+recent advances in machine learning and control theory approaches called Deep Reinforcement Learning
+(DRL). Actor-critic phenomena is exploited to measure the immediate reward and providing the new
+action to maximize the overall Q-value of the network. Additionally, to improve the stability of
+the approach, we have utilized Soft Actor-Critic (SAC) approach where overall reward and action
+entropy is maximized, simultaneously. The immediate reward has been defined based on the soft weighted
+summation of the rate of all the users. The soft weighting is based on the achieved rate and allocated
+power of each user. Furthermore, the channel responses between the users and base station (BS) is
+defined as the state of environment, while action space is involved of the digital and analog beamforming
+weights and allocated power to each user. The simulation results represent the superiority of the
+proposed approach rather than the Time-Division Multiple Access (TDMA) and Non-Line of Sight (NLOS)-NOMA
+in terms of sum-rate of the users. It's outperformance is caused by the joint optimization and independency
+of the proposed approach to the channel responses. 

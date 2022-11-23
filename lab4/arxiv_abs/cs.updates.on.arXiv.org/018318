@@ -1,0 +1,19 @@
+Surface codes are generally studied based on the assumption that each of the qubits that make up the
+surface code lattice suffers noise that is independent and identically distributed (i.i.d.).
+However, real benchmarks of the individual relaxation ($T_1$) and dephasing ($T_2$) times of the
+constituent qubits of state-of-the-art quantum processors have recently shown that the decoherence
+effects suffered by each particular qubit actually vary in intensity. In consequence, in this article
+we introduce the independent non-identically distributed (i.ni.d.) noise model, a decoherence
+model that accounts for the non-uniform behaviour of the docoherence parameters of qubits. Additionally,
+we use the i.ni.d model to study how it affects the performance of a specific family of Quantum Error
+Correction (QEC) codes known as planar codes. For this purpose we employ data from four state-of-the-art
+superconducting processors: ibmq\_brooklyn, ibm\_washington, Zuchongzhi and Rigetti Aspen-M-1.
+Our results show that the i.i.d. noise assumption overestimates the performance of surface codes,
+which can suffer up to $95\%$ performance decrements in terms of the code pseudo-threshold when
+they are subjected to the i.ni.d. noise model. Furthermore, we consider and describe two methods
+which enhance the performance of planar codes under i.ni.d. noise. The first method involves a so-called
+re-weighting process of the conventional minimum weight perfect matching (MWPM) decoder, while
+the second one exploits the relationship that exists between code performance and qubit arrangement
+in the surface code lattice. The optimum qubit configuration derived through the combination of
+the previous two methods can yield planar code pseudo-threshold values that are up to $650\%$ higher
+than for the traditional MWPM decoder under i.ni.d. noise. 

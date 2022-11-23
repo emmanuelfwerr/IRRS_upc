@@ -1,0 +1,19 @@
+Camera Image Signal Processing(ISP) pipelines, including deep learning trained versions, can
+get appealing results in different image signal processing tasks. However, most if not all of these
+methods tend to apply a single filter that is homogeneous over the entire image. This is also particularly
+true when an encoder-decoder type deep architecture is trained for the task. However, it is natural
+to view a camera image as heterogeneous, as the color intensity and the artificial noise are distributed
+vastly different, even across the two dimensional domain of a single image. Varied Moire ringing,
+motion-blur, color-bleaching or lens based projection distortions can all potentially lead to
+a heterogeneous image artifact filtering problem. In this paper, we present a specific patch-based,
+local subspace deep neural network that improves Camera ISP to be robust to heterogeneous artifacts
+(especially image denoising). We call our three-fold deep trained model the Patch Subspace Learning
+Autoencoder (PSL-AE). PSL-AE does not necessarily assume uniform image distortion levels nor
+repeated nor similar artifact types within the image. Rather, PSL-AE first diagnostically encodes
+patches extracted from noisy and clean image pairs, with different artifact type and distortion
+levels, by contrastive learning. Then, each image's patches are encoded into soft-clusters in
+their appropriate latent sub-space, using a prior mixture model. Lastly, the decoders of the PSL-AE
+are also trained in an unsupervised manner customized for the image patches in each soft-cluster.
+Our experimental results demonstrates the flexibility and performance that one can achieve through
+improved heterogeneous filtering, both from synthesized artifacts but also realistic SIDD image
+pairs. 

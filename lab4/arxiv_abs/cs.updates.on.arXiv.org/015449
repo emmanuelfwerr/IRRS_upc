@@ -1,0 +1,19 @@
+In this article we study fully-connected feedforward deep ReLU ANNs with an arbitrarily large number
+of hidden layers and we prove convergence of the risk of the GD optimization method with random initializations
+in the training of such ANNs under the assumption that the unnormalized probability density function
+of the probability distribution of the input data of the considered supervised learning problem
+is piecewise polynomial, under the assumption that the target function (describing the relationship
+between input data and the output data) is piecewise polynomial, and under the assumption that the
+risk function of the considered supervised learning problem admits at least one regular global
+minimum. In addition, in the special situation of shallow ANNs with just one hidden layer and one-dimensional
+input we also verify this assumption by proving in the training of such shallow ANNs that for every
+Lipschitz continuous target function there exists a global minimum in the risk landscape. Finally,
+in the training of deep ANNs with ReLU activation we also study solutions of gradient flow (GF) differential
+equations and we prove that every non-divergent GF trajectory converges with a polynomial rate
+of convergence to a critical point (in the sense of limiting Fr\'echet subdifferentiability).
+Our mathematical convergence analysis builds up on tools from real algebraic geometry such as the
+concept of semi-algebraic functions and generalized Kurdyka-Lojasiewicz inequalities, on tools
+from functional analysis such as the Arzel\`a-Ascoli theorem, on tools from nonsmooth analysis
+such as the concept of limiting Fr\'echet subgradients, as well as on the fact that the set of realization
+functions of shallow ReLU ANNs with fixed architecture forms a closed subset of the set of continuous
+functions revealed by Petersen et al. 

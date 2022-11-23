@@ -1,0 +1,20 @@
+The symmetric binary perceptron ($\texttt{SBP}$) exhibits a dramatic statistical-to-computational
+gap: the densities at which known efficient algorithms find solutions are far below the threshold
+for the existence of solutions. Furthermore, the $\texttt{SBP}$ exhibits a striking structural
+property: at all positive constraint densities almost all of its solutions are 'totally frozen'
+singletons separated by large Hamming distance \cite{perkins2021frozen,abbe2021proof}. This
+suggests that finding a solution to the $\texttt{SBP}$ may be computationally intractable. At
+the same time, the $\texttt{SBP}$ does admit polynomial-time search algorithms at low enough densities.
+A conjectural explanation for this conundrum was put forth in \cite{baldassi2020clustering}:
+efficient algorithms succeed in the face of freezing by finding exponentially rare clusters of
+large size. However, it was discovered recently that such rare large clusters exist at all subcritical
+densities, even at those well above the limits of known efficient algorithms \cite{abbe2021binary}.
+Thus the driver of the statistical-to-computational gap exhibited by this model remains a mystery.
+In this paper, we conduct a different landscape analysis to explain the algorithmic tractability
+of this problem. We show that at high enough densities the $\texttt{SBP}$ exhibits the multi Overlap
+Gap Property ($m-$OGP), an intricate geometrical property known to be a rigorous barrier for large
+classes of algorithms. Our analysis shows that the $m-$OGP threshold (a) is well below the satisfiability
+threshold; and (b) matches the best known algorithmic threshold up to logarithmic factors as $m\to\infty$.
+We then prove that the $m-$OGP rules out the class of stable algorithms for the $\texttt{SBP}$ above
+this threshold. We conjecture that the $m \to \infty$ limit of the $m$-OGP threshold marks the algorithmic
+threshold for the problem. 

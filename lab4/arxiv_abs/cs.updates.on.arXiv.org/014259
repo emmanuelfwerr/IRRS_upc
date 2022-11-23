@@ -1,0 +1,19 @@
+In this paper, we investigate space-time tradeoffs for answering boolean conjunctive queries.
+The goal is to create a data structure in an initial preprocessing phase and use it for answering (multiple)
+queries. Previous work has developed data structures that trade off space usage for answering time
+and has proved conditional space lower bounds for queries of practical interest such as the path
+and triangle query. However, most of these results cater to only those queries, lack a comprehensive
+framework, and are not generalizable. The isolated treatment of these queries also fails to utilize
+the connections with extensive research on related problems within the database community. The
+key insight in this work is to exploit the formalism of relational algebra by casting the problems
+as answering join queries over a relational database. Using the notion of boolean {\em adorned queries}
+and {\em access patterns}, we propose a unified framework that captures several widely studied
+algorithmic problems. Our main contribution is three-fold. First, we present an algorithm that
+recovers existing space-time tradeoffs for several problems. The algorithm is based on an application
+of the {\em join size bound} to capture the space usage of our data structure. We combine our data structure
+with {\em query decomposition} techniques to further improve the tradeoffs and show that it is readily
+extensible to queries with negation. Second, we falsify two conjectures proposed in the existing
+literature that relates to the space-time lower bound for path queries and triangle detection by
+proposing an unexpectedly better algorithm. This result opens a new avenue for improving several
+algorithmic results that have so far been assumed to be (conditionally) optimal. Finally, we prove
+new conditional space-time lower bounds for star and path queries. 

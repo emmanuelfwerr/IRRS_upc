@@ -1,0 +1,19 @@
+Navier-Stokes equations are significant partial differential equations that describe the motion
+of fluids such as liquids and air. Due to the importance of Navier-Stokes equations, the development
+on efficient numerical schemes is important for both science and engineer. Recently, with the development
+of AI techniques, several approaches have been designed to integrate deep neural networks in simulating
+and inferring the fluid dynamics governed by incompressible Navier-Stokes equations, which can
+accelerate the simulation or inferring process in a mesh-free and differentiable way. In this paper,
+we point out that the capability of existing deep Navier-Stokes informed methods is limited to handle
+non-smooth or fractional equations, which are two critical situations in reality. To this end,
+we propose the \emph{Deep Random Vortex Method} (DRVM), which combines the neural network with
+a random vortex dynamics system equivalent to the Navier-Stokes equation. Specifically, the random
+vortex dynamics motivates a Monte Carlo based loss function for training the neural network, which
+avoids the calculation of derivatives through auto-differentiation. Therefore, DRVM not only
+can efficiently solve Navier-Stokes equations involving rough path, non-differentiable initial
+conditions and fractional operators, but also inherits the mesh-free and differentiable benefits
+of the deep-learning-based solver. We conduct experiments on the Cauchy problem, parametric solver
+learning, and the inverse problem of both 2-d and 3-d incompressible Navier-Stokes equations.
+The proposed method achieves accurate results for simulation and inference of Navier-Stokes equations.
+Especially for the cases that include singular initial conditions, DRVM significantly outperforms
+existing PINN method. 

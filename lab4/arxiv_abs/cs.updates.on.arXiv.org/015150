@@ -1,0 +1,20 @@
+We revisit the satisfiability problem for two-variable logic, denoted by SAT(FO2), which is known
+to be NEXP-complete. The upper bound is usually derived from its well known Exponential Size Model
+(ESM) property. Whether it can be determinized efficiently is still an open question. In this paper
+we present a different approach by reducing it to a novel graph-theoretic problem that we call Conditional
+Independent Set (CIS). We show that CIS is NP-complete and present two simple algorithms for it with
+run time O(1.4423^n) and O(1.6181^n), where n is the number of vertices in the graph. We also show
+that unless the "Strong Exponential Time Hypothesis" (SETH) fails, there is no algorithm for CIS
+with run time O(1.4141^n). We show that without the equality predicate SAT(FO2) is in fact equivalent
+to CIS in succinct representation. This yields two algorithms for SAT(FO2) without the equality
+predicate with run time O(1.4423^{2^n}) and O(1.6181^{2^n}), where n is the number of predicates.
+To the best of our knowledge, these are the first exact algorithms for an NEXP-complete decidable
+logic with run time significantly lower than O(2^{2^n}). We also identify a few lower complexity
+fragments of FO2 which correspond to the tractable fragments of CIS. Similar to CIS, unless SETH
+fails, there is no algorithm for SAT(FO2) with run time O(1.4141^{2^n}). For the fragment with the
+equality predicate, we present a linear time many-one reduction to the fragment without the equality
+predicate. The reduction yields equi-satisfiable formulas with a small constant blow-up in the
+number of predicates. Finally, we also perform some small experiments which show that our approach
+is indeed more promising than the existing method (based on the ESM property). The experiments also
+show that although theoretically it has the worse run time, the second algorithm in general performs
+better than the first one. 

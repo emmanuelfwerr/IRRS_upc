@@ -1,0 +1,20 @@
+Modeling of strongly gravitationally lensed galaxies is often required in order to use them as astrophysical
+or cosmological probes. With current and upcoming wide-field imaging surveys, the number of detected
+lenses is increasing significantly such that automated and fast modeling procedures for ground-based
+data are urgently needed. This is especially pertinent to short-lived lensed transients in order
+to plan follow-up observations. Therefore, we present in a companion paper (submitted) a neural
+network predicting the parameter values with corresponding uncertainties of a Singular Isothermal
+Ellipsoid (SIE) mass profile with external shear. In this work, we present a newly-developed pipeline
+glee_auto.py to model consistently any galaxy-scale lensing system. In contrast to previous automated
+modeling pipelines that require high-resolution images, glee_auto.py is optimized for ground-based
+images such as those from the Hyper-Suprime-Cam (HSC) or the upcoming Rubin Observatory Legacy
+Survey of Space and Time. We further present glee_tools.py, a flexible automation code for individual
+modeling that has no direct decisions and assumptions implemented. Both pipelines, in addition
+to our modeling network, minimize the user input time drastically and thus are important for future
+modeling efforts. We apply the network to 31 real galaxy-scale lenses of HSC and compare the results
+to the traditional models. In the direct comparison, we find a very good match for the Einstein radius
+especially for systems with $\theta_E \gtrsim 2$". The lens mass center and ellipticity show reasonable
+agreement. The main discrepancies are on the external shear as expected from our tests on mock systems.
+In general, our study demonstrates that neural networks are a viable and ultra fast approach for
+measuring the lens-galaxy masses from ground-based data in the upcoming era with $\sim10^5$ lenses
+expected. 

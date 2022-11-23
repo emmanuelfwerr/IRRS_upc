@@ -1,0 +1,20 @@
+A unique challenge in creating high-quality animatable and relightable 3D avatars of people is
+modeling human eyes. The challenge of synthesizing eyes is multifold as it requires 1) appropriate
+representations for the various components of the eye and the periocular region for coherent viewpoint
+synthesis, capable of representing diffuse, refractive and highly reflective surfaces, 2) disentangling
+skin and eye appearance from environmental illumination such that it may be rendered under novel
+lighting conditions, and 3) capturing eyeball motion and the deformation of the surrounding skin
+to enable re-gazing. These challenges have traditionally necessitated the use of expensive and
+cumbersome capture setups to obtain high-quality results, and even then, modeling of the eye region
+holistically has remained elusive. We present a novel geometry and appearance representation
+that enables high-fidelity capture and photorealistic animation, view synthesis and relighting
+of the eye region using only a sparse set of lights and cameras. Our hybrid representation combines
+an explicit parametric surface model for the eyeball with implicit deformable volumetric representations
+for the periocular region and the interior of the eye. This novel hybrid model has been designed to
+address the various parts of that challenging facial area - the explicit eyeball surface allows
+modeling refraction and high-frequency specular reflection at the cornea, whereas the implicit
+representation is well suited to model lower-frequency skin reflection via spherical harmonics
+and can represent non-surface structures such as hair or diffuse volumetric bodies, both of which
+are a challenge for explicit surface models. We show that for high-resolution close-ups of the eye,
+our model can synthesize high-fidelity animated gaze from novel views under unseen illumination
+conditions. 

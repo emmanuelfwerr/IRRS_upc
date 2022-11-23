@@ -1,0 +1,20 @@
+Nowadays, malware and malware incidents are increasing daily, even with various anti-viruses
+systems and malware detection or classification methodologies. Many static, dynamic, and hybrid
+techniques have been presented to detect malware and classify them into malware families. Dynamic
+and hybrid malware classification methods have advantages over static malware classification
+methods by being highly efficient. Since it is difficult to mask malware behavior while executing
+than its underlying code in static malware classification, machine learning techniques have been
+the main focus of the security experts to detect malware and determine their families dynamically.
+The rapid increase of malware also brings the necessity of recent and updated datasets of malicious
+software. We introduce two new, updated datasets in this work: One with 9,795 samples obtained and
+compiled from VirusSamples and the one with 14,616 samples from VirusShare. This paper also analyzes
+multi-class malware classification performance of the balanced and imbalanced version of these
+two datasets by using Histogram-based gradient boosting, Random Forest, Support Vector Machine,
+and XGBoost models with API call-based dynamic malware classification. Results show that Support
+Vector Machine, achieves the highest score of 94% in the imbalanced VirusSample dataset, whereas
+the same model has 91% accuracy in the balanced VirusSample dataset. While XGBoost, one of the most
+common gradient boosting-based models, achieves the highest score of 90% and 80%.in both versions
+of the VirusShare dataset. This paper also presents the baseline results of VirusShare and VirusSample
+datasets by using the four most widely known machine learning techniques in dynamic malware classification
+literature. We believe that these two datasets and baseline results enable researchers in this
+field to test and validate their methods and approaches. 

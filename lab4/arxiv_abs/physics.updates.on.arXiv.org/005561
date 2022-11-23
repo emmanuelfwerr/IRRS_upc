@@ -1,0 +1,19 @@
+This work describes three diffuse-interface methods for the simulation of immiscible, compressible
+multiphase fluid flows and elastic-plastic deformation in solids. The first method is the localized-artificial-diffusivity
+approach of Cook (2007), Subramaniam et al., (2018), and Adler and Lele (2019), in which artificial
+diffusion terms are added to the conservation equations. The second method is the gradient-form
+approach that is based on the quasi-conservative method of Shukla et al., (2010) and Tiwari et al.,
+(2013), in which the diffusion and sharpening terms (together called regularization terms) are
+added to the conservation equations. The third approach is the divergence-form approach that is
+based on the fully conservative method of Jain et al., (2020), in which the regularization terms
+are added to the conservation equations. The primary objective of this work is to compare these three
+methods in terms of their ability to maintain: constant interface thickness; the conservation
+property; and accurate interface shape for long-time integration. The second objective of this
+work is to consistently extend these methods to model interfaces between solid materials with strength.
+To assess and compare the methods, they are used to simulate a wide variety of problems, including
+(1) advection of an air bubble in water, (2) shock interaction with a helium bubble in air, (3) shock
+interaction and the collapse of an air bubble in water, and (4) Richtmyer-Meshkov instability of
+a copper-aluminum interface. The current work focuses on comparing these methods in the limit of
+relatively coarse grid resolution, which illustrates the true performance of these methods. This
+is because it is rarely practical to use hundreds of grid points to resolve a single bubble or drop
+in large-scale simulations of engineering interest. 

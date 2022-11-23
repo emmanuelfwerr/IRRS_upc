@@ -1,0 +1,20 @@
+The Gromov-Hausdorff distance ($d_\mathrm{GH}$) provides a natural way of quantifying the dissimilarity
+between two given metric spaces. It is known that computing $d_\mathrm{GH}$ between two finite
+metric spaces is NP-hard, even in the case of finite ultrametric spaces which are highly structured
+metric spaces in the sense that they satisfy the so-called \emph{strong triangle inequality}.
+Ultrametric spaces naturally arise in many applications such as hierarchical clustering, phylogenetics,
+genomics, and even linguistics. By exploiting the special structures of ultrametric spaces, (1)
+we identify a one parameter family $\{d_\mathrm{GH}^{(p)}\}_{p\in[1,\infty]}$ of distances
+defined in a flavor similar to the Gromov-Hausdorff distance on the collection of finite ultrametric
+spaces, and in particular $d_\mathrm{GH}^{(1)} =d_\mathrm{GH}$. The extreme case when $p=\infty$,
+which we also denote by $u_\mathrm{GH}$, turns out to be an ultrametric on the collection of ultrametric
+spaces. Whereas for all $p\in[1,\infty)$, $d_\mathrm{GH}^{(p)}$ yields NP-hard problems, we
+prove that surprisingly $u_\mathrm{GH}$ can be computed in polynomial time. The proof is based
+on a structural theorem for $u_\mathrm{GH}$ established in this paper; (2) inspired by the structural
+theorem for $u_\mathrm{GH}$, and by carefully leveraging properties of ultrametric spaces, we
+also establish a structural theorem for $d_\mathrm{GH}$ when restricted to ultrametric spaces.
+This structural theorem allows us to identify special families of ultrametric spaces on which $d_\mathrm{GH}$
+is computationally tractable. These families are determined by properties related to the doubling
+constant of metric space. Based on these families, we devise a fixed-parameter tractable (FPT)
+algorithm for computing the exact value of $d_\mathrm{GH}$ between ultrametric spaces. We believe
+ours is the first such algorithm to be identified. 

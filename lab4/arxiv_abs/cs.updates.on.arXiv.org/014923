@@ -1,0 +1,19 @@
+Digital mammography is still the most common imaging tool for breast cancer screening. Although
+the benefits of using digital mammography for cancer screening outweigh the risks associated with
+the x-ray exposure, the radiation dose must be kept as low as possible while maintaining the diagnostic
+utility of the generated images, thus minimizing patient risks. Many studies investigated the
+feasibility of dose reduction by restoring low-dose images using deep neural networks. In these
+cases, choosing the appropriate training database and loss function is crucial and impacts the
+quality of the results. In this work, a modification of the ResNet architecture, with hierarchical
+skip connections, is proposed to restore low-dose digital mammography. We compared the restored
+images to the standard full-dose images. Moreover, we evaluated the performance of several loss
+functions for this task. For training purposes, we extracted 256,000 image patches from a dataset
+of 400 images of retrospective clinical mammography exams, where different dose levels were simulated
+to generate low and standard-dose pairs. To validate the network in a real scenario, a physical anthropomorphic
+breast phantom was used to acquire real low-dose and standard full-dose images in a commercially
+avaliable mammography system, which were then processed through our trained model. An analytical
+restoration model for low-dose digital mammography, previously presented, was used as a benchmark
+in this work. Objective assessment was performed through the signal-to-noise ratio (SNR) and mean
+normalized squared error (MNSE), decomposed into residual noise and bias. Results showed that
+the perceptual loss function (PL4) is able to achieve virtually the same noise levels of a full-dose
+acquisition, while resulting in smaller signal bias compared to other loss functions. 

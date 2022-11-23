@@ -1,0 +1,19 @@
+The fast development of self-supervised learning lowers the bar learning feature representation
+from massive unlabeled data and has triggered a series of research on change detection of remote
+sensing images. Challenges in adapting self-supervised learning from natural images classification
+to remote sensing images change detection arise from difference between the two tasks. The learned
+patch-level feature representations are not satisfying for the pixel-level precise change detection.
+In this paper, we proposed a novel pixel-level self-supervised hyperspectral spatial-spectral
+understanding network (HyperNet) to accomplish pixel-wise feature representation for effective
+hyperspectral change detection. Concretely, not patches but the whole images are fed into the network
+and the multi-temporal spatial-spectral features are compared pixel by pixel. Instead of processing
+the two-dimensional imaging space and spectral response dimension in hybrid style, a powerful
+spatial-spectral attention module is put forward to explore the spatial correlation and discriminative
+spectral features of multi-temporal hyperspectral images (HSIs), separately. Only the positive
+samples at the same location of bi-temporal HSIs are created and forced to be aligned, aiming at learning
+the spectral difference-invariant features. Moreover, a new similarity loss function named focal
+cosine is proposed to solve the problem of imbalanced easy and hard positive samples comparison,
+where the weights of those hard samples are enlarged and highlighted to promote the network training.
+Six hyperspectral datasets have been adopted to test the validity and generalization of proposed
+HyperNet. The extensive experiments demonstrate the superiority of HyperNet over the state-of-the-art
+algorithms on downstream hyperspectral change detection tasks. 

@@ -1,0 +1,20 @@
+In the Group Testing problem, the objective is to learn a subset K of some much larger domain N, using
+the shortest-possible sequence of queries Q. A feedback to a query provides some information about
+the intersection between the query and subset K. Several specific feedbacks have been studied in
+the literature, often proving different formulas for the estimate of the query complexity of the
+problem, defined as the shortest length of queries' sequence solving Group Testing problem with
+specific feedback. In this paper we study what are the properties of the feedback that influence
+the query complexity of Group Testing and what is their measurable impact. We propose a generic framework
+that covers a vast majority of relevant settings considered in the literature, which depends on
+two fundamental parameters of the feedback: input capacity $\alpha$ and output expressiveness
+$\beta$. They upper bound the logarithm of the size of the feedback function domain and image, respectively.
+To justify the value of the framework, we prove upper bounds on query complexity of non adaptive,
+deterministic Group Testing under some "efficient" feedbacks, for minimum, maximum and general
+expressiveness, and complement them with a lower bound on all feedbacks with given parameters $\alpha,\beta$.
+Our upper bounds also hold if the feedback function could get an input twisted by a malicious adversary,
+in case the intersection of a query and the hidden set is bigger than the feedback capacity $\alpha$.
+We also show that slight change in the feedback function may result in substantial worsening of the
+query complexity. Additionally, we analyze explicitly constructed randomized counterparts
+of the deterministic results. Our results provide some insights to what are the most useful bits
+of information an output-restricted feedback could provide, and open a number of challenging research
+directions. 

@@ -1,0 +1,19 @@
+Methods based on convolutional neural networks have improved the performance of biomedical image
+segmentation. However, most of these methods cannot efficiently segment objects of variable sizes
+and train on small and biased datasets, which are common for biomedical use cases. While methods
+exist that incorporate multi-scale fusion approaches to address the challenges arising with variable
+sizes, they usually use complex models that are more suitable for general semantic segmentation
+problems. In this paper, we propose a novel architecture called Multi-Scale Residual Fusion Network
+(MSRF-Net), which is specially designed for medical image segmentation. The proposed MSRF-Net
+is able to exchange multi-scale features of varying receptive fields using a Dual-Scale Dense Fusion
+(DSDF) block. Our DSDF block can exchange information rigorously across two different resolution
+scales, and our MSRF sub-network uses multiple DSDF blocks in sequence to perform multi-scale fusion.
+This allows the preservation of resolution, improved information flow and propagation of both
+high- and low-level features to obtain accurate segmentation maps. The proposed MSRF-Net allows
+to capture object variabilities and provides improved results on different biomedical datasets.
+Extensive experiments on MSRF-Net demonstrate that the proposed method outperforms the cutting-edge
+medical image segmentation methods on four publicly available datasets. We achieve the dice coefficient
+of 0.9217, 0.9420, and 0.9224, 0.8824 on Kvasir-SEG, CVC-ClinicDB, 2018 Data Science Bowl dataset,
+and ISIC-2018 skin lesion segmentation challenge dataset respectively. We further conducted
+generalizability tests and achieved a dice coefficient of 0.7921 and 0.7575 on CVC-ClinicDB and
+Kvasir-SEG, respectively. 

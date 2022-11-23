@@ -1,0 +1,20 @@
+Designing an optimal energy system with large shares of renewable energy sources is computationally
+challenging. Considering greater spatial horizon and level of detail, during the design, exacerbates
+this challenge. This paper investigates spatial and technology aggregation of energy system model,
+as a complexity-reduction technique. To that end, a novel two-step aggregation scheme based on
+model parameters such as Variable Renewable Energy Sources (VRES) time series and capacities,
+transmission capacities and distances, etc, is introduced. First, model regions are aggregated
+to obtain reduced region set. The aggregation is based on a holistic approach that considers all
+model parameters and spatial contiguity of regions. Next, technology aggregation is performed
+on each VRES, present in each newly-defined region. Each VRES is aggregated based on the temporal
+profiles to obtain a representative set. The impact of these aggregations on accuracy and computational
+complexity of a cost-optimal energy system design is analyzed for a European energy system scenario.The
+aggregations are performed to obtain different combinations of number of regions and VRES types,
+and the results are benchmarked against initial spatial resolution of 96 regions and 68 VRES types
+in each region. The results show that the system costs deviate significantly when lower number of
+regions and/or VRES types are considered. As the spatial resolution is increased in terms of both
+number of regions and VRES types, the system cost fluctuates at first and stabilizes at some point,
+approaching the benchmark value. Optimal combination can be determined based on an acceptable
+cost deviation and the point of stabilization. For instance, if <5% deviation is acceptable, 33
+regions and 38 VRES types in each region is optimal. With this setting, the system cost is under-estimated
+by 4.42% but the run time is reduced by 92.95%. 

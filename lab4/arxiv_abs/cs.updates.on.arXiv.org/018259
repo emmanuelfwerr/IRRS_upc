@@ -1,0 +1,20 @@
+Reinforcement learning algorithms based on Q-learning are driving Deep Reinforcement Learning
+(DRL) research towards solving complex problems and achieving super-human performance on many
+of them. Nevertheless, Q-Learning is known to be positively biased since it learns by using the maximum
+over noisy estimates of expected values. Systematic overestimation of the action values coupled
+with the inherently high variance of DRL methods can lead to incrementally accumulate errors, causing
+learning algorithms to diverge. Ideally, we would like DRL agents to take into account their own
+uncertainty about the optimality of each action, and be able to exploit it to make more informed estimations
+of the expected return. In this regard, Weighted Q-Learning (WQL) effectively reduces bias and
+shows remarkable results in stochastic environments. WQL uses a weighted sum of the estimated action
+values, where the weights correspond to the probability of each action value being the maximum;
+however, the computation of these probabilities is only practical in the tabular setting. In this
+work, we provide methodological advances to benefit from the WQL properties in DRL, by using neural
+networks trained with Dropout as an effective approximation of deep Gaussian processes. In particular,
+we adopt the Concrete Dropout variant to obtain calibrated estimates of epistemic uncertainty
+in DRL. The estimator, then, is obtained by taking several stochastic forward passes through the
+action-value network and computing the weights in a Monte Carlo fashion. Such weights are Bayesian
+estimates of the probability of each action value corresponding to the maximum w.r.t. a posterior
+probability distribution estimated by Dropout. We show how our novel Deep Weighted Q-Learning
+algorithm reduces the bias w.r.t. relevant baselines and provides empirical evidence of its advantages
+on representative benchmarks. 

@@ -1,0 +1,19 @@
+Scientific workflow management systems like Nextflow support large-scale data analysis by abstracting
+away the details of scientific workflows. In these systems, workflows consist of several abstract
+tasks, of which instances are run in parallel and transform input partitions into output partitions.
+Resource managers like Kubernetes execute such workflow tasks on cluster infrastructures. However,
+these resource managers only consider the number of CPUs and the amount of available memory when
+assigning tasks to resources; they do not consider hardware differences beyond these numbers,
+while computational speed and memory access rates can differ significantly. We propose Tarema,
+a system for allocating task instances to heterogeneous cluster resources during the execution
+of scalable scientific workflows. First, Tarema profiles the available infrastructure with a
+set of benchmark programs and groups cluster nodes with similar performance. Second, Tarema uses
+online monitoring data of tasks, assigning labels to tasks depending on their resource usage. Third,
+Tarema uses the node groups and task labels to dynamically assign task instances evenly to resources
+based on resource demand. Our evaluation of a prototype implementation for Kubernetes, using five
+real-world Nextflow workflows from the popular nf-core framework and two 15-node clusters consisting
+of different virtual machines, shows a mean reduction of isolated job runtimes by 19.8% compared
+to popular schedulers in widely-used resource managers and 4.54% compared to the heuristic SJFN,
+while providing a better cluster usage. Moreover, executing two long-running workflows in parallel
+and on restricted resources shows that Tarema is able to reduce the runtimes even more while providing
+a fair cluster usage. 

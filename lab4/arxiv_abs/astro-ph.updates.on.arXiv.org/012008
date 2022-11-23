@@ -1,0 +1,19 @@
+We present a solution to determine the actual or physical relative positions between CCD chips.
+Due to the limited depth of the Gaia catalogue, there may be few stars identified from the Gaia catalogue
+for astrometric calibration on the deep observation of a large, ground-based or space-based telescope,
+such as the planned two-metre Chinese Space Station Telescope (CSST). For this reason, we referred
+to the idea from the Hubble Space Telescope (HST) astrometry to only use stars' pixel positions to
+derive the relative positions between chips. We refer to the practice as differential astrometry
+in this paper. In order to ensure the results are reliable, we took advantage of Gaia EDR3 to derive
+the relative positions between chips, to provide a close comparison. We refer to the practice as
+photographic astrometry. We implemented the technique for the CCD mosaic chips of the Bok 2.3-m
+telescope based on two epochs of observations (Jan 17,2016 and Mar 5,2017). There is a good agreement
+between the two types of astrometry for the relative positions between chips. For the two epochs
+of observations, the averages of the gaps derived from photographic astrometry and differential
+astrometry differ to about 0.046 pixels (~0.021 arcsec) and 0.001 pixels (~0.001 arcsec), respectively,
+while the average precisions of the gaps are about 0.018 pixel (~0.008 arcsec) and 0.028 pixels (<0.013
+arcsec), respectively. The results provide us with more confidence in applying this solution for
+the CCD mosaic chips of the CSST by means of differential astrometry. Compared with the solution
+described by Anderson & King, which has been used to determine the interchip offset of Wide Field
+Planetary Camera 2 (WFPC2) chips and Wide Field Camera 3 (WFC3) chips at the HST, the solution proposed
+in this paper shows at least a factor of two improvement in precision, on average. 

@@ -1,0 +1,20 @@
+Many existing algorithms for streaming geometric data analysis have been plagued by exponential
+dependencies in the space complexity, which are undesirable for processing high-dimensional
+data sets. In particular, once $d\geq\log n$, there are no known non-trivial streaming algorithms
+for problems such as maintaining convex hulls and L\"owner-John ellipsoids of $n$ points, despite
+a long line of work in streaming computational geometry since [AHV04]. We simultaneously improve
+these results to $\mathrm{poly}(d,\log n)$ bits of space by trading off with a $\mathrm{poly}(d,\log
+n)$ factor distortion. We achieve these results in a unified manner, by designing the first streaming
+algorithm for maintaining a coreset for $\ell_\infty$ subspace embeddings with $\mathrm{poly}(d,\log
+n)$ space and $\mathrm{poly}(d,\log n)$ distortion. Our algorithm also gives similar guarantees
+in the \emph{online coreset} model. Along the way, we sharpen results for online numerical linear
+algebra by replacing a log condition number dependence with a $\log n$ dependence, answering a question
+of [BDM+20]. Our techniques provide a novel connection between leverage scores, a fundamental
+object in numerical linear algebra, and computational geometry. For $\ell_p$ subspace embeddings,
+we give nearly optimal trade-offs between space and distortion for one-pass streaming algorithms.
+For instance, we give a deterministic coreset using $O(d^2\log n)$ space and $O((d\log n)^{1/2-1/p})$
+distortion for $p>2$, whereas previous deterministic algorithms incurred a $\mathrm{poly}(n)$
+factor in the space or the distortion [CDW18]. Our techniques have implications in the offline setting,
+where we give optimal trade-offs between the space complexity and distortion of subspace sketch
+data structures. To do this, we give an elementary proof of a "change of density" theorem of [LT80]
+and make it algorithmic. 

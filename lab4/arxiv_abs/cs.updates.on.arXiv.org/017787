@@ -1,0 +1,19 @@
+Solving zero-dimensional polynomial systems using Gr\"obner bases is usually done by, first,
+computing a Gr\"obner basis for the degree reverse lexicographic order, and next computing the
+lexicographic Gr\"obner basis with a change of order algorithm. Currently, the change of order
+now takes a significant part of the whole solving time for many generic instances. Like the fastest
+known change of order algorithms, this work focuses on the situation where the ideal defined by the
+system satisfies natural properties which can be recovered in generic coordinates. First, the
+ideal has a \emph{shape} lexicographic Gr\"obner basis. Second, the set of leading terms with respect
+to the degree reverse lexicographic order has a \emph{stability} property; in particular, the
+multiplication matrix can be read on the input Gr\"obner basis. The current fastest algorithms
+rely on the sparsity of this matrix. Actually, this sparsity is a consequence of an algebraic structure,
+which can be exploited to represent the matrix concisely as a univariate polynomial matrix. We show
+that the Hermite normal form of that matrix yields the sought lexicographic Gr\"obner basis, under
+assumptions which cover the shape position case. Under some mild assumption implying $n \le t$,
+the arithmetic complexity of our algorithm is $O\tilde{~}(t^{\omega-1}D)$, where $n$ is the number
+of variables, $t$ is a sparsity indicator of the aforementioned matrix, $D$ is the degree of the zero-dimensional
+ideal under consideration, and $\omega$ is the exponent of matrix multiplication. This improves
+upon both state-of-the-art complexity bounds $O\tilde{~}(tD^2)$ and $O\tilde{~}(D^\omega)$,
+since $\omega < 3$ and $t\le D$. Practical experiments, based on the libraries msolve and PML, confirm
+the high practical benefit. 

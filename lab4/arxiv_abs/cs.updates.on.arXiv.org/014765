@@ -1,0 +1,20 @@
+Source camera identification tools assist image forensic investigators to associate an image
+in question with a suspect camera. Various techniques have been developed based on the analysis
+of the subtle traces left in the images during the acquisition. The Photo Response Non Uniformity
+(PRNU) noise pattern caused by sensor imperfections has been proven to be an effective way to identify
+the source camera. The existing literature suggests that the PRNU is the only fingerprint that is
+device-specific and capable of identifying the exact source device. However, the PRNU is susceptible
+to camera settings, image content, image processing operations, and counter-forensic attacks.
+A forensic investigator unaware of counter-forensic attacks or incidental image manipulations
+is at the risk of getting misled. The spatial synchronization requirement during the matching of
+two PRNUs also represents a major limitation of the PRNU. In recent years, deep learning based approaches
+have been successful in identifying source camera models. However, the identification of individual
+cameras of the same model through these data-driven approaches remains unsatisfactory. In this
+paper, we bring to light the existence of a new robust data-driven device-specific fingerprint
+in digital images which is capable of identifying the individual cameras of the same model. It is
+discovered that the new device fingerprint is location-independent, stochastic, and globally
+available, which resolve the spatial synchronization issue. Unlike the PRNU, which resides in
+the high-frequency band, the new device fingerprint is extracted from the low and mid-frequency
+bands, which resolves the fragility issue that the PRNU is unable to contend with. Our experiments
+on various datasets demonstrate that the new fingerprint is highly resilient to image manipulations
+such as rotation, gamma correction, and aggressive JPEG compression. 
