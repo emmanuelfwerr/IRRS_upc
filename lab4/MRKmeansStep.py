@@ -35,7 +35,13 @@ class MRKmeansStep(MRJob):
 
         The result should be always a value in the range [0,1]
         """
-        return 1
+        new_prot = set([tupl[0] for tupl in set(prot)])
+
+        intersection = len(list(new_prot.intersection(doc)))
+        union = (len(new_prot) + len(set(doc))) - intersection
+
+        return float(intersection) / union
+
 
     def configure_args(self):
         """
@@ -45,6 +51,7 @@ class MRKmeansStep(MRJob):
         """
         super(MRKmeansStep, self).configure_args()
         self.add_file_arg('--prot')
+
 
     def load_data(self):
         """
@@ -60,27 +67,27 @@ class MRKmeansStep(MRJob):
                 cp.append((word.split('+')[0], float(word.split('+')[1])))
             self.prototypes[cluster] = cp
 
+
     def assign_prototype(self, _, line):
         """
         This is the mapper it should compute the closest prototype to a document
 
-        Words should be sorted alphabetically in the prototypes and the documents
-
-        This function has to return at list of pairs (prototype_id, document words)
-
-        You can add also more elements to the value element, for example the document_id
+        This function has to return a list of pairs (prototype_id, document words)
         """
-
         # Each line is a string docid:wor1 word2 ... wordn
         doc, words = line.split(':')
         lwords = words.split()
 
-        #
-        # Compute map here
-        #
+        minimum = float('inf')
+        current_clust = None  
+        for clusterId, prototype in self.prototypes.items():
+            jaccard_score = self.jaccard(prototype, lwords)
+            if (jaccard_score < minimum):
+                minimum = jaccard_score
+                current_clust = clusterId # update the new cluster assigned to the document
 
-        # Return pair key, value
-        yield None, None
+        yield (current_clust, (doc, lwords))
+
 
     def aggregate_prototype(self, key, values):
         """
@@ -99,8 +106,31 @@ class MRKmeansStep(MRJob):
         :param values:
         :return:
         """
+        assigned_docs = [] # list to save documents assigned to a prototype
+        word_freq = {} # dict to save words and their frequencies
+        # iterate through input and count word frequencies
+        for (doc, lwords) in values:
+            assigned_docs.append(doc)
+            for word in lwords:
+                if word in word_freq: # if word exists in dict
+                    word_freq[word] += 1
+                else: # if word does not exist in dict
+                    word_freq[word] = 1
 
-        yield None, None
+        # calculate the mean by :frequency of word divided by total number of documents
+        all_words = []
+        n_docs = len(assigned_docs) # number of total documents
+
+        # creating new list of words and their frequencies for new prototypes
+        for word, frequency in word_freq.items():
+            all_words.append((word, frequency / int(n_docs)))
+
+        # sorting all ouput alphabetically
+        out_docs = sorted(assigned_docs) 
+        out_proto = sorted(all_words, key=lambda x: x[0])
+
+        yield (key, (out_docs, out_proto))
+
 
     def steps(self):
         return [MRStep(mapper_init=self.load_data, mapper=self.assign_prototype,
