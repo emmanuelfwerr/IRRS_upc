@@ -35,12 +35,21 @@ class MRKmeansStep(MRJob):
 
         The result should be always a value in the range [0,1]
         """
-        new_prot = set([tupl[0] for tupl in set(prot)])
+        prot_set = set([tupl[0] for tupl in set(prot)])
 
-        intersection = len(list(new_prot.intersection(doc)))
-        union = (len(new_prot) + len(set(doc))) - intersection
+        intersection = len(list(prot_set.intersection(doc)))
+        union = (len(prot_set) + len(set(doc))) - intersection
 
         return float(intersection) / union
+
+
+    def in_prototype(self, key, word):
+        for clusterId, prototype in self.prototypes.items():
+            if clusterId != key:
+                continue
+            if word in [tupl[0] for tupl in set(prototype)]:
+                return True
+        return False
 
 
     def configure_args(self):
@@ -78,34 +87,34 @@ class MRKmeansStep(MRJob):
         doc, words = line.split(':')
         lwords = words.split()
 
-        minimum = float('inf')
-        current_clust = None  
+        max_score = float('-inf')
+        assigned_cluster = None  
         for clusterId, prototype in self.prototypes.items():
             jaccard_score = self.jaccard(prototype, lwords)
-            if (jaccard_score < minimum):
-                minimum = jaccard_score
-                current_clust = clusterId # update the new cluster assigned to the document
+            if (jaccard_score > max_score):
+                max_score = jaccard_score
+                assigned_cluster = clusterId # update the new cluster assigned to the document
 
-        yield (current_clust, (doc, lwords))
+        yield (assigned_cluster, (doc, lwords))
 
 
     def aggregate_prototype(self, key, values):
-        """
-        input is cluster and all the documents it has assigned
-        Outputs should be at least a pair (cluster, new prototype)
+        '''
+        Returns new re-calculated prototypes for each clusterId in the form of 
+        a pair (clusterId, new_prototype), where new_prototype is a list
 
-        It should receive a list with all the words of the documents assigned for a cluster
+                Parameters:
+                        self (): ...
+                        key (str): assigned clusterId of doc by mapper
+                        values (tuple): where value[0] = docId, and value[1] = list of words contained in doc
 
-        The value for each word has to be the frequency of the word divided by the number
-        of documents assigned to the cluster
+                Returns:
+                        a pair (key, (assigned_docs, new_prototype)) where:
+                                - key = clusterId
+                                - assigned_docs = list of all docId assigned to clusterId
+                                - new_prototype = list of top words by sorted by descending frequency/n_docs
+        '''
 
-        Words are ordered alphabetically but you will have to use an efficient structure to
-        compute the frequency of each word
-
-        :param key:
-        :param values:
-        :return:
-        """
         assigned_docs = [] # list to save documents assigned to a prototype
         word_freq = {} # dict to save words and their frequencies
         # iterate through input and count word frequencies
@@ -118,18 +127,21 @@ class MRKmeansStep(MRJob):
                     word_freq[word] = 1
 
         # calculate the mean by :frequency of word divided by total number of documents
-        all_words = []
+        doc_words = []
         n_docs = len(assigned_docs) # number of total documents
 
         # creating new list of words and their frequencies for new prototypes
         for word, frequency in word_freq.items():
-            all_words.append((word, frequency / int(n_docs)))
+            #if self.in_prototype(key, word):
+            doc_words.append((word, frequency / int(n_docs)))
 
-        # sorting all ouput alphabetically
-        out_docs = sorted(assigned_docs) 
-        out_proto = sorted(all_words, key=lambda x: x[0])
+        #word_limit = len([for clusterId, prototype in self.prototypes.items():])
 
-        yield (key, (out_docs, out_proto))
+        # sorting all output descending by frequency --> top [:69]
+        assigned_docs = sorted(assigned_docs) 
+        new_prototype = sorted(doc_words, key=lambda x: x[1], reverse=True)[:69]
+
+        yield (key, (assigned_docs, new_prototype))
 
 
     def steps(self):
