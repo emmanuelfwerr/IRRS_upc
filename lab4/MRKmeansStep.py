@@ -1,15 +1,14 @@
 """
-.. module:: MRKmeansDef
+.. module:: MRKmeansStep
 
-MRKmeansDef
+MRKmeansStep
 *************
 
-:Description: MRKmeansDef
+:Description: MRKmeansStep
 
-    
+    Defines the MRJob MapReduce Steps
 
-:Authors: bejar
-    
+:Authors: Bejar & Werr
 
 :Version: 
 
@@ -27,14 +26,17 @@ class MRKmeansStep(MRJob):
     prototypes = {}
 
     def jaccard(self, prot, doc):
-        """
-        Compute here the Jaccard similarity between  a prototype and a document
-        prot should be a list of pairs (word, probability)
-        doc should be a list of words
-        Words must be alphabeticaly ordered
+        '''
+        Returns the Jaccard similarity between a prototype and a document.
 
-        The result should be always a value in the range [0,1]
-        """
+                Parameters:
+                        self (): ...
+                        prot (str): list of pairs (word, probability)
+                        doc (str): list of words contained in the doc
+
+                Returns:
+                        jaccard similarity (float): should be always a value in the range [0,1]
+        '''
         prot_set = set([tupl[0] for tupl in set(prot)])
 
         intersection = len(list(prot_set.intersection(doc)))
@@ -44,6 +46,19 @@ class MRKmeansStep(MRJob):
 
 
     def in_prototype(self, key, word):
+        '''
+        Attempting to define a function that checks if a word (word) is included in the previous prototype for
+        each cluster (key) before appending word to new prototype in the Reducer Step of MRJob.
+
+                Parameters:
+                        self (): ...
+                        key (str): clusterId of the prototype
+                        word (str): word we want to know whether is included in previous prototype
+
+                Returns:
+                        in_prototype (bool): whether or not the word is contained in previous prototype
+
+        '''
         for clusterId, prototype in self.prototypes.items():
             if clusterId != key:
                 continue
@@ -78,22 +93,34 @@ class MRKmeansStep(MRJob):
 
 
     def assign_prototype(self, _, line):
-        """
-        This is the mapper it should compute the closest prototype to a document
+        '''
+        This is the mapper. It computes the closest prototype to a document using Jaccard
+        similarity and returns a list of pairs (prototype_id, document words)
 
-        This function has to return a list of pairs (prototype_id, document words)
-        """
-        # Each line is a string docid:wor1 word2 ... wordn
+                Parameters:
+                        self (): ...
+                        _ (): ...
+                        line (str): in the form "docid:wor1 word2 ... wordn"
+
+                Returns:
+                        a pair (assigned_cluster, (doc, lwords)) where:
+                                - assigned_cluster = clusterId
+                                - doc = docId of docs assigned to clusterId
+                                - lwords = list of words contained in doc
+        '''
+        # extact data by splitting line 
         doc, words = line.split(':')
         lwords = words.split()
 
-        max_score = float('-inf')
-        assigned_cluster = None  
+        # initializing comparison and assignment parameters
+        max_score = float('-inf') 
+        assigned_cluster = None
+        # iterate through each doc and assign it's most similar cluseter
         for clusterId, prototype in self.prototypes.items():
             jaccard_score = self.jaccard(prototype, lwords)
             if (jaccard_score > max_score):
                 max_score = jaccard_score
-                assigned_cluster = clusterId # update the new cluster assigned to the document
+                assigned_cluster = clusterId # update the cluster assigned to the document
 
         yield (assigned_cluster, (doc, lwords))
 
@@ -132,10 +159,7 @@ class MRKmeansStep(MRJob):
 
         # creating new list of words and their frequencies for new prototypes
         for word, frequency in word_freq.items():
-            #if self.in_prototype(key, word):
             doc_words.append((word, frequency / int(n_docs)))
-
-        #word_limit = len([for clusterId, prototype in self.prototypes.items():])
 
         # sorting all output descending by frequency --> top [:69]
         assigned_docs = sorted(assigned_docs) 

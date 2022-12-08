@@ -8,8 +8,7 @@ MRKmeans
 
     Iterates the MRKmeansStep script
 
-:Authors: bejar
-    
+:Authors: Bejar & Werr
 
 :Version: 
 
@@ -38,7 +37,7 @@ if __name__ == '__main__':
 
     # Copies the initial prototypes
     cwd = os.getcwd()
-    shutil.copy(cwd + '/' + args.prot, cwd + '/prototypes0.txt')
+    shutil.copy(cwd + '/' + args.prot, cwd + '/results/prototypes/prototypes0.txt')
 
     nomove = False  # Stores if there has been changes in the current iteration
     for i in range(args.iter):
@@ -49,8 +48,8 @@ if __name__ == '__main__':
         # The --file flag tells to MRjob to copy the file to HADOOP
         # The --prot flag tells to MRKmeansStep where to load the prototypes from
         mr_job1 = MRKmeansStep(args=['-r', 'local', args.docs,
-                                     '--file', cwd + '/prototypes%d.txt' % i,
-                                     '--prot', cwd + '/prototypes%d.txt' % i,
+                                     '--file', cwd + '/results/prototypes/prototypes%d.txt' % i,
+                                     '--prot', cwd + '/results/prototypes/prototypes%d.txt' % i,
                                      '--num-cores', str(args.ncores)])
 
         # Runs the script
@@ -66,38 +65,24 @@ if __name__ == '__main__':
                 new_proto[key] = value[1]
 
             # If your scripts returns the new assignments you could write them in a file here
-            with open(cwd + '/assignments{}.txt'.format(i + 1), 'w') as f:
-                for clust, assignment in new_assign.items():
+            with open(cwd + '/results/assignments/assignments{}.txt'.format(i + 1), 'w') as f:
+                for clusterId, assignment in new_assign.items():
                     docs = ' '.join([doc for doc in assignment])
-                    f.write('{}:{}\n'.format(clust, docs))
+                    f.write('{}:{}\n'.format(clusterId, docs))
                 f.flush()
                 f.close()
 
             # You should store the new prototypes here for the next iteration
-            with open(cwd + '/prototypes{}.txt'.format(i + 1), 'w') as f:
-                for clust, proto_l in new_proto.items():
+            with open(cwd + '/results/prototypes/prototypes{}.txt'.format(i + 1), 'w') as f:
+                for clusterId, proto_l in new_proto.items():
                     s = ' '.join(['{}+{}'.format(type, str(norm_freq)) for (type, norm_freq) in proto_l])
-                    f.write('{}:{}\n'.format(clust, s))
+                    f.write('{}:{}\n'.format(clusterId, s))
                 f.flush()
                 f.close()
 
-            # If you have saved the assignments, you can check if they have changed from the previous iteration
-            if os.path.exists(cwd + '/assignments{}.txt'.format(i)):
-                docs_changed = True
-                with open(cwd + '/assignments{}.txt'.format(i), 'r') as f:
-                    for line in f:
-                        clust, docs = line.split(':')
-                        assigned_docs = docs.split()
-
-                        if new_assign[clust] != assigned_docs:
-                            docs_changed = False
-                            break
-
-        #print(f"Time= {(time.time() - tinit)} seconds" % )
+        # printing time elapsed during each iteration
         print('Time: {} seconds'.format(time.time() - tinit))
 
         if nomove:  # If there is no changes in two consecutive iteration we can stop
             print("Algorithm converged")
             break
-
-    # Now the last prototype file should have the results
