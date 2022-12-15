@@ -8,7 +8,7 @@ MRKmeansStep
 
     Defines the MRJob MapReduce Steps
 
-:Authors: Bejar & Werr
+:Authors: bejar
 
 :Version: 
 
